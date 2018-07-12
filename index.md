@@ -1,6 +1,6 @@
 layout: osc
 title: Open-source comments
-description: Open-source comments
+description: A table of comparison of open-source self-hosted comments
 comments: true
 ---
 
@@ -8,7 +8,7 @@ comments: true
 
 <div class="preamble">
 
-# Open-source commenting systems
+# Open-source self-hosted commenting systems
 
 Inspired by [staticsitegenerators.net](http://staticsitegenerators.net). 
 Contribute at [github](https://github.com/pozitron57/open-source-comments).
