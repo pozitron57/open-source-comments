@@ -4,8 +4,8 @@ A table of open-source self-hosted commenting servers
 (https://lisakov.com/projects/open-source-comments/)
 to make the choice easier.
 
-The data are stored in `data.yaml`.
-`yml2js.py` converts `YAML` to `js`-arrays so it can be loaded to
+The data are stored in `data.yaml`. `yml2js.py` converts `YAML` to
+`js`-arrays in `data.js` so it can be loaded to
 [datatables.js](https://github.com/DataTables/DataTables).
 
 # TODO
