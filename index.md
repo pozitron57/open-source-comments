@@ -1,10 +1,7 @@
 layout: osc
 title: Open-source comments
-date: 2018-07-08
 description: Open-source comments
-categories: [Линукс и около]
 comments: true
-published: false
 ---
 
 <script src="data.js"></script>
@@ -14,9 +11,9 @@ published: false
 # Open-source commenting systems
 
 Inspired by [staticsitegenerators.net](http://staticsitegenerators.net). 
-Contribute at [github](...).
+Contribute at [github](https://github.com/pozitron57/open-source-comments).
 
-Need more columns? [Propose](..).
+Want more columns? [Propose](https://github.com/pozitron57/open-source-comments/issues/new).
 
 ### Choose columns to show
 </div>
