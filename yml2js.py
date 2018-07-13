@@ -13,6 +13,7 @@ fields = [
     'github',
     'demo',
     'js_kB',
+    'css_kB',
     'language',
     'db',
     'markdown_support',
@@ -42,7 +43,8 @@ fields = [
     'updated',
     'created',
     'rss',
-    'note',
+    'static',
+    'description',
 ]
 d={
     'stars':                 'Github ★',
@@ -50,6 +52,7 @@ d={
     'github':                'Github',
     'demo':                  'Demo',
     'js_kB':                 'js, kB',
+    'css_kB':                'css, kB',
     'language':              'Language',
     'db':                    'Database',
     'mail_notification':     'Mail notification',
@@ -77,7 +80,8 @@ d={
     'english_documentation': 'English documentation',
     'rss':                   'RSS',
     'display_images':        'Display images',
-    'note':                  'Note',
+    'static':                'Static (comments are placed to html)',
+    'description':           'Description/note',
     'updated':               'Updated',
     'created':               'Created',
 }
