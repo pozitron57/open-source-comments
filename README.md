@@ -31,11 +31,21 @@ The data are stored in `data.yaml`. `yaml_2_js.py` converts `YAML` to
 
 - Simplify and improve the python code.
 
-- Check grammar in this README.
+- Add badges to show the change in stars during last 30 days or so. Just like
+  at https://www.staticgen.com/. I'am going to add a few lines to
+  `get_gh_data.py` to compare current value with the previous one, time
+  difference specified. Is it a proper way of doing it? 
+
+- Where do I find a number of opened and closed issues? For example,
+  https://api.github.com/users/posativ/isso has `open_issues_count` and
+  `open_issues`, both equal to 131, whereas there are 110 issues and 21 PR.
+
+
+- Check grammar.
 
 # Contribution
 
 Contributions are welcome. Fork the repo and send PR. Want to add something
 but don't feel like sending PR? Let me know by submitting an issue or leave a
-[comment](https://lisakov.com/projects/open-source-comments/#isso-thread)[^1] at
+[comment](https://lisakov.com/projects/open-source-comments/#isso-thread) at
 the website. It currently uses [isso](https://github.com/posativ/isso).
