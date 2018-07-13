@@ -1,0 +1,98 @@
+{
+  "sha": "b459a589ab9693db91bb1c2d0c56131b3e52a676",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiNDU5YTU4OWFiOTY5M2RiOTFiYjFjMmQwYzU2MTMxYjNlNTJhNjc2",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2018-07-13T08:16:39Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2018-07-13T08:16:39Z"
+    },
+    "message": "FIX: `jumpToPost` no working on megatopics.",
+    "tree": {
+      "sha": "530ea39f2dddae679b863fedf996f2ff31c52bd2",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/530ea39f2dddae679b863fedf996f2ff31c52bd2"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b459a589ab9693db91bb1c2d0c56131b3e52a676",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b459a589ab9693db91bb1c2d0c56131b3e52a676",
+  "html_url": "https://github.com/discourse/discourse/commit/b459a589ab9693db91bb1c2d0c56131b3e52a676",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b459a589ab9693db91bb1c2d0c56131b3e52a676/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9647a0a4bcce271c390c6b8647c8f3ac2765155c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/9647a0a4bcce271c390c6b8647c8f3ac2765155c",
+      "html_url": "https://github.com/discourse/discourse/commit/9647a0a4bcce271c390c6b8647c8f3ac2765155c"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 12,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "4054182802d43969b3b6119f2b5cc048a6696be5",
+      "filename": "app/assets/javascripts/discourse/controllers/topic.js.es6",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 8,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/b459a589ab9693db91bb1c2d0c56131b3e52a676/app/assets/javascripts/discourse/controllers/topic.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/b459a589ab9693db91bb1c2d0c56131b3e52a676/app/assets/javascripts/discourse/controllers/topic.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/topic.js.es6?ref=b459a589ab9693db91bb1c2d0c56131b3e52a676",
+      "patch": "@@ -588,16 +588,20 @@ export default Ember.Controller.extend(BufferedContent, {\n     },\n \n     jumpToPost(postNumber) {\n-      const postStream = this.get(\"model.postStream\");\n-      let postId = postStream.findPostIdForPostNumber(postNumber);\n+      if (this.get(\"model.postStream.isMegaTopic\")) {\n+        this._jumpToPostNumber(postNumber);\n+      } else {\n+        const postStream = this.get(\"model.postStream\");\n+        let postId = postStream.findPostIdForPostNumber(postNumber);\n \n-      // If we couldn't find the post, find the closest post to it\n-      if (!postId) {\n-        const closest = postStream.closestPostNumberFor(postNumber);\n-        postId = postStream.findPostIdForPostNumber(closest);\n-      }\n+        // If we couldn't find the post, find the closest post to it\n+        if (!postId) {\n+          const closest = postStream.closestPostNumberFor(postNumber);\n+          postId = postStream.findPostIdForPostNumber(closest);\n+        }\n \n-      this._jumpToPostId(postId);\n+        this._jumpToPostId(postId);\n+      }\n     },\n \n     jumpTop() {"
+    }
+  ]
+}

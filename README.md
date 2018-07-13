@@ -1,12 +1,23 @@
 # Open-source self-hosted comments
 
-A table of open-source self-hosted commenting servers
-(https://lisakov.com/projects/open-source-comments/)
-to make the choice easier.
+A [table](https://lisakov.com/projects/open-source-comments/) of open-source
+self-hosted *(mostly)* commenting servers.
 
-The data are stored in `data.yaml`. `yml2js.py` converts `YAML` to
+The data are stored in `data.yaml`. `yaml_2_js.py` converts `YAML` to
 `js`-arrays in `data.js` so it can be loaded to
 [datatables.js](https://github.com/DataTables/DataTables).
+
+`get_gh_data.py`:
+  - creates `apigh/<YYYY-MM-DD>/` directory if does not exist;
+  - downloads (using system `wget`);
+    `https://api.github.com/repos/:user/:repo` and 
+    `https://api.github.com/repos/:user/:repo/commits/master` inside the
+    created dir;
+  - reads these files and updates `data.yaml` for the following:
+    - github stars,
+    - creation date,
+    - last commit date,
+    - license.
 
 # TODO
 
@@ -17,13 +28,13 @@ The data are stored in `data.yaml`. `yml2js.py` converts `YAML` to
   a recent (2018) [post](https://blog.backslasher.net/disqus.html) about
   switching from Juvia to Disqus!
 
-- Script to parse amount of github stars and write to `data.yaml`. See
-  [github-stars](https://github.com/stretchr/github-stars).
+- Simplify and improve the python code.
 
-- Simplify and improve python code.
+- Check grammar in this README.
 
 # Contribution
 
-Any contribution on adding commenting system other information are welcome.
-Please fork the repository and push changes to the `data.yaml` file. Want
-another column? Let me know by submitting an issue.
+Contributions are welcome. Fork the repo and send PR. Want to add something
+but don't feel like sending PR? Let me know by submitting an issue or leave a
+[comment](https://lisakov.com/projects/open-source-comments/#isso-thread)[^1] at
+the website. It currently uses [isso](https://github.com/posativ/isso).

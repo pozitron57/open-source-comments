@@ -1,13 +1,13 @@
 isso:
     stars: 3277
-    github: "https://github.com/posativ/isso"
+    github: "https://github.com/posativ/isso/"
     homepage: "https://posativ.org/isso/"
     name: "Isso"
-    demo:
-      - "https://posativ.org/isso/"
-      - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/"
-      - "https://pantarei.xyz/posts/isso-with-social-network-integration/"
-      - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog"
+    demo: 
+      - "https://posativ.org/isso/" 
+      - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/" 
+      - "https://pantarei.xyz/posts/isso-with-social-network-integration/" 
+      - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog" 
     js_kB: 68
     css_kB: 7
     language: "python"
@@ -25,8 +25,7 @@ isso:
     sort: "no, see [issue](https://github.com/posativ/isso/issues/440) for discussion"
     hide_long_threads: "yes"
     anonymous_comments: "yes"
-    social_network_login: "No, but see [fork](https://github.com/posativ/isso/issues/240)\
-        \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
+    social_network_login: "No, but see [fork](https://github.com/posativ/isso/issues/240) and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -34,19 +33,17 @@ isso:
     edit: "within configurable time"
     vote: "yes, once"
     preview: "yes"
-    updated: "2018&#8209;07&#8209;12"
-    created: "2012&#8209;10&#8209;17"
+    updated: "?"
+    created: "?"
     rss: "post?, see [PR](https://github.com/posativ/isso/pull/419)"
     static: "no"
     description: "Used on this page"
-    license: "MIT"
-    open_issues: 131
-    last_committed: 2018&#8209;07&#8209;03
 
 commento:
-    stars: 2695
+    stars: 2691
     name: "Commento"
-    demo: "https://demo.comment.io"
+    #demo: "https://demo.comment.io"
+    demo: "[commento](https://demo.comment.io)"
     github: "https://github.com/adtac/commento"
     js_kB: 16
     css_kB: ""
@@ -69,16 +66,13 @@ commento:
     import_from_disqus: "yes"
     english_documentation: "yes"
     edit: "no"
-    updated: 2018&#8209;07&#8209;13
-    created: '2017&#8209;04&#8209;24'
+    updated:
+    created:
     description: ""
     static: "no"
-    license: "MIT"
-    open_issues: 0
-    last_committed: 2018&#8209;07&#8209;04
 
 schnak:
-    stars: 1232
+    stars: 1233
     github: "https://github.com/schn4ck/schnack"
     homepage: "?"
     name: "Schnak"
@@ -104,7 +98,7 @@ schnak:
     sort: "?"
     hide_long_threads: "?"
     anonymous_comments: "?"
-    social_network_login:
+    social_network_login: 
       - "github"
       - "google"
       - "twitter"
@@ -115,20 +109,17 @@ schnak:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;13"
-    created: "2017&#8209;10&#8209;04"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license:
-    open_issues: 10
-    last_committed: 2018&#8209;06&#8209;07
 
 juvia:
-    stars: 1027
+    stars: "1027"
     name: "Juvia"
-    demo:
+    demo: 
       - "https://www.alfajango.com/blog/announcing-dynatable-js/"
       - "https://erik.doernenburg.com/2015/08/privacy-and-this-website/"
       #- "http://rahul.raut.me/2014/12/15/welcome-to-my-blog/"
@@ -142,11 +133,6 @@ juvia:
     description: ""
     js_kB: ""
     css_kB: ""
-    license: "AGPL-3.0"
-    updated: 2018&#8209;07&#8209;10
-    created: '2011&#8209;08&#8209;11'
-    open_issues: 27
-    last_committed: 2018&#8209;04&#8209;04
 
 site_point_nested_comments:
     stars: 14
@@ -158,17 +144,13 @@ site_point_nested_comments:
     description: ""
     js_kB: ""
     css_kB: ""
-    updated: 2017&#8209;06&#8209;19
-    created: '2014&#8209;04&#8209;08'
-    open_issues: 0
-    last_committed: 2016&#8209;11&#8209;29
 
 remark:
     stars: 576
     github: "https://github.com/umputun/remark"
     homepage: "https://remark42.com"
     name: "Remark"
-    demo: "https://remark42.com/demo/"
+    demo: "https://remark42.com/demo/" 
     docker: "yes"
     js_kB: ""
     css_kB: ""
@@ -187,7 +169,7 @@ remark:
     sort: "yes"
     hide_long_threads: "?"
     anonymous_comments: "?"
-    social_network_login:
+    social_network_login: 
       - "?"
     import_from_wordpress: "?"
     import_from_disqus: "yes"
@@ -195,21 +177,18 @@ remark:
     edit: "?"
     vote: "yes"
     preview: "?"
-    updated: "2018&#8209;07&#8209;13"
-    created: "2017&#8209;12&#8209;20"
+    updated: "?"
+    created: "?"
     rss: "all comments, post"
     static: "no"
     description: ""
-    license: "MIT"
-    open_issues: 36
-    last_committed: 2018&#8209;07&#8209;13
 
 valine:
     name: "Valine"
-    stars: 489
+    stars: 488
     github: "https://github.com/xCss/Valine"
     homepage: "https://valine.js.org/en/index.html"
-    demo: "https://valine.js.org/en/index.html"
+    demo: "https://valine.js.org/en/index.html" 
     docker: "?"
     js_kB: "68"
     css_kB: ""
@@ -236,27 +215,25 @@ valine:
     edit: "?"
     vote: "?"
     preview: "yes"
-    updated: "2018&#8209;07&#8209;13"
-    created: "2017&#8209;08&#8209;03"
+    updated: "?"
+    created: "?"
     static: "no"
     description: ""
-    license: "GPL-2.0"
-    open_issues: 4
-    last_committed: 2018&#8209;07&#8209;13
+
 
 mouthful:
     stars: 418
     github: "https://github.com/vkuznecovas/mouthful"
     homepage: "https://mouthful.dizzy.zone/"
     name: "Mouthful"
-    demo:
-      - "https://mouthful.dizzy.zone/"
-      - "https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/"
+    demo: 
+      - "https://mouthful.dizzy.zone/" 
+      - "https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/" 
     docker: "yes"
     js_kB: "44"
     css_kB: ""
     language: "Go"
-    db: "dynamodb / MySQL / PostgreSQL"
+    db: "dynamodb / MySQL / PostgreSQL" 
     moderation: "yes, admin panel"
     mail_notification: "[not yet](https://github.com/vkuznecovas/mouthful/issues/81)"
     rss: "?"
@@ -278,22 +255,20 @@ mouthful:
     edit: "no"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;12"
-    created: "2018&#8209;02&#8209;04"
+    updated: "?"
+    created: "?"
     rate_limit: "yes"
     paging: "yes"
     static: "no"
     description: ""
-    license: "MIT"
-    open_issues: 7
-    last_committed: 2018&#8209;06&#8209;12
+
 
 diskuto:
     stars: 21
     github: "https://github.com/rejectedsoftware/diskuto"
     homepage: "?"
     name: "Diskuto"
-    demo: "https://raw.githubusercontent.com/rejectedsoftware/diskuto/master/screenshot.png"
+    demo: "https://raw.githubusercontent.com/rejectedsoftware/diskuto/master/screenshot.png" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -320,22 +295,19 @@ diskuto:
     edit: "?"
     vote: "yes"
     preview: "?"
-    updated: "2018&#8209;05&#8209;10"
-    created: "2017&#8209;03&#8209;13"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license:
-    open_issues: 7
-    last_committed: 2018&#8209;05&#8209;10
 
 coralproject_talk:
     stars: 955
     github: "https://github.com/coralproject/talk"
     homepage: "https://coralproject.net/talk/"
     name: "coralproject_talk"
-    demo: "?"
+    demo: "?" 
     docker: "yes"
     js_kB: ""
     css_kB: ""
@@ -362,22 +334,19 @@ coralproject_talk:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;12"
-    created: "2016&#8209;10&#8209;31"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license:
-    open_issues: 32
-    last_committed: 2018&#8209;07&#8209;12
 
 hashover2:
     stars: 202
     github: "https://github.com/jacobwb/hashover-next"
     homepage: "?"
     name: "hashover-next"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -404,22 +373,19 @@ hashover2:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;07"
-    created: "2014&#8209;03&#8209;25"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Does it work?"
-    license: "AGPL-3.0"
-    open_issues: 59
-    last_committed: 2018&#8209;04&#8209;12
+    description: "Is it in working state?"
 
 hashover:
     stars: 160
     github: "https://github.com/jacobwb/hashover"
     homepage: "http://tildehash.com/?page=hashover"
     name: "hashover"
-    demo: "http://tildehash.com/comments.html"
+    demo: "http://tildehash.com/comments.html" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -446,22 +412,19 @@ hashover:
     edit: "yes"
     vote: "likes"
     preview: "?"
-    updated: "2018&#8209;07&#8209;07"
-    created: "2014&#8209;03&#8209;25"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     static: "no"
     paging: "?"
     description: ""
-    license: "AGPL-3.0"
-    open_issues: 7
-    last_committed: 2017&#8209;05&#8209;06
 
 talkatv:
     stars: 195
     github: "https://github.com/talkatv/talkatv"
     homepage: "?"
     name: "talkatv"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -488,28 +451,26 @@ talkatv:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;05&#8209;16"
-    created: "2012&#8209;08&#8209;15"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "AGPL-3.0"
-    open_issues: 26
-    last_committed: 2012&#8209;12&#8209;03
+
 
 wildfire:
     stars: 117
     github: "https://github.com/cheng-kang/wildfire"
     homepage: "https://wildfire.js.org/"
     name: "Wildfire"
-    demo: "https://wildfire.js.org/"
+    demo: "https://wildfire.js.org/" 
     docker: "?"
     js_kB: ""
     css_kB: ""
     language: "Vue?"
     db: "Firebase/Wilddog"
-    moderation:
+    moderation: 
       - "delete comment"
       - "ban"
     mail_notification: "?"
@@ -532,22 +493,19 @@ wildfire:
     edit: "?"
     vote: "Like (for authorized)"
     preview: "?"
-    updated: "2018&#8209;06&#8209;21"
-    created: "2017&#8209;09&#8209;02"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "GPL-3.0"
-    open_issues: 10
-    last_committed: 2018&#8209;03&#8209;14
 
 e_comments:
     stars: 85
     github: "https://github.com/skx/e-comments"
     homepage: "?"
     name: "External-comments"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -577,22 +535,19 @@ e_comments:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;03"
-    created: "2014&#8209;02&#8209;02"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "MIT"
-    open_issues: 1
-    last_committed: 2018&#8209;01&#8209;23
 
 realtime_commenting:
     stars: 53
     github: "https://github.com/pusher-community/realtime-commenting"
     homepage: "http://realtime-commenting.herokuapp.com/"
     name: "Realtime comments"
-    demo: "http://realtime-commenting.herokuapp.com/"
+    demo: "http://realtime-commenting.herokuapp.com/" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -620,21 +575,19 @@ realtime_commenting:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;12"
-    created: "2012&#8209;02&#8209;24"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    open_issues: 0
-    last_committed: 2016&#8209;04&#8209;22
 
 comments_app:
     stars: 41
     github: "https://github.com/dyu/comments"
     homepage: "https://dyu.github.io/comments/"
     name: "comments-app"
-    demo: "https://dyu.github.io/comments/"
+    demo: "https://dyu.github.io/comments/" 
     docker: "?"
     js_kB: "92"
     css_kB: ""
@@ -656,7 +609,7 @@ comments_app:
     sort: "?"
     hide_long_threads: "?"
     anonymous_comments: "?"
-    social_network_login:
+    social_network_login: 
       - "google"
       - "github"
       - "gitlab"
@@ -666,22 +619,19 @@ comments_app:
     edit: "?"
     vote: "?"
     preview: "yes"
-    updated: "2018&#8209;05&#8209;28"
-    created: "2017&#8209;05&#8209;05"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "Looks good!"
-    license: "Apache-2.0"
-    open_issues: 3
-    last_committed: 2017&#8209;09&#8209;02
 
 master:
     stars: 35
     github: "https://github.com/ionutvmi/master-comments-system"
     homepage: "?"
     name: "Master comments"
-    demo: "https://camo.githubusercontent.com/54fabf226fb3854c18382596ddf76315274020cb/687474703a2f2f7075752e73682f334f3639562e706e67"
+    demo: "https://camo.githubusercontent.com/54fabf226fb3854c18382596ddf76315274020cb/687474703a2f2f7075752e73682f334f3639562e706e67" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -710,21 +660,19 @@ master:
     edit: "yes"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;05"
-    created: "2013&#8209;07&#8209;22"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    open_issues: 5
-    last_committed: 2013&#8209;07&#8209;28
 
 jskomment:
     stars: 33
     github: "https://github.com/monperrus/jskomment"
     homepage: "?"
     name: "jskomment"
-    demo: "https://www.monperrus.net/martin/open+source+ajax+commenting+system"
+    demo: "https://www.monperrus.net/martin/open+source+ajax+commenting+system" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -734,7 +682,7 @@ jskomment:
     mail_notification: "yes?"
     dependency: "?"
     rss: "?"
-    antispam:
+    antispam: 
       - "captcha"
     bad_words_list: "?"
     use_cookies: "?"
@@ -754,21 +702,19 @@ jskomment:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;05"
-    created: "2013&#8209;12&#8209;08"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    open_issues: 1
-    last_committed: 2018&#8209;01&#8209;26
 
 squabble:
     stars: 24
     github: "https://github.com/savaslabs/squabble"
     homepage: "?"
     name: "Squabble"
-    demo: "https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html"
+    demo: "https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html" 
     docker: "yes"
     js_kB: ""
     css_kB: ""
@@ -797,21 +743,19 @@ squabble:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;30"
-    created: "2015&#8209;05&#8209;13"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     description: ""
     static: "no"
-    open_issues: 1
-    last_committed: 2018&#8209;02&#8209;02
 
 sidecar:
     stars: 9
     github: "https://github.com/phauer/comment-sidecar"
     homepage: "?"
     name: "comment-sidecar"
-    demo: "https://raw.githubusercontent.com/phauer/comment-sidecar/master/screenshot-frontend.png"
+    demo: "https://raw.githubusercontent.com/phauer/comment-sidecar/master/screenshot-frontend.png" 
     docker: "yes"
     js_kB: ""
     css_kB: ""
@@ -840,22 +784,19 @@ sidecar:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;26"
-    created: "2017&#8209;05&#8209;21"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "β"
-    license: "MIT"
-    open_issues: 0
-    last_committed: 2018&#8209;05&#8209;30
 
 jp_comment:
     stars: 0
     github: "https://github.com/dogloving/JP-Comment"
     homepage: "?"
     name: "JP_Comment"
-    demo: "https://raw.githubusercontent.com/dogloving/JP-Comment/master/assets/img/show.gif"
+    demo: "https://raw.githubusercontent.com/dogloving/JP-Comment/master/assets/img/show.gif" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -884,24 +825,21 @@ jp_comment:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;05&#8209;13"
-    created: "2017&#8209;10&#8209;01"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "MIT"
-    open_issues: 0
-    last_committed: 2018&#8209;05&#8209;13
 
 staticman:
     stars: 1051
     github: "https://github.com/eduardoboucas/staticman"
     homepage: "https://staticman.net/"
     name: "Staticman"
-    demo:
-      - "https://eduardoboucas.com/blog/2016/08/10/staticman.html"
-      - "https://hugo.staticman.net/post/my-entry/"
+    demo: 
+      - "https://eduardoboucas.com/blog/2016/08/10/staticman.html" 
+      - "https://hugo.staticman.net/post/my-entry/" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -930,22 +868,19 @@ staticman:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;11"
-    created: "2015&#8209;07&#8209;10"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "yes"
     description: "Comments are static in html"
-    license: "MIT"
-    open_issues: 51
-    last_committed: 2018&#8209;06&#8209;13
 
 comment_with_reply_view:
     stars: 127
     github: "https://github.com/Moosphan/CommentWithReplyView-master"
     homepage: "?"
     name: "CommentWithReplyView"
-    demo: "https://raw.githubusercontent.com/Moosphan/CommentWithReplyView-master/d8abe02ccb0ca42d40f330ab3f3c68cbad4af029/CommentWithReplyList/art/comment_sample.gif"
+    demo: "https://raw.githubusercontent.com/Moosphan/CommentWithReplyView-master/d8abe02ccb0ca42d40f330ab3f3c68cbad4af029/CommentWithReplyList/art/comment_sample.gif" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -974,22 +909,19 @@ comment_with_reply_view:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;10"
-    created: "2018&#8209;04&#8209;20"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "MIT"
-    open_issues: 0
-    last_committed: 2018&#8209;05&#8209;29
 
 talkyard:
     stars: 112
     github: "https://github.com/debiki/talkyard"
     homepage: "https://www.talkyard.io/blog-comments"
     name: "talkyard"
-    demo: "https://www.kajmagnus.blog/new-embedded-comments"
+    demo: "https://www.kajmagnus.blog/new-embedded-comments" 
     docker: "yes"
     js_kB: "150"
     css_kB: ""
@@ -1018,23 +950,19 @@ talkyard:
     edit: "yes"
     vote: "yes"
     preview: "yes"
-    updated: "2018&#8209;07&#8209;12"
-    created: "2013&#8209;06&#8209;08"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Previously named Debiki, then Effective discussions. Can be used\
-        \ as a forum"
-    license:
-    open_issues: 4
-    last_committed: 2018&#8209;07&#8209;12
+    description: "Previously named Debiki, then Effective discussions. Can be used as a forum"
 
 discourse:
     stars: 25500
     github: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
-    demo: "https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963"
+    demo: "https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1063,22 +991,19 @@ discourse:
     edit: "yes"
     vote: "yes"
     preview: "yes"
-    updated: "2018&#8209;07&#8209;13"
-    created: "2013&#8209;01&#8209;12"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "A platform for community discussion"
-    license:
-    open_issues: 10
-    last_committed: 2018&#8209;07&#8209;13
 
 webpage_webmentions:
     stars: 37
     github: "https://github.com/voxpelli/webpage-webmentions"
     homepage: "https://webmention.herokuapp.com/"
     name: "webpage-webmentions"
-    demo: "https://webmention.herokuapp.com/"
+    demo: "https://webmention.herokuapp.com/" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1107,22 +1032,19 @@ webpage_webmentions:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;02"
-    created: "2013&#8209;09&#8209;08"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "Uses [WebMentions](http://indiewebcamp.com/webmention)"
-    license: "MIT"
-    open_issues: 47
-    last_committed: 2018&#8209;07&#8209;02
 
 chatter:
     stars: 4
     github: "https://github.com/joealcorn/chatter"
     homepage: "https://joealcorn.github.io/chatter/"
     name: "chatter"
-    demo: "https://joealcorn.github.io/chatter/"
+    demo: "https://joealcorn.github.io/chatter/" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1151,22 +1073,19 @@ chatter:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;12"
-    created: "2018&#8209;01&#8209;29"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "Uses [Zappa](https://github.com/Miserlou/Zappa) and [AWS λ](https://aws.amazon.com/lambda/?nc1=h_ls)"
-    license: "MIT"
-    open_issues: 0
-    last_committed: 2018&#8209;05&#8209;09
 
 django_fluent_comments:
     stars: 150
     github: "https://github.com/django-fluent/django-fluent-comments"
     homepage: "?"
     name: "django-fluent-comments"
-    demo: ""
+    demo: "" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1195,22 +1114,19 @@ django_fluent_comments:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;07&#8209;08"
-    created: "2012&#8209;06&#8209;03"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "Apache-2.0"
-    open_issues: 16
-    last_committed: 2018&#8209;06&#8209;05
 
 platon:
     stars: 2
     github: "https://github.com/pvorb/platon"
     homepage: "?"
     name: "platon"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1239,22 +1155,19 @@ platon:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;26"
-    created: "2015&#8209;07&#8209;08"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    license: "Apache-2.0"
-    open_issues: 3
-    last_committed: 2016&#8209;02&#8209;16
 
 comments_by_moharram82:
     stars: 0
     github: "https://github.com/moharram82/comments"
     homepage: "?"
     name: "comments-moharram82"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1283,22 +1196,19 @@ comments_by_moharram82:
     edit: "?"
     vote: "like"
     preview: "?"
-    updated: "2018&#8209;06&#8209;01"
-    created: "2017&#8209;09&#8209;17"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Does it work?"
-    license: "GPL-3.0"
-    open_issues: 0
-    last_committed: 2018&#8209;06&#8209;01
+    description: "Is it in working state?"
 
 guestbook:
     stars: 0
     github: "https://github.com/proshareny/guestbook"
     homepage: "?"
     name: "guestbook"
-    demo: "https://raw.githubusercontent.com/proshareny/guestbook/master/screenshot.JPG"
+    demo: "https://raw.githubusercontent.com/proshareny/guestbook/master/screenshot.JPG" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1327,21 +1237,19 @@ guestbook:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2016&#8209;11&#8209;29"
-    created: "2016&#8209;11&#8209;28"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    open_issues: 0
-    last_committed: 2016&#8209;12&#8209;03
 
 ajax_comments:
     stars: 0
     github: "https://github.com/MaksimSergeev/AJAX-Comments-System"
     homepage: "?"
     name: "AJAX Comment System"
-    demo: "https://raw.githubusercontent.com/MaksimSergeev/AJAX-Comments-System/master/Ajax%20comments.JPG"
+    demo: "https://raw.githubusercontent.com/MaksimSergeev/AJAX-Comments-System/master/Ajax%20comments.JPG" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1370,21 +1278,19 @@ ajax_comments:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2017&#8209;09&#8209;02"
-    created: "2017&#8209;09&#8209;02"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    open_issues: 0
-    last_committed: 2017&#8209;09&#8209;10
 
 jekyll_static_comments:
     stars: 173
     github: "https://github.com/mpalmer/jekyll-static-comments"
     homepage: "http://theshed.hezmatt.org/jekyll-static-comments/"
     name: "Jekyll::StaticComments"
-    demo: "http://theshed.hezmatt.org/jekyll-static-comments/"
+    demo: "http://theshed.hezmatt.org/jekyll-static-comments/" 
     docker: ""
     js_kB: "0"
     css_kB: ""
@@ -1413,22 +1319,19 @@ jekyll_static_comments:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;05"
-    created: "2011&#8209;07&#8209;19"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "yes"
     description: "For Jekyll"
-    license: "GPL-3.0"
-    open_issues: 8
-    last_committed: 2014&#8209;02&#8209;11
 
 rocket_firm:
-    stars: 1
+    stars: 0
     github: "https://github.com/naffiq/yii2-rocket-comments"
     homepage: "?"
     name: "RocketFirm Comments"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1457,22 +1360,19 @@ rocket_firm:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2016&#8209;11&#8209;28"
-    created: "2016&#8209;03&#8209;03"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "Does it work?"
-    license: "MIT"
-    open_issues: 0
-    last_committed: 2017&#8209;03&#8209;03
 
 react_comment_system:
     stars: 0
     github: "https://github.com/Bitveen/react-comment-system"
     homepage: "?"
     name: "react-comment-system"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1501,21 +1401,19 @@ react_comment_system:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2016&#8209;12&#8209;25"
-    created: "2016&#8209;12&#8209;23"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "Does it work?"
-    open_issues: 0
-    last_committed: 2016&#8209;12&#8209;23
 
 comments_vivalaakam:
     stars: 0
     github: "https://github.com/vivalaakam/comments"
     homepage: "?"
     name: "comments-vivalaakam"
-    demo: "?"
+    demo: "?" 
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1544,21 +1442,20 @@ comments_vivalaakam:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2015&#8209;05&#8209;24"
-    created: "2014&#8209;07&#8209;20"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: "Does it work?"
-    open_issues: 0
-    last_committed: 2015&#8209;05&#8209;24
+
 
 easy_page_comments:
     stars: 15
     github: "https://github.com/Pomax/EasyPageComments"
     homepage: "http://pomax.nihongoresources.com/pages/EasyPageComments/"
     name: "EasyPageComments"
-    demo: "http://pomax.nihongoresources.com/pages/EasyPageComments/"
+    demo: "http://pomax.nihongoresources.com/pages/EasyPageComments/" 
     docker: "?"
     js_kB: "8"
     css_kB: "3"
@@ -1587,14 +1484,13 @@ easy_page_comments:
     edit: "?"
     vote: "?"
     preview: "?"
-    updated: "2018&#8209;06&#8209;28"
-    created: "2011&#8209;10&#8209;29"
+    updated: "?"
+    created: "?"
     rate_limit: "?"
     paging: "?"
     static: "no"
     description: ""
-    open_issues: 4
-    last_committed: 2018&#8209;06&#8209;05
+
 #comment_system:
     #stars: 0
     #github: "?"

@@ -1,0 +1,134 @@
+{
+  "sha": "a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YTE3MGMxMDdlMjg1NGU4NjI1Nzc0YmQwY2E3ZmM5MGY4ZGYzM2RjZg==",
+  "commit": {
+    "author": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2018-07-12T19:05:08Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-07-12T19:05:08Z"
+    },
+    "message": "Add FAQ and Troubleshooting docs (#1742)\n\n* Add FAQ and Troubleshooting docs\r\n\r\n* Add to nav\r\n\r\n* Fix links\r\n\r\n* Fix css formatting and fix rel links",
+    "tree": {
+      "sha": "5ca26bf6ec194dc5976c164b087cc05f638a3233",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/5ca26bf6ec194dc5976c164b087cc05f638a3233"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+  "html_url": "https://github.com/coralproject/talk/commit/a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/a170c107e2854e8625774bd0ca7fc90f8df33dcf/comments",
+  "author": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "104617d64405c53ad704e3945a578ee39f854d82",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/104617d64405c53ad704e3945a578ee39f854d82",
+      "html_url": "https://github.com/coralproject/talk/commit/104617d64405c53ad704e3945a578ee39f854d82"
+    }
+  ],
+  "stats": {
+    "total": 403,
+    "additions": 397,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "db86b440266d38aa169721b6a525da445abe9646",
+      "filename": "docs/_config.yml",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/_config.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/_config.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/_config.yml?ref=a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+      "patch": "@@ -170,6 +170,12 @@ sidebar:\n           url: /migration/4/\n         - title: Migrating to v4.1.0\n           url: /migration/4.1/\n+    - title: FAQ & Troubleshooting\n+      children:\n+        - title: FAQ\n+          url: /faq/\n+        - title: Troubleshooting Tips\n+          url: /troubleshooting-tips/\n     - title: Contact\n       url: /contact/\n "
+    },
+    {
+      "sha": "8f34adbf1cbac415664d40cf78c65ac154e8836b",
+      "filename": "docs/source/07-01-faq.md",
+      "status": "modified",
+      "additions": 58,
+      "deletions": 6,
+      "changes": 64,
+      "blob_url": "https://github.com/coralproject/talk/blob/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/source/07-01-faq.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/source/07-01-faq.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/source/07-01-faq.md?ref=a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+      "patch": "@@ -3,15 +3,67 @@ title: FAQ\n permalink: /faq/\n ---\n \n-## How can I get help integrating Talk into my newsroom?\n+## How can I get help, submit a bug, or suggest a feature?\n \n-We're here to help with newsrooms of all sizes. Email our Integration Engineer\n-([jeff@mozillafoundation.org](mailto:jeff@mozillafoundation.org)) to set up a meeting.\n+There are a few avenues to get in touch with us and others in the community for help.\n \n-## How do I request a feature or submit a bug?\n+To log a bug or request a feature, submit a Support ticket ([support@coralproject.net](mailto:support@coralproject.net)) and someone from our team will get back to you.\n \n-The best way is to [submit a Github issue](https://github.com/coralproject/talk/issues). Make sure you give plenty of details, our Core Team can usually respond within a few hours on weekdays.\n+You can also request help on Github by [submitting an issue](https://github.com/coralproject/talk/issues). This also increases your chances of having someone from the community respond to help.\n+\n+And you can also search our [Coral Community](https://community.coralproject.net) to see if your issue has been solved, or to get tips from the community. \n \n ## How can our dev team contribute to Talk?\n \n-We are lucky to work with newsroom dev teams and individual contributors who span the world, and come from newsrooms of all sizes. You can read our [Contribution Guide](https://github.com/coralproject/talk/blob/master/CONTRIBUTING.md) to get started, but feel free to reach out to us via Github, or get in touch directly with Jeff via jeff@mozillafoundation.org.\n+We are lucky to work with newsroom dev teams and individual contributors who span the world, and come from newsrooms of all sizes. You can read our [Contribution Guide](https://github.com/coralproject/talk/blob/master/CONTRIBUTING.md) to get started, but feel free to reach out to us via Github too.\n+\n+## What if we want to add a feature you don't have?\n+\n+Talk is open source, so you're free to develop additional functionality and [submit a pull request](https://github.com/coralproject.net/talk).\n+\n+## Do you have GDPR features?\n+\n+Yes! Please read our [GDPR documentation](/talk/integrating/gdpr/) for more information and instructions to get started.\n+\n+## Can I import my existing comments?\n+\n+Yes! We have a community-supported [import framework](https://github.com/coralproject/talk-importer) that you can use to migrate your existing comments.\n+\n+## What support is available?\n+\n+Our team is small, so it's difficult for us to provide support packages. However, you can always email us at [support@coralproject.net](mailto:support@coralproject.net), and we can help answer your questions. In some cases, we can provide premium support packages either with our team, or through partners. You can inquire about this via the support email address above.\n+\n+## Is there a hosted version I can purchase by monthly subscription?\n+\n+Yes! We are happy to announce that as of July 2018, we provide a SaaS version of Talk, called the Coral Cloud. For a monthly subscription, you get your own hosted Talk instance to embed on your news and blog articles. [Reach out to us](mailto:support@coralproject.net) if you're interested in this option.\n+\n+## Where is our data when we use Talk?\n+\n+If you are hosting Talk on your own:\n+\n+* Your data is stored in a MongoDB database that you provide\n+* The Coral Team doesn’t have any access to your data\n+\n+If you are using Coral Cloud Hosting for Talk:\n+\n+* Your data is stored in a dedicated MongDB database that is provisioned for your in the Cloud\n+* Your data is completely isolated from other customer’s data\n+* The Coral Team and its third party database hosting providers use strict access controls and auditing to protected your data from unauthorized access by team members\n+\n+## Does Talk have any automated moderation features to protect against spam and trolling?\n+\n+Talk features a couple of plugins that provide advanced moderation:\n+\n+* The [Toxic Comments plugin](/talk/plugin/talk-plugin-toxic-comments) integrates with the [Perspective API from Google](https://www.perspectiveapi.com/) to detect the likelihood of toxicity of comments in real-time\n+* The [Akismet plugin](/talk/plugin/talk-plugin-akismet) detects and blocks spam comments\n+\n+## How much can I customize Talk?\n+\n+* The CSS of the Talk comment stream can be customized by [adding your own CSS via an external stylesheet](/talk/integrating/styling-css/)\n+* The functionality of Talk can be [extended through the plugin framework](/talk/plugins/)\n+\n+## How much does Talk cost?\n+\n+* The Talk software is freely available under the Apache 2.0 open source license\n+* Associated costs are those for the infrastructure required to run Talk (i.e. cloud hosting fee or bare-metal server costs)\n+* The Coral Project offers a SaaS version of Talk. Please [get in touch with us](mailto:support@coralproject.net) to discuss pricing for your custom requirements."
+    },
+    {
+      "sha": "a63f2f13efd7b4d918bac96bb80d23d297970800",
+      "filename": "docs/source/07-02-troubleshooting-tips.md",
+      "status": "added",
+      "additions": 36,
+      "deletions": 0,
+      "changes": 36,
+      "blob_url": "https://github.com/coralproject/talk/blob/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/source/07-02-troubleshooting-tips.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/source/07-02-troubleshooting-tips.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/source/07-02-troubleshooting-tips.md?ref=a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+      "patch": "@@ -0,0 +1,36 @@\n+---\n+title: Troubleshooting Tips\n+permalink: /troubleshooting-tips/\n+---\n+\n+## I've installed Talk but I can't see the comment stream appear on my articles\n+\n+* Make sure you've adding the correct domains to your Permitted Domains in Configure > Tech Settings\n+* Make sure you've correctly added the embed via your CMS to your article pages\n+* Check the console for any errors and you can file a bug via [support](mailto:support@coralproject.net) if you can't resolve the issue \n+\n+## My commenters are reporting they can't see the comment stream, but I'm able to\n+\n+* If this seems to be isolated to one commenter, it could be related to 3rd party cookies \n+* Post 4.x Talk doesn't require 3rd party cookies to be enabled. Check the version of Talk you're using and you might consider upgrading. \n+* A quick fix in the meantime is to ask them to allow 3rd party cookies\n+* You could also try asking them to clear their browser cache\n+\n+\n+## My commenters are reporting that they cannot login to Talk\n+\n+If you're using your own custom auth plugin: \n+\n+* Review the code and your server logs to ensure your plugin is working correctly. Check [our auth docs](/talk/integrating/authentication/) for more tips.\n+* Ensure that your JWT token settings, especially expiry, is being set correctly. You can troubleshoot JWT related issues with the [JWT Debugger](https://jwt.io/).\n+* See if you can isolate if it's a particular group of users that are experiencing this issue, e.g. mods, admins, subscribers? Confirm they have the appropriate permissions to comment.\n+* Note if this is a new issue that happened after an upgrade - did you read the [migration docs](/talk/migration/3/) and the [release notes](https://github.com/coralproject/talk/releases)? This might help you resolve the issue\n+* Confirm that users who are affected have the correct `username.status`. If users have status `UNSET`, this is related to a bug with upgrading from 3.x to 4.x that has affected some organizations. Read more here about [upgrading from 3.x to 4.x](/talk/migration/3/).\n+* If you're still experiencing issues, log a [support ticket](mailto:support@coralproject.net) so we can help diagnose the issue\n+\n+\n+If you're using `talk-plugin-auth`:\n+\n+* See if you can isolate if it's a particular group of users that are experiencing this issue, e.g. mods, admins, subscribers? Confirm they have the appropriate permissions to comment.\n+* Note if this is a new issue that happened after an upgrade - did you read the [migration docs](/talk/migration/3/) and the [release notes](https://github.com/coralproject/talk/releases)? This might help you resolve the issue.\n+* If you're still experiencing issues, log a [support ticket](mailto:support@coralproject.net) so we can help diagnose the issue"
+    },
+    {
+      "sha": "08bbc08bd167ab557a53948b719030cf88c73186",
+      "filename": "docs/source/integrating/styling-css.md",
+      "status": "modified",
+      "additions": 297,
+      "deletions": 0,
+      "changes": 297,
+      "blob_url": "https://github.com/coralproject/talk/blob/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/source/integrating/styling-css.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/a170c107e2854e8625774bd0ca7fc90f8df33dcf/docs/source/integrating/styling-css.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/source/integrating/styling-css.md?ref=a170c107e2854e8625774bd0ca7fc90f8df33dcf",
+      "patch": "@@ -8,3 +8,300 @@ You can add your own stylesheet in Admin > Configure > Tech Settings.\n If you would like to change the styling of any elements in Talk, we provide global classnames with the prefix `talk-`. The easiest way to find the classname for the element you're looking for is to use the web inspector, and then update your stylesheet accordingly.\n \n Plugins also have their own stylesheets located in the client directory.\n+\n+\n+Here is an example stylesheet that we use on our [Coral Blog](https://coralproject.net/blog):\n+\n+```css\n+/*\n+ * You can use this stylesheet as a place to get started\n+ * for styling your own version of Talk!\n+ * Author: Sam Hankins, Coral Project, 2018\n+ * License: Apache 2.0 \n+ */\n+\n+* {\n+  /* font-family: inherit; */\n+}\n+\n+html, body {\n+  width:auto;\n+  height:auto;\n+}\n+\n+body {\n+  font-family: Helvetica, 'Helvetica Neue', Verdana, sans-serif;\n+  width: 100%;\n+  font-size: 14px;\n+  margin: 0px;\n+  padding: 0px 0px 100px 0px;\n+  height: auto !important;\n+}\n+\n+#talk-embed-stream-container {\n+  padding: 4px;\n+}\n+\n+.expandForSignin {\n+  min-height: 600px;\n+}\n+\n+.coralButton {\n+  margin: 5px 10px 5px 0px;\n+  background: none;\n+  padding: 0px;\n+  border: none;\n+  font-size: inherit;\n+}\n+\n+.coralButton:hover {\n+  border-radius: 2px;\n+  color: #767676;\n+}\n+\n+.coralButton i {\n+  margin-right: 3px;\n+}\n+\n+.coralHr {\n+  border: 0;\n+  height: 0;\n+  border-top: 1px solid rgba(0, 0, 0, 0.1);\n+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);\n+}\n+\n+.screen-reader-text {\n+   clip: rect(1px, 1px, 1px, 1px);\n+   height: 1px;\n+   width: 1px;\n+   overflow: hidden;\n+   position: absolute !important;\n+}\n+\n+/* Notification styles */\n+#coral-notif {\n+  position: fixed;\n+  border: 0;\n+  background: rgb(105,105,105);\n+  color: white;\n+  border-radius: 2px;\n+  font-weight: bold;\n+}\n+\n+/* Info Box Styles */\n+\n+\n+.talk-plugin-infobox-info {\n+  top: 0;\n+  border: 0;\n+  background: #DEEDFF;\n+  color: #2a2a2a;\n+  width: 100%;\n+  text-align: left;\n+  padding: 10px;\n+  margin-bottom: 10px;\n+  display: block;\n+  box-sizing: border-box;\n+  border-radius: 2px;\n+}\n+\n+.talk-plugin-infobox-info em{\n+  font-style: italic;\n+}\n+\n+.talk-plugin-infobox-info strong{\n+  font-weight: bold;\n+}\n+\n+.talk-plugin-infobox-info blockquote{\n+  border-left: solid 2px #2a2a2a;\n+  padding-left: 10px;\n+}\n+\n+\n+.talk-plugin-infobox-info a{\n+  color: #2a2a2a;\n+}\n+\n+/* Question Box Styles */\n+\n+.talk-stream-comments-container {\n+  position: relative;\n+}\n+\n+/* Comment styles */\n+.comment {\n+  margin-bottom: 10px;\n+  position: relative;\n+}\n+\n+.talk-plugin-commentcontent-text {\n+  margin-bottom: 7px;\n+  font-size: 16px;\n+  font-weight: 100;\n+  line-height: 1.3;\n+}\n+\n+/* Tag Labels */\n+\n+.talk-plugin-tag-label {\n+  background-color: #4C1066;\n+  color: white;\n+  display: inline-block;\n+  border-radius: 2px;\n+  font-size: 12px;\n+  padding: 5px 6px;\n+}\n+\n+/* Comment Action Styles */\n+\n+.commentActionsRight, .replyActionsRight {\n+  display: flex;\n+  justify-content: flex-end;\n+}\n+.commentActionsLeft, .replyActionsLeft {\n+  display: flex;\n+  justify-content: flex-start;\n+  float: left;\n+}\n+\n+button.comment__action-button,\n+.comment__action-button button {\n+  cursor: pointer;\n+}\n+\n+button.comment__action-button[disabled],\n+.comment__action-button[disabled] button {\n+  cursor: inherit;\n+}\n+\n+.comment__action-button--nowrap {\n+  white-space: nowrap;\n+}\n+\n+.likedButton {\n+  color: rgb(0,134,227);\n+}\n+\n+.flaggedIcon {\n+  color: #F00;\n+}\n+\n+/* Flag Styles */\n+\n+.talk-plugin-flags-popup-form {\n+  margin-bottom: 10px;\n+}\n+\n+.talk-plugin-flags-popup-header {\n+  font-weight: bold;\n+  font-size: 1rem;\n+  margin-bottom: 10px;\n+}\n+\n+.talk-plugin-flags-popup-radio {\n+  margin:5px;\n+}\n+\n+.talk-plugin-flags-popup-radio-label {\n+  margin:5px;\n+  font-weight: 400;\n+  font-size: .9rem;\n+}\n+\n+.talk-plugin-flags-popup-counter {\n+  float: left;\n+  margin-top: 21px;\n+  color: #999;\n+}\n+\n+.talk-plugin-flags-popup-button {\n+  float: right;\n+  margin-top: 10px;\n+}\n+\n+.talk-plugin-flags-reason-text {\n+  margin-left: 20px;\n+  margin-top: 5px;\n+  width: 75%;\n+  font-size: 16px;\n+  border: 1px solid #ccc;\n+  max-width: calc(100% - 40px);\n+}\n+\n+/* Close comments */\n+\n+.close-comments-message {\n+  box-sizing: border-box;\n+  width: 100%;\n+  height: 100px;\n+}\n+\n+.close-comments-confirm-wrapper {\n+  float: right;\n+}\n+\n+.close-comments-alert {\n+  background-color: #d65344;\n+  color: white;\n+  font-size: 1.33rem;\n+  padding: 5px;\n+}\n+\n+.close-comments-alert i.material-icons {\n+  font-size: 16px !important;\n+}\n+\n+/* Load More */\n+\n+.talk-load-more {\n+  text-align: center;\n+}\n+\n+.talk-load-more button {\n+  width: 100%;\n+  text-align: center;\n+  color: #FFF;\n+  background-color: #2376D8;\n+  border-radius: 2px;\n+  cursor: pointer;\n+  padding: 10px;\n+  border-radius: 2px;\n+  line-height: 1em;\n+  text-transform: capitalize;\n+  display: inline-block;\n+}\n+\n+.talk-load-more:hover button {\n+  background-color: #4399FF;\n+}\n+\n+.talk-new-comments {\n+  width: 100%;\n+  text-align: center;\n+  margin: 4px 0;\n+}\n+\n+.talk-load-more-replies {\n+  width: 100%;\n+  padding-left: 20px;\n+  box-sizing: border-box;\n+}\n+\n+.talk-load-more-replies .talk-load-more-button {\n+  background-color: transparent;\n+  color: #979797;\n+  border: #979797 solid 1px;\n+  border-radius: 2px;\n+}\n+\n+.talk-load-more-replies .talk-load-more:hover button {\n+  background-color: #979797;\n+  color: white;\n+}\n+\n+.hidden  {\n+  visibility: hidden;\n+  display: none;\n+}\n+```"
+    }
+  ]
+}

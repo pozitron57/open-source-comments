@@ -17,7 +17,7 @@ Contribute at [github](https://github.com/pozitron57/open-source-comments).
 Want different columns?
 [Propose](https://github.com/pozitron57/open-source-comments/issues/new).
 
-## What's wrong with Disqus etc.?
+## What is wrong with Disqus etc.?
 
 Disqus loads absurd amount of tracking services, which compromises
 your visitors personal data and significantly increases loading time.
@@ -73,7 +73,7 @@ $(document).ready(function() {
             className: 'dt-center'},
         { "visible": false,  
           "targets": [
-      10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]},
+      5,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]},
         ],
     //stateSave:true,
     searching:true,
