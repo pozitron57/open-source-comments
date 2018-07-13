@@ -9,6 +9,12 @@ requests and 5000 requests per hour for authenticated
 requests.
 
 Run of this file will make more than 60 requests.
+You will be prompted to type your github credentials.
+Use
+    curl -i https://api.github.com
+or
+    curl -i https://api.github.com -u username:password
+to check how many requests are left.
 '''
 
 import re
@@ -50,20 +56,24 @@ for i in data:
 # Define today's path
 p = 'apigh/'+str(date.today())+'/'
 
-# Write and wget files only if haven't done today
+# Write and download files only if haven't done today
 if not os.path.isdir(p):
     os.system('mkdir {}'.format(p) )
 
     # Save github repo info to apigh/YYYY-MM-DD/<comment_system>
     # Attention! There is a limit of requests per IP per hour
     # (created, license, open_issues)
-    for url, cs in zip(github_urls, comment_systems):
-        os.system('wget {} -O {}'.format(url,p+cs))
+    github_username = input('Type your github username: ')
+    github_password = input('Type your github password: ')
+    #for url, cs in zip(github_urls, comment_systems):
+        ##os.system('wget {} -O {}'.format(url,p+cs))
+        #os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs))
 
     # Save info on the last commit to apigh/YYYY-MM-DD/<comment_system.commit>
     # (created, license, open_issues)
     for url, cs in zip(github_commit_urls, comment_systems):
-        os.system('wget {} -O {}'.format(url,p+cs+'.commit'))
+        #os.system('wget {} -O {}'.format(url,p+cs+'.commit'))
+        os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs+'.commit'))
 
 # Read info from ./apigh/YYYY-MM-DD/<comment_system>
 # and ./apigh/YYYY-MM-DD/<comment_system.commit>
