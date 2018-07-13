@@ -10,11 +10,11 @@ The data are stored in `data.yaml`. `yml2js.py` converts `YAML` to
 
 # TODO
 
-- Foremost: check/add the information to make the table useful. Especially
-  add a demo when missing. For example,
-  [Juvia](https://github.com/phusion/juvia) is rated over 1000 stars on
-  github, but I couldn't find a working demo. I even found a recent (2018)
-  [post](https://blog.backslasher.net/disqus.html) about
+- Foremost: check/add the information to make the table useful. I'd appreciate
+  adding a missing demo. Sometimes it's not easy to find. For example,
+  [Juvia](https://github.com/phusion/juvia) is rated over 1000 stars on github,
+  but I spent an hour to find couple currently working instances. I even found
+  a recent (2018) [post](https://blog.backslasher.net/disqus.html) about
   switching from Juvia to Disqus!
 
 - Script to parse amount of github stars and write to `data.yaml`. See
