@@ -1,7 +1,8 @@
 # Open-source self-hosted comments
 
 A [table](https://lisakov.com/projects/open-source-comments/) of open-source
-self-hosted *(mostly)* commenting servers.
+self-hosted commenting servers. Inspired by
+[staticsitegenerators.net](http://staticsitegenerators.net). 
 
 The data are stored in `data.yaml`. `yaml_2_js.py` converts `YAML` to
 `js`-arrays in `data.js` so it can be loaded to
