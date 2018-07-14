@@ -19,7 +19,6 @@ to check how many requests are left.
 
 import re
 import os
-import yaml as ya
 import ruamel.yaml
 
 from datetime import datetime, date
@@ -64,19 +63,18 @@ if not os.path.isdir(p):
     # Attention! There is a limit of requests per IP per hour
     # (created, license, open_issues)
     github_username = input('Type your github username: ')
-    github_password = input('Type your github password: ')
-    #for url, cs in zip(github_urls, comment_systems):
-        ##os.system('wget {} -O {}'.format(url,p+cs))
-        #os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs))
+    github_password = input('Type your github password: (will be visible!) ')
+    for url, cs in zip(github_urls, comment_systems):
+        os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs))
 
     # Save info on the last commit to apigh/YYYY-MM-DD/<comment_system.commit>
     # (created, license, open_issues)
     for url, cs in zip(github_commit_urls, comment_systems):
-        #os.system('wget {} -O {}'.format(url,p+cs+'.commit'))
         os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs+'.commit'))
 
 # Read info from ./apigh/YYYY-MM-DD/<comment_system>
 # and ./apigh/YYYY-MM-DD/<comment_system.commit>
+#print ( '{:<27}{:<6}{:<5}{}'.format('Name', '★', 'I+PR', 'Created')    )
 for cs in os.listdir(p):
     if not '.swp' in cs: # if opened in vim
         if not '.commit' in cs:
@@ -84,32 +82,52 @@ for cs in os.listdir(p):
                 api_data = yaml.load(f)
                 stars       = api_data["stargazers_count"]
                 created     = dateutil.parser.parse(api_data["created_at"])
-                open_issues = api_data["open_issues"] # what is it? With all forks?
+                open_issues = api_data["open_issues"]
 
                 if api_data["license"]:
                     if "spdx_id" in api_data["license"]:
                         license = api_data["license"]["spdx_id"] # "MIT"
                         data[cs]["license"] = license
                     elif "name" in api_data["license"]:
-                        license = api_data["license"]["name"]   # "MIT License"
+                        license = api_data["license"]["name"]    # "MIT License"
                         data[cs]["license"] = license
 
-                # Change values with fresh ones
+                # Update the values
                 data[cs]["stars"]       = stars
                 data[cs]["open_issues"] = open_issues
                 data[cs]["created"]     = created.strftime('%Y&#8209;%m&#8209;%d')
-                print(cs, created)
+                print ( '{:<27}{:<6}{:<5}{}'.format(cs, stars, open_issues, created.strftime('%Y-%m-%d'))    )
 
         else:
-            print()
             with open(p+cs, 'r') as f:
                 api_commit_data = yaml.load(f)
                 last_committed = dateutil.parser.parse(api_commit_data["commit"]["committer"]["date"])
+                # Update the value
                 data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y&#8209;%m&#8209;%d')
-                print(cs, last_committed)
-            
 
-# Not safe! data.yaml is re-written. No backup
-#Update data.yaml file with fresh values
+
+### Calc ★ change in the last N days
+###          (draft)
+### Need to update 'stars_dif' in yaml_2_js.py, e.g.
+### 'stars_dif':'Stars change in the last N days', N depending on what is available
+
+#for date in os.listdir('apigh'):
+    #p = 'apigh/'+date+'/'
+    #print(p)
+    #for cs in data:
+        #new_stars = data[cs]["stars"]
+#
+        #with open(p+cs, 'r') as f:
+            #old_data  = yaml.load(f)
+            #old_stars = old_data["stargazers_count"]
+#
+        #dif = new_stars - old_stars
+        #if dif!=0:
+            #data[cs]["stars_dif"] = dif
+            #print( cs, 'stars change =', dif )
+
+
+# Not safe! data.yaml is re-written. No backup.
+# Update data.yaml file with fresh values
 with open('data.yaml', 'w') as f:
     yaml.dump(data, stream=f)
