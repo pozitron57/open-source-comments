@@ -1,0 +1,110 @@
+{
+  "sha": "e6d4a09b559d0846dc974a528241a2c1f687421e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplNmQ0YTA5YjU1OWQwODQ2ZGM5NzRhNTI4MjQxYTJjMWY2ODc0MjFl",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-07-13T20:10:29Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-07-13T20:13:13Z"
+    },
+    "message": "Image was too wide on invite acceptance form",
+    "tree": {
+      "sha": "98675d332ebabf62d1797b8b2a2f4854848e1cd4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/98675d332ebabf62d1797b8b2a2f4854848e1cd4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e6d4a09b559d0846dc974a528241a2c1f687421e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e6d4a09b559d0846dc974a528241a2c1f687421e",
+  "html_url": "https://github.com/discourse/discourse/commit/e6d4a09b559d0846dc974a528241a2c1f687421e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e6d4a09b559d0846dc974a528241a2c1f687421e/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8d11df697138e29928b56cadb6c6bc6267947f1c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/8d11df697138e29928b56cadb6c6bc6267947f1c",
+      "html_url": "https://github.com/discourse/discourse/commit/8d11df697138e29928b56cadb6c6bc6267947f1c"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 6,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "c7d03f73838ae829e82c2688ecfc966b4b024d08",
+      "filename": "app/assets/stylesheets/common/base/login.scss",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6d4a09b559d0846dc974a528241a2c1f687421e/app/assets/stylesheets/common/base/login.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6d4a09b559d0846dc974a528241a2c1f687421e/app/assets/stylesheets/common/base/login.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/login.scss?ref=e6d4a09b559d0846dc974a528241a2c1f687421e",
+      "patch": "@@ -121,7 +121,6 @@ $input-width: 220px;\n \n   .col-image {\n     position: relative;\n-    width: 150px;\n     margin-right: 20px;\n     @media screen and (max-width: 600px) {\n       display: none;"
+    },
+    {
+      "sha": "a2cd25279cac8e8bb091ae29a042875d22dbc550",
+      "filename": "app/assets/stylesheets/desktop/login.scss",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 10,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6d4a09b559d0846dc974a528241a2c1f687421e/app/assets/stylesheets/desktop/login.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6d4a09b559d0846dc974a528241a2c1f687421e/app/assets/stylesheets/desktop/login.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/desktop/login.scss?ref=e6d4a09b559d0846dc974a528241a2c1f687421e",
+      "patch": "@@ -136,12 +136,6 @@\n     .two-col {\n       margin-top: 30px;\n     }\n-    .col-image {\n-      width: 200px;\n-      img {\n-        width: 200px;\n-      }\n-    }\n     .col-form {\n       margin-left: 200px;\n       .inline-invite-img {\n@@ -191,13 +185,15 @@\n   .col-form {\n     padding-left: 20px;\n   }\n+  .col-image {\n+    width: 175px;\n+    img {\n+      width: 100%;\n+    }\n+  }\n   h2 {\n     margin-bottom: 12px;\n   }\n-  .col-image img {\n-    width: 200px;\n-    height: 200px;\n-  }\n }\n \n .password-reset {"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "sha": "a22521ab92869a51df656189fd418b3978287081",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmEyMjUyMWFiOTI4NjlhNTFkZjY1NjE4OWZkNDE4YjM5NzgyODcwODE=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-07-13T19:16:03Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-07-13T19:16:03Z"
+    },
+    "message": "allow mongo with URL only, update readme for different stores",
+    "tree": {
+      "sha": "403ebb80f2a62a7992da8e11543a7eab51ca4b80",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/403ebb80f2a62a7992da8e11543a7eab51ca4b80"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/a22521ab92869a51df656189fd418b3978287081",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/a22521ab92869a51df656189fd418b3978287081",
+  "html_url": "https://github.com/umputun/remark/commit/a22521ab92869a51df656189fd418b3978287081",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/a22521ab92869a51df656189fd418b3978287081/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "de013c7d5ae4296900888816dcea7d85a67a03b1",
+      "url": "https://api.github.com/repos/umputun/remark/commits/de013c7d5ae4296900888816dcea7d85a67a03b1",
+      "html_url": "https://github.com/umputun/remark/commit/de013c7d5ae4296900888816dcea7d85a67a03b1"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 15,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "d49d70538f28fb6c2d6b1dfb45616a219c5fbc4d",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 4,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark/blob/a22521ab92869a51df656189fd418b3978287081/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/a22521ab92869a51df656189fd418b3978287081/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=a22521ab92869a51df656189fd418b3978287081",
+      "patch": "@@ -35,17 +35,23 @@ Remark42 is a self-hosted, lightweight, and simple (yet functional) comment engi\n | ------------------ | ------------------ | --------------------- | ---------------------------------------------- |\n | url                | REMARK_URL         |                       | url to remark42 server, _required_             |\n | secret             | SECRET             |                       | secret key, _required_                         |\n+| site               | SITE               | `remark`              | site name(s), _multi_                          |\n+| store.type         | STORE_TYPE         | `bolt`                | type of storage, `bolt` or `mongo`             |\n | store.bolt.path    | STORE_BOLT_PATH    | `./var`               | path to data directory                         |\n | store.bolt.timeout | STORE_BOLT_TIMEOUT | `30s`                 | boltdb access timeout                          |\n-| site               | SITE               | `remark`              | site name(s), _multi_                          |\n+| store.mongo.url    | STORE_MONGO_URL    |                       | mongo url for data store                       |\n+| store.mongo.db     | STORE_MONGO_DB     |                       | mongo db for data store                        |\n | admin              | ADMIN              |                       | admin names (list of user ids), _multi_        |\n | admin-email        | ADMIN_EMAIL        | `admin@${REMARK_URL}` | admin email                                    |\n | backup             | BACKUP_PATH        | `./var/backup`        | backups location                               |\n | max-back           | MAX_BACKUP_FILES   | `10`                  | max backup files to keep                       |\n | cache.max.items    | CACHE_MAX_ITEMS    | `1000`                | max number of cached items, `0` - unlimited    |\n | cache.max.value    | CACHE_MAX_VALUE    | `65536`               | max size of cached value, `0` - unlimited      |\n | cache.max.size     | CACHE_MAX_SIZE     | `50000000`            | max size of all cached values, `0` - unlimited |\n-| avatar.path        | AVATAR_FS_PATH     | `./var/avatars`       | avatars location                               |\n+| avatar.type        | AVATAR_TYPE        | `fs`                  | type of avatar storage, `fs` or `mongo`        |\n+| avatar.fs.path     | AVATAR_FS_PATH     | `./var/avatars`       | avatars location for `fs` store                |\n+| avatar.mongo.url   | AVATAR_MONGO_URL   |                       | mongo url for avatar store                     |\n+| avatar.mongo.db    | AVATAR_MONGO_DB    |                       | mongo db for avatar store                      |\n | avatar.rsz-lmt     | AVATAR_RSZ_LMT     | 0                     | max image size for resizing avatars on save    |\n | max-comment        | MAX_COMMENT_SIZE   | 2048                  | comment's size limit                           |\n | auth.ttl.jwt       | AUTH_TTL_JWT       | 5m                    | jwt TTL                                        |\n@@ -75,8 +81,8 @@ Remark42 is a self-hosted, lightweight, and simple (yet functional) comment engi\n Most of the parameters have sane defaults and don't require customization. There are only a few parameters user has to define:  \n \n 1. `SECRET` - secret key, can be any long and hard-to-guess string.\n-1. `REMARK_URL` - url pointing to your remark42 server, i.e. `https://demo.reamark42.com`\n-2. At least one pair of `AUTH_<PROVIDER>_CID` and `AUTH_<PROVIDER>_CSEC` defining oauth2 provider(s)\n+2. `REMARK_URL` - url pointing to your remark42 server, i.e. `https://demo.reamark42.com`\n+3. At least one pair of `AUTH_<PROVIDER>_CID` and `AUTH_<PROVIDER>_CSEC` defining oauth2 provider(s)\n \n The minimal `docker-compose.yml` has to include all required parameters:\n "
+    },
+    {
+      "sha": "d7e7bfc5cafd829fedabdedf5f5766abd48e1696",
+      "filename": "backend/app/main.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 24,
+      "changes": 29,
+      "blob_url": "https://github.com/umputun/remark/blob/a22521ab92869a51df656189fd418b3978287081/backend/app/main.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a22521ab92869a51df656189fd418b3978287081/backend/app/main.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/main.go?ref=a22521ab92869a51df656189fd418b3978287081",
+      "patch": "@@ -14,7 +14,6 @@ import (\n \t\"github.com/umputun/remark/backend/app/store/avatar\"\n \n \t\"github.com/coreos/bbolt\"\n-\t\"github.com/globalsign/mgo\"\n \t\"github.com/hashicorp/logutils\"\n \t\"github.com/jessevdk/go-flags\"\n \t\"github.com/pkg/errors\"\n@@ -106,13 +105,8 @@ type CacheGroup struct {\n \n // MongoOpts holds all mongo params\n type MongoOpts struct {\n-\tURL    string   `long:\"url\" env:\"URL\" description:\"mongo url\"`\n-\tServer []string `long:\"server\" env:\"SERVER\" description:\"mongo host:port\" env-delim:\",\"`\n-\tDB     string   `long:\"db\" env:\"DB\" default:\"remark42\" description:\"mongo database\"`\n-\tUser   string   `long:\"user\" env:\"USER\" default:\"\" description:\"mongo user\"`\n-\tPasswd string   `long:\"password\" env:\"PASSWD\" default:\"\" description:\"mongo pssword\"`\n-\tSSL    bool     `long:\"ssl\" env:\"SSL\" description:\"connect to mongo with ssl\"`\n-\tDbg    bool     `long:\"dbg\" env:\"DEBUG\" description:\"enable mongo debug\"`\n+\tURL string `long:\"url\" env:\"URL\" description:\"mongo url\"`\n+\tDB  string `long:\"db\" env:\"DB\" default:\"remark42\" description:\"mongo database\"`\n }\n \n var revision = \"unknown\"\n@@ -375,23 +369,10 @@ func makeDirs(dirs ...string) error {\n }\n \n func makeMongo(mopts MongoOpts) (result *mongo.Server, err error) {\n-\tif mopts.URL != \"\" {\n-\t\tlog.Print(\"[DEBUG] mongo url provided\")\n-\t\treturn mongo.NewServerWithURL(mopts.URL, 10*time.Second)\n+\tif mopts.URL == \"\" {\n+\t\treturn nil, errors.New(\"no mongo URL provided\")\n \t}\n-\tdial := mgo.DialInfo{\n-\t\tAddrs:    mopts.Server,\n-\t\tDatabase: mopts.DB,\n-\t\tTimeout:  10 * time.Second,\n-\t\tUsername: mopts.User,\n-\t\tPassword: mopts.Passwd,\n-\t\tSource:   \"admin\",\n-\t}\n-\n-\treturn mongo.NewServer(dial, mongo.ServerParams{\n-\t\tDebug: mopts.Dbg,\n-\t\tSSL:   mopts.SSL,\n-\t})\n+\treturn mongo.NewServerWithURL(mopts.URL, 10*time.Second)\n }\n \n func makeAuthProviders(jwtService *auth.JWT, avatarProxy *proxy.Avatar, ds *service.DataStore, opts Opts) []auth.Provider {"
+    }
+  ]
+}
