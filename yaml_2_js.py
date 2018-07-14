@@ -10,8 +10,10 @@ from markdown import markdown
 
 fields = [
     'stars',
+    #'stars_dif',
     'name',
     'github',
+    'open_issues',
     'demo',
     'js_kB',
     'css_kB',
@@ -45,16 +47,17 @@ fields = [
     'rss',
     'static',
     'created',
-   #'updated', # don't know what the date is, probably for all forks?
+   #'updated', # What's this date? For all forks?
     'last_committed',
-   #'unmaintained',
+   #'unmaintained', #or probably Maintaned? Or Abandoned? don't like double negative
     'description',
 ]
-d={
+
+fields_dic={
     'stars':                 'Github ★',
     'name':                  'Name',
     'github':                'Github',
-    'demo':                  'Demo',
+    'demo':                  'Demo & examples',
     'js_kB':                 'js, kB',
     'css_kB':                'css, kB',
     'language':              'Language',
@@ -70,10 +73,10 @@ d={
     'moderation':            'Moderation',
     'dependency':            'Dependencies',
     'nested_comments':       'Nested comments',
-    'provided_hosting':      'Provided hosting',
+    'provided_hosting':      'Can host for you',
     'collapse_comments':     'Collapse comments',
     'sort':                  'Configurable order',
-    'rate_limit':            'Limit amount of comments per time',
+    'rate_limit':            'Comment rate limit',
     'docker':                'Docker container',
     'paging':                'Paging',
     'hide_long_threads':     'Hide long threads',
@@ -90,6 +93,8 @@ d={
     'last_committed':        'Updated (y&#8209;m&#8209;d)',
     'created':               'Created (y&#8209;m&#8209;d)',
     'license':               'License',
+    'open_issues':           'Open issues + PR',
+    'stars_dif':             'Stars change',
     'unmaintained':          'Unmaintained',
 }
 
@@ -139,5 +144,5 @@ with open("data.js", 'w') as out:
     # It contains all column names
     print('var cols=[', file=out)
     for fi in fields:
-        print ('{title: "' + d[fi] + '"}, ', file=out)
+        print ('{title: "' + fields_dic[fi] + '"}, ', file=out)
     print(']', file=out)
