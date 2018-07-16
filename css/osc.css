@@ -1,0 +1,78 @@
+body {
+  font-family: Arial,sans-serif;
+  font-size: 0.9em;
+  color: #424242;
+  background: #fcfcfc;
+}
+
+a { text-decoration:none; color:#0066ff }
+a:hover { color:#36b5ff; }
+
+h1,h2,h3,h4 { font-weight:400; font-family: 'Tahoma', sans-serif;
+line-height:1.1em; }
+h1 { font-size:2.5em; }
+h2 { font-size:2em; }
+h3 { font-size:1.7em; }
+
+table { color:#2a2b2c; }
+
+div.dataTables_scroll { 
+  max-width:1500px; 
+}
+
+div.dataTables_wrapper { 
+  margin:50px; 
+}
+@media screen and (max-width:640px){
+  div.dataTables_wrapper { margin:0; }
+}
+
+
+table th { border-top: 1px solid; }
+.dataTables_filter { margin-bottom:7px; }
+
+input {
+  padding:8px 3px;
+  border-radius:2px;
+}
+
+div.dt-buttons .buttons-colvisRestore,
+div.dt-buttons .buttons-colvisGroup {
+  font-weight:bold;
+  color:steelblue;
+}
+
+div.commentario {
+  max-width:757px; 
+  margin:72px auto 0;
+}
+#isso-thread .textarea,
+div.preview {
+  min-height:100px!important;
+}
+
+div.dt-buttons, div.preamble {
+  max-width:800px; 
+  margin:0 auto;
+  line-height:1.5em;
+}
+
+footer {
+  padding:20px;
+  margin:50px auto;
+  text-align:center;
+  border-radius:5px;
+  color:#ababab;
+  text-shadow:1px 0 #ffffff;
+}
+
+
+span.highlight {
+	background:#ffdb6f;
+	z-index:-999;
+	color:#2a4c1d;
+	padding:4px 3px;
+	border-radius:3px;
+	border:none;
+	font-size:100%;
+}
