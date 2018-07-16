@@ -16,11 +16,10 @@ h3 { font-size:1.7em; }
 
 table { color:#2a2b2c; }
 
-div.dataTables_scroll { max-width:1500px; }
 
-div.dataTables_wrapper { margin:50px; }
-@media screen and (max-width:640px){
-  div.dataTables_wrapper { margin:0; }
+div.dataTables_wrapper { margin:40px; }
+@media screen and (max-width:880px){
+  div.dataTables_wrapper { margin:0!important; }
 }
 
 
