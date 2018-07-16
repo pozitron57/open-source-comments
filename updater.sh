@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /home/slisakov/open-source-comments
+git pull
 
 # Update the data on gh stars, last commit etc
 python3 get_gh_data.py
@@ -14,7 +15,6 @@ rsync -auvx --delete --numeric-ids css/ /var/www/lisakov.com/projects/open-sourc
 rsync -auvx --delete --numeric-ids js/ /var/www/lisakov.com/projects/open-source-comments/js/
 
 # update github repo  https://github.com/pozitron57/open-source-comments
-git pull
 git add *
 git commit -m 'automatic update'
 git push origin master
