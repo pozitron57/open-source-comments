@@ -26,8 +26,8 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   [datatables.js](https://github.com/DataTables/DataTables).
 
 - The webpage is updated daily at 17:00 UTC using `cron`. `updater.sh`
-  collects the information via Github API, run `get_gh_data.py`, then
-  `yaml_2_js.py`, then deploys the updated files, then updates the repo.
+  runs `get_gh_data.py`, then `yaml_2_js.py`, then deploys the updated files,
+  then updates the repo.
 
 
 # TODO
