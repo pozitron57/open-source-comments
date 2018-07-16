@@ -1,0 +1,122 @@
+{
+  "sha": "c0c263405a722876785dab6600ec784ca8be7bc3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjMGMyNjM0MDVhNzIyODc2Nzg1ZGFiNjYwMGVjNzg0Y2E4YmU3YmMz",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "gxtan1990@gmail.com",
+      "date": "2018-07-16T12:05:54Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-07-16T12:05:54Z"
+    },
+    "message": "PERF: Store `EmailLog#bounce_key` as `uuid` data type. (#6093)\n\nPERF: Store `EmailLog#bounce_key` as `uuid` data type.",
+    "tree": {
+      "sha": "7e877ffbd527a0c7c2224249d23cee3c05af64fe",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7e877ffbd527a0c7c2224249d23cee3c05af64fe"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c0c263405a722876785dab6600ec784ca8be7bc3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbTIoiCRBK7hj4Ov3rIwAAdHIIAAUsYz39Yi2HjrOOPSj7bcge\nbaO7xvaAGtEOXwO3CyGx6afKFKWCOb/g6HzZU4V+VSjp4bPQ5Cgzwmsqx9nqXFHn\nbBPGs1GlCBRrZTnZV7osHhGYULl68dGY8NMANmG5hQ3RKdeFWs7B/6trOVFp6hNH\nHr8qqXRmty3dSs+WaO6DzBNpolo6ipbScfqnnKAxPtrh1KDbIGfuKUPKAVncXoH5\n9XLRPkCibLOmsN4a/Dct1JxoGvmRIdGuYR9db/chpY/iV+jZvKY1GH8Lkdsa52mG\ni4I2CI39v7tUNFehFnf51oRepJ7uQk7XDCUufzm43EWAlXHSCaetmkpQe235ZgE=\n=5/yD\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 7e877ffbd527a0c7c2224249d23cee3c05af64fe\nparent f3868fd64691ae9acf9d7944852440efcae32d2f\nauthor Guo Xiang Tan <gxtan1990@gmail.com> 1531742754 +0800\ncommitter GitHub <noreply@github.com> 1531742754 +0800\n\nPERF: Store `EmailLog#bounce_key` as `uuid` data type. (#6093)\n\nPERF: Store `EmailLog#bounce_key` as `uuid` data type."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c0c263405a722876785dab6600ec784ca8be7bc3",
+  "html_url": "https://github.com/discourse/discourse/commit/c0c263405a722876785dab6600ec784ca8be7bc3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c0c263405a722876785dab6600ec784ca8be7bc3/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f3868fd64691ae9acf9d7944852440efcae32d2f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f3868fd64691ae9acf9d7944852440efcae32d2f",
+      "html_url": "https://github.com/discourse/discourse/commit/f3868fd64691ae9acf9d7944852440efcae32d2f"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 28,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "8e764c4335007b6dfea2cccb8a6a6e24911f9078",
+      "filename": "app/models/email_log.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/c0c263405a722876785dab6600ec784ca8be7bc3/app/models/email_log.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c0c263405a722876785dab6600ec784ca8be7bc3/app/models/email_log.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/email_log.rb?ref=c0c263405a722876785dab6600ec784ca8be7bc3",
+      "patch": "@@ -67,6 +67,10 @@ def self.last_sent_email_address\n       .try(:to_address)\n   end\n \n+  def bounce_key\n+    super&.delete('-')\n+  end\n+\n end\n \n # == Schema Information"
+    },
+    {
+      "sha": "e7c064eb8a01cdcb7f054e0fb1d056caf62ad9ff",
+      "filename": "db/migrate/20180716072125_alter_bounce_key_on_email_logs.rb",
+      "status": "added",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/c0c263405a722876785dab6600ec784ca8be7bc3/db/migrate/20180716072125_alter_bounce_key_on_email_logs.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c0c263405a722876785dab6600ec784ca8be7bc3/db/migrate/20180716072125_alter_bounce_key_on_email_logs.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20180716072125_alter_bounce_key_on_email_logs.rb?ref=c0c263405a722876785dab6600ec784ca8be7bc3",
+      "patch": "@@ -0,0 +1,9 @@\n+class AlterBounceKeyOnEmailLogs < ActiveRecord::Migration[5.2]\n+  def up\n+    change_column :email_logs, :bounce_key, 'uuid USING bounce_key::uuid'\n+  end\n+\n+  def down\n+    change_column :email_logs, :bounce_key, :string\n+  end\n+end"
+    },
+    {
+      "sha": "c51da8ed4048f14997568eedf817140b3e5a5712",
+      "filename": "spec/models/email_log_spec.rb",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/c0c263405a722876785dab6600ec784ca8be7bc3/spec/models/email_log_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c0c263405a722876785dab6600ec784ca8be7bc3/spec/models/email_log_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/email_log_spec.rb?ref=c0c263405a722876785dab6600ec784ca8be7bc3",
+      "patch": "@@ -101,4 +101,19 @@\n     end\n   end\n \n+  describe '#bounce_key' do\n+    it 'should format the bounce key correctly' do\n+      bounce_key = SecureRandom.hex\n+      email_log = Fabricate(:email_log, user: user, bounce_key: bounce_key)\n+\n+      raw_bounce_key = EmailLog.where(id: email_log.id)\n+        .pluck(\"bounce_key::text\")\n+        .first\n+\n+      expect(raw_bounce_key).to_not eq(bounce_key)\n+      expect(raw_bounce_key.delete('-')).to eq(bounce_key)\n+      expect(EmailLog.find(email_log.id).bounce_key).to eq(bounce_key)\n+    end\n+  end\n+\n end"
+    }
+  ]
+}
