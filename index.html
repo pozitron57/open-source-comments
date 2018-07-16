@@ -58,9 +58,10 @@
 $(document).ready(function() {
   $('#results').DataTable({
     //LengthChange: true,
-    //LengthMenu: [ [10, 25, -1], [10, 25, "Все"] ],
-    //pageLength: 12,
-    paging:false,
+    pageLength: -1,
+    lengthMenu: [ [5, 10, 20, -1], [5, 10, 20, "All"] ],
+    dom: 'Blftipr',
+    paging:true,
     data:osc_data,
     columns:cols,
     order:[[0,"desc"]],
@@ -70,7 +71,6 @@ $(document).ready(function() {
     //fixedHeader: { header: true },
     //scrollCollapse:true, // what's that?
     //fixedColumns:{leftColumns:2},
-    dom: 'Bfrtip',
     buttons: [ 
         {extend: 'columnsToggle'},
         {extend: 'colvisGroup', text: 'Show all columns', show: ':hidden'},
