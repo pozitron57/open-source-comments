@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Open source comments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="https://lisakov.com/favicon.ico" rel="icon">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.buttons.min.js"></script>
+  <script src="js/buttons.colVis.min.js"></script>
+  <script src="js/dataTables.fixedColumns.min.js"></script>
+  <script src="js/dataTables.searchHighlight.min.js"></script>
+  <script src="js/jquery.highlight.js"></script>
+
+  <link rel="stylesheet" href="css/buttons.dataTables.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="css/jquery.dataTables.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="css/fixedColumns.dataTables.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="css/osc.css" media="screen" type="text/css">
+</head>
+  
+<body>
+
+<div class="preamble">
+  <h1 id="open-source-self-hosted-comments-for-static-websites"><a class="header-anchor" href="#open-source-self-hosted-comments-for-static-websites"></a>Open-source self-hosted comments for static websites</h1>
+  <p>Inspired by <a href="http://staticsitegenerators.net" target="_blank" rel="external">staticsitegenerators.net</a>.
+  Contribute at <a href="https://github.com/pozitron57/open-source-comments" target="_blank" rel="external">github</a>.</p>
+  <p>Want different columns?
+  <a href="https://github.com/pozitron57/open-source-comments/issues/new" target="_blank" rel="external">Propose</a>.</p>
+  <h2 id="what-s-wrong-with-disqus"><a class="header-anchor" href="#what-s-wrong-with-disqus"></a>What’s wrong with Disqus</h2>
+  <p>Disqus loads absurd amount of tracking services, which compromises
+  your visitors personal data and significantly increases loading time.
+  See, e.g., <a href="http://donw.io/post/github-comments/#what-s-wrong-with-disqus" target="_blank" rel="external">this
+  post</a>.</p>
+  <h2 id="what-s-not-covered-here"><a class="header-anchor" href="#what-s-not-covered-here"></a>What’s not covered here</h2>
+  <p>For a static website, one usually wants a lightweight commenting server with
+  as little dependencies as possible. Few commenting engines listed on the page
+  are provided by heavy frameworks and web-applications (e.g.,
+  <a href="https://github.com/django-fluent/django-fluent-comments" target="_blank" rel="external">django-fluent-comments</a>,
+  <a href="https://github.com/discourse/discourse" target="_blank" rel="external">discourse</a>,
+  <a href="https://github.com/debiki/talkyard" target="_blank" rel="external">talkyard</a>), but the majority are relatively
+  lightweight applications designed specifically to provide comments for the
+  static pages.</p>
+  <p>This page prioritizes info on <em>self-hosted</em> comments. However,
+  there are other solutions, including implementations of third-party services
+  (e.g., Github issues, such as
+  <a href="https://github.com/imsun/gitment" target="_blank" rel="external">[1]</a>,
+  <a href="https://github.com/gitalk/gitalk" target="_blank" rel="external">[2]</a>,
+  <a href="https://github.com/Blankj/awesome-comment" target="_blank" rel="external">[3]</a>,
+  <a href="https://github.com/utterance/utterances" target="_blank" rel="external">[4]</a>).</p>
+  <h2 id="choose-columns-to-show"><a class="header-anchor" href="#choose-columns-to-show"></a>Choose columns to show</h2>
+</div>
+
+<table id="results" class="display" style="width:100%"></table>
+<script src="data.js"></script>
+<script>
+$(document).ready(function() {
+  $('#results').DataTable({
+    //LengthChange: true,
+    //LengthMenu: [ [10, 25, -1], [10, 25, "Все"] ],
+    //pageLength: 12,
+    paging:false,
+    data:osc_data,
+    columns:cols,
+    order:[[0,"desc"]],
+    searchHighlight: true,
+    info:true,
+    scrollX:true,
+    //fixedHeader: { header: true },
+    //scrollCollapse:true, // what's that?
+    //fixedColumns:{leftColumns:2},
+    dom: 'Bfrtip',
+    buttons: [ 
+        {extend: 'columnsToggle'},
+        {extend: 'colvisGroup', text: 'Show all columns', show: ':hidden'},
+        'colvisRestore'],
+    columnDefs: [
+        {targets: "_all",
+            className: 'dt-center'},
+        { "visible": false,  
+          "targets": [
+      3,6,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]},
+        ],
+    //stateSave:true,
+    searching:true,
+  });
+});
+</script>
+
+<script data-isso="https://comments.lisakov.com/" 
+  data-isso-lang="en"
+  src="https://comments.lisakov.com/js/embed.min.js">
+</script>
+
+<div class="commentario">
+  <section id="isso-thread"></section>
+</div>
+
+<div class="preamble">
+  <footer> 
+    <p>Powered by 
+      <a href="https://www.datatables.net">DataTables</a> and
+      <a href="https://posativ.org/isso">Isso</a><br>
+      Last updated: 2018-07-16 <br>
+      &copy; S.&nbsp;Lisakov</p>
+  </footer> 
+</div>
+
+</body>
+
+</html>
