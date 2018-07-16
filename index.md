@@ -17,14 +17,15 @@ Contribute at [github](https://github.com/pozitron57/open-source-comments).
 Want different columns?
 [Propose](https://github.com/pozitron57/open-source-comments/issues/new).
 
-## What is wrong with Disqus etc.?
+## What's wrong with Disqus
 
 Disqus loads absurd amount of tracking services, which compromises
 your visitors personal data and significantly increases loading time.
 See, e.g., [this
 post](http://donw.io/post/github-comments/#what-s-wrong-with-disqus).
 
-## What is not covered here
+## What's not covered here
+
 For a static website, one usually wants a lightweight commenting server with
 as little dependencies as possible. Few commenting engines listed on the page
 are provided by heavy frameworks and web-applications (e.g.,
