@@ -67,4 +67,4 @@ browser should show the changes.
 Contributions are welcome. Fork the repo and send PR. Want to add something
 but don't feel like sending PR? Let me know by submitting an issue or leave a
 [comment](https://lisakov.com/projects/open-source-comments/#isso-thread) at
-the website. It currently uses [isso](https://github.com/posativ/isso).
+the website.
