@@ -143,7 +143,7 @@ juvia:
     github: "https://github.com/phusion/juvia"
     language: "ruby"
     preview: "yes"
-    avatar: "gravatar"
+    avatar: "Gravatar"
     moderation: "full-featured admin panel for multiple users"
     static: "no"
     description: ""
@@ -231,7 +231,7 @@ valine:
     antispam: "?"
     bad_words_list: "?"
     use_cookies: "?"
-    avatar: "[gravatar](https://valine.js.org/en/avatar.html)"
+    avatar: "[Gravatar](https://valine.js.org/en/avatar.html)"
     markdown_support: "?"
     nested_comments: "?"
     provided_hosting: "?"
@@ -249,7 +249,7 @@ valine:
     updated: "2018&#8209;07&#8209;13"
     created: "2017&#8209;08&#8209;03"
     static: "no"
-    description: "A fast, simple & efficient Leancloud-based no back-end comment system"
+    description: "Leancloud-based no backend comment system"
     license: "GPL-2.0"
     open_issues: 5
     last_committed: 2018&#8209;07&#8209;15
@@ -267,7 +267,7 @@ mouthful:
     js_kB: "44"
     css_kB: ""
     language: "Go"
-    db: "dynamodb / MySQL / PostgreSQL"
+    db: "DynamoDB / MySQL / PostgreSQL"
     moderation: "yes, admin panel"
     mail_notification: "[not yet](https://github.com/vkuznecovas/mouthful/issues/81)"
     rss: "?"
@@ -848,7 +848,7 @@ sidecar:
     antispam: "?"
     bad_words_list: "?"
     use_cookies: "?"
-    avatar: "gravatar"
+    avatar: "Gravatar"
     markdown_support: "?"
     nested_comments: "?"
     provided_hosting: "?"
@@ -1174,7 +1174,7 @@ chatter:
     display_images: "?"
     sort: "?"
     hide_long_threads: "?"
-    anonymous_comments: "?"
+    anonymous_comments: "yes"
     social_network_login: "?"
     import_from_wordpress: "?"
     import_from_disqus: "?"
@@ -1187,7 +1187,7 @@ chatter:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Uses [Zappa](https://github.com/Miserlou/Zappa) and [AWS λ](https://aws.amazon.com/lambda/?nc1=h_ls)"
+    description: "Uses [Zappa](https://github.com/Miserlou/Zappa) and [AWS Lambda](https://aws.amazon.com/lambda/?nc1=h_ls)"
     license: "MIT"
     open_issues: 0
     last_committed: 2018&#8209;05&#8209;09
@@ -1638,6 +1638,102 @@ easy_page_comments:
     last_committed: 2018&#8209;06&#8209;05
     stars_dif: '0'
 
+lambda_comments:
+    stars: 585
+    github: "https://github.com/jimpick/lambda-comments/"
+    homepage: "https://jimpick.com/2016/05/05/introducing-lambda-comments/"
+    name: "lambda-comments"
+    demo: "[link](https://jimpick.com/2016/05/05/introducing-lambda-comments/)" 
+    docker: "?"
+    js_kB: ""
+    css_kB: ""
+    language: "Node.js"
+    db: "DynamoDB"
+    moderation: "?"
+    mail_notification: "?"
+    dependency: "?"
+    rss: "?"
+    antispam: "Akismet"
+    bad_words_list: "?"
+    use_cookies: "?"
+    avatar: "?"
+    markdown_support: "?"
+    nested_comments: "?"
+    provided_hosting: "?"
+    collapse_comments: "?"
+    display_images: "?"
+    sort: "?"
+    hide_long_threads: "?"
+    anonymous_comments: "?"
+    social_network_login: "?"
+    import_from_wordpress: "?"
+    import_from_disqus: "?"
+    english_documentation: "?"
+    edit: "?"
+    vote: "?"
+    preview: "?"
+    updated: "?"
+    created: "?"
+    rate_limit: "?"
+    paging: "?"
+    description: "“Serverless”, uses:\
+        \ [API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html),\
+        \ [Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html),\
+        \ [S3](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html),\
+        \ [DynamoDB streams](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html),\
+        \ [IAM](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html),\
+        \ [CloudWatch Logs](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)"
+    static: "no"
+    license: ""
+    open_issues:
+    last_committed:
+    stars_dif:
+
+jekyll_aws_comments:
+    stars: 16
+    github: "https://github.com/ummels/jekyll-aws-comments"
+    homepage: "?"
+    name: "Jekyll AWS Comments"
+    demo: "?" 
+    docker: "?"
+    js_kB: ""
+    css_kB: ""
+    language: "?"
+    db: "?"
+    moderation: "?"
+    mail_notification: "?"
+    dependency: "?"
+    rss: "?"
+    antispam: "?"
+    bad_words_list: "?"
+    use_cookies: "?"
+    avatar: "Gravatar"
+    markdown_support: "?"
+    nested_comments: "?"
+    provided_hosting: ""
+    collapse_comments: "?"
+    display_images: "?"
+    sort: "?"
+    hide_long_threads: "?"
+    anonymous_comments: "?"
+    social_network_login: "?"
+    import_from_wordpress: "?"
+    import_from_disqus: "?"
+    english_documentation: "?"
+    edit: "?"
+    vote: "?"
+    preview: "?"
+    updated: "?"
+    created: "?"
+    rate_limit: "?"
+    paging: "?"
+    description: "Static comments for Jekyll with AWS Lambda and GitHub"
+    static: "yes"
+    license: ""
+    open_issues:
+    last_committed:
+    stars_dif:
+
 #comment_system:
     #stars: 0
     #github: "?"
@@ -1676,5 +1772,9 @@ easy_page_comments:
     #created: "?"
     #rate_limit: "?"
     #paging: "?"
-    #static: "no"
     #description: ""
+    #static: "no"
+    #license: ""
+    #open_issues:
+    #last_committed:
+    #stars_dif:
