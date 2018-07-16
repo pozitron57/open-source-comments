@@ -14,3 +14,6 @@ rsync -auvx --delete --numeric-ids css/ /var/www/lisakov.com/projects/open-sourc
 rsync -auvx --delete --numeric-ids js/ /var/www/lisakov.com/projects/open-source-comments/js/
 
 # update github repo  https://github.com/pozitron57/open-source-comments
+git push origin master
+git add *
+git commit -m 'automatic update'
