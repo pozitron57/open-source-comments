@@ -4,7 +4,7 @@ Comparison table for open-source self-hosted commenting servers
 ([lisakov.com/projects/open-source-comments/](https://lisakov.com/projects/open-source-comments/)).
 Inspired by [staticsitegenerators.net](http://staticsitegenerators.net). 
 
-# Workflow
+## Workflow
 
 - The data are stored in `data.yaml`.
 
@@ -29,7 +29,7 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   runs `get_gh_data.py`, then `yaml_2_js.py`, then deploys the updated files,
   then updates the repo.
 
-# How to view the page locally
+## How to view the page locally
 
 Just clone the repo and open `index.html` in your browser. No static site
 generator is used since `index.html` isn't often updated manually.
@@ -37,7 +37,7 @@ generator is used since `index.html` isn't often updated manually.
 After modifying `data.yaml`, run `python3 yaml_2_js.py` and the
 browser should show the changes.
 
-# TODO
+## TODO
 
 - Check and add the information to make the table useful. I'd appreciate
   adding a missing demo. Sometimes it's not easy to find. For example,
@@ -62,7 +62,7 @@ browser should show the changes.
   Need to write a python script to extract only needed info from the files
   and delete the rest.
 
-# Contribution
+## Contribution
 
 Contributions are welcome. Fork the repo and send PR. Want to add something
 but don't feel like sending PR? Let me know by submitting an issue or leave a
