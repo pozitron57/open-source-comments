@@ -20,6 +20,7 @@ to check how many requests are left.
 import re
 import os
 import ruamel.yaml
+import fileinput
 
 from datetime import datetime, date
 import dateutil.parser
@@ -57,13 +58,23 @@ p = 'apigh/'+str(date.today())+'/'
 
 # Write and download files only if haven't done today
 if not os.path.isdir(p):
-    os.system('mkdir {}'.format(p) )
+    os.system('mkdir -p {}'.format(p) )
 
     # Save github repo info to apigh/YYYY-MM-DD/<comment_system>
     # Attention! There is a limit of requests per IP per hour
     # (created, license, open_issues)
-    github_username = input('Type your github username: ')
-    github_password = input('Type your github password: (will be visible!) ')
+
+    ## If run manually just type your credentials
+    #github_username = input('Type your github username: ')
+    #github_password = input('Type your github password: (will be visible!) ')
+
+    ## If run with script, read your credentials from the file outside of 
+    # the repo (probably it's a bad idea, use for fast automated solution)
+    with open('/home/slisakov/gh_credentials', 'r') as f:
+        for line in f:
+            github_username = line.split()[0]
+            github_password = line.split()[1]
+
     for url, cs in zip(github_urls, comment_systems):
         os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs))
 
@@ -106,28 +117,30 @@ for cs in os.listdir(p):
                 data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y&#8209;%m&#8209;%d')
 
 
-### Calc ★ change in the last N days
-###          (draft)
-### Need to update 'stars_dif' in yaml_2_js.py, e.g.
-### 'stars_dif':'Stars change in the last N days', N depending on what is available
-
-#for date in os.listdir('apigh'):
-    #p = 'apigh/'+date+'/'
-    #print(p)
-    #for cs in data:
-        #new_stars = data[cs]["stars"]
-#
-        #with open(p+cs, 'r') as f:
-            #old_data  = yaml.load(f)
-            #old_stars = old_data["stargazers_count"]
-#
-        #dif = new_stars - old_stars
-        #if dif!=0:
-            #data[cs]["stars_dif"] = dif
-            #print( cs, 'stars change =', dif )
-
+#### DRAFT, not working
+#### Calc ★ change in the last N days
+#### Need to update 'stars_dif' in yaml_2_js.py, e.g.
+#### 'stars_dif':'Stars change in the last N days', N depending on what is available
+##for date in os.listdir('apigh'):
+    ##p = 'apigh/'+date+'/'
+    ##print(p)
+    ##for cs in data:
+        ##new_stars = data[cs]["stars"]
+        ##with open(p+cs, 'r') as f:
+            ##old_data  = yaml.load(f)
+            ##old_stars = old_data["stargazers_count"]
+        ##dif = new_stars - old_stars
+        ##if dif!=0:
+            ##data[cs]["stars_dif"] = dif
+            ##print( cs, 'stars change =', dif )
 
 # Not safe! data.yaml is re-written. No backup.
 # Update data.yaml file with fresh values
 with open('data.yaml', 'w') as f:
     yaml.dump(data, stream=f)
+
+# Update index.html date
+for line in fileinput.input("index.html", inplace=True):
+    if 'Last updated:' in line:
+        line = re.sub('Last updated:.*','Last updated: {} <br>'.format(date.today()), line)
+    print ( line, end='' )
