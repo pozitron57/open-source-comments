@@ -3,7 +3,7 @@
 
 # TODO
 # Numpy is not needed, change to just append
-import numpy as np
+#import numpy as np
 import re
 import yaml
 from markdown import markdown
@@ -99,16 +99,19 @@ fields_dic={
 }
 
 def urlify(x):
-    ar=np.array([])
+    #ar=np.array([])
+    ar=[]
     if type(x) is list:
         for i in range(len(x)):
             if re.match('^http', x[i]):
-                ar = np.append (ar, '<a href="{}">[{}]</a>'.format(x[i],i+1) )
+                #ar = np.append (ar, '<a href="{}">[{}]</a>'.format(x[i],i+1) )
+                ar.append('<a href="{}">[{}]</a>'.format(x[i],i+1) )
             else:
                 m = markdown(str(x[i]))
                 f = re.sub('<p>','', m)
                 f = re.sub('</p>','', f)
-                ar = np.append (ar, f )
+                #ar = np.append (ar, f )
+                ar.append(f)
         return "'"+ ', '.join(ar) + "'"
     else:
         if re.match('http', str(x)):
