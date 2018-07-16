@@ -574,7 +574,7 @@ e_comments:
     moderation: "No admin panel"
     mail_notification: "No"
     dependency:
-      - "jQuery"
+      - "jQuery.js"
       - "mustache.js"
     rss: "?"
     antispam: "yes"
@@ -934,7 +934,7 @@ staticman:
     language: "Node.js"
     db: "?"
     moderation: "?"
-    mail_notification: "?"
+    mail_notification: "yes"
     dependency: "?"
     rss: "?"
     antispam: "?"
@@ -1063,7 +1063,9 @@ discourse:
     github: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
-    demo: "https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963"
+    demo: "See [1](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
+        \ [2](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
+        \ [docuss](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1071,7 +1073,7 @@ discourse:
     db: "PostgreSQL, Redis"
     moderation: "yes"
     mail_notification: "yes"
-    dependency: "?"
+    dependency: "Ember.js"
     rss: "?"
     antispam: "?"
     bad_words_list: "?"
@@ -1085,7 +1087,7 @@ discourse:
     sort: "yes"
     hide_long_threads: "?"
     anonymous_comments: "?"
-    social_network_login: "?"
+    social_network_login: "yes"
     import_from_wordpress: "?"
     import_from_disqus: "?"
     english_documentation: "yes"
@@ -1914,6 +1916,142 @@ commentary:
     last_committed:
     stars_dif:
 
+gotell:
+    stars: 126
+    github: "https://github.com/netlify/gotell"
+    homepage: "?"
+    name: "GoTell"
+    demo: "?" 
+    docker: "?"
+    js_kB: ""
+    css_kB: ""
+    language: "Go"
+    db: "?"
+    moderation: "?"
+    mail_notification: "?"
+    dependency: "For Netlify"
+    rss: "?"
+    antispam: "?"
+    bad_words_list: "yes"
+    use_cookies: "?"
+    avatar: "?"
+    markdown_support: "?"
+    nested_comments: "?"
+    provided_hosting: "?"
+    collapse_comments: "?"
+    display_images: "?"
+    sort: "?"
+    hide_long_threads: "?"
+    anonymous_comments: "?"
+    social_network_login: "?"
+    import_from_wordpress: "?"
+    import_from_disqus: "?"
+    english_documentation: "?"
+    edit: "?"
+    vote: "?"
+    preview: "?"
+    updated: "?"
+    created: "?"
+    rate_limit: "?"
+    paging: "?"
+    description: "Netlify Comments is an API and build tool for handling large amounts of comments for JAMstack products"
+    static: "yes"
+    license: ""
+    open_issues:
+    last_committed:
+    stars_dif:
+
+jamstack_comments_engine:
+    stars: 27
+    github: "https://github.com/philhawksworth/jamstack-comments-engine"
+    homepage: "https://jamstack-comments.netlify.com/"
+    name: "Jamstack Comments Engine"
+    demo: "https://jamstack-comments.netlify.com/posts/comments-on-your-content-in-your-content/" 
+    docker: "?"
+    js_kB: ""
+    css_kB: ""
+    language: "?"
+    db: "?"
+    moderation: "?"
+    mail_notification: "?"
+    dependency: "For Netlify"
+    rss: "?"
+    antispam: "?"
+    bad_words_list: "?"
+    use_cookies: "?"
+    avatar: "Gravatar"
+    markdown_support: "?"
+    nested_comments: "?"
+    provided_hosting: "?"
+    collapse_comments: "?"
+    display_images: "yes"
+    sort: "?"
+    hide_long_threads: "?"
+    anonymous_comments: "?"
+    social_network_login: "?"
+    import_from_wordpress: "?"
+    import_from_disqus: "?"
+    english_documentation: "?"
+    edit: "no"
+    vote: "no"
+    preview: "no"
+    updated: "?"
+    created: "?"
+    rate_limit: "?"
+    paging: "?"
+    description: "Uses AWS Lambda, for use with Netlify"
+    static: "yes"
+    license: ""
+    open_issues:
+    last_committed:
+    stars_dif:
+
+stapsher:
+    stars: 2
+    github: "https://github.com/extraStatic/stapsher"
+    homepage: "https://stapsher.netlify.com/"
+    name: "Stapsher"
+    demo: "?" 
+    docker: "?"
+    js_kB: ""
+    css_kB: ""
+    language: "Node.js"
+    db: ""
+    moderation: "?"
+    mail_notification: "?"
+    dependency: "?"
+    rss: "?"
+    antispam: "?"
+    bad_words_list: "?"
+    use_cookies: "?"
+    avatar: "?"
+    markdown_support: "?"
+    nested_comments: "?"
+    provided_hosting: "?"
+    collapse_comments: "?"
+    display_images: "?"
+    sort: "?"
+    hide_long_threads: "?"
+    anonymous_comments: "?"
+    social_network_login: "?"
+    import_from_wordpress: "?"
+    import_from_disqus: "?"
+    english_documentation: "?"
+    edit: "?"
+    vote: "?"
+    preview: "?"
+    updated: "?"
+    created: "?"
+    rate_limit: "?"
+    paging: "?"
+    description: "Stapsher is an API service for handling user-generated contents on static sites"
+    static: "yes"
+    license: ""
+    open_issues:
+    last_committed:
+    stars_dif:
+
+ 
 #comment_system:
     #stars: 0
     #github: "?"
@@ -1959,6 +2097,6 @@ commentary:
     #last_committed:
     #stars_dif:
 
-# 
+ 
 # https://github.com/arunoda/open-comment-box ? Meteor?
 # https://discuss.flarum.org/ ?
