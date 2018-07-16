@@ -1,35 +1,44 @@
 # Open-source self-hosted comments
 
-A [table](https://lisakov.com/projects/open-source-comments/) of open-source
-self-hosted commenting servers. Inspired by
-[staticsitegenerators.net](http://staticsitegenerators.net). 
+Comparison table for open-source self-hosted commenting servers 
+([lisakov.com/projects/open-source-comments/](https://lisakov.com/projects/open-source-comments/)).
+Inspired by [staticsitegenerators.net](http://staticsitegenerators.net). 
 
-The data are stored in `data.yaml`. `yaml_2_js.py` converts `YAML` to
-`js`-arrays in `data.js` so it can be loaded to
-[datatables.js](https://github.com/DataTables/DataTables).
+# Workflow
 
-`get_gh_data.py`:
+- The data are stored in `data.yaml`.
+
+- `get_gh_data.py`:
   - creates `apigh/<YYYY-MM-DD>/` directory if does not exist;
-  - downloads (using system `wget`);
+  - downloads (using system `curl`);
     `https://api.github.com/repos/:user/:repo` and 
-    `https://api.github.com/repos/:user/:repo/commits/master` inside the
-    created dir;
+    `https://api.github.com/repos/:user/:repo/commits/master` to the created directory;
   - reads these files and updates `data.yaml` for the following:
     - github stars,
-    - creation date,
     - last commit date,
+    - creation date,
     - license.
+
+- `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables). 
+
+- `index.html` reads it using
+  [datatables.js](https://github.com/DataTables/DataTables).
+
+- The webpage is updated daily at 17:00 UTC using `cron`. `updater.sh` collects
+  the information via Github API, run `get_gh_data.py`, then `yaml_2_js.py`,
+  then deploys the updated files, then updates the repo.
+
 
 # TODO
 
-- Foremost: check/add the information to make the table useful. I'd appreciate
-  adding a missing demo. Sometimes it's not easy to find. For example,
+- Check and add the information to make the table useful. I'd appreciate adding
+  a missing demo. Sometimes it's not easy to find. For example,
   [Juvia](https://github.com/phusion/juvia) is rated over 1000 stars on github,
-  but I spent an hour to find couple currently working instances. I even found
-  a recent (2018) [post](https://blog.backslasher.net/disqus.html) about
+  but I spent an hour to find a couple of currently working instances. I even
+  found a recent (2018) [post](https://blog.backslasher.net/disqus.html) about
   switching from Juvia to Disqus!
 
-- Simplify and improve the python code.
+- Improve the python code.
 
 - Add badges to show the change in stars during last 30 days or so. Just like
   at https://www.staticgen.com/. I'am going to add a few lines to
@@ -40,8 +49,9 @@ The data are stored in `data.yaml`. `yaml_2_js.py` converts `YAML` to
   https://api.github.com/users/posativ/isso has `open_issues_count` and
   `open_issues`, both equal to 131, whereas there are 110 issues and 21 PR.
 
-
-- Check grammar.
+- `apigh/<date>` folders store a lot of information which is never used.
+  Need to write a python script to extract only needed info from the files
+  and delete the rest.
 
 # Contribution
 
