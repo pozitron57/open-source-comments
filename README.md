@@ -19,24 +19,26 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
     - creation date,
     - license.
 
-- `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables). 
+- `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
+  — `osc_data` and `cols`). 
 
-- `index.html` reads it using
+- `index.html` reads `data.js` and parses using
   [datatables.js](https://github.com/DataTables/DataTables).
 
-- The webpage is updated daily at 17:00 UTC using `cron`. `updater.sh` collects
-  the information via Github API, run `get_gh_data.py`, then `yaml_2_js.py`,
-  then deploys the updated files, then updates the repo.
+- The webpage is updated daily at 17:00 UTC using `cron`. `updater.sh`
+  collects the information via Github API, run `get_gh_data.py`, then
+  `yaml_2_js.py`, then deploys the updated files, then updates the repo.
 
 
 # TODO
 
-- Check and add the information to make the table useful. I'd appreciate adding
-  a missing demo. Sometimes it's not easy to find. For example,
-  [Juvia](https://github.com/phusion/juvia) is rated over 1000 stars on github,
-  but I spent an hour to find a couple of currently working instances. I even
-  found a recent (2018) [post](https://blog.backslasher.net/disqus.html) about
-  switching from Juvia to Disqus!
+- Check and add the information to make the table useful. I'd appreciate
+  adding a missing demo. Sometimes it's not easy to find. For example,
+  [Juvia](https://github.com/phusion/juvia) is rated over 1000 stars on
+  github, but I spent an hour to find a couple of currently working
+  instances. I even found a recent (2018)
+  [post](https://blog.backslasher.net/disqus.html) about switching from Juvia
+  to Disqus!
 
 - Improve the python code.
 
