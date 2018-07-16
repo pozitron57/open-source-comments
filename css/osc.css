@@ -16,13 +16,9 @@ h3 { font-size:1.7em; }
 
 table { color:#2a2b2c; }
 
-div.dataTables_scroll { 
-  max-width:1500px; 
-}
+div.dataTables_scroll { max-width:1500px; }
 
-div.dataTables_wrapper { 
-  margin:50px; 
-}
+div.dataTables_wrapper { margin:50px; }
 @media screen and (max-width:640px){
   div.dataTables_wrapper { margin:0; }
 }
@@ -30,6 +26,7 @@ div.dataTables_wrapper {
 
 table th { border-top: 1px solid; }
 .dataTables_filter { margin-bottom:7px; }
+.dataTables_length { margin:10px 0; }
 
 input {
   padding:8px 3px;
