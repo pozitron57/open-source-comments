@@ -29,6 +29,13 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   runs `get_gh_data.py`, then `yaml_2_js.py`, then deploys the updated files,
   then updates the repo.
 
+# How to view the page locally
+
+Just clone the repo and open `index.html` in your browser. No static site
+generator is used since `index.html` isn't often updated manually.
+
+After modifying `data.yaml`, run `python3 yaml_2_js.py` and the
+browser should show the changes.
 
 # TODO
 
