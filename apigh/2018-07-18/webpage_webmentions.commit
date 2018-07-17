@@ -1,0 +1,110 @@
+{
+  "sha": "c0a6558aa2e61f4e149e6382fe07553f990a1e67",
+  "node_id": "MDY6Q29tbWl0MTI2ODkxODQ6YzBhNjU1OGFhMmU2MWY0ZTE0OWU2MzgyZmUwNzU1M2Y5OTBhMWU2Nw==",
+  "commit": {
+    "author": {
+      "name": "Renovate Bot",
+      "email": "bot@renovateapp.com",
+      "date": "2018-07-02T18:50:14Z"
+    },
+    "committer": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2018-07-02T19:09:22Z"
+    },
+    "message": "Update test packages",
+    "tree": {
+      "sha": "708ef039c3aa9a01ddaf550a0abc078631f0d5aa",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/trees/708ef039c3aa9a01ddaf550a0abc078631f0d5aa"
+    },
+    "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/commits/c0a6558aa2e61f4e149e6382fe07553f990a1e67",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/c0a6558aa2e61f4e149e6382fe07553f990a1e67",
+  "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/c0a6558aa2e61f4e149e6382fe07553f990a1e67",
+  "comments_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/c0a6558aa2e61f4e149e6382fe07553f990a1e67/comments",
+  "author": {
+    "login": "renovate-bot",
+    "id": 25180681,
+    "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/25180681?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/renovate-bot",
+    "html_url": "https://github.com/renovate-bot",
+    "followers_url": "https://api.github.com/users/renovate-bot/followers",
+    "following_url": "https://api.github.com/users/renovate-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/renovate-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/renovate-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/renovate-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/renovate-bot/orgs",
+    "repos_url": "https://api.github.com/users/renovate-bot/repos",
+    "events_url": "https://api.github.com/users/renovate-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/renovate-bot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b420b4775bcebd1bc64433be0a26cbad5e537494",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/b420b4775bcebd1bc64433be0a26cbad5e537494",
+      "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/b420b4775bcebd1bc64433be0a26cbad5e537494"
+    }
+  ],
+  "stats": {
+    "total": 71,
+    "additions": 52,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "39c7fa62dd08d44ddefe13098bf4eb7c83f0b8e9",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/c0a6558aa2e61f4e149e6382fe07553f990a1e67/package.json",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/c0a6558aa2e61f4e149e6382fe07553f990a1e67/package.json",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/package.json?ref=c0a6558aa2e61f4e149e6382fe07553f990a1e67",
+      "patch": "@@ -59,7 +59,7 @@\n     \"chai\": \"4.1.2\",\n     \"chai-as-promised\": \"7.1.1\",\n     \"concurrently\": \"3.5.1\",\n-    \"coveralls\": \"3.0.1\",\n+    \"coveralls\": \"3.0.2\",\n     \"dependency-check\": \"3.1.0\",\n     \"dotenv\": \"2.0.0\",\n     \"eslint\": \"4.19.1\",\n@@ -73,9 +73,9 @@\n     \"grunt-contrib-concat\": \"1.0.1\",\n     \"grunt-contrib-uglify\": \"1.0.2\",\n     \"mocha\": \"5.2.0\",\n-    \"nock\": \"9.2.6\",\n+    \"nock\": \"9.4.1\",\n     \"nyc\": \"12.0.2\",\n-    \"sinon\": \"6.0.0\",\n+    \"sinon\": \"6.0.1\",\n     \"supertest\": \"3.1.0\",\n     \"webmention-testpinger\": \"0.6.1\"\n   }"
+    },
+    {
+      "sha": "ce0ce6040341dab8dd169f084d475c7a0a3a5ebc",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 49,
+      "deletions": 16,
+      "changes": 65,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/c0a6558aa2e61f4e149e6382fe07553f990a1e67/yarn.lock",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/c0a6558aa2e61f4e149e6382fe07553f990a1e67/yarn.lock",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/yarn.lock?ref=c0a6558aa2e61f4e149e6382fe07553f990a1e67",
+      "patch": "@@ -799,15 +799,16 @@ cors@^2.5.2:\n     object-assign \"^4\"\n     vary \"^1\"\n \n-coveralls@3.0.1:\n-  version \"3.0.1\"\n-  resolved \"https://registry.yarnpkg.com/coveralls/-/coveralls-3.0.1.tgz#12e15914eaa29204e56869a5ece7b9e1492d2ae2\"\n+coveralls@3.0.2:\n+  version \"3.0.2\"\n+  resolved \"https://registry.yarnpkg.com/coveralls/-/coveralls-3.0.2.tgz#f5a0bcd90ca4e64e088b710fa8dda640aea4884f\"\n   dependencies:\n-    js-yaml \"^3.6.1\"\n+    growl \"~> 1.10.0\"\n+    js-yaml \"^3.11.0\"\n     lcov-parse \"^0.0.10\"\n-    log-driver \"^1.2.5\"\n+    log-driver \"^1.2.7\"\n     minimist \"^1.2.0\"\n-    request \"^2.79.0\"\n+    request \"^2.85.0\"\n \n crc@3.4.4:\n   version \"3.4.4\"\n@@ -1638,7 +1639,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2:\n   version \"4.1.11\"\n   resolved \"https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658\"\n \n-growl@1.10.5:\n+growl@1.10.5, \"growl@~> 1.10.0\":\n   version \"1.10.5\"\n   resolved \"https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e\"\n \n@@ -2194,7 +2195,14 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:\n   version \"3.0.2\"\n   resolved \"https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b\"\n \n-js-yaml@^3.6.1, js-yaml@^3.9.1:\n+js-yaml@^3.11.0:\n+  version \"3.12.0\"\n+  resolved \"https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1\"\n+  dependencies:\n+    argparse \"^1.0.7\"\n+    esprima \"^4.0.0\"\n+\n+js-yaml@^3.9.1:\n   version \"3.11.0\"\n   resolved \"https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef\"\n   dependencies:\n@@ -2514,7 +2522,7 @@ lodash@~4.3.0:\n   version \"4.3.0\"\n   resolved \"https://registry.yarnpkg.com/lodash/-/lodash-4.3.0.tgz#efd9c4a6ec53f3b05412429915c3e4824e4d25a4\"\n \n-log-driver@^1.2.5:\n+log-driver@^1.2.7:\n   version \"1.2.7\"\n   resolved \"https://registry.yarnpkg.com/log-driver/-/log-driver-1.2.7.tgz#63b95021f0702fedfa2c9bb0a24e7797d71871d8\"\n \n@@ -2809,9 +2817,9 @@ nise@^1.3.3:\n     path-to-regexp \"^1.7.0\"\n     text-encoding \"^0.6.4\"\n \n-nock@9.2.6:\n-  version \"9.2.6\"\n-  resolved \"https://registry.yarnpkg.com/nock/-/nock-9.2.6.tgz#496ddb2c32e6d0848cda1b3ea51fbe054d4454d3\"\n+nock@9.4.1:\n+  version \"9.4.1\"\n+  resolved \"https://registry.yarnpkg.com/nock/-/nock-9.4.1.tgz#d9a635f8f9cb861d4b63dc3e1318770266506239\"\n   dependencies:\n     chai \"^4.1.2\"\n     debug \"^3.1.0\"\n@@ -3401,7 +3409,7 @@ repeating@^2.0.0:\n   dependencies:\n     is-finite \"^1.0.0\"\n \n-request@^2.51.0, request@^2.75.0, request@^2.79.0, request@^2.86.0:\n+request@^2.51.0, request@^2.75.0, request@^2.86.0:\n   version \"2.86.0\"\n   resolved \"https://registry.yarnpkg.com/request/-/request-2.86.0.tgz#2b9497f449b0a32654c081a5cf426bbfb5bf5b69\"\n   dependencies:\n@@ -3427,6 +3435,31 @@ request@^2.51.0, request@^2.75.0, request@^2.79.0, request@^2.86.0:\n     tunnel-agent \"^0.6.0\"\n     uuid \"^3.1.0\"\n \n+request@^2.85.0:\n+  version \"2.87.0\"\n+  resolved \"https://registry.yarnpkg.com/request/-/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e\"\n+  dependencies:\n+    aws-sign2 \"~0.7.0\"\n+    aws4 \"^1.6.0\"\n+    caseless \"~0.12.0\"\n+    combined-stream \"~1.0.5\"\n+    extend \"~3.0.1\"\n+    forever-agent \"~0.6.1\"\n+    form-data \"~2.3.1\"\n+    har-validator \"~5.0.3\"\n+    http-signature \"~1.2.0\"\n+    is-typedarray \"~1.0.0\"\n+    isstream \"~0.1.2\"\n+    json-stringify-safe \"~5.0.1\"\n+    mime-types \"~2.1.17\"\n+    oauth-sign \"~0.8.2\"\n+    performance-now \"^2.1.0\"\n+    qs \"~6.5.1\"\n+    safe-buffer \"^5.1.1\"\n+    tough-cookie \"~2.3.3\"\n+    tunnel-agent \"^0.6.0\"\n+    uuid \"^3.1.0\"\n+\n require-directory@^2.1.1:\n   version \"2.1.1\"\n   resolved \"https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42\"\n@@ -3632,9 +3665,9 @@ signal-exit@^3.0.0, signal-exit@^3.0.1, signal-exit@^3.0.2:\n   version \"3.0.2\"\n   resolved \"https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d\"\n \n-sinon@6.0.0:\n-  version \"6.0.0\"\n-  resolved \"https://registry.yarnpkg.com/sinon/-/sinon-6.0.0.tgz#f26627e4830dc34279661474da2c9e784f166215\"\n+sinon@6.0.1:\n+  version \"6.0.1\"\n+  resolved \"https://registry.yarnpkg.com/sinon/-/sinon-6.0.1.tgz#4247b97dd8fecbe1e19f8b816a5e7eed3993bcfe\"\n   dependencies:\n     \"@sinonjs/formatio\" \"^2.0.0\"\n     diff \"^3.5.0\""
+    }
+  ]
+}

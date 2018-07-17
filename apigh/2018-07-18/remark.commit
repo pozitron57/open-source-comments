@@ -1,0 +1,122 @@
+{
+  "sha": "b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmIyNzQ4OWU5MTgwZTkyYWI2NWRjMzc2ZWMxYjkxNGUyY2NiOWJmYTc=",
+  "commit": {
+    "author": {
+      "name": "Aleksey Gurianov",
+      "email": "gurianov@gmail.com",
+      "date": "2018-07-17T19:18:34Z"
+    },
+    "committer": {
+      "name": "Aleksei Gurianov",
+      "email": "gurianov@gmail.com",
+      "date": "2018-07-17T19:21:11Z"
+    },
+    "message": "Logout user on deleteme request",
+    "tree": {
+      "sha": "95974541bf873f3c51877cf3f3a389fe7a5a6c31",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/95974541bf873f3c51877cf3f3a389fe7a5a6c31"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+  "html_url": "https://github.com/umputun/remark/commit/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/comments",
+  "author": {
+    "login": "Guria",
+    "id": 36270,
+    "node_id": "MDQ6VXNlcjM2Mjcw",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/36270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Guria",
+    "html_url": "https://github.com/Guria",
+    "followers_url": "https://api.github.com/users/Guria/followers",
+    "following_url": "https://api.github.com/users/Guria/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Guria/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Guria/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Guria/subscriptions",
+    "organizations_url": "https://api.github.com/users/Guria/orgs",
+    "repos_url": "https://api.github.com/users/Guria/repos",
+    "events_url": "https://api.github.com/users/Guria/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Guria/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Guria",
+    "id": 36270,
+    "node_id": "MDQ6VXNlcjM2Mjcw",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/36270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Guria",
+    "html_url": "https://github.com/Guria",
+    "followers_url": "https://api.github.com/users/Guria/followers",
+    "following_url": "https://api.github.com/users/Guria/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Guria/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Guria/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Guria/subscriptions",
+    "organizations_url": "https://api.github.com/users/Guria/orgs",
+    "repos_url": "https://api.github.com/users/Guria/repos",
+    "events_url": "https://api.github.com/users/Guria/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Guria/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9b5c784bdc3a10d3c850e486c97dce5b794166a3",
+      "url": "https://api.github.com/repos/umputun/remark/commits/9b5c784bdc3a10d3c850e486c97dce5b794166a3",
+      "html_url": "https://github.com/umputun/remark/commit/9b5c784bdc3a10d3c850e486c97dce5b794166a3"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "39285155c5467f7237c1da11c87e37039ffc50cb",
+      "filename": "web/app/common/fetcher.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/web/app/common/fetcher.js",
+      "raw_url": "https://github.com/umputun/remark/raw/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/web/app/common/fetcher.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/common/fetcher.js?ref=b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+      "patch": "@@ -30,7 +30,7 @@ methods.forEach(method => {\n \n       parameters.url = `${basename}${url}`;\n \n-      if (method !== 'post' && !parameters.url.includes('?site=') && !parameters.url.includes('&site=')) {\n+      if (siteId && method !== 'post' && !parameters.url.includes('?site=') && !parameters.url.includes('&site=')) {\n         parameters.url += (parameters.url.includes('?') ? '&' : '?') + `site=${siteId}`;\n       }\n "
+    },
+    {
+      "sha": "2ed169dc73e65217050301b76daa27bd2ed84219",
+      "filename": "web/app/components/auth-panel/auth-panel.jsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/web/app/components/auth-panel/auth-panel.jsx",
+      "raw_url": "https://github.com/umputun/remark/raw/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/web/app/components/auth-panel/auth-panel.jsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/components/auth-panel/auth-panel.jsx?ref=b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+      "patch": "@@ -65,7 +65,7 @@ export default class AuthPanel extends Component {\n               </DropdownItem>\n \n               <DropdownItem>\n-                <Button mods={{ kind: 'link' }} onClick={requestDeletion}>\n+                <Button mods={{ kind: 'link' }} onClick={() => requestDeletion().then(props.onSignOut)}>\n                   Request my data removal\n                 </Button>\n               </DropdownItem>"
+    },
+    {
+      "sha": "c94e3913cba45b1239374be128ebb4c26431475b",
+      "filename": "web/app/utils/email.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/web/app/utils/email.js",
+      "raw_url": "https://github.com/umputun/remark/raw/b27489e9180e92ab65dc376ec1b914e2ccb9bfa7/web/app/utils/email.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/utils/email.js?ref=b27489e9180e92ab65dc376ec1b914e2ccb9bfa7",
+      "patch": "@@ -27,7 +27,7 @@ link: ${link}\n }\n \n export function requestDeletion() {\n-  deleteMe().then(data => {\n+  return deleteMe().then(data => {\n     const email = store.get('config').admin_email;\n     const { subject, message } = getDeleteInformationMessage(data.user_id, siteId, data.link);\n     window.location = `mailto:${email}?subject=${subject}&body=${message}`;"
+    }
+  ]
+}

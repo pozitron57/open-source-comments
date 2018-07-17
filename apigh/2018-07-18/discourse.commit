@@ -1,0 +1,98 @@
+{
+  "sha": "f146f94ef65ab9c1fa9bc9a509166ed1c1f10477",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmMTQ2Zjk0ZWY2NWFiOWMxZmE5YmM5YTUwOTE2NmVkMWMxZjEwNDc3",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-07-17T20:47:23Z"
+    },
+    "committer": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-07-17T20:47:23Z"
+    },
+    "message": "FIX: errors when copying post_uploads in discourse_merger.rb",
+    "tree": {
+      "sha": "ee5233c356ffa66ea5b7b9ea3cc35fb9d97b1305",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ee5233c356ffa66ea5b7b9ea3cc35fb9d97b1305"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f146f94ef65ab9c1fa9bc9a509166ed1c1f10477",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f146f94ef65ab9c1fa9bc9a509166ed1c1f10477",
+  "html_url": "https://github.com/discourse/discourse/commit/f146f94ef65ab9c1fa9bc9a509166ed1c1f10477",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f146f94ef65ab9c1fa9bc9a509166ed1c1f10477/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "04077a7df65666ca7239c25f59f3310f5349c83c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/04077a7df65666ca7239c25f59f3310f5349c83c",
+      "html_url": "https://github.com/discourse/discourse/commit/04077a7df65666ca7239c25f59f3310f5349c83c"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 3,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "ae40b36a8ac29662be491fd12994ccc8a2e4fc42",
+      "filename": "script/bulk_import/discourse_merger.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 5,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/f146f94ef65ab9c1fa9bc9a509166ed1c1f10477/script/bulk_import/discourse_merger.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f146f94ef65ab9c1fa9bc9a509166ed1c1f10477/script/bulk_import/discourse_merger.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/bulk_import/discourse_merger.rb?ref=f146f94ef65ab9c1fa9bc9a509166ed1c1f10477",
+      "patch": "@@ -601,13 +601,11 @@ def process_user_warning(user_warning)\n   def process_post_upload(post_upload)\n     return nil unless post_upload['upload_id'].present?\n \n-    # can't figure out why there are duplicates of these during merge.\n-    # here's a hack to prevent it:\n     @imported_post_uploads ||= {}\n-    return nil if @imported_post_uploads[post_upload['post_id']] == post_upload['upload_id']\n-    @imported_post_uploads[post_upload['post_id']] = post_upload['upload_id']\n+    return nil if @imported_post_uploads[post_upload['post_id']]&.include?(post_upload['upload_id'])\n+    @imported_post_uploads[post_upload['post_id']] ||= []\n+    @imported_post_uploads[post_upload['post_id']] << post_upload['upload_id']\n \n-    # ...and there are still duplicates. So try this:\n     return nil if PostUpload.where(post_id: post_upload['post_id'], upload_id: post_upload['upload_id']).exists?\n \n     post_upload"
+    }
+  ]
+}
