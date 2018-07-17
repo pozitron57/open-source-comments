@@ -1,0 +1,98 @@
+{
+  "sha": "331296e851e1726bf312eb16234226a56dbb0844",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozMzEyOTZlODUxZTE3MjZiZjMxMmViMTYyMzQyMjZhNTZkYmIwODQ0",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-07-16T18:52:00Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-07-16T18:52:00Z"
+    },
+    "message": "Fix for JK highlighting, typo",
+    "tree": {
+      "sha": "fd11be8a7ce3dc5a770cc5faad9883a0433cc61c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fd11be8a7ce3dc5a770cc5faad9883a0433cc61c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/331296e851e1726bf312eb16234226a56dbb0844",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/331296e851e1726bf312eb16234226a56dbb0844",
+  "html_url": "https://github.com/discourse/discourse/commit/331296e851e1726bf312eb16234226a56dbb0844",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/331296e851e1726bf312eb16234226a56dbb0844/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "35e8d489de7732aa1a73b64804c8cdc42a473721",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/35e8d489de7732aa1a73b64804c8cdc42a473721",
+      "html_url": "https://github.com/discourse/discourse/commit/35e8d489de7732aa1a73b64804c8cdc42a473721"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "522b34b30b37dd7ab8620e0462dbb7906a62da8b",
+      "filename": "app/assets/stylesheets/common/components/keyboard_shortcuts.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/331296e851e1726bf312eb16234226a56dbb0844/app/assets/stylesheets/common/components/keyboard_shortcuts.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/331296e851e1726bf312eb16234226a56dbb0844/app/assets/stylesheets/common/components/keyboard_shortcuts.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/components/keyboard_shortcuts.scss?ref=331296e851e1726bf312eb16234226a56dbb0844",
+      "patch": "@@ -11,7 +11,7 @@\n \n .featured-topic.selected,\n .topic-post.selected {\n-  box-shadow: inset 3px 0 0 $danger; // needs to be inset for Edge\n+  box-shadow: -3px 0 0 $danger;\n }\n \n .latest .featured-topic {"
+    }
+  ]
+}
