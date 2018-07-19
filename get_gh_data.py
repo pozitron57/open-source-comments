@@ -113,7 +113,7 @@ for cs in os.listdir(p):
         else:
             with open(p+cs, 'r') as f:
                 api_commit_data = yaml.load(f)
-                print ('Try to read "commit" from .commit file')
+                print ('Read "commit" from .commit file for ', p+cs )
                 last_committed = dateutil.parser.parse(api_commit_data["commit"]["committer"]["date"])
                 # Update the value
                 data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y&#8209;%m&#8209;%d')
