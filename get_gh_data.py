@@ -49,9 +49,10 @@ for i in data:
     #e.g., https://api.github.com/repos/posativ/isso/commits/master
     api_commit_url = api_url + '/commits/master'
 
-    github_urls.append(api_url)
-    github_commit_urls.append(api_commit_url)
-    comment_systems.append(i)
+    if not 'pelican_static' in i:
+        github_urls.append(api_url)
+        github_commit_urls.append(api_commit_url)
+        comment_systems.append(i)
 
 # Define today's path
 p = 'apigh/'+str(date.today())+'/'
@@ -87,7 +88,7 @@ if not os.path.isdir(p):
 # and ./apigh/YYYY-MM-DD/<comment_system.commit>
 #print ( '{:<27}{:<6}{:<5}{}'.format('Name', '★', 'I+PR', 'Created')    )
 for cs in os.listdir(p):
-    if not '.swp' in cs: # if opened in vim
+    if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
             with open(p+cs, 'r') as f:
                 api_data = yaml.load(f)
@@ -112,6 +113,7 @@ for cs in os.listdir(p):
         else:
             with open(p+cs, 'r') as f:
                 api_commit_data = yaml.load(f)
+                print ('Try to read "commit" from .commit file')
                 last_committed = dateutil.parser.parse(api_commit_data["commit"]["committer"]["date"])
                 # Update the value
                 data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y&#8209;%m&#8209;%d')
