@@ -1,20 +1,20 @@
 #!/bin/bash
 cd /home/slisakov/open-source-comments
-git pull
+nice -n5 git pull
 
 # Update the data on gh stars, last commit etc
-python3 get_gh_data.py
+nice -n5 python3 get_gh_data.py
 
 # generate data.js (read by index.html)
-python3 yaml_2_js.py
+nice -n5 python3 yaml_2_js.py
 
 # deploy changes
-rsync -auvx --delete --numeric-ids data.js index.html /var/www/lisakov.com/projects/open-source-comments/
-rsync -auvx --delete --numeric-ids images/ /var/www/lisakov.com/projects/open-source-comments/images/
-rsync -auvx --delete --numeric-ids css/ /var/www/lisakov.com/projects/open-source-comments/css/
-rsync -auvx --delete --numeric-ids js/ /var/www/lisakov.com/projects/open-source-comments/js/
+nice -n5 rsync -auvx --delete --numeric-ids data.js index.html /var/www/lisakov.com/projects/open-source-comments/
+nice -n5 rsync -auvx --delete --numeric-ids images/ /var/www/lisakov.com/projects/open-source-comments/images/
+nice -n5 rsync -auvx --delete --numeric-ids css/ /var/www/lisakov.com/projects/open-source-comments/css/
+nice -n5 rsync -auvx --delete --numeric-ids js/ /var/www/lisakov.com/projects/open-source-comments/js/
 
 # update github repo  https://github.com/pozitron57/open-source-comments
-git add *
-git commit -m 'automatic update'
-git push origin master
+nice -n5 git add *
+nice -n5 git commit -m 'automatic update'
+nice -n5 git push origin master
