@@ -1,0 +1,98 @@
+{
+  "sha": "4e09206061b2b8036b1b06b712da58cdcd308dc2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0ZTA5MjA2MDYxYjJiODAzNmIxYjA2YjcxMmRhNThjZGNkMzA4ZGMy",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-07-19T15:07:15Z"
+    },
+    "committer": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-07-19T15:07:15Z"
+    },
+    "message": "FIX: set uploads sequence after copying uplaods in discourse_merger",
+    "tree": {
+      "sha": "3b9b79a642db0f22571f68f326bd22dcadc5a391",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3b9b79a642db0f22571f68f326bd22dcadc5a391"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4e09206061b2b8036b1b06b712da58cdcd308dc2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4e09206061b2b8036b1b06b712da58cdcd308dc2",
+  "html_url": "https://github.com/discourse/discourse/commit/4e09206061b2b8036b1b06b712da58cdcd308dc2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4e09206061b2b8036b1b06b712da58cdcd308dc2/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73739060f316c08125f490569266834f9da8784d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/73739060f316c08125f490569266834f9da8784d",
+      "html_url": "https://github.com/discourse/discourse/commit/73739060f316c08125f490569266834f9da8784d"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ee37ee3e5b7593f6d771d8f44de3813abe989d7c",
+      "filename": "script/bulk_import/discourse_merger.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e09206061b2b8036b1b06b712da58cdcd308dc2/script/bulk_import/discourse_merger.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e09206061b2b8036b1b06b712da58cdcd308dc2/script/bulk_import/discourse_merger.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/bulk_import/discourse_merger.rb?ref=4e09206061b2b8036b1b06b712da58cdcd308dc2",
+      "patch": "@@ -322,6 +322,9 @@ def copy_uploads\n         @raw_connection.put_copy_data(row.values)\n       end\n     end\n+\n+    @sequences[Upload.sequence_name] = last_id + 1\n+\n     puts ''\n \n     copy_model(PostUpload)\n@@ -681,7 +684,8 @@ def fix_topic_links\n \n     @topics.each do |old_topic_id, new_topic_id|\n       current += 1\n-      puts \"#{current} completed. #{update_count} rows updated.\" if current % 200 == 0\n+      percent = (current * 100) / total\n+      puts \"#{current} (#{percent}\\%) completed. #{update_count} rows updated.\" if current % 200 == 0\n \n       if topic = Topic.find_by_id(new_topic_id)\n         replace_arg = ["
+    }
+  ]
+}
