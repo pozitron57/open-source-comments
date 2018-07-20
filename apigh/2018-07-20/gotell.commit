@@ -1,0 +1,98 @@
+{
+  "sha": "d574a1d75a3f8b95d7392399c76c8f304db2b446",
+  "node_id": "MDY6Q29tbWl0Njg5Njk2NjM6ZDU3NGExZDc1YTNmOGI5NWQ3MzkyMzk5Yzc2YzhmMzA0ZGIyYjQ0Ng==",
+  "commit": {
+    "author": {
+      "name": "Mathias Biilmann Christensen",
+      "email": "info@mathias-biilmann.net",
+      "date": "2017-09-25T14:08:43Z"
+    },
+    "committer": {
+      "name": "Mathias Biilmann Christensen",
+      "email": "info@mathias-biilmann.net",
+      "date": "2017-09-25T14:08:43Z"
+    },
+    "message": "Build a _redirects file to avoid 404s",
+    "tree": {
+      "sha": "ebba3de82f0d51986981a2c837b3b6003c1ebced",
+      "url": "https://api.github.com/repos/netlify/gotell/git/trees/ebba3de82f0d51986981a2c837b3b6003c1ebced"
+    },
+    "url": "https://api.github.com/repos/netlify/gotell/git/commits/d574a1d75a3f8b95d7392399c76c8f304db2b446",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/netlify/gotell/commits/d574a1d75a3f8b95d7392399c76c8f304db2b446",
+  "html_url": "https://github.com/netlify/gotell/commit/d574a1d75a3f8b95d7392399c76c8f304db2b446",
+  "comments_url": "https://api.github.com/repos/netlify/gotell/commits/d574a1d75a3f8b95d7392399c76c8f304db2b446/comments",
+  "author": {
+    "login": "biilmann",
+    "id": 6515,
+    "node_id": "MDQ6VXNlcjY1MTU=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6515?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/biilmann",
+    "html_url": "https://github.com/biilmann",
+    "followers_url": "https://api.github.com/users/biilmann/followers",
+    "following_url": "https://api.github.com/users/biilmann/following{/other_user}",
+    "gists_url": "https://api.github.com/users/biilmann/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/biilmann/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/biilmann/subscriptions",
+    "organizations_url": "https://api.github.com/users/biilmann/orgs",
+    "repos_url": "https://api.github.com/users/biilmann/repos",
+    "events_url": "https://api.github.com/users/biilmann/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/biilmann/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "biilmann",
+    "id": 6515,
+    "node_id": "MDQ6VXNlcjY1MTU=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6515?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/biilmann",
+    "html_url": "https://github.com/biilmann",
+    "followers_url": "https://api.github.com/users/biilmann/followers",
+    "following_url": "https://api.github.com/users/biilmann/following{/other_user}",
+    "gists_url": "https://api.github.com/users/biilmann/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/biilmann/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/biilmann/subscriptions",
+    "organizations_url": "https://api.github.com/users/biilmann/orgs",
+    "repos_url": "https://api.github.com/users/biilmann/repos",
+    "events_url": "https://api.github.com/users/biilmann/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/biilmann/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bd6dc0da55c68e61bf5b50e94bc28bf84478bf25",
+      "url": "https://api.github.com/repos/netlify/gotell/commits/bd6dc0da55c68e61bf5b50e94bc28bf84478bf25",
+      "html_url": "https://github.com/netlify/gotell/commit/bd6dc0da55c68e61bf5b50e94bc28bf84478bf25"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 27,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "043ae8679fbf3103c5b63736fc2981b0806ba18a",
+      "filename": "comments/builder.go",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "blob_url": "https://github.com/netlify/gotell/blob/d574a1d75a3f8b95d7392399c76c8f304db2b446/comments/builder.go",
+      "raw_url": "https://github.com/netlify/gotell/raw/d574a1d75a3f8b95d7392399c76c8f304db2b446/comments/builder.go",
+      "contents_url": "https://api.github.com/repos/netlify/gotell/contents/comments/builder.go?ref=d574a1d75a3f8b95d7392399c76c8f304db2b446",
+      "patch": "@@ -45,6 +45,33 @@ func Build(config *conf.Configuration) {\n \t}\n \n \twg.Wait()\n+\n+\temptyPath := path.Join(config.Threads.Destination, \"empty.json\")\n+\tempty, err := os.Create(emptyPath)\n+\tif err != nil {\n+\t\tlog.Fatalf(\"Error opening the empty file %v: %v\", emptyPath, err)\n+\t}\n+\tdefer empty.Close()\n+\tempty.WriteString(\"[]\")\n+\n+\tcountPath := path.Join(config.Threads.Destination, \"empty.count.json\")\n+\tcount, err := os.Create(countPath)\n+\tif err != nil {\n+\t\tlog.Fatalf(\"Error opening the count file %v: %v\", countPath, err)\n+\t}\n+\tdefer count.Close()\n+\tcount.WriteString(fmt.Sprintf(\"{\\\"count\\\": %v}\", 0))\n+\n+\tredirectsPath := path.Join(config.Threads.Destination, \"_redirects\")\n+\tredirects, err := os.Create(redirectsPath)\n+\tif err != nil {\n+\t\tlog.Fatalf(\"Error opening the redirects file %v: %v\", redirectsPath, err)\n+\t}\n+\tdefer redirects.Close()\n+\tredirects.WriteString(`\n+/*.count.json  /empty.count.json   200\n+/*.json  /empty.json  200\n+`)\n }\n \n func generate(source, dest string) {"
+    }
+  ]
+}
