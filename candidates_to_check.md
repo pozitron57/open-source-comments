@@ -6,3 +6,4 @@ https://code.google.com/archive/p/comment-it/
 https://github.com/pvorb/tala
 https://github.com/pvorb/node-opinions
 https://github.com/scotch-io/laravel-angular-comment-app
+https://github.com/kenota/kommentator
