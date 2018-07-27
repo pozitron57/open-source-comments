@@ -1,0 +1,122 @@
+{
+  "sha": "5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1ZjFmZDAwMTliZjJmYjdmNTIwMzdiMjIzZTEyODdhN2Q0NjdjNjZi",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-07-27T16:18:53Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-07-27T16:18:53Z"
+    },
+    "message": "FEATURE: Allow revoke and connect for GitHub logins",
+    "tree": {
+      "sha": "f67f40e7ee02b13b59c3c875a85ee748bd58a0e3",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f67f40e7ee02b13b59c3c875a85ee748bd58a0e3"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+  "html_url": "https://github.com/discourse/discourse/commit/5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6296f63804cbf8ae6d559cf66d6be1da0f934bd1",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6296f63804cbf8ae6d559cf66d6be1da0f934bd1",
+      "html_url": "https://github.com/discourse/discourse/commit/6296f63804cbf8ae6d559cf66d6be1da0f934bd1"
+    }
+  ],
+  "stats": {
+    "total": 58,
+    "additions": 56,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "51051791048c0b1fe51fcc9dbfa41db67e040ad6",
+      "filename": "app/assets/javascripts/discourse/models/login-method.js.es6",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/app/assets/javascripts/discourse/models/login-method.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/app/assets/javascripts/discourse/models/login-method.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/models/login-method.js.es6?ref=5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+      "patch": "@@ -127,7 +127,11 @@ export function findAll(siteSettings, capabilities, isMobileDevice) {\n         params.displayPopup = true;\n       }\n \n-      if ([\"facebook\", \"google_oauth2\", \"twitter\", \"yahoo\"].includes(name)) {\n+      if (\n+        [\"facebook\", \"google_oauth2\", \"twitter\", \"yahoo\", \"github\"].includes(\n+          name\n+        )\n+      ) {\n         params.canConnect = true;\n       }\n "
+    },
+    {
+      "sha": "aaf43fa1b2bf21f41a8b455c7c7bfe92c146df8e",
+      "filename": "lib/auth/github_authenticator.rb",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 1,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/lib/auth/github_authenticator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/lib/auth/github_authenticator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/auth/github_authenticator.rb?ref=5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+      "patch": "@@ -15,6 +15,17 @@ def description_for_user(user)\n     info&.screen_name || \"\"\n   end\n \n+  def can_revoke?\n+    true\n+  end\n+\n+  def revoke(user, skip_remote: false)\n+    info = GithubUserInfo.find_by(user_id: user.id)\n+    raise Discourse::NotFound if info.nil?\n+    info.destroy!\n+    true\n+  end\n+\n   class GithubEmailChecker\n     include ::HasErrors\n \n@@ -30,7 +41,7 @@ def valid?()\n \n   end\n \n-  def after_authenticate(auth_token)\n+  def after_authenticate(auth_token, existing_account: nil)\n     result = Auth::Result.new\n \n     data = auth_token[:info]\n@@ -46,6 +57,15 @@ def after_authenticate(auth_token)\n \n     user_info = GithubUserInfo.find_by(github_user_id: github_user_id)\n \n+    if existing_account && (user_info.nil? || existing_account.id != user_info.user_id)\n+      user_info.destroy! if user_info\n+      user_info = GithubUserInfo.create(\n+        user_id: existing_account.id,\n+        screen_name: screen_name,\n+        github_user_id: github_user_id\n+        )\n+    end\n+\n     if user_info\n       # If there's existing user info with the given GitHub ID, that's all we\n       # need to know."
+    },
+    {
+      "sha": "4ade5665577d549025fcd636ab24ad68d79ede19",
+      "filename": "spec/components/auth/github_authenticator_spec.rb",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 0,
+      "changes": 30,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/spec/components/auth/github_authenticator_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f1fd0019bf2fb7f52037b223e1287a7d467c66b/spec/components/auth/github_authenticator_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/auth/github_authenticator_spec.rb?ref=5f1fd0019bf2fb7f52037b223e1287a7d467c66b",
+      "patch": "@@ -202,6 +202,36 @@ def auth_token_for(user)\n       expect(result.email_valid).to eq(true)\n     end\n \n+    it 'can connect to a different existing user account' do\n+      user1 = Fabricate(:user)\n+      user2 = Fabricate(:user)\n+\n+      GithubUserInfo.create!(user_id: user1.id, github_user_id: 100, screen_name: \"boris\")\n+\n+      result = authenticator.after_authenticate(data, existing_account: user2)\n+\n+      expect(result.user.id).to eq(user2.id)\n+      expect(GithubUserInfo.exists?(user_id: user1.id)).to eq(false)\n+      expect(GithubUserInfo.exists?(user_id: user2.id)).to eq(true)\n+    end\n+\n+  end\n+\n+  context 'revoke' do\n+    let(:user) { Fabricate(:user) }\n+    let(:authenticator) { Auth::GithubAuthenticator.new }\n+\n+    it 'raises exception if no entry for user' do\n+      expect { authenticator.revoke(user) }.to raise_error(Discourse::NotFound)\n+    end\n+\n+      it 'revokes correctly' do\n+        GithubUserInfo.create!(user_id: user.id, github_user_id: 100, screen_name: \"boris\")\n+        expect(authenticator.can_revoke?).to eq(true)\n+        expect(authenticator.revoke(user)).to eq(true)\n+        expect(authenticator.description_for_user(user)).to eq(\"\")\n+      end\n+\n   end\n \n   describe 'avatar retrieval' do"
+    }
+  ]
+}
