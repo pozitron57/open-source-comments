@@ -12,8 +12,8 @@ isso:
     css_kB: 7
     language: "python"
     db: "SQLite"
-    moderation: "simple admin panel: remove/edit comments"
-    mail_notification: "author only, but see [PR](https://github.com/posativ/isso/pull/443)"
+    moderation: "approve, reject or delete comments via email sent link or a simple admin panel"
+    mail_notification: "Admin is notified. It's possible to subscribe to replies to your comment but not to thread"
     antispam: "no"
     rate_limit: "yes"
     bad_words_list: "no"
@@ -26,7 +26,7 @@ isso:
     sort: "no, see [issue](https://github.com/posativ/isso/issues/440) for discussion"
     hide_long_threads: "yes"
     anonymous_comments: "yes"
-    social_network_login: "No, but see [fork](https://github.com/posativ/isso/issues/240)\
+    social_network_login: "No, but see a [fork](https://github.com/posativ/isso/issues/240)\
         \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
@@ -39,7 +39,7 @@ isso:
     created: "2012&#8209;10&#8209;17"
     rss: "see [PR](https://github.com/posativ/isso/pull/419)"
     static: "no"
-    description: "Lightweight commenting server. Allows anonymous comments, maintains identity and is simple to administrate. Install from source, pip and docker are not updated regularly"
+    description: "Lightweight, allows anonymous comments, maintains identity and is simple to administrate. Install from source, pip and docker aren’t updated regularly"
     license: "MIT"
     open_issues: 119
     last_committed: 2018&#8209;07&#8209;27
@@ -69,7 +69,7 @@ commento:
     provided_hosting: "currently in [private&nbsp;β](https://commento.io)"
     collapse_comments: "yes"
     hide_long_threads: "?"
-    anonymous_comments: "?"
+    anonymous_comments: "yes"
     social_network_login: "google"
     import_from_wordpress: "?"
     import_from_disqus: "yes"
@@ -77,7 +77,7 @@ commento:
     edit: "no"
     updated: 2018&#8209;07&#8209;13
     created: '2017&#8209;04&#8209;24'
-    description: ""
+    description: "Lightweight commenting system"
     static: "no"
     license: "MIT"
     open_issues: 0
@@ -127,7 +127,7 @@ schnak:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: ""
+    description: "Simple Disqus-like drop-in commenting system written in JavaScript"
     license:
     open_issues: 10
     last_committed: 2018&#8209;06&#8209;07
@@ -145,9 +145,10 @@ juvia:
     language: "Ruby"
     preview: "yes"
     avatar: "Gravatar"
-    moderation: "full-featured admin panel for multiple users"
+    moderation: "Full-featured admin panel for multiple users"
     static: "no"
-    description: ""
+    nested_comments: "no"
+    description: "Unmaintained from 2015, because it does all Juvia's author wanted it to do. Not so lightweight. Advanced admin panel."
     js_kB: ""
     css_kB: ""
     license: "AGPL-3.0"
@@ -164,7 +165,8 @@ site_point_nested_comments:
     github: "https://github.com/bodrovis/SitePointNestedComments"
     website: "https://www.sitepoint.com/nested-comments-rails/"
     static: "no"
-    description: ""
+    description: "Rails app with the help of the closure_tree gem"
+    demo: "[Not working](http://nested-comments.radiant-wind.com/)"
     js_kB: ""
     css_kB: ""
     updated: 2017&#8209;06&#8209;19
@@ -209,7 +211,7 @@ remark:
     created: "2017&#8209;12&#8209;20"
     rss: "all comments, post"
     static: "no"
-    description: ""
+    description: "Lightweight and privacy-focused. Active development (summer 2018)."
     license: "MIT"
     open_issues: 36
     last_committed: 2018&#8209;07&#8209;25
@@ -229,13 +231,13 @@ valine:
     moderation: "?"
     mail_notification: "? [See](https://valine.js.org/en/notify.html)"
     rss: "?"
-    antispam: "?"
+    antispam: "yes, e.g., calculate expression"
     bad_words_list: "?"
     use_cookies: "?"
     avatar: "[Gravatar](https://valine.js.org/en/avatar.html)"
-    markdown_support: "?"
-    nested_comments: "?"
-    provided_hosting: "?"
+    markdown_support: "yes"
+    nested_comments: "yes"
+    provided_hosting: ""
     collapse_comments: "?"
     sort: "?"
     hide_long_threads: "?"
@@ -295,7 +297,7 @@ mouthful:
     rate_limit: "yes"
     paging: "yes"
     static: "no"
-    description: ""
+    description: "[Really lightweight](https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/), written in GO and Preact."
     license: "MIT"
     open_issues: 7
     last_committed: 2018&#8209;06&#8209;12
@@ -381,7 +383,7 @@ coralproject_talk:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: ""
+    description: "A better commenting experience from Mozilla, The Washington Post, and The New York Times"
     license:
     open_issues: 35
     last_committed: 2018&#8209;07&#8209;26
@@ -397,7 +399,7 @@ hashover2:
     js_kB: ""
     css_kB: ""
     language: "php"
-    db: "SQLite?"
+    db: "SQLite? XML files?"
     moderation: "?"
     mail_notification: "?"
     rss: "?"
@@ -424,7 +426,7 @@ hashover2:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Does it work?"
+    description: "Under development (summer 2018). Embed .js or php"
     license: "AGPL-3.0"
     open_issues: 59
     last_committed: 2018&#8209;04&#8209;12
@@ -467,7 +469,8 @@ hashover:
     rate_limit: "?"
     static: "no"
     paging: "?"
-    description: ""
+    description: "Current stable version of Hashover. Embed .js or php"
+    block_ip: "yes"
     license: "AGPL-3.0"
     open_issues: 7
     last_committed: 2017&#8209;05&#8209;06
@@ -510,7 +513,7 @@ talkatv:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: ""
+    description: "Uses XMLHttpRequest level 2 and CORS to post the comment back to the server. No updates since 2012"
     license: "AGPL-3.0"
     open_issues: 26
     last_committed: 2012&#8209;12&#8209;03
@@ -542,7 +545,7 @@ wildfire:
     collapse_comments: "?"
     sort: "?"
     hide_long_threads: "?"
-    anonymous_comments: "?"
+    anonymous_comments: "yes"
     social_network_login: "?"
     import_from_wordpress: "?"
     import_from_disqus: "?"
@@ -555,7 +558,7 @@ wildfire:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: ""
+    description: "Uses real-time databases (Firebase & Wilddog) to store the comments, provides real-time communicating experience"
     license: "GPL-3.0"
     open_issues: 10
     last_committed: 2018&#8209;03&#8209;14
@@ -601,7 +604,7 @@ e_comments:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: ""
+    description: "Written in Ruby using the sinatra framework."
     license: "MIT"
     open_issues: 1
     last_committed: 2018&#8209;01&#8209;23
@@ -1211,7 +1214,7 @@ django_fluent_comments:
     db: "?"
     moderation: "?"
     mail_notification: "?"
-    dependency: "?"
+    dependency: "Django"
     rss: "?"
     antispam: "Akismet, captcha"
     bad_words_list: "?"
@@ -1237,7 +1240,7 @@ django_fluent_comments:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: ""
+    description: "A modern, ajax-based appearance for django comments. For Django sites."
     license: "Apache-2.0"
     open_issues: 16
     last_committed: 2018&#8209;06&#8209;05
@@ -1479,7 +1482,7 @@ jekyll_static_comments:
     db: "?"
     moderation: "?"
     mail_notification: "yes"
-    dependency: "?"
+    dependency: "Jekyll"
     rss: "?"
     antispam: "?"
     bad_words_list: "?"
@@ -1505,7 +1508,7 @@ jekyll_static_comments:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "For Jekyll"
+    description: "For Jekyll. PHP script sends the comment to the server and produces .YAML files which are stored in a special folder. On site rebuild, these comments are built into the html code of the page"
     license: "GPL-3.0"
     open_issues: 8
     last_committed: 2014&#8209;02&#8209;11
