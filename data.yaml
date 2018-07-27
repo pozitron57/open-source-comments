@@ -4,16 +4,16 @@ isso:
     homepage: "https://posativ.org/isso/"
     name: "Isso"
     demo:
-      - "https://posativ.org/isso/"
-      - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/"
-      - "https://pantarei.xyz/posts/isso-with-social-network-integration/"
-      - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog"
+    - "https://posativ.org/isso/"
+    - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/"
+    - "https://pantarei.xyz/posts/isso-with-social-network-integration/"
+    - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog"
     js_kB: 68
     css_kB: 7
     language: "python"
     db: "SQLite"
     moderation: "approve, reject or delete comments via email sent link or a simple admin panel"
-    mail_notification: "Admin is notified. It's possible to subscribe to replies to your comment but not to thread"
+    mail_notification: "Admin is notified. It’s possible to subscribe to replies to your comment but not to thread"
     antispam: "no"
     rate_limit: "yes"
     bad_words_list: "no"
@@ -27,7 +27,7 @@ isso:
     hide_long_threads: "yes"
     anonymous_comments: "yes"
     social_network_login: "No, but see a [fork](https://github.com/posativ/isso/issues/240)\
-        \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
+    \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -112,10 +112,10 @@ schnak:
     hide_long_threads: "?"
     anonymous_comments: "?"
     social_network_login:
-      - "github"
-      - "google"
-      - "twitter"
-      - "facebook"
+    - "github"
+    - "google"
+    - "twitter"
+    - "facebook"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -137,9 +137,9 @@ juvia:
     stars: 1027
     name: "Juvia"
     demo:
-      - "https://www.alfajango.com/blog/announcing-dynatable-js/"
-      - "https://erik.doernenburg.com/2015/08/privacy-and-this-website/"
-      #- "http://rahul.raut.me/2014/12/15/welcome-to-my-blog/"
+    - "https://www.alfajango.com/blog/announcing-dynatable-js/"
+    - "https://erik.doernenburg.com/2015/08/privacy-and-this-website/"
+    #- "http://rahul.raut.me/2014/12/15/welcome-to-my-blog/"
     antispam: "Akismet"
     github: "https://github.com/phusion/juvia"
     language: "Ruby"
@@ -148,14 +148,14 @@ juvia:
     moderation: "Full-featured admin panel for multiple users"
     static: "no"
     nested_comments: "no"
-    description: "Unmaintained from 2015, because it does all Juvia's author wanted it to do. Not so lightweight. Advanced admin panel."
+    description: "Unmaintained from 2015, because it does all Juvia’s author wanted it to do. Not so lightweight. Advanced admin panel."
     js_kB: ""
     css_kB: ""
     license: "AGPL-3.0"
-    updated: 2018&#8209;07&#8209;10
+    updated: '2018&#8209;07&#8209;10'
     created: '2011&#8209;08&#8209;11'
     open_issues: 27
-    last_committed: 2018&#8209;04&#8209;04
+    last_committed: '2018&#8209;04&#8209;04'
     stars_dif: '0'
 
 site_point_nested_comments:
@@ -200,7 +200,7 @@ remark:
     hide_long_threads: "?"
     anonymous_comments: "?"
     social_network_login:
-      - "?"
+    - "?"
     import_from_wordpress: "?"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -264,8 +264,8 @@ mouthful:
     homepage: "https://mouthful.dizzy.zone/"
     name: "Mouthful"
     demo:
-      - "https://mouthful.dizzy.zone/"
-      - "https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/"
+    - "https://mouthful.dizzy.zone/"
+    - "https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/"
     docker: "yes"
     js_kB: "44"
     css_kB: ""
@@ -531,8 +531,8 @@ wildfire:
     language: "Vue?"
     db: "Firebase/Wilddog"
     moderation:
-      - "delete comment"
-      - "ban"
+    - "delete comment"
+    - "ban"
     mail_notification: "?"
     rss: "?"
     antispam: "?"
@@ -578,8 +578,8 @@ e_comments:
     moderation: "No admin panel"
     mail_notification: "No"
     dependency:
-      - "jQuery.js"
-      - "mustache.js"
+    - "jQuery.js"
+    - "mustache.js"
     rss: "?"
     antispam: "yes"
     bad_words_list: "?"
@@ -681,9 +681,9 @@ comments_app:
     hide_long_threads: "?"
     anonymous_comments: "?"
     social_network_login:
-      - "google"
-      - "github"
-      - "gitlab"
+    - "google"
+    - "github"
+    - "gitlab"
     import_from_wordpress: "?"
     import_from_disqus: "?"
     english_documentation: "yes"
@@ -762,7 +762,7 @@ jskomment:
     dependency: "?"
     rss: "?"
     antispam:
-      - "captcha"
+    - "captcha"
     bad_words_list: "?"
     use_cookies: "?"
     avatar: "?"
@@ -931,8 +931,8 @@ staticman:
     homepage: "https://staticman.net/"
     name: "Staticman"
     demo:
-      - "https://eduardoboucas.com/blog/2016/08/10/staticman.html"
-      - "https://hugo.staticman.net/post/my-entry/"
+    - "https://eduardoboucas.com/blog/2016/08/10/staticman.html"
+    - "https://hugo.staticman.net/post/my-entry/"
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1057,7 +1057,7 @@ talkyard:
     paging: "?"
     static: "no"
     description: "Previously named Debiki, then Effective discussions. Can be used\
-        \ as a forum"
+    \ as a forum"
     license:
     open_issues: 3
     last_committed: 2018&#8209;07&#8209;23
@@ -1069,8 +1069,8 @@ discourse:
     homepage: "https://www.discourse.org"
     name: "Discourse"
     demo: "See [1](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
-        \ [2](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
-        \ [docuss](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
+    \ [2](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
+    \ [docuss](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1105,7 +1105,7 @@ discourse:
     paging: "?"
     static: "no"
     description: "A platform for community discussion. Can be implemented as comments\
-        \ for a static blog, see links in Demo"
+    \ for a static blog, see links in Demo"
     license:
     open_issues: 7
     last_committed: 2018&#8209;07&#8209;27
