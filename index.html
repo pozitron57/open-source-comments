@@ -22,35 +22,33 @@
   
 <body>
 
-<div class="preamble">
-  <h1 id="open-source-self-hosted-comments-for-static-websites"><a class="header-anchor" href="#open-source-self-hosted-comments-for-static-websites"></a>Open-source self-hosted comments for static websites</h1>
-  <p>Inspired by <a href="http://staticsitegenerators.net" target="_blank" rel="external">staticsitegenerators.net</a>.
-  Contribute at <a href="https://github.com/pozitron57/open-source-comments" target="_blank" rel="external">github</a> — add the missing data!
-  Github-related data (stars, opened issues + PR, updated) are updated daily automatically.</p>
-  <p>Want different columns? Noted a bug? Submit an
-  <a href="https://github.com/pozitron57/open-source-comments/issues/new" target="_blank" rel="external">issue</a>.</p>
-  <h2 id="what-s-wrong-with-disqus"><a class="header-anchor" href="#what-s-wrong-with-disqus"></a>What’s wrong with Disqus</h2>
-  <p>Disqus loads absurd amount of tracking services, which exposes
-  your visitors’ personal data and significantly increases loading time.
-  See, e.g., <a href="http://donw.io/post/github-comments/#what-s-wrong-with-disqus" target="_blank" rel="external">this
-  post</a>.</p>
-  <h2 id="what-s-not-covered-here"><a class="header-anchor" href="#what-s-not-covered-here"></a>What’s not covered here</h2>
-  <p>For a static website, one usually wants a lightweight commenting server with
-  as little dependencies as possible. Few commenting engines listed on the page
-  are provided by heavy frameworks and web-applications (e.g.,
-  <a href="https://github.com/django-fluent/django-fluent-comments" target="_blank" rel="external">django-fluent-comments</a>,
-  <a href="https://github.com/discourse/discourse" target="_blank" rel="external">discourse</a>,
-  <a href="https://github.com/debiki/talkyard" target="_blank" rel="external">talkyard</a>), but the majority are relatively
-  lightweight applications designed specifically to provide comments for the
-  static pages.</p>
-  <p>This page prioritizes info on <em>self-hosted</em> comments. However,
-  there are other solutions, including implementations of third-party services
-  (e.g., Github issues, such as
-  <a href="https://github.com/imsun/gitment" target="_blank" rel="external">[1]</a>,
-  <a href="https://github.com/gitalk/gitalk" target="_blank" rel="external">[2]</a>,
-  <a href="https://github.com/Blankj/awesome-comment" target="_blank" rel="external">[3]</a>,
-  <a href="https://github.com/utterance/utterances" target="_blank" rel="external">[4]</a>).</p>
-  <h2 id="choose-columns-to-show"><a class="header-anchor" href="#choose-columns-to-show"></a>Choose columns to show</h2>
+<div class="preamble"><h1>Open-source self-hosted comments for static websites</h1>
+<p>Inspired by <a href="http://staticsitegenerators.net/">staticsitegenerators.net</a>.
+Contribute at <a href="https://github.com/pozitron57/open-source-comments">github</a> —
+add the missing data. Github-related data (stars, opened issues + PR, etc.)
+are updated daily automatically. Want different columns? Noted a bug? Submit an
+<a href="https://github.com/pozitron57/open-source-comments/issues/new">issue</a>.</p>
+<h2>What’s wrong with Disqus</h2>
+<p>Disqus loads absurd amount of tracking services, which exposes your visitors’
+personal data and significantly increases loading time. See, e.g., <a href="http://donw.io/post/github-comments/#what-s-wrong-with-disqus">this
+post</a>.</p>
+<h2>What’s not covered here</h2>
+<p>For a static website, one usually wants a lightweight commenting server with as
+little dependencies as possible. Few commenting engines listed on the page are
+provided by heavy frameworks and web-applications (e.g.,
+<a href="https://github.com/django-fluent/django-fluent-comments">django-fluent-comments</a>,
+<a href="https://github.com/discourse/discourse">discourse</a>,
+<a href="https://github.com/debiki/talkyard">talkyard</a>, but the majority are relatively
+lightweight applications designed specifically to provide comments for the
+static pages.</p>
+<p>This page prioritizes info on self-hosted comments. However, there are other
+open-source solutions, including implementations of third-party services (e.g.,
+Github issues, such as
+<a href="https://github.com/imsun/gitment">[1]</a>,
+<a href="https://github.com/gitalk/gitalk">[2]</a>,
+<a href="https://github.com/Blankj/awesome-comment">[3]</a>,
+<a href="https://github.com/utterance/utterances">[4]</a>).</p>
+<h2>Choose columns to show</h2>
 </div>
 
 <table id="results" class="display" style="width:100%"></table>
@@ -91,32 +89,28 @@ $(document).ready(function() {
 
 <script data-isso="https://comments.lisakov.com/" 
   data-isso-lang="en"
+  data-isso-reply-notifications="true"
   src="https://comments.lisakov.com/js/embed.min.js">
 </script>
 
-<div class="commentario">
-  <h2> Share your experience</h2>
-  <p>
-  Please share your experience if you are using one of the commenting
-  systems listed in the table, or propose a new one. Write a short summary and
-  provide your "Likes" and "Dislikes" at the end to help other users decide
-  which comments will suit them best. If you are going to post the first
-  opinion on a specific commenting system, please set your name to the name of
-  this commenting system. All the other opinions and questions on this
-  commenting system should go as a reply to the first comment.
-  </p>
-  <section id="isso-thread"></section>
+<div class="isso-comments"><h2>Share your experience</h2>
+<p>Please share your experience if you are using one of the commenting
+systems listed in the table, or propose a new one. Write a short summary and
+provide your "Likes" and "Dislikes" at the end to help other users decide
+which comments will suit them best. If you are going to post the first
+opinion on a specific commenting system, please set your name to the name of
+this commenting system. All the other opinions and questions on this
+commenting system should go as a reply to the first comment.</p>
+<section id="isso-thread"></section>
 </div>
 
-<div class="preamble">
-  <footer> 
-    <p>Powered by 
-      <a href="https://www.datatables.net">DataTables</a> and
-      <a href="https://posativ.org/isso">Isso</a><br>
-      Last updated: 2018-07-27 <br>
-      &copy; S.&nbsp;Lisakov</p>
-  </footer> 
-</div>
+<footer> 
+  <p>Powered by 
+    <a href="https://www.datatables.net">DataTables</a> and
+    <a href="https://posativ.org/isso">Isso</a><br>
+    Last updated: 2018-07-28 <br>
+    &copy; S.&nbsp;Lisakov</p>
+</footer> 
 
 </body>
 
