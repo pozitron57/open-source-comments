@@ -6,10 +6,7 @@ Injects html generated from index.md to index.html
 '''
 
 import re
-import fileinput
-from datetime import datetime, date
-#from markdown import markdown
-#import markdown2
+from datetime import date
 import mistune
 
 renderer = mistune.Renderer(hard_wrap=False)
