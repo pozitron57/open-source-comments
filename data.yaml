@@ -1,19 +1,21 @@
 isso:
-    stars: 3288
+    stars: 3289
     github: "https://github.com/posativ/isso"
     homepage: "https://posativ.org/isso/"
     name: "Isso"
     demo:
-    - "https://posativ.org/isso/"
-    - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/"
-    - "https://pantarei.xyz/posts/isso-with-social-network-integration/"
-    - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog"
+      - "https://posativ.org/isso/"
+      - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/"
+      - "https://pantarei.xyz/posts/isso-with-social-network-integration/"
+      - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog"
     js_kB: 68
     css_kB: 7
     language: "python"
     db: "SQLite"
-    moderation: "approve, reject or delete comments via email sent link or a simple admin panel"
-    mail_notification: "Admin is notified. It’s possible to subscribe to replies to your comment but not to thread"
+    moderation: "approve, reject or delete comments via email sent link or a simple\
+        \ admin panel"
+    mail_notification: "Admin is notified. It’s possible to subscribe to replies to\
+        \ your comment but not to thread"
     antispam: "no"
     rate_limit: "yes"
     bad_words_list: "no"
@@ -27,7 +29,7 @@ isso:
     hide_long_threads: "yes"
     anonymous_comments: "yes"
     social_network_login: "No, but see a [fork](https://github.com/posativ/isso/issues/240)\
-    \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
+        \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -39,10 +41,12 @@ isso:
     created: "2012&#8209;10&#8209;17"
     rss: "see [PR](https://github.com/posativ/isso/pull/419)"
     static: "no"
-    description: "Lightweight, allows anonymous comments, maintains identity and is simple to administrate. Install from source, pip and docker aren’t updated regularly"
+    description: "Lightweight, allows anonymous comments, maintains identity and is\
+        \ simple to administrate. Install from source, pip and docker aren’t updated\
+        \ regularly"
     license: "MIT"
-    open_issues: 119
-    last_committed: 2018&#8209;07&#8209;27
+    open_issues: 120
+    last_committed: 2018&#8209;07&#8209;28
     docker: "https://hub.docker.com/r/sheogorath/isso-docker/"
     dependency: ""
     stars_dif: '0'
@@ -50,7 +54,7 @@ isso:
 
 
 commento:
-    stars: 2702
+    stars: 2704
     name: "Commento"
     demo: "https://demo.commento.io"
     github: "https://github.com/adtac/commento"
@@ -85,7 +89,7 @@ commento:
     stars_dif: 2
 
 schnak:
-    stars: 1237
+    stars: 1238
     github: "https://github.com/schn4ck/schnack"
     homepage: "?"
     name: "Schnak"
@@ -112,10 +116,10 @@ schnak:
     hide_long_threads: "?"
     anonymous_comments: "?"
     social_network_login:
-    - "github"
-    - "google"
-    - "twitter"
-    - "facebook"
+      - "github"
+      - "google"
+      - "twitter"
+      - "facebook"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -137,8 +141,8 @@ juvia:
     stars: 1027
     name: "Juvia"
     demo:
-    - "https://www.alfajango.com/blog/announcing-dynatable-js/"
-    - "https://erik.doernenburg.com/2015/08/privacy-and-this-website/"
+      - "https://www.alfajango.com/blog/announcing-dynatable-js/"
+      - "https://erik.doernenburg.com/2015/08/privacy-and-this-website/"
     #- "http://rahul.raut.me/2014/12/15/welcome-to-my-blog/"
     antispam: "Akismet"
     github: "https://github.com/phusion/juvia"
@@ -149,7 +153,8 @@ juvia:
     moderation: "Full-featured admin panel for multiple users"
     static: "no"
     nested_comments: "no"
-    description: "Unmaintained from 2015, because it does all Juvia’s author wanted it to do. Not so lightweight. Advanced admin panel."
+    description: "Unmaintained from 2015, because it does all Juvia’s author wanted\
+        \ it to do. Not so lightweight. Advanced admin panel."
     js_kB: ""
     css_kB: ""
     license: "AGPL-3.0"
@@ -201,7 +206,7 @@ remark:
     hide_long_threads: "?"
     anonymous_comments: "?"
     social_network_login:
-    - "?"
+      - "?"
     import_from_wordpress: "?"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -265,8 +270,8 @@ mouthful:
     homepage: "https://mouthful.dizzy.zone/"
     name: "Mouthful"
     demo:
-    - "https://mouthful.dizzy.zone/"
-    - "https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/"
+      - "https://mouthful.dizzy.zone/"
+      - "https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/"
     docker: "yes"
     js_kB: "44"
     css_kB: ""
@@ -298,7 +303,8 @@ mouthful:
     rate_limit: "yes"
     paging: "yes"
     static: "no"
-    description: "[Really lightweight](https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/), written in GO and Preact."
+    description: "[Really lightweight](https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/),\
+        \ written in GO and Preact."
     license: "MIT"
     open_issues: 7
     last_committed: 2018&#8209;06&#8209;12
@@ -348,7 +354,7 @@ diskuto:
     stars_dif: '0'
 
 coralproject_talk:
-    stars: 964
+    stars: 965
     github: "https://github.com/coralproject/talk"
     homepage: "https://coralproject.net/talk/"
     name: "coralproject_talk"
@@ -384,10 +390,11 @@ coralproject_talk:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "A better commenting experience from Mozilla, The Washington Post, and The New York Times"
+    description: "A better commenting experience from Mozilla, The Washington Post,\
+        \ and The New York Times"
     license:
-    open_issues: 35
-    last_committed: 2018&#8209;07&#8209;26
+    open_issues: 22
+    last_committed: 2018&#8209;07&#8209;27
     stars_dif: '0'
 
 hashover2:
@@ -478,7 +485,7 @@ hashover:
     stars_dif: '0'
 
 talkatv:
-    stars: 195
+    stars: 196
     github: "https://github.com/talkatv/talkatv"
     homepage: "?"
     name: "talkatv"
@@ -514,7 +521,8 @@ talkatv:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Uses XMLHttpRequest level 2 and CORS to post the comment back to the server. No updates since 2012"
+    description: "Uses XMLHttpRequest level 2 and CORS to post the comment back to\
+        \ the server. No updates since 2012"
     license: "AGPL-3.0"
     open_issues: 26
     last_committed: 2012&#8209;12&#8209;03
@@ -532,8 +540,8 @@ wildfire:
     language: "Vue?"
     db: "Firebase/Wilddog"
     moderation:
-    - "delete comment"
-    - "ban"
+      - "delete comment"
+      - "ban"
     mail_notification: "?"
     rss: "?"
     antispam: "?"
@@ -559,7 +567,8 @@ wildfire:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Uses real-time databases (Firebase & Wilddog) to store the comments, provides real-time communicating experience"
+    description: "Uses real-time databases (Firebase & Wilddog) to store the comments,\
+        \ provides real-time communicating experience"
     license: "GPL-3.0"
     open_issues: 10
     last_committed: 2018&#8209;03&#8209;14
@@ -579,8 +588,8 @@ e_comments:
     moderation: "No admin panel"
     mail_notification: "No"
     dependency:
-    - "jQuery.js"
-    - "mustache.js"
+      - "jQuery.js"
+      - "mustache.js"
     rss: "?"
     antispam: "yes"
     bad_words_list: "?"
@@ -682,9 +691,9 @@ comments_app:
     hide_long_threads: "?"
     anonymous_comments: "?"
     social_network_login:
-    - "google"
-    - "github"
-    - "gitlab"
+      - "google"
+      - "github"
+      - "gitlab"
     import_from_wordpress: "?"
     import_from_disqus: "?"
     english_documentation: "yes"
@@ -763,7 +772,7 @@ jskomment:
     dependency: "?"
     rss: "?"
     antispam:
-    - "captcha"
+      - "captcha"
     bad_words_list: "?"
     use_cookies: "?"
     avatar: "?"
@@ -932,8 +941,8 @@ staticman:
     homepage: "https://staticman.net/"
     name: "Staticman"
     demo:
-    - "https://eduardoboucas.com/blog/2016/08/10/staticman.html"
-    - "https://hugo.staticman.net/post/my-entry/"
+      - "https://eduardoboucas.com/blog/2016/08/10/staticman.html"
+      - "https://hugo.staticman.net/post/my-entry/"
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1058,20 +1067,20 @@ talkyard:
     paging: "?"
     static: "no"
     description: "Previously named Debiki, then Effective discussions. Can be used\
-    \ as a forum"
+        \ as a forum"
     license:
     open_issues: 3
     last_committed: 2018&#8209;07&#8209;23
     stars_dif: 1
 
 discourse:
-    stars: 25631
+    stars: 25634
     github: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
     demo: "See [1](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
-    \ [2](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
-    \ [docuss](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
+        \ [2](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
+        \ [docuss](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
     docker: "?"
     js_kB: ""
     css_kB: ""
@@ -1087,7 +1096,9 @@ discourse:
     avatar: "yes"
     markdown_support: "yes"
     nested_comments: "yes"
-    provided_hosting: "[yes](https://payments.discourse.org/pricing), DigitalOcean [provides](https://www.digitalocean.com/community/tutorials/how-to-use-the-discourse-one-click-application-on-digitalocean) as a one-click app"
+    provided_hosting: "[yes](https://payments.discourse.org/pricing), DigitalOcean\
+        \ [provides](https://www.digitalocean.com/community/tutorials/how-to-use-the-discourse-one-click-application-on-digitalocean)\
+        \ as a one-click app"
     collapse_comments: "?"
     display_images: "?"
     sort: "yes"
@@ -1106,15 +1117,15 @@ discourse:
     paging: "?"
     static: "no"
     description: "Isn’t designed as a comments engine, but can be implemented as comments\
-    \ for a static blog, see links in Demo. Realtively high hardware requirements\
-    \ (1GB RAM minimum with swap, Dual core CPU recommended)"
-    license: "GNU GPL v2"
-    open_issues: 7
-    last_committed: 2018&#8209;07&#8209;27
+        \ for a static blog, see links in Demo. Realtively high hardware requirements\
+        \ (1GB RAM minimum with swap, Dual core CPU recommended)"
+    license:
+    open_issues: 10
+    last_committed: 2018&#8209;07&#8209;28
     stars_dif: 4
 
 webpage_webmentions:
-    stars: 37
+    stars: 38
     github: "https://github.com/voxpelli/webpage-webmentions"
     homepage: "https://webmention.herokuapp.com/"
     name: "webpage-webmentions"
@@ -1154,8 +1165,8 @@ webpage_webmentions:
     static: "no"
     description: "Uses [WebMentions](http://indiewebcamp.com/webmention)"
     license: "MIT"
-    open_issues: 47
-    last_committed: 2018&#8209;07&#8209;02
+    open_issues: 45
+    last_committed: 2018&#8209;07&#8209;28
     stars_dif: '0'
 
 chatter:
@@ -1242,7 +1253,8 @@ django_fluent_comments:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "A modern, ajax-based appearance for django comments. For Django sites."
+    description: "A modern, ajax-based appearance for django comments. For Django\
+        \ sites."
     license: "Apache-2.0"
     open_issues: 16
     last_committed: 2018&#8209;06&#8209;05
@@ -1510,7 +1522,9 @@ jekyll_static_comments:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "For Jekyll. PHP script sends the comment to the server and produces .YAML files which are stored in a special folder. On site rebuild, these comments are built into the html code of the page"
+    description: "For Jekyll. PHP script sends the comment to the server and produces\
+        \ .YAML files which are stored in a special folder. On site rebuild, these\
+        \ comments are built into the html code of the page"
     license: "GPL-3.0"
     open_issues: 8
     last_committed: 2014&#8209;02&#8209;11
@@ -2159,7 +2173,7 @@ comment_it:
     github: "https://github.com/guilro/commentit"
     homepage: "https://commentit.io/"
     name: "Comm(ent|it)"
-    demo: "http://guilro.github.io/2015/10/27/open-sourcing-commentit.io.html" 
+    demo: "http://guilro.github.io/2015/10/27/open-sourcing-commentit.io.html"
     docker: "no"
     js_kB: "12"
     css_kB: ""
@@ -2189,14 +2203,15 @@ comment_it:
     vote: "no"
     preview: "?"
     updated: "?"
-    created: "?"
+    created: "2015&#8209;10&#8209;04"
     rate_limit: "?"
     paging: "?"
-    description: "Comm(ent|it) uses the Github API and Jekyll to help storing visitors comments directly in Github Pages repository"
+    description: "Comm(ent|it) uses the Github API and Jekyll to help storing visitors\
+        \ comments directly in Github Pages repository"
     static: "no"
-    license: ""
+    license: "AGPL-3.0"
     open_issues: 4
-    last_committed: 2017&#8209;07&#8209;12
+    last_committed: 2017&#8209;12&#8209;07
     stars_dif:
 
 #comment_system:
