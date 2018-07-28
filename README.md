@@ -10,9 +10,10 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 - `get_gh_data.py`:
   - creates `apigh/<YYYY-MM-DD>/` directory if does not exist;
-  - downloads (using system `curl`);
+  - downloads (using system `curl`)
     `https://api.github.com/repos/:user/:repo` and 
-    `https://api.github.com/repos/:user/:repo/commits/master` to the created directory;
+    `https://api.github.com/repos/:user/:repo/commits/master` to the created
+    directory;
   - reads these files and updates `data.yaml` for the following:
     - github stars,
     - last commit date,
@@ -22,7 +23,7 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 - `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
   — `osc_data` and `cols`). 
 
-- `index.html` reads `data.js` and parses using
+- `index.html` reads `data.js` and parses to the html table using
   [datatables.js](https://github.com/DataTables/DataTables).
 
 - The webpage is updated daily at 17:00 UTC via `cron`. `updater.sh`
