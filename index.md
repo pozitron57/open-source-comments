@@ -19,7 +19,7 @@ little dependencies as possible. Few commenting engines listed on the page are
 provided by heavy frameworks and web-applications (e.g.,
 [django-fluent-comments](https://github.com/django-fluent/django-fluent-comments),
 [discourse](https://github.com/discourse/discourse),
-[talkyard](https://github.com/debiki/talkyard), but the majority are relatively
+[talkyard](https://github.com/debiki/talkyard)), but the majority are relatively
 lightweight applications designed specifically to provide comments for the
 static pages.
 
