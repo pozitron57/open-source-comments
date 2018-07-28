@@ -145,6 +145,7 @@ juvia:
     language: "Ruby"
     preview: "yes"
     avatar: "Gravatar"
+    db: "MySQL?"
     moderation: "Full-featured admin panel for multiple users"
     static: "no"
     nested_comments: "no"
@@ -937,7 +938,7 @@ staticman:
     js_kB: ""
     css_kB: ""
     language: "Node.js"
-    db: "?"
+    db: ""
     moderation: "?"
     mail_notification: "yes"
     dependency: "?"
@@ -1086,7 +1087,7 @@ discourse:
     avatar: "yes"
     markdown_support: "yes"
     nested_comments: "yes"
-    provided_hosting: "[yes](https://payments.discourse.org/pricing)"
+    provided_hosting: "[yes](https://payments.discourse.org/pricing), DigitalOcean [provides](https://www.digitalocean.com/community/tutorials/how-to-use-the-discourse-one-click-application-on-digitalocean) as a one-click app"
     collapse_comments: "?"
     display_images: "?"
     sort: "yes"
@@ -1104,9 +1105,10 @@ discourse:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "A platform for community discussion. Can be implemented as comments\
-    \ for a static blog, see links in Demo"
-    license:
+    description: "Isn’t designed as a comments engine, but can be implemented as comments\
+    \ for a static blog, see links in Demo. Realtively high hardware requirements\
+    \ (1GB RAM minimum with swap, Dual core CPU recommended)"
+    license: "GNU GPL v2"
     open_issues: 7
     last_committed: 2018&#8209;07&#8209;27
     stars_dif: 4
