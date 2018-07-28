@@ -25,17 +25,18 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 - `index.html` reads `data.js` and parses using
   [datatables.js](https://github.com/DataTables/DataTables).
 
-- The webpage is updated daily at 17:00 UTC using `cron`. `updater.sh`
+- The webpage is updated daily at 17:00 UTC via `cron`. `updater.sh`
   runs `get_gh_data.py`, then `yaml_2_js.py`, then deploys the updated files,
   then updates the repo.
 
 ## How to view the page locally
 
-Just clone the repo and open `index.html` in your browser. No static site
-generator is used since `index.html` isn't often updated manually.
+Just clone the repo and open `index.html` in your browser. To make changes
+edit index.md and run `md_to_html.py` script. It will overwrite existing
+`index.html`.
 
-After modifying `data.yaml`, run `python3 yaml_2_js.py` and the
-browser should show the changes.
+After modifying `data.yaml`, run `python3 yaml_2_js.py` — it will update
+`data.js` and the browser should display the changes.
 
 ## TODO
 
