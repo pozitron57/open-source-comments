@@ -19,7 +19,7 @@ little dependencies as possible. Few commenting engines listed on the page are
 provided by heavy frameworks and web-applications (e.g.,
 [django-fluent-comments](https://github.com/django-fluent/django-fluent-comments),
 [discourse](https://github.com/discourse/discourse),
-[talkyard](https://github.com/debiki/talkyard), but the majority are relatively
+[talkyard](https://github.com/debiki/talkyard)), but the majority are relatively
 lightweight applications designed specifically to provide comments for the
 static pages.
 
@@ -34,10 +34,10 @@ Github issues, such as
 ## Choose columns to show
 
 ## Share your experience
-Please share your experience if you are using one of the commenting
-systems listed in the table, or propose a new one. Write a short summary and
-provide your "Likes" and "Dislikes" at the end to help other users decide
-which comments will suit them best. If you are going to post the first
-opinion on a specific commenting system, please set your name to the name of
-this commenting system. All the other opinions and questions on this
-commenting system should go as a reply to the first comment.
+
+Please share your experience if you are using one of the commenting systems
+listed in the table. Write a short summary and provide your "Likes" and
+"Dislikes" to help other users to decide which commenting system suit them
+best. If you are going to post the first opinion on a commenting system, please
+set your name to the name of this commenting system. All the other opinions and
+questions on this commenting system should go as replies to the first comment.
