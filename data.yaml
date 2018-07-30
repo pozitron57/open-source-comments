@@ -33,7 +33,7 @@ isso:
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
-    display_images: "no"
+    display_images: "[configurable](https://github.com/posativ/isso/blob/master/docs/docs/configuration/server.rst#markup)"
     edit: "within configurable time"
     vote: "yes, once"
     preview: "yes"
@@ -1102,7 +1102,7 @@ discourse:
         \ [provides](https://www.digitalocean.com/community/tutorials/how-to-use-the-discourse-one-click-application-on-digitalocean)\
         \ as a one-click app"
     collapse_comments: "?"
-    display_images: "?"
+    display_images: "yes"
     sort: "yes"
     hide_long_threads: "?"
     anonymous_comments: "?"
@@ -1121,7 +1121,7 @@ discourse:
     description: "Isn’t designed as a comments engine, but can be implemented as comments\
         \ for a static blog, see links in Demo. Realtively high hardware requirements\
         \ (1GB RAM minimum with swap, Dual core CPU recommended)"
-    license:
+    license: "GPL-2.0"
     open_issues: 10
     last_committed: 2018&#8209;07&#8209;29
     stars_dif: 4
