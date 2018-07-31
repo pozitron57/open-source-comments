@@ -1,0 +1,122 @@
+{
+  "sha": "afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphZmUzYjAwYzBmYWNkZGRiODhlOTM4YWNlN2IxZWU2ODI1ZmIwMTIx",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-07-31T05:45:31Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-07-31T05:55:28Z"
+    },
+    "message": "FIX: use hidden setting for max export file size",
+    "tree": {
+      "sha": "38458ed1248860c8e30887cabeabd4253f56a785",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/38458ed1248860c8e30887cabeabd4253f56a785"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+  "html_url": "https://github.com/discourse/discourse/commit/afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/afe3b00c0facdddb88e938ace7b1ee6825fb0121/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f0c203a5cfb2fbe7430892bdb1ab1a150c6c07d3",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f0c203a5cfb2fbe7430892bdb1ab1a150c6c07d3",
+      "html_url": "https://github.com/discourse/discourse/commit/f0c203a5cfb2fbe7430892bdb1ab1a150c6c07d3"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 16,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "aa34a64a8bbf0def42ca46cdc57f335d7fb68c11",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/afe3b00c0facdddb88e938ace7b1ee6825fb0121/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/afe3b00c0facdddb88e938ace7b1ee6825fb0121/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+      "patch": "@@ -869,6 +869,10 @@ files:\n     default: 40\n     min: 5\n     max: 150\n+  max_export_file_size_kb:\n+    hidden: true\n+    default: 50000\n+    max: 1024000\n   theme_authorized_extensions:\n     default: 'jpg|jpeg|png|woff|woff2|svg|eot|ttf|otf|gif'\n     type: list"
+    },
+    {
+      "sha": "60074a197f98da50ffb6b5b63cb34d4f28c4a26a",
+      "filename": "lib/validators/upload_validator.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/afe3b00c0facdddb88e938ace7b1ee6825fb0121/lib/validators/upload_validator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/afe3b00c0facdddb88e938ace7b1ee6825fb0121/lib/validators/upload_validator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/validators/upload_validator.rb?ref=afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+      "patch": "@@ -113,7 +113,11 @@ def extension_authorized?(upload, extension, extensions)\n   end\n \n   def maximum_file_size(upload, type)\n-    max_size_kb = SiteSetting.send(\"max_#{type}_size_kb\")\n+    max_size_kb = if upload.for_export\n+      SiteSetting.max_export_file_size_kb\n+    else\n+      SiteSetting.send(\"max_#{type}_size_kb\")\n+    end\n     max_size_bytes = max_size_kb.kilobytes\n \n     if upload.filesize > max_size_bytes"
+    },
+    {
+      "sha": "f256e2f176eb7e9dd21b7f3f0c092ce1a941919a",
+      "filename": "spec/components/validators/upload_validator_spec.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/afe3b00c0facdddb88e938ace7b1ee6825fb0121/spec/components/validators/upload_validator_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/afe3b00c0facdddb88e938ace7b1ee6825fb0121/spec/components/validators/upload_validator_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/validators/upload_validator_spec.rb?ref=afe3b00c0facdddb88e938ace7b1ee6825fb0121",
+      "patch": "@@ -20,9 +20,14 @@\n     it \"allows 'gz' as extension when uploading export file\" do\n       SiteSetting.authorized_extensions = \"\"\n \n-      created_upload = UploadCreator.new(csv_file, \"#{filename}.gz\", for_export: true).create_for(user.id)\n-      expect(created_upload).to be_valid\n+      expect(UploadCreator.new(csv_file, \"#{filename}.gz\", for_export: true).create_for(user.id)).to be_valid\n     end\n \n+    it \"allows uses max_export_file_size_kb when uploading export file\" do\n+      SiteSetting.max_attachment_size_kb = \"0\"\n+      SiteSetting.authorized_extensions = \"gz\"\n+\n+      expect(UploadCreator.new(csv_file, \"#{filename}.gz\", for_export: true).create_for(user.id)).to be_valid\n+    end\n   end\n end"
+    }
+  ]
+}
