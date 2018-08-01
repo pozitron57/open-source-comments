@@ -1,0 +1,98 @@
+{
+  "sha": "6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjZkODJhMWJlOTMwODhlN2U3OWE4NWQzMTA5Y2RkOGFjNTIyOWI5MDI=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-07-25T17:28:15Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-07-25T17:28:15Z"
+    },
+    "message": "extract common hasing with failback",
+    "tree": {
+      "sha": "b6dede211cba9da5125cb2cf5f9dbb6d028660be",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/b6dede211cba9da5125cb2cf5f9dbb6d028660be"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+  "html_url": "https://github.com/umputun/remark/commit/6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/6d82a1be93088e7e79a85d3109cdd8ac5229b902/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cd7e9832d2fca37401ded46e54a20f25fb78d60f",
+      "url": "https://api.github.com/repos/umputun/remark/commits/cd7e9832d2fca37401ded46e54a20f25fb78d60f",
+      "html_url": "https://github.com/umputun/remark/commit/cd7e9832d2fca37401ded46e54a20f25fb78d60f"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 10,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "eec073e09af244079a038d4775c8753873b3a597",
+      "filename": "backend/app/store/user.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 9,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark/blob/6d82a1be93088e7e79a85d3109cdd8ac5229b902/backend/app/store/user.go",
+      "raw_url": "https://github.com/umputun/remark/raw/6d82a1be93088e7e79a85d3109cdd8ac5229b902/backend/app/store/user.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/user.go?ref=6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+      "patch": "@@ -5,6 +5,7 @@ import (\n \t\"crypto/sha1\"\n \t\"encoding/hex\"\n \t\"fmt\"\n+\t\"hash\"\n \t\"hash/crc64\"\n \t\"io\"\n \t\"log\"\n@@ -36,12 +37,7 @@ func HashValue(val string, secret string) string {\n \t}\n \tkey := []byte(secret)\n \th := hmac.New(sha1.New, key)\n-\tif _, err := io.WriteString(h, val); err != nil {\n-\t\t// fail back to crc64\n-\t\tlog.Printf(\"[WARN] can't hash ip, %s\", err)\n-\t\treturn fmt.Sprintf(\"%x\", crc64.Checksum([]byte(val), crc64.MakeTable(crc64.ECMA)))\n-\t}\n-\treturn hex.EncodeToString(h.Sum(nil))\n+\treturn hashWithFailback(h, val)\n }\n \n // EncodeID hashes id to sha1. The function intentionally left outside of User struct because in some cases\n@@ -51,10 +47,15 @@ func EncodeID(id string) string {\n \t\treturn id // already hashed or empty\n \t}\n \th := sha1.New()\n-\tif _, err := io.WriteString(h, id); err != nil {\n+\treturn hashWithFailback(h, id)\n+}\n+\n+// hashWithFailback tries to has val with hash.Hash and failback to crc if needed\n+func hashWithFailback(h hash.Hash, val string) string {\n+\tif _, err := io.WriteString(h, val); err != nil {\n \t\t// fail back to crc64\n-\t\tlog.Printf(\"[WARN] can't hash id %s, %s\", id, err)\n-\t\treturn fmt.Sprintf(\"%x\", crc64.Checksum([]byte(id), crc64.MakeTable(crc64.ECMA)))\n+\t\tlog.Printf(\"[WARN] can't hash id %s, %s\", val, err)\n+\t\treturn fmt.Sprintf(\"%x\", crc64.Checksum([]byte(val), crc64.MakeTable(crc64.ECMA)))\n \t}\n \treturn hex.EncodeToString(h.Sum(nil))\n }"
+    }
+  ]
+}

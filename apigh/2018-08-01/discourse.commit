@@ -1,0 +1,110 @@
+{
+  "sha": "1a0ffc5ace08472ef6042604ea5a7dc8a789c428",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxYTBmZmM1YWNlMDg0NzJlZjYwNDI2MDRlYTVhN2RjOGE3ODljNDI4",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2018-08-01T16:42:40Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-01T16:42:40Z"
+    },
+    "message": "FEATURE: Added method to get multiple values at once from PluginStore. (#6225)",
+    "tree": {
+      "sha": "d3e286f42241cdaffacca4708d50b17ba77f6e85",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d3e286f42241cdaffacca4708d50b17ba77f6e85"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1a0ffc5ace08472ef6042604ea5a7dc8a789c428",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1a0ffc5ace08472ef6042604ea5a7dc8a789c428",
+  "html_url": "https://github.com/discourse/discourse/commit/1a0ffc5ace08472ef6042604ea5a7dc8a789c428",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1a0ffc5ace08472ef6042604ea5a7dc8a789c428/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "059862ed46b9840e9f97e69afadbb3813d314b39",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/059862ed46b9840e9f97e69afadbb3813d314b39",
+      "html_url": "https://github.com/discourse/discourse/commit/059862ed46b9840e9f97e69afadbb3813d314b39"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 27,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "3626141d533a71e1f38043c7b9a9975b1c04276f",
+      "filename": "app/models/plugin_store.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/1a0ffc5ace08472ef6042604ea5a7dc8a789c428/app/models/plugin_store.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1a0ffc5ace08472ef6042604ea5a7dc8a789c428/app/models/plugin_store.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/plugin_store.rb?ref=1a0ffc5ace08472ef6042604ea5a7dc8a789c428",
+      "patch": "@@ -10,6 +10,10 @@ def get(key)\n     self.class.get(plugin_name, key)\n   end\n \n+  def get_all(keys)\n+    self.class.get_all(plugin_name, keys)\n+  end\n+\n   def set(key, value)\n     self.class.set(plugin_name, key, value)\n   end\n@@ -24,6 +28,12 @@ def self.get(plugin_name, key)\n     end\n   end\n \n+  def self.get_all(plugin_name, keys)\n+    rows = PluginStoreRow.where('plugin_name = ? AND key IN (?)', plugin_name, keys).to_a\n+\n+    Hash[rows.map { |row| [row.key, cast_value(row.type_name, row.value)] }]\n+  end\n+\n   def self.set(plugin_name, key, value)\n     hash = { plugin_name: plugin_name, key: key }\n     row = PluginStoreRow.find_by(hash) || PluginStoreRow.new(hash)"
+    },
+    {
+      "sha": "fc53e3e390ef462861104260dd11772c7400f35d",
+      "filename": "spec/models/plugin_store_spec.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/1a0ffc5ace08472ef6042604ea5a7dc8a789c428/spec/models/plugin_store_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1a0ffc5ace08472ef6042604ea5a7dc8a789c428/spec/models/plugin_store_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/plugin_store_spec.rb?ref=1a0ffc5ace08472ef6042604ea5a7dc8a789c428",
+      "patch": "@@ -14,6 +14,11 @@ def get(k)\n     value == store.get(k) ? value : \"values mismatch\"\n   end\n \n+  def get_all(k)\n+    value = PluginStore.get_all(\"my_plugin\", k)\n+    value == store.get_all(k) ? value : \"values mismatch\"\n+  end\n+\n   def remove_row(k)\n     PluginStore.remove(\"my_plugin\", k)\n     store.remove(k)\n@@ -43,6 +48,18 @@ def remove_row(k)\n     expect(get(\"hello\")).to eq(nil)\n   end\n \n+  it \"gets all requested values\" do\n+    set(\"hello_str\", \"world\")\n+    set(\"hello_int\", 1)\n+    set(\"hello_bool\", true)\n+\n+    expect(get_all([\"hello_str\", \"hello_int\", \"hello_bool\"])).to eq({\n+      \"hello_str\": \"world\",\n+      \"hello_int\": 1,\n+      \"hello_bool\": true,\n+    }.stringify_keys)\n+  end\n+\n   it \"handles hashes correctly\" do\n \n     val = { \"hi\" => \"there\", \"1\" => 1 }"
+    }
+  ]
+}
