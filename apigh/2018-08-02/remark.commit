@@ -1,0 +1,98 @@
+{
+  "sha": "2a7d23c2cab232c81eceacc1b69656ed25fbb279",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjJhN2QyM2MyY2FiMjMyYzgxZWNlYWNjMWI2OTY1NmVkMjVmYmIyNzk=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-02T03:19:06Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-02T03:19:06Z"
+    },
+    "message": "clean test bolt after remark migrator tests",
+    "tree": {
+      "sha": "69df755250b10cc33c777d2e588c889acf4da849",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/69df755250b10cc33c777d2e588c889acf4da849"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/2a7d23c2cab232c81eceacc1b69656ed25fbb279",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/2a7d23c2cab232c81eceacc1b69656ed25fbb279",
+  "html_url": "https://github.com/umputun/remark/commit/2a7d23c2cab232c81eceacc1b69656ed25fbb279",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/2a7d23c2cab232c81eceacc1b69656ed25fbb279/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+      "url": "https://api.github.com/repos/umputun/remark/commits/6d82a1be93088e7e79a85d3109cdd8ac5229b902",
+      "html_url": "https://github.com/umputun/remark/commit/6d82a1be93088e7e79a85d3109cdd8ac5229b902"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "414ec90ff4c2797d2e7dbb647c8c33271b2dfcbb",
+      "filename": "backend/app/migrator/remark_test.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark/blob/2a7d23c2cab232c81eceacc1b69656ed25fbb279/backend/app/migrator/remark_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/2a7d23c2cab232c81eceacc1b69656ed25fbb279/backend/app/migrator/remark_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/migrator/remark_test.go?ref=2a7d23c2cab232c81eceacc1b69656ed25fbb279",
+      "patch": "@@ -18,6 +18,7 @@ import (\n var testDb = \"/tmp/test-remark.db\"\n \n func TestRemark_Export(t *testing.T) {\n+\tdefer os.Remove(testDb)\n \tb := prep(t)\n \tr := Remark{DataStore: b}\n \n@@ -34,6 +35,8 @@ func TestRemark_Export(t *testing.T) {\n }\n \n func TestRemark_Import(t *testing.T) {\n+\tdefer os.Remove(testDb)\n+\n \tr1 := `{\"id\":\"efbc17f177ee1a1c0ee6e1e025749966ec071adc\",\"pid\":\"\",\"text\":\"some text, <a href=\\\"http://radio-t.com\\\" rel=\\\"nofollow\\\">link</a>\",\"user\":{\"name\":\"user name\",\"id\":\"user1\",\"picture\":\"\",\"profile\":\"\",\"admin\":false},\"locator\":{\"site\":\"radio-t\",\"url\":\"https://radio-t.com\"},\"score\":0,\"votes\":{},\"time\":\"2017-12-20T15:18:22-06:00\"}` + \"\\n\"\n \n \tr2 := `{\"id\":\"afbc17f177ee1a1c0ee6e1e025749966ec071adc\",\"pid\":\"efbc17f177ee1a1c0ee6e1e025749966ec071adc\",\"text\":\"some text2, <a href=\\\"http://radio-t.com\\\" rel=\\\"nofollow\\\">link</a>\",\"user\":{\"name\":\"user name\",\"id\":\"user1\",\"picture\":\"\",\"profile\":\"\",\"admin\":false},\"locator\":{\"site\":\"radio-t\",\"url\":\"https://radio-t.com\"},\"score\":0,\"votes\":{},\"time\":\"2017-12-20T15:18:23-06:00\"}` + \"\\n\"\n@@ -60,6 +63,8 @@ func TestRemark_Import(t *testing.T) {\n }\n \n func TestRemark_ImportManyWithError(t *testing.T) {\n+\tdefer os.Remove(testDb)\n+\n \tgoodRec := `{\"id\":\"%d\",\"pid\":\"\",\"text\":\"some text, <a href=\\\"http://radio-t.com\\\" rel=\\\"nofollow\\\">link</a>\",\"user\":{\"name\":\"user name\",\"id\":\"user1\",\"picture\":\"\",\"profile\":\"\",\"admin\":false},\"locator\":{\"site\":\"radio-t\",\"url\":\"https://radio-t.com\"},\"score\":0,\"votes\":{},\"time\":\"2017-12-20T15:18:22-06:00\"}` + \"\\n\"\n \n \tbuf := &bytes.Buffer{}"
+    }
+  ]
+}
