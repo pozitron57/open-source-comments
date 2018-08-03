@@ -1,0 +1,98 @@
+{
+  "sha": "535732bdc13bba0449ea4d49dad6a2098d0b97bd",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1MzU3MzJiZGMxM2JiYTA0NDllYTRkNDlkYWQ2YTIwOThkMGI5N2Jk",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-03T15:10:20Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-03T15:10:20Z"
+    },
+    "message": "FIX: ensure the 'email_revoked' PM template is customizable",
+    "tree": {
+      "sha": "39d28662b15be65f8dc61045c403ca9027954d61",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/39d28662b15be65f8dc61045c403ca9027954d61"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/535732bdc13bba0449ea4d49dad6a2098d0b97bd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/535732bdc13bba0449ea4d49dad6a2098d0b97bd",
+  "html_url": "https://github.com/discourse/discourse/commit/535732bdc13bba0449ea4d49dad6a2098d0b97bd",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/535732bdc13bba0449ea4d49dad6a2098d0b97bd/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ac2513b0f2891a3314854b2526d05bd0a3d22372",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ac2513b0f2891a3314854b2526d05bd0a3d22372",
+      "html_url": "https://github.com/discourse/discourse/commit/ac2513b0f2891a3314854b2526d05bd0a3d22372"
+    }
+  ],
+  "stats": {
+    "total": 92,
+    "additions": 60,
+    "deletions": 32
+  },
+  "files": [
+    {
+      "sha": "9a008f48a709e2cebd8918e77dfd4df115fedbde",
+      "filename": "app/controllers/admin/email_templates_controller.rb",
+      "status": "modified",
+      "additions": 60,
+      "deletions": 32,
+      "changes": 92,
+      "blob_url": "https://github.com/discourse/discourse/blob/535732bdc13bba0449ea4d49dad6a2098d0b97bd/app/controllers/admin/email_templates_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/535732bdc13bba0449ea4d49dad6a2098d0b97bd/app/controllers/admin/email_templates_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/email_templates_controller.rb?ref=535732bdc13bba0449ea4d49dad6a2098d0b97bd",
+      "patch": "@@ -1,38 +1,66 @@\n class Admin::EmailTemplatesController < Admin::AdminController\n \n   def self.email_keys\n-    @email_keys ||= [\"invite_forum_mailer\", \"invite_mailer\", \"invite_password_instructions\",\n-                     \"custom_invite_mailer\", \"custom_invite_forum_mailer\",\n-                     \"new_version_mailer\", \"new_version_mailer_with_notes\", \"system_messages.queued_posts_reminder\",\n-                     \"system_messages.backup_failed\", \"system_messages.backup_succeeded\",\n-                     \"system_messages.silenced_by_staff\", \"system_messages.bulk_invite_failed\",\n-                     \"system_messages.bulk_invite_succeeded\", \"system_messages.csv_export_failed\",\n-                     \"system_messages.csv_export_succeeded\", \"system_messages.download_remote_images_disabled\",\n-                     \"system_messages.email_error_notification\", \"system_messages.email_reject_auto_generated\",\n-                     \"system_messages.email_reject_empty\",\n-                     \"system_messages.email_reject_invalid_access\", \"system_messages.email_reject_no_account\",\n-                     \"system_messages.email_reject_parsing\", \"system_messages.email_reject_user_not_found\",\n-                     \"system_messages.email_reject_reply_key\", \"system_messages.email_reject_topic_closed\",\n-                     \"system_messages.email_reject_topic_not_found\",\n-                     \"system_messages.email_reject_screened_email\",\n-                     \"system_messages.email_reject_unrecognized_error\",\n-                     \"system_messages.pending_users_reminder\", \"system_messages.post_hidden\",\n-                     \"system_messages.post_hidden_again\",\n-                     \"system_messages.restore_failed\", \"system_messages.restore_succeeded\",\n-                     \"system_messages.spam_post_blocked\", \"system_messages.too_many_spam_flags\",\n-                     \"system_messages.unsilenced\", \"system_messages.user_automatically_silenced\",\n-                     \"system_messages.welcome_invite\", \"system_messages.welcome_user\", \"test_mailer\",\n-                     \"user_notifications.account_created\", \"user_notifications.admin_login\",\n-                     \"user_notifications.confirm_new_email\",\n-                     \"user_notifications.notify_old_email\", \"user_notifications.forgot_password\",\n-                     \"user_notifications.set_password\", \"user_notifications.signup\",\n-                     \"user_notifications.signup_after_approval\",\n-                     \"user_notifications.user_invited_to_private_message_pm\",\n-                     \"user_notifications.user_invited_to_private_message_pm_group\",\n-                     \"user_notifications.user_invited_to_topic\", \"user_notifications.user_mentioned\",\n-                     \"user_notifications.user_posted\", \"user_notifications.user_posted_pm\",\n-                     \"user_notifications.user_quoted\", \"user_notifications.user_replied\",\n-                     \"user_notifications.user_linked\"]\n+    @email_keys ||= [\n+      \"custom_invite_forum_mailer\",\n+      \"custom_invite_mailer\",\n+      \"invite_forum_mailer\",\n+      \"invite_mailer\",\n+      \"invite_password_instructions\",\n+      \"new_version_mailer\",\n+      \"new_version_mailer_with_notes\",\n+      \"system_messages.backup_failed\",\n+      \"system_messages.backup_succeeded\",\n+      \"system_messages.bulk_invite_failed\",\n+      \"system_messages.bulk_invite_succeeded\",\n+      \"system_messages.csv_export_failed\",\n+      \"system_messages.csv_export_succeeded\",\n+      \"system_messages.download_remote_images_disabled\",\n+      \"system_messages.email_error_notification\",\n+      \"system_messages.email_reject_auto_generated\",\n+      \"system_messages.email_reject_empty\",\n+      \"system_messages.email_reject_invalid_access\",\n+      \"system_messages.email_reject_no_account\",\n+      \"system_messages.email_reject_parsing\",\n+      \"system_messages.email_reject_reply_key\",\n+      \"system_messages.email_reject_screened_email\",\n+      \"system_messages.email_reject_topic_closed\",\n+      \"system_messages.email_reject_topic_not_found\",\n+      \"system_messages.email_reject_unrecognized_error\",\n+      \"system_messages.email_reject_user_not_found\",\n+      \"system_messages.email_revoked\",\n+      \"system_messages.pending_users_reminder\",\n+      \"system_messages.post_hidden\",\n+      \"system_messages.post_hidden_again\",\n+      \"system_messages.queued_posts_reminder\",\n+      \"system_messages.restore_failed\",\n+      \"system_messages.restore_succeeded\",\n+      \"system_messages.silenced_by_staff\",\n+      \"system_messages.spam_post_blocked\",\n+      \"system_messages.too_many_spam_flags\",\n+      \"system_messages.unsilenced\",\n+      \"system_messages.user_automatically_silenced\",\n+      \"system_messages.welcome_invite\",\n+      \"system_messages.welcome_user\",\n+      \"test_mailer\",\n+      \"user_notifications.account_created\",\n+      \"user_notifications.admin_login\",\n+      \"user_notifications.confirm_new_email\",\n+      \"user_notifications.forgot_password\",\n+      \"user_notifications.notify_old_email\",\n+      \"user_notifications.set_password\",\n+      \"user_notifications.signup\",\n+      \"user_notifications.signup_after_approval\",\n+      \"user_notifications.user_invited_to_private_message_pm\",\n+      \"user_notifications.user_invited_to_private_message_pm_group\",\n+      \"user_notifications.user_invited_to_topic\",\n+      \"user_notifications.user_linked\",\n+      \"user_notifications.user_mentioned\",\n+      \"user_notifications.user_posted\",\n+      \"user_notifications.user_posted_pm\",\n+      \"user_notifications.user_quoted\",\n+      \"user_notifications.user_replied\",\n+    ]\n   end\n \n   def show"
+    }
+  ]
+}
