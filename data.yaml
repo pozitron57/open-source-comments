@@ -979,7 +979,9 @@ staticman:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "Comments are static built-in html"
+    description: "Staticman receives user-generated content and uploads it as data\
+        \ files to a GH repository. Then the site can be automatically regenerated\
+        \ and deployed to GH pages"
     license: "MIT"
     open_issues: 55
     last_committed: 2018&#8209;06&#8209;13
@@ -1081,10 +1083,10 @@ discourse:
     github: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
-    demo: "See [1](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
-        \ [2](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
-        \ [docuss](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
-    docker: "?"
+    demo: "See [[1]](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
+        \ [[2]](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
+        \ [[3]](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
+    docker: "yes"
     js_kB: ""
     css_kB: ""
     language: "Ruby"
@@ -1106,7 +1108,7 @@ discourse:
     display_images: "yes"
     sort: "yes"
     hide_long_threads: "?"
-    anonymous_comments: "?"
+    anonymous_comments: "no"
     social_network_login: "yes"
     import_from_wordpress: "?"
     import_from_disqus: "?"
