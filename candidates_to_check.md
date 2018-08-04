@@ -7,6 +7,19 @@ https://github.com/pvorb/tala
 https://github.com/pvorb/node-opinions
 https://github.com/scotch-io/laravel-angular-comment-app
 https://github.com/kenota/kommentator
+https://github.com/alexandru/OldBuzzEngine (6 years old, 54 stars)
+https://github.com/CMGS/ymir
+https://github.com/inaimathi/clomments
+https://github.com/hhandoko/diskusi
+https://github.com/rochacbruno-archive/flasqus
+https://github.com/Purexo/DeportedCommentary (python, French)
+https://github.com/theikkila/comments
+https://github.com/alejandro/node-comm
+https://github.com/joway/Chirp
+http://ecomment.su/ (Russian; https://bitbucket.org/thorn-workshop/ecomment.git doesn't work,
+  download from http://www.php-s.ru/comments/eComment/)
+https://github.com/c4all/c4all/
+ 
 
 Ruby on Rails apps:
   https://github.com/the-trash/the_comments (315 stars)
