@@ -1,0 +1,98 @@
+{
+  "sha": "2edb8e8d0aaf302574a3e68444f57be41252e1cb",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MmVkYjhlOGQwYWFmMzAyNTc0YTNlNjg0NDRmNTdiZTQxMjUyZTFjYg==",
+  "commit": {
+    "author": {
+      "name": "Leandro",
+      "email": "leeeandroo@gmail.com",
+      "date": "2018-08-01T21:48:11Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-08-01T21:48:11Z"
+    },
+    "message": "use config variable scheduledDeletionDelayHours to schedule deletion time on hoc (#1775)",
+    "tree": {
+      "sha": "63a471a4a44dbc9d55db50a7a09dd75036590b05",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/63a471a4a44dbc9d55db50a7a09dd75036590b05"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/2edb8e8d0aaf302574a3e68444f57be41252e1cb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/2edb8e8d0aaf302574a3e68444f57be41252e1cb",
+  "html_url": "https://github.com/coralproject/talk/commit/2edb8e8d0aaf302574a3e68444f57be41252e1cb",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/2edb8e8d0aaf302574a3e68444f57be41252e1cb/comments",
+  "author": {
+    "login": "leeeandroo",
+    "id": 2144796,
+    "node_id": "MDQ6VXNlcjIxNDQ3OTY=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/2144796?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leeeandroo",
+    "html_url": "https://github.com/leeeandroo",
+    "followers_url": "https://api.github.com/users/leeeandroo/followers",
+    "following_url": "https://api.github.com/users/leeeandroo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leeeandroo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leeeandroo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leeeandroo/subscriptions",
+    "organizations_url": "https://api.github.com/users/leeeandroo/orgs",
+    "repos_url": "https://api.github.com/users/leeeandroo/repos",
+    "events_url": "https://api.github.com/users/leeeandroo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leeeandroo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c3e162dd56867f274183d533bc2e6c74513f27ec",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/c3e162dd56867f274183d533bc2e6c74513f27ec",
+      "html_url": "https://github.com/coralproject/talk/commit/c3e162dd56867f274183d533bc2e6c74513f27ec"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "da18b83cf0a7bc2387b6d1bc66d25cd7ab26741f",
+      "filename": "plugins/talk-plugin-profile-data/client/hocs/index.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/2edb8e8d0aaf302574a3e68444f57be41252e1cb/plugins/talk-plugin-profile-data/client/hocs/index.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/2edb8e8d0aaf302574a3e68444f57be41252e1cb/plugins/talk-plugin-profile-data/client/hocs/index.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-profile-data/client/hocs/index.js?ref=2edb8e8d0aaf302574a3e68444f57be41252e1cb",
+      "patch": "@@ -3,6 +3,8 @@ import { gql } from 'react-apollo';\n import moment from 'moment';\n import update from 'immutability-helper';\n \n+import { scheduledDeletionDelayHours } from '../../config';\n+\n export const withRequestDownloadLink = withMutation(\n   gql`\n     mutation DownloadCommentHistory {\n@@ -48,7 +50,7 @@ export const withRequestAccountDeletion = withMutation(\n             });\n \n             const scheduledDeletionDate = moment()\n-              .add(24, 'hours')\n+              .add(scheduledDeletionDelayHours, 'hours')\n               .toDate();\n \n             const data = update(prev, {"
+    }
+  ]
+}
