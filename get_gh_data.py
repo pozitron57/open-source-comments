@@ -8,8 +8,9 @@ The quota is 60 requests per hour for unauthenticated
 requests and 5000 requests per hour for authenticated 
 requests.
 
-Run of this file will make more than 60 requests.
-You will be prompted to type your github credentials.
+A single run of this script makes more than 60 requests
+(number of commenting servers times two).
+You need to set your github credentials.
 Use
     curl -i https://api.github.com
 or
@@ -22,7 +23,7 @@ import os
 import ruamel.yaml
 import fileinput
 
-from datetime import datetime, date
+from datetime import date, timedelta
 import dateutil.parser
 
 # Setup yaml parser
@@ -62,7 +63,7 @@ if not os.path.isdir(p):
     os.system('mkdir -p {}'.format(p) )
 
     # Save github repo info to apigh/YYYY-MM-DD/<comment_system>
-    # Attention! There is a limit of requests per IP per hour
+    # Attention, there is a limit of requests per IP per hour
     # (created, license, open_issues)
 
     ## If run manually just type your credentials
@@ -84,9 +85,31 @@ if not os.path.isdir(p):
     for url, cs in zip(github_commit_urls, comment_systems):
         os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs+'.commit'))
 
+
+
+
+# Calc Github stars change in the last N days
+N=14
+date_N_days_ago = date.today() - timedelta(days=N)
+print (date.today(), date_N_days_ago)
+all_dates=[]
+for d in sorted(os.listdir('apigh')):
+    all_dates.append(d)
+
+stars_N_days_ago = {}
+p_N_days_ago = 'apigh/'+str(date_N_days_ago)+'/'
+for cs in os.listdir(p_N_days_ago):
+    if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
+        if not '.commit' in cs:
+            with open(p_N_days_ago+cs, 'r') as f:
+                api_data = yaml.load(f)
+                stars = api_data["stargazers_count"]
+                stars_N_days_ago[cs] = stars
+
+
 # Read info from ./apigh/YYYY-MM-DD/<comment_system>
 # and ./apigh/YYYY-MM-DD/<comment_system.commit>
-#print ( '{:<27}{:<6}{:<5}{}'.format('Name', '★', 'I+PR', 'Created')    )
+print ( '{:<27}{:<6}{:<5}{:<5}{}'.format('Name', '★', 'Δ★', 'I+PR', 'Created')    )
 for cs in os.listdir(p):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
@@ -107,37 +130,24 @@ for cs in os.listdir(p):
                 # Update the values
                 data[cs]["stars"]       = stars
                 data[cs]["open_issues"] = open_issues
-                data[cs]["created"]     = created.strftime('%Y&#8209;%m&#8209;%d')
-                print ( '{:<27}{:<6}{:<5}{}'.format(cs, stars, open_issues, created.strftime('%Y-%m-%d'))    )
+                data[cs]["created"]     = created.strftime('%Y‑%m‑%d') # only useful once
+                if cs in stars_N_days_ago and cs in data:
+                    ds = data[cs]["stars"] - stars_N_days_ago[cs]
+                    data[cs]["stars_dif"] = ds
+                    print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, ds, open_issues, created.strftime('%Y‑%m‑%d')) )
+                else:
+                    print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created.strftime('%Y‑%m‑%d')) )
 
         else:
             with open(p+cs, 'r') as f:
                 api_commit_data = yaml.load(f)
-                print ('Read "commit" from .commit file for ', p+cs )
                 last_committed = dateutil.parser.parse(api_commit_data["commit"]["committer"]["date"])
                 # Update the value
-                data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y&#8209;%m&#8209;%d')
+                data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y‑%m‑%d')
+                
 
-
-#### DRAFT, not working
-#### Calc ★ change in the last N days
-#### Need to update 'stars_dif' in yaml_2_js.py, e.g.
-#### 'stars_dif':'Stars change in the last N days', N depending on what is available
-##for date in os.listdir('apigh'):
-    ##p = 'apigh/'+date+'/'
-    ##print(p)
-    ##for cs in data:
-        ##new_stars = data[cs]["stars"]
-        ##with open(p+cs, 'r') as f:
-            ##old_data  = yaml.load(f)
-            ##old_stars = old_data["stargazers_count"]
-        ##dif = new_stars - old_stars
-        ##if dif!=0:
-            ##data[cs]["stars_dif"] = dif
-            ##print( cs, 'stars change =', dif )
-
-# Not safe! data.yaml is re-written. No backup.
-# Update data.yaml file with fresh values
+# Update data.yaml file with fresh values.
+# data.yaml is re-written, no backup.
 with open('data.yaml', 'w') as f:
     yaml.dump(data, stream=f)
 
