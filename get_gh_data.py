@@ -136,6 +136,7 @@ for cs in os.listdir(p):
                     data[cs]["stars_dif"] = ds
                     print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, ds, open_issues, created.strftime('%Y‑%m‑%d')) )
                 else:
+                    data[cs]["stars_dif"] = "?"
                     print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created.strftime('%Y‑%m‑%d')) )
 
         else:

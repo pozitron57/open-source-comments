@@ -10,7 +10,7 @@ from markdown import markdown
 
 fields = [
     'stars',
-    #'stars_dif',
+    'stars_dif',
     'name',
     'github',
     'open_issues',
@@ -54,7 +54,8 @@ fields = [
 ]
 
 fields_dic={
-    'stars':                 'Github ★',
+    'stars':                 'Github stars',
+    'stars_dif':             'Stars change in the last 2 weeks',
     'name':                  'Name',
     'github':                'Github',
     'demo':                  'Demo & examples',
@@ -94,7 +95,6 @@ fields_dic={
     'created':               'Created (y‑m‑d)',
     'license':               'License',
     'open_issues':           'Open issues + PR',
-    'stars_dif':             'Stars change',
     'unmaintained':          'Unmaintained',
 }
 
