@@ -978,9 +978,8 @@ staticman:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "Staticman receives user-generated content and uploads it as data\
-        \ files to a GH repository. Then the site can be automatically regenerated\
-        \ and deployed to GH pages"
+    description: "Staticman uploads comments as data files to a GH repository, which\
+        \ forces the site rebuild"
     license: "MIT"
     open_issues: 55
     last_committed: 2018‑06‑13
@@ -1041,8 +1040,8 @@ talkyard:
     js_kB: "150"
     css_kB: ""
     language: "Ruby"
-    db: "?"
-    moderation: "?"
+    db: "PostgreSQL, Redis, ElasticSearch"
+    moderation: "yes"
     mail_notification: "?"
     dependency: "?"
     rss: "?"
@@ -2169,7 +2168,7 @@ comment_it:
     license: "AGPL-3.0"
     open_issues: 4
     last_committed: 2017‑12‑07
-    stars_dif:
+    stars_dif: '?'
 
 yoyo:
     stars: 189
@@ -2214,7 +2213,7 @@ yoyo:
     license: "MIT"
     open_issues: 6
     last_committed: 2018‑07‑17
-    stars_dif:
+    stars_dif: '?'
 
 react_quietwater:
     stars: 5
@@ -2261,7 +2260,7 @@ react_quietwater:
     license: "MIT"
     open_issues: 1
     last_committed: 2017‑09‑12
-    stars_dif:
+    stars_dif: '?'
 
 #comment_system:
     #stars: 0
