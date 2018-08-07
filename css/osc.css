@@ -81,3 +81,12 @@ span.highlight {
 	border:none;
 	font-size:100%;
 }
+
+/*
+* A draft for custom tooltips for column headers
+*th[aria-label]:hover:after {
+*  content: attr(aria-label);
+*  position: absolute;
+*  top:40px;
+*}
+*/
