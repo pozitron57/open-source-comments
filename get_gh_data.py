@@ -134,6 +134,10 @@ for cs in os.listdir(p):
                 if cs in stars_N_days_ago and cs in data:
                     ds = data[cs]["stars"] - stars_N_days_ago[cs]
                     data[cs]["stars_dif"] = ds
+                    #if ds>0:
+                        #data[cs]["stars_dif"] = '+'+str(ds)
+                    #else:
+                        #data[cs]["stars_dif"] = '−'+str(ds)
                     print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, ds, open_issues, created.strftime('%Y‑%m‑%d')) )
                 else:
                     data[cs]["stars_dif"] = "?"

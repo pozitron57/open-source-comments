@@ -1,9 +1,10 @@
 #! /usr/bin/env python
 #coding=utf8
 
-# TODO
-# Numpy is not needed, change to just append
-#import numpy as np
+'''
+Convert data.yaml to data.js
+'''
+
 import re
 import yaml
 from markdown import markdown
@@ -47,7 +48,7 @@ fields = [
     'rss',
     'static',
     'created',
-   #'updated', # What's this date? For all forks?
+   #'updated', # What's this date? For all the forks?
     'last_committed',
    #'unmaintained', #or probably Maintaned? Or Abandoned? don't like double negative
     'description',
@@ -55,7 +56,7 @@ fields = [
 
 fields_dic={
     'stars':                 'Github stars',
-    'stars_dif':             'Stars change in the last 2 weeks',
+    'stars_dif':             'Δ★ in 2&nbsp;weeks',
     'name':                  'Name',
     'github':                'Github',
     'demo':                  'Demo & examples',
@@ -99,18 +100,15 @@ fields_dic={
 }
 
 def urlify(x):
-    #ar=np.array([])
     ar=[]
     if type(x) is list:
         for i in range(len(x)):
             if re.match('^http', x[i]):
-                #ar = np.append (ar, '<a href="{}">[{}]</a>'.format(x[i],i+1) )
                 ar.append('<a href="{}">[{}]</a>'.format(x[i],i+1) )
             else:
                 m = markdown(str(x[i]))
                 f = re.sub('<p>','', m)
                 f = re.sub('</p>','', f)
-                #ar = np.append (ar, f )
                 ar.append(f)
         return "'"+ ', '.join(ar) + "'"
     else:
