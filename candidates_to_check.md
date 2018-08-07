@@ -18,7 +18,9 @@ https://github.com/alejandro/node-comm
 https://github.com/joway/Chirp
 http://ecomment.su/ (Russian; https://bitbucket.org/thorn-workshop/ecomment.git doesn't work,
   download from http://www.php-s.ru/comments/eComment/)
-https://github.com/c4all/c4all/
+https://github.com/c4all/c4all
+https://github.com/ouija-io/ouija (138 stars; last update 2014. For Ghost.
+  Backend is Goinstant which died, so ouija)
  
 
 Ruby on Rails apps:
