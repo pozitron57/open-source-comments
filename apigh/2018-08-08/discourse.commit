@@ -1,0 +1,98 @@
+{
+  "sha": "94622b451a19f0f5152280f146354ab663d06eb8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5NDYyMmI0NTFhMTlmMGY1MTUyMjgwZjE0NjM1NGFiNjYzZDA2ZWI4",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2018-08-08T09:47:31Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2018-08-08T09:55:37Z"
+    },
+    "message": "FIX: Search does not retrigger when context has changed.\n\nhttps://meta.discourse.org/t/using-the-search-this-topic-check-box-blocks-search-on-other-pages/56832/6?u=tgxworld",
+    "tree": {
+      "sha": "864d42d87f2dc78323ce9341be223edfdcc41427",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/864d42d87f2dc78323ce9341be223edfdcc41427"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/94622b451a19f0f5152280f146354ab663d06eb8",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/94622b451a19f0f5152280f146354ab663d06eb8",
+  "html_url": "https://github.com/discourse/discourse/commit/94622b451a19f0f5152280f146354ab663d06eb8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/94622b451a19f0f5152280f146354ab663d06eb8/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d3a9596d082c58d880ac972d418c61f2a178468b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d3a9596d082c58d880ac972d418c61f2a178468b",
+      "html_url": "https://github.com/discourse/discourse/commit/d3a9596d082c58d880ac972d418c61f2a178468b"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "30964e614e9b5980decc067c0eaf279cbc828147",
+      "filename": "app/assets/javascripts/discourse/widgets/search-menu.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/94622b451a19f0f5152280f146354ab663d06eb8/app/assets/javascripts/discourse/widgets/search-menu.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/94622b451a19f0f5152280f146354ab663d06eb8/app/assets/javascripts/discourse/widgets/search-menu.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/search-menu.js.es6?ref=94622b451a19f0f5152280f146354ab663d06eb8",
+      "patch": "@@ -196,6 +196,8 @@ export default createWidget(\"search-menu\", {\n       this.triggerSearch();\n     }\n \n+    searchData.contextEnabled = attrs.contextEnabled;\n+\n     return this.attach(\"menu-panel\", {\n       maxWidth: 500,\n       contents: () => this.panelContents()"
+    }
+  ]
+}
