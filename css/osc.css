@@ -50,7 +50,9 @@ div.isso-comments {
 div.isso-comments #isso-thread {
   line-height:1.2em;
 }
-
+.isso-comment > div.text-wrapper > .isso-comment-footer .downvote svg {
+    margin-left: 2px;
+}
 #isso-thread .textarea,
 div.preview {
   min-height:100px!important;
