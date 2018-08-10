@@ -1,0 +1,110 @@
+{
+  "sha": "b73950692b2c07005daf104e522063c2eed0d7ff",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiNzM5NTA2OTJiMmMwNzAwNWRhZjEwNGU1MjIwNjNjMmVlZDBkN2Zm",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-08-10T16:37:14Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-08-10T16:37:14Z"
+    },
+    "message": "FIX: Parsing non-existent feed should not fail",
+    "tree": {
+      "sha": "81139fe33203bfa03d1cd46bd137e3433118249e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/81139fe33203bfa03d1cd46bd137e3433118249e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b73950692b2c07005daf104e522063c2eed0d7ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b73950692b2c07005daf104e522063c2eed0d7ff",
+  "html_url": "https://github.com/discourse/discourse/commit/b73950692b2c07005daf104e522063c2eed0d7ff",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b73950692b2c07005daf104e522063c2eed0d7ff/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "865cb3feb9dee7df19083b22592b5cbfe6b2f245",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/865cb3feb9dee7df19083b22592b5cbfe6b2f245",
+      "html_url": "https://github.com/discourse/discourse/commit/865cb3feb9dee7df19083b22592b5cbfe6b2f245"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 13,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "7567660a42d7deb5902e17f162b1f5f9df87b90d",
+      "filename": "app/jobs/scheduled/poll_feed.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/b73950692b2c07005daf104e522063c2eed0d7ff/app/jobs/scheduled/poll_feed.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b73950692b2c07005daf104e522063c2eed0d7ff/app/jobs/scheduled/poll_feed.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/scheduled/poll_feed.rb?ref=b73950692b2c07005daf104e522063c2eed0d7ff",
+      "patch": "@@ -89,6 +89,8 @@ def topics\n \n       def parsed_feed\n         raw_feed, encoding = fetch_rss\n+        return nil if raw_feed.nil?\n+\n         encoded_feed = Encodings.try_utf8(raw_feed, encoding) if encoding\n         encoded_feed = Encodings.to_utf8(raw_feed) unless encoded_feed\n "
+    },
+    {
+      "sha": "ce79bdb30497369be92037863301c45c7ab29822",
+      "filename": "spec/jobs/poll_feed_spec.rb",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/b73950692b2c07005daf104e522063c2eed0d7ff/spec/jobs/poll_feed_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b73950692b2c07005daf104e522063c2eed0d7ff/spec/jobs/poll_feed_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/poll_feed_spec.rb?ref=b73950692b2c07005daf104e522063c2eed0d7ff",
+      "patch": "@@ -137,6 +137,17 @@\n       include_examples 'topic creation based on the the feed'\n     end\n \n+    it \"aborts when it can't fetch the feed\" do\n+      SiteSetting.feed_polling_enabled = true\n+      SiteSetting.feed_polling_url = 'https://blog.discourse.org/feed/atom/'\n+      SiteSetting.embed_by_username = 'eviltrout'\n+\n+      stub_request(:head, SiteSetting.feed_polling_url).to_return(status: 404)\n+      stub_request(:get, SiteSetting.feed_polling_url).to_return(status: 404)\n+\n+      expect { poller.poll_feed }.to_not change { Topic.count }\n+    end\n+\n     context 'encodings' do\n       before do\n         SiteSetting.feed_polling_enabled = true"
+    }
+  ]
+}
