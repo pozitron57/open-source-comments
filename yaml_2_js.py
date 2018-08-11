@@ -56,7 +56,7 @@ fields = [
 
 fields_dic={
     'stars':                 'Github stars',
-    'stars_dif':             'Δ★ in 2&nbsp;weeks',
+    'stars_dif':             'Stars&nbsp;in 2&nbsp;weeks',
     'name':                  'Name',
     'github':                'Github',
     'demo':                  'Demo & examples',
