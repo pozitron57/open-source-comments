@@ -1,0 +1,110 @@
+{
+  "sha": "a960a57c72d5e39eb77f30ba2c41f1ffedd49f43",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphOTYwYTU3YzcyZDVlMzllYjc3ZjMwYmEyYzQxZjFmZmVkZDQ5ZjQz",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-08-11T02:09:46Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-08-11T02:09:46Z"
+    },
+    "message": "Improving category reorder modal layout",
+    "tree": {
+      "sha": "3704bc982a3383c9d518c0752a3a0114e264754b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3704bc982a3383c9d518c0752a3a0114e264754b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43",
+  "html_url": "https://github.com/discourse/discourse/commit/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e53983b53bb9e65b6a42a11cf5c71ca1bcf492fb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e53983b53bb9e65b6a42a11cf5c71ca1bcf492fb",
+      "html_url": "https://github.com/discourse/discourse/commit/e53983b53bb9e65b6a42a11cf5c71ca1bcf492fb"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 23,
+    "deletions": 23
+  },
+  "files": [
+    {
+      "sha": "33221efb146033d5d7618f320b59b6f77b1b7aa3",
+      "filename": "app/assets/javascripts/discourse/templates/modal/reorder-categories.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43/app/assets/javascripts/discourse/templates/modal/reorder-categories.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43/app/assets/javascripts/discourse/templates/modal/reorder-categories.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/modal/reorder-categories.hbs?ref=a960a57c72d5e39eb77f30ba2c41f1ffedd49f43",
+      "patch": "@@ -12,7 +12,7 @@\n           {{d-button class=\"no-text\" action=\"moveUp\" actionParam=cat icon=\"arrow-up\"}}\n           {{d-button class=\"no-text\" action=\"moveDown\" actionParam=cat icon=\"arrow-down\"}}\n           {{#if cat.hasBufferedChanges}}\n-            {{d-button class=\"no-text\" action=\"commit\" icon=\"check\"}}\n+            {{d-button class=\"no-text ok\" action=\"commit\" icon=\"check\"}}\n           {{/if}}\n         </td>\n         <td>{{category-badge cat allowUncategorized=\"true\"}}</td>"
+    },
+    {
+      "sha": "ce0155129ed11878fefc2a6369c23f1affff990b",
+      "filename": "app/assets/stylesheets/common/base/cat_reorder.scss",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 22,
+      "changes": 44,
+      "blob_url": "https://github.com/discourse/discourse/blob/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43/app/assets/stylesheets/common/base/cat_reorder.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/a960a57c72d5e39eb77f30ba2c41f1ffedd49f43/app/assets/stylesheets/common/base/cat_reorder.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/cat_reorder.scss?ref=a960a57c72d5e39eb77f30ba2c41f1ffedd49f43",
+      "patch": "@@ -1,31 +1,31 @@\n .reorder-categories {\n+  thead {\n+    border-bottom: 1px solid $primary-low;\n+    th {\n+      padding-bottom: 0.5em;\n+      text-align: left;\n+    }\n+  }\n   input {\n     width: 4em;\n-  }\n-  .th-pos {\n-    width: calc(4em + 150px);\n-  }\n-  tbody tr {\n-    background-color: transparent;\n-    transition: background 0s ease;\n-    &.highlighted {\n-      background-color: rgba($highlight, 0.4);\n-      &.done {\n-        background-color: transparent;\n-        transition-duration: 1s;\n-      }\n-    }\n-    &:first-child td {\n-      padding-top: 7px;\n+    @include breakpoint(mobile) {\n+      width: 2em;\n     }\n   }\n-  tbody {\n-    border-bottom: 1px solid blend-primary-secondary(50%);\n-  }\n   table {\n+    width: 100%;\n     padding-bottom: 150px;\n+    td {\n+      padding: 0.5em 0.5em 0.5em 0;\n+      @include breakpoint(mobile, min-width) {\n+        min-width: 15em;\n+      }\n+    }\n+  }\n+  .badge-wrapper span.badge-category {\n+    max-width: 20em;\n+    @include breakpoint(mobile) {\n+      max-width: 30vw;\n+    }\n   }\n-}\n-.category-admin-menu ul {\n-  width: 320px;\n }"
+    }
+  ]
+}
