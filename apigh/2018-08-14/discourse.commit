@@ -1,0 +1,110 @@
+{
+  "sha": "ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiYTBlMzIyZmQwM2E4NTdiNDdkZmVlMmU5MGEwZGNkM2E4ZmY5YzY4",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-08-14T16:40:42Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-08-14T16:45:46Z"
+    },
+    "message": "FIX: Validation of topic params broke discourse-assign",
+    "tree": {
+      "sha": "a242258fb68d6664a0e04d127c77cc8cdceb0dd4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a242258fb68d6664a0e04d127c77cc8cdceb0dd4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68",
+  "html_url": "https://github.com/discourse/discourse/commit/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "87fa26b6c80fc76ce8afbe01cbee96da2cd73f53",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/87fa26b6c80fc76ce8afbe01cbee96da2cd73f53",
+      "html_url": "https://github.com/discourse/discourse/commit/87fa26b6c80fc76ce8afbe01cbee96da2cd73f53"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 0,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "28fb8a056202020ee87a05ca09502da2381cba1e",
+      "filename": "lib/topic_query.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68/lib/topic_query.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68/lib/topic_query.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/topic_query.rb?ref=ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68",
+      "patch": "@@ -23,7 +23,6 @@ def self.validators\n \n       {\n         max_posts: zero_or_more,\n-        exclude_category_ids: array_zero_or_more,\n         min_posts: zero_or_more,\n       }\n     end"
+    },
+    {
+      "sha": "51ff5e493ca6df846e04e50d7e474e8e4b18d0e0",
+      "filename": "spec/requests/list_controller_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68/spec/requests/list_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68/spec/requests/list_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/list_controller_spec.rb?ref=ba0e322fd03a857b47dfee2e90a0dcd3a8ff9c68",
+      "patch": "@@ -17,9 +17,6 @@\n     end\n \n     it \"does not return a 500 for invalid input\" do\n-      get \"/latest?exclude_category_ids[]=bob\"\n-      expect(response.status).to eq(400)\n-\n       get \"/latest?min_posts=bob\"\n       expect(response.status).to eq(400)\n "
+    }
+  ]
+}
