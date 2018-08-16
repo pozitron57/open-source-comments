@@ -1,0 +1,98 @@
+{
+  "sha": "7af0da9498a00ebbd9dab72df495fb2ba780c9d4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3YWYwZGE5NDk4YTAwZWJiZDlkYWI3MmRmNDk1ZmIyYmE3ODBjOWQ0",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-08-16T16:42:26Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-08-16T16:42:26Z"
+    },
+    "message": "Fix Vanilla bulk import script",
+    "tree": {
+      "sha": "e2132cb5b8657929be53a9b5777944c5806624b8",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e2132cb5b8657929be53a9b5777944c5806624b8"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7af0da9498a00ebbd9dab72df495fb2ba780c9d4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7af0da9498a00ebbd9dab72df495fb2ba780c9d4",
+  "html_url": "https://github.com/discourse/discourse/commit/7af0da9498a00ebbd9dab72df495fb2ba780c9d4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7af0da9498a00ebbd9dab72df495fb2ba780c9d4/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0e04e3990ea0df504cc2e07be0df4642407e9cd4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/0e04e3990ea0df504cc2e07be0df4642407e9cd4",
+      "html_url": "https://github.com/discourse/discourse/commit/0e04e3990ea0df504cc2e07be0df4642407e9cd4"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "3e11130e979ce3b3ac0f53e1f53a8a6bc963087c",
+      "filename": "script/bulk_import/vanilla.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/7af0da9498a00ebbd9dab72df495fb2ba780c9d4/script/bulk_import/vanilla.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7af0da9498a00ebbd9dab72df495fb2ba780c9d4/script/bulk_import/vanilla.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/bulk_import/vanilla.rb?ref=7af0da9498a00ebbd9dab72df495fb2ba780c9d4",
+      "patch": "@@ -1,6 +1,7 @@\n require_relative \"base\"\n require \"mysql2\"\n require \"rake\"\n+require \"htmlentities\"\n \n class BulkImport::Vanilla < BulkImport::Base\n "
+    }
+  ]
+}
