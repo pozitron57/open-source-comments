@@ -1,0 +1,98 @@
+{
+  "sha": "8d9622cfd094afca3d2f7163558289d0a117a6a2",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjhkOTYyMmNmZDA5NGFmY2EzZDJmNzE2MzU1ODI4OWQwYTExN2E2YTI=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-16T23:48:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-16T23:48:34Z"
+    },
+    "message": "shutdown after import test",
+    "tree": {
+      "sha": "c5112d276a7651db6cc0515f50a591b67daa57d9",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/c5112d276a7651db6cc0515f50a591b67daa57d9"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/8d9622cfd094afca3d2f7163558289d0a117a6a2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/8d9622cfd094afca3d2f7163558289d0a117a6a2",
+  "html_url": "https://github.com/umputun/remark/commit/8d9622cfd094afca3d2f7163558289d0a117a6a2",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/8d9622cfd094afca3d2f7163558289d0a117a6a2/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a05b0b81c0dd46df35937998066d7bf01b8696fc",
+      "url": "https://api.github.com/repos/umputun/remark/commits/a05b0b81c0dd46df35937998066d7bf01b8696fc",
+      "html_url": "https://github.com/umputun/remark/commit/a05b0b81c0dd46df35937998066d7bf01b8696fc"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "36b5d5eb1107b9342a95347d14709e115d2e3811",
+      "filename": "backend/app/rest/api/migrator_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/8d9622cfd094afca3d2f7163558289d0a117a6a2/backend/app/rest/api/migrator_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/8d9622cfd094afca3d2f7163558289d0a117a6a2/backend/app/rest/api/migrator_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/migrator_test.go?ref=8d9622cfd094afca3d2f7163558289d0a117a6a2",
+      "patch": "@@ -155,14 +155,14 @@ func prepImportSrv(t *testing.T) (svc *Migrator, ds *service.DataStore, ts *http\n \t\tCache:             &cache.Nop{},\n \t\tKeyStore:          keys.NewStaticStore(\"123456\"),\n \t}\n-\n \troutes := svc.routes()\n \tts = httptest.NewServer(routes)\n \treturn svc, dataStore, ts\n }\n \n-func cleanupImportSrv(_ *Migrator, ts *httptest.Server) {\n+func cleanupImportSrv(m *Migrator, ts *httptest.Server) {\n \tts.Close()\n+\tm.Shutdown()\n \tos.Remove(testDb)\n }\n "
+    }
+  ]
+}
