@@ -1,0 +1,110 @@
+{
+  "sha": "3188c205e48495d70491d3175bd991adc998ae62",
+  "node_id": "MDY6Q29tbWl0MTI2ODkxODQ6MzE4OGMyMDVlNDg0OTVkNzA0OTFkMzE3NWJkOTkxYWRjOTk4YWU2Mg==",
+  "commit": {
+    "author": {
+      "name": "Renovate Bot",
+      "email": "bot@renovateapp.com",
+      "date": "2018-08-18T00:25:57Z"
+    },
+    "committer": {
+      "name": "renovate[bot]",
+      "email": "renovate[bot]@users.noreply.github.com",
+      "date": "2018-08-18T02:56:11Z"
+    },
+    "message": "Update dependency nock to v9.6.1",
+    "tree": {
+      "sha": "88aafbf671d6835147b2e16da65a59d39cd6ee3c",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/trees/88aafbf671d6835147b2e16da65a59d39cd6ee3c"
+    },
+    "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/commits/3188c205e48495d70491d3175bd991adc998ae62",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/3188c205e48495d70491d3175bd991adc998ae62",
+  "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/3188c205e48495d70491d3175bd991adc998ae62",
+  "comments_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/3188c205e48495d70491d3175bd991adc998ae62/comments",
+  "author": {
+    "login": "renovate-bot",
+    "id": 25180681,
+    "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/25180681?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/renovate-bot",
+    "html_url": "https://github.com/renovate-bot",
+    "followers_url": "https://api.github.com/users/renovate-bot/followers",
+    "following_url": "https://api.github.com/users/renovate-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/renovate-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/renovate-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/renovate-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/renovate-bot/orgs",
+    "repos_url": "https://api.github.com/users/renovate-bot/repos",
+    "events_url": "https://api.github.com/users/renovate-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/renovate-bot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "renovate[bot]",
+    "id": 29139614,
+    "node_id": "MDM6Qm90MjkxMzk2MTQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/in/2740?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/renovate%5Bbot%5D",
+    "html_url": "https://github.com/apps/renovate",
+    "followers_url": "https://api.github.com/users/renovate%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/renovate%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/renovate%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/renovate%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/renovate%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/renovate%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/renovate%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/renovate%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/renovate%5Bbot%5D/received_events",
+    "type": "Bot",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "618ba2746582c5064b83f5b11acfd9aa56101c3b",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/618ba2746582c5064b83f5b11acfd9aa56101c3b",
+      "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/618ba2746582c5064b83f5b11acfd9aa56101c3b"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "afaa385b1785876e07356fead8a97e2650c1364f",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/3188c205e48495d70491d3175bd991adc998ae62/package.json",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/3188c205e48495d70491d3175bd991adc998ae62/package.json",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/package.json?ref=3188c205e48495d70491d3175bd991adc998ae62",
+      "patch": "@@ -73,7 +73,7 @@\n     \"grunt-contrib-concat\": \"1.0.1\",\n     \"grunt-contrib-uglify\": \"1.0.2\",\n     \"mocha\": \"5.2.0\",\n-    \"nock\": \"9.6.0\",\n+    \"nock\": \"9.6.1\",\n     \"nyc\": \"12.0.2\",\n     \"sinon\": \"6.1.5\",\n     \"supertest\": \"3.1.0\","
+    },
+    {
+      "sha": "4ee4c933fb73d437603be29b619d879519d161df",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/3188c205e48495d70491d3175bd991adc998ae62/yarn.lock",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/3188c205e48495d70491d3175bd991adc998ae62/yarn.lock",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/yarn.lock?ref=3188c205e48495d70491d3175bd991adc998ae62",
+      "patch": "@@ -2924,9 +2924,9 @@ nise@^1.4.2:\n     path-to-regexp \"^1.7.0\"\n     text-encoding \"^0.6.4\"\n \n-nock@9.6.0:\n-  version \"9.6.0\"\n-  resolved \"https://registry.yarnpkg.com/nock/-/nock-9.6.0.tgz#df273defe35fd31c3ec9039c570e64339d31d68b\"\n+nock@9.6.1:\n+  version \"9.6.1\"\n+  resolved \"https://registry.yarnpkg.com/nock/-/nock-9.6.1.tgz#d96e099be9bc1d0189a77f4490bbbb265c381b49\"\n   dependencies:\n     chai \"^4.1.2\"\n     debug \"^3.1.0\""
+    }
+  ]
+}
