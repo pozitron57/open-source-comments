@@ -1479,9 +1479,9 @@ jekyll_static_comments:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "For Jekyll. PHP script sends the comment to the server and produces\
-        \ .YAML files which are stored in a special folder. On site rebuild, these\
-        \ comments are built into the html code of the page"
+    description: "For Jekyll. PHP script sends the comment to the server and creates\
+        \ yaml files in a special folder. On site rebuild, these\
+        \ comments are added into the html code of the page"
     license: "GPL-3.0"
     open_issues: 8
     last_committed: 2014‑02‑11
