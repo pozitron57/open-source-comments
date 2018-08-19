@@ -13,7 +13,7 @@ fields = [
     'stars',
     'stars_dif',
     'name',
-    'github',
+    'source',
     'open_issues',
     'demo',
     'js_kB',
@@ -58,7 +58,7 @@ fields_dic={
     'stars':                 'Github stars',
     'stars_dif':             'Stars&nbsp;in 2&nbsp;weeks',
     'name':                  'Name',
-    'github':                'Github',
+    'source':                'Source code',
     'demo':                  'Demo & examples',
     'js_kB':                 'js, kB',
     'css_kB':                'css, kB',
@@ -99,26 +99,54 @@ fields_dic={
     'unmaintained':          'Unmaintained',
 }
 
+def source_urlify(x):
+    ar=[]
+    if type(x) is list:
+        for i in range(len(x)):
+            if re.search('github.com', x[i]):
+                ar.append('<a href="{}">{}</a>'.format(x[i],'github') )
+            elif re.search('gitlab.com', x[i]):
+                ar.append('<a href="{}">{}</a>'.format(x[i],'gitlab') )
+            elif re.match('^http', x[i]):
+                ar.append('<a href="{}">[{}]</a>'.format(x[i],i+1) )
+            else:
+                m = markdown(str(x[i]))
+                m = re.sub('<p>','', m)
+                m = re.sub('</p>','', m)
+                ar.append(m)
+        return "'"+ ', '.join(ar) + "'"
+    else:
+        if re.search('github.com', x):
+            return '<a href="{}">{}</a>'.format(x,'github')
+        elif re.search('gitlab.com', x):
+            return '<a href="{}">{}</a>'.format(x,'gitlab')
+        else:
+            return '<a href="{}">{}</a>'.format(x,'link')
+
 def urlify(x):
     ar=[]
     if type(x) is list:
         for i in range(len(x)):
-            if re.match('^http', x[i]):
+            if re.search('github.com', x[i]):
+                ar.append('<a href="{}">{}</a>'.format(x[i],'github') )
+            elif re.search('gitlab.com', x[i]):
+                ar.append('<a href="{}">{}</a>'.format(x[i],'gitlab') )
+            elif re.match('^http', x[i]):
                 ar.append('<a href="{}">[{}]</a>'.format(x[i],i+1) )
             else:
                 m = markdown(str(x[i]))
-                f = re.sub('<p>','', m)
-                f = re.sub('</p>','', f)
-                ar.append(f)
+                m = re.sub('<p>','', m)
+                m = re.sub('</p>','', m)
+                ar.append(m)
         return "'"+ ', '.join(ar) + "'"
     else:
         if re.match('http', str(x)):
             return '<a href="{}">[{}]</a>'.format(x,'link')
         else:
             m = markdown(str(x))
-            f = re.sub('<p>','', m)
-            f = re.sub('</p>','', f)
-            return f
+            m = re.sub('<p>','', m)
+            m = re.sub('</p>','', m)
+            return m
 
 # Read YAML file
 with open("data.yaml", 'r') as f:
@@ -131,9 +159,14 @@ with open("data.js", 'w') as out:
         print('[', end=' ', file=out)
         for fi in fields:
             # Check if the field exists (e.g. "Demo" for "Isso")
-            if fi in data[el]:
+            if fi=='source':
                 if type(data[el][fi]) is list:
-                    print( urlify(data[el][fi]), end=", ", file=out)
+                    print (source_urlify(data[el][fi]), end=", ", file=out)
+                else:
+                    print ("'" + source_urlify(data[el][fi]) +"',", end=' ', file=out)
+            elif fi in data[el]:
+                if type(data[el][fi]) is list:
+                    print (urlify(data[el][fi]), end=", ", file=out)
                 else:
                     print ("'" + urlify(data[el][fi]) +"',", end=' ', file=out)
             else:

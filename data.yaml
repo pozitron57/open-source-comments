@@ -1,6 +1,6 @@
 isso:
     stars: 3310
-    github: "https://github.com/posativ/isso"
+    source: "https://github.com/posativ/isso"
     homepage: "https://posativ.org/isso/"
     name: "Isso"
     demo:
@@ -57,7 +57,9 @@ commento:
     stars: 2714
     name: "Commento"
     demo: "https://demo.commento.io"
-    github: "https://github.com/adtac/commento"
+    source: 
+      - "https://gitlab.com/commento/commento-ce"
+      - "https://github.com/adtac/commento"
     js_kB: 16
     css_kB: ""
     language: "Go"
@@ -90,7 +92,7 @@ commento:
 
 schnak:
     stars: 1241
-    github: "https://github.com/schn4ck/schnack"
+    source: "https://github.com/schn4ck/schnack"
     homepage: "?"
     name: "Schnak"
     demo: "https://schnak.cool"
@@ -145,7 +147,7 @@ juvia:
       - "https://erik.doernenburg.com/2015/08/privacy-and-this-website/"
     #- "http://rahul.raut.me/2014/12/15/welcome-to-my-blog/"
     antispam: "Akismet"
-    github: "https://github.com/phusion/juvia"
+    source: "https://github.com/phusion/juvia"
     language: "Ruby"
     preview: "yes"
     avatar: "Gravatar"
@@ -170,7 +172,7 @@ site_point_nested_comments:
     stars: 14
     language: "Ruby"
     name: "SitePointNestedComments"
-    github: "https://github.com/bodrovis/SitePointNestedComments"
+    source: "https://github.com/bodrovis/SitePointNestedComments"
     website: "https://www.sitepoint.com/nested-comments-rails/"
     static: "no"
     description: "Rails app with the help of the closure_tree gem"
@@ -185,7 +187,7 @@ site_point_nested_comments:
 
 remark:
     stars: 616
-    github: "https://github.com/umputun/remark"
+    source: "https://github.com/umputun/remark"
     homepage: "https://remark42.com"
     name: "Remark42"
     demo: "https://remark42.com/demo/"
@@ -228,7 +230,7 @@ remark:
 valine:
     name: "Valine"
     stars: 548
-    github: "https://github.com/xCss/Valine"
+    source: "https://github.com/xCss/Valine"
     homepage: "https://valine.js.org/en/index.html"
     demo: "https://valine.js.org/en/index.html"
     docker: "?"
@@ -268,7 +270,7 @@ valine:
 
 mouthful:
     stars: 440
-    github: "https://github.com/vkuznecovas/mouthful"
+    source: "https://github.com/vkuznecovas/mouthful"
     homepage: "https://mouthful.dizzy.zone/"
     name: "Mouthful"
     demo:
@@ -314,7 +316,7 @@ mouthful:
 
 diskuto:
     stars: 21
-    github: "https://github.com/rejectedsoftware/diskuto"
+    source: "https://github.com/rejectedsoftware/diskuto"
     homepage: "?"
     name: "Diskuto"
     demo: "https://raw.githubusercontent.com/rejectedsoftware/diskuto/master/screenshot.png"
@@ -357,7 +359,7 @@ diskuto:
 
 coralproject_talk:
     stars: 977
-    github: "https://github.com/coralproject/talk"
+    source: "https://github.com/coralproject/talk"
     homepage: "https://coralproject.net/talk/"
     name: "coralproject_talk"
     demo: "?"
@@ -401,7 +403,7 @@ coralproject_talk:
 
 hashover2:
     stars: 207
-    github: "https://github.com/jacobwb/hashover-next"
+    source: "https://github.com/jacobwb/hashover-next"
     homepage: "?"
     name: "hashover-next"
     demo: "?"
@@ -444,7 +446,7 @@ hashover2:
 
 hashover:
     stars: 160
-    github: "https://github.com/jacobwb/hashover"
+    source: "https://github.com/jacobwb/hashover"
     homepage: "http://tildehash.com/?page=hashover"
     name: "hashover"
     demo: "http://tildehash.com/comments.html"
@@ -488,7 +490,7 @@ hashover:
 
 talkatv:
     stars: 196
-    github: "https://github.com/talkatv/talkatv"
+    source: "https://github.com/talkatv/talkatv"
     homepage: "?"
     name: "talkatv"
     demo: "?"
@@ -532,7 +534,7 @@ talkatv:
 
 wildfire:
     stars: 124
-    github: "https://github.com/cheng-kang/wildfire"
+    source: "https://github.com/cheng-kang/wildfire"
     homepage: "https://wildfire.js.org/"
     name: "Wildfire"
     demo: "https://wildfire.js.org/"
@@ -578,7 +580,7 @@ wildfire:
 
 e_comments:
     stars: 85
-    github: "https://github.com/skx/e-comments"
+    source: "https://github.com/skx/e-comments"
     homepage: "?"
     name: "External-comments"
     demo: "?"
@@ -624,7 +626,7 @@ e_comments:
 
 realtime_commenting:
     stars: 54
-    github: "https://github.com/pusher-community/realtime-commenting"
+    source: "https://github.com/pusher-community/realtime-commenting"
     homepage: "http://realtime-commenting.herokuapp.com/"
     name: "Realtime comments"
     demo: "http://realtime-commenting.herokuapp.com/"
@@ -667,7 +669,7 @@ realtime_commenting:
 
 comments_app:
     stars: 41
-    github: "https://github.com/dyu/comments"
+    source: "https://github.com/dyu/comments"
     homepage: "https://dyu.github.io/comments/"
     name: "comments-app"
     demo: "https://dyu.github.io/comments/"
@@ -715,7 +717,7 @@ comments_app:
 
 master:
     stars: 35
-    github: "https://github.com/ionutvmi/master-comments-system"
+    source: "https://github.com/ionutvmi/master-comments-system"
     homepage: "?"
     name: "Master comments"
     demo: "https://camo.githubusercontent.com/54fabf226fb3854c18382596ddf76315274020cb/687474703a2f2f7075752e73682f334f3639562e706e67"
@@ -760,7 +762,7 @@ master:
 
 jskomment:
     stars: 33
-    github: "https://github.com/monperrus/jskomment"
+    source: "https://github.com/monperrus/jskomment"
     homepage: "?"
     name: "jskomment"
     demo: "https://www.monperrus.net/martin/open+source+ajax+commenting+system"
@@ -805,7 +807,7 @@ jskomment:
 
 squabble:
     stars: 24
-    github: "https://github.com/savaslabs/squabble"
+    source: "https://github.com/savaslabs/squabble"
     homepage: "?"
     name: "Squabble"
     demo: "https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html"
@@ -849,7 +851,7 @@ squabble:
 
 sidecar:
     stars: 11
-    github: "https://github.com/phauer/comment-sidecar"
+    source: "https://github.com/phauer/comment-sidecar"
     homepage: "?"
     name: "comment-sidecar"
     demo: "https://raw.githubusercontent.com/phauer/comment-sidecar/master/screenshot-frontend.png"
@@ -894,7 +896,7 @@ sidecar:
 
 jp_comment:
     stars: 0
-    github: "https://github.com/dogloving/JP-Comment"
+    source: "https://github.com/dogloving/JP-Comment"
     homepage: "?"
     name: "JP_Comment"
     demo: "https://raw.githubusercontent.com/dogloving/JP-Comment/master/assets/img/show.gif"
@@ -939,7 +941,7 @@ jp_comment:
 
 staticman:
     stars: 1092
-    github: "https://github.com/eduardoboucas/staticman"
+    source: "https://github.com/eduardoboucas/staticman"
     homepage: "https://staticman.net/"
     name: "Staticman"
     demo:
@@ -987,7 +989,7 @@ staticman:
 
 comment_with_reply_view:
     stars: 145
-    github: "https://github.com/Moosphan/CommentWithReplyView-master"
+    source: "https://github.com/Moosphan/CommentWithReplyView-master"
     homepage: "?"
     name: "CommentWithReplyView"
     demo: "https://raw.githubusercontent.com/Moosphan/CommentWithReplyView-master/d8abe02ccb0ca42d40f330ab3f3c68cbad4af029/CommentWithReplyList/art/comment_sample.gif"
@@ -1032,7 +1034,7 @@ comment_with_reply_view:
 
 talkyard:
     stars: 120
-    github: "https://github.com/debiki/talkyard"
+    source: "https://github.com/debiki/talkyard"
     homepage: "https://www.talkyard.io/blog-comments"
     name: "talkyard"
     demo: "https://www.kajmagnus.blog/new-embedded-comments"
@@ -1078,7 +1080,7 @@ talkyard:
 
 discourse:
     stars: 25824
-    github: "https://github.com/discourse/discourse"
+    source: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
     demo: "See [[1]](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
@@ -1128,7 +1130,7 @@ discourse:
 
 webpage_webmentions:
     stars: 38
-    github: "https://github.com/voxpelli/webpage-webmentions"
+    source: "https://github.com/voxpelli/webpage-webmentions"
     homepage: "https://webmention.herokuapp.com/"
     name: "webpage-webmentions"
     demo: "https://webmention.herokuapp.com/"
@@ -1173,7 +1175,7 @@ webpage_webmentions:
 
 chatter:
     stars: 4
-    github: "https://github.com/joealcorn/chatter"
+    source: "https://github.com/joealcorn/chatter"
     homepage: "https://joealcorn.github.io/chatter/"
     name: "chatter"
     demo: "https://joealcorn.github.io/chatter/"
@@ -1218,7 +1220,7 @@ chatter:
 
 node_comments:
     stars: 15
-    github: "https://github.com/pvorb/node-comments"
+    source: "https://github.com/pvorb/node-comments"
     homepage: "https://npmjs.org/package/Comments"
     name: "Node Comments"
     demo: "?"
@@ -1263,7 +1265,7 @@ node_comments:
 
 platon:
     stars: 2
-    github: "https://github.com/pvorb/platon"
+    source: "https://github.com/pvorb/platon"
     homepage: "?"
     name: "platon"
     demo: "?"
@@ -1308,7 +1310,7 @@ platon:
 
 comments_by_moharram82:
     stars: 0
-    github: "https://github.com/moharram82/comments"
+    source: "https://github.com/moharram82/comments"
     homepage: "?"
     name: "comments-moharram82"
     demo: "?"
@@ -1353,7 +1355,7 @@ comments_by_moharram82:
 
 guestbook:
     stars: 0
-    github: "https://github.com/proshareny/guestbook"
+    source: "https://github.com/proshareny/guestbook"
     homepage: "?"
     name: "guestbook"
     demo: "https://raw.githubusercontent.com/proshareny/guestbook/master/screenshot.JPG"
@@ -1397,7 +1399,7 @@ guestbook:
 
 ajax_comments:
     stars: 1
-    github: "https://github.com/MaksimSergeev/AJAX-Comments-System"
+    source: "https://github.com/MaksimSergeev/AJAX-Comments-System"
     homepage: "?"
     name: "AJAX Comment System"
     demo: "https://raw.githubusercontent.com/MaksimSergeev/AJAX-Comments-System/master/Ajax%20comments.JPG"
@@ -1441,7 +1443,7 @@ ajax_comments:
 
 jekyll_static_comments:
     stars: 174
-    github: "https://github.com/mpalmer/jekyll-static-comments"
+    source: "https://github.com/mpalmer/jekyll-static-comments"
     homepage: "http://theshed.hezmatt.org/jekyll-static-comments/"
     name: "Jekyll::StaticComments"
     demo: "http://theshed.hezmatt.org/jekyll-static-comments/"
@@ -1488,7 +1490,7 @@ jekyll_static_comments:
 
 rocket_firm:
     stars: 1
-    github: "https://github.com/naffiq/yii2-rocket-comments"
+    source: "https://github.com/naffiq/yii2-rocket-comments"
     homepage: "?"
     name: "RocketFirm Comments"
     demo: "?"
@@ -1533,7 +1535,7 @@ rocket_firm:
 
 react_comment_system:
     stars: 0
-    github: "https://github.com/Bitveen/react-comment-system"
+    source: "https://github.com/Bitveen/react-comment-system"
     homepage: "?"
     name: "react-comment-system"
     demo: "?"
@@ -1577,7 +1579,7 @@ react_comment_system:
 
 comments_vivalaakam:
     stars: 0
-    github: "https://github.com/vivalaakam/comments"
+    source: "https://github.com/vivalaakam/comments"
     homepage: "?"
     name: "comments-vivalaakam"
     demo: "?"
@@ -1621,7 +1623,7 @@ comments_vivalaakam:
 
 easy_page_comments:
     stars: 15
-    github: "https://github.com/Pomax/EasyPageComments"
+    source: "https://github.com/Pomax/EasyPageComments"
     homepage: "http://pomax.nihongoresources.com/pages/EasyPageComments/"
     name: "EasyPageComments"
     demo: "http://pomax.nihongoresources.com/pages/EasyPageComments/"
@@ -1665,7 +1667,7 @@ easy_page_comments:
 
 lambda_comments:
     stars: 585
-    github: "https://github.com/jimpick/lambda-comments"
+    source: "https://github.com/jimpick/lambda-comments"
     homepage: "https://jimpick.com/2016/05/05/introducing-lambda-comments/"
     name: "lambda-comments"
     demo: "https://jimpick.com/2016/05/05/introducing-lambda-comments/"
@@ -1714,7 +1716,7 @@ lambda_comments:
 
 jekyll_aws_comments:
     stars: 16
-    github: "https://github.com/ummels/jekyll-aws-comments"
+    source: "https://github.com/ummels/jekyll-aws-comments"
     homepage: "?"
     name: "Jekyll AWS Comments"
     demo: "?"
@@ -1759,7 +1761,7 @@ jekyll_aws_comments:
 
 commentics:
     stars: 17
-    github: "https://github.com/commentics/commentics"
+    source: "https://github.com/commentics/commentics"
     homepage: "https://www.commentics.org/"
     name: "Commentics"
     demo: "https://www.commentics.org/demo"
@@ -1804,7 +1806,7 @@ commentics:
 
 commentar:
     stars: 44
-    github: "https://github.com/Commentar/Commentar"
+    source: "https://github.com/Commentar/Commentar"
     homepage: "?"
     name: "Commentar"
     demo: "?"
@@ -1849,7 +1851,7 @@ commentar:
 
 komentify:
     stars: 76
-    github: "https://github.com/komentify/meteor-comments-ui"
+    source: "https://github.com/komentify/meteor-comments-ui"
     homepage: "https://www.komentify.io/"
     name: "komentify"
     demo:
@@ -1896,7 +1898,7 @@ komentify:
 
 commentary:
     stars: 57
-    github: "https://github.com/sdqali/commentary"
+    source: "https://github.com/sdqali/commentary"
     homepage: "?"
     name: "Commentary"
     demo: "?"
@@ -1941,7 +1943,7 @@ commentary:
 
 gotell:
     stars: 134
-    github: "https://github.com/netlify/gotell"
+    source: "https://github.com/netlify/gotell"
     homepage: "?"
     name: "GoTell"
     demo: "?"
@@ -1987,7 +1989,7 @@ gotell:
 
 jamstack_comments_engine:
     stars: 29
-    github: "https://github.com/philhawksworth/jamstack-comments-engine"
+    source: "https://github.com/philhawksworth/jamstack-comments-engine"
     homepage: "https://jamstack-comments.netlify.com/"
     name: "Jamstack Comments Engine"
     demo: "https://jamstack-comments.netlify.com/posts/comments-on-your-content-in-your-content/"
@@ -2032,7 +2034,7 @@ jamstack_comments_engine:
 
 stapsher:
     stars: 2
-    github: "https://github.com/extraStatic/stapsher"
+    source: "https://github.com/extraStatic/stapsher"
     homepage: "https://stapsher.netlify.com/"
     name: "Stapsher"
     demo: "?"
@@ -2078,7 +2080,7 @@ stapsher:
 
 pelican_static:
     stars: ""
-    github: "https://github.com/getpelican/pelican-plugins/tree/master/static_comments"
+    source: "https://github.com/getpelican/pelican-plugins/tree/master/static_comments"
     homepage: "https://bernhard.scheirle.de/posts/2014/March/29/static-comments-via-email"
     name: "Pelican Static Comments"
     demo:
@@ -2126,7 +2128,7 @@ pelican_static:
 
 comment_it:
     stars: 92
-    github: "https://github.com/guilro/commentit"
+    source: "https://github.com/guilro/commentit"
     homepage: "https://commentit.io/"
     name: "Comm(ent|it)"
     demo: "http://guilro.github.io/2015/10/27/open-sourcing-commentit.io.html"
@@ -2172,7 +2174,7 @@ comment_it:
 
 yoyo:
     stars: 191
-    github: "https://github.com/metrue/YoYo"
+    source: "https://github.com/metrue/YoYo"
     homepage: "https://minghe.me/"
     name: "YoYo"
     demo: "https://minghe.me/yoyo/"
@@ -2217,7 +2219,7 @@ yoyo:
 
 react_quietwater:
     stars: 5
-    github: "https://github.com/NE-SmallTown/React-QuietWater"
+    source: "https://github.com/NE-SmallTown/React-QuietWater"
     homepage: "https://ne-smalltown.github.io/"
     name: "React-QuietWater"
     demo: "https://ne-smalltown.github.io/"
@@ -2264,7 +2266,7 @@ react_quietwater:
 
 some_comments:
     stars: 38
-    github: "https://github.com/fiddur/some-comments"
+    source: "https://github.com/fiddur/some-comments"
     homepage: "https://github.com/fiddur/some-comments"
     name: "Some comments"
     demo: "?"
