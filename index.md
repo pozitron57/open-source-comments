@@ -37,8 +37,5 @@ services (e.g., Github issues, such as
 
 Please share your experience if you are using one of the commenting systems
 listed in the table. Write a short summary and provide your "Likes" and
-"Dislikes" to help other users to decide which commenting system suit them
-best. If you are going to post the first opinion on a commenting system,
-please set your name to the name of this commenting system. All the other
-opinions and questions on this commenting system should go as replies to the
-first comment.
+"Dislikes" to help other users to decide which commenting system suits them
+best.
