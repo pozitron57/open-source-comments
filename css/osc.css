@@ -42,6 +42,59 @@ div.dt-buttons .buttons-colvisGroup {
   color:steelblue;
 }
 
+#isso-thread div.textarea { white-space: pre-wrap; }
+#isso-thread div.text,
+#isso-thread div.isso-comment-footer {
+  margin-left:calc(7% + 15px);
+}
+#isso-thread .preview-mode div.text {
+  margin-left:0;
+}
+#isso-root .isso-comment > div.text-wrapper > .isso-comment-header {
+  margin-bottom:15px;
+  font-size:1em;
+}
+blockquote {
+  font-size:0.95em;
+  border:1px solid #ddd;
+  border-left:5px solid #bbb;
+  border-radius:2px 4px 4px 2px;
+  padding:2px 10px 10px;
+  margin-top:10px;
+  /*max-width:93%;*/
+  font-family:Arial, sans-serif;
+  color:#666;
+}
+
+#isso-thread blockquote {
+  padding:4px 8px ;
+}
+.isso-comment-loader {
+  text-align:center;
+  margin:50px 0;
+  white-space:nowrap;
+}
+section.use-markdown,
+section.notification-section {
+  margin-top:8px;
+}
+div#isso-root .isso-comment, .isso-follow-up .isso-comment { border-top:0!important; }
+.isso-comment-header {
+   background:#ececec;
+   border-radius:3px;
+   padding:4px 7px;
+   margin-top:2px;
+   margin-left:calc(7% + 11px);
+ }
+
+#isso-thread .avatar > svg[data-hash="af352bad7d6b"] {
+  box-shadow: 0 0 2px 1px #9163b6;
+}
+
+
+
+
+
 div.isso-comments {
   max-width:757px; 
   margin:72px auto 0;
