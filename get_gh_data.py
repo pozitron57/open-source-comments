@@ -45,7 +45,13 @@ github_commit_urls = [] # url for the last master/ commit
 for i in data:
 
     #e.g., https://api.github.com/repos/posativ/isso
-    api_url = re.sub('github.com', 'api.github.com/repos', data[i]["github"])
+    # If more than 1 link to source code
+    if type(data[i]["source"]) is ruamel.yaml.comments.CommentedSeq:
+        for x in range(len(data[i]["source"])):
+            if re.search('github.com', data[i]["source"][x]):
+                api_url = re.sub('github.com', 'api.github.com/repos', data[i]["source"][x])
+    else:
+        api_url = re.sub('github.com', 'api.github.com/repos', data[i]["source"])
 
     #e.g., https://api.github.com/repos/posativ/isso/commits/master
     api_commit_url = api_url + '/commits/master'
@@ -71,7 +77,7 @@ if not os.path.isdir(p):
     #github_password = input('Type your github password: (will be visible!) ')
 
     ## If run with script, read your credentials from the file outside of 
-    # the repo (probably it's a bad idea, use for fast automated solution)
+    # the repo (probably it's a bad idea, use for a fast automated solution)
     with open('/home/slisakov/gh_credentials', 'r') as f:
         for line in f:
             github_username = line.split()[0]
@@ -84,7 +90,6 @@ if not os.path.isdir(p):
     # (created, license, open_issues)
     for url, cs in zip(github_commit_urls, comment_systems):
         os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs+'.commit'))
-
 
 
 
