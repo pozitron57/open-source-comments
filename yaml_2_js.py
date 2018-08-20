@@ -141,7 +141,7 @@ def urlify(x):
         return "'"+ ', '.join(ar) + "'"
     else:
         if re.match('http', str(x)):
-            return '<a href="{}">[{}]</a>'.format(x,'link')
+            return '<a href="{}">{}</a>'.format(x,'demo')
         else:
             m = markdown(str(x))
             m = re.sub('<p>','', m)
