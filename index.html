@@ -72,7 +72,8 @@ $(document).ready(function() {
         {extend: 'colvisGroup', text: 'Show all columns', show: ':hidden'},
         'colvisRestore'],
     columnDefs: [
-        { "type": "num", "targets": 1 },
+        { "type": "num",  "targets": 1 },
+        { "type": "date", "targets": -4 },
         {targets: "_all", className: "dt-center"},
         { "visible": false,
           "targets": [
@@ -103,7 +104,7 @@ best.</p>
   <p>Powered by 
     <a href="https://www.datatables.net">DataTables</a> and
     <a href="https://posativ.org/isso">Isso</a><br>
-     Last updated: 2018-08-19 <br>
+     Last updated: 2018-08-20 <br>
      &copy; S.&nbsp;Lisakov</p>
 </footer>
 </body>
