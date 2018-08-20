@@ -1,0 +1,110 @@
+{
+  "sha": "b4f92a05b347cbaa7bc3482095c5fdefe88393b0",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiNGY5MmEwNWIzNDdjYmFhN2JjMzQ4MjA5NWM1ZmRlZmU4ODM5M2Iw",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2018-08-20T09:08:50Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2018-08-20T09:08:50Z"
+    },
+    "message": "FIX: Load more on groups page does not account for params.\n\nhttps://meta.discourse.org/t/cant-scroll-through-list-of-users-groups-if-more-than-one-page/92259",
+    "tree": {
+      "sha": "88250769f44d8e584827af2e57a594ced9ff7073",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/88250769f44d8e584827af2e57a594ced9ff7073"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b4f92a05b347cbaa7bc3482095c5fdefe88393b0",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b4f92a05b347cbaa7bc3482095c5fdefe88393b0",
+  "html_url": "https://github.com/discourse/discourse/commit/b4f92a05b347cbaa7bc3482095c5fdefe88393b0",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b4f92a05b347cbaa7bc3482095c5fdefe88393b0/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "de2243319e2e645b48a56119634b9a4eb85433a6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/de2243319e2e645b48a56119634b9a4eb85433a6",
+      "html_url": "https://github.com/discourse/discourse/commit/de2243319e2e645b48a56119634b9a4eb85433a6"
+    }
+  ],
+  "stats": {
+    "total": 33,
+    "additions": 29,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "326796299744eb1541018a9efa3b766653574d6c",
+      "filename": "app/controllers/groups_controller.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/b4f92a05b347cbaa7bc3482095c5fdefe88393b0/app/controllers/groups_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b4f92a05b347cbaa7bc3482095c5fdefe88393b0/app/controllers/groups_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/groups_controller.rb?ref=b4f92a05b347cbaa7bc3482095c5fdefe88393b0",
+      "patch": "@@ -98,7 +98,13 @@ def index\n         type_filters: type_filters\n       },\n       total_rows_groups: count,\n-      load_more_groups: groups_path(page: page + 1, type: type),\n+      load_more_groups: groups_path(\n+        page: page + 1,\n+        type: type,\n+        order: order,\n+        asc: params[:asc],\n+        filter: filter\n+      ),\n     )\n   end\n "
+    },
+    {
+      "sha": "33fa3077e01ff8115d39f00cd5964ff0d7f9c37d",
+      "filename": "spec/requests/groups_controller_spec.rb",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 3,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/b4f92a05b347cbaa7bc3482095c5fdefe88393b0/spec/requests/groups_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b4f92a05b347cbaa7bc3482095c5fdefe88393b0/spec/requests/groups_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/groups_controller_spec.rb?ref=b4f92a05b347cbaa7bc3482095c5fdefe88393b0",
+      "patch": "@@ -48,7 +48,14 @@\n         get \"/groups.json\", params: { filter: 'test' }\n \n         expect(response.status).to eq(200)\n-        expect(JSON.parse(response.body)[\"groups\"].first[\"id\"]).to eq(other_group.id)\n+\n+        response_body = JSON.parse(response.body)\n+\n+        expect(response_body[\"groups\"].first[\"id\"]).to eq(other_group.id)\n+\n+        expect(response_body[\"load_more_groups\"]).to eq(\n+          \"/groups?filter=test&page=1\"\n+        )\n       end\n     end\n \n@@ -72,8 +79,14 @@\n             group_ids = [moderator_group_id, group.id, other_group.id]\n             group_ids.reverse! if !is_asc\n \n-            expect(JSON.parse(response.body)[\"groups\"].map { |group| group[\"id\"] })\n+            response_body = JSON.parse(response.body)\n+\n+            expect(response_body[\"groups\"].map { |group| group[\"id\"] })\n               .to eq(group_ids)\n+\n+            expect(response_body[\"load_more_groups\"]).to eq(\n+              \"/groups?#{is_asc ? 'asc=true&' : '' }order=name&page=1\"\n+            )\n           end\n         end\n       end\n@@ -85,8 +98,14 @@\n \n           expect(response.status).to eq(200)\n \n-          expect(JSON.parse(response.body)[\"groups\"].map { |group| group[\"id\"] })\n+          response_body = JSON.parse(response.body)\n+\n+          expect(response_body[\"groups\"].map { |group| group[\"id\"] })\n             .to eq([other_group.id, group.id, moderator_group_id])\n+\n+          expect(response_body[\"load_more_groups\"]).to eq(\n+            \"/groups?order=name&page=1\"\n+          )\n         end\n       end\n     end"
+    }
+  ]
+}

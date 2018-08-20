@@ -1,0 +1,110 @@
+{
+  "sha": "a6277d764a70c2d3abe81677abe9164f0f96e3cd",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmE2Mjc3ZDc2NGE3MGMyZDNhYmU4MTY3N2FiZTkxNjRmMGY5NmUzY2Q=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-19T04:09:17Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-19T04:09:17Z"
+    },
+    "message": "add CommentConverterFunc to simplify injection of custom converters",
+    "tree": {
+      "sha": "60a8b7739a728a3de14f3fcba127c94f4013dc22",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/60a8b7739a728a3de14f3fcba127c94f4013dc22"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/a6277d764a70c2d3abe81677abe9164f0f96e3cd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/a6277d764a70c2d3abe81677abe9164f0f96e3cd",
+  "html_url": "https://github.com/umputun/remark/commit/a6277d764a70c2d3abe81677abe9164f0f96e3cd",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/a6277d764a70c2d3abe81677abe9164f0f96e3cd/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "031a25ad92939077bdd390047b8049831c598301",
+      "url": "https://api.github.com/repos/umputun/remark/commits/031a25ad92939077bdd390047b8049831c598301",
+      "html_url": "https://github.com/umputun/remark/commit/031a25ad92939077bdd390047b8049831c598301"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 14,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "d1dec9c5e0b9cdd404058d9a278afac70afe7bb7",
+      "filename": "backend/app/store/formatter.go",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/a6277d764a70c2d3abe81677abe9164f0f96e3cd/backend/app/store/formatter.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6277d764a70c2d3abe81677abe9164f0f96e3cd/backend/app/store/formatter.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/formatter.go?ref=a6277d764a70c2d3abe81677abe9164f0f96e3cd",
+      "patch": "@@ -19,6 +19,14 @@ type CommentConverter interface {\n \tConvert(text string) string\n }\n \n+// CommentConverterFunc functional struct implementing CommentConverter\n+type CommentConverterFunc func(text string) string\n+\n+// Convert calls func for given text\n+func (f CommentConverterFunc) Convert(text string) string {\n+\treturn f(text)\n+}\n+\n // NewCommentFormatter makes CommentFormatter\n func NewCommentFormatter(converters ...CommentConverter) *CommentFormatter {\n \treturn &CommentFormatter{converters: converters}"
+    },
+    {
+      "sha": "11f8b609a575ce35a6f0743d6b4e87990fedc16e",
+      "filename": "backend/app/store/formatter_test.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/a6277d764a70c2d3abe81677abe9164f0f96e3cd/backend/app/store/formatter_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6277d764a70c2d3abe81677abe9164f0f96e3cd/backend/app/store/formatter_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/formatter_test.go?ref=a6277d764a70c2d3abe81677abe9164f0f96e3cd",
+      "patch": "@@ -33,6 +33,12 @@ func TestFormatter_FormatTextNoConvertor(t *testing.T) {\n \tassert.Equal(t, \"<p>12345</p>\\n\", f.FormatText(\"12345\"))\n }\n \n+func TestFormatter_FormatTextConvertorFunc(t *testing.T) {\n+\tfn := CommentConverterFunc(func(text string) string { return \"zz!\" + text })\n+\tf := NewCommentFormatter(fn)\n+\tassert.Equal(t, \"zz!<p>12345</p>\\n\", f.FormatText(\"12345\"))\n+}\n+\n func TestFormatter_FormatComment(t *testing.T) {\n \tcomment := Comment{\n \t\tText:      \"blah\\n\\nxyz\","
+    }
+  ]
+}
