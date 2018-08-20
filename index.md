@@ -37,5 +37,5 @@ services (e.g., Github issues, such as
 
 Please share your experience if you are using one of the commenting systems
 listed in the table. Write a short summary and provide your "Likes" and
-"Dislikes" to help other users to decide which commenting system suits them
+"Dislikes" to help others to decide which commenting system suits them
 best.
