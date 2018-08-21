@@ -1,0 +1,110 @@
+{
+  "sha": "d1607a387a1eafdef2cdc627cfb87def4274dfeb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkMTYwN2EzODdhMWVhZmRlZjJjZGM2MjdjZmI4N2RlZjQyNzRkZmVi",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-21T16:11:01Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-21T16:11:01Z"
+    },
+    "message": "FIX: only allow printable characters in uploads filename",
+    "tree": {
+      "sha": "0053e952b4a1d6a739554b4f2b34c0a49bec1ef9",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0053e952b4a1d6a739554b4f2b34c0a49bec1ef9"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d1607a387a1eafdef2cdc627cfb87def4274dfeb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d1607a387a1eafdef2cdc627cfb87def4274dfeb",
+  "html_url": "https://github.com/discourse/discourse/commit/d1607a387a1eafdef2cdc627cfb87def4274dfeb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d1607a387a1eafdef2cdc627cfb87def4274dfeb/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e94b5b4d78b975f9a0f2b40a52143be3e64766a4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e94b5b4d78b975f9a0f2b40a52143be3e64766a4",
+      "html_url": "https://github.com/discourse/discourse/commit/e94b5b4d78b975f9a0f2b40a52143be3e64766a4"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "ea365b18b3fdba1ee34186635ae46788b0e6ff56",
+      "filename": "lib/upload_creator.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/d1607a387a1eafdef2cdc627cfb87def4274dfeb/lib/upload_creator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d1607a387a1eafdef2cdc627cfb87def4274dfeb/lib/upload_creator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/upload_creator.rb?ref=d1607a387a1eafdef2cdc627cfb87def4274dfeb",
+      "patch": "@@ -22,8 +22,8 @@ class UploadCreator\n   #  - for_export (boolean)\n   def initialize(file, filename, opts = {})\n     @file = file\n-    @filename = filename || ''\n-    @upload = Upload.new(original_filename: filename, filesize: 0)\n+    @filename = (filename || \"\").gsub(/[^[:print:]]/, \"\")\n+    @upload = Upload.new(original_filename: @filename, filesize: 0)\n     @opts = opts\n   end\n "
+    },
+    {
+      "sha": "614916ec4fdbd6127130300a759e7c8c25d00374",
+      "filename": "spec/lib/upload_creator_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/d1607a387a1eafdef2cdc627cfb87def4274dfeb/spec/lib/upload_creator_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d1607a387a1eafdef2cdc627cfb87def4274dfeb/spec/lib/upload_creator_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/lib/upload_creator_spec.rb?ref=d1607a387a1eafdef2cdc627cfb87def4274dfeb",
+      "patch": "@@ -14,7 +14,7 @@\n \n       it 'should store the upload with the right extension' do\n         expect do\n-          UploadCreator.new(file, filename).create_for(user.id)\n+          UploadCreator.new(file, \"utf-8\\n.txt\").create_for(user.id)\n         end.to change { Upload.count }.by(1)\n \n         upload = Upload.last"
+    }
+  ]
+}
