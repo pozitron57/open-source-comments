@@ -1,6 +1,6 @@
 # Open-source self-hosted comments
 
-Comparison table for open-source self-hosted commenting servers 
+Comparison table for open-source self-hosted commenting servers
 ([lisakov.com/projects/open-source-comments/](https://lisakov.com/projects/open-source-comments/)).
 Inspired by [staticsitegenerators.net](http://staticsitegenerators.net). 
 
@@ -15,15 +15,16 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
     `https://api.github.com/repos/:user/:repo/commits/master` to the created
     directory;
   - reads these files and updates `data.yaml` for the following:
-    - github stars,
-    - last commit date,
+    - Github stars,
+    - Github stars in the latest N days,
+    - latest commit date,
     - creation date,
     - license.
 
 - `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
   — `osc_data` and `cols`). 
 
-- `index.html` reads `data.js` and parses to the html table using
+- `index.html` reads `data.js` and parses it to the html table using
   [datatables.js](https://github.com/DataTables/DataTables).
 
 - The webpage is updated daily at 17:00 UTC via `cron`. `updater.sh`
@@ -32,29 +33,25 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 ## How to view the page locally
 
-Just clone the repo and open `index.html` in your browser. To make changes
-edit index.md and run `md_to_html.py` script. It will overwrite existing
-`index.html`.
+Clone the repo and open `index.html` in your browser. 
+To change it, edit `index.md` and run `python3 md_to_html.py`. 
+It will overwrite existing `index.html`.
 
-After modifying `data.yaml`, run `python3 yaml_2_js.py` — it will update
-`data.js` and the browser should display the changes.
+After modifying `data.yaml`, run `python3 yaml_2_js.py`.
+It will update the `data.js` file.
 
 ## TODO
 
-- Check and add the information to make the table useful. I'd appreciate
-  adding a missing demo. Sometimes it's not easy to find. For example,
-  [Juvia](https://github.com/phusion/juvia) is rated over 1000 stars on
-  github, but I spent an hour to find a couple of currently working
-  instances. I even found a recent (2018)
-  [post](https://blog.backslasher.net/disqus.html) about switching from Juvia
-  to Disqus!
+- Check and add the information to make the table useful.
+  I would appreciate adding a missing demo.
 
-- Improve the python code.
+- Improve the python code, especially `yaml_2_js`.
 
-- Add badges to show the change in stars during last 30 days or so. Just like
-  at https://www.staticgen.com/. I'am going to add a few lines to
-  `get_gh_data.py` to compare current value with the previous one, time
-  difference specified. Is it a proper way of doing it? 
+- Add a subscript for 'Github stars' column to show the stars in the latest N
+  days. Just like at [staticgen](https://www.staticgen.com/). Now there is a
+  separate column for this.
+
+- Show column descriptions on mouse over.
 
 - Where do I find a number of opened and closed issues? For example,
   https://api.github.com/users/posativ/isso has `open_issues_count` and
