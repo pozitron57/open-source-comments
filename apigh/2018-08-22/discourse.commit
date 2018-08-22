@@ -1,0 +1,110 @@
+{
+  "sha": "a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNDgwNTlmZDhmNmY3ZTFlNDcxYjc3ZTdmYjRmYzYyNTRjNmU2ZDk4",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2018-08-22T16:13:29Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-08-22T16:13:29Z"
+    },
+    "message": "FIX: uses localized string for 429 in reports (#6302)\n\nNGINX was retuning an html page instead of single string for some users. Seems safer to not risk showing anything from server anyways.",
+    "tree": {
+      "sha": "a6c3c08425c931df2eebb52fcf10e44fc33126a6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a6c3c08425c931df2eebb52fcf10e44fc33126a6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98",
+    "comment_count": 1,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbfYupCRBK7hj4Ov3rIwAAdHIIAK/Mb5pPWVqkuDOA6yXCyWTO\nlhGVfPZPSn8Iq4oKteel9oyPH5yUn57nQKKt7b1Jf6jyemwnXvbHi9RL1qbYige4\nhLUdV+JnnSnuSHrB7Za3ncTfPpn893DfNHwCupj+OMcb2ZMFfhiS6cfvQDI0njFp\n8ZWZIWVQQPerPKpoUA0O+jDzkBDM00LbtDyfc28VLd3jbQ+A2H17l6E5hPhLiP99\njbgV0HIq9eug6K8pzcsZprmoN8JwSgHFGNjdKzgeBWU8qd0gNzN2UoaMnM2EYbF4\nnAkHrHFTnrbknXfA6QZrfrFrckq2QDx3Gx4wE3tJi1C+APRWy2Je0BbLCEPcTC0=\n=5jsy\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree a6c3c08425c931df2eebb52fcf10e44fc33126a6\nparent c08dea386b46672be1e69a9ecb10d626bdd84d32\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1534954409 +0200\ncommitter GitHub <noreply@github.com> 1534954409 +0200\n\nFIX: uses localized string for 429 in reports (#6302)\n\nNGINX was retuning an html page instead of single string for some users. Seems safer to not risk showing anything from server anyways."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98",
+  "html_url": "https://github.com/discourse/discourse/commit/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c08dea386b46672be1e69a9ecb10d626bdd84d32",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/c08dea386b46672be1e69a9ecb10d626bdd84d32",
+      "html_url": "https://github.com/discourse/discourse/commit/c08dea386b46672be1e69a9ecb10d626bdd84d32"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "ca14a197a23f38596d99f6b7930f0dbe70683828",
+      "filename": "app/assets/javascripts/admin/components/admin-report.js.es6",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 5,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98/app/assets/javascripts/admin/components/admin-report.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98/app/assets/javascripts/admin/components/admin-report.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/components/admin-report.js.es6?ref=a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98",
+      "patch": "@@ -318,11 +318,10 @@ export default Ember.Component.extend({\n       })\n       .catch(data => {\n         if (data.jqXHR && data.jqXHR.status === 429) {\n-          const error = data.jqXHR.responseJSON\n-            ? data.jqXHR.responseJSON.errors[0]\n-            : data.jqXHR.responseText;\n-\n-          this.set(\"rateLimitationString\", error);\n+          this.set(\n+            \"rateLimitationString\",\n+            I18n.t(\"admin.dashboard.too_many_requests\")\n+          );\n         }\n       })\n       .finally(() => {"
+    },
+    {
+      "sha": "c339487ea79b813fd3998285bd6cc599a3d10c86",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=a48059fd8f6f7e1e471b77e7fb4fc6254c6e6d98",
+      "patch": "@@ -2808,6 +2808,7 @@ en:\n         disabled: Disabled\n         timeout_error: Sorry, query is taking too long, please pick a shorter interval\n         exception_error: Sorry, an error occurred while executing the query\n+        too_many_requests: You’ve performed this action too many times. Please wait before trying again.\n \n         reports:\n           trend_title: \"%{percent} change. Currently %{current}, was %{prev} in previous period.\""
+    }
+  ]
+}
