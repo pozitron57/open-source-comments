@@ -1,0 +1,98 @@
+{
+  "sha": "f4ae53d52b70a6577a60388f3550f168a4706b5f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmNGFlNTNkNTJiNzBhNjU3N2E2MDM4OGYzNTUwZjE2OGE0NzA2YjVm",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-23T16:00:07Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-08-23T16:00:07Z"
+    },
+    "message": "Return immediately when there's no html to scrub",
+    "tree": {
+      "sha": "384a69eb2118243a1670c85c44873ff44e6b74cb",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/384a69eb2118243a1670c85c44873ff44e6b74cb"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f4ae53d52b70a6577a60388f3550f168a4706b5f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f4ae53d52b70a6577a60388f3550f168a4706b5f",
+  "html_url": "https://github.com/discourse/discourse/commit/f4ae53d52b70a6577a60388f3550f168a4706b5f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f4ae53d52b70a6577a60388f3550f168a4706b5f/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2fcf2b899e6193701b5c56414980789f0d0f2cbd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/2fcf2b899e6193701b5c56414980789f0d0f2cbd",
+      "html_url": "https://github.com/discourse/discourse/commit/2fcf2b899e6193701b5c56414980789f0d0f2cbd"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e4f16c52f197e92ff50c8d3a9a29d883a13efaf2",
+      "filename": "app/services/search_indexer.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/f4ae53d52b70a6577a60388f3550f168a4706b5f/app/services/search_indexer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f4ae53d52b70a6577a60388f3550f168a4706b5f/app/services/search_indexer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/search_indexer.rb?ref=f4ae53d52b70a6577a60388f3550f168a4706b5f",
+      "patch": "@@ -173,9 +173,10 @@ def initialize\n     end\n \n     def self.scrub(html)\n+      return +\"\" if html.blank?\n+\n       me = new\n-      parser = Nokogiri::HTML::SAX::Parser.new(me)\n-      parser.parse(\"<div>#{html}</div>\") if html.present?\n+      Nokogiri::HTML::SAX::Parser.new(me).parse(\"<div>#{html}</div>\")\n       me.scrubbed\n     end\n "
+    }
+  ]
+}
