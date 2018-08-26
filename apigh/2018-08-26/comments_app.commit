@@ -1,0 +1,110 @@
+{
+  "sha": "eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+  "node_id": "MDY6Q29tbWl0OTAzMzY0MDM6ZWViYTQzYWE0ZjQxMTgwNWRiZGMwYzk0MzFmYTdlMDhmMmYyZjIwMw==",
+  "commit": {
+    "author": {
+      "name": "dyu",
+      "email": "david.yu.ftw@gmail.com",
+      "date": "2017-09-02T13:31:44Z"
+    },
+    "committer": {
+      "name": "dyu",
+      "email": "david.yu.ftw@gmail.com",
+      "date": "2017-09-02T13:31:44Z"
+    },
+    "message": "version bump",
+    "tree": {
+      "sha": "ff1994c377e7a12963a34f8360351e580429c69f",
+      "url": "https://api.github.com/repos/dyu/comments/git/trees/ff1994c377e7a12963a34f8360351e580429c69f"
+    },
+    "url": "https://api.github.com/repos/dyu/comments/git/commits/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/dyu/comments/commits/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+  "html_url": "https://github.com/dyu/comments/commit/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+  "comments_url": "https://api.github.com/repos/dyu/comments/commits/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203/comments",
+  "author": {
+    "login": "dyu",
+    "id": 79355,
+    "node_id": "MDQ6VXNlcjc5MzU1",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/79355?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dyu",
+    "html_url": "https://github.com/dyu",
+    "followers_url": "https://api.github.com/users/dyu/followers",
+    "following_url": "https://api.github.com/users/dyu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dyu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dyu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dyu/subscriptions",
+    "organizations_url": "https://api.github.com/users/dyu/orgs",
+    "repos_url": "https://api.github.com/users/dyu/repos",
+    "events_url": "https://api.github.com/users/dyu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dyu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "dyu",
+    "id": 79355,
+    "node_id": "MDQ6VXNlcjc5MzU1",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/79355?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dyu",
+    "html_url": "https://github.com/dyu",
+    "followers_url": "https://api.github.com/users/dyu/followers",
+    "following_url": "https://api.github.com/users/dyu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dyu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dyu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dyu/subscriptions",
+    "organizations_url": "https://api.github.com/users/dyu/orgs",
+    "repos_url": "https://api.github.com/users/dyu/repos",
+    "events_url": "https://api.github.com/users/dyu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dyu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1d375131ba056e2fcc04bab7ac0367eeeccff1f9",
+      "url": "https://api.github.com/repos/dyu/comments/commits/1d375131ba056e2fcc04bab7ac0367eeeccff1f9",
+      "html_url": "https://github.com/dyu/comments/commit/1d375131ba056e2fcc04bab7ac0367eeeccff1f9"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "ee2659bd7bc25c1e5ca9e8dcac0f14e2c248fd82",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/dyu/comments/blob/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203/README.md",
+      "raw_url": "https://github.com/dyu/comments/raw/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203/README.md",
+      "contents_url": "https://api.github.com/repos/dyu/comments/contents/README.md?ref=eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+      "patch": "@@ -56,9 +56,9 @@ mkdir -p target/data/main\n echo \"Your data lives in user/ dir.  Feel free to back it up.\" > target/data/main/README.txt\n \n # download protostuffdb\n-yarn add protostuffdb@0.13.1 && mv node_modules/protostuffdb/dist/* target/ && rm -f package.json yarn.lock && rm -r node_modules\n+yarn add protostuffdb@0.14.0 && mv node_modules/protostuffdb/dist/* target/ && rm -f package.json yarn.lock && rm -r node_modules\n \n-wget -O target/fbsgen-ds.jar https://repo1.maven.org/maven2/com/dyuproject/fbsgen/ds/fbsgen-ds-fatjar/1.0.9/fbsgen-ds-fatjar-1.0.9.jar\n+wget -O target/fbsgen-ds.jar https://repo1.maven.org/maven2/com/dyuproject/fbsgen/ds/fbsgen-ds-fatjar/1.0.10/fbsgen-ds-fatjar-1.0.10.jar\n ./modules/codegen.sh\n mvn install\n "
+    },
+    {
+      "sha": "9f254a7717c7a13c05fc0d99efcf0b8bde3618f5",
+      "filename": "pom.xml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/dyu/comments/blob/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203/pom.xml",
+      "raw_url": "https://github.com/dyu/comments/raw/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203/pom.xml",
+      "contents_url": "https://api.github.com/repos/dyu/comments/contents/pom.xml?ref=eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+      "patch": "@@ -82,7 +82,7 @@\n     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n \n     <junit-version>3.8.2</junit-version>\n-    <protostuffdb-version>0.14.0-SNAPSHOT</protostuffdb-version>\n+    <protostuffdb-version>0.14.0</protostuffdb-version>\n   </properties>\n \n   <dependencyManagement>"
+    }
+  ]
+}
