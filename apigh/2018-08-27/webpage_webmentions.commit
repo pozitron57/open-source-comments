@@ -1,0 +1,110 @@
+{
+  "sha": "91ba2866e28f8bce679a4014df5ef0d3de99fc72",
+  "node_id": "MDY6Q29tbWl0MTI2ODkxODQ6OTFiYTI4NjZlMjhmOGJjZTY3OWE0MDE0ZGY1ZWYwZDNkZTk5ZmM3Mg==",
+  "commit": {
+    "author": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2018-08-27T10:59:33Z"
+    },
+    "committer": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2018-08-27T10:59:33Z"
+    },
+    "message": "Updated concurrently",
+    "tree": {
+      "sha": "e22ee3262a4d336a0ac8276110784450c76c6513",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/trees/e22ee3262a4d336a0ac8276110784450c76c6513"
+    },
+    "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/commits/91ba2866e28f8bce679a4014df5ef0d3de99fc72",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/91ba2866e28f8bce679a4014df5ef0d3de99fc72",
+  "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/91ba2866e28f8bce679a4014df5ef0d3de99fc72",
+  "comments_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/91ba2866e28f8bce679a4014df5ef0d3de99fc72/comments",
+  "author": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f54686f95651b89edaf9c68d6341f0a94036f02d",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/f54686f95651b89edaf9c68d6341f0a94036f02d",
+      "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/f54686f95651b89edaf9c68d6341f0a94036f02d"
+    }
+  ],
+  "stats": {
+    "total": 170,
+    "additions": 115,
+    "deletions": 55
+  },
+  "files": [
+    {
+      "sha": "08f8f3352f20c24286a59cf0e1c69589f543305f",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/91ba2866e28f8bce679a4014df5ef0d3de99fc72/package.json",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/91ba2866e28f8bce679a4014df5ef0d3de99fc72/package.json",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/package.json?ref=91ba2866e28f8bce679a4014df5ef0d3de99fc72",
+      "patch": "@@ -63,7 +63,7 @@\n   \"devDependencies\": {\n     \"chai\": \"^4.1.2\",\n     \"chai-as-promised\": \"^7.1.1\",\n-    \"concurrently\": \"3.5.1\",\n+    \"concurrently\": \"^4.0.1\",\n     \"coveralls\": \"^3.0.2\",\n     \"dependency-check\": \"^3.2.0\",\n     \"dotenv\": \"^6.0.0\","
+    },
+    {
+      "sha": "400eedd7a20278e903998437257b48a36faa601c",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 114,
+      "deletions": 54,
+      "changes": 168,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/91ba2866e28f8bce679a4014df5ef0d3de99fc72/yarn.lock",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/91ba2866e28f8bce679a4014df5ef0d3de99fc72/yarn.lock",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/yarn.lock?ref=91ba2866e28f8bce679a4014df5ef0d3de99fc72",
+      "patch": "@@ -234,10 +234,6 @@ ansi-escapes@^3.0.0:\n   version \"3.1.0\"\n   resolved \"https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.1.0.tgz#f73207bb81207d75fd6c83f125af26eea378ca30\"\n \n-ansi-regex@^0.2.0, ansi-regex@^0.2.1:\n-  version \"0.2.1\"\n-  resolved \"https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-0.2.1.tgz#0d8e946967a3d8143f93e24e298525fc1b2235f9\"\n-\n ansi-regex@^2.0.0:\n   version \"2.1.1\"\n   resolved \"https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df\"\n@@ -246,10 +242,6 @@ ansi-regex@^3.0.0:\n   version \"3.0.0\"\n   resolved \"https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998\"\n \n-ansi-styles@^1.1.0:\n-  version \"1.1.0\"\n-  resolved \"https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-1.1.0.tgz#eaecbf66cd706882760b2f4691582b8f55d7a7de\"\n-\n ansi-styles@^2.2.1:\n   version \"2.2.1\"\n   resolved \"https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe\"\n@@ -631,16 +623,6 @@ chai@^4.1.2:\n     pathval \"^1.0.0\"\n     type-detect \"^4.0.0\"\n \n-chalk@0.5.1:\n-  version \"0.5.1\"\n-  resolved \"https://registry.yarnpkg.com/chalk/-/chalk-0.5.1.tgz#663b3a648b68b55d04690d49167aa837858f2174\"\n-  dependencies:\n-    ansi-styles \"^1.1.0\"\n-    escape-string-regexp \"^1.0.0\"\n-    has-ansi \"^0.1.0\"\n-    strip-ansi \"^0.3.0\"\n-    supports-color \"^0.2.0\"\n-\n chalk@^1.0.0, chalk@^1.1.3:\n   version \"1.1.3\"\n   resolved \"https://registry.yarnpkg.com/chalk/-/chalk-1.1.3.tgz#a8115c55e4a702fe4d150abd3872822a7e09fc98\"\n@@ -651,7 +633,7 @@ chalk@^1.0.0, chalk@^1.1.3:\n     strip-ansi \"^3.0.0\"\n     supports-color \"^2.0.0\"\n \n-chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.0, chalk@~2.4.1:\n+chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1, chalk@~2.4.1:\n   version \"2.4.1\"\n   resolved \"https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e\"\n   dependencies:\n@@ -776,10 +758,6 @@ commander@2.15.1:\n   version \"2.15.1\"\n   resolved \"https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f\"\n \n-commander@2.6.0:\n-  version \"2.6.0\"\n-  resolved \"https://registry.yarnpkg.com/commander/-/commander-2.6.0.tgz#9df7e52fb2a0cb0fb89058ee80c3104225f37e1d\"\n-\n commander@^2.2.0:\n   version \"2.17.1\"\n   resolved \"https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf\"\n@@ -805,18 +783,19 @@ concat-stream@^1.4.1, concat-stream@^1.5.0, concat-stream@^1.6.0:\n     readable-stream \"^2.2.2\"\n     typedarray \"^0.0.6\"\n \n-concurrently@3.5.1:\n-  version \"3.5.1\"\n-  resolved \"https://registry.yarnpkg.com/concurrently/-/concurrently-3.5.1.tgz#ee8b60018bbe86b02df13e5249453c6ececd2521\"\n+concurrently@^4.0.1:\n+  version \"4.0.1\"\n+  resolved \"https://registry.yarnpkg.com/concurrently/-/concurrently-4.0.1.tgz#f6310fbadf2f476dd95df952edb5c0ab789f672c\"\n   dependencies:\n-    chalk \"0.5.1\"\n-    commander \"2.6.0\"\n+    chalk \"^2.4.1\"\n     date-fns \"^1.23.0\"\n-    lodash \"^4.5.1\"\n-    rx \"2.3.24\"\n+    lodash \"^4.17.10\"\n+    read-pkg \"^4.0.1\"\n+    rxjs \"6.2.2\"\n     spawn-command \"^0.0.2-1\"\n-    supports-color \"^3.2.3\"\n+    supports-color \"^4.5.0\"\n     tree-kill \"^1.1.0\"\n+    yargs \"^12.0.1\"\n \n contains-path@^0.1.0:\n   version \"0.1.0\"\n@@ -951,6 +930,12 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:\n   version \"1.2.0\"\n   resolved \"https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290\"\n \n+decamelize@^2.0.0:\n+  version \"2.0.0\"\n+  resolved \"https://registry.yarnpkg.com/decamelize/-/decamelize-2.0.0.tgz#656d7bbc8094c4c788ea53c5840908c9c7d063c7\"\n+  dependencies:\n+    xregexp \"4.0.0\"\n+\n decode-uri-component@^0.2.0:\n   version \"0.2.0\"\n   resolved \"https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545\"\n@@ -1154,7 +1139,7 @@ entities@^1.1.1, entities@~1.1.1:\n   version \"1.1.1\"\n   resolved \"https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0\"\n \n-error-ex@^1.2.0:\n+error-ex@^1.2.0, error-ex@^1.3.1:\n   version \"1.3.2\"\n   resolved \"https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.2.tgz#b4ac40648107fdcdcfae242f428bea8a14d4f1bf\"\n   dependencies:\n@@ -1174,7 +1159,7 @@ escape-html@~1.0.3:\n   version \"1.0.3\"\n   resolved \"https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988\"\n \n-escape-string-regexp@1.0.5, escape-string-regexp@^1.0.0, escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:\n+escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:\n   version \"1.0.5\"\n   resolved \"https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4\"\n \n@@ -1615,6 +1600,12 @@ find-up@^2.0.0, find-up@^2.1.0:\n   dependencies:\n     locate-path \"^2.0.0\"\n \n+find-up@^3.0.0:\n+  version \"3.0.0\"\n+  resolved \"https://registry.yarnpkg.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73\"\n+  dependencies:\n+    locate-path \"^3.0.0\"\n+\n findup-sync@^0.4.2:\n   version \"0.4.3\"\n   resolved \"https://registry.yarnpkg.com/findup-sync/-/findup-sync-0.4.3.tgz#40043929e7bc60adf0b7f4827c4c6e75a0deca12\"\n@@ -1955,12 +1946,6 @@ har-validator@~5.1.0:\n     ajv \"^5.3.0\"\n     har-schema \"^2.0.0\"\n \n-has-ansi@^0.1.0:\n-  version \"0.1.0\"\n-  resolved \"https://registry.yarnpkg.com/has-ansi/-/has-ansi-0.1.0.tgz#84f265aae8c0e6a88a12d7022894b7568894c62e\"\n-  dependencies:\n-    ansi-regex \"^0.2.0\"\n-\n has-ansi@^2.0.0:\n   version \"2.0.0\"\n   resolved \"https://registry.yarnpkg.com/has-ansi/-/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91\"\n@@ -1971,6 +1956,10 @@ has-flag@^1.0.0:\n   version \"1.0.0\"\n   resolved \"https://registry.yarnpkg.com/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa\"\n \n+has-flag@^2.0.0:\n+  version \"2.0.0\"\n+  resolved \"https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51\"\n+\n has-flag@^3.0.0:\n   version \"3.0.0\"\n   resolved \"https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd\"\n@@ -2621,6 +2610,13 @@ locate-path@^2.0.0:\n     p-locate \"^2.0.0\"\n     path-exists \"^3.0.0\"\n \n+locate-path@^3.0.0:\n+  version \"3.0.0\"\n+  resolved \"https://registry.yarnpkg.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e\"\n+  dependencies:\n+    p-locate \"^3.0.0\"\n+    path-exists \"^3.0.0\"\n+\n lodash._baseassign@^3.0.0:\n   version \"3.2.0\"\n   resolved \"https://registry.yarnpkg.com/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz#8c38a099500f215ad09e59f1722fd0c52bfe0a4e\"\n@@ -2796,7 +2792,7 @@ lodash.zip@^4.2.0:\n   version \"4.2.0\"\n   resolved \"https://registry.yarnpkg.com/lodash.zip/-/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020\"\n \n-lodash@^4.0.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.6.0, lodash@~4.17.10, lodash@~4.17.5:\n+lodash@^4.0.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.6.0, lodash@~4.17.10, lodash@~4.17.5:\n   version \"4.17.10\"\n   resolved \"https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7\"\n \n@@ -3303,16 +3299,32 @@ p-limit@^1.1.0:\n   dependencies:\n     p-try \"^1.0.0\"\n \n+p-limit@^2.0.0:\n+  version \"2.0.0\"\n+  resolved \"https://registry.yarnpkg.com/p-limit/-/p-limit-2.0.0.tgz#e624ed54ee8c460a778b3c9f3670496ff8a57aec\"\n+  dependencies:\n+    p-try \"^2.0.0\"\n+\n p-locate@^2.0.0:\n   version \"2.0.0\"\n   resolved \"https://registry.yarnpkg.com/p-locate/-/p-locate-2.0.0.tgz#20a0103b222a70c8fd39cc2e580680f3dde5ec43\"\n   dependencies:\n     p-limit \"^1.1.0\"\n \n+p-locate@^3.0.0:\n+  version \"3.0.0\"\n+  resolved \"https://registry.yarnpkg.com/p-locate/-/p-locate-3.0.0.tgz#322d69a05c0264b25997d9f40cd8a891ab0064a4\"\n+  dependencies:\n+    p-limit \"^2.0.0\"\n+\n p-try@^1.0.0:\n   version \"1.0.0\"\n   resolved \"https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3\"\n \n+p-try@^2.0.0:\n+  version \"2.0.0\"\n+  resolved \"https://registry.yarnpkg.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1\"\n+\n packet-reader@0.2.0:\n   version \"0.2.0\"\n   resolved \"https://registry.yarnpkg.com/packet-reader/-/packet-reader-0.2.0.tgz#819df4d010b82d5ea5671f8a1a3acf039bcd7700\"\n@@ -3340,6 +3352,13 @@ parse-json@^2.2.0:\n   dependencies:\n     error-ex \"^1.2.0\"\n \n+parse-json@^4.0.0:\n+  version \"4.0.0\"\n+  resolved \"https://registry.yarnpkg.com/parse-json/-/parse-json-4.0.0.tgz#be35f5425be1f7f6c747184f98a788cb99477ee0\"\n+  dependencies:\n+    error-ex \"^1.3.1\"\n+    json-parse-better-errors \"^1.0.1\"\n+\n parse-passwd@^1.0.0:\n   version \"1.0.0\"\n   resolved \"https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6\"\n@@ -3744,6 +3763,14 @@ read-pkg@^2.0.0:\n     normalize-package-data \"^2.3.2\"\n     path-type \"^2.0.0\"\n \n+read-pkg@^4.0.1:\n+  version \"4.0.1\"\n+  resolved \"https://registry.yarnpkg.com/read-pkg/-/read-pkg-4.0.1.tgz#963625378f3e1c4d48c85872b5a6ec7d5d093237\"\n+  dependencies:\n+    normalize-package-data \"^2.3.2\"\n+    parse-json \"^4.0.0\"\n+    pify \"^3.0.0\"\n+\n readable-stream@^1.1.12:\n   version \"1.1.14\"\n   resolved \"https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9\"\n@@ -3940,9 +3967,11 @@ rx-lite@*, rx-lite@^4.0.8:\n   version \"4.0.8\"\n   resolved \"https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444\"\n \n-rx@2.3.24:\n-  version \"2.3.24\"\n-  resolved \"https://registry.yarnpkg.com/rx/-/rx-2.3.24.tgz#14f950a4217d7e35daa71bbcbe58eff68ea4b2b7\"\n+rxjs@6.2.2:\n+  version \"6.2.2\"\n+  resolved \"https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.2.tgz#eb75fa3c186ff5289907d06483a77884586e1cf9\"\n+  dependencies:\n+    tslib \"^1.9.0\"\n \n safe-buffer@5.1.1:\n   version \"5.1.1\"\n@@ -4262,12 +4291,6 @@ string_decoder@~1.1.1:\n   dependencies:\n     safe-buffer \"~5.1.0\"\n \n-strip-ansi@^0.3.0:\n-  version \"0.3.0\"\n-  resolved \"https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-0.3.0.tgz#25f48ea22ca79187f3174a4db8759347bb126220\"\n-  dependencies:\n-    ansi-regex \"^0.2.1\"\n-\n strip-ansi@^3.0.0, strip-ansi@^3.0.1:\n   version \"3.0.1\"\n   resolved \"https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf\"\n@@ -4332,20 +4355,22 @@ supports-color@5.4.0:\n   dependencies:\n     has-flag \"^3.0.0\"\n \n-supports-color@^0.2.0:\n-  version \"0.2.0\"\n-  resolved \"https://registry.yarnpkg.com/supports-color/-/supports-color-0.2.0.tgz#d92de2694eb3f67323973d7ae3d8b55b4c22190a\"\n-\n supports-color@^2.0.0:\n   version \"2.0.0\"\n   resolved \"https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7\"\n \n-supports-color@^3.1.2, supports-color@^3.2.3:\n+supports-color@^3.1.2:\n   version \"3.2.3\"\n   resolved \"https://registry.yarnpkg.com/supports-color/-/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6\"\n   dependencies:\n     has-flag \"^1.0.0\"\n \n+supports-color@^4.5.0:\n+  version \"4.5.0\"\n+  resolved \"https://registry.yarnpkg.com/supports-color/-/supports-color-4.5.0.tgz#be7a0de484dec5c5cddf8b3d59125044912f635b\"\n+  dependencies:\n+    has-flag \"^2.0.0\"\n+\n supports-color@^5.3.0, supports-color@^5.4.0:\n   version \"5.5.0\"\n   resolved \"https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f\"\n@@ -4451,6 +4476,10 @@ trim-right@^1.0.1:\n   version \"1.0.1\"\n   resolved \"https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003\"\n \n+tslib@^1.9.0:\n+  version \"1.9.3\"\n+  resolved \"https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286\"\n+\n tunnel-agent@^0.6.0:\n   version \"0.6.0\"\n   resolved \"https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd\"\n@@ -4685,6 +4714,10 @@ xmlbuilder@~9.0.1:\n   version \"9.0.7\"\n   resolved \"https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d\"\n \n+xregexp@4.0.0:\n+  version \"4.0.0\"\n+  resolved \"https://registry.yarnpkg.com/xregexp/-/xregexp-4.0.0.tgz#e698189de49dd2a18cc5687b05e17c8e43943020\"\n+\n xtend@^4.0.0, xtend@^4.0.1:\n   version \"4.0.1\"\n   resolved \"https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af\"\n@@ -4693,10 +4726,20 @@ y18n@^3.2.1:\n   version \"3.2.1\"\n   resolved \"https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41\"\n \n+\"y18n@^3.2.1 || ^4.0.0\":\n+  version \"4.0.0\"\n+  resolved \"https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b\"\n+\n yallist@^2.1.2:\n   version \"2.1.2\"\n   resolved \"https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52\"\n \n+yargs-parser@^10.1.0:\n+  version \"10.1.0\"\n+  resolved \"https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-10.1.0.tgz#7202265b89f7e9e9f2e5765e0fe735a905edbaa8\"\n+  dependencies:\n+    camelcase \"^4.1.0\"\n+\n yargs-parser@^8.0.0:\n   version \"8.1.0\"\n   resolved \"https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-8.1.0.tgz#f1376a33b6629a5d063782944da732631e966950\"\n@@ -4726,6 +4769,23 @@ yargs@11.1.0:\n     y18n \"^3.2.1\"\n     yargs-parser \"^9.0.2\"\n \n+yargs@^12.0.1:\n+  version \"12.0.1\"\n+  resolved \"https://registry.yarnpkg.com/yargs/-/yargs-12.0.1.tgz#6432e56123bb4e7c3562115401e98374060261c2\"\n+  dependencies:\n+    cliui \"^4.0.0\"\n+    decamelize \"^2.0.0\"\n+    find-up \"^3.0.0\"\n+    get-caller-file \"^1.0.1\"\n+    os-locale \"^2.0.0\"\n+    require-directory \"^2.1.1\"\n+    require-main-filename \"^1.0.1\"\n+    set-blocking \"^2.0.0\"\n+    string-width \"^2.0.0\"\n+    which-module \"^2.0.0\"\n+    y18n \"^3.2.1 || ^4.0.0\"\n+    yargs-parser \"^10.1.0\"\n+\n yargs@~3.10.0:\n   version \"3.10.0\"\n   resolved \"https://registry.yarnpkg.com/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1\""
+    }
+  ]
+}

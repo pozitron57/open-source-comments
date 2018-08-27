@@ -1,0 +1,98 @@
+{
+  "sha": "dfa80d46e10ba04e9eb1516cfc76cfefd49ee313",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmRmYTgwZDQ2ZTEwYmEwNGU5ZWIxNTE2Y2ZjNzZjZmVmZDQ5ZWUzMTM=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-27T02:57:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-08-27T02:57:34Z"
+    },
+    "message": "missed check for server.Execute status",
+    "tree": {
+      "sha": "846369df741ef7500f716067e82e63709c24a27e",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/846369df741ef7500f716067e82e63709c24a27e"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/dfa80d46e10ba04e9eb1516cfc76cfefd49ee313",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/dfa80d46e10ba04e9eb1516cfc76cfefd49ee313",
+  "html_url": "https://github.com/umputun/remark/commit/dfa80d46e10ba04e9eb1516cfc76cfefd49ee313",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/dfa80d46e10ba04e9eb1516cfc76cfefd49ee313/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ba6bab5b91688a0167d6a3696d2142c997236859",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ba6bab5b91688a0167d6a3696d2142c997236859",
+      "html_url": "https://github.com/umputun/remark/commit/ba6bab5b91688a0167d6a3696d2142c997236859"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f98a6fdf27e0ebd356f6cc879d672a6e616a8a48",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark/blob/dfa80d46e10ba04e9eb1516cfc76cfefd49ee313/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dfa80d46e10ba04e9eb1516cfc76cfefd49ee313/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server_test.go?ref=dfa80d46e10ba04e9eb1516cfc76cfefd49ee313",
+      "patch": "@@ -196,7 +196,8 @@ func TestServerApp_MainSignal(t *testing.T) {\n \t\t\"--port=18100\", \"--url=https://demo.remark42.com\"}\n \t_, err := p.ParseArgs(args)\n \trequire.Nil(t, err)\n-\ts.Execute(args)\n+\terr = s.Execute(args)\n+\tassert.NoError(t, err, \"execute failed\")\n \tassert.True(t, time.Since(st).Seconds() < 1, \"should take about 500msec\")\n }\n "
+    }
+  ]
+}
