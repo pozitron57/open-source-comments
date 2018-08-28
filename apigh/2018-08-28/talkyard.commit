@@ -1,0 +1,98 @@
+{
+  "sha": "2bfe7cf374983634c29ebb5b103ac48db13203b8",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MmJmZTdjZjM3NDk4MzYzNGMyOWViYjViMTAzYWM0OGRiMTMyMDNiOA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-08-20T08:55:28Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-08-21T02:12:58Z"
+    },
+    "message": "Edit readme.",
+    "tree": {
+      "sha": "ca108f3fae86441d61906d7979fc7cbbff49a5f8",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/ca108f3fae86441d61906d7979fc7cbbff49a5f8"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/2bfe7cf374983634c29ebb5b103ac48db13203b8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/2bfe7cf374983634c29ebb5b103ac48db13203b8",
+  "html_url": "https://github.com/debiki/talkyard/commit/2bfe7cf374983634c29ebb5b103ac48db13203b8",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/2bfe7cf374983634c29ebb5b103ac48db13203b8/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5cb3e34ad42d8de878193d4d222de0fe5e1c19f5",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/5cb3e34ad42d8de878193d4d222de0fe5e1c19f5",
+      "html_url": "https://github.com/debiki/talkyard/commit/5cb3e34ad42d8de878193d4d222de0fe5e1c19f5"
+    }
+  ],
+  "stats": {
+    "total": 81,
+    "additions": 55,
+    "deletions": 26
+  },
+  "files": [
+    {
+      "sha": "6e564a244247da6b881f6bedb92bcbfff33f3585",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 55,
+      "deletions": 26,
+      "changes": 81,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2bfe7cf374983634c29ebb5b103ac48db13203b8/README.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2bfe7cf374983634c29ebb5b103ac48db13203b8/README.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/README.md?ref=2bfe7cf374983634c29ebb5b103ac48db13203b8",
+      "patch": "@@ -15,23 +15,29 @@ to do, to change society, or grow your startup.\n Talkyard\n =============================\n \n-Create a community, where your users can suggest ideas and get questions answered. And have friendly open-ended discussions and chat. Place it at `community.yourwebsite.org`.\n+Create a place to talk, where people find answers, and you can discuss and chat. Place it at `community.yourwebsite.org`.\n \n-People in your community need different types of discussions for different things?\n-Talkyard has:\n+<!-- People in your community need different types of discussions for different things?\n+Talkyard has: -->\n \n- - Question-answers, like StackOverflow (best answers first).\n- - Team chat, like Slack.\n- - Discussing ideas and news, Reddit and Hacker news style.\n- - Solving problems, step by step: flat chronological comments (coming soon).\n- - Embedded comments, like Disqus, for your blog, or maybe software API docs?\n+ - **Find answers**, in Question-Answers topics, like StackOverflow.\n+ - **Discuss ideas**, in Reddit and Hacker News open-ended topics.\n+ - **Get work done**, in team chat, like Slack.\n+ - **Solve problems** step by step, in flat by-time topics (coming soon).\n+ - **Talk with your blog visitors**, in embedded comments, like Disqus.\n \n-(The staff configure the topic type just once, in a per category setting.)\n+<!--\n+ - **Improve your API docs**, by embedding comments at the end of each docs page, to make it easy for people to ask and tell you if something is unclear.\n+   -->\n+\n+<!-- (The staff configure the topic type just once, in a per category setting.) -->\n+\n+[**Support forum here**](https://www.talkyard.io/forum/latest/support), at Talkyard<i></i>.io — and report bugs there too.\n \n Our vision is to build a tool that [people who change the world or their neighborood] can use\n-to find ideas and solutions, and pick the right things to do. That's why we have\n-Q&A (question-answers) and HackerNews & Reddit type topics, where good ideas and\n-solutions rise to the top.\n+to find answers and pick the right things to do. That's why we have\n+Q&A (question-answers) and HackerNews & Reddit type topics,\n+where good answers and ideas rise to the top.\n \n <!--\n Talkyard (formerly EffectiveDiscussions) is discussion forum software, with chat and question-answers features.\n@@ -55,43 +61,70 @@ One installation can host many sites.\n There's [hosting](https://www.talkyard.io/pricing), if you don't want to install it yourself.\n \n This is beta software; there might be bugs.\n-Please do report problems and suggest ideas here: https://www.talkyard.io/forum/latest/support\n \n \n ### Screenshots\n \n-Forum index:\n+**Topic list:**\n+\n+<!--\n+![topic-list-borders](https://user-images.githubusercontent.com/7477359/44306130-a3930080-a388-11e8-9cbc-e569f5ddb7a1.jpg)\n+ the old demo forum looks better? so use instead.  -->\n \n ![ed-demo-forum-index](https://cloud.githubusercontent.com/assets/7477359/19650764/bb3a1450-9a0a-11e6-884d-d23c93476db3.jpg)\n \n-Chat:\n+<br>\n \n-![ed-e2e-chat-owen-maria](https://cloud.githubusercontent.com/assets/7477359/19674424/608c49aa-9a88-11e6-8ccd-c2e7ceebd0c2.jpg)\n+**Question-Answers:**\n+\n+\n+![how-work-from-home-vpn-broken-borders](https://user-images.githubusercontent.com/7477359/44306101-0041eb80-a388-11e8-92e8-b8d417c47139.jpg)\n+\n+<br>\n \n-Question-Answers:\n+**Chat:**\n \n+Currently, Talkyard is a mobile friendly web app.\n+Within half a year or a year (today is August 2018),\n+the plan is that there'll be a white labelled mobile app.\n+Meaning, people will be able to install your community, on their mobile phones,\n+as a separate app with your custom icon.\n+Push notifications for Android, however, initially, not for iOS\n+(Apple and iOS currently cannot do PWA mobile app push notifications).\n+No need to submit for review to Google Play Store or Apple App Store.\n+\n+![ed-e2e-chat-owen-maria](https://cloud.githubusercontent.com/assets/7477359/19674424/608c49aa-9a88-11e6-8ccd-c2e7ceebd0c2.jpg)\n+\n+<br>\n+<!--\n ![Q&A about how to wake up on time](https://user-images.githubusercontent.com/7477359/39368115-0549fad0-4a39-11e8-9bba-703d595d2b96.jpg)\n+-->\n <!--\n Hacker News / Reddit style discussion:\n ![ed-discussion-semantics-of-upvote-2013](https://cloud.githubusercontent.com/assets/7477359/19650769/bea906aa-9a0a-11e6-8ea2-9ad771981f46.jpg)\n -->\n \n-Good user experience (at least we're trying) — for example there's an admin-getting-started guide\n-for you, if you create a forum:\n+**Admin-getting-started guide:**\n \n ![ed-admin-intro-guide](https://cloud.githubusercontent.com/assets/7477359/19679591/99a12098-9aa2-11e6-8b65-705c2548cbea.jpg)\n \n-Users online:\n+<br>\n+\n+**Users online:**\n \n ![ed-online-users](https://cloud.githubusercontent.com/assets/7477359/19680424/f0353f86-9aa5-11e6-84d9-94d46f228b93.jpg)\n \n+<br>\n \n \n Contributing\n -----------------------------\n \n-Want to contribute? Feel free to say hello in [our community](https://www.talkyard.io/forum/),\n-or maybe open an issue or a PR (pull request) here at GitHub.\n+Want to contribute? Feel free to say hello in our community: <https://www.talkyard.io/forum/>.\n+Good for you if you ask the people there what is currently being worked on, so you won't\n+accidentally re-implement something that's almost done already — people\n+might be working in their own work-in-progress topic branches that you\n+don't know about.\n \n Here's how to translate to a new language: [i18n-README](translations/i18n-README.md) (step 1 and 2 only).\n \n@@ -104,10 +137,6 @@ paragraph with your real name (no pseudonyms) and the following text, to all you\n Please squash your commits to just one (unless you're doing something complicated that's easier\n to review in separate commits).\n \n-Can be a good idea if you ask us what is currently being worked on, so you won't\n-accidentally re-implement something that's already been done or started. People\n-(e.g. I) might be working in their own work-in-progress topic branches that you\n-don't know about.\n \n \n "
+    }
+  ]
+}
