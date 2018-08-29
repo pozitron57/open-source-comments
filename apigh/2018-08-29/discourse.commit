@@ -1,0 +1,98 @@
+{
+  "sha": "afec673c2bfc2854ae1092cb1ce08bbc567678ad",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphZmVjNjczYzJiZmMyODU0YWUxMDkyY2IxY2UwOGJiYzU2NzY3OGFk",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-08-29T15:44:04Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-08-29T15:44:04Z"
+    },
+    "message": "Fixing test",
+    "tree": {
+      "sha": "4b229369c0c7161c5a24cf629f06b047a46583b6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4b229369c0c7161c5a24cf629f06b047a46583b6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/afec673c2bfc2854ae1092cb1ce08bbc567678ad",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/afec673c2bfc2854ae1092cb1ce08bbc567678ad",
+  "html_url": "https://github.com/discourse/discourse/commit/afec673c2bfc2854ae1092cb1ce08bbc567678ad",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/afec673c2bfc2854ae1092cb1ce08bbc567678ad/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8ff83d174ee518a2f04721d3b3088924e242e648",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/8ff83d174ee518a2f04721d3b3088924e242e648",
+      "html_url": "https://github.com/discourse/discourse/commit/8ff83d174ee518a2f04721d3b3088924e242e648"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "4fb062a7711bd0b9c45f5232a3851f4a6c0d03ff",
+      "filename": "test/javascripts/acceptance/tags-test.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/afec673c2bfc2854ae1092cb1ce08bbc567678ad/test/javascripts/acceptance/tags-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/afec673c2bfc2854ae1092cb1ce08bbc567678ad/test/javascripts/acceptance/tags-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/acceptance/tags-test.js.es6?ref=afec673c2bfc2854ae1092cb1ce08bbc567678ad",
+      "patch": "@@ -5,7 +5,7 @@ QUnit.test(\"list the tags\", async assert => {\n   await visit(\"/tags\");\n \n   assert.ok($(\"body.tags-page\").length, \"has the body class\");\n-  assert.ok(exists(\".tag-eviltrout\"), \"shows the evil trout tag\");\n+  assert.ok($('*[data-tag-name=\"eviltrout\"]').length, \"shows the eviltrout tag\");\n });\n \n acceptance(\"Tags listed by group\", {"
+    }
+  ]
+}
