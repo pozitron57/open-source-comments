@@ -1,0 +1,98 @@
+{
+  "sha": "f0b551b6847541df13531fbe05f2587b6edc9241",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmMGI1NTFiNjg0NzU0MWRmMTM1MzFmYmUwNWYyNTg3YjZlZGM5MjQx",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-08-31T14:38:39Z"
+    },
+    "committer": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-08-31T14:38:58Z"
+    },
+    "message": "UX: avatar on collapsed user profile was the wrong size",
+    "tree": {
+      "sha": "fce3558714e24482731353e190316564d1a2d5fc",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fce3558714e24482731353e190316564d1a2d5fc"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f0b551b6847541df13531fbe05f2587b6edc9241",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f0b551b6847541df13531fbe05f2587b6edc9241",
+  "html_url": "https://github.com/discourse/discourse/commit/f0b551b6847541df13531fbe05f2587b6edc9241",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f0b551b6847541df13531fbe05f2587b6edc9241/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "39414068ff1faa1c0db118cf1e3b2c8aa1ebaebb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/39414068ff1faa1c0db118cf1e3b2c8aa1ebaebb",
+      "html_url": "https://github.com/discourse/discourse/commit/39414068ff1faa1c0db118cf1e3b2c8aa1ebaebb"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "b53d3096117755f9586bc70a7364e7da00b8fad1",
+      "filename": "app/assets/stylesheets/common/base/user.scss",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/f0b551b6847541df13531fbe05f2587b6edc9241/app/assets/stylesheets/common/base/user.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/f0b551b6847541df13531fbe05f2587b6edc9241/app/assets/stylesheets/common/base/user.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/user.scss?ref=f0b551b6847541df13531fbe05f2587b6edc9241",
+      "patch": "@@ -219,6 +219,9 @@\n         .avatar-flair {\n           bottom: 8px;\n           right: 2px;\n+          .fa {\n+            font-size: $font-0;\n+          }\n         }\n       }\n     }"
+    }
+  ]
+}
