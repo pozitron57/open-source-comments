@@ -1,0 +1,98 @@
+{
+  "sha": "4194d1f8758130e66b73e24109748a4966dffa44",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0MTk0ZDFmODc1ODEzMGU2NmI3M2UyNDEwOTc0OGE0OTY2ZGZmYTQ0",
+  "commit": {
+    "author": {
+      "name": "Rishabh Nambiar",
+      "email": "5862206+rishabhnambiar@users.noreply.github.com",
+      "date": "2018-09-01T04:44:42Z"
+    },
+    "committer": {
+      "name": "Rishabh Nambiar",
+      "email": "5862206+rishabhnambiar@users.noreply.github.com",
+      "date": "2018-09-01T04:44:54Z"
+    },
+    "message": "UX: Add padding between fa-chevron-up/down and heading for groups page",
+    "tree": {
+      "sha": "83fce0cc1cbdd4a54f77d269abccb3735d99bdc4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/83fce0cc1cbdd4a54f77d269abccb3735d99bdc4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4194d1f8758130e66b73e24109748a4966dffa44",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4194d1f8758130e66b73e24109748a4966dffa44",
+  "html_url": "https://github.com/discourse/discourse/commit/4194d1f8758130e66b73e24109748a4966dffa44",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4194d1f8758130e66b73e24109748a4966dffa44/comments",
+  "author": {
+    "login": "rishabhnambiar",
+    "id": 5862206,
+    "node_id": "MDQ6VXNlcjU4NjIyMDY=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/5862206?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rishabhnambiar",
+    "html_url": "https://github.com/rishabhnambiar",
+    "followers_url": "https://api.github.com/users/rishabhnambiar/followers",
+    "following_url": "https://api.github.com/users/rishabhnambiar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rishabhnambiar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rishabhnambiar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rishabhnambiar/subscriptions",
+    "organizations_url": "https://api.github.com/users/rishabhnambiar/orgs",
+    "repos_url": "https://api.github.com/users/rishabhnambiar/repos",
+    "events_url": "https://api.github.com/users/rishabhnambiar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rishabhnambiar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "rishabhnambiar",
+    "id": 5862206,
+    "node_id": "MDQ6VXNlcjU4NjIyMDY=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/5862206?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rishabhnambiar",
+    "html_url": "https://github.com/rishabhnambiar",
+    "followers_url": "https://api.github.com/users/rishabhnambiar/followers",
+    "following_url": "https://api.github.com/users/rishabhnambiar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rishabhnambiar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rishabhnambiar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rishabhnambiar/subscriptions",
+    "organizations_url": "https://api.github.com/users/rishabhnambiar/orgs",
+    "repos_url": "https://api.github.com/users/rishabhnambiar/repos",
+    "events_url": "https://api.github.com/users/rishabhnambiar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rishabhnambiar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "16974df1e9ebd1f814f5429e4ac5a2fdc6ace8b4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/16974df1e9ebd1f814f5429e4ac5a2fdc6ace8b4",
+      "html_url": "https://github.com/discourse/discourse/commit/16974df1e9ebd1f814f5429e4ac5a2fdc6ace8b4"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "b325241d7c1136bcee24611530491af60ca353e3",
+      "filename": "app/assets/stylesheets/desktop/groups.scss",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/4194d1f8758130e66b73e24109748a4966dffa44/app/assets/stylesheets/desktop/groups.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/4194d1f8758130e66b73e24109748a4966dffa44/app/assets/stylesheets/desktop/groups.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/desktop/groups.scss?ref=4194d1f8758130e66b73e24109748a4966dffa44",
+      "patch": "@@ -4,6 +4,12 @@\n   }\n }\n \n+thead {\n+  .d-icon {\n+    padding-left: 2px;\n+  }\n+}\n+\n $filter-line-height: 1.5;\n \n .groups-header-filters {"
+    }
+  ]
+}
