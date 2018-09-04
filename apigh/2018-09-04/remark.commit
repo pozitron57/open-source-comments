@@ -1,0 +1,242 @@
+{
+  "sha": "84e777035932d8d840a7c5b00b78056dd7051fb2",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjg0ZTc3NzAzNTkzMmQ4ZDg0MGE3YzViMDBiNzgwNTZkZDcwNTFmYjI=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-09-04T04:13:29Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-09-04T04:13:29Z"
+    },
+    "message": "Feature/admin-migrator (#198)\n\n* auth with a secret as admin\r\n\r\n* get rid of separate migrator service\r\n\r\n* clean sanitize dbg prints\r\n\r\n* fix dbg logging and set migrator routes",
+    "tree": {
+      "sha": "efb354ea21bff99e0d33cbffe289b8ebc8d693a5",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/efb354ea21bff99e0d33cbffe289b8ebc8d693a5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/84e777035932d8d840a7c5b00b78056dd7051fb2",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbjgZpCRBK7hj4Ov3rIwAAdHIIAAU7qG1CBE5MT/Tz8uQvJ/wn\nO4b2RPJxp3oN94w+jlnxd4Mk5yRmaw1t3PF0BdLNyVgy0jvFXz4fO6E02HLh7aZM\nYsGPYFXDHSoZGKTPaBUE4pD/9MggpAPtk3A9GXpJcs6ukIvp0rgDkViLi/MeSSj/\np1KWz/4X3g5k/Q3JYVA2fqNQDpqpzzecPKaTFw703QsnOmAK3HEmutCV9u3SCv6B\nA+7BUSaU3oY+Up5Rbi0vR96RWWKJVn9ep+T+nPN/7PaQsaHgLCtelR1WrlUv+IBh\n7ZfhDSur8q2zcqh74ZQw8FBsE5w6b8aniLfpBGrBblBjVz7OmYoTYSBieInckaM=\n=ukF/\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree efb354ea21bff99e0d33cbffe289b8ebc8d693a5\nparent 3cc6762ebf4f578b6fa5c8b44775322857a4f607\nauthor Umputun <umputun@gmail.com> 1536034409 -0500\ncommitter GitHub <noreply@github.com> 1536034409 -0500\n\nFeature/admin-migrator (#198)\n\n* auth with a secret as admin\r\n\r\n* get rid of separate migrator service\r\n\r\n* clean sanitize dbg prints\r\n\r\n* fix dbg logging and set migrator routes\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/84e777035932d8d840a7c5b00b78056dd7051fb2",
+  "html_url": "https://github.com/umputun/remark/commit/84e777035932d8d840a7c5b00b78056dd7051fb2",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/84e777035932d8d840a7c5b00b78056dd7051fb2/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3cc6762ebf4f578b6fa5c8b44775322857a4f607",
+      "url": "https://api.github.com/repos/umputun/remark/commits/3cc6762ebf4f578b6fa5c8b44775322857a4f607",
+      "html_url": "https://github.com/umputun/remark/commit/3cc6762ebf4f578b6fa5c8b44775322857a4f607"
+    }
+  ],
+  "stats": {
+    "total": 294,
+    "additions": 133,
+    "deletions": 161
+  },
+  "files": [
+    {
+      "sha": "fa3b1872b0f7a38e1a865a5026beb16df516f233",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/Makefile",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/Makefile",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/Makefile?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -23,4 +23,4 @@ deploy:\n \tdocker cp remark42.bin:/artifacts/remark42.windows-amd64.zip bin/remark42.windows-amd64.zip\n \tdocker rm -f remark42.bin\n \n-\n+.PHONY: bin\n\\ No newline at end of file"
+    },
+    {
+      "sha": "4307e474066e31e98f2f9613f4456690b0b3f380",
+      "filename": "backend/app/cmd/backup.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/cmd/backup.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/cmd/backup.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/backup.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -20,7 +20,7 @@ type BackupCommand struct {\n \tSite         string        `long:\"site\" env:\"SITE\" default:\"remark\" description:\"site name\"`\n \tSharedSecret string        `long:\"secret\" env:\"SECRET\" description:\"shared secret key\" required:\"true\"`\n \tTimeout      time.Duration `long:\"timeout\" default:\"15m\" description:\"import timeout\"`\n-\tURL          string        `long:\"url\" default:\"http://127.0.0.1:8081\" description:\"migrator base url\"`\n+\tURL          string        `long:\"url\" default:\"http://127.0.0.1:8080\" description:\"base url\"`\n }\n \n // Execute runs export with ExportCommand parameters, entry point for \"export\" command\n@@ -40,7 +40,7 @@ func (ec *BackupCommand) Execute(args []string) error {\n \tclient := http.Client{}\n \tctx, cancel := context.WithTimeout(context.Background(), ec.Timeout)\n \tdefer cancel()\n-\texportURL := fmt.Sprintf(\"%s/api/v1/admin/export?site=%s&secret=%s\", ec.URL, ec.Site, ec.SharedSecret)\n+\texportURL := fmt.Sprintf(\"%s/api/v1/admin/export?mode=file&site=%s&secret=%s\", ec.URL, ec.Site, ec.SharedSecret)\n \treq, err := http.NewRequest(http.MethodGet, exportURL, nil)\n \tif err != nil {\n \t\treturn errors.Wrapf(err, \"can't make export request for %s\", exportURL)"
+    },
+    {
+      "sha": "5e5b3d42c09bbf29639e5c4332c6b718d544f218",
+      "filename": "backend/app/cmd/import.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/cmd/import.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/cmd/import.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/import.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -23,7 +23,7 @@ type ImportCommand struct {\n \tSharedSecret string `long:\"secret\" env:\"SECRET\" description:\"shared secret key\" required:\"true\"`\n \n \tTimeout time.Duration `long:\"timeout\" default:\"15m\" description:\"import timeout\"`\n-\tURL     string        `long:\"url\" default:\"http://127.0.0.1:8081\" description:\"migrator base url\"`\n+\tURL     string        `long:\"url\" default:\"http://127.0.0.1:8080\" description:\"migrator base url\"`\n }\n \n // Execute runs import with ImportCommand parameters, entry point for \"import\" command"
+    },
+    {
+      "sha": "79c42623f0467ca5cac0d27ee340fe1d986d13ee",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 5,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -213,7 +213,6 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \texporter := &migrator.Remark{DataStore: dataService}\n \n \tmigr := &api.Migrator{\n-\t\tVersion:           Revision,\n \t\tCache:             loadingCache,\n \t\tNativeImporter:    &migrator.Remark{DataStore: dataService},\n \t\tDisqusImporter:    &migrator.Disqus{DataStore: dataService},\n@@ -229,12 +228,12 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \tsrv := &api.Rest{\n \t\tVersion:          Revision,\n \t\tDataService:      dataService,\n-\t\tExporter:         exporter,\n \t\tWebRoot:          s.WebRoot,\n \t\tRemarkURL:        s.RemarkURL,\n \t\tImageProxy:       imgProxy,\n \t\tCommentFormatter: commentFormatter,\n \t\tAvatarProxy:      avatarProxy,\n+\t\tMigrator:         migr,\n \t\tReadOnlyAge:      s.ReadOnlyAge,\n \t\tSharedSecret:     s.SharedSecret,\n \t\tAuthenticator: auth.Authenticator{\n@@ -243,6 +242,7 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \t\t\tProviders:         authProviders,\n \t\t\tDevPasswd:         s.DevPasswd,\n \t\t\tPermissionChecker: dataService,\n+\t\t\tKeyStore:          keyStore,\n \t\t},\n \t\tCache: loadingCache,\n \t}\n@@ -275,7 +275,6 @@ func (a *serverApp) run(ctx context.Context) error {\n \t\t// shutdown on context cancellation\n \t\t<-ctx.Done()\n \t\ta.restSrv.Shutdown()\n-\t\ta.migratorSrv.Shutdown()\n \t\tif a.devAuth != nil {\n \t\t\ta.devAuth.Shutdown()\n \t\t}\n@@ -284,8 +283,7 @@ func (a *serverApp) run(ctx context.Context) error {\n \t\t}\n \n \t}()\n-\ta.activateBackup(ctx)            // runs in goroutine for each site\n-\tgo a.migratorSrv.Run(a.Port + 1) // migrator server runs on +1, localhost only\n+\ta.activateBackup(ctx) // runs in goroutine for each site\n \tif a.Auth.Dev {\n \t\tgo a.devAuth.Run() // dev oauth2 server on :8084\n \t}"
+    },
+    {
+      "sha": "0dd3d5b36885eaf625885c2a208b35f57a6255b4",
+      "filename": "backend/app/rest/api/admin.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 29,
+      "changes": 33,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/admin.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/admin.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/admin.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -1,10 +1,7 @@\n package api\n \n import (\n-\t\"compress/gzip\"\n \t\"errors\"\n-\t\"fmt\"\n-\t\"io\"\n \t\"log\"\n \t\"net/http\"\n \t\"path\"\n@@ -30,6 +27,7 @@ type admin struct {\n \tauthenticator auth.Authenticator\n \treadOnlyAge   int\n \tavatarProxy   *proxy.Avatar\n+\tmigrator      *Migrator\n }\n \n func (a *admin) routes(middlewares ...func(http.Handler) http.Handler) chi.Router {\n@@ -41,10 +39,12 @@ func (a *admin) routes(middlewares ...func(http.Handler) http.Handler) chi.Route\n \trouter.Get(\"/user/{userid}\", a.getUserInfoCtrl)\n \trouter.Get(\"/deleteme\", a.deleteMeRequestCtrl)\n \trouter.Put(\"/verify/{userid}\", a.setVerifyCtrl)\n-\trouter.Get(\"/export\", a.exportCtrl)\n \trouter.Put(\"/pin/{id}\", a.setPinCtrl)\n \trouter.Get(\"/blocked\", a.blockedUsersCtrl)\n \trouter.Put(\"/readonly\", a.setReadOnlyCtrl)\n+\n+\ta.migrator.withRoutes(router) // set migrator routes, i.e. /export and /import\n+\n \treturn router\n }\n \n@@ -221,31 +221,6 @@ func (a *admin) setPinCtrl(w http.ResponseWriter, r *http.Request) {\n \trender.JSON(w, r, JSON{\"id\": commentID, \"locator\": locator, \"pin\": pinStatus})\n }\n \n-// GET /export?site=site-id?mode=file|stream\n-// exports all comments for siteID as json stream or gz file\n-func (a *admin) exportCtrl(w http.ResponseWriter, r *http.Request) {\n-\tsiteID := r.URL.Query().Get(\"site\")\n-\tvar writer io.Writer = w\n-\tif r.URL.Query().Get(\"mode\") == \"file\" {\n-\t\texportFile := fmt.Sprintf(\"%s-%s.json.gz\", siteID, time.Now().Format(\"20060102\"))\n-\t\tw.Header().Set(\"Content-Type\", \"application/gzip\")\n-\t\tw.Header().Set(\"Content-Disposition\", \"attachment;filename=\"+exportFile)\n-\t\tw.WriteHeader(http.StatusOK)\n-\t\tgzWriter := gzip.NewWriter(w)\n-\t\tdefer func() {\n-\t\t\tif e := gzWriter.Close(); e != nil {\n-\t\t\t\tlog.Printf(\"[WARN] can't close gzip writer, %s\", e)\n-\t\t\t}\n-\t\t}()\n-\t\twriter = gzWriter\n-\t}\n-\n-\tif _, err := a.exporter.Export(writer, siteID); err != nil {\n-\t\trest.SendErrorJSON(w, r, http.StatusInternalServerError, err, \"export failed\")\n-\t\treturn\n-\t}\n-}\n-\n func (a *admin) checkBlocked(siteID string, user store.User) bool {\n \treturn a.dataService.IsBlocked(siteID, user.ID)\n }"
+    },
+    {
+      "sha": "567256d9e3c6ae2fccfe844030c107f9815de1fe",
+      "filename": "backend/app/rest/api/admin_test.go",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/admin_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/admin_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/admin_test.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -413,7 +413,6 @@ func TestAdmin_Verify(t *testing.T) {\n \tassert.Equal(t, 2, len(comments.Comments), \"should have 2 comments\")\n \tassert.Equal(t, \"test test #1\", comments.Comments[0].Text)\n \tassert.False(t, comments.Comments[0].User.Verified)\n-\n }\n \n func TestAdmin_ExportStream(t *testing.T) {"
+    },
+    {
+      "sha": "f73f48ab65ff83b742567cbb4fe0edaf3bac133d",
+      "filename": "backend/app/rest/api/middleware.go",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/middleware.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/middleware.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/middleware.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -172,7 +172,6 @@ func sanitizeQuery(u string) string {\n \t\t\t} else {\n \t\t\t\tfnPos = stPos + fnPos\n \t\t\t}\n-\t\t\tlog.Print(stPos, fnPos)\n \t\t\tfor i := stPos; i < fnPos; i++ {\n \t\t\t\tout[i] = rune('*')\n \t\t\t}"
+    },
+    {
+      "sha": "01534e4d0158d3b5d19de77a928aa96eb715083f",
+      "filename": "backend/app/rest/api/migrator.go",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 92,
+      "changes": 113,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/migrator.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/migrator.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/migrator.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -2,18 +2,13 @@ package api\n \n import (\n \t\"compress/gzip\"\n-\t\"context\"\n \t\"fmt\"\n+\t\"io\"\n \t\"log\"\n \t\"net/http\"\n-\t\"strings\"\n-\t\"sync\"\n \t\"time\"\n \n-\t\"github.com/didip/tollbooth\"\n-\t\"github.com/didip/tollbooth_chi\"\n \t\"github.com/go-chi/chi\"\n-\t\"github.com/go-chi/chi/middleware\"\n \t\"github.com/go-chi/render\"\n \n \t\"github.com/umputun/remark/backend/app/migrator\"\n@@ -22,59 +17,19 @@ import (\n \t\"github.com/umputun/remark/backend/app/store/keys\"\n )\n \n-// Migrator rest runs on unexposed port and available for local requests only\n+// Migrator rest with import and export controllers\n type Migrator struct {\n-\tVersion           string\n \tCache             cache.LoadingCache\n \tNativeImporter    migrator.Importer\n \tDisqusImporter    migrator.Importer\n \tWordPressImporter migrator.Importer\n \tNativeExported    migrator.Exporter\n \tKeyStore          keys.Store\n-\n-\thttpServer *http.Server\n-\tlock       sync.Mutex\n-}\n-\n-// Run the listener and request's router, activate rest server\n-// this server doesn't have any authentication and SHOULDN'T BE EXPOSED in any way\n-func (m *Migrator) Run(port int) {\n-\tlog.Printf(\"[INFO] activate import server on port %d\", port)\n-\trouter := m.routes()\n-\n-\tm.lock.Lock()\n-\tm.httpServer = &http.Server{Addr: fmt.Sprintf(\"127.0.0.1:%d\", port), Handler: router}\n-\tm.lock.Unlock()\n-\n-\terr := m.httpServer.ListenAndServe()\n-\tlog.Printf(\"[WARN] http server terminated, %s\", err)\n-}\n-\n-// Shutdown import http server\n-func (m *Migrator) Shutdown() {\n-\tlog.Print(\"[WARN] shutdown import server\")\n-\tctx, cancel := context.WithTimeout(context.Background(), time.Second)\n-\tdefer cancel()\n-\n-\tm.lock.Lock()\n-\tif m.httpServer != nil {\n-\t\tif err := m.httpServer.Shutdown(ctx); err != nil {\n-\t\t\tlog.Printf(\"[DEBUG] importer shutdown error, %s\", err)\n-\t\t}\n-\t}\n-\tm.lock.Unlock()\n-\n-\tlog.Print(\"[DEBUG] shutdown import server completed\")\n }\n \n-func (m *Migrator) routes() chi.Router {\n-\trouter := chi.NewRouter()\n-\trouter.Use(middleware.RealIP, Recoverer)\n-\trouter.Use(middleware.Throttle(1000), middleware.Timeout(15*time.Minute))\n-\trouter.Use(tollbooth_chi.LimitHandler(tollbooth.NewLimiter(10, nil)))\n-\trouter.Use(AppInfo(\"remark42-migrator\", m.Version), Ping, Logger(nil, LogAll))\n-\trouter.Post(\"/api/v1/admin/import\", m.importCtrl)\n-\trouter.Get(\"/api/v1/admin/export\", m.exportCtrl)\n+func (m *Migrator) withRoutes(router chi.Router) chi.Router {\n+\trouter.Get(\"/export\", m.exportCtrl)\n+\trouter.Post(\"/import\", m.importCtrl)\n \treturn router\n }\n \n@@ -83,20 +38,6 @@ func (m *Migrator) routes() chi.Router {\n func (m *Migrator) importCtrl(w http.ResponseWriter, r *http.Request) {\n \n \tsiteID := r.URL.Query().Get(\"site\")\n-\tsecret := r.URL.Query().Get(\"secret\")\n-\n-\tskey, err := m.KeyStore.Get(siteID)\n-\tif err != nil {\n-\t\trender.Status(r, http.StatusForbidden)\n-\t\trender.JSON(w, r, JSON{\"status\": \"error\", \"details\": \"secret key store\"})\n-\t\treturn\n-\t}\n-\n-\tif strings.TrimSpace(secret) == \"\" || secret != skey {\n-\t\trender.Status(r, http.StatusForbidden)\n-\t\trender.JSON(w, r, JSON{\"status\": \"error\", \"details\": \"secret key\"})\n-\t\treturn\n-\t}\n \n \tvar importer migrator.Importer\n \tswitch r.URL.Query().Get(\"provider\") {\n@@ -108,7 +49,7 @@ func (m *Migrator) importCtrl(w http.ResponseWriter, r *http.Request) {\n \t\timporter = m.NativeImporter\n \t}\n \n-\tlog.Printf(\"[DEBUG] import request for site=%s\", siteID)\n+\tlog.Printf(\"[DEBUG] import request for site=%s, provider=%s\", siteID, r.URL.Query().Get(\"provider\"))\n \tsize, err := importer.Import(r.Body, siteID)\n \tif err != nil {\n \t\trest.SendErrorJSON(w, r, http.StatusBadRequest, err, \"import failed\")\n@@ -120,40 +61,28 @@ func (m *Migrator) importCtrl(w http.ResponseWriter, r *http.Request) {\n \trender.JSON(w, r, JSON{\"status\": \"ok\", \"size\": size})\n }\n \n-// GET /export?site=site-id&secret=12345\n+// GET /export?site=site-id&secret=12345&?mode=file|stream\n // exports all comments for siteID as gz file\n func (m *Migrator) exportCtrl(w http.ResponseWriter, r *http.Request) {\n \n \tsiteID := r.URL.Query().Get(\"site\")\n-\tsecret := r.URL.Query().Get(\"secret\")\n-\n-\tskey, err := m.KeyStore.Get(siteID)\n-\tif err != nil {\n-\t\trender.Status(r, http.StatusForbidden)\n-\t\trender.JSON(w, r, JSON{\"status\": \"error\", \"details\": \"secret key store\"})\n-\t\treturn\n-\t}\n \n-\tif strings.TrimSpace(secret) == \"\" || secret != skey {\n-\t\trender.Status(r, http.StatusForbidden)\n-\t\trender.JSON(w, r, JSON{\"status\": \"error\", \"details\": \"secret key\"})\n-\t\treturn\n+\tvar writer io.Writer = w\n+\tif r.URL.Query().Get(\"mode\") == \"file\" {\n+\t\texportFile := fmt.Sprintf(\"%s-%s.json.gz\", siteID, time.Now().Format(\"20060102\"))\n+\t\tw.Header().Set(\"Content-Type\", \"application/gzip\")\n+\t\tw.Header().Set(\"Content-Disposition\", \"attachment;filename=\"+exportFile)\n+\t\tw.WriteHeader(http.StatusOK)\n+\t\tgzWriter := gzip.NewWriter(w)\n+\t\tdefer func() {\n+\t\t\tif e := gzWriter.Close(); e != nil {\n+\t\t\t\tlog.Printf(\"[WARN] can't close gzip writer, %s\", e)\n+\t\t\t}\n+\t\t}()\n+\t\twriter = gzWriter\n \t}\n \n-\texportFile := fmt.Sprintf(\"%s-%s.json.gz\", siteID, time.Now().Format(\"20060102\"))\n-\tlog.Printf(\"[DEBUG] import request for site=%s to %s\", siteID, exportFile)\n-\n-\tw.Header().Set(\"Content-Type\", \"application/gzip\")\n-\tw.Header().Set(\"Content-Disposition\", \"attachment;filename=\"+exportFile)\n-\tgzWriter := gzip.NewWriter(w)\n-\tdefer func() {\n-\t\tif e := gzWriter.Close(); e != nil {\n-\t\t\tlog.Printf(\"[WARN] can't close gzip writer, %s\", e)\n-\t\t}\n-\t}()\n-\n-\tif _, err := m.NativeExported.Export(gzWriter, siteID); err != nil {\n-\t\tlog.Printf(\"[WARN] can't export, %+v\", err)\n+\tif _, err := m.NativeExported.Export(writer, siteID); err != nil {\n \t\trest.SendErrorJSON(w, r, http.StatusInternalServerError, err, \"export failed\")\n \t\treturn\n \t}"
+    },
+    {
+      "sha": "eb0c2b529f82ae891415eedbe9f06a22ac2de7c1",
+      "filename": "backend/app/rest/api/migrator_test.go",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 22,
+      "changes": 58,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/migrator_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/migrator_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/migrator_test.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -12,12 +12,15 @@ import (\n \t\"time\"\n \n \t\"github.com/coreos/bbolt\"\n+\t\"github.com/go-chi/chi\"\n \t\"github.com/stretchr/testify/assert\"\n \t\"github.com/stretchr/testify/require\"\n \n \t\"github.com/umputun/remark/backend/app/migrator\"\n+\t\"github.com/umputun/remark/backend/app/rest/auth\"\n \t\"github.com/umputun/remark/backend/app/rest/cache\"\n \t\"github.com/umputun/remark/backend/app/store\"\n+\tadminstore \"github.com/umputun/remark/backend/app/store/admin\"\n \t\"github.com/umputun/remark/backend/app/store/engine\"\n \t\"github.com/umputun/remark/backend/app/store/keys\"\n \t\"github.com/umputun/remark/backend/app/store/service\"\n@@ -32,7 +35,7 @@ func TestMigrator_Import(t *testing.T) {\n \t{\"id\":\"83fd97fd-ff64-48d1-9fb7-ca7769c77037\",\"pid\":\"p1\",\"text\":\"<p>test test #2</p>\",\"user\":{\"name\":\"developer one\",\"id\":\"dev\",\"picture\":\"/api/v1/avatar/remark.image\",\"profile\":\"https://remark42.com\",\"admin\":true,\"ip\":\"ae12fe3b5f129b5cc4cdd2b136b7b7947c4d2741\"},\"locator\":{\"site\":\"radio-t\",\"url\":\"https://radio-t.com/blah2\"},\"score\":0,\"votes\":{},\"time\":\"2018-04-30T01:37:00.861387771-05:00\"}`)\n \n \tclient := &http.Client{Timeout: 1 * time.Second}\n-\treq, err := http.NewRequest(\"POST\", ts.URL+\"/api/v1/admin/import?site=radio-t&provider=native&secret=123456\", r)\n+\treq, err := http.NewRequest(\"POST\", ts.URL+\"/import?site=radio-t&provider=native&secret=123456\", r)\n \tassert.Nil(t, err)\n \tresp, err := client.Do(req)\n \tassert.Nil(t, err)\n@@ -51,7 +54,7 @@ func TestMigrator_ImportFromWP(t *testing.T) {\n \tr := strings.NewReader(strings.Replace(xmlTestWP, \"'\", \"`\", -1))\n \n \tclient := &http.Client{Timeout: 1 * time.Second}\n-\treq, err := http.NewRequest(\"POST\", ts.URL+\"/api/v1/admin/import?site=radio-t&provider=wordpress&secret=123456\", r)\n+\treq, err := http.NewRequest(\"POST\", ts.URL+\"/import?site=radio-t&provider=wordpress&secret=123456\", r)\n \tassert.Nil(t, err)\n \treq.Header.Add(\"Content-Type\", \"application/xml; charset=utf-8\")\n \tresp, err := client.Do(req)\n@@ -88,11 +91,11 @@ func TestMigrator_ImportRejected(t *testing.T) {\n \t{\"id\":\"83fd97fd-ff64-48d1-9fb7-ca7769c77037\",\"pid\":\"p1\",\"text\":\"<p>test test #2</p>\",\"user\":{\"name\":\"developer one\",\"id\":\"dev\",\"picture\":\"/api/v1/avatar/remark.image\",\"profile\":\"https://remark42.com\",\"admin\":true,\"ip\":\"ae12fe3b5f129b5cc4cdd2b136b7b7947c4d2741\"},\"locator\":{\"site\":\"radio-t\",\"url\":\"https://radio-t.com/blah2\"},\"score\":0,\"votes\":{},\"time\":\"2018-04-30T01:37:00.861387771-05:00\"}`)\n \n \tclient := &http.Client{Timeout: 1 * time.Second}\n-\treq, err := http.NewRequest(\"POST\", ts.URL+\"/api/v1/admin/import?site=radio-t&provider=native&secret=XYZ\", r)\n+\treq, err := http.NewRequest(\"POST\", ts.URL+\"/import?site=radio-t&provider=native&secret=XYZ\", r)\n \tassert.Nil(t, err)\n \tresp, err := client.Do(req)\n \tassert.Nil(t, err)\n-\tassert.Equal(t, http.StatusForbidden, resp.StatusCode)\n+\tassert.Equal(t, http.StatusUnauthorized, resp.StatusCode)\n }\n \n func TestMigrator_Export(t *testing.T) {\n@@ -104,13 +107,14 @@ func TestMigrator_Export(t *testing.T) {\n \t{\"id\":\"83fd97fd-ff64-48d1-9fb7-ca7769c77037\",\"pid\":\"p1\",\"text\":\"<p>test test #2</p>\",\"user\":{\"name\":\"developer one\",\"id\":\"dev\",\"picture\":\"/api/v1/avatar/remark.image\",\"profile\":\"https://remark42.com\",\"admin\":true,\"ip\":\"ae12fe3b5f129b5cc4cdd2b136b7b7947c4d2741\"},\"locator\":{\"site\":\"radio-t\",\"url\":\"https://radio-t.com/blah2\"},\"score\":0,\"votes\":{},\"time\":\"2018-04-30T01:37:00.861387771-05:00\"}`)\n \n \tclient := &http.Client{Timeout: 1 * time.Second}\n-\treq, err := http.NewRequest(\"POST\", ts.URL+\"/api/v1/admin/import?site=radio-t&provider=native&secret=123456\", r)\n+\treq, err := http.NewRequest(\"POST\", ts.URL+\"/import?site=radio-t&provider=native&secret=123456\", r)\n \trequire.Nil(t, err)\n \tresp, err := client.Do(req)\n \trequire.Nil(t, err)\n \trequire.Equal(t, http.StatusCreated, resp.StatusCode)\n \n-\treq, err = http.NewRequest(\"GET\", ts.URL+\"/api/v1/admin/export?site=radio-t&secret=123456\", nil)\n+\t// check file mode\n+\treq, err = http.NewRequest(\"GET\", ts.URL+\"/export?mode=file&site=radio-t&secret=123456\", nil)\n \trequire.Nil(t, err)\n \tresp, err = client.Do(req)\n \trequire.Nil(t, err)\n@@ -125,44 +129,54 @@ func TestMigrator_Export(t *testing.T) {\n \tassert.Equal(t, 2, strings.Count(string(ungzBody), \"\\\"text\\\"\"))\n \tt.Logf(\"%s\", string(ungzBody))\n \n-\treq, err = http.NewRequest(\"GET\", ts.URL+\"/api/v1/admin/export?site=radio-t&secret=bad\", nil)\n+\t// check stream mode\n+\treq, err = http.NewRequest(\"GET\", ts.URL+\"/export?mode=stream&site=radio-t&secret=123456\", nil)\n \trequire.Nil(t, err)\n \tresp, err = client.Do(req)\n \trequire.Nil(t, err)\n-\trequire.Equal(t, 403, resp.StatusCode)\n-}\n+\trequire.Equal(t, 200, resp.StatusCode)\n+\trequire.Equal(t, \"text/plain; charset=utf-8\", resp.Header.Get(\"Content-Type\"))\n+\n+\tbody, err := ioutil.ReadAll(resp.Body)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, 2, strings.Count(string(body), \"\\n\"))\n+\tassert.Equal(t, 2, strings.Count(string(body), \"\\\"text\\\"\"))\n+\tt.Logf(\"%s\", string(body))\n \n-func TestMigrator_Shutdown(t *testing.T) {\n-\tsrv := Migrator{}\n-\tgo func() {\n-\t\ttime.Sleep(100 * time.Millisecond)\n-\t\tsrv.Shutdown()\n-\t}()\n-\tst := time.Now()\n-\tsrv.Run(0)\n-\tassert.True(t, time.Since(st).Seconds() < 1, \"should take about 100ms\")\n+\treq, err = http.NewRequest(\"GET\", ts.URL+\"/export?site=radio-t&secret=bad\", nil)\n+\trequire.Nil(t, err)\n+\tresp, err = client.Do(req)\n+\trequire.Nil(t, err)\n+\trequire.Equal(t, http.StatusUnauthorized, resp.StatusCode)\n }\n \n func prepImportSrv(t *testing.T) (svc *Migrator, ds *service.DataStore, ts *httptest.Server) {\n \tb, err := engine.NewBoltDB(bolt.Options{}, engine.BoltSite{FileName: testDb, SiteID: \"radio-t\"})\n \trequire.Nil(t, err)\n-\tdataStore := &service.DataStore{Interface: b, KeyStore: keys.NewStaticStore(\"123456\")}\n+\tks := keys.NewStaticStore(\"123456\")\n+\tdataStore := &service.DataStore{Interface: b, KeyStore: ks}\n \tsvc = &Migrator{\n \t\tDisqusImporter:    &migrator.Disqus{DataStore: dataStore},\n \t\tWordPressImporter: &migrator.WordPress{DataStore: dataStore},\n \t\tNativeImporter:    &migrator.Remark{DataStore: dataStore},\n \t\tNativeExported:    &migrator.Remark{DataStore: dataStore},\n \t\tCache:             &cache.Nop{},\n-\t\tKeyStore:          keys.NewStaticStore(\"123456\"),\n+\t\tKeyStore:          ks,\n+\t}\n+\ta := auth.Authenticator{\n+\t\tDevPasswd:  \"password\",\n+\t\tProviders:  nil,\n+\t\tAdminStore: adminstore.NewStaticStore([]string{\"a1\", \"a2\"}, \"admin@remark-42.com\"),\n+\t\tJWTService: auth.NewJWT(keys.NewStaticStore(\"123456\"), false, time.Minute, time.Hour),\n+\t\tKeyStore:   ks,\n \t}\n-\troutes := svc.routes()\n+\troutes := svc.withRoutes(chi.NewRouter().With(a.Auth(true)).With(a.AdminOnly))\n \tts = httptest.NewServer(routes)\n \treturn svc, dataStore, ts\n }\n \n func cleanupImportSrv(m *Migrator, ts *httptest.Server) {\n \tts.Close()\n-\tm.Shutdown()\n \tos.Remove(testDb)\n }\n "
+    },
+    {
+      "sha": "fc3be7eeb66d6b055e0325740ef6e190794d35ce",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 4,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -22,7 +22,6 @@ import (\n \t\"github.com/pkg/errors\"\n \t\"github.com/rakyll/statik/fs\"\n \n-\t\"github.com/umputun/remark/backend/app/migrator\"\n \t\"github.com/umputun/remark/backend/app/rest\"\n \t\"github.com/umputun/remark/backend/app/rest/auth\"\n \t\"github.com/umputun/remark/backend/app/rest/cache\"\n@@ -37,11 +36,11 @@ type Rest struct {\n \n \tDataService      *service.DataStore\n \tAuthenticator    auth.Authenticator\n-\tExporter         migrator.Exporter\n \tCache            cache.LoadingCache\n \tAvatarProxy      *proxy.Avatar\n \tImageProxy       *proxy.Image\n \tCommentFormatter *store.CommentFormatter\n+\tMigrator         *Migrator\n \n \tWebRoot         string\n \tRemarkURL       string\n@@ -115,7 +114,7 @@ func (s *Rest) routes() chi.Router {\n \n \ts.adminService = admin{\n \t\tdataService:   s.DataService,\n-\t\texporter:      s.Exporter,\n+\t\tmigrator:      s.Migrator,\n \t\tcache:         s.Cache,\n \t\tauthenticator: s.Authenticator,\n \t\treadOnlyAge:   s.ReadOnlyAge,\n@@ -187,7 +186,7 @@ func (s *Rest) routes() chi.Router {\n \t\t\trauth.Post(\"/deleteme\", s.deleteMeCtrl)\n \n \t\t\t// admin routes, admin users only\n-\t\t\trauth.Mount(\"/admin\", s.adminService.routes(s.Authenticator.AdminOnly, Logger(nil, LogAll)))\n+\t\t\trauth.Mount(\"/admin\", s.adminService.routes(s.Authenticator.AdminOnly))\n \t\t})\n \t})\n "
+    },
+    {
+      "sha": "df27dacf3d4707f461b8cd9c75101acd7573cb55",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/rest_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/api/rest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_test.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -109,14 +109,21 @@ func prep(t *testing.T) (srv *Rest, ts *httptest.Server) {\n \t\t\tAdminStore: adminStore,\n \t\t\tJWTService: auth.NewJWT(keys.NewStaticStore(\"123456\"), false, time.Minute, time.Hour),\n \t\t},\n-\t\tExporter:         &migrator.Remark{DataStore: dataStore},\n \t\tCache:            &cache.Nop{},\n \t\tWebRoot:          \"/tmp\",\n \t\tRemarkURL:        \"https://demo.remark42.com\",\n \t\tAvatarProxy:      &proxy.Avatar{Store: avatar.NewLocalFS(\"/tmp\", 300), RoutePath: \"/api/v1/avatar\"},\n \t\tImageProxy:       &proxy.Image{},\n \t\tReadOnlyAge:      10,\n \t\tCommentFormatter: store.NewCommentFormatter(&proxy.Image{}),\n+\t\tMigrator: &Migrator{\n+\t\t\tDisqusImporter:    &migrator.Disqus{DataStore: dataStore},\n+\t\t\tWordPressImporter: &migrator.WordPress{DataStore: dataStore},\n+\t\t\tNativeImporter:    &migrator.Remark{DataStore: dataStore},\n+\t\t\tNativeExported:    &migrator.Remark{DataStore: dataStore},\n+\t\t\tCache:             &cache.Nop{},\n+\t\t\tKeyStore:          keys.NewStaticStore(\"123456\"),\n+\t\t},\n \t}\n \tsrv.ScoreThresholds.Low, srv.ScoreThresholds.Critical = -5, -10\n "
+    },
+    {
+      "sha": "5e62b1e6c6b4bed0ea9f26766b8b915bd36e7fda",
+      "filename": "backend/app/rest/auth/auth.go",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 2,
+      "changes": 38,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/auth/auth.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/auth/auth.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/auth/auth.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -10,13 +10,15 @@ import (\n \t\"github.com/umputun/remark/backend/app/rest\"\n \t\"github.com/umputun/remark/backend/app/store\"\n \t\"github.com/umputun/remark/backend/app/store/admin\"\n+\t\"github.com/umputun/remark/backend/app/store/keys\"\n )\n \n // Authenticator is top level auth object providing middlewares\n type Authenticator struct {\n \tJWTService        *JWT\n \tProviders         []Provider\n \tAdminStore        admin.Store\n+\tKeyStore          keys.Store\n \tDevPasswd         string\n \tPermissionChecker PermissionChecker\n }\n@@ -28,6 +30,13 @@ var devUser = store.User{\n \tAdmin:   true,\n }\n \n+var adminUser = store.User{\n+\tID:      \"admin\",\n+\tName:    \"admin\",\n+\tPicture: \"/api/v1/avatar/remark.image\",\n+\tAdmin:   true,\n+}\n+\n // PermissionChecker defines interface to check user flags\n type PermissionChecker interface {\n \tIsVerified(siteID, userID string) bool\n@@ -41,9 +50,15 @@ func (a *Authenticator) Auth(reqAuth bool) func(http.Handler) http.Handler {\n \tf := func(h http.Handler) http.Handler {\n \t\tfn := func(w http.ResponseWriter, r *http.Request) {\n \n+\t\t\t// if secret key matches and site in request return admin\n+\t\t\tif a.checkSecretKey(r) {\n+\t\t\t\tr = rest.SetUserInfo(r, adminUser)\n+\t\t\t\th.ServeHTTP(w, r)\n+\t\t\t\treturn\n+\t\t\t}\n+\n \t\t\tif a.basicDevUser(w, r) { // use dev user basic auth if enabled\n-\t\t\t\tuser := devUser\n-\t\t\t\tr = rest.SetUserInfo(r, user)\n+\t\t\t\tr = rest.SetUserInfo(r, devUser)\n \t\t\t\th.ServeHTTP(w, r)\n \t\t\t\treturn\n \t\t\t}\n@@ -97,6 +112,25 @@ func (a *Authenticator) Auth(reqAuth bool) func(http.Handler) http.Handler {\n \treturn f\n }\n \n+func (a *Authenticator) checkSecretKey(r *http.Request) bool {\n+\tif a.KeyStore == nil {\n+\t\treturn false\n+\t}\n+\n+\tsiteID := r.URL.Query().Get(\"site\")\n+\tsecret := r.URL.Query().Get(\"secret\")\n+\n+\tskey, err := a.KeyStore.Get(siteID)\n+\tif err != nil {\n+\t\treturn false\n+\t}\n+\n+\tif strings.TrimSpace(secret) == \"\" || secret != skey {\n+\t\treturn false\n+\t}\n+\treturn true\n+}\n+\n // refreshExpiredToken makes new token with passed claims, but only if permission allowed\n func (a *Authenticator) refreshExpiredToken(w http.ResponseWriter, claims *CustomClaims) (*CustomClaims, error) {\n \tif a.PermissionChecker != nil {"
+    },
+    {
+      "sha": "4efc80f92f84f08548d074707ff0b658cc4b4f1e",
+      "filename": "backend/app/rest/auth/auth_test.go",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 0,
+      "changes": 18,
+      "blob_url": "https://github.com/umputun/remark/blob/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/auth/auth_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/84e777035932d8d840a7c5b00b78056dd7051fb2/backend/app/rest/auth/auth_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/auth/auth_test.go?ref=84e777035932d8d840a7c5b00b78056dd7051fb2",
+      "patch": "@@ -212,6 +212,24 @@ func TestAdminRequired(t *testing.T) {\n \n }\n \n+func TestAuthWithSecret(t *testing.T) {\n+\ta := Authenticator{DevPasswd: \"123456\", KeyStore: keys.NewStaticStore(\"secretkey\")}\n+\trouter := chi.NewRouter()\n+\trouter.With(a.Auth(true), a.AdminOnly).Get(\"/auth\", func(w http.ResponseWriter, r *http.Request) {\n+\t\tw.WriteHeader(201)\n+\t})\n+\tserver := httptest.NewServer(router)\n+\tdefer server.Close()\n+\n+\tresp, err := http.Get(server.URL + \"/auth?secret=secretkey\")\n+\trequire.NoError(t, err)\n+\tassert.Equal(t, 201, resp.StatusCode, \"valid auth user with secret, admin\")\n+\n+\tresp, err = http.Get(server.URL + \"/auth?secret=badsecret\")\n+\trequire.NoError(t, err)\n+\tassert.Equal(t, 401, resp.StatusCode, \"invalid auth with bad secret\")\n+}\n+\n func withBasicAuth(r *http.Request, username, password string) *http.Request {\n \tauth := username + \":\" + password\n \tr.Header.Add(\"Authorization\", \"Basic \"+base64.StdEncoding.EncodeToString([]byte(auth)))"
+    }
+  ]
+}
