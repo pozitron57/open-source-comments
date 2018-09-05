@@ -1,0 +1,122 @@
+{
+  "sha": "382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MzgyMDE5ZDkwN2U5N2QzY2EzZjc4ZWI0ZjVhNTkyZjk2ZGMzMmExNQ==",
+  "commit": {
+    "author": {
+      "name": "Thomaz de Oliveira dos Reis",
+      "email": "thor27@gmail.com",
+      "date": "2018-09-04T15:01:10Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-09-04T15:01:10Z"
+    },
+    "message": "Change proxy-agent to support http/https through http/https/socks/pac proxy on scraper (#1839)",
+    "tree": {
+      "sha": "1fd8853abdcf457b6c586912eeeea0bf22100304",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/1fd8853abdcf457b6c586912eeeea0bf22100304"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+  "html_url": "https://github.com/coralproject/talk/commit/382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/382019d907e97d3ca3f78eb4f5a592f96dc32a15/comments",
+  "author": {
+    "login": "thor27",
+    "id": 1656204,
+    "node_id": "MDQ6VXNlcjE2NTYyMDQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1656204?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thor27",
+    "html_url": "https://github.com/thor27",
+    "followers_url": "https://api.github.com/users/thor27/followers",
+    "following_url": "https://api.github.com/users/thor27/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thor27/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thor27/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thor27/subscriptions",
+    "organizations_url": "https://api.github.com/users/thor27/orgs",
+    "repos_url": "https://api.github.com/users/thor27/repos",
+    "events_url": "https://api.github.com/users/thor27/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thor27/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e6107173fb08b1601e7dcf8a4e7ff4f7a0ce0645",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/e6107173fb08b1601e7dcf8a4e7ff4f7a0ce0645",
+      "html_url": "https://github.com/coralproject/talk/commit/e6107173fb08b1601e7dcf8a4e7ff4f7a0ce0645"
+    }
+  ],
+  "stats": {
+    "total": 100,
+    "additions": 89,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "77d429042e3174436c4f829f06fbab330cad3b62",
+      "filename": "jobs/scraper/index.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/382019d907e97d3ca3f78eb4f5a592f96dc32a15/jobs/scraper/index.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/382019d907e97d3ca3f78eb4f5a592f96dc32a15/jobs/scraper/index.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/jobs/scraper/index.js?ref=382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+      "patch": "@@ -7,7 +7,7 @@ const fetch = require('node-fetch');\n const { merge } = require('lodash');\n const { version } = require('../../package.json');\n const { SCRAPER_HEADERS, SCRAPER_PROXY_URL } = require('../../config');\n-const HttpsProxyAgent = require('https-proxy-agent');\n+const ProxyAgent = require('proxy-agent');\n \n // Load the scraper with the rules.\n const metascraper = require('metascraper').load([\n@@ -37,7 +37,7 @@ const headers = merge(\n );\n \n // Add proxy configuration if exists.\n-const agent = SCRAPER_PROXY_URL ? new HttpsProxyAgent(SCRAPER_PROXY_URL) : null;\n+const agent = SCRAPER_PROXY_URL ? new ProxyAgent(SCRAPER_PROXY_URL) : null;\n \n /**\n  * Scrapes the given asset for metadata."
+    },
+    {
+      "sha": "de6b1977247166623ab225f6ba379d7d9cc021e9",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/382019d907e97d3ca3f78eb4f5a592f96dc32a15/package.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/382019d907e97d3ca3f78eb4f5a592f96dc32a15/package.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/package.json?ref=382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+      "patch": "@@ -126,7 +126,7 @@\n     \"history\": \"^3.0.0\",\n     \"hjson\": \"^3.1.1\",\n     \"hjson-loader\": \"^1.0.0\",\n-    \"https-proxy-agent\": \"^2.2.0\",\n+    \"proxy-agent\": \"^3.0.1\",\n     \"immutability-helper\": \"^2.2.0\",\n     \"imports-loader\": \"^0.7.1\",\n     \"inquirer\": \"^3.2.2\","
+    },
+    {
+      "sha": "b4e37884f15c4b4c377ded3af6f634a49f952bdb",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 86,
+      "deletions": 8,
+      "changes": 94,
+      "blob_url": "https://github.com/coralproject/talk/blob/382019d907e97d3ca3f78eb4f5a592f96dc32a15/yarn.lock",
+      "raw_url": "https://github.com/coralproject/talk/raw/382019d907e97d3ca3f78eb4f5a592f96dc32a15/yarn.lock",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/yarn.lock?ref=382019d907e97d3ca3f78eb4f5a592f96dc32a15",
+      "patch": "@@ -267,6 +267,12 @@ agent-base@2:\n     extend \"~3.0.0\"\n     semver \"~5.0.1\"\n \n+agent-base@4, agent-base@^4.2.0, agent-base@~4.2.0:\n+  version \"4.2.1\"\n+  resolved \"https://registry.yarnpkg.com/agent-base/-/agent-base-4.2.1.tgz#d89e5999f797875674c07d87f260fc41e83e8ca9\"\n+  dependencies:\n+    es6-promisify \"^5.0.0\"\n+\n agent-base@^4.1.0:\n   version \"4.2.0\"\n   resolved \"https://registry.yarnpkg.com/agent-base/-/agent-base-4.2.0.tgz#9838b5c3392b962bad031e6a4c5e1024abec45ce\"\n@@ -2959,7 +2965,7 @@ defined@^1.0.0:\n   version \"1.0.0\"\n   resolved \"https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693\"\n \n-degenerator@~1.0.2:\n+degenerator@^1.0.4, degenerator@~1.0.2:\n   version \"1.0.4\"\n   resolved \"https://registry.yarnpkg.com/degenerator/-/degenerator-1.0.4.tgz#fcf490a37ece266464d9cc431ab98c5819ced095\"\n   dependencies:\n@@ -4290,7 +4296,7 @@ get-stream@^3.0.0:\n   version \"3.0.0\"\n   resolved \"https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14\"\n \n-get-uri@2:\n+get-uri@2, get-uri@^2.0.0:\n   version \"2.0.2\"\n   resolved \"https://registry.yarnpkg.com/get-uri/-/get-uri-2.0.2.tgz#5c795e71326f6ca1286f2fc82575cd2bab2af578\"\n   dependencies:\n@@ -4998,6 +5004,13 @@ http-proxy-agent@1:\n     debug \"2\"\n     extend \"3\"\n \n+http-proxy-agent@^2.1.0:\n+  version \"2.1.0\"\n+  resolved \"https://registry.yarnpkg.com/http-proxy-agent/-/http-proxy-agent-2.1.0.tgz#e4821beef5b2142a2026bd73926fe537631c5405\"\n+  dependencies:\n+    agent-base \"4\"\n+    debug \"3.1.0\"\n+\n http-signature@~1.1.0:\n   version \"1.1.1\"\n   resolved \"https://registry.yarnpkg.com/http-signature/-/http-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf\"\n@@ -5037,7 +5050,7 @@ https-proxy-agent@1:\n     debug \"2\"\n     extend \"3\"\n \n-https-proxy-agent@^2.2.0, https-proxy-agent@^2.2.1:\n+https-proxy-agent@^2.2.1:\n   version \"2.2.1\"\n   resolved \"https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.2.1.tgz#51552970fa04d723e04c56d04178c3f92592bbc0\"\n   dependencies:\n@@ -6943,7 +6956,7 @@ lru-cache@^2.5.0:\n   version \"2.7.3\"\n   resolved \"https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952\"\n \n-lru-cache@^4.0.1, lru-cache@^4.1.1:\n+lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2:\n   version \"4.1.3\"\n   resolved \"https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.3.tgz#a1175cf3496dfc8436c156c334b4955992bce69c\"\n   dependencies:\n@@ -7568,7 +7581,7 @@ neo-async@^2.5.0:\n   version \"2.5.1\"\n   resolved \"https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.1.tgz#acb909e327b1e87ec9ef15f41b8a269512ad41ee\"\n \n-netmask@~1.0.4:\n+netmask@^1.0.6, netmask@~1.0.4:\n   version \"1.0.6\"\n   resolved \"https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35\"\n \n@@ -8210,6 +8223,29 @@ pac-proxy-agent@1:\n     raw-body \"2\"\n     socks-proxy-agent \"2\"\n \n+pac-proxy-agent@^2.0.1:\n+  version \"2.0.2\"\n+  resolved \"https://registry.yarnpkg.com/pac-proxy-agent/-/pac-proxy-agent-2.0.2.tgz#90d9f6730ab0f4d2607dcdcd4d3d641aa26c3896\"\n+  dependencies:\n+    agent-base \"^4.2.0\"\n+    debug \"^3.1.0\"\n+    get-uri \"^2.0.0\"\n+    http-proxy-agent \"^2.1.0\"\n+    https-proxy-agent \"^2.2.1\"\n+    pac-resolver \"^3.0.0\"\n+    raw-body \"^2.2.0\"\n+    socks-proxy-agent \"^3.0.0\"\n+\n+pac-resolver@^3.0.0:\n+  version \"3.0.0\"\n+  resolved \"https://registry.yarnpkg.com/pac-resolver/-/pac-resolver-3.0.0.tgz#6aea30787db0a891704deb7800a722a7615a6f26\"\n+  dependencies:\n+    co \"^4.6.0\"\n+    degenerator \"^1.0.4\"\n+    ip \"^1.1.5\"\n+    netmask \"^1.0.6\"\n+    thunkify \"^2.1.2\"\n+\n pac-resolver@~2.0.0:\n   version \"2.0.0\"\n   resolved \"https://registry.yarnpkg.com/pac-resolver/-/pac-resolver-2.0.0.tgz#99b88d2f193fbdeefc1c9a529c1f3260ab5277cd\"\n@@ -9083,6 +9119,23 @@ proxy-agent@2.0.0:\n     pac-proxy-agent \"1\"\n     socks-proxy-agent \"2\"\n \n+proxy-agent@^3.0.1:\n+  version \"3.0.1\"\n+  resolved \"https://registry.yarnpkg.com/proxy-agent/-/proxy-agent-3.0.1.tgz#4fb7b61b1476d0fe8e3a3384d90e2460bbded3f9\"\n+  dependencies:\n+    agent-base \"^4.2.0\"\n+    debug \"^3.1.0\"\n+    http-proxy-agent \"^2.1.0\"\n+    https-proxy-agent \"^2.2.1\"\n+    lru-cache \"^4.1.2\"\n+    pac-proxy-agent \"^2.0.1\"\n+    proxy-from-env \"^1.0.0\"\n+    socks-proxy-agent \"^4.0.1\"\n+\n+proxy-from-env@^1.0.0:\n+  version \"1.0.0\"\n+  resolved \"https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.0.0.tgz#33c50398f70ea7eb96d21f7b817630a55791c7ee\"\n+\n prr@~1.0.1:\n   version \"1.0.1\"\n   resolved \"https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476\"\n@@ -9337,7 +9390,7 @@ range-parser@~1.2.0:\n   version \"1.2.0\"\n   resolved \"https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e\"\n \n-raw-body@2, raw-body@2.3.3:\n+raw-body@2, raw-body@2.3.3, raw-body@^2.2.0:\n   version \"2.3.3\"\n   resolved \"https://registry.yarnpkg.com/raw-body/-/raw-body-2.3.3.tgz#1b324ece6b5706e153855bc1148c65bb7f6ea0c3\"\n   dependencies:\n@@ -10420,6 +10473,10 @@ smart-buffer@^1.0.13, smart-buffer@^1.0.4:\n   version \"1.1.15\"\n   resolved \"https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-1.1.15.tgz#7f114b5b65fab3e2a35aa775bb12f0d1c649bf16\"\n \n+smart-buffer@^4.0.1:\n+  version \"4.0.1\"\n+  resolved \"https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.0.1.tgz#07ea1ca8d4db24eb4cac86537d7d18995221ace3\"\n+\n smartquotes@~2.3.1:\n   version \"2.3.1\"\n   resolved \"https://registry.yarnpkg.com/smartquotes/-/smartquotes-2.3.1.tgz#01ebb595d6c7a9e24d90e8cb95c17d0e1af49407\"\n@@ -10482,20 +10539,41 @@ socks-proxy-agent@2:\n     extend \"3\"\n     socks \"~1.1.5\"\n \n+socks-proxy-agent@^3.0.0:\n+  version \"3.0.1\"\n+  resolved \"https://registry.yarnpkg.com/socks-proxy-agent/-/socks-proxy-agent-3.0.1.tgz#2eae7cf8e2a82d34565761539a7f9718c5617659\"\n+  dependencies:\n+    agent-base \"^4.1.0\"\n+    socks \"^1.1.10\"\n+\n+socks-proxy-agent@^4.0.1:\n+  version \"4.0.1\"\n+  resolved \"https://registry.yarnpkg.com/socks-proxy-agent/-/socks-proxy-agent-4.0.1.tgz#5936bf8b707a993079c6f37db2091821bffa6473\"\n+  dependencies:\n+    agent-base \"~4.2.0\"\n+    socks \"~2.2.0\"\n+\n socks@1.1.9:\n   version \"1.1.9\"\n   resolved \"https://registry.yarnpkg.com/socks/-/socks-1.1.9.tgz#628d7e4d04912435445ac0b6e459376cb3e6d691\"\n   dependencies:\n     ip \"^1.1.2\"\n     smart-buffer \"^1.0.4\"\n \n-socks@~1.1.5:\n+socks@^1.1.10, socks@~1.1.5:\n   version \"1.1.10\"\n   resolved \"https://registry.yarnpkg.com/socks/-/socks-1.1.10.tgz#5b8b7fc7c8f341c53ed056e929b7bf4de8ba7b5a\"\n   dependencies:\n     ip \"^1.1.4\"\n     smart-buffer \"^1.0.13\"\n \n+socks@~2.2.0:\n+  version \"2.2.1\"\n+  resolved \"https://registry.yarnpkg.com/socks/-/socks-2.2.1.tgz#68ad678b3642fbc5d99c64c165bc561eab0215f9\"\n+  dependencies:\n+    ip \"^1.1.5\"\n+    smart-buffer \"^4.0.1\"\n+\n sort-keys@^1.0.0:\n   version \"1.1.2\"\n   resolved \"https://registry.yarnpkg.com/sort-keys/-/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad\"\n@@ -11053,7 +11131,7 @@ through@2, \"through@>=2.2.7 <3\", through@^2.3.6, through@~2.3, through@~2.3.1:\n   version \"2.3.8\"\n   resolved \"https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5\"\n \n-thunkify@~2.1.1:\n+thunkify@^2.1.2, thunkify@~2.1.1:\n   version \"2.1.2\"\n   resolved \"https://registry.yarnpkg.com/thunkify/-/thunkify-2.1.2.tgz#faa0e9d230c51acc95ca13a361ac05ca7e04553d\"\n "
+    }
+  ]
+}
