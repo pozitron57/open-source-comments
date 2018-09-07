@@ -1,0 +1,98 @@
+{
+  "sha": "96e4116d600f6b4dcca85695fe9c5ec98ce83ac5",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjk2ZTQxMTZkNjAwZjZiNGRjY2E4NTY5NWZlOWM1ZWM5OGNlODNhYzU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-09-07T07:43:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-09-07T07:43:34Z"
+    },
+    "message": "fix typo in comment",
+    "tree": {
+      "sha": "257f8f1a47624b0e561385c8444f1ff385294a24",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/257f8f1a47624b0e561385c8444f1ff385294a24"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/96e4116d600f6b4dcca85695fe9c5ec98ce83ac5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/96e4116d600f6b4dcca85695fe9c5ec98ce83ac5",
+  "html_url": "https://github.com/umputun/remark/commit/96e4116d600f6b4dcca85695fe9c5ec98ce83ac5",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/96e4116d600f6b4dcca85695fe9c5ec98ce83ac5/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "93347df19020d551594e8a856015aed930dbd0a4",
+      "url": "https://api.github.com/repos/umputun/remark/commits/93347df19020d551594e8a856015aed930dbd0a4",
+      "html_url": "https://github.com/umputun/remark/commit/93347df19020d551594e8a856015aed930dbd0a4"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0eb8e157cb410b2f247d0571e9978e8f255ef2aa",
+      "filename": "backend/app/cmd/cmd.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/96e4116d600f6b4dcca85695fe9c5ec98ce83ac5/backend/app/cmd/cmd.go",
+      "raw_url": "https://github.com/umputun/remark/raw/96e4116d600f6b4dcca85695fe9c5ec98ce83ac5/backend/app/cmd/cmd.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/cmd.go?ref=96e4116d600f6b4dcca85695fe9c5ec98ce83ac5",
+      "patch": "@@ -48,7 +48,7 @@ type fileParser struct {\n // parse apply template and also concat path and file. In case if file contains path separator path will be ignored\n func (p *fileParser) parse(now time.Time) (string, error) {\n \n-\t// file/location paramaters my have template masks\n+\t// file/location parameters my have template masks\n \tfileTemplate := struct {\n \t\tYYYYMMDD string\n \t\tYYYY     string"
+    }
+  ]
+}
