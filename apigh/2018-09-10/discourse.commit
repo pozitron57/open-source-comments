@@ -1,0 +1,127 @@
+{
+  "sha": "1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxZDQxZjNjM2ZiOGEyYWJlOTFlYzlhZjdiN2QzN2UyYTBlODBlOTk3",
+  "commit": {
+    "author": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2018-09-10T16:26:04Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-09-10T16:26:04Z"
+    },
+    "message": "Merge pull request #6380 from discourse/rake-destroy-sub-category\n\nFIX: Allow `rake destroy:topics` to delete topics in sub-categories",
+    "tree": {
+      "sha": "626746b5bc2009681a9bf7f45e4aadafa0dc2483",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/626746b5bc2009681a9bf7f45e4aadafa0dc2483"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJblpscCRBK7hj4Ov3rIwAAdHIIAGqlWPbSaM2VoiBeb3aB2mXG\nUyvkERJJEuKh7z+d0nhZfA0TdxugG+vUrNIsvmDh5Fx0PaiKivUL8uY/w7pIJTyD\nrVrDFx22vW49R44Z+K0w6IUQrJsm3G7UBzT3tPc1hJq7p0Y2YypBKhg70Um/Bksj\nH0SpH9cEGU9iE7pxjQ7eVTF3tl7BPS1V44kad+Tkymh+vCj0DygBj4ME/otpWONL\neFYp/t/MTTmgL0bRyDg2tzz4ztMPuP8a+AEqg+T8/jMwtF51EQZrjQTEBH0sVvWY\nztJU1hAE6K/jYbxSEyX768qNP62tumP4PD8ij1h1xoDIewN5gXqbiR3Wt1JeBGk=\n=PS30\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 626746b5bc2009681a9bf7f45e4aadafa0dc2483\nparent 2b7e50cab8317b6e9935c284cf68326fe965a2d4\nparent 84fc7abb73acd7bb8bf936f2b87b4eec0e404359\nauthor Blake Erickson <o.blakeerickson@gmail.com> 1536596764 -0600\ncommitter GitHub <noreply@github.com> 1536596764 -0600\n\nMerge pull request #6380 from discourse/rake-destroy-sub-category\n\nFIX: Allow `rake destroy:topics` to delete topics in sub-categories"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+  "html_url": "https://github.com/discourse/discourse/commit/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/comments",
+  "author": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2b7e50cab8317b6e9935c284cf68326fe965a2d4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/2b7e50cab8317b6e9935c284cf68326fe965a2d4",
+      "html_url": "https://github.com/discourse/discourse/commit/2b7e50cab8317b6e9935c284cf68326fe965a2d4"
+    },
+    {
+      "sha": "84fc7abb73acd7bb8bf936f2b87b4eec0e404359",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/84fc7abb73acd7bb8bf936f2b87b4eec0e404359",
+      "html_url": "https://github.com/discourse/discourse/commit/84fc7abb73acd7bb8bf936f2b87b4eec0e404359"
+    }
+  ],
+  "stats": {
+    "total": 34,
+    "additions": 22,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "aa5c8c86bd64439d6dc5d390ec1cbddbc43746a5",
+      "filename": "app/services/destroy_task.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 5,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/app/services/destroy_task.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/app/services/destroy_task.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/destroy_task.rb?ref=1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+      "patch": "@@ -2,12 +2,13 @@\n #   we are capturing all log output into a log array to return\n #   to the rake task rather than using `puts` statements.\n class DestroyTask\n-  def self.destroy_topics(category)\n-    c = Category.find_by_slug(category)\n+  def self.destroy_topics(category, parent_category = nil)\n+    c = Category.find_by_slug(category, parent_category)\n     log = []\n-    return \"A category with the slug: #{category} could not be found\" if c.nil?\n+    descriptive_slug = parent_category ? \"#{parent_category}/#{category}\" : category\n+    return \"A category with the slug: #{descriptive_slug} could not be found\" if c.nil?\n     topics = Topic.where(category_id: c.id, pinned_at: nil).where.not(user_id: -1)\n-    log << \"There are #{topics.count} topics to delete in #{category} category\"\n+    log << \"There are #{topics.count} topics to delete in #{descriptive_slug} category\"\n     topics.each do |topic|\n       log << \"Deleting #{topic.slug}...\"\n       first_post = topic.ordered_posts.first\n@@ -24,7 +25,7 @@ def self.destroy_topics_all_categories\n     categories = Category.all\n     log = []\n     categories.each do |c|\n-      log << destroy_topics(c.slug)\n+      log << destroy_topics(c.slug, c.parent_category&.slug)\n     end\n     log\n   end"
+    },
+    {
+      "sha": "ffcf829df47d9a3821c9529cd874dc3406c9b31a",
+      "filename": "lib/tasks/destroy.rake",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/lib/tasks/destroy.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/lib/tasks/destroy.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/destroy.rake?ref=1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+      "patch": "@@ -2,10 +2,12 @@\n #   content and users from your site, but keeping your site settings,\n #   theme, and category structure.\n desc \"Remove all topics in a category\"\n-task \"destroy:topics\", [:category] => :environment do |t, args|\n+task \"destroy:topics\", [:category, :parent_category] => :environment do |t, args|\n   category = args[:category]\n-  puts \"Going to delete all topics in the #{category} category\"\n-  puts log = DestroyTask.destroy_topics(category)\n+  parent_category = args[:parent_category]\n+  descriptive_slug = parent_category ? \"#{parent_category}/#{category}\" : category\n+  puts \"Going to delete all topics in the #{descriptive_slug} category\"\n+  puts log = DestroyTask.destroy_topics(category, parent_category)\n end\n \n desc \"Remove all topics in all categories\""
+    },
+    {
+      "sha": "697dd6b1faebe1890909a80925558a00db20f3cd",
+      "filename": "spec/services/destroy_task_spec.rb",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 4,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/spec/services/destroy_task_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997/spec/services/destroy_task_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/destroy_task_spec.rb?ref=1d41f3c3fb8a2abe91ec9af7b7d37e2a0e80e997",
+      "patch": "@@ -9,11 +9,18 @@\n     let!(:c2) { Fabricate(:category) }\n     let!(:t2) { Fabricate(:topic, category: c2) }\n     let!(:p2) { Fabricate(:post, topic: t2) }\n+    let!(:sc) { Fabricate(:category, parent_category: c) }\n+    let!(:t3) { Fabricate(:topic, category: sc) }\n+    let!(:p3) { Fabricate(:post, topic: t3) }\n \n     it 'destroys all topics in a category' do\n-      before_count = Topic.where(category_id: c.id).count\n-      DestroyTask.destroy_topics(c.slug)\n-      expect(Topic.where(category_id: c.id).count).to eq before_count - 1\n+      expect { DestroyTask.destroy_topics(c.slug) }\n+        .to change { Topic.where(category_id: c.id).count }.by (-1)\n+    end\n+\n+    it 'destroys all topics in a sub category' do\n+      expect { DestroyTask.destroy_topics(sc.slug, c.slug) }\n+        .to change { Topic.where(category_id: sc.id).count }.by(-1)\n     end\n \n     it \"doesn't destroy system topics\" do\n@@ -23,7 +30,7 @@\n \n     it 'destroys topics in all categories' do\n       DestroyTask.destroy_topics_all_categories\n-      expect(Post.where(topic_id: [t.id, t2.id]).count).to eq 0\n+      expect(Post.where(topic_id: [t.id, t2.id, t3.id]).count).to eq 0\n     end\n   end\n "
+    }
+  ]
+}
