@@ -1,0 +1,158 @@
+{
+  "sha": "dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmRjNTlmYzlmN2JjOWNhZTQ3MjEyMDE1MTkzNjNiNTc4NGJlZDhmM2M=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-09-12T05:34:36Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-09-12T05:34:36Z"
+    },
+    "message": "adjust test for key store",
+    "tree": {
+      "sha": "111cc8a51db1d3b7fdce0f4e67c87d6953272124",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/111cc8a51db1d3b7fdce0f4e67c87d6953272124"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+  "html_url": "https://github.com/umputun/remark/commit/dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/dc59fc9f7bc9cae4721201519363b5784bed8f3c/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a71907fd8e32e883ec739d4e9618b7c7bc8acf90",
+      "url": "https://api.github.com/repos/umputun/remark/commits/a71907fd8e32e883ec739d4e9618b7c7bc8acf90",
+      "html_url": "https://github.com/umputun/remark/commit/a71907fd8e32e883ec739d4e9618b7c7bc8acf90"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 8,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "4f868e8d3ea5cbf92989b0ed50a9f0ec3b8a19a8",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server.go?ref=dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+      "patch": "@@ -225,7 +225,7 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \t\tSharedSecret:     s.SharedSecret,\n \t\tAuthenticator: auth.Authenticator{\n \t\t\tJWTService:        jwtService,\n-\t\t\tAdminStore:        adminStore,\n+\t\t\tKeyStore:          adminStore,\n \t\t\tProviders:         authProviders,\n \t\t\tDevPasswd:         s.DevPasswd,\n \t\t\tPermissionChecker: dataService,"
+    },
+    {
+      "sha": "dacaf21fdd6659285a99ac1880dfbbce94d581ef",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server_test.go?ref=dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+      "patch": "@@ -45,7 +45,7 @@ func TestServerApp(t *testing.T) {\n \tbody, _ = ioutil.ReadAll(resp.Body)\n \tt.Log(string(body))\n \n-\tassert.Equal(t, \"admin@demo.remark42.com\", app.restSrv.Authenticator.AdminStore.Email(\"\"), \"default admin email\")\n+\tassert.Equal(t, \"admin@demo.remark42.com\", app.dataService.AdminStore.Email(\"\"), \"default admin email\")\n \n \tapp.Wait()\n }"
+    },
+    {
+      "sha": "c192bd943c398c667f30238295a5077f7b4e48bd",
+      "filename": "backend/app/rest/api/migrator_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/api/migrator_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/api/migrator_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/migrator_test.go?ref=dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+      "patch": "@@ -165,7 +165,7 @@ func prepImportSrv(t *testing.T) (svc *Migrator, ds *service.DataStore, ts *http\n \ta := auth.Authenticator{\n \t\tDevPasswd:  \"password\",\n \t\tProviders:  nil,\n-\t\tAdminStore: adminStore,\n+\t\tKeyStore:   adminStore,\n \t\tJWTService: auth.NewJWT(adminStore, false, time.Minute, time.Hour),\n \t}\n \troutes := svc.withRoutes(chi.NewRouter().With(a.Auth(true)).With(a.AdminOnly))"
+    },
+    {
+      "sha": "8717b50e37e47952deb0fbef117937a8a3f3bd4c",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/api/rest_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/api/rest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_test.go?ref=dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+      "patch": "@@ -104,7 +104,7 @@ func prep(t *testing.T) (srv *Rest, ts *httptest.Server) {\n \t\tAuthenticator: auth.Authenticator{\n \t\t\tDevPasswd:  \"password\",\n \t\t\tProviders:  nil,\n-\t\t\tAdminStore: adminStore,\n+\t\t\tKeyStore:   adminStore,\n \t\t\tJWTService: auth.NewJWT(adminStore, false, time.Minute, time.Hour),\n \t\t},\n \t\tCache:            &cache.Nop{},"
+    },
+    {
+      "sha": "61b0e35cff445964b28cb8ebbf4b05d7aef9e384",
+      "filename": "backend/app/rest/auth/auth.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/auth/auth.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/auth/auth.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/auth/auth.go?ref=dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+      "patch": "@@ -15,7 +15,7 @@ import (\n type Authenticator struct {\n \tJWTService        *JWT\n \tProviders         []Provider\n-\tKeysStore         KeyStore\n+\tKeyStore          KeyStore\n \tDevPasswd         string\n \tPermissionChecker PermissionChecker\n }\n@@ -116,14 +116,14 @@ func (a *Authenticator) Auth(reqAuth bool) func(http.Handler) http.Handler {\n }\n \n func (a *Authenticator) checkSecretKey(r *http.Request) bool {\n-\tif a.KeysStore == nil {\n+\tif a.KeyStore == nil {\n \t\treturn false\n \t}\n \n \tsiteID := r.URL.Query().Get(\"site\")\n \tsecret := r.URL.Query().Get(\"secret\")\n \n-\tskey, err := a.KeysStore.Key(siteID)\n+\tskey, err := a.KeyStore.Key(siteID)\n \tif err != nil {\n \t\treturn false\n \t}"
+    },
+    {
+      "sha": "7b901835c18d152d14a3842b178da5a6b6f08f69",
+      "filename": "backend/app/rest/auth/auth_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/auth/auth_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dc59fc9f7bc9cae4721201519363b5784bed8f3c/backend/app/rest/auth/auth_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/auth/auth_test.go?ref=dc59fc9f7bc9cae4721201519363b5784bed8f3c",
+      "patch": "@@ -223,7 +223,7 @@ func TestAdminRequired(t *testing.T) {\n }\n \n func TestAuthWithSecret(t *testing.T) {\n-\ta := Authenticator{DevPasswd: \"123456\", KeysStore: admin.NewStaticKeyStore(\"secretkey\")}\n+\ta := Authenticator{DevPasswd: \"123456\", KeyStore: admin.NewStaticKeyStore(\"secretkey\")}\n \trouter := chi.NewRouter()\n \trouter.With(a.Auth(true), a.AdminOnly).Get(\"/auth\", func(w http.ResponseWriter, r *http.Request) {\n \t\tw.WriteHeader(201)"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "sha": "26bd67a865563a071e7ae911b3dc74d6e4258753",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyNmJkNjdhODY1NTYzYTA3MWU3YWU5MTFiM2RjNzRkNmU0MjU4NzUz",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-09-12T15:43:21Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-09-12T16:52:58Z"
+    },
+    "message": "DEV: Add travis_fold statements to docker_test",
+    "tree": {
+      "sha": "3e9a378b57d1a64950db250e8e2fea8f7cd74288",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3e9a378b57d1a64950db250e8e2fea8f7cd74288"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/26bd67a865563a071e7ae911b3dc74d6e4258753",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/26bd67a865563a071e7ae911b3dc74d6e4258753",
+  "html_url": "https://github.com/discourse/discourse/commit/26bd67a865563a071e7ae911b3dc74d6e4258753",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/26bd67a865563a071e7ae911b3dc74d6e4258753/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "24c55bd61314dec667bcbb4cb148d812cd526c57",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/24c55bd61314dec667bcbb4cb148d812cd526c57",
+      "html_url": "https://github.com/discourse/discourse/commit/24c55bd61314dec667bcbb4cb148d812cd526c57"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 18,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "a92c5529ed774ec973712a357f25f5fc7ee44808",
+      "filename": "lib/tasks/docker.rake",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/26bd67a865563a071e7ae911b3dc74d6e4258753/lib/tasks/docker.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/26bd67a865563a071e7ae911b3dc74d6e4258753/lib/tasks/docker.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/docker.rake?ref=26bd67a865563a071e7ae911b3dc74d6e4258753",
+      "patch": "@@ -39,6 +39,7 @@ task 'docker:test' do\n   begin\n     @good = true\n     unless ENV['SKIP_LINT']\n+      puts \"travis_fold:start:lint\" if ENV[\"TRAVIS\"]\n       puts \"Running linters/prettyfiers\"\n       puts \"eslint #{`yarn eslint -v`}\"\n       puts \"prettier #{`yarn prettier -v`}\"\n@@ -64,9 +65,11 @@ task 'docker:test' do\n           @good &&= run_or_fail('yarn prettier --list-different \"plugins/**/*.scss\" \"plugins/**/*.es6\"')\n         end\n       end\n+      puts \"travis_fold:end:lint\" if ENV[\"TRAVIS\"]\n     end\n \n     unless ENV['SKIP_TESTS']\n+      puts \"travis_fold:start:prepare_tests\" if ENV[\"TRAVIS\"]\n       puts \"Cleaning up old test tmp data in tmp/test_data\"\n       `rm -fr tmp/test_data && mkdir -p tmp/test_data/redis && mkdir tmp/test_data/pg`\n \n@@ -94,8 +97,10 @@ task 'docker:test' do\n \n       @good &&= run_or_fail(\"bundle exec rake db:migrate\")\n \n-      unless ENV[\"JS_ONLY\"]\n+      puts \"travis_fold:end:prepare_tests\" if ENV[\"TRAVIS\"]\n \n+      unless ENV[\"JS_ONLY\"]\n+        puts \"travis_fold:start:ruby_tests\" if ENV[\"TRAVIS\"]\n         unless ENV[\"SKIP_CORE\"]\n           params = []\n           if ENV[\"BISECT\"]\n@@ -114,10 +119,11 @@ task 'docker:test' do\n             @good &&= run_or_fail(\"bundle exec rake plugin:spec\")\n           end\n         end\n-\n+        puts \"travis_fold:end:ruby_tests\" if ENV[\"TRAVIS\"]\n       end\n \n       unless ENV[\"RUBY_ONLY\"]\n+        puts \"travis_fold:start:js_tests\" if ENV[\"TRAVIS\"]\n         unless ENV[\"SKIP_CORE\"]\n           @good &&= run_or_fail(\"bundle exec rake qunit:test['600000']\")\n           @good &&= run_or_fail(\"bundle exec rake qunit:test['600000','/wizard/qunit']\")\n@@ -130,7 +136,7 @@ task 'docker:test' do\n             @good &&= run_or_fail(\"bundle exec rake plugin:qunit['*','600000']\")\n           end\n         end\n-\n+        puts \"travis_fold:end:js_tests\" if ENV[\"TRAVIS\"]\n       end\n     end\n "
+    },
+    {
+      "sha": "a8f3a1cf45f735c5318536adce3c8f96c4da91ed",
+      "filename": "script/docker_test.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/26bd67a865563a071e7ae911b3dc74d6e4258753/script/docker_test.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/26bd67a865563a071e7ae911b3dc74d6e4258753/script/docker_test.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/docker_test.rb?ref=26bd67a865563a071e7ae911b3dc74d6e4258753",
+      "patch": "@@ -6,18 +6,27 @@\n # => RUN_SMOKE_TESTS  executes the smoke tests instead of the regular tests from docker.rake\n # See lib/tasks/docker.rake and lib/tasks/smoke_test.rake for more information\n \n+puts \"travis_fold:end:starting_docker_container\" if ENV[\"TRAVIS\"]\n+\n def run_or_fail(command)\n   pid = Process.spawn(command)\n   Process.wait(pid)\n   exit 1 unless $?.exitstatus == 0\n end\n \n unless ENV['NO_UPDATE']\n+  puts \"travis_fold:start:pulling_latest_discourse\" if ENV[\"TRAVIS\"]\n   run_or_fail(\"git pull\")\n \n   checkout = ENV['COMMIT_HASH'] || \"HEAD\"\n   run_or_fail(\"git checkout #{checkout}\")\n+\n+  puts \"travis_fold:end:pulling_latest_discourse\" if ENV[\"TRAVIS\"]\n+  puts \"travis_fold:start:bundle\" if ENV[\"TRAVIS\"]\n+\n   run_or_fail(\"bundle\")\n+\n+  puts \"travis_fold:end:bundle\" if ENV[\"TRAVIS\"]\n end\n \n if ENV['RUN_SMOKE_TESTS']"
+    }
+  ]
+}
