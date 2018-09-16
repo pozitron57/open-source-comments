@@ -1,0 +1,122 @@
+{
+  "sha": "69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NjljYjA4ZDRjMDhjN2I3MmUxMmRmYmVmMmNhM2NmYTVjYTJmMTQ5Nw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-09-14T07:52:54Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-09-14T07:52:54Z"
+    },
+    "message": "Bump versions: 0.6.13-WIP-1 next.",
+    "tree": {
+      "sha": "50e1dac6f478892adb6668ef79da81c1b0b4eb00",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/50e1dac6f478892adb6668ef79da81c1b0b4eb00"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+  "html_url": "https://github.com/debiki/talkyard/commit/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3f99a2c3dc61c05195189d5f066961c87fbc9feb",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/3f99a2c3dc61c05195189d5f066961c87fbc9feb",
+      "html_url": "https://github.com/debiki/talkyard/commit/3f99a2c3dc61c05195189d5f066961c87fbc9feb"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "aaf2a14aa4bbfe531887ea0224cc2651ad9da8b7",
+      "filename": "conf/routes",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497/conf/routes",
+      "raw_url": "https://github.com/debiki/talkyard/raw/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497/conf/routes",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/conf/routes?ref=69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+      "patch": "@@ -285,7 +285,7 @@ GET   /-/load-post              controllers.ViewPageController.loadPost(pageId:\n \n # Don't change the URL on the next line. The /-/assets/<version-number>/ is\n # updated by the deployment script (asset fingerprinting).\n-GET   /-/assets/269/*file       controllers.Assets.at(path = \"/public/res\", file)\n+GET   /-/assets/270/*file       controllers.Assets.at(path = \"/public/res\", file)\n GET   /robots.txt               controllers.Assets.at(path = \"/public\", file = \"robots.txt\")\n \n # These endpoints are linked from embedded comments HTML:  [2WPGKS04]"
+    },
+    {
+      "sha": "c29517dfb6045120fa6097c5404f84bfeea5e10f",
+      "filename": "modules/ed-versions",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-versions?ref=69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+      "patch": "@@ -1 +1 @@\n-Subproject commit c2cc23efb5c59af1021b521d382a9162f734b398\n+Subproject commit c29517dfb6045120fa6097c5404f84bfeea5e10f"
+    },
+    {
+      "sha": "c402a47f054f7c3341499e17439507ca99694f6b",
+      "filename": "version.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497/version.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497/version.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/version.txt?ref=69cb08d4c08c7b72e12dfbef2ca3cfa5ca2f1497",
+      "patch": "@@ -1 +1 @@\n-v0.6.12-WIP-1\n+v0.6.13-WIP-1"
+    }
+  ]
+}

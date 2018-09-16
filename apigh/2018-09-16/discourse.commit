@@ -1,0 +1,98 @@
+{
+  "sha": "2ef16d0719e90b9eaba917c02cf1b0d643485fa2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyZWYxNmQwNzE5ZTkwYjllYWJhOTE3YzAyY2YxYjBkNjQzNDg1ZmEy",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-09-15T00:52:25Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-09-15T00:52:25Z"
+    },
+    "message": "button missing no-text class",
+    "tree": {
+      "sha": "0bd768e7b26dc2757ddb27c4815cda748d9af544",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0bd768e7b26dc2757ddb27c4815cda748d9af544"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2ef16d0719e90b9eaba917c02cf1b0d643485fa2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2ef16d0719e90b9eaba917c02cf1b0d643485fa2",
+  "html_url": "https://github.com/discourse/discourse/commit/2ef16d0719e90b9eaba917c02cf1b0d643485fa2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2ef16d0719e90b9eaba917c02cf1b0d643485fa2/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "526ffc4966debbc3b48efc9896a23514f923cc9d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/526ffc4966debbc3b48efc9896a23514f923cc9d",
+      "html_url": "https://github.com/discourse/discourse/commit/526ffc4966debbc3b48efc9896a23514f923cc9d"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "631119c7ad5d3ee573cbed6f91ca5b6b4855f448",
+      "filename": "app/assets/javascripts/discourse/templates/components/ip-lookup.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/2ef16d0719e90b9eaba917c02cf1b0d643485fa2/app/assets/javascripts/discourse/templates/components/ip-lookup.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/2ef16d0719e90b9eaba917c02cf1b0d643485fa2/app/assets/javascripts/discourse/templates/components/ip-lookup.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/ip-lookup.hbs?ref=2ef16d0719e90b9eaba917c02cf1b0d643485fa2",
+      "patch": "@@ -9,7 +9,7 @@\n     {{#if copied}}\n       <a class=\"btn btn-hover pull-right\">{{d-icon \"copy\"}} {{i18n \"ip_lookup.copied\"}}</a>\n     {{else}}\n-      <a class=\"btn pull-right\" {{action \"copy\"}}>{{d-icon \"copy\"}}</a>\n+      <a class=\"btn pull-right no-text\" {{action \"copy\"}}>{{d-icon \"copy\"}}</a>\n     {{/if}}\n     <h4>{{i18n 'ip_lookup.title'}}</h4>\n     <p class='powered-by'>{{{i18n 'ip_lookup.powered_by'}}}</p>"
+    }
+  ]
+}
