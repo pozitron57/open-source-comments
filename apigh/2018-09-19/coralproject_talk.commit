@@ -1,0 +1,98 @@
+{
+  "sha": "6f3535984c8c9007bc72b24e339fc30bdcf0a1f3",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6NmYzNTM1OTg0YzhjOTAwN2JjNzJiMjRlMzM5ZmMzMGJkY2YwYTFmMw==",
+  "commit": {
+    "author": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2018-09-19T16:22:34Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-09-19T16:22:34Z"
+    },
+    "message": "Add Spanish translations for toxic-comments (#1891)",
+    "tree": {
+      "sha": "bf239740c6965cd5e150e11a2b129630a3f5424d",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/bf239740c6965cd5e150e11a2b129630a3f5424d"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/6f3535984c8c9007bc72b24e339fc30bdcf0a1f3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/6f3535984c8c9007bc72b24e339fc30bdcf0a1f3",
+  "html_url": "https://github.com/coralproject/talk/commit/6f3535984c8c9007bc72b24e339fc30bdcf0a1f3",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/6f3535984c8c9007bc72b24e339fc30bdcf0a1f3/comments",
+  "author": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e3557c1f7ac42efa4ef559642325dbc0a0c42641",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/e3557c1f7ac42efa4ef559642325dbc0a0c42641",
+      "html_url": "https://github.com/coralproject/talk/commit/e3557c1f7ac42efa4ef559642325dbc0a0c42641"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 9,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "0d596e06fecc16e1ded1441db38ceb56d2b3d456",
+      "filename": "plugins/talk-plugin-toxic-comments/client/translations.yml",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 9,
+      "changes": 18,
+      "blob_url": "https://github.com/coralproject/talk/blob/6f3535984c8c9007bc72b24e339fc30bdcf0a1f3/plugins/talk-plugin-toxic-comments/client/translations.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/6f3535984c8c9007bc72b24e339fc30bdcf0a1f3/plugins/talk-plugin-toxic-comments/client/translations.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-toxic-comments/client/translations.yml?ref=6f3535984c8c9007bc72b24e339fc30bdcf0a1f3",
+      "patch": "@@ -71,17 +71,17 @@ de:\n es:\n   error:\n     COMMENT_IS_TOXIC: |\n-      Are you sure? The language in this comment might violate our community guidelines.\n-      You can edit the comment or submit it for moderator review.\n+      ¿Estás seguro? El lenguaje en este comentario puede violar nuestras pautas de la comunidad. \n+      Puede editar el comentario o enviarlo para la revisión del moderador.\n   talk-plugin-toxic-comments:\n-    unlikely: \"Unlikely\"\n-    highly_likely: \"Highly Likely\"\n-    possibly: \"Possibly\"\n-    likely: \"Likely\"\n-    toxic_comment: \"Toxic Comment\"\n+    unlikely: \"Improbable\"\n+    highly_likely: \"Altamente Improbable\"\n+    possibly: \"Posiblemente\"\n+    likely: \"Probable\"\n+    toxic_comment: \"Comentario Tóxico\"\n     still_toxic: |\n-      This edited comment might still violate our community guidelines.\n-      Our moderation team will review your comment shortly.\n+      Este comentario editado aún puede infringir las pautas de nuestra comunidad. \n+      Nuestro equipo de moderación revisará tu comentario en breve.\n   flags:\n     reasons:\n       comment:"
+    }
+  ]
+}
