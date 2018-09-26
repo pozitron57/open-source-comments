@@ -1,0 +1,98 @@
+{
+  "sha": "19c9a6699a7d1e01b6e6220c9971b265adb219bc",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxOWM5YTY2OTlhN2QxZTAxYjZlNjIyMGM5OTcxYjI2NWFkYjIxOWJj",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-09-26T15:04:49Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-09-26T15:04:49Z"
+    },
+    "message": "FIX: Validate auto_close_hours category setting\n\nThis prevents server errors when the value is set too high",
+    "tree": {
+      "sha": "cdb6a6e231fc45b82d38f51f18aa09ed990114ec",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/cdb6a6e231fc45b82d38f51f18aa09ed990114ec"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/19c9a6699a7d1e01b6e6220c9971b265adb219bc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/19c9a6699a7d1e01b6e6220c9971b265adb219bc",
+  "html_url": "https://github.com/discourse/discourse/commit/19c9a6699a7d1e01b6e6220c9971b265adb219bc",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/19c9a6699a7d1e01b6e6220c9971b265adb219bc/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e387adadf84157d564d4aaf97788f8940c3468b2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e387adadf84157d564d4aaf97788f8940c3468b2",
+      "html_url": "https://github.com/discourse/discourse/commit/e387adadf84157d564d4aaf97788f8940c3468b2"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "959fe8e724f8455dcd211a3580db21f535ff5d0e",
+      "filename": "app/models/category.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/19c9a6699a7d1e01b6e6220c9971b265adb219bc/app/models/category.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/19c9a6699a7d1e01b6e6220c9971b265adb219bc/app/models/category.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/category.rb?ref=19c9a6699a7d1e01b6e6220c9971b265adb219bc",
+      "patch": "@@ -50,6 +50,8 @@ class Category < ActiveRecord::Base\n \n   validate :ensure_slug\n \n+  validates :auto_close_hours, numericality: { greater_than: 0, less_than_or_equal_to: 87600 }, allow_nil: true\n+\n   after_create :create_category_definition\n \n   before_save :apply_permissions"
+    }
+  ]
+}
