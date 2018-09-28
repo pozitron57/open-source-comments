@@ -1,0 +1,122 @@
+{
+  "sha": "819f090d6a89dcca4253e4d69777657bde1538ba",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4MTlmMDkwZDZhODlkY2NhNDI1M2U0ZDY5Nzc3NjU3YmRlMTUzOGJh",
+  "commit": {
+    "author": {
+      "name": "Kyle Zhao",
+      "email": "kzhao.sw@gmail.com",
+      "date": "2018-09-28T09:28:33Z"
+    },
+    "committer": {
+      "name": "Sam",
+      "email": "sam.saffron@gmail.com",
+      "date": "2018-09-28T09:28:33Z"
+    },
+    "message": "move large blobs out of `<head>` (#6428)\n\nit unnecessarily bloats the section and increases the payload\r\ndramatically for open graph tags.",
+    "tree": {
+      "sha": "991f61b72bce0f26c93d209ac611fd2eab5fc5af",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/991f61b72bce0f26c93d209ac611fd2eab5fc5af"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/819f090d6a89dcca4253e4d69777657bde1538ba",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/819f090d6a89dcca4253e4d69777657bde1538ba",
+  "html_url": "https://github.com/discourse/discourse/commit/819f090d6a89dcca4253e4d69777657bde1538ba",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/819f090d6a89dcca4253e4d69777657bde1538ba/comments",
+  "author": {
+    "login": "xrav3nz",
+    "id": 6376558,
+    "node_id": "MDQ6VXNlcjYzNzY1NTg=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6376558?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xrav3nz",
+    "html_url": "https://github.com/xrav3nz",
+    "followers_url": "https://api.github.com/users/xrav3nz/followers",
+    "following_url": "https://api.github.com/users/xrav3nz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xrav3nz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xrav3nz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xrav3nz/subscriptions",
+    "organizations_url": "https://api.github.com/users/xrav3nz/orgs",
+    "repos_url": "https://api.github.com/users/xrav3nz/repos",
+    "events_url": "https://api.github.com/users/xrav3nz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xrav3nz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "70d74f8fc17f3e516fd4c8b0623b24446ee62c7b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/70d74f8fc17f3e516fd4c8b0623b24446ee62c7b",
+      "html_url": "https://github.com/discourse/discourse/commit/70d74f8fc17f3e516fd4c8b0623b24446ee62c7b"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 7,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "c95c68af983ccd8304a149692d6c1a69aab010da",
+      "filename": "app/views/layouts/application.html.erb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/819f090d6a89dcca4253e4d69777657bde1538ba/app/views/layouts/application.html.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/819f090d6a89dcca4253e4d69777657bde1538ba/app/views/layouts/application.html.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/views/layouts/application.html.erb?ref=819f090d6a89dcca4253e4d69777657bde1538ba",
+      "patch": "@@ -55,9 +55,6 @@\n     <%= render partial: \"common/discourse_stylesheet\" %>\n     <%= render partial: \"common/special_font_face\" %>\n \n-    <meta id=\"data-preloaded\" data-preloaded=\"<%= preloaded_json %>\">\n-    <%= preload_script \"preload-application-data\" %>\n-\n     <%= yield :head %>\n \n     <%= build_plugin_html 'server:before-head-close' %>\n@@ -107,6 +104,9 @@\n       </form>\n     <% end %>\n \n+    <div class=\"hidden\" id=\"data-preloaded\" data-preloaded=\"<%= preloaded_json %>\">\n+    <%= preload_script \"preload-application-data\" %>\n+\n     <%= yield :data %>\n \n     <%= render :partial => \"common/discourse_javascript\" %>"
+    },
+    {
+      "sha": "d6f80b31c819b85bf521f09b54181453a43d6733",
+      "filename": "spec/requests/categories_controller_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/819f090d6a89dcca4253e4d69777657bde1538ba/spec/requests/categories_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/819f090d6a89dcca4253e4d69777657bde1538ba/spec/requests/categories_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/categories_controller_spec.rb?ref=819f090d6a89dcca4253e4d69777657bde1538ba",
+      "patch": "@@ -32,7 +32,7 @@\n       SiteSetting.categories_topics.times { Fabricate(:topic) }\n       get \"/categories\"\n \n-      expect(response.body).to have_tag(\"meta#data-preloaded\") do |element|\n+      expect(response.body).to have_tag(\"div#data-preloaded\") do |element|\n         json = JSON.parse(element.current_scope.attribute('data-preloaded').value)\n         expect(json['topic_list_latest']).to include(%{\"more_topics_url\":\"/latest\"})\n       end"
+    },
+    {
+      "sha": "7697f083453b159efb62289daccfc52882437211",
+      "filename": "spec/requests/users_controller_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/819f090d6a89dcca4253e4d69777657bde1538ba/spec/requests/users_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/819f090d6a89dcca4253e4d69777657bde1538ba/spec/requests/users_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/users_controller_spec.rb?ref=819f090d6a89dcca4253e4d69777657bde1538ba",
+      "patch": "@@ -190,7 +190,7 @@\n         )\n \n         expect(response.status).to eq(200)\n-        expect(response.body).to have_tag(\"meta#data-preloaded\") do |element|\n+        expect(response.body).to have_tag(\"div#data-preloaded\") do |element|\n           json = JSON.parse(element.current_scope.attribute('data-preloaded').value)\n           expect(json['password_reset']).to include('{\"is_developer\":false,\"admin\":false,\"second_factor_required\":false,\"backup_enabled\":false}')\n         end\n@@ -258,7 +258,7 @@\n \n           get \"/u/password-reset/#{token}\"\n \n-          expect(response.body).to have_tag(\"meta#data-preloaded\") do |element|\n+          expect(response.body).to have_tag(\"div#data-preloaded\") do |element|\n             json = JSON.parse(element.current_scope.attribute('data-preloaded').value)\n             expect(json['password_reset']).to include('{\"is_developer\":false,\"admin\":false,\"second_factor_required\":true,\"backup_enabled\":false}')\n           end\n@@ -2615,7 +2615,7 @@ def post_user\n \n         expect(response.status).to eq(200)\n \n-        expect(response.body).to have_tag(\"meta#data-preloaded\") do |element|\n+        expect(response.body).to have_tag(\"div#data-preloaded\") do |element|\n           json = JSON.parse(element.current_scope.attribute('data-preloaded').value)\n           expect(json['accountCreated']).to include(\n             \"{\\\"message\\\":\\\"#{I18n.t(\"login.activate_email\", email: user.email).gsub!(\"</\", \"<\\\\/\")}\\\",\\\"show_controls\\\":true,\\\"username\\\":\\\"#{user.username}\\\",\\\"email\\\":\\\"#{user.email}\\\"}\""
+    }
+  ]
+}
