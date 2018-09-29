@@ -1,0 +1,98 @@
+{
+  "sha": "dc960e1a823ea1161ea6b0a69ccc4a4283203bb3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkYzk2MGUxYTgyM2VhMTE2MWVhNmIwYTY5Y2NjNGE0MjgzMjAzYmIz",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-09-29T02:33:17Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-09-29T02:33:17Z"
+    },
+    "message": "Make `enable_mobile_theme` a hidden setting\n\nhttps://meta.discourse.org/t/default-mobile-view-formatting-error/98063/3",
+    "tree": {
+      "sha": "2e69f88980088f5a5c135d5cc3b1f5b29a8e4b8b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/2e69f88980088f5a5c135d5cc3b1f5b29a8e4b8b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/dc960e1a823ea1161ea6b0a69ccc4a4283203bb3",
+    "comment_count": 2,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/dc960e1a823ea1161ea6b0a69ccc4a4283203bb3",
+  "html_url": "https://github.com/discourse/discourse/commit/dc960e1a823ea1161ea6b0a69ccc4a4283203bb3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/dc960e1a823ea1161ea6b0a69ccc4a4283203bb3/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "819f090d6a89dcca4253e4d69777657bde1538ba",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/819f090d6a89dcca4253e4d69777657bde1538ba",
+      "html_url": "https://github.com/discourse/discourse/commit/819f090d6a89dcca4253e4d69777657bde1538ba"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "4443529d79d9da039c5f8ec3f44ace8ac6d03a30",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/dc960e1a823ea1161ea6b0a69ccc4a4283203bb3/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/dc960e1a823ea1161ea6b0a69ccc4a4283203bb3/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=dc960e1a823ea1161ea6b0a69ccc4a4283203bb3",
+      "patch": "@@ -191,6 +191,7 @@ basic:\n   enable_mobile_theme:\n     client: true\n     default: true\n+    hidden: true\n   default_theme_id:\n     default: -1\n     hidden: true"
+    }
+  ]
+}
