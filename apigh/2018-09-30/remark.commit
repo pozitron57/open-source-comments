@@ -1,0 +1,110 @@
+{
+  "sha": "06baa07da4746645a00c9880368af85946160609",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjA2YmFhMDdkYTQ3NDY2NDVhMDBjOTg4MDM2OGFmODU5NDYxNjA2MDk=",
+  "commit": {
+    "author": {
+      "name": "igoradamenko",
+      "email": "mail@igoradamenko.com",
+      "date": "2018-09-29T20:14:20Z"
+    },
+    "committer": {
+      "name": "igoradamenko",
+      "email": "mail@igoradamenko.com",
+      "date": "2018-09-29T20:14:20Z"
+    },
+    "message": "fix frontend build issues",
+    "tree": {
+      "sha": "0f1faa3c9d910e58ca77afd1724795d603044330",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/0f1faa3c9d910e58ca77afd1724795d603044330"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/06baa07da4746645a00c9880368af85946160609",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/06baa07da4746645a00c9880368af85946160609",
+  "html_url": "https://github.com/umputun/remark/commit/06baa07da4746645a00c9880368af85946160609",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/06baa07da4746645a00c9880368af85946160609/comments",
+  "author": {
+    "login": "igoradamenko",
+    "id": 6537798,
+    "node_id": "MDQ6VXNlcjY1Mzc3OTg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6537798?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igoradamenko",
+    "html_url": "https://github.com/igoradamenko",
+    "followers_url": "https://api.github.com/users/igoradamenko/followers",
+    "following_url": "https://api.github.com/users/igoradamenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igoradamenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igoradamenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igoradamenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/igoradamenko/orgs",
+    "repos_url": "https://api.github.com/users/igoradamenko/repos",
+    "events_url": "https://api.github.com/users/igoradamenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igoradamenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igoradamenko",
+    "id": 6537798,
+    "node_id": "MDQ6VXNlcjY1Mzc3OTg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6537798?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igoradamenko",
+    "html_url": "https://github.com/igoradamenko",
+    "followers_url": "https://api.github.com/users/igoradamenko/followers",
+    "following_url": "https://api.github.com/users/igoradamenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igoradamenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igoradamenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igoradamenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/igoradamenko/orgs",
+    "repos_url": "https://api.github.com/users/igoradamenko/repos",
+    "events_url": "https://api.github.com/users/igoradamenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igoradamenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ab6bfff32f6a95da883c88e8ed6715895a9a42a5",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ab6bfff32f6a95da883c88e8ed6715895a9a42a5",
+      "html_url": "https://github.com/umputun/remark/commit/ab6bfff32f6a95da883c88e8ed6715895a9a42a5"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "059baae0d4b5887a80a44908c75cf7a911d5b9ee",
+      "filename": "web/app/components/user-info/user-info.jsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/06baa07da4746645a00c9880368af85946160609/web/app/components/user-info/user-info.jsx",
+      "raw_url": "https://github.com/umputun/remark/raw/06baa07da4746645a00c9880368af85946160609/web/app/components/user-info/user-info.jsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/components/user-info/user-info.jsx?ref=06baa07da4746645a00c9880368af85946160609",
+      "patch": "@@ -4,6 +4,7 @@ import { connect } from 'preact-redux';\n \n import api from 'common/api';\n import LastCommentsList from './last-comments-list';\n+import { getHandleClickProps } from 'common/accessibility';\n import Avatar from 'components/avatar-icon';\n import { fetchComments, completeFetchComments } from './user-info.actions';\n import { getUserComments, getIsLoadingUserComments } from './user-info.getters';"
+    },
+    {
+      "sha": "74f0a2722e8065bdb1ff5cf0e095165017f86523",
+      "filename": "web/app/remark.js",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark/blob/06baa07da4746645a00c9880368af85946160609/web/app/remark.js",
+      "raw_url": "https://github.com/umputun/remark/raw/06baa07da4746645a00c9880368af85946160609/web/app/remark.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/remark.js?ref=06baa07da4746645a00c9880368af85946160609",
+      "patch": "@@ -50,6 +50,11 @@ function init() {\n       picture: params.picture,\n     };\n     store.set('user', user);\n+    const onClose = () => {\n+      if (window.parent) {\n+        window.parent.postMessage(JSON.stringify({ isUserInfoShown: false }), '*');\n+      }\n+    };\n     render(\n       <div id={NODE_ID}>\n         <div className=\"root root_user-info\">"
+    }
+  ]
+}
