@@ -1,0 +1,139 @@
+{
+  "sha": "f6271a04a27d076f0902a617d00d61320d391f5f",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTpmNjI3MWEwNGEyN2QwNzZmMDkwMmE2MTdkMDBkNjEzMjBkMzkxZjVm",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2018-10-01T04:53:24Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-10-01T04:53:24Z"
+    },
+    "message": "Merge pull request #485 from gloomy-ghost/bleach\n\n Use bleach to sanitize HTML",
+    "tree": {
+      "sha": "c91f71dcdf5a93f817d80e8bf4f83e93b57712e1",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/c91f71dcdf5a93f817d80e8bf4f83e93b57712e1"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/f6271a04a27d076f0902a617d00d61320d391f5f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbsahECRBK7hj4Ov3rIwAAdHIIACjTM75qCw90P9AjhtLhPMhI\nsmAqpGrHLY+boubvJtV5fN7/I+NvRWJxs3ZMgLOPdzRfrEeMq4ieqO91GK6KpdVZ\nTDuXBMADTAM42RPYLFcEg8/5ceBkZrdSoa9om0GwT2GYb7YRv2w4sS3WaNs2eCvN\nryJjXQexCmnx4vfTUGEu8U6CGcRkYkdLctLnjtqknnKdV7c8GOeh13+D4j72FC/x\nI2QBXbvrN8gEtGko7miGipeAY12PSXO+X1Uke/P7n6QBDeLOHF2ijKAeixh+fmQ2\n/En++M+MZ0AofCkB1y+iNTheXRt5dI66I5TTC2pIrNqmjbJWhfgoPci2Tkiqatc=\n=9Ydm\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c91f71dcdf5a93f817d80e8bf4f83e93b57712e1\nparent 8e37a88d6d2b5fa3485f9aff39ff4b452ce2f578\nparent 13426ca43c44a8a14f5d26b5fcad26b518383fc6\nauthor Jelmer Vernooĳ <jelmer@jelmer.uk> 1538369604 +0100\ncommitter GitHub <noreply@github.com> 1538369604 +0100\n\nMerge pull request #485 from gloomy-ghost/bleach\n\n Use bleach to sanitize HTML"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/f6271a04a27d076f0902a617d00d61320d391f5f",
+  "html_url": "https://github.com/posativ/isso/commit/f6271a04a27d076f0902a617d00d61320d391f5f",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/f6271a04a27d076f0902a617d00d61320d391f5f/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8e37a88d6d2b5fa3485f9aff39ff4b452ce2f578",
+      "url": "https://api.github.com/repos/posativ/isso/commits/8e37a88d6d2b5fa3485f9aff39ff4b452ce2f578",
+      "html_url": "https://github.com/posativ/isso/commit/8e37a88d6d2b5fa3485f9aff39ff4b452ce2f578"
+    },
+    {
+      "sha": "13426ca43c44a8a14f5d26b5fcad26b518383fc6",
+      "url": "https://api.github.com/repos/posativ/isso/commits/13426ca43c44a8a14f5d26b5fcad26b518383fc6",
+      "html_url": "https://github.com/posativ/isso/commit/13426ca43c44a8a14f5d26b5fcad26b518383fc6"
+    }
+  ],
+  "stats": {
+    "total": 71,
+    "additions": 31,
+    "deletions": 40
+  },
+  "files": [
+    {
+      "sha": "6eb037b8e46d66f6d68ca8b4face67bceb3a3b8d",
+      "filename": "isso/tests/test_html.py",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 5,
+      "changes": 8,
+      "blob_url": "https://github.com/posativ/isso/blob/f6271a04a27d076f0902a617d00d61320d391f5f/isso/tests/test_html.py",
+      "raw_url": "https://github.com/posativ/isso/raw/f6271a04a27d076f0902a617d00d61320d391f5f/isso/tests/test_html.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/tests/test_html.py?ref=f6271a04a27d076f0902a617d00d61320d391f5f",
+      "patch": "@@ -59,7 +59,6 @@ def test_github_flavoured_markdown(self):\n             print(\"Hello, World\")\n             </code></pre>\"\"\")\n \n-    @unittest.skipIf(html.HTML5LIB_VERSION <= html.HTML5LIB_SIMPLETREE, \"backport\")\n     def test_sanitizer(self):\n         sanitizer = html.Sanitizer(elements=[], attributes=[])\n         examples = [\n@@ -73,19 +72,18 @@ def test_sanitizer(self):\n \n         for (input, expected) in examples:\n             if isinstance(expected, list):\n-                self.assertIn(html.sanitize(sanitizer, input), expected)\n+                self.assertIn(sanitizer.sanitize(input), expected)\n             else:\n-                self.assertEqual(html.sanitize(sanitizer, input), expected)\n+                self.assertEqual(sanitizer.sanitize(input), expected)\n \n-    @unittest.skipIf(html.HTML5LIB_VERSION <= html.HTML5LIB_SIMPLETREE, \"backport\")\n     def test_sanitizer_extensions(self):\n         sanitizer = html.Sanitizer(elements=[\"img\"], attributes=[\"src\"])\n         examples = [\n             ('<img src=\"cat.gif\" />', '<img src=\"cat.gif\">'),\n             ('<script src=\"doge.js\"></script>', '')]\n \n         for (input, expected) in examples:\n-            self.assertEqual(html.sanitize(sanitizer, input), expected)\n+            self.assertEqual(sanitizer.sanitize(input), expected)\n \n     def test_render(self):\n         conf = config.new({"
+    },
+    {
+      "sha": "1235b8ab340640caba54ea28b0abfac75504a585",
+      "filename": "isso/utils/html.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 32,
+      "changes": 56,
+      "blob_url": "https://github.com/posativ/isso/blob/f6271a04a27d076f0902a617d00d61320d391f5f/isso/utils/html.py",
+      "raw_url": "https://github.com/posativ/isso/raw/f6271a04a27d076f0902a617d00d61320d391f5f/isso/utils/html.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/utils/html.py?ref=f6271a04a27d076f0902a617d00d61320d391f5f",
+      "patch": "@@ -6,61 +6,53 @@\n \n from distutils.version import LooseVersion as Version\n \n-HTML5LIB_VERSION = Version(pkg_resources.get_distribution(\"html5lib\").version)\n-HTML5LIB_SIMPLETREE = Version(\"0.95\")\n-\n-import html5lib\n-from html5lib.sanitizer import HTMLSanitizer\n-from html5lib.serializer import HTMLSerializer\n-\n+import bleach\n import misaka\n \n \n-def Sanitizer(elements, attributes):\n-\n-    class Inner(HTMLSanitizer):\n+class Sanitizer(object):\n \n+    def __init__(self, elements, attributes):\n         # attributes found in Sundown's HTML serializer [1]\n         # except for <img> tag,\n         # because images are not generated anyways.\n         #\n         # [1] https://github.com/vmg/sundown/blob/master/html/html.c\n-        allowed_elements = [\"a\", \"p\", \"hr\", \"br\", \"ol\", \"ul\", \"li\",\n+        self.elements = [\"a\", \"p\", \"hr\", \"br\", \"ol\", \"ul\", \"li\",\n                             \"pre\", \"code\", \"blockquote\",\n                             \"del\", \"ins\", \"strong\", \"em\",\n                             \"h1\", \"h2\", \"h3\", \"h4\", \"h5\", \"h6\",\n                             \"table\", \"thead\", \"tbody\", \"th\", \"td\"] + elements\n \n         # href for <a> and align for <table>\n-        allowed_attributes = [\"align\", \"href\"] + attributes\n-\n-        # remove disallowed tokens from the output\n-        def disallowed_token(self, token, token_type):\n-            return None\n+        self.attributes = [\"align\", \"href\"] + attributes\n \n-    return Inner\n \n \n-def sanitize(tokenizer, document):\n+    def sanitize(self, text):\n+        clean_html = bleach.clean(text, tags=self.elements,\n+            attributes=self.attributes, strip=True)\n \n-    parser = html5lib.HTMLParser(tokenizer=tokenizer)\n-    domtree = parser.parseFragment(document)\n+        def set_links(attrs, new=False):\n+            href_key = (None, u'href')\n \n-    if HTML5LIB_VERSION > HTML5LIB_SIMPLETREE:\n-        builder = \"etree\"\n+            if href_key not in attrs:\n+                return attrs\n+            if attrs[href_key].startswith(u'mailto:'):\n+                return attrs\n \n-        for link in domtree.findall(\".//{http://www.w3.org/1999/xhtml}a\"):\n-            if link.get('href', None):\n-                link.set(\"rel\", \"nofollow noopener\")\n+            rel_key = (None, u'rel')\n+            rel_values = [val for val in attrs.get(rel_key, u'').split(u' ') if val]\n \n-    else:\n-        builder = \"simpletree\"\n+            for value in [u'nofollow', u'noopener']:\n+                if value not in [rel_val.lower() for rel_val in rel_values]:\n+                    rel_values.append(value)\n \n-    stream = html5lib.treewalkers.getTreeWalker(builder)(domtree)\n-    serializer = HTMLSerializer(\n-        quote_attr_values=True, omit_optional_tags=False)\n+            attrs[rel_key] = u' '.join(rel_values)\n+            return attrs\n \n-    return serializer.render(stream)\n+        linker = bleach.linkifier.Linker(callbacks=[set_links])\n+        return linker.linkify(clean_html)\n \n \n def Markdown(extensions=(\"strikethrough\", \"superscript\", \"autolink\",\n@@ -100,7 +92,7 @@ def __init__(self, conf):\n             conf.getlist(\"allowed-elements\"),\n             conf.getlist(\"allowed-attributes\"))\n \n-        self._render = lambda text: sanitize(sanitizer, parser(text))\n+        self._render = lambda text: sanitizer.sanitize(parser(text))\n \n     def render(self, text):\n         return self._render(text)"
+    },
+    {
+      "sha": "e44d3d56d40c737480beb55689154e131dde9654",
+      "filename": "setup.py",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/f6271a04a27d076f0902a617d00d61320d391f5f/setup.py",
+      "raw_url": "https://github.com/posativ/isso/raw/f6271a04a27d076f0902a617d00d61320d391f5f/setup.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/setup.py?ref=f6271a04a27d076f0902a617d00d61320d391f5f",
+      "patch": "@@ -5,8 +5,8 @@\n \n from setuptools import setup, find_packages\n \n-requires = ['itsdangerous', 'Jinja2', 'misaka>=2.0,<3.0', 'html5lib<0.9999999',\n-            'werkzeug>=0.9']\n+requires = ['itsdangerous', 'Jinja2', 'misaka>=2.0,<3.0', 'html5lib',\n+            'werkzeug>=0.9', 'bleach']\n \n if sys.version_info < (2, 7):\n     raise SystemExit(\"Python 2 versions < 2.7 are not supported.\")"
+    },
+    {
+      "sha": "363336c06ba67813054f0a2cbdfd7c8ac2ba7263",
+      "filename": "tox.ini",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/posativ/isso/blob/f6271a04a27d076f0902a617d00d61320d391f5f/tox.ini",
+      "raw_url": "https://github.com/posativ/isso/raw/f6271a04a27d076f0902a617d00d61320d391f5f/tox.ini",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/tox.ini?ref=f6271a04a27d076f0902a617d00d61320d391f5f",
+      "patch": "@@ -15,7 +15,8 @@ deps =\n \n [testenv:debian]\n deps=\n-    html5lib==0.95\n+    bleach\n+    html5lib\n     ipaddr==2.1.10\n     itsdangerous==0.22\n     misaka==1.0.2"
+    }
+  ]
+}
