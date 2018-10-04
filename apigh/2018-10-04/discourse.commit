@@ -1,0 +1,98 @@
+{
+  "sha": "2e28116243300b702b11904c51b941d3940a3be5",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyZTI4MTE2MjQzMzAwYjcwMmIxMTkwNGM1MWI5NDFkMzk0MGEzYmU1",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-10-04T16:28:48Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-10-04T16:28:48Z"
+    },
+    "message": "Period-chooser should have visible overflow",
+    "tree": {
+      "sha": "213e942df653045867b5eebd66aab0b870084b99",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/213e942df653045867b5eebd66aab0b870084b99"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2e28116243300b702b11904c51b941d3940a3be5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2e28116243300b702b11904c51b941d3940a3be5",
+  "html_url": "https://github.com/discourse/discourse/commit/2e28116243300b702b11904c51b941d3940a3be5",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2e28116243300b702b11904c51b941d3940a3be5/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "09caf95e7d2edeedf933a00999a023a4da65d6fd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/09caf95e7d2edeedf933a00999a023a4da65d6fd",
+      "html_url": "https://github.com/discourse/discourse/commit/09caf95e7d2edeedf933a00999a023a4da65d6fd"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 0,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3b2db54c93ed3f7671207ef14ac050f2f8dda30d",
+      "filename": "app/assets/stylesheets/common/select-kit/period-chooser.scss",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/2e28116243300b702b11904c51b941d3940a3be5/app/assets/stylesheets/common/select-kit/period-chooser.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/2e28116243300b702b11904c51b941d3940a3be5/app/assets/stylesheets/common/select-kit/period-chooser.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/select-kit/period-chooser.scss?ref=2e28116243300b702b11904c51b941d3940a3be5",
+      "patch": "@@ -17,7 +17,6 @@\n         padding: 0;\n \n         h2.selected-name {\n-          overflow: auto;\n           color: $secondary;\n           display: inline-block;\n           box-sizing: border-box;"
+    }
+  ]
+}
