@@ -1,0 +1,122 @@
+{
+  "sha": "fa21b398755ccf3c523d0e0262567dbdc510de05",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmYTIxYjM5ODc1NWNjZjNjNTIzZDBlMDI2MjU2N2RiZGM1MTBkZTA1",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-10-05T14:51:27Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-10-05T14:51:27Z"
+    },
+    "message": "FIX: topic admin menu was clipped on short posts due to overflow hidden",
+    "tree": {
+      "sha": "418ae17bf68eca27a1346f380bab628d209ac13d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/418ae17bf68eca27a1346f380bab628d209ac13d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/fa21b398755ccf3c523d0e0262567dbdc510de05",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/fa21b398755ccf3c523d0e0262567dbdc510de05",
+  "html_url": "https://github.com/discourse/discourse/commit/fa21b398755ccf3c523d0e0262567dbdc510de05",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/fa21b398755ccf3c523d0e0262567dbdc510de05/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "be56f18cddc532fdb439dc048217590d02b20a05",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/be56f18cddc532fdb439dc048217590d02b20a05",
+      "html_url": "https://github.com/discourse/discourse/commit/be56f18cddc532fdb439dc048217590d02b20a05"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 12,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "1e74af02dfbd851d6ebfa0b07bcbdf5113c19e35",
+      "filename": "app/assets/stylesheets/common/base/topic-post.scss",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa21b398755ccf3c523d0e0262567dbdc510de05/app/assets/stylesheets/common/base/topic-post.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa21b398755ccf3c523d0e0262567dbdc510de05/app/assets/stylesheets/common/base/topic-post.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/topic-post.scss?ref=fa21b398755ccf3c523d0e0262567dbdc510de05",
+      "patch": "@@ -496,7 +496,9 @@ aside.quote {\n   // this is necessary for ANYTHING that extends past the right edge of\n   // the post body, such as an image in a deeply nested list, image in\n   // a deeply nested blockquote, and so on.. you get the idea.\n-  overflow: hidden;\n+  .cooked {\n+    overflow: hidden;\n+  }\n   &.highlighted {\n     animation: background-fade-highlight 2.5s ease-out;\n   }"
+    },
+    {
+      "sha": "f0603b895e2660d2f7306b78c9f0155887ea323d",
+      "filename": "app/assets/stylesheets/desktop/topic-post.scss",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa21b398755ccf3c523d0e0262567dbdc510de05/app/assets/stylesheets/desktop/topic-post.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa21b398755ccf3c523d0e0262567dbdc510de05/app/assets/stylesheets/desktop/topic-post.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/desktop/topic-post.scss?ref=fa21b398755ccf3c523d0e0262567dbdc510de05",
+      "patch": "@@ -646,7 +646,11 @@ $topic-avatar-width: 45px;\n   position: relative;\n   z-index: z(\"base\");\n   border-top: 1px solid $primary-low;\n-  padding: 12px $topic-body-width-padding 0 $topic-body-width-padding;\n+  padding: 12px 0 0 0;\n+  .topic-meta-data,\n+  .cooked {\n+    padding: 0 $topic-body-width-padding 0.25em $topic-body-width-padding;\n+  }\n }\n \n .topic-avatar {"
+    },
+    {
+      "sha": "9f3414436fc66b9bcfaf4099a770e16bf68bdf92",
+      "filename": "app/assets/stylesheets/mobile/topic-post.scss",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa21b398755ccf3c523d0e0262567dbdc510de05/app/assets/stylesheets/mobile/topic-post.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa21b398755ccf3c523d0e0262567dbdc510de05/app/assets/stylesheets/mobile/topic-post.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/mobile/topic-post.scss?ref=fa21b398755ccf3c523d0e0262567dbdc510de05",
+      "patch": "@@ -298,7 +298,10 @@ span.post-count {\n \n // mobile has no fixed width on topic-body so overflow: hidden causes problems\n .topic-body {\n-  overflow: inherit;\n+  overflow: visible;\n+  .cooked {\n+    overflow: visible;\n+  }\n }\n \n // instead, for mobile we set overflow hidden on the post's #main-outlet"
+    }
+  ]
+}

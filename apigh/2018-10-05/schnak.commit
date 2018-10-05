@@ -1,0 +1,145 @@
+{
+  "sha": "2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+  "node_id": "MDY6Q29tbWl0MTA1Nzg5MzY1OjJlNjI5ZjVjODVkNDhmMmI4ZjRkM2ExYzIyYmZkOWNmNGFjMDFiNmQ=",
+  "commit": {
+    "author": {
+      "name": "Artem Butusov",
+      "email": "art.sormy@gmail.com",
+      "date": "2018-10-05T12:38:57Z"
+    },
+    "committer": {
+      "name": "g-div",
+      "email": "g-div@users.noreply.github.com",
+      "date": "2018-10-05T12:38:57Z"
+    },
+    "message": "feat(notification): add support for sendmail notification provider + node v10 support",
+    "tree": {
+      "sha": "e0518a086707730a75c818b69f10b104b8a09898",
+      "url": "https://api.github.com/repos/schn4ck/schnack/git/trees/e0518a086707730a75c818b69f10b104b8a09898"
+    },
+    "url": "https://api.github.com/repos/schn4ck/schnack/git/commits/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/schn4ck/schnack/commits/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+  "html_url": "https://github.com/schn4ck/schnack/commit/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+  "comments_url": "https://api.github.com/repos/schn4ck/schnack/commits/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/comments",
+  "author": {
+    "login": "sormy",
+    "id": 7675583,
+    "node_id": "MDQ6VXNlcjc2NzU1ODM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/7675583?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sormy",
+    "html_url": "https://github.com/sormy",
+    "followers_url": "https://api.github.com/users/sormy/followers",
+    "following_url": "https://api.github.com/users/sormy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sormy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sormy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sormy/subscriptions",
+    "organizations_url": "https://api.github.com/users/sormy/orgs",
+    "repos_url": "https://api.github.com/users/sormy/repos",
+    "events_url": "https://api.github.com/users/sormy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sormy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "g-div",
+    "id": 3722536,
+    "node_id": "MDQ6VXNlcjM3MjI1MzY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/3722536?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/g-div",
+    "html_url": "https://github.com/g-div",
+    "followers_url": "https://api.github.com/users/g-div/followers",
+    "following_url": "https://api.github.com/users/g-div/following{/other_user}",
+    "gists_url": "https://api.github.com/users/g-div/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/g-div/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/g-div/subscriptions",
+    "organizations_url": "https://api.github.com/users/g-div/orgs",
+    "repos_url": "https://api.github.com/users/g-div/repos",
+    "events_url": "https://api.github.com/users/g-div/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/g-div/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4e5ffae5573ec6d7c8478f3fff11a302ee54b0b0",
+      "url": "https://api.github.com/repos/schn4ck/schnack/commits/4e5ffae5573ec6d7c8478f3fff11a302ee54b0b0",
+      "html_url": "https://github.com/schn4ck/schnack/commit/4e5ffae5573ec6d7c8478f3fff11a302ee54b0b0"
+    }
+  ],
+  "stats": {
+    "total": 3163,
+    "additions": 1676,
+    "deletions": 1487
+  },
+  "files": [
+    {
+      "sha": "261836807e736e03f4eefc22149dc9ee5e5bc424",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 1,
+      "changes": 12,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/README.md",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/README.md",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/README.md?ref=2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+      "patch": "@@ -1,6 +1,6 @@\n # schnack.js\n \n-[Schnack](https://dict.leo.org/englisch-deutsch/schnack) is a simple Disqus-like drop-in commenting system written in JavaScript. \n+[Schnack](https://dict.leo.org/englisch-deutsch/schnack) is a simple Disqus-like drop-in commenting system written in JavaScript.\n \n * [Documentation](https://schnack.cool/)\n * [Say hello to Schnack.js](https://www.vis4.net/blog/2017/10/hello-schnack/)\n@@ -79,6 +79,16 @@ Embed in your HTML page:\n \n You will find further information on the [schnack page](https://schnack.cool/).\n \n+### Configuration\n+\n+**Notify Providers:**\n+\n+* pushover\n+* webpush\n+* slack\n+* rss\n+* sendmail\n+\n ### Who is behind Schnack?\n \n Schnack is [yet another](https://github.com/gka/canvid/) happy collaboration between [Webkid](https://webkid.io/) and [Gregor Aisch](https://www.vis4.net)."
+    },
+    {
+      "sha": "99cf88f5008e842342b21166375e1fe09ed7118f",
+      "filename": "package-lock.json",
+      "status": "modified",
+      "additions": 1619,
+      "deletions": 1483,
+      "changes": 3102,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/package-lock.json",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/package-lock.json",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/package-lock.json?ref=2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d"
+    },
+    {
+      "sha": "1d210e0cd0b17d94aa1adfbe3887e9a47aeb40ed",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/package.json",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/package.json",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/package.json?ref=2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+      "patch": "@@ -3,7 +3,7 @@\n   \"version\": \"0.1.4\",\n   \"dependencies\": {\n     \"body-parser\": \"^1.18.2\",\n-    \"connect-sqlite3\": \"^0.9.10\",\n+    \"connect-sqlite3\": \"^0.9.11\",\n     \"cors\": \"^2.8.4\",\n     \"express\": \"^4.16.1\",\n     \"express-session\": \"^1.15.6\",\n@@ -19,8 +19,8 @@\n     \"pushover-notifications\": \"^0.2.4\",\n     \"request\": \"^2.83.0\",\n     \"rss\": \"^1.2.2\",\n-    \"sqlite\": \"^2.8.0\",\n-    \"sqlite3\": \"^3.1.13\",\n+    \"sqlite\": \"^3.0.0\",\n+    \"sqlite3\": \"^4.0.2\",\n     \"unfetch\": \"^3.0.0\",\n     \"web-push\": \"^3.2.3\"\n   },"
+    },
+    {
+      "sha": "33e436ed0097c6e1480d36da4645672dd6678b61",
+      "filename": "src/push/index.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/src/push/index.js",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/src/push/index.js",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/src/push/index.js?ref=2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+      "patch": "@@ -4,6 +4,7 @@ const webpush = require('web-push');\n const Pushover = require('pushover-notifications');\n const queries = require('../db/queries');\n const slack = require('./slack');\n+const sendmail = require('./sendmail');\n const {\n     send_file,\n     send_string,"
+    },
+    {
+      "sha": "3234f84bb647291f7119f451de5a0526cbee5fbc",
+      "filename": "src/push/sendmail.js",
+      "status": "added",
+      "additions": 42,
+      "deletions": 0,
+      "changes": 42,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/src/push/sendmail.js",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d/src/push/sendmail.js",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/src/push/sendmail.js?ref=2e629f5c85d48f2b8f4d3a1c22bfd9cf4ac01b6d",
+      "patch": "@@ -0,0 +1,42 @@\n+const { spawn } = require('child_process');\n+const config = require('../config');\n+const schnackEvents = require('../events');\n+\n+const notify = config.get('notify');\n+\n+function createEmailBody(config, event) {\n+    const postUrl = config.get('page_url').replace('%SLUG%', event.slug);\n+    const user = event.user.display_name || event.user.name;\n+    const body =\n+`\n+To: Schnack Admin <${notify.sendmail.to}>\n+From: ${user} <${notify.sendmail.from}>\n+Subject: New comment on your post ${postUrl}\n+\n+New comment on your post ${postUrl}\n+\n+Author: ${user}\n+\n+${event.comment}\n+\n+You can see all comments on this post here:\n+${postUrl}#comments\n+\n+Permalink: ${postUrl}#comment-${event.id}\n+`.split(/\\n/).join('\\r\\n').trim();\n+\n+    return body;\n+}\n+\n+if (notify.sendmail) {\n+    schnackEvents.on('new-comment', (event) => {\n+        const body = createEmailBody(config, event);\n+        try {\n+            const sendmail = spawn('sendmail', [notify.sendmail.to]);\n+            sendmail.stdin.write(body);\n+            sendmail.stdin.end();\n+        } catch (error) {\n+            console.error('Error sending sendmail notification:', error);\n+        }\n+    });\n+}"
+    }
+  ]
+}
