@@ -1,0 +1,110 @@
+{
+  "sha": "dd15bfa244621ec52062f4c655f971d911041d39",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZGQxNWJmYTI0NDYyMWVjNTIwNjJmNGM2NTVmOTcxZDkxMTA0MWQzOQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-10-03T10:02:44Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-10-03T10:02:44Z"
+    },
+    "message": "Fix test.",
+    "tree": {
+      "sha": "99ce8d6cf75e1f1fa8bebdcd2d529237b60a6f88",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/99ce8d6cf75e1f1fa8bebdcd2d529237b60a6f88"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/dd15bfa244621ec52062f4c655f971d911041d39",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/dd15bfa244621ec52062f4c655f971d911041d39",
+  "html_url": "https://github.com/debiki/talkyard/commit/dd15bfa244621ec52062f4c655f971d911041d39",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/dd15bfa244621ec52062f4c655f971d911041d39/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9447f817189277c482893ae815b3eb5f8aa748cf",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/9447f817189277c482893ae815b3eb5f8aa748cf",
+      "html_url": "https://github.com/debiki/talkyard/commit/9447f817189277c482893ae815b3eb5f8aa748cf"
+    }
+  ],
+  "stats": {
+    "total": 24,
+    "additions": 12,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "e25790d155ec63a6e0b722aee979d1f15da59a2a",
+      "filename": "tests/app/debiki/dao/PromotionToFullMemberAppSpec.scala",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/debiki/talkyard/blob/dd15bfa244621ec52062f4c655f971d911041d39/tests/app/debiki/dao/PromotionToFullMemberAppSpec.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/dd15bfa244621ec52062f4c655f971d911041d39/tests/app/debiki/dao/PromotionToFullMemberAppSpec.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/debiki/dao/PromotionToFullMemberAppSpec.scala?ref=dd15bfa244621ec52062f4c655f971d911041d39",
+      "patch": "@@ -73,7 +73,7 @@ class PromotionToFullMemberAppSpec extends DaoAppSuite() {\n     }\n \n     \"a member reads a tiny bit, won't get promoted yet\" in {\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(1), ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(1), Set.empty, ReadingProgress(\n         firstVisitedAt = startTime.minusSeconds(10),\n         lastVisitedAt = startTime,\n         lastViewedPostNr = 1,\n@@ -91,7 +91,7 @@ class PromotionToFullMemberAppSpec extends DaoAppSuite() {\n \n     \"a member reads a bit more, almost gets promoted\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(2), ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(2), Set.empty, ReadingProgress(\n         firstVisitedAt = currentTime.minusSeconds(1),\n         lastVisitedAt = currentTime,\n         lastViewedPostNr = 1,\n@@ -101,7 +101,7 @@ class PromotionToFullMemberAppSpec extends DaoAppSuite() {\n         secondsReading = 6*60))\n \n       // Entering the 3rd topic, entering 4 = the limit\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(3), ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(3), Set.empty, ReadingProgress(\n         firstVisitedAt = currentTime.minusSeconds(1),\n         lastVisitedAt = currentTime,\n         lastViewedPostNr = 1,\n@@ -122,7 +122,7 @@ class PromotionToFullMemberAppSpec extends DaoAppSuite() {\n \n     \"reads a tiny bit more, finally gets promoted to Basic\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(4), ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, pageIds(4), Set.empty, ReadingProgress(\n         firstVisitedAt = currentTime.minusSeconds(1),\n         lastVisitedAt = currentTime,\n         lastViewedPostNr = 1,"
+    },
+    {
+      "sha": "2f516ef1d685e454b7c5524a4b665bedc72b99b7",
+      "filename": "tests/app/debiki/dao/UserStatsAppSpec.scala",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 8,
+      "changes": 16,
+      "blob_url": "https://github.com/debiki/talkyard/blob/dd15bfa244621ec52062f4c655f971d911041d39/tests/app/debiki/dao/UserStatsAppSpec.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/dd15bfa244621ec52062f4c655f971d911041d39/tests/app/debiki/dao/UserStatsAppSpec.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/debiki/dao/UserStatsAppSpec.scala?ref=dd15bfa244621ec52062f4c655f971d911041d39",
+      "patch": "@@ -191,7 +191,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... looks at a discourse topic, but doesn't read it\" in {\n       playTimeMillis(1200)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, noRepliesTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, noRepliesTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now(),\n         lastVisitedAt = globals.now(),\n         lastViewedPostNr = PageParts.BodyNr,\n@@ -206,7 +206,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... reads the orig post\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, noRepliesTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, noRepliesTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now(),\n         lastVisitedAt = globals.now(),\n         lastViewedPostNr = PageParts.BodyNr,\n@@ -225,7 +225,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... reads a discourse topic, with replies, now replies-read gets updated\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withRepliesTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withRepliesTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now() minusMillis 400,\n         lastVisitedAt = globals.now() minusMillis 200,\n         lastViewedPostNr = 3,\n@@ -245,7 +245,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... views even more replies\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withRepliesTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withRepliesTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now() minusMillis 400,\n         lastVisitedAt = globals.now(),\n         lastViewedPostNr = 33,\n@@ -264,7 +264,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... views a chat topic, low post nrs only, stats gets updated\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withMessagesChatTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withMessagesChatTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now() minusMillis 500,\n         lastVisitedAt = globals.now(),\n         lastViewedPostNr = 10,\n@@ -284,7 +284,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... reads a bit more in the same a chat topic, still low post nrs\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withMessagesChatTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, withMessagesChatTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now() minusMillis 500,\n         lastVisitedAt = globals.now(),\n         lastViewedPostNr = 12055,\n@@ -307,7 +307,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n     \"... views a chat topic with 2 messages, cannot read more than 2\" in {\n       playTimeMillis(1000)\n       val exception = intercept[Exception] {\n-        dao.trackReadingProgressClearNotfsPerhapsPromote(member1, twoMessagesChatTopicId, ReadingProgress(\n+        dao.trackReadingProgressClearNotfsPerhapsPromote(member1, twoMessagesChatTopicId, Set.empty, ReadingProgress(\n           firstVisitedAt = globals.now(),\n           lastVisitedAt = globals.now(),\n           lastViewedPostNr = 1,\n@@ -321,7 +321,7 @@ class UserStatsAppSpec extends DaoAppSuite() {\n \n     \"... but can read 2\" in {\n       playTimeMillis(1000)\n-      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, twoMessagesChatTopicId, ReadingProgress(\n+      dao.trackReadingProgressClearNotfsPerhapsPromote(member1, twoMessagesChatTopicId, Set.empty, ReadingProgress(\n         firstVisitedAt = globals.now() minusMillis 500,\n         lastVisitedAt = globals.now(),\n         lastViewedPostNr = 1,"
+    }
+  ]
+}

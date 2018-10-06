@@ -1,0 +1,98 @@
+{
+  "sha": "2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyYTk0YmY5ZGZiODRlOGZiZDFhZWFhNWYzYWE4ZGMzNGNmOTBlMGQ4",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-10-06T08:24:46Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-10-06T08:24:46Z"
+    },
+    "message": "UX: change staff actions logs user label",
+    "tree": {
+      "sha": "55ce6e25a1f1808ea41cce326929e4417676133d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/55ce6e25a1f1808ea41cce326929e4417676133d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8",
+  "html_url": "https://github.com/discourse/discourse/commit/2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "41ceb6ca88414cd5ee2b1902cbc06e77ae4a1ecd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/41ceb6ca88414cd5ee2b1902cbc06e77ae4a1ecd",
+      "html_url": "https://github.com/discourse/discourse/commit/41ceb6ca88414cd5ee2b1902cbc06e77ae4a1ecd"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "1f4597e7fb749d8b5ac160912a09f49d3e3026b7",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=2a94bf9dfb84e8fbd1aeaa5f3aa8dc34cf90e0d8",
+      "patch": "@@ -3451,7 +3451,7 @@ en:\n           filter: \"Filter:\"\n           title: \"Staff Actions\"\n           clear_filters: \"Show Everything\"\n-          staff_user: \"Staff User\"\n+          staff_user: \"User\"\n           target_user: \"Target User\"\n           subject: \"Subject\"\n           when: \"When\""
+    }
+  ]
+}
