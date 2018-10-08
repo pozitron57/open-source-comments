@@ -1,0 +1,98 @@
+{
+  "sha": "ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmVmNWIxOGMzZDE3Yzc3NDU2ZTlhYzUyMDcxYzViMzVlM2ExODFjYjM=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-10-05T18:31:33Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-10-05T18:31:33Z"
+    },
+    "message": "add nop cache",
+    "tree": {
+      "sha": "db1e893453da6a3a44d35de4625a72e2deae6adf",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/db1e893453da6a3a44d35de4625a72e2deae6adf"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+  "html_url": "https://github.com/umputun/remark/commit/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a7ba0567a3cc647ec8e1115de4ec6bf9cd5bcc17",
+      "url": "https://api.github.com/repos/umputun/remark/commits/a7ba0567a3cc647ec8e1115de4ec6bf9cd5bcc17",
+      "html_url": "https://github.com/umputun/remark/commit/a7ba0567a3cc647ec8e1115de4ec6bf9cd5bcc17"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "6ec4e489c19cab253d020cde2f5f28f40bf14378",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server.go?ref=ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+      "patch": "@@ -93,7 +93,7 @@ type AvatarGroup struct {\n \n // CacheGroup defines options group for cache params\n type CacheGroup struct {\n-\tType string `long:\"type\" env:\"TYPE\" description:\"type of cache\" choice:\"mem\" choice:\"mongo\" default:\"mem\"`\n+\tType string `long:\"type\" env:\"TYPE\" description:\"type of cache\" choice:\"mem\" choice:\"mongo\" choice:\"nop\" default:\"mem\"`\n \tMax  struct {\n \t\tItems int   `long:\"items\" env:\"ITEMS\" default:\"1000\" description:\"max cached items\"`\n \t\tValue int   `long:\"value\" env:\"VALUE\" default:\"65536\" description:\"max size of cached value\"`\n@@ -395,6 +395,8 @@ func (s *ServerCommand) makeCache() (cache.LoadingCache, error) {\n \t\tconn := mongo.NewConnection(mgServer, s.Mongo.DB, \"cache\")\n \t\treturn cache.NewMongoCache(conn, cache.MaxCacheSize(s.Cache.Max.Size), cache.MaxValSize(s.Cache.Max.Value),\n \t\t\tcache.MaxKeys(s.Cache.Max.Items))\n+\tcase \"nop\":\n+\t\treturn &cache.Nop{}, nil\n \t}\n \treturn nil, errors.Errorf(\"unsupported cache type %s\", s.Cache.Type)\n }"
+    }
+  ]
+}
