@@ -1,0 +1,103 @@
+{
+  "sha": "dfbc80d5b645f0754de6884078db29ac6a6ad642",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTpkZmJjODBkNWI2NDVmMDc1NGRlNjg4NDA3OGRiMjlhYzZhNmFkNjQy",
+  "commit": {
+    "author": {
+      "name": "Benoît Latinier",
+      "email": "benoit@latinier.fr",
+      "date": "2018-10-09T07:29:00Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-10-09T07:29:00Z"
+    },
+    "message": "Merge pull request #486 from vincentbernat/fix/anchor-load\n\nembed: do not jump to unrelated anchor on load",
+    "tree": {
+      "sha": "1ce615db849bd049856eb54b97893dc3392d1d14",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/1ce615db849bd049856eb54b97893dc3392d1d14"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/dfbc80d5b645f0754de6884078db29ac6a6ad642",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbvFi8CRBK7hj4Ov3rIwAAdHIIACexUSkuBQPsVm6ivXR5PrWR\nrqZWyNrBJTn0Lj//VMFiOMUiJY/57yPnE3j2barZgP5AD6qwt73/sv18lB1wN4KK\nGAeEOc2ylEd8yBO7yc4g7/UFFkcBC8NliSPUEsLUCXyC02hjPRDg+dWfUHyX1YBo\n9uaISJPUtBU3dJ5ExVvbpAPZnuxlWW1iD3/c2X/ZnWt2oEskib8Vl6/8cmn6fpPp\nCuBiqa0SKVaPL//wgaSFUqsHN2lwuNZOwYjhdKQWM2AjdmHcDIZAYpttZkRRGZ4u\nW0TAW5TwB06c+xpOb8EPVxwPnmmvdzVZbK5tR7S0Da9uE/HQo7VUxTCKVP+aho4=\n=R2GM\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1ce615db849bd049856eb54b97893dc3392d1d14\nparent f6271a04a27d076f0902a617d00d61320d391f5f\nparent 463f76cb0becf3ee76e38548ace5a07d9f7c93db\nauthor Benoît Latinier <benoit@latinier.fr> 1539070140 +0200\ncommitter GitHub <noreply@github.com> 1539070140 +0200\n\nMerge pull request #486 from vincentbernat/fix/anchor-load\n\nembed: do not jump to unrelated anchor on load"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/dfbc80d5b645f0754de6884078db29ac6a6ad642",
+  "html_url": "https://github.com/posativ/isso/commit/dfbc80d5b645f0754de6884078db29ac6a6ad642",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/dfbc80d5b645f0754de6884078db29ac6a6ad642/comments",
+  "author": {
+    "login": "blatinier",
+    "id": 1086629,
+    "node_id": "MDQ6VXNlcjEwODY2Mjk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1086629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blatinier",
+    "html_url": "https://github.com/blatinier",
+    "followers_url": "https://api.github.com/users/blatinier/followers",
+    "following_url": "https://api.github.com/users/blatinier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blatinier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blatinier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blatinier/subscriptions",
+    "organizations_url": "https://api.github.com/users/blatinier/orgs",
+    "repos_url": "https://api.github.com/users/blatinier/repos",
+    "events_url": "https://api.github.com/users/blatinier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blatinier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f6271a04a27d076f0902a617d00d61320d391f5f",
+      "url": "https://api.github.com/repos/posativ/isso/commits/f6271a04a27d076f0902a617d00d61320d391f5f",
+      "html_url": "https://github.com/posativ/isso/commit/f6271a04a27d076f0902a617d00d61320d391f5f"
+    },
+    {
+      "sha": "463f76cb0becf3ee76e38548ace5a07d9f7c93db",
+      "url": "https://api.github.com/repos/posativ/isso/commits/463f76cb0becf3ee76e38548ace5a07d9f7c93db",
+      "html_url": "https://github.com/posativ/isso/commit/463f76cb0becf3ee76e38548ace5a07d9f7c93db"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e6b3e82916284e0ad19f31086d23ee6b0fa9e3d6",
+      "filename": "isso/js/embed.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/posativ/isso/blob/dfbc80d5b645f0754de6884078db29ac6a6ad642/isso/js/embed.js",
+      "raw_url": "https://github.com/posativ/isso/raw/dfbc80d5b645f0754de6884078db29ac6a6ad642/isso/js/embed.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/js/embed.js?ref=dfbc80d5b645f0754de6884078db29ac6a6ad642",
+      "patch": "@@ -71,7 +71,8 @@ require([\"app/lib/ready\", \"app/config\", \"app/i18n\", \"app/api\", \"app/isso\", \"app/\n                     isso.insert_loader(rv, lastcreated);\n                 }\n \n-                if (window.location.hash.length > 0) {\n+                if (window.location.hash.length > 0 &&\n+                    window.location.hash.match(\"^#isso-[0-9]+$\")) {\n                     $(window.location.hash).scrollIntoView();\n                 }\n             },"
+    }
+  ]
+}

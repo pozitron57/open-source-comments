@@ -1,0 +1,98 @@
+{
+  "sha": "753d39f30ddf2c03948b55072f5d606dd3c22cef",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3NTNkMzlmMzBkZGYyYzAzOTQ4YjU1MDcyZjVkNjA2ZGQzYzIyY2Vm",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2018-10-09T16:51:49Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2018-10-09T16:51:49Z"
+    },
+    "message": "Fix NoMethodError in polls#voters",
+    "tree": {
+      "sha": "fca4186fa2e03a881f4c9df35854c15ef629f666",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fca4186fa2e03a881f4c9df35854c15ef629f666"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/753d39f30ddf2c03948b55072f5d606dd3c22cef",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/753d39f30ddf2c03948b55072f5d606dd3c22cef",
+  "html_url": "https://github.com/discourse/discourse/commit/753d39f30ddf2c03948b55072f5d606dd3c22cef",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/753d39f30ddf2c03948b55072f5d606dd3c22cef/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a0be127b6f0c88207a08bf5c37de9eea237b1673",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a0be127b6f0c88207a08bf5c37de9eea237b1673",
+      "html_url": "https://github.com/discourse/discourse/commit/a0be127b6f0c88207a08bf5c37de9eea237b1673"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "1f8dc37da37bedc2026c9eec4bd0c79c04dd0964",
+      "filename": "plugins/poll/plugin.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/753d39f30ddf2c03948b55072f5d606dd3c22cef/plugins/poll/plugin.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/753d39f30ddf2c03948b55072f5d606dd3c22cef/plugins/poll/plugin.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/poll/plugin.rb?ref=753d39f30ddf2c03948b55072f5d606dd3c22cef",
+      "patch": "@@ -245,6 +245,7 @@ def voters\n \n       post = Post.find_by(id: post_id)\n       raise Discourse::InvalidParameters.new(\"post_id is invalid\") if !post\n+      raise Discourse::InvalidParameters.new(\"no poll exists for this post_id\") unless post.custom_fields[DiscoursePoll::POLLS_CUSTOM_FIELD]\n \n       poll = post.custom_fields[DiscoursePoll::POLLS_CUSTOM_FIELD][poll_name]\n       raise Discourse::InvalidParameters.new(\"poll_name is invalid\") if !poll"
+    }
+  ]
+}
