@@ -1,0 +1,98 @@
+{
+  "sha": "34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozNGU4ZDE3YWQwNDFkZDNlNGQwMmRjNWEyOGI1ZjUxMGNkOGNjYTVm",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-10-10T16:11:47Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-10-10T16:11:47Z"
+    },
+    "message": "Fixing left alignment of post controls",
+    "tree": {
+      "sha": "48270dd6202873a613f2bb9b279e7531ec3f228e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/48270dd6202873a613f2bb9b279e7531ec3f228e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f",
+  "html_url": "https://github.com/discourse/discourse/commit/34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "98211f945fcd7c1cc290459b12c6485c12440681",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/98211f945fcd7c1cc290459b12c6485c12440681",
+      "html_url": "https://github.com/discourse/discourse/commit/98211f945fcd7c1cc290459b12c6485c12440681"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "626f52ee979d89956df38458573aa599e2ea120d",
+      "filename": "app/assets/stylesheets/desktop/topic-post.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f/app/assets/stylesheets/desktop/topic-post.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f/app/assets/stylesheets/desktop/topic-post.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/desktop/topic-post.scss?ref=34e8d17ad041dd3e4d02dc5a28b5f510cd8cca5f",
+      "patch": "@@ -45,6 +45,7 @@ h1 .topic-statuses .topic-status i {\n \n section.post-menu-area {\n   position: relative;\n+  padding-left: 11px;\n }\n \n nav.post-controls {"
+    }
+  ]
+}
