@@ -1,0 +1,98 @@
+{
+  "sha": "a68032835aee1d4ea07d0d46d0a2ab2fd04b0644",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNjgwMzI4MzVhZWUxZDRlYTA3ZDBkNDZkMGEyYWIyZmQwNGIwNjQ0",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-10-11T16:04:15Z"
+    },
+    "committer": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2018-10-11T16:04:15Z"
+    },
+    "message": "FEATURE: XenForo importer can import categories from the xf_node table and convert sub-categories beyond second level to tags",
+    "tree": {
+      "sha": "fad3b63eb0ea18e74d64172718cd22cfea0492d0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fad3b63eb0ea18e74d64172718cd22cfea0492d0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a68032835aee1d4ea07d0d46d0a2ab2fd04b0644",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a68032835aee1d4ea07d0d46d0a2ab2fd04b0644",
+  "html_url": "https://github.com/discourse/discourse/commit/a68032835aee1d4ea07d0d46d0a2ab2fd04b0644",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a68032835aee1d4ea07d0d46d0a2ab2fd04b0644/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b54d94018272addf61b0473601730f3a8a8ef4b6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b54d94018272addf61b0473601730f3a8a8ef4b6",
+      "html_url": "https://github.com/discourse/discourse/commit/b54d94018272addf61b0473601730f3a8a8ef4b6"
+    }
+  ],
+  "stats": {
+    "total": 119,
+    "additions": 111,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "ed368c5e4a078a062a2c034590c2a50ed629c926",
+      "filename": "script/import_scripts/xenforo.rb",
+      "status": "modified",
+      "additions": 111,
+      "deletions": 8,
+      "changes": 119,
+      "blob_url": "https://github.com/discourse/discourse/blob/a68032835aee1d4ea07d0d46d0a2ab2fd04b0644/script/import_scripts/xenforo.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a68032835aee1d4ea07d0d46d0a2ab2fd04b0644/script/import_scripts/xenforo.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/import_scripts/xenforo.rb?ref=a68032835aee1d4ea07d0d46d0a2ab2fd04b0644",
+      "patch": "@@ -19,6 +19,9 @@ def initialize\n       password: \"pa$$word\",\n       database: XENFORO_DB\n     )\n+\n+    @category_mappings = {}\n+    @prefix_as_category = false\n   end\n \n   def execute\n@@ -61,7 +64,72 @@ def import_users\n   def import_categories\n     puts \"\", \"importing categories...\"\n \n-    # Note that this script uses Prefix as Category, you may want to change this as per your requirement\n+    categories = mysql_query(\"\n+        SELECT node_id id,\n+               title,\n+               description,\n+               parent_node_id,\n+               display_order\n+          FROM #{TABLE_PREFIX}node\n+      ORDER BY parent_node_id, display_order\n+      \").to_a\n+\n+    top_level_categories = categories.select { |c| c[\"parent_node_id\"] == 0 }\n+\n+    create_categories(top_level_categories) do |c|\n+      {\n+        id: c['id'],\n+        name: c['title'],\n+        description: c['description'],\n+        position: c['display_order']\n+      }\n+    end\n+\n+    top_level_category_ids = Set.new(top_level_categories.map { |c| c[\"id\"] })\n+\n+    subcategories = categories.select { |c| top_level_category_ids.include?(c[\"parent_node_id\"]) }\n+\n+    create_categories(subcategories) do |c|\n+      {\n+        id: c['id'],\n+        name: c['title'],\n+        description: c['description'],\n+        position: c['display_order'],\n+        parent_category_id: category_id_from_imported_category_id(c['parent_node_id'])\n+      }\n+    end\n+\n+    subcategory_ids = Set.new(subcategories.map { |c| c['id'] })\n+\n+    # deeper categories need to be tags\n+    categories.each do |c|\n+      next if c['parent_node_id'] == 0\n+      next if top_level_category_ids.include?(c['id'])\n+      next if subcategory_ids.include?(c['id'])\n+\n+      # Find a subcategory for topics in this category\n+      parent = c\n+      while !parent.nil? && !subcategory_ids.include?(parent['id'])\n+        parent = categories.find { |subcat| subcat['id'] == parent['parent_node_id'] }\n+      end\n+\n+      if parent\n+        tag_name = DiscourseTagging.clean_tag(c['title'])\n+        @category_mappings[c['id']] = {\n+          category_id: category_id_from_imported_category_id(parent['id']),\n+          tag: Tag.find_by_name(tag_name) || Tag.create(name: tag_name)\n+        }\n+      else\n+        puts '', \"Couldn't find a category for #{c['id']} '#{c['title']}'!\"\n+      end\n+    end\n+  end\n+\n+  # This method is an alternative to import_categories.\n+  # It uses prefixes instead of nodes.\n+  def import_categories_from_thread_prefixes\n+    puts \"\", \"importing categories...\"\n+\n     categories = mysql_query(\"\n                               SELECT prefix_id id\n                               FROM #{TABLE_PREFIX}thread_prefix\n@@ -74,18 +142,19 @@ def import_categories\n         name: \"Category-#{category[\"id\"]}\"\n       }\n     end\n+\n+    @prefix_as_category = true\n   end\n \n   def import_posts\n     puts \"\", \"creating topics and posts\"\n \n     total_count = mysql_query(\"SELECT count(*) count from #{TABLE_PREFIX}post\").first[\"count\"]\n \n-    batches(BATCH_SIZE) do |offset|\n-      results = mysql_query(\"\n+    posts_sql = \"\n         SELECT p.post_id id,\n                t.thread_id topic_id,\n-               t.prefix_id category_id,\n+               #{@prefix_as_category ? 't.prefix_id' : 't.node_id'} category_id,\n                t.title title,\n                t.first_post_id first_post_id,\n                p.user_id user_id,\n@@ -95,9 +164,10 @@ def import_posts\n              #{TABLE_PREFIX}thread t\n         WHERE p.thread_id = t.thread_id\n         ORDER BY p.post_date\n-        LIMIT #{BATCH_SIZE}\n-        OFFSET #{offset};\n-      \").to_a\n+        LIMIT #{BATCH_SIZE}\" # needs OFFSET\n+\n+    batches(BATCH_SIZE) do |offset|\n+      results = mysql_query(\"#{posts_sql} OFFSET #{offset};\").to_a\n \n       break if results.size < 1\n       next if all_records_exist? :posts, results.map { |p| p['id'] }\n@@ -115,7 +185,8 @@ def import_posts\n           if m['category_id'].to_i == 0 || m['category_id'].nil?\n             mapped[:category] = SiteSetting.uncategorized_category_id\n           else\n-            mapped[:category] = category_id_from_imported_category_id(m['category_id'].to_i)\n+            mapped[:category] = category_id_from_imported_category_id(m['category_id'].to_i) ||\n+              @category_mappings[m['category_id']].try(:[], :category_id)\n           end\n           mapped[:title] = CGI.unescapeHTML(m['title'])\n         else\n@@ -132,6 +203,22 @@ def import_posts\n       end\n     end\n \n+    # Apply tags\n+    batches(BATCH_SIZE) do |offset|\n+      results = mysql_query(\"#{posts_sql} OFFSET #{offset};\").to_a\n+      break if results.size < 1\n+\n+      results.each do |m|\n+        next unless m['id'] == m['first_post_id'] && m['category_id'].to_i > 0\n+        next unless tag = @category_mappings[m['category_id']].try(:[], :tag)\n+        next unless topic_mapping = topic_lookup_from_imported_post_id(m['id'])\n+\n+        topic = Topic.find_by_id(topic_mapping[:topic_id])\n+\n+        topic.tags = [tag] if topic\n+      end\n+    end\n+\n   end\n \n   def process_xenforo_post(raw, import_id)\n@@ -167,6 +254,22 @@ def process_xenforo_post(raw, import_id)\n     # [QUOTE]...[/QUOTE]\n     s.gsub!(/\\[quote\\](.+?)\\[\\/quote\\]/im) { \"\\n> #{$1}\\n\" }\n \n+    # Nested Quotes\n+    s.gsub!(/(\\[\\/?QUOTE.*?\\])/mi) { |q| \"\\n#{q}\\n\" }\n+\n+    # [QUOTE=\"username, post: 28662, member: 1283\"]\n+    s.gsub!(/\\[quote=\"(\\w+), post: (\\d*), member: (\\d*)\"\\]/i) do\n+      username, imported_post_id, imported_user_id = $1, $2, $3\n+\n+      topic_mapping = topic_lookup_from_imported_post_id(imported_post_id)\n+\n+      if topic_mapping\n+        \"\\n[quote=\\\"#{username}, post:#{topic_mapping[:post_number]}, topic:#{topic_mapping[:topic_id]}\\\"]\\n\"\n+      else\n+        \"\\n[quote=\\\"#{username}\\\"]\\n\"\n+      end\n+    end\n+\n     # [URL=...]...[/URL]\n     s.gsub!(/\\[url=\"?(.+?)\"?\\](.+)\\[\\/url\\]/i) { \"[#{$2}](#{$1})\" }\n "
+    }
+  ]
+}
