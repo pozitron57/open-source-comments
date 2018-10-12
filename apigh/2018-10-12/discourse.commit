@@ -1,0 +1,98 @@
+{
+  "sha": "2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyMTc4Zjc3NjhmZTdjZmViZDllZTFhZDhhYTAyNGUxMWYxZTExYmM2",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-10-12T16:33:08Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-10-12T16:33:27Z"
+    },
+    "message": "FIX: Don't show empty user stats in the card when profile is hidden",
+    "tree": {
+      "sha": "e905107b635a4dddb66384fd0b897a5896df8c98",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e905107b635a4dddb66384fd0b897a5896df8c98"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6",
+  "html_url": "https://github.com/discourse/discourse/commit/2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "43a7b08a48b7e783c050f82a7c15970010a784b1",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/43a7b08a48b7e783c050f82a7c15970010a784b1",
+      "html_url": "https://github.com/discourse/discourse/commit/43a7b08a48b7e783c050f82a7c15970010a784b1"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 23,
+    "deletions": 21
+  },
+  "files": [
+    {
+      "sha": "39aed70a289d4b417e9e85d4b15fa17b1366423c",
+      "filename": "app/assets/javascripts/discourse/templates/components/user-card-contents.hbs",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 21,
+      "changes": 44,
+      "blob_url": "https://github.com/discourse/discourse/blob/2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6/app/assets/javascripts/discourse/templates/components/user-card-contents.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6/app/assets/javascripts/discourse/templates/components/user-card-contents.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/user-card-contents.hbs?ref=2178f7768fe7cfebd9ee1ad8aa024e11f1e11bc6",
+      "patch": "@@ -116,30 +116,32 @@\n     {{/if}}\n \n     {{#if user}}\n-      <div class=\"metadata\">\n-        {{#if user.last_posted_at}}\n-          <h3><span class='desc'>{{i18n 'last_post'}}</span> {{format-date user.last_posted_at leaveAgo=\"true\"}}</h3>\n-        {{/if}}\n-        <h3><span class='desc'>{{i18n 'joined'}}</span> {{format-date user.created_at leaveAgo=\"true\"}}</h3>\n-        <h3 title=\"{{timeReadTooltip}}\">\n-          <span class='desc'>{{i18n 'time_read'}}</span>\n-          {{format-duration user.time_read}}\n-          {{#if showRecentTimeRead}}\n-            <span>({{i18n 'time_read_recently' time_read=recentTimeRead}})</span>\n+      {{#unless user.profile_hidden}}\n+        <div class=\"metadata\">\n+          {{#if user.last_posted_at}}\n+            <h3><span class='desc'>{{i18n 'last_post'}}</span> {{format-date user.last_posted_at leaveAgo=\"true\"}}</h3>\n           {{/if}}\n-        </h3>\n-        {{#if showCheckEmail}}\n-          <h3 class=\"email\">\n-            {{d-icon \"envelope-o\" title=\"user.email.title\"}}\n-            {{#if user.email}}\n-              {{user.email}}\n-            {{else}}\n-              {{d-button action=\"checkEmail\" actionParam=user icon=\"envelope-o\" label=\"admin.users.check_email.text\" class=\"btn-primary\"}}\n+          <h3><span class='desc'>{{i18n 'joined'}}</span> {{format-date user.created_at leaveAgo=\"true\"}}</h3>\n+          <h3 title=\"{{timeReadTooltip}}\">\n+            <span class='desc'>{{i18n 'time_read'}}</span>\n+            {{format-duration user.time_read}}\n+            {{#if showRecentTimeRead}}\n+              <span>({{i18n 'time_read_recently' time_read=recentTimeRead}})</span>\n             {{/if}}\n           </h3>\n-        {{/if}}\n-        {{plugin-outlet name=\"user-card-metadata\" args=(hash user=user)}}\n-      </div>\n+          {{#if showCheckEmail}}\n+            <h3 class=\"email\">\n+              {{d-icon \"envelope-o\" title=\"user.email.title\"}}\n+              {{#if user.email}}\n+                {{user.email}}\n+              {{else}}\n+                {{d-button action=\"checkEmail\" actionParam=user icon=\"envelope-o\" label=\"admin.users.check_email.text\" class=\"btn-primary\"}}\n+              {{/if}}\n+            </h3>\n+          {{/if}}\n+          {{plugin-outlet name=\"user-card-metadata\" args=(hash user=user)}}\n+        </div>\n+      {{/unless}}\n     {{/if}}\n \n     {{#if publicUserFields}}"
+    }
+  ]
+}
