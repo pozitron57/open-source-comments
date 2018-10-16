@@ -108,7 +108,10 @@ for cs in os.listdir(p_N_days_ago):
         if not '.commit' in cs:
             with open(p_N_days_ago+cs, 'r') as f:
                 api_data = yaml.load(f)
-                stars = api_data["stargazers_count"]
+                if "stargazers_count" in api_data:
+                    stars = api_data["stargazers_count"]
+                else:
+                    stars = 'undefined'
                 stars_N_days_ago[cs] = stars
 
 
@@ -118,9 +121,13 @@ print ( '{:<27}{:<6}{:<5}{:<5}{}'.format('Name', '★', 'Δ★', 'I+PR', 'Create
 for cs in os.listdir(p):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
+            print (cs)
             with open(p+cs, 'r') as f:
                 api_data = yaml.load(f)
-                stars       = api_data["stargazers_count"]
+                if "stargazers_count" in api_data:
+                    stars = api_data["stargazers_count"]
+                else:
+                    stars = 'undefined'
                 created     = dateutil.parser.parse(api_data["created_at"])
                 open_issues = api_data["open_issues"]
 
@@ -136,7 +143,8 @@ for cs in os.listdir(p):
                 data[cs]["stars"]       = stars
                 data[cs]["open_issues"] = open_issues
                 data[cs]["created"]     = created.strftime('%Y‑%m‑%d') # only useful once
-                if cs in stars_N_days_ago and cs in data:
+                if cs in stars_N_days_ago and cs in data and isinstance(data[cs]["stars"],int) and isinstance(stars_N_days_ago[cs],int):
+                    print (cs, stars_N_days_ago, data[cs]['stars'])
                     ds = data[cs]["stars"] - stars_N_days_ago[cs]
                     data[cs]["stars_dif"] = ds
                     #if ds>0:
