@@ -1,0 +1,98 @@
+{
+  "sha": "cc27d61f9e9a387413884e5f21e8595449f2ea30",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjYzI3ZDYxZjllOWEzODc0MTM4ODRlNWYyMWU4NTk1NDQ5ZjJlYTMw",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-10-17T16:32:07Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-10-17T16:33:44Z"
+    },
+    "message": "FIX: discourse script didn't allow backups with paths anymore\n\nThis restores the previous functionality. The script now allows the following options:\n\n* `discourse backup` (uses the system generated filename)\n* `discourse backup <some_filename>` (uses the provided filename)\n* `discourse backup </some/path/to/filename>` (moves the backup to the provided path with the given filename)\n\nRemote backup stores do not support the last option.\nSome file extensions (like `.tar.gz`) are automatically removed from the provided filename.",
+    "tree": {
+      "sha": "09c4faa051a2849b5070fb95f0ebdbba87eccade",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/09c4faa051a2849b5070fb95f0ebdbba87eccade"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/cc27d61f9e9a387413884e5f21e8595449f2ea30",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/cc27d61f9e9a387413884e5f21e8595449f2ea30",
+  "html_url": "https://github.com/discourse/discourse/commit/cc27d61f9e9a387413884e5f21e8595449f2ea30",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/cc27d61f9e9a387413884e5f21e8595449f2ea30/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "21d804fc9217f949bc88742e4abcdc5b794cd2c6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/21d804fc9217f949bc88742e4abcdc5b794cd2c6",
+      "html_url": "https://github.com/discourse/discourse/commit/21d804fc9217f949bc88742e4abcdc5b794cd2c6"
+    }
+  ],
+  "stats": {
+    "total": 32,
+    "additions": 26,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "205b9be545b4fd1aa36bcfec8c8a70cf41b061b0",
+      "filename": "script/discourse",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 6,
+      "changes": 32,
+      "blob_url": "https://github.com/discourse/discourse/blob/cc27d61f9e9a387413884e5f21e8595449f2ea30/script/discourse",
+      "raw_url": "https://github.com/discourse/discourse/raw/cc27d61f9e9a387413884e5f21e8595449f2ea30/script/discourse",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/discourse?ref=cc27d61f9e9a387413884e5f21e8595449f2ea30",
+      "patch": "@@ -61,23 +61,43 @@ class DiscourseCLI < Thor\n     require \"backup_restore/backup_restore\"\n     require \"backup_restore/backuper\"\n \n+    store = BackupRestore::BackupStore.create\n+\n+    if filename\n+      destination_directory = File.dirname(filename).sub(/^\\.$/, '')\n+\n+      if destination_directory.present? && store.remote?\n+        puts \"Only local backup storage supports paths.\"\n+        exit(1)\n+      end\n+\n+      filename_without_extension = File.basename(filename).sub(/\\.(sql\\.)?(tar\\.gz|t?gz)$/i, '')\n+    end\n+\n     puts \"Starting backup...\"\n-    backuper = BackupRestore::Backuper.new(Discourse.system_user.id, filename: filename)\n+    backuper = BackupRestore::Backuper.new(Discourse.system_user.id, filename: filename_without_extension)\n     backup_filename = backuper.run\n-    puts \"Backup done.\"\n+    exit(1) unless backuper.success\n \n-    store = BackupRestore::BackupStore.create\n+    puts \"Backup done.\"\n \n     if store.remote?\n       location = BackupLocationSiteSetting.values.find { |v| v[:value] == SiteSetting.backup_location }\n       location = I18n.t(\"admin_js.#{location[:name]}\") if location\n       puts \"Output file is stored on #{location} as #{backup_filename}\", \"\"\n     else\n       backup = store.file(backup_filename, include_download_source: true)\n-      puts \"Output file is in: #{backup.source}\", \"\"\n-    end\n \n-    exit(1) unless backuper.success\n+      if destination_directory.present?\n+        puts \"Moving backup file...\"\n+        backup_path = File.join(destination_directory, backup_filename)\n+        FileUtils.mv(backup.source, backup_path)\n+      else\n+        backup_path = backup.source\n+      end\n+\n+      puts \"Output file is in: #{backup_path}\", \"\"\n+    end\n   end\n \n   desc \"export\", \"Backup a Discourse forum\""
+    }
+  ]
+}

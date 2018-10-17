@@ -1,0 +1,110 @@
+{
+  "sha": "e2558d84cbcdf27ba9673e5e710476dc3d195c4e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmUyNTU4ZDg0Y2JjZGYyN2JhOTY3M2U1ZTcxMDQ3NmRjM2QxOTVjNGU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-10-11T20:47:23Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-10-11T20:47:23Z"
+    },
+    "message": "fix admin user in dev composes",
+    "tree": {
+      "sha": "1f5a92b11e29005fc6e274a495881607514fbcfa",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/1f5a92b11e29005fc6e274a495881607514fbcfa"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/e2558d84cbcdf27ba9673e5e710476dc3d195c4e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/e2558d84cbcdf27ba9673e5e710476dc3d195c4e",
+  "html_url": "https://github.com/umputun/remark/commit/e2558d84cbcdf27ba9673e5e710476dc3d195c4e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/e2558d84cbcdf27ba9673e5e710476dc3d195c4e/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3",
+      "html_url": "https://github.com/umputun/remark/commit/ef5b18c3d17c77456e9ac52071c5b35e3a181cb3"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "bf9a252f97dbe1c16b2d128ab6bbeaa4e03d9644",
+      "filename": "compose-dev-backend.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/e2558d84cbcdf27ba9673e5e710476dc3d195c4e/compose-dev-backend.yml",
+      "raw_url": "https://github.com/umputun/remark/raw/e2558d84cbcdf27ba9673e5e710476dc3d195c4e/compose-dev-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/compose-dev-backend.yml?ref=e2558d84cbcdf27ba9673e5e710476dc3d195c4e",
+      "patch": "@@ -42,6 +42,6 @@ services:\n             - DEBUG=true\n             - DEV_PASSWD=password\n             - AUTH_DEV=true   # activate local oauth \"dev\"\n-            - ADMIN=dev_user  # set admin flag for default user on local ouath2\n+            - ADMIN_SHARED_ID=dev_user  # set admin flag for default user on local ouath2\n         volumes:\n             - ./var:/srv/var "
+    },
+    {
+      "sha": "f276030205bcb6bd8809d6d17b54ebffaaabace8",
+      "filename": "compose-dev-frontend.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/e2558d84cbcdf27ba9673e5e710476dc3d195c4e/compose-dev-frontend.yml",
+      "raw_url": "https://github.com/umputun/remark/raw/e2558d84cbcdf27ba9673e5e710476dc3d195c4e/compose-dev-frontend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/compose-dev-frontend.yml?ref=e2558d84cbcdf27ba9673e5e710476dc3d195c4e",
+      "patch": "@@ -35,6 +35,6 @@ services:\n             - DEBUG=true\n             - DEV_PASSWD=password\n             - AUTH_DEV=true   # activate local oauth \"dev\"\n-            - ADMIN=dev_user  # set admin flag for default user on local ouath2\n+            - ADMIN_SHARED_ID=dev_user  # set admin flag for default user on local ouath2\n         volumes:\n             - ./var:/srv/var "
+    }
+  ]
+}
