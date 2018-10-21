@@ -1,0 +1,218 @@
+{
+  "sha": "dca830cb73371faca8e8497af13064a5bc92b52d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkY2E4MzBjYjczMzcxZmFjYThlODQ5N2FmMTMwNjRhNWJjOTJiNTJk",
+  "commit": {
+    "author": {
+      "name": "Kyle Zhao",
+      "email": "kzhao.sw@gmail.com",
+      "date": "2018-10-19T15:53:29Z"
+    },
+    "committer": {
+      "name": "Kyle Zhao",
+      "email": "kzhao.sw@gmail.com",
+      "date": "2018-10-19T15:53:29Z"
+    },
+    "message": "Revert \"FEATURE: [Experimental] Content Security Policy (#6504)\"\n\nThis reverts commit fb8231077a07fe9b3bcdce150c6615b1897166c7.",
+    "tree": {
+      "sha": "9436ae2810e9cc7709d5a9bbda152add95271d58",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9436ae2810e9cc7709d5a9bbda152add95271d58"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/dca830cb73371faca8e8497af13064a5bc92b52d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/dca830cb73371faca8e8497af13064a5bc92b52d",
+  "html_url": "https://github.com/discourse/discourse/commit/dca830cb73371faca8e8497af13064a5bc92b52d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/dca830cb73371faca8e8497af13064a5bc92b52d/comments",
+  "author": {
+    "login": "xrav3nz",
+    "id": 6376558,
+    "node_id": "MDQ6VXNlcjYzNzY1NTg=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6376558?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xrav3nz",
+    "html_url": "https://github.com/xrav3nz",
+    "followers_url": "https://api.github.com/users/xrav3nz/followers",
+    "following_url": "https://api.github.com/users/xrav3nz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xrav3nz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xrav3nz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xrav3nz/subscriptions",
+    "organizations_url": "https://api.github.com/users/xrav3nz/orgs",
+    "repos_url": "https://api.github.com/users/xrav3nz/repos",
+    "events_url": "https://api.github.com/users/xrav3nz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xrav3nz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "xrav3nz",
+    "id": 6376558,
+    "node_id": "MDQ6VXNlcjYzNzY1NTg=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6376558?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xrav3nz",
+    "html_url": "https://github.com/xrav3nz",
+    "followers_url": "https://api.github.com/users/xrav3nz/followers",
+    "following_url": "https://api.github.com/users/xrav3nz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xrav3nz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xrav3nz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xrav3nz/subscriptions",
+    "organizations_url": "https://api.github.com/users/xrav3nz/orgs",
+    "repos_url": "https://api.github.com/users/xrav3nz/repos",
+    "events_url": "https://api.github.com/users/xrav3nz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xrav3nz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "html_url": "https://github.com/discourse/discourse/commit/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0"
+    }
+  ],
+  "stats": {
+    "total": 330,
+    "additions": 3,
+    "deletions": 327
+  },
+  "files": [
+    {
+      "sha": "41dfc9502db706e435b095c1aa028cf5ce31b3ae",
+      "filename": "app/controllers/csp_reports_controller.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 35,
+      "changes": 35,
+      "blob_url": "https://github.com/discourse/discourse/blob/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/app/controllers/csp_reports_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/app/controllers/csp_reports_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/csp_reports_controller.rb?ref=b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "patch": "@@ -1,35 +0,0 @@\n-# frozen_string_literal: true\n-class CspReportsController < ApplicationController\n-  skip_before_action :check_xhr, :preload_json, :verify_authenticity_token, only: [:create]\n-\n-  def create\n-    raise Discourse::NotFound unless report_collection_enabled?\n-\n-    Logster.add_to_env(request.env, 'CSP Report', report)\n-    Rails.logger.warn(\"CSP Violation: '#{report['blocked-uri']}'\")\n-\n-    head :ok\n-  end\n-\n-  private\n-\n-  def report\n-    @report ||= params.require('csp-report').permit(\n-      'blocked-uri',\n-      'disposition',\n-      'document-uri',\n-      'effective-directive',\n-      'original-policy',\n-      'referrer',\n-      'script-sample',\n-      'status-code',\n-      'violated-directive',\n-      'line-number',\n-      'source-file'\n-    ).to_h\n-  end\n-\n-  def report_collection_enabled?\n-    ContentSecurityPolicy.enabled? && SiteSetting.content_security_policy_collect_reports\n-  end\n-end"
+    },
+    {
+      "sha": "640f05f5b7119956f5f74bd543c1ae81e13fd396",
+      "filename": "config/application.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/dca830cb73371faca8e8497af13064a5bc92b52d/config/application.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dca830cb73371faca8e8497af13064a5bc92b52d/config/application.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/application.rb?ref=dca830cb73371faca8e8497af13064a5bc92b52d",
+      "patch": "@@ -190,9 +190,6 @@ def config.database_configuration\n     # supports etags (post 1.7)\n     config.middleware.delete Rack::ETag\n \n-    require 'content_security_policy'\n-    config.middleware.swap ActionDispatch::ContentSecurityPolicy::Middleware, ContentSecurityPolicy::Middleware\n-\n     require 'middleware/discourse_public_exceptions'\n     config.exceptions_app = Middleware::DiscoursePublicExceptions.new(Rails.public_path)\n "
+    },
+    {
+      "sha": "676ee367e87bf52699ed087fd24560dccfc521b5",
+      "filename": "config/initializers/100-mime_types.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/config/initializers/100-mime_types.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/config/initializers/100-mime_types.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/initializers/100-mime_types.rb?ref=b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "patch": "@@ -1 +0,0 @@\n-Mime::Type.register 'application/csp-report', :json"
+    },
+    {
+      "sha": "c1ba5847b76e07cd8f923303479badea3b9afffa",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 5,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/dca830cb73371faca8e8497af13064a5bc92b52d/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/dca830cb73371faca8e8497af13064a5bc92b52d/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=dca830cb73371faca8e8497af13064a5bc92b52d",
+      "patch": "@@ -1267,10 +1267,6 @@ en:\n     blacklisted_crawler_user_agents: 'Unique case insensitive word in the user agent string identifying web crawlers that should not be allowed to access the site. Does not apply if whitelist is defined.'\n     slow_down_crawler_user_agents: 'User agents of web crawlers that should be rate limited in robots.txt using the Crawl-delay directive'\n     slow_down_crawler_rate: 'If slow_down_crawler_user_agents is specified this rate will apply to all the crawlers (number of seconds delay between requests)'\n-    content_security_policy: EXPERIMENTAL - Turn on Content-Security-Policy\n-    content_security_policy_report_only: EXPERIMENTAL - Turn on Content-Security-Policy-Report-Only\n-    content_security_policy_collect_reports: Enable CSP violation report collection at /csp_reports\n-    content_security_policy_script_src: Additional whitelisted script sources. The current host and CDN are included by default.\n     top_menu: \"Determine which items appear in the homepage navigation, and in what order. Example latest|new|unread|categories|top|read|posted|bookmarks\"\n     post_menu: \"Determine which items appear on the post menu, and in what order. Example like|edit|flag|delete|share|bookmark|reply\"\n     post_menu_hidden_items: \"The menu items to hide by default in the post menu unless an expansion ellipsis is clicked on.\"\n@@ -1872,7 +1868,7 @@ en:\n       sso_provider_secrets:\n         key: \"www.example.com\"\n         value: \"SSO secret\"\n-\n+        \n   search:\n     within_post: \"#%{post_number} by %{username}\"\n     types:"
+    },
+    {
+      "sha": "3d072a4691aefb47c44f1c69b7cc332f6d1cee9b",
+      "filename": "config/routes.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/dca830cb73371faca8e8497af13064a5bc92b52d/config/routes.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dca830cb73371faca8e8497af13064a5bc92b52d/config/routes.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/routes.rb?ref=dca830cb73371faca8e8497af13064a5bc92b52d",
+      "patch": "@@ -828,8 +828,6 @@\n   post \"/push_notifications/subscribe\" => \"push_notification#subscribe\"\n   post \"/push_notifications/unsubscribe\" => \"push_notification#unsubscribe\"\n \n-  resources :csp_reports, only: [:create]\n-\n   get \"*url\", to: 'permalinks#show', constraints: PermalinkConstraint.new\n \n end"
+    },
+    {
+      "sha": "4af22bda68af17a8972536613efc666864563df5",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 10,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/dca830cb73371faca8e8497af13064a5bc92b52d/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/dca830cb73371faca8e8497af13064a5bc92b52d/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=dca830cb73371faca8e8497af13064a5bc92b52d",
+      "patch": "@@ -1179,15 +1179,6 @@ security:\n     default: 'bingbot'\n     list_type: compact\n   slow_down_crawler_rate: 60\n-  content_security_policy:\n-    default: false\n-  content_security_policy_report_only:\n-    default: false\n-  content_security_policy_collect_reports:\n-    default: true\n-  content_security_policy_script_src:\n-    type: list\n-    default: ''\n \n onebox:\n   enable_flash_video_onebox: false\n@@ -1810,4 +1801,4 @@ tags:\n   remove_muted_tags_from_latest:\n     default: false\n   force_lowercase_tags:\n-    default: true\n+    default: true\n\\ No newline at end of file"
+    },
+    {
+      "sha": "6feb85e0cd1835722d7f64040e42101c0d9d80f7",
+      "filename": "lib/content_security_policy.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 83,
+      "changes": 83,
+      "blob_url": "https://github.com/discourse/discourse/blob/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/lib/content_security_policy.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/lib/content_security_policy.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/content_security_policy.rb?ref=b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "patch": "@@ -1,83 +0,0 @@\n-# frozen_string_literal: true\n-require_dependency 'global_path'\n-\n-class ContentSecurityPolicy\n-  include GlobalPath\n-\n-  class Middleware\n-    WHITELISTED_PATHS = %w(\n-      /logs\n-    )\n-\n-    def initialize(app)\n-      @app = app\n-    end\n-\n-    def call(env)\n-      request = Rack::Request.new(env)\n-      _, headers, _ = response = @app.call(env)\n-\n-      return response unless html_response?(headers) && ContentSecurityPolicy.enabled?\n-      return response if whitelisted?(request.path)\n-\n-      policy = ContentSecurityPolicy.new.build\n-      headers['Content-Security-Policy'] = policy if SiteSetting.content_security_policy\n-      headers['Content-Security-Policy-Report-Only'] = policy if SiteSetting.content_security_policy_report_only\n-\n-      response\n-    end\n-\n-    private\n-\n-    def html_response?(headers)\n-      headers['Content-Type'] && headers['Content-Type'] =~ /html/\n-    end\n-\n-    def whitelisted?(path)\n-      if GlobalSetting.relative_url_root\n-        path.slice!(/^#{Regexp.quote(GlobalSetting.relative_url_root)}/)\n-      end\n-\n-      WHITELISTED_PATHS.any? { |whitelisted| path.start_with?(whitelisted) }\n-    end\n-  end\n-\n-  def self.enabled?\n-    SiteSetting.content_security_policy || SiteSetting.content_security_policy_report_only\n-  end\n-\n-  def initialize\n-    @directives = {\n-      script_src: script_src,\n-    }\n-\n-    @directives[:report_uri] = path('/csp_reports') if SiteSetting.content_security_policy_collect_reports\n-  end\n-\n-  def build\n-    policy = ActionDispatch::ContentSecurityPolicy.new\n-\n-    @directives.each do |directive, sources|\n-      if sources.is_a?(Array)\n-        policy.public_send(directive, *sources)\n-      else\n-        policy.public_send(directive, sources)\n-      end\n-    end\n-\n-    policy.build\n-  end\n-\n-  private\n-\n-  def script_src\n-    sources = [:self, :unsafe_eval]\n-\n-    sources << :https if SiteSetting.force_https\n-    sources << Discourse.asset_host if Discourse.asset_host.present?\n-    sources << 'www.google-analytics.com' if SiteSetting.ga_universal_tracking_code.present?\n-    sources << 'www.googletagmanager.com' if SiteSetting.gtm_container_id.present?\n-\n-    sources.concat(SiteSetting.content_security_policy_script_src.split('|'))\n-  end\n-end"
+    },
+    {
+      "sha": "dd26fb2d94dfc06e71a364e5f1a6ffffeed47a81",
+      "filename": "spec/lib/content_security_policy_spec.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 61,
+      "changes": 61,
+      "blob_url": "https://github.com/discourse/discourse/blob/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/spec/lib/content_security_policy_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/spec/lib/content_security_policy_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/lib/content_security_policy_spec.rb?ref=b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "patch": "@@ -1,61 +0,0 @@\n-require 'rails_helper'\n-\n-describe ContentSecurityPolicy do\n-  describe 'report-uri' do\n-    it 'is enabled by SiteSetting' do\n-      SiteSetting.content_security_policy_collect_reports = true\n-      report_uri = parse(ContentSecurityPolicy.new.build)['report-uri'].first\n-      expect(report_uri).to eq('/csp_reports')\n-\n-      SiteSetting.content_security_policy_collect_reports = false\n-      report_uri = parse(ContentSecurityPolicy.new.build)['report-uri']\n-      expect(report_uri).to eq(nil)\n-    end\n-  end\n-\n-  describe 'script-src defaults' do\n-    it 'always have self and unsafe-eval' do\n-      script_srcs = parse(ContentSecurityPolicy.new.build)['script-src']\n-      expect(script_srcs).to eq(%w['self' 'unsafe-eval'])\n-    end\n-\n-    it 'enforces https when SiteSetting.force_https' do\n-      SiteSetting.force_https = true\n-\n-      script_srcs = parse(ContentSecurityPolicy.new.build)['script-src']\n-      expect(script_srcs).to include('https:')\n-    end\n-\n-    it 'whitelists Google Analytics and Tag Manager when integrated' do\n-      SiteSetting.ga_universal_tracking_code = 'UA-12345678-9'\n-      SiteSetting.gtm_container_id = 'GTM-ABCDEF'\n-\n-      script_srcs = parse(ContentSecurityPolicy.new.build)['script-src']\n-      expect(script_srcs).to include('www.google-analytics.com')\n-      expect(script_srcs).to include('www.googletagmanager.com')\n-    end\n-\n-    it 'whitelists CDN when integrated' do\n-      set_cdn_url('cdn.com')\n-\n-      script_srcs = parse(ContentSecurityPolicy.new.build)['script-src']\n-      expect(script_srcs).to include('cdn.com')\n-    end\n-\n-    it 'can be extended with more sources' do\n-      SiteSetting.content_security_policy_script_src = 'example.com|another.com'\n-      script_srcs = parse(ContentSecurityPolicy.new.build)['script-src']\n-      expect(script_srcs).to include('example.com')\n-      expect(script_srcs).to include('another.com')\n-      expect(script_srcs).to include(\"'unsafe-eval'\")\n-      expect(script_srcs).to include(\"'self'\")\n-    end\n-  end\n-\n-  def parse(csp_string)\n-    csp_string.split(';').map do |policy|\n-      directive, *sources = policy.split\n-      [directive, sources]\n-    end.to_h\n-  end\n-end"
+    },
+    {
+      "sha": "03c5488f1190a24907fb798db293c2571606bcb4",
+      "filename": "spec/requests/application_controller_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 65,
+      "changes": 65,
+      "blob_url": "https://github.com/discourse/discourse/blob/dca830cb73371faca8e8497af13064a5bc92b52d/spec/requests/application_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dca830cb73371faca8e8497af13064a5bc92b52d/spec/requests/application_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/application_controller_spec.rb?ref=dca830cb73371faca8e8497af13064a5bc92b52d",
+      "patch": "@@ -196,69 +196,4 @@\n       expect(controller.theme_ids).to eq([theme.id])\n     end\n   end\n-\n-  describe 'Content Security Policy' do\n-    it 'is enabled by SiteSettings' do\n-      SiteSetting.content_security_policy = false\n-      SiteSetting.content_security_policy_report_only = false\n-\n-      get '/'\n-\n-      expect(response.headers).to_not include('Content-Security-Policy')\n-      expect(response.headers).to_not include('Content-Security-Policy-Report-Only')\n-\n-      SiteSetting.content_security_policy = true\n-      SiteSetting.content_security_policy_report_only = true\n-\n-      get '/'\n-\n-      expect(response.headers).to include('Content-Security-Policy')\n-      expect(response.headers).to include('Content-Security-Policy-Report-Only')\n-    end\n-\n-    it 'can be customized with SiteSetting' do\n-      SiteSetting.content_security_policy = true\n-\n-      get '/'\n-      script_src = parse(response.headers['Content-Security-Policy'])['script-src']\n-\n-      expect(script_src).to_not include('example.com')\n-\n-      SiteSetting.content_security_policy_script_src = 'example.com'\n-\n-      get '/'\n-      script_src = parse(response.headers['Content-Security-Policy'])['script-src']\n-\n-      expect(script_src).to include('example.com')\n-      expect(script_src).to include(\"'self'\")\n-      expect(script_src).to include(\"'unsafe-eval'\")\n-    end\n-\n-    it 'does not set CSP when responding to non-HTML' do\n-      SiteSetting.content_security_policy = true\n-      SiteSetting.content_security_policy_report_only = true\n-\n-      get '/latest.json'\n-\n-      expect(response.headers).to_not include('Content-Security-Policy')\n-      expect(response.headers).to_not include('Content-Security-Policy-Report-Only')\n-    end\n-\n-    it 'does not set CSP for /logs' do\n-      sign_in(Fabricate(:admin))\n-      SiteSetting.content_security_policy = true\n-\n-      get '/logs'\n-\n-      expect(response.status).to eq(200)\n-      expect(response.headers).to_not include('Content-Security-Policy')\n-    end\n-\n-    def parse(csp_string)\n-      csp_string.split(';').map do |policy|\n-        directive, *sources = policy.split\n-        [directive, sources]\n-      end.to_h\n-    end\n-  end\n end"
+    },
+    {
+      "sha": "1fd6b238760bcc2a340ee03c579a51116c7fb29d",
+      "filename": "spec/requests/csp_reports_controller_spec.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 56,
+      "changes": 56,
+      "blob_url": "https://github.com/discourse/discourse/blob/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/spec/requests/csp_reports_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0/spec/requests/csp_reports_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/csp_reports_controller_spec.rb?ref=b35c8fb336049f52d9fe341ce8cb4eeee7c1c5b0",
+      "patch": "@@ -1,56 +0,0 @@\n-require 'rails_helper'\n-\n-describe CspReportsController do\n-  describe '#create' do\n-    before do\n-      SiteSetting.content_security_policy = true\n-      SiteSetting.content_security_policy_collect_reports = true\n-\n-      @orig_logger = Rails.logger\n-      Rails.logger = @fake_logger = FakeLogger.new\n-    end\n-\n-    after do\n-      Rails.logger = @orig_logger\n-    end\n-\n-    def send_report\n-      post '/csp_reports', params: {\n-        \"csp-report\": {\n-          \"document-uri\": \"http://localhost:3000/\",\n-          \"referrer\": \"\",\n-          \"violated-directive\": \"script-src\",\n-          \"effective-directive\": \"script-src\",\n-          \"original-policy\": \"script-src 'unsafe-eval' www.google-analytics.com; report-uri /csp_reports\",\n-          \"disposition\": \"report\",\n-          \"blocked-uri\": \"http://suspicio.us/assets.js\",\n-          \"line-number\": 25,\n-          \"source-file\": \"http://localhost:3000/\",\n-          \"status-code\": 200,\n-          \"script-sample\": \"\"\n-        }, headers: { \"Content-Type\": \"application/csp-report\" }\n-      }\n-    end\n-\n-    it 'is enabled by SiteSetting' do\n-      SiteSetting.content_security_policy = false\n-      SiteSetting.content_security_policy_report_only = false\n-      SiteSetting.content_security_policy_collect_reports = true\n-      send_report\n-      expect(response.status).to eq(404)\n-\n-      SiteSetting.content_security_policy = true\n-      send_report\n-      expect(response.status).to eq(200)\n-\n-      SiteSetting.content_security_policy_collect_reports = false\n-      send_report\n-      expect(response.status).to eq(404)\n-    end\n-\n-    it 'logs the violation report' do\n-      send_report\n-      expect(Rails.logger.warnings).to include(\"CSP Violation: 'http://suspicio.us/assets.js'\")\n-    end\n-  end\n-end"
+    },
+    {
+      "sha": "416de400dcdbe7ace9d4b993fd0d8f6b0b543fb7",
+      "filename": "spec/support/fake_logger.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 6,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/dca830cb73371faca8e8497af13064a5bc92b52d/spec/support/fake_logger.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dca830cb73371faca8e8497af13064a5bc92b52d/spec/support/fake_logger.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/support/fake_logger.rb?ref=dca830cb73371faca8e8497af13064a5bc92b52d",
+      "patch": "@@ -1,14 +1,9 @@\n class FakeLogger\n-  attr_reader :warnings, :errors, :infos\n+  attr_reader :warnings, :errors\n \n   def initialize\n     @warnings = []\n     @errors = []\n-    @infos = []\n-  end\n-\n-  def info(message = nil)\n-    @infos << message\n   end\n \n   def warn(message)"
+    }
+  ]
+}
