@@ -1,0 +1,110 @@
+{
+  "sha": "05438d99a85c5cb8825dbb7d481cd34237302460",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowNTQzOGQ5OWE4NWM1Y2I4ODI1ZGJiN2Q0ODFjZDM0MjM3MzAyNDYw",
+  "commit": {
+    "author": {
+      "name": "Matthew Campbell",
+      "email": "mwc+github@mwcampbell.us",
+      "date": "2018-10-24T13:58:42Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-10-24T13:58:42Z"
+    },
+    "message": "FIX: Ensure the like button always has a title, for accessibility (#6525)\n\nThe like button previously didn't have a title for anonymous users,\r\nbecause the `canToggleLike` flag wasn't set, but the `liked` flag wasn't\r\nset either. This made the button inaccessible to blind users.",
+    "tree": {
+      "sha": "fc05dade14e976f5575699a50a9a0f1d97fc397f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fc05dade14e976f5575699a50a9a0f1d97fc397f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/05438d99a85c5cb8825dbb7d481cd34237302460",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/05438d99a85c5cb8825dbb7d481cd34237302460",
+  "html_url": "https://github.com/discourse/discourse/commit/05438d99a85c5cb8825dbb7d481cd34237302460",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/05438d99a85c5cb8825dbb7d481cd34237302460/comments",
+  "author": {
+    "login": "mwcampbell",
+    "id": 214820,
+    "node_id": "MDQ6VXNlcjIxNDgyMA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/214820?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mwcampbell",
+    "html_url": "https://github.com/mwcampbell",
+    "followers_url": "https://api.github.com/users/mwcampbell/followers",
+    "following_url": "https://api.github.com/users/mwcampbell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mwcampbell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mwcampbell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mwcampbell/subscriptions",
+    "organizations_url": "https://api.github.com/users/mwcampbell/orgs",
+    "repos_url": "https://api.github.com/users/mwcampbell/repos",
+    "events_url": "https://api.github.com/users/mwcampbell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mwcampbell/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e955a7b49de8db6b04676756ea93b4450171918f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e955a7b49de8db6b04676756ea93b4450171918f",
+      "html_url": "https://github.com/discourse/discourse/commit/e955a7b49de8db6b04676756ea93b4450171918f"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 15,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "0a1eaf0e167c79499e8604b8ccedf649905b451b",
+      "filename": "app/assets/javascripts/discourse/widgets/post-menu.js.es6",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 4,
+      "changes": 13,
+      "blob_url": "https://github.com/discourse/discourse/blob/05438d99a85c5cb8825dbb7d481cd34237302460/app/assets/javascripts/discourse/widgets/post-menu.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/05438d99a85c5cb8825dbb7d481cd34237302460/app/assets/javascripts/discourse/widgets/post-menu.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/post-menu.js.es6?ref=05438d99a85c5cb8825dbb7d481cd34237302460",
+      "patch": "@@ -67,13 +67,18 @@ registerButton(\"like\", attrs => {\n     className\n   };\n \n-  if (attrs.canToggleLike) {\n+  // If the user has already liked the post and doesn't have permission\n+  // to undo that operation, then indicate via the title that they've liked it\n+  // and disable the button. Otherwise, set the title even if the user\n+  // is anonymous (meaning they don't currently have permission to like);\n+  // this is important for accessibility.\n+  if (attrs.liked && !attrs.canToggleLike) {\n+    button.title = \"post.controls.has_liked\";\n+    button.disabled = true;\n+  } else {\n     button.title = attrs.liked\n       ? \"post.controls.undo_like\"\n       : \"post.controls.like\";\n-  } else if (attrs.liked) {\n-    button.title = \"post.controls.has_liked\";\n-    button.disabled = true;\n   }\n \n   return button;"
+    },
+    {
+      "sha": "5c4ff36fd36ac5f795eb6db06bbaae040eacda3d",
+      "filename": "test/javascripts/widgets/post-test.js.es6",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/05438d99a85c5cb8825dbb7d481cd34237302460/test/javascripts/widgets/post-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/05438d99a85c5cb8825dbb7d481cd34237302460/test/javascripts/widgets/post-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/widgets/post-test.js.es6?ref=05438d99a85c5cb8825dbb7d481cd34237302460",
+      "patch": "@@ -206,6 +206,12 @@ widgetTest(\"anon liking\", {\n     assert.ok(!!this.$(\".actions button.like\").length);\n     assert.ok(this.$(\".actions button.like-count\").length === 0);\n \n+    assert.equal(\n+      this.$(\"button.like\").attr(\"title\"),\n+      I18n.t(\"post.controls.like\"),\n+      `shows the right button title for anonymous users`\n+    );\n+\n     await click(\".actions button.like\");\n     assert.ok(this.loginShown);\n   }"
+    }
+  ]
+}

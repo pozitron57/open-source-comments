@@ -1,0 +1,98 @@
+{
+  "sha": "be41daae73df299318e5ec6cf51b4536bbcd956a",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmJlNDFkYWFlNzNkZjI5OTMxOGU1ZWM2Y2Y1MWI0NTM2YmJjZDk1NmE=",
+  "commit": {
+    "author": {
+      "name": "Pavel Vinnyk",
+      "email": "ur300@users.noreply.github.com",
+      "date": "2018-10-19T21:57:23Z"
+    },
+    "committer": {
+      "name": "Aleksei Gurianov",
+      "email": "gurianov@gmail.com",
+      "date": "2018-10-19T21:57:23Z"
+    },
+    "message": "Auth handling added to deleteme.html #170 (#208)",
+    "tree": {
+      "sha": "91c598db924f217508685d54504e2c7c472b3f3b",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/91c598db924f217508685d54504e2c7c472b3f3b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/be41daae73df299318e5ec6cf51b4536bbcd956a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/be41daae73df299318e5ec6cf51b4536bbcd956a",
+  "html_url": "https://github.com/umputun/remark/commit/be41daae73df299318e5ec6cf51b4536bbcd956a",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/be41daae73df299318e5ec6cf51b4536bbcd956a/comments",
+  "author": {
+    "login": "ur300",
+    "id": 3381873,
+    "node_id": "MDQ6VXNlcjMzODE4NzM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/3381873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ur300",
+    "html_url": "https://github.com/ur300",
+    "followers_url": "https://api.github.com/users/ur300/followers",
+    "following_url": "https://api.github.com/users/ur300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ur300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ur300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ur300/subscriptions",
+    "organizations_url": "https://api.github.com/users/ur300/orgs",
+    "repos_url": "https://api.github.com/users/ur300/repos",
+    "events_url": "https://api.github.com/users/ur300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ur300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Guria",
+    "id": 36270,
+    "node_id": "MDQ6VXNlcjM2Mjcw",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/36270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Guria",
+    "html_url": "https://github.com/Guria",
+    "followers_url": "https://api.github.com/users/Guria/followers",
+    "following_url": "https://api.github.com/users/Guria/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Guria/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Guria/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Guria/subscriptions",
+    "organizations_url": "https://api.github.com/users/Guria/orgs",
+    "repos_url": "https://api.github.com/users/Guria/repos",
+    "events_url": "https://api.github.com/users/Guria/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Guria/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8e12b00ae8c2780d045177f87c842b6e8264316e",
+      "url": "https://api.github.com/repos/umputun/remark/commits/8e12b00ae8c2780d045177f87c842b6e8264316e",
+      "html_url": "https://github.com/umputun/remark/commit/8e12b00ae8c2780d045177f87c842b6e8264316e"
+    }
+  ],
+  "stats": {
+    "total": 39,
+    "additions": 27,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "ee755cdb2f4e4d2bd4bf45317f21f26bdb4f13af",
+      "filename": "web/app/deleteme.js",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 12,
+      "changes": 39,
+      "blob_url": "https://github.com/umputun/remark/blob/be41daae73df299318e5ec6cf51b4536bbcd956a/web/app/deleteme.js",
+      "raw_url": "https://github.com/umputun/remark/raw/be41daae73df299318e5ec6cf51b4536bbcd956a/web/app/deleteme.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/deleteme.js?ref=be41daae73df299318e5ec6cf51b4536bbcd956a",
+      "patch": "@@ -1,6 +1,6 @@\n /* eslint-disable no-console */\r\n-import { NODE_ID } from 'common/constants';\r\n-import { approveDeleteMe } from 'common/api';\r\n+import { NODE_ID, BASE_URL } from 'common/constants';\r\n+import { approveDeleteMe, getUser } from 'common/api';\r\n import { token } from 'common/settings';\r\n \r\n if (document.readyState === 'loading') {\r\n@@ -16,14 +16,29 @@ function init() {\n     console.error(\"Remark42: Can't find root node.\");\r\n     return;\r\n   }\r\n-  approveDeleteMe(token).then(\r\n-    data =>\r\n-      (node.innerHTML = `\r\n-        <h3>User deleted successfully</h3>\r\n-        <pre>${JSON.stringify(data, null, 4)}</pre>`),\r\n-    err =>\r\n-      (node.innerHTML = `\r\n-        <h3>Something went wrong</h3>\r\n-        <pre>${err}</pre>`)\r\n-  );\r\n+\r\n+  getUser()\r\n+    .then(user => {\r\n+      if (!user.admin) {\r\n+        handleNotAuthorizedError(node);\r\n+        return;\r\n+      }\r\n+\r\n+      approveDeleteMe(token).then(\r\n+        data =>\r\n+          (node.innerHTML = `\r\n+\t\t\t<h3>User deleted successfully</h3>\r\n+\t\t\t<pre>${JSON.stringify(data, null, 4)}</pre>`),\r\n+        err =>\r\n+          (node.innerHTML = `\r\n+              <h3>Something went wrong</h3>\r\n+              <pre>${err}</pre>`)\r\n+      );\r\n+    })\r\n+    .catch(() => handleNotAuthorizedError(node));\r\n+}\r\n+\r\n+function handleNotAuthorizedError(node) {\r\n+  node.innerHTML = `<h3>You are not logged in</h3>\r\n+        \t\t\t  <p><a href='${BASE_URL}' target='_blank'>Sign in</a> as admin to delete user information</p>`;\r\n }\r"
+    }
+  ]
+}
