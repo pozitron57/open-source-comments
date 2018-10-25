@@ -1,0 +1,110 @@
+{
+  "sha": "306d77b54f5d3089c08d9e068737a7cb91997ecb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozMDZkNzdiNTRmNWQzMDg5YzA4ZDllMDY4NzM3YTdjYjkxOTk3ZWNi",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-10-25T14:08:10Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-10-25T14:08:10Z"
+    },
+    "message": "FIX: don't use srcset on cropped thumbnails",
+    "tree": {
+      "sha": "b10e8ae6f9e387880ccb3819a69af5abf3a09daf",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b10e8ae6f9e387880ccb3819a69af5abf3a09daf"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/306d77b54f5d3089c08d9e068737a7cb91997ecb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/306d77b54f5d3089c08d9e068737a7cb91997ecb",
+  "html_url": "https://github.com/discourse/discourse/commit/306d77b54f5d3089c08d9e068737a7cb91997ecb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/306d77b54f5d3089c08d9e068737a7cb91997ecb/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a6eca28ec6dcebea958922d36909cb94da9c2b7d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a6eca28ec6dcebea958922d36909cb94da9c2b7d",
+      "html_url": "https://github.com/discourse/discourse/commit/a6eca28ec6dcebea958922d36909cb94da9c2b7d"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 34,
+    "deletions": 16
+  },
+  "files": [
+    {
+      "sha": "6a343bee7537f7df5e816a396acc6cf20a00f292",
+      "filename": "lib/cooked_post_processor.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 13,
+      "changes": 23,
+      "blob_url": "https://github.com/discourse/discourse/blob/306d77b54f5d3089c08d9e068737a7cb91997ecb/lib/cooked_post_processor.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/306d77b54f5d3089c08d9e068737a7cb91997ecb/lib/cooked_post_processor.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/cooked_post_processor.rb?ref=306d77b54f5d3089c08d9e068737a7cb91997ecb",
+      "patch": "@@ -309,7 +309,7 @@ def convert_to_link!(img)\n       end\n     end\n \n-    add_lightbox!(img, original_width, original_height, upload)\n+    add_lightbox!(img, original_width, original_height, upload, cropped: crop)\n   end\n \n   def is_a_hyperlink?(img)\n@@ -330,7 +330,7 @@ def each_responsive_ratio\n       .each { |r| yield r if r > 1 }\n   end\n \n-  def add_lightbox!(img, original_width, original_height, upload = nil)\n+  def add_lightbox!(img, original_width, original_height, upload, cropped: false)\n     # first, create a div to hold our lightbox\n     lightbox = create_node(\"div\", \"lightbox-wrapper\")\n     img.add_next_sibling(lightbox)\n@@ -352,27 +352,24 @@ def add_lightbox!(img, original_width, original_height, upload = nil)\n     if upload\n       thumbnail = upload.thumbnail(w, h)\n       if thumbnail && thumbnail.filesize.to_i < upload.filesize\n-        img[\"src\"] = upload.thumbnail(w, h).url\n+        img[\"src\"] = thumbnail.url\n \n         srcset = +\"\"\n \n         each_responsive_ratio do |ratio|\n           resized_w = (w * ratio).to_i\n           resized_h = (h * ratio).to_i\n \n-          if upload.width && resized_w > upload.width\n+          if !cropped && upload.width && resized_w > upload.width\n             cooked_url = UrlHelper.cook_url(upload.url)\n-            srcset << \", #{cooked_url} #{ratio}x\"\n-          else\n-            if t = upload.thumbnail(resized_w, resized_h)\n-              cooked_url = UrlHelper.cook_url(t.url)\n-              srcset << \", #{cooked_url} #{ratio}x\"\n-            end\n+            srcset << \", #{cooked_url} #{ratio.to_s.sub(/\\.0$/, \"\")}x\"\n+          elsif t = upload.thumbnail(resized_w, resized_h)\n+            cooked_url = UrlHelper.cook_url(t.url)\n+            srcset << \", #{cooked_url} #{ratio.to_s.sub(/\\.0$/, \"\")}x\"\n           end\n-        end\n-\n-        img[\"srcset\"] = \"#{UrlHelper.cook_url(img[\"src\"])}#{srcset}\" if srcset.length > 0\n \n+          img[\"srcset\"] = \"#{UrlHelper.cook_url(img[\"src\"])}#{srcset}\" if srcset.present?\n+        end\n       else\n         img[\"src\"] = upload.url\n       end"
+    },
+    {
+      "sha": "98aea3515f0011f8d5d7608525eb4a210049a2d1",
+      "filename": "spec/components/cooked_post_processor_spec.rb",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 3,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/306d77b54f5d3089c08d9e068737a7cb91997ecb/spec/components/cooked_post_processor_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/306d77b54f5d3089c08d9e068737a7cb91997ecb/spec/components/cooked_post_processor_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/cooked_post_processor_spec.rb?ref=306d77b54f5d3089c08d9e068737a7cb91997ecb",
+      "patch": "@@ -58,10 +58,10 @@\n     end\n \n     context \"responsive images\" do\n-      it \"includes responsive images on demand\" do\n \n-        SiteSetting.responsive_post_image_sizes = \"1|1.5|3\"\n+      before { SiteSetting.responsive_post_image_sizes = \"1|1.5|3\" }\n \n+      it \"includes responsive images on demand\" do\n         upload = Fabricate(:upload, width: 2000, height: 1500, filesize: 10000)\n         post = Fabricate(:post, raw: \"hello <img src='#{upload.url}'>\")\n \n@@ -93,8 +93,29 @@\n         cpp.post_process_images\n \n         # 1.5x is skipped cause we have a missing thumb\n-        expect(cpp.html).to include('srcset=\"http://a.b.c/666x500.jpg, http://a.b.c/1998x1500.jpg 3.0x\"')\n+        expect(cpp.html).to include('srcset=\"http://a.b.c/666x500.jpg, http://a.b.c/1998x1500.jpg 3x\"')\n+      end\n+\n+      it \"doesn't include response images for cropped images\" do\n+        upload = Fabricate(:upload, width: 200, height: 4000, filesize: 12345)\n+        post = Fabricate(:post, raw: \"hello <img src='#{upload.url}'>\")\n+\n+        # fake some optimized images\n+        OptimizedImage.create!(\n+          url: 'http://a.b.c/200x500.jpg',\n+          width: 200,\n+          height: 500,\n+          upload_id: upload.id,\n+          sha1: SecureRandom.hex,\n+          extension: '.jpg',\n+          filesize: 500\n+        )\n+\n+        cpp = CookedPostProcessor.new(post)\n+        cpp.add_to_size_cache(upload.url, 200, 4000)\n+        cpp.post_process_images\n \n+        expect(cpp.html).to_not include('srcset=\"')\n       end\n     end\n "
+    }
+  ]
+}

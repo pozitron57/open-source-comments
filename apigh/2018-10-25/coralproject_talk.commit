@@ -1,0 +1,157 @@
+{
+  "sha": "dcd714551016b12f4a75ce58916008bf223bb5eb",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZGNkNzE0NTUxMDE2YjEyZjRhNzVjZTU4OTE2MDA4YmYyMjNiYjVlYg==",
+  "commit": {
+    "author": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2018-10-24T17:58:42Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-10-24T17:58:42Z"
+    },
+    "message": "Update Spanish translations (#2019)\n\n* Update translations\r\n\r\n* More sp trans\r\n\r\n* Add translation for Contains Link",
+    "tree": {
+      "sha": "aedb5f82fba10f289af62f26f14b4a5058853ea6",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/aedb5f82fba10f289af62f26f14b4a5058853ea6"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/dcd714551016b12f4a75ce58916008bf223bb5eb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/dcd714551016b12f4a75ce58916008bf223bb5eb",
+  "html_url": "https://github.com/coralproject/talk/commit/dcd714551016b12f4a75ce58916008bf223bb5eb",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/dcd714551016b12f4a75ce58916008bf223bb5eb/comments",
+  "author": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d3896ed97d5cdb2d1cf6f4b0a33508d93ae7a4fe",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/d3896ed97d5cdb2d1cf6f4b0a33508d93ae7a4fe",
+      "html_url": "https://github.com/coralproject/talk/commit/d3896ed97d5cdb2d1cf6f4b0a33508d93ae7a4fe"
+    }
+  ],
+  "stats": {
+    "total": 1909,
+    "additions": 30,
+    "deletions": 1879
+  },
+  "files": [
+    {
+      "sha": "f98ff3f0f78b5a2f931db46f72b5b1bf1dbf85e1",
+      "filename": "client/coral-admin/src/components/UserDetailComment.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/dcd714551016b12f4a75ce58916008bf223bb5eb/client/coral-admin/src/components/UserDetailComment.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/dcd714551016b12f4a75ce58916008bf223bb5eb/client/coral-admin/src/components/UserDetailComment.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/client/coral-admin/src/components/UserDetailComment.js?ref=dcd714551016b12f4a75ce58916008bf223bb5eb",
+      "patch": "@@ -123,7 +123,7 @@ class UserDetailComment extends React.Component {\n                 <IfHasLink text={comment.body}>\n                   <span className={styles.hasLinks}>\n                     {/* TODO: translate string */}\n-                    <Icon name=\"error_outline\" /> Contains Link\n+                    <Icon name=\"error_outline\" /> {t('common.contains_link')}\n                   </span>\n                 </IfHasLink>\n                 <div className={styles.actions}>"
+    },
+    {
+      "sha": "798675081bf3b4e2407e08288b749ccd663498e3",
+      "filename": "client/coral-admin/src/routes/Moderation/components/Comment.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/dcd714551016b12f4a75ce58916008bf223bb5eb/client/coral-admin/src/routes/Moderation/components/Comment.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/dcd714551016b12f4a75ce58916008bf223bb5eb/client/coral-admin/src/routes/Moderation/components/Comment.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/client/coral-admin/src/routes/Moderation/components/Comment.js?ref=dcd714551016b12f4a75ce58916008bf223bb5eb",
+      "patch": "@@ -183,8 +183,7 @@ class Comment extends React.Component {\n               <div className={styles.sideActions}>\n                 <IfHasLink text={comment.body}>\n                   <span className={styles.hasLinks}>\n-                    {/* TODO: translate string */}\n-                    <Icon name=\"error_outline\" /> Contains Link\n+                    <Icon name=\"error_outline\" /> {t('common.contains_link')}\n                   </span>\n                 </IfHasLink>\n                 <div className={`actions ${styles.actions}`}>"
+    },
+    {
+      "sha": "24d5eb780f2eb20cb122cbc4256c8faa9e81b734",
+      "filename": "locales/en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/dcd714551016b12f4a75ce58916008bf223bb5eb/locales/en.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/dcd714551016b12f4a75ce58916008bf223bb5eb/locales/en.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/locales/en.yml?ref=dcd714551016b12f4a75ce58916008bf223bb5eb",
+      "patch": "@@ -48,6 +48,7 @@ en:\n   comment_post_notif_premod: 'Thank you for posting. Our moderation team will review your comment shortly.'\n   comment_singular: Comment\n   common:\n+    contains_link: 'Contains Link'\n     copy: Copy\n     copied: 'Copied'\n     notsupported: 'Not supported'"
+    },
+    {
+      "sha": "5b319d3027445aa41a1ab743c5177cf7caeefa34",
+      "filename": "locales/es.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/dcd714551016b12f4a75ce58916008bf223bb5eb/locales/es.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/dcd714551016b12f4a75ce58916008bf223bb5eb/locales/es.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/locales/es.yml?ref=dcd714551016b12f4a75ce58916008bf223bb5eb",
+      "patch": "@@ -45,6 +45,7 @@ es:\n   comment_post_notif_premod: 'Gracias por el comentario. Nuestro equipo de moderación va a revisarlo muy pronto.'\n   comment_singular: Comentario\n   common:\n+    contains_link: 'Contiene enlace'\n     copy: Copiar\n     error: 'Ha ocurrido un error.'\n     reaction: reacción\n@@ -400,6 +401,7 @@ es:\n   other: Otro\n   password_reset:\n     change_password: 'Cambio de contraseña'\n+    change_password_help: 'Por favor, introduzca una nueva contraseña. ¡Hazlo seguro!'\n     confirm_new_password: 'Confirme su nueva contraseña'\n     mail_sent: 'Si tiene una cuenta registrada, un enlace para resetear su clave ha sido enviado a esa dirección de correo.'\n     new_password: 'Nueva contraseña'"
+    },
+    {
+      "sha": "7d4c6d1c0f49575b55cd9b65af2ac7492478ec4c",
+      "filename": "plugins/talk-plugin-local-auth/translations.yml",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 14,
+      "changes": 33,
+      "blob_url": "https://github.com/coralproject/talk/blob/dcd714551016b12f4a75ce58916008bf223bb5eb/plugins/talk-plugin-local-auth/translations.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/dcd714551016b12f4a75ce58916008bf223bb5eb/plugins/talk-plugin-local-auth/translations.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-local-auth/translations.yml?ref=dcd714551016b12f4a75ce58916008bf223bb5eb",
+      "patch": "@@ -302,25 +302,28 @@ de:\n         path: \"Mein Profil > Profil-Einstellungen\"\n         alert: \"E-Mail-Adresse hinzugefügt!\"\n es:\n+  email:\n+    email_change_original:\n+      subject: Cambio de correo electrónico\n+      body: Su dirección de correo electrónico ha cambiado de {0} a {1}. Si no solicitó este cambio, póngase en contacto con {2}.\n+  error:\n+    NO_LOCAL_PROFILE: No hay una dirección de correo electrónico asociada a esta cuenta.\n+    LOCAL_PROFILE: Una dirección de correo electrónico ya está asociada a esta cuenta.\n+    INCORRECT_PASSWORD: La contraseña dada fue incorrecta.\n   talk-plugin-local-auth:\n-    email:\n-      email_change_original:\n-        subject: Cambio de correo electrónico\n-        body: Su dirección de correo electrónico ha cambiado de {0} a {1}. Si no solicitó este cambio, póngase en contacto con {2}.\n-    error:\n-      NO_LOCAL_PROFILE: No hay una dirección de correo electrónico asociada a esta cuenta.\n-      LOCAL_PROFILE: Una dirección de correo electrónico ya está asociada a esta cuenta.\n-      INCORRECT_PASSWORD: La contraseña dada fue incorrecta.\n     change_password:\n+      save: \"Salvar\"\n+      cancel: \"Cancelar\"\n+      edit: \"Editar\"\n+      changed_password_msg: \"Senha alterada - Sua senha foi alterada com sucesso\"\n+      forgot_password_sent: \"Esqueceu a senha - Nós enviamos um email para recuperação da senha\"\n       change_password: \"Cambiar Contraseña\"\n       passwords_dont_match: \"Las contraseñas no coinciden\"\n       required_field: \"Este campo es requerido\"\n       forgot_password: \"Olvidaste tu contraseña?\"\n-      save: \"Guardar\"\n-      cancel: \"Cancelar\"\n-      edit: \"Editar\"\n-      changed_password_msg: \"Contraseña Actualizada - Tu contraseña ha sido exitosamente actualizada\"\n-      forgot_password_sent: \"Contraseña Olvidada - Te enviamos un email para recuperar tu contraseña\"\n+      old_password: \"Contraseña anterior\"\n+      new_password: \"Contraseña nueva\"\n+      confirm_new_password: \"Confirme contraseña nueva\"\n     change_username:\n       change_username_note: \"El usuario puede ser cambiado cada 14 días.\"\n       is_not_eligible: \"Ahora mismo no se puede cambiar su nombre de usuario.\"\n@@ -329,11 +332,13 @@ es:\n       cancel: \"Cancelar\"\n       confirm_username_change: \"Confirmar Cambio de Usuario\"\n       description: \"Estás intentando cambiar tu usuario. Tu nuevo usuario aparecerá en todos tus pasados y futuros comentarios.\"\n-      old_username: \"Usuario viejo\"\n+      old_username: \"Usuario anterior\"\n       new_username: \"Usuario nuevo\"\n+      re_enter: \"Escriba usuario nuevo otra vez\"\n       bottom_note: \"Nota: No podrás cambiar tu usuario por 14 días\"\n       confirm_changes: \"Confirmar Cambios\"\n       username_does_not_match: \"El usuario no coincide\"\n+      cant_be_equal: \"Tu nuev@ {0} tiene que ser diferente\"\n       changed_username_success_msg: \"Usuario Actualizado - Tu usuario ha sido exitosamente actualizado. No podrás cambiar el usuario por 14 días.\"\n       change_username_attempt: \"El usuario no puede ser actualizado. Los usuarios pueden ser cambiados cada 14 días.\"\n     change_email:"
+    },
+    {
+      "sha": "0f3f85b5246dd472a72c24ce2bf615ed142c5f1e",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1862,
+      "changes": 1868,
+      "blob_url": "https://github.com/coralproject/talk/blob/dcd714551016b12f4a75ce58916008bf223bb5eb/yarn.lock",
+      "raw_url": "https://github.com/coralproject/talk/raw/dcd714551016b12f4a75ce58916008bf223bb5eb/yarn.lock",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/yarn.lock?ref=dcd714551016b12f4a75ce58916008bf223bb5eb"
+    }
+  ]
+}
