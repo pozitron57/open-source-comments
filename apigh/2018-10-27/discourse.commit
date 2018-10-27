@@ -1,0 +1,98 @@
+{
+  "sha": "375bba3c3110b1da35a1ffe99f81a3bf109e2cc3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozNzViYmEzYzMxMTBiMWRhMzVhMWZmZTk5ZjgxYTNiZjEwOWUyY2Mz",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-10-26T22:10:03Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-10-26T22:10:03Z"
+    },
+    "message": "FIX: Add `String.includes` polyfill for IE11",
+    "tree": {
+      "sha": "aaf4e190b96eae10bb131c64ded2378088a888db",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/aaf4e190b96eae10bb131c64ded2378088a888db"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/375bba3c3110b1da35a1ffe99f81a3bf109e2cc3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/375bba3c3110b1da35a1ffe99f81a3bf109e2cc3",
+  "html_url": "https://github.com/discourse/discourse/commit/375bba3c3110b1da35a1ffe99f81a3bf109e2cc3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/375bba3c3110b1da35a1ffe99f81a3bf109e2cc3/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cd9a41be55eed0da2f48ef5a32024c10a00489ed",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/cd9a41be55eed0da2f48ef5a32024c10a00489ed",
+      "html_url": "https://github.com/discourse/discourse/commit/cd9a41be55eed0da2f48ef5a32024c10a00489ed"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 17,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "93b18ae9ec0ac2a7f390ff440f8536a2a9a8767d",
+      "filename": "app/assets/javascripts/polyfills.js",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/375bba3c3110b1da35a1ffe99f81a3bf109e2cc3/app/assets/javascripts/polyfills.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/375bba3c3110b1da35a1ffe99f81a3bf109e2cc3/app/assets/javascripts/polyfills.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/polyfills.js?ref=375bba3c3110b1da35a1ffe99f81a3bf109e2cc3",
+      "patch": "@@ -94,4 +94,21 @@ if (!Array.prototype.includes) {\n     }\n   });\n }\n+\n+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes#Polyfill\n+if (!String.prototype.includes) {\n+  Object.defineProperty(String.prototype, 'includes', {\n+    value: function(search, start) {\n+      if (typeof start !== 'number') {\n+        start = 0\n+      }\n+      \n+      if (start + search.length > this.length) {\n+        return false\n+      } else {\n+        return this.indexOf(search, start) !== -1\n+      }\n+    }\n+  })\n+}\n /* eslint-enable */"
+    }
+  ]
+}
