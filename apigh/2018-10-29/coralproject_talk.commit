@@ -1,0 +1,98 @@
+{
+  "sha": "e52605e26b65d00059f8d818ac46972763d9afb7",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZTUyNjA1ZTI2YjY1ZDAwMDU5ZjhkODE4YWM0Njk3Mjc2M2Q5YWZiNw==",
+  "commit": {
+    "author": {
+      "name": "Andrew Losowsky",
+      "email": "andrew@losowsky.com",
+      "date": "2018-10-29T16:29:13Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-10-29T16:29:13Z"
+    },
+    "message": "removed Reliable/Unreliable flaggers (#2043)\n\nWe don't display this any more",
+    "tree": {
+      "sha": "6a4291a64bd8420184e4fdd4334d8e5f65e57fa8",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/6a4291a64bd8420184e4fdd4334d8e5f65e57fa8"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/e52605e26b65d00059f8d818ac46972763d9afb7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/e52605e26b65d00059f8d818ac46972763d9afb7",
+  "html_url": "https://github.com/coralproject/talk/commit/e52605e26b65d00059f8d818ac46972763d9afb7",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/e52605e26b65d00059f8d818ac46972763d9afb7/comments",
+  "author": {
+    "login": "losowsky",
+    "id": 10014755,
+    "node_id": "MDQ6VXNlcjEwMDE0NzU1",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/10014755?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/losowsky",
+    "html_url": "https://github.com/losowsky",
+    "followers_url": "https://api.github.com/users/losowsky/followers",
+    "following_url": "https://api.github.com/users/losowsky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/losowsky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/losowsky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/losowsky/subscriptions",
+    "organizations_url": "https://api.github.com/users/losowsky/orgs",
+    "repos_url": "https://api.github.com/users/losowsky/repos",
+    "events_url": "https://api.github.com/users/losowsky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/losowsky/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ae4d6e242400cf3e310013a54f1e19567a33157d",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/ae4d6e242400cf3e310013a54f1e19567a33157d",
+      "html_url": "https://github.com/coralproject/talk/commit/ae4d6e242400cf3e310013a54f1e19567a33157d"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 0,
+    "deletions": 26
+  },
+  "files": [
+    {
+      "sha": "189869c0874e1028b60c515841d14d727e49c025",
+      "filename": "docs/source/03-07-product-guide-trust.md",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 26,
+      "changes": 26,
+      "blob_url": "https://github.com/coralproject/talk/blob/e52605e26b65d00059f8d818ac46972763d9afb7/docs/source/03-07-product-guide-trust.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/e52605e26b65d00059f8d818ac46972763d9afb7/docs/source/03-07-product-guide-trust.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/source/03-07-product-guide-trust.md?ref=e52605e26b65d00059f8d818ac46972763d9afb7",
+      "patch": "@@ -27,29 +27,3 @@ We strongly recommend not telling your community how this system works, or where\n \n If you see that a high proportion of first-time commenters on your site are abusive, you might want to change the threshhold to `0`, at least temporarily. You can configure your own Trust thresholds by using [TRUST_THRESHOLDS](/talk/advanced-configuration/#trust-thresholds) in your site configuration.\n \n-\n-## Reliable and Unreliable Flaggers\n-\n-Trust also calculates how reliable users are in terms of the comments they\n-report. This information is displayed to moderators in the User History drawer,\n-which is accessed by clicking on a user’s name in the Admin. Currently, no other action is taken based on this score.\n-\n-If a user's reports mostly match what moderators reject, their Report status\n-will display to moderators as Reliable in the user information drawer. If a\n-user's reports mostly differ from what moderators reject, their Report status\n-will show as Unreliable.\n-\n-If Talk doesn't have enough reports to make a call, or the reports even out, their\n-status is Neutral.\n-\n-Here are the default thresholds:\n-\n-```text\n--1 and lower: Unreliable\n-0 to +1: Neutral\n-+2 and higher: Reliable\n-```\n-You can configure your own Trust thresholds by using [TRUST_THRESHOLDS](/talk/advanced-configuration/#trust-thresholds) in your\n-configuration.\n-\n-Note: Report Karma doesn't include reports of \"I don't agree with this comment\"."
+    }
+  ]
+}

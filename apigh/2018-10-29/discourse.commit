@@ -1,0 +1,98 @@
+{
+  "sha": "f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmODMwNWY1M2M3ODdhZDBiNmNkODY1ZDU2YTdiOGIwZjc3ZjlkY2My",
+  "commit": {
+    "author": {
+      "name": "Sam",
+      "email": "sam.saffron@gmail.com",
+      "date": "2018-10-29T05:29:19Z"
+    },
+    "committer": {
+      "name": "Sam",
+      "email": "sam.saffron@gmail.com",
+      "date": "2018-10-29T05:29:19Z"
+    },
+    "message": "FEATURE: special offline support restricted to Android only\n\nThe special offline page with fetch interception in service worker\nis only strongly required on Android ad a pre-req for PWAs\n\nThis is now strongly restricted only to Android while iOS PWA support\ngets better\n\nLong term if we build offline support we can unlock it more globally",
+    "tree": {
+      "sha": "9f6f8ebfecc8838d01a94e28424670fafe0dacda",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9f6f8ebfecc8838d01a94e28424670fafe0dacda"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2",
+  "html_url": "https://github.com/discourse/discourse/commit/f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2/comments",
+  "author": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5c86e2d74962993c892aeea59634337caed294c4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/5c86e2d74962993c892aeea59634337caed294c4",
+      "html_url": "https://github.com/discourse/discourse/commit/5c86e2d74962993c892aeea59634337caed294c4"
+    }
+  ],
+  "stats": {
+    "total": 193,
+    "additions": 101,
+    "deletions": 92
+  },
+  "files": [
+    {
+      "sha": "50fb942d415ec2748440ce6951a70bfa9ae0f787",
+      "filename": "app/assets/javascripts/service-worker.js.erb",
+      "status": "modified",
+      "additions": 101,
+      "deletions": 92,
+      "changes": 193,
+      "blob_url": "https://github.com/discourse/discourse/blob/f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2/app/assets/javascripts/service-worker.js.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2/app/assets/javascripts/service-worker.js.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/service-worker.js.erb?ref=f8305f53c787ad0b6cd865d56a7b8b0f77f9dcc2",
+      "patch": "@@ -1,108 +1,117 @@\n 'use strict';\n \n-// Incrementing CACHE_VERSION will kick off the install event and force previously cached\n-// resources to be cached again.\n-const CACHE_VERSION = 1;\n \n-const CURRENT_CACHES = {\n-  offline: 'offline-v' + CACHE_VERSION\n-};\n-\n-const OFFLINE_URL = 'offline.html';\n-\n-function createCacheBustedRequest(url) {\n-  var headers = new Headers({\n-    'Discourse-Track-View': '0'\n-  });\n-\n-  var request = new Request(url, {cache: 'reload', headers: headers});\n-  // See https://fetch.spec.whatwg.org/#concept-request-mode\n-  // This is not yet supported in Chrome as of M48, so we need to explicitly check to see\n-  // if the cache: 'reload' option had any effect.\n-  if ('cache' in request) {\n-    return request;\n+// Special offline and fetch interception is restricted to Android only\n+// we have had a large amount of pain supporting this on Firefox / Safari\n+// it is only strongly required on Android, when PWA gets better on iOS\n+// we can unlock it there as well, for Desktop we can consider unlocking it\n+// if we start supporting offline browsing for laptops\n+if (/(android)/i.test(navigator.userAgent)) {\n+\n+  // Incrementing CACHE_VERSION will kick off the install event and force previously cached\n+  // resources to be cached again.\n+  const CACHE_VERSION = 1;\n+\n+  const CURRENT_CACHES = {\n+    offline: 'offline-v' + CACHE_VERSION\n+  };\n+\n+  const OFFLINE_URL = 'offline.html';\n+\n+  const createCacheBustedRequest = function(url) {\n+    var headers = new Headers({\n+      'Discourse-Track-View': '0'\n+    });\n+\n+    var request = new Request(url, {cache: 'reload', headers: headers});\n+    // See https://fetch.spec.whatwg.org/#concept-request-mode\n+    // This is not yet supported in Chrome as of M48, so we need to explicitly check to see\n+    // if the cache: 'reload' option had any effect.\n+    if ('cache' in request) {\n+      return request;\n+    }\n+\n+    // If {cache: 'reload'} didn't have any effect, append a cache-busting URL parameter instead.\n+    var bustedUrl = new URL(url, self.location.href);\n+    bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();\n+    return new Request(bustedUrl, {headers: headers});\n   }\n \n-  // If {cache: 'reload'} didn't have any effect, append a cache-busting URL parameter instead.\n-  var bustedUrl = new URL(url, self.location.href);\n-  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();\n-  return new Request(bustedUrl, {headers: headers});\n-}\n-\n-self.addEventListener('install', function(event) {\n-  event.waitUntil(\n-    // We can't use cache.add() here, since we want OFFLINE_URL to be the cache key, but\n-    // the actual URL we end up requesting might include a cache-busting parameter.\n-    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {\n-      return caches.open(CURRENT_CACHES.offline).then(function(cache) {\n-        return cache.put(OFFLINE_URL, response);\n-      });\n-    }).then(function(cache) {\n-      self.skipWaiting();\n-    })\n-  );\n-});\n+  self.addEventListener('install', function(event) {\n+    event.waitUntil(\n+      // We can't use cache.add() here, since we want OFFLINE_URL to be the cache key, but\n+      // the actual URL we end up requesting might include a cache-busting parameter.\n+      fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {\n+        return caches.open(CURRENT_CACHES.offline).then(function(cache) {\n+          return cache.put(OFFLINE_URL, response);\n+        });\n+      }).then(function(cache) {\n+        self.skipWaiting();\n+      })\n+    );\n+  });\n \n-self.addEventListener('activate', function(event) {\n-  // Delete all caches that aren't named in CURRENT_CACHES.\n-  // While there is only one cache in this example, the same logic will handle the case where\n-  // there are multiple versioned caches.\n-  var expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {\n-    return CURRENT_CACHES[key];\n+  self.addEventListener('activate', function(event) {\n+    // Delete all caches that aren't named in CURRENT_CACHES.\n+    // While there is only one cache in this example, the same logic will handle the case where\n+    // there are multiple versioned caches.\n+    var expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {\n+      return CURRENT_CACHES[key];\n+    });\n+\n+    event.waitUntil(\n+      caches.keys().then(function(cacheNames) {\n+        return Promise.all(\n+          cacheNames.map(function(cacheName) {\n+            if (expectedCacheNames.indexOf(cacheName) === -1) {\n+              // If this cache name isn't present in the array of \"expected\" cache names,\n+              // then delete it.\n+              return caches.delete(cacheName);\n+            }\n+          })\n+        );\n+      }).then(function() {\n+        self.clients.claim()\n+      })\n+    );\n   });\n \n-  event.waitUntil(\n-    caches.keys().then(function(cacheNames) {\n-      return Promise.all(\n-        cacheNames.map(function(cacheName) {\n-          if (expectedCacheNames.indexOf(cacheName) === -1) {\n-            // If this cache name isn't present in the array of \"expected\" cache names,\n-            // then delete it.\n-            return caches.delete(cacheName);\n+  self.addEventListener('fetch', function(event) {\n+    // Bypass service workers if this is a url with a token param\n+    if(/\\?.*token/i.test(event.request.url)) {\n+      return;\n+    }\n+    // We only want to call event.respondWith() if this is a navigation request\n+    // for an HTML page.\n+    // request.mode of 'navigate' is unfortunately not supported in Chrome\n+    // versions older than 49, so we need to include a less precise fallback,\n+    // which checks for a GET request with an Accept: text/html header.\n+    if (event.request.mode === 'navigate' ||\n+        (event.request.method === 'GET' &&\n+         event.request.headers.get('accept').includes('text/html'))) {\n+      event.respondWith(\n+        fetch(event.request).catch(function(error) {\n+          // The catch is only triggered if fetch() throws an exception, which will most likely\n+          // happen due to the server being unreachable.\n+          // If fetch() returns a valid HTTP response with an response code in the 4xx or 5xx\n+          // range, the catch() will NOT be called. If you need custom handling for 4xx or 5xx\n+          // errors, see https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker/fallback-response\n+          if (!navigator.onLine) {\n+            return caches.match(OFFLINE_URL);\n+          } else {\n+            throw new Error(error);\n           }\n         })\n       );\n-    }).then(function() {\n-      self.clients.claim()\n-    })\n-  );\n-});\n-\n-self.addEventListener('fetch', function(event) {\n-  // Bypass service workers if this is a url with a token param\n-  if(/\\?.*token/i.test(event.request.url)) {\n-    return;\n-  }\n-  // We only want to call event.respondWith() if this is a navigation request\n-  // for an HTML page.\n-  // request.mode of 'navigate' is unfortunately not supported in Chrome\n-  // versions older than 49, so we need to include a less precise fallback,\n-  // which checks for a GET request with an Accept: text/html header.\n-  if (event.request.mode === 'navigate' ||\n-      (event.request.method === 'GET' &&\n-       event.request.headers.get('accept').includes('text/html'))) {\n-    event.respondWith(\n-      fetch(event.request).catch(function(error) {\n-        // The catch is only triggered if fetch() throws an exception, which will most likely\n-        // happen due to the server being unreachable.\n-        // If fetch() returns a valid HTTP response with an response code in the 4xx or 5xx\n-        // range, the catch() will NOT be called. If you need custom handling for 4xx or 5xx\n-        // errors, see https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker/fallback-response\n-        if (!navigator.onLine) {\n-          return caches.match(OFFLINE_URL);\n-        } else {\n-          throw new Error(error);\n-        }\n-      })\n-    );\n-  }\n+    }\n \n-  // If our if() condition is false, then this fetch handler won't intercept the request.\n-  // If there are any other fetch handlers registered, they will get a chance to call\n-  // event.respondWith(). If no fetch handlers call event.respondWith(), the request will be\n-  // handled by the browser as if there were no service worker involvement.\n-});\n+    // If our if() condition is false, then this fetch handler won't intercept the request.\n+    // If there are any other fetch handlers registered, they will get a chance to call\n+    // event.respondWith(). If no fetch handlers call event.respondWith(), the request will be\n+    // handled by the browser as if there were no service worker involvement.\n+  });\n \n+}\n \n const idleThresholdTime = 1000 * 10; // 10 seconds\n var lastAction = -1;"
+    }
+  ]
+}
