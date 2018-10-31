@@ -1,0 +1,134 @@
+{
+  "sha": "fa0e421af312f0b284303683d5c73b06c9302900",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmYTBlNDIxYWYzMTJmMGIyODQzMDM2ODNkNWM3M2IwNmM5MzAyOTAw",
+  "commit": {
+    "author": {
+      "name": "Bianca Nenciu",
+      "email": "nbianca@users.noreply.github.com",
+      "date": "2018-10-31T14:47:00Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-10-31T14:47:00Z"
+    },
+    "message": "FIX: Do not leak information about post revisions. (#6536)",
+    "tree": {
+      "sha": "e2881df9702cef6b2898d0c81241b9c343cede02",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e2881df9702cef6b2898d0c81241b9c343cede02"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/fa0e421af312f0b284303683d5c73b06c9302900",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/fa0e421af312f0b284303683d5c73b06c9302900",
+  "html_url": "https://github.com/discourse/discourse/commit/fa0e421af312f0b284303683d5c73b06c9302900",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/fa0e421af312f0b284303683d5c73b06c9302900/comments",
+  "author": {
+    "login": "nbianca",
+    "id": 23153890,
+    "node_id": "MDQ6VXNlcjIzMTUzODkw",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/23153890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nbianca",
+    "html_url": "https://github.com/nbianca",
+    "followers_url": "https://api.github.com/users/nbianca/followers",
+    "following_url": "https://api.github.com/users/nbianca/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nbianca/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nbianca/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nbianca/subscriptions",
+    "organizations_url": "https://api.github.com/users/nbianca/orgs",
+    "repos_url": "https://api.github.com/users/nbianca/repos",
+    "events_url": "https://api.github.com/users/nbianca/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nbianca/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ff6676094f6e4cf7fbd3f962ee4d933c63c4f498",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ff6676094f6e4cf7fbd3f962ee4d933c63c4f498",
+      "html_url": "https://github.com/discourse/discourse/commit/ff6676094f6e4cf7fbd3f962ee4d933c63c4f498"
+    }
+  ],
+  "stats": {
+    "total": 48,
+    "additions": 48,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "948bab910177974f074e428bdad449c8f2738534",
+      "filename": "app/controllers/posts_controller.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa0e421af312f0b284303683d5c73b06c9302900/app/controllers/posts_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa0e421af312f0b284303683d5c73b06c9302900/app/controllers/posts_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/posts_controller.rb?ref=fa0e421af312f0b284303683d5c73b06c9302900",
+      "patch": "@@ -355,12 +355,18 @@ def replies\n   end\n \n   def revisions\n+    post = find_post_from_params\n+    raise Discourse::NotFound if post.hidden && !guardian.can_view_hidden_post_revisions?\n+\n     post_revision = find_post_revision_from_params\n     post_revision_serializer = PostRevisionSerializer.new(post_revision, scope: guardian, root: false)\n     render_json_dump(post_revision_serializer)\n   end\n \n   def latest_revision\n+    post = find_post_from_params\n+    raise Discourse::NotFound if post.hidden && !guardian.can_view_hidden_post_revisions?\n+\n     post_revision = find_latest_post_revision_from_params\n     post_revision_serializer = PostRevisionSerializer.new(post_revision, scope: guardian, root: false)\n     render_json_dump(post_revision_serializer)"
+    },
+    {
+      "sha": "887374e0f9ff61536a930f2d95cdc049c8c6a75c",
+      "filename": "app/serializers/post_serializer.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa0e421af312f0b284303683d5c73b06c9302900/app/serializers/post_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa0e421af312f0b284303683d5c73b06c9302900/app/serializers/post_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/post_serializer.rb?ref=fa0e421af312f0b284303683d5c73b06c9302900",
+      "patch": "@@ -346,6 +346,8 @@ def include_is_auto_generated?\n   end\n \n   def version\n+    return 1 if object.hidden && !scope.can_view_hidden_post_revisions?\n+\n     scope.is_staff? ? object.version : object.public_version\n   end\n "
+    },
+    {
+      "sha": "f582af51aa57b9955301bda87e878ca215edd691",
+      "filename": "spec/requests/posts_controller_spec.rb",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa0e421af312f0b284303683d5c73b06c9302900/spec/requests/posts_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa0e421af312f0b284303683d5c73b06c9302900/spec/requests/posts_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/posts_controller_spec.rb?ref=fa0e421af312f0b284303683d5c73b06c9302900",
+      "patch": "@@ -1173,6 +1173,25 @@\n       end\n     end\n \n+    context \"when post is hidden\" do\n+      before {\n+        post.hidden = true\n+        post.save\n+      }\n+\n+      it \"throws an exception for users\" do\n+        sign_in(Fabricate(:user))\n+        get \"/posts/#{post.id}/revisions/#{post_revision.number}.json\"\n+        expect(response.status).to eq(404)\n+      end\n+\n+      it \"works for admins\" do\n+        sign_in(Fabricate(:admin))\n+        get \"/posts/#{post.id}/revisions/#{post_revision.number}.json\"\n+        expect(response.status).to eq(200)\n+      end\n+    end\n+\n     context \"when edit history is visible to everyone\" do\n \n       before { SiteSetting.edit_history_visible_to_public = true }"
+    },
+    {
+      "sha": "1ca29e2b2d338d358bb70824c7251b6a28919896",
+      "filename": "spec/serializers/post_serializer_spec.rb",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "blob_url": "https://github.com/discourse/discourse/blob/fa0e421af312f0b284303683d5c73b06c9302900/spec/serializers/post_serializer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/fa0e421af312f0b284303683d5c73b06c9302900/spec/serializers/post_serializer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/serializers/post_serializer_spec.rb?ref=fa0e421af312f0b284303683d5c73b06c9302900",
+      "patch": "@@ -121,6 +121,27 @@ def serialized_post_for_user(u)\n       end\n     end\n \n+    context \"a hidden revised post\" do\n+      let(:post) { Fabricate(:post, raw: 'Hello world!', hidden: true) }\n+\n+      before do\n+        SiteSetting.editing_grace_period_max_diff = 1\n+\n+        revisor = PostRevisor.new(post)\n+        revisor.revise!(post.user, raw: 'Hello, everyone!')\n+      end\n+\n+      it \"will not leak version to users\" do\n+        json = PostSerializer.new(post, scope: Guardian.new(user), root: false).as_json\n+        expect(json[:version]).to eq(1)\n+      end\n+\n+      it \"will show real version to staff\" do\n+        json = PostSerializer.new(post, scope: Guardian.new(Fabricate(:admin)), root: false).as_json\n+        expect(json[:version]).to eq(2)\n+      end\n+    end\n+\n     context \"a public wiki post\" do\n       let(:post) { Fabricate.build(:post, raw: raw, user: user, wiki: true) }\n "
+    }
+  ]
+}
