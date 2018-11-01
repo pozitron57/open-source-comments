@@ -1,0 +1,242 @@
+{
+  "sha": "ec91450aae3c73252cb718033d12c1a8e2578a36",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplYzkxNDUwYWFlM2M3MzI1MmNiNzE4MDMzZDEyYzFhOGUyNTc4YTM2",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-10-31T19:35:07Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-11-01T13:59:50Z"
+    },
+    "message": "FEATURE: Track how many user flags are agreed/disagreed/ignored\n\nDisplay the percentage when reviewing flags.",
+    "tree": {
+      "sha": "3cd4d85f6ab4a84e6423f29b8a3abc58500ce6af",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3cd4d85f6ab4a84e6423f29b8a3abc58500ce6af"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ec91450aae3c73252cb718033d12c1a8e2578a36",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ec91450aae3c73252cb718033d12c1a8e2578a36",
+  "html_url": "https://github.com/discourse/discourse/commit/ec91450aae3c73252cb718033d12c1a8e2578a36",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ec91450aae3c73252cb718033d12c1a8e2578a36/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ceafcbc898ad453992d5e7a2df5da654461999fb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ceafcbc898ad453992d5e7a2df5da654461999fb",
+      "html_url": "https://github.com/discourse/discourse/commit/ceafcbc898ad453992d5e7a2df5da654461999fb"
+    }
+  ],
+  "stats": {
+    "total": 203,
+    "additions": 183,
+    "deletions": 20
+  },
+  "files": [
+    {
+      "sha": "f51ef0a3782849ddd06977547be23ee7f437d3c6",
+      "filename": "app/assets/javascripts/admin/components/user-flag-percentage.js.es6",
+      "status": "added",
+      "additions": 53,
+      "deletions": 0,
+      "changes": 53,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/javascripts/admin/components/user-flag-percentage.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/javascripts/admin/components/user-flag-percentage.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/components/user-flag-percentage.js.es6?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -0,0 +1,53 @@\n+import computed from \"ember-addons/ember-computed-decorators\";\n+\n+export default Ember.Component.extend({\n+  tagName: \"\",\n+\n+  @computed(\"percentage\")\n+  showPercentage(percentage) {\n+    return percentage.total >= 3;\n+  },\n+\n+  // We do a little logic to choose which icon to display and which text\n+  @computed(\"user.flags_agreed\", \"user.flags_disagreed\", \"user.flags_ignored\")\n+  percentage(agreed, disagreed, ignored) {\n+    let total = agreed + disagreed + ignored;\n+    let result = { total };\n+\n+    if (total > 0) {\n+      result.agreed = Math.round((agreed / total) * 100);\n+      result.disagreed = Math.round((disagreed / total) * 100);\n+      result.ignored = Math.round((ignored / total) * 100);\n+    }\n+\n+    let highest = Math.max(agreed, disagreed, ignored);\n+    if (highest === agreed) {\n+      result.icon = \"thumbs-up\";\n+      result.className = \"agreed\";\n+      result.label = `${result.agreed}%`;\n+    } else if (highest === disagreed) {\n+      result.icon = \"thumbs-down\";\n+      result.className = \"disagreed\";\n+      result.label = `${result.disagreed}%`;\n+    } else {\n+      result.icon = \"external-link\";\n+      result.className = \"ignored\";\n+      result.label = `${result.ignored}%`;\n+    }\n+\n+    result.title = I18n.t(\"admin.flags.user_percentage.summary\", {\n+      agreed: I18n.t(\"admin.flags.user_percentage.agreed\", {\n+        count: result.agreed\n+      }),\n+      disagreed: I18n.t(\"admin.flags.user_percentage.disagreed\", {\n+        count: result.disagreed\n+      }),\n+      ignored: I18n.t(\"admin.flags.user_percentage.disagreed\", {\n+        count: result.ignored\n+      }),\n+      count: total\n+    });\n+\n+    return result;\n+  }\n+});"
+    },
+    {
+      "sha": "2bf86a7bf68776e14fa52b7b2a48b2163d5a38fb",
+      "filename": "app/assets/javascripts/admin/templates/components/flag-user-lists.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/javascripts/admin/templates/components/flag-user-lists.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/javascripts/admin/templates/components/flag-user-lists.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/components/flag-user-lists.hbs?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -8,6 +8,7 @@\n         <div class='flagger-flag-type'>\n           {{post-action-title postAction.post_action_type_id postAction.name_key}}\n         </div>\n+        {{user-flag-percentage user=postAction.user}}\n       {{/flag-user}}\n     {{/each}}\n   </div>"
+    },
+    {
+      "sha": "b358f961e74aa32d57e5de1c7c8ecbe6a4211003",
+      "filename": "app/assets/javascripts/admin/templates/components/user-flag-percentage.hbs",
+      "status": "added",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/javascripts/admin/templates/components/user-flag-percentage.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/javascripts/admin/templates/components/user-flag-percentage.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/components/user-flag-percentage.hbs?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -0,0 +1,6 @@\n+{{#if showPercentage}}\n+  <div class='user-flag-percentage' title={{percentage.title}}>\n+    <span class=\"percentage-label {{percentage.className}}\">{{percentage.label}}</span>\n+    {{d-icon percentage.icon}}\n+  </div>\n+{{/if}}"
+    },
+    {
+      "sha": "c42b85f44b23e0ece2faee4de4c82e8ed96d2982",
+      "filename": "app/assets/stylesheets/common/admin/flagging.scss",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 1,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/stylesheets/common/admin/flagging.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/assets/stylesheets/common/admin/flagging.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/admin/flagging.scss?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -107,10 +107,32 @@\n     .flag-user-date {\n       color: $primary-medium;\n     }\n-\n     .flag-user-avatar {\n       margin-right: 0.5em;\n     }\n+    .flag-user-extra {\n+      display: flex;\n+      align-items: center;\n+\n+      .user-flag-percentage {\n+        display: flex;\n+        align-items: center;\n+        margin-left: 0.5em;\n+\n+        .percentage-label {\n+          margin-right: 0.25em;\n+          &.agreed {\n+            color: $success;\n+          }\n+          &.disagreed {\n+            color: $danger;\n+          }\n+          &.ignored {\n+            color: $primary-medium;\n+          }\n+        }\n+      }\n+    }\n   }\n \n   .flag-conversation {"
+    },
+    {
+      "sha": "bf233bb4dbeb0c1dec1bea15dcb5de1a4e6e8526",
+      "filename": "app/models/post_action.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/models/post_action.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/models/post_action.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post_action.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -164,6 +164,9 @@ def self.agree_flags!(post, moderator, delete_post = false)\n       trigger_spam = true if action.post_action_type_id == PostActionType.types[:spam]\n     end\n \n+    # Update the flags_agreed user stat\n+    UserStat.where(user_id: actions.map(&:user_id)).update_all(\"flags_agreed = flags_agreed + 1\")\n+\n     DiscourseEvent.trigger(:confirmed_spam_post, post) if trigger_spam\n \n     if actions.first.present?\n@@ -183,8 +186,7 @@ def self.clear_flags!(post, moderator)\n         PostActionType.notify_flag_type_ids\n       end\n \n-    actions = PostAction.where(post_id: post.id)\n-      .where(post_action_type_id: action_type_ids)\n+    actions = PostAction.active.where(post_id: post.id).where(post_action_type_id: action_type_ids)\n \n     actions.each do |action|\n       action.disagreed_at = Time.zone.now\n@@ -194,6 +196,9 @@ def self.clear_flags!(post, moderator)\n       action.add_moderator_post_if_needed(moderator, :disagreed)\n     end\n \n+    # Update the flags_disagreed user stat\n+    UserStat.where(user_id: actions.map(&:user_id)).update_all(\"flags_disagreed = flags_disagreed + 1\")\n+\n     # reset all cached counters\n     cached = {}\n     action_type_ids.each do |atid|"
+    },
+    {
+      "sha": "3b2fecdf227fd3f2a3c7bb2694cc1e5d1d2976ba",
+      "filename": "app/models/report.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 12,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/models/report.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/models/report.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/report.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -1207,18 +1207,16 @@ def self.report_most_disagreed_flaggers(report)\n              u.username,\n              u.uploaded_avatar_id as avatar_id,\n              CASE WHEN u.silenced_till IS NOT NULL THEN 't' ELSE 'f' END as silenced,\n-             SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END) as disagreed_flags,\n-             SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END) as agreed_flags,\n-             ROUND(SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END)::numeric / SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END)::numeric, 2) as ratio,\n-             SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END) - SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END) spread,\n-             ROUND((1-(SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END)::numeric / SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END)::numeric)) *\n-               (SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END) - SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END)), 2) as score\n-      FROM post_actions AS pa\n-      INNER JOIN users AS u ON u.id = pa.user_id\n-      WHERE pa.post_action_type_id IN (#{PostActionType.flag_types.values.join(', ')})\n-        AND pa.user_id <> -1\n-      GROUP BY u.id, u.username, u.silenced_till\n-      HAVING SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END) > SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END)\n+             us.flags_disagreed AS disagreed_flags,\n+             us.flags_agreed AS agreed_flags,\n+             ROUND(us.flags_agreed::numeric / us.flags_disagreed::numeric, 2) as ratio,\n+             us.flags_disagreed - us.flags_agreed AS spread,\n+             ROUND((1-(us.flags_agreed::numeric / us.flags_disagreed::numeric)) *\n+                   (us.flags_disagreed - us.flags_agreed)) AS score\n+      FROM users AS u\n+        INNER JOIN user_stats AS us ON us.user_id = u.id\n+      WHERE u.id <> -1\n+        AND flags_disagreed > flags_agreed\n       ORDER BY score DESC\n       LIMIT 20\n       SQL"
+    },
+    {
+      "sha": "d7c703e0fe73c39ba5fae8f1eb42ba439e1c81aa",
+      "filename": "app/serializers/flagged_user_serializer.rb",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 1,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/app/serializers/flagged_user_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/app/serializers/flagged_user_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/flagged_user_serializer.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -4,7 +4,10 @@ class FlaggedUserSerializer < BasicUserSerializer\n              :post_count,\n              :topic_count,\n              :ip_address,\n-             :custom_fields\n+             :custom_fields,\n+             :flags_agreed,\n+             :flags_disagreed,\n+             :flags_ignored\n \n   def can_delete_all_posts\n     scope.can_delete_all_posts?(object)\n@@ -18,6 +21,18 @@ def ip_address\n     object.ip_address.try(:to_s)\n   end\n \n+  def flags_agreed\n+    object.user_stat.flags_agreed\n+  end\n+\n+  def flags_disagreed\n+    object.user_stat.flags_disagreed\n+  end\n+\n+  def flags_ignored\n+    object.user_stat.flags_ignored\n+  end\n+\n   def custom_fields\n     fields = User.whitelisted_user_custom_fields(scope)\n "
+    },
+    {
+      "sha": "a12320dbc6b7038def081807f547de8535cff15f",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -2931,6 +2931,21 @@ en:\n         was_edited: \"Post was edited after the first flag\"\n         previous_flags_count: \"This post has already been flagged {{count}} times.\"\n         show_details: \"Show flag details\"\n+\n+        user_percentage:\n+          summary:\n+            one: \"{{agreed}}, {{disagreed}}, {{ignored}} ({{count}} total flag)\"\n+            other: \"{{agreed}}, {{disagreed}}, {{ignored}} ({{count}} total flags)\"\n+          agreed:\n+            one: \"{{count}}% agree\"\n+            other: \"{{count}}% agree\"\n+          disagreed:\n+            one: \"{{count}}% disagree\"\n+            other: \"{{count}}% disagree\"\n+          ignored:\n+            one: \"{{count}}% ignore\"\n+            other: \"{{count}}% ignore\"\n+\n         details: \"details\"\n \n         flagged_topics:"
+    },
+    {
+      "sha": "847aed08f1494ae3b2c60c6b100cdc679079d06d",
+      "filename": "db/migrate/20181031165343_add_flag_stats_to_user.rb",
+      "status": "added",
+      "additions": 34,
+      "deletions": 0,
+      "changes": 34,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/db/migrate/20181031165343_add_flag_stats_to_user.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/db/migrate/20181031165343_add_flag_stats_to_user.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20181031165343_add_flag_stats_to_user.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -0,0 +1,34 @@\n+class AddFlagStatsToUser < ActiveRecord::Migration[5.2]\n+  def up\n+    add_column :user_stats, :flags_agreed, :integer, default: 0, null: false\n+    add_column :user_stats, :flags_disagreed, :integer, default: 0, null: false\n+    add_column :user_stats, :flags_ignored, :integer, default: 0, null: false\n+\n+    sql = <<~SQL\n+      UPDATE user_stats\n+      SET flags_agreed = x.flags_agreed,\n+        flags_disagreed = x.flags_disagreed,\n+        flags_ignored = x.flags_ignored\n+      FROM (\n+        SELECT u.id AS user_id,\n+          SUM(CASE WHEN pa.disagreed_at IS NOT NULL THEN 1 ELSE 0 END) as flags_disagreed,\n+          SUM(CASE WHEN pa.agreed_at IS NOT NULL THEN 1 ELSE 0 END) as flags_agreed,\n+          SUM(CASE WHEN pa.deferred_at IS NOT NULL THEN 1 ELSE 0 END) as flags_ignored\n+        FROM post_actions AS pa\n+        INNER JOIN users AS u ON u.id = pa.user_id\n+        WHERE pa.post_action_type_id IN (#{PostActionType.notify_flag_types.values.join(', ')})\n+        AND pa.user_id > 0\n+        GROUP BY u.id\n+      ) AS x\n+      WHERE x.user_id = user_stats.user_id\n+    SQL\n+\n+    execute sql\n+  end\n+\n+  def down\n+    remove_column :user_stats, :flags_agreed\n+    remove_column :user_stats, :flags_disagreed\n+    remove_column :user_stats, :flags_ignored\n+  end\n+end"
+    },
+    {
+      "sha": "2b2a8806ec8065db3bf81d3a6127f1642a02350f",
+      "filename": "lib/flag_query.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/lib/flag_query.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/lib/flag_query.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/flag_query.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -206,7 +206,7 @@ def self.flagged_topics\n     results = PostAction\n       .flags\n       .active\n-      .includes(post: [:user, :topic])\n+      .includes(post: [{ user: :user_stat }, :topic])\n       .references(:post)\n       .where(\"posts.user_id > 0\")\n       .order('post_actions.created_at DESC')"
+    },
+    {
+      "sha": "a99ecc795e847bd9c6b8bd2eb7d2d641c9a09057",
+      "filename": "spec/models/post_action_spec.rb",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 3,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/spec/models/post_action_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/spec/models/post_action_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/post_action_spec.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -79,12 +79,17 @@ def value_for(user_id, dt)\n       # Acting on the flag should not post an automated status message (since a moderator already replied)\n       expect(topic.posts.count).to eq(2)\n       PostAction.agree_flags!(post, admin)\n+      expect(action.user.user_stat.flags_agreed).to eq(1)\n+      expect(action.user.user_stat.flags_disagreed).to eq(0)\n+\n       topic.reload\n       expect(topic.posts.count).to eq(2)\n \n       # Clearing the flags should not post an automated status message\n-      PostAction.act(mod, post, PostActionType.types[:notify_moderators], message: \"another special message\")\n+      new_action = PostAction.act(mod, post, PostActionType.types[:notify_moderators], message: \"another special message\")\n       PostAction.clear_flags!(post, admin)\n+      expect(new_action.user.user_stat.flags_agreed).to eq(0)\n+      expect(new_action.user.user_stat.flags_disagreed).to eq(1)\n       topic.reload\n       expect(topic.posts.count).to eq(2)\n \n@@ -95,6 +100,9 @@ def value_for(user_id, dt)\n \n       expect(topic.posts.count).to eq(1)\n       PostAction.agree_flags!(another_post, admin)\n+      expect(action.user.user_stat.flags_agreed).to eq(2)\n+      expect(action.user.user_stat.flags_disagreed).to eq(0)\n+\n       topic.reload\n       expect(topic.posts.count).to eq(2)\n       expect(topic.posts.last.post_type).to eq(Post.types[:moderator_action])\n@@ -361,7 +369,7 @@ def value_for(user_id, dt)\n \n         # If a flag is dismissed\n         PostAction.clear_flags!(post, admin)\n-        expect(PostAction.flag_counts_for(post.id)).to eq([8, 0])\n+        expect(PostAction.flag_counts_for(post.id)).to eq([0, 8])\n       end\n     end\n \n@@ -689,6 +697,7 @@ def value_for(user_id, dt)\n \n       SiteSetting.auto_respond_to_flag_actions = false\n       PostAction.agree_flags!(post, admin)\n+      expect(action.user.user_stat.flags_agreed).to eq(1)\n \n       topic.reload\n       expect(topic.posts.count).to eq(1)\n@@ -704,6 +713,7 @@ def value_for(user_id, dt)\n \n       SiteSetting.auto_respond_to_flag_actions = true\n       PostAction.agree_flags!(post, admin)\n+      expect(action.user.user_stat.flags_agreed).to eq(1)\n \n       user_notifications = user.notifications\n       expect(user_notifications.count).to eq(1)\n@@ -715,11 +725,12 @@ def value_for(user_id, dt)\n       post = Fabricate(:post)\n       user = Fabricate(:user)\n       action = PostAction.act(user, post, PostActionType.types[:notify_user], message: \"WAT\")\n-      topic = action.reload.related_post.topic\n+      action.reload.related_post.topic\n       expect(user.notifications.count).to eq(0)\n \n       SiteSetting.auto_respond_to_flag_actions = true\n       PostAction.agree_flags!(post, admin)\n+      expect(action.user.user_stat.flags_agreed).to eq(0)\n \n       user_notifications = user.notifications\n       expect(user_notifications.count).to eq(0)"
+    },
+    {
+      "sha": "67e0f914a0296924806d50710e12b3d1a23069a1",
+      "filename": "spec/models/web_hook_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/spec/models/web_hook_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/spec/models/web_hook_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/web_hook_spec.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -404,6 +404,7 @@\n       payload = JSON.parse(job_args[\"payload\"])\n       expect(payload[\"id\"]).to eq(post_action.id)\n \n+      post_action = PostAction.act(Fabricate(:user), post, PostActionType.types[:spam])\n       PostAction.clear_flags!(post, moderator)\n       job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n "
+    },
+    {
+      "sha": "325cb83099e778ef2be3b98687d06b34224a2dcf",
+      "filename": "spec/requests/admin/flags_controller_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec91450aae3c73252cb718033d12c1a8e2578a36/spec/requests/admin/flags_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec91450aae3c73252cb718033d12c1a8e2578a36/spec/requests/admin/flags_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/flags_controller_spec.rb?ref=ec91450aae3c73252cb718033d12c1a8e2578a36",
+      "patch": "@@ -59,6 +59,7 @@\n \n       post_action.reload\n       expect(post_action.agreed_by_id).to eq(admin.id)\n+      expect(user.user_stat.reload.flags_agreed).to eq(1)\n \n       post_1.reload\n       expect(post_1.deleted_at).to eq(nil)\n@@ -77,6 +78,7 @@\n       post_action.reload\n \n       expect(post_action.agreed_by_id).to eq(admin.id)\n+      expect(user.user_stat.reload.flags_agreed).to eq(1)\n \n       agree_post = Topic.joins(:topic_allowed_users).where('topic_allowed_users.user_id = ?', user.id).order(:id).last.posts.last\n       expect(agree_post.raw).to eq(I18n.with_locale(:en) { I18n.t('flags_dispositions.agreed') })"
+    }
+  ]
+}
