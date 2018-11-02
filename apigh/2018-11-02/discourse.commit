@@ -1,0 +1,98 @@
+{
+  "sha": "5194313133c7b1bc1a8451c12ec67114b323216e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1MTk0MzEzMTMzYzdiMWJjMWE4NDUxYzEyZWM2NzExNGIzMjMyMTZl",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-11-02T14:58:28Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-11-02T14:58:28Z"
+    },
+    "message": "Revert \"Add base_url to config locales (#6510)\"\n\nThis reverts commit 8a443e051b447646136529f6589e3d553145f811.",
+    "tree": {
+      "sha": "b87091ea610a2f7014b7491ff4935b803c1b0713",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b87091ea610a2f7014b7491ff4935b803c1b0713"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5194313133c7b1bc1a8451c12ec67114b323216e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5194313133c7b1bc1a8451c12ec67114b323216e",
+  "html_url": "https://github.com/discourse/discourse/commit/5194313133c7b1bc1a8451c12ec67114b323216e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5194313133c7b1bc1a8451c12ec67114b323216e/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "931c3d165b927d9cecc2e91cfbb94b70886286bc",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/931c3d165b927d9cecc2e91cfbb94b70886286bc",
+      "html_url": "https://github.com/discourse/discourse/commit/931c3d165b927d9cecc2e91cfbb94b70886286bc"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 13,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "189919bbfa6c29d9fd016cf278a4e6cac93798e6",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 13,
+      "changes": 26,
+      "blob_url": "https://github.com/discourse/discourse/blob/5194313133c7b1bc1a8451c12ec67114b323216e/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/5194313133c7b1bc1a8451c12ec67114b323216e/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=5194313133c7b1bc1a8451c12ec67114b323216e",
+      "patch": "@@ -772,8 +772,8 @@ en:\n       email_body: \"%{link}\\n\\n%{message}\"\n     inappropriate:\n       title: 'Inappropriate'\n-      description: 'This post contains content that a reasonable person would consider offensive, abusive, or a violation of <a href=\"%{base_url}/guidelines\">our community guidelines</a>.'\n-      short_description: 'A violation of <a href=\"%{base_url}/guidelines\">our community guidelines</a>'\n+      description: 'This post contains content that a reasonable person would consider offensive, abusive, or a violation of <a href=\"/guidelines\">our community guidelines</a>.'\n+      short_description: 'A violation of <a href=\"/guidelines\">our community guidelines</a>'\n       long_form: 'flagged this as inappropriate'\n     notify_user:\n       title: 'Send @{{username}} a message'\n@@ -824,12 +824,12 @@ en:\n       short_description: 'This is an advertisement'\n     inappropriate:\n       title: 'Inappropriate'\n-      description: 'This topic contains content that a reasonable person would consider offensive, abusive, or a violation of <a href=\"%{base_url}/guidelines\">our community guidelines</a>.'\n+      description: 'This topic contains content that a reasonable person would consider offensive, abusive, or a violation of <a href=\"/guidelines\">our community guidelines</a>.'\n       long_form: 'flagged this as inappropriate'\n-      short_description: 'A violation of <a href=\"%{base_url}/guidelines\">our community guidelines</a>'\n+      short_description: 'A violation of <a href=\"/guidelines\">our community guidelines</a>'\n     notify_moderators:\n       title: \"Something Else\"\n-      description: 'This topic requires general staff attention based on the <a href=\"%{base_url}/guidelines\">guidelines</a>, <a href=\"%{tos_url}\">TOS</a>, or for another reason not listed above.'\n+      description: 'This topic requires general staff attention based on the <a href=\"/guidelines\">guidelines</a>, <a href=\"%{tos_url}\">TOS</a>, or for another reason not listed above.'\n       long_form: 'flagged this for moderator attention'\n       short_description: 'Requires staff attention for another reason'\n       email_title: 'The topic \"%{title}\" requires moderator attention'\n@@ -1137,14 +1137,14 @@ en:\n     sidekiq_warning: 'Sidekiq is not running. Many tasks, like sending emails, are executed asynchronously by sidekiq. Please ensure at least one sidekiq process is running. <a href=\"https://github.com/mperham/sidekiq\" target=\"_blank\">Learn about Sidekiq here</a>.'\n     queue_size_warning: 'The number of queued jobs is %{queue_size}, which is high. This could indicate a problem with the Sidekiq process(es), or you may need to add more Sidekiq workers.'\n     memory_warning: 'Your server is running with less than 1 GB of total memory. At least 1 GB of memory is recommended.'\n-    google_oauth2_config_warning: 'The server is configured to allow signup and log in with Google OAuth2 (enable_google_oauth2_logins), but the client id and client secret values are not set. Go to <a href=\"%{base_url}/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-google-login-for-discourse/15858\" target=\"_blank\">See this guide to learn more</a>.'\n-    facebook_config_warning: 'The server is configured to allow signup and log in with Facebook (enable_facebook_logins), but the app id and app secret values are not set. Go to <a href=\"%{base_url}/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394\" target=\"_blank\">See this guide to learn more</a>.'\n-    twitter_config_warning: 'The server is configured to allow signup and log in with Twitter (enable_twitter_logins), but the key and secret values are not set. Go to <a href=\"%{base_url}/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395\" target=\"_blank\">See this guide to learn more</a>.'\n-    github_config_warning: 'The server is configured to allow signup and log in with GitHub (enable_github_logins), but the client id and secret values are not set. Go to <a href=\"%{base_url}/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-github-login-for-discourse/13745\" target=\"_blank\">See this guide to learn more</a>.'\n-    s3_config_warning: 'The server is configured to upload files to s3, but at least one the following setting is not set: s3_access_key_id, s3_secret_access_key, s3_use_iam_profile, or s3_upload_bucket. Go to <a href=\"%{base_url}/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229\" target=\"_blank\">See \"How to set up image uploads to S3?\" to learn more</a>.'\n-    s3_backup_config_warning: 'The server is configured to upload backups to s3, but at least one the following setting is not set: s3_access_key_id, s3_secret_access_key, s3_use_iam_profile, or s3_backup_bucket. Go to <a href=\"%{base_url}/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229\" target=\"_blank\">See \"How to set up image uploads to S3?\" to learn more</a>.'\n+    google_oauth2_config_warning: 'The server is configured to allow signup and log in with Google OAuth2 (enable_google_oauth2_logins), but the client id and client secret values are not set. Go to <a href=\"/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-google-login-for-discourse/15858\" target=\"_blank\">See this guide to learn more</a>.'\n+    facebook_config_warning: 'The server is configured to allow signup and log in with Facebook (enable_facebook_logins), but the app id and app secret values are not set. Go to <a href=\"/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394\" target=\"_blank\">See this guide to learn more</a>.'\n+    twitter_config_warning: 'The server is configured to allow signup and log in with Twitter (enable_twitter_logins), but the key and secret values are not set. Go to <a href=\"/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395\" target=\"_blank\">See this guide to learn more</a>.'\n+    github_config_warning: 'The server is configured to allow signup and log in with GitHub (enable_github_logins), but the client id and secret values are not set. Go to <a href=\"/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/configuring-github-login-for-discourse/13745\" target=\"_blank\">See this guide to learn more</a>.'\n+    s3_config_warning: 'The server is configured to upload files to s3, but at least one the following setting is not set: s3_access_key_id, s3_secret_access_key, s3_use_iam_profile, or s3_upload_bucket. Go to <a href=\"/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229\" target=\"_blank\">See \"How to set up image uploads to S3?\" to learn more</a>.'\n+    s3_backup_config_warning: 'The server is configured to upload backups to s3, but at least one the following setting is not set: s3_access_key_id, s3_secret_access_key, s3_use_iam_profile, or s3_backup_bucket. Go to <a href=\"/admin/site_settings\">the Site Settings</a> and update the settings. <a href=\"https://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229\" target=\"_blank\">See \"How to set up image uploads to S3?\" to learn more</a>.'\n     image_magick_warning: 'The server is configured to create thumbnails of large images, but ImageMagick is not installed. Install ImageMagick using your favorite package manager or <a href=\"https://www.imagemagick.org/script/download.php\" target=\"_blank\">download the latest release</a>.'\n-    failing_emails_warning: 'There are %{num_failed_jobs} email jobs that failed. Check your app.yml and ensure that the mail server settings are correct. <a href=\"%{base_url}/sidekiq/retries\" target=\"_blank\">See the failed jobs in Sidekiq</a>.'\n+    failing_emails_warning: 'There are %{num_failed_jobs} email jobs that failed. Check your app.yml and ensure that the mail server settings are correct. <a href=\"/sidekiq/retries\" target=\"_blank\">See the failed jobs in Sidekiq</a>.'\n     subfolder_ends_in_slash: \"Your subfolder setup is incorrect; the DISCOURSE_RELATIVE_URL_ROOT ends in a slash.\"\n     email_polling_errored_recently:\n       one: \"Email polling has generated an error in the past 24 hours. Look at <a href='/logs' target='_blank'>the logs</a> for more details.\"\n@@ -3280,7 +3280,7 @@ en:\n \n   terms_of_service:\n     title: \"Terms of Service\"\n-    signup_form_message: 'I have read and accept the <a href=\"%{base_url}/tos\" target=\"_blank\">Terms of Service</a>.'\n+    signup_form_message: 'I have read and accept the <a href=\"/tos\" target=\"_blank\">Terms of Service</a>.'\n \n   deleted: 'deleted'\n "
+    }
+  ]
+}
