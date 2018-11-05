@@ -1,0 +1,98 @@
+{
+  "sha": "78954672f97112f47c8abf6a575db59e8533448f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3ODk1NDY3MmY5NzExMmY0N2M4YWJmNmE1NzVkYjU5ZTg1MzM0NDhm",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2018-11-05T09:12:52Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-11-05T14:47:15Z"
+    },
+    "message": "FIX: uses hex to compare images\n\nIt prevents some terminals from crashing in case of errors and dumping the whole file content into the terminal.",
+    "tree": {
+      "sha": "7577b9fa01231d732811fa5b9993a7a7c653035b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7577b9fa01231d732811fa5b9993a7a7c653035b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/78954672f97112f47c8abf6a575db59e8533448f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/78954672f97112f47c8abf6a575db59e8533448f",
+  "html_url": "https://github.com/discourse/discourse/commit/78954672f97112f47c8abf6a575db59e8533448f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/78954672f97112f47c8abf6a575db59e8533448f/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5fc09a6467fe690a74838947a2ce13a6c7c2a90f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/5fc09a6467fe690a74838947a2ce13a6c7c2a90f",
+      "html_url": "https://github.com/discourse/discourse/commit/5fc09a6467fe690a74838947a2ce13a6c7c2a90f"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 12,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "caef6150f11f2dbde4cfb28a88e322ad43fe16bb",
+      "filename": "spec/models/optimized_image_spec.rb",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 6,
+      "changes": 18,
+      "blob_url": "https://github.com/discourse/discourse/blob/78954672f97112f47c8abf6a575db59e8533448f/spec/models/optimized_image_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/78954672f97112f47c8abf6a575db59e8533448f/spec/models/optimized_image_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/optimized_image_spec.rb?ref=78954672f97112f47c8abf6a575db59e8533448f",
+      "patch": "@@ -17,9 +17,12 @@\n             5\n           )\n \n-          expect(File.read(tmp_path)).to eq(\n-            File.read(\"#{Rails.root}/spec/fixtures/images/cropped.png\")\n-          )\n+          fixture_path = \"#{Rails.root}/spec/fixtures/images/cropped.png\"\n+          fixture_hex = Digest::MD5.hexdigest(File.read(fixture_path))\n+\n+          cropped_hex = Digest::MD5.hexdigest(File.read(tmp_path))\n+\n+          expect(cropped_hex).to eq(fixture_hex)\n         ensure\n           File.delete(tmp_path) if File.exists?(tmp_path)\n         end\n@@ -120,9 +123,12 @@\n             \"100x100\\>\"\n           )\n \n-          expect(File.read(tmp_path)).to eq(\n-            File.read(\"#{Rails.root}/spec/fixtures/images/downsized.png\")\n-          )\n+          fixture_path = \"#{Rails.root}/spec/fixtures/images/downsized.png\"\n+          fixture_hex = Digest::MD5.hexdigest(File.read(fixture_path))\n+\n+          downsized_hex = Digest::MD5.hexdigest(File.read(tmp_path))\n+\n+          expect(downsized_hex).to eq(fixture_hex)\n         ensure\n           File.delete(tmp_path) if File.exists?(tmp_path)\n         end"
+    }
+  ]
+}
