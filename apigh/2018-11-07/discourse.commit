@@ -1,0 +1,110 @@
+{
+  "sha": "a5871b6dd18cc938cd6bcd6589d913c6c8f078ff",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNTg3MWI2ZGQxOGNjOTM4Y2Q2YmNkNjU4OWQ5MTNjNmM4ZjA3OGZm",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2018-11-07T19:18:55Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2018-11-07T19:18:55Z"
+    },
+    "message": "Rename conflicting SCSS mixin",
+    "tree": {
+      "sha": "0138a7e3e2391c9bca1865cc530fc70d2d8ea1ce",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0138a7e3e2391c9bca1865cc530fc70d2d8ea1ce"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff",
+  "html_url": "https://github.com/discourse/discourse/commit/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "52440415c532bcb83a8fab156a62d8eac0ef462c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/52440415c532bcb83a8fab156a62d8eac0ef462c",
+      "html_url": "https://github.com/discourse/discourse/commit/52440415c532bcb83a8fab156a62d8eac0ef462c"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e29caaaae42ff91383839f2df46b6e2f7289ff56",
+      "filename": "app/assets/stylesheets/common/base/_topic-list.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff/app/assets/stylesheets/common/base/_topic-list.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff/app/assets/stylesheets/common/base/_topic-list.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/_topic-list.scss?ref=a5871b6dd18cc938cd6bcd6589d913c6c8f078ff",
+      "patch": "@@ -252,7 +252,7 @@ ol.category-breadcrumb {\n }\n \n .d-icon-thumbtack.unpinned {\n-  @include rotate(180deg, 1);\n+  @include fa-rotate(180deg, 1);\n   color: $primary;\n   /* because it is rotated, right becomes left! */\n   padding-left: 3px;"
+    },
+    {
+      "sha": "a4fa84fcd683a6be60e99770ab56de158b526692",
+      "filename": "app/assets/stylesheets/common/foundation/mixins.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff/app/assets/stylesheets/common/foundation/mixins.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/a5871b6dd18cc938cd6bcd6589d913c6c8f078ff/app/assets/stylesheets/common/foundation/mixins.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/foundation/mixins.scss?ref=a5871b6dd18cc938cd6bcd6589d913c6c8f078ff",
+      "patch": "@@ -87,7 +87,7 @@ $breakpoints: (\n   appearance: none;\n }\n \n-@mixin rotate($degrees, $rotation) {\n+@mixin fa-rotate($degrees, $rotation) {\n   -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})\";\n   -webkit-transform: rotate($degrees);\n   -ms-transform: rotate($degrees);"
+    }
+  ]
+}
