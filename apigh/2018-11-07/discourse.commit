@@ -1,0 +1,158 @@
+{
+  "sha": "6b60646330c04f823540adf21720235c8ee1f44e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2YjYwNjQ2MzMwYzA0ZjgyMzU0MGFkZjIxNzIwMjM1YzhlZTFmNDRl",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-11-06T23:26:52Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-11-07T10:35:04Z"
+    },
+    "message": "FIX: Relative links in templates should work with subfolders",
+    "tree": {
+      "sha": "73c8df2c515f2f452a99ddf037524b1dde6098a4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/73c8df2c515f2f452a99ddf037524b1dde6098a4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6b60646330c04f823540adf21720235c8ee1f44e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6b60646330c04f823540adf21720235c8ee1f44e",
+  "html_url": "https://github.com/discourse/discourse/commit/6b60646330c04f823540adf21720235c8ee1f44e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6b60646330c04f823540adf21720235c8ee1f44e/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "555f467727e44ac1fc6659846116e7bcd65f6f07",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/555f467727e44ac1fc6659846116e7bcd65f6f07",
+      "html_url": "https://github.com/discourse/discourse/commit/555f467727e44ac1fc6659846116e7bcd65f6f07"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 11,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "2d1e6437eeebe0d1d629997ae1a3e259344b473b",
+      "filename": "app/assets/javascripts/admin/templates/dashboard.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/admin/templates/dashboard.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/admin/templates/dashboard.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/dashboard.hbs?ref=6b60646330c04f823540adf21720235c8ee1f44e",
+      "patch": "@@ -131,7 +131,7 @@\n           <tr>\n             <td>{{i18n 'admin.dashboard.uploads'}}</td>\n             <td>{{disk_space.uploads_used}} ({{i18n 'admin.dashboard.space_free' size=disk_space.uploads_free}})</td>\n-            <td>{{#if currentUser.admin}}<a href=\"/admin/backups\">{{i18n 'admin.dashboard.backups'}}</a>{{/if}}</td>\n+            <td>{{#if currentUser.admin}}<a href=\"{{get-url '/admin/backups'}}\">{{i18n 'admin.dashboard.backups'}}</a>{{/if}}</td>\n             <td>{{disk_space.backups_used}} ({{i18n 'admin.dashboard.space_free' size=disk_space.backups_free}})</td>\n           </tr>\n         </tbody>"
+    },
+    {
+      "sha": "682b6831c7dfe0d75877fb0b41f3ea1b0ce57217",
+      "filename": "app/assets/javascripts/admin/templates/dashboard_next_general.hbs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/admin/templates/dashboard_next_general.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/admin/templates/dashboard_next_general.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/dashboard_next_general.hbs?ref=6b60646330c04f823540adf21720235c8ee1f44e",
+      "patch": "@@ -5,7 +5,7 @@\n     <div class=\"period-section\">\n       <div class=\"section-title\">\n         <h2>\n-          <a href=\"/admin/reports\">\n+          <a href=\"{{get-url '/admin/reports'}}\">\n             {{i18n \"admin.dashboard.community_health\"}}\n           </a>\n         </h2>\n@@ -111,7 +111,7 @@\n               {{#if currentUser.admin}}\n                 <div class=\"backups\">\n                   <h3 class=\"durability-title\">\n-                    <a href=\"/admin/backups\">{{d-icon \"archive\"}} {{i18n \"admin.dashboard.backups\"}}</a>\n+                    <a href=\"{{get-url '/admin/backups'}}\">{{d-icon \"archive\"}} {{i18n \"admin.dashboard.backups\"}}</a>\n                   </h3>\n                   <p>\n                     {{diskSpace.backups_used}} ({{i18n \"admin.dashboard.space_free\" size=diskSpace.backups_free}})"
+    },
+    {
+      "sha": "ce2736bb15b524bd078130702426b2f32147b02f",
+      "filename": "app/assets/javascripts/admin/templates/dashboard_next_moderation.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/admin/templates/dashboard_next_moderation.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/admin/templates/dashboard_next_moderation.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/dashboard_next_moderation.hbs?ref=6b60646330c04f823540adf21720235c8ee1f44e",
+      "patch": "@@ -4,7 +4,7 @@\n   <div class=\"moderators-activity section\">\n     <div class=\"section-title\">\n       <h2>\n-        <a href=\"/admin/reports/moderators_activity\">\n+        <a href=\"{{get-url '/admin/reports/moderators_activity'}}\">\n           {{i18n \"admin.dashboard.moderators_activity\"}}\n         </a>\n       </h2>"
+    },
+    {
+      "sha": "e3847c4bde92dc087d7e83ecd6c53318fa28eeb6",
+      "filename": "app/assets/javascripts/discourse-common/helpers/get-url.js.es6",
+      "status": "added",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/discourse-common/helpers/get-url.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/discourse-common/helpers/get-url.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse-common/helpers/get-url.js.es6?ref=6b60646330c04f823540adf21720235c8ee1f44e",
+      "patch": "@@ -0,0 +1,4 @@\n+import { registerUnbound } from \"discourse-common/lib/helpers\";\n+import getUrl from \"discourse-common/lib/get-url\";\n+\n+registerUnbound(\"get-url\", value => getUrl(value));"
+    },
+    {
+      "sha": "4dcd89c71a52367c453361e4f74819f1892d6a6b",
+      "filename": "app/assets/javascripts/discourse/templates/components/categories-topic-list.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/discourse/templates/components/categories-topic-list.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/discourse/templates/components/categories-topic-list.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/categories-topic-list.hbs?ref=6b60646330c04f823540adf21720235c8ee1f44e",
+      "patch": "@@ -7,7 +7,7 @@\n     {{latest-topic-list-item topic=t}}\n   {{/each}}\n   <div class=\"more-topics\">\n-    <a href=\"/{{filter}}\" class=\"btn btn-default pull-right\">{{i18n \"more\"}}</a>\n+    <a href=\"{{get-url (concat '/' filter)}}\" class=\"btn btn-default pull-right\">{{i18n \"more\"}}</a>\n   </div>\n {{else}}\n   <div class='no-topics'>"
+    },
+    {
+      "sha": "c83ef91a292428b2025cfd4d59b411924f62d3f0",
+      "filename": "app/assets/javascripts/discourse/templates/components/edit-category-settings.hbs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/discourse/templates/components/edit-category-settings.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b60646330c04f823540adf21720235c8ee1f44e/app/assets/javascripts/discourse/templates/components/edit-category-settings.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/edit-category-settings.hbs?ref=6b60646330c04f823540adf21720235c8ee1f44e",
+      "patch": "@@ -10,7 +10,7 @@\n {{#unless showPositionInput}}\n   <section class='field'>\n     {{i18n 'category.position_disabled'}}\n-    <a href=\"/admin/site_settings/category/basic\">{{i18n 'category.position_disabled_click'}}</a>\n+    <a href=\"{{get-url '/admin/site_settings/category/basic'}}\">{{i18n 'category.position_disabled_click'}}</a>\n   </section>\n {{/unless}}\n \n@@ -187,6 +187,6 @@\n {{#unless emailInEnabled}}\n   <section class='field'>\n     {{i18n 'category.email_in_disabled'}}\n-    <a href=\"/admin/site_settings/category/email\">{{i18n 'category.email_in_disabled_click'}}</a>\n+    <a href=\"{{get-url '/admin/site_settings/category/email'}}\">{{i18n 'category.email_in_disabled_click'}}</a>\n   </section>\n {{/unless}}"
+    }
+  ]
+}
