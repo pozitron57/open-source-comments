@@ -1,0 +1,98 @@
+{
+  "sha": "afdc02bca694d7a8f6bae88495db494137fb1ece",
+  "node_id": "MDY6Q29tbWl0MTIyMDAzNjY6YWZkYzAyYmNhNjk0ZDdhOGY2YmFlODg0OTVkYjQ5NDEzN2ZiMWVjZQ==",
+  "commit": {
+    "author": {
+      "name": "PeeHaa",
+      "email": "info@pieterhordijk.com",
+      "date": "2014-07-26T23:46:54Z"
+    },
+    "committer": {
+      "name": "PeeHaa",
+      "email": "info@pieterhordijk.com",
+      "date": "2014-07-26T23:46:54Z"
+    },
+    "message": "Styled the delete confirmation box",
+    "tree": {
+      "sha": "ad29c8316cfe8e57edd31b184c2538c8f27cf423",
+      "url": "https://api.github.com/repos/Commentar/Commentar/git/trees/ad29c8316cfe8e57edd31b184c2538c8f27cf423"
+    },
+    "url": "https://api.github.com/repos/Commentar/Commentar/git/commits/afdc02bca694d7a8f6bae88495db494137fb1ece",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/Commentar/Commentar/commits/afdc02bca694d7a8f6bae88495db494137fb1ece",
+  "html_url": "https://github.com/Commentar/Commentar/commit/afdc02bca694d7a8f6bae88495db494137fb1ece",
+  "comments_url": "https://api.github.com/repos/Commentar/Commentar/commits/afdc02bca694d7a8f6bae88495db494137fb1ece/comments",
+  "author": {
+    "login": "PeeHaa",
+    "id": 1330296,
+    "node_id": "MDQ6VXNlcjEzMzAyOTY=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1330296?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/PeeHaa",
+    "html_url": "https://github.com/PeeHaa",
+    "followers_url": "https://api.github.com/users/PeeHaa/followers",
+    "following_url": "https://api.github.com/users/PeeHaa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/PeeHaa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/PeeHaa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/PeeHaa/subscriptions",
+    "organizations_url": "https://api.github.com/users/PeeHaa/orgs",
+    "repos_url": "https://api.github.com/users/PeeHaa/repos",
+    "events_url": "https://api.github.com/users/PeeHaa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/PeeHaa/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "PeeHaa",
+    "id": 1330296,
+    "node_id": "MDQ6VXNlcjEzMzAyOTY=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1330296?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/PeeHaa",
+    "html_url": "https://github.com/PeeHaa",
+    "followers_url": "https://api.github.com/users/PeeHaa/followers",
+    "following_url": "https://api.github.com/users/PeeHaa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/PeeHaa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/PeeHaa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/PeeHaa/subscriptions",
+    "organizations_url": "https://api.github.com/users/PeeHaa/orgs",
+    "repos_url": "https://api.github.com/users/PeeHaa/repos",
+    "events_url": "https://api.github.com/users/PeeHaa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/PeeHaa/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f9c34917bb9626523bf7dd88f524765ec0ab20fb",
+      "url": "https://api.github.com/repos/Commentar/Commentar/commits/f9c34917bb9626523bf7dd88f524765ec0ab20fb",
+      "html_url": "https://github.com/Commentar/Commentar/commit/f9c34917bb9626523bf7dd88f524765ec0ab20fb"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 17,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "eb91d4ff6b63ec8f95941bdfc52332cad566c4ae",
+      "filename": "themes/commentar/css/style.css",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/Commentar/Commentar/blob/afdc02bca694d7a8f6bae88495db494137fb1ece/themes/commentar/css/style.css",
+      "raw_url": "https://github.com/Commentar/Commentar/raw/afdc02bca694d7a8f6bae88495db494137fb1ece/themes/commentar/css/style.css",
+      "contents_url": "https://api.github.com/repos/Commentar/Commentar/contents/themes/commentar/css/style.css?ref=afdc02bca694d7a8f6bae88495db494137fb1ece",
+      "patch": "@@ -250,6 +250,23 @@ ul.commentar-comments ul.commentar-comments {\n     margin: 0 auto;\n }\n \n+.commentar-comments main form.delete > span {\n+    margin-right: 20px;\n+}\n+\n+.commentar-comments main form.delete .icon-delete {\n+    border: 0;\n+    font-size: 0.7em;\n+    color: #444444;\n+    display: block;\n+    display: inline;\n+    background: #dddddd;\n+    line-height: 10px;\n+    padding: 7px 10px;\n+    margin-right: 10px;\n+    cursor: pointer;\n+}\n+\n .commentar-comments article footer {\n     background:#444;\n     color:#FFF;"
+    }
+  ]
+}
