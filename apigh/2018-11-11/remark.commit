@@ -1,0 +1,110 @@
+{
+  "sha": "e09678c72f4406ad82a58b4918032dd2a4ea2d0f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmUwOTY3OGM3MmY0NDA2YWQ4MmE1OGI0OTE4MDMyZGQyYTRlYTJkMGY=",
+  "commit": {
+    "author": {
+      "name": "igoradamenko",
+      "email": "mail@igoradamenko.com",
+      "date": "2018-11-11T13:43:57Z"
+    },
+    "committer": {
+      "name": "igoradamenko",
+      "email": "mail@igoradamenko.com",
+      "date": "2018-11-11T13:43:57Z"
+    },
+    "message": "save sorting key to cookies instead of local storage",
+    "tree": {
+      "sha": "b7180b0f4ce819371b4390c8d74f387b978c2df7",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/b7180b0f4ce819371b4390c8d74f387b978c2df7"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/e09678c72f4406ad82a58b4918032dd2a4ea2d0f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/e09678c72f4406ad82a58b4918032dd2a4ea2d0f",
+  "html_url": "https://github.com/umputun/remark/commit/e09678c72f4406ad82a58b4918032dd2a4ea2d0f",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/e09678c72f4406ad82a58b4918032dd2a4ea2d0f/comments",
+  "author": {
+    "login": "igoradamenko",
+    "id": 6537798,
+    "node_id": "MDQ6VXNlcjY1Mzc3OTg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6537798?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igoradamenko",
+    "html_url": "https://github.com/igoradamenko",
+    "followers_url": "https://api.github.com/users/igoradamenko/followers",
+    "following_url": "https://api.github.com/users/igoradamenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igoradamenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igoradamenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igoradamenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/igoradamenko/orgs",
+    "repos_url": "https://api.github.com/users/igoradamenko/repos",
+    "events_url": "https://api.github.com/users/igoradamenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igoradamenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igoradamenko",
+    "id": 6537798,
+    "node_id": "MDQ6VXNlcjY1Mzc3OTg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6537798?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igoradamenko",
+    "html_url": "https://github.com/igoradamenko",
+    "followers_url": "https://api.github.com/users/igoradamenko/followers",
+    "following_url": "https://api.github.com/users/igoradamenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igoradamenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igoradamenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igoradamenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/igoradamenko/orgs",
+    "repos_url": "https://api.github.com/users/igoradamenko/repos",
+    "events_url": "https://api.github.com/users/igoradamenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igoradamenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "95ea27d3ace9e835c46aea4d687d3dca21393d00",
+      "url": "https://api.github.com/repos/umputun/remark/commits/95ea27d3ace9e835c46aea4d687d3dca21393d00",
+      "html_url": "https://github.com/umputun/remark/commit/95ea27d3ace9e835c46aea4d687d3dca21393d00"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 7,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "77937f250e270e4faaab70826ec0362473a19ce1",
+      "filename": "web/app/common/constants.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/e09678c72f4406ad82a58b4918032dd2a4ea2d0f/web/app/common/constants.js",
+      "raw_url": "https://github.com/umputun/remark/raw/e09678c72f4406ad82a58b4918032dd2a4ea2d0f/web/app/common/constants.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/common/constants.js?ref=e09678c72f4406ad82a58b4918032dd2a4ea2d0f",
+      "patch": "@@ -15,8 +15,10 @@ export const PROVIDER_NAMES = {\n   yandex: 'Yandex',\n   dev: 'Dev',\n };\n+\n export const LS_COLLAPSE_KEY = '__remarkCollapsed';\n-export const LS_SORT_KEY = '__remarkSort';\n+\n+export const COOKIE_SORT_KEY = 'remarkSort';\n \n export const BLOCKING_DURATIONS = [\n   {"
+    },
+    {
+      "sha": "be5a4e16b72b405901e5e831b52f21fe98e71653",
+      "filename": "web/app/components/root/root.jsx",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark/blob/e09678c72f4406ad82a58b4918032dd2a4ea2d0f/web/app/components/root/root.jsx",
+      "raw_url": "https://github.com/umputun/remark/raw/e09678c72f4406ad82a58b4918032dd2a4ea2d0f/web/app/components/root/root.jsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/components/root/root.jsx?ref=e09678c72f4406ad82a58b4918032dd2a4ea2d0f",
+      "patch": "@@ -7,9 +7,10 @@ import {\n   NODE_ID,\n   COMMENT_NODE_CLASSNAME_PREFIX,\n   DEFAULT_SORT,\n-  LS_SORT_KEY,\n+  COOKIE_SORT_KEY,\n   MAX_SHOWN_ROOT_COMMENTS,\n } from 'common/constants';\n+import { getCookie, setCookie } from 'common/cookies';\n import { siteId, url, maxShownComments } from 'common/settings';\n import store from 'common/store';\n \n@@ -29,7 +30,7 @@ export default class Root extends Component {\n     let sort;\n \n     try {\n-      sort = localStorage.getItem(LS_SORT_KEY) || DEFAULT_SORT;\n+      sort = getCookie(COOKIE_SORT_KEY) || DEFAULT_SORT;\n     } catch (e) {\n       sort = DEFAULT_SORT;\n     }\n@@ -190,7 +191,7 @@ export default class Root extends Component {\n     this.setState({ sort, isCommentsListLoading: true });\n \n     try {\n-      localStorage.setItem(LS_SORT_KEY, sort);\n+      setCookie(COOKIE_SORT_KEY, sort, { expires: 60 * 60 * 24 * 365 }); // save sorting for a year\n     } catch (e) {\n       // can't save; ignore it\n     }"
+    }
+  ]
+}
