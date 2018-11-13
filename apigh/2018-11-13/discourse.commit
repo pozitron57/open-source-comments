@@ -1,0 +1,98 @@
+{
+  "sha": "1570b01184864ab3ef9e8f8e5ce302a10ec14c7b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxNTcwYjAxMTg0ODY0YWIzZWY5ZThmOGU1Y2UzMDJhMTBlYzE0Yzdi",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-11-13T16:21:19Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-11-13T16:21:19Z"
+    },
+    "message": "IE11 select-kit fix",
+    "tree": {
+      "sha": "4fd448b592e4fc77795e21b4d2708e9f568f5b96",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4fd448b592e4fc77795e21b4d2708e9f568f5b96"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1570b01184864ab3ef9e8f8e5ce302a10ec14c7b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1570b01184864ab3ef9e8f8e5ce302a10ec14c7b",
+  "html_url": "https://github.com/discourse/discourse/commit/1570b01184864ab3ef9e8f8e5ce302a10ec14c7b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1570b01184864ab3ef9e8f8e5ce302a10ec14c7b/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c09a407f65cd2e843cbc1eb0946027d04a4d20d2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/c09a407f65cd2e843cbc1eb0946027d04a4d20d2",
+      "html_url": "https://github.com/discourse/discourse/commit/c09a407f65cd2e843cbc1eb0946027d04a4d20d2"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "3c203590317ae00db3f51a154a2abdb916267119",
+      "filename": "app/assets/stylesheets/common/select-kit/dropdown-select-box.scss",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/1570b01184864ab3ef9e8f8e5ce302a10ec14c7b/app/assets/stylesheets/common/select-kit/dropdown-select-box.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/1570b01184864ab3ef9e8f8e5ce302a10ec14c7b/app/assets/stylesheets/common/select-kit/dropdown-select-box.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/select-kit/dropdown-select-box.scss?ref=1570b01184864ab3ef9e8f8e5ce302a10ec14c7b",
+      "patch": "@@ -73,7 +73,7 @@\n         .name {\n           -webkit-box-flex: 1;\n           -ms-flex: 1;\n-          flex: 1 1 0%;\n+          flex: 1 1 auto;\n           font-weight: bold;\n           font-size: $font-0;\n           color: $primary;\n@@ -87,7 +87,7 @@\n         .desc {\n           -webkit-box-flex: 1;\n           -ms-flex: 1;\n-          flex: 1 1 0%;\n+          flex: 1 1 auto;\n           width: 100%; //IE11\n           font-size: $font-down-1;\n           font-weight: normal;"
+    }
+  ]
+}
