@@ -1,0 +1,110 @@
+{
+  "sha": "5a542327e7d4e9c451919200fd766037255adb5b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1YTU0MjMyN2U3ZDRlOWM0NTE5MTkyMDBmZDc2NjAzNzI1NWFkYjVi",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-11-15T15:08:27Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2018-11-15T15:09:49Z"
+    },
+    "message": "IE11 Fix: Select-kit items shouldn't have flex-grow",
+    "tree": {
+      "sha": "5b885ba94259df50fb98c5b07a8e7f10e225c1cc",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5b885ba94259df50fb98c5b07a8e7f10e225c1cc"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5a542327e7d4e9c451919200fd766037255adb5b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5a542327e7d4e9c451919200fd766037255adb5b",
+  "html_url": "https://github.com/discourse/discourse/commit/5a542327e7d4e9c451919200fd766037255adb5b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5a542327e7d4e9c451919200fd766037255adb5b/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9911a41f4c98a935574a5df9516d932c8e72d923",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/9911a41f4c98a935574a5df9516d932c8e72d923",
+      "html_url": "https://github.com/discourse/discourse/commit/9911a41f4c98a935574a5df9516d932c8e72d923"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 1,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e2a98d760ca8ec9e9bea49a2a1930f8e6d5e2b3f",
+      "filename": "app/assets/stylesheets/common/select-kit/multi-select.scss",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/5a542327e7d4e9c451919200fd766037255adb5b/app/assets/stylesheets/common/select-kit/multi-select.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/5a542327e7d4e9c451919200fd766037255adb5b/app/assets/stylesheets/common/select-kit/multi-select.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/select-kit/multi-select.scss?ref=5a542327e7d4e9c451919200fd766037255adb5b",
+      "patch": "@@ -148,7 +148,6 @@\n       }\n \n       .selected-name {\n-        flex: unset;\n         .footer {\n           display: flex;\n           width: 100%;"
+    },
+    {
+      "sha": "f70e9c9da0fafaa210b2872b48f653c214e67f76",
+      "filename": "app/assets/stylesheets/common/select-kit/select-kit.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/5a542327e7d4e9c451919200fd766037255adb5b/app/assets/stylesheets/common/select-kit/select-kit.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/5a542327e7d4e9c451919200fd766037255adb5b/app/assets/stylesheets/common/select-kit/select-kit.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/select-kit/select-kit.scss?ref=5a542327e7d4e9c451919200fd766037255adb5b",
+      "patch": "@@ -70,7 +70,7 @@\n \n     .selected-name {\n       text-align: left;\n-      flex: 1 1 auto;\n+      flex: 0 1 auto;\n       padding: 1px 0;\n       text-overflow: ellipsis;\n       white-space: nowrap;"
+    }
+  ]
+}
