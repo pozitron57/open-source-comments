@@ -1,0 +1,110 @@
+{
+  "sha": "e37c4a452569386389af67151d78ca0a990aeb6d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplMzdjNGE0NTI1NjkzODYzODlhZjY3MTUxZDc4Y2EwYTk5MGFlYjZk",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-11-16T15:59:52Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2018-11-16T16:00:22Z"
+    },
+    "message": "FIX: Don't show the Quote popup if posting is disabled",
+    "tree": {
+      "sha": "da0659bb00b1313ca2b3b036e39817578dec082b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/da0659bb00b1313ca2b3b036e39817578dec082b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e37c4a452569386389af67151d78ca0a990aeb6d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e37c4a452569386389af67151d78ca0a990aeb6d",
+  "html_url": "https://github.com/discourse/discourse/commit/e37c4a452569386389af67151d78ca0a990aeb6d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e37c4a452569386389af67151d78ca0a990aeb6d/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "10723ba1c259a559ad085bb96109e6fe7ddfdac7",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/10723ba1c259a559ad085bb96109e6fe7ddfdac7",
+      "html_url": "https://github.com/discourse/discourse/commit/10723ba1c259a559ad085bb96109e6fe7ddfdac7"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 10,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d30dfee5733ee8c0b2f55c6b2ee004a84b7ad6d9",
+      "filename": "app/assets/javascripts/discourse/controllers/topic.js.es6",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/e37c4a452569386389af67151d78ca0a990aeb6d/app/assets/javascripts/discourse/controllers/topic.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/e37c4a452569386389af67151d78ca0a990aeb6d/app/assets/javascripts/discourse/controllers/topic.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/topic.js.es6?ref=e37c4a452569386389af67151d78ca0a990aeb6d",
+      "patch": "@@ -70,6 +70,15 @@ export default Ember.Controller.extend(BufferedContent, {\n     }\n   },\n \n+  @computed(\"model.details.can_create_post\")\n+  embedQuoteButton(canCreatePost) {\n+    return (\n+      canCreatePost &&\n+      this.currentUser &&\n+      this.currentUser.get(\"enable_quoting\")\n+    );\n+  },\n+\n   @computed(\"model.postStream.loaded\", \"model.category_id\")\n   showSharedDraftControls(loaded, categoryId) {\n     let draftCat = this.site.shared_drafts_category_id;"
+    },
+    {
+      "sha": "400a7efb4dea30ea0248fc6daedd38a81b40a490",
+      "filename": "app/assets/javascripts/discourse/templates/topic.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e37c4a452569386389af67151d78ca0a990aeb6d/app/assets/javascripts/discourse/templates/topic.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/e37c4a452569386389af67151d78ca0a990aeb6d/app/assets/javascripts/discourse/templates/topic.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/topic.hbs?ref=e37c4a452569386389af67151d78ca0a990aeb6d",
+      "patch": "@@ -322,7 +322,7 @@\n \n   {{share-popup topic=model replyAsNewTopic=\"replyAsNewTopic\"}}\n \n-  {{#if currentUser.enable_quoting}}\n+  {{#if embedQuoteButton}}\n     {{quote-button quoteState=quoteState selectText=(action \"selectText\")}}\n   {{/if}}\n {{/discourse-topic}}"
+    }
+  ]
+}
