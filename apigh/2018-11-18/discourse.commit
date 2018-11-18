@@ -1,0 +1,110 @@
+{
+  "sha": "597f1709953d2c466bf55f87efb1660d02f04a71",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1OTdmMTcwOTk1M2QyYzQ2NmJmNTVmODdlZmIxNjYwZDAyZjA0YTcx",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-11-17T08:15:55Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-11-17T08:15:55Z"
+    },
+    "message": "bump onebox version\n\n- FIX: show Google video preview on iOS devices\n- FIX: convert relative image url to absolute url",
+    "tree": {
+      "sha": "1bc4d28062d995cc37f1743c5dbbb6cb1e9df5ad",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1bc4d28062d995cc37f1743c5dbbb6cb1e9df5ad"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/597f1709953d2c466bf55f87efb1660d02f04a71",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/597f1709953d2c466bf55f87efb1660d02f04a71",
+  "html_url": "https://github.com/discourse/discourse/commit/597f1709953d2c466bf55f87efb1660d02f04a71",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/597f1709953d2c466bf55f87efb1660d02f04a71/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "962fbd1ec7a7f9558988c7c67d50bd194160f76a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/962fbd1ec7a7f9558988c7c67d50bd194160f76a",
+      "html_url": "https://github.com/discourse/discourse/commit/962fbd1ec7a7f9558988c7c67d50bd194160f76a"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "f91aeca1e5f8352aad96dbfa3bbea15cb9041b47",
+      "filename": "Gemfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/597f1709953d2c466bf55f87efb1660d02f04a71/Gemfile",
+      "raw_url": "https://github.com/discourse/discourse/raw/597f1709953d2c466bf55f87efb1660d02f04a71/Gemfile",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile?ref=597f1709953d2c466bf55f87efb1660d02f04a71",
+      "patch": "@@ -34,7 +34,7 @@ gem 'redis-namespace'\n \n gem 'active_model_serializers', '~> 0.8.3'\n \n-gem 'onebox', '1.8.67'\n+gem 'onebox', '1.8.68'\n \n gem 'http_accept_language', '~>2.0.5', require: false\n "
+    },
+    {
+      "sha": "22551fd1a3eb96eb1f20e694ad445d28f4b048ab",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/597f1709953d2c466bf55f87efb1660d02f04a71/Gemfile.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/597f1709953d2c466bf55f87efb1660d02f04a71/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile.lock?ref=597f1709953d2c466bf55f87efb1660d02f04a71",
+      "patch": "@@ -258,7 +258,7 @@ GEM\n     omniauth-twitter (1.4.0)\n       omniauth-oauth (~> 1.1)\n       rack\n-    onebox (1.8.67)\n+    onebox (1.8.68)\n       htmlentities (~> 4.3)\n       moneta (~> 1.0)\n       multi_json (~> 1.11)\n@@ -512,7 +512,7 @@ DEPENDENCIES\n   omniauth-oauth2\n   omniauth-openid\n   omniauth-twitter\n-  onebox (= 1.8.67)\n+  onebox (= 1.8.68)\n   openid-redis-store\n   pg\n   pry-nav"
+    }
+  ]
+}
