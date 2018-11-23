@@ -1,0 +1,110 @@
+{
+  "sha": "514291101234b5a9cc23269a70f16f7f3f0bd5df",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1MTQyOTExMDEyMzRiNWE5Y2MyMzI2OWE3MGYxNmY3ZjNmMGJkNWRm",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-11-23T16:42:57Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-11-23T16:42:57Z"
+    },
+    "message": "FIX: auto-closing poll wasn't working",
+    "tree": {
+      "sha": "97c9ded9eba93aa7904967e833f7c1a8db94f9d2",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/97c9ded9eba93aa7904967e833f7c1a8db94f9d2"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/514291101234b5a9cc23269a70f16f7f3f0bd5df",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/514291101234b5a9cc23269a70f16f7f3f0bd5df",
+  "html_url": "https://github.com/discourse/discourse/commit/514291101234b5a9cc23269a70f16f7f3f0bd5df",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/514291101234b5a9cc23269a70f16f7f3f0bd5df/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c38f7b240b01411a10aadf930223573409c5e340",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/c38f7b240b01411a10aadf930223573409c5e340",
+      "html_url": "https://github.com/discourse/discourse/commit/c38f7b240b01411a10aadf930223573409c5e340"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 16,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ccfac10931484256499fa36ee7636103e1c91388",
+      "filename": "plugins/poll/jobs/regular/close_poll.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/514291101234b5a9cc23269a70f16f7f3f0bd5df/plugins/poll/jobs/regular/close_poll.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/514291101234b5a9cc23269a70f16f7f3f0bd5df/plugins/poll/jobs/regular/close_poll.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/poll/jobs/regular/close_poll.rb?ref=514291101234b5a9cc23269a70f16f7f3f0bd5df",
+      "patch": "@@ -3,7 +3,7 @@ module Jobs\n   class ClosePoll < Jobs::Base\n \n     def execute(args)\n-      DiscoursePoll::Poll.toggle_status(args[:post_id], args[:poll_name], \"closed\", -1)\n+      DiscoursePoll::Poll.toggle_status(args[:post_id], args[:poll_name], \"closed\", Discourse.system_user)\n     end\n \n   end"
+    },
+    {
+      "sha": "3dfe21889672180dbb696c75d9ce8e1db95d1fc8",
+      "filename": "plugins/poll/spec/jobs/regular/close_poll_spec.rb",
+      "status": "added",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/514291101234b5a9cc23269a70f16f7f3f0bd5df/plugins/poll/spec/jobs/regular/close_poll_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/514291101234b5a9cc23269a70f16f7f3f0bd5df/plugins/poll/spec/jobs/regular/close_poll_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/poll/spec/jobs/regular/close_poll_spec.rb?ref=514291101234b5a9cc23269a70f16f7f3f0bd5df",
+      "patch": "@@ -0,0 +1,15 @@\n+require \"rails_helper\"\n+\n+describe Jobs::ClosePoll do\n+\n+  it \"automatically closes a poll\" do\n+    post = Fabricate(:post, raw: \"[poll]\\n- A\\n- B\\n[/poll]\")\n+\n+    expect(post.polls.first.closed?).to eq(false)\n+\n+    Jobs::ClosePoll.new.execute(post_id: post.id, poll_name: \"poll\")\n+\n+    expect(post.polls.first.closed?).to eq(true)\n+  end\n+\n+end"
+    }
+  ]
+}
