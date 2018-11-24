@@ -1,0 +1,175 @@
+{
+  "sha": "966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTo5NjZkNDAzZWJiNGE4YWUyMmY1YzViYzcwMjk4MmJkY2I5MGM4YjA1",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2018-11-23T03:21:12Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-11-23T03:21:12Z"
+    },
+    "message": "Merge pull request #499 from jelmer/admin-bool\n\nDon't open the admin page with a default password by default. Fixes #491",
+    "tree": {
+      "sha": "1a4eb66d4c24e8b95c60306de7fa827b708170ce",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/1a4eb66d4c24e8b95c60306de7fa827b708170ce"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJb93IoCRBK7hj4Ov3rIwAAdHIIAFV9vqZ9G5t1IV8qySFDSB71\n6O9q8EfOBoJNXq8XH5rtR7lJqpckQRkXMVwWsEUFE5//fuEqu7LEkwZuEIPGwrIa\nVrVqFLVhkxVCEPpF6vd+wltzKjR11U7UYzCALCO1kD5RXwl3u3cfDdaWPZelngs9\n6V4Jv/DSAIUIbdeP0hXjujcA5ocRdk3Hf845/qrwyAxSnLh7a/aCvOMM5ei7M34o\ndMQ45smAKBFC6K3u65lIveAgb3nZtZjqrz+p5frfqLY+3BfvhlRDzDQ92OgwPwrw\nrMs1yZIEsaylzUmvYjz8LjBXwAAE+Hc8tu8lQDrIk3o3AQKNWkX8AhcbBSfRQC4=\n=N3Nt\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1a4eb66d4c24e8b95c60306de7fa827b708170ce\nparent e6132580a96e00cb3f923871fa14b048890f4565\nparent afc90a05cc8cf7209478a35ed4f5da5e70955c20\nauthor Jelmer Vernooĳ <jelmer@jelmer.uk> 1542943272 +0000\ncommitter GitHub <noreply@github.com> 1542943272 +0000\n\nMerge pull request #499 from jelmer/admin-bool\n\nDon't open the admin page with a default password by default. Fixes #491"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+  "html_url": "https://github.com/posativ/isso/commit/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e6132580a96e00cb3f923871fa14b048890f4565",
+      "url": "https://api.github.com/repos/posativ/isso/commits/e6132580a96e00cb3f923871fa14b048890f4565",
+      "html_url": "https://github.com/posativ/isso/commit/e6132580a96e00cb3f923871fa14b048890f4565"
+    },
+    {
+      "sha": "afc90a05cc8cf7209478a35ed4f5da5e70955c20",
+      "url": "https://api.github.com/repos/posativ/isso/commits/afc90a05cc8cf7209478a35ed4f5da5e70955c20",
+      "html_url": "https://github.com/posativ/isso/commit/afc90a05cc8cf7209478a35ed4f5da5e70955c20"
+    }
+  ],
+  "stats": {
+    "total": 67,
+    "additions": 63,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "77ca30611aa180a35283809f539b88c624c8129c",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/CHANGES.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/CHANGES.rst?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -4,6 +4,9 @@ Changelog for Isso\n 0.11.2 (unreleased)\n -------------------\n \n+- Don't enable admin interface with default password by default.\n+  (Jelmer Vernooĳ, #491)\n+\n 0.11.1 (2018-11-03)\n -------------------\n "
+    },
+    {
+      "sha": "facb5ce4c8a19162b6859bfe57d728b2f09ce5af",
+      "filename": "MANIFEST.in",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/MANIFEST.in",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/MANIFEST.in",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/MANIFEST.in?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -11,6 +11,7 @@ include isso/js/count.dev.js\n include isso/defaults.ini\n \n include isso/templates/admin.html\n+include isso/templates/disabled.html\n include isso/templates/login.html\n include isso/css/admin.css\n include isso/css/isso.css"
+    },
+    {
+      "sha": "6aac326048db2a87fe28fd51968d45130c46858b",
+      "filename": "docs/docs/configuration/server.rst",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 0,
+      "changes": 18,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/docs/docs/configuration/server.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/docs/docs/configuration/server.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs/docs/configuration/server.rst?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -355,6 +355,24 @@ base\n limit\n     number of most recent comments to return for a thread\n \n+Admin\n+-----\n+\n+Isso has an optional web administration interface that can be used to moderate\n+comments. The interface is available under ``/admin`` on your isso URL.\n+\n+.. code-block:: ini\n+\n+   [admin]\n+   enabled = true\n+   password = secret\n+\n+enabled\n+   whether to enable the admin interface\n+\n+password\n+   the plain text pasword to use for logging into the administration interface\n+\n Appendum\n --------\n "
+    },
+    {
+      "sha": "b009a01f88beed7adbc5e13262d81a3c537f1517",
+      "filename": "isso/templates/disabled.html",
+      "status": "added",
+      "additions": 28,
+      "deletions": 0,
+      "changes": 28,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/isso/templates/disabled.html",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/isso/templates/disabled.html",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/templates/disabled.html?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -0,0 +1,28 @@\n+<html>\n+<head>\n+  <title>Isso admin</title>\n+  <link type=\"text/css\" href=\"{{isso_host_script}}/css/isso.css\" rel=\"stylesheet\">\n+  <link type=\"text/css\" href=\"{{isso_host_script}}/css/admin.css\" rel=\"stylesheet\">\n+</head>\n+<body>\n+  <div class=\"wrapper\">\n+    <div class=\"header\">\n+      <header>\n+        <img class=\"logo\" src=\"{{isso_host_script}}/img/isso.svg\" alt=\"Wynaut by @veekun\"/>\n+        <div class=\"title\">\n+          <a href=\"./\">\n+            <h1>Isso</h1>\n+            <h2>Administration</h2>\n+          </a>\n+        </div>\n+      </header>\n+    </div>\n+    <main>\n+      <div id=\"disabled\">\n+        Administration is disabled on this instance of isso. Set enabled=true\n+        in the admin section of your isso configuration to enable it.\n+      </div>\n+    </main>\n+  </div>\n+</body>\n+</html>"
+    },
+    {
+      "sha": "aaf456887dbee7351cc1e69f266d2138c9cd3b4c",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/isso/views/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/isso/views/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/views/comments.py?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -1067,8 +1067,10 @@ def demo(self, env, req):\n         )\n \n     def login(self, env, req):\n+        if not self.isso.conf.getboolean(\"admin\", \"enabled\"):\n+            return render_template('disabled.html')\n         data = req.form\n-        password = self.isso.conf.get(\"general\", \"admin_password\")\n+        password = self.isso.conf.get(\"admin\", \"password\")\n         if data['password'] and data['password'] == password:\n             response = redirect(re.sub(\n                 r'/login$',\n@@ -1087,6 +1089,8 @@ def login(self, env, req):\n \n     def admin(self, env, req):\n         isso_host_script = self.isso.conf.get(\"server\", \"public-endpoint\") or local.host\n+        if not self.isso.conf.getboolean(\"admin\", \"enabled\"):\n+            return render_template('disabled.html')\n         try:\n             data = self.isso.unsign(req.cookies.get('admin-session', ''),\n                                     max_age=60 * 60 * 24)"
+    },
+    {
+      "sha": "d417a195c1cf21a2e52a986687e0030ad3ca25da",
+      "filename": "share/isso-dev.conf",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/share/isso-dev.conf",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/share/isso-dev.conf",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/share/isso-dev.conf?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -11,7 +11,10 @@ max-age = 15m\n notify = stdout\n reply-notifications = false\n log-file = /var/log/isso.log\n-admin_password = strong_default_password_for_isso_admin\n+\n+[admin]\n+enabled = true\n+password = strong_default_password_for_isso_admin\n \n [moderation]\n enabled = false"
+    },
+    {
+      "sha": "05660a8b4e24b2fae51880a2ed760379788eab36",
+      "filename": "share/isso.conf",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/posativ/isso/blob/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/share/isso.conf",
+      "raw_url": "https://github.com/posativ/isso/raw/966d403ebb4a8ae22f5c5bc702982bdcb90c8b05/share/isso.conf",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/share/isso.conf?ref=966d403ebb4a8ae22f5c5bc702982bdcb90c8b05",
+      "patch": "@@ -59,9 +59,11 @@ gravatar = false\n # default url for gravatar. {} is where the hash will be placed\n gravatar-url = https://www.gravatar.com/avatar/{}?d=identicon\n \n-# Admin access password\n-admin_password = please_choose_a_strong_password\n+[admin]\n+enabled = false\n \n+# Admin access password\n+password = please_choose_a_strong_password\n \n [moderation]\n # enable comment moderation queue. This option only affects new comments."
+    }
+  ]
+}
