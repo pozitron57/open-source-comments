@@ -1,0 +1,110 @@
+{
+  "sha": "9e225771c7dfa857a4ba78e4b9e073996660362e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjllMjI1NzcxYzdkZmE4NTdhNGJhNzhlNGI5ZTA3Mzk5NjY2MDM2MmU=",
+  "commit": {
+    "author": {
+      "name": "igoradamenko",
+      "email": "mail@igoradamenko.com",
+      "date": "2018-11-25T09:26:08Z"
+    },
+    "committer": {
+      "name": "igoradamenko",
+      "email": "mail@igoradamenko.com",
+      "date": "2018-11-25T09:26:08Z"
+    },
+    "message": "node:10.6-alpine → node:10.11-alpine",
+    "tree": {
+      "sha": "089fe96568a2f465d9823ab305361f0f953bcb6d",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/089fe96568a2f465d9823ab305361f0f953bcb6d"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/9e225771c7dfa857a4ba78e4b9e073996660362e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/9e225771c7dfa857a4ba78e4b9e073996660362e",
+  "html_url": "https://github.com/umputun/remark/commit/9e225771c7dfa857a4ba78e4b9e073996660362e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/9e225771c7dfa857a4ba78e4b9e073996660362e/comments",
+  "author": {
+    "login": "igoradamenko",
+    "id": 6537798,
+    "node_id": "MDQ6VXNlcjY1Mzc3OTg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6537798?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igoradamenko",
+    "html_url": "https://github.com/igoradamenko",
+    "followers_url": "https://api.github.com/users/igoradamenko/followers",
+    "following_url": "https://api.github.com/users/igoradamenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igoradamenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igoradamenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igoradamenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/igoradamenko/orgs",
+    "repos_url": "https://api.github.com/users/igoradamenko/repos",
+    "events_url": "https://api.github.com/users/igoradamenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igoradamenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igoradamenko",
+    "id": 6537798,
+    "node_id": "MDQ6VXNlcjY1Mzc3OTg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6537798?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igoradamenko",
+    "html_url": "https://github.com/igoradamenko",
+    "followers_url": "https://api.github.com/users/igoradamenko/followers",
+    "following_url": "https://api.github.com/users/igoradamenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igoradamenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igoradamenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igoradamenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/igoradamenko/orgs",
+    "repos_url": "https://api.github.com/users/igoradamenko/repos",
+    "events_url": "https://api.github.com/users/igoradamenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igoradamenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b2e6843169cda199c3c3a46528e3d74d1562cdd",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7b2e6843169cda199c3c3a46528e3d74d1562cdd",
+      "html_url": "https://github.com/umputun/remark/commit/7b2e6843169cda199c3c3a46528e3d74d1562cdd"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 7,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "b84a4aa036201ecc36558104582695d31059e476",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/9e225771c7dfa857a4ba78e4b9e073996660362e/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark/raw/9e225771c7dfa857a4ba78e4b9e073996660362e/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/Dockerfile?ref=9e225771c7dfa857a4ba78e4b9e073996660362e",
+      "patch": "@@ -62,16 +62,16 @@ RUN \\\n     go build -o remark42 -ldflags \"-X main.revision=${version} -s -w\" ./app\n \n \n-FROM node:10.6-alpine as build-frontend-deps\n+FROM node:10.11-alpine as build-frontend-deps\n \n ARG CI\n \n RUN apk add --no-cache --update git\n-ADD web/package.json /srv/web/package.json \n+ADD web/package.json /srv/web/package.json\n ADD web/package-lock.json /srv/web/package-lock.json\n RUN cd /srv/web && CI=true npm ci\n \n-FROM node:10.6-alpine as build-frontend\n+FROM node:10.11-alpine as build-frontend\n \n ARG CI\n ARG SKIP_FRONTEND_TEST\n@@ -81,7 +81,7 @@ COPY --from=build-frontend-deps /srv/web/node_modules /srv/web/node_modules\n ADD web /srv/web\n RUN cd /srv/web && \\\n     if [ -z \"$SKIP_FRONTEND_TEST\" ] ; then npx run-p lint test build ; \\\n-    else echo \"skip frontend tests and lint\" ; npm run build ; fi && \\ \n+    else echo \"skip frontend tests and lint\" ; npm run build ; fi && \\\n     rm -rf ./node_modules\n \n "
+    },
+    {
+      "sha": "829ccea778425c50c8a9fe6d39cb2251f8529b13",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/9e225771c7dfa857a4ba78e4b9e073996660362e/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark/raw/9e225771c7dfa857a4ba78e4b9e073996660362e/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/Dockerfile.artifacts?ref=9e225771c7dfa857a4ba78e4b9e073996660362e",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM node:10.6-alpine as build-frontend-deps\n+FROM node:10.11-alpine as build-frontend-deps\n \n ARG CI\n ENV SKIP_FRONTEND_TEST=true\n@@ -8,7 +8,7 @@ ADD web/package.json /srv/web/package.json\n ADD web/package-lock.json /srv/web/package-lock.json\n RUN cd /srv/web && CI=true npm ci\n \n-FROM node:10.6-alpine as build-frontend\n+FROM node:10.11-alpine as build-frontend\n \n ARG CI\n ARG NODE_ENV=production\n@@ -32,7 +32,7 @@ ADD README.md /go/src/github.com/umputun/remark/\n ADD LICENSE /go/src/github.com/umputun/remark/\n COPY --from=build-frontend /srv/web/public/ web\n \n-RUN \\ \n+RUN \\\n     export WEB_ROOT=/go/src/github.com/umputun/remark/backend/web && \\\n     sed -i \"s|https://demo.remark42.com|http://127.0.0.1:8080|g\" ${WEB_ROOT}/*.js && \\\n     sed -i \"/REMOVE-START/,/REMOVE-END/d\" ${WEB_ROOT}/iframe.html && \\"
+    }
+  ]
+}
