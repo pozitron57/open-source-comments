@@ -1,0 +1,98 @@
+{
+  "sha": "78edf6950baa01240a56810094492aaaefc1c323",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjc4ZWRmNjk1MGJhYTAxMjQwYTU2ODEwMDk0NDkyYWFhZWZjMWMzMjM=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-11-25T19:15:35Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-11-25T19:15:35Z"
+    },
+    "message": "info about direct LE",
+    "tree": {
+      "sha": "135e7ea76e3af727c15534d0deb5e1a190653933",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/135e7ea76e3af727c15534d0deb5e1a190653933"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/78edf6950baa01240a56810094492aaaefc1c323",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/78edf6950baa01240a56810094492aaaefc1c323",
+  "html_url": "https://github.com/umputun/remark/commit/78edf6950baa01240a56810094492aaaefc1c323",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/78edf6950baa01240a56810094492aaaefc1c323/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8f678ad04ef3f6719e78f9da3d8ab2db3a9b885a",
+      "url": "https://api.github.com/repos/umputun/remark/commits/8f678ad04ef3f6719e78f9da3d8ab2db3a9b885a",
+      "html_url": "https://github.com/umputun/remark/commit/8f678ad04ef3f6719e78f9da3d8ab2db3a9b885a"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "71064c970bc90979191461134fad6c30812de6c8",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/78edf6950baa01240a56810094492aaaefc1c323/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/78edf6950baa01240a56810094492aaaefc1c323/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=78edf6950baa01240a56810094492aaaefc1c323",
+      "patch": "@@ -17,7 +17,7 @@ Remark42 is a self-hosted, lightweight, and simple (yet functional) comment engi\n * Self-contained executable can be deployed directly to Linux, Windows and MacOS\n * Clean, lightweight and fully customizable UI\n * Multi-site mode from a single instance\n-* Integration with automatic ssl via [nginx-le](https://github.com/umputun/nginx-le)\n+* Integration with automatic ssl (direct and via [nginx-le](https://github.com/umputun/nginx-le))\n * [Privacy focused](#privacy)\n \n #"
+    }
+  ]
+}
