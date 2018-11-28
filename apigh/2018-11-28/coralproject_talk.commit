@@ -1,0 +1,98 @@
+{
+  "sha": "f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZjYwYzdlM2NhNmI1Y2M5ZWE4M2ZhN2MyOGU4ZTYzZjViNmI2MDU1Yw==",
+  "commit": {
+    "author": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2018-11-27T20:20:00Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-11-27T20:20:00Z"
+    },
+    "message": "Version 4.6.7 (#2096)",
+    "tree": {
+      "sha": "ea8cec364ea72f47205c53cc6ee34f018ef0d696",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/ea8cec364ea72f47205c53cc6ee34f018ef0d696"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c",
+  "html_url": "https://github.com/coralproject/talk/commit/f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c/comments",
+  "author": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "be2657eb30b64698c61b68937c00927620c5ffac",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/be2657eb30b64698c61b68937c00927620c5ffac",
+      "html_url": "https://github.com/coralproject/talk/commit/be2657eb30b64698c61b68937c00927620c5ffac"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e4b6088c38d2712ced9799d03dd62e3a011ac9cc",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c/package.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c/package.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/package.json?ref=f60c7e3ca6b5cc9ea83fa7c28e8e63f5b6b6055c",
+      "patch": "@@ -1,6 +1,6 @@\n {\n   \"name\": \"talk\",\n-  \"version\": \"4.6.6\",\n+  \"version\": \"4.6.7\",\n   \"description\": \"A better commenting experience from Mozilla, The New York Times, and the Washington Post. https://coralproject.net\",\n   \"main\": \"app.js\",\n   \"private\": true,"
+    }
+  ]
+}
