@@ -1,0 +1,98 @@
+{
+  "sha": "1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjFkZTdkZGM2NWM5NWU1MmUyMmY1ZjlmZWI3NzgzY2JkODRjYzYyZmU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-11-28T20:41:25Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-11-28T20:41:25Z"
+    },
+    "message": "switch ui news to master",
+    "tree": {
+      "sha": "78b17b536ba2ad8225c6aa4d89fd74085df8156a",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/78b17b536ba2ad8225c6aa4d89fd74085df8156a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe",
+  "html_url": "https://github.com/umputun/remark/commit/1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5ccc998edae54b137caac03cd4d6a5f918c0b3c7",
+      "url": "https://api.github.com/repos/umputun/remark/commits/5ccc998edae54b137caac03cd4d6a5f918c0b3c7",
+      "html_url": "https://github.com/umputun/remark/commit/5ccc998edae54b137caac03cd4d6a5f918c0b3c7"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e1e6c07e7e86e4339c464bd2447fb21fe7b506cc",
+      "filename": ".drone.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe/.drone.yml",
+      "raw_url": "https://github.com/umputun/remark/raw/1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe/.drone.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/.drone.yml?ref=1de7ddc65c95e52e22f5f9feb7783cbd84cc62fe",
+      "patch": "@@ -10,6 +10,7 @@ pipeline:\n       - sleep 5\n       - nslookup mongo\n       - nslookup mongo | grep Address | awk '{print $3}' > backend/.mongo\n+      - cat backend/.mongo\n       - cd backend/app\n       - go build -v ./...\n "
+    }
+  ]
+}
