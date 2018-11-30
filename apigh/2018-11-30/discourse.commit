@@ -1,0 +1,134 @@
+{
+  "sha": "4e010382ccb623597875b02fb271f2de469318cc",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0ZTAxMDM4MmNjYjYyMzU5Nzg3NWIwMmZiMjcxZjJkZTQ2OTMxOGNj",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-11-30T16:58:18Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-11-30T16:58:18Z"
+    },
+    "message": "REFACTOR: Initialize auth providers after `plugin.activate!`\n\nAlso added some helpful functionality for plugin developers:\n- Raises RuntimeException if the auth provider has been registered too late\n- Logs use of deprecated parameters",
+    "tree": {
+      "sha": "f174c13a51e5b13d69098ee9fcf76eb3c99a07c8",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f174c13a51e5b13d69098ee9fcf76eb3c99a07c8"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4e010382ccb623597875b02fb271f2de469318cc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4e010382ccb623597875b02fb271f2de469318cc",
+  "html_url": "https://github.com/discourse/discourse/commit/4e010382ccb623597875b02fb271f2de469318cc",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4e010382ccb623597875b02fb271f2de469318cc/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "488fba3c5f747db7783424b05e1f4190bb494a2b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/488fba3c5f747db7783424b05e1f4190bb494a2b",
+      "html_url": "https://github.com/discourse/discourse/commit/488fba3c5f747db7783424b05e1f4190bb494a2b"
+    }
+  ],
+  "stats": {
+    "total": 62,
+    "additions": 39,
+    "deletions": 23
+  },
+  "files": [
+    {
+      "sha": "ca56c4e07f87b7b10069ed44ae77cdf888b066af",
+      "filename": "lib/auth/auth_provider.rb",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e010382ccb623597875b02fb271f2de469318cc/lib/auth/auth_provider.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e010382ccb623597875b02fb271f2de469318cc/lib/auth/auth_provider.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/auth/auth_provider.rb?ref=4e010382ccb623597875b02fb271f2de469318cc",
+      "patch": "@@ -8,11 +8,18 @@ def initialize(params = {})\n   def self.auth_attributes\n     [:pretty_name, :title, :message, :frame_width, :frame_height, :authenticator,\n      :pretty_name_setting, :title_setting, :enabled_setting, :full_screen_login, :full_screen_login_setting,\n-     :custom_url]\n+     :custom_url, :background_color]\n   end\n \n   attr_accessor(*auth_attributes)\n \n+  def enabled_setting=(val)\n+    Discourse.deprecate(\"enabled_setting is deprecated. Please define authenticator.enabled? instead\")\n+    @enabled_setting = val\n+  end\n+\n+  def background_color=(val) Discourse.deprecate(\"background_color is no longer functional. Please define authenticator.enabled? instead\") end;\n+\n   def name\n     authenticator.name\n   end"
+    },
+    {
+      "sha": "55d8a1fc242dfc8ce4611af0c6877fb4466d836f",
+      "filename": "lib/middleware/omniauth_bypass_middleware.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e010382ccb623597875b02fb271f2de469318cc/lib/middleware/omniauth_bypass_middleware.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e010382ccb623597875b02fb271f2de469318cc/lib/middleware/omniauth_bypass_middleware.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/middleware/omniauth_bypass_middleware.rb?ref=4e010382ccb623597875b02fb271f2de469318cc",
+      "patch": "@@ -7,6 +7,8 @@ class Middleware::OmniauthBypassMiddleware\n   def initialize(app, options = {})\n     @app = app\n \n+    Discourse.plugins.each(&:notify_before_auth)\n+\n     # if you need to test this and are having ssl issues see:\n     #  http://stackoverflow.com/questions/6756460/openssl-error-using-omniauth-specified-ssl-path-but-didnt-work\n     # OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?"
+    },
+    {
+      "sha": "917f322e1f2b9a86ac0a69c39ba64d251d29dea1",
+      "filename": "lib/plugin/instance.rb",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 15,
+      "changes": 35,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e010382ccb623597875b02fb271f2de469318cc/lib/plugin/instance.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e010382ccb623597875b02fb271f2de469318cc/lib/plugin/instance.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/plugin/instance.rb?ref=4e010382ccb623597875b02fb271f2de469318cc",
+      "patch": "@@ -25,8 +25,8 @@ class Plugin::Instance\n \n   # Memoized array readers\n   [:assets,\n-   :auth_providers,\n    :color_schemes,\n+   :before_auth_initializers,\n    :initializers,\n    :javascripts,\n    :locales,\n@@ -287,6 +287,11 @@ def after_initialize(&block)\n     initializers << block\n   end\n \n+  def before_auth(&block)\n+    raise \"Auth providers must be registered before omniauth middleware. after_initialize is too late!\" if @before_auth_complete\n+    before_auth_initializers << block\n+  end\n+\n   # A proxy to `DiscourseEvent.on` which does nothing if the plugin is disabled\n   def on(event_name, &block)\n     DiscourseEvent.on(event_name) do |*args|\n@@ -313,6 +318,13 @@ def notify_after_initialize\n     end\n   end\n \n+  def notify_before_auth\n+    before_auth_initializers.each do |callback|\n+      callback.call(self)\n+    end\n+    @before_auth_complete = true\n+  end\n+\n   # Applies to all sites in a multisite environment. Ignores plugin.enabled?\n   def register_category_custom_field_type(name, type)\n     reloadable_patch do |plugin|\n@@ -458,7 +470,6 @@ def activate!\n     register_assets! unless assets.blank?\n     register_locales!\n     register_service_workers!\n-    register_auth_providers!\n \n     seed_data.each do |key, value|\n       DiscoursePluginRegistry.register_seed_data(key, value)\n@@ -496,13 +507,13 @@ def activate!\n   end\n \n   def auth_provider(opts)\n-    provider = Auth::AuthProvider.new\n+    before_auth do\n+      provider = Auth::AuthProvider.new\n \n-    Auth::AuthProvider.auth_attributes.each do |sym|\n-      provider.send \"#{sym}=\", opts.delete(sym)\n-    end\n+      Auth::AuthProvider.auth_attributes.each do |sym|\n+        provider.send \"#{sym}=\", opts.delete(sym)\n+      end\n \n-    after_initialize do\n       begin\n         provider.authenticator.enabled?\n       rescue NotImplementedError\n@@ -513,9 +524,9 @@ def auth_provider(opts)\n           true\n         end\n       end\n-    end\n \n-    auth_providers << provider\n+      DiscoursePluginRegistry.register_auth_provider(provider)\n+    end\n   end\n \n   # shotgun approach to gem loading, in future we need to hack bundler\n@@ -594,12 +605,6 @@ def register_service_workers!\n     end\n   end\n \n-  def register_auth_providers!\n-    auth_providers.each do |auth_provider|\n-      DiscoursePluginRegistry.register_auth_provider(auth_provider)\n-    end\n-  end\n-\n   def register_locales!\n     root_path = File.dirname(@path)\n "
+    },
+    {
+      "sha": "2104f72dffad99da0b17f6179ea2e566f4f67542",
+      "filename": "spec/components/plugin/instance_spec.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 7,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e010382ccb623597875b02fb271f2de469318cc/spec/components/plugin/instance_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e010382ccb623597875b02fb271f2de469318cc/spec/components/plugin/instance_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/plugin/instance_spec.rb?ref=4e010382ccb623597875b02fb271f2de469318cc",
+      "patch": "@@ -133,24 +133,26 @@ def enabled?; @enabled; end\n     # No enabled_site_setting\n     authenticator = Auth::Authenticator.new\n     plugin.auth_provider(authenticator: authenticator)\n-    plugin.notify_after_initialize\n+    plugin.notify_before_auth\n     expect(authenticator.enabled?).to eq(true)\n \n     # With enabled site setting\n+    plugin = Plugin::Instance.new\n     authenticator = Auth::Authenticator.new\n     plugin.auth_provider(enabled_setting: 'ubuntu_login_enabled', authenticator: authenticator)\n-    plugin.notify_after_initialize\n+    plugin.notify_before_auth\n     expect(authenticator.enabled?).to eq(false)\n \n     # Defines own method\n+    plugin = Plugin::Instance.new\n     SiteSetting.stubs(:ubuntu_login_enabled).returns(true)\n     authenticator = Class.new(Auth::Authenticator) do\n       def enabled?\n         false\n       end\n     end.new\n     plugin.auth_provider(enabled_setting: 'ubuntu_login_enabled', authenticator: authenticator)\n-    plugin.notify_after_initialize\n+    plugin.notify_before_auth\n     expect(authenticator.enabled?).to eq(false)\n   end\n \n@@ -182,11 +184,11 @@ def enabled?\n       plugin = Plugin::Instance.new\n       plugin.path = \"#{Rails.root}/spec/fixtures/plugins/my_plugin/plugin.rb\"\n       plugin.activate!\n-\n-      expect(plugin.auth_providers.count).to eq(1)\n-      auth_provider = plugin.auth_providers[0]\n-      expect(auth_provider.authenticator.name).to eq('ubuntu')\n+      expect(DiscoursePluginRegistry.auth_providers.count).to eq(0)\n+      plugin.notify_before_auth\n       expect(DiscoursePluginRegistry.auth_providers.count).to eq(1)\n+      auth_provider = DiscoursePluginRegistry.auth_providers.to_a[0]\n+      expect(auth_provider.authenticator.name).to eq('ubuntu')\n     end\n \n     it \"finds all the custom assets\" do"
+    }
+  ]
+}
