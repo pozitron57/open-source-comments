@@ -1,0 +1,98 @@
+{
+  "sha": "f01f48eafb98de7255eb87c48945242b3137fa23",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZjAxZjQ4ZWFmYjk4ZGU3MjU1ZWI4N2M0ODk0NTI0MmIzMTM3ZmEyMw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-11-29T21:03:45Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-11-29T21:13:07Z"
+    },
+    "message": "Allow trailing ',' after each email address, in invite lists.",
+    "tree": {
+      "sha": "c14ccacfd040baf239aeecfc09086b561e18ad55",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/c14ccacfd040baf239aeecfc09086b561e18ad55"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/f01f48eafb98de7255eb87c48945242b3137fa23",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/f01f48eafb98de7255eb87c48945242b3137fa23",
+  "html_url": "https://github.com/debiki/talkyard/commit/f01f48eafb98de7255eb87c48945242b3137fa23",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/f01f48eafb98de7255eb87c48945242b3137fa23/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "01371503a6dea59a1a9ce4a685cc2575bbe0ed34",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/01371503a6dea59a1a9ce4a685cc2575bbe0ed34",
+      "html_url": "https://github.com/debiki/talkyard/commit/01371503a6dea59a1a9ce4a685cc2575bbe0ed34"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "404643752783d5294ee6fb237ab40f149e670cfb",
+      "filename": "app/controllers/InviteController.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f01f48eafb98de7255eb87c48945242b3137fa23/app/controllers/InviteController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f01f48eafb98de7255eb87c48945242b3137fa23/app/controllers/InviteController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/InviteController.scala?ref=f01f48eafb98de7255eb87c48945242b3137fa23",
+      "patch": "@@ -61,7 +61,7 @@ class InviteController @Inject()(cc: ControllerComponents, edContext: EdContext)\n     throwForbiddenIf(settings.enableSso,\n       \"TyESSOINV\", \"Cannot invite people, when Single Sing-On enabled\")\n \n-    val toEmailAddresses = toEmailAddressesRaw.map(_.trim) filter { addr =>\n+    val toEmailAddresses = toEmailAddressesRaw.map(_.trim.dropRightWhile(\",;\" contains _)) filter { addr =>\n       // Skip comment lines. People might save their send-invites-to lists in a file with\n       // comments clarifying why someone gets added to a group, or something?\n       addr.nonEmpty && addr.head != '#'"
+    }
+  ]
+}

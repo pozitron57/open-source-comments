@@ -1,0 +1,110 @@
+{
+  "sha": "c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmM5Y2UwN2MyZThiM2ViZTVkYjVhODM5MzBlZTZmZjczMWVmZTk5MjU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-11-30T17:43:58Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-11-30T17:43:58Z"
+    },
+    "message": "repeat telegram init attempt #225",
+    "tree": {
+      "sha": "8c56ff5cbc3611cebaca186a8a786cb774bb6b81",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/8c56ff5cbc3611cebaca186a8a786cb774bb6b81"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925",
+  "html_url": "https://github.com/umputun/remark/commit/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cefb5324d531264bfa0f636034a4466e0279de07",
+      "url": "https://api.github.com/repos/umputun/remark/commits/cefb5324d531264bfa0f636034a4466e0279de07",
+      "html_url": "https://github.com/umputun/remark/commit/cefb5324d531264bfa0f636034a4466e0279de07"
+    }
+  ],
+  "stats": {
+    "total": 64,
+    "additions": 35,
+    "deletions": 29
+  },
+  "files": [
+    {
+      "sha": "a06535664bef297066478d3880ef700a399b575c",
+      "filename": "backend/app/notify/telegram.go",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 29,
+      "changes": 62,
+      "blob_url": "https://github.com/umputun/remark/blob/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925/backend/app/notify/telegram.go",
+      "raw_url": "https://github.com/umputun/remark/raw/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925/backend/app/notify/telegram.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/notify/telegram.go?ref=c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925",
+      "patch": "@@ -11,6 +11,7 @@ import (\n \t\"strings\"\n \t\"time\"\n \n+\t\"github.com/go-pkgz/repeater\"\n \t\"github.com/pkg/errors\"\n )\n \n@@ -38,40 +39,43 @@ func NewTelegram(token string, channelName string, timeout time.Duration, api st\n \t}\n \tlog.Printf(\"[DEBUG] create new telegram notifier for cham %s, timeout=%s, api=%s\", channelName, res.timeout, res.timeout)\n \n-\tclient := http.Client{Timeout: telegramTimeOut}\n-\tresp, err := client.Get(fmt.Sprintf(\"%s%s/getMe\", res.apiPrefix, token))\n-\tif err != nil {\n-\t\treturn nil, errors.Wrap(err, \"can't initialize telegram notifications\")\n-\t}\n-\tdefer func() {\n-\t\tif err = resp.Body.Close(); err != nil {\n-\t\t\tlog.Printf(\"[WARN] can't close request body, %s\", err)\n+\terr := repeater.NewDefault(5, time.Millisecond*250).Do(func() error {\n+\t\tclient := http.Client{Timeout: telegramTimeOut}\n+\t\tresp, err := client.Get(fmt.Sprintf(\"%s%s/getMe\", res.apiPrefix, token))\n+\t\tif err != nil {\n+\t\t\treturn errors.Wrap(err, \"can't initialize telegram notifications\")\n \t\t}\n-\t}()\n-\n-\tif resp.StatusCode != http.StatusOK {\n-\t\treturn nil, errors.Errorf(\"unexpected telegram status code %d\", resp.StatusCode)\n-\t}\n-\n-\ttgResp := struct {\n-\t\tOK     bool `json:\"ok\"`\n-\t\tResult struct {\n-\t\t\tFirstName string `json:\"first_name\"`\n-\t\t\tID        uint64 `json:\"id\"`\n-\t\t\tIsBot     bool   `json:\"is_bot\"`\n-\t\t\tUserName  string `json:\"username\"`\n+\t\tdefer func() {\n+\t\t\tif err = resp.Body.Close(); err != nil {\n+\t\t\t\tlog.Printf(\"[WARN] can't close request body, %s\", err)\n+\t\t\t}\n+\t\t}()\n+\n+\t\tif resp.StatusCode != http.StatusOK {\n+\t\t\treturn errors.Errorf(\"unexpected telegram status code %d\", resp.StatusCode)\n \t\t}\n-\t}{}\n \n-\tif err = json.NewDecoder(resp.Body).Decode(&tgResp); err != nil {\n-\t\treturn nil, errors.Wrap(err, \"can't decode response\")\n-\t}\n+\t\ttgResp := struct {\n+\t\t\tOK     bool `json:\"ok\"`\n+\t\t\tResult struct {\n+\t\t\t\tFirstName string `json:\"first_name\"`\n+\t\t\t\tID        uint64 `json:\"id\"`\n+\t\t\t\tIsBot     bool   `json:\"is_bot\"`\n+\t\t\t\tUserName  string `json:\"username\"`\n+\t\t\t}\n+\t\t}{}\n+\n+\t\tif err = json.NewDecoder(resp.Body).Decode(&tgResp); err != nil {\n+\t\t\treturn errors.Wrap(err, \"can't decode response\")\n+\t\t}\n \n-\tif !tgResp.OK || !tgResp.Result.IsBot {\n-\t\treturn nil, errors.Errorf(\"unexpected telegram response %+v\", tgResp)\n-\t}\n+\t\tif !tgResp.OK || !tgResp.Result.IsBot {\n+\t\t\treturn errors.Errorf(\"unexpected telegram response %+v\", tgResp)\n+\t\t}\n+\t\treturn nil\n+\t})\n \n-\treturn &res, nil\n+\treturn &res, err\n }\n \n // Send to telegram channel"
+    },
+    {
+      "sha": "79fe8fb13b633066cd647b9d9b1b196ac29ff2bc",
+      "filename": "backend/app/notify/telegram_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925/backend/app/notify/telegram_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925/backend/app/notify/telegram_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/notify/telegram_test.go?ref=c9ce07c2e8b3ebe5db5a83930ee6ff731efe9925",
+      "patch": "@@ -21,8 +21,10 @@ func TestTelegram_New(t *testing.T) {\n \tassert.NoError(t, err)\n \tassert.NotNil(t, tb)\n \n+\tst := time.Now()\n \t_, err = NewTelegram(\"bad-resp\", \"remark_test\", 2*time.Second, ts.URL+\"/\")\n \tassert.EqualError(t, err, \"unexpected telegram response {OK:false Result:{FirstName:comments_test ID:707381019 IsBot:false UserName:remark42_test_bot}}\")\n+\tassert.True(t, time.Since(st) >= 250*5*time.Millisecond)\n \n \t_, err = NewTelegram(\"non-json-resp\", \"remark_test\", 2*time.Second, ts.URL+\"/\")\n \tassert.NotNil(t, err)"
+    }
+  ]
+}
