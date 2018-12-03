@@ -1,0 +1,122 @@
+{
+  "sha": "404acef6e3ca8f6444a1784677f3e889429f92cc",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0MDRhY2VmNmUzY2E4ZjY0NDRhMTc4NDY3N2YzZTg4OTQyOWY5MmNj",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-12-03T16:16:37Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-12-03T16:16:37Z"
+    },
+    "message": "DEV: Move `run-qunit.js` out of the vendor directory",
+    "tree": {
+      "sha": "08c05758d466bd78cd1e39afae0cbdf6cd68b0fd",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/08c05758d466bd78cd1e39afae0cbdf6cd68b0fd"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/404acef6e3ca8f6444a1784677f3e889429f92cc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/404acef6e3ca8f6444a1784677f3e889429f92cc",
+  "html_url": "https://github.com/discourse/discourse/commit/404acef6e3ca8f6444a1784677f3e889429f92cc",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/404acef6e3ca8f6444a1784677f3e889429f92cc/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "923692d45a7194d1f6df02ca47cd873fbce2d9cc",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/923692d45a7194d1f6df02ca47cd873fbce2d9cc",
+      "html_url": "https://github.com/discourse/discourse/commit/923692d45a7194d1f6df02ca47cd873fbce2d9cc"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "6598207c74ab86c560efaf619a3e800f6be2bd88",
+      "filename": "lib/autospec/qunit_runner.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/404acef6e3ca8f6444a1784677f3e889429f92cc/lib/autospec/qunit_runner.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/404acef6e3ca8f6444a1784677f3e889429f92cc/lib/autospec/qunit_runner.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/autospec/qunit_runner.rb?ref=404acef6e3ca8f6444a1784677f3e889429f92cc",
+      "patch": "@@ -68,7 +68,7 @@ def run(specs)\n         end\n       end\n \n-      cmd = \"node #{Rails.root}/vendor/assets/javascripts/run-qunit.js \\\"#{qunit_url}\\\" 3000000 ./tmp/qunit_result\"\n+      cmd = \"node #{Rails.root}/test/run-qunit.js \\\"#{qunit_url}\\\" 3000000 ./tmp/qunit_result\"\n \n       @pid = Process.spawn(cmd)\n       _, status = Process.wait2(@pid)"
+    },
+    {
+      "sha": "a34bd92cd9a1c376eb9e990350b1145096039be7",
+      "filename": "lib/tasks/qunit.rake",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/404acef6e3ca8f6444a1784677f3e889429f92cc/lib/tasks/qunit.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/404acef6e3ca8f6444a1784677f3e889429f92cc/lib/tasks/qunit.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/qunit.rake?ref=404acef6e3ca8f6444a1784677f3e889429f92cc",
+      "patch": "@@ -50,7 +50,7 @@ task \"qunit:test\", [:timeout, :qunit_path] => :environment do |_, args|\n \n   begin\n     success = true\n-    test_path = \"#{Rails.root}/vendor/assets/javascripts\"\n+    test_path = \"#{Rails.root}/test\"\n     qunit_path = args[:qunit_path] || \"/qunit\"\n     cmd = \"node #{test_path}/run-qunit.js http://localhost:#{port}#{qunit_path}\"\n     options = { seed: (ENV[\"QUNIT_SEED\"] || Random.new.seed) }"
+    },
+    {
+      "sha": "f7eb97c50c09ac5326993a0f73ba4bc5b127da98",
+      "filename": "test/run-qunit.js",
+      "status": "renamed",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/discourse/discourse/blob/404acef6e3ca8f6444a1784677f3e889429f92cc/test/run-qunit.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/404acef6e3ca8f6444a1784677f3e889429f92cc/test/run-qunit.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/run-qunit.js?ref=404acef6e3ca8f6444a1784677f3e889429f92cc",
+      "previous_filename": "vendor/assets/javascripts/run-qunit.js"
+    }
+  ]
+}
