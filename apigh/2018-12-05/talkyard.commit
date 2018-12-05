@@ -1,0 +1,98 @@
+{
+  "sha": "a884550ec12a63729feba2db75352bed4332be8f",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6YTg4NDU1MGVjMTJhNjM3MjlmZWJhMmRiNzUzNTJiZWQ0MzMyYmU4Zg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-12-01T00:03:49Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2018-12-01T00:03:49Z"
+    },
+    "message": "Make 'make up' work in newly cloned repo.",
+    "tree": {
+      "sha": "d9fee05039181fdf0f1d2c7150e8e9d2509b9152",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/d9fee05039181fdf0f1d2c7150e8e9d2509b9152"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/a884550ec12a63729feba2db75352bed4332be8f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/a884550ec12a63729feba2db75352bed4332be8f",
+  "html_url": "https://github.com/debiki/talkyard/commit/a884550ec12a63729feba2db75352bed4332be8f",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/a884550ec12a63729feba2db75352bed4332be8f/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f01f48eafb98de7255eb87c48945242b3137fa23",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/f01f48eafb98de7255eb87c48945242b3137fa23",
+      "html_url": "https://github.com/debiki/talkyard/commit/f01f48eafb98de7255eb87c48945242b3137fa23"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 8,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "6eac9d7d3b90f68fd4b5db11d45b0872defc231a",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a884550ec12a63729feba2db75352bed4332be8f/Makefile",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a884550ec12a63729feba2db75352bed4332be8f/Makefile",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/Makefile?ref=a884550ec12a63729feba2db75352bed4332be8f",
+      "patch": "@@ -33,7 +33,7 @@ endef\n \n # This'll be all Git submodule directories. If some are missing, need to git-clone them.\n git_modules := \\\n-  $(shell grep submodule .gitmodules | sed -r 's/^.submodule \"([^\"]+).*$$/\\1/')\n+  $(shell grep submodule .gitmodules | sed -r 's/^.submodule \"([^\"]+).*$$/\\1\\/.git/')\n \n git-subm-init-upd: $(git_modules)\n \n@@ -50,7 +50,7 @@ node_modules: \\\n             #node_modules/react/umd/react.development.js \\\n             #node_modules/zxcvbn/dist/zxcvbn.js\n \n-node_modules/.bin/gulp:\n+node_modules/.bin/gulp: git-subm-init-upd\n \tsudo s/d run --rm gulp yarn\n \n # BUG RISK sync with Gulp so won't accidentally forget to (re)build?\n@@ -134,16 +134,20 @@ db-cli:\n up: minified-asset-bundles\n \tsudo s/d up -d\n \t@echo\n-\t@echo \"To tail logs, you can:  sudo s/d-logsf0\"\n+\t@echo \"Started. Now, tailing logs...\"\n \t@echo\n+\t@sudo s/d-logsf0\n \n tails: tail\n-tail: up\n+tail:\n \tsudo s/d-logsf0\n \n restart:\n \tsudo s/d-restart\n \n+restart-web:\n+\tsudo s/d kill web ; sudo s/d start web ; sudo s/d-logsf0\n+\n restart-web-app:\n \tsudo s/d-restart-web-app\n "
+    }
+  ]
+}

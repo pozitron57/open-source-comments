@@ -1,0 +1,230 @@
+{
+  "sha": "978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5NzhmMGRiMTA5Y2NjZmI1YzFmZDgwNjQwZjBjMDgwYTFjYWNhOGI4",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "gxtan1990@gmail.com",
+      "date": "2018-12-05T15:43:07Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-12-05T15:43:07Z"
+    },
+    "message": "SECURITY: Require groups to be given when inviting to a restricted category. (#6715)",
+    "tree": {
+      "sha": "baf7b5ca094292098f35e3a78aa56b389c820091",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/baf7b5ca094292098f35e3a78aa56b389c820091"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+  "html_url": "https://github.com/discourse/discourse/commit/978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/978f0db109cccfb5c1fd80640f0c080a1caca8b8/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "57ba4b7cb2fca06beba58f5ee0f585fb2f93f579",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/57ba4b7cb2fca06beba58f5ee0f585fb2f93f579",
+      "html_url": "https://github.com/discourse/discourse/commit/57ba4b7cb2fca06beba58f5ee0f585fb2f93f579"
+    }
+  ],
+  "stats": {
+    "total": 502,
+    "additions": 308,
+    "deletions": 194
+  },
+  "files": [
+    {
+      "sha": "2227d2c8c511c2a03704bb11447b96dc0a6ef016",
+      "filename": "app/assets/javascripts/discourse/controllers/invite.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/assets/javascripts/discourse/controllers/invite.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/assets/javascripts/discourse/controllers/invite.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/invite.js.es6?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -289,7 +289,7 @@ export default Ember.Controller.extend(ModalFunctionality, {\n \n       model.setProperties({ saving: true, error: false });\n \n-      const onerror = function(e) {\n+      const onerror = e => {\n         if (e.jqXHR.responseJSON && e.jqXHR.responseJSON.errors) {\n           self.set(\"errorMessage\", e.jqXHR.responseJSON.errors[0]);\n         } else {"
+    },
+    {
+      "sha": "a8e4822d19733426049a12c61572cf8715e57a02",
+      "filename": "app/controllers/topics_controller.rb",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 2,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/controllers/topics_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/controllers/topics_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/topics_controller.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -563,7 +563,7 @@ def invite\n       ))\n     end\n \n-    guardian.ensure_can_invite_to!(topic, groups)\n+    guardian.ensure_can_invite_to!(topic)\n     group_ids = groups.map(&:id)\n \n     begin\n@@ -576,7 +576,25 @@ def invite\n           render json: success_json\n         end\n       else\n-        render json: failed_json, status: 422\n+        json = failed_json\n+\n+        unless topic.private_message?\n+          group_names = topic.category\n+            .visible_group_names(current_user)\n+            .where(automatic: false)\n+            .pluck(:name)\n+            .join(\", \")\n+\n+          if group_names.present?\n+            json.merge!(errors: [\n+              I18n.t(\"topic_invite.failed_to_invite\",\n+                group_names: group_names\n+              )\n+            ])\n+          end\n+        end\n+\n+        render json: json, status: 422\n       end\n     rescue Topic::UserExists => e\n       render json: { errors: [e.message] }, status: 422"
+    },
+    {
+      "sha": "5dcceb5574497d2dc58437c133e66c435d7cc1c9",
+      "filename": "app/models/category.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/models/category.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/models/category.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/category.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -478,6 +478,10 @@ def downcase_name\n     self.name_lower = name.downcase if self.name\n   end\n \n+  def visible_group_names(user)\n+    self.groups.visible_groups(user)\n+  end\n+\n   def secure_group_ids\n     if self.read_restricted?\n       groups.pluck(\"groups.id\")"
+    },
+    {
+      "sha": "cc44d69151aa0b190c417ab8511a76196e80df1e",
+      "filename": "app/models/invite.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 20,
+      "changes": 26,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/models/invite.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/models/invite.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/invite.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -57,19 +57,6 @@ def redeem(username: nil, name: nil, password: nil, user_custom_fields: nil)\n     InviteRedeemer.new(self, username, name, password, user_custom_fields).redeem unless expired? || destroyed? || !link_valid?\n   end\n \n-  def self.extend_permissions(topic, user, invited_by)\n-    if topic.private_message?\n-      topic.grant_permission_to_user(user.email)\n-    elsif topic.category && topic.category.groups.any?\n-      if Guardian.new(invited_by).can_invite_via_email?(topic)\n-        (topic.category.groups - user.groups).each do |group|\n-          group.add(user)\n-          GroupActionLogger.new(Discourse.system_user, group).log_add_user_to_group(user)\n-        end\n-      end\n-    end\n-  end\n-\n   def self.invite_by_email(email, invited_by, topic = nil, group_ids = nil, custom_message = nil)\n     create_invite_by_email(email, invited_by,\n       topic: topic,\n@@ -103,8 +90,11 @@ def self.create_invite_by_email(email, invited_by, opts = nil)\n     lower_email = Email.downcase(email)\n \n     if user = find_user_by_email(lower_email)\n-      extend_permissions(topic, user, invited_by) if topic\n-      raise UserExists.new I18n.t(\"invite.user_exists\", email: lower_email, username: user.username, base_path: Discourse.base_path)\n+      raise UserExists.new(I18n.t(\"invite.user_exists\",\n+        email: lower_email,\n+        username: user.username,\n+        base_path: Discourse.base_path\n+      ))\n     end\n \n     invite = Invite.with_deleted\n@@ -134,14 +124,10 @@ def self.create_invite_by_email(email, invited_by, opts = nil)\n \n     if group_ids.present?\n       group_ids = group_ids - invite.invited_groups.pluck(:group_id)\n+\n       group_ids.each do |group_id|\n         invite.invited_groups.create!(group_id: group_id)\n       end\n-    else\n-      if topic && topic.category && Guardian.new(invited_by).can_invite_to?(topic)\n-        group_ids = topic.category.groups.where(automatic: false).pluck(:id) - invite.invited_groups.pluck(:group_id)\n-        group_ids.each { |group_id| invite.invited_groups.create!(group_id: group_id) }\n-      end\n     end\n \n     Jobs.enqueue(:invite_email, invite_id: invite.id) if send_email"
+    },
+    {
+      "sha": "d9ad81b9e584930305bf2fa3349b6b30abd116ba",
+      "filename": "app/models/topic.rb",
+      "status": "modified",
+      "additions": 63,
+      "deletions": 47,
+      "changes": 110,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/models/topic.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/app/models/topic.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -839,62 +839,29 @@ def invite_group(user, group)\n   def invite(invited_by, username_or_email, group_ids = nil, custom_message = nil)\n     target_user = User.find_by_username_or_email(username_or_email)\n     guardian = Guardian.new(invited_by)\n+    is_email = username_or_email =~ /^.+@.+$/\n \n-    if target_user && topic_allowed_users.where(user_id: target_user.id).exists?\n-      raise UserExists.new(I18n.t(\"topic_invite.user_exists\"))\n-    end\n-\n-    return true if target_user && invite_existing_muted?(target_user, invited_by)\n-\n-    if private_message? && target_user && !guardian.can_send_private_message?(target_user)\n-      raise UserExists.new(I18n.t(\"activerecord.errors.models.topic.attributes.base.cant_send_pm\"))\n-    end\n-\n-    if target_user && private_message? && topic_allowed_users.create!(user_id: target_user.id)\n-      rate_limit_topic_invitation(invited_by)\n-      add_small_action(invited_by, \"invited_user\", target_user.username)\n-\n-      create_invite_notification!(\n-        target_user,\n-        Notification.types[:invited_to_private_message],\n-        invited_by.username\n-      )\n-\n-      true\n-    elsif username_or_email =~ /^.+@.+$/ && guardian.can_invite_via_email?(self)\n+    if target_user\n+      if topic_allowed_users.exists?(user_id: target_user.id)\n+        raise UserExists.new(I18n.t(\"topic_invite.user_exists\"))\n+      end\n \n-      if target_user\n-        rate_limit_topic_invitation(invited_by)\n-        Invite.extend_permissions(self, target_user, invited_by)\n+      if invite_existing_muted?(target_user, invited_by)\n+        return true\n+      end\n \n-        create_invite_notification!(\n-          target_user,\n-          Notification.types[:invited_to_topic],\n-          invited_by.username\n-        )\n+      if private_message?\n+        !!invite_to_private_message(invited_by, target_user, guardian)\n       else\n-        invite_by_email(invited_by, username_or_email, group_ids, custom_message)\n+        !!invite_to_topic(invited_by, target_user, group_ids, guardian)\n       end\n-\n-      true\n-    elsif target_user &&\n-          rate_limit_topic_invitation(invited_by) &&\n-          topic_allowed_users.create!(user_id: target_user.id)\n-\n-      create_invite_notification!(\n-        target_user,\n-        Notification.types[:invited_to_topic],\n-        invited_by.username\n+    elsif is_email && guardian.can_invite_via_email?(self)\n+      !!Invite.invite_by_email(\n+        username_or_email, invited_by, self, group_ids, custom_message\n       )\n-\n-      true\n     end\n   end\n \n-  def invite_by_email(invited_by, email, group_ids = nil, custom_message = nil)\n-    Invite.invite_by_email(email, invited_by, self, group_ids, custom_message)\n-  end\n-\n   def invite_existing_muted?(target_user, invited_by)\n     if invited_by.id &&\n        MutedUser.where(user_id: target_user.id, muted_user_id: invited_by.id)\n@@ -1397,6 +1364,55 @@ def reset_bumped_at\n \n   private\n \n+  def invite_to_private_message(invited_by, target_user, guardian)\n+    if !guardian.can_send_private_message?(target_user)\n+      raise UserExists.new(I18n.t(\n+        \"activerecord.errors.models.topic.attributes.base.cant_send_pm\"\n+      ))\n+    end\n+\n+    Topic.transaction do\n+      rate_limit_topic_invitation(invited_by)\n+      topic_allowed_users.create!(user_id: target_user.id)\n+      add_small_action(invited_by, \"invited_user\", target_user.username)\n+\n+      create_invite_notification!(\n+        target_user,\n+        Notification.types[:invited_to_private_message],\n+        invited_by.username\n+      )\n+    end\n+  end\n+\n+  def invite_to_topic(invited_by, target_user, group_ids, guardian)\n+    Topic.transaction do\n+      rate_limit_topic_invitation(invited_by)\n+\n+      if group_ids\n+        (\n+          self.category.groups.where(id: group_ids).where(automatic: false) -\n+          target_user.groups.where(automatic: false)\n+        ).each do |group|\n+          if guardian.can_edit_group?(group)\n+            group.add(target_user)\n+\n+            GroupActionLogger\n+              .new(invited_by, group)\n+              .log_add_user_to_group(target_user)\n+          end\n+        end\n+      end\n+\n+      if Guardian.new(target_user).can_see_topic?(self)\n+        create_invite_notification!(\n+          target_user,\n+          Notification.types[:invited_to_topic],\n+          invited_by.username\n+        )\n+      end\n+    end\n+  end\n+\n   def update_category_topic_count_by(num)\n     if category_id.present?\n       Category.where(['id = ?', category_id]).update_all(\"topic_count = topic_count \" + (num > 0 ? '+' : '') + \"#{num}\")"
+    },
+    {
+      "sha": "64fd382d566967ee994c257ad874dc611a330f14",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -190,6 +190,7 @@ en:\n     error: \"There was an error uploading that file. Please try again later.\"\n \n   topic_invite:\n+    failed_to_invite: \"The user cannot be invited into this topic without a group membership in either one of the following groups: %{group_names}.\" \n     user_exists: \"Sorry, that user has already been invited. You may only invite a user to a topic once.\"\n \n   backup:"
+    },
+    {
+      "sha": "65a1d3f103b61d756d039a0d8e03144a9349e21b",
+      "filename": "lib/guardian.rb",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 8,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/lib/guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/lib/guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -289,19 +289,25 @@ def can_invite_to_forum?(groups = nil)\n \n   def can_invite_to?(object, groups = nil)\n     return false unless authenticated?\n-    return true if is_admin?\n+    is_topic = object.is_a?(Topic)\n+    return true if is_admin? && !is_topic\n     return false if (SiteSetting.max_invites_per_day.to_i == 0 && !is_staff?)\n     return false unless can_see?(object)\n     return false if groups.present?\n \n-    if object.is_a?(Topic) && object.private_message?\n-      return false unless SiteSetting.enable_personal_messages?\n-      return false if object.reached_recipients_limit? && !is_staff?\n-    end\n+    if is_topic\n+      if object.private_message?\n+        return true if is_admin?\n+        return false unless SiteSetting.enable_personal_messages?\n+        return false if object.reached_recipients_limit? && !is_staff?\n+      end\n \n-    if object.is_a?(Topic) && object.category\n-      if object.category.groups.any?\n-        return true if object.category.groups.all? { |g| can_edit_group?(g) }\n+      if (category = object.category) && category.read_restricted\n+        if (groups = category.groups&.where(automatic: false))&.any?\n+          return groups.any? { |g| can_edit_group?(g) } ? true : false\n+        else\n+          return false\n+        end\n       end\n     end\n "
+    },
+    {
+      "sha": "040c9a0caf5d0d995638c784ed5ff9a27cc032aa",
+      "filename": "spec/components/guardian_spec.rb",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 2,
+      "changes": 47,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/components/guardian_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/components/guardian_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/guardian_spec.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -555,8 +555,8 @@\n         expect(Guardian.new(user).can_invite_to?(private_topic)).to be_falsey\n       end\n \n-      it 'returns true for admin on private topic' do\n-        expect(Guardian.new(admin).can_invite_to?(private_topic)).to be_truthy\n+      it 'returns false for admin on private topic' do\n+        expect(Guardian.new(admin).can_invite_to?(private_topic)).to be(false)\n       end\n \n       it 'returns true for a group owner' do\n@@ -567,6 +567,49 @@\n         SiteSetting.enable_personal_messages = false\n         expect(Guardian.new(trust_level_2).can_invite_to?(topic)).to be_truthy\n       end\n+\n+      describe 'for a private category for automatic and non-automatic group' do\n+        let(:automatic_group) { Fabricate(:group, automatic: true) }\n+        let(:group) { Fabricate(:group) }\n+\n+        let(:category) do\n+          Fabricate(:category, read_restricted: true).tap do |category|\n+            category.groups << automatic_group\n+            category.groups << group\n+          end\n+        end\n+\n+        let(:topic) { Fabricate(:topic, category: category) }\n+\n+        it 'should return true for an admin user' do\n+          expect(Guardian.new(admin).can_invite_to?(topic)).to eq(true)\n+        end\n+\n+        it 'should return true for a group owner' do\n+          expect(Guardian.new(group_owner).can_invite_to?(topic)).to eq(true)\n+        end\n+\n+        it 'should return false for a normal user' do\n+          expect(Guardian.new(user).can_invite_to?(topic)).to eq(false)\n+        end\n+      end\n+\n+      describe 'for a private category for automatic groups' do\n+        let(:group) { Fabricate(:group, automatic: true) }\n+\n+        let(:category) do\n+          Fabricate(:private_category, group: group, read_restricted: true)\n+        end\n+\n+        let(:group_owner) { Fabricate(:user).tap { |user| group.add_owner(user) } }\n+        let(:topic) { Fabricate(:topic, category: category) }\n+\n+        it 'should return false for all type of users' do\n+          expect(Guardian.new(admin).can_invite_to?(topic)).to eq(false)\n+          expect(Guardian.new(group_owner).can_invite_to?(topic)).to eq(false)\n+          expect(Guardian.new(user).can_invite_to?(topic)).to eq(false)\n+        end\n+      end\n     end\n \n     describe \"private messages\" do"
+    },
+    {
+      "sha": "33a49cb1f4ea65fe5a0880cdee900a4a0a6c562d",
+      "filename": "spec/models/invite_spec.rb",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 71,
+      "changes": 114,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/models/invite_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/models/invite_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/invite_spec.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -59,62 +59,75 @@\n \n       context 'email' do\n         it 'enqueues a job to email the invite' do\n-          Jobs.expects(:enqueue).with(:invite_email, has_key(:invite_id))\n-          topic.invite_by_email(inviter, iceking)\n+          expect do\n+            Invite.invite_by_email(iceking, inviter, topic)\n+          end.to change { Jobs::InviteEmail.jobs.size }\n         end\n       end\n \n       context 'destroyed' do\n         it \"can invite the same user after their invite was destroyed\" do\n-          invite = topic.invite_by_email(inviter, iceking)\n-          invite.destroy\n-          invite = topic.invite_by_email(inviter, iceking)\n+          Invite.invite_by_email(iceking, inviter, topic).destroy!\n+          invite = Invite.invite_by_email(iceking, inviter, topic)\n           expect(invite).to be_present\n         end\n       end\n \n       context 'after created' do\n-        before do\n-          @invite = topic.invite_by_email(inviter, iceking)\n-        end\n+        let(:invite) { Invite.invite_by_email(iceking, inviter, topic) }\n \n         it 'belongs to the topic' do\n-          expect(topic.invites).to eq([@invite])\n-          expect(@invite.topics).to eq([topic])\n+          expect(topic.invites).to eq([invite])\n+          expect(invite.topics).to eq([topic])\n         end\n \n         context 'when added by another user' do\n           let(:coding_horror) { Fabricate(:coding_horror) }\n-          let(:new_invite) { topic.invite_by_email(coding_horror, iceking) }\n+\n+          let(:new_invite) do\n+            Invite.invite_by_email(iceking, coding_horror, topic)\n+          end\n \n           it 'returns a different invite' do\n-            expect(new_invite).not_to eq(@invite)\n-            expect(new_invite.invite_key).not_to eq(@invite.invite_key)\n+            expect(new_invite).not_to eq(invite)\n+            expect(new_invite.invite_key).not_to eq(invite.invite_key)\n             expect(new_invite.topics).to eq([topic])\n           end\n \n         end\n \n         context 'when adding a duplicate' do\n           it 'returns the original invite' do\n-            expect(topic.invite_by_email(inviter, 'iceking@adventuretime.ooo')).to eq(@invite)\n-            expect(topic.invite_by_email(inviter, 'iceking@ADVENTURETIME.ooo')).to eq(@invite)\n-            expect(topic.invite_by_email(inviter, 'ICEKING@adventuretime.ooo')).to eq(@invite)\n+            %w{\n+              iceking@adventuretime.ooo\n+              iceking@ADVENTURETIME.ooo\n+              ICEKING@adventuretime.ooo\n+            }.each do |email|\n+              expect(Invite.invite_by_email(\n+                email, inviter, topic\n+              )).to eq(invite)\n+            end\n           end\n \n           it 'updates timestamp of existing invite' do\n-            @invite.created_at = 10.days.ago\n-            @invite.save\n-            resend_invite = topic.invite_by_email(inviter, 'iceking@adventuretime.ooo')\n+            invite.update!(created_at: 10.days.ago)\n+\n+            resend_invite = Invite.invite_by_email(\n+              'iceking@adventuretime.ooo', inviter, topic\n+            )\n+\n             expect(resend_invite.created_at).to be_within(1.minute).of(Time.zone.now)\n           end\n \n           it 'returns a new invite if the other has expired' do\n             SiteSetting.invite_expiry_days = 1\n-            @invite.created_at = 2.days.ago\n-            @invite.save\n-            new_invite = topic.invite_by_email(inviter, 'iceking@adventuretime.ooo')\n-            expect(new_invite).not_to eq(@invite)\n+            invite.update!(created_at: 2.days.ago)\n+\n+            new_invite = Invite.invite_by_email(\n+              'iceking@adventuretime.ooo', inviter, topic\n+            )\n+\n+            expect(new_invite).not_to eq(invite)\n             expect(new_invite).not_to be_expired\n           end\n         end\n@@ -123,64 +136,24 @@\n           let!(:another_topic) { Fabricate(:topic, user: topic.user) }\n \n           it 'should be the same invite' do\n-            @new_invite = another_topic.invite_by_email(inviter, iceking)\n-            expect(@new_invite).to eq(@invite)\n-            expect(another_topic.invites).to eq([@invite])\n-            expect(@invite.topics).to match_array([topic, another_topic])\n+            new_invite = Invite.invite_by_email(iceking, inviter, another_topic)\n+            expect(new_invite).to eq(invite)\n+            expect(another_topic.invites).to eq([invite])\n+            expect(invite.topics).to match_array([topic, another_topic])\n           end\n-\n         end\n       end\n     end\n   end\n \n-  context 'to a group-private topic' do\n-    let(:group) { Fabricate(:group) }\n-    let(:private_category)  { Fabricate(:private_category, group: group) }\n-    let(:group_private_topic) { Fabricate(:topic, category: private_category) }\n-    let(:inviter) { group_private_topic.user }\n-\n-    before do\n-      group.add_owner(inviter)\n-      @invite = group_private_topic.invite_by_email(inviter, iceking)\n-    end\n-\n-    it 'should add the groups to the invite' do\n-      expect(@invite.groups).to eq([group])\n-    end\n-\n-    context 'when duplicated' do\n-      it 'should not duplicate the groups' do\n-        expect(group_private_topic.invite_by_email(inviter, iceking)).to eq(@invite)\n-        expect(@invite.groups).to eq([group])\n-      end\n-    end\n-\n-    it 'verifies that inviter is authorized to invite user to a topic' do\n-      tl2_user = Fabricate(:user, trust_level: 2)\n-\n-      invite = group_private_topic.invite_by_email(tl2_user, 'foo@bar.com')\n-      expect(invite.groups.count).to eq(0)\n-    end\n-\n-    context 'automatic groups' do\n-      it 'should not add invited user to automatic groups' do\n-        group.update!(automatic: true)\n-        expect(group_private_topic.invite_by_email(Fabricate(:admin), iceking).groups.count).to eq(0)\n-      end\n-    end\n-  end\n-\n   context 'an existing user' do\n     let(:topic) { Fabricate(:topic, category_id: nil, archetype: 'private_message') }\n     let(:coding_horror) { Fabricate(:coding_horror) }\n \n     it \"works\" do\n-      # doesn't create an invite\n-      expect { topic.invite_by_email(topic.user, coding_horror.email) }.to raise_error(Invite::UserExists)\n-\n-      # gives the user permission to access the topic\n-      expect(topic.allowed_users.include?(coding_horror)).to eq(true)\n+      expect do\n+        Invite.invite_by_email(coding_horror.email, topic.user, topic)\n+      end.to raise_error(Invite::UserExists)\n     end\n \n   end\n@@ -353,7 +326,6 @@\n         it 'adds the user to the topic_users of the first topic' do\n           expect(another_topic.invite(another_tl2_user, user.username)).to be_truthy # invited via username\n           expect(topic.allowed_users.include?(user)).to eq(true)\n-          expect(another_topic.allowed_users.include?(user)).to eq(true)\n         end\n       end\n     end"
+    },
+    {
+      "sha": "82b850788c39771eee7abb6981bf1c7aaf0527b8",
+      "filename": "spec/models/topic_spec.rb",
+      "status": "modified",
+      "additions": 58,
+      "deletions": 36,
+      "changes": 94,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/models/topic_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/models/topic_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/topic_spec.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -608,35 +608,85 @@ def build_topic_with_title(title)\n     end\n \n     describe 'public topic' do\n-      def expect_the_right_notification_to_be_created\n+      def expect_the_right_notification_to_be_created(inviter, invitee)\n         notification = Notification.last\n \n         expect(notification.notification_type)\n           .to eq(Notification.types[:invited_to_topic])\n \n-        expect(notification.user).to eq(another_user)\n+        expect(notification.user).to eq(invitee)\n         expect(notification.topic).to eq(topic)\n \n         notification_data = JSON.parse(notification.data)\n \n         expect(notification_data[\"topic_title\"]).to eq(topic.title)\n-        expect(notification_data[\"display_username\"]).to eq(user.username)\n+        expect(notification_data[\"display_username\"]).to eq(inviter.username)\n       end\n \n       describe 'by username' do\n         it 'should invite user into a topic' do\n           topic.invite(user, another_user.username)\n-\n-          expect(topic.reload.allowed_users.last).to eq(another_user)\n-          expect_the_right_notification_to_be_created\n+          expect_the_right_notification_to_be_created(user, another_user)\n         end\n       end\n \n       describe 'by email' do\n         it 'should be able to invite a user' do\n           expect(topic.invite(user, another_user.email)).to eq(true)\n-          expect(topic.reload.allowed_users.last).to eq(another_user)\n-          expect_the_right_notification_to_be_created\n+          expect_the_right_notification_to_be_created(user, another_user)\n+        end\n+\n+        describe 'when topic belongs to a private category' do\n+          let(:group) { Fabricate(:group) }\n+\n+          let(:category) do\n+            Fabricate(:category, groups: [group]).tap do |category|\n+              category.set_permissions(group => :full)\n+              category.save!\n+            end\n+          end\n+\n+          let(:topic) { Fabricate(:topic, category: category) }\n+          let(:inviter) { Fabricate(:user).tap { |user| group.add_owner(user) } }\n+          let(:invitee) { Fabricate(:user) }\n+\n+          describe 'as a group owner' do\n+            it 'should be able to invite a user' do\n+              expect do\n+                expect(topic.invite(inviter, invitee.email, [group.id]))\n+                  .to eq(true)\n+              end.to change { Notification.count } &\n+                     change { GroupHistory.count }\n+\n+              expect_the_right_notification_to_be_created(inviter, invitee)\n+\n+              group_history = GroupHistory.last\n+\n+              expect(group_history.acting_user).to eq(inviter)\n+              expect(group_history.target_user).to eq(invitee)\n+\n+              expect(group_history.action).to eq(\n+                GroupHistory.actions[:add_user_to_group]\n+              )\n+            end\n+\n+            describe 'when group ids are not given' do\n+              it 'should not invite the user' do\n+                expect do\n+                  expect(topic.invite(inviter, invitee.email)).to eq(false)\n+                end.to_not change { Notification.count }\n+              end\n+            end\n+          end\n+\n+          describe 'as a normal user' do\n+            it 'should not be able to invite a user' do\n+              expect do\n+                expect(topic.invite(Fabricate(:user), invitee.email, [group.id]))\n+                  .to eq(false)\n+              end.to_not change { Notification.count }\n+            end\n+          end\n         end\n \n         context \"for a muted topic\" do\n@@ -2009,34 +2059,6 @@ def expect_the_right_notification_to_be_created\n     expect(topic.save).to eq(true)\n   end\n \n-  context 'invite by group manager' do\n-    let(:group_manager) { Fabricate(:user) }\n-    let(:group) { Fabricate(:group).tap { |g| g.add_owner(group_manager) } }\n-    let(:private_category)  { Fabricate(:private_category, group: group) }\n-    let(:group_private_topic) { Fabricate(:topic, category: private_category, user: group_manager) }\n-\n-    context 'to an email' do\n-      let(:randolph) { 'randolph@duke.ooo' }\n-\n-      it \"should attach group to the invite\" do\n-        group_private_topic.invite(group_manager, randolph)\n-        expect(Invite.last.groups).to eq([group])\n-      end\n-    end\n-\n-    # should work for an existing user - give access, send notification\n-    context 'to an existing user' do\n-      let(:walter) { Fabricate(:walter_white) }\n-\n-      it \"should add user to the group\" do\n-        expect(Guardian.new(walter).can_see?(group_private_topic)).to be_falsey\n-        group_private_topic.invite(group_manager, walter.email)\n-        expect(walter.groups).to include(group)\n-        expect(Guardian.new(walter).can_see?(group_private_topic)).to be_truthy\n-      end\n-    end\n-  end\n-\n   it \"Correctly sets #message_archived?\" do\n     topic = Fabricate(:private_message_topic)\n     user = topic.user"
+    },
+    {
+      "sha": "9663b889e9de3ce8b587b7805acb44fd3b4068fe",
+      "filename": "spec/requests/invites_controller_spec.rb",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 5,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/requests/invites_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/requests/invites_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/invites_controller_spec.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -215,9 +215,13 @@\n \n     context 'with a deleted invite' do\n       let(:topic) { Fabricate(:topic) }\n-      let(:invite) { topic.invite_by_email(topic.user, \"iceking@adventuretime.ooo\") }\n+\n+      let(:invite) do\n+        Invite.invite_by_email(\"iceking@adventuretime.ooo\", topic.user, topic)\n+      end\n+\n       before do\n-        invite.destroy\n+        invite.destroy!\n       end\n \n       it \"redirects to the root\" do\n@@ -233,7 +237,9 @@\n \n     context 'with a valid invite id' do\n       let(:topic) { Fabricate(:topic) }\n-      let(:invite) { topic.invite_by_email(topic.user, \"iceking@adventuretime.ooo\") }\n+      let(:invite) do\n+        Invite.invite_by_email(\"iceking@adventuretime.ooo\", topic.user, topic)\n+      end\n \n       it 'redeems the invite' do\n         put \"/invites/show/#{invite.invite_key}.json\"\n@@ -323,7 +329,11 @@\n \n     context 'new registrations are disabled' do\n       let(:topic) { Fabricate(:topic) }\n-      let(:invite) { topic.invite_by_email(topic.user, \"iceking@adventuretime.ooo\") }\n+\n+      let(:invite) do\n+        Invite.invite_by_email(\"iceking@adventuretime.ooo\", topic.user, topic)\n+      end\n+\n       before { SiteSetting.allow_new_registrations = false }\n \n       it \"doesn't redeem the invite\" do\n@@ -338,7 +348,11 @@\n \n     context 'user is already logged in' do\n       let(:topic) { Fabricate(:topic) }\n-      let(:invite) { topic.invite_by_email(topic.user, \"iceking@adventuretime.ooo\") }\n+\n+      let(:invite) do\n+        Invite.invite_by_email(\"iceking@adventuretime.ooo\", topic.user, topic)\n+      end\n+\n       let!(:user) { sign_in(Fabricate(:user)) }\n \n       it \"doesn't redeem the invite\" do"
+    },
+    {
+      "sha": "aa636c82d1548aa691e77ee4ee402cd658ce9320",
+      "filename": "spec/requests/topics_controller_spec.rb",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 2,
+      "changes": 36,
+      "blob_url": "https://github.com/discourse/discourse/blob/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/requests/topics_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/978f0db109cccfb5c1fd80640f0c080a1caca8b8/spec/requests/topics_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/topics_controller_spec.rb?ref=978f0db109cccfb5c1fd80640f0c080a1caca8b8",
+      "patch": "@@ -2071,14 +2071,46 @@ def headers(locale)\n         let(:recipient) { 'jake@adventuretime.ooo' }\n \n         it \"should attach group to the invite\" do\n-\n           post \"/t/#{group_private_topic.id}/invite.json\", params: {\n-            user: recipient\n+            user: recipient,\n+            group_ids: \"#{group.id},123\"\n           }\n \n           expect(response.status).to eq(200)\n           expect(Invite.find_by(email: recipient).groups).to eq([group])\n         end\n+\n+        describe 'when group is available to automatic groups only' do\n+          before do\n+            group.update!(automatic: true)\n+          end\n+\n+          it 'should return the right response' do\n+            post \"/t/#{group_private_topic.id}/invite.json\", params: {\n+              user: Fabricate(:user)\n+            }\n+\n+            expect(response.status).to eq(403)\n+          end\n+        end\n+\n+        describe 'when user is not part of the required group' do\n+          it 'should return the right response' do\n+            post \"/t/#{group_private_topic.id}/invite.json\", params: {\n+              user: Fabricate(:user)\n+            }\n+\n+            expect(response.status).to eq(422)\n+\n+            response_body = JSON.parse(response.body)\n+\n+            expect(response_body[\"errors\"]).to eq([\n+              I18n.t(\"topic_invite.failed_to_invite\",\n+                group_names: group.name\n+              )\n+            ])\n+          end\n+        end\n       end\n \n       describe 'when topic id is invalid' do"
+    }
+  ]
+}
