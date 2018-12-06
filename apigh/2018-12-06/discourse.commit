@@ -1,0 +1,98 @@
+{
+  "sha": "ded3639f87ac55d078dc1f65fd0fbba4156c539a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkZWQzNjM5Zjg3YWM1NWQwNzhkYzFmNjVmZDBmYmJhNDE1NmM1Mzlh",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-12-06T16:16:47Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2018-12-06T16:16:47Z"
+    },
+    "message": "DEV: Add openid-connect as an official plugin",
+    "tree": {
+      "sha": "1f0f285cae6d705729aad930fa620ac568a34e96",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1f0f285cae6d705729aad930fa620ac568a34e96"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ded3639f87ac55d078dc1f65fd0fbba4156c539a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ded3639f87ac55d078dc1f65fd0fbba4156c539a",
+  "html_url": "https://github.com/discourse/discourse/commit/ded3639f87ac55d078dc1f65fd0fbba4156c539a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ded3639f87ac55d078dc1f65fd0fbba4156c539a/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b54b4d05c544e5b01e1727bef96457ed9a6ace6e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b54b4d05c544e5b01e1727bef96457ed9a6ace6e",
+      "html_url": "https://github.com/discourse/discourse/commit/b54b4d05c544e5b01e1727bef96457ed9a6ace6e"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9bcfe64bbce46b0452066cdab6ec24c5389e44aa",
+      "filename": "lib/plugin/metadata.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/ded3639f87ac55d078dc1f65fd0fbba4156c539a/lib/plugin/metadata.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ded3639f87ac55d078dc1f65fd0fbba4156c539a/lib/plugin/metadata.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/plugin/metadata.rb?ref=ded3639f87ac55d078dc1f65fd0fbba4156c539a",
+      "patch": "@@ -60,6 +60,7 @@ class Plugin::Metadata\n     \"discourse-translator\",\n     \"discourse-user-card-badges\",\n     \"discourse-voting\",\n+    \"discourse-openid-connect\",\n     \"docker_manager\",\n     \"lazyYT\",\n     \"poll\""
+    }
+  ]
+}
