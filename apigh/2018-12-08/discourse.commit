@@ -1,0 +1,98 @@
+{
+  "sha": "0f41770547acdaf0187c97506c3303fa43c7f782",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowZjQxNzcwNTQ3YWNkYWYwMTg3Yzk3NTA2YzMzMDNmYTQzYzdmNzgy",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-12-08T01:59:09Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-12-08T01:59:09Z"
+    },
+    "message": "Make Danger happy by running prettier",
+    "tree": {
+      "sha": "ccba88c40b753ba36922e9c6ecb428e4b215af0f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ccba88c40b753ba36922e9c6ecb428e4b215af0f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0f41770547acdaf0187c97506c3303fa43c7f782",
+    "comment_count": 2,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0f41770547acdaf0187c97506c3303fa43c7f782",
+  "html_url": "https://github.com/discourse/discourse/commit/0f41770547acdaf0187c97506c3303fa43c7f782",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0f41770547acdaf0187c97506c3303fa43c7f782/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "050c02228e2ce680554159d1d7d4d35e4f795a95",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/050c02228e2ce680554159d1d7d4d35e4f795a95",
+      "html_url": "https://github.com/discourse/discourse/commit/050c02228e2ce680554159d1d7d4d35e4f795a95"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "f1fe514f4f6607570980edd1d21cab2db5b44209",
+      "filename": "app/assets/javascripts/discourse/components/composer-toggles.js.es6",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/0f41770547acdaf0187c97506c3303fa43c7f782/app/assets/javascripts/discourse/components/composer-toggles.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/0f41770547acdaf0187c97506c3303fa43c7f782/app/assets/javascripts/discourse/components/composer-toggles.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/composer-toggles.js.es6?ref=0f41770547acdaf0187c97506c3303fa43c7f782",
+      "patch": "@@ -15,8 +15,8 @@ export default Ember.Component.extend({\n     return composeState === \"draft\"\n       ? \"composer.open\"\n       : composeState === \"fullscreen\"\n-      ? \"composer.exit_fullscreen\"\n-      : \"composer.enter_fullscreen\";\n+        ? \"composer.exit_fullscreen\"\n+        : \"composer.enter_fullscreen\";\n   },\n \n   @computed(\"composeState\")\n@@ -31,7 +31,7 @@ export default Ember.Component.extend({\n     return composeState === \"draft\"\n       ? \"chevron-up\"\n       : composeState === \"fullscreen\"\n-      ? \"discourse-compress\"\n-      : \"discourse-expand\";\n+        ? \"discourse-compress\"\n+        : \"discourse-expand\";\n   }\n });"
+    }
+  ]
+}
