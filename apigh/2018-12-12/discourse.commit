@@ -1,0 +1,134 @@
+{
+  "sha": "7cac04e1a8899061f43653d0e5f8416eb02944a8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3Y2FjMDRlMWE4ODk5MDYxZjQzNjUzZDBlNWY4NDE2ZWIwMjk0NGE4",
+  "commit": {
+    "author": {
+      "name": "Bianca Nenciu",
+      "email": "nbianca@users.noreply.github.com",
+      "date": "2018-12-12T14:42:53Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-12-12T14:42:53Z"
+    },
+    "message": "* FEATURE: Adds site setting to let quotes on direct replies.\n\n* DEV: Added test.\r\n* FIX: Do not bump topic when removing full quotes.",
+    "tree": {
+      "sha": "4186da46bdced544ec2fa0f77e48498aa6635f7a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4186da46bdced544ec2fa0f77e48498aa6635f7a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7cac04e1a8899061f43653d0e5f8416eb02944a8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7cac04e1a8899061f43653d0e5f8416eb02944a8",
+  "html_url": "https://github.com/discourse/discourse/commit/7cac04e1a8899061f43653d0e5f8416eb02944a8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7cac04e1a8899061f43653d0e5f8416eb02944a8/comments",
+  "author": {
+    "login": "nbianca",
+    "id": 23153890,
+    "node_id": "MDQ6VXNlcjIzMTUzODkw",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/23153890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nbianca",
+    "html_url": "https://github.com/nbianca",
+    "followers_url": "https://api.github.com/users/nbianca/followers",
+    "following_url": "https://api.github.com/users/nbianca/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nbianca/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nbianca/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nbianca/subscriptions",
+    "organizations_url": "https://api.github.com/users/nbianca/orgs",
+    "repos_url": "https://api.github.com/users/nbianca/repos",
+    "events_url": "https://api.github.com/users/nbianca/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nbianca/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dbbadb5c357bc23daf1fa732f8670e55dc28b7cb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/dbbadb5c357bc23daf1fa732f8670e55dc28b7cb",
+      "html_url": "https://github.com/discourse/discourse/commit/dbbadb5c357bc23daf1fa732f8670e55dc28b7cb"
+    }
+  ],
+  "stats": {
+    "total": 56,
+    "additions": 38,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "44ea490a80c9b088d10ac3432d57f71984096251",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/7cac04e1a8899061f43653d0e5f8416eb02944a8/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/7cac04e1a8899061f43653d0e5f8416eb02944a8/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=7cac04e1a8899061f43653d0e5f8416eb02944a8",
+      "patch": "@@ -1308,6 +1308,7 @@ en:\n     send_tl1_welcome_message: \"Send new trust level 1 users a welcome message.\"\n     suppress_reply_directly_below: \"Don't show the expandable reply count on a post when there is only a single reply directly below this post.\"\n     suppress_reply_directly_above: \"Don't show the expandable in-reply-to on a post when there is only a single reply directly above this post.\"\n+    remove_full_quote: \"Automatically remove full quotes on direct replies.\"\n     suppress_reply_when_quoting: \"Don't show the expandable in-reply-to on a post when post quotes reply.\"\n     max_reply_history: \"Maximum number of replies to expand when expanding in-reply-to\"\n     topics_per_period_in_top_summary: \"Number of top topics shown in the default top topics summary.\""
+    },
+    {
+      "sha": "ebb1930f0971cb6016cb3a70604687d02bc3ac51",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7cac04e1a8899061f43653d0e5f8416eb02944a8/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/7cac04e1a8899061f43653d0e5f8416eb02944a8/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=7cac04e1a8899061f43653d0e5f8416eb02944a8",
+      "patch": "@@ -675,6 +675,8 @@ posting:\n     default: true\n   suppress_reply_when_quoting:\n     default: true\n+  remove_full_quote:\n+    default: true\n   max_reply_history:\n     default: 1\n     client: true"
+    },
+    {
+      "sha": "9c9ed222bbc0000b650cf0d1f15dc19e83c253d0",
+      "filename": "lib/cooked_post_processor.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/7cac04e1a8899061f43653d0e5f8416eb02944a8/lib/cooked_post_processor.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7cac04e1a8899061f43653d0e5f8416eb02944a8/lib/cooked_post_processor.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/cooked_post_processor.rb?ref=7cac04e1a8899061f43653d0e5f8416eb02944a8",
+      "patch": "@@ -87,7 +87,7 @@ def post_process_quotes\n   end\n \n   def removed_direct_reply_full_quotes\n-    return if @post.post_number == 1\n+    return if !SiteSetting.remove_full_quote || @post.post_number == 1\n \n     num_quotes = @doc.css(\"aside.quote\").size\n     return if num_quotes != 1\n@@ -104,7 +104,8 @@ def removed_direct_reply_full_quotes\n         raw: new_raw.strip,\n         edit_reason: I18n.t(:removed_direct_reply_full_quotes)\n       },\n-      skip_validations: true\n+      skip_validations: true,\n+      bypass_bump: true\n     )\n   end\n "
+    },
+    {
+      "sha": "829a4e8501ed7ff9aa58750c2658937222fd2303",
+      "filename": "spec/components/cooked_post_processor_spec.rb",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 16,
+      "changes": 48,
+      "blob_url": "https://github.com/discourse/discourse/blob/7cac04e1a8899061f43653d0e5f8416eb02944a8/spec/components/cooked_post_processor_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7cac04e1a8899061f43653d0e5f8416eb02944a8/spec/components/cooked_post_processor_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/cooked_post_processor_spec.rb?ref=7cac04e1a8899061f43653d0e5f8416eb02944a8",
+      "patch": "@@ -1146,28 +1146,44 @@\n \n   context \"remove direct reply full quote\" do\n     let(:topic) { Fabricate(:topic) }\n+    let!(:post) { Fabricate(:post, topic: topic, raw: \"this is the first post\") }\n+    let(:raw) do\n+      <<~RAW\n+      [quote=\"#{post.user.username}, post:#{post.post_number}, topic:#{topic.id}\"]\n+      this is the first post\n+      [/quote]\n+\n+      and this is the third reply\n+      RAW\n+    end\n \n     it 'works' do\n-      post = Fabricate(:post, topic: topic, raw: \"this is the first post\")\n-      hidden = Fabricate(:post, topic: topic, hidden: true, raw: \"this is the second post\")\n-      small_action = Fabricate(:post, topic: topic, post_type: Post.types[:small_action])\n-      raw = <<~RAW\n-        [quote=\"#{post.user.username}, post:#{post.post_number}, topic:#{topic.id}\"]\n-        this is the first post\n-        [/quote]\n+      SiteSetting.remove_full_quote = true\n \n-        and this is the third reply\n-      RAW\n+      hidden = Fabricate(:post, topic: topic, hidden: true, raw: \"this is the second post after\")\n+      small_action = Fabricate(:post, topic: topic, post_type: Post.types[:small_action])\n       reply = Fabricate(:post, topic: topic, raw: raw)\n \n-      cpp = CookedPostProcessor.new(reply)\n-      cpp.removed_direct_reply_full_quotes\n+      freeze_time Time.zone.now do\n+        topic.bumped_at = 1.day.ago\n+        CookedPostProcessor.new(reply).removed_direct_reply_full_quotes\n+\n+        expect(topic.posts).to eq([post, hidden, small_action, reply])\n+        expect(topic.bumped_at).to eq(1.day.ago)\n+        expect(reply.raw).to eq(\"and this is the third reply\")\n+        expect(reply.revisions.count).to eq(1)\n+        expect(reply.revisions.first.modifications[\"raw\"]).to eq([raw, reply.raw])\n+        expect(reply.revisions.first.modifications[\"edit_reason\"][1]).to eq(I18n.t(:removed_direct_reply_full_quotes))\n+      end\n+    end\n+\n+    it \"does nothing when 'remove_full_quote' is disabled\" do\n+      SiteSetting.remove_full_quote = false\n+\n+      reply = Fabricate(:post, topic: topic, raw: raw)\n \n-      expect(topic.posts).to eq([post, hidden, small_action, reply])\n-      expect(reply.raw).to eq(\"and this is the third reply\")\n-      expect(reply.revisions.count).to eq(1)\n-      expect(reply.revisions.first.modifications[\"raw\"]).to eq([raw, reply.raw])\n-      expect(reply.revisions.first.modifications[\"edit_reason\"][1]).to eq(I18n.t(:removed_direct_reply_full_quotes))\n+      CookedPostProcessor.new(reply).removed_direct_reply_full_quotes\n+      expect(reply.raw).to eq(raw)\n     end\n \n   end"
+    }
+  ]
+}

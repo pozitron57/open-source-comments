@@ -1,0 +1,110 @@
+{
+  "sha": "1ed5df71da744bba88abdccce6b1dffaad631236",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MWVkNWRmNzFkYTc0NGJiYTg4YWJkY2NjZTZiMWRmZmFhZDYzMTIzNg==",
+  "commit": {
+    "author": {
+      "name": "immber",
+      "email": "jessiekrushing@gmail.com",
+      "date": "2018-12-12T00:20:16Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2018-12-12T00:20:16Z"
+    },
+    "message": "fix bug in cli-setup (#2116)\n\n* fix bug in cli-setup\r\n\r\n* fix cli setup bug\r\n\r\n* fix: fixed password bug",
+    "tree": {
+      "sha": "001daea30a5900c1c91c93a7fc061caa20e5b5d5",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/001daea30a5900c1c91c93a7fc061caa20e5b5d5"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/1ed5df71da744bba88abdccce6b1dffaad631236",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/1ed5df71da744bba88abdccce6b1dffaad631236",
+  "html_url": "https://github.com/coralproject/talk/commit/1ed5df71da744bba88abdccce6b1dffaad631236",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/1ed5df71da744bba88abdccce6b1dffaad631236/comments",
+  "author": {
+    "login": "immber",
+    "id": 7496030,
+    "node_id": "MDQ6VXNlcjc0OTYwMzA=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/7496030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/immber",
+    "html_url": "https://github.com/immber",
+    "followers_url": "https://api.github.com/users/immber/followers",
+    "following_url": "https://api.github.com/users/immber/following{/other_user}",
+    "gists_url": "https://api.github.com/users/immber/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/immber/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/immber/subscriptions",
+    "organizations_url": "https://api.github.com/users/immber/orgs",
+    "repos_url": "https://api.github.com/users/immber/repos",
+    "events_url": "https://api.github.com/users/immber/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/immber/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f1a3a5ca28d92e2d611a7dfe712a37ecd3e610c9",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/f1a3a5ca28d92e2d611a7dfe712a37ecd3e610c9",
+      "html_url": "https://github.com/coralproject/talk/commit/f1a3a5ca28d92e2d611a7dfe712a37ecd3e610c9"
+    }
+  ],
+  "stats": {
+    "total": 72,
+    "additions": 39,
+    "deletions": 33
+  },
+  "files": [
+    {
+      "sha": "5d22aa7df89b0c329d764ec362ced5b819d01ae9",
+      "filename": ".circleci/config.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/1ed5df71da744bba88abdccce6b1dffaad631236/.circleci/config.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/1ed5df71da744bba88abdccce6b1dffaad631236/.circleci/config.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/.circleci/config.yml?ref=1ed5df71da744bba88abdccce6b1dffaad631236",
+      "patch": "@@ -41,9 +41,9 @@ integration_job: &integration_job\n     - attach_workspace:\n         at: ~/coralproject/talk\n     - <<: *create_indexes\n-    - run:\n-        name: Setup the database with defaults\n-        command: ./bin/cli setup --defaults\n+    # - run:\n+    #     name: Setup the database with defaults\n+    #     command: ./bin/cli setup --defaults\n     - run:\n         name: Run the integration tests\n         command: bash .circleci/e2e.sh"
+    },
+    {
+      "sha": "d2db3b30d7e6c954eea297723cdf656934a6b08d",
+      "filename": "bin/cli-setup",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 30,
+      "changes": 66,
+      "blob_url": "https://github.com/coralproject/talk/blob/1ed5df71da744bba88abdccce6b1dffaad631236/bin/cli-setup",
+      "raw_url": "https://github.com/coralproject/talk/raw/1ed5df71da744bba88abdccce6b1dffaad631236/bin/cli-setup",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/bin/cli-setup?ref=1ed5df71da744bba88abdccce6b1dffaad631236",
+      "patch": "@@ -45,11 +45,10 @@ const performSetup = async () => {\n   } catch (err) {\n     // If the error is `not init`, then we're good, otherwise, it's something\n     // else.\n-    if (err instanceof ErrSettingsNotInit) {\n+    if (!err instanceof ErrSettingsNotInit) {\n+      throw err;\n       return;\n     }\n-\n-    throw err;\n   }\n \n   if (program.defaults) {\n@@ -138,7 +137,7 @@ const performSetup = async () => {\n \n   console.log(\"\\nWe'll ask you some questions about your first admin user.\\n\");\n \n-  let user = await inquirer.prompt([\n+  let { username, email } = await inquirer.prompt([\n     {\n       type: 'input',\n       name: 'username',\n@@ -161,39 +160,46 @@ const performSetup = async () => {\n         return 'Email is required';\n       },\n     },\n-    {\n-      name: 'password',\n-      message: 'Password',\n-      type: 'password',\n-      filter: password => {\n-        return UsersService.isValidPassword(password).catch(err => {\n-          throw err.message;\n-        });\n-      },\n-    },\n-    {\n-      name: 'confirmPassword',\n-      message: 'Confirm Password',\n-      type: 'password',\n-      filter: (confirmPassword, { password }) => {\n-        if (password !== confirmPassword) {\n-          return Promise.reject(new Error('Passwords do not match'));\n-        }\n+  ]);\n \n-        return UsersService.isValidPassword(confirmPassword).catch(err => {\n-          throw err.message;\n-        });\n+  let password = '';\n+  while (!password) {\n+    answers = await inquirer.prompt([\n+      {\n+        name: 'password',\n+        message: 'Password',\n+        type: 'password',\n+        filter: password => {\n+          try {\n+            UsersService.isValidPassword(password);\n+          } catch (err) {\n+            throw err.message;\n+          }\n+\n+          return password;\n+        },\n       },\n-    },\n-  ]);\n+      {\n+        name: 'confirmPassword',\n+        message: 'Confirm Password',\n+        type: 'password',\n+      },\n+    ]);\n+\n+    if (answers.password !== answers.confirmPassword) {\n+      console.error('Passwords do not match');\n+    } else {\n+      password = answers.password;\n+    }\n+  }\n \n   const ctx = Context.forSystem();\n   let { user: newUser } = await SetupService.setup(ctx, {\n     settings: settings.toObject(),\n     user: {\n-      email: user.email,\n-      username: user.username,\n-      password: user.password,\n+      email,\n+      username,\n+      password,\n     },\n   });\n "
+    }
+  ]
+}
