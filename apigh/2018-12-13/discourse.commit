@@ -1,0 +1,98 @@
+{
+  "sha": "5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1Y2I5OWQwOGVkNDY4YzViNWJjM2YwZmM1MWZlZTJhYzI0NjhkMTE2",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2018-12-13T14:43:30Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2018-12-13T14:43:30Z"
+    },
+    "message": "FIX: define actions on connector class early (#6763)\n\nThis would prevent failure with connectors templates defining actions as closures. In this case action existence is checked at compile time and not runtime.",
+    "tree": {
+      "sha": "03be2bf89f4987f494a712ea9f02308f6ba63fa2",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/03be2bf89f4987f494a712ea9f02308f6ba63fa2"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcEnASCRBK7hj4Ov3rIwAAdHIIACRp0K4zL86TMSdI+BjEqiyv\npXWnfmpjE+pRkCqF4jjD/NJbeYcmSTbDSzt9rB+8v/Kw318Te1KR+GHyA2t6v7TZ\nI0oQlOAwXg/59r1LsN2wB8EnORNpe6AbrHnlIs8gxMslAgKg26G8rmye9s++P5v6\nwzJf56DzxG1ZrVLHIwCU+M+t8eACEog19dxY7086ud5ImxiAvKWugZeJSckavz5D\nc+L/BNqBdZTK70IsgP6mdLz628PhH9kcnl/gJ/VWlEv9zXmaCr/ITSF57qwnZhAr\n6Mh+M5xYlZZ3OtUtZj167P/WM2QLEqr1MXVtgJYO5whlchsuBn1R6iS9z9v3Th4=\n=xdnO\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 03be2bf89f4987f494a712ea9f02308f6ba63fa2\nparent 73c776d881d4822dc8c235c3cf18e0b47bdc7348\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1544712210 +0100\ncommitter GitHub <noreply@github.com> 1544712210 +0100\n\nFIX: define actions on connector class early (#6763)\n\nThis would prevent failure with connectors templates defining actions as closures. In this case action existence is checked at compile time and not runtime."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116",
+  "html_url": "https://github.com/discourse/discourse/commit/5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73c776d881d4822dc8c235c3cf18e0b47bdc7348",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/73c776d881d4822dc8c235c3cf18e0b47bdc7348",
+      "html_url": "https://github.com/discourse/discourse/commit/73c776d881d4822dc8c235c3cf18e0b47bdc7348"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "4d0ece9c6f2da4875e90d0811b32bdb7e881ebfa",
+      "filename": "app/assets/javascripts/discourse/components/plugin-connector.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116/app/assets/javascripts/discourse/components/plugin-connector.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116/app/assets/javascripts/discourse/components/plugin-connector.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/plugin-connector.js.es6?ref=5cb99d08ed468c5b5bc3f0fc51fee2ac2468d116",
+      "patch": "@@ -12,6 +12,8 @@ export default Ember.Component.extend({\n \n     const connectorClass = this.get(\"connector.connectorClass\");\n     connectorClass.setupComponent.call(this, args, this);\n+\n+    this.set(\"actions\", connectorClass.actions);\n   },\n \n   @observes(\"args\")"
+    }
+  ]
+}
