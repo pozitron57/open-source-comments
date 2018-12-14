@@ -1,0 +1,98 @@
+{
+  "sha": "7b3e9bd659facd855e9043b551e55da1a4e66f58",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjdiM2U5YmQ2NTlmYWNkODU1ZTkwNDNiNTUxZTU1ZGExYTRlNjZmNTg=",
+  "commit": {
+    "author": {
+      "name": "Pavel Loparev",
+      "email": "pavel.loparev.brdm2@gmail.com",
+      "date": "2018-12-09T04:48:04Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-12-09T04:48:04Z"
+    },
+    "message": "Reset opacity for useless comment by mouse hover event (#227)",
+    "tree": {
+      "sha": "9a04438be951e5797fe1a16927d22053fc4d0250",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/9a04438be951e5797fe1a16927d22053fc4d0250"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/7b3e9bd659facd855e9043b551e55da1a4e66f58",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/7b3e9bd659facd855e9043b551e55da1a4e66f58",
+  "html_url": "https://github.com/umputun/remark/commit/7b3e9bd659facd855e9043b551e55da1a4e66f58",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/7b3e9bd659facd855e9043b551e55da1a4e66f58/comments",
+  "author": {
+    "login": "PavelLoparev",
+    "id": 9624816,
+    "node_id": "MDQ6VXNlcjk2MjQ4MTY=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/9624816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/PavelLoparev",
+    "html_url": "https://github.com/PavelLoparev",
+    "followers_url": "https://api.github.com/users/PavelLoparev/followers",
+    "following_url": "https://api.github.com/users/PavelLoparev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/PavelLoparev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/PavelLoparev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/PavelLoparev/subscriptions",
+    "organizations_url": "https://api.github.com/users/PavelLoparev/orgs",
+    "repos_url": "https://api.github.com/users/PavelLoparev/repos",
+    "events_url": "https://api.github.com/users/PavelLoparev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/PavelLoparev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b3683c4f60f8bf183984ed2d8826482a65c5874e",
+      "url": "https://api.github.com/repos/umputun/remark/commits/b3683c4f60f8bf183984ed2d8826482a65c5874e",
+      "html_url": "https://github.com/umputun/remark/commit/b3683c4f60f8bf183984ed2d8826482a65c5874e"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "7cd4b4b8ddfcc5d6f9396cf8f95198bfc25dbe92",
+      "filename": "web/app/components/comment/_useless/comment_useless.scss",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark/blob/7b3e9bd659facd855e9043b551e55da1a4e66f58/web/app/components/comment/_useless/comment_useless.scss",
+      "raw_url": "https://github.com/umputun/remark/raw/7b3e9bd659facd855e9043b551e55da1a4e66f58/web/app/components/comment/_useless/comment_useless.scss",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/components/comment/_useless/comment_useless.scss?ref=7b3e9bd659facd855e9043b551e55da1a4e66f58",
+      "patch": "@@ -1,5 +1,8 @@\n .comment_useless {\n   .comment__body {\n     opacity: 0.35;\n+    &:hover {\n+      opacity: 1;\n+    }\n   }\n }"
+    }
+  ]
+}
