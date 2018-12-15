@@ -1,0 +1,110 @@
+{
+  "sha": "126edb39f0621241aa7e3c4d1b95afc87381798a",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjEyNmVkYjM5ZjA2MjEyNDFhYTdlM2M0ZDFiOTVhZmM4NzM4MTc5OGE=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-12-15T03:26:02Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2018-12-15T03:26:02Z"
+    },
+    "message": "allow short form -s (--site) for backup and restore",
+    "tree": {
+      "sha": "027fb74c06d9820840e0803abfb7e8428d8257d4",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/027fb74c06d9820840e0803abfb7e8428d8257d4"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/126edb39f0621241aa7e3c4d1b95afc87381798a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/126edb39f0621241aa7e3c4d1b95afc87381798a",
+  "html_url": "https://github.com/umputun/remark/commit/126edb39f0621241aa7e3c4d1b95afc87381798a",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/126edb39f0621241aa7e3c4d1b95afc87381798a/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b3e9bd659facd855e9043b551e55da1a4e66f58",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7b3e9bd659facd855e9043b551e55da1a4e66f58",
+      "html_url": "https://github.com/umputun/remark/commit/7b3e9bd659facd855e9043b551e55da1a4e66f58"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "3a41944e42534cf5e2fcbe8809ca6fb9d5088b02",
+      "filename": "backend/app/cmd/backup.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/126edb39f0621241aa7e3c4d1b95afc87381798a/backend/app/cmd/backup.go",
+      "raw_url": "https://github.com/umputun/remark/raw/126edb39f0621241aa7e3c4d1b95afc87381798a/backend/app/cmd/backup.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/backup.go?ref=126edb39f0621241aa7e3c4d1b95afc87381798a",
+      "patch": "@@ -17,7 +17,7 @@ import (\n type BackupCommand struct {\n \tExportPath string        `short:\"p\" long:\"path\" env:\"BACKUP_PATH\" default:\"./var/backup\" description:\"export path\"`\n \tExportFile string        `short:\"f\" long:\"file\" default:\"userbackup-{{.SITE}}-{{.TS}}.gz\" description:\"file name\"`\n-\tSite       string        `long:\"site\" env:\"SITE\" default:\"remark\" description:\"site name\"`\n+\tSite       string        `short:\"s\" long:\"site\" env:\"SITE\" default:\"remark\" description:\"site name\"`\n \tTimeout    time.Duration `long:\"timeout\" default:\"15m\" description:\"import timeout\"`\n \tCommonOpts\n }"
+    },
+    {
+      "sha": "fe54ea33d8b0f7d20e9f398815db0f11a6bd2ed6",
+      "filename": "backend/app/cmd/restore.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/126edb39f0621241aa7e3c4d1b95afc87381798a/backend/app/cmd/restore.go",
+      "raw_url": "https://github.com/umputun/remark/raw/126edb39f0621241aa7e3c4d1b95afc87381798a/backend/app/cmd/restore.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/restore.go?ref=126edb39f0621241aa7e3c4d1b95afc87381798a",
+      "patch": "@@ -10,7 +10,7 @@ type RestoreCommand struct {\n \tImportPath string `short:\"p\" long:\"path\" env:\"BACKUP_PATH\" default:\"./var/backup\" description:\"export path\"`\n \tImportFile string `short:\"f\" long:\"file\" default:\"userbackup-{{.SITE}}-{{.YYYYMMDD}}.gz\" description:\"file name\" required:\"true\"`\n \n-\tSite    string        `long:\"site\" env:\"SITE\" default:\"remark\" description:\"site name\"`\n+\tSite    string        `short:\"s\" long:\"site\" env:\"SITE\" default:\"remark\" description:\"site name\"`\n \tTimeout time.Duration `long:\"timeout\" default:\"15m\" description:\"import timeout\"`\n \tCommonOpts\n }"
+    }
+  ]
+}
