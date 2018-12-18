@@ -1,0 +1,146 @@
+{
+  "sha": "c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjMjc5NzkyMTMwZTI0ZGZmYmJkZWU4ZDZjYmIwYmFkNDZjYzEzYjcy",
+  "commit": {
+    "author": {
+      "name": "Rishabh",
+      "email": "rishabh.nambiar@discourse.org",
+      "date": "2018-12-18T15:12:05Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2018-12-18T15:12:05Z"
+    },
+    "message": "FIX: Allow sending test e-mails to any email address when disable_email is set to non-staff (#6792)",
+    "tree": {
+      "sha": "8399dee1740f3b1be5ec57275762e5e83d0a7ac3",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/8399dee1740f3b1be5ec57275762e5e83d0a7ac3"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+  "html_url": "https://github.com/discourse/discourse/commit/c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c279792130e24dffbbdee8d6cbb0bad46cc13b72/comments",
+  "author": {
+    "login": "rishabhnambiar",
+    "id": 5862206,
+    "node_id": "MDQ6VXNlcjU4NjIyMDY=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/5862206?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rishabhnambiar",
+    "html_url": "https://github.com/rishabhnambiar",
+    "followers_url": "https://api.github.com/users/rishabhnambiar/followers",
+    "following_url": "https://api.github.com/users/rishabhnambiar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rishabhnambiar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rishabhnambiar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rishabhnambiar/subscriptions",
+    "organizations_url": "https://api.github.com/users/rishabhnambiar/orgs",
+    "repos_url": "https://api.github.com/users/rishabhnambiar/repos",
+    "events_url": "https://api.github.com/users/rishabhnambiar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rishabhnambiar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "32784ad11adfaa58dc99405aade3e5fc52c3fbc9",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/32784ad11adfaa58dc99405aade3e5fc52c3fbc9",
+      "html_url": "https://github.com/discourse/discourse/commit/32784ad11adfaa58dc99405aade3e5fc52c3fbc9"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 5,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "04b015b3c0610a0547183774ecfd29ca888401a8",
+      "filename": "app/controllers/admin/email_controller.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/c279792130e24dffbbdee8d6cbb0bad46cc13b72/app/controllers/admin/email_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c279792130e24dffbbdee8d6cbb0bad46cc13b72/app/controllers/admin/email_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/email_controller.rb?ref=c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+      "patch": "@@ -13,8 +13,6 @@ def test\n       Jobs::TestEmail.new.execute(to_address: params[:email_address])\n       if SiteSetting.disable_emails == \"yes\"\n         render json: { sent_test_email_message: I18n.t(\"admin.email.sent_test_disabled\") }\n-      elsif SiteSetting.disable_emails == \"non-staff\" && !User.find_by_email(params[:email_address])&.staff?\n-        render json: { sent_test_email_message: I18n.t(\"admin.email.sent_test_disabled_for_non_staff\") }\n       else\n         render json: { sent_test_email_message: I18n.t(\"admin.email.sent_test\") }\n       end"
+    },
+    {
+      "sha": "a008d53ea36cd0ed2cc828cb222212df32d463ab",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/c279792130e24dffbbdee8d6cbb0bad46cc13b72/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/c279792130e24dffbbdee8d6cbb0bad46cc13b72/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+      "patch": "@@ -2055,7 +2055,6 @@ en:\n     email:\n       sent_test: \"sent!\"\n       sent_test_disabled: \"cannot send because emails are disabled\"\n-      sent_test_disabled_for_non_staff: \"cannot send because emails are disabled for non-staff\"\n \n   user:\n     deactivated: \"Was deactivated due to too many bounced emails to '%{email}'.\""
+    },
+    {
+      "sha": "4cc6bcf25ead213502daf34e23947cade81a600e",
+      "filename": "lib/email/sender.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 4,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/c279792130e24dffbbdee8d6cbb0bad46cc13b72/lib/email/sender.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c279792130e24dffbbdee8d6cbb0bad46cc13b72/lib/email/sender.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/email/sender.rb?ref=c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+      "patch": "@@ -30,10 +30,6 @@ def send\n       return skip(SkippedEmailLog.reason_types[:sender_message_blank])    if @message.blank?\n       return skip(SkippedEmailLog.reason_types[:sender_message_to_blank]) if @message.to.blank?\n \n-      if SiteSetting.disable_emails == \"non-staff\"\n-        return unless User.find_by_email(to_address)&.staff?\n-      end\n-\n       if @message.text_part\n         if @message.text_part.body.to_s.blank?\n           return skip(SkippedEmailLog.reason_types[:sender_text_part_body_blank])"
+    },
+    {
+      "sha": "472edab7d2c0249279a14672025768cbde723404",
+      "filename": "spec/components/email/sender_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/c279792130e24dffbbdee8d6cbb0bad46cc13b72/spec/components/email/sender_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c279792130e24dffbbdee8d6cbb0bad46cc13b72/spec/components/email/sender_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/email/sender_spec.rb?ref=c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+      "patch": "@@ -27,10 +27,10 @@\n     context \"disable_emails is enabled for non-staff users\" do\n       before { SiteSetting.disable_emails = \"non-staff\" }\n \n-      it \"doesn't deliver mail to normal user\" do\n-        Mail::Message.any_instance.expects(:deliver_now).never\n+      it \"delivers mail to normal user\" do\n+        Mail::Message.any_instance.expects(:deliver_now).once\n         message = Mail::Message.new(to: user.email, body: \"hello\")\n-        expect(Email::Sender.new(message, :hello).send).to eq(nil)\n+        Email::Sender.new(message, :hello).send\n       end\n \n       it \"delivers mail to staff user\" do"
+    },
+    {
+      "sha": "34b2faff5b6639f71ff509c3fb5d9c128545886e",
+      "filename": "spec/requests/admin/email_controller_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/c279792130e24dffbbdee8d6cbb0bad46cc13b72/spec/requests/admin/email_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c279792130e24dffbbdee8d6cbb0bad46cc13b72/spec/requests/admin/email_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/email_controller_spec.rb?ref=c279792130e24dffbbdee8d6cbb0bad46cc13b72",
+      "patch": "@@ -120,7 +120,7 @@\n         expect(incoming['sent_test_email_message']).to eq(I18n.t(\"admin.email.sent_test_disabled\"))\n       end\n \n-      it 'sends mail to staff only when setting is \"non-staff\"' do\n+      it 'sends mail to everyone when setting is \"non-staff\"' do\n         SiteSetting.disable_emails = 'non-staff'\n \n         post \"/admin/email/test.json\", params: { email_address: admin.email }\n@@ -129,7 +129,7 @@\n \n         post \"/admin/email/test.json\", params: { email_address: eviltrout.email }\n         incoming = JSON.parse(response.body)\n-        expect(incoming['sent_test_email_message']).to eq(I18n.t(\"admin.email.sent_test_disabled_for_non_staff\"))\n+        expect(incoming['sent_test_email_message']).to eq(I18n.t(\"admin.email.sent_test\"))\n       end\n \n       it 'sends mail to everyone when setting is \"no\"' do"
+    }
+  ]
+}
