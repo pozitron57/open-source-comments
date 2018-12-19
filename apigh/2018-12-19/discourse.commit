@@ -1,0 +1,98 @@
+{
+  "sha": "bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiYjY3Y2E5ZDIxZmMwODcxZWE1NDVlNWZmYjU1MWNhYzRjMjBlNGRk",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-12-19T16:47:37Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2018-12-19T16:47:37Z"
+    },
+    "message": "FIX: use correct post object when logging exception",
+    "tree": {
+      "sha": "563295bb768059414929cde44a3169a31d45d3d6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/563295bb768059414929cde44a3169a31d45d3d6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd",
+  "html_url": "https://github.com/discourse/discourse/commit/bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1ea0cbece8be7d10fc576fc9875076ed5784bb65",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/1ea0cbece8be7d10fc576fc9875076ed5784bb65",
+      "html_url": "https://github.com/discourse/discourse/commit/1ea0cbece8be7d10fc576fc9875076ed5784bb65"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "61af4c4b363c1fdb68d4ee55b17457dbc54fd012",
+      "filename": "app/models/post.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd/app/models/post.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd/app/models/post.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post.rb?ref=bb67ca9d21fc0871ea545e5ffb551cac4c20e4dd",
+      "patch": "@@ -530,7 +530,7 @@ def self.rebake_old(limit)\n \n         if attempts > 3\n           post.update_columns(baked_version: BAKED_VERSION)\n-          Discourse.warn_exception(e, message: \"Can not rebake post# #{p.id} after 3 attempts, giving up\")\n+          Discourse.warn_exception(e, message: \"Can not rebake post# #{post.id} after 3 attempts, giving up\")\n         else\n           post.custom_fields[\"rebake_attempts\"] = attempts + 1\n           post.save_custom_fields"
+    }
+  ]
+}
