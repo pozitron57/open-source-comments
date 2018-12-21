@@ -1,0 +1,98 @@
+{
+  "sha": "126be6c4784c161ff39ea8ff32542bcdf4233d2c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxMjZiZTZjNDc4NGMxNjFmZjM5ZWE4ZmYzMjU0MmJjZGY0MjMzZDJj",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-12-21T16:37:32Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2018-12-21T16:43:52Z"
+    },
+    "message": "FIX: Resetting bump date shouldn't fail when first post is hidden",
+    "tree": {
+      "sha": "5a0433381a04b7fdc31a6e8d097c543082d41701",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5a0433381a04b7fdc31a6e8d097c543082d41701"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/126be6c4784c161ff39ea8ff32542bcdf4233d2c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/126be6c4784c161ff39ea8ff32542bcdf4233d2c",
+  "html_url": "https://github.com/discourse/discourse/commit/126be6c4784c161ff39ea8ff32542bcdf4233d2c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/126be6c4784c161ff39ea8ff32542bcdf4233d2c/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fbd92916e553000f847f063f7f64808ef4cbd8ef",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fbd92916e553000f847f063f7f64808ef4cbd8ef",
+      "html_url": "https://github.com/discourse/discourse/commit/fbd92916e553000f847f063f7f64808ef4cbd8ef"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0afa508bf9d002fa56bfbb7b27c6a14206119d79",
+      "filename": "app/models/topic.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/126be6c4784c161ff39ea8ff32542bcdf4233d2c/app/models/topic.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/126be6c4784c161ff39ea8ff32542bcdf4233d2c/app/models/topic.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic.rb?ref=126be6c4784c161ff39ea8ff32542bcdf4233d2c",
+      "patch": "@@ -1357,7 +1357,7 @@ def reset_bumped_at\n       user_deleted: false,\n       hidden: false,\n       post_type: Post.types[:regular]\n-    ).last\n+    ).last || first_post\n \n     update!(bumped_at: post.created_at)\n   end"
+    }
+  ]
+}
