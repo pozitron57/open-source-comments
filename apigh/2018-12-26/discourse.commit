@@ -1,0 +1,110 @@
+{
+  "sha": "2076f371b3ed92c768ab511e8f3bc4536ef2fb14",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyMDc2ZjM3MWIzZWQ5MmM3NjhhYjUxMWU4ZjNiYzQ1MzZlZjJmYjE0",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2018-12-26T16:42:40Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2018-12-26T16:42:40Z"
+    },
+    "message": "FIX: Hashtags should work for non-english characters",
+    "tree": {
+      "sha": "e7eb8e59d08e5bff61ea2dc1a4b67f4b9a6db927",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e7eb8e59d08e5bff61ea2dc1a4b67f4b9a6db927"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2076f371b3ed92c768ab511e8f3bc4536ef2fb14",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2076f371b3ed92c768ab511e8f3bc4536ef2fb14",
+  "html_url": "https://github.com/discourse/discourse/commit/2076f371b3ed92c768ab511e8f3bc4536ef2fb14",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2076f371b3ed92c768ab511e8f3bc4536ef2fb14/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5381096bfd4e208657f928601d3792a5f0d1d0c8",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/5381096bfd4e208657f928601d3792a5f0d1d0c8",
+      "html_url": "https://github.com/discourse/discourse/commit/5381096bfd4e208657f928601d3792a5f0d1d0c8"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 7,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "5e997dfab66b381161150fda679eff700ff08ad3",
+      "filename": "app/assets/javascripts/pretty-text/engines/discourse-markdown/category-hashtag.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/2076f371b3ed92c768ab511e8f3bc4536ef2fb14/app/assets/javascripts/pretty-text/engines/discourse-markdown/category-hashtag.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/2076f371b3ed92c768ab511e8f3bc4536ef2fb14/app/assets/javascripts/pretty-text/engines/discourse-markdown/category-hashtag.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/engines/discourse-markdown/category-hashtag.js.es6?ref=2076f371b3ed92c768ab511e8f3bc4536ef2fb14",
+      "patch": "@@ -44,7 +44,7 @@ function addHashtag(buffer, matches, state) {\n export function setup(helper) {\n   helper.registerPlugin(md => {\n     const rule = {\n-      matcher: /#([\\w-:]{1,101})/,\n+      matcher: /#([\\u00C0-\\u1FFF\\u2C00-\\uD7FF\\w-:]{1,101})/,\n       onMatch: addHashtag\n     };\n "
+    },
+    {
+      "sha": "162ef49691f9150aa8c85e038dc8326a567cfa17",
+      "filename": "test/javascripts/lib/pretty-text-test.js.es6",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/2076f371b3ed92c768ab511e8f3bc4536ef2fb14/test/javascripts/lib/pretty-text-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/2076f371b3ed92c768ab511e8f3bc4536ef2fb14/test/javascripts/lib/pretty-text-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/lib/pretty-text-test.js.es6?ref=2076f371b3ed92c768ab511e8f3bc4536ef2fb14",
+      "patch": "@@ -621,6 +621,12 @@ QUnit.test(\"Category hashtags\", assert => {\n     '<p><small><span class=\"hashtag\">#category-hashtag</span></small></p>',\n     \"it works between HTML tags\"\n   );\n+\n+  assert.cooked(\n+    \"Checkout #ụdị\",\n+    '<p>Checkout <span class=\"hashtag\">#ụdị</span></p>',\n+    \"it works for non-english characters\"\n+  );\n });\n \n QUnit.test(\"Heading\", assert => {"
+    }
+  ]
+}

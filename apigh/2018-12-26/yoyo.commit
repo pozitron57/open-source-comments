@@ -1,0 +1,98 @@
+{
+  "sha": "6918713a8d6495064544b9202d6f9252ac516110",
+  "node_id": "MDY6Q29tbWl0ODMxMjUxNTA6NjkxODcxM2E4ZDY0OTUwNjQ1NDRiOTIwMmQ2ZjkyNTJhYzUxNjExMA==",
+  "commit": {
+    "author": {
+      "name": "Minghe Huang",
+      "email": "h.minghe@gmail.com",
+      "date": "2018-10-10T01:33:53Z"
+    },
+    "committer": {
+      "name": "Minghe Huang",
+      "email": "h.minghe@gmail.com",
+      "date": "2018-10-10T01:33:53Z"
+    },
+    "message": "fix submit button style",
+    "tree": {
+      "sha": "6fe47ea318ee739b31197203c9ab9a91892b797e",
+      "url": "https://api.github.com/repos/metrue/YoYo/git/trees/6fe47ea318ee739b31197203c9ab9a91892b797e"
+    },
+    "url": "https://api.github.com/repos/metrue/YoYo/git/commits/6918713a8d6495064544b9202d6f9252ac516110",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/metrue/YoYo/commits/6918713a8d6495064544b9202d6f9252ac516110",
+  "html_url": "https://github.com/metrue/YoYo/commit/6918713a8d6495064544b9202d6f9252ac516110",
+  "comments_url": "https://api.github.com/repos/metrue/YoYo/commits/6918713a8d6495064544b9202d6f9252ac516110/comments",
+  "author": {
+    "login": "metrue",
+    "id": 1001246,
+    "node_id": "MDQ6VXNlcjEwMDEyNDY=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1001246?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metrue",
+    "html_url": "https://github.com/metrue",
+    "followers_url": "https://api.github.com/users/metrue/followers",
+    "following_url": "https://api.github.com/users/metrue/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metrue/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metrue/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metrue/subscriptions",
+    "organizations_url": "https://api.github.com/users/metrue/orgs",
+    "repos_url": "https://api.github.com/users/metrue/repos",
+    "events_url": "https://api.github.com/users/metrue/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metrue/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "metrue",
+    "id": 1001246,
+    "node_id": "MDQ6VXNlcjEwMDEyNDY=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1001246?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metrue",
+    "html_url": "https://github.com/metrue",
+    "followers_url": "https://api.github.com/users/metrue/followers",
+    "following_url": "https://api.github.com/users/metrue/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metrue/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metrue/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metrue/subscriptions",
+    "organizations_url": "https://api.github.com/users/metrue/orgs",
+    "repos_url": "https://api.github.com/users/metrue/repos",
+    "events_url": "https://api.github.com/users/metrue/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metrue/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ab10764f6900fc4bdb8ef85a88ae8d3cbf512184",
+      "url": "https://api.github.com/repos/metrue/YoYo/commits/ab10764f6900fc4bdb8ef85a88ae8d3cbf512184",
+      "html_url": "https://github.com/metrue/YoYo/commit/ab10764f6900fc4bdb8ef85a88ae8d3cbf512184"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 0,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "43200013af5df7c29e2cebd3e15cebc9e91574d2",
+      "filename": "client/src/components/SubmitButton/styles.css",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 8,
+      "changes": 8,
+      "blob_url": "https://github.com/metrue/YoYo/blob/6918713a8d6495064544b9202d6f9252ac516110/client/src/components/SubmitButton/styles.css",
+      "raw_url": "https://github.com/metrue/YoYo/raw/6918713a8d6495064544b9202d6f9252ac516110/client/src/components/SubmitButton/styles.css",
+      "contents_url": "https://api.github.com/repos/metrue/YoYo/contents/client/src/components/SubmitButton/styles.css?ref=6918713a8d6495064544b9202d6f9252ac516110",
+      "patch": "@@ -84,14 +84,6 @@\n   font-size: 1vmin;\n }\n \n-@media (min-width: 1025px) {\n-  .YoYoCommentPublishButton {\n-    composes: YoYoButtonBase;\n-\n-    font-size: 2vmin !important;\n-  }\n-}\n-\n @media (max-width:800px) {\n   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */\n  /* smartphones, Android phones, landscape iPhone */"
+    }
+  ]
+}
