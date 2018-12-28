@@ -1,0 +1,98 @@
+{
+  "sha": "4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0ZjZjYTY2ZGY1ZTFjYTI0MmZmNGEyNTRmMzEwZjk4ZmNmOGU4YzFi",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2018-12-28T16:49:51Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2018-12-28T16:49:51Z"
+    },
+    "message": "FIX: routeToTag mini-fix for IE11\n\nskip \"a.host\" for IE11 since IE11 does not support URL interface",
+    "tree": {
+      "sha": "dc47bc9dfc298ef4910f5187bd6f643e4f2cc350",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/dc47bc9dfc298ef4910f5187bd6f643e4f2cc350"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b",
+  "html_url": "https://github.com/discourse/discourse/commit/4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fdfb7ed7648ace1f3fe228db2567976363cb103f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fdfb7ed7648ace1f3fe228db2567976363cb103f",
+      "html_url": "https://github.com/discourse/discourse/commit/fdfb7ed7648ace1f3fe228db2567976363cb103f"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d26dffa7b906e6e636a1d9a53d5cc5a9e4d3e563",
+      "filename": "app/assets/javascripts/discourse/lib/url.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b/app/assets/javascripts/discourse/lib/url.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b/app/assets/javascripts/discourse/lib/url.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/url.js.es6?ref=4f6ca66df5e1ca242ff4a254f310f98fcf8e8c1b",
+      "patch": "@@ -158,7 +158,7 @@ const DiscourseURL = Ember.Object.extend({\n       return false;\n     }\n \n-    if (a.host !== document.location.host) {\n+    if (a.host && a.host !== document.location.host) {\n       document.location = a.href;\n       return false;\n     }"
+    }
+  ]
+}
