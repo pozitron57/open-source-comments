@@ -1,0 +1,122 @@
+{
+  "sha": "021f11b68eb12a5cc0471eda63f215ee66199d05",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowMjFmMTFiNjhlYjEyYTVjYzA0NzFlZGE2M2YyMTVlZTY2MTk5ZDA1",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2018-12-30T14:40:40Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2018-12-30T14:40:40Z"
+    },
+    "message": "FEATURE: Display avatars of PM recepients in small topic header when scrolling down",
+    "tree": {
+      "sha": "0fcf2fe54591e4da4c6e2d048b30f0442ffafef9",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0fcf2fe54591e4da4c6e2d048b30f0442ffafef9"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/021f11b68eb12a5cc0471eda63f215ee66199d05",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/021f11b68eb12a5cc0471eda63f215ee66199d05",
+  "html_url": "https://github.com/discourse/discourse/commit/021f11b68eb12a5cc0471eda63f215ee66199d05",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/021f11b68eb12a5cc0471eda63f215ee66199d05/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6578d563085e9ff68a76097547cc1c75781e2f5e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6578d563085e9ff68a76097547cc1c75781e2f5e",
+      "html_url": "https://github.com/discourse/discourse/commit/6578d563085e9ff68a76097547cc1c75781e2f5e"
+    }
+  ],
+  "stats": {
+    "total": 127,
+    "additions": 127,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "7c00979de4c026f849040bad551effec30b664ff",
+      "filename": "app/assets/javascripts/discourse/mixins/card-contents-base.js.es6",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/021f11b68eb12a5cc0471eda63f215ee66199d05/app/assets/javascripts/discourse/mixins/card-contents-base.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/021f11b68eb12a5cc0471eda63f215ee66199d05/app/assets/javascripts/discourse/mixins/card-contents-base.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/mixins/card-contents-base.js.es6?ref=021f11b68eb12a5cc0471eda63f215ee66199d05",
+      "patch": "@@ -121,6 +121,10 @@ export default Ember.Mixin.create({\n       this.set(\"isFixed\", true);\n       return this._show($target.text().replace(/^@/, \"\"), $target);\n     });\n+\n+    this.appEvents.on(`topic-header:trigger-${id}`, (username, $target) => {\n+      return this._show(username, $target);\n+    });\n   },\n \n   _positionCard(target) {"
+    },
+    {
+      "sha": "26d54b7ac5b9bf629982f398a5b7afb065493a77",
+      "filename": "app/assets/javascripts/discourse/widgets/header-topic-info.js.es6",
+      "status": "modified",
+      "additions": 99,
+      "deletions": 0,
+      "changes": 99,
+      "blob_url": "https://github.com/discourse/discourse/blob/021f11b68eb12a5cc0471eda63f215ee66199d05/app/assets/javascripts/discourse/widgets/header-topic-info.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/021f11b68eb12a5cc0471eda63f215ee66199d05/app/assets/javascripts/discourse/widgets/header-topic-info.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/header-topic-info.js.es6?ref=021f11b68eb12a5cc0471eda63f215ee66199d05",
+      "patch": "@@ -5,6 +5,53 @@ import DiscourseURL from \"discourse/lib/url\";\n import RawHtml from \"discourse/widgets/raw-html\";\n import renderTags from \"discourse/lib/render-tags\";\n import { topicFeaturedLinkNode } from \"discourse/lib/render-topic-featured-link\";\n+import { avatarImg } from \"discourse/widgets/post\";\n+\n+createWidget(\"topic-header-participant\", {\n+  tagName: \"span\",\n+\n+  buildClasses(attrs) {\n+    return `trigger-${attrs.type}-card`;\n+  },\n+\n+  html(attrs) {\n+    const { user, group } = attrs;\n+    let avatar, url;\n+\n+    if (attrs.type === \"user\") {\n+      avatar = avatarImg(\"tiny\", {\n+        template: user.avatar_template,\n+        username: user.username\n+      });\n+      url = user.get(\"path\");\n+    } else {\n+      avatar = iconNode(\"users\");\n+      url = Discourse.getURL(`/groups/${group.name}`);\n+    }\n+\n+    return h(\n+      \"a.icon\",\n+      {\n+        attributes: {\n+          href: url,\n+          \"data-auto-route\": true,\n+          title: attrs.username\n+        }\n+      },\n+      avatar\n+    );\n+  },\n+\n+  click(e) {\n+    const $target = $(e.target);\n+    this.appEvents.trigger(\n+      `topic-header:trigger-${this.attrs.type}-card`,\n+      this.attrs.username,\n+      $target\n+    );\n+    e.preventDefault();\n+  }\n+});\n \n export default createWidget(\"header-topic-info\", {\n   tagName: \"div.extra-info-wrapper\",\n@@ -73,6 +120,58 @@ export default createWidget(\"header-topic-info\", {\n         extra.push(new RawHtml({ html: tags }));\n       }\n \n+      if (showPM) {\n+        const maxHeaderParticipants = extra.length > 0 ? 5 : 10;\n+        const participants = [];\n+        const topicDetails = topic.get(\"details\");\n+        const totalParticipants =\n+          topicDetails.allowed_users.length +\n+          topicDetails.allowed_groups.length;\n+\n+        topicDetails.allowed_users.some(user => {\n+          if (participants.length >= maxHeaderParticipants) {\n+            return true;\n+          }\n+\n+          participants.push(\n+            this.attach(\"topic-header-participant\", {\n+              type: \"user\",\n+              user: user,\n+              username: user.username\n+            })\n+          );\n+        });\n+\n+        topicDetails.allowed_groups.some(group => {\n+          if (participants.length >= maxHeaderParticipants) {\n+            return true;\n+          }\n+\n+          participants.push(\n+            this.attach(\"topic-header-participant\", {\n+              type: \"group\",\n+              group: group,\n+              username: group.name\n+            })\n+          );\n+        });\n+\n+        if (totalParticipants > maxHeaderParticipants) {\n+          const remaining = totalParticipants - maxHeaderParticipants;\n+          participants.push(\n+            this.attach(\"link\", {\n+              className: \"more-participants\",\n+              action: \"jumpToTopPost\",\n+              href,\n+              attributes: { \"data-topic-id\": topic.get(\"id\") },\n+              contents: () => `+${remaining}`\n+            })\n+          );\n+        }\n+\n+        extra.push(h(\"div.topic-header-participants\", participants));\n+      }\n+\n       extra = extra.concat(applyDecorators(this, \"after-tags\", attrs, state));\n \n       if (this.siteSettings.topic_featured_link_enabled) {"
+    },
+    {
+      "sha": "0e49474e805b68d257a7f38ec8f575f55e8da7be",
+      "filename": "app/assets/stylesheets/common/base/header.scss",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 0,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/021f11b68eb12a5cc0471eda63f215ee66199d05/app/assets/stylesheets/common/base/header.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/021f11b68eb12a5cc0471eda63f215ee66199d05/app/assets/stylesheets/common/base/header.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/header.scss?ref=021f11b68eb12a5cc0471eda63f215ee66199d05",
+      "patch": "@@ -299,3 +299,27 @@\n     min-width: 0;\n   }\n }\n+\n+.topic-header-participants {\n+  &:not(:first-child) {\n+    margin-left: 4px;\n+  }\n+\n+  > span {\n+    margin: 0 2px;\n+    display: inline-block;\n+    height: 20px;\n+  }\n+\n+  .trigger-group-card {\n+    line-height: 20px;\n+    margin: 0 4px;\n+  }\n+\n+  .more-participants {\n+    display: inline-block;\n+    color: $header_primary-high;\n+    line-height: 20px;\n+    padding: 0 4px;\n+  }\n+}"
+    }
+  ]
+}
