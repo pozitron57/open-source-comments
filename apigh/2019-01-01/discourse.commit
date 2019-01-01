@@ -1,0 +1,98 @@
+{
+  "sha": "96aca20fd7143f050549da2d0257e696a17a1656",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5NmFjYTIwZmQ3MTQzZjA1MDU0OWRhMmQwMjU3ZTY5NmExN2ExNjU2",
+  "commit": {
+    "author": {
+      "name": "Jeff Atwood",
+      "email": "jatwood@codinghorror.com",
+      "date": "2019-01-01T09:25:00Z"
+    },
+    "committer": {
+      "name": "Jeff Atwood",
+      "email": "jatwood@codinghorror.com",
+      "date": "2019-01-01T09:25:00Z"
+    },
+    "message": "add image optim version note to relevant tests",
+    "tree": {
+      "sha": "61da6ae838837e3386292917f67966b51e0fef62",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/61da6ae838837e3386292917f67966b51e0fef62"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/96aca20fd7143f050549da2d0257e696a17a1656",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/96aca20fd7143f050549da2d0257e696a17a1656",
+  "html_url": "https://github.com/discourse/discourse/commit/96aca20fd7143f050549da2d0257e696a17a1656",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/96aca20fd7143f050549da2d0257e696a17a1656/comments",
+  "author": {
+    "login": "coding-horror",
+    "id": 1522517,
+    "node_id": "MDQ6VXNlcjE1MjI1MTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1522517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coding-horror",
+    "html_url": "https://github.com/coding-horror",
+    "followers_url": "https://api.github.com/users/coding-horror/followers",
+    "following_url": "https://api.github.com/users/coding-horror/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coding-horror/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coding-horror/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coding-horror/subscriptions",
+    "organizations_url": "https://api.github.com/users/coding-horror/orgs",
+    "repos_url": "https://api.github.com/users/coding-horror/repos",
+    "events_url": "https://api.github.com/users/coding-horror/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coding-horror/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "coding-horror",
+    "id": 1522517,
+    "node_id": "MDQ6VXNlcjE1MjI1MTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1522517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coding-horror",
+    "html_url": "https://github.com/coding-horror",
+    "followers_url": "https://api.github.com/users/coding-horror/followers",
+    "following_url": "https://api.github.com/users/coding-horror/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coding-horror/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coding-horror/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coding-horror/subscriptions",
+    "organizations_url": "https://api.github.com/users/coding-horror/orgs",
+    "repos_url": "https://api.github.com/users/coding-horror/repos",
+    "events_url": "https://api.github.com/users/coding-horror/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coding-horror/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "98782744273b9c652723ad9c55d8426cfd20aa7c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/98782744273b9c652723ad9c55d8426cfd20aa7c",
+      "html_url": "https://github.com/discourse/discourse/commit/98782744273b9c652723ad9c55d8426cfd20aa7c"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "45c96abbcd269f0504e7958ee5ad4db1af92f848",
+      "filename": "spec/models/optimized_image_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/96aca20fd7143f050549da2d0257e696a17a1656/spec/models/optimized_image_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/96aca20fd7143f050549da2d0257e696a17a1656/spec/models/optimized_image_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/optimized_image_spec.rb?ref=96aca20fd7143f050549da2d0257e696a17a1656",
+      "patch": "@@ -6,7 +6,7 @@\n \n   unless ENV[\"TRAVIS\"]\n     describe '.crop' do\n-      it 'should work correctly' do\n+      it 'should work correctly (requires correct version of image optim)' do\n         tmp_path = \"/tmp/cropped.png\"\n \n         begin\n@@ -128,7 +128,7 @@\n     end\n \n     describe '.downsize' do\n-      it 'should work correctly' do\n+      it 'should work correctly (requires correct version of image optim)' do\n         tmp_path = \"/tmp/downsized.png\"\n \n         begin"
+    }
+  ]
+}
