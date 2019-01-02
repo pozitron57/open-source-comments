@@ -1,0 +1,98 @@
+{
+  "sha": "d48f7582530444c53f2a250f15ed03290b73c458",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmQ0OGY3NTgyNTMwNDQ0YzUzZjJhMjUwZjE1ZWQwMzI5MGI3M2M0NTg=",
+  "commit": {
+    "author": {
+      "name": "Misha Vyrtsev",
+      "email": "reeywhaar@gmail.com",
+      "date": "2019-01-02T15:40:58Z"
+    },
+    "committer": {
+      "name": "Aleksei Gurianov",
+      "email": "gurianov@gmail.com",
+      "date": "2019-01-02T15:40:58Z"
+    },
+    "message": "Disable voting on read-only posts (#234)",
+    "tree": {
+      "sha": "cc8439f3d96524f55e062bcb2d6ec638752f1e9a",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/cc8439f3d96524f55e062bcb2d6ec638752f1e9a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/d48f7582530444c53f2a250f15ed03290b73c458",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/d48f7582530444c53f2a250f15ed03290b73c458",
+  "html_url": "https://github.com/umputun/remark/commit/d48f7582530444c53f2a250f15ed03290b73c458",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/d48f7582530444c53f2a250f15ed03290b73c458/comments",
+  "author": {
+    "login": "Reeywhaar",
+    "id": 884649,
+    "node_id": "MDQ6VXNlcjg4NDY0OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/884649?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Reeywhaar",
+    "html_url": "https://github.com/Reeywhaar",
+    "followers_url": "https://api.github.com/users/Reeywhaar/followers",
+    "following_url": "https://api.github.com/users/Reeywhaar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Reeywhaar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Reeywhaar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Reeywhaar/subscriptions",
+    "organizations_url": "https://api.github.com/users/Reeywhaar/orgs",
+    "repos_url": "https://api.github.com/users/Reeywhaar/repos",
+    "events_url": "https://api.github.com/users/Reeywhaar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Reeywhaar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Guria",
+    "id": 36270,
+    "node_id": "MDQ6VXNlcjM2Mjcw",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/36270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Guria",
+    "html_url": "https://github.com/Guria",
+    "followers_url": "https://api.github.com/users/Guria/followers",
+    "following_url": "https://api.github.com/users/Guria/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Guria/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Guria/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Guria/subscriptions",
+    "organizations_url": "https://api.github.com/users/Guria/orgs",
+    "repos_url": "https://api.github.com/users/Guria/repos",
+    "events_url": "https://api.github.com/users/Guria/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Guria/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "09b44188cb17d5c3c3840add990452acae9be0c5",
+      "url": "https://api.github.com/repos/umputun/remark/commits/09b44188cb17d5c3c3840add990452acae9be0c5",
+      "html_url": "https://github.com/umputun/remark/commit/09b44188cb17d5c3c3840add990452acae9be0c5"
+    }
+  ],
+  "stats": {
+    "total": 73,
+    "additions": 45,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "271ff73f33687422e38d7ea1a09ee2b60b809942",
+      "filename": "web/app/components/comment/comment.jsx",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 28,
+      "changes": 73,
+      "blob_url": "https://github.com/umputun/remark/blob/d48f7582530444c53f2a250f15ed03290b73c458/web/app/components/comment/comment.jsx",
+      "raw_url": "https://github.com/umputun/remark/raw/d48f7582530444c53f2a250f15ed03290b73c458/web/app/components/comment/comment.jsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/web/app/components/comment/comment.jsx?ref=d48f7582530444c53f2a250f15ed03290b73c458",
+      "patch": "@@ -42,6 +42,10 @@ export default class Comment extends Component {\n     this.onOwnCommentDeleteClick = this.onOwnCommentDeleteClick.bind(this);\n     this.onBlockUserClick = this.onBlockUserClick.bind(this);\n     this.onUnblockUserClick = this.onUnblockUserClick.bind(this);\n+    this.isAdmin = this.isAdmin.bind(this);\n+    this.isCurrentUser = this.isCurrentUser.bind(this);\n+    this.isGuest = this.isGuest.bind(this);\n+    this.getVoteDisabledReason = this.getVoteDisabledReason.bind(this);\n   }\n \n   componentWillReceiveProps(nextProps) {\n@@ -335,10 +339,37 @@ export default class Comment extends Component {\n     });\n   }\n \n+  isAdmin() {\n+    return !this.state.guest && store.get('user').admin;\n+  }\n+\n+  isGuest() {\n+    return this.state.guest || !Object.keys(store.get('user')).length;\n+  }\n+\n+  isCurrentUser() {\n+    return (\n+      (this.props.data && this.props.data.user && this.props.data.user.id) ===\n+      (store.get('user') && store.get('user').id)\n+    );\n+  }\n+\n+  /**\n+   * returns reason for disabled voting\n+   *\n+   * @return {(string|null)}\n+   */\n+  getVoteDisabledReason() {\n+    if (this.isGuest()) return 'Only authorized users are allowed to vote';\n+    const info = store.get('info');\n+    if (info && info.read_only) return \"You can't vote on read-only topics\";\n+    if (this.isCurrentUser()) return \"You can't vote for your own comment\";\n+    return null;\n+  }\n+\n   render(\n     props,\n     {\n-      guest,\n       userBlocked,\n       pinned,\n       score,\n@@ -353,11 +384,13 @@ export default class Comment extends Component {\n     }\n   ) {\n     const { data, mods = {}, isCommentsDisabled } = props;\n-    const isAdmin = !guest && store.get('user').admin;\n-    const isGuest = guest || !Object.keys(store.get('user')).length;\n-    const isCurrentUser = (data.user && data.user.id) === (store.get('user') && store.get('user').id);\n+    const isAdmin = this.isAdmin();\n+    const isGuest = this.isGuest();\n+    const isCurrentUser = this.isCurrentUser();\n     const config = store.get('config') || {};\n     const lowCommentScore = config.low_score;\n+    const votingDisabledReason = this.getVoteDisabledReason();\n+    const isVotingDisabled = votingDisabledReason !== null;\n \n     const o = {\n       ...data,\n@@ -487,20 +520,10 @@ export default class Comment extends Component {\n \n             <span className={b('comment__score', {}, { view: o.score.view })}>\n               <span\n-                className={b(\n-                  'comment__vote',\n-                  {},\n-                  { type: 'up', selected: scoreIncreased, disabled: isGuest || isCurrentUser }\n-                )}\n-                aria-disabled={isGuest || isCurrentUser}\n-                {...getHandleClickProps(isGuest || isCurrentUser ? null : this.increaseScore)}\n-                title={\n-                  isGuest\n-                    ? 'Only authorized users are allowed to vote'\n-                    : isCurrentUser\n-                      ? \"You can't vote for your own comment\"\n-                      : null\n-                }\n+                className={b('comment__vote', {}, { type: 'up', selected: scoreIncreased, disabled: isVotingDisabled })}\n+                aria-disabled={isVotingDisabled ? 'true' : 'false'}\n+                {...getHandleClickProps(isVotingDisabled ? null : this.increaseScore)}\n+                title={votingDisabledReason}\n               >\n                 Vote up\n               </span>\n@@ -511,20 +534,14 @@ export default class Comment extends Component {\n               </span>\n \n               <span\n-                {...getHandleClickProps(isGuest || isCurrentUser ? null : this.decreaseScore)}\n                 className={b(\n                   'comment__vote',\n                   {},\n-                  { type: 'down', selected: scoreDecreased, disabled: isGuest || isCurrentUser }\n+                  { type: 'down', selected: scoreDecreased, disabled: isVotingDisabled }\n                 )}\n-                aria-disabled={isGuest || isCurrentUser ? 'true' : 'false'}\n-                title={\n-                  isGuest\n-                    ? 'Only authorized users are allowed to vote'\n-                    : isCurrentUser\n-                      ? \"You can't vote for your own comment\"\n-                      : null\n-                }\n+                aria-disabled={isVotingDisabled ? 'true' : 'false'}\n+                {...getHandleClickProps(isVotingDisabled ? null : this.decreaseScore)}\n+                title={votingDisabledReason}\n               >\n                 Vote down\n               </span>"
+    }
+  ]
+}
