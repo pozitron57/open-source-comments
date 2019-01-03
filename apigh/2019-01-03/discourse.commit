@@ -1,0 +1,110 @@
+{
+  "sha": "b089ac1537d47624fe690eacc14106c16138a3ae",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiMDg5YWMxNTM3ZDQ3NjI0ZmU2OTBlYWNjMTQxMDZjMTYxMzhhM2Fl",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2019-01-03T13:13:36Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2019-01-03T13:14:02Z"
+    },
+    "message": "FIX: Posting without bump raised an error for TL4",
+    "tree": {
+      "sha": "f912c508d6b5445221b64736c9d267bfd7f7bbd3",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f912c508d6b5445221b64736c9d267bfd7f7bbd3"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b089ac1537d47624fe690eacc14106c16138a3ae",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b089ac1537d47624fe690eacc14106c16138a3ae",
+  "html_url": "https://github.com/discourse/discourse/commit/b089ac1537d47624fe690eacc14106c16138a3ae",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b089ac1537d47624fe690eacc14106c16138a3ae/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4aa399275775758d8afcc3e9ebfd099a6debad1d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/4aa399275775758d8afcc3e9ebfd099a6debad1d",
+      "html_url": "https://github.com/discourse/discourse/commit/4aa399275775758d8afcc3e9ebfd099a6debad1d"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 10,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "0163496b821913a7d48765ba1bca34b79133400b",
+      "filename": "lib/guardian/post_guardian.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/b089ac1537d47624fe690eacc14106c16138a3ae/lib/guardian/post_guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b089ac1537d47624fe690eacc14106c16138a3ae/lib/guardian/post_guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian/post_guardian.rb?ref=b089ac1537d47624fe690eacc14106c16138a3ae",
+      "patch": "@@ -267,6 +267,6 @@ def can_unhide?(post)\n   end\n \n   def can_skip_bump?\n-    is_staff?\n+    is_staff? || @user.has_trust_level?(TrustLevel[4])\n   end\n end"
+    },
+    {
+      "sha": "63f9ba875f50e054640b0c3c1b913fb44718cbc3",
+      "filename": "spec/requests/posts_controller_spec.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 1,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/b089ac1537d47624fe690eacc14106c16138a3ae/spec/requests/posts_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b089ac1537d47624fe690eacc14106c16138a3ae/spec/requests/posts_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/posts_controller_spec.rb?ref=b089ac1537d47624fe690eacc14106c16138a3ae",
+      "patch": "@@ -1160,10 +1160,18 @@\n         include_examples \"it works\"\n       end\n \n+      context \"TL4 users\" do\n+        before do\n+          sign_in(Fabricate(:trust_level_4))\n+        end\n+\n+        include_examples \"it works\"\n+      end\n+\n       context \"users\" do\n         let(:topic) { Fabricate(:topic) }\n \n-        [:user, :trust_level_4].each do |user|\n+        [:user].each do |user|\n           it \"will raise an error for #{user}\" do\n             sign_in(Fabricate(user))\n             post \"/posts.json\", params: {"
+    }
+  ]
+}
