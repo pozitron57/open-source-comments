@@ -1,0 +1,158 @@
+{
+  "sha": "dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmRjZDQwYzQyZTI2MWNhYWZmNTIwOGI5ZjdjMGM4Y2MxNzE2YWM3MzE=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-03T21:58:43Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-03T21:58:43Z"
+    },
+    "message": "vednor with auth 0.2.1 to minimize multiple token refreshes",
+    "tree": {
+      "sha": "6d40efdfcafc78151c930f2d84ffb99b0af89fa2",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/6d40efdfcafc78151c930f2d84ffb99b0af89fa2"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+  "html_url": "https://github.com/umputun/remark/commit/dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "72a264b77178b91e91e3af1ca270a46962cb9412",
+      "url": "https://api.github.com/repos/umputun/remark/commits/72a264b77178b91e91e3af1ca270a46962cb9412",
+      "html_url": "https://github.com/umputun/remark/commit/72a264b77178b91e91e3af1ca270a46962cb9412"
+    }
+  ],
+  "stats": {
+    "total": 57,
+    "additions": 42,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "06f1dacf06219ba1fd6256cbb7e93eb95ae8e6d9",
+      "filename": "backend/Gopkg.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/Gopkg.lock",
+      "raw_url": "https://github.com/umputun/remark/raw/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/Gopkg.lock",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/Gopkg.lock?ref=dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+      "patch": "@@ -112,7 +112,7 @@\n   version = \"v1.0.0\"\n \n [[projects]]\n-  digest = \"1:a4ff2b649472abf046975396ac916b04527fde8d897857c2feea76498aeb762f\"\n+  digest = \"1:6a297f738eb2aaca7c18129040ce7ac2af2db13c49fc948c13be4c692b2f5e19\"\n   name = \"github.com/go-pkgz/auth\"\n   packages = [\n     \".\",\n@@ -123,8 +123,8 @@\n     \"token\",\n   ]\n   pruneopts = \"UT\"\n-  revision = \"855a238343c3bcea84b352fdeb4393576f9eb217\"\n-  version = \"v0.2.0\"\n+  revision = \"3d27762393e5d62d1bd0553d5978226bac2acff7\"\n+  version = \"v0.2.1\"\n \n [[projects]]\n   digest = \"1:1212e114344a5cdcc834ea69e19d456eef230f9784659080fee67e02ba2cb574\""
+    },
+    {
+      "sha": "5d5d8f2645c09a24719e38130264b2e5592a1b63",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/auth.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark/blob/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/auth.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/auth.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/auth.go?ref=dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+      "patch": "@@ -53,8 +53,9 @@ type Opts struct {\n \tAvatarResizeLimit int          // resize avatar's limit in pixels\n \tAvatarRoutePath   string       // avatar routing prefix, i.e. \"/api/v1/avatar\", default `/avatar`\n \n-\tAdminPasswd string   // if presented, allows basic auth with user admin and given password\n-\tLogger      logger.L // logger interface, default is no logging at all\n+\tAdminPasswd   string   // if presented, allows basic auth with user admin and given password\n+\tRefreshFactor int      // estimated number of request client sends in parallel during token refresh.\n+\tLogger        logger.L // logger interface, default is no logging at all\n }\n \n // NewService initializes everything\n@@ -64,8 +65,9 @@ func NewService(opts Opts) (res *Service) {\n \t\topts:   opts,\n \t\tlogger: opts.Logger,\n \t\tauthMiddleware: middleware.Authenticator{\n-\t\t\tValidator:   opts.Validator,\n-\t\t\tAdminPasswd: opts.AdminPasswd,\n+\t\t\tValidator:     opts.Validator,\n+\t\t\tAdminPasswd:   opts.AdminPasswd,\n+\t\t\tRefreshFactor: opts.RefreshFactor,\n \t\t},\n \t\tissuer: opts.Issuer,\n \t}"
+    },
+    {
+      "sha": "7f557b204b27537be7f9da4b168d53fb85c82245",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/middleware/auth.go",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 6,
+      "changes": 28,
+      "blob_url": "https://github.com/umputun/remark/blob/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/middleware/auth.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/middleware/auth.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/middleware/auth.go?ref=dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+      "patch": "@@ -2,6 +2,7 @@\n package middleware\n \n import (\n+\t\"math/rand\"\n \t\"net/http\"\n \n \t\"github.com/pkg/errors\"\n@@ -14,10 +15,11 @@ import (\n // Authenticator is top level auth object providing middlewares\n type Authenticator struct {\n \tlogger.L\n-\tJWTService  TokenService\n-\tProviders   []provider.Service\n-\tValidator   token.Validator\n-\tAdminPasswd string\n+\tJWTService    TokenService\n+\tProviders     []provider.Service\n+\tValidator     token.Validator\n+\tAdminPasswd   string\n+\tRefreshFactor int\n }\n \n // TokenService defines interface accessing tokens\n@@ -96,7 +98,7 @@ func (a *Authenticator) auth(reqAuth bool) func(http.Handler) http.Handler {\n \t\t\t\t\treturn\n \t\t\t\t}\n \n-\t\t\t\tif a.JWTService.IsExpired(claims) {\n+\t\t\t\tif a.shouldRefresh(claims) {\n \t\t\t\t\tif claims, err = a.refreshExpiredToken(w, claims); err != nil {\n \t\t\t\t\t\ta.JWTService.Reset(w)\n \t\t\t\t\t\tonError(h, w, r, errors.Wrap(err, \"can't refresh token\"))\n@@ -117,14 +119,28 @@ func (a *Authenticator) auth(reqAuth bool) func(http.Handler) http.Handler {\n \n // refreshExpiredToken makes a new token with passed claims\n func (a *Authenticator) refreshExpiredToken(w http.ResponseWriter, claims token.Claims) (token.Claims, error) {\n-\n \tclaims.ExpiresAt = 0 // this will cause now+duration for refreshed token\n \tif err := a.JWTService.Set(w, claims); err != nil {\n \t\treturn token.Claims{}, err\n \t}\n \treturn claims, nil\n }\n \n+// shouldRefresh checks if token expired with an optional random rejection of refresh.\n+// the goal is to prevent multiple refresh request executed at the same time by allowing only some of them\n+func (a *Authenticator) shouldRefresh(claims token.Claims) bool {\n+\tif !a.JWTService.IsExpired(claims) {\n+\t\treturn false\n+\t}\n+\n+\t// disable randomizing with 0 factor\n+\tif a.RefreshFactor == 0 {\n+\t\treturn true\n+\t}\n+\n+\treturn rand.Int31n(int32(a.RefreshFactor)) == 0 // randomize selection\n+}\n+\n // AdminOnly middleware allows access for admins only\n // this handler internally wrapped with auth(true) to avoid situation if AdminOnly defined without prior Auth\n func (a *Authenticator) AdminOnly(next http.Handler) http.Handler {"
+    },
+    {
+      "sha": "94dc25250a8190ee12e7209d70fb0fd261deab18",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/provider/dev_provider.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/provider/dev_provider.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/provider/dev_provider.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/provider/dev_provider.go?ref=dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+      "patch": "@@ -130,6 +130,12 @@ func (d *DevAuthServer) Run(ctx context.Context) {\n \t}\n \td.lock.Unlock()\n \n+\tgo func() {\n+\t\t<-ctx.Done()\n+\t\td.Logf(\"[DEBUG] cancellation via context, %v\", ctx.Err())\n+\t\td.Shutdown()\n+\t}()\n+\n \terr = d.httpServer.ListenAndServe()\n \td.Logf(\"[WARN] dev oauth2 server terminated, %s\", err)\n }"
+    },
+    {
+      "sha": "f721c10d14cd6aa87b00728c96567aba850508d6",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/provider/direct.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/provider/direct.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/provider/direct.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/provider/direct.go?ref=dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+      "patch": "@@ -4,7 +4,7 @@ import (\n \t\"errors\"\n \t\"net/http\"\n \n-\tjwt \"github.com/dgrijalva/jwt-go\"\n+\t\"github.com/dgrijalva/jwt-go\"\n \t\"github.com/go-pkgz/rest\"\n \n \t\"github.com/go-pkgz/auth/logger\"\n@@ -72,7 +72,7 @@ func (p DirectHandler) LoginHandler(w http.ResponseWriter, r *http.Request) {\n \trest.RenderJSON(w, r, claims.User)\n }\n \n-// AuthHandler doesn't do anyting for direct login as it has no callbacks\n+// AuthHandler doesn't do anything for direct login as it has no callbacks\n func (p DirectHandler) AuthHandler(w http.ResponseWriter, r *http.Request) {}\n \n // LogoutHandler - GET /logout"
+    },
+    {
+      "sha": "15c91ccf62412b515d2e8a9510f7b5fe036ae1ce",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/token/jwt.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark/blob/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/token/jwt.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dcd40c42e261caaff5208b9f7c0c8cc1716ac731/backend/vendor/github.com/go-pkgz/auth/token/jwt.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/token/jwt.go?ref=dcd40c42e261caaff5208b9f7c0c8cc1716ac731",
+      "patch": "@@ -122,6 +122,9 @@ func (j *Service) Parse(tokenString string) (Claims, error) {\n \t\tif err != nil {\n \t\t\treturn \"\", errors.Wrap(err, \"can't pre-parse token\")\n \t\t}\n+\t\tif _, ok := preToken.Method.(*jwt.SigningMethodHMAC); !ok {\n+\t\t\treturn \"\", errors.Errorf(\"unexpected signing method: %v\", preToken.Header[\"alg\"])\n+\t\t}\n \t\tpreClaims, ok := preToken.Claims.(*Claims)\n \t\tif !ok {\n \t\t\treturn \"\", errors.New(\"invalid token\")"
+    }
+  ]
+}
