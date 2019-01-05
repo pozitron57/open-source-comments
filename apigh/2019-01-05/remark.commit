@@ -1,0 +1,134 @@
+{
+  "sha": "690a0aa763a259277e74cc51be0705f5c857581e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjY5MGEwYWE3NjNhMjU5Mjc3ZTc0Y2M1MWJlMDcwNWY1Yzg1NzU4MWU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-05T10:24:49Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-05T10:24:49Z"
+    },
+    "message": "add post title to comment",
+    "tree": {
+      "sha": "623ad0220c2923937ee109fdc287b88a45f48016",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/623ad0220c2923937ee109fdc287b88a45f48016"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/690a0aa763a259277e74cc51be0705f5c857581e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/690a0aa763a259277e74cc51be0705f5c857581e",
+  "html_url": "https://github.com/umputun/remark/commit/690a0aa763a259277e74cc51be0705f5c857581e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/690a0aa763a259277e74cc51be0705f5c857581e/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b54b00c010a7a7b00c3a0b9d6c7a50af11482f0",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7b54b00c010a7a7b00c3a0b9d6c7a50af11482f0",
+      "html_url": "https://github.com/umputun/remark/commit/7b54b00c010a7a7b00c3a0b9d6c7a50af11482f0"
+    }
+  ],
+  "stats": {
+    "total": 154,
+    "additions": 154,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c62eeebaf9857afef7a330c16c26fd48876e5d24",
+      "filename": "backend/app/store/comment.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/comment.go",
+      "raw_url": "https://github.com/umputun/remark/raw/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/comment.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/comment.go?ref=690a0aa763a259277e74cc51be0705f5c857581e",
+      "patch": "@@ -22,6 +22,7 @@ type Comment struct {\n \tEdit      *Edit           `json:\"edit,omitempty\" bson:\"edit,omitempty\"` // pointer to have empty default in json response\n \tPin       bool            `json:\"pin,omitempty\" bson:\"pin,omitempty\"`\n \tDeleted   bool            `json:\"delete,omitempty\" bson:\"delete\"`\n+\tPostTitle string          `json:\"title,omitempty\" bson:\"title\"`\n }\n \n // Locator keeps site and url of the post"
+    },
+    {
+      "sha": "3ffbdb274be30ca4b714dbdf6fd901f02999f77b",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/service/service.go",
+      "raw_url": "https://github.com/umputun/remark/raw/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/service/service.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service.go?ref=690a0aa763a259277e74cc51be0705f5c857581e",
+      "patch": "@@ -21,6 +21,7 @@ type DataStore struct {\n \tAdminStore     admin.Store\n \tMaxCommentSize int\n \tMaxVotes       int\n+\tTitleExtractor TitleExtractor\n \n \t// granular locks\n \tscopedLocks struct {\n@@ -58,6 +59,9 @@ func (s *DataStore) Create(comment store.Comment) (commentID string, err error)\n \t\treturn \"\", errors.Wrap(err, \"failed to prepare comment\")\n \t}\n \n+\tif title, err := s.TitleExtractor.Get(comment.Locator.URL); err == nil {\n+\t\tcomment.PostTitle = title\n+\t}\n \treturn s.Interface.Create(comment)\n }\n "
+    },
+    {
+      "sha": "5145ff58efbb29ba57548a5107478c592b3919f7",
+      "filename": "backend/app/store/service/title.go",
+      "status": "added",
+      "additions": 86,
+      "deletions": 0,
+      "changes": 86,
+      "blob_url": "https://github.com/umputun/remark/blob/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/service/title.go",
+      "raw_url": "https://github.com/umputun/remark/raw/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/service/title.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/title.go?ref=690a0aa763a259277e74cc51be0705f5c857581e",
+      "patch": "@@ -0,0 +1,86 @@\n+package service\n+\n+import (\n+\t\"io\"\n+\t\"log\"\n+\t\"net/http\"\n+\n+\t\"github.com/go-pkgz/rest/cache\"\n+\t\"github.com/pkg/errors\"\n+\t\"golang.org/x/net/html\"\n+)\n+\n+// TitleExtractor gets html title from remote page, cached\n+type TitleExtractor struct {\n+\tclient http.Client\n+\tcache  cache.LoadingCache\n+}\n+\n+// NewTitleExtractor makes extractor with cache. If memory cache failed, switching to no-cache\n+func NewTitleExtractor(client http.Client) *TitleExtractor {\n+\tres := TitleExtractor{\n+\t\tclient: client,\n+\t}\n+\tvar err error\n+\tres.cache, err = cache.NewMemoryCache(cache.MaxKeys(1000))\n+\tif err != nil {\n+\t\tlog.Printf(\"[WARN] failed to make cache, %v\", err)\n+\t\tres.cache = &cache.Nop{}\n+\t}\n+\treturn &res\n+}\n+\n+// Get page for url and return title\n+func (t *TitleExtractor) Get(url string) (string, error) {\n+\n+\tb, err := t.cache.Get(cache.NewKey(\"site\").ID(url), func() ([]byte, error) {\n+\t\tresp, err := t.client.Get(url)\n+\t\tif err != nil {\n+\t\t\treturn nil, errors.Wrapf(err, \"failed to load page %s\", url)\n+\t\t}\n+\t\tdefer resp.Body.Close()\n+\t\tif resp.StatusCode != 200 {\n+\t\t\treturn nil, errors.Errorf(\"can't load page %s, code %d\", url, resp.StatusCode)\n+\t\t}\n+\n+\t\ttitle, ok := t.getTitle(resp.Body)\n+\t\tif !ok {\n+\t\t\treturn nil, errors.Errorf(\"can't get title for %s\", url)\n+\t\t}\n+\t\treturn []byte(title), nil\n+\t})\n+\n+\tif err != nil {\n+\t\treturn \"\", err\n+\t}\n+\n+\treturn string(b), nil\n+}\n+\n+// get title from body reader, traverse recursively\n+func (t *TitleExtractor) getTitle(r io.Reader) (string, bool) {\n+\tdoc, err := html.Parse(r)\n+\tif err != nil {\n+\t\tlog.Printf(\"[WARN] can't get header, %+v\", err)\n+\t\treturn \"\", false\n+\t}\n+\treturn t.traverse(doc)\n+}\n+\n+func (t *TitleExtractor) isTitleElement(n *html.Node) bool {\n+\treturn n.Type == html.ElementNode && n.Data == \"title\"\n+}\n+\n+func (t *TitleExtractor) traverse(n *html.Node) (string, bool) {\n+\tif t.isTitleElement(n) {\n+\t\treturn n.FirstChild.Data, true\n+\t}\n+\n+\tfor c := n.FirstChild; c != nil; c = c.NextSibling {\n+\t\tresult, ok := t.traverse(c)\n+\t\tif ok {\n+\t\t\treturn result, ok\n+\t\t}\n+\t}\n+\treturn \"\", false\n+}"
+    },
+    {
+      "sha": "a5a35c7447297e3b972876119b2817a882c04fb1",
+      "filename": "backend/app/store/service/title_test.go",
+      "status": "added",
+      "additions": 63,
+      "deletions": 0,
+      "changes": 63,
+      "blob_url": "https://github.com/umputun/remark/blob/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/service/title_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/690a0aa763a259277e74cc51be0705f5c857581e/backend/app/store/service/title_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/title_test.go?ref=690a0aa763a259277e74cc51be0705f5c857581e",
+      "patch": "@@ -0,0 +1,63 @@\n+package service\n+\n+import (\n+\t\"fmt\"\n+\t\"net/http\"\n+\t\"net/http/httptest\"\n+\t\"strings\"\n+\t\"sync/atomic\"\n+\t\"testing\"\n+\t\"time\"\n+\n+\t\"github.com/stretchr/testify/assert\"\n+\t\"github.com/stretchr/testify/require\"\n+)\n+\n+func TestTitle_GetTitle(t *testing.T) {\n+\n+\ttbl := []struct {\n+\t\tpage  string\n+\t\tok    bool\n+\t\ttitle string\n+\t}{\n+\t\t{`<html><title>blah 123</title><body> 2222</body></html>`, true, \"blah 123\"},\n+\t\t{`<html><title>blah 123 `, true, \"blah 123 \"},\n+\t\t{`<html><body> 2222</body></html>`, false, \"\"},\n+\t}\n+\n+\tex := NewTitleExtractor(http.Client{Timeout: 5 * time.Second})\n+\tfor i, tt := range tbl {\n+\t\tt.Run(fmt.Sprintf(\"check-%d\", i), func(t *testing.T) {\n+\t\t\ttitle, ok := ex.getTitle(strings.NewReader(tt.page))\n+\t\t\tassert.Equal(t, tt.ok, ok)\n+\t\t\tassert.Equal(t, tt.title, title)\n+\t\t})\n+\t}\n+}\n+\n+func TestTitle_Get(t *testing.T) {\n+\tex := NewTitleExtractor(http.Client{Timeout: 5 * time.Second})\n+\tvar hits int32\n+\tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n+\t\tif r.URL.String() == \"/good\" {\n+\t\t\tatomic.AddInt32(&hits, 1)\n+\t\t\tw.Write([]byte(\"<html><title>blah 123</title><body> 2222</body></html>\"))\n+\t\t\treturn\n+\t\t}\n+\t\tw.WriteHeader(404)\n+\t}))\n+\n+\ttitle, err := ex.Get(ts.URL + \"/good\")\n+\trequire.Nil(t, err)\n+\tassert.Equal(t, \"blah 123\", title)\n+\n+\t_, err = ex.Get(ts.URL + \"/bad\")\n+\trequire.NotNil(t, err)\n+\n+\tfor i := 0; i < 100; i++ {\n+\t\ttitle, err := ex.Get(ts.URL + \"/good\")\n+\t\trequire.Nil(t, err)\n+\t\tassert.Equal(t, \"blah 123\", title)\n+\t}\n+\tassert.Equal(t, int32(1), atomic.LoadInt32(&hits))\n+}"
+    }
+  ]
+}
