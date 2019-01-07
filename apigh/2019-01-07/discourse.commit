@@ -1,0 +1,146 @@
+{
+  "sha": "e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplMGJjODI2NTdiMzY3NzZjZjc1NWZkYTYyZDFiYmNiZWQxOWRmMWU5",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-01-07T08:52:08Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-01-07T08:52:08Z"
+    },
+    "message": "FIX: better accept invite flow when user is invited via a link",
+    "tree": {
+      "sha": "9b2bb6abf680e2eb61e779c0148fbe5eda96537b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9b2bb6abf680e2eb61e779c0148fbe5eda96537b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+  "html_url": "https://github.com/discourse/discourse/commit/e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e0bc82657b36776cf755fda62d1bbcbed19df1e9/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "77d947701c870cb4bd4ec7cb8e9786962c5bf58e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/77d947701c870cb4bd4ec7cb8e9786962c5bf58e",
+      "html_url": "https://github.com/discourse/discourse/commit/77d947701c870cb4bd4ec7cb8e9786962c5bf58e"
+    }
+  ],
+  "stats": {
+    "total": 32,
+    "additions": 18,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "128269b8e6b2d56a2a792fa4935994d75c8a8966",
+      "filename": "app/assets/javascripts/discourse/controllers/invites-show.js.es6",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/e0bc82657b36776cf755fda62d1bbcbed19df1e9/app/assets/javascripts/discourse/controllers/invites-show.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/e0bc82657b36776cf755fda62d1bbcbed19df1e9/app/assets/javascripts/discourse/controllers/invites-show.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/invites-show.js.es6?ref=e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+      "patch": "@@ -94,8 +94,9 @@ export default Ember.Controller.extend(\n                 \"successMessage\",\n                 result.message || I18n.t(\"invites.success\")\n               );\n-              this.set(\"redirectTo\", result.redirect_to);\n-              DiscourseURL.redirectTo(result.redirect_to || \"/\");\n+              if (result.redirect_to) {\n+                DiscourseURL.redirectTo(result.redirect_to || \"/\");\n+              }\n             } else {\n               if (\n                 result.errors &&"
+    },
+    {
+      "sha": "e8877238d36f946dba5604ed16d062d3f4ac8dd3",
+      "filename": "app/assets/javascripts/discourse/templates/invites/show.hbs",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 6,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/e0bc82657b36776cf755fda62d1bbcbed19df1e9/app/assets/javascripts/discourse/templates/invites/show.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/e0bc82657b36776cf755fda62d1bbcbed19df1e9/app/assets/javascripts/discourse/templates/invites/show.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/invites/show.hbs?ref=e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+      "patch": "@@ -8,13 +8,12 @@\n     </div>\n \n     <div class=\"col-form\">\n-      <p>{{i18n 'invites.invited_by'}}</p>\n-\n-      <p>{{user-info user=invitedBy}}</p>\n-\n       {{#if successMessage}}\n-        <p>{{successMessage}}</p>\n+        <br/><br/>\n+        <div class='alert alert-info'><p>{{{successMessage}}}</p></div>\n       {{else}}\n+        <p>{{i18n 'invites.invited_by'}}</p>\n+        <p>{{user-info user=invitedBy}}</p>\n \n         <p>{{{yourEmailMessage}}}\n         {{#if externalAuthsEnabled}}\n@@ -63,7 +62,6 @@\n             <br/><br/>\n             <div class='alert alert-error'>{{errorMessage}}</div>\n           {{/if}}\n-\n         </form>\n       {{/if}}\n     </div>"
+    },
+    {
+      "sha": "a178e401dac1463c46228aba7991050cec97b027",
+      "filename": "app/controllers/invites_controller.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 6,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/e0bc82657b36776cf755fda62d1bbcbed19df1e9/app/controllers/invites_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e0bc82657b36776cf755fda62d1bbcbed19df1e9/app/controllers/invites_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/invites_controller.rb?ref=e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+      "patch": "@@ -47,16 +47,19 @@ def perform_accept_invitation\n       begin\n         user = invite.redeem(username: params[:username], name: params[:name], password: params[:password], user_custom_fields: params[:user_custom_fields])\n         if user.present?\n-          log_on_user(user)\n+          log_on_user(user) if user.active?\n           post_process_invite(user)\n         end\n \n-        topic = user.present? ? invite.topics.first : nil\n+        response = { success: true }\n+        if user.present? && user.active?\n+          topic = invite.topics.first\n+          response[:redirect_to] = topic.present? ? path(\"#{topic.relative_url}\") : path(\"/\")\n+        else\n+          response[:message] = I18n.t('invite.confirm_email')\n+        end\n \n-        render json: {\n-          success: true,\n-          redirect_to: topic.present? ? path(\"#{topic.relative_url}\") : path(\"/\")\n-        }\n+        render json: response\n       rescue ActiveRecord::RecordInvalid, ActiveRecord::RecordNotSaved => e\n         render json: {\n           success: false,"
+    },
+    {
+      "sha": "743a573e480fcdeaff93d018cc17b834af881954",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/e0bc82657b36776cf755fda62d1bbcbed19df1e9/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/e0bc82657b36776cf755fda62d1bbcbed19df1e9/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+      "patch": "@@ -185,6 +185,7 @@ en:\n \n       <p>Otherwise please <a href=\"%{base_url}/password-reset\">Reset Password</a>.</p>\n     user_exists: \"There's no need to invite <b>%{email}</b>, they <a href='%{base_path}/u/%{username}/summary'>already have an account!</a>\"\n+    confirm_email: \"<p>You’re almost done! We sent an activation mail to your email address. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>\"\n \n   bulk_invite:\n     file_should_be_csv: \"The uploaded file should be of csv format.\""
+    },
+    {
+      "sha": "b814df7234b68ed21a8a1c9b9672b69ecefb73c2",
+      "filename": "spec/requests/invites_controller_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/e0bc82657b36776cf755fda62d1bbcbed19df1e9/spec/requests/invites_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e0bc82657b36776cf755fda62d1bbcbed19df1e9/spec/requests/invites_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/invites_controller_spec.rb?ref=e0bc82657b36776cf755fda62d1bbcbed19df1e9",
+      "patch": "@@ -355,6 +355,7 @@\n                 put \"/invites/show/#{invite.invite_key}.json\", params: { password: \"verystrongpassword\" }\n                 expect(response.status).to eq(200)\n                 expect(JSON.parse(response.body)[\"success\"]).to eq(true)\n+                expect(JSON.parse(response.body)[\"message\"]).to eq(I18n.t(\"invite.confirm_email\"))\n \n                 invited_user = User.find_by_email(invite.email)\n                 expect(invited_user.active).to eq(false)"
+    }
+  ]
+}
