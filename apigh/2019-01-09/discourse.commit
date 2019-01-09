@@ -1,0 +1,110 @@
+{
+  "sha": "8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4YjNkZGNmNjQ2YjFkODJlNGM5NjM3MWRmZmIyZDY3NzlhOGU4Y2U1",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-01-09T15:59:35Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-01-09T15:59:35Z"
+    },
+    "message": "FIX: Add topic status to flagged topics list\n\nPreviously at a glance it was impossible to tell if a topic was closed\nbefore digging deeper.",
+    "tree": {
+      "sha": "f914dbbba2888a7fabd1a94a2c05f95e015b58d0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f914dbbba2888a7fabd1a94a2c05f95e015b58d0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5",
+  "html_url": "https://github.com/discourse/discourse/commit/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1f12a377fabace8aafc780dc9b6818f1e017b64f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/1f12a377fabace8aafc780dc9b6818f1e017b64f",
+      "html_url": "https://github.com/discourse/discourse/commit/1f12a377fabace8aafc780dc9b6818f1e017b64f"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 13,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "73cd022fc1479f7af56fab059168aad82780867a",
+      "filename": "app/assets/javascripts/admin/templates/flags-topics-index.hbs",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5/app/assets/javascripts/admin/templates/flags-topics-index.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5/app/assets/javascripts/admin/templates/flags-topics-index.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/flags-topics-index.hbs?ref=8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5",
+      "patch": "@@ -16,7 +16,10 @@\n         {{plugin-outlet name=\"flagged-topic-row\" noTags=true args=(hash topic=ft.topic)}}\n \n         <td class=\"topic-title\">\n-          <a href={{ft.topic.relative_url}} target=\"_blank\">{{replace-emoji ft.topic.fancy_title}}</a>\n+          <div class='combined-title'>\n+            {{topic-status topic=ft.topic}}\n+            <a href={{ft.topic.relative_url}} target=\"_blank\">{{replace-emoji ft.topic.fancy_title}}</a>\n+          </div>\n         </td>\n         <td class=\"flag-counts\">\n           {{#each ft.flag_counts as |fc|}}"
+    },
+    {
+      "sha": "f1010ddc35f9c62f632f845c7c842e8b18ee5839",
+      "filename": "app/assets/stylesheets/common/admin/flagging.scss",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5/app/assets/stylesheets/common/admin/flagging.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5/app/assets/stylesheets/common/admin/flagging.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/admin/flagging.scss?ref=8b3ddcf646b1d82e4c96371dffb2d6779a8e8ce5",
+      "patch": "@@ -191,7 +191,7 @@\n   }\n }\n \n-.flag-counts {\n+div.flag-counts {\n   display: inline-block;\n   margin-right: 0.5em;\n \n@@ -204,9 +204,16 @@\n .flagged-topic {\n   td.topic-title {\n     width: 400px;\n+\n+    .combined-title {\n+      .d-icon {\n+        margin-right: 0.5em;\n+      }\n+      display: flex;\n+    }\n+\n     a {\n       width: 400px;\n-      display: inline-block;\n       text-overflow: ellipsis;\n       overflow: hidden;\n       white-space: nowrap;"
+    }
+  ]
+}
