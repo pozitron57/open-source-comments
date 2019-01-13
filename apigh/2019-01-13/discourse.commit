@@ -1,0 +1,98 @@
+{
+  "sha": "098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowOThiNmQ5MzY0YTJiNmI1MGMyZTNkOGJmMjVmMDlmMjUxNWM4YTky",
+  "commit": {
+    "author": {
+      "name": "Jeff Atwood",
+      "email": "jatwood@codinghorror.com",
+      "date": "2019-01-13T12:33:32Z"
+    },
+    "committer": {
+      "name": "Jeff Atwood",
+      "email": "jatwood@codinghorror.com",
+      "date": "2019-01-13T12:33:32Z"
+    },
+    "message": "remove bullets on discobot oneboxing step",
+    "tree": {
+      "sha": "db8f090a6e8a6f518b0a5cf97f31681409e810e1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/db8f090a6e8a6f518b0a5cf97f31681409e810e1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92",
+  "html_url": "https://github.com/discourse/discourse/commit/098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92/comments",
+  "author": {
+    "login": "coding-horror",
+    "id": 1522517,
+    "node_id": "MDQ6VXNlcjE1MjI1MTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1522517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coding-horror",
+    "html_url": "https://github.com/coding-horror",
+    "followers_url": "https://api.github.com/users/coding-horror/followers",
+    "following_url": "https://api.github.com/users/coding-horror/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coding-horror/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coding-horror/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coding-horror/subscriptions",
+    "organizations_url": "https://api.github.com/users/coding-horror/orgs",
+    "repos_url": "https://api.github.com/users/coding-horror/repos",
+    "events_url": "https://api.github.com/users/coding-horror/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coding-horror/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "coding-horror",
+    "id": 1522517,
+    "node_id": "MDQ6VXNlcjE1MjI1MTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1522517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coding-horror",
+    "html_url": "https://github.com/coding-horror",
+    "followers_url": "https://api.github.com/users/coding-horror/followers",
+    "following_url": "https://api.github.com/users/coding-horror/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coding-horror/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coding-horror/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coding-horror/subscriptions",
+    "organizations_url": "https://api.github.com/users/coding-horror/orgs",
+    "repos_url": "https://api.github.com/users/coding-horror/repos",
+    "events_url": "https://api.github.com/users/coding-horror/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coding-horror/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "47cbfb14989bcf828c66b211827cb9355214e71a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/47cbfb14989bcf828c66b211827cb9355214e71a",
+      "html_url": "https://github.com/discourse/discourse/commit/47cbfb14989bcf828c66b211827cb9355214e71a"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "00b1bf1d84a60ca4ca5d0274b52a5093474a955a",
+      "filename": "plugins/discourse-narrative-bot/config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92/plugins/discourse-narrative-bot/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92/plugins/discourse-narrative-bot/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/config/locales/server.en.yml?ref=098b6d9364a2b6b50c2e3d8bf25f09f2515c8a92",
+      "patch": "@@ -163,11 +163,11 @@ en:\n         instructions: |-\n           Next, can you share one of these links with me? Reply with **a link on a line by itself**, and it’ll automatically expand to include a nifty summary.\n \n-          To copy a link, tap and hold on mobile, or right click your mouse:\n+          To copy any link, tap and hold on mobile, or right click your pointing device:\n \n-          - https://en.wikipedia.org/wiki/Inherently_funny_word\n-          - https://en.wikipedia.org/wiki/Death_by_coconut\n-          - https://en.wikipedia.org/wiki/Calculator_spelling\n+           <https://en.wikipedia.org/wiki/Inherently_funny_word>\n+           <https://en.wikipedia.org/wiki/Death_by_coconut>\n+           <https://en.wikipedia.org/wiki/Calculator_spelling>\n         reply: |-\n           Cool! This will work for most <img src=\"%{base_uri}/plugins/discourse-narrative-bot/images/font-awesome-link.png\" width=\"16\" height=\"16\"> links. Remember, it must be on a line _all by itself_, with nothing else in front, or behind.\n         not_found: |-"
+    }
+  ]
+}
