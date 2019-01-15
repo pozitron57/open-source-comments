@@ -1,0 +1,98 @@
+{
+  "sha": "e9585dc568c1ed027cc8e51f5fee5c05193e6691",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmU5NTg1ZGM1NjhjMWVkMDI3Y2M4ZTUxZjVmZWU1YzA1MTkzZTY2OTE=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-14T22:14:02Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-14T22:14:02Z"
+    },
+    "message": "pass default logger to rest",
+    "tree": {
+      "sha": "279867c433ec9222bac9632504d26c0c8a1d7558",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/279867c433ec9222bac9632504d26c0c8a1d7558"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/e9585dc568c1ed027cc8e51f5fee5c05193e6691",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/e9585dc568c1ed027cc8e51f5fee5c05193e6691",
+  "html_url": "https://github.com/umputun/remark/commit/e9585dc568c1ed027cc8e51f5fee5c05193e6691",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/e9585dc568c1ed027cc8e51f5fee5c05193e6691/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "177b71655dee5b4f05de89958f5d86aeb166fa24",
+      "url": "https://api.github.com/repos/umputun/remark/commits/177b71655dee5b4f05de89958f5d86aeb166fa24",
+      "html_url": "https://github.com/umputun/remark/commit/177b71655dee5b4f05de89958f5d86aeb166fa24"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 5,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "78e6bc383026c7595e0cc5bce09df0c9a5c5707b",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/e9585dc568c1ed027cc8e51f5fee5c05193e6691/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark/raw/e9585dc568c1ed027cc8e51f5fee5c05193e6691/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest.go?ref=e9585dc568c1ed027cc8e51f5fee5c05193e6691",
+      "patch": "@@ -182,7 +182,7 @@ func (s *Rest) routes() chi.Router {\n \tauthHandler, avatarHandler := s.Authenticator.Handlers()\n \n \trouter.Group(func(r chi.Router) {\n-\t\tl := logger.New(logger.Flags(logger.All), logger.IPfn(ipFn), logger.Prefix(\"[INFO]\"))\n+\t\tl := logger.New(logger.Flags(logger.All), logger.Log(log.Default()), logger.IPfn(ipFn), logger.Prefix(\"[INFO]\"))\n \t\tr.Use(l.Handler, tollbooth_chi.LimitHandler(tollbooth.NewLimiter(5, nil)))\n \t\tr.Mount(\"/auth\", authHandler)\n \t})\n@@ -206,7 +206,8 @@ func (s *Rest) routes() chi.Router {\n \t\trapi.Group(func(ropen chi.Router) {\n \t\t\tropen.Use(tollbooth_chi.LimitHandler(tollbooth.NewLimiter(10, nil)))\n \t\t\tropen.Use(authMiddleware.Trace)\n-\t\t\tropen.Use(logger.New(logger.Flags(logger.All), logger.Prefix(\"[INFO]\"), logger.IPfn(ipFn)).Handler)\n+\t\t\tropen.Use(logger.New(logger.Flags(logger.All), logger.Log(log.Default()),\n+\t\t\t\tlogger.Prefix(\"[INFO]\"), logger.IPfn(ipFn)).Handler)\n \t\t\tropen.Get(\"/find\", s.findCommentsCtrl)\n \t\t\tropen.Get(\"/id/{id}\", s.commentByIDCtrl)\n \t\t\tropen.Get(\"/comments\", s.findUserCommentsCtrl)\n@@ -226,7 +227,8 @@ func (s *Rest) routes() chi.Router {\n \t\trapi.Group(func(rauth chi.Router) {\n \t\t\trauth.Use(tollbooth_chi.LimitHandler(tollbooth.NewLimiter(10, nil)))\n \t\t\trauth.Use(authMiddleware.Auth)\n-\t\t\trauth.Use(logger.New(logger.Flags(logger.All), logger.Prefix(\"[INFO]\"), logger.IPfn(ipFn)).Handler)\n+\t\t\trauth.Use(logger.New(logger.Flags(logger.All), logger.Log(log.Default()),\n+\t\t\t\tlogger.Prefix(\"[INFO]\"), logger.IPfn(ipFn)).Handler)\n \t\t\trauth.Post(\"/comment\", s.createCommentCtrl)\n \t\t\trauth.Put(\"/comment/{id}\", s.updateCommentCtrl)\n \t\t\trauth.Get(\"/user\", s.userInfoCtrl)"
+    }
+  ]
+}
