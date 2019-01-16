@@ -1,0 +1,110 @@
+{
+  "sha": "dff266ec01d9966d8002f096a027a490d26e1b37",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmRmZjI2NmVjMDFkOTk2NmQ4MDAyZjA5NmEwMjdhNDkwZDI2ZTFiMzc=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-15T23:05:30Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-15T23:05:30Z"
+    },
+    "message": "add detection of reply and disable edit for such comments #248",
+    "tree": {
+      "sha": "1dc01243f7889f42c7864f82aaaeb0b6fa1a6dab",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/1dc01243f7889f42c7864f82aaaeb0b6fa1a6dab"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/dff266ec01d9966d8002f096a027a490d26e1b37",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/dff266ec01d9966d8002f096a027a490d26e1b37",
+  "html_url": "https://github.com/umputun/remark/commit/dff266ec01d9966d8002f096a027a490d26e1b37",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/dff266ec01d9966d8002f096a027a490d26e1b37/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "367c3d0cc21e768adb7de59b6ffdba33cce117d4",
+      "url": "https://api.github.com/repos/umputun/remark/commits/367c3d0cc21e768adb7de59b6ffdba33cce117d4",
+      "html_url": "https://github.com/umputun/remark/commit/367c3d0cc21e768adb7de59b6ffdba33cce117d4"
+    }
+  ],
+  "stats": {
+    "total": 83,
+    "additions": 82,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f2e17e4fd0e7bb57332520b7387eb783b558dc47",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/umputun/remark/blob/dff266ec01d9966d8002f096a027a490d26e1b37/backend/app/store/service/service.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dff266ec01d9966d8002f096a027a490d26e1b37/backend/app/store/service/service.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service.go?ref=dff266ec01d9966d8002f096a027a490d26e1b37",
+      "patch": "@@ -49,6 +49,7 @@ type PostMetaData struct {\n }\n \n const defaultCommentMaxSize = 2000\n+const maxLastCommentsReply = 1000\n \n // UnlimitedVotes doesn't restrict MaxVotes\n const UnlimitedVotes = -1\n@@ -179,6 +180,10 @@ func (s *DataStore) EditComment(locator store.Locator, commentID string, req Edi\n \t\treturn comment, errors.Errorf(\"too late to edit %s\", commentID)\n \t}\n \n+\tif s.HasReplies(comment) {\n+\t\treturn comment, errors.Errorf(\"parent comment with reply can't be edited, %s\", commentID)\n+\t}\n+\n \tif req.Delete { // delete request\n \t\tcomment.Deleted = true\n \t\treturn comment, s.Delete(locator, commentID, store.SoftDelete)\n@@ -196,6 +201,26 @@ func (s *DataStore) EditComment(locator store.Locator, commentID string, req Edi\n \treturn comment, err\n }\n \n+// HasReplies checks if there is any reply to the comments\n+// Loads last maxLastCommentsReply comments and compare parent id to the comment's id\n+// TODO: add caching?\n+func (s *DataStore) HasReplies(comment store.Comment) bool {\n+\tcomments, err := s.Last(comment.Locator.SiteID, maxLastCommentsReply)\n+\tif err != nil {\n+\t\tlog.Printf(\"[WARN] can't get last comments for reply check, %v\", err)\n+\t\treturn false\n+\t}\n+\n+\tfor _, c := range comments {\n+\t\tif c.ParentID != \"\" && !c.Deleted && c.User.ID != comment.User.ID { // not interested in replies to yourself and top level\n+\t\t\tif c.ParentID == comment.ID {\n+\t\t\t\treturn true\n+\t\t\t}\n+\t\t}\n+\t}\n+\treturn false\n+}\n+\n // SetTitle puts title from the locator.URL page and overwrites any existing title\n func (s *DataStore) SetTitle(locator store.Locator, commentID string) (comment store.Comment, err error) {\n \tif s.TitleExtractor == nil {"
+    },
+    {
+      "sha": "ee5454c16129b246b3562a4bd791045a56c56d89",
+      "filename": "backend/app/store/service/service_test.go",
+      "status": "modified",
+      "additions": 57,
+      "deletions": 1,
+      "changes": 58,
+      "blob_url": "https://github.com/umputun/remark/blob/dff266ec01d9966d8002f096a027a490d26e1b37/backend/app/store/service/service_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/dff266ec01d9966d8002f096a027a490d26e1b37/backend/app/store/service/service_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service_test.go?ref=dff266ec01d9966d8002f096a027a490d26e1b37",
+      "patch": "@@ -12,7 +12,7 @@ import (\n \t\"testing\"\n \t\"time\"\n \n-\t\"github.com/coreos/bbolt\"\n+\tbolt \"github.com/coreos/bbolt\"\n \t\"github.com/pkg/errors\"\n \t\"github.com/stretchr/testify/assert\"\n \t\"github.com/stretchr/testify/require\"\n@@ -404,6 +404,32 @@ func TestService_EditCommentDurationFailed(t *testing.T) {\n \tassert.NotNil(t, err)\n }\n \n+func TestService_EditCommentReplyFailed(t *testing.T) {\n+\tdefer os.Remove(testDb)\n+\tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n+\n+\tres, err := b.Last(\"radio-t\", 0)\n+\tt.Logf(\"%+v\", res[1])\n+\tassert.Nil(t, err)\n+\tassert.Equal(t, 2, len(res))\n+\tassert.Nil(t, res[1].Edit)\n+\n+\treply := store.Comment{\n+\t\tID:        \"123456\",\n+\t\tParentID:  \"id-1\",\n+\t\tText:      \"some text\",\n+\t\tTimestamp: time.Date(2017, 12, 20, 15, 18, 22, 0, time.Local),\n+\t\tLocator:   store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"},\n+\t\tUser:      store.User{ID: \"user2\", Name: \"user name 2\"},\n+\t}\n+\t_, err = b.Create(reply)\n+\tassert.NoError(t, err)\n+\n+\t_, err = b.EditComment(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, res[1].ID,\n+\t\tEditRequest{Orig: \"yyy\", Text: \"xxx\", Summary: \"my edit\"})\n+\tassert.EqualError(t, err, \"parent comment with reply can't be edited, id-1\")\n+}\n+\n func TestService_ValidateComment(t *testing.T) {\n \n \tb := DataStore{MaxCommentSize: 2000, AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n@@ -523,6 +549,36 @@ func TestService_IsAdmin(t *testing.T) {\n \tassert.True(t, b.IsAdmin(\"radio-t\", \"user2\"))\n }\n \n+func TestService_HasReplies(t *testing.T) {\n+\tdefer os.Remove(testDb)\n+\n+\t// two comments for https://radio-t.com, no reply\n+\tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond,\n+\t\tAdminStore: admin.NewStaticStore(\"secret 123\", []string{\"user2\"}, \"user@email.com\")}\n+\n+\tcomment := store.Comment{\n+\t\tID:        \"id-1\",\n+\t\tText:      `some text, <a href=\"http://radio-t.com\">link</a>`,\n+\t\tTimestamp: time.Date(2017, 12, 20, 15, 18, 22, 0, time.Local),\n+\t\tLocator:   store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"},\n+\t\tUser:      store.User{ID: \"user1\", Name: \"user name\"},\n+\t}\n+\n+\tassert.False(t, b.HasReplies(comment))\n+\n+\treply := store.Comment{\n+\t\tID:        \"123456\",\n+\t\tParentID:  \"id-1\",\n+\t\tText:      \"some text\",\n+\t\tTimestamp: time.Date(2017, 12, 20, 15, 18, 22, 0, time.Local),\n+\t\tLocator:   store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"},\n+\t\tUser:      store.User{ID: \"user2\", Name: \"user name 2\"},\n+\t}\n+\t_, err := b.Create(reply)\n+\tassert.NoError(t, err)\n+\tassert.True(t, b.HasReplies(comment))\n+}\n+\n // makes new boltdb, put two records\n func prepStoreEngine(t *testing.T) engine.Interface {\n \tos.Remove(testDb)"
+    }
+  ]
+}
