@@ -1,0 +1,98 @@
+{
+  "sha": "168088445f153554382ea2fb03fcf99f75f8fdaa",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjE2ODA4ODQ0NWYxNTM1NTQzODJlYTJmYjAzZmNmOTlmNzVmOGZkYWE=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-17T07:20:19Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-17T07:20:19Z"
+    },
+    "message": "add caching for replied ids",
+    "tree": {
+      "sha": "65bdf55c8afc1144bafcc15f55398ae1db753821",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/65bdf55c8afc1144bafcc15f55398ae1db753821"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/168088445f153554382ea2fb03fcf99f75f8fdaa",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/168088445f153554382ea2fb03fcf99f75f8fdaa",
+  "html_url": "https://github.com/umputun/remark/commit/168088445f153554382ea2fb03fcf99f75f8fdaa",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/168088445f153554382ea2fb03fcf99f75f8fdaa/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ff46cbd1735b36eef430b31aeb9251219210e41e",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ff46cbd1735b36eef430b31aeb9251219210e41e",
+      "html_url": "https://github.com/umputun/remark/commit/ff46cbd1735b36eef430b31aeb9251219210e41e"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 18,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "95f5cdc2f12c588c7a3273948ea11f6e9551dfed",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 1,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark/blob/168088445f153554382ea2fb03fcf99f75f8fdaa/backend/app/store/service/service.go",
+      "raw_url": "https://github.com/umputun/remark/raw/168088445f153554382ea2fb03fcf99f75f8fdaa/backend/app/store/service/service.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service.go?ref=168088445f153554382ea2fb03fcf99f75f8fdaa",
+      "patch": "@@ -8,6 +8,7 @@ import (\n \tlog \"github.com/go-pkgz/lgr\"\n \t\"github.com/google/uuid\"\n \tmultierror \"github.com/hashicorp/go-multierror\"\n+\tcache \"github.com/patrickmn/go-cache\"\n \t\"github.com/pkg/errors\"\n \n \t\"github.com/umputun/remark/backend/app/store\"\n@@ -30,6 +31,11 @@ type DataStore struct {\n \t\tsync.Once\n \t\tlocks map[string]sync.Locker\n \t}\n+\n+\trepliesCache struct {\n+\t\t*cache.Cache\n+\t\tonce sync.Once\n+\t}\n }\n \n // UserMetaData keeps info about user flags\n@@ -203,8 +209,18 @@ func (s *DataStore) EditComment(locator store.Locator, commentID string, req Edi\n \n // HasReplies checks if there is any reply to the comments\n // Loads last maxLastCommentsReply comments and compare parent id to the comment's id\n-// TODO: add caching?\n+// Comments with replies cached for 5 minutes\n func (s *DataStore) HasReplies(comment store.Comment) bool {\n+\n+\ts.repliesCache.once.Do(func() {\n+\t\t//  default expiration time of 5 minutes, purge every 10 minutes\n+\t\ts.repliesCache.Cache = cache.New(5*time.Minute, 10*time.Minute)\n+\t})\n+\n+\tif _, found := s.repliesCache.Get(comment.ID); found {\n+\t\treturn true\n+\t}\n+\n \tcomments, err := s.Last(comment.Locator.SiteID, maxLastCommentsReply)\n \tif err != nil {\n \t\tlog.Printf(\"[WARN] can't get last comments for reply check, %v\", err)\n@@ -214,6 +230,7 @@ func (s *DataStore) HasReplies(comment store.Comment) bool {\n \tfor _, c := range comments {\n \t\tif c.ParentID != \"\" && !c.Deleted {\n \t\t\tif c.ParentID == comment.ID {\n+\t\t\t\ts.repliesCache.Set(comment.ID, true, cache.DefaultExpiration)\n \t\t\t\treturn true\n \t\t\t}\n \t\t}"
+    }
+  ]
+}
