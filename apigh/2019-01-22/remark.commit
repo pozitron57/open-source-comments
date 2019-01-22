@@ -1,0 +1,98 @@
+{
+  "sha": "9375f250d864b03d31eb83ecf7f57be8eacecca6",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjkzNzVmMjUwZDg2NGIwM2QzMWViODNlY2Y3ZjU3YmU4ZWFjZWNjYTY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-21T23:03:22Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-21T23:03:22Z"
+    },
+    "message": "switch restricted words logging to log",
+    "tree": {
+      "sha": "fb97fa8e94f70bbf8304eb36aec4de7c4d54c78d",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/fb97fa8e94f70bbf8304eb36aec4de7c4d54c78d"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/9375f250d864b03d31eb83ecf7f57be8eacecca6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/9375f250d864b03d31eb83ecf7f57be8eacecca6",
+  "html_url": "https://github.com/umputun/remark/commit/9375f250d864b03d31eb83ecf7f57be8eacecca6",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/9375f250d864b03d31eb83ecf7f57be8eacecca6/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "84488182a23cdb0edf1a713f91d76f61c281efc4",
+      "url": "https://api.github.com/repos/umputun/remark/commits/84488182a23cdb0edf1a713f91d76f61c281efc4",
+      "html_url": "https://github.com/umputun/remark/commit/84488182a23cdb0edf1a713f91d76f61c281efc4"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "c0177a9f42dcebd8604f10d0ab786e191b233384",
+      "filename": "backend/app/store/service/restricted_words.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark/blob/9375f250d864b03d31eb83ecf7f57be8eacecca6/backend/app/store/service/restricted_words.go",
+      "raw_url": "https://github.com/umputun/remark/raw/9375f250d864b03d31eb83ecf7f57be8eacecca6/backend/app/store/service/restricted_words.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/restricted_words.go?ref=9375f250d864b03d31eb83ecf7f57be8eacecca6",
+      "patch": "@@ -1,10 +1,11 @@\n package service\n \n import (\n-\t\"fmt\"\n \t\"strings\"\n \t\"unicode\"\n \t\"unicode/utf8\"\n+\n+\tlog \"github.com/go-pkgz/lgr\"\n )\n \n // RestrictedWordsLister provides restricted words in comments per site\n@@ -36,7 +37,7 @@ func NewRestrictedWordsMatcher(lister RestrictedWordsLister) *RestrictedWordsMat\n func (m *RestrictedWordsMatcher) Match(siteID string, text string) bool {\n \trestrictedWords, err := m.lister.List(siteID)\n \tif err != nil {\n-\t\tfmt.Printf(\"failed to get restricted patterns for site %s: %v\", siteID, err)\n+\t\tlog.Printf(\"[WARN] failed to get restricted patterns for site %s: %v\", siteID, err)\n \t\treturn false\n \t}\n \tif len(restrictedWords) == 0 {\n@@ -104,7 +105,7 @@ func newWildcardTrie(patterns ...string) *wildcardTrie {\n func (trie *wildcardTrie) addPattern(pattern string) {\n \t// since pattern matching algorithm is recursive we do not allow long patterns\n \tif utf8.RuneCountInString(pattern) < 1 || utf8.RuneCountInString(pattern) > 64 {\n-\t\tfmt.Printf(\"[WARN] invalid pattern length '%s': actual - %d, min allowed - 1, max allowed - 64\", pattern, utf8.RuneCountInString(pattern))\n+\t\tlog.Printf(\"[WARN] invalid pattern length '%s': actual - %d, min allowed - 1, max allowed - 64\", pattern, utf8.RuneCountInString(pattern))\n \t\treturn\n \t}\n "
+    }
+  ]
+}
