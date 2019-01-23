@@ -1,0 +1,122 @@
+{
+  "sha": "1761995482443977fe15d575e06acdf420df92bd",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjE3NjE5OTU0ODI0NDM5NzdmZTE1ZDU3NWUwNmFjZGY0MjBkZjkyYmQ=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-23T05:21:36Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-23T05:21:36Z"
+    },
+    "message": "skip logger pkg",
+    "tree": {
+      "sha": "37a83c6178dd9b8113052df2828ea66576b0d1c7",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/37a83c6178dd9b8113052df2828ea66576b0d1c7"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/1761995482443977fe15d575e06acdf420df92bd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/1761995482443977fe15d575e06acdf420df92bd",
+  "html_url": "https://github.com/umputun/remark/commit/1761995482443977fe15d575e06acdf420df92bd",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/1761995482443977fe15d575e06acdf420df92bd/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7aeec9535f2d0c642383ae35b0d688b5176d5acc",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7aeec9535f2d0c642383ae35b0d688b5176d5acc",
+      "html_url": "https://github.com/umputun/remark/commit/7aeec9535f2d0c642383ae35b0d688b5176d5acc"
+    }
+  ],
+  "stats": {
+    "total": 56,
+    "additions": 38,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "7a9bd53ce981c4f31b5f303bfd43e98d30cec892",
+      "filename": "backend/Gopkg.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/1761995482443977fe15d575e06acdf420df92bd/backend/Gopkg.lock",
+      "raw_url": "https://github.com/umputun/remark/raw/1761995482443977fe15d575e06acdf420df92bd/backend/Gopkg.lock",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/Gopkg.lock?ref=1761995482443977fe15d575e06acdf420df92bd",
+      "patch": "@@ -127,12 +127,12 @@\n   version = \"v0.4.0\"\n \n [[projects]]\n-  digest = \"1:6722b5fcd930a31c3b7bcaca3b364a406395dda4d0d9319726f778efcbc1e739\"\n+  digest = \"1:7b1f422f560b103f435f8501f854f238f1ce00d0f8146e76eacdfa71f2c8d8c0\"\n   name = \"github.com/go-pkgz/lgr\"\n   packages = [\".\"]\n   pruneopts = \"UT\"\n-  revision = \"5d893e7027218cc87667cf280a5894a2f4a5f170\"\n-  version = \"v0.3.1\"\n+  revision = \"dbd940fec9650260d15aa071cab658d0502ed92f\"\n+  version = \"v0.3.2\"\n \n [[projects]]\n   digest = \"1:c509e3f646c48148f2239fa66d5cd62785dfd057b5d2b46972e45b60049c19ed\""
+    },
+    {
+      "sha": "3bf6c72a27d6bd8d0b0d220eebe178df6e539c95",
+      "filename": "backend/app/main.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/1761995482443977fe15d575e06acdf420df92bd/backend/app/main.go",
+      "raw_url": "https://github.com/umputun/remark/raw/1761995482443977fe15d575e06acdf420df92bd/backend/app/main.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/main.go?ref=1761995482443977fe15d575e06acdf420df92bd",
+      "patch": "@@ -65,7 +65,7 @@ func setupLog(dbg bool) {\n \t\tlog.Setup(log.Debug, log.CallerFile, log.Msec, log.LevelBraces)\n \t\treturn\n \t}\n-\tlog.Setup(log.Msec, log.LevelBraces, log.CallerPkg)\n+\tlog.Setup(log.Msec, log.LevelBraces, log.CallerPkg, log.CallerIgnore(\"logger\"))\n }\n \n // getDump reads runtime stack and returns as a string"
+    },
+    {
+      "sha": "ad12b97416b2847834e85b20e5ea6e879042bb4d",
+      "filename": "backend/vendor/github.com/go-pkgz/lgr/logger.go",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 14,
+      "changes": 48,
+      "blob_url": "https://github.com/umputun/remark/blob/1761995482443977fe15d575e06acdf420df92bd/backend/vendor/github.com/go-pkgz/lgr/logger.go",
+      "raw_url": "https://github.com/umputun/remark/raw/1761995482443977fe15d575e06acdf420df92bd/backend/vendor/github.com/go-pkgz/lgr/logger.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/lgr/logger.go?ref=1761995482443977fe15d575e06acdf420df92bd",
+      "patch": "@@ -15,17 +15,18 @@ var levels = []string{\"DEBUG\", \"INFO\", \"WARN\", \"ERROR\", \"PANIC\", \"FATAL\"}\n \n // Logger provided simple logger with basic support of levels. Thread safe\n type Logger struct {\n-\tstdout, stderr io.Writer\n-\tdbg            bool\n-\tlock           sync.Mutex\n-\tcallerFile     bool\n-\tcallerFunc     bool\n-\tcallerPkg      bool\n-\tnow            nowFn\n-\tfatal          panicFn\n-\tskipCallers    int\n-\tlevelBraces    bool\n-\tmsec           bool\n+\tstdout, stderr    io.Writer\n+\tdbg               bool\n+\tlock              sync.Mutex\n+\tcallerFile        bool\n+\tcallerFunc        bool\n+\tcallerPkg         bool\n+\tignoredPkgCallers []string\n+\tnow               nowFn\n+\tfatal             panicFn\n+\tskipCallers       int\n+\tlevelBraces       bool\n+\tmsec              bool\n }\n \n type nowFn func() time.Time\n@@ -73,20 +74,23 @@ func (l *Logger) Logf(format string, args ...interface{}) {\n \tif l.callerFile || l.callerFunc || l.callerPkg {\n \t\tif pc, file, line, ok := runtime.Caller(l.skipCallers); ok {\n \n-\t\t\tfuncName := \"\"\n+\t\t\tfuncName, fileInfo := \"\", \"\"\n+\n \t\t\tif l.callerFunc {\n \t\t\t\tfuncNameElems := strings.Split(runtime.FuncForPC(pc).Name(), \"/\")\n \t\t\t\tfuncName = funcNameElems[len(funcNameElems)-1]\n \t\t\t}\n-\t\t\tfileInfo := \"\"\n+\n \t\t\tif l.callerFile {\n \t\t\t\tfnameElems := strings.Split(file, \"/\")\n \t\t\t\tfileInfo = fmt.Sprintf(\"%s:%d\", strings.Join(fnameElems[len(fnameElems)-2:], \"/\"), line)\n \t\t\t\tif l.callerFunc {\n \t\t\t\t\tfileInfo += \" \"\n \t\t\t\t}\n \t\t\t}\n+\t\t\t// callerPkg only if no other callers\n \t\t\tif l.callerPkg && !l.callerFile && !l.callerFunc {\n+\t\t\t\tfile = l.ignoreCaller(file)\n \t\t\t\t_, fileInfo = path.Split(path.Dir(file))\n \t\t\t\tif l.callerFunc {\n \t\t\t\t\tfileInfo += \" \"\n@@ -117,6 +121,15 @@ func (l *Logger) Logf(format string, args ...interface{}) {\n \tl.lock.Unlock()\n }\n \n+func (l *Logger) ignoreCaller(p string) string {\n+\tfor _, s := range l.ignoredPkgCallers {\n+\t\tif strings.Contains(p, \"/\"+s+\"/\") {\n+\t\t\treturn strings.Replace(p, \"/\"+s, \"\", 1)\n+\t\t}\n+\t}\n+\treturn p\n+}\n+\n func (l *Logger) formatLevel(lv string) string {\n \n \tbrace := func(b string) string {\n@@ -192,11 +205,18 @@ func CallerFunc(l *Logger) {\n \tl.callerFunc = true\n }\n \n-// Pkg adds caller's package name\n+// CallerPkg adds caller's package name\n func CallerPkg(l *Logger) {\n \tl.callerPkg = true\n }\n \n+// CallerIgnore sets packages skipped from logging caller\n+func CallerIgnore(ignores ...string) Option {\n+\treturn func(l *Logger) {\n+\t\tl.ignoredPkgCallers = ignores\n+\t}\n+}\n+\n // LevelBraces adds [] to level\n func LevelBraces(l *Logger) {\n \tl.levelBraces = true"
+    }
+  ]
+}
