@@ -1,0 +1,98 @@
+{
+  "sha": "17f86fa0692dc3a30b040f9bb54b5b011facc22d",
+  "node_id": "MDY6Q29tbWl0ODkyNzY4NzY6MTdmODZmYTA2OTJkYzNhMzBiMDQwZjliYjU0YjViMDExZmFjYzIyZA==",
+  "commit": {
+    "author": {
+      "name": "Adhityaa Chandrasekar",
+      "email": "adtac@adtac.in",
+      "date": "2019-01-24T12:10:19Z"
+    },
+    "committer": {
+      "name": "Adhityaa Chandrasekar",
+      "email": "adtac@adtac.in",
+      "date": "2019-01-24T12:10:19Z"
+    },
+    "message": "README.md: add note that this is a mirror",
+    "tree": {
+      "sha": "cfd6952bb79b058c84a233b2d0bea762484455f0",
+      "url": "https://api.github.com/repos/adtac/commento/git/trees/cfd6952bb79b058c84a233b2d0bea762484455f0"
+    },
+    "url": "https://api.github.com/repos/adtac/commento/git/commits/17f86fa0692dc3a30b040f9bb54b5b011facc22d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/adtac/commento/commits/17f86fa0692dc3a30b040f9bb54b5b011facc22d",
+  "html_url": "https://github.com/adtac/commento/commit/17f86fa0692dc3a30b040f9bb54b5b011facc22d",
+  "comments_url": "https://api.github.com/repos/adtac/commento/commits/17f86fa0692dc3a30b040f9bb54b5b011facc22d/comments",
+  "author": {
+    "login": "adtac",
+    "id": 7521600,
+    "node_id": "MDQ6VXNlcjc1MjE2MDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/7521600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adtac",
+    "html_url": "https://github.com/adtac",
+    "followers_url": "https://api.github.com/users/adtac/followers",
+    "following_url": "https://api.github.com/users/adtac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adtac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adtac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adtac/subscriptions",
+    "organizations_url": "https://api.github.com/users/adtac/orgs",
+    "repos_url": "https://api.github.com/users/adtac/repos",
+    "events_url": "https://api.github.com/users/adtac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adtac/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "adtac",
+    "id": 7521600,
+    "node_id": "MDQ6VXNlcjc1MjE2MDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/7521600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adtac",
+    "html_url": "https://github.com/adtac",
+    "followers_url": "https://api.github.com/users/adtac/followers",
+    "following_url": "https://api.github.com/users/adtac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adtac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adtac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adtac/subscriptions",
+    "organizations_url": "https://api.github.com/users/adtac/orgs",
+    "repos_url": "https://api.github.com/users/adtac/repos",
+    "events_url": "https://api.github.com/users/adtac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adtac/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d1563e22a063b539dbbe35b6673bdd0545fbe90",
+      "url": "https://api.github.com/repos/adtac/commento/commits/6d1563e22a063b539dbbe35b6673bdd0545fbe90",
+      "html_url": "https://github.com/adtac/commento/commit/6d1563e22a063b539dbbe35b6673bdd0545fbe90"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c6901d9cefb6e67fbfcca30db87e761d0cc4b223",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/adtac/commento/blob/17f86fa0692dc3a30b040f9bb54b5b011facc22d/README.md",
+      "raw_url": "https://github.com/adtac/commento/raw/17f86fa0692dc3a30b040f9bb54b5b011facc22d/README.md",
+      "contents_url": "https://api.github.com/repos/adtac/commento/contents/README.md?ref=17f86fa0692dc3a30b040f9bb54b5b011facc22d",
+      "patch": "@@ -4,6 +4,10 @@\n \n <p align=\"center\"><b>A bloat-free and privacy-focused discussion platform.</b></p>\n \n+<table align=\"center\"><tr><td>\n+<p align=\"center\">:warning: &nbsp; <b>This is a mirror. All development takes place <a href=\"https://gitlab.com/commento/commento\">on Gitlab</a>.</b></p>\n+<div>You're viewing the Github mirror of the <code>master</code> branch. All development and discussion takes place on <a href=\"https://gitlab.com/commento/commento\">on Gitlab</a>, not on Github. Please submit all issues and patches over there.</div></td></tr></table>\n+\n ### What is Commento?\n \n Commento allows you to foster discussion on your website &ndash; if you have a blog, you can embed Commento if you want your readers to add comments. It's fast and bloat-free, has a modern interface, and is reasonably secure. Unlike most alternatives, Commento is lightweight and privacy-focused; I'll never sell your data, show ads, embed third-party tracking scripts, or inject affiliate links."
+    }
+  ]
+}
