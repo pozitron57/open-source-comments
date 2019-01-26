@@ -1,0 +1,146 @@
+{
+  "sha": "cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmNiNWZjNzlkYmU1MjJhY2I0ZWRhZTNlMjE0MjU0ZjExNGNiMjNmYTA=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-26T07:38:56Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-26T07:38:56Z"
+    },
+    "message": "add site-level positve score support #260",
+    "tree": {
+      "sha": "74f99c02ccec0ff9d0a9eaf858bc5650757941f0",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/74f99c02ccec0ff9d0a9eaf858bc5650757941f0"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+  "html_url": "https://github.com/umputun/remark/commit/cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/cb5fc79dbe522acb4edae3e214254f114cb23fa0/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "440beb3303e790d56c4fa0ae2ce4b04ff6abbacf",
+      "url": "https://api.github.com/repos/umputun/remark/commits/440beb3303e790d56c4fa0ae2ce4b04ff6abbacf",
+      "html_url": "https://github.com/umputun/remark/commit/440beb3303e790d56c4fa0ae2ce4b04ff6abbacf"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 28,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "861ef789738d952dbd88aa2b30b008d7808c17ac",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server.go?ref=cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+      "patch": "@@ -12,7 +12,7 @@ import (\n \t\"syscall\"\n \t\"time\"\n \n-\t\"github.com/coreos/bbolt\"\n+\tbolt \"github.com/coreos/bbolt\"\n \tlog \"github.com/go-pkgz/lgr\"\n \tauth_cache \"github.com/patrickmn/go-cache\"\n \t\"github.com/pkg/errors\"\n@@ -53,6 +53,7 @@ type ServerCommand struct {\n \tMaxVotes        int           `long:\"max-votes\" env:\"MAX_VOTES\" default:\"-1\" description:\"maximum number of votes per comment\"`\n \tLowScore        int           `long:\"low-score\" env:\"LOW_SCORE\" default:\"-5\" description:\"low score threshold\"`\n \tCriticalScore   int           `long:\"critical-score\" env:\"CRITICAL_SCORE\" default:\"-10\" description:\"critical score threshold\"`\n+\tPositiveScore   bool          `long:\"positive-score\" env:\"POSITIVE_SCORE\" description:\"enable positive score only\"`\n \tReadOnlyAge     int           `long:\"read-age\" env:\"READONLY_AGE\" default:\"0\" description:\"read-only age of comments, days\"`\n \tEditDuration    time.Duration `long:\"edit-time\" env:\"EDIT_TIME\" default:\"5m\" description:\"edit window\"`\n \tPort            int           `long:\"port\" env:\"REMARK_PORT\" default:\"8080\" description:\"port\"`\n@@ -217,6 +218,7 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \t\tAdminStore:             adminStore,\n \t\tMaxCommentSize:         s.MaxCommentSize,\n \t\tMaxVotes:               s.MaxVotes,\n+\t\tPositiveScore:          s.PositiveScore,\n \t\tTitleExtractor:         service.NewTitleExtractor(http.Client{Timeout: time.Second * 5}),\n \t\tRestrictedWordsMatcher: service.NewRestrictedWordsMatcher(service.StaticRestrictedWordsLister{Words: s.RestrictedWords}),\n \t}"
+    },
+    {
+      "sha": "84b52e6a4ee7a3d9eb35d956654b4f58afacb646",
+      "filename": "backend/app/rest/api/rest_public.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/rest/api/rest_public.go",
+      "raw_url": "https://github.com/umputun/remark/raw/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/rest/api/rest_public.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_public.go?ref=cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+      "patch": "@@ -224,6 +224,7 @@ func (s *Rest) configCtrl(w http.ResponseWriter, r *http.Request) {\n \t\tAuth           []string `json:\"auth_providers\"`\n \t\tLowScore       int      `json:\"low_score\"`\n \t\tCriticalScore  int      `json:\"critical_score\"`\n+\t\tPositiveScore  bool     `json:\"positive_score\"`\n \t\tReadOnlyAge    int      `json:\"readonly_age\"`\n \t}\n \n@@ -235,6 +236,7 @@ func (s *Rest) configCtrl(w http.ResponseWriter, r *http.Request) {\n \t\tAdminEmail:     s.DataService.AdminStore.Email(siteID),\n \t\tLowScore:       s.ScoreThresholds.Low,\n \t\tCriticalScore:  s.ScoreThresholds.Critical,\n+\t\tPositiveScore:  s.DataService.PositiveScore,\n \t\tReadOnlyAge:    s.ReadOnlyAge,\n \t}\n "
+    },
+    {
+      "sha": "4285b3845341f6c97ba39601a633292f2ffa99e3",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/rest/api/rest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/rest/api/rest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_public_test.go?ref=cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+      "patch": "@@ -392,6 +392,7 @@ func TestRest_Config(t *testing.T) {\n \tassert.Equal(t, 4000., j[\"max_comment_size\"])\n \tassert.Equal(t, -5., j[\"low_score\"])\n \tassert.Equal(t, -10., j[\"critical_score\"])\n+\tassert.False(t, j[\"positive_score\"].(bool))\n \tassert.Equal(t, 10., j[\"readonly_age\"])\n \tt.Logf(\"%+v\", j)\n }"
+    },
+    {
+      "sha": "ccfdae20533640203e5b071d118167459beaa328",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark/blob/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/store/service/service.go",
+      "raw_url": "https://github.com/umputun/remark/raw/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/store/service/service.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service.go?ref=cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+      "patch": "@@ -7,8 +7,8 @@ import (\n \n \tlog \"github.com/go-pkgz/lgr\"\n \t\"github.com/google/uuid\"\n-\t\"github.com/hashicorp/go-multierror\"\n-\t\"github.com/patrickmn/go-cache\"\n+\tmultierror \"github.com/hashicorp/go-multierror\"\n+\tcache \"github.com/patrickmn/go-cache\"\n \t\"github.com/pkg/errors\"\n \n \t\"github.com/umputun/remark/backend/app/store\"\n@@ -23,6 +23,7 @@ type DataStore struct {\n \tAdminStore             admin.Store\n \tMaxCommentSize         int\n \tMaxVotes               int\n+\tPositiveScore          bool\n \tTitleExtractor         *TitleExtractor\n \tRestrictedWordsMatcher *RestrictedWordsMatcher\n \n@@ -154,6 +155,10 @@ func (s *DataStore) Vote(locator store.Locator, commentID string, userID string,\n \t\treturn comment, errors.Errorf(\"maximum number of votes exceeded for comment %s\", commentID)\n \t}\n \n+\tif s.PositiveScore && comment.Score <= 0 {\n+\t\treturn comment, errors.Errorf(\"minimal score reached for comment %s\", commentID)\n+\t}\n+\n \t// reset vote if user changed to opposite\n \tif voted && v != val {\n \t\tdelete(comment.Votes, userID)"
+    },
+    {
+      "sha": "3e568a595da6f8934c6ddd8ced46a479c17c30f3",
+      "filename": "backend/app/store/service/service_test.go",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/umputun/remark/blob/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/store/service/service_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/cb5fc79dbe522acb4edae3e214254f114cb23fa0/backend/app/store/service/service_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service_test.go?ref=cb5fc79dbe522acb4edae3e214254f114cb23fa0",
+      "patch": "@@ -317,6 +317,21 @@ func TestService_VoteConcurrent(t *testing.T) {\n \tassert.Equal(t, 100, len(res[0].Votes), \"should have 1000 votes\")\n }\n \n+func TestService_VotePositive(t *testing.T) {\n+\tdefer os.Remove(testDb)\n+\tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"),\n+\t\tMaxVotes: -1, PositiveScore: true}\n+\n+\t_, err := b.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, \"id-1\", \"user2\", false)\n+\tassert.EqualError(t, err, \"minimal score reached for comment id-1\")\n+\n+\tb = DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"),\n+\t\tMaxVotes: -1, PositiveScore: false}\n+\tc, err := b.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, \"id-1\", \"user2\", false)\n+\tassert.Nil(t, err, \"minimal score ignored\")\n+\tassert.Equal(t, -1, c.Score)\n+}\n+\n func TestService_Pin(t *testing.T) {\n \tdefer os.Remove(testDb)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\")}"
+    }
+  ]
+}
