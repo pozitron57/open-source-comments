@@ -1,0 +1,110 @@
+{
+  "sha": "35161a35d0075c2beb0fdc2a9215de38e60105bc",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MzUxNjFhMzVkMDA3NWMyYmViMGZkYzJhOTIxNWRlMzhlNjAxMDViYw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-01-28T12:50:44Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-01-28T12:58:14Z"
+    },
+    "message": "Pin event-stream at 3.3.4\n\nLater versions were compromized, see:\n  https://github.com/dominictarr/event-stream/issues/116\n\nAnd the reason Talkyard was never affected was that v3.3.4 was specified\nin yarn.lock? That is, the latest safe version. (See my comment in\ncommit d232b80a47a9e0.) Let's pin this version to prevent accidental\nversion bumps.",
+    "tree": {
+      "sha": "58a3f351a37491a8aee6fff3599ef7dcc0587871",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/58a3f351a37491a8aee6fff3599ef7dcc0587871"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/35161a35d0075c2beb0fdc2a9215de38e60105bc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/35161a35d0075c2beb0fdc2a9215de38e60105bc",
+  "html_url": "https://github.com/debiki/talkyard/commit/35161a35d0075c2beb0fdc2a9215de38e60105bc",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/35161a35d0075c2beb0fdc2a9215de38e60105bc/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b7b7c93c89fe341e2ba942af5ce9d2df1506d5fd",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/b7b7c93c89fe341e2ba942af5ce9d2df1506d5fd",
+      "html_url": "https://github.com/debiki/talkyard/commit/b7b7c93c89fe341e2ba942af5ce9d2df1506d5fd"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 4,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "6b95ded9f85acae9b4004cd63c4cf12929576be6",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/35161a35d0075c2beb0fdc2a9215de38e60105bc/package.json",
+      "raw_url": "https://github.com/debiki/talkyard/raw/35161a35d0075c2beb0fdc2a9215de38e60105bc/package.json",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/package.json?ref=35161a35d0075c2beb0fdc2a9215de38e60105bc",
+      "patch": "@@ -54,7 +54,9 @@\n     \"cheerio\": \"^0.22.0\",\n     \"del\": \"^2.0.2\",\n     \"es6-promise\": \"^4.0.5\",\n-    \"event-stream\": \"^3.1.1\",\n+    \"event-stream\": \"# Versions above 3.3.4 were compromised; don't upgrade past 3.3.4.\",\n+    \"event-stream\": \"# See: https://github.com/dominictarr/event-stream/issues/116\",\n+    \"event-stream\": \"=3.3.4\",\n     \"gulp\": \"^3.9.1\",\n     \"gulp-clean-css\": \"^2.3.2\",\n     \"gulp-concat\": \"^2.2.0\","
+    },
+    {
+      "sha": "b568c2bf3f6b859819899bd6593b1dbccce9dc37",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/35161a35d0075c2beb0fdc2a9215de38e60105bc/yarn.lock",
+      "raw_url": "https://github.com/debiki/talkyard/raw/35161a35d0075c2beb0fdc2a9215de38e60105bc/yarn.lock",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/yarn.lock?ref=35161a35d0075c2beb0fdc2a9215de38e60105bc",
+      "patch": "@@ -1111,7 +1111,7 @@ esprima@^4.0.0:\n   version \"4.0.0\"\n   resolved \"https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804\"\n \n-event-stream@^3.1.1:\n+event-stream@=3.3.4:\n   version \"3.3.4\"\n   resolved \"https://registry.yarnpkg.com/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571\"\n   dependencies:"
+    }
+  ]
+}

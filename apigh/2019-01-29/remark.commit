@@ -1,0 +1,110 @@
+{
+  "sha": "3471c5dab8ac2c2e52cc1daa0684b222196717e4",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjM0NzFjNWRhYjhhYzJjMmU1MmNjMWRhYTA2ODRiMjIyMTk2NzE3ZTQ=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-27T22:21:05Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-01-27T22:21:05Z"
+    },
+    "message": "add missing params to readme",
+    "tree": {
+      "sha": "2d2bbabbfd6d74ec62128218149f51771fe4e64b",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/2d2bbabbfd6d74ec62128218149f51771fe4e64b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/3471c5dab8ac2c2e52cc1daa0684b222196717e4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/3471c5dab8ac2c2e52cc1daa0684b222196717e4",
+  "html_url": "https://github.com/umputun/remark/commit/3471c5dab8ac2c2e52cc1daa0684b222196717e4",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/3471c5dab8ac2c2e52cc1daa0684b222196717e4/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1fb93fc82326e40511d50fc706fad029e0b8af34",
+      "url": "https://api.github.com/repos/umputun/remark/commits/1fb93fc82326e40511d50fc706fad029e0b8af34",
+      "html_url": "https://github.com/umputun/remark/commit/1fb93fc82326e40511d50fc706fad029e0b8af34"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 12,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "aedd46255064f44a68fb1259f1270444adfb5f10",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 9,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark/blob/3471c5dab8ac2c2e52cc1daa0684b222196717e4/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/3471c5dab8ac2c2e52cc1daa0684b222196717e4/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=3471c5dab8ac2c2e52cc1daa0684b222196717e4",
+      "patch": "@@ -104,9 +104,9 @@ _this is the recommended way to run remark42_\n | avatar.type             | AVATAR_TYPE             | `fs`                  | type of avatar storage, `fs`, 'bolt`, or `mongo` |\n | avatar.fs.path          | AVATAR_FS_PATH          | `./var/avatars`       | avatars location for `fs` store                  |\n | avatar.bolt.file        | AVATAR_BOLT_FILE        | `./var/avatars.db`    | file name for  `bolt` store                      |\n-| avatar.rsz-lmt          | AVATAR_RSZ_LMT          | 0                     | max image size for resizing avatars on save      |\n-| auth.ttl.jwt            | AUTH_TTL_JWT            | 5m                    | jwt TTL                                          |\n-| auth.ttl.cookie         | AUTH_TTL_COOKIE         | 200h                  | cookie TTL                                       |\n+| avatar.rsz-lmt          | AVATAR_RSZ_LMT          | `0` (disabled)        | max image size for resizing avatars on save      |\n+| auth.ttl.jwt            | AUTH_TTL_JWT            | `5m`                  | jwt TTL                                          |\n+| auth.ttl.cookie         | AUTH_TTL_COOKIE         | `200h`                | cookie TTL                                       |\n | auth.google.cid         | AUTH_GOOGLE_CID         |                       | Google OAuth client ID                           |\n | auth.google.csec        | AUTH_GOOGLE_CSEC        |                       | Google OAuth client secret                       |\n | auth.facebook.cid       | AUTH_FACEBOOK_CID       |                       | Facebook OAuth client ID                         |\n@@ -115,28 +115,29 @@ _this is the recommended way to run remark42_\n | auth.github.csec        | AUTH_GITHUB_CSEC        |                       | Github OAuth client secret                       |\n | auth.yandex.cid         | AUTH_YANDEX_CID         |                       | Yandex OAuth client ID                           |\n | auth.yandex.csec        | AUTH_YANDEX_CSEC        |                       | Yandex OAuth client secret                       |\n-| auth.dev                | AUTH_DEV                | false                 | local oauth2 server, development mode only       |\n+| auth.dev                | AUTH_DEV                | `false`               | local oauth2 server, development mode only       |\n | notify.type             | NOTIFY_TYPE             | none                  | type of notification (none or telegram)          |\n-| notify.queue            | NOTIFY_QUEUE            | 100                   | size of notification queue                       |\n+| notify.queue            | NOTIFY_QUEUE            | `100`                 | size of notification queue                       |\n | notify.telegram.token   | NOTIFY_TELEGRAM_TOKEN   |                       | telegram token                                   |\n | notify.telegram.chan    | NOTIFY_TELEGRAM_CHAN    |                       | telegram channel                                 |\n-| notify.telegram.timeout | NOTIFY_TELEGRAM_TIMEOUT |                       | telegram timeout                                 |\n+| notify.telegram.timeout | NOTIFY_TELEGRAM_TIMEOUT | `5s`                  | telegram timeout                                 |\n | ssl.type                | SSL_TYPE                | none                  | `none`-http, `static`-https, `auto`-https + le   |\n-| ssl.port                | SSL_PORT                | 8443                  | port for https server                            |\n+| ssl.port                | SSL_PORT                | `8443`                | port for https server                            |\n | ssl.cert                | SSL_CERT                |                       | path to cert.pem file                            |\n | ssl.key                 | SSL_KEY                 |                       | path to key.pem file                             |\n | ssl.acme-location       | SSL_ACME_LOCATION       | `./var/acme`          | dir where obtained le-certs will be stored       |\n | ssl.acme-email          | SSL_ACME_EMAIL          |                       | admin email for receiving notifications from LE  |\n-| max-comment             | MAX_COMMENT_SIZE        | 2048                  | comment's size limit                             |\n+| max-comment             | MAX_COMMENT_SIZE        | `2048`                | comment's size limit                             |\n | max-votes               | MAX_VOTES               | `-1`                  | votes limit per comment, `-1` - unlimited        |\n | low-score               | LOW_SCORE               | `-5`                  | low score threshold                              |\n+| positive-score          | POSITIVE_SCORE          | `false`               | enable positive score only                       |\n | critical-score          | CRITICAL_SCORE          | `-10`                 | critical score threshold                         |\n | restricted-words        | RESTRICTED_WORDS        |                       | words banned in comments (can use `*`), _multi_  |\n | edit-time               | EDIT_TIME               | `5m`                  | edit window                                      |\n | read-age                | READONLY_AGE            |                       | read-only age of comments, days                  |\n | img-proxy               | IMG_PROXY               | `false`               | enable http->https proxy for images              |\n | update-limit            | UPDATE_LIMIT            | `0.5`                 | updates/sec limit                                |\n-| admin-passwd            | ADMIN_PASSWD            |                       | password for `admin` basic auth                  |\n+| admin-passwd            | ADMIN_PASSWD            | none (disabled)       | password for `admin` basic auth                  |\n | dbg                     | DEBUG                   | `false`               | debug mode                                       |\n \n * command line parameters are long form `--<key>=value`, i.e. `--site=https://demo.remark42.com`"
+    },
+    {
+      "sha": "4140693ba8d2642343ea1a2ce26aa18a5cfd638d",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/3471c5dab8ac2c2e52cc1daa0684b222196717e4/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/3471c5dab8ac2c2e52cc1daa0684b222196717e4/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server_test.go?ref=3471c5dab8ac2c2e52cc1daa0684b222196717e4",
+      "patch": "@@ -109,8 +109,8 @@ func TestServerApp_WithMongo(t *testing.T) {\n \trequire.Nil(t, err)\n \n \tdefer func() {\n-\t\ts, err := mongo.NewServerWithURL(mongoURL, 10*time.Second)\n-\t\tassert.NoError(t, err)\n+\t\ts, e := mongo.NewServerWithURL(mongoURL, 10*time.Second)\n+\t\tassert.NoError(t, e)\n \t\tconn := mongo.NewConnection(s, \"test_remark\", \"\")\n \t\t_ = conn.WithDB(func(dbase *mgo.Database) error {\n \t\t\tassert.NoError(t, dbase.DropDatabase())"
+    }
+  ]
+}

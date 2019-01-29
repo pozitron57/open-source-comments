@@ -1,0 +1,98 @@
+{
+  "sha": "0d0303e7eae193cff439933bd24328b4d4927d43",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowZDAzMDNlN2VhZTE5M2NmZjQzOTkzM2JkMjQzMjhiNGQ0OTI3ZDQz",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2019-01-29T15:54:04Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-01-29T15:54:04Z"
+    },
+    "message": "FIX: more resilient lookup in plugin-api (#6961)\n\nEmber3 is more picky about having a container being destroyed and it's easier to cause exceptions, especially in tests.\r\n\r\nThis fix has been initially created for an exception occuring in tests when running discourse-code-review and discourse-polls tests at the same time. `getCurrentUser` method body was failing as the container was destroyed.\r\n\r\nOriginal  stacktrace:\r\n\r\n```\r\n\"Error: Assertion Failed: expected container not to be destroyed\r\n    at new EmberError (ember:2929:31)\r\n    at assert (ember:1793:23)\r\n    at Container.lookup (ember:17736:64)\r\n    at PluginApi.getCurrentUser (discourse/lib/plugin-api:56:31)\r\n    at allowUser (javascripts/discourse/initializers/init-code-review:38:29)\r\n    at eval (javascripts/discourse/initializers/init-code-review:78:11)\r\n    at eval (select-kit/mixins/plugin-api:86:19)\r\n    at Array.forEach (<anonymous>)\r\n    at eval (select-kit/mixins/plugin-api:85:44)\r\n    at Array.forEach (<anonymous>)\"\r\n```",
+    "tree": {
+      "sha": "35a72e39cf4d225c0b9046e72d38620f07e867f9",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/35a72e39cf4d225c0b9046e72d38620f07e867f9"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0d0303e7eae193cff439933bd24328b4d4927d43",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcUHccCRBK7hj4Ov3rIwAAdHIIABgdhSq2GGKgdcSL1dlzHye4\n7o8Krw9BdnTCcEBhLIfG9FCajrAGlJQ3tuGfuyu14apWDoMaJdE39tTDC6ElZvLd\n7Q9fYOwENvu+SJFhLvRuOzEhQwM882H82nwV1NabnSXd9ryB8c3WL7qFnaeZAxBU\nII2rNRV3YUdWa4NTEIeMFd8BafGFJ3LkSJ1VTojENyqfxes01YZt3z9s2mKzgwpC\nJY5EenBE5Z7YF+7xhYV6PzByIy80uF2tGPzFJIZk8U3saWNxXTj3jJgug4lgmvjc\nGRR9mE8VJDv2Zi1bU9JJRm/NUk7gAl+mdGdvhBhc4A5QH8ggqEinJlxA9SxRyd4=\n=AbxT\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 35a72e39cf4d225c0b9046e72d38620f07e867f9\nparent fb7f21fbe90a00af7d4533da8546aa0ebf1649de\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1548777244 +0100\ncommitter GitHub <noreply@github.com> 1548777244 +0100\n\nFIX: more resilient lookup in plugin-api (#6961)\n\nEmber3 is more picky about having a container being destroyed and it's easier to cause exceptions, especially in tests.\r\n\r\nThis fix has been initially created for an exception occuring in tests when running discourse-code-review and discourse-polls tests at the same time. `getCurrentUser` method body was failing as the container was destroyed.\r\n\r\nOriginal  stacktrace:\r\n\r\n```\r\n\"Error: Assertion Failed: expected container not to be destroyed\r\n    at new EmberError (ember:2929:31)\r\n    at assert (ember:1793:23)\r\n    at Container.lookup (ember:17736:64)\r\n    at PluginApi.getCurrentUser (discourse/lib/plugin-api:56:31)\r\n    at allowUser (javascripts/discourse/initializers/init-code-review:38:29)\r\n    at eval (javascripts/discourse/initializers/init-code-review:78:11)\r\n    at eval (select-kit/mixins/plugin-api:86:19)\r\n    at Array.forEach (<anonymous>)\r\n    at eval (select-kit/mixins/plugin-api:85:44)\r\n    at Array.forEach (<anonymous>)\"\r\n```"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0d0303e7eae193cff439933bd24328b4d4927d43",
+  "html_url": "https://github.com/discourse/discourse/commit/0d0303e7eae193cff439933bd24328b4d4927d43",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0d0303e7eae193cff439933bd24328b4d4927d43/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fb7f21fbe90a00af7d4533da8546aa0ebf1649de",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fb7f21fbe90a00af7d4533da8546aa0ebf1649de",
+      "html_url": "https://github.com/discourse/discourse/commit/fb7f21fbe90a00af7d4533da8546aa0ebf1649de"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 18,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "a44548c175dce7df30b0030fa0568785079595bf",
+      "filename": "app/assets/javascripts/discourse/lib/plugin-api.js.es6",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 5,
+      "changes": 23,
+      "blob_url": "https://github.com/discourse/discourse/blob/0d0303e7eae193cff439933bd24328b4d4927d43/app/assets/javascripts/discourse/lib/plugin-api.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/0d0303e7eae193cff439933bd24328b4d4927d43/app/assets/javascripts/discourse/lib/plugin-api.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/plugin-api.js.es6?ref=0d0303e7eae193cff439933bd24328b4d4927d43",
+      "patch": "@@ -55,7 +55,19 @@ class PluginApi {\n    * If the user is not logged in, it will be `null`.\n    **/\n   getCurrentUser() {\n-    return this.container.lookup(\"current-user:main\");\n+    return this._lookupContainer(\"current-user:main\");\n+  }\n+\n+  _lookupContainer(path) {\n+    if (\n+      !this.container ||\n+      this.container.isDestroying ||\n+      this.container.isDestroyed\n+    ) {\n+      return;\n+    }\n+\n+    return this.container.lookup(path);\n   }\n \n   _resolveClass(resolverName, opts) {\n@@ -222,7 +234,7 @@ class PluginApi {\n    * ```\n    **/\n   addPosterIcon(cb) {\n-    const site = this.container.lookup(\"site:main\");\n+    const site = this._lookupContainer(\"site:main\");\n     const loc = site && site.mobileView ? \"before\" : \"after\";\n \n     decorateWidget(`poster-name:${loc}`, dec => {\n@@ -424,8 +436,8 @@ class PluginApi {\n     ```\n   **/\n   onAppEvent(name, fn) {\n-    let appEvents = this.container.lookup(\"app-events:main\");\n-    appEvents.on(name, fn);\n+    const appEvents = this._lookupContainer(\"app-events:main\");\n+    appEvents && appEvents.on(name, fn);\n   }\n \n   /**\n@@ -562,7 +574,8 @@ class PluginApi {\n    * will issue a request to `/mice.json`\n    **/\n   addStorePluralization(thing, plural) {\n-    this.container.lookup(\"service:store\").addPluralization(thing, plural);\n+    const store = this._lookupContainer(\"service:store\");\n+    store && store.addPluralization(thing, plural);\n   }\n \n   /**"
+    }
+  ]
+}
