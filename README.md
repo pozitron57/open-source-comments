@@ -6,7 +6,7 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 ## Workflow
 
-- The data are stored in `data.yaml`.
+- The data are stored in `data.yaml`. This file is edited manually.
 
 - `get_gh_data.py`:
   - creates `apigh/<YYYY-MM-DD>/` directory if does not exist;
@@ -22,7 +22,7 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
     - license.
 
 - `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
-  — `osc_data` and `cols`). 
+  — `osc_data` and `cols`).
 
 - `index.html` reads `data.js` and parses it to the html table using
   [datatables.js](https://github.com/DataTables/DataTables).
@@ -47,10 +47,6 @@ It will update the `data.js` file.
 
 - Improve the python code, especially `yaml_2_js`.
 
-- Add a subscript for 'Github stars' column to show the stars in the latest N
-  days. Just like at [staticgen](https://www.staticgen.com/). Now there is a
-  separate column for this.
-
 - Show column descriptions on mouse over.
 
 - Where do I find a number of opened and closed issues? For example,
@@ -60,10 +56,15 @@ It will update the `data.js` file.
 - `apigh/<date>` folders store a lot of information which is never used.
   Need to write a python script to extract only needed info from the files
   and delete the rest.
+  
+- Plot stars vs. time for ~10 top commenting systems. Update the plot daily
+  automatically.
 
 ## Contribution
 
-Contributions are welcome. Fork the repo and send PR. Want to add something
-but don't feel like sending PR? Let me know by submitting an issue or leave a
-[comment](https://lisakov.com/projects/open-source-comments/#isso-thread) at
-the website.
+Contributions are welcome.
+Fork the repo and send PR,
+submit an issue,
+or leave a
+[comment](https://lisakov.com/projects/open-source-comments/#isso-thread)
+at the website.
