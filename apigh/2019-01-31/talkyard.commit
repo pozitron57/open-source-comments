@@ -1,0 +1,110 @@
+{
+  "sha": "27efb5b7fab4f2a5a038708640781e0d792e30ff",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MjdlZmI1YjdmYWI0ZjJhNWEwMzg3MDg2NDA3ODFlMGQ3OTJlMzBmZg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-01-31T11:03:58Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-01-31T11:48:26Z"
+    },
+    "message": "Add docs about images and prod build.",
+    "tree": {
+      "sha": "76a3d745f69a689d89efe1243028c77a4ed2c57d",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/76a3d745f69a689d89efe1243028c77a4ed2c57d"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/27efb5b7fab4f2a5a038708640781e0d792e30ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/27efb5b7fab4f2a5a038708640781e0d792e30ff",
+  "html_url": "https://github.com/debiki/talkyard/commit/27efb5b7fab4f2a5a038708640781e0d792e30ff",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/27efb5b7fab4f2a5a038708640781e0d792e30ff/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8d6a47cda310ebe18f8f69a1cebafa078e1a71a3",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/8d6a47cda310ebe18f8f69a1cebafa078e1a71a3",
+      "html_url": "https://github.com/debiki/talkyard/commit/8d6a47cda310ebe18f8f69a1cebafa078e1a71a3"
+    }
+  ],
+  "stats": {
+    "total": 123,
+    "additions": 123,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e6f73ca0026b17e75f9d32c67d75be15961b4e29",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 0,
+      "changes": 31,
+      "blob_url": "https://github.com/debiki/talkyard/blob/27efb5b7fab4f2a5a038708640781e0d792e30ff/README.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/27efb5b7fab4f2a5a038708640781e0d792e30ff/README.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/README.md?ref=27efb5b7fab4f2a5a038708640781e0d792e30ff",
+      "patch": "@@ -273,6 +273,37 @@ Play Framework runs out of memory. Restart it like so: `make restart`.\n \n \n \n+Building your own images\n+-----------------------------\n+\n+Do this: (`make` is GNU Make)\n+\n+```\n+vi version.txt    # type a new vesion number\n+vi .env           # change DOCKER_REPOSITORY to your own repository\n+make prod-images  # this runs tests and builds production images\n+make tag-and-push-latest-images tag=...  # pushes images to your repo\n+```\n+\n+You can type `make` to see help about the Makefile targets.\n+\n+All this has been tested in Ubuntu and Mint Linux only, with Bash. If you're\n+on Windows, probably you'll need [Cygwin](https://www.cygwin.com)\n+or [MinGW](http://www.mingw.org).\n+\n+To use the images in your own Docker-Compose installation,\n+have a look here: https://github.com/debiki/talkyard-prod-swarm\n+\n+\n+\n+About the images\n+-----------------------------\n+\n+Here you can read about the various images in the Talkyard stack:\n+[about-the-talkyard-images.md](./docs/about-the-talkyard-images.md).\n+\n+\n+\n Troubleshooting\n -----------------------------\n "
+    },
+    {
+      "sha": "af5b710eba549e962a4bbf93d46a3f1470dda98d",
+      "filename": "docs/about-the-talkyard-images.md",
+      "status": "added",
+      "additions": 92,
+      "deletions": 0,
+      "changes": 92,
+      "blob_url": "https://github.com/debiki/talkyard/blob/27efb5b7fab4f2a5a038708640781e0d792e30ff/docs/about-the-talkyard-images.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/27efb5b7fab4f2a5a038708640781e0d792e30ff/docs/about-the-talkyard-images.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/about-the-talkyard-images.md?ref=27efb5b7fab4f2a5a038708640781e0d792e30ff",
+      "patch": "@@ -0,0 +1,92 @@\n+About the Talkyard Docker images\n+================================\n+\n+Here're the Talkyar images, located in [`../images/<image-name>`](../images/), and what they do:\n+\n+\n+### [web](../images/web/)\n+\n+This is a HTTP server, currently Nginx with Lua.\n+Planning to change to OpenResty, with automatic HTTPS via\n+https://github.com/GUI/lua-resty-auto-ssl (currently one\n+needs to run LetsEncryp's `certbot` manually).\n+\n+Nginx serves uploaded files directly from the file system, and quickly\n+replies to requests for Javascript and CSS, because caches in-memory.\n+\n+Also does some request rate limiting.\n+And outgoing bandwith limiting, see `images/web/ed-lua/lua-limit-bandwidth`,\n+to reduce? elliminate? the risk that you get a surprise bill from your cloud provider\n+for high bandwidth costs.\n+\n+Currently includes a certain Nchan Nginx module, for long polling.\n+However, I think Nchan isn't needed. The plan is instead to use HTTP2 and\n+Server Sent Events, directly from Play Framework, in the `app` container.\n+\n+\n+### [app](../images/app/)\n+\n+The application server. It's a Scala app, built on the Play Framework web framework.\n+This is where all server side features are implemented, incl authentication and authorization.\n+And even more request rate limiting, different, for different endpoints.\n+\n+In dev mode (that's when you type `make up`), a development build of the app server image gets\n+built. It'll `-jvm-debug` listen on port 9999 so you can connect to that port,\n+with IntelliJ IDEA's Scala plugin.\n+\n+When you instead type `make prod-images`, a different Dockerfile, namely\n+`images/app/Dockerfile.prod`, gets used. It builds a smaller image that\n+runs Play Framework in production mode.\n+\n+\n+### [cache](../images/cache/)\n+\n+This is Redis, an in-memory cache that remembers things accross server restart\n+(although currently most in-memory cached things are cached in the *app* container\n+and forgotten on restart).\n+\n+\n+### [search](../images/search/)\n+\n+ElasticSearch, for full text search and faceted search.\n+Uses rather much memory, because runs on the JVM.\n+Maybe can be replaced, later on, with https://github.com/toshi-search/Toshi\n+— a work-in-progress full text search engine, written in Rust.\n+\n+\n+### [rdb](../images/rdb/)\n+\n+A relational database, namely PostgreSQL. Here's where all discussion topics and comments and\n+users and everything is saved — except for uploaded files. Those might be large, like\n+5 or 50 or 500 MB and are instead stored in the file system (or maybe, later on,\n+optionally in an object storage like Google Cloud Storage or Amazon S3).\n+\n+\n+### [fakemail](../images/fakemail/) (dev only)\n+\n+A dummy SMTP mail server, for testing email sending functionality. Not included in\n+production deployments.\n+\n+\n+### [gulp](../images/gulp/) (dev only)\n+\n+Node.js with Gulp. Transpiles Talkyard's React.js webb app, written in Typescript and Stylus,\n+to minified Javascript and CSS. Not included in production deployments.\n+\n+\n+### [certgen](../images/certgen/) (not needed)\n+\n+The plan was to use this image, for generating automatic HTTPS certs via LetsEncrypt.\n+Turns out, can use https://github.com/GUI/lua-resty-auto-ssl instead, so this image\n+is no longer needed.\n+\n+\n+### backup (planned)\n+<!-- ### [backup](../images/backup/) (planned) -->\n+\n+There's already a backup script for the *talkyard-prod-one* production installation \n+([here](https://github.com/debiki/talkyard-prod-one/blob/master/scripts/backup.sh)),\n+but not for *talkyard-prod-swarm* https://github.com/debiki/talkyard-prod-swarm.\n+I (KajMagnus) think it'd be good with a backup container,\n+which would run Bash scripts regularly to backup everything to a backup Docker volume,\n+which you can then `rsync` to an off-site safe place."
+    }
+  ]
+}

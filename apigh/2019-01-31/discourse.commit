@@ -1,0 +1,110 @@
+{
+  "sha": "1021a42b223648200cae55b1a204e6566946371f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxMDIxYTQyYjIyMzY0ODIwMGNhZTU1YjFhMjA0ZTY1NjY5NDYzNzFm",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-01-31T16:52:33Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-01-31T16:52:33Z"
+    },
+    "message": "FIX: new mailgun webhooks",
+    "tree": {
+      "sha": "4ae9d03237c9c8d1e435772f20db3c579f5a1ba6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4ae9d03237c9c8d1e435772f20db3c579f5a1ba6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1021a42b223648200cae55b1a204e6566946371f",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1021a42b223648200cae55b1a204e6566946371f",
+  "html_url": "https://github.com/discourse/discourse/commit/1021a42b223648200cae55b1a204e6566946371f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1021a42b223648200cae55b1a204e6566946371f/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a09b20f934706092bbd6fb6a2ebc96b076d33614",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a09b20f934706092bbd6fb6a2ebc96b076d33614",
+      "html_url": "https://github.com/discourse/discourse/commit/a09b20f934706092bbd6fb6a2ebc96b076d33614"
+    }
+  ],
+  "stats": {
+    "total": 145,
+    "additions": 98,
+    "deletions": 47
+  },
+  "files": [
+    {
+      "sha": "b5f3fdd4f6bc941373176e6e57c8f51020a7a625",
+      "filename": "app/controllers/webhooks_controller.rb",
+      "status": "modified",
+      "additions": 54,
+      "deletions": 35,
+      "changes": 89,
+      "blob_url": "https://github.com/discourse/discourse/blob/1021a42b223648200cae55b1a204e6566946371f/app/controllers/webhooks_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1021a42b223648200cae55b1a204e6566946371f/app/controllers/webhooks_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/webhooks_controller.rb?ref=1021a42b223648200cae55b1a204e6566946371f",
+      "patch": "@@ -3,39 +3,9 @@\n class WebhooksController < ActionController::Base\n \n   def mailgun\n-    # can't verify data without an API key\n     return mailgun_failure if SiteSetting.mailgun_api_key.blank?\n \n-    # token is a random string of 50 characters\n-    token = params[\"token\"]\n-    return mailgun_failure if token.blank? || token.size != 50\n-\n-    # prevent replay attack\n-    key = \"mailgun_token_#{token}\"\n-    return mailgun_failure unless $redis.setnx(key, 1)\n-    $redis.expire(key, 10.minutes)\n-\n-    # ensure timestamp isn't too far from current time\n-    timestamp = params[\"timestamp\"]\n-    return mailgun_failure if (Time.at(timestamp.to_i) - Time.now).abs > 24.hours.to_i\n-\n-    # check the signature\n-    return mailgun_failure unless mailgun_verify(timestamp, token, params[\"signature\"])\n-\n-    event = params[\"event\"]\n-    message_id = params[\"Message-Id\"].tr(\"<>\", \"\")\n-    to_address = params[\"recipient\"]\n-\n-    # only handle soft bounces, because hard bounces are also handled\n-    # by the \"dropped\" event and we don't want to increase bounce score twice\n-    # for the same message\n-    if event == \"bounced\".freeze && params[\"error\"][\"4.\"]\n-      process_bounce(message_id, to_address, SiteSetting.soft_bounce_score)\n-    elsif event == \"dropped\".freeze\n-      process_bounce(message_id, to_address, SiteSetting.hard_bounce_score)\n-    end\n-\n-    mailgun_success\n+    params[\"event-data\"] ? handle_mailgun_new(params) : handle_mailgun_legacy(params)\n   end\n \n   def sendgrid\n@@ -127,10 +97,59 @@ def mailgun_success\n     render body: nil, status: 200\n   end\n \n-  def mailgun_verify(timestamp, token, signature)\n-    digest = OpenSSL::Digest::SHA256.new\n-    data = \"#{timestamp}#{token}\"\n-    signature == OpenSSL::HMAC.hexdigest(digest, SiteSetting.mailgun_api_key, data)\n+  def valid_mailgun_signature?(token, timestamp, signature)\n+    # token is a random 50 characters string\n+    return false if token.blank? || token.size != 50\n+\n+    # prevent replay attacks\n+    key = \"mailgun_token_#{token}\"\n+    return false unless $redis.setnx(key, 1)\n+    $redis.expire(key, 10.minutes)\n+\n+    # ensure timestamp isn't too far from current time\n+    return false if (Time.at(timestamp.to_i) - Time.now).abs > 12.hours.to_i\n+\n+    # check the signature\n+    signature == OpenSSL::HMAC.hexdigest(\"SHA256\", SiteSetting.mailgun_api_key, \"#{timestamp}#{token}\")\n+  end\n+\n+  def handle_mailgun_legacy(params)\n+    return mailgun_failure unless valid_mailgun_signature?(params[\"token\"], params[\"timestamp\"], params[\"signature\"])\n+\n+    event = params[\"event\"]\n+    message_id = params[\"Message-Id\"].tr(\"<>\", \"\")\n+    to_address = params[\"recipient\"]\n+\n+    # only handle soft bounces, because hard bounces are also handled\n+    # by the \"dropped\" event and we don't want to increase bounce score twice\n+    # for the same message\n+    if event == \"bounced\".freeze && params[\"error\"][\"4.\"]\n+      process_bounce(message_id, to_address, SiteSetting.soft_bounce_score)\n+    elsif event == \"dropped\".freeze\n+      process_bounce(message_id, to_address, SiteSetting.hard_bounce_score)\n+    end\n+\n+    mailgun_success\n+  end\n+\n+  def handle_mailgun_new(params)\n+    signature = params[\"signature\"]\n+    return mailgun_failure unless valid_mailgun_signature?(signature[\"token\"], signature[\"timestamp\"], signature[\"signature\"])\n+\n+    data = params[\"event-data\"]\n+    message_id = data.dig(\"message\", \"headers\", \"message-id\")\n+    to_address = data[\"recipient\"]\n+    severity = data[\"severity\"]\n+\n+    if data[\"event\"] == \"failed\".freeze\n+      if severity == \"temporary\".freeze\n+        process_bounce(message_id, to_address, SiteSetting.soft_bounce_score)\n+      elsif severity == \"permanent\".freeze\n+        process_bounce(message_id, to_address, SiteSetting.hard_bounce_score)\n+      end\n+    end\n+\n+    mailgun_success\n   end\n \n   def process_bounce(message_id, to_address, bounce_score)"
+    },
+    {
+      "sha": "17c51362a1a6cefaff357e9a119f4cf15291280a",
+      "filename": "spec/requests/webhooks_controller_spec.rb",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 12,
+      "changes": 56,
+      "blob_url": "https://github.com/discourse/discourse/blob/1021a42b223648200cae55b1a204e6566946371f/spec/requests/webhooks_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1021a42b223648200cae55b1a204e6566946371f/spec/requests/webhooks_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/webhooks_controller_spec.rb?ref=1021a42b223648200cae55b1a204e6566946371f",
+      "patch": "@@ -7,31 +7,63 @@\n   let(:message_id) { \"12345@il.com\" }\n \n   context \"mailgun\" do\n-    it \"works\" do\n+\n+    let(:token) { \"705a8ccd2ce932be8e98c221fe701c1b4a0afcb8bbd57726de\" }\n+    let(:timestamp) { Time.now.to_i }\n+    let(:data) { \"#{timestamp}#{token}\" }\n+    let(:signature) { OpenSSL::HMAC.hexdigest(\"SHA256\", SiteSetting.mailgun_api_key, data) }\n+\n+    before do\n       SiteSetting.mailgun_api_key = \"key-8221462f0c915af3f6f2e2df7aa5a493\"\n+    end\n \n+    it \"works (deprecated)\" do\n       user = Fabricate(:user, email: email)\n       email_log = Fabricate(:email_log, user: user, message_id: message_id, to_address: email)\n \n-      token = \"705a8ccd2ce932be8e98c221fe701c1b4a0afcb8bbd57726de\"\n-      timestamp = Time.now.to_i\n-      data = \"#{timestamp}#{token}\"\n-      signature = OpenSSL::HMAC.hexdigest(OpenSSL::Digest::SHA256.new, SiteSetting.mailgun_api_key, data)\n-\n       post \"/webhooks/mailgun.json\", params: {\n         \"token\" => token,\n         \"timestamp\" => timestamp,\n         \"event\" => \"dropped\",\n         \"recipient\" => email,\n-        \"Message-Id\" => \"<12345@il.com>\",\n+        \"Message-Id\" => \"<#{message_id}>\",\n         \"signature\" => signature\n       }\n \n       expect(response.status).to eq(200)\n \n       email_log.reload\n       expect(email_log.bounced).to eq(true)\n-      expect(email_log.user.user_stat.bounce_score).to eq(2)\n+      expect(email_log.user.user_stat.bounce_score).to eq(SiteSetting.hard_bounce_score)\n+    end\n+\n+    it \"works (new)\" do\n+      user = Fabricate(:user, email: email)\n+      email_log = Fabricate(:email_log, user: user, message_id: message_id, to_address: email)\n+\n+      post \"/webhooks/mailgun.json\", params: {\n+        \"signature\" => {\n+          \"token\" => token,\n+          \"timestamp\" => timestamp,\n+          \"signature\" => signature,\n+        },\n+        \"event-data\" => {\n+          \"event\" => \"failed\",\n+          \"severity\" => \"temporary\",\n+          \"recipient\" => email,\n+          \"message\" => {\n+            \"headers\" => {\n+              \"message-id\" => message_id,\n+            }\n+          }\n+        }\n+      }\n+\n+      expect(response.status).to eq(200)\n+\n+      email_log.reload\n+      expect(email_log.bounced).to eq(true)\n+      expect(email_log.user.user_stat.bounce_score).to eq(SiteSetting.soft_bounce_score)\n     end\n   end\n \n@@ -55,7 +87,7 @@\n \n       email_log.reload\n       expect(email_log.bounced).to eq(true)\n-      expect(email_log.user.user_stat.bounce_score).to eq(2)\n+      expect(email_log.user.user_stat.bounce_score).to eq(SiteSetting.hard_bounce_score)\n     end\n   end\n \n@@ -75,7 +107,7 @@\n \n       email_log.reload\n       expect(email_log.bounced).to eq(true)\n-      expect(email_log.user.user_stat.bounce_score).to eq(2)\n+      expect(email_log.user.user_stat.bounce_score).to eq(SiteSetting.hard_bounce_score)\n     end\n   end\n \n@@ -100,7 +132,7 @@\n \n       email_log.reload\n       expect(email_log.bounced).to eq(true)\n-      expect(email_log.user.user_stat.bounce_score).to eq(2)\n+      expect(email_log.user.user_stat.bounce_score).to eq(SiteSetting.hard_bounce_score)\n     end\n   end\n \n@@ -127,7 +159,7 @@\n \n       email_log.reload\n       expect(email_log.bounced).to eq(true)\n-      expect(email_log.user.user_stat.bounce_score).to eq(2)\n+      expect(email_log.user.user_stat.bounce_score).to eq(SiteSetting.hard_bounce_score)\n     end\n   end\n end"
+    }
+  ]
+}
