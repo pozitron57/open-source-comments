@@ -45,7 +45,10 @@ It will update the `data.js` file.
 - Check and add the information to make the table useful.
   I would appreciate adding a missing demo.
 
-- Improve the python code, especially `yaml_2_js`.
+- Improve the python code.
+
+- `get_gh_data.py`: retry to get the api data if response contains
+  `"message": "Server Error"`.
 
 - Show column descriptions on mouse over.
 
