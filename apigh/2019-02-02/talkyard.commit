@@ -1,0 +1,122 @@
+{
+  "sha": "261f1def5354823dfc5b6f27846e16663235fd80",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MjYxZjFkZWY1MzU0ODIzZGZjNWI2ZjI3ODQ2ZTE2NjYzMjM1ZmQ4MA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-02-01T05:01:57Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-02-01T05:03:16Z"
+    },
+    "message": "Fix Docker-Compose version: 3.7.",
+    "tree": {
+      "sha": "e83b44b3a1a4a656c4a185ec77e41775659dde68",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/e83b44b3a1a4a656c4a185ec77e41775659dde68"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/261f1def5354823dfc5b6f27846e16663235fd80",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/261f1def5354823dfc5b6f27846e16663235fd80",
+  "html_url": "https://github.com/debiki/talkyard/commit/261f1def5354823dfc5b6f27846e16663235fd80",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/261f1def5354823dfc5b6f27846e16663235fd80/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "27efb5b7fab4f2a5a038708640781e0d792e30ff",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/27efb5b7fab4f2a5a038708640781e0d792e30ff",
+      "html_url": "https://github.com/debiki/talkyard/commit/27efb5b7fab4f2a5a038708640781e0d792e30ff"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "2fbd3e51921b25be37d9225421bfbda3bfb2ce9f",
+      "filename": "docker-compose-no-limits.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/261f1def5354823dfc5b6f27846e16663235fd80/docker-compose-no-limits.yml",
+      "raw_url": "https://github.com/debiki/talkyard/raw/261f1def5354823dfc5b6f27846e16663235fd80/docker-compose-no-limits.yml",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docker-compose-no-limits.yml?ref=261f1def5354823dfc5b6f27846e16663235fd80",
+      "patch": "@@ -1,4 +1,4 @@\n-version: '3.1'\n+version: '3.7'\n services:\n   web:\n     environment:"
+    },
+    {
+      "sha": "7d0365de3e1c219aecd9c38513627ce504eb1a97",
+      "filename": "modules/ed-prod-one-test",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-prod-one-test?ref=261f1def5354823dfc5b6f27846e16663235fd80",
+      "patch": "@@ -1 +1 @@\n-Subproject commit bc54e14874773e2a06f60f82f14295faa2e36f98\n+Subproject commit 7d0365de3e1c219aecd9c38513627ce504eb1a97"
+    },
+    {
+      "sha": "b433c969e32564b3f572420badbcf3b099e56a23",
+      "filename": "modules/ed-prod-one-test-override.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/261f1def5354823dfc5b6f27846e16663235fd80/modules/ed-prod-one-test-override.yml",
+      "raw_url": "https://github.com/debiki/talkyard/raw/261f1def5354823dfc5b6f27846e16663235fd80/modules/ed-prod-one-test-override.yml",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-prod-one-test-override.yml?ref=261f1def5354823dfc5b6f27846e16663235fd80",
+      "patch": "@@ -1,7 +1,7 @@\n # Configures a server that uses about 1.5G RAM, and to which you can connect a debugger,\n # and some passwords.\n \n-version: '3.1'\n+version: '3.7'\n services:\n   web:\n     #mem_limit: 140M"
+    }
+  ]
+}
