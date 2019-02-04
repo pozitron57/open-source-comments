@@ -1,0 +1,110 @@
+{
+  "sha": "9de906ddab3e440ef5ee1e9cf04aa1ae20757d31",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5ZGU5MDZkZGFiM2U0NDBlZjVlZTFlOWNmMDRhYTFhZTIwNzU3ZDMx",
+  "commit": {
+    "author": {
+      "name": "Jeff Wong",
+      "email": "awole20@gmail.com",
+      "date": "2019-02-04T16:27:40Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-02-04T16:27:40Z"
+    },
+    "message": "FIX: Register pan events for touch only\n\n* touch events - only register touch, not pointer events\r\n* immediately request redraw frame, do not wait for after render to fire.",
+    "tree": {
+      "sha": "5ee3998bede1e83f3e7c8f0c01de0b26db623854",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5ee3998bede1e83f3e7c8f0c01de0b26db623854"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31",
+    "comment_count": 1,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcWGf8CRBK7hj4Ov3rIwAAdHIIALA+2j2w9mxRotJRaurw+a0n\noif3DqcWXrtJLoiEac4FrMQIaYF26wLcZoITMXWdIK9u3OUWAZ3GGrOPjdog+zpM\nF10QoKMjnhEOFewBjuxXx709zS39U/Qza4IXtoAXvGYcjOJnr7vGI6J8rv4y54AL\nXpICil0vQC63ZZTrJrkiECugdns/dLEEv6rIc5tmcWBu1qvnZCAynW2wWhN4Xkiu\nyeFrwGZEoUFsSdqL72bg6xyqpLrerufz8VKa/tZnn+7jLA5+PZMrhQ8y4MMxUTg7\nddC2myNQBpfTcMGhcyRPS2B+WK7scO3upJqfcyVrs9ucOevUER7EZobNs/TYwJM=\n=+Cj9\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5ee3998bede1e83f3e7c8f0c01de0b26db623854\nparent e0e91fad877ffca71cc3baa94984fe0d5efaaf74\nauthor Jeff Wong <awole20@gmail.com> 1549297660 -0800\ncommitter GitHub <noreply@github.com> 1549297660 -0800\n\nFIX: Register pan events for touch only\n\n* touch events - only register touch, not pointer events\r\n* immediately request redraw frame, do not wait for after render to fire.\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31",
+  "html_url": "https://github.com/discourse/discourse/commit/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31/comments",
+  "author": {
+    "login": "featheredtoast",
+    "id": 1322534,
+    "node_id": "MDQ6VXNlcjEzMjI1MzQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1322534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/featheredtoast",
+    "html_url": "https://github.com/featheredtoast",
+    "followers_url": "https://api.github.com/users/featheredtoast/followers",
+    "following_url": "https://api.github.com/users/featheredtoast/following{/other_user}",
+    "gists_url": "https://api.github.com/users/featheredtoast/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/featheredtoast/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/featheredtoast/subscriptions",
+    "organizations_url": "https://api.github.com/users/featheredtoast/orgs",
+    "repos_url": "https://api.github.com/users/featheredtoast/repos",
+    "events_url": "https://api.github.com/users/featheredtoast/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/featheredtoast/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e0e91fad877ffca71cc3baa94984fe0d5efaaf74",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e0e91fad877ffca71cc3baa94984fe0d5efaaf74",
+      "html_url": "https://github.com/discourse/discourse/commit/e0e91fad877ffca71cc3baa94984fe0d5efaaf74"
+    }
+  ],
+  "stats": {
+    "total": 63,
+    "additions": 24,
+    "deletions": 39
+  },
+  "files": [
+    {
+      "sha": "85913e6a7106ff1e252ef13bb865fbda250c8945",
+      "filename": "app/assets/javascripts/discourse/components/site-header.js.es6",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 14,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31/app/assets/javascripts/discourse/components/site-header.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31/app/assets/javascripts/discourse/components/site-header.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/site-header.js.es6?ref=9de906ddab3e440ef5ee1e9cf04aa1ae20757d31",
+      "patch": "@@ -137,6 +137,7 @@ const SiteHeaderComponent = MountWidget.extend(Docking, PanEvents, {\n       this._isPanning = true;\n       $(\"header.d-header\").removeClass(\"scroll-down scroll-up\");\n       this.eventDispatched(this._leftMenuAction(), \"header\");\n+      window.requestAnimationFrame(() => this.panMove(e));\n     } else if (\n       windowWidth - center.x < SCREEN_EDGE_MARGIN &&\n       !this.$(\".menu-panel\").length &&\n@@ -148,6 +149,7 @@ const SiteHeaderComponent = MountWidget.extend(Docking, PanEvents, {\n       this._isPanning = true;\n       $(\"header.d-header\").removeClass(\"scroll-down scroll-up\");\n       this.eventDispatched(this._rightMenuAction(), \"header\");\n+      window.requestAnimationFrame(() => this.panMove(e));\n     } else {\n       this._isPanning = false;\n     }\n@@ -242,13 +244,7 @@ const SiteHeaderComponent = MountWidget.extend(Docking, PanEvents, {\n       }\n     });\n \n-    if (this.site.mobileView) {\n-      $(\"body\")\n-        .on(\"pointerdown\", e => this._panStart(e))\n-        .on(\"pointermove\", e => this._panMove(e))\n-        .on(\"pointerup\", e => this._panMove(e))\n-        .on(\"pointercancel\", e => this._panMove(e));\n-    }\n+    this.addTouchListeners($(\"body\"));\n   },\n \n   willDestroyElement() {\n@@ -260,13 +256,8 @@ const SiteHeaderComponent = MountWidget.extend(Docking, PanEvents, {\n     this.appEvents.off(\"header:hide-topic\");\n     this.appEvents.off(\"dom:clean\");\n \n-    if (this.site.mobileView) {\n-      $(\"body\")\n-        .off(\"pointerdown\")\n-        .off(\"pointerup\")\n-        .off(\"pointermove\")\n-        .off(\"pointercancel\");\n-    }\n+    this.removeTouchListeners($(\"body\"));\n+\n     Ember.run.cancel(this._scheduledRemoveAnimate);\n     window.cancelAnimationFrame(this._scheduledMovingAnimation);\n   },"
+    },
+    {
+      "sha": "840a6aa31d87c6253b73138a31620736f5522049",
+      "filename": "app/assets/javascripts/discourse/mixins/pan-events.js.es6",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 25,
+      "changes": 44,
+      "blob_url": "https://github.com/discourse/discourse/blob/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31/app/assets/javascripts/discourse/mixins/pan-events.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/9de906ddab3e440ef5ee1e9cf04aa1ae20757d31/app/assets/javascripts/discourse/mixins/pan-events.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/mixins/pan-events.js.es6?ref=9de906ddab3e440ef5ee1e9cf04aa1ae20757d31",
+      "patch": "@@ -12,37 +12,31 @@ export default Ember.Mixin.create({\n \n   didInsertElement() {\n     this._super(...arguments);\n-\n-    if (this.site.mobileView) {\n-      if (\"onpointerdown\" in document.documentElement) {\n-        this.$()\n-          .on(\"pointerdown\", e => this._panStart(e))\n-          .on(\"pointermove\", e => this._panMove(e, e))\n-          .on(\"pointerup\", e => this._panMove(e, e))\n-          .on(\"pointercancel\", e => this._panMove(e, e));\n-      } else if (\"ontouchstart\" in document.documentElement) {\n-        this.$()\n-          .on(\"touchstart\", e => this._panStart(e.touches[0]))\n-          .on(\"touchmove\", e => {\n-            const touchEvent = e.touches[0];\n-            touchEvent.type = \"pointermove\";\n-            this._panMove(touchEvent, e);\n-          })\n-          .on(\"touchend\", e => this._panMove({ type: \"pointerup\" }, e))\n-          .on(\"touchcancel\", e => this._panMove({ type: \"pointercancel\" }, e));\n-      }\n-    }\n+    this.addTouchListeners(this.$());\n   },\n \n   willDestroyElement() {\n     this._super(...arguments);\n+    this.removeTouchListeners(this.$());\n+  },\n+\n+  addTouchListeners($element) {\n+    if (this.site.mobileView) {\n+      $element\n+        .on(\"touchstart\", e => this._panStart(e.touches[0]))\n+        .on(\"touchmove\", e => {\n+          const touchEvent = e.touches[0];\n+          touchEvent.type = \"pointermove\";\n+          this._panMove(touchEvent, e);\n+        })\n+        .on(\"touchend\", e => this._panMove({ type: \"pointerup\" }, e))\n+        .on(\"touchcancel\", e => this._panMove({ type: \"pointercancel\" }, e));\n+    }\n+  },\n \n+  removeTouchListeners($element) {\n     if (this.site.mobileView) {\n-      this.$()\n-        .off(\"pointerdown\")\n-        .off(\"pointerup\")\n-        .off(\"pointermove\")\n-        .off(\"pointercancel\")\n+      $element\n         .off(\"touchstart\")\n         .off(\"touchmove\")\n         .off(\"touchend\")"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sha": "c16514502c37fdaa443e0d84e065ad77d0b8de99",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YzE2NTE0NTAyYzM3ZmRhYTQ0M2UwZDg0ZTA2NWFkNzdkMGI4ZGU5OQ==",
+  "commit": {
+    "author": {
+      "name": "immber",
+      "email": "jessiekrushing@gmail.com",
+      "date": "2019-01-29T20:41:26Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-01-29T20:41:26Z"
+    },
+    "message": "Update recommended release version to link (#2168)\n\n* Update recommended release version to 4.7\r\n\r\n* update release link on readme!",
+    "tree": {
+      "sha": "55a06ca486fc3cc8839f5a76b43b54d9cb22d185",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/55a06ca486fc3cc8839f5a76b43b54d9cb22d185"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/c16514502c37fdaa443e0d84e065ad77d0b8de99",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/c16514502c37fdaa443e0d84e065ad77d0b8de99",
+  "html_url": "https://github.com/coralproject/talk/commit/c16514502c37fdaa443e0d84e065ad77d0b8de99",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/c16514502c37fdaa443e0d84e065ad77d0b8de99/comments",
+  "author": {
+    "login": "immber",
+    "id": 7496030,
+    "node_id": "MDQ6VXNlcjc0OTYwMzA=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/7496030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/immber",
+    "html_url": "https://github.com/immber",
+    "followers_url": "https://api.github.com/users/immber/followers",
+    "following_url": "https://api.github.com/users/immber/following{/other_user}",
+    "gists_url": "https://api.github.com/users/immber/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/immber/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/immber/subscriptions",
+    "organizations_url": "https://api.github.com/users/immber/orgs",
+    "repos_url": "https://api.github.com/users/immber/repos",
+    "events_url": "https://api.github.com/users/immber/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/immber/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ef731f719d810a0702636b92e4a4dc3f7c073272",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/ef731f719d810a0702636b92e4a4dc3f7c073272",
+      "html_url": "https://github.com/coralproject/talk/commit/ef731f719d810a0702636b92e4a4dc3f7c073272"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "9d7f4907252fce52f858d9067b3e79ec85ec0265",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/c16514502c37fdaa443e0d84e065ad77d0b8de99/README.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/c16514502c37fdaa443e0d84e065ad77d0b8de99/README.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/README.md?ref=c16514502c37fdaa443e0d84e065ad77d0b8de99",
+      "patch": "@@ -22,7 +22,7 @@ For advanced configuration and usage of Talk, check out our [Configuration](http\n \n ## Versions & Upgrading\n \n-The current recommended release version is v4.5.0. ^4.5 (and all future even-numbered versions) are considered stable LTS versions. We recommend ^4.5 for use in production environments. \n+Check our Releases page for the latest recommended release version. [Releases](https://github.com/coralproject/talk/releases) All future even-numbered versions are considered stable LTS versions. We recommend the latest verified release for use in production environments. \n \n ## More Resources\n "
+    }
+  ]
+}
