@@ -1,0 +1,110 @@
+{
+  "sha": "58acbecf533dcbb479b81231ca7c855767d64fd6",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjU4YWNiZWNmNTMzZGNiYjQ3OWI4MTIzMWNhN2M4NTU3NjdkNjRmZDY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-02-03T05:46:38Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-02-03T05:46:38Z"
+    },
+    "message": "disable mgo debug",
+    "tree": {
+      "sha": "140ffeb99435909691eb7e5ade0baa35ea9844dd",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/140ffeb99435909691eb7e5ade0baa35ea9844dd"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/58acbecf533dcbb479b81231ca7c855767d64fd6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/58acbecf533dcbb479b81231ca7c855767d64fd6",
+  "html_url": "https://github.com/umputun/remark/commit/58acbecf533dcbb479b81231ca7c855767d64fd6",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/58acbecf533dcbb479b81231ca7c855767d64fd6/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "72b60bf823d87bcffbce50c84bc5083c0b992461",
+      "url": "https://api.github.com/repos/umputun/remark/commits/72b60bf823d87bcffbce50c84bc5083c0b992461",
+      "html_url": "https://github.com/umputun/remark/commit/72b60bf823d87bcffbce50c84bc5083c0b992461"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 7,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "90e85ed9714a703cf034f1ad73026ad8f9007aef",
+      "filename": "backend/Gopkg.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/58acbecf533dcbb479b81231ca7c855767d64fd6/backend/Gopkg.lock",
+      "raw_url": "https://github.com/umputun/remark/raw/58acbecf533dcbb479b81231ca7c855767d64fd6/backend/Gopkg.lock",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/Gopkg.lock?ref=58acbecf533dcbb479b81231ca7c855767d64fd6",
+      "patch": "@@ -143,12 +143,12 @@\n   version = \"v0.3.2\"\n \n [[projects]]\n-  digest = \"1:b6a473bc305dd50d66d0db6cc26b1ecffc19f94d232948b4c977f58f8df61df5\"\n+  digest = \"1:62aeed92576ea10c25389334254f957594b4b5ae8ff71a53d3aa9df5dc6961eb\"\n   name = \"github.com/go-pkgz/mongo\"\n   packages = [\".\"]\n   pruneopts = \"UT\"\n-  revision = \"b749ea7cee576ebbc0e63c43d3d36f72681ba8e0\"\n-  version = \"v1.1.1\"\n+  revision = \"b39a3946e96d28d96eb54d7a8400d80134302f69\"\n+  version = \"v1.1.2\"\n \n [[projects]]\n   digest = \"1:35cb9b5c59734ea9bc47166aabc7d7136139ed8fe39f084fbc29afbbe3ae9213\""
+    },
+    {
+      "sha": "247d0a30c2089b44c3c6f4410309755208448f7f",
+      "filename": "backend/vendor/github.com/go-pkgz/mongo/server.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/58acbecf533dcbb479b81231ca7c855767d64fd6/backend/vendor/github.com/go-pkgz/mongo/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/58acbecf533dcbb479b81231ca7c855767d64fd6/backend/vendor/github.com/go-pkgz/mongo/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/mongo/server.go?ref=58acbecf533dcbb479b81231ca7c855767d64fd6",
+      "patch": "@@ -43,8 +43,10 @@ func NewServerWithURL(url string, timeout time.Duration) (res *Server, err error\n func NewServer(dial mgo.DialInfo, params ServerParams) (res *Server, err error) {\n \tresult := Server{dial: dial, params: params}\n \n-\tmgo.SetDebug(params.Debug)\n-\tmgo.SetLogger(&mgdLogger{})\n+\tif params.Debug {\n+\t\tmgo.SetDebug(true)\n+\t\tmgo.SetLogger(&mgdLogger{})\n+\t}\n \n \tif len(dial.Addrs) == 0 {\n \t\treturn nil, errors.New(\"missing mongo address\")"
+    }
+  ]
+}
