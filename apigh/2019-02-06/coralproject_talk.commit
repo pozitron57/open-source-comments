@@ -1,0 +1,134 @@
+{
+  "sha": "94786c27114bbc2e43d17de559eb8933e20e2e75",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6OTQ3ODZjMjcxMTRiYmMyZTQzZDE3ZGU1NTllYjg5MzNlMjBlMmU3NQ==",
+  "commit": {
+    "author": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-02-05T21:06:05Z"
+    },
+    "committer": {
+      "name": "Kiwi",
+      "email": "vinh@wikiwi.io",
+      "date": "2019-02-05T21:06:05Z"
+    },
+    "message": "fix: repairs poor performance for assets (#2174)\n\n- fixes #2158",
+    "tree": {
+      "sha": "b955fe39101de89b1beb53cc1c99659999e4064e",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/b955fe39101de89b1beb53cc1c99659999e4064e"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/94786c27114bbc2e43d17de559eb8933e20e2e75",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/94786c27114bbc2e43d17de559eb8933e20e2e75",
+  "html_url": "https://github.com/coralproject/talk/commit/94786c27114bbc2e43d17de559eb8933e20e2e75",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/94786c27114bbc2e43d17de559eb8933e20e2e75/comments",
+  "author": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "cvle",
+    "id": 14221600,
+    "node_id": "MDQ6VXNlcjE0MjIxNjAw",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/14221600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cvle",
+    "html_url": "https://github.com/cvle",
+    "followers_url": "https://api.github.com/users/cvle/followers",
+    "following_url": "https://api.github.com/users/cvle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cvle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cvle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cvle/subscriptions",
+    "organizations_url": "https://api.github.com/users/cvle/orgs",
+    "repos_url": "https://api.github.com/users/cvle/repos",
+    "events_url": "https://api.github.com/users/cvle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cvle/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "456abaf862fc1267a58061b4efbee9d9738998c4",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/456abaf862fc1267a58061b4efbee9d9738998c4",
+      "html_url": "https://github.com/coralproject/talk/commit/456abaf862fc1267a58061b4efbee9d9738998c4"
+    }
+  ],
+  "stats": {
+    "total": 75,
+    "additions": 58,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "4a069c82ee678d31da539a5d65d0192c4489bba0",
+      "filename": "client/coral-admin/src/reducers/stories.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/94786c27114bbc2e43d17de559eb8933e20e2e75/client/coral-admin/src/reducers/stories.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/94786c27114bbc2e43d17de559eb8933e20e2e75/client/coral-admin/src/reducers/stories.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/client/coral-admin/src/reducers/stories.js?ref=94786c27114bbc2e43d17de559eb8933e20e2e75",
+      "patch": "@@ -11,6 +11,7 @@ const initialState = {\n   criteria: {\n     asc: 'false',\n     filter: 'all',\n+    limit: 20,\n   },\n };\n "
+    },
+    {
+      "sha": "c188ccf573aa82edd80796f1b533d688e8431ca3",
+      "filename": "client/coral-ui/components/Paginate.css",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/coralproject/talk/blob/94786c27114bbc2e43d17de559eb8933e20e2e75/client/coral-ui/components/Paginate.css",
+      "raw_url": "https://github.com/coralproject/talk/raw/94786c27114bbc2e43d17de559eb8933e20e2e75/client/coral-ui/components/Paginate.css",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/client/coral-ui/components/Paginate.css?ref=94786c27114bbc2e43d17de559eb8933e20e2e75",
+      "patch": "@@ -16,15 +16,23 @@\n   text-align: center;\n   vertical-align: middle;\n   line-height: 30px;\n-  width: 30px;\n+  min-width: 30px;\n+  padding: 5px;\n   user-select: none;\n }\n \n .previousLink, .nextLink {\n   font-size: 1.8em;\n }\n \n-.active {\n+.page:hover {\n+  background-color: #ababab;\n+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);\n+  a {\n+    color: white;\n+  }\n+}\n+.active, .active:hover {\n   background-color: #696969;\n   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);\n   a {"
+    },
+    {
+      "sha": "6df93634b8f9365e0b177b57cc404b6368f65c5d",
+      "filename": "models/schema/asset.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/94786c27114bbc2e43d17de559eb8933e20e2e75/models/schema/asset.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/94786c27114bbc2e43d17de559eb8933e20e2e75/models/schema/asset.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/models/schema/asset.js?ref=94786c27114bbc2e43d17de559eb8933e20e2e75",
+      "patch": "@@ -81,6 +81,10 @@ Asset.index(\n   }\n );\n \n+// Indexes for listing the assets on the admin page.\n+Asset.index({ created_at: -1, publication_date: -1 }, { background: true });\n+Asset.index({ created_at: 1, publication_date: 1 }, { background: true });\n+\n /**\n  * Returns true if the asset is closed, false else.\n  */"
+    },
+    {
+      "sha": "a8b043946676c434da18cb7e658d3e298385e6b4",
+      "filename": "routes/api/v1/assets.js",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 15,
+      "changes": 58,
+      "blob_url": "https://github.com/coralproject/talk/blob/94786c27114bbc2e43d17de559eb8933e20e2e75/routes/api/v1/assets.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/94786c27114bbc2e43d17de559eb8933e20e2e75/routes/api/v1/assets.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/routes/api/v1/assets.js?ref=94786c27114bbc2e43d17de559eb8933e20e2e75",
+      "patch": "@@ -1,4 +1,5 @@\n const express = require('express');\n+const Joi = require('joi');\n const router = express.Router();\n const authorization = require('../../../middleware/authorization');\n const { ErrHTTPNotFound } = require('../../../errors');\n@@ -31,36 +32,63 @@ const FilterOpenAssets = (query, filter) => {\n   }\n };\n \n+const ListAssetsSchema = Joi.object({\n+  value: Joi.string()\n+    .empty('')\n+    .default(''),\n+  field: Joi.string()\n+    .empty('')\n+    .default('publication_date'),\n+  page: Joi.number()\n+    .empty('')\n+    .default(1)\n+    .min(1),\n+  asc: Joi.bool()\n+    .empty('')\n+    .default(false),\n+  filter: Joi.string()\n+    .empty('')\n+    .valid(['all', 'open', 'closed'])\n+    .default('all'),\n+  limit: Joi.number()\n+    .empty('')\n+    .default(20)\n+    .max(500)\n+    .min(0),\n+});\n+\n // List assets.\n router.get(\n   '/',\n   authorization.needed('ADMIN', 'MODERATOR'),\n   async (req, res, next) => {\n-    const {\n-      value = '',\n-      field = 'publication_date',\n-      page = 1,\n-      asc = 'false',\n-      filter = 'all',\n-      limit = 20,\n-    } = req.query;\n+    const { value: query, error: err } = Joi.validate(\n+      req.query,\n+      ListAssetsSchema,\n+      {}\n+    );\n+    if (err) {\n+      return next(err);\n+    }\n+\n+    let { value, field, page, asc, filter, limit } = query;\n \n     try {\n-      const order = asc === 'true' ? 1 : -1;\n+      const order = asc ? 1 : -1;\n \n       const queryOpts = {\n         sort: { [field]: order, created_at: order },\n         skip: (page - 1) * limit,\n-        limit,\n+        limit: limit,\n       };\n \n       // Find all the assets.\n       let [result, count] = await Promise.all([\n-        // Find the actuall assets.\n+        // Find the actual assets.\n         FilterOpenAssets(AssetsService.search({ value }), filter)\n           .sort(queryOpts.sort)\n-          .skip(parseInt(queryOpts.skip))\n-          .limit(parseInt(queryOpts.limit))\n+          .skip(queryOpts.skip)\n+          .limit(queryOpts.limit)\n           .lean(),\n \n         // Get the count of actual assets.\n@@ -70,9 +98,9 @@ router.get(\n       // Send back the asset data.\n       res.json({\n         result,\n-        limit: Number(limit),\n+        limit,\n         count,\n-        page: Number(page),\n+        page,\n         totalPages: Math.ceil(count / (limit === 0 ? 1 : limit)),\n       });\n     } catch (e) {"
+    }
+  ]
+}
