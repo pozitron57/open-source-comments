@@ -1,0 +1,182 @@
+{
+  "sha": "1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MTkyOGE3YjAyZWNkOGRiN2RhZjRiZDIzOTFmOWZhZWI0ZGQ0N2ViYQ==",
+  "commit": {
+    "author": {
+      "name": "Mendel Konikov",
+      "email": "mkonikov@gmail.com",
+      "date": "2019-02-07T14:20:44Z"
+    },
+    "committer": {
+      "name": "Kiwi",
+      "email": "vinh@wikiwi.io",
+      "date": "2019-02-07T14:20:44Z"
+    },
+    "message": "Create Moderation actions notification plugin (#2175)\n\n* Create Moderation actions plugin\r\n\r\n* Clarify env var in readme\r\n\r\n* Reword log message\r\n\r\n* Update with suggestion from Wyatt\r\n\r\n* Whitelist notification types\r\n\r\n* Update messaging\r\n\r\n* Rename unpublished to pending",
+    "tree": {
+      "sha": "10b89032d205f64865e967b5c2920039fe1226a5",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/10b89032d205f64865e967b5c2920039fe1226a5"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+  "html_url": "https://github.com/coralproject/talk/commit/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/comments",
+  "author": {
+    "login": "mkonikov",
+    "id": 7562285,
+    "node_id": "MDQ6VXNlcjc1NjIyODU=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/7562285?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mkonikov",
+    "html_url": "https://github.com/mkonikov",
+    "followers_url": "https://api.github.com/users/mkonikov/followers",
+    "following_url": "https://api.github.com/users/mkonikov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mkonikov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mkonikov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mkonikov/subscriptions",
+    "organizations_url": "https://api.github.com/users/mkonikov/orgs",
+    "repos_url": "https://api.github.com/users/mkonikov/repos",
+    "events_url": "https://api.github.com/users/mkonikov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mkonikov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "cvle",
+    "id": 14221600,
+    "node_id": "MDQ6VXNlcjE0MjIxNjAw",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/14221600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cvle",
+    "html_url": "https://github.com/cvle",
+    "followers_url": "https://api.github.com/users/cvle/followers",
+    "following_url": "https://api.github.com/users/cvle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cvle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cvle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cvle/subscriptions",
+    "organizations_url": "https://api.github.com/users/cvle/orgs",
+    "repos_url": "https://api.github.com/users/cvle/repos",
+    "events_url": "https://api.github.com/users/cvle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cvle/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5173af2a27d4ed36063e1faf3f8223fef03eed82",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/5173af2a27d4ed36063e1faf3f8223fef03eed82",
+      "html_url": "https://github.com/coralproject/talk/commit/5173af2a27d4ed36063e1faf3f8223fef03eed82"
+    }
+  ],
+  "stats": {
+    "total": 211,
+    "additions": 211,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "aaf49c9335108eb0c47571ec56b4cf1d8276882b",
+      "filename": ".gitignore",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/.gitignore",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/.gitignore",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/.gitignore?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -45,6 +45,7 @@ plugins/*\n !plugins/talk-plugin-moderation-actions\n !plugins/talk-plugin-notifications\n !plugins/talk-plugin-notifications-category-featured\n+!plugins/talk-plugin-notifications-category-moderation-actions\n !plugins/talk-plugin-notifications-category-reply\n !plugins/talk-plugin-notifications-category-staff\n !plugins/talk-plugin-notifications-digest-daily"
+    },
+    {
+      "sha": "62485037b662185c5c541f92d7a728e71b0d2856",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/README.md",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/README.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/README.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/README.md?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,19 @@\n+---\n+title: talk-plugin-notifications-moderation-actions\n+permalink: /plugin/talk-plugin-notifications-moderation-actions/\n+layout: plugin\n+plugin:\n+    name: talk-plugin-notifications-moderation-actions\n+    depends:\n+        - name: talk-plugin-notifications\n+    provides:\n+        - Server\n+        - Client\n+---\n+\n+When a comment that is initially withheld from publication and is then\n+approved or rejected, the user will receive a notification email.\n+\n+## Configuration:\n+\n+- `TALK_MODERATION_NOTIFICATION_TYPES`. This plugin requires values to be set. Available options: `APPROVED`, `REJECTED` as a single string (comma separated)."
+    },
+    {
+      "sha": "c8a6db18aaee783a46e6d71fe28e252f4fdcc240",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/client/.eslintrc.json",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/client/.eslintrc.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/client/.eslintrc.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/client/.eslintrc.json?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,3 @@\n+{\n+  \"extends\": \"@coralproject/eslint-config-talk/client\"\n+}"
+    },
+    {
+      "sha": "b00b6cadd062bde1c14f8f0de44008d7a2dc402e",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/client/index.js",
+      "status": "added",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/client/index.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/client/index.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/client/index.js?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,14 @@\n+import translations from './translations.yml';\n+import { t } from 'plugin-api/beta/client/services';\n+import { createSettingsToggle } from 'talk-plugin-notifications/client/api/factories';\n+\n+const SettingsToggle = createSettingsToggle('onModeration', () =>\n+  t('talk-plugin-notifications-category-moderation-actions.toggle_description')\n+);\n+\n+export default {\n+  slots: {\n+    notificationSettings: [SettingsToggle],\n+  },\n+  translations,\n+};"
+    },
+    {
+      "sha": "aa1cea3ac5c78010e55feda86cbead0b5f803125",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/client/translations.yml",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/client/translations.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/client/translations.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/client/translations.yml?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,3 @@\n+en:\n+  talk-plugin-notifications-category-moderation-actions:\n+    toggle_description: My pending comments have been reviewed"
+    },
+    {
+      "sha": "be850bbc8f7b6922ac82343154b346c9ac9c2196",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/config.js",
+      "status": "added",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/config.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/config.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/config.js?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,8 @@\n+const MODERATION_NOTIFICATION_TYPES =\n+  (process.env.TALK_MODERATION_NOTIFICATION_TYPES &&\n+    process.env.TALK_MODERATION_NOTIFICATION_TYPES.split(',')) ||\n+  [];\n+\n+module.exports = {\n+  MODERATION_NOTIFICATION_TYPES,\n+};"
+    },
+    {
+      "sha": "92406550a60dd49b0dea17389f3d241ce4ae804f",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/index.js",
+      "status": "added",
+      "additions": 153,
+      "deletions": 0,
+      "changes": 153,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/index.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/index.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/index.js?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,153 @@\n+const { get } = require('lodash');\n+const path = require('path');\n+\n+const { MODERATION_NOTIFICATION_TYPES } = require('./config');\n+\n+const PENDING_STATUS_TYPES = ['PREMOD', 'SYSTEM_WITHHELD'];\n+const AVAILABLE_NOTIFICATION_TYPES = ['APPROVED', 'REJECTED'];\n+\n+const handle = async (ctx, comment) => {\n+  const commentID = get(comment, 'id', null);\n+  if (commentID === null) {\n+    ctx.log.info('could not get comment id');\n+    return;\n+  }\n+\n+  // Check to see if this was a pending comment.\n+  const commentHistory = get(comment, 'status_history', []);\n+  let wasPending = false;\n+\n+  // Check for last status before current one\n+  if (commentHistory.length >= 2) {\n+    const previousStatus = commentHistory[commentHistory.length - 2];\n+    if (PENDING_STATUS_TYPES.includes(previousStatus.type)) {\n+      wasPending = true;\n+    }\n+  }\n+\n+  if (!wasPending) {\n+    ctx.log.info('comment was not pending');\n+    return;\n+  }\n+\n+  // Execute the graph request.\n+  const commentQl = await ctx.graphql(\n+    `\n+      query GetAuthorUserMetadata($comment_id: ID!) {\n+        comment(id: $comment_id) {\n+          id\n+          user {\n+            id\n+            notificationSettings {\n+              onModeration\n+            }\n+          }\n+        }\n+      }\n+    `,\n+    { comment_id: commentID }\n+  );\n+  if (commentQl.errors) {\n+    ctx.log.error(\n+      { err: commentQl.errors },\n+      'could not query for author metadata'\n+    );\n+    return;\n+  }\n+\n+  // Check if the user has notifications enabled.\n+  const enabled = get(\n+    commentQl,\n+    'data.comment.user.notificationSettings.onModeration',\n+    false\n+  );\n+  if (!enabled) {\n+    return;\n+  }\n+\n+  const userID = get(commentQl, 'data.comment.user.id', null);\n+  if (!userID) {\n+    ctx.log.info('could not get comment user id');\n+    return;\n+  }\n+\n+  // The user does have notifications for moderated comments enabled, queue the\n+  // notification to be sent.\n+  return { userID, date: comment.created_at, context: comment.id };\n+};\n+\n+const hydrate = async (ctx, category, context) => {\n+  const comment = await ctx.graphql(\n+    `\n+      query GetNotificationData($context: ID!) {\n+        comment(id: $context) {\n+          id\n+          asset {\n+            title\n+            url\n+          }\n+          status_history {\n+            type\n+          }\n+        }\n+      }\n+    `,\n+    { context }\n+  );\n+  if (comment.errors) {\n+    throw comment.errors;\n+  }\n+\n+  const commentData = get(comment, 'data.comment');\n+\n+  const headline = get(commentData, 'asset.title', null);\n+  const assetURL = get(commentData, 'asset.url', null);\n+  const permalink = `${assetURL}?commentId=${commentData.id}`;\n+  return [headline, permalink];\n+};\n+\n+const handlers = {\n+  approved: {\n+    handle,\n+    category: 'moderation-actions.approved',\n+    event: 'commentAccepted',\n+    hydrate,\n+    digestOrder: 10,\n+  },\n+  rejected: {\n+    handle,\n+    category: 'moderation-actions.rejected',\n+    event: 'commentRejected',\n+    hydrate,\n+    digestOrder: 10,\n+  },\n+};\n+\n+const notifications = [];\n+MODERATION_NOTIFICATION_TYPES.forEach(type => {\n+  if (AVAILABLE_NOTIFICATION_TYPES.includes(type)) {\n+    notifications.push(handlers[type.toLowerCase()]);\n+  } else {\n+    console.error(`Unkown moderation notification type: ${type}`);\n+  }\n+});\n+\n+module.exports = {\n+  typeDefs: `\n+    type NotificationSettings {\n+      onModeration: Boolean!\n+    }\n+\n+    input NotificationSettingsInput {\n+      onModeration: Boolean\n+    }\n+  `,\n+  resolvers: {\n+    NotificationSettings: {\n+      // onModeration returns false by default if not specified.\n+      onModeration: settings => get(settings, 'onModeration', false),\n+    },\n+  },\n+  translations: path.join(__dirname, 'translations.yml'),\n+  notifications,\n+};"
+    },
+    {
+      "sha": "2f967e4b900d4ff76b3d66ac3f43aa74d5f3b06a",
+      "filename": "plugins/talk-plugin-notifications-category-moderation-actions/translations.yml",
+      "status": "added",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/coralproject/talk/blob/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/translations.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba/plugins/talk-plugin-notifications-category-moderation-actions/translations.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-notifications-category-moderation-actions/translations.yml?ref=1928a7b02ecd8db7daf4bd2391f9faeb4dd47eba",
+      "patch": "@@ -0,0 +1,10 @@\n+en:\n+  talk-plugin-notifications:\n+    categories:\n+      moderation-actions:\n+        approved: \n+          subject: \"Your comment on {0} has been published\"\n+          body: \"{0}\\nThank you for submitting your comment. Your comment has now been published: {1}\"\n+        rejected:\n+          subject: \"Your comment on {0} was not published\"\n+          body: \"{0}\\nThe language used in one of your comments did not comply with our community guidelines, and so the comment has been removed.\""
+    }
+  ]
+}
