@@ -1,0 +1,122 @@
+{
+  "sha": "563b95322406ac74bba136d0bb421d86f50f9ac2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1NjNiOTUzMjI0MDZhYzc0YmJhMTM2ZDBiYjQyMWQ4NmY1MGY5YWMy",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-02-19T16:24:35Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-02-19T16:24:35Z"
+    },
+    "message": "DEV: Add 'backfill_etags_' to the method name since it also backfilling the etags",
+    "tree": {
+      "sha": "00db09f7786bb971d277003bd5a4752c334739c7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/00db09f7786bb971d277003bd5a4752c334739c7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/563b95322406ac74bba136d0bb421d86f50f9ac2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/563b95322406ac74bba136d0bb421d86f50f9ac2",
+  "html_url": "https://github.com/discourse/discourse/commit/563b95322406ac74bba136d0bb421d86f50f9ac2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/563b95322406ac74bba136d0bb421d86f50f9ac2/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7878e5007aa96f21a23320cfdc2cda5c5ad081d6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/7878e5007aa96f21a23320cfdc2cda5c5ad081d6",
+      "html_url": "https://github.com/discourse/discourse/commit/7878e5007aa96f21a23320cfdc2cda5c5ad081d6"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 6,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "aa3858489978730ceff74cc1e1b18a16de79cd52",
+      "filename": "lib/file_store/s3_store.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/563b95322406ac74bba136d0bb421d86f50f9ac2/lib/file_store/s3_store.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/563b95322406ac74bba136d0bb421d86f50f9ac2/lib/file_store/s3_store.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/file_store/s3_store.rb?ref=563b95322406ac74bba136d0bb421d86f50f9ac2",
+      "patch": "@@ -126,8 +126,8 @@ def s3_bucket\n     def list_missing_uploads(skip_optimized: false)\n       if SiteSetting.enable_s3_inventory\n         require 's3_inventory'\n-        S3Inventory.new(s3_helper, :upload).list_missing\n-        S3Inventory.new(s3_helper, :optimized).list_missing unless skip_optimized\n+        S3Inventory.new(s3_helper, :upload).backfill_etags_and_list_missing\n+        S3Inventory.new(s3_helper, :optimized).backfill_etags_and_list_missing unless skip_optimized\n       else\n         list_missing(Upload, \"original/\")\n         list_missing(OptimizedImage, \"optimized/\") unless skip_optimized"
+    },
+    {
+      "sha": "01055f1925e686848d534b51f7b5f7498b590e87",
+      "filename": "lib/s3_inventory.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/563b95322406ac74bba136d0bb421d86f50f9ac2/lib/s3_inventory.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/563b95322406ac74bba136d0bb421d86f50f9ac2/lib/s3_inventory.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/s3_inventory.rb?ref=563b95322406ac74bba136d0bb421d86f50f9ac2",
+      "patch": "@@ -24,7 +24,7 @@ def initialize(s3_helper, type)\n     end\n   end\n \n-  def list_missing\n+  def backfill_etags_and_list_missing\n     if files.blank?\n       error(\"Failed to list inventory from S3\")\n       return"
+    },
+    {
+      "sha": "1a6d9e5ee70ad430370be9edc4d3f21e8105281f",
+      "filename": "spec/components/s3_inventory_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/563b95322406ac74bba136d0bb421d86f50f9ac2/spec/components/s3_inventory_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/563b95322406ac74bba136d0bb421d86f50f9ac2/spec/components/s3_inventory_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/s3_inventory_spec.rb?ref=563b95322406ac74bba136d0bb421d86f50f9ac2",
+      "patch": "@@ -51,7 +51,7 @@\n \n   it \"should raise error if an inventory file is not found\" do\n     client.stub_responses(:list_objects, contents: [])\n-    output = capture_stdout { inventory.list_missing }\n+    output = capture_stdout { inventory.backfill_etags_and_list_missing }\n     expect(output).to eq(\"Failed to list inventory from S3\\n\")\n   end\n \n@@ -70,7 +70,7 @@\n     inventory.expects(:inventory_date).returns(Time.now)\n \n     output = capture_stdout do\n-      inventory.list_missing\n+      inventory.backfill_etags_and_list_missing\n     end\n \n     expect(output).to eq(\"#{upload.url}\\n1 of 4 uploads are missing\\n\")\n@@ -88,7 +88,7 @@\n     inventory.expects(:files).returns([{ key: \"Key\", filename: \"#{csv_filename}.gz\" }]).times(2)\n \n     output = capture_stdout do\n-      expect { inventory.list_missing }.to change { Upload.where(etag: nil).count }.by(-2)\n+      expect { inventory.backfill_etags_and_list_missing }.to change { Upload.where(etag: nil).count }.by(-2)\n     end\n \n     expect(Upload.order(:url).pluck(:url, :etag)).to eq(files)"
+    }
+  ]
+}
