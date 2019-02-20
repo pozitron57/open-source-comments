@@ -1,0 +1,122 @@
+{
+  "sha": "d8f0c52a9849523b716a4541803055f0de869785",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZDhmMGM1MmE5ODQ5NTIzYjcxNmE0NTQxODAzMDU1ZjBkZTg2OTc4NQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-02-20T06:34:12Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-02-20T06:34:12Z"
+    },
+    "message": "Upgr to Scala 2.12.8, fixes clean repo build error.",
+    "tree": {
+      "sha": "86efffbc90fe551b7f6f7b29542f1dd3414ca222",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/86efffbc90fe551b7f6f7b29542f1dd3414ca222"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/d8f0c52a9849523b716a4541803055f0de869785",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/d8f0c52a9849523b716a4541803055f0de869785",
+  "html_url": "https://github.com/debiki/talkyard/commit/d8f0c52a9849523b716a4541803055f0de869785",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/d8f0c52a9849523b716a4541803055f0de869785/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "02b3b40b493291b9de63d0c5774b0b528ef417a4",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/02b3b40b493291b9de63d0c5774b0b528ef417a4",
+      "html_url": "https://github.com/debiki/talkyard/commit/02b3b40b493291b9de63d0c5774b0b528ef417a4"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "df2b4a0561a19f0b864c64a6ef53d2a8460f62cd",
+      "filename": "build.sbt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/d8f0c52a9849523b716a4541803055f0de869785/build.sbt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/d8f0c52a9849523b716a4541803055f0de869785/build.sbt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/build.sbt?ref=d8f0c52a9849523b716a4541803055f0de869785",
+      "patch": "@@ -111,7 +111,7 @@ def mainSettings = List(\n   name := appName,\n   version := appVersion,\n   libraryDependencies ++= appDependencies,\n-  scalaVersion := \"2.12.4\",\n+  scalaVersion := \"2.12.8\",\n \n   // Place tests in ./tests/app/ instead of ./test/, because there're other tests in\n   // ./tests/, namely security/ and e2e/, and having both ./test/ and ./tests/ seems confusing."
+    },
+    {
+      "sha": "2d13bd4f5877b93b3be8ce999b2b50910f49d22c",
+      "filename": "modules/ed-core/build.sbt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/d8f0c52a9849523b716a4541803055f0de869785/modules/ed-core/build.sbt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/d8f0c52a9849523b716a4541803055f0de869785/modules/ed-core/build.sbt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/build.sbt?ref=d8f0c52a9849523b716a4541803055f0de869785",
+      "patch": "@@ -4,7 +4,7 @@ organization := \"com.debiki\"\n \n version := \"0.0.2-SNAPSHOT\"\n \n-scalaVersion := \"2.12.4\"\n+scalaVersion := \"2.12.8\"\n \n resolvers += \"Scala-Tools Maven2 Repository\" at \"http://scala-tools.org/repo-releases\"\n "
+    },
+    {
+      "sha": "6b66c4d544a0791243aa5cfd2635afe21b70ee58",
+      "filename": "modules/ty-dao-rdb/build.sbt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/d8f0c52a9849523b716a4541803055f0de869785/modules/ty-dao-rdb/build.sbt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/d8f0c52a9849523b716a4541803055f0de869785/modules/ty-dao-rdb/build.sbt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ty-dao-rdb/build.sbt?ref=d8f0c52a9849523b716a4541803055f0de869785",
+      "patch": "@@ -4,7 +4,7 @@ organization := \"com.debiki\"\n \n version := \"0.0.2-SNAPSHOT\"\n \n-scalaVersion := \"2.12.4\"\n+scalaVersion := \"2.12.8\"\n \n libraryDependencies ++= Seq(\n   // PostgreSQL JDBC client driver"
+    }
+  ]
+}
