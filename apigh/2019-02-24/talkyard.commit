@@ -1,0 +1,182 @@
+{
+  "sha": "efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZWZkNjYyNGUwM2VkZDQxNTM1ZjBlOWVhNTIwYjNlYTdiMDczM2EzNA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-02-22T13:06:03Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-02-23T13:53:07Z"
+    },
+    "message": "Make drafts work in emb editor, when not logged in. Add e2e test.",
+    "tree": {
+      "sha": "ab2ad2c34859f778daaeb6f309463477b8345e28",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/ab2ad2c34859f778daaeb6f309463477b8345e28"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+  "html_url": "https://github.com/debiki/talkyard/commit/efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/efd6624e03edd41535f0e9ea520b3ea7b0733a34/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8b05b1dd0ab3fc7efe5f9198908546b40473d045",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/8b05b1dd0ab3fc7efe5f9198908546b40473d045",
+      "html_url": "https://github.com/debiki/talkyard/commit/8b05b1dd0ab3fc7efe5f9198908546b40473d045"
+    }
+  ],
+  "stats": {
+    "total": 308,
+    "additions": 289,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "b88f543417b1e360604c240ec21648bb7c674386",
+      "filename": "app/controllers/ReplyController.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/app/controllers/ReplyController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/app/controllers/ReplyController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/ReplyController.scala?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -132,7 +132,7 @@ class ReplyController @Inject()(cc: ControllerComponents, edContext: EdContext)\n   }\n \n \n-  private def tryCreateEmbeddedCommentsPage(request: DebikiRequest[_], embeddingUrl: String,\n+  private def tryCreateEmbeddedCommentsPage(request: DebikiRequest[_], embeddingUrl: String, // [4AMJX7]\n         altPageId: Option[String]): PagePath = {\n     import request.{dao, requester}\n "
+    },
+    {
+      "sha": "0f406ad082105191f7e0604c236a3acfa7e765d0",
+      "filename": "client/app-editor/editor/editor.editor.ts",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 15,
+      "changes": 59,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/client/app-editor/editor/editor.editor.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/client/app-editor/editor/editor.editor.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-editor/editor/editor.editor.ts?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -389,6 +389,9 @@ export const Editor = createComponent({\n       pageId: store.currentPageId,\n       postNr: postNrs[0], // for now\n     };\n+    if (eds.embeddingUrl) {\n+      draftLocator.embeddingUrl = eds.embeddingUrl;\n+    }\n \n     let writingWhat = WritingWhat.ReplyToNotOriginalPost;\n     if (_.isEqual([BodyNr], postNrs)) writingWhat = WritingWhat.ReplyToOriginalPost;\n@@ -579,15 +582,27 @@ export const Editor = createComponent({\n \n   loadDraftAndGuidelines: function(draftLocator: DraftLocator, writingWhat: WritingWhat,\n         pageRole?: PageRole) {\n-    const store: Store = ReactStore.allData();\n-    if (shallSkipDraft(this.state)) {\n-      this.setState({ draftStatus: DraftStatus.NothingHappened });\n+\n+    if (isEmbeddedNotYetCreatedPage(this.state)) {\n+      // Cannot currently load draft & guidelines (below) for a not-yet-created page.\n+      // Instead: [BLGCMNT1]\n+      const draft = getFromSessionStorage(draftLocator);\n+      this.setState({   // dupl code (2ABR703)\n+        draft,\n+        draftStatus: DraftStatus.NothingHappened,\n+        text: draft ? draft.text : '',\n+        title: draft ? draft.title : '',\n+      });\n       return;\n     }\n \n+    const store: Store = ReactStore.allData();\n     const page: Page = store.currentPage;\n     const theCategoryId = draftLocator.categoryId || page.categoryId;\n     const thePageRole = pageRole || page.pageRole;\n+\n+    // What's this? why? I should have added a comment. The code seems to say that\n+    // if *guidelines* have been loaded, then any *draft* has also been loaded.\n     const currentGuidelines = this.state.guidelines;\n     if (currentGuidelines &&\n         currentGuidelines.categoryId === theCategoryId &&\n@@ -597,7 +612,6 @@ export const Editor = createComponent({\n       return;\n     }\n \n-    // Currently there are no drafts, only guidelines.\n     Server.loadDraftAndGuidelines(draftLocator, writingWhat, theCategoryId, thePageRole,\n         (guidelinesSafeHtml, draft?: Draft) => {\n       let guidelines = undefined;\n@@ -613,8 +627,8 @@ export const Editor = createComponent({\n           hidden: isHidden,\n         };\n       }\n-      draft = draft || getFromSessionStorage(draftLocator),\n-      this.setState({\n+      draft = draft || getFromSessionStorage(draftLocator);\n+      this.setState({   // dupl code (2ABR703)\n         draft,\n         draftStatus: DraftStatus.NothingHappened,\n         text: draft ? draft.text : '',\n@@ -779,6 +793,10 @@ export const Editor = createComponent({\n       locator.pageId = this.state.editorsPageId;\n       locator.postNr = this.state.replyToPostNrs[0]; // for now just pick the first one\n       postType = PostType.Normal;\n+      // This is needed for embedded comments, if the discussion page hasn't yet been created.\n+      if (eds.embeddingUrl) {\n+        locator.embeddingUrl = eds.embeddingUrl;\n+      }\n     }\n     else if (this.state.isWritingChatMessage) {\n       locator.draftType = DraftType.Reply;\n@@ -833,9 +851,8 @@ export const Editor = createComponent({\n     const oldDraft: Draft | undefined = this.state.draft;\n     const draftOldOrEmpty: Draft | undefined = oldDraft || this.makeEmptyDraft();\n     const draftStatus: DraftStatus = this.state.draftStatus;\n-    const skipDraft = !draftOldOrEmpty || shallSkipDraft(this.state);\n \n-    if (skipDraft || draftStatus <= DraftStatus.NeedNotSave) {\n+    if (!draftOldOrEmpty || draftStatus <= DraftStatus.NeedNotSave) {\n       if (callbackThatClosesEditor) {\n         callbackThatClosesEditor();\n       }\n@@ -879,9 +896,16 @@ export const Editor = createComponent({\n       return;\n     }\n \n+    const store: Store = this.state.store;\n     const draftToSave: Draft = { ...draftOldOrEmpty, text, title };\n \n-    const saveInSessionStorage = !(<Store> this.state.store).me.isLoggedIn;\n+    // If this is an embedded comments discussion, and the discussion page hasn't\n+    // yet been created, there's no page id to use as draft locator key. Then,\n+    // save the draft in the session storage only, for now.\n+    // UX COULD save server side, with url as key  [BLGCMNT1]\n+    // — it's the key already, in the sesison cache.\n+    const saveInSessionStorage =\n+        !store.me.isLoggedIn || isEmbeddedNotYetCreatedPage(this.state);\n \n     console.debug(`Saving draft: ${JSON.stringify(draftToSave)}, ` + (\n         saveInSessionStorage ? \"temp in browser\" : \"server side\"));\n@@ -1436,9 +1460,8 @@ export const Editor = createComponent({\n \n     const draft: Draft = this.state.draft;\n     const draftNr = draft ? draft.draftNr : NoDraftNr;\n-    const skipDraft = shallSkipDraft(this.state);\n \n-    const draftStatusText = skipDraft ? null :\n+    const draftStatusText =\n         DraftStatusInfo({ draftStatus, draftNr, draftErrorStatusCode: this.state.draftErrorStatusCode });\n \n     return (\n@@ -1587,12 +1610,18 @@ function makeDefaultReplyText(store: Store, postIds: PostId[]): string {\n \n \n \n-// We currently don't save any draft, for the 1st comment on a new blog post :-(   [BLGCMNT1]\n-// because the page doesn't yet exist; there's no page id to use in the draft locator.\n-function shallSkipDraft(props: { store: Store, messageToUserIds }): boolean {\n+// We currently don't save any draft server side, for the 1st embedded comment  [BLGCMNT1]\n+// on a new blog post, because the embedded page hasn't yet been created (it gets created\n+// lazily when the 1st reply is posted [4AMJX7]); there's no page id to use in the\n+// draft locator. Could use the embedding URL though.\n+function isEmbeddedNotYetCreatedPage(props: { store: Store, messageToUserIds }): boolean {\n   // If is-no-page, then the page doesn't exist. However, we might be in the user\n   // profile section, writing a direct message to someone — then we do save drafts.\n-  return store_isNoPage(props.store) && !props.messageToUserIds.length;\n+  const result = store_isNoPage(props.store) && !props.messageToUserIds.length;\n+  // @ifdef DEBUG\n+  dieIf(result && !eds.isInEmbeddedEditor, 'TyE7KBTF32');\n+  // @endif\n+  return result;\n }\n \n const previewHelpMessage = {"
+    },
+    {
+      "sha": "0f28c686595a78b57603f2711c7071b3cd31eafb",
+      "filename": "client/app-slim/model.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/client/app-slim/model.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/client/app-slim/model.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/model.ts?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -230,6 +230,9 @@ interface DraftLocator {\n   toUserId?: UserId;\n   postId?: PostId;\n   pageId?: PageId;\n+  // This is useful on embedded blog comments pages, if the Talkyard page hasn't yet\n+  // been created, so there's no page id. [BLGCMNT1]\n+  embeddingUrl?: string;\n   postNr?: PostNr;\n }\n "
+    },
+    {
+      "sha": "69d70536f08da5ca6414b9a187c8ccebc8d1b9b1",
+      "filename": "client/app-slim/topbar/topbar.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/client/app-slim/topbar/topbar.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/client/app-slim/topbar/topbar.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/topbar/topbar.ts?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -391,7 +391,7 @@ export const TopBar = createComponent({\n     const anyMaintWorkMessage = !eds.mainWorkUntilSecs || isServerSide() ? null :\n         r.div({ className: 's_MaintWorkM' },\n           r.b({}, \"Under maintenance\"),\n-          \", everyting is read-only.\" ); /* + (\n+          \", everything is read-only.\" ); /* + (\n             eds.mainWorkUntilSecs === 1 ? '' : (\n               \" Time left: \" +\n               Math.max(0, Math.ceil((eds.mainWorkUntilSecs * 1000 - Date.now()) / 3600/1000)) + \" hours\")));"
+    },
+    {
+      "sha": "94b5bb7a89530140a2b8ed610fb8e99f2b1440ec",
+      "filename": "docs/e2e-tests-map.txt",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/docs/e2e-tests-map.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/docs/e2e-tests-map.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/e2e-tests-map.txt?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -540,7 +540,8 @@ draft: [7WKABZP2]\n   delete:\n           - drafts-delete.test.ts  TyT5BKRQ0\n   works also if not logged in:\n-          - drafts-not-logged-in.2browsers.test.ts  TyT2ABSD73\n+          - forum-drafts-not-logged-in.2browsers.test.ts  TyT2ABSD73\n+          - embedded-comments-drafts-not-logged-in.test.ts  TyT2ZBKPW048\n \n   # (reply, chat message, new topic, new(private/publ chat, edits, direct message.)\n   # EditController.edit"
+    },
+    {
+      "sha": "b3e710ba2b170bd69b47d6eeffc6be18cc272c12",
+      "filename": "s/run-e2e-tests.sh",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/s/run-e2e-tests.sh",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/s/run-e2e-tests.sh",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/s/run-e2e-tests.sh?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -345,6 +345,7 @@ function runAllE2eTests {\n   runE2eTest s/wdio target/e2e/wdio.2chrome.conf.js    --only embedded-comments-create-site-no-verif-email-admin-area-tour.2browsers $args\n   runE2eTest s/wdio target/e2e/wdio.2chrome.conf.js    --only embedded-comments-create-site-req-verif-email.2browsers $args\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-forum-intro-tour $args\n+  runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-drafts-not-logged-in $args\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-scroll $args\n   # (no -old-name version, because the new name is always included in the server's genetarted html.)\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-discussion-id $args"
+    },
+    {
+      "sha": "0a81e39cee9dbc3f7e9f8cd18cf4d86e960073ac",
+      "filename": "tests/e2e/specs/embedded-comments-discussion-id.test.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/tests/e2e/specs/embedded-comments-discussion-id.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/tests/e2e/specs/embedded-comments-discussion-id.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-discussion-id.test.ts?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -59,6 +59,7 @@ describe(\"emb cmts discussion-id\", () => {\n   });\n \n \n+  // Dupl code [2ABKR074], break out fn, place in utils?\n   function makeHtml(pageName: string, discussionId: string, bgColor: string): string {\n     const ieEmpty = !discussionId ? ', i.e. <b>no</b> id' : '';\n     return `\n@@ -98,7 +99,7 @@ Ok to delete. The comments: (\"long ago\" generated by the admin js bundle [2JKWTQ\n \n   it(\"... it appears\", () => {\n     mariasBrowser.switchToEmbeddedCommentsIrame();\n-    mariasBrowser.topic.waitForPostNrVisible(2);  // that's the first reply nr, = comment 1\n+    mariasBrowser.topic.waitForPostNrVisible(c.FirstReplyNr);\n     mariasBrowser.topic.assertPostTextMatches(2, mariasCommentOne);\n   });\n "
+    },
+    {
+      "sha": "f39aa04690fa5b8ba5d673177ef6d902f17c08b8",
+      "filename": "tests/e2e/specs/embedded-comments-drafts-not-logged-in.test.ts",
+      "status": "added",
+      "additions": 235,
+      "deletions": 0,
+      "changes": 235,
+      "blob_url": "https://github.com/debiki/talkyard/blob/efd6624e03edd41535f0e9ea520b3ea7b0733a34/tests/e2e/specs/embedded-comments-drafts-not-logged-in.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/efd6624e03edd41535f0e9ea520b3ea7b0733a34/tests/e2e/specs/embedded-comments-drafts-not-logged-in.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-drafts-not-logged-in.test.ts?ref=efd6624e03edd41535f0e9ea520b3ea7b0733a34",
+      "patch": "@@ -0,0 +1,235 @@\n+/// <reference path=\"../test-types.ts\"/>\n+\n+import * as _ from 'lodash';\n+import assert = require('assert');\n+import fs = require('fs');\n+import server = require('../utils/server');\n+import utils = require('../utils/utils');\n+import pages = require('../utils/pages');\n+import pagesFor = require('../utils/pages-for');\n+import settings = require('../utils/settings');\n+import make = require('../utils/make');\n+import logAndDie = require('../utils/log-and-die');\n+import c = require('../test-constants');\n+declare let browser: any;\n+\n+let everyonesBrowsers;\n+let maria;\n+let mariasBrowser;\n+let strangersBrowser;\n+\n+let data;\n+let idAddress: IdAddress;\n+let siteId: any;\n+\n+const mariasCommentOneOrig = 'mariasCommentOneOrig';\n+const mariasCommentOneEdited = 'mariasCommentOneEdited';\n+const mariasCommentTwo = 'mariasCommentTwo';\n+\n+const localHostname = 'comments-for-e2e-test-embddrft-localhost-8080';\n+const embeddingOrigin = 'http://e2e-test-embddrft.localhost:8080';\n+const pageDddSlug = 'emb-cmts-ddd.html';\n+const pageEeeSlug = 'emb-cmts-eee.html';\n+\n+\n+describe(\"emb cmts drafts when not logged in  TyT2ZBKPW048\", () => {\n+\n+  it(\"initialize people\", () => {\n+    everyonesBrowsers = _.assign(browser, pagesFor(browser));\n+    mariasBrowser = everyonesBrowsers;\n+    maria = make.memberMaria();\n+  });\n+\n+  it(\"import a site\", () => {\n+    const site: SiteData = make.forumOwnedByOwen('embddrft', { title: \"Emb Cmts Disc Id Test\" });\n+    site.meta.localHostname = localHostname;\n+    site.settings.allowEmbeddingFrom = embeddingOrigin;\n+    site.settings.requireVerifiedEmail = false;\n+    site.settings.mayComposeBeforeSignup = true;\n+    site.settings.mayPostBeforeEmailVerified = true;\n+    site.settings.allowGuestLogin = true;\n+    site.members.push(maria);\n+    idAddress = server.importSiteData(site);\n+    siteId = idAddress.id;\n+  });\n+\n+  it(\"create two embedding pages ddd & eee\", () => {\n+    const dir = 'target';\n+    fs.writeFileSync(`${dir}/${pageDddSlug}`, makeHtml('ddd', '', '#500'));\n+    fs.writeFileSync(`${dir}/${pageEeeSlug}`, makeHtml('eee', '', '#040'));\n+  });\n+\n+\n+  // Dupl code [2ABKR074], break out fn, place in utils?\n+  function makeHtml(pageName: string, discussionId: string, bgColor: string): string {\n+    const ieEmpty = !discussionId ? ', i.e. <b>no</b> id' : '';\n+    return `\n+<html>\n+<head>\n+<title>Embedded comments E2E test</title>\n+</head>\n+<body style=\"background: ${bgColor}; color: #ccc; font-family: monospace\">\n+<p>Embedded comments E2E test page ${pageName} with discussion-id=\"${discussionId}\"${ieEmpty}.<br>\n+Ok to delete. The comments: (\"long ago\" generated by the admin js bundle [2JKWTQ0])\n+</p>\n+\n+<script>talkyardCommentsServerUrl='http://${localHostname}.localhost';</script>\n+<script async defer src=\"http://${localHostname}.localhost/-/talkyard-comments.js\"></script>\n+<div class=\"talkyard-comments\" data-discussion-id=\"${discussionId}\" style=\"margin-top: 45px;\">\n+\n+<p>/End of page.</p>\n+</body>\n+</html>`;\n+  }\n+\n+  it(\"Maria opens embedding page ddd\", () => {\n+    mariasBrowser.go(embeddingOrigin + '/' + pageDddSlug);\n+  });\n+\n+  it(\"Starts writing a reply, when not logged in\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"... writes a comment\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.editText(mariasCommentOneOrig);\n+  });\n+\n+\n+  // ----- Beacon save, first reply\n+\n+  it(\"She reloads the page, without posting the comment — this beacon-saves the text\", () => {\n+    mariasBrowser.refresh();\n+  });\n+\n+  it(\"... she starts writing again\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"... the text is still there; it was saved in the browser's sessionStorage\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.waitForDraftTextToLoad(mariasCommentOneOrig);\n+  });\n+\n+\n+  // ----- Drafts are per page\n+\n+  it(\"she goes from page ddd to eee\", () => {\n+    let source = mariasBrowser.getSource();\n+    assert(source.indexOf('ddd') > 0);\n+    mariasBrowser.go(embeddingOrigin + '/' + pageEeeSlug);\n+    source = mariasBrowser.getSource();\n+    assert(source.indexOf('eee') > 0);\n+  });\n+\n+  it(\"... starts replying to page Eee's blog post\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"... now there's no draft — because this is a different page, page Eee\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.waitForDraftTextToLoad('');\n+  });\n+\n+  it(\"she retunrs to ddd\", () => {\n+    mariasBrowser.go(embeddingOrigin + '/' + pageDddSlug);\n+    const source = mariasBrowser.getSource();\n+    assert(source.indexOf('ddd') > 0);\n+  });\n+\n+  it(\"... starts replying again\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"... the draft text loads, again\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.waitForDraftTextToLoad(mariasCommentOneOrig);\n+  });\n+\n+  it(\"... she edits the reply draft\", () => {\n+    mariasBrowser.editor.editText(mariasCommentOneEdited);\n+  });\n+\n+\n+  // ----- Unmount save, first reply\n+\n+  it(\"And closes the editor — this unmound-saves the reply\", () => {\n+    mariasBrowser.editor.cancelNoHelp();\n+  });\n+\n+  it(\"She refreshes, and reopens the editor\", () => {\n+    mariasBrowser.refresh();\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"... the text is there, edited\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.waitForDraftTextToLoad(mariasCommentOneEdited);\n+  });\n+\n+  it(\"She clicks Post Reply\", () => {\n+    mariasBrowser.editor.save();\n+  });\n+\n+  it(\"... logs in, to post the comment\", () => {\n+    mariasBrowser.loginDialog.loginWithPasswordInPopup(maria);\n+  });\n+\n+  it(\"The comment is there, as the first reply\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.waitForPostNrVisible(c.FirstReplyNr);\n+    mariasBrowser.topic.assertPostTextMatches(c.FirstReplyNr, mariasCommentOneEdited);\n+  });\n+\n+\n+  // ----- Beacon save, subsequent replies\n+\n+  it(\"Maria logs out\", () => {\n+    mariasBrowser.metabar.clickLogout();\n+  });\n+\n+  it(\"And starts typing a reply to herself, not logged in\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToPostNr(c.FirstReplyNr);\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.editText(mariasCommentTwo);\n+  });\n+\n+  it(\"Refreshs the page — this beacon saves\", () => {\n+    mariasBrowser.refresh();\n+  });\n+\n+  it(\"She starts replying to herself again\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToPostNr(c.FirstReplyNr);\n+  });\n+\n+  it(\"... the text is there, it got beacon-saved\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.waitForDraftTextToLoad(mariasCommentTwo);\n+  });\n+\n+\n+  // ----- Drafts are per post\n+\n+  it(\"She closes the editor\", () => {\n+    mariasBrowser.editor.cancelNoHelp();\n+  });\n+\n+  it(\"And clicks Reply, to the blog post (but not her own comment)\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"Now no draft text loads, because the draft is for a reply to Marias's comment\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.waitForDraftTextToLoad('');\n+  });\n+\n+});\n+"
+    }
+  ]
+}
