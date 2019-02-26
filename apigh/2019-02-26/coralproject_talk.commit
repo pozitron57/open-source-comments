@@ -1,0 +1,146 @@
+{
+  "sha": "14f13439303ff7f36e29191a3a339595e882cea8",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MTRmMTM0MzkzMDNmZjdmMzZlMjkxOTFhM2EzMzk1OTVlODgyY2VhOA==",
+  "commit": {
+    "author": {
+      "name": "David Burke",
+      "email": "dburke2@cincinna.gannett.com",
+      "date": "2019-02-26T16:18:55Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-02-26T16:18:55Z"
+    },
+    "message": "Additional Replies Increment (#2203)\n\n* added ADDTL_REPLIES_ON_LOAD_MORE variable\r\n\r\n* feat: added docs and onbuild ref",
+    "tree": {
+      "sha": "39d23361bf95819aed5259f688578662e7ddd757",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/39d23361bf95819aed5259f688578662e7ddd757"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/14f13439303ff7f36e29191a3a339595e882cea8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/14f13439303ff7f36e29191a3a339595e882cea8",
+  "html_url": "https://github.com/coralproject/talk/commit/14f13439303ff7f36e29191a3a339595e882cea8",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/14f13439303ff7f36e29191a3a339595e882cea8/comments",
+  "author": {
+    "login": "dburke70",
+    "id": 3730396,
+    "node_id": "MDQ6VXNlcjM3MzAzOTY=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/3730396?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dburke70",
+    "html_url": "https://github.com/dburke70",
+    "followers_url": "https://api.github.com/users/dburke70/followers",
+    "following_url": "https://api.github.com/users/dburke70/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dburke70/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dburke70/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dburke70/subscriptions",
+    "organizations_url": "https://api.github.com/users/dburke70/orgs",
+    "repos_url": "https://api.github.com/users/dburke70/repos",
+    "events_url": "https://api.github.com/users/dburke70/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dburke70/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0ff20bed5ea9749eb53ed7d49d67616a1e3f8a4d",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/0ff20bed5ea9749eb53ed7d49d67616a1e3f8a4d",
+      "html_url": "https://github.com/coralproject/talk/commit/0ff20bed5ea9749eb53ed7d49d67616a1e3f8a4d"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 19,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3b05ec90b330422ce330f7925b869ac72ca68dd9",
+      "filename": "Dockerfile.onbuild",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/14f13439303ff7f36e29191a3a339595e882cea8/Dockerfile.onbuild",
+      "raw_url": "https://github.com/coralproject/talk/raw/14f13439303ff7f36e29191a3a339595e882cea8/Dockerfile.onbuild",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/Dockerfile.onbuild?ref=14f13439303ff7f36e29191a3a339595e882cea8",
+      "patch": "@@ -4,6 +4,7 @@ FROM coralproject/talk:latest\n ONBUILD ARG TALK_ADDTL_COMMENTS_ON_LOAD_MORE=10\n ONBUILD ARG TALK_ASSET_COMMENTS_LOAD_DEPTH=10\n ONBUILD ARG TALK_REPLY_COMMENTS_LOAD_DEPTH=3\n+ONBUILD ARG TALK_ADDTL_REPLIES_ON_LOAD_MORE=999999\n ONBUILD ARG TALK_THREADING_LEVEL=3\n ONBUILD ARG TALK_DEFAULT_STREAM_TAB=all\n ONBUILD ARG TALK_DISABLE_EMBED_POLYFILL=FALSE"
+    },
+    {
+      "sha": "3de1453cb0a460afb9bc8f76152da1b1e6c59021",
+      "filename": "client/coral-embed-stream/src/constants/stream.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/14f13439303ff7f36e29191a3a339595e882cea8/client/coral-embed-stream/src/constants/stream.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/14f13439303ff7f36e29191a3a339595e882cea8/client/coral-embed-stream/src/constants/stream.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/client/coral-embed-stream/src/constants/stream.js?ref=14f13439303ff7f36e29191a3a339595e882cea8",
+      "patch": "@@ -5,6 +5,9 @@ const prefix = 'TALK_EMBED_STREAM';\n export const ADDTL_COMMENTS_ON_LOAD_MORE = parseInt(\n   defaultTo(process.env.TALK_ADDTL_COMMENTS_ON_LOAD_MORE, '10')\n );\n+export const ADDTL_REPLIES_ON_LOAD_MORE = parseInt(\n+  defaultTo(process.env.TALK_ADDTL_REPLIES_ON_LOAD_MORE, '999999')\n+);\n export const ASSET_COMMENTS_LOAD_DEPTH = parseInt(\n   defaultTo(process.env.TALK_ASSET_COMMENTS_LOAD_DEPTH, '10')\n );"
+    },
+    {
+      "sha": "4390797f9096e43d5a9cc0380e1b30204b8f1dc3",
+      "filename": "client/coral-embed-stream/src/tabs/stream/containers/Stream.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/14f13439303ff7f36e29191a3a339595e882cea8/client/coral-embed-stream/src/tabs/stream/containers/Stream.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/14f13439303ff7f36e29191a3a339595e882cea8/client/coral-embed-stream/src/tabs/stream/containers/Stream.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/client/coral-embed-stream/src/tabs/stream/containers/Stream.js?ref=14f13439303ff7f36e29191a3a339595e882cea8",
+      "patch": "@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux';\n import {\n   ADDTL_COMMENTS_ON_LOAD_MORE,\n   ASSET_COMMENTS_LOAD_DEPTH,\n+  ADDTL_REPLIES_ON_LOAD_MORE,\n   THREADING_LEVEL,\n } from '../../../constants/stream';\n import {\n@@ -152,7 +153,9 @@ class StreamContainer extends React.Component {\n     return this.props.data.fetchMore({\n       query: LOAD_MORE_QUERY,\n       variables: {\n-        limit: parent_id ? 999999 : ADDTL_COMMENTS_ON_LOAD_MORE,\n+        limit: parent_id\n+          ? ADDTL_REPLIES_ON_LOAD_MORE\n+          : ADDTL_COMMENTS_ON_LOAD_MORE,\n         cursor: comment.replies.endCursor,\n         parent_id,\n         asset_id: this.props.asset.id,"
+    },
+    {
+      "sha": "0c70fad91dd9332d52d1326926a12fca6cafb16c",
+      "filename": "docs/source/02-02-advanced-configuration.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/coralproject/talk/blob/14f13439303ff7f36e29191a3a339595e882cea8/docs/source/02-02-advanced-configuration.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/14f13439303ff7f36e29191a3a339595e882cea8/docs/source/02-02-advanced-configuration.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/source/02-02-advanced-configuration.md?ref=14f13439303ff7f36e29191a3a339595e882cea8",
+      "patch": "@@ -593,3 +593,13 @@ can be used to set an authorization header, or change the user agent. (Default\n ## TALK_SCRAPER_PROXY_URL\n \n Sets a specific HTTP/S proxy to be used by the Asset Scraper using [https-proxy-agent](https://www.npmjs.com/package/https-proxy-agent). (Default `null`)\n+\n+## TALK_ADDTL_REPLIES_ON_LOAD_MORE\n+\n+This is a **Build Variable** and must be consumed during build. If using the\n+[Docker-onbuild](/talk/installation-from-docker/#onbuild)\n+image you can specify it with `--build-arg TALK_ADDTL_REPLIES_ON_LOAD_MORE=3`.\n+\n+Specifies the number of replies to load for a comment when clicking \"Load More\".\n+It is defaulted quite high to sort of support \"loading the rest of the replies\".\n+(Default `999999`)"
+    },
+    {
+      "sha": "322ad8317de946c19af5bb381a3c19bbf64f4430",
+      "filename": "webpack.config.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/14f13439303ff7f36e29191a3a339595e882cea8/webpack.config.js",
+      "raw_url": "https://github.com/coralproject/talk/raw/14f13439303ff7f36e29191a3a339595e882cea8/webpack.config.js",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/webpack.config.js?ref=14f13439303ff7f36e29191a3a339595e882cea8",
+      "patch": "@@ -169,6 +169,7 @@ const config = {\n       TALK_THREADING_LEVEL: '3',\n       TALK_ADDTL_COMMENTS_ON_LOAD_MORE: '10',\n       TALK_ASSET_COMMENTS_LOAD_DEPTH: '10',\n+      TALK_ADDTL_REPLIES_ON_LOAD_MORE: '999999',\n       TALK_REPLY_COMMENTS_LOAD_DEPTH: '3',\n       TALK_DEFAULT_STREAM_TAB: 'all',\n       TALK_DEFAULT_LANG: 'en',"
+    }
+  ]
+}
