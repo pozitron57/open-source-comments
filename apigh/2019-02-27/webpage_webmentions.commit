@@ -1,0 +1,110 @@
+{
+  "sha": "f5f859296aac8dbf7c3abbf8686fb92852c38c4b",
+  "node_id": "MDY6Q29tbWl0MTI2ODkxODQ6ZjVmODU5Mjk2YWFjOGRiZjdjM2FiYmY4Njg2ZmI5Mjg1MmMzOGM0Yg==",
+  "commit": {
+    "author": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2018-12-26T22:04:22Z"
+    },
+    "committer": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2018-12-26T22:04:22Z"
+    },
+    "message": "0.12.7",
+    "tree": {
+      "sha": "b0022a50d51cdd9938aa008e8f952bfb0b616866",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/trees/b0022a50d51cdd9938aa008e8f952bfb0b616866"
+    },
+    "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/commits/f5f859296aac8dbf7c3abbf8686fb92852c38c4b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/f5f859296aac8dbf7c3abbf8686fb92852c38c4b",
+  "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/f5f859296aac8dbf7c3abbf8686fb92852c38c4b",
+  "comments_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/f5f859296aac8dbf7c3abbf8686fb92852c38c4b/comments",
+  "author": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8ae247de10180d5ef35fe185376f1a1cb732f57f",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/8ae247de10180d5ef35fe185376f1a1cb732f57f",
+      "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/8ae247de10180d5ef35fe185376f1a1cb732f57f"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 6,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "855f5820d97a239e6a58f8cbc7bd1844c60cdbb8",
+      "filename": "CHANGELOG.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/f5f859296aac8dbf7c3abbf8686fb92852c38c4b/CHANGELOG.md",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/f5f859296aac8dbf7c3abbf8686fb92852c38c4b/CHANGELOG.md",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/CHANGELOG.md?ref=f5f859296aac8dbf7c3abbf8686fb92852c38c4b",
+      "patch": "@@ -1,5 +1,10 @@\n ## Changelog\n \n+### 0.12.7\n+\n+* **Fix:** Restored signup functionality that broke in `knex` and/or `pg` module upgrade\n+* **Misc:** Added TypeScript linting for typings in the project\n+\n ### 0.12.6\n \n * **Fix:** Now correctly refuses ping where source and target are the same URL (checking a normalized version of the URL). Fixes #43. Thanks @sknebel and @frankmeeuwsen!"
+    },
+    {
+      "sha": "6b9d165d0a773126d4d15d9443a4536d9244e89b",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/f5f859296aac8dbf7c3abbf8686fb92852c38c4b/package.json",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/f5f859296aac8dbf7c3abbf8686fb92852c38c4b/package.json",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/package.json?ref=f5f859296aac8dbf7c3abbf8686fb92852c38c4b",
+      "patch": "@@ -1,7 +1,7 @@\n {\n   \"name\": \"webmention-hosted\",\n   \"description\": \"A site that receives and embeds WebMentions for other sites\",\n-  \"version\": \"0.12.6\",\n+  \"version\": \"0.12.7\",\n   \"author\": {\n     \"name\": \"Pelle Wessman\",\n     \"email\": \"pelle@kodfabrik.se\","
+    }
+  ]
+}
