@@ -1,0 +1,146 @@
+{
+  "sha": "87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ODdjMmZlNzdiYmM3ZDVkMGFjYTI5NzQ1NWU0NzQ0N2NkZDAzYTI5Mg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-03-04T09:44:20Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-03-04T09:44:20Z"
+    },
+    "message": "Code review. Use \"localhost\" instead of regex extr.",
+    "tree": {
+      "sha": "3cd20194701a305c31a39e42ac3bbf66687f9b03",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/3cd20194701a305c31a39e42ac3bbf66687f9b03"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+  "html_url": "https://github.com/debiki/talkyard/commit/87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/87c2fe77bbc7d5d0aca297455e47447cdd03a292/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "15913b1ecbe17c49770ba54842d925504494455e",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/15913b1ecbe17c49770ba54842d925504494455e",
+      "html_url": "https://github.com/debiki/talkyard/commit/15913b1ecbe17c49770ba54842d925504494455e"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 19,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "b45d8e21b190686f9629da249fdde9044ad81c6a",
+      "filename": "app/controllers/ViewPageController.scala",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/debiki/talkyard/blob/87c2fe77bbc7d5d0aca297455e47447cdd03a292/app/controllers/ViewPageController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/87c2fe77bbc7d5d0aca297455e47447cdd03a292/app/controllers/ViewPageController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/ViewPageController.scala?ref=87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+      "patch": "@@ -428,8 +428,15 @@ object ViewPageController {\n       // without updating the allow-embedding-from setting. [5RTCN2]\n       val embeddingHostname = embeddingUrl.flatMap(GetHostnameRegex.findGroupIn)\n       val allowIfLocalhost = if (embeddingHostname isNot \"localhost\") \"\" else {\n-        val embeddingOrigin = embeddingUrl.flatMap(GetOriginRegex.findGroupIn)\n-        \" \" + embeddingOrigin.getOrElse(\"\")\n+        // Don't:  \" localhost:*\" without specifying protocol — that would require\n+        // the embedding page to be HTTPS, if testing on localhost against a Talkyard\n+        // server over HTTPS. However, when testing on localhost, one typically\n+        // wants to use HTTP (even if Talkyard is HTTPS).\n+        // See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors\n+        // \"\"\"If no URL scheme is specified for a host-source and the iframe is\n+        // loaded from an https URL, the URL for the page loading the iframe must\n+        // also be https\"\"\"\n+        \" http://localhost:* https://localhost:*\"\n       }\n       val framePolicy = frameAncestorsSpace + allowEmbeddingFrom + allowIfLocalhost\n       SECURITY; COULD // +="
+    },
+    {
+      "sha": "6e240c38f9079587f9d6e5377a288ca9d6bfd718",
+      "filename": "app/controllers/VoteController.scala",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/87c2fe77bbc7d5d0aca297455e47447cdd03a292/app/controllers/VoteController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/87c2fe77bbc7d5d0aca297455e47447cdd03a292/app/controllers/VoteController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/VoteController.scala?ref=87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+      "patch": "@@ -22,7 +22,7 @@ import com.debiki.core.Prelude._\n import collection.immutable\n import debiki._\n import debiki.EdHttp._\n-import debiki.JsX.JsUser\n+import debiki.JsX.{JsUser, JsStringOrNull}\n import ed.server.{EdContext, EdController}\n import ed.server.auth.Authz\n import ed.server.http._\n@@ -107,7 +107,7 @@ class VoteController @Inject()(cc: ControllerComponents, edContext: EdContext)\n       includeUnapproved = false, showHidden = true)\n \n     OkSafeJson(Json.obj(\n-      \"newlyCreatedPageId\" -> JsX.JsStringOrNull(anyNewPagePath.flatMap(_.pageId)),\n+      \"newlyCreatedPageId\" -> JsStringOrNull(anyNewPagePath.flatMap(_.pageId)),\n       \"updatedPost\" -> postJson))\n   }\n "
+    },
+    {
+      "sha": "4cc0a2d5aa5fe42c53aa3fb549ae21f69c412c06",
+      "filename": "app/debiki/PageTpi.scala",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/87c2fe77bbc7d5d0aca297455e47447cdd03a292/app/debiki/PageTpi.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/87c2fe77bbc7d5d0aca297455e47447cdd03a292/app/debiki/PageTpi.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/PageTpi.scala?ref=87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+      "patch": "@@ -251,6 +251,9 @@ class SiteTpi protected (\n \n   def mediaUrl(fileName: String): String = mediaUrlPrefix + fileName\n \n+  // (No automatic asset versioning here — instead, do manually: append a digit,\n+  // like 2, 3, 4..., to the sub folders in module ty-media, if modifying\n+  // images etc there, to change the URL. Only needed every few years? anyway.)\n   def mediaUrlPrefix: String =\n     s\"$cdnOrServerOrigin/-/media/\"   // sync with Nginx [NGXSTC]\n "
+    },
+    {
+      "sha": "c857d30df09e6482948503650d6e0655ed2f186c",
+      "filename": "docs/e2e-tests-map.txt",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/87c2fe77bbc7d5d0aca297455e47447cdd03a292/docs/e2e-tests-map.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/87c2fe77bbc7d5d0aca297455e47447cdd03a292/docs/e2e-tests-map.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/e2e-tests-map.txt?ref=87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+      "patch": "@@ -349,6 +349,10 @@ embedded comments:\n   no about page created:  [5WAKR02]\n   post comment:\n           - \"all\" e2e emb cmts tests\n+  start with Like vote:\n+          - embedded-comments-vote-first.test.ts  TyT2AKBS056\n+  login via metabar:\n+          - embedded-comments-vote-first.test.ts  TyT2AKBS056\n   click login:\n           - embedded-comments-scroll  TyT2K4DHR49-02   MISSING\n   scroll to #comment-nnn:"
+    },
+    {
+      "sha": "79fdc0b984b9d723e1b40f400a1e9d94273fc68e",
+      "filename": "tests/e2e/specs/embedded-comments-vote-first.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 5,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/87c2fe77bbc7d5d0aca297455e47447cdd03a292/tests/e2e/specs/embedded-comments-vote-first.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/87c2fe77bbc7d5d0aca297455e47447cdd03a292/tests/e2e/specs/embedded-comments-vote-first.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-vote-first.test.ts?ref=87c2fe77bbc7d5d0aca297455e47447cdd03a292",
+      "patch": "@@ -11,8 +11,6 @@ import make = require('../utils/make');\n declare let browser: any;\n \n let everyonesBrowsers;\n-let maja;\n-let majasBrowser;\n let michael;\n let michaelsBrowser;\n \n@@ -29,13 +27,11 @@ const pageName = \"The Page Name\";\n const bgColor = \"#550\";\n \n \n-describe(\"emb cmts edit and vote\", () => {\n+describe(\"emb cmts vote first  TyT2AKBS056\", () => {\n \n   it(\"initialize people\", () => {\n     everyonesBrowsers = _.assign(browser, pagesFor(browser));\n-    majasBrowser = everyonesBrowsers;\n     michaelsBrowser = everyonesBrowsers;\n-    maja = make.memberMaja();\n     michael = make.memberMichael();\n   });\n "
+    }
+  ]
+}
