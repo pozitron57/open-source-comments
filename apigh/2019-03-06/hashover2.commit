@@ -1,0 +1,98 @@
+{
+  "sha": "cf6a4990e17c838c67af0020a8ff31ac5330ff9b",
+  "node_id": "MDY6Q29tbWl0MTgwOTYzMjI6Y2Y2YTQ5OTBlMTdjODM4YzY3YWYwMDIwYThmZjMxYWM1MzMwZmY5Yg==",
+  "commit": {
+    "author": {
+      "name": "jacobwb",
+      "email": "jacobbarkdull@gmail.com",
+      "date": "2019-03-05T23:17:36Z"
+    },
+    "committer": {
+      "name": "jacobwb",
+      "email": "jacobbarkdull@gmail.com",
+      "date": "2019-03-05T23:17:36Z"
+    },
+    "message": "Oops",
+    "tree": {
+      "sha": "75ed39bad546e791a14ddc260433cbd5cf0cd0e2",
+      "url": "https://api.github.com/repos/jacobwb/hashover-next/git/trees/75ed39bad546e791a14ddc260433cbd5cf0cd0e2"
+    },
+    "url": "https://api.github.com/repos/jacobwb/hashover-next/git/commits/cf6a4990e17c838c67af0020a8ff31ac5330ff9b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/jacobwb/hashover-next/commits/cf6a4990e17c838c67af0020a8ff31ac5330ff9b",
+  "html_url": "https://github.com/jacobwb/hashover-next/commit/cf6a4990e17c838c67af0020a8ff31ac5330ff9b",
+  "comments_url": "https://api.github.com/repos/jacobwb/hashover-next/commits/cf6a4990e17c838c67af0020a8ff31ac5330ff9b/comments",
+  "author": {
+    "login": "jacobwb",
+    "id": 4677622,
+    "node_id": "MDQ6VXNlcjQ2Nzc2MjI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4677622?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jacobwb",
+    "html_url": "https://github.com/jacobwb",
+    "followers_url": "https://api.github.com/users/jacobwb/followers",
+    "following_url": "https://api.github.com/users/jacobwb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jacobwb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jacobwb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jacobwb/subscriptions",
+    "organizations_url": "https://api.github.com/users/jacobwb/orgs",
+    "repos_url": "https://api.github.com/users/jacobwb/repos",
+    "events_url": "https://api.github.com/users/jacobwb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jacobwb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jacobwb",
+    "id": 4677622,
+    "node_id": "MDQ6VXNlcjQ2Nzc2MjI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4677622?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jacobwb",
+    "html_url": "https://github.com/jacobwb",
+    "followers_url": "https://api.github.com/users/jacobwb/followers",
+    "following_url": "https://api.github.com/users/jacobwb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jacobwb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jacobwb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jacobwb/subscriptions",
+    "organizations_url": "https://api.github.com/users/jacobwb/orgs",
+    "repos_url": "https://api.github.com/users/jacobwb/repos",
+    "events_url": "https://api.github.com/users/jacobwb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jacobwb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c481ecf260c7d29fdce09a388a2384d2d7f9336b",
+      "url": "https://api.github.com/repos/jacobwb/hashover-next/commits/c481ecf260c7d29fdce09a388a2384d2d7f9336b",
+      "html_url": "https://github.com/jacobwb/hashover-next/commit/c481ecf260c7d29fdce09a388a2384d2d7f9336b"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "049ec91070f248ebb3319151ccb7552dd23cf990",
+      "filename": "backend/classes/commentsui.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/jacobwb/hashover-next/blob/cf6a4990e17c838c67af0020a8ff31ac5330ff9b/backend/classes/commentsui.php",
+      "raw_url": "https://github.com/jacobwb/hashover-next/raw/cf6a4990e17c838c67af0020a8ff31ac5330ff9b/backend/classes/commentsui.php",
+      "contents_url": "https://api.github.com/repos/jacobwb/hashover-next/contents/backend/classes/commentsui.php?ref=cf6a4990e17c838c67af0020a8ff31ac5330ff9b",
+      "patch": "@@ -142,7 +142,7 @@ public function dateLink ($href = '{href}', $permalink = '{permalink}', $title =\n \t\t$date_link->appendAttributes (array (\n \t\t\t'href' => '#' . $permalink,\n \t\t\t'class' => 'hashover-date-permalink',\n-\t\t\t'title' => $title . ' - Permalink',\n+\t\t\t'title' => 'Permalink - ' . $title,\n \t\t\t'innerHTML' => $date\n \t\t), false);\n "
+    }
+  ]
+}

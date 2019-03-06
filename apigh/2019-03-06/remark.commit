@@ -1,0 +1,98 @@
+{
+  "sha": "0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjBkMWVjZDY4NGNjZmEzNGYwYTA3YTcxOTU4YzVhYzYxN2FjNjhhYWY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-06T04:43:28Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-06T04:43:28Z"
+    },
+    "message": "reorg ignore file",
+    "tree": {
+      "sha": "6c5dadfcd8981edb7eecfa86b5115f891832f6cf",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/6c5dadfcd8981edb7eecfa86b5115f891832f6cf"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf",
+  "html_url": "https://github.com/umputun/remark/commit/0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7d475b185ac5096f3de8c7cdfe63720098b237fc",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7d475b185ac5096f3de8c7cdfe63720098b237fc",
+      "html_url": "https://github.com/umputun/remark/commit/7d475b185ac5096f3de8c7cdfe63720098b237fc"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 1,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "5c5baa0d7ed460dcfbdb3bfdf9a46acf66b6232f",
+      "filename": ".dockerignore",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark/blob/0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf/.dockerignore",
+      "raw_url": "https://github.com/umputun/remark/raw/0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf/.dockerignore",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/.dockerignore?ref=0d1ecd684ccfa34f0a07a71958c5ac617ac68aaf",
+      "patch": "@@ -5,7 +5,7 @@\n /web/public/\n /.vscode/\n /.idea/\n-#/.git/\n+/bin/\n \n # source files\n docker-compose.yml\n@@ -19,5 +19,4 @@ debug\n debug.test\n *.prof\n *.test\n-/bin/\n remark42"
+    }
+  ]
+}
