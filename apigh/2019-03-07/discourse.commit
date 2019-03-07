@@ -1,0 +1,98 @@
+{
+  "sha": "bc52437153adbded95e5a61dc63ee8bd2bf3cfda",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiYzUyNDM3MTUzYWRiZGVkOTVlNWE2MWRjNjNlZThiZDJiZjNjZmRh",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-03-07T14:03:05Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-03-07T14:03:05Z"
+    },
+    "message": "FIX: Add additional rescue for assets:precompile\n\nThis error can be caused if assets are precompiled before the database has been migrated",
+    "tree": {
+      "sha": "3cdc29153631def36b18184187e33deecf926e46",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3cdc29153631def36b18184187e33deecf926e46"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/bc52437153adbded95e5a61dc63ee8bd2bf3cfda",
+    "comment_count": 2,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/bc52437153adbded95e5a61dc63ee8bd2bf3cfda",
+  "html_url": "https://github.com/discourse/discourse/commit/bc52437153adbded95e5a61dc63ee8bd2bf3cfda",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/bc52437153adbded95e5a61dc63ee8bd2bf3cfda/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ad87b0d6624ce7b9bc97d7d7f2db361789ad3779",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ad87b0d6624ce7b9bc97d7d7f2db361789ad3779",
+      "html_url": "https://github.com/discourse/discourse/commit/ad87b0d6624ce7b9bc97d7d7f2db361789ad3779"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "2815f4440c523b3a1dc71d752348a3f4b9bb92d7",
+      "filename": "lib/tasks/assets.rake",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/bc52437153adbded95e5a61dc63ee8bd2bf3cfda/lib/tasks/assets.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/bc52437153adbded95e5a61dc63ee8bd2bf3cfda/lib/tasks/assets.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/assets.rake?ref=bc52437153adbded95e5a61dc63ee8bd2bf3cfda",
+      "patch": "@@ -58,7 +58,7 @@ task 'assets:precompile:css' => 'environment' do\n         STDERR.puts \"Compiling css for #{db} #{Time.zone.now}\"\n         begin\n           Stylesheet::Manager.precompile_css\n-        rescue PG::UndefinedColumn => e\n+        rescue PG::UndefinedColumn, ActiveModel::MissingAttributeError => e\n           STDERR.puts \"#{e.class} #{e.message}: #{e.backtrace.join(\"\\n\")}\"\n           STDERR.puts \"Skipping precompilation of CSS cause schema is old, you are precompiling prior to running migrations.\"\n         end"
+    }
+  ]
+}

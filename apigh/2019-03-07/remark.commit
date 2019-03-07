@@ -1,0 +1,110 @@
+{
+  "sha": "347fe1a0dbc28aca1837c6745284d4a770086d6e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjM0N2ZlMWEwZGJjMjhhY2ExODM3YzY3NDUyODRkNGE3NzAwODZkNmU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-06T18:15:44Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-06T18:15:44Z"
+    },
+    "message": "randomize db name for rest test to avoid conflicts in parallel testing",
+    "tree": {
+      "sha": "b35210242b923ae33c65d85a949f94097630d0dd",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/b35210242b923ae33c65d85a949f94097630d0dd"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/347fe1a0dbc28aca1837c6745284d4a770086d6e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/347fe1a0dbc28aca1837c6745284d4a770086d6e",
+  "html_url": "https://github.com/umputun/remark/commit/347fe1a0dbc28aca1837c6745284d4a770086d6e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/347fe1a0dbc28aca1837c6745284d4a770086d6e/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e638fbb2c3fbdc214158ff5f50546fa2e8a0cf5a",
+      "url": "https://api.github.com/repos/umputun/remark/commits/e638fbb2c3fbdc214158ff5f50546fa2e8a0cf5a",
+      "html_url": "https://github.com/umputun/remark/commit/e638fbb2c3fbdc214158ff5f50546fa2e8a0cf5a"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e8e6b97647aaa6058e88d7759664eec667574f63",
+      "filename": "backend/app/rest/api/migrator_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/347fe1a0dbc28aca1837c6745284d4a770086d6e/backend/app/rest/api/migrator_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/347fe1a0dbc28aca1837c6745284d4a770086d6e/backend/app/rest/api/migrator_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/migrator_test.go?ref=347fe1a0dbc28aca1837c6745284d4a770086d6e",
+      "patch": "@@ -6,6 +6,7 @@ import (\n \t\"fmt\"\n \t\"io\"\n \t\"io/ioutil\"\n+\t\"math/rand\"\n \t\"mime/multipart\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n@@ -243,6 +244,7 @@ func waitForImportCompletion(t *testing.T, ts *httptest.Server) {\n }\n \n func prepImportSrv(t *testing.T) (ts *httptest.Server, teardown func()) {\n+\ttestDb := fmt.Sprintf(\"/tmp/test-remark-import-%d.db\", rand.Int31())\n \tb, err := engine.NewBoltDB(bolt.Options{}, engine.BoltSite{FileName: testDb, SiteID: \"radio-t\"})\n \trequire.Nil(t, err)\n \tadminStore := adminstore.NewStaticStore(\"123456\", []string{\"a1\", \"a2\"}, \"admin@remark-42.com\")"
+    },
+    {
+      "sha": "51ba067f778c35be1ed4087a95e4fce78c2a3ceb",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/347fe1a0dbc28aca1837c6745284d4a770086d6e/backend/app/rest/api/rest_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/347fe1a0dbc28aca1837c6745284d4a770086d6e/backend/app/rest/api/rest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_test.go?ref=347fe1a0dbc28aca1837c6745284d4a770086d6e",
+      "patch": "@@ -4,7 +4,9 @@ import (\n \t\"bytes\"\n \t\"crypto/tls\"\n \t\"encoding/json\"\n+\t\"fmt\"\n \t\"io/ioutil\"\n+\t\"math/rand\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n \t\"os\"\n@@ -29,7 +31,6 @@ import (\n \t\"github.com/umputun/remark/backend/app/store/service\"\n )\n \n-var testDb = \"/tmp/test-remark.db\"\n var testHTML = \"/tmp/test-remark.html\"\n var getStartedHTML = \"/tmp/getstarted.html\"\n \n@@ -177,6 +178,7 @@ func TestRest_RunAutocertModeHTTPOnly(t *testing.T) {\n \n func startupT(t *testing.T) (ts *httptest.Server, srv *Rest, teardown func()) {\n \n+\ttestDb := fmt.Sprintf(\"/tmp/test-remark-%d.db\", rand.Int31())\n \tos.Remove(testDb)\n \tos.Remove(testHTML)\n \tos.RemoveAll(\"/tmp/ava-remark42\")"
+    }
+  ]
+}
