@@ -1,0 +1,98 @@
+{
+  "sha": "9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5ZmEyYmE2Zjk5YWY5NjFiNWMyYzQ2YWE2ZmZkMGNiYTZhYzM4YWFl",
+  "commit": {
+    "author": {
+      "name": "Tarek Khalil",
+      "email": "45508821+khalilovcmded@users.noreply.github.com",
+      "date": "2019-03-08T16:50:04Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-03-08T16:50:04Z"
+    },
+    "message": "FIX: Add translation to `ignore_user_enabled` SiteSetting (#7134)",
+    "tree": {
+      "sha": "71067d262efa74633c2505725ed91fe0226ae69d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/71067d262efa74633c2505725ed91fe0226ae69d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae",
+  "html_url": "https://github.com/discourse/discourse/commit/9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae/comments",
+  "author": {
+    "login": "khalilovcmded",
+    "id": 45508821,
+    "node_id": "MDQ6VXNlcjQ1NTA4ODIx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/45508821?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/khalilovcmded",
+    "html_url": "https://github.com/khalilovcmded",
+    "followers_url": "https://api.github.com/users/khalilovcmded/followers",
+    "following_url": "https://api.github.com/users/khalilovcmded/following{/other_user}",
+    "gists_url": "https://api.github.com/users/khalilovcmded/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/khalilovcmded/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/khalilovcmded/subscriptions",
+    "organizations_url": "https://api.github.com/users/khalilovcmded/orgs",
+    "repos_url": "https://api.github.com/users/khalilovcmded/repos",
+    "events_url": "https://api.github.com/users/khalilovcmded/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/khalilovcmded/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e3e681ebf7a626e195b8a23c186e0e39b0c98060",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e3e681ebf7a626e195b8a23c186e0e39b0c98060",
+      "html_url": "https://github.com/discourse/discourse/commit/e3e681ebf7a626e195b8a23c186e0e39b0c98060"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "7d5ae6f0dc6441b796b10f96c3ee71ee3646afd8",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=9fa2ba6f99af961b5c2c46aa6ffd0cba6ac38aae",
+      "patch": "@@ -1814,6 +1814,8 @@ en:\n \n     log_personal_messages_views: \"Log personal message views by Admin for other users/groups.\"\n \n+    ignore_user_enabled: \"[Beta] Allow ignoring users.\"\n+\n     user_website_domains_whitelist: \"User website will be verified against these domains. Pipe-delimited list.\"\n \n     allow_profile_backgrounds: \"Allow users to upload profile backgrounds.\""
+    }
+  ]
+}
