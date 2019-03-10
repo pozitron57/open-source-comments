@@ -1,0 +1,98 @@
+{
+  "sha": "d37ce1a91218f86b05d9641dd17e6ec29bc67930",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmQzN2NlMWE5MTIxOGY4NmIwNWQ5NjQxZGQxN2U2ZWMyOWJjNjc5MzA=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-08T07:31:43Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-08T07:31:43Z"
+    },
+    "message": "move reports gen to test step",
+    "tree": {
+      "sha": "bbbac68f99b0a58bca81b8aea989453612aa6d8b",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/bbbac68f99b0a58bca81b8aea989453612aa6d8b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/d37ce1a91218f86b05d9641dd17e6ec29bc67930",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/d37ce1a91218f86b05d9641dd17e6ec29bc67930",
+  "html_url": "https://github.com/umputun/remark/commit/d37ce1a91218f86b05d9641dd17e6ec29bc67930",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/d37ce1a91218f86b05d9641dd17e6ec29bc67930/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a7004f15a5bd9ac8038da7e7916b52d44145eb14",
+      "url": "https://api.github.com/repos/umputun/remark/commits/a7004f15a5bd9ac8038da7e7916b52d44145eb14",
+      "html_url": "https://github.com/umputun/remark/commit/a7004f15a5bd9ac8038da7e7916b52d44145eb14"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 2,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "2e4ef9ea590bb3cfc13d36e2937593f683145153",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 7,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark/blob/d37ce1a91218f86b05d9641dd17e6ec29bc67930/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark/raw/d37ce1a91218f86b05d9641dd17e6ec29bc67930/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/Dockerfile?ref=d37ce1a91218f86b05d9641dd17e6ec29bc67930",
+      "patch": "@@ -29,7 +29,7 @@ ADD .git /go/src/github.com/umputun/remark/.git\n RUN \\\n     if [ -f .mongo ] ; then export MONGO_TEST=$(cat .mongo) ; fi && \\\n     cd app && \\\n-    if [ -z \"$SKIP_BACKEND_TEST\" ] ; then go test ./... ; \\\n+    if [ -z \"$SKIP_BACKEND_TEST\" ] ; then go test -covermode=count -coverprofile=/profile.cov ./... ; \\\n     else echo \"skip backend test\" ; fi\n \n RUN echo \"mongo=${MONGO_TEST}\" >> /etc/hosts\n@@ -42,16 +42,11 @@ RUN if [ -z \"$SKIP_BACKEND_TEST\" ] ; then \\\n     --enable=deadcode  --enable=gosimple --exclude=test --exclude=mock --exclude=vendor ./... ; \\\n     else echo \"skip backend linters\" ; fi\n \n-# coverage report\n-RUN if [ -z \"$SKIP_BACKEND_TEST\" ] ; then \\\n-    if [ -f .mongo ] ; then export MONGO_TEST=$(cat .mongo) ; fi && \\\n-    mkdir -p target && /script/coverage.sh ; \\\n-    else echo \"skip backend coverage\" ; fi\n \n # submit coverage to coverals if COVERALLS_TOKEN in env\n RUN if [ -z \"$COVERALLS_TOKEN\" ] ; then \\\n     echo \"coverall not enabled\" ; \\\n-    else goveralls -coverprofile=.cover/cover.out -service=travis-ci -repotoken $COVERALLS_TOKEN || echo \"coverall failed!\"; fi\n+    else goveralls -coverprofile=/profile.cov -service=travis-ci -repotoken $COVERALLS_TOKEN || echo \"coverall failed!\"; fi\n \n # if DRONE presented use DRONE_* git env to make version\n RUN \\"
+    }
+  ]
+}

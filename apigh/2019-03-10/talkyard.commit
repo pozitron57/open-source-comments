@@ -1,0 +1,134 @@
+{
+  "sha": "e5d0263f987c06857588bff5a1e6bde3587b3676",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZTVkMDI2M2Y5ODdjMDY4NTc1ODhiZmY1YTFlNmJkZTM1ODdiMzY3Ng==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-03-09T17:52:02Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-03-10T09:58:28Z"
+    },
+    "message": "Edit readme. More plumber(). No tours for built-in users and groups.",
+    "tree": {
+      "sha": "22bd3f46df197046b52b90395714c53c7abe454e",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/22bd3f46df197046b52b90395714c53c7abe454e"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/e5d0263f987c06857588bff5a1e6bde3587b3676",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/e5d0263f987c06857588bff5a1e6bde3587b3676",
+  "html_url": "https://github.com/debiki/talkyard/commit/e5d0263f987c06857588bff5a1e6bde3587b3676",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/e5d0263f987c06857588bff5a1e6bde3587b3676/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5efb70707c54810e55905a0e8557f80e0b1ca951",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/5efb70707c54810e55905a0e8557f80e0b1ca951",
+      "html_url": "https://github.com/debiki/talkyard/commit/5efb70707c54810e55905a0e8557f80e0b1ca951"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 18,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "2fd2c75e9bb2c67d6856f4e17cebc84165dc484b",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 8,
+      "changes": 17,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e5d0263f987c06857588bff5a1e6bde3587b3676/README.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e5d0263f987c06857588bff5a1e6bde3587b3676/README.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/README.md?ref=e5d0263f987c06857588bff5a1e6bde3587b3676",
+      "patch": "@@ -164,12 +164,14 @@ Getting Started\n You need about 4 GB RAM for the development environment (whereas the production environment needs about 2 GB).\n And a somewhat fast internet connection — you'll be downloading perhaps 0.5 (?) GB Docker images.\n \n-Install Docker-Compose, version 1.7.0+: https://docs.docker.com/compose/install/,\n-or simply, on Linux: (maybe a 'sudo' is missing on the 1st line?)\n+Install Docker and Docker-Compose, see: https://docs.docker.com/compose/install/.\n+On Linux, you can:\n \n ```\n-wget -qO- https://get.docker.com/ | sh\n-sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose\n+sudo -i\n+curl -fsSL https://get.docker.com -o install-docker.sh\n+sh install-docker.sh\n+curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose\n sudo chmod +x /usr/local/bin/docker-compose\n docker-compose --version  # should print \"docker-compose version ... build ...\"\n ```\n@@ -202,9 +204,10 @@ how to use docker-compose already.\n \n 1. Clone the repository, and type `make up`:  (you need GNU Make installed)\n \n+       apt install make\n        git clone https://github.com/debiki/talkyard.git talkyard\n        cd talkyard\n-       make up  # GNU Make\n+       make up\n \n \n 1. Wait. `make up` takes a while: Git submodules and Node.js packages will get downloaded,\n@@ -275,10 +278,8 @@ installed, which recompile Typescript and Stylus CSS. And a container,\n named App, which runs the Play Framework application server, and looks\n for changes to Scala files, recompiles and reloads.\n \n-If you edit Typescript, wait two seconds before you reload the page in\n+If you edit Typescript, wait five seconds before you reload the page in\n the browser, otherwise the Typescript code might not yet have been transpiled.\n-It might take 5 or 10 seconds for the page to reload, once you've changed\n-something.\n \n If you keep editing and reloading Scala files many many times, then eventually\n Play Framework runs out of memory. Restart it like so: `make restart`."
+    },
+    {
+      "sha": "2dc7c9af6b31d51632d4022fe181ceedd40d91e0",
+      "filename": "client/app-slim/utils/talkyard-tour.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e5d0263f987c06857588bff5a1e6bde3587b3676/client/app-slim/utils/talkyard-tour.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e5d0263f987c06857588bff5a1e6bde3587b3676/client/app-slim/utils/talkyard-tour.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/utils/talkyard-tour.ts?ref=e5d0263f987c06857588bff5a1e6bde3587b3676",
+      "patch": "@@ -46,6 +46,10 @@ export function maybeRunTour(tour: TalkyardTour) {\n       !getFromLocalStorage('runToursAlthoughE2eTest'))\n     return;\n \n+  // Don't run tours for built-in users and groups (if impersonating).\n+  if (tour.forWho.id < LowestAuthenticatedUserId || tour.forWho.isGroup)\n+    return;\n+\n   const tourIdsSeen = tour.forWho.tourTipsSeen;\n   const thisTourSeen = tourIdsSeen.indexOf(tour.id) >= 0;\n   if (thisTourSeen || tourRunning)"
+    },
+    {
+      "sha": "ae3630a3616b0602c59adb1ee7bdee2aaace83d7",
+      "filename": "docs/about-the-talkyard-images.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e5d0263f987c06857588bff5a1e6bde3587b3676/docs/about-the-talkyard-images.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e5d0263f987c06857588bff5a1e6bde3587b3676/docs/about-the-talkyard-images.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/about-the-talkyard-images.md?ref=e5d0263f987c06857588bff5a1e6bde3587b3676",
+      "patch": "@@ -11,10 +11,8 @@ Planning to change to OpenResty, with automatic HTTPS via\n https://github.com/GUI/lua-resty-auto-ssl (currently one\n needs to run LetsEncryp's `certbot` manually).\n \n-Nginx serves uploaded files directly from the file system, and quickly\n-replies to requests for Javascript and CSS, because caches in-memory.\n-\n-Also does some request rate limiting.\n+Nginx serves uploaded files and transpiled Javascript and CSS directly\n+from the file system. Also does some request rate limiting.\n And outgoing bandwith limiting, see `images/web/ed-lua/lua-limit-bandwidth`,\n to reduce? elliminate? the risk that you get a surprise bill from your cloud provider\n for high bandwidth costs."
+    },
+    {
+      "sha": "6dc48f7088a9fe89fea79d0902160e4f9ed5df08",
+      "filename": "gulpfile.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e5d0263f987c06857588bff5a1e6bde3587b3676/gulpfile.js",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e5d0263f987c06857588bff5a1e6bde3587b3676/gulpfile.js",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/gulpfile.js?ref=e5d0263f987c06857588bff5a1e6bde3587b3676",
+      "patch": "@@ -513,9 +513,11 @@ function makeConcatWebScriptsStream() {\n       makeConcatStream('jquery-bundle.js', jqueryJsFiles, 'DoCheckNewer'),\n       makeConcatStream('talkyard-comments.js', embeddedJsFiles, 'DoCheckNewer', false),\n       gulp.src('node_modules/zxcvbn/dist/zxcvbn.js')\n+          .pipe(plumber())\n           .pipe(gulp.dest(webDestVersioned))\n           .pipe(gzip())\n-          .pipe(gulp.dest(webDestVersioned)));\n+          .pipe(gulp.dest(webDestVersioned)))\n+      .pipe(plumber());\n }\n \n "
+    }
+  ]
+}
