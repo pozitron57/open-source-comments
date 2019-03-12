@@ -1,0 +1,98 @@
+{
+  "sha": "a901527057f3f1dc6758abe5b7b0c172d683fe35",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphOTAxNTI3MDU3ZjNmMWRjNjc1OGFiZTViN2IwYzE3MmQ2ODNmZTM1",
+  "commit": {
+    "author": {
+      "name": "Saurabh Patel",
+      "email": "saurabh.finch@gmail.com",
+      "date": "2019-03-12T16:51:09Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-03-12T16:51:09Z"
+    },
+    "message": "DEV: remove user_profile events added for akismet (#7044)",
+    "tree": {
+      "sha": "7333c5cb7abec30f4558d67e050c7206f3e3a5dc",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7333c5cb7abec30f4558d67e050c7206f3e3a5dc"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a901527057f3f1dc6758abe5b7b0c172d683fe35",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a901527057f3f1dc6758abe5b7b0c172d683fe35",
+  "html_url": "https://github.com/discourse/discourse/commit/a901527057f3f1dc6758abe5b7b0c172d683fe35",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a901527057f3f1dc6758abe5b7b0c172d683fe35/comments",
+  "author": {
+    "login": "mrfinch",
+    "id": 6376157,
+    "node_id": "MDQ6VXNlcjYzNzYxNTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/6376157?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mrfinch",
+    "html_url": "https://github.com/mrfinch",
+    "followers_url": "https://api.github.com/users/mrfinch/followers",
+    "following_url": "https://api.github.com/users/mrfinch/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mrfinch/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mrfinch/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mrfinch/subscriptions",
+    "organizations_url": "https://api.github.com/users/mrfinch/orgs",
+    "repos_url": "https://api.github.com/users/mrfinch/repos",
+    "events_url": "https://api.github.com/users/mrfinch/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mrfinch/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "154f503d2e99f904356b52f2fae9edcc495708fa",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/154f503d2e99f904356b52f2fae9edcc495708fa",
+      "html_url": "https://github.com/discourse/discourse/commit/154f503d2e99f904356b52f2fae9edcc495708fa"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 0,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "4d36ab556555f842b9fb15bad49044a4331cc6e1",
+      "filename": "app/models/user_profile.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 10,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/a901527057f3f1dc6758abe5b7b0c172d683fe35/app/models/user_profile.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a901527057f3f1dc6758abe5b7b0c172d683fe35/app/models/user_profile.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/user_profile.rb?ref=a901527057f3f1dc6758abe5b7b0c172d683fe35",
+      "patch": "@@ -8,8 +8,6 @@ class UserProfile < ActiveRecord::Base\n   validates :user, presence: true\n   before_save :cook\n   after_save :trigger_badges\n-  after_commit :trigger_profile_created_event, on: :create\n-  after_commit :trigger_profile_updated_event, on: :update\n \n   validates :profile_background, upload_url: true, if: :profile_background_changed?\n   validates :card_background, upload_url: true, if: :card_background_changed?\n@@ -108,14 +106,6 @@ def self.import_url_for_user(background_url, user, options = nil)\n     tempfile.close! if tempfile && tempfile.respond_to?(:close!)\n   end\n \n-  def trigger_profile_created_event\n-    DiscourseEvent.trigger(:user_profile_created, self)\n-  end\n-\n-  def trigger_profile_updated_event\n-    DiscourseEvent.trigger(:user_profile_updated, self)\n-  end\n-\n   protected\n \n   def trigger_badges"
+    }
+  ]
+}
