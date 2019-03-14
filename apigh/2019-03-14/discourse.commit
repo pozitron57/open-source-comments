@@ -1,0 +1,98 @@
+{
+  "sha": "1b65469b64e9e569fed67ae11f1dd9ee37702f5c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxYjY1NDY5YjY0ZTllNTY5ZmVkNjdhZTExZjFkZDllZTM3NzAyZjVj",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-03-14T15:39:10Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-03-14T15:39:10Z"
+    },
+    "message": "FIX: Backwards compatibility for `SiteSetting.queue_jobs`\n\nSome plugin specs use this. Let's deprecate it instead.",
+    "tree": {
+      "sha": "6557878d47767d7a1616527654e36c8347b018bf",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/6557878d47767d7a1616527654e36c8347b018bf"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1b65469b64e9e569fed67ae11f1dd9ee37702f5c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1b65469b64e9e569fed67ae11f1dd9ee37702f5c",
+  "html_url": "https://github.com/discourse/discourse/commit/1b65469b64e9e569fed67ae11f1dd9ee37702f5c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1b65469b64e9e569fed67ae11f1dd9ee37702f5c/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fa5a15868320b3f45777db25b72ac5293db3ff89",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fa5a15868320b3f45777db25b72ac5293db3ff89",
+      "html_url": "https://github.com/discourse/discourse/commit/fa5a15868320b3f45777db25b72ac5293db3ff89"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "873dfe28b86603cf38a0d125cbc79c9541b8effb",
+      "filename": "app/models/site_setting.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/1b65469b64e9e569fed67ae11f1dd9ee37702f5c/app/models/site_setting.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1b65469b64e9e569fed67ae11f1dd9ee37702f5c/app/models/site_setting.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/site_setting.rb?ref=1b65469b64e9e569fed67ae11f1dd9ee37702f5c",
+      "patch": "@@ -104,6 +104,11 @@ def self.min_redirected_to_top_period(duration)\n     nil\n   end\n \n+  def self.queue_jobs=(val)\n+    Discourse.deprecate(\"queue_jobs is deprecated. Please use Jobs.run_immediately! instead\")\n+    val ? Jobs.run_later! : Jobs.run_immediately!\n+  end\n+\n   def self.email_polling_enabled?\n     SiteSetting.manual_polling_enabled? || SiteSetting.pop3_polling_enabled?\n   end"
+    }
+  ]
+}
