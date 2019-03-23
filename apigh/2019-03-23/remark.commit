@@ -1,0 +1,98 @@
+{
+  "sha": "83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjgzZGUyOGMyZGFiM2ZkMDc5MGY5YWM5OGI4YzMyYTFlNWFjMzlkMzU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-18T18:04:21Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-18T18:04:21Z"
+    },
+    "message": "strip trailing / from REMARK_URL\n\nhttps://github.com/umputun/remark/issues/289#issuecomment-474030504",
+    "tree": {
+      "sha": "f8ef02d6508e1e8f8e1ed167ebeca42449fe4af3",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/f8ef02d6508e1e8f8e1ed167ebeca42449fe4af3"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35",
+  "html_url": "https://github.com/umputun/remark/commit/83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "034101fb648ea7d731fe37f3fce452e5c202fa2c",
+      "url": "https://api.github.com/repos/umputun/remark/commits/034101fb648ea7d731fe37f3fce452e5c202fa2c",
+      "html_url": "https://github.com/umputun/remark/commit/034101fb648ea7d731fe37f3fce452e5c202fa2c"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "541d3a5efa54436ae7157fd869bd66b85e040ac4",
+      "filename": "backend/app/cmd/cmd.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35/backend/app/cmd/cmd.go",
+      "raw_url": "https://github.com/umputun/remark/raw/83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35/backend/app/cmd/cmd.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/cmd.go?ref=83de28c2dab3fd0790f9ac98b8c32a1e5ac39d35",
+      "patch": "@@ -33,7 +33,7 @@ type CommonOpts struct {\n // SetCommon satisfies CommonOptionsCommander interface and sets common option fields\n // The method called by main for each command\n func (c *CommonOpts) SetCommon(commonOpts CommonOpts) {\n-\tc.RemarkURL = commonOpts.RemarkURL\n+\tc.RemarkURL = strings.TrimSuffix(commonOpts.RemarkURL, \"/\") // allow RemarkURL with trailing /\n \tc.SharedSecret = commonOpts.SharedSecret\n \tc.Revision = commonOpts.Revision\n }"
+    }
+  ]
+}
