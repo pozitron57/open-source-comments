@@ -1,0 +1,110 @@
+{
+  "sha": "56c5cd64bc86162d7b7c8df81784a8be4b9ad499",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjU2YzVjZDY0YmM4NjE2MmQ3YjdjOGRmODE3ODRhOGJlNGI5YWQ0OTk=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-26T05:04:59Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-26T05:04:59Z"
+    },
+    "message": "lint: more test warnings",
+    "tree": {
+      "sha": "7f103f4f3c9f1100bdf6d7b72e132aa224d109f5",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/7f103f4f3c9f1100bdf6d7b72e132aa224d109f5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/56c5cd64bc86162d7b7c8df81784a8be4b9ad499",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/56c5cd64bc86162d7b7c8df81784a8be4b9ad499",
+  "html_url": "https://github.com/umputun/remark/commit/56c5cd64bc86162d7b7c8df81784a8be4b9ad499",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/56c5cd64bc86162d7b7c8df81784a8be4b9ad499/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6ef88bf375ab5c6e2d90c5eed59214587dee89c5",
+      "url": "https://api.github.com/repos/umputun/remark/commits/6ef88bf375ab5c6e2d90c5eed59214587dee89c5",
+      "html_url": "https://github.com/umputun/remark/commit/6ef88bf375ab5c6e2d90c5eed59214587dee89c5"
+    }
+  ],
+  "stats": {
+    "total": 87,
+    "additions": 48,
+    "deletions": 39
+  },
+  "files": [
+    {
+      "sha": "73b66ee5500b6139073475621d0332acc2ae0c00",
+      "filename": "backend/app/store/service/service_test.go",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 28,
+      "changes": 63,
+      "blob_url": "https://github.com/umputun/remark/blob/56c5cd64bc86162d7b7c8df81784a8be4b9ad499/backend/app/store/service/service_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/56c5cd64bc86162d7b7c8df81784a8be4b9ad499/backend/app/store/service/service_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/service_test.go?ref=56c5cd64bc86162d7b7c8df81784a8be4b9ad499",
+      "patch": "@@ -28,7 +28,7 @@ import (\n var testDb = \"/tmp/test-remark.db\"\n \n func TestService_CreateFromEmpty(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tks := admin.NewStaticKeyStore(\"secret 123\")\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: ks}\n \tcomment := store.Comment{\n@@ -52,7 +52,7 @@ func TestService_CreateFromEmpty(t *testing.T) {\n }\n \n func TestService_CreateFromPartial(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tks := admin.NewStaticKeyStore(\"secret 123\")\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: ks}\n \tcomment := store.Comment{\n@@ -79,7 +79,7 @@ func TestService_CreateFromPartial(t *testing.T) {\n }\n \n func TestService_CreateFromPartialWithTitle(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tks := admin.NewStaticKeyStore(\"secret 123\")\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: ks,\n \t\tTitleExtractor: NewTitleExtractor(http.Client{Timeout: 5 * time.Second})}\n@@ -109,19 +109,21 @@ func TestService_CreateFromPartialWithTitle(t *testing.T) {\n }\n \n func TestService_SetTitle(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \n \tvar titleEnable int32\n \ttss := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tif atomic.LoadInt32(&titleEnable) == 0 {\n \t\t\tw.WriteHeader(404)\n \t\t}\n \t\tif r.URL.String() == \"/post1\" {\n-\t\t\tw.Write([]byte(\"<html><title>post1 blah 123</title><body> 2222</body></html>\"))\n+\t\t\t_, err := w.Write([]byte(\"<html><title>post1 blah 123</title><body> 2222</body></html>\"))\n+\t\t\tassert.NoError(t, err)\n \t\t\treturn\n \t\t}\n \t\tif r.URL.String() == \"/post2\" {\n-\t\t\tw.Write([]byte(\"<html><title>post2 blah 123</title><body> 2222</body></html>\"))\n+\t\t\t_, err := w.Write([]byte(\"<html><title>post2 blah 123</title><body> 2222</body></html>\"))\n+\t\t\tassert.NoError(t, err)\n \t\t\treturn\n \t\t}\n \t\tw.WriteHeader(404)\n@@ -161,7 +163,7 @@ func TestService_SetTitle(t *testing.T) {\n }\n \n func TestService_Vote(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"), MaxVotes: -1}\n \n \tcomment := store.Comment{\n@@ -207,7 +209,7 @@ func TestService_Vote(t *testing.T) {\n }\n \n func TestService_VoteLimit(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"), MaxVotes: 2}\n \n \t_, err := b.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, \"id-1\", \"user2\", true)\n@@ -225,15 +227,15 @@ func TestService_VoteLimit(t *testing.T) {\n }\n \n func TestService_VotesDisabled(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"), MaxVotes: 0}\n \n \t_, err := b.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, \"id-1\", \"user2\", true)\n \tassert.EqualError(t, err, \"maximum number of votes exceeded for comment id-1\")\n }\n \n func TestService_VoteAggressive(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"), MaxVotes: -1}\n \n \tcomment := store.Comment{\n@@ -293,7 +295,7 @@ func TestService_VoteAggressive(t *testing.T) {\n \n func TestService_VoteConcurrent(t *testing.T) {\n \n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"), MaxVotes: -1}\n \n \tcomment := store.Comment{\n@@ -310,10 +312,11 @@ func TestService_VoteConcurrent(t *testing.T) {\n \tvar wg sync.WaitGroup\n \tfor i := 0; i < 100; i++ {\n \t\twg.Add(1)\n-\t\ti := i\n+\t\tii := i\n \t\tgo func() {\n \t\t\tdefer wg.Done()\n-\t\t\tb.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, res[0].ID, fmt.Sprintf(\"user1-%d\", i), true)\n+\t\t\t_, _ = b.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, res[0].ID,\n+\t\t\t\tfmt.Sprintf(\"user1-%d\", ii), true)\n \t\t}()\n \t}\n \twg.Wait()\n@@ -325,7 +328,7 @@ func TestService_VoteConcurrent(t *testing.T) {\n }\n \n func TestService_VotePositive(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"),\n \t\tMaxVotes: -1, PositiveScore: true}\n \n@@ -344,7 +347,7 @@ func TestService_VotePositive(t *testing.T) {\n }\n \n func TestService_VoteControversy(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\"), MaxVotes: -1}\n \n \tc, err := b.Vote(store.Locator{URL: \"https://radio-t.com\", SiteID: \"radio-t\"}, \"id-2\", \"user2\", false)\n@@ -394,7 +397,7 @@ func TestService_Controversy(t *testing.T) {\n }\n \n func TestService_Pin(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n \n \tres, err := b.Last(\"radio-t\", 0)\n@@ -418,7 +421,7 @@ func TestService_Pin(t *testing.T) {\n }\n \n func TestService_EditComment(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n \n \tres, err := b.Last(\"radio-t\", 0)\n@@ -445,7 +448,7 @@ func TestService_EditComment(t *testing.T) {\n }\n \n func TestService_DeleteComment(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n \n \tres, err := b.Last(\"radio-t\", 0)\n@@ -464,7 +467,7 @@ func TestService_DeleteComment(t *testing.T) {\n }\n \n func TestService_EditCommentDurationFailed(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond, AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n \n \tres, err := b.Last(\"radio-t\", 0)\n@@ -481,7 +484,7 @@ func TestService_EditCommentDurationFailed(t *testing.T) {\n }\n \n func TestService_EditCommentReplyFailed(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := DataStore{Interface: prepStoreEngine(t), AdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n \n \tres, err := b.Last(\"radio-t\", 0)\n@@ -532,7 +535,7 @@ func TestService_ValidateComment(t *testing.T) {\n }\n \n func TestService_Counts(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tb := prepStoreEngine(t) // two comments for https://radio-t.com\n \n \t// add one more for https://radio-t.com/2\n@@ -561,7 +564,7 @@ func TestService_Counts(t *testing.T) {\n }\n \n func TestService_GetMetas(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \t// two comments for https://radio-t.com\n \tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond,\n \t\tAdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n@@ -592,7 +595,7 @@ func TestService_GetMetas(t *testing.T) {\n }\n \n func TestService_SetMetas(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \t// two comments for https://radio-t.com\n \tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond,\n \t\tAdminStore: admin.NewStaticKeyStore(\"secret 123\")}\n@@ -616,7 +619,7 @@ func TestService_SetMetas(t *testing.T) {\n }\n \n func TestService_IsAdmin(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \t// two comments for https://radio-t.com\n \tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond,\n \t\tAdminStore: admin.NewStaticStore(\"secret 123\", []string{\"user2\"}, \"user@email.com\")}\n@@ -626,7 +629,7 @@ func TestService_IsAdmin(t *testing.T) {\n }\n \n func TestService_HasReplies(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \n \t// two comments for https://radio-t.com, no reply\n \tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond,\n@@ -656,7 +659,7 @@ func TestService_HasReplies(t *testing.T) {\n }\n \n func TestService_Find(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \n \t// two comments for https://radio-t.com, no reply\n \tb := DataStore{Interface: prepStoreEngine(t), EditDuration: 100 * time.Millisecond,\n@@ -690,7 +693,7 @@ func TestService_Find(t *testing.T) {\n }\n \n func TestService_submitImages(t *testing.T) {\n-\tdefer os.Remove(testDb)\n+\tdefer teardown(t)\n \tlgr.Setup(lgr.Debug, lgr.CallerFile, lgr.CallerFunc)\n \n \tctrl := gomock.NewController(t)\n@@ -720,7 +723,7 @@ func TestService_submitImages(t *testing.T) {\n \n // makes new boltdb, put two records\n func prepStoreEngine(t *testing.T) engine.Interface {\n-\tos.Remove(testDb)\n+\t_ = os.Remove(testDb)\n \n \tboltStore, err := engine.NewBoltDB(bolt.Options{}, engine.BoltSite{FileName: \"/tmp/test-remark.db\", SiteID: \"radio-t\"})\n \tassert.Nil(t, err)\n@@ -748,3 +751,7 @@ func prepStoreEngine(t *testing.T) engine.Interface {\n \n \treturn b\n }\n+\n+func teardown(_ *testing.T) {\n+\t_ = os.Remove(testDb)\n+}"
+    },
+    {
+      "sha": "aadd4072553a5d1ee88dc4f4efb61231c8dfea16",
+      "filename": "backend/app/store/service/title_test.go",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 11,
+      "changes": 24,
+      "blob_url": "https://github.com/umputun/remark/blob/56c5cd64bc86162d7b7c8df81784a8be4b9ad499/backend/app/store/service/title_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/56c5cd64bc86162d7b7c8df81784a8be4b9ad499/backend/app/store/service/title_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/title_test.go?ref=56c5cd64bc86162d7b7c8df81784a8be4b9ad499",
+      "patch": "@@ -44,7 +44,8 @@ func TestTitle_Get(t *testing.T) {\n \tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tif r.URL.String() == \"/good\" {\n \t\t\tatomic.AddInt32(&hits, 1)\n-\t\t\tw.Write([]byte(\"<html><title>blah 123</title><body> 2222</body></html>\"))\n+\t\t\t_, err := w.Write([]byte(\"<html><title>blah 123</title><body> 2222</body></html>\"))\n+\t\t\tassert.NoError(t, err)\n \t\t\treturn\n \t\t}\n \t\tw.WriteHeader(404)\n@@ -58,9 +59,9 @@ func TestTitle_Get(t *testing.T) {\n \trequire.NotNil(t, err)\n \n \tfor i := 0; i < 100; i++ {\n-\t\ttitle, err := ex.Get(ts.URL + \"/good\")\n-\t\trequire.Nil(t, err)\n-\t\tassert.Equal(t, \"blah 123\", title)\n+\t\tr, e := ex.Get(ts.URL + \"/good\")\n+\t\trequire.Nil(t, e)\n+\t\tassert.Equal(t, \"blah 123\", r)\n \t}\n \tassert.Equal(t, int32(1), atomic.LoadInt32(&hits))\n }\n@@ -75,7 +76,8 @@ func TestTitle_GetConcurrent(t *testing.T) {\n \tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tif strings.HasPrefix(r.URL.String(), \"/good\") {\n \t\t\tatomic.AddInt32(&hits, 1)\n-\t\t\tw.Write([]byte(fmt.Sprintf(\"<html><title>blah 123 %s</title><body>%s</body></html>\", r.URL.String(), body)))\n+\t\t\t_, err := w.Write([]byte(fmt.Sprintf(\"<html><title>blah 123 %s</title><body>%s</body></html>\", r.URL.String(), body)))\n+\t\t\tassert.NoError(t, err)\n \t\t\treturn\n \t\t}\n \t\tw.WriteHeader(404)\n@@ -84,11 +86,11 @@ func TestTitle_GetConcurrent(t *testing.T) {\n \tg := syncs.NewSizedGroup(10)\n \n \tfor i := 0; i < 100; i++ {\n-\t\ti := i\n+\t\tii := i\n \t\tg.Go(func(_ context.Context) {\n-\t\t\ttitle, err := ex.Get(ts.URL + \"/good/\" + strconv.Itoa(i))\n+\t\t\ttitle, err := ex.Get(ts.URL + \"/good/\" + strconv.Itoa(ii))\n \t\t\trequire.Nil(t, err)\n-\t\t\tassert.Equal(t, \"blah 123 \"+\"/good/\"+strconv.Itoa(i), title)\n+\t\t\tassert.Equal(t, \"blah 123 \"+\"/good/\"+strconv.Itoa(ii), title)\n \t\t})\n \t}\n \tg.Wait()\n@@ -107,9 +109,9 @@ func TestTitle_GetFailed(t *testing.T) {\n \trequire.NotNil(t, err)\n \n \tfor i := 0; i < 100; i++ {\n-\t\ttitle, err := ex.Get(ts.URL + \"/bad\")\n-\t\trequire.Nil(t, err)\n-\t\tassert.Equal(t, \"\", title)\n+\t\tr, e := ex.Get(ts.URL + \"/bad\")\n+\t\trequire.Nil(t, e)\n+\t\tassert.Equal(t, \"\", r)\n \t}\n \tassert.Equal(t, int32(1), atomic.LoadInt32(&hits), \"hit once, errors cached\")\n }"
+    }
+  ]
+}
