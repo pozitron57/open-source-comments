@@ -1,0 +1,98 @@
+{
+  "sha": "08c6ac22e52d9979e2cce7bad1e01a1db69db912",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MDhjNmFjMjJlNTJkOTk3OWUyY2NlN2JhZDFlMDFhMWRiNjlkYjkxMg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-03-25T22:37:38Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-03-26T07:45:56Z"
+    },
+    "message": "Upd submodule paths, so works after git clone of main repo\n\nAnd start using Google's diff-match-patch real repo, and a LuaJIT mirror\nhosted by GitHub — because someone had problems accessing the main repo.",
+    "tree": {
+      "sha": "dbcfea54dabf2ff853a2d76c8825b546a77eeb52",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/dbcfea54dabf2ff853a2d76c8825b546a77eeb52"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/08c6ac22e52d9979e2cce7bad1e01a1db69db912",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/08c6ac22e52d9979e2cce7bad1e01a1db69db912",
+  "html_url": "https://github.com/debiki/talkyard/commit/08c6ac22e52d9979e2cce7bad1e01a1db69db912",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/08c6ac22e52d9979e2cce7bad1e01a1db69db912/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ddcd8199d19a16e47a95816b621da73dcd1b71cf",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/ddcd8199d19a16e47a95816b621da73dcd1b71cf",
+      "html_url": "https://github.com/debiki/talkyard/commit/ddcd8199d19a16e47a95816b621da73dcd1b71cf"
+    }
+  ],
+  "stats": {
+    "total": 24,
+    "additions": 15,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "2375488a8e6d1474156ad9b4636f17c2976e0747",
+      "filename": ".gitmodules",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 9,
+      "changes": 24,
+      "blob_url": "https://github.com/debiki/talkyard/blob/08c6ac22e52d9979e2cce7bad1e01a1db69db912/.gitmodules",
+      "raw_url": "https://github.com/debiki/talkyard/raw/08c6ac22e52d9979e2cce7bad1e01a1db69db912/.gitmodules",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/.gitmodules?ref=08c6ac22e52d9979e2cce7bad1e01a1db69db912",
+      "patch": "@@ -1,21 +1,22 @@\n+# Use absolute 'path = http://github/debiki/repo' for everything. Not relative\n+# 'path = ../something' paths, because such paths break, if one clones the main\n+# Talkyard repo only (but doesn't clone all Talkyard submodules locally too).\n+#\n [submodule \"images/web/ty-media\"]\n \tpath = images/web/ty-media\n \turl = https://github.com/debiki/talkyard-media.git\n [submodule \"modules/ty-cla\"]\n \tpath = modules/ty-cla\n-\turl = ../ty-cla.git\n+\turl = https://github.com/debiki/ty-cla.git\n [submodule \"modules/google-diff-match-patch\"]\n-\t# I verified that revision 7b748bbbb959f36516d5be79848ea4272e7794c5 (Nov 21 2012) is\n-\t# the one generated by git-svn if applied to the Google Code diff-match-patch SVN repo.\n-\t# (So that revision can be trusted.) /KajMagnus\n \tpath = modules/google-diff-match-patch\n-\turl = https://github.com/JanX2/google-diff-match-patch-git-svn.git\n+\turl = https://github.com/google/diff-match-patch.git\n [submodule \"modules/ed-prod-one-test\"]\n \tpath = modules/ed-prod-one-test\n-\turl = ../talkyard-prod-one.git\n+\turl = https://github.com/debiki/talkyard-prod-one.git\n [submodule \"modules/ed-versions\"]\n \tpath = modules/ed-versions\n-\turl = ../talkyard-versions.git\n+\turl = https://github.com/debiki/talkyard-versions.git\n [submodule \"images/web/modules/nchan\"]\n \tpath = images/web/modules/nchan\n \turl = https://github.com/slact/nchan.git\n@@ -24,7 +25,12 @@\n \turl = https://github.com/openresty/lua-nginx-module.git\n [submodule \"images/web/modules/luajit\"]\n \tpath = images/web/modules/luajit\n-\turl = http://luajit.org/git/luajit-2.0.git\n+\t# This LuaJIT GitHub repo is a mirror of: http://luajit.org/git/luajit-2.0.git\n+\t# We use the mirror instead of the main repo, because someone had problems accessing the\n+\t# main repo (corporate or country firewall?) but the GitHub mirror worked fine.\n+\t# I (KajMagnus) asked about the mirror here:\n+\t# https://www.freelists.org/post/luajit/Sequrity-question-Is-httpsgithubcomLuaJIT-maintained-by-Mike-Pall\n+\turl = https://github.com/LuaJIT/LuaJIT.git\n [submodule \"images/web/modules/ngx_devel_kit\"]\n \tpath = images/web/modules/ngx_devel_kit\n \turl = https://github.com/simpl/ngx_devel_kit.git\n@@ -36,7 +42,7 @@\n \turl = https://github.com/openresty/lua-resty-lrucache.git\n [submodule \"modules/sanitize-html\"]\n \tpath = modules/sanitize-html\n-\turl = ../sanitize-html.git\n+\turl = https://github.com/debiki/sanitize-html.git\n [submodule \"modules/gatsby-plugin-ed-comments\"]\n \tpath = modules/gatsby-plugin-ed-comments\n \turl = https://github.com/debiki/gatsby-plugin-ed-comments.git"
+    }
+  ]
+}
