@@ -1,0 +1,134 @@
+{
+  "sha": "814aee343be3e3d36199ba0a6bc1c13f34121687",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4MTRhZWUzNDNiZTNlM2QzNjE5OWJhMGE2YmMxYzEzZjM0MTIxNjg3",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2019-03-29T16:52:26Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2019-03-29T16:52:42Z"
+    },
+    "message": "UX: Minor profile page restructure",
+    "tree": {
+      "sha": "58cf6e79e9efd46ac10c521c3cc4cdb7f620ac5a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/58cf6e79e9efd46ac10c521c3cc4cdb7f620ac5a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/814aee343be3e3d36199ba0a6bc1c13f34121687",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/814aee343be3e3d36199ba0a6bc1c13f34121687",
+  "html_url": "https://github.com/discourse/discourse/commit/814aee343be3e3d36199ba0a6bc1c13f34121687",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/814aee343be3e3d36199ba0a6bc1c13f34121687/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2c4b3c21a93cedab431d7139366d68d7207ff64f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/2c4b3c21a93cedab431d7139366d68d7207ff64f",
+      "html_url": "https://github.com/discourse/discourse/commit/2c4b3c21a93cedab431d7139366d68d7207ff64f"
+    }
+  ],
+  "stats": {
+    "total": 180,
+    "additions": 92,
+    "deletions": 88
+  },
+  "files": [
+    {
+      "sha": "a014d4257b147e43b26490b9b2e7370676348d00",
+      "filename": "app/assets/javascripts/discourse/templates/user.hbs",
+      "status": "modified",
+      "additions": 55,
+      "deletions": 54,
+      "changes": 109,
+      "blob_url": "https://github.com/discourse/discourse/blob/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/javascripts/discourse/templates/user.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/javascripts/discourse/templates/user.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/user.hbs?ref=814aee343be3e3d36199ba0a6bc1c13f34121687",
+      "patch": "@@ -1,8 +1,9 @@\n <div class=\"container {{if viewingSelf 'viewing-self'}}\">\n   {{#d-section class=\"user-main\"}}\n \n-    <section class=\"{{if collapsedInfo 'collapsed-info'}} about {{if hasProfileBackground 'has-background' 'no-background'}}\"  style={{model.profileBackground}}>\n+    <section class=\"{{if collapsedInfo 'collapsed-info'}} about {{if hasProfileBackground 'has-background' 'no-background'}}\" >\n     {{#unless collapsedInfo}}\n+    <div class=\"user-profile-image\" style={{model.profileBackground}}></div>\n       {{#if showStaffCounters}}\n         <div class='staff-counters'>\n           {{#if model.number_of_flags_given}}\n@@ -12,7 +13,7 @@\n             <div>\n               {{#link-to 'review' (query-params username=model.username status='all' type='ReviewableFlaggedPost')}}\n                 <span class=\"flagged-posts\">{{model.number_of_flagged_posts}}</span>{{i18n 'user.staff_counters.flagged_posts'}}\n-              {{/link-to}} \n+              {{/link-to}}\n             </div>\n           {{/if}}\n           {{#if model.number_of_deleted_posts}}\n@@ -55,7 +56,7 @@\n                 {{/if}}\n               {{/if}}\n               {{#if currentUser.staff}}\n-                <li><a href={{model.adminPath}} class=\"btn btn-default\">{{d-icon \"wrench\"}}{{i18n 'admin.user.show_admin_profile'}}</a></li>          \n+                <li><a href={{model.adminPath}} class=\"btn btn-default\">{{d-icon \"wrench\"}}{{i18n 'admin.user.show_admin_profile'}}</a></li>\n               {{/if}}\n               {{plugin-outlet name=\"user-profile-controls\"\n                               tagName=\"\"\n@@ -146,61 +147,61 @@\n             {{plugin-outlet name=\"user-profile-primary\" args=(hash model=model)}}\n           </div>\n         </div>\n-        <div style='clear: both'></div>\n-      </div>\n-\n-      {{#unless collapsedInfo}}\n-      <div class='secondary'>\n-        <dl>\n-          {{#if model.created_at}}\n-            <div><dt>{{i18n 'user.created'}}</dt><dd>{{bound-date model.created_at}}</dd></div>\n-          {{/if}}\n-          {{#if model.last_posted_at}}\n-            <div><dt>{{i18n 'user.last_posted'}}</dt><dd>{{bound-date model.last_posted_at}}</dd></div>\n-          {{/if}}\n-          {{#if model.last_seen_at}}\n-            <div><dt>{{i18n 'user.last_seen'}}</dt><dd>{{bound-date model.last_seen_at}}</dd></div>\n-          {{/if}}\n-          <div><dt>{{i18n 'views'}}</dt><dd>{{model.profile_view_count}}</dd></div>\n-          {{#if model.invited_by}}\n-            <div><dt class=\"invited-by\">{{i18n 'user.invited_by'}}</dt><dd class=\"invited-by\">{{#link-to 'user' model.invited_by}}{{model.invited_by.username}}{{/link-to}}</dd></div>\n-          {{/if}}\n-          {{#if model.trust_level}}\n-            <div><dt class=\"trust-level\">{{i18n 'user.trust_level'}}</dt><dd class=\"trust-level\">{{model.trustLevel.name}}</dd></div>\n-          {{/if}}\n-          {{#if canCheckEmails}}\n-            <div><dt>{{i18n 'user.email.title'}}</dt>\n-            <dd title={{model.email}}>\n-              {{#if model.email}}\n-                {{model.email}}\n-              {{else}}\n-                {{d-button action=(route-action \"checkEmail\") actionParam=model icon=\"far-envelope\" label=\"admin.users.check_email.text\" class=\"btn-primary\"}}\n-              {{/if}}\n-            </dd>\n-            </div>\n-          {{/if}}\n+        {{#unless collapsedInfo}}\n+        <div class='secondary'>\n+          <dl>\n+            {{#if model.created_at}}\n+              <div><dt>{{i18n 'user.created'}}</dt><dd>{{bound-date model.created_at}}</dd></div>\n+            {{/if}}\n+            {{#if model.last_posted_at}}\n+              <div><dt>{{i18n 'user.last_posted'}}</dt><dd>{{bound-date model.last_posted_at}}</dd></div>\n+            {{/if}}\n+            {{#if model.last_seen_at}}\n+              <div><dt>{{i18n 'user.last_seen'}}</dt><dd>{{bound-date model.last_seen_at}}</dd></div>\n+            {{/if}}\n+            <div><dt>{{i18n 'views'}}</dt><dd>{{model.profile_view_count}}</dd></div>\n+            {{#if model.invited_by}}\n+              <div><dt class=\"invited-by\">{{i18n 'user.invited_by'}}</dt><dd class=\"invited-by\">{{#link-to 'user' model.invited_by}}{{model.invited_by.username}}{{/link-to}}</dd></div>\n+            {{/if}}\n+            {{#if model.trust_level}}\n+              <div><dt class=\"trust-level\">{{i18n 'user.trust_level'}}</dt><dd class=\"trust-level\">{{model.trustLevel.name}}</dd></div>\n+            {{/if}}\n+            {{#if canCheckEmails}}\n+              <div><dt>{{i18n 'user.email.title'}}</dt>\n+              <dd title={{model.email}}>\n+                {{#if model.email}}\n+                  {{model.email}}\n+                {{else}}\n+                  {{d-button action=(route-action \"checkEmail\") actionParam=model icon=\"far-envelope\" label=\"admin.users.check_email.text\" class=\"btn-primary\"}}\n+                {{/if}}\n+              </dd>\n+              </div>\n+            {{/if}}\n \n-          {{#if model.displayGroups}}\n-            <div><dt class=\"groups\">{{i18n 'groups.title' count=model.displayGroups.length}}</dt>\n-            <dd class='groups'>\n-              {{#each model.displayGroups as |group|}}\n-                <span>{{#link-to 'group' group.name class=\"group-link\"}}{{group.name}}{{/link-to}}</span>\n-              {{/each}}\n+            {{#if model.displayGroups}}\n+              <div><dt class=\"groups\">{{i18n 'groups.title' count=model.displayGroups.length}}</dt>\n+              <dd class='groups'>\n+                {{#each model.displayGroups as |group|}}\n+                  <span>{{#link-to 'group' group.name class=\"group-link\"}}{{group.name}}{{/link-to}}</span>\n+                {{/each}}\n \n-              {{#link-to \"groups\" (query-params username=model.username)}}\n-                ...\n-              {{/link-to}}\n-            </dd>\n-            </div>\n-          {{/if}}\n+                {{#link-to \"groups\" (query-params username=model.username)}}\n+                  ...\n+                {{/link-to}}\n+              </dd>\n+              </div>\n+            {{/if}}\n \n-          {{#if canDeleteUser}}\n-            <div>{{d-button action=(action \"adminDelete\") icon=\"exclamation-triangle\" label=\"user.admin_delete\" class=\"btn-danger\"}}</div>\n-          {{/if}}\n-        </dl>\n-        {{plugin-outlet name=\"user-profile-secondary\" args=(hash model=model)}}\n+            {{#if canDeleteUser}}\n+              <div>{{d-button action=(action \"adminDelete\") icon=\"exclamation-triangle\" label=\"user.admin_delete\" class=\"btn-danger\"}}</div>\n+            {{/if}}\n+          </dl>\n+          {{plugin-outlet name=\"user-profile-secondary\" args=(hash model=model)}}\n+        </div>\n+        {{/unless}}\n       </div>\n-      {{/unless}}\n+\n+\n     </section>\n \n     <div class='user-content-wrapper'>"
+    },
+    {
+      "sha": "b477ad34248b1f8b16913dd22f69b94b4d96fdb9",
+      "filename": "app/assets/stylesheets/common/base/user.scss",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/stylesheets/common/base/user.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/stylesheets/common/base/user.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/user.scss?ref=814aee343be3e3d36199ba0a6bc1c13f34121687",
+      "patch": "@@ -101,9 +101,9 @@\n     margin-bottom: 15px;\n \n     .secondary {\n-      background: $secondary;\n+      display: inline-block;\n+      width: 100%;\n       border-top: 1px solid $primary-low;\n-      border-bottom: 1px solid $primary-low;\n \n       .btn {\n         padding: 4px 12px;\n@@ -155,6 +155,7 @@\n \n     .details {\n       background: rgba($secondary, 0.8);\n+      border-bottom: 1px solid $primary-low;\n \n       h1 {\n         font-size: $font-up-5;\n@@ -196,7 +197,6 @@\n       .primary {\n         width: 100%;\n         position: relative;\n-        float: left;\n \n         h1 {\n           font-weight: bold;"
+    },
+    {
+      "sha": "dcd4cd6679618caac8c12afb9ee41ca4ac78aa86",
+      "filename": "app/assets/stylesheets/desktop/user.scss",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 18,
+      "changes": 38,
+      "blob_url": "https://github.com/discourse/discourse/blob/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/stylesheets/desktop/user.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/stylesheets/desktop/user.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/desktop/user.scss?ref=814aee343be3e3d36199ba0a6bc1c13f34121687",
+      "patch": "@@ -103,9 +103,6 @@\n   margin-bottom: 50px;\n \n   .about {\n-    background-position: center center;\n-    background-size: cover;\n-\n     &.group {\n       .details {\n         padding: 15px 0;\n@@ -115,12 +112,8 @@\n     }\n \n     .details {\n-      padding-bottom: s(2);\n-      transition: margin 0.15s linear;\n-\n       img.avatar {\n         margin: 0 20px 10px 0;\n-        transition: all 0.1s linear;\n       }\n \n       .primary {\n@@ -149,12 +142,23 @@\n           }\n         }\n       }\n+\n+      .secondary {\n+        margin-top: s(4);\n+      }\n     }\n \n     &.has-background {\n+      .user-profile-image {\n+        height: 300px;\n+        background-size: cover;\n+        background-repeat: no-repeat;\n+      }\n       .details {\n-        padding: 15px 15px 4px 15px;\n-        margin-top: 240px;\n+        box-sizing: border-box;\n+        width: 100%;\n+        padding: 15px 0 0 0;\n+        bottom: 0;\n       }\n     }\n \n@@ -169,11 +173,14 @@\n     }\n \n     &.collapsed-info {\n+      .user-profile-image {\n+        display: none;\n+      }\n       .controls {\n         width: auto;\n \n-        ul {\n-          li {\n+        > ul {\n+          > li {\n             display: inline;\n           }\n \n@@ -185,16 +192,11 @@\n       }\n \n       .details {\n-        padding: 0 0 2px 0;\n+        position: relative;\n+        padding: 0;\n         margin-top: 0;\n         border-bottom: 1px solid $primary-low;\n       }\n-\n-      &.has-background {\n-        .details {\n-          padding: 12px 15px 2px 15px;\n-        }\n-      }\n     }\n   }\n "
+    },
+    {
+      "sha": "b0990b9a77385f95fd9dc19127def6c71d626377",
+      "filename": "app/assets/stylesheets/mobile/user.scss",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 13,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/stylesheets/mobile/user.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/814aee343be3e3d36199ba0a6bc1c13f34121687/app/assets/stylesheets/mobile/user.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/mobile/user.scss?ref=814aee343be3e3d36199ba0a6bc1c13f34121687",
+      "patch": "@@ -47,14 +47,13 @@\n     color: $secondary;\n \n     .secondary {\n-      margin-bottom: s(3);\n       dl {\n         padding: s(2) 0;\n       }\n     }\n \n     .details {\n-      background: $secondary;\n+      margin-bottom: s(3);\n \n       h1 {\n         line-height: $line-height-small;\n@@ -131,16 +130,15 @@\n     }\n \n     &.has-background {\n-      background-size: contain;\n-      background-position: top center;\n-      background-repeat: no-repeat;\n-\n+      .user-profile-image {\n+        height: 200px;\n+        background-size: contain;\n+        background-position: top center;\n+        background-repeat: no-repeat;\n+      }\n       .user-profile-avatar {\n         margin-top: s(-24);\n       }\n-      .details {\n-        margin-top: 200px;\n-      }\n     }\n \n     .controls {\n@@ -163,6 +161,13 @@\n           a {\n             width: 100%;\n           }\n+          .select-kit.dropdown-select-box.user-notifications-dropdown {\n+            width: 100%;\n+            li {\n+              flex: 1 1 100%;\n+              margin-left: 0;\n+            }\n+          }\n         }\n       }\n \n@@ -210,10 +215,6 @@\n   .user-profile-names {\n     text-align: left;\n   }\n-  .controls {\n-    margin: s(2) 0 s(3);\n-    border-bottom: 1px solid $primary-low;\n-  }\n }\n \n .form-horizontal .control-group.category {"
+    }
+  ]
+}
