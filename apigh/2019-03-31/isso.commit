@@ -1,0 +1,110 @@
+{
+  "sha": "1b13458e6aa79f69e078bfaae7c311423142342b",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOToxYjEzNDU4ZTZhYTc5ZjY5ZTA3OGJmYWFlN2MzMTE0MjMxNDIzNDJi",
+  "commit": {
+    "author": {
+      "name": "Chris Warrick",
+      "email": "kwpolska@gmail.com",
+      "date": "2019-03-16T17:55:58Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-03-16T17:55:58Z"
+    },
+    "message": "Implement #358 (Redirect to comment after moderation) (#534)\n\n* Redirect to comment after moderation (fix #358)",
+    "tree": {
+      "sha": "f37b0680efa39127611219f7b9d68063b1f0211c",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/f37b0680efa39127611219f7b9d68063b1f0211c"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/1b13458e6aa79f69e078bfaae7c311423142342b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/1b13458e6aa79f69e078bfaae7c311423142342b",
+  "html_url": "https://github.com/posativ/isso/commit/1b13458e6aa79f69e078bfaae7c311423142342b",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/1b13458e6aa79f69e078bfaae7c311423142342b/comments",
+  "author": {
+    "login": "Kwpolska",
+    "id": 327323,
+    "node_id": "MDQ6VXNlcjMyNzMyMw==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/327323?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Kwpolska",
+    "html_url": "https://github.com/Kwpolska",
+    "followers_url": "https://api.github.com/users/Kwpolska/followers",
+    "following_url": "https://api.github.com/users/Kwpolska/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Kwpolska/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Kwpolska/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Kwpolska/subscriptions",
+    "organizations_url": "https://api.github.com/users/Kwpolska/orgs",
+    "repos_url": "https://api.github.com/users/Kwpolska/repos",
+    "events_url": "https://api.github.com/users/Kwpolska/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Kwpolska/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "77871a8bab436233a34825d15b72777902a8489e",
+      "url": "https://api.github.com/repos/posativ/isso/commits/77871a8bab436233a34825d15b72777902a8489e",
+      "html_url": "https://github.com/posativ/isso/commit/77871a8bab436233a34825d15b72777902a8489e"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 14,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e4b0dca115db07009f049bce390a1e0ea07891e4",
+      "filename": "CONTRIBUTORS.txt",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/1b13458e6aa79f69e078bfaae7c311423142342b/CONTRIBUTORS.txt",
+      "raw_url": "https://github.com/posativ/isso/raw/1b13458e6aa79f69e078bfaae7c311423142342b/CONTRIBUTORS.txt",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/CONTRIBUTORS.txt?ref=1b13458e6aa79f69e078bfaae7c311423142342b",
+      "patch": "@@ -109,5 +109,9 @@ In chronological order:\n * Craig P Hicks @craigphicks\n   * Fix sub urls configurations on admin interface\n \n+* Chris Warrick @Kwpolska\n+  * Update Polish translation\n+  * Redirect to comment after moderation\n+\n * [Your name or handle] <[email or website]>\n   * [Brief summary of your changes]"
+    },
+    {
+      "sha": "699d66b55fb5271fdd6c4fcf0663e3a9db7974c4",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/posativ/isso/blob/1b13458e6aa79f69e078bfaae7c311423142342b/isso/views/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/1b13458e6aa79f69e078bfaae7c311423142342b/isso/views/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/views/comments.py?ref=1b13458e6aa79f69e078bfaae7c311423142342b",
+      "patch": "@@ -6,6 +6,7 @@\n import cgi\n import time\n import functools\n+import json  # json.dumps to put URL in <script>\n \n from datetime import datetime, timedelta\n from itsdangerous import SignatureExpired, BadSignature\n@@ -589,6 +590,9 @@ def unsubscribe(self, environ, request, id, email, key):\n                         xhr = new XMLHttpRequest;\n                         xhr.open('POST', window.location.href);\n                         xhr.send(null);\n+                        xhr.onload = function() {\n+                            window.location.href = \"https://example.com/example-thread/#isso-13\";\n+                        };\n                     }\n                 &lt;/script&gt;\n \n@@ -603,6 +607,8 @@ def moderate(self, environ, request, id, action, key):\n             raise Forbidden\n \n         item = self.comments.get(id)\n+        thread = self.threads.get(item['tid'])\n+        link = local(\"origin\") + thread[\"uri\"] + \"#isso-%i\" % item[\"id\"]\n \n         if item is None:\n             raise NotFound\n@@ -617,8 +623,11 @@ def moderate(self, environ, request, id, action, key):\n                 \"      xhr = new XMLHttpRequest;\"\n                 \"      xhr.open('POST', window.location.href);\"\n                 \"      xhr.send(null);\"\n+                \"      xhr.onload = function() {\"\n+                \"          window.location.href = %s;\"\n+                \"      };\"\n                 \"  }\"\n-                \"</script>\" % action.capitalize())\n+                \"</script>\" % (action.capitalize(), json.dumps(link)))\n \n             return Response(modal, 200, content_type=\"text/html\")\n \n@@ -627,7 +636,6 @@ def moderate(self, environ, request, id, action, key):\n                 return Response(\"Already activated\", 200)\n             with self.isso.lock:\n                 self.comments.activate(id)\n-            thread = self.threads.get(item['tid'])\n             self.signal(\"comments.activate\", thread, item)\n             return Response(\"Yo\", 200)\n         elif action == \"edit\":"
+    }
+  ]
+}
