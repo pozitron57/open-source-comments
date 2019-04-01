@@ -1,0 +1,158 @@
+{
+  "sha": "45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjQ1YWUyZTZmMTMwZTNlZjQ5Yjc0N2FlMGI2ZDU0NzgyYzZmYjkzOWU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-31T21:21:32Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-03-31T21:21:32Z"
+    },
+    "message": "revendor with lgr 0.6.1",
+    "tree": {
+      "sha": "098e13a4e68554089aa424c95a0070d45df19b78",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/098e13a4e68554089aa424c95a0070d45df19b78"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+  "html_url": "https://github.com/umputun/remark/commit/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "29dc368ea8f67bd891f5fb215ec5bbcd01fa6eef",
+      "url": "https://api.github.com/repos/umputun/remark/commits/29dc368ea8f67bd891f5fb215ec5bbcd01fa6eef",
+      "html_url": "https://github.com/umputun/remark/commit/29dc368ea8f67bd891f5fb215ec5bbcd01fa6eef"
+    }
+  ],
+  "stats": {
+    "total": 81,
+    "additions": 51,
+    "deletions": 30
+  },
+  "files": [
+    {
+      "sha": "4e41a3d6d337ee114e53301dd11d0b2b5710b5fd",
+      "filename": "backend/app/main.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/app/main.go",
+      "raw_url": "https://github.com/umputun/remark/raw/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/app/main.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/main.go?ref=45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+      "patch": "@@ -62,10 +62,10 @@ func main() {\n \n func setupLog(dbg bool) {\n \tif dbg {\n-\t\tlog.Setup(log.Debug, log.CallerFile, log.Msec, log.LevelBraces)\n+\t\tlog.Setup(log.Debug, log.CallerFile, log.Msec)\n \t\treturn\n \t}\n-\tlog.Setup(log.Msec, log.LevelBraces, log.CallerPkg)\n+\tlog.Setup(log.Msec, log.CallerPkg)\n }\n \n // getDump reads runtime stack and returns as a string"
+    },
+    {
+      "sha": "173adbccaf22a9eae508070542f938cc32df1ee9",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/go.mod",
+      "raw_url": "https://github.com/umputun/remark/raw/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/go.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/go.mod?ref=45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+      "patch": "@@ -15,7 +15,7 @@ require (\n \tgithub.com/go-chi/render v1.0.0\n \tgithub.com/go-pkgz/auth v0.5.0\n \tgithub.com/go-pkgz/lcw v0.2.0\n-\tgithub.com/go-pkgz/lgr v0.6.0\n+\tgithub.com/go-pkgz/lgr v0.6.1\n \tgithub.com/go-pkgz/mongo v1.1.2\n \tgithub.com/go-pkgz/repeater v1.1.1\n \tgithub.com/go-pkgz/rest v1.4.0"
+    },
+    {
+      "sha": "25cdfbdb3968b625db077d4df89e960513a590ff",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/go.sum",
+      "raw_url": "https://github.com/umputun/remark/raw/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/go.sum?ref=45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+      "patch": "@@ -33,6 +33,8 @@ github.com/go-pkgz/lcw v0.2.0/go.mod h1:k+PY1CkCMTLXILtFoJOyK65Qqi9rkoTYunFH1vE/\n github.com/go-pkgz/lgr v0.2.2/go.mod h1:hBM1NM/SoYdlrykgdgJWGrZ/TM/XaZIjRbJfx7NkMm8=\n github.com/go-pkgz/lgr v0.6.0 h1:Z9FRhfSyuASiF05iXRj+clTAAl8+1EfLR7SeyLIaGKg=\n github.com/go-pkgz/lgr v0.6.0/go.mod h1:hBM1NM/SoYdlrykgdgJWGrZ/TM/XaZIjRbJfx7NkMm8=\n+github.com/go-pkgz/lgr v0.6.1 h1:poohUbv/iguoQ6bzJ5j/Ubl1VcsjU+rzTbbxsKbkGXk=\n+github.com/go-pkgz/lgr v0.6.1/go.mod h1:hBM1NM/SoYdlrykgdgJWGrZ/TM/XaZIjRbJfx7NkMm8=\n github.com/go-pkgz/mongo v1.0.0/go.mod h1:R9si/F2aJsjz4MUxhzuppIHY8yLV3YCeuCpgcI50cu4=\n github.com/go-pkgz/mongo v1.1.2 h1:2Vqn3CWQJkkx4gxxDiQUitAW2FN/CH26lKHkipmpKcc=\n github.com/go-pkgz/mongo v1.1.2/go.mod h1:0NkWnzpiUxoL5fYZuttCtJrpC67oNDidfYxcdPqHTf0="
+    },
+    {
+      "sha": "77d8142415a380143440127c2f90a86e304bca6a",
+      "filename": "backend/vendor/github.com/go-pkgz/lgr/README.md",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/vendor/github.com/go-pkgz/lgr/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/vendor/github.com/go-pkgz/lgr/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/lgr/README.md?ref=45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+      "patch": "@@ -7,14 +7,14 @@\n ## usage\n \n ```go\n-    l := lgr.New(lgr.Debug, lgr.CallerFile) // allow debug and caller file info\n+    l := lgr.New(lgr.Msec, lgr.Debug, lgr.CallerFile, lgr.CallerFunc) // allow debug and caller info, timestamp with milliseconds\n     l.Logf(\"INFO some important message, %v\", err)\n     l.Logf(\"DEBUG some less important message, %v\", err)\n ```\n \n output looks like this:\n ```\n-2018/01/07 13:02:34.000 INFO  {svc/handler.go:101 h.MyFunc1} some important message, can't open file`\n+2018/01/07 13:02:34.000 INFO  {svc/handler.go:101 h.MyFunc1} some important message, can't open file myfile.xyz\n 2018/01/07 13:02:34.015 DEBUG {svc/handler.go:155 h.MyFunc2} some less important message, file is too small`\n ```\n \n@@ -25,7 +25,7 @@ _Without `lgr.Caller*` it will drop `{caller}` part_\n ### interfaces and default loggers\n \n - `lgr` package provides a single interface `lgr.L` with a single method `Logf(format string, args ...interface{})`. Function wrapper `lgr.Func` allows to make `lgr.L` from a function directly.\n-- Default logger functionality can be used without `lgr.New`, but just `lgr.Printf`\n+- Default logger functionality can be used without `lgr.New` (see \"global logger\")\n - Two predefined loggers available: `lgr.NoOp` (do-nothing logger) and `lgr.Std` (passing directly to stdlib log)\n \n ### options"
+    },
+    {
+      "sha": "264c9b2ef47d8e0768616138b2d0e5fa01483c7a",
+      "filename": "backend/vendor/github.com/go-pkgz/lgr/logger.go",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 23,
+      "changes": 65,
+      "blob_url": "https://github.com/umputun/remark/blob/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/vendor/github.com/go-pkgz/lgr/logger.go",
+      "raw_url": "https://github.com/umputun/remark/raw/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/vendor/github.com/go-pkgz/lgr/logger.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/lgr/logger.go?ref=45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+      "patch": "@@ -1,3 +1,11 @@\n+// Package lgr provides a simple logger with some extras. Primary way to log is Logf method.\n+// The logger's output can be customized in 2 ways:\n+//   - by passing formatting template, i.e. lgr.New(lgr.Format(lgr.Short))\n+//   - by setting individual formatting flags, i.e. lgr.New(lgr.Msec, lgr.CallerFunc)\n+// Leveled output works for messages based on level prefix, i.e. Logf(\"INFO some message\") means INFO level.\n+// Debug and trace levels can be filtered based on lgr.Trace and lgr.Debug options.\n+// ERROR, FATAL and PANIC levels send to err as well. Both FATAL and PANIC also print stack trace and terminate caller application with os.Exit(1)\n+\n package lgr\n \n import (\n@@ -30,11 +38,11 @@ type Logger struct {\n \tstdout, stderr io.Writer // destination writes for out and err\n \tdbg            bool      // allows reporting for DEBUG level\n \ttrace          bool      // allows reporting for TRACE and DEBUG levels\n-\tcallerFile     bool      // reports caller file, i.e. /go/src/github.com/go-pkgz/lgr/logger.go\n-\tcallerFunc     bool      // reports caller function name, i.e. foo/bar.myFunc\n+\tcallerFile     bool      // reports caller file with line number, i.e. foo/bar.go:89\n+\tcallerFunc     bool      // reports caller function name, i.e. bar.myFunc\n \tcallerPkg      bool      // reports caller package name\n \tlevelBraces    bool      // encloses level with [], i.e. [INFO]\n-\tcallerDepth    int       // how many stack frames to skip\n+\tcallerDepth    int       // how many stack frames to skip, relative to the real (reported) frame\n \tformat         string    // layout template\n \n \t// internal use\n@@ -51,6 +59,7 @@ type Logger struct {\n type nowFn func() time.Time\n type panicFn func()\n \n+// layout holds all parts to construct the final message with template\n type layout struct {\n \tDT         time.Time\n \tLevel      string\n@@ -61,8 +70,8 @@ type layout struct {\n \tCallerLine int\n }\n \n-// New makes new leveled logger. Accepts dbg flag turing on info about the caller and allowing DEBUG messages.\n-// Two writers can be passed optionally - first for out and second for err\n+// New makes new leveled logger. By default writes to stdout/stderr.\n+// default format: 2018/01/07 13:02:34.123 DEBUG some message 123\n func New(options ...Option) *Logger {\n \n \tres := Logger{\n@@ -101,9 +110,9 @@ func New(options ...Option) *Logger {\n }\n \n // Logf implements L interface to output with printf style.\n-// Each line prefixed with ts, level and optionally (dbg mode only) by caller info.\n+// DEBUG and TRACE filtered out by dbg and trace flags.\n // ERROR and FATAL also send the same line to err writer.\n-// FATAL adds runtime stack and os.exit(1), like panic.\n+// FATAL and PANIC adds runtime stack and os.exit(1), like panic.\n func (l *Logger) Logf(format string, args ...interface{}) {\n \t// to align call depth between (*Logger).Logf() and, for example, Printf()\n \tl.logf(format, args...)\n@@ -120,7 +129,7 @@ func (l *Logger) logf(format string, args ...interface{}) {\n \t}\n \n \tci := callerInfo{}\n-\tif l.callerOn { // optimization to avlod expensive caller evaluation if not in template\n+\tif l.callerOn { // optimization to avoid expensive caller evaluation if caller info not in the template\n \t\tci = l.reportCaller(l.callerDepth)\n \t}\n \n@@ -142,22 +151,25 @@ func (l *Logger) logf(format string, args ...interface{}) {\n \tbuf.WriteString(\"\\n\")\n \n \tdata := buf.Bytes()\n-\tif l.levelBracesOn {\n+\tif l.levelBracesOn { // rearrange space in short levels\n \t\tdata = bytes.Replace(data, []byte(\"[WARN ]\"), []byte(\"[WARN] \"), 1)\n \t\tdata = bytes.Replace(data, []byte(\"[INFO ]\"), []byte(\"[INFO] \"), 1)\n \t}\n \n \tl.lock.Lock()\n \t_, _ = l.stdout.Write(data)\n \n-\t// write to err as well for high levels\n+\t// write to err as well for high levels, exit(1) on fatal and panic and dump stack on panic level\n \tswitch lv {\n-\tcase \"PANIC\", \"FATAL\":\n+\tcase \"ERROR\":\n+\t\t_, _ = l.stderr.Write(data)\n+\tcase \"FATAL\":\n \t\t_, _ = l.stderr.Write(data)\n-\t\t_, _ = l.stderr.Write(getDump())\n \t\tl.fatal()\n-\tcase \"ERROR\":\n+\tcase \"PANIC\":\n \t\t_, _ = l.stderr.Write(data)\n+\t\t_, _ = l.stderr.Write(getDump())\n+\t\tl.fatal()\n \t}\n \n \tl.lock.Unlock()\n@@ -218,9 +230,15 @@ func (l *Logger) reportCaller(calldepth int) (res callerInfo) {\n \treturn res\n }\n \n-// make template from options flag\n+// make template from option flags\n func (l *Logger) templateFromOptions() (res string) {\n \n+\tconst (\n+\t\t// escape { and } from templates to allow \"{some/blah}\" output for caller\n+\t\topenCallerBrace  = `{{\"{\"}}`\n+\t\tcloseCallerBrace = `{{\"}\"}}`\n+\t)\n+\n \torElse := func(flag bool, value string, elseValue string) string {\n \t\tif flag {\n \t\t\treturn value\n@@ -244,7 +262,7 @@ func (l *Logger) templateFromOptions() (res string) {\n \t\tif v := orElse(l.callerPkg, `{{.CallerPkg}}`, \"\"); v != \"\" {\n \t\t\tcallerParts = append(callerParts, v)\n \t\t}\n-\t\tparts = append(parts, \"(\"+strings.Join(callerParts, \" \")+\")\")\n+\t\tparts = append(parts, openCallerBrace+strings.Join(callerParts, \" \")+closeCallerBrace)\n \t}\n \tparts = append(parts, \"{{.Message}}\")\n \treturn strings.Join(parts, \" \")\n@@ -291,14 +309,14 @@ func getDump() []byte {\n // Option func type\n type Option func(l *Logger)\n \n-// Out sets out writer\n+// Out sets out writer, stdout by default\n func Out(w io.Writer) Option {\n \treturn func(l *Logger) {\n \t\tl.stdout = w\n \t}\n }\n \n-// Err sets error writer\n+// Err sets error writer, stderr by default\n func Err(w io.Writer) Option {\n \treturn func(l *Logger) {\n \t\tl.stderr = w\n@@ -316,40 +334,41 @@ func Trace(l *Logger) {\n \tl.trace = true\n }\n \n-// CallerDepth sets number of stack frame skipped for caller reporting\n+// CallerDepth sets number of stack frame skipped for caller reporting, 0 by default\n func CallerDepth(n int) Option {\n \treturn func(l *Logger) {\n \t\tl.callerDepth = n\n \t}\n }\n \n+// Format sets output layout, overwrites all options for individual parts, i.e. Caller*, Msec and LevelBraces\n func Format(f string) Option {\n \treturn func(l *Logger) {\n \t\tl.format = f\n \t}\n }\n \n-// CallerFunc adds caller info with function name\n+// CallerFunc adds caller info with function name. Ignored if Format option used.\n func CallerFunc(l *Logger) {\n \tl.callerFunc = true\n }\n \n-// CallerPkg adds caller's package name\n+// CallerPkg adds caller's package name. Ignored if Format option used.\n func CallerPkg(l *Logger) {\n \tl.callerPkg = true\n }\n \n-// LevelBraces adds [] to level\n+// LevelBraces surrounds level with [], i.e. [INFO]. Ignored if Format option used.\n func LevelBraces(l *Logger) {\n \tl.levelBraces = true\n }\n \n-// CallerFile adds caller info with file, and line number\n+// CallerFile adds caller info with file, and line number. Ignored if Format option used.\n func CallerFile(l *Logger) {\n \tl.callerFile = true\n }\n \n-// Msec adds .msec to timestamp\n+// Msec adds .msec to timestamp. Ignored if Format option used.\n func Msec(l *Logger) {\n \tl.msec = true\n }"
+    },
+    {
+      "sha": "bdc6b4ebb363681f23f32f0d4d75a52834da9c00",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/vendor/modules.txt",
+      "raw_url": "https://github.com/umputun/remark/raw/45ae2e6f130e3ef49b747ae0b6d54782c6fb939e/backend/vendor/modules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/modules.txt?ref=45ae2e6f130e3ef49b747ae0b6d54782c6fb939e",
+      "patch": "@@ -39,7 +39,7 @@ github.com/go-pkgz/auth/logger\n github.com/go-pkgz/auth/middleware\n # github.com/go-pkgz/lcw v0.2.0\n github.com/go-pkgz/lcw\n-# github.com/go-pkgz/lgr v0.6.0\n+# github.com/go-pkgz/lgr v0.6.1\n github.com/go-pkgz/lgr\n # github.com/go-pkgz/mongo v1.1.2\n github.com/go-pkgz/mongo"
+    }
+  ]
+}

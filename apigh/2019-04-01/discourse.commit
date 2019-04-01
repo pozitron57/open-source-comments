@@ -1,0 +1,98 @@
+{
+  "sha": "25feb287b8a40a536e8fb747a157b64d5420f5d3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyNWZlYjI4N2I4YTQwYTUzNmU4ZmI3NDdhMTU3YjY0ZDU0MjBmNWQz",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-04-01T12:03:51Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-04-01T15:06:47Z"
+    },
+    "message": "DEV: Add parallel spec support to autospec\n\nSet PARALLEL_SPEC=1 to use this functionality",
+    "tree": {
+      "sha": "c66051d5836e39f03606dd28a67085da7a27020e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c66051d5836e39f03606dd28a67085da7a27020e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/25feb287b8a40a536e8fb747a157b64d5420f5d3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/25feb287b8a40a536e8fb747a157b64d5420f5d3",
+  "html_url": "https://github.com/discourse/discourse/commit/25feb287b8a40a536e8fb747a157b64d5420f5d3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/25feb287b8a40a536e8fb747a157b64d5420f5d3/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b375dcb14a60bf83ee2e1ef23acdca95bb4ce40d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b375dcb14a60bf83ee2e1ef23acdca95bb4ce40d",
+      "html_url": "https://github.com/discourse/discourse/commit/b375dcb14a60bf83ee2e1ef23acdca95bb4ce40d"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 12,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "f0606838942b382b9c07ea13b369b51bc62e33c5",
+      "filename": "lib/autospec/simple_runner.rb",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 2,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/25feb287b8a40a536e8fb747a157b64d5420f5d3/lib/autospec/simple_runner.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/25feb287b8a40a536e8fb747a157b64d5420f5d3/lib/autospec/simple_runner.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/autospec/simple_runner.rb?ref=25feb287b8a40a536e8fb747a157b64d5420f5d3",
+      "patch": "@@ -15,7 +15,17 @@ def run(specs)\n       end\n       # we use our custom rspec formatter\n       args = [\"-r\", \"#{File.dirname(__FILE__)}/formatter.rb\",\n-              \"-f\", \"Autospec::Formatter\", specs.split].flatten.join(\" \")\n+        \"-f\", \"Autospec::Formatter\"]\n+\n+      command = begin\n+        if ENV[\"PARALLEL_SPEC\"] &&\n+              !specs.split.any? { |s| puts s; s =~ /\\:/ } # Parallel spec can't run specific groups\n+          \"parallel_rspec -- #{args.join(\" \")} -- #{specs.split.join(\" \")}\"\n+        else\n+          \"bin/rspec #{args.join(\" \")} #{specs.split.join(\" \")}\"\n+        end\n+      end\n+\n       # launch rspec\n       Dir.chdir(Rails.root) do\n         env = { \"RAILS_ENV\" => \"test\" }\n@@ -25,7 +35,7 @@ def run(specs)\n         end\n         pid =\n           @mutex.synchronize do\n-            @pid = Process.spawn(env, \"bin/rspec #{args}\")\n+            @pid = Process.spawn(env, command)\n           end\n \n         _, status = Process.wait2(pid)"
+    }
+  ]
+}
