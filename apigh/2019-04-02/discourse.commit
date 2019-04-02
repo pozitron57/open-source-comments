@@ -1,0 +1,98 @@
+{
+  "sha": "15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxNWUyN2Q5ZTJjODJkZmYyYWFhZjhmZDVjY2QxNTk2ZDViMDkxNWNi",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-04-02T15:56:21Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-04-02T15:56:21Z"
+    },
+    "message": "Prettier fix",
+    "tree": {
+      "sha": "d38466b22ec8da799c9e1c6156e602885c5cf0b6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d38466b22ec8da799c9e1c6156e602885c5cf0b6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb",
+  "html_url": "https://github.com/discourse/discourse/commit/15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "40e1ba9d9ae55d658a682996fc37a5932200ce44",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/40e1ba9d9ae55d658a682996fc37a5932200ce44",
+      "html_url": "https://github.com/discourse/discourse/commit/40e1ba9d9ae55d658a682996fc37a5932200ce44"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ba90ec9b24b05f63c84cebbcd631fca9c1241160",
+      "filename": "app/assets/javascripts/discourse/mixins/card-contents-base.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb/app/assets/javascripts/discourse/mixins/card-contents-base.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb/app/assets/javascripts/discourse/mixins/card-contents-base.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/mixins/card-contents-base.js.es6?ref=15e27d9e2c82dff2aaaf8fd5ccd1596d5b0915cb",
+      "patch": "@@ -169,7 +169,7 @@ export default Ember.Mixin.create({\n       if (target) {\n         if (!this.site.mobileView) {\n           let position = target.offset();\n-          if (target.parents('.d-header')) {\n+          if (target.parents(\".d-header\")) {\n             position = target.position();\n             position.left += 10;\n           }"
+    }
+  ]
+}
