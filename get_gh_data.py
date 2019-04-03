@@ -96,7 +96,7 @@ if not os.path.isdir(p):
 # Calc Github stars change in the last N days
 N=14
 date_N_days_ago = date.today() - timedelta(days=N)
-print (date.today(), date_N_days_ago)
+#print (date.today(), date_N_days_ago)
 all_dates=[]
 for d in sorted(os.listdir('apigh')):
     all_dates.append(d)
@@ -121,7 +121,6 @@ print ( '{:<27}{:<6}{:<5}{:<5}{}'.format('Name', '★', 'Δ★', 'I+PR', 'Create
 for cs in os.listdir(p):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
-            print (cs)
             with open(p+cs, 'r') as f:
                 api_data = yaml.load(f)
                 if "stargazers_count" in api_data:
@@ -144,7 +143,7 @@ for cs in os.listdir(p):
                 data[cs]["open_issues"] = open_issues
                 data[cs]["created"]     = created.strftime('%Y‑%m‑%d') # only useful once
                 if cs in stars_N_days_ago and cs in data and isinstance(data[cs]["stars"],int) and isinstance(stars_N_days_ago[cs],int):
-                    print (cs, stars_N_days_ago, data[cs]['stars'])
+                    #print (cs, stars_N_days_ago[cs], data[cs]['stars'])
                     ds = data[cs]["stars"] - stars_N_days_ago[cs]
                     data[cs]["stars_dif"] = ds
                     #if ds>0:
