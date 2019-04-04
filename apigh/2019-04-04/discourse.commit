@@ -1,0 +1,98 @@
+{
+  "sha": "64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2NGVjNGE2YTFiZGFhZGY2MDBhMWUzOTEzODAyYjhjYjNlZThiZDJh",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-04-04T16:23:58Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-04-04T16:23:58Z"
+    },
+    "message": "fix the EnsurePostUploadsExistence job spec",
+    "tree": {
+      "sha": "d0026d483b93535b0211c6c25e9475712180fd0e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d0026d483b93535b0211c6c25e9475712180fd0e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a",
+  "html_url": "https://github.com/discourse/discourse/commit/64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a385f6c48a4b60b9174ddeaa1452cbfe5e88ae28",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a385f6c48a4b60b9174ddeaa1452cbfe5e88ae28",
+      "html_url": "https://github.com/discourse/discourse/commit/a385f6c48a4b60b9174ddeaa1452cbfe5e88ae28"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 5,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "2e8a9f9ede3dd36dc0230951e4d85ca3abdfe8c3",
+      "filename": "spec/jobs/ensure_post_uploads_existence_spec.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 7,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a/spec/jobs/ensure_post_uploads_existence_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a/spec/jobs/ensure_post_uploads_existence_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/ensure_post_uploads_existence_spec.rb?ref=64ec4a6a1bdaadf600a1e3913802b8cb3ee8bd2a",
+      "patch": "@@ -15,14 +15,12 @@\n       expect(field.value).to eq(upload.url)\n     end\n \n-    it 'should not create post custom fields' do\n+    it 'should create post custom field with nil value' do\n       post = Fabricate(:post, cooked: \"A sample post <a href='#{upload.url}'> <img src='#{optimized.url}'>\")\n-\n-      expect {\n-        described_class.new.execute({})\n-      }.not_to change {\n-        PostCustomField.count\n-      }\n+      described_class.new.execute({})\n+      field = PostCustomField.last\n+      expect(field.name).to eq(Jobs::EnsurePostUploadsExistence::MISSING_UPLOADS)\n+      expect(field.value).to eq(nil)\n     end\n   end\n end"
+    }
+  ]
+}
