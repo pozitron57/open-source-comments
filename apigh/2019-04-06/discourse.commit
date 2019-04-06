@@ -1,0 +1,98 @@
+{
+  "sha": "6525613b89219036ebc461c48658b67e9ae7abbd",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2NTI1NjEzYjg5MjE5MDM2ZWJjNDYxYzQ4NjU4YjY3ZTlhZTdhYmJk",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2019-04-05T23:55:24Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2019-04-05T23:58:55Z"
+    },
+    "message": "PERF: Use joins for `Post.for_mailing_list` instead of `NOT IN`.\n\nJoining on the topics table and then filtering the topics against a large set of\nids is so much slower than doing a join on a sub query.",
+    "tree": {
+      "sha": "47b14b0f291079ad89c7e14b6966edfa5e56ee8c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/47b14b0f291079ad89c7e14b6966edfa5e56ee8c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6525613b89219036ebc461c48658b67e9ae7abbd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6525613b89219036ebc461c48658b67e9ae7abbd",
+  "html_url": "https://github.com/discourse/discourse/commit/6525613b89219036ebc461c48658b67e9ae7abbd",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6525613b89219036ebc461c48658b67e9ae7abbd/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "84eb9bc1c99309ee05f74f9a6d5bf01ae2323f92",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/84eb9bc1c99309ee05f74f9a6d5bf01ae2323f92",
+      "html_url": "https://github.com/discourse/discourse/commit/84eb9bc1c99309ee05f74f9a6d5bf01ae2323f92"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 5,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "2a6ce5720c8bca25e78a98d70c2ac8d5c0fc1e0b",
+      "filename": "app/models/post.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/6525613b89219036ebc461c48658b67e9ae7abbd/app/models/post.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6525613b89219036ebc461c48658b67e9ae7abbd/app/models/post.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post.rb?ref=6525613b89219036ebc461c48658b67e9ae7abbd",
+      "patch": "@@ -86,15 +86,16 @@ class Post < ActiveRecord::Base\n   scope :with_topic_subtype, ->(subtype) { joins(:topic).where('topics.subtype = ?', subtype) }\n   scope :visible, -> { joins(:topic).where('topics.visible = true').where(hidden: false) }\n   scope :secured, -> (guardian) { where('posts.post_type IN (?)', Topic.visible_post_types(guardian&.user)) }\n+\n   scope :for_mailing_list, ->(user, since) {\n     q = created_since(since)\n-      .joins(:topic)\n-      .where(topic: Topic.for_digest(user, Time.at(0))) # we want all topics with new content, regardless when they were created\n+      .joins(\"INNER JOIN (#{Topic.for_digest(user, Time.at(0)).select(:id).to_sql}) AS digest_topics ON digest_topics.id = posts.topic_id\") # we want all topics with new content, regardless when they were created\n+      .order('posts.created_at ASC')\n \n     q = q.where.not(post_type: Post.types[:whisper]) unless user.staff?\n-\n-    q.order('posts.created_at ASC')\n+    q\n   }\n+\n   scope :raw_match, -> (pattern, type = 'string') {\n     type = type&.downcase\n "
+    }
+  ]
+}

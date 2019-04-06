@@ -1,0 +1,98 @@
+{
+  "sha": "3662cd0ab5c4286284b265fb132bba6137c0bb6f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjM2NjJjZDBhYjVjNDI4NjI4NGIyNjVmYjEzMmJiYTYxMzdjMGJiNmY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-05T21:49:42Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-05T21:49:42Z"
+    },
+    "message": "lint: convert string to string",
+    "tree": {
+      "sha": "0045554285cc73c958256e4603c102b81a73899c",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/0045554285cc73c958256e4603c102b81a73899c"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/3662cd0ab5c4286284b265fb132bba6137c0bb6f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/3662cd0ab5c4286284b265fb132bba6137c0bb6f",
+  "html_url": "https://github.com/umputun/remark/commit/3662cd0ab5c4286284b265fb132bba6137c0bb6f",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/3662cd0ab5c4286284b265fb132bba6137c0bb6f/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "47414a252f508c8c108695d69719e9945af386d8",
+      "url": "https://api.github.com/repos/umputun/remark/commits/47414a252f508c8c108695d69719e9945af386d8",
+      "html_url": "https://github.com/umputun/remark/commit/47414a252f508c8c108695d69719e9945af386d8"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 1,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "2348958e5b7775539137c15d530f5a87c6011071",
+      "filename": "backend/app/store/engine/bolt_accessor.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark/blob/3662cd0ab5c4286284b265fb132bba6137c0bb6f/backend/app/store/engine/bolt_accessor.go",
+      "raw_url": "https://github.com/umputun/remark/raw/3662cd0ab5c4286284b265fb132bba6137c0bb6f/backend/app/store/engine/bolt_accessor.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/engine/bolt_accessor.go?ref=3662cd0ab5c4286284b265fb132bba6137c0bb6f",
+      "patch": "@@ -65,7 +65,6 @@ func NewBoltDB(options bolt.Options, sites ...BoltSite) (*BoltDB, error) {\n \t\t\t\tif _, e := tx.CreateBucketIfNotExists([]byte(bktName)); e != nil {\n \t\t\t\t\treturn errors.Wrapf(e, \"failed to create top level bucket %s\", bktName)\n \t\t\t\t}\n-\t\t\t\tlog.Printf(\"[DEBUG] created bucket %s\", string(bktName))\n \t\t\t}\n \t\t\treturn nil\n \t\t})\n@@ -75,7 +74,7 @@ func NewBoltDB(options bolt.Options, sites ...BoltSite) (*BoltDB, error) {\n \t\t}\n \n \t\tresult.dbs[site.SiteID] = db\n-\t\tlog.Printf(\"[DEBUG] bolt store created for %+v\", site.SiteID)\n+\t\tlog.Printf(\"[DEBUG] bolt store created for %s\", site.SiteID)\n \t}\n \treturn &result, nil\n }"
+    }
+  ]
+}

@@ -32,9 +32,9 @@ yaml.indent(mapping=4, sequence=4, offset=2)
 yaml.preserve_quotes = True
 
 # Get project names and github urls 
-# Entry name is used instead of "name" field
+# Entry name is used instead of 'name' field
 # since doesn't contain spaces etc.
-with open("data.yaml", 'r') as f:
+with open('data.yaml', 'r') as f:
     #data = ruamel.yaml.round_trip_load(f)
     data = yaml.load(f)
 
@@ -46,12 +46,12 @@ for i in data:
 
     #e.g., https://api.github.com/repos/posativ/isso
     # If more than 1 link to source code
-    if type(data[i]["source"]) is ruamel.yaml.comments.CommentedSeq:
-        for x in range(len(data[i]["source"])):
-            if re.search('github.com', data[i]["source"][x]):
-                api_url = re.sub('github.com', 'api.github.com/repos', data[i]["source"][x])
+    if type(data[i]['source']) is ruamel.yaml.comments.CommentedSeq:
+        for x in range(len(data[i]['source'])):
+            if re.search('github.com', data[i]['source'][x]):
+                api_url = re.sub('github.com', 'api.github.com/repos', data[i]['source'][x])
     else:
-        api_url = re.sub('github.com', 'api.github.com/repos', data[i]["source"])
+        api_url = re.sub('github.com', 'api.github.com/repos', data[i]['source'])
 
     #e.g., https://api.github.com/repos/posativ/isso/commits/master
     api_commit_url = api_url + '/commits/master'
@@ -106,10 +106,20 @@ p_N_days_ago = 'apigh/'+str(date_N_days_ago)+'/'
 for cs in os.listdir(p_N_days_ago):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
+
+            # Convert file to avoid 'unacceptable character' error
+            with open(p_N_days_ago+cs) as fp:
+               idx = 0
+               for c in fp.read():
+                   print('{:08x}'.format(ord(c)), end=' ')
+                   idx += 1
+                   if idx % 4 == 0:
+                       print()
+
             with open(p_N_days_ago+cs, 'r') as f:
                 api_data = yaml.load(f)
-                if "stargazers_count" in api_data:
-                    stars = api_data["stargazers_count"]
+                if 'stargazers_count' in api_data:
+                    stars = api_data['stargazers_count']
                 else:
                     stars = 'undefined'
                 stars_N_days_ago[cs] = stars
@@ -121,46 +131,66 @@ print ( '{:<27}{:<6}{:<5}{:<5}{}'.format('Name', '★', 'Δ★', 'I+PR', 'Create
 for cs in os.listdir(p):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
+
+            # Convert file to avoid 'unacceptable character' error
+            with open(p+cs) as fp:
+               idx = 0
+               for c in fp.read():
+                   print('{:08x}'.format(ord(c)), end=' ')
+                   idx += 1
+                   if idx % 4 == 0:
+                       print()
+
             with open(p+cs, 'r') as f:
                 api_data = yaml.load(f)
-                if "stargazers_count" in api_data:
-                    stars = api_data["stargazers_count"]
+                if 'stargazers_count' in api_data:
+                    stars = api_data['stargazers_count']
                 else:
                     stars = 'undefined'
-                created     = dateutil.parser.parse(api_data["created_at"])
-                open_issues = api_data["open_issues"]
+                created     = dateutil.parser.parse(api_data['created_at'])
+                open_issues = api_data['open_issues']
 
-                if api_data["license"]:
-                    if "spdx_id" in api_data["license"]:
-                        license = api_data["license"]["spdx_id"] # "MIT"
-                        data[cs]["license"] = license
-                    elif "name" in api_data["license"]:
-                        license = api_data["license"]["name"]    # "MIT License"
-                        data[cs]["license"] = license
+                if api_data['license']:
+                    if 'spdx_id' in api_data['license']:
+                        license = api_data['license']['spdx_id'] # 'MIT'
+                        data[cs]['license'] = license
+                    elif 'name' in api_data['license']:
+                        license = api_data['license']['name']    # 'MIT License'
+                        data[cs]['license'] = license
 
                 # Update the values
-                data[cs]["stars"]       = stars
-                data[cs]["open_issues"] = open_issues
-                data[cs]["created"]     = created.strftime('%Y‑%m‑%d') # only useful once
-                if cs in stars_N_days_ago and cs in data and isinstance(data[cs]["stars"],int) and isinstance(stars_N_days_ago[cs],int):
+                data[cs]['stars']       = stars
+                data[cs]['open_issues'] = open_issues
+                data[cs]['created']     = created.strftime('%Y‑%m‑%d') # only useful once
+                if cs in stars_N_days_ago and cs in data and isinstance(data[cs]['stars'],int) and isinstance(stars_N_days_ago[cs],int):
                     #print (cs, stars_N_days_ago[cs], data[cs]['stars'])
-                    ds = data[cs]["stars"] - stars_N_days_ago[cs]
-                    data[cs]["stars_dif"] = ds
+                    ds = data[cs]['stars'] - stars_N_days_ago[cs]
+                    data[cs]['stars_dif'] = ds
                     #if ds>0:
-                        #data[cs]["stars_dif"] = '+'+str(ds)
+                        #data[cs]['stars_dif'] = '+'+str(ds)
                     #else:
-                        #data[cs]["stars_dif"] = '−'+str(ds)
+                        #data[cs]['stars_dif'] = '−'+str(ds)
                     print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, ds, open_issues, created.strftime('%Y‑%m‑%d')) )
                 else:
-                    data[cs]["stars_dif"] = "?"
+                    data[cs]['stars_dif'] = '?'
                     print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created.strftime('%Y‑%m‑%d')) )
 
         else:
+
+            # Convert file to avoid 'unacceptable character' error
+            with open(p+cs) as fp:
+               idx = 0
+               for c in fp.read():
+                   print('{:08x}'.format(ord(c)), end=' ')
+                   idx += 1
+                   if idx % 4 == 0:
+                       print()
+
             with open(p+cs, 'r') as f:
                 api_commit_data = yaml.load(f)
-                last_committed = dateutil.parser.parse(api_commit_data["commit"]["committer"]["date"])
+                last_committed = dateutil.parser.parse(api_commit_data['commit']['committer']['date'])
                 # Update the value
-                data[re.sub('.commit','',cs)]["last_committed"] = last_committed.strftime('%Y‑%m‑%d')
+                data[re.sub('.commit','',cs)]['last_committed'] = last_committed.strftime('%Y‑%m‑%d')
                 
 
 # Update data.yaml file with fresh values.
@@ -169,7 +199,7 @@ with open('data.yaml', 'w') as f:
     yaml.dump(data, stream=f)
 
 # Update index.html date
-for line in fileinput.input("index.html", inplace=True):
+for line in fileinput.input('index.html', inplace=True):
     if 'Last updated:' in line:
         line = re.sub('Last updated:.*','Last updated: {} <br>'.format(date.today()), line)
     print ( line, end='' )
