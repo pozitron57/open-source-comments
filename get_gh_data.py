@@ -20,6 +20,7 @@ to check how many requests are left.
 
 import re
 import os
+import json
 import ruamel.yaml
 import fileinput
 
@@ -107,17 +108,9 @@ for cs in os.listdir(p_N_days_ago):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
 
-            # Convert file to avoid 'unacceptable character' error
-            with open(p_N_days_ago+cs) as fp:
-               idx = 0
-               for c in fp.read():
-                   print('{:08x}'.format(ord(c)), end=' ')
-                   idx += 1
-                   if idx % 4 == 0:
-                       print()
-
             with open(p_N_days_ago+cs, 'r') as f:
-                api_data = yaml.load(f)
+                #api_data = yaml.load(f)
+                api_data = json.load(f)
                 if 'stargazers_count' in api_data:
                     stars = api_data['stargazers_count']
                 else:
@@ -132,17 +125,9 @@ for cs in os.listdir(p):
     if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
         if not '.commit' in cs:
 
-            # Convert file to avoid 'unacceptable character' error
-            with open(p+cs) as fp:
-               idx = 0
-               for c in fp.read():
-                   print('{:08x}'.format(ord(c)), end=' ')
-                   idx += 1
-                   if idx % 4 == 0:
-                       print()
-
             with open(p+cs, 'r') as f:
-                api_data = yaml.load(f)
+                #api_data = yaml.load(f)
+                api_data = json.load(f)
                 if 'stargazers_count' in api_data:
                     stars = api_data['stargazers_count']
                 else:
@@ -177,17 +162,9 @@ for cs in os.listdir(p):
 
         else:
 
-            # Convert file to avoid 'unacceptable character' error
-            with open(p+cs) as fp:
-               idx = 0
-               for c in fp.read():
-                   print('{:08x}'.format(ord(c)), end=' ')
-                   idx += 1
-                   if idx % 4 == 0:
-                       print()
-
             with open(p+cs, 'r') as f:
-                api_commit_data = yaml.load(f)
+                #api_commit_data = yaml.load(f)
+                api_commit_data = json.load(f)
                 last_committed = dateutil.parser.parse(api_commit_data['commit']['committer']['date'])
                 # Update the value
                 data[re.sub('.commit','',cs)]['last_committed'] = last_committed.strftime('%Y‑%m‑%d')
