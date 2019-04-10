@@ -1,0 +1,182 @@
+{
+  "sha": "17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MTdlMzNhZDdhMjA1NDc0ZWE5NDFjNDVlYTY0YmE3ZTlhZDlmMWQ3NA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-04-07T08:50:52Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-04-07T10:39:23Z"
+    },
+    "message": "Code review.",
+    "tree": {
+      "sha": "a17309eb4a5024338e22438fda19bfa26ae728ba",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/a17309eb4a5024338e22438fda19bfa26ae728ba"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+  "html_url": "https://github.com/debiki/talkyard/commit/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "65a6348bc99de46a7a370129056efc1d27ba17cc",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/65a6348bc99de46a7a370129056efc1d27ba17cc",
+      "html_url": "https://github.com/debiki/talkyard/commit/65a6348bc99de46a7a370129056efc1d27ba17cc"
+    }
+  ],
+  "stats": {
+    "total": 41,
+    "additions": 24,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "686b17438422340bd62fb566ca675602312f5990",
+      "filename": "app/debiki/dao/SystemDao.scala",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/app/debiki/dao/SystemDao.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/app/debiki/dao/SystemDao.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/dao/SystemDao.scala?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -254,6 +254,8 @@ class SystemDao(\n         // Features intended for forums — like chat and direct messages — just make people\n         // confused, in a blog comments site, right.\n         enableForum = notIfEmbedded,\n+        // People who create new sites via a hosted service, might not be technical\n+        // people; to keep things simple for them, disable API and tags, initially. [DEFFEAT]\n         enableApi = Some(Some(false)),\n         enableTags = Some(Some(false)),\n         enableChat = notIfEmbedded,"
+    },
+    {
+      "sha": "81c7440ee76760ecbc1904d2b2d6435065d877ad",
+      "filename": "app/debiki/settings.scala",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/app/debiki/settings.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/app/debiki/settings.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/settings.scala?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -114,7 +114,7 @@ trait AllSettings {\n   def languageCode: String\n   def googleUniversalAnalyticsTrackingId: String\n \n-  /** If false, then, only used for embedded comments. */\n+  /** If !enableForum, then the site is used for embedded comments only. */\n   def enableForum: Boolean\n   def enableApi: Boolean\n   def enableTags: Boolean\n@@ -304,6 +304,8 @@ object AllSettings {\n     val languageCode = \"en_US\"\n     val googleUniversalAnalyticsTrackingId = \"\"\n     val enableForum = true\n+    // People who install Talkyard themselves are a bit advanced, so starting with\n+    // these features enabled, makes sense?  [DEFFEAT]\n     val enableApi = true\n     val enableTags = true\n     val enableChat = true"
+    },
+    {
+      "sha": "727dc734532e6470b878780431a4c5440327ecaa",
+      "filename": "client/app-more/login/login-dialog.more.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-more/login/login-dialog.more.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-more/login/login-dialog.more.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-more/login/login-dialog.more.ts?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -341,7 +341,8 @@ export const LoginDialogContent = createClassAndFactory({\n         notFoundInstructions,\n         becomeOwnerInstructions,\n         r.p({ id: 'dw-lgi-or-login-using' },\n-          // I18N UX \"Continue with\" converts better than Sign Up or Log In, says Facebook brand guidelines.\n+          // I18N UX \"Continue with\" converts better than Sign Up or Log In, says\n+          // Facebook brand guidelines. So, could rephrase this later:\n             (isSignUp ? t.ld.SignUp : t.ld.LogIn) + ' ' + t.ld.with_ + spaceDots),\n         r.div({ id: 'dw-lgi-other-sites' },\n           !ss.enableGoogleLogin ? null :"
+    },
+    {
+      "sha": "116ac194160eacc8b7341dcac9b07179c035e38f",
+      "filename": "client/app-slim/utils/talkyard-tour.styl",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-slim/utils/talkyard-tour.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-slim/utils/talkyard-tour.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/utils/talkyard-tour.styl?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -4,9 +4,9 @@\n   position: relative;\n .s_Tour-Click\n   .s_Tour_D::before\n-    // Waiting for a button-or-somethign click, rather than the Next button\n-    // inside the instructions dialog. Dim the dialog, so the focus will be more\n-    // on that thing to click.\n+    // We're waiting for a button-or-something click, rather than clicking\n+    // the Next button inside the instructions dialog. Dim the dialog, so\n+    // the focus will be more on that something-to-click.\n     content: ' ';\n     display: block;\n     position: absolute;"
+    },
+    {
+      "sha": "67cbb8acc19c1c40a1adf7422e80037314bee9d5",
+      "filename": "client/app-slim/utils/talkyard-tour.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-slim/utils/talkyard-tour.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-slim/utils/talkyard-tour.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/utils/talkyard-tour.ts?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -209,9 +209,9 @@ function TalkyardTour() {\n           `${placeAtRect.height / 2 + padding}px ${placeAtRect.width / 2 + padding}px`;\n       if (step.waitForClick) {\n         // Make the elem as bright as it can be, to indicate it *is* to be clicked.\n-        // Otherwise people frequently don't realize they shall click it. (UX tested.)\n-        highlightElem.style.background = 'none';\n-        highlightElem.style.borderColor = 'rgba(0,0,0,0.4)';\n+        // Otherwise people frequently don't realize they shall click it.\n+        highlightElem.style.background = 'none';             // area to click\n+        highlightElem.style.borderColor = 'rgba(0,0,0,0.4)'; // backdrop background\n       }\n       else {\n         // Make the elem just a little bit dimmed out, to indicate it is *not* to be clicked."
+    },
+    {
+      "sha": "391683564c016f0de969dffbbd236172ded8f519",
+      "filename": "client/app-staff/admin/admin-app.staff.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-staff/admin/admin-app.staff.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/client/app-staff/admin/admin-app.staff.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-staff/admin/admin-app.staff.ts?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -1614,8 +1614,8 @@ function ZolaInstructions(props: BlogInstrProps) {\n +++\n title = \"What is Zola\"\n date = 2017-09-24\n-[extra]                                <——— in the [extra] section,\n-discussion_id = \"2017-what-is-zola\"    <——— add something like this\n+[extra]                                <——— in the [extra] section ...\n+discussion_id = \"2017-what-is-zola\"    <——— ...add something like this\n +++\n \n Blog post text text text, ...`),\n@@ -1625,7 +1625,8 @@ Blog post text text text, ...`),\n }\n \n \n-/* Test the Zola instructions like so:\n+/* Testing the Zola instructions\n+====================================\n \n linux-bash#  sudo snap install --edge zola\n linux-bash#  zola init zolatest\n@@ -1638,7 +1639,7 @@ linux-bash#  cd content/\n linux-bash#  cp ../themes/hyde/content/* ./  # adds sample blog posts\n linux-bash#  cd ..\n \n-And then follow the Zola instructions.\n+And then follow the Talkyard instructions for Zola.\n \n */\n "
+    },
+    {
+      "sha": "abf5cd179de1339c542769bf35459e03a3f0cce3",
+      "filename": "tests/e2e/specs/create-site-linkedin.test.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/tests/e2e/specs/create-site-linkedin.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/tests/e2e/specs/create-site-linkedin.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/create-site-linkedin.test.ts?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -14,7 +14,7 @@ const logMessage = logAndDie.logMessage;\n \n declare let browser: any;\n \n-describe('create-site-facebook  @createsite @login @facebook  TyT8KA9AW3', () => {\n+describe('create-site-linkedin  @createsite @login @linkedin  TyT8KA9AW3', () => {\n \n   if (!settings.include3rdPartyDependentTests) {\n     console.log(\"Skipping this spec; no 3rd party login credentials specified.\");\n@@ -49,7 +49,7 @@ describe('create-site-facebook  @createsite @login @facebook  TyT8KA9AW3', () =>\n     pages.createSite.fillInFieldsAndSubmit(data);\n     pages.createSite.clickOwnerSignupButton();\n     pages.loginDialog.createLinkedInAccount(data, true);\n-    pages.createSomething.createForum(\"Facebook Forum Title\");\n+    pages.createSomething.createForum(\"Linkedin Forum Title\");\n   }\n \n });"
+    },
+    {
+      "sha": "0a5d88ee81923afa4164105b1cf7d688ee5fefd5",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/debiki/talkyard/blob/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/17e33ad7a205474ea941c45ea64ba7e9ad9f1d74/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=17e33ad7a205474ea941c45ea64ba7e9ad9f1d74",
+      "patch": "@@ -2095,10 +2095,11 @@ function pagesFor(browser) {\n         browser.pause(100);\n         api.waitAndClick('#e2eLoginLinkedIn');\n \n-        // In Facebook's login popup window:\n+        // Switch to LinkedIn's login popup window.\n         if (!isInPopupAlready)\n           api.swithToOtherTabOrWindow();\n \n+        // Wait until popup window done loading.\n         while (true) {\n           if (api.loginDialog.loginPopupClosedBecauseAlreadyLoggedIn()) {\n             api.switchBackToFirstTabOrWindow();\n@@ -2115,7 +2116,7 @@ function pagesFor(browser) {\n         }\n \n         logMessage(\"typing LinkedIn user's email and password...\");\n-        browser.pause(340); // so less risk Facebook think this is a computer?\n+        browser.pause(340); // so less risk LinkedIn thinks this is a computer?\n         api.waitAndSetValue('#username', data.email);\n         browser.pause(380);\n         api.waitAndSetValue('#password', data.password);\n@@ -2140,7 +2141,7 @@ function pagesFor(browser) {\n           }\n         }\n         catch (ex) {\n-          logMessage(\"Didn't need to click any Allow button: Exeption caught.\");\n+          logMessage(\"Didn't need to click Allow button: Exception caught, login popup closed itself?\");\n         }\n \n         if (!isInPopupAlready) {"
+    }
+  ]
+}
