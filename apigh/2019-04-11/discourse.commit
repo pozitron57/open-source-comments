@@ -1,0 +1,110 @@
+{
+  "sha": "d21dd521d259f724ca96ac611ffc923985718d12",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkMjFkZDUyMWQyNTlmNzI0Y2E5NmFjNjExZmZjOTIzOTg1NzE4ZDEy",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-04-11T16:30:54Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-04-11T16:30:54Z"
+    },
+    "message": "FIX: Don't try to create a reviewable user twice",
+    "tree": {
+      "sha": "59c5e0c4a6e043065f23d16e645f96282c1b935f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/59c5e0c4a6e043065f23d16e645f96282c1b935f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d21dd521d259f724ca96ac611ffc923985718d12",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d21dd521d259f724ca96ac611ffc923985718d12",
+  "html_url": "https://github.com/discourse/discourse/commit/d21dd521d259f724ca96ac611ffc923985718d12",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d21dd521d259f724ca96ac611ffc923985718d12/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "331a8097384bf27dad5a8cfd7fb800e6dfd2c630",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/331a8097384bf27dad5a8cfd7fb800e6dfd2c630",
+      "html_url": "https://github.com/discourse/discourse/commit/331a8097384bf27dad5a8cfd7fb800e6dfd2c630"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 8,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "07ddb22582e3dc338baeaa70afe5428c270024b0",
+      "filename": "app/jobs/regular/create_user_reviewable.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/d21dd521d259f724ca96ac611ffc923985718d12/app/jobs/regular/create_user_reviewable.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d21dd521d259f724ca96ac611ffc923985718d12/app/jobs/regular/create_user_reviewable.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/regular/create_user_reviewable.rb?ref=d21dd521d259f724ca96ac611ffc923985718d12",
+      "patch": "@@ -29,5 +29,7 @@ def execute(args)\n       )\n     end\n \n+  rescue ActiveRecord::RecordNotUnique\n+    # If the reviewable is somehow queued twice, we can ignore.\n   end\n end"
+    },
+    {
+      "sha": "a201c5c5b242fa62aa11aef320cece37f51433ae",
+      "filename": "spec/jobs/create_user_reviewable_spec.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/d21dd521d259f724ca96ac611ffc923985718d12/spec/jobs/create_user_reviewable_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d21dd521d259f724ca96ac611ffc923985718d12/spec/jobs/create_user_reviewable_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/create_user_reviewable_spec.rb?ref=d21dd521d259f724ca96ac611ffc923985718d12",
+      "patch": "@@ -17,6 +17,12 @@\n     expect(reviewable.payload['email']).to eq(user.email)\n   end\n \n+  it \"should not raise an error if there is a reviewable already\" do\n+    SiteSetting.must_approve_users = true\n+    described_class.new.execute(user_id: user.id)\n+    described_class.new.execute(user_id: user.id)\n+  end\n+\n   describe \"reasons\" do\n     it \"does nothing if there's no reason\" do\n       described_class.new.execute(user_id: user.id)"
+    }
+  ]
+}
