@@ -1,0 +1,98 @@
+{
+  "sha": "6611f8b6367ee26f003d2d479688e075e5cfee6c",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6NjYxMWY4YjYzNjdlZTI2ZjAwM2QyZDQ3OTY4OGUwNzVlNWNmZWU2Yw==",
+  "commit": {
+    "author": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2019-04-11T15:50:10Z"
+    },
+    "committer": {
+      "name": "Kiwi",
+      "email": "vinh@wikiwi.io",
+      "date": "2019-04-11T15:50:10Z"
+    },
+    "message": "Fix email copy typo (#2267)",
+    "tree": {
+      "sha": "9dceb788d9fbd2731e7cf1d955c7f0f2b84073ed",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/9dceb788d9fbd2731e7cf1d955c7f0f2b84073ed"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/6611f8b6367ee26f003d2d479688e075e5cfee6c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/6611f8b6367ee26f003d2d479688e075e5cfee6c",
+  "html_url": "https://github.com/coralproject/talk/commit/6611f8b6367ee26f003d2d479688e075e5cfee6c",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/6611f8b6367ee26f003d2d479688e075e5cfee6c/comments",
+  "author": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "cvle",
+    "id": 14221600,
+    "node_id": "MDQ6VXNlcjE0MjIxNjAw",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/14221600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cvle",
+    "html_url": "https://github.com/cvle",
+    "followers_url": "https://api.github.com/users/cvle/followers",
+    "following_url": "https://api.github.com/users/cvle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cvle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cvle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cvle/subscriptions",
+    "organizations_url": "https://api.github.com/users/cvle/orgs",
+    "repos_url": "https://api.github.com/users/cvle/repos",
+    "events_url": "https://api.github.com/users/cvle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cvle/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "738542ab99ee3752e08221928a2829f07843f56d",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/738542ab99ee3752e08221928a2829f07843f56d",
+      "html_url": "https://github.com/coralproject/talk/commit/738542ab99ee3752e08221928a2829f07843f56d"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "bf204ba9823c9a52e76134c84344dfbf2b13fd36",
+      "filename": "locales/en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/6611f8b6367ee26f003d2d479688e075e5cfee6c/locales/en.yml",
+      "raw_url": "https://github.com/coralproject/talk/raw/6611f8b6367ee26f003d2d479688e075e5cfee6c/locales/en.yml",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/locales/en.yml?ref=6611f8b6367ee26f003d2d479688e075e5cfee6c",
+      "patch": "@@ -219,7 +219,7 @@ en:\n       subject: 'Your account has been banned'\n     confirm:\n       confirm_email: 'Confirm Email'\n-      has_been_requested: 'A email confirmation has been requested for the following account:'\n+      has_been_requested: 'An email confirmation has been requested for the following account:'\n       if_you_did_not: 'If you did not request this, you can safely ignore this email.'\n       subject: 'Email Confirmation'\n       to_confirm: 'To confirm the account, please visit the following link:'"
+    }
+  ]
+}
