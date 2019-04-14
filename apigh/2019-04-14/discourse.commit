@@ -1,0 +1,98 @@
+{
+  "sha": "70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3MGZlZjhlMGMzNzFkYmI5YWMyYWI0NWQwMjllNWY4NTA1YjVlZjNl",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-04-14T09:16:56Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-04-14T09:16:56Z"
+    },
+    "message": "FIX: change to correct bundled version",
+    "tree": {
+      "sha": "60f8c37efdf6523d07e73c03b3a6bd259ae831e0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/60f8c37efdf6523d07e73c03b3a6bd259ae831e0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e",
+  "html_url": "https://github.com/discourse/discourse/commit/70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "87b53e170be41c6b4356552cdabfdca92170aebd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/87b53e170be41c6b4356552cdabfdca92170aebd",
+      "html_url": "https://github.com/discourse/discourse/commit/87b53e170be41c6b4356552cdabfdca92170aebd"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "13faf6848806b846c0c6198ef76edef797b53dd5",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e/Gemfile.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile.lock?ref=70fef8e0c371dbb9ac2ab45d029e5f8505b5ef3e",
+      "patch": "@@ -572,4 +572,4 @@ DEPENDENCIES\n   webpush\n \n BUNDLED WITH\n-   2.0.1\n+   1.17.3"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sha": "2a53a54a78e191dd901b3e729d7c04263cfca535",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjJhNTNhNTRhNzhlMTkxZGQ5MDFiM2U3MjlkN2MwNDI2M2NmY2E1MzU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-13T19:52:21Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-13T19:52:21Z"
+    },
+    "message": "allow image/webp\n\nhttps://github.com/umputun/remark/pull/307#issuecomment-482873793",
+    "tree": {
+      "sha": "d2d4e0888366b837ab47ed7f2a413204066dcff6",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/d2d4e0888366b837ab47ed7f2a413204066dcff6"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/2a53a54a78e191dd901b3e729d7c04263cfca535",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/2a53a54a78e191dd901b3e729d7c04263cfca535",
+  "html_url": "https://github.com/umputun/remark/commit/2a53a54a78e191dd901b3e729d7c04263cfca535",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/2a53a54a78e191dd901b3e729d7c04263cfca535/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6bdbcb83512c851e83da13c1c8297762ad4c77f5",
+      "url": "https://api.github.com/repos/umputun/remark/commits/6bdbcb83512c851e83da13c1c8297762ad4c77f5",
+      "html_url": "https://github.com/umputun/remark/commit/6bdbcb83512c851e83da13c1c8297762ad4c77f5"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ee9151fa5cba34597b00f14d6e6e1b384cacafe8",
+      "filename": "backend/app/store/image/image.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/2a53a54a78e191dd901b3e729d7c04263cfca535/backend/app/store/image/image.go",
+      "raw_url": "https://github.com/umputun/remark/raw/2a53a54a78e191dd901b3e729d7c04263cfca535/backend/app/store/image/image.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/image/image.go?ref=2a53a54a78e191dd901b3e729d7c04263cfca535",
+      "patch": "@@ -132,7 +132,7 @@ func (s *Service) Close() {\n // check if file f is a valid image format, i.e. gif, png or jpeg\n func isValidImage(b []byte) bool {\n \tct := http.DetectContentType(b)\n-\treturn ct == \"image/gif\" || ct == \"image/png\" || ct == \"image/jpeg\"\n+\treturn ct == \"image/gif\" || ct == \"image/png\" || ct == \"image/jpeg\" || ct == \"image/webp\"\n }\n \n // guid makes a globally unique id"
+    }
+  ]
+}
