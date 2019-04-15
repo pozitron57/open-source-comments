@@ -1,0 +1,122 @@
+{
+  "sha": "9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6OTMxOWJiNGUxZjFiMWRlOTBlOWQ1ZmJjN2ZlYjU4Yjc1YmM1YTkzYw==",
+  "commit": {
+    "author": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2019-04-15T09:06:09Z"
+    },
+    "committer": {
+      "name": "Kiwi",
+      "email": "vinh@wikiwi.io",
+      "date": "2019-04-15T09:06:09Z"
+    },
+    "message": "Remove unnecessary Talk branding (#2271)\n\n* Remove Talk copy from Login view\r\n\r\n* Remove favicon from base template and only use it for admin view",
+    "tree": {
+      "sha": "479babbb79969de8fd609c27c24fc35db487374e",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/479babbb79969de8fd609c27c24fc35db487374e"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+  "html_url": "https://github.com/coralproject/talk/commit/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/comments",
+  "author": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "cvle",
+    "id": 14221600,
+    "node_id": "MDQ6VXNlcjE0MjIxNjAw",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/14221600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cvle",
+    "html_url": "https://github.com/cvle",
+    "followers_url": "https://api.github.com/users/cvle/followers",
+    "following_url": "https://api.github.com/users/cvle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cvle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cvle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cvle/subscriptions",
+    "organizations_url": "https://api.github.com/users/cvle/orgs",
+    "repos_url": "https://api.github.com/users/cvle/repos",
+    "events_url": "https://api.github.com/users/cvle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cvle/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6611f8b6367ee26f003d2d479688e075e5cfee6c",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/6611f8b6367ee26f003d2d479688e075e5cfee6c",
+      "html_url": "https://github.com/coralproject/talk/commit/6611f8b6367ee26f003d2d479688e075e5cfee6c"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "f2161c9719246ab78a45ec118f082e9250aa5a50",
+      "filename": "views/admin.njk",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/views/admin.njk",
+      "raw_url": "https://github.com/coralproject/talk/raw/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/views/admin.njk",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/views/admin.njk?ref=9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+      "patch": "@@ -2,6 +2,9 @@\n \n {% block title %}Talk Admin{% endblock %}\n \n+{# Favicon Configuration #}\n+{% include \"partials/favicon.njk\" %}\n+\n {% block css %}\n <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500\" rel=\"stylesheet\">\n <link href=\"https://code.getmdl.io/1.2.1/material.min.css\" rel=\"stylesheet\">"
+    },
+    {
+      "sha": "90ff874a720a25bdd6920f6f6a672de6c308bde4",
+      "filename": "views/login.njk",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/views/login.njk",
+      "raw_url": "https://github.com/coralproject/talk/raw/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/views/login.njk",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/views/login.njk?ref=9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+      "patch": "@@ -1,6 +1,6 @@\n {% extends \"templates/base.njk\" %}\n \n-{% block title %}Talk - Login{% endblock %}\n+{% block title %}Login{% endblock %}\n \n {% block css %}\n <link href=\"{{ resolve('coral-login/bundle.css')}}\" rel=\"stylesheet\">"
+    },
+    {
+      "sha": "edad4d545f3d135d3ff63644c9df7d22bb3bf5f4",
+      "filename": "views/templates/base.njk",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/views/templates/base.njk",
+      "raw_url": "https://github.com/coralproject/talk/raw/9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c/views/templates/base.njk",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/views/templates/base.njk?ref=9319bb4e1f1b1de90e9d5fbc7feb58b75bc5a93c",
+      "patch": "@@ -6,9 +6,6 @@\n     <meta name=\"viewport\" content=\"width=device-width, user-scalable=no\">\n     {% block meta %}{% endblock %}\n \n-    {# Favicon Configuration #}\n-    {% include \"partials/favicon.njk\" %}\n-\n     {# CSP and security headers #}\n     {% block security %}{% endblock %}\n "
+    }
+  ]
+}

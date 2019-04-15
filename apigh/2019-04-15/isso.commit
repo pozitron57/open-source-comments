@@ -1,0 +1,98 @@
+{
+  "sha": "bd39dd6788a6a69f8efcc13764a92178f647c63c",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTpiZDM5ZGQ2Nzg4YTZhNjlmOGVmY2MxMzc2NGE5MjE3OGY2NDdjNjNj",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-04-14T15:24:45Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-04-14T15:24:45Z"
+    },
+    "message": "Ignore backup files.",
+    "tree": {
+      "sha": "e88db07ad56abc09597455c5115c1ef0e38d3410",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/e88db07ad56abc09597455c5115c1ef0e38d3410"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/bd39dd6788a6a69f8efcc13764a92178f647c63c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/bd39dd6788a6a69f8efcc13764a92178f647c63c",
+  "html_url": "https://github.com/posativ/isso/commit/bd39dd6788a6a69f8efcc13764a92178f647c63c",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/bd39dd6788a6a69f8efcc13764a92178f647c63c/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f51d9cc4f5de270f57581811f887feaa71978aab",
+      "url": "https://api.github.com/repos/posativ/isso/commits/f51d9cc4f5de270f57581811f887feaa71978aab",
+      "html_url": "https://github.com/posativ/isso/commit/f51d9cc4f5de270f57581811f887feaa71978aab"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "fb216cbdb8660ef263c3a71a9f45f7322954b06e",
+      "filename": ".gitignore",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/bd39dd6788a6a69f8efcc13764a92178f647c63c/.gitignore",
+      "raw_url": "https://github.com/posativ/isso/raw/bd39dd6788a6a69f8efcc13764a92178f647c63c/.gitignore",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.gitignore?ref=bd39dd6788a6a69f8efcc13764a92178f647c63c",
+      "patch": "@@ -3,7 +3,7 @@\n # For a project mostly in C, the following would be a good set of\n # exclude patterns (uncomment them if you want to use them):\n # *.[oa]\n-# *~\n+*~\n \n *.pyc\n .Python"
+    }
+  ]
+}
