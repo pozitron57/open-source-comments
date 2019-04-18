@@ -1,0 +1,122 @@
+{
+  "sha": "0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MGI3MjNkYmRiZTY4YWI2YWRiNWZmMTA2NzBiNTMzYmZiYzkxNjkyMA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-04-17T04:25:30Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-04-17T16:03:56Z"
+    },
+    "message": "Hide 'Edit Category' button unless admin. Tweak show-more-comments CSS.",
+    "tree": {
+      "sha": "3fe2c396d14f23283e895a5b2ccf17c69584c47c",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/3fe2c396d14f23283e895a5b2ccf17c69584c47c"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+  "html_url": "https://github.com/debiki/talkyard/commit/0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/0b723dbdbe68ab6adb5ff10670b533bfbc916920/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4f1ba6f2c0d59e4ee8e8aae21c99474f1cf948ba",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/4f1ba6f2c0d59e4ee8e8aae21c99474f1cf948ba",
+      "html_url": "https://github.com/debiki/talkyard/commit/4f1ba6f2c0d59e4ee8e8aae21c99474f1cf948ba"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 12,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "39c58653495a9242763ee391d53457ebaeef95eb",
+      "filename": "app/debiki/Globals.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/0b723dbdbe68ab6adb5ff10670b533bfbc916920/app/debiki/Globals.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/0b723dbdbe68ab6adb5ff10670b533bfbc916920/app/debiki/Globals.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/Globals.scala?ref=0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+      "patch": "@@ -206,7 +206,7 @@ class Globals(\n     scala.io.Source.fromFile(\"/opt/talkyard/app/version.txt\")(scala.io.Codec.UTF8).mkString.trim\n \n   // Could rename to \"rendererVersion\".\n-  val applicationVersion = \"0.00.60\"  // later, read from some build config file\n+  val applicationVersion = \"0.00.61\"  // later, read from some build config file\n \n   def applicationSecret: String = _appSecret\n "
+    },
+    {
+      "sha": "ae3648df39b1f0eb653117f403228042b9b4300d",
+      "filename": "client/app-slim/forum/forum.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/0b723dbdbe68ab6adb5ff10670b533bfbc916920/client/app-slim/forum/forum.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/0b723dbdbe68ab6adb5ff10670b533bfbc916920/client/app-slim/forum/forum.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/forum/forum.ts?ref=0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+      "patch": "@@ -1079,6 +1079,7 @@ export const TopicsList = createComponent({\n function CatNameDescr(props: { store: Store, activeCategory: Category,\n       setCategory, editCategory }) {\n   const store: Store = props.store;\n+  const me: Myself = store.me;\n   const activeCategory: Category = props.activeCategory;\n \n   // ---- Dupl code [5BKZWY0] ------------------\n@@ -1102,7 +1103,7 @@ function CatNameDescr(props: { store: Store, activeCategory: Category,\n             categoryMenuItems));\n   // --- / Dupl code [5BKZWY0] ------------------\n \n-  const editCatButton = activeCategory.isForumItself ? null :\n+  const editCatButton = activeCategory.isForumItself || !me.isAdmin ? null :\n       r.a({ className: 's_F_Ts_Cat_Edt icon-edit', onClick: props.editCategory },\n         t.fb.EditCat);\n "
+    },
+    {
+      "sha": "2eb6779c29622ec3577f9ed94be9d879213c1148",
+      "filename": "client/app-slim/page/posts.styl",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "blob_url": "https://github.com/debiki/talkyard/blob/0b723dbdbe68ab6adb5ff10670b533bfbc916920/client/app-slim/page/posts.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/0b723dbdbe68ab6adb5ff10670b533bfbc916920/client/app-slim/page/posts.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/posts.styl?ref=0b723dbdbe68ab6adb5ff10670b533bfbc916920",
+      "patch": "@@ -81,20 +81,24 @@\n   margin: 7px 0 22px;\n   font-style: italic;\n   background: #fff;\n-  color: hsl($uiHue, 20%, 50%);\n+  color: hsl($uiHue, 70%, 35%);\n+  letter-spacing: 0.5px;\n+  word-spacing: 0.5px;\n \n .dw-p.dw-zd,\n .dw-ts-squashed .dw-x-show\n   bottom: 0;\n-  padding: 10px 0 17px 5px;\n+  padding: 12px 16px 12px;\n   display: block;\n-  margin: -8px 0 8px;\n+  margin: 0 0 8px;\n   z-index: 1;\n   float: left;  // see [5FKT02W] below\n-  color: hsl(0, 0%, 53%);\n+  color: hsl(0, 0%, 4%);\n+  background: hsl(0, 0%, 95%);\n+\n   &:hover\n     background-color: hsl($uiHue, 100%, 97%);\n-    color: hsl($uiHue, 100%, 33%);\n+    color: hsl($uiHue, 100%, 20%);\n     text-decoration: none;\n \n .dw-ts-squashed.dw-2dcol > .dw-x-show"
+    }
+  ]
+}
