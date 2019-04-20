@@ -1,0 +1,110 @@
+{
+  "sha": "b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiM2RjYWFjZGY0M2YwZTU3YTFmZmQ2NWVkYTQwNzFkZTk2ZGJlOGYw",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2019-04-20T01:13:43Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "gxtan1990@gmail.com",
+      "date": "2019-04-20T01:49:54Z"
+    },
+    "message": "Update Rails to 5.2.3.",
+    "tree": {
+      "sha": "2bfc37c3162ad32ba7bdef091e11d479f3099a4f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/2bfc37c3162ad32ba7bdef091e11d479f3099a4f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0",
+  "html_url": "https://github.com/discourse/discourse/commit/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0210b0aabc4ae8c1b1c8ebeae968ba57b21cca87",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/0210b0aabc4ae8c1b1c8ebeae968ba57b21cca87",
+      "html_url": "https://github.com/discourse/discourse/commit/0210b0aabc4ae8c1b1c8ebeae968ba57b21cca87"
+    }
+  ],
+  "stats": {
+    "total": 98,
+    "additions": 63,
+    "deletions": 35
+  },
+  "files": [
+    {
+      "sha": "83c731398a9aad521791f719830300edb1326d72",
+      "filename": "Gemfile",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0/Gemfile",
+      "raw_url": "https://github.com/discourse/discourse/raw/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0/Gemfile",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile?ref=b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0",
+      "patch": "@@ -14,13 +14,13 @@ if rails_master?\n else\n   # until rubygems gives us optional dependencies we are stuck with this\n   # bundle update actionmailer actionpack actionview activemodel activerecord activesupport railties\n-  gem 'actionmailer', '5.2.2.1'\n-  gem 'actionpack', '5.2.2.1'\n-  gem 'actionview', '5.2.2.1'\n-  gem 'activemodel', '5.2.2.1'\n-  gem 'activerecord', '5.2.2.1'\n-  gem 'activesupport', '5.2.2.1'\n-  gem 'railties', '5.2.2.1'\n+  gem 'actionmailer', '5.2.3'\n+  gem 'actionpack', '5.2.3'\n+  gem 'actionview', '5.2.3'\n+  gem 'activemodel', '5.2.3'\n+  gem 'activerecord', '5.2.3'\n+  gem 'activesupport', '5.2.3'\n+  gem 'railties', '5.2.3'\n   gem 'sprockets-rails'\n end\n "
+    },
+    {
+      "sha": "d8c8fa98a689a0b429e25acbdffa6c2313925c04",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 56,
+      "deletions": 28,
+      "changes": 84,
+      "blob_url": "https://github.com/discourse/discourse/blob/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0/Gemfile.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile.lock?ref=b3dcaacdf43f0e57a1ffd65eda4071de96dbe8f0",
+      "patch": "@@ -1,37 +1,45 @@\n GEM\n   remote: https://rubygems.org/\n   specs:\n-    actionmailer (5.2.2.1)\n-      actionpack (= 5.2.2.1)\n-      actionview (= 5.2.2.1)\n-      activejob (= 5.2.2.1)\n+    actioncable (5.2.3)\n+      actionpack (= 5.2.3)\n+      nio4r (~> 2.0)\n+      websocket-driver (>= 0.6.1)\n+    actionmailer (5.2.3)\n+      actionpack (= 5.2.3)\n+      actionview (= 5.2.3)\n+      activejob (= 5.2.3)\n       mail (~> 2.5, >= 2.5.4)\n       rails-dom-testing (~> 2.0)\n-    actionpack (5.2.2.1)\n-      actionview (= 5.2.2.1)\n-      activesupport (= 5.2.2.1)\n+    actionpack (5.2.3)\n+      actionview (= 5.2.3)\n+      activesupport (= 5.2.3)\n       rack (~> 2.0)\n       rack-test (>= 0.6.3)\n       rails-dom-testing (~> 2.0)\n       rails-html-sanitizer (~> 1.0, >= 1.0.2)\n-    actionview (5.2.2.1)\n-      activesupport (= 5.2.2.1)\n+    actionview (5.2.3)\n+      activesupport (= 5.2.3)\n       builder (~> 3.1)\n       erubi (~> 1.4)\n       rails-dom-testing (~> 2.0)\n       rails-html-sanitizer (~> 1.0, >= 1.0.3)\n     active_model_serializers (0.8.4)\n       activemodel (>= 3.0)\n-    activejob (5.2.2.1)\n-      activesupport (= 5.2.2.1)\n+    activejob (5.2.3)\n+      activesupport (= 5.2.3)\n       globalid (>= 0.3.6)\n-    activemodel (5.2.2.1)\n-      activesupport (= 5.2.2.1)\n-    activerecord (5.2.2.1)\n-      activemodel (= 5.2.2.1)\n-      activesupport (= 5.2.2.1)\n+    activemodel (5.2.3)\n+      activesupport (= 5.2.3)\n+    activerecord (5.2.3)\n+      activemodel (= 5.2.3)\n+      activesupport (= 5.2.3)\n       arel (>= 9.0)\n-    activesupport (5.2.2.1)\n+    activestorage (5.2.3)\n+      actionpack (= 5.2.3)\n+      activerecord (= 5.2.3)\n+      marcel (~> 0.3.1)\n+    activesupport (5.2.3)\n       concurrent-ruby (~> 1.0, >= 1.0.2)\n       i18n (>= 0.7, < 2)\n       minitest (~> 5.1)\n@@ -195,12 +203,15 @@ GEM\n     lru_redux (1.1.0)\n     mail (2.7.1)\n       mini_mime (>= 0.1.1)\n+    marcel (0.3.3)\n+      mimemagic (~> 0.3.2)\n     maxminddb (0.1.22)\n     memory_profiler (0.9.12)\n     message_bus (2.2.0)\n       rack (>= 1.1.3)\n     metaclass (0.0.4)\n     method_source (0.8.2)\n+    mimemagic (0.3.3)\n     mini_mime (1.0.1)\n     mini_portile2 (2.4.0)\n     mini_racer (0.2.4)\n@@ -221,6 +232,7 @@ GEM\n     multipart-post (2.0.0)\n     mustache (1.1.0)\n     nap (1.1.0)\n+    nio4r (2.3.1)\n     no_proxy_fix (0.1.2)\n     nokogiri (1.10.1)\n       mini_portile2 (~> 2.4.0)\n@@ -234,7 +246,7 @@ GEM\n       multi_xml (~> 0.5)\n       rack (>= 1.2, < 3)\n     octokit (4.13.0)\n-      sawyer (~> 0.8.0, >= 0.5.3)\n+      sawyer (>= 0.5.3, ~> 0.8.0)\n     oj (3.7.8)\n     omniauth (1.9.0)\n       hashie (>= 3.4.6, < 3.7.0)\n@@ -304,6 +316,19 @@ GEM\n       rack\n     rack-test (1.1.0)\n       rack (>= 1.0, < 3)\n+    rails (5.2.3)\n+      actioncable (= 5.2.3)\n+      actionmailer (= 5.2.3)\n+      actionpack (= 5.2.3)\n+      actionview (= 5.2.3)\n+      activejob (= 5.2.3)\n+      activemodel (= 5.2.3)\n+      activerecord (= 5.2.3)\n+      activestorage (= 5.2.3)\n+      activesupport (= 5.2.3)\n+      bundler (>= 1.3.0)\n+      railties (= 5.2.3)\n+      sprockets-rails (>= 2.0.0)\n     rails-dom-testing (2.0.3)\n       activesupport (>= 4.2.0)\n       nokogiri (>= 1.6)\n@@ -312,9 +337,9 @@ GEM\n     rails_multisite (2.0.6)\n       activerecord (> 4.2, < 6)\n       railties (> 4.2, < 6)\n-    railties (5.2.2.1)\n-      actionpack (= 5.2.2.1)\n-      activesupport (= 5.2.2.1)\n+    railties (5.2.3)\n+      actionpack (= 5.2.3)\n+      activesupport (= 5.2.3)\n       method_source\n       rake (>= 0.8.7)\n       thor (>= 0.19.0, < 2.0)\n@@ -447,18 +472,21 @@ GEM\n     webpush (0.3.6)\n       hkdf (~> 0.2)\n       jwt (~> 2.0)\n+    websocket-driver (0.7.0)\n+      websocket-extensions (>= 0.1.0)\n+    websocket-extensions (0.1.3)\n \n PLATFORMS\n   ruby\n \n DEPENDENCIES\n-  actionmailer (= 5.2.2.1)\n-  actionpack (= 5.2.2.1)\n-  actionview (= 5.2.2.1)\n+  actionmailer (= 5.2.3)\n+  actionpack (= 5.2.3)\n+  actionview (= 5.2.3)\n   active_model_serializers (~> 0.8.3)\n-  activemodel (= 5.2.2.1)\n-  activerecord (= 5.2.2.1)\n-  activesupport (= 5.2.2.1)\n+  activemodel (= 5.2.3)\n+  activerecord (= 5.2.3)\n+  activesupport (= 5.2.3)\n   annotate\n   aws-sdk-s3\n   aws-sdk-sns\n@@ -532,7 +560,7 @@ DEPENDENCIES\n   rack-mini-profiler\n   rack-protection\n   rails_multisite\n-  railties (= 5.2.2.1)\n+  railties (= 5.2.3)\n   rake\n   rb-fsevent\n   rb-inotify (~> 0.9)"
+    }
+  ]
+}

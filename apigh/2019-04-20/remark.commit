@@ -1,0 +1,98 @@
+{
+  "sha": "619e9fec3bfa52667a68ad22aefc727f2aebb5d4",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjYxOWU5ZmVjM2JmYTUyNjY3YTY4YWQyMmFlZmM3MjdmMmFlYmI1ZDQ=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-17T18:38:29Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-17T18:38:29Z"
+    },
+    "message": "clean image tests leftovers from tmp",
+    "tree": {
+      "sha": "3d4ad05c30781b09a583b8461836f652d5d603fa",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/3d4ad05c30781b09a583b8461836f652d5d603fa"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/619e9fec3bfa52667a68ad22aefc727f2aebb5d4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/619e9fec3bfa52667a68ad22aefc727f2aebb5d4",
+  "html_url": "https://github.com/umputun/remark/commit/619e9fec3bfa52667a68ad22aefc727f2aebb5d4",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/619e9fec3bfa52667a68ad22aefc727f2aebb5d4/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "15a8fb946d8192e4373c41b26a795af0c4a1fe43",
+      "url": "https://api.github.com/repos/umputun/remark/commits/15a8fb946d8192e4373c41b26a795af0c4a1fe43",
+      "html_url": "https://github.com/umputun/remark/commit/15a8fb946d8192e4373c41b26a795af0c4a1fe43"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 6,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "2c657831318de499376cc63b61b26dc1d453e722",
+      "filename": "backend/app/store/image/fs_store_test.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark/blob/619e9fec3bfa52667a68ad22aefc727f2aebb5d4/backend/app/store/image/fs_store_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/619e9fec3bfa52667a68ad22aefc727f2aebb5d4/backend/app/store/image/fs_store_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/image/fs_store_test.go?ref=619e9fec3bfa52667a68ad22aefc727f2aebb5d4",
+      "patch": "@@ -57,9 +57,9 @@ func TestFsStore_Save(t *testing.T) {\n }\n \n func TestFsStore_SaveWithResize(t *testing.T) {\n-\tsvc, _ := prepareImageTest(t)\n+\tsvc, teardown := prepareImageTest(t)\n+\tdefer teardown()\n \tsvc.MaxWidth, svc.MaxHeight = 32, 32\n-\t// defer teardown()\n \n \tid, err := svc.Save(\"file1.png\", \"user1\", gopherPNG())\n \tassert.NoError(t, err)\n@@ -75,7 +75,8 @@ func TestFsStore_SaveWithResize(t *testing.T) {\n }\n \n func TestFsStore_SaveWithResizeJpeg(t *testing.T) {\n-\tsvc, _ := prepareImageTest(t)\n+\tsvc, teardown := prepareImageTest(t)\n+\tdefer teardown()\n \tsvc.MaxWidth, svc.MaxHeight = 400, 300\n \tsvc.MaxSize = 32000\n \n@@ -96,7 +97,8 @@ func TestFsStore_SaveWithResizeJpeg(t *testing.T) {\n }\n \n func TestFsStore_SaveNoResizeJpeg(t *testing.T) {\n-\tsvc, _ := prepareImageTest(t)\n+\tsvc, teardown := prepareImageTest(t)\n+\tdefer teardown()\n \tsvc.MaxWidth, svc.MaxHeight = 1400, 1300\n \tsvc.MaxSize = 32000\n "
+    }
+  ]
+}
