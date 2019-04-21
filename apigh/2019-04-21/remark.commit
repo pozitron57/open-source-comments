@@ -1,0 +1,98 @@
+{
+  "sha": "6b31741fa3cd8dc5aae188e03e1e0f77b67b15af",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjZiMzE3NDFmYTNjZDhkYzVhYWUxODhlMDNlMWUwZjc3YjY3YjE1YWY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-21T06:26:51Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-04-21T06:26:51Z"
+    },
+    "message": "fix cache enabled for pictures",
+    "tree": {
+      "sha": "01fcb6e4c028adc534c0952faaa059f63ec25722",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/01fcb6e4c028adc534c0952faaa059f63ec25722"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/6b31741fa3cd8dc5aae188e03e1e0f77b67b15af",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/6b31741fa3cd8dc5aae188e03e1e0f77b67b15af",
+  "html_url": "https://github.com/umputun/remark/commit/6b31741fa3cd8dc5aae188e03e1e0f77b67b15af",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/6b31741fa3cd8dc5aae188e03e1e0f77b67b15af/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ace1cbc2781a8c728790d0b400e402d7011c8ac9",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ace1cbc2781a8c728790d0b400e402d7011c8ac9",
+      "html_url": "https://github.com/umputun/remark/commit/ace1cbc2781a8c728790d0b400e402d7011c8ac9"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "ad9f9f281d40d7c7f544937a244ad5275b734869",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/6b31741fa3cd8dc5aae188e03e1e0f77b67b15af/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark/raw/6b31741fa3cd8dc5aae188e03e1e0f77b67b15af/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest.go?ref=6b31741fa3cd8dc5aae188e03e1e0f77b67b15af",
+      "patch": "@@ -231,7 +231,7 @@ func (s *Rest) routes() chi.Router {\n \t\t\tropen.Get(\"/config\", s.configCtrl)\n \t\t\tropen.Post(\"/preview\", s.previewCommentCtrl)\n \t\t\tropen.Get(\"/info\", s.infoCtrl)\n-\t\t\tropen.Get(\"/picture/{user}/{id}\", s.loadPictureCtrl)\n+\t\t\tropen.Mount(\"/img\", s.ImageProxy.Routes())\n \t\t\tropen.Mount(\"/rss\", s.rssRoutes())\n \t\t})\n \n@@ -241,7 +241,7 @@ func (s *Rest) routes() chi.Router {\n \t\t\tropen.Use(authMiddleware.Trace)\n \t\t\tropen.Use(logger.New(logger.Log(log.Default()), logger.WithBody,\n \t\t\t\tlogger.Prefix(\"[INFO]\"), logger.IPfn(ipFn)).Handler)\n-\t\t\tropen.Mount(\"/img\", s.ImageProxy.Routes())\n+\t\t\tropen.Get(\"/picture/{user}/{id}\", s.loadPictureCtrl)\n \t\t})\n \n \t\t// protected routes, require auth"
+    }
+  ]
+}
