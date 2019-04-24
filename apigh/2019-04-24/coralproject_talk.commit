@@ -1,0 +1,110 @@
+{
+  "sha": "a6653152e4a8f74e57d4a336dff9d919649a71f6",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YTY2NTMxNTJlNGE4Zjc0ZTU3ZDRhMzM2ZGZmOWQ5MTk2NDlhNzFmNg==",
+  "commit": {
+    "author": {
+      "name": "Andrew Losowsky",
+      "email": "andrew@losowsky.com",
+      "date": "2019-04-23T22:08:48Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-04-23T22:08:48Z"
+    },
+    "message": "added info box (#2281)\n\n* added info box\r\n\r\n* fix: styles",
+    "tree": {
+      "sha": "7e16b428d0d065177a042fea52d68406c0b71362",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/7e16b428d0d065177a042fea52d68406c0b71362"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/a6653152e4a8f74e57d4a336dff9d919649a71f6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/a6653152e4a8f74e57d4a336dff9d919649a71f6",
+  "html_url": "https://github.com/coralproject/talk/commit/a6653152e4a8f74e57d4a336dff9d919649a71f6",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/a6653152e4a8f74e57d4a336dff9d919649a71f6/comments",
+  "author": {
+    "login": "losowsky",
+    "id": 10014755,
+    "node_id": "MDQ6VXNlcjEwMDE0NzU1",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/10014755?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/losowsky",
+    "html_url": "https://github.com/losowsky",
+    "followers_url": "https://api.github.com/users/losowsky/followers",
+    "following_url": "https://api.github.com/users/losowsky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/losowsky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/losowsky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/losowsky/subscriptions",
+    "organizations_url": "https://api.github.com/users/losowsky/orgs",
+    "repos_url": "https://api.github.com/users/losowsky/repos",
+    "events_url": "https://api.github.com/users/losowsky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/losowsky/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "441422542cdbc5510b14c2a30cfa57a40e41d68c",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/441422542cdbc5510b14c2a30cfa57a40e41d68c",
+      "html_url": "https://github.com/coralproject/talk/commit/441422542cdbc5510b14c2a30cfa57a40e41d68c"
+    }
+  ],
+  "stats": {
+    "total": 34,
+    "additions": 31,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "7a20377d441064112ac97673f44ffd536964eae2",
+      "filename": "docs/source/01-01-talk-quickstart.md",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 3,
+      "changes": 15,
+      "blob_url": "https://github.com/coralproject/talk/blob/a6653152e4a8f74e57d4a336dff9d919649a71f6/docs/source/01-01-talk-quickstart.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/a6653152e4a8f74e57d4a336dff9d919649a71f6/docs/source/01-01-talk-quickstart.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/source/01-01-talk-quickstart.md?ref=a6653152e4a8f74e57d4a336dff9d919649a71f6",
+      "patch": "@@ -5,9 +5,18 @@ permalink: /\n \n Online comments are broken. Our open-source Talk tool rethinks how moderation,\n comment display, and conversation function, creating the opportunity for safer,\n-smarter discussions around your work. Read more about our product features and\n-goals [here](https://coralproject.net/talk). The\n-documentation available here is pertaining to the technical details for\n+smarter discussions around your work. \n+\n+More than 60 newsrooms use Talk to run their on-site communities, including the Washington Post, the Wall Street Journal, and IGN. \n+\n+[Read more about our product features and\n+goals here](https://coralproject.net/talk).\n+\n+<div class=\"callout\">\n+  We offer hosting and support packages for Talk. [Contact us for more information.](https://coralproject.net/pricing/)\n+</div>\n+\n+The documentation available here is pertaining to the technical details for\n installing, configuring, and deploying Talk.\n \n Talk is a [Node](https://nodejs.org/) application with"
+    },
+    {
+      "sha": "10b2951f361083298cd005670be43ba6803054f3",
+      "filename": "docs/themes/coral/source/css/talk.scss",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/coralproject/talk/blob/a6653152e4a8f74e57d4a336dff9d919649a71f6/docs/themes/coral/source/css/talk.scss",
+      "raw_url": "https://github.com/coralproject/talk/raw/a6653152e4a8f74e57d4a336dff9d919649a71f6/docs/themes/coral/source/css/talk.scss",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/docs/themes/coral/source/css/talk.scss?ref=a6653152e4a8f74e57d4a336dff9d919649a71f6",
+      "patch": "@@ -465,3 +465,22 @@ a.brand {\n   background: rgb(0, 102, 176);\n   color: #fff;\n }\n+\n+.callout {\n+  background-color: $coral_button_background;\n+  color: white;\n+  margin: 20px 0;\n+  padding: 20px;\n+  text-align: center;\n+\n+  a {\n+    @extend .coral-link;\n+    color: #FFF;\n+    border-color: #FFF;\n+\n+    &:hover {\n+      color: #FFF;\n+      border-color: darken(#FFF, 5%);\n+    }\n+  }\n+}"
+    }
+  ]
+}
