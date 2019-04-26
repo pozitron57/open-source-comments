@@ -1,0 +1,98 @@
+{
+  "sha": "be0ae2e487e57db44af666f0beb5e5e44aa3b7a3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiZTBhZTJlNDg3ZTU3ZGI0NGFmNjY2ZjBiZWI1ZTVlNDRhYTNiN2Ez",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-04-26T05:46:41Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-04-26T05:46:41Z"
+    },
+    "message": "FIX: plain text table detection should work even if html content not found.",
+    "tree": {
+      "sha": "979706a20a653f2127a1116707cc584c3bbc91b3",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/979706a20a653f2127a1116707cc584c3bbc91b3"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/be0ae2e487e57db44af666f0beb5e5e44aa3b7a3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/be0ae2e487e57db44af666f0beb5e5e44aa3b7a3",
+  "html_url": "https://github.com/discourse/discourse/commit/be0ae2e487e57db44af666f0beb5e5e44aa3b7a3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/be0ae2e487e57db44af666f0beb5e5e44aa3b7a3/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dc2ee78f7a667cd0ded8e198282def7ea51797bb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/dc2ee78f7a667cd0ded8e198282def7ea51797bb",
+      "html_url": "https://github.com/discourse/discourse/commit/dc2ee78f7a667cd0ded8e198282def7ea51797bb"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 16,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "ebba5d720f069e28e625037e9e402b5d8fcd18be",
+      "filename": "app/assets/javascripts/discourse/components/d-editor.js.es6",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 10,
+      "changes": 26,
+      "blob_url": "https://github.com/discourse/discourse/blob/be0ae2e487e57db44af666f0beb5e5e44aa3b7a3/app/assets/javascripts/discourse/components/d-editor.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/be0ae2e487e57db44af666f0beb5e5e44aa3b7a3/app/assets/javascripts/discourse/components/d-editor.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/d-editor.js.es6?ref=be0ae2e487e57db44af666f0beb5e5e44aa3b7a3",
+      "patch": "@@ -804,6 +804,21 @@ export default Ember.Component.extend({\n \n     const { pre, lineVal } = this._getSelected(null, { lineVal: true });\n     const isInlinePasting = pre.match(/[^\\n]$/);\n+    const isCodeBlock = isInside(pre, /(^|\\n)```/g);\n+\n+    if (\n+      plainText &&\n+      this.siteSettings.enable_rich_text_paste &&\n+      !isInlinePasting &&\n+      !isCodeBlock\n+    ) {\n+      plainText = plainText.trim().replace(/\\r/g, \"\");\n+      const table = this._extractTable(plainText);\n+      if (table) {\n+        this.appEvents.trigger(\"composer:insert-text\", table);\n+        handled = true;\n+      }\n+    }\n \n     if (canPasteHtml && plainText) {\n       if (isInlinePasting) {\n@@ -813,16 +828,7 @@ export default Ember.Component.extend({\n           lineVal.match(/^    /)\n         );\n       } else {\n-        canPasteHtml = !isInside(pre, /(^|\\n)```/g);\n-\n-        if (canPasteHtml) {\n-          plainText = plainText.trim().replace(/\\r/g, \"\");\n-          const table = this._extractTable(plainText);\n-          if (table) {\n-            this.appEvents.trigger(\"composer:insert-text\", table);\n-            handled = true;\n-          }\n-        }\n+        canPasteHtml = !isCodeBlock;\n       }\n     }\n "
+    }
+  ]
+}
