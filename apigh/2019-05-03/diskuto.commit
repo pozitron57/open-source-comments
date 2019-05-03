@@ -1,0 +1,110 @@
+{
+  "sha": "00fef952b53664f65962d3ff03bba75ffad8fbe6",
+  "node_id": "MDY6Q29tbWl0ODQ4NzYyMTA6MDBmZWY5NTJiNTM2NjRmNjU5NjJkM2ZmMDNiYmE3NWZmYWQ4ZmJlNg==",
+  "commit": {
+    "author": {
+      "name": "Sönke Ludwig",
+      "email": "sludwig@rejectedsoftware.com",
+      "date": "2018-05-10T18:17:16Z"
+    },
+    "committer": {
+      "name": "Sönke Ludwig",
+      "email": "sludwig@rejectedsoftware.com",
+      "date": "2018-05-10T18:17:16Z"
+    },
+    "message": "Add function to mark all comments in a topic as spam.",
+    "tree": {
+      "sha": "057c25869a3fff07a519cae0f32f3f6511cc6ed8",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/git/trees/057c25869a3fff07a519cae0f32f3f6511cc6ed8"
+    },
+    "url": "https://api.github.com/repos/rejectedsoftware/diskuto/git/commits/00fef952b53664f65962d3ff03bba75ffad8fbe6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/00fef952b53664f65962d3ff03bba75ffad8fbe6",
+  "html_url": "https://github.com/rejectedsoftware/diskuto/commit/00fef952b53664f65962d3ff03bba75ffad8fbe6",
+  "comments_url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/00fef952b53664f65962d3ff03bba75ffad8fbe6/comments",
+  "author": {
+    "login": "s-ludwig",
+    "id": 1645969,
+    "node_id": "MDQ6VXNlcjE2NDU5Njk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1645969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s-ludwig",
+    "html_url": "https://github.com/s-ludwig",
+    "followers_url": "https://api.github.com/users/s-ludwig/followers",
+    "following_url": "https://api.github.com/users/s-ludwig/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s-ludwig/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s-ludwig/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s-ludwig/subscriptions",
+    "organizations_url": "https://api.github.com/users/s-ludwig/orgs",
+    "repos_url": "https://api.github.com/users/s-ludwig/repos",
+    "events_url": "https://api.github.com/users/s-ludwig/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s-ludwig/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "s-ludwig",
+    "id": 1645969,
+    "node_id": "MDQ6VXNlcjE2NDU5Njk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1645969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s-ludwig",
+    "html_url": "https://github.com/s-ludwig",
+    "followers_url": "https://api.github.com/users/s-ludwig/followers",
+    "following_url": "https://api.github.com/users/s-ludwig/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s-ludwig/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s-ludwig/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s-ludwig/subscriptions",
+    "organizations_url": "https://api.github.com/users/s-ludwig/orgs",
+    "repos_url": "https://api.github.com/users/s-ludwig/repos",
+    "events_url": "https://api.github.com/users/s-ludwig/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s-ludwig/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ce4f1203fd13f39404acb12c301cde03fb352eed",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/ce4f1203fd13f39404acb12c301cde03fb352eed",
+      "html_url": "https://github.com/rejectedsoftware/diskuto/commit/ce4f1203fd13f39404acb12c301cde03fb352eed"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 30,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "66345401d9a304e8680dc9c5cff7f074259b2dbd",
+      "filename": "source/diskuto/web.d",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/00fef952b53664f65962d3ff03bba75ffad8fbe6/source/diskuto/web.d",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/00fef952b53664f65962d3ff03bba75ffad8fbe6/source/diskuto/web.d",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/source/diskuto/web.d?ref=00fef952b53664f65962d3ff03bba75ffad8fbe6",
+      "patch": "@@ -212,6 +212,28 @@ private final class DiskutoWebInterface {\n \t\tredirectBack(req);\n \t}\n \n+\t@errorDisplay!sendWebError\n+\tvoid markAllAsSpam(HTTPServerRequest req, string topic, bool confirmed)\n+\t{\n+\t\tauto usr = getUser(req, m_settings, null);\n+\t\tenforce(usr.role >= StoredUser.Role.moderator,\n+\t\t\t\"Not authorized to manage comments.\");\n+\t\tif (!confirmed) redirectBack(req);\n+\t\tm_settings.commentStore.iterateCommentsForTopic(topic, (ref comment) {\n+\t\t\tif (comment.status == StoredComment.Status.active) {\n+\t\t\t\tm_settings.commentStore.setCommentStatus(comment.id, StoredComment.Status.spam);\n+\n+\t\t\t\t// reclassify spam status\n+\t\t\t\tAntispamMessage msg;\n+\t\t\t\tcomment.convertToAntispam(msg, m_antispam);\n+\t\t\t\tm_antispam.declassify(msg, false);\n+\t\t\t\tm_antispam.declassify(msg, true);\n+\t\t\t}\n+\t\t});\n+\n+\t\tredirectBack(req);\n+\t}\n+\n \t@errorDisplay!sendWebError\n \tvoid getRenderTopic(HTTPServerRequest req, string topic, string base)\n \t{"
+    },
+    {
+      "sha": "e776211cec9d28c23e355fd51277a53224210168",
+      "filename": "views/diskuto.inc.comments.dt",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/00fef952b53664f65962d3ff03bba75ffad8fbe6/views/diskuto.inc.comments.dt",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/00fef952b53664f65962d3ff03bba75ffad8fbe6/views/diskuto.inc.comments.dt",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/views/diskuto.inc.comments.dt?ref=00fef952b53664f65962d3ff03bba75ffad8fbe6",
+      "patch": "@@ -118,6 +118,14 @@\n \n \t\t- commentForm(topic, usr, null);\n \n+\t\t- if (usr.isModerator)\n+\t\t\tform(method=\"POST\", action=\"#{req.rootDir}diskuto/mark_all_as_spam\")\n+\t\t\t\tinput(type=\"hidden\", name=\"topic\", value=topic)\n+\t\t\t\tinput#confirm_all_spam(type=\"checkbox\", name=\"confirmed\")\n+\t\t\t\tlabel(for=\"confirm_all_spam\") Confirm marking of all comments in this topic as spam\n+\t\t\t\tbutton(type=\"submit\") Mark all comments as spam (!)\n+\n+\n \t\t.replies\n \t\t\t- foreach (c; ctx.comments)\n \t\t\t\t- if (usr.isModerator || c.isVisibleTo(usr.id))"
+    }
+  ]
+}
