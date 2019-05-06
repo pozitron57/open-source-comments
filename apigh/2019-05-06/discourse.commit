@@ -1,0 +1,98 @@
+{
+  "sha": "39260c841e70802ee7868b98f625d190f99a46a9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozOTI2MGM4NDFlNzA4MDJlZTc4NjhiOThmNjI1ZDE5MGY5OWE0NmE5",
+  "commit": {
+    "author": {
+      "name": "Bianca Nenciu",
+      "email": "nenciu.bianca@gmail.com",
+      "date": "2019-05-06T16:28:03Z"
+    },
+    "committer": {
+      "name": "Bianca Nenciu",
+      "email": "nenciu.bianca@gmail.com",
+      "date": "2019-05-06T16:29:51Z"
+    },
+    "message": "DEV: Add test for click-track and mention links.\n\nFollow-up to b81d169e.",
+    "tree": {
+      "sha": "252627726c590b84af73a1ce3e37c1b4a782c9b5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/252627726c590b84af73a1ce3e37c1b4a782c9b5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/39260c841e70802ee7868b98f625d190f99a46a9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/39260c841e70802ee7868b98f625d190f99a46a9",
+  "html_url": "https://github.com/discourse/discourse/commit/39260c841e70802ee7868b98f625d190f99a46a9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/39260c841e70802ee7868b98f625d190f99a46a9/comments",
+  "author": {
+    "login": "nbianca",
+    "id": 23153890,
+    "node_id": "MDQ6VXNlcjIzMTUzODkw",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/23153890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nbianca",
+    "html_url": "https://github.com/nbianca",
+    "followers_url": "https://api.github.com/users/nbianca/followers",
+    "following_url": "https://api.github.com/users/nbianca/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nbianca/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nbianca/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nbianca/subscriptions",
+    "organizations_url": "https://api.github.com/users/nbianca/orgs",
+    "repos_url": "https://api.github.com/users/nbianca/repos",
+    "events_url": "https://api.github.com/users/nbianca/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nbianca/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nbianca",
+    "id": 23153890,
+    "node_id": "MDQ6VXNlcjIzMTUzODkw",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/23153890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nbianca",
+    "html_url": "https://github.com/nbianca",
+    "followers_url": "https://api.github.com/users/nbianca/followers",
+    "following_url": "https://api.github.com/users/nbianca/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nbianca/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nbianca/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nbianca/subscriptions",
+    "organizations_url": "https://api.github.com/users/nbianca/orgs",
+    "repos_url": "https://api.github.com/users/nbianca/repos",
+    "events_url": "https://api.github.com/users/nbianca/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nbianca/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "233d3f611b53b1fa8025799d27f91559390920dc",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/233d3f611b53b1fa8025799d27f91559390920dc",
+      "html_url": "https://github.com/discourse/discourse/commit/233d3f611b53b1fa8025799d27f91559390920dc"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 15,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "ddbb435d9eb05e80539bff67353575322b75cf00",
+      "filename": "test/javascripts/acceptance/click-track-test.js.es6",
+      "status": "added",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/39260c841e70802ee7868b98f625d190f99a46a9/test/javascripts/acceptance/click-track-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/39260c841e70802ee7868b98f625d190f99a46a9/test/javascripts/acceptance/click-track-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/acceptance/click-track-test.js.es6?ref=39260c841e70802ee7868b98f625d190f99a46a9",
+      "patch": "@@ -0,0 +1,15 @@\n+import { acceptance } from \"helpers/qunit-helpers\";\n+\n+acceptance(\"Click Track\", {});\n+\n+QUnit.test(\"Do not track mentions\", async assert => {\n+  /* global server */\n+  server.get(\"/clicks/track\", () => assert.ok(false));\n+\n+  await visit(\"/t/internationalization-localization/280\");\n+  assert.ok(invisible(\"#user-card\"), \"card should not appear\");\n+\n+  await click(\"article[data-post-id=3651] a.mention\");\n+  assert.ok(visible(\"#user-card\"), \"card should appear\");\n+  assert.equal(currentURL(), \"/t/internationalization-localization/280\");\n+});"
+    }
+  ]
+}
