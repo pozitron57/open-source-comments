@@ -75,7 +75,7 @@ fields_dic={
     'markdown_support':      'Markdown support',
     'moderation':            'Moderation',
     'dependency':            'Dependencies',
-    'webmention':            'Uses webmention.io',
+    'webmention':            'Supports Webmention',
     'nested_comments':       'Nested comments',
     'provided_hosting':      'Can host for you',
     'collapse_comments':     'Collapse comments',
