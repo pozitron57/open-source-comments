@@ -1,0 +1,98 @@
+{
+  "sha": "e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplNmNmYzU4NGQwN2NhNWFiOTYwNjQzMmMwYTRhOWZlMDFiN2JlMmFi",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2019-05-08T15:27:09Z"
+    },
+    "committer": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2019-05-08T15:27:09Z"
+    },
+    "message": "Revert \"FIX: frozen string exception (#7506)\"\n\nThis reverts commit c4b7fb2754555bb2b68113897271535e0f9aff58.",
+    "tree": {
+      "sha": "edad2f243133dcb1407a3a1a8c09d2272a8eb4d0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/edad2f243133dcb1407a3a1a8c09d2272a8eb4d0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab",
+  "html_url": "https://github.com/discourse/discourse/commit/e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "497c0ba418a1032aa653d183f7cc5255d4970925",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/497c0ba418a1032aa653d183f7cc5255d4970925",
+      "html_url": "https://github.com/discourse/discourse/commit/497c0ba418a1032aa653d183f7cc5255d4970925"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "07fac926d72b3973d87089d5683abdf2574da47d",
+      "filename": "app/models/incoming_domain.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab/app/models/incoming_domain.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab/app/models/incoming_domain.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/incoming_domain.rb?ref=e6cfc584d07ca5ab9606432c0a4a9fe01b7be2ab",
+      "patch": "@@ -24,7 +24,7 @@ def to_url\n     url = \"http#{https ? \"s\" : \"\"}://#{name}\"\n \n     if https && port != 443 || !https && port != 80\n-      url += \":#{port}\"\n+      url << \":#{port}\"\n     end\n \n     url"
+    }
+  ]
+}
