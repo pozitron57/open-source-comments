@@ -49,9 +49,9 @@ fields = [
     'rss',
     'static',
     'created',
-   #'updated', # What's this date? For all the forks?
+   #'updated', # What's this date?
     'last_committed',
-   #'unmaintained', #or probably Maintaned? Or Abandoned? don't like double negative
+   #'unmaintained', #or Maintaned?
     'description',
 ]
 
