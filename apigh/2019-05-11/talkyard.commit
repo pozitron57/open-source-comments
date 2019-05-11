@@ -1,0 +1,110 @@
+{
+  "sha": "386f79993bb505b3361eb5e46c9687336f9a195d",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6Mzg2Zjc5OTkzYmI1MDViMzM2MWViNWU0NmM5Njg3MzM2ZjlhMTk1ZA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-05-10T09:24:54Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-05-10T09:24:54Z"
+    },
+    "message": "Fix test, undo unnecessary revw task rev nr change.",
+    "tree": {
+      "sha": "6ddf7aab63b5fc4c1edd0b826423198f1de238bc",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/6ddf7aab63b5fc4c1edd0b826423198f1de238bc"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/386f79993bb505b3361eb5e46c9687336f9a195d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/386f79993bb505b3361eb5e46c9687336f9a195d",
+  "html_url": "https://github.com/debiki/talkyard/commit/386f79993bb505b3361eb5e46c9687336f9a195d",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/386f79993bb505b3361eb5e46c9687336f9a195d/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d6fbbe23fc2459278a025c86c5718b7c47142231",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/d6fbbe23fc2459278a025c86c5718b7c47142231",
+      "html_url": "https://github.com/debiki/talkyard/commit/d6fbbe23fc2459278a025c86c5718b7c47142231"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 11,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "fe28f90ad0018fc3a9ba78016a7be83250db53c4",
+      "filename": "modules/ed-core/src/main/scala/com/debiki/core/ReviewTask.scala",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/debiki/talkyard/blob/386f79993bb505b3361eb5e46c9687336f9a195d/modules/ed-core/src/main/scala/com/debiki/core/ReviewTask.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/386f79993bb505b3361eb5e46c9687336f9a195d/modules/ed-core/src/main/scala/com/debiki/core/ReviewTask.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/src/main/scala/com/debiki/core/ReviewTask.scala?ref=386f79993bb505b3361eb5e46c9687336f9a195d",
+      "patch": "@@ -92,6 +92,7 @@ case class ReviewTask(\n   createdAt: ju.Date,\n   createdAtRevNr: Option[Int] = None,\n   moreReasonsAt: Option[ju.Date] = None,\n+  //moreReasonsAtRevNr: Option[ju.Date] = None,\n   decidedAt: Option[ju.Date] = None,\n   completedAt: Option[ju.Date] = None,\n   decidedAtRevNr: Option[Int] = None,\n@@ -114,6 +115,8 @@ case class ReviewTask(\n \n   require(reasons.nonEmpty, s\"Review reasons is empty [TyE3FK21]: $this\")\n   require(!moreReasonsAt.exists(_.getTime < createdAt.getTime), \"EsE7UGYP2\")\n+  //require(moreReasonsAt.isDefined == moreReasonsAtRevNr.isDefined, \"TyE6MKWZ8\") [MOREREVRSNS]\n+  //require(!moreReasonsAtRevNr.exists(_ < createdAtRevNr), \"TyE6MKWZ9\")\n   require(!decidedAt.exists(_.getTime < createdAt.getTime), \"TyE6UHQ21\")\n   require(!completedAt.exists(_.getTime < createdAt.getTime), \"EsE0YUL72\")\n   require(!invalidatedAt.exists(_.getTime < createdAt.getTime), \"EsE5GKP2\")\n@@ -153,7 +156,10 @@ case class ReviewTask(\n     this.copy(\n       reasons = newReasonsSeq,\n       createdAt = oldTask.createdAt,\n-      moreReasonsAt = Some(this.createdAt))\n+      //createdAtRevNr = oldTask.createdAtRevNr,  [MOREREVRSNS]\n+      moreReasonsAt = Some(this.createdAt),\n+      //moreReasonsAtRevNr = Some(this.createdAtRevNr) [MOREREVRSNS]\n+      )\n   }\n \n }"
+    },
+    {
+      "sha": "bb8c8cfa859f9f1081a5f7f6e914422469f6195a",
+      "filename": "modules/ed-core/src/test/scala/com/debiki/core/ReviewTaskSpec.scala",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/debiki/talkyard/blob/386f79993bb505b3361eb5e46c9687336f9a195d/modules/ed-core/src/test/scala/com/debiki/core/ReviewTaskSpec.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/386f79993bb505b3361eb5e46c9687336f9a195d/modules/ed-core/src/test/scala/com/debiki/core/ReviewTaskSpec.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/src/test/scala/com/debiki/core/ReviewTaskSpec.scala?ref=386f79993bb505b3361eb5e46c9687336f9a195d",
+      "patch": "@@ -57,15 +57,16 @@ class ReviewTaskSpec extends FreeSpec with MustMatchers {\n         taskOne.copy(reasons = Vector(ReviewReason.IsByNewUser))))\n       task.reasons mustBe Vector(ReviewReason.IsByNewUser, ReviewReason.PostIsSpam)\n       task.createdAt mustBe taskOne.createdAt\n-      task.createdAtRevNr mustBe taskOne.createdAtRevNr\n+      //task.createdAtRevNr mustBe taskOne.createdAtRevNr [MOREREVRSNS]\n+      //task.moreReasonsAtRevNr mustBe taskTwo.createdAtRevNr [MOREREVRSNS]  ??\n       task.moreReasonsAt mustBe Some(taskTwo.createdAt)\n     }\n \n     \"Merge the same reasons with each other\" in {\n       val task = taskTwo.mergeWithAny(Some(taskOne))\n       task.reasons mustBe Vector(ReviewReason.PostIsSpam)\n       task.createdAt mustBe taskOne.createdAt\n-      task.createdAtRevNr mustBe taskOne.createdAtRevNr\n+      //task.createdAtRevNr mustBe taskOne.createdAtRevNr [MOREREVRSNS]\n       task.moreReasonsAt mustBe Some(taskTwo.createdAt)\n     }\n \n@@ -77,7 +78,7 @@ class ReviewTaskSpec extends FreeSpec with MustMatchers {\n       task.reasons mustBe Vector(\n         ReviewReason.IsByThreatUser, ReviewReason.IsByNewUser, ReviewReason.LateEdit)\n       task.createdAt mustBe taskOne.createdAt\n-      task.createdAtRevNr mustBe taskOne.createdAtRevNr\n+      //task.createdAtRevNr mustBe taskOne.createdAtRevNr [MOREREVRSNS]\n       task.moreReasonsAt mustBe Some(taskTwo.createdAt)\n     }\n   }"
+    }
+  ]
+}
