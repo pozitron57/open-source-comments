@@ -1,0 +1,110 @@
+{
+  "sha": "a859ddc77e2514d91ce4b28c8060371ff6e13ac9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphODU5ZGRjNzdlMjUxNGQ5MWNlNGIyOGM4MDYwMzcxZmY2ZTEzYWM5",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-05-10T18:14:12Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-05-10T18:14:12Z"
+    },
+    "message": "Improve theme/component delete modal warning",
+    "tree": {
+      "sha": "13aef5d8d19e2f089d641aac6fcea2947c1c0202",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/13aef5d8d19e2f089d641aac6fcea2947c1c0202"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a859ddc77e2514d91ce4b28c8060371ff6e13ac9",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a859ddc77e2514d91ce4b28c8060371ff6e13ac9",
+  "html_url": "https://github.com/discourse/discourse/commit/a859ddc77e2514d91ce4b28c8060371ff6e13ac9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a859ddc77e2514d91ce4b28c8060371ff6e13ac9/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c093fa0376f0549898c90692e8d5a9517d468f2c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/c093fa0376f0549898c90692e8d5a9517d468f2c",
+      "html_url": "https://github.com/discourse/discourse/commit/c093fa0376f0549898c90692e8d5a9517d468f2c"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 4,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "ff3648f6609a1b8c9d3d102e4e3f7c2e3eaa1780",
+      "filename": "app/assets/javascripts/admin/controllers/admin-customize-themes-show.js.es6",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/a859ddc77e2514d91ce4b28c8060371ff6e13ac9/app/assets/javascripts/admin/controllers/admin-customize-themes-show.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/a859ddc77e2514d91ce4b28c8060371ff6e13ac9/app/assets/javascripts/admin/controllers/admin-customize-themes-show.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/controllers/admin-customize-themes-show.js.es6?ref=a859ddc77e2514d91ce4b28c8060371ff6e13ac9",
+      "patch": "@@ -263,7 +263,9 @@ export default Ember.Controller.extend({\n \n     destroy() {\n       return bootbox.confirm(\n-        I18n.t(\"admin.customize.delete_confirm\"),\n+        I18n.t(\"admin.customize.delete_confirm\", {\n+          theme_name: this.get(\"model.name\")\n+        }),\n         I18n.t(\"no_value\"),\n         I18n.t(\"yes_value\"),\n         result => {"
+    },
+    {
+      "sha": "b8aa27bf85830596668a2dff5fa4b43eeca406f6",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a859ddc77e2514d91ce4b28c8060371ff6e13ac9/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/a859ddc77e2514d91ce4b28c8060371ff6e13ac9/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=a859ddc77e2514d91ce4b28c8060371ff6e13ac9",
+      "patch": "@@ -3360,7 +3360,7 @@ en:\n         new_style: \"New Style\"\n         install: \"Install\"\n         delete: \"Delete\"\n-        delete_confirm: \"Delete this theme?\"\n+        delete_confirm: 'Are you sure you want to delete \"%{theme_name}\"?'\n         color: \"Color\"\n         opacity: \"Opacity\"\n         copy: \"Copy\""
+    }
+  ]
+}
