@@ -1,0 +1,110 @@
+{
+  "sha": "a2b1789c3e3590e354edc0b0c14886955d0d2388",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphMmIxNzg5YzNlMzU5MGUzNTRlZGMwYjBjMTQ4ODY5NTVkMGQyMzg4",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-05-13T16:49:42Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-05-13T16:50:27Z"
+    },
+    "message": "FIX: do not log username change if the save process was unsuccessful",
+    "tree": {
+      "sha": "1b6604699192de9f9168fc84a901aad69a265934",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1b6604699192de9f9168fc84a901aad69a265934"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a2b1789c3e3590e354edc0b0c14886955d0d2388",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a2b1789c3e3590e354edc0b0c14886955d0d2388",
+  "html_url": "https://github.com/discourse/discourse/commit/a2b1789c3e3590e354edc0b0c14886955d0d2388",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a2b1789c3e3590e354edc0b0c14886955d0d2388/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5605dba85cc1cc5b10c919dc6a72dbec79929ab2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/5605dba85cc1cc5b10c919dc6a72dbec79929ab2",
+      "html_url": "https://github.com/discourse/discourse/commit/5605dba85cc1cc5b10c919dc6a72dbec79929ab2"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 8,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "6b23d3ec5d5ac5aaa56196bdbb76f36db08a3a35",
+      "filename": "app/services/username_changer.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/a2b1789c3e3590e354edc0b0c14886955d0d2388/app/services/username_changer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a2b1789c3e3590e354edc0b0c14886955d0d2388/app/services/username_changer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/username_changer.rb?ref=a2b1789c3e3590e354edc0b0c14886955d0d2388",
+      "patch": "@@ -16,13 +16,13 @@ def self.change(user, new_username, actor = nil)\n   end\n \n   def change(asynchronous: true, run_update_job: true)\n-    if @actor && @old_username != @new_username\n-      StaffActionLogger.new(@actor).log_username_change(@user, @old_username, @new_username)\n-    end\n-\n     @user.username = @new_username\n \n     if @user.save\n+      if @actor && @old_username != @new_username\n+        StaffActionLogger.new(@actor).log_username_change(@user, @old_username, @new_username)\n+      end\n+\n       UsernameChanger.update_username(user_id: @user.id,\n                                       old_username: @old_username,\n                                       new_username: @new_username,"
+    },
+    {
+      "sha": "a2bd26202995020094c84a9e6f816ddef565a776",
+      "filename": "spec/services/username_changer_spec.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/a2b1789c3e3590e354edc0b0c14886955d0d2388/spec/services/username_changer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a2b1789c3e3590e354edc0b0c14886955d0d2388/spec/services/username_changer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/username_changer_spec.rb?ref=a2b1789c3e3590e354edc0b0c14886955d0d2388",
+      "patch": "@@ -56,6 +56,10 @@\n         expect do\n           UsernameChanger.change(myself, \"HanSolo\", myself)\n         end.to change { UserHistory.count }.by(0) # make sure it does not log a dupe\n+\n+        expect do\n+          UsernameChanger.change(myself, user.username, myself)\n+        end.to change { UserHistory.count }.by(0) # does not log if the username already exists\n       end\n     end\n "
+    }
+  ]
+}
