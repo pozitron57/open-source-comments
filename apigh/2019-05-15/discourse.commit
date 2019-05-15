@@ -1,0 +1,110 @@
+{
+  "sha": "fc5bb39096bd91d65038ebf1deb594ed15e6ee9c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmYzViYjM5MDk2YmQ5MWQ2NTAzOGViZjFkZWI1OTRlZDE1ZTZlZTlj",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-05-15T16:47:36Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-05-15T16:47:36Z"
+    },
+    "message": "FIX: Do not send duplicate alerts for the same post (#7476)",
+    "tree": {
+      "sha": "69fc35b67e06ef2c6468e822a727b75f04089d52",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/69fc35b67e06ef2c6468e822a727b75f04089d52"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c",
+  "html_url": "https://github.com/discourse/discourse/commit/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fd5c5e326ffd59f3ddf28a4915e8350b4c5e60ec",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fd5c5e326ffd59f3ddf28a4915e8350b4c5e60ec",
+      "html_url": "https://github.com/discourse/discourse/commit/fd5c5e326ffd59f3ddf28a4915e8350b4c5e60ec"
+    }
+  ],
+  "stats": {
+    "total": 68,
+    "additions": 53,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "11ebd97faf5e52b423c980d07b454000ae4486ab",
+      "filename": "app/services/post_alerter.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 12,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c/app/services/post_alerter.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c/app/services/post_alerter.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/post_alerter.rb?ref=fc5bb39096bd91d65038ebf1deb594ed15e6ee9c",
+      "patch": "@@ -321,32 +321,33 @@ def create_notification(user, type, post, opts = {})\n       ).exists?\n     end\n \n-    # Don't notify the same user about the same notification on the same post\n-    existing_notification = user.notifications\n+    existing_notifications = user.notifications\n       .order(\"notifications.id DESC\")\n-      .find_by(\n+      .where(\n         topic_id: post.topic_id,\n-        post_number: post.post_number,\n-        notification_type: type\n-      )\n+        post_number: post.post_number\n+      ).limit(10)\n+\n+    # Don't notify the same user about the same type of notification on the same post\n+    existing_notification_of_same_type = existing_notifications.find { |n| n.notification_type == type }\n \n-    return if existing_notification && !should_notify_previous?(user, existing_notification, opts)\n+    return if existing_notification_of_same_type && !should_notify_previous?(user, existing_notification_of_same_type, opts)\n \n     notification_data = {}\n \n     if is_liked\n-      if existing_notification &&\n-        existing_notification.created_at > 1.day.ago &&\n+      if existing_notification_of_same_type &&\n+        existing_notification_of_same_type.created_at > 1.day.ago &&\n         (\n           user.user_option.like_notification_frequency ==\n           UserOption.like_notification_frequency_type[:always]\n         )\n \n-        data = existing_notification.data_hash\n+        data = existing_notification_of_same_type.data_hash\n         notification_data[\"username2\"] = data[\"display_username\"]\n         notification_data[\"count\"] = (data[\"count\"] || 1).to_i + 1\n         # don't use destroy so we don't trigger a notification count refresh\n-        Notification.where(id: existing_notification.id).destroy_all\n+        Notification.where(id: existing_notification_of_same_type.id).destroy_all\n       elsif !SiteSetting.likes_notification_consolidation_threshold.zero?\n         notification = consolidate_liked_notifications(\n           user,\n@@ -417,7 +418,7 @@ def create_notification(user, type, post, opts = {})\n       skip_send_email: skip_send_email\n     )\n \n-    if created.id && !existing_notification && NOTIFIABLE_TYPES.include?(type) && !user.suspended?\n+    if created.id && existing_notifications.empty? && NOTIFIABLE_TYPES.include?(type) && !user.suspended?\n       create_notification_alert(user: user, post: original_post, notification_type: type, username: original_username)\n     end\n "
+    },
+    {
+      "sha": "203c472d10d07d12e68d2073dc080c8f3b5ad59b",
+      "filename": "spec/services/post_alerter_spec.rb",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 3,
+      "changes": 43,
+      "blob_url": "https://github.com/discourse/discourse/blob/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c/spec/services/post_alerter_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/fc5bb39096bd91d65038ebf1deb594ed15e6ee9c/spec/services/post_alerter_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/post_alerter_spec.rb?ref=fc5bb39096bd91d65038ebf1deb594ed15e6ee9c",
+      "patch": "@@ -545,12 +545,13 @@ def set_topic_notification_level(user, topic, level_name)\n   describe \".create_notification\" do\n     fab!(:topic) { Fabricate(:private_message_topic, user: user, created_at: 1.hour.ago) }\n     fab!(:post) { Fabricate(:post, topic: topic, created_at: 1.hour.ago) }\n+    let(:type) { Notification.types[:private_message] }\n \n     it \"creates a notification for PMs\" do\n       post.revise(user, { raw: 'This is the revised post' }, revised_at: Time.zone.now)\n \n       expect {\n-        PostAlerter.new.create_notification(user, Notification.types[:private_message], post)\n+        PostAlerter.new.create_notification(user, type, post)\n       }.to change { user.notifications.count }.by(1)\n \n       expect(user.notifications.last.data_hash[\"topic_title\"]).to eq(topic.title)\n@@ -562,14 +563,50 @@ def set_topic_notification_level(user, topic, level_name)\n       post.revise(user, { title: \"This is the revised title\" }, revised_at: Time.now)\n \n       expect {\n-        PostAlerter.new.create_notification(user, Notification.types[:private_message], post)\n+        PostAlerter.new.create_notification(user, type, post)\n       }.to change { user.notifications.count }.by(1)\n \n       expect(user.notifications.last.data_hash[\"topic_title\"]).to eq(original_title)\n     end\n \n-    it \"triggers :post_notification_alert\" do\n+    it \"triggers :pre_notification_alert\" do\n+      events = DiscourseEvent.track_events do\n+        PostAlerter.new.create_notification(user, type, post)\n+      end\n+\n+      payload = {\n+       notification_type: type,\n+       post_number: post.post_number,\n+       topic_title: post.topic.title,\n+       topic_id: post.topic.id,\n+       excerpt: post.excerpt(400, text_entities: true, strip_links: true, remap_emoji: true),\n+       username: post.username,\n+       post_url: post.url\n+      }\n+\n+      expect(events).to include(event_name: :pre_notification_alert, params: [user, payload])\n+    end\n+\n+    it \"does not alert when revising and changing notification type\" do\n+      PostAlerter.new.create_notification(user, type, post)\n+\n+      post.revise(user, { raw: \"Editing post to fake include a mention of @eviltrout\" }, revised_at: Time.now)\n+\n+      events = DiscourseEvent.track_events do\n+        PostAlerter.new.create_notification(user, Notification.types[:mentioned], post)\n+      end\n+\n+      payload = {\n+       notification_type: type,\n+       post_number: post.post_number,\n+       topic_title: post.topic.title,\n+       topic_id: post.topic.id,\n+       excerpt: post.excerpt(400, text_entities: true, strip_links: true, remap_emoji: true),\n+       username: post.username,\n+       post_url: post.url\n+      }\n \n+      expect(events).not_to include(event_name: :pre_notification_alert, params: [user, payload])\n     end\n \n     it \"triggers :before_create_notification\" do"
+    }
+  ]
+}
