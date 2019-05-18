@@ -1,0 +1,98 @@
+{
+  "sha": "f2326ce83fea772e2960bf5c2f2445420381d271",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmMjMyNmNlODNmZWE3NzJlMjk2MGJmNWMyZjI0NDU0MjAzODFkMjcx",
+  "commit": {
+    "author": {
+      "name": "Jeff Atwood",
+      "email": "jatwood@codinghorror.com",
+      "date": "2019-05-17T23:59:29Z"
+    },
+    "committer": {
+      "name": "Jeff Atwood",
+      "email": "jatwood@codinghorror.com",
+      "date": "2019-05-17T23:59:29Z"
+    },
+    "message": "very minor copyedits",
+    "tree": {
+      "sha": "d1514ef84d575bd45584ae887e2a3b8c3d72a5e4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d1514ef84d575bd45584ae887e2a3b8c3d72a5e4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f2326ce83fea772e2960bf5c2f2445420381d271",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f2326ce83fea772e2960bf5c2f2445420381d271",
+  "html_url": "https://github.com/discourse/discourse/commit/f2326ce83fea772e2960bf5c2f2445420381d271",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f2326ce83fea772e2960bf5c2f2445420381d271/comments",
+  "author": {
+    "login": "coding-horror",
+    "id": 1522517,
+    "node_id": "MDQ6VXNlcjE1MjI1MTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1522517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coding-horror",
+    "html_url": "https://github.com/coding-horror",
+    "followers_url": "https://api.github.com/users/coding-horror/followers",
+    "following_url": "https://api.github.com/users/coding-horror/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coding-horror/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coding-horror/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coding-horror/subscriptions",
+    "organizations_url": "https://api.github.com/users/coding-horror/orgs",
+    "repos_url": "https://api.github.com/users/coding-horror/repos",
+    "events_url": "https://api.github.com/users/coding-horror/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coding-horror/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "coding-horror",
+    "id": 1522517,
+    "node_id": "MDQ6VXNlcjE1MjI1MTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1522517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coding-horror",
+    "html_url": "https://github.com/coding-horror",
+    "followers_url": "https://api.github.com/users/coding-horror/followers",
+    "following_url": "https://api.github.com/users/coding-horror/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coding-horror/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coding-horror/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coding-horror/subscriptions",
+    "organizations_url": "https://api.github.com/users/coding-horror/orgs",
+    "repos_url": "https://api.github.com/users/coding-horror/repos",
+    "events_url": "https://api.github.com/users/coding-horror/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coding-horror/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7eea2e35e4222375b737921f8d7d006de0f2a99d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/7eea2e35e4222375b737921f8d7d006de0f2a99d",
+      "html_url": "https://github.com/discourse/discourse/commit/7eea2e35e4222375b737921f8d7d006de0f2a99d"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "01f47130742ef6f28ef472de76d90ab3c78e98f8",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f2326ce83fea772e2960bf5c2f2445420381d271/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/f2326ce83fea772e2960bf5c2f2445420381d271/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=f2326ce83fea772e2960bf5c2f2445420381d271",
+      "patch": "@@ -2011,7 +2011,7 @@ en:\n         jump_bottom: \"jump to last post\"\n         jump_prompt: \"jump to...\"\n         jump_prompt_of: \"of %{count} posts\"\n-        jump_prompt_long: \"What post would you like to jump to?\"\n+        jump_prompt_long: \"Jump to...\"\n         jump_bottom_with_number: \"jump to post %{post_number}\"\n         jump_prompt_to_date: \"to date\"\n         jump_prompt_or: \"or\""
+    }
+  ]
+}
