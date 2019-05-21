@@ -1,0 +1,98 @@
+{
+  "sha": "338b927f9529bb4ad9072f18a7099fb16ff4d786",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozMzhiOTI3Zjk1MjliYjRhZDkwNzJmMThhNzA5OWZiMTZmZjRkNzg2",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-05-21T16:37:08Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2019-05-21T16:37:08Z"
+    },
+    "message": "DEV: include local uploads while finding missing uploads\n\nin rake task 'posts:missing_uploads'",
+    "tree": {
+      "sha": "23ae8642bb8d0864f7059770602b953eaed204b7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/23ae8642bb8d0864f7059770602b953eaed204b7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/338b927f9529bb4ad9072f18a7099fb16ff4d786",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/338b927f9529bb4ad9072f18a7099fb16ff4d786",
+  "html_url": "https://github.com/discourse/discourse/commit/338b927f9529bb4ad9072f18a7099fb16ff4d786",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/338b927f9529bb4ad9072f18a7099fb16ff4d786/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b82850f66b16a566f5dffb209c387d2c26502a8",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/7b82850f66b16a566f5dffb209c387d2c26502a8",
+      "html_url": "https://github.com/discourse/discourse/commit/7b82850f66b16a566f5dffb209c387d2c26502a8"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "1be8289dcdf80a425ad511ced3752d5463fcdd57",
+      "filename": "lib/tasks/posts.rake",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/338b927f9529bb4ad9072f18a7099fb16ff4d786/lib/tasks/posts.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/338b927f9529bb4ad9072f18a7099fb16ff4d786/lib/tasks/posts.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/posts.rake?ref=338b927f9529bb4ad9072f18a7099fb16ff4d786",
+      "patch": "@@ -395,7 +395,7 @@ end\n def missing_uploads\n   old_scheme_upload_count = 0\n \n-  missing = Post.find_missing_uploads do |post, src, path, sha1|\n+  missing = Post.find_missing_uploads(include_local_upload: true) do |post, src, path, sha1|\n     next if sha1.present?\n \n     upload_id = nil"
+    }
+  ]
+}
