@@ -1,0 +1,98 @@
+{
+  "sha": "648af78298f7ed15385504a252c0e1541044962a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2NDhhZjc4Mjk4ZjdlZDE1Mzg1NTA0YTI1MmMwZTE1NDEwNDQ5NjJh",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-05-23T16:16:45Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-05-23T16:16:45Z"
+    },
+    "message": "FIX: Linting",
+    "tree": {
+      "sha": "30e4772fd84a48d9aff3ce2d8a60974e226125c1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/30e4772fd84a48d9aff3ce2d8a60974e226125c1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/648af78298f7ed15385504a252c0e1541044962a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/648af78298f7ed15385504a252c0e1541044962a",
+  "html_url": "https://github.com/discourse/discourse/commit/648af78298f7ed15385504a252c0e1541044962a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/648af78298f7ed15385504a252c0e1541044962a/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f73988acd2d3856ade60db83270f5a56c2ab380b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f73988acd2d3856ade60db83270f5a56c2ab380b",
+      "html_url": "https://github.com/discourse/discourse/commit/f73988acd2d3856ade60db83270f5a56c2ab380b"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 0,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d3ee32ccf70b2a5b7eb86fbf02cc469bf1f1a189",
+      "filename": "app/assets/javascripts/discourse/controllers/review-settings.js.es6",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/648af78298f7ed15385504a252c0e1541044962a/app/assets/javascripts/discourse/controllers/review-settings.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/648af78298f7ed15385504a252c0e1541044962a/app/assets/javascripts/discourse/controllers/review-settings.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/review-settings.js.es6?ref=648af78298f7ed15385504a252c0e1541044962a",
+      "patch": "@@ -1,6 +1,5 @@\n import { ajax } from \"discourse/lib/ajax\";\n import { popupAjaxError } from \"discourse/lib/ajax-error\";\n-import computed from \"ember-addons/ember-computed-decorators\";\n \n export default Ember.Controller.extend({\n   saving: false,"
+    }
+  ]
+}
