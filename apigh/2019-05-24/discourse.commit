@@ -1,0 +1,110 @@
+{
+  "sha": "2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyZjU5MzhjM2JmZWI2M2Q5NGYwYTFhMGIyYTkwZjNjYzI3MmU4Njg5",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-05-24T16:11:39Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-05-24T16:11:39Z"
+    },
+    "message": "DEV: use FileHelper to download MaxMindDB",
+    "tree": {
+      "sha": "321187fa44c057ba2f4cfdb5258e9a129d9192ba",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/321187fa44c057ba2f4cfdb5258e9a129d9192ba"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689",
+  "html_url": "https://github.com/discourse/discourse/commit/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "963f6fbd4076cf0ee0a40cea77596cab845b23c5",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/963f6fbd4076cf0ee0a40cea77596cab845b23c5",
+      "html_url": "https://github.com/discourse/discourse/commit/963f6fbd4076cf0ee0a40cea77596cab845b23c5"
+    }
+  ],
+  "stats": {
+    "total": 24,
+    "additions": 7,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "40835bddee021a829f4426c7269bc6c6e6ec27af",
+      "filename": "lib/discourse_ip_info.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 9,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689/lib/discourse_ip_info.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689/lib/discourse_ip_info.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/discourse_ip_info.rb?ref=2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689",
+      "patch": "@@ -27,15 +27,11 @@ def self.mmdb_path(name)\n   def self.mmdb_download(name)\n     FileUtils.mkdir_p(path)\n \n-    uri = URI(\"https://geolite.maxmind.com/download/geoip/database/#{name}.tar.gz\")\n-\n-    puts uri\n-    puts \"SIZE: #{Net::HTTP.get(uri).size}\"\n-\n-    tar_gz_file = Tempfile.new\n-    tar_gz_file.binmode\n-    tar_gz_file.write(Net::HTTP.get(uri))\n-    tar_gz_file.close\n+    tar_gz_file = FileHelper.download(\n+      \"https://geolite.maxmind.com/download/geoip/database/#{name}.tar.gz\",\n+      max_file_size: 100.megabytes,\n+      tmp_file_name: \"#{name}.tar.gz\"\n+    )\n \n     dest = File.join(Dir.tmpdir, \"maxmind_#{SecureRandom.hex}\")\n     FileUtils.mkdir_p(dest)"
+    },
+    {
+      "sha": "9fe3a485d60a0ab630115823c7aad7422d554285",
+      "filename": "lib/tasks/assets.rake",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 8,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689/lib/tasks/assets.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689/lib/tasks/assets.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/assets.rake?ref=2f5938c3bfeb63d94f0a1a0b2a90f3cc272e8689",
+      "patch": "@@ -165,14 +165,8 @@ task 'assets:precompile' => 'assets:precompile:before' do\n     if !mmdb_time || mmdb_time < refresh_days.days.ago\n       puts \"Downloading MaxMindDB...\"\n       mmdb_thread = Thread.new do\n-        begin\n-          DiscourseIpInfo.mmdb_download('GeoLite2-City')\n-          DiscourseIpInfo.mmdb_download('GeoLite2-ASN')\n-        rescue => e\n-          puts \"Something when wrong while downloading the MaxMindDB\"\n-          puts e.message\n-          puts e.backtrace.join(\"\\n\")\n-        end\n+        DiscourseIpInfo.mmdb_download('GeoLite2-City')\n+        DiscourseIpInfo.mmdb_download('GeoLite2-ASN')\n       end\n     end\n   end"
+    }
+  ]
+}
