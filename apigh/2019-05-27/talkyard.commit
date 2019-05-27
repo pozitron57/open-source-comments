@@ -1,0 +1,170 @@
+{
+  "sha": "a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6YTZhNjdlYjljMzQwYWM3ZTI1YjJmY2JjZDM3NTJiMWM3YWVhYTA3OQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-05-21T07:49:34Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-05-26T07:07:16Z"
+    },
+    "message": "Fix emb cmts bugs: iframe too small, cannot conf notfs before page created.",
+    "tree": {
+      "sha": "73e25f46e849c7080439f2244e973a9bfe4004f5",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/73e25f46e849c7080439f2244e973a9bfe4004f5"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+  "html_url": "https://github.com/debiki/talkyard/commit/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f09fa9fe72d2c97637b3c7ab580c9a349ca730cd",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/f09fa9fe72d2c97637b3c7ab580c9a349ca730cd",
+      "html_url": "https://github.com/debiki/talkyard/commit/f09fa9fe72d2c97637b3c7ab580c9a349ca730cd"
+    }
+  ],
+  "stats": {
+    "total": 101,
+    "additions": 89,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "242771eb25cf163bf1e72ee92f246227613fb30e",
+      "filename": "app/controllers/UserController.scala",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 3,
+      "changes": 29,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/app/controllers/UserController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/app/controllers/UserController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/UserController.scala?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -1113,20 +1113,42 @@ class UserController @Inject()(cc: ControllerComponents, edContext: EdContext)\n     import request.{dao, theRequester => requester}\n     val body = request.body\n     val memberId = (body \\ \"memberId\").as[MemberId]\n-    val pageId = (body \\ \"pageId\").asOpt[PageId]\n+    val anyPageIdMaybeEmptyPage = (body \\ \"pageId\").asOpt[PageId]\n     val pagesInCategoryId = (body \\ \"pagesInCategoryId\").asOpt[CategoryId]\n     val wholeSite = (body \\ \"wholeSite\").asOpt[Boolean]\n     val newNotfLevelInt = (body \\ \"notfLevel\").asOpt[Int]\n     val newNotfLevel = newNotfLevelInt.flatMap(NotfLevel.fromInt)\n \n+    // If is a not-yet-created embedded comments page:\n+    val anyAltPageId = (body \\ \"altPageId\").asOpt[AltPageId]\n+    val anyEmbeddingUrl = (body \\ \"embeddingUrl\").asOpt[String]\n+\n+    def participant = dao.getTheParticipant(memberId)\n+\n     throwForbiddenIf(memberId != requester.id && !requester.isStaff, \"TyE5HKG205\",\n       \"May not change other members notf prefs\")\n     throwForbiddenIf(memberId == Group.AdminsId && !requester.isAdmin, \"TyE4HKW2R7\",\n       \"May not change admins notf prefs\")\n \n+\n+    // If this is for a not yet created embedded comments page, then lazy-create it here.\n+    // (Sometimes people subscribe to comments for embedded blog comments discussions,\n+    // before any comments or Like votes have been submitted — then this is where the\n+    // emb page needs to get lazy-created, so the notf prefs has a page id to refer to.)\n+    val (anyPageIdx, isNewEmbCmtsPage) =\n+      if (anyPageIdMaybeEmptyPage is EmptyPageId) {\n+        val (newPageId: PageId, newPagePath) = EmbeddedCommentsPageCreator.getOrCreatePageId(\n+          anyPageId = Some(EmptyPageId), anyAltPageId = anyAltPageId,\n+          anyEmbeddingUrl = anyEmbeddingUrl, request)\n+        (Some(newPageId), true)\n+      }\n+      else {\n+        (anyPageIdMaybeEmptyPage, false)\n+      }\n+\n     val newPref = Try(\n       PageNotfPref(\n-        memberId, pageId = pageId, wholeSite = wholeSite.getOrElse(false),\n+        memberId, pageId = anyPageIdx, wholeSite = wholeSite.getOrElse(false),\n         pagesInCategoryId = pagesInCategoryId,\n         notfLevel = newNotfLevel.getOrElse(NotfLevel.DoesNotMatterHere)))\n           .getOrIfFailure(ex => throwBadRequest(\"TyE2ABKRP0\", ex.getMessage))\n@@ -1138,7 +1160,8 @@ class UserController @Inject()(cc: ControllerComponents, edContext: EdContext)\n       dao.deletePageNotfPref(newPref, request.who)\n     }\n \n-    Ok\n+    OkSafeJson(Json.obj(\n+      \"newlyCreatedPageId\" -> (if (isNewEmbCmtsPage) JsString(anyPageIdx.get) else JsNull)))\n   }\n \n "
+    },
+    {
+      "sha": "410ba25dea3475e86397037b2477a62b265dc9b9",
+      "filename": "client/app-slim/Server.ts",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 2,
+      "changes": 24,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/Server.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/Server.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/Server.ts?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -56,6 +56,12 @@ interface RequestData {\n }\n \n \n+interface NewEmbCommentsPageAltIdUrl {\n+  altPageId?: string;\n+  embeddingUrl?: string;\n+}\n+\n+\n function postJson(urlPath: string, requestData: RequestData) {\n   let url = appendE2eAndForbiddenPassword(origin() + urlPath);\n   let timeoutHandle;\n@@ -869,7 +875,21 @@ export function lockThreatLevel(userId: UserId, threatLevel: ThreatLevel, succes\n export function savePageNotfPrefUpdStore(memberId: UserId, target: PageNotfPrefTarget,\n       notfLevel: PageNotfLevel, onDone?: () => void) {\n   const notfPref: PageNotfPref = { ...target, memberId, notfLevel };\n-  postJsonSuccess('/-/save-content-notf-pref', () => {\n+  const postData: PageNotfPref & NewEmbCommentsPageAltIdUrl = notfPref;\n+\n+  // If this is for an embedded comments page that hasn't yet been created, we should\n+  // also include any alt page id, and the embedding url. [4AMJX7]\n+  if (notfPref.pageId === EmptyPageId) {\n+    postData.altPageId = eds.embeddedPageAltId || undefined;\n+    postData.embeddingUrl = eds.embeddingUrl || undefined;\n+  }\n+\n+  postJsonSuccess('/-/save-content-notf-pref', (response) => {\n+    if (response.newlyCreatedPageId) {\n+      // Update this, so subsequent server requests, will use the correct page id. [4HKW28]\n+      eds.embeddedPageId = response.newlyCreatedPageId;\n+    }\n+\n     // If one saved one's own prefs (rather than if one is staff, and changed someone\n     // else's prefs), then, update store.me to reflect the changes.\n     const store: Store = ReactStore.allData();\n@@ -891,7 +911,7 @@ export function savePageNotfPrefUpdStore(memberId: UserId, target: PageNotfPrefT\n     if (onDone) {\n       onDone();\n     }\n-  }, notfPref);\n+  }, postData);\n }\n \n "
+    },
+    {
+      "sha": "4a57c858d63ddfe577fbcd4d30a1d6967860508d",
+      "filename": "client/app-slim/if-in-iframe.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 3,
+      "changes": 14,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/if-in-iframe.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/if-in-iframe.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/if-in-iframe.ts?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -114,14 +114,22 @@ function onMessage(event) {\n function syncDocSizeWithIframeSize() {\n   var lastWidth = 0;\n   var lastHeight = 0;\n-  setInterval(pollAndSyncSize, 150);\n+  setInterval(pollAndSyncSize, 250);\n \n   function pollAndSyncSize() {\n     // Don't use window.innerHeight — that'd be the size of the parent window, outside the iframe.\n     // Don't use document.body.clientHeight — it might be too small, before iframe resized.\n-    var discussion = debiki2.$byId('dwPosts');\n+    var discussion = $byId('dwPosts');\n     var currentWidth = discussion.clientWidth;\n-    var currentHeight = discussion.clientHeight;\n+    var currentDiscussionHeight = discussion.clientHeight;\n+\n+    // Make space for any notf prefs dialog — it can be taller than the emb cmts\n+    // iframe height, before there're any comments. [IFRRESIZE]\n+    const anyDialog = $first('.esDropModal_content');\n+    const dialogHeight = anyDialog ? anyDialog.clientHeight + 30 : 0;\n+\n+    const currentHeight = Math.max(currentDiscussionHeight, dialogHeight);\n+\n     if (lastWidth === currentWidth && lastHeight === currentHeight)\n       return;\n "
+    },
+    {
+      "sha": "df4f20688c2b3a1123b30a726b46b2e0d56bb464",
+      "filename": "client/app-slim/model.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/model.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/model.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/model.ts?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -1738,6 +1738,13 @@ interface PageNotfPrefsResponse extends OwnPageNotfPrefs {\n }\n \n \n+interface IframeOffsetWinSize {\n+  top: number;\n+  height: number;\n+  iframeVisibleHeight?: number;\n+}\n+\n+\n // ----- Service worker messages  [sw]\n \n "
+    },
+    {
+      "sha": "01a355e9f604a5280293faa4ca0fa704679c3de1",
+      "filename": "client/app-slim/prelude.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/prelude.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/prelude.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/prelude.ts?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -81,7 +81,7 @@ function doNextFrameOrNow(something: () => void) {\n \n \n // If in an embedded comments iframe.\n-export let iframeOffsetWinSize: { top: number, height: number } | undefined;\n+export let iframeOffsetWinSize: IframeOffsetWinSize | undefined;\n \n \n export function oneIfDef(x: any): number {"
+    },
+    {
+      "sha": "5d77c612390e954a0d09cdd0542bb82df0fba667",
+      "filename": "client/app-slim/utils/DropdownModal.ts",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/utils/DropdownModal.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/app-slim/utils/DropdownModal.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/utils/DropdownModal.ts?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -144,7 +144,16 @@ export const DropdownModal = createComponent({\n       rect.top -= winOfsSize.top;\n       rect.bottom -= winOfsSize.top;\n \n-      if (rect.bottom > winOfsSize.height) {\n+      const rectHeight = rect.bottom - rect.top;\n+      const visibleHeight = winOfsSize.iframeVisibleHeight || winOfsSize.height;\n+      if (rectHeight >= visibleHeight) {\n+        // The dialog is larger than the window. Place it at the top, so if resizing the window\n+        // (it'll expand downwards), the hidden part of the dialog becomes visible.\n+        // Important for blog comments, if one opens the notf prefs dialog before there're\n+        // any comments — then, the iframe is shorter than the notfs prefs dialog. [IFRRESIZE]\n+        this.refs.content.style.top = winOfsSize.top;\n+      }\n+      else if (rect.bottom > winOfsSize.height) {\n         this.fitInWindowVertically(winOfsSize);\n       }\n       // (This right-&-left stuff works also in iframes.)"
+    },
+    {
+      "sha": "e98a147ef9edc114cbccb61e97a4cc789130fa40",
+      "filename": "client/embedded-comments/iframe-parent.js",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 2,
+      "changes": 14,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/embedded-comments/iframe-parent.js",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079/client/embedded-comments/iframe-parent.js",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/embedded-comments/iframe-parent.js?ref=a6a67eb9c340ac7e25b2fcbcd3752b1c7aeaa079",
+      "patch": "@@ -237,9 +237,19 @@ function messageCommentsIframeNewWinTopSize() {\n \n   var rect = commentsIframe.getBoundingClientRect();\n   // We're interested in the height part of the viewport that is used for the iframe.\n+\n+  // If the iframe extends below the lower window edge, we see only the part of it\n+  // down to `window.innerHeight` (then, don't use `rect.bottom`).\n   var height = Math.min(window.innerHeight, rect.bottom);\n-  sendToComments('[\"iframeOffsetWinSize\", {' +\n-      '\"top\":' + (-rect.top) + ', \"height\":' + height + '}]');\n+\n+  // If the iframe starts above the upper window edge, we don't see the parts of it above 0 (zero).\n+  // And if it starts below the upper window edge, then, `rect.top` is where it starts.\n+  var iframeVisibleHeight = height - Math.max(0, rect.top);\n+\n+  sendToComments('[\"iframeOffsetWinSize\",' +\n+      '{ \"top\":' + (-rect.top) +  // why did I negate?\n+      ', \"height\":' + height +    // rename 'height'? but to what? Maybe 'iframeVisibleBottom'?\n+      ', \"iframeVisibleHeight\": ' + iframeVisibleHeight + '}]');\n }\n \n "
+    }
+  ]
+}
