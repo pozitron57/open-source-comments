@@ -1,0 +1,98 @@
+{
+  "sha": "eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZWZmM2YxZGZkODgyYjM3MmY1NmQ2Y2ZlOGM3MDRkNWUwZDUwNTRmZg==",
+  "commit": {
+    "author": {
+      "name": "Aram Zucker-Scharff",
+      "email": "azuckers@gmu.edu",
+      "date": "2019-05-28T16:36:17Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-05-28T16:36:17Z"
+    },
+    "message": "Small correction of a spelling error (#2325)",
+    "tree": {
+      "sha": "8032479f84132ec210ba0fafd426c38dd8094b6a",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/8032479f84132ec210ba0fafd426c38dd8094b6a"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff",
+  "html_url": "https://github.com/coralproject/talk/commit/eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff/comments",
+  "author": {
+    "login": "AramZS",
+    "id": 748069,
+    "node_id": "MDQ6VXNlcjc0ODA2OQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/748069?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AramZS",
+    "html_url": "https://github.com/AramZS",
+    "followers_url": "https://api.github.com/users/AramZS/followers",
+    "following_url": "https://api.github.com/users/AramZS/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AramZS/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AramZS/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AramZS/subscriptions",
+    "organizations_url": "https://api.github.com/users/AramZS/orgs",
+    "repos_url": "https://api.github.com/users/AramZS/repos",
+    "events_url": "https://api.github.com/users/AramZS/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AramZS/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73aa77d7da9d852b91ac72751ea11884e81404b5",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/73aa77d7da9d852b91ac72751ea11884e81404b5",
+      "html_url": "https://github.com/coralproject/talk/commit/73aa77d7da9d852b91ac72751ea11884e81404b5"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "19967e013f1c5253ba175cdc88c1b289b2054743",
+      "filename": "plugins/talk-plugin-profile-data/server/typeDefs.graphql",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff/plugins/talk-plugin-profile-data/server/typeDefs.graphql",
+      "raw_url": "https://github.com/coralproject/talk/raw/eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff/plugins/talk-plugin-profile-data/server/typeDefs.graphql",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/plugins/talk-plugin-profile-data/server/typeDefs.graphql?ref=eff3f1dfd882b372f56d6cfe8c704d5e0d5054ff",
+      "patch": "@@ -41,7 +41,7 @@ type CancelAccountDeletionResponse implements Response {\n   errors: [UserError!]\n }\n \n-# DownloadUserResponse contaisn the account download archiveURL that can be used\n+# DownloadUserResponse contains the account download archiveURL that can be used\n # to directly download a zip file containing the user data.\n type DownloadUserResponse implements Response {\n "
+    }
+  ]
+}
