@@ -1,0 +1,110 @@
+{
+  "sha": "bccf716a8dd039c0eb23e2de6c747cfe269d97bc",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmJjY2Y3MTZhOGRkMDM5YzBlYjIzZTJkZTZjNzQ3Y2ZlMjY5ZDk3YmM=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-05-31T21:09:40Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-05-31T21:09:40Z"
+    },
+    "message": "support view=user #323",
+    "tree": {
+      "sha": "02552b4d575f6440561581afd48d9ae633554192",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/02552b4d575f6440561581afd48d9ae633554192"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/bccf716a8dd039c0eb23e2de6c747cfe269d97bc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/bccf716a8dd039c0eb23e2de6c747cfe269d97bc",
+  "html_url": "https://github.com/umputun/remark/commit/bccf716a8dd039c0eb23e2de6c747cfe269d97bc",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/bccf716a8dd039c0eb23e2de6c747cfe269d97bc/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bddb287e6867151d0775c22d476b46683ac281fc",
+      "url": "https://api.github.com/repos/umputun/remark/commits/bddb287e6867151d0775c22d476b46683ac281fc",
+      "html_url": "https://github.com/umputun/remark/commit/bddb287e6867151d0775c22d476b46683ac281fc"
+    }
+  ],
+  "stats": {
+    "total": 58,
+    "additions": 57,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3200ca071162ec091bcfd34cc81f2ee461a5433d",
+      "filename": "backend/app/rest/api/rest_public.go",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 1,
+      "changes": 20,
+      "blob_url": "https://github.com/umputun/remark/blob/bccf716a8dd039c0eb23e2de6c747cfe269d97bc/backend/app/rest/api/rest_public.go",
+      "raw_url": "https://github.com/umputun/remark/raw/bccf716a8dd039c0eb23e2de6c747cfe269d97bc/backend/app/rest/api/rest_public.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_public.go?ref=bccf716a8dd039c0eb23e2de6c747cfe269d97bc",
+      "patch": "@@ -48,14 +48,16 @@ type pubStore interface {\n \tCounts(siteID string, postIDs []string) ([]store.PostInfo, error)\n }\n \n-// GET /find?site=siteID&url=post-url&format=[tree|plain]&sort=[+/-time|+/-score|+/-controversy ]\n+// GET /find?site=siteID&url=post-url&format=[tree|plain]&sort=[+/-time|+/-score|+/-controversy ]&view=[user|all]\n // find comments for given post. Returns in tree or plain formats, sorted\n func (s *public) findCommentsCtrl(w http.ResponseWriter, r *http.Request) {\n \tlocator := store.Locator{SiteID: r.URL.Query().Get(\"site\"), URL: r.URL.Query().Get(\"url\")}\n \tsort := r.URL.Query().Get(\"sort\")\n \tif strings.HasPrefix(sort, \" \") { // restore + replaced by \" \"\n \t\tsort = \"+\" + sort[1:]\n \t}\n+\n+\tview := r.URL.Query().Get(\"view\")\n \tlog.Printf(\"[DEBUG] get comments for %+v, sort %s, format %s\", locator, sort, r.URL.Query().Get(\"format\"))\n \n \tkey := cache.NewKey(locator.SiteID).ID(URLKeyWithUser(r)).Scopes(locator.SiteID, locator.URL)\n@@ -64,6 +66,7 @@ func (s *public) findCommentsCtrl(w http.ResponseWriter, r *http.Request) {\n \t\tif e != nil {\n \t\t\tcomments = []store.Comment{} // error should clear comments and continue for post info\n \t\t}\n+\t\tcomments = s.applyView(comments, view)\n \t\tvar b []byte\n \t\tswitch r.URL.Query().Get(\"format\") {\n \t\tcase \"tree\":\n@@ -392,3 +395,18 @@ func (s *public) robotsCtrl(w http.ResponseWriter, r *http.Request) {\n \t}\n \trender.PlainText(w, r, \"User-agent: *\\nDisallow: /auth/\\nDisallow: /api/\\n\"+strings.Join(allowed, \"\\n\")+\"\\n\")\n }\n+\n+func (s *public) applyView(comments []store.Comment, view string) []store.Comment {\n+\tif strings.EqualFold(view, \"user\") {\n+\t\tprojection := make([]store.Comment, len(comments))\n+\t\tfor i, c := range comments {\n+\t\t\tp := store.Comment{\n+\t\t\t\tID:   c.ID,\n+\t\t\t\tUser: c.User,\n+\t\t\t}\n+\t\t\tprojection[i] = p\n+\t\t}\n+\t\treturn projection\n+\t}\n+\treturn comments\n+}"
+    },
+    {
+      "sha": "b0f23ce70bbe46e0800e3730b592626e1ae2d314",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 0,
+      "changes": 38,
+      "blob_url": "https://github.com/umputun/remark/blob/bccf716a8dd039c0eb23e2de6c747cfe269d97bc/backend/app/rest/api/rest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/bccf716a8dd039c0eb23e2de6c747cfe269d97bc/backend/app/rest/api/rest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_public_test.go?ref=bccf716a8dd039c0eb23e2de6c747cfe269d97bc",
+      "patch": "@@ -96,6 +96,8 @@ func TestRest_Find(t *testing.T) {\n \tassert.Equal(t, 2, len(comments.Comments), \"should have 2 comments\")\n \tassert.Equal(t, id1, comments.Comments[0].ID)\n \tassert.Equal(t, id2, comments.Comments[1].ID)\n+\tassert.Equal(t, \"<p>test test #1</p>\\n\", comments.Comments[0].Text)\n+\tassert.Equal(t, \"<p>test test #2</p>\\n\", comments.Comments[1].Text)\n \tassert.Equal(t, \"https://radio-t.com/blah1\", comments.Info.URL)\n \tassert.Equal(t, 2, comments.Info.Count)\n \tassert.Equal(t, false, comments.Info.ReadOnly)\n@@ -195,6 +197,42 @@ func TestRest_FindReadOnly(t *testing.T) {\n \tassert.False(t, tree.Info.ReadOnly, \"post is writable\")\n }\n \n+func TestRest_FindUserView(t *testing.T) {\n+\tts, _, teardown := startupT(t)\n+\tdefer teardown()\n+\n+\tres, code := get(t, ts.URL+\"/api/v1/find?site=radio-t&url=https://radio-t.com/blah1&view=user\")\n+\tassert.Equal(t, 200, code)\n+\tcomments := commentsWithInfo{}\n+\terr := json.Unmarshal([]byte(res), &comments)\n+\tassert.Nil(t, err)\n+\tassert.Equal(t, 0, len(comments.Comments), \"should have 0 comments\")\n+\n+\tc1 := store.Comment{Text: \"test test #1\", ParentID: \"\",\n+\t\tLocator: store.Locator{SiteID: \"radio-t\", URL: \"https://radio-t.com/blah1\"}}\n+\tid1 := addComment(t, c1, ts)\n+\n+\tc2 := store.Comment{Text: \"test test #2\", ParentID: id1,\n+\t\tLocator: store.Locator{SiteID: \"radio-t\", URL: \"https://radio-t.com/blah1\"}}\n+\tid2 := addComment(t, c2, ts)\n+\n+\tassert.NotEqual(t, id1, id2)\n+\n+\t// get sorted by +time with view=user\n+\tres, code = get(t, ts.URL+\"/api/v1/find?site=radio-t&url=https://radio-t.com/blah1&sort=+time&view=user\")\n+\tassert.Equal(t, 200, code)\n+\tcomments = commentsWithInfo{}\n+\terr = json.Unmarshal([]byte(res), &comments)\n+\tassert.Nil(t, err)\n+\tassert.Equal(t, 2, len(comments.Comments), \"should have 2 comments\")\n+\tassert.Equal(t, id1, comments.Comments[0].ID)\n+\tassert.Equal(t, id2, comments.Comments[1].ID)\n+\tassert.Equal(t, \"dev\", comments.Comments[0].User.ID)\n+\tassert.Equal(t, \"dev\", comments.Comments[1].User.ID)\n+\tassert.Equal(t, \"\", comments.Comments[0].Text)\n+\tassert.Equal(t, \"\", comments.Comments[1].Text)\n+}\n+\n func TestRest_Last(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()"
+    }
+  ]
+}

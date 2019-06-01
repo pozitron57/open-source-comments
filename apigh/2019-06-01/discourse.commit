@@ -1,0 +1,98 @@
+{
+  "sha": "725588f83592fee71728197fa44c62926fa006ac",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3MjU1ODhmODM1OTJmZWU3MTcyODE5N2ZhNDRjNjI5MjZmYTAwNmFj",
+  "commit": {
+    "author": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-06-01T15:09:46Z"
+    },
+    "committer": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-06-01T15:09:46Z"
+    },
+    "message": "FIX: migrate_to_s3 wasn't IAM profile aware",
+    "tree": {
+      "sha": "72419d92273bede7a1ea2b75f4fa418aa8fef4ee",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/72419d92273bede7a1ea2b75f4fa418aa8fef4ee"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/725588f83592fee71728197fa44c62926fa006ac",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/725588f83592fee71728197fa44c62926fa006ac",
+  "html_url": "https://github.com/discourse/discourse/commit/725588f83592fee71728197fa44c62926fa006ac",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/725588f83592fee71728197fa44c62926fa006ac/comments",
+  "author": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d9abfafd726de5f042cba4eae3ae256fb398d435",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d9abfafd726de5f042cba4eae3ae256fb398d435",
+      "html_url": "https://github.com/discourse/discourse/commit/d9abfafd726de5f042cba4eae3ae256fb398d435"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 11,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "dcd8c305244b6b5c6472970e6cde5791a1d2b509",
+      "filename": "lib/tasks/uploads.rake",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 3,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/725588f83592fee71728197fa44c62926fa006ac/lib/tasks/uploads.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/725588f83592fee71728197fa44c62926fa006ac/lib/tasks/uploads.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/uploads.rake?ref=725588f83592fee71728197fa44c62926fa006ac",
+      "patch": "@@ -316,17 +316,25 @@ def migrate_to_s3\n     exit 1\n   end\n \n-  unless ENV[\"DISCOURSE_S3_SECRET_ACCESS_KEY\"].present? &&\n+  unless ENV[\"DISCOURSE_S3_BUCKET\"].present? &&\n     ENV[\"DISCOURSE_S3_REGION\"].present? &&\n-    ENV[\"DISCOURSE_S3_ACCESS_KEY_ID\"].present? &&\n-    ENV[\"DISCOURSE_S3_SECRET_ACCESS_KEY\"].present?\n+    (\n+      (\n+        ENV[\"DISCOURSE_S3_ACCESS_KEY_ID\"].present? &&\n+        ENV[\"DISCOURSE_S3_SECRET_ACCESS_KEY\"].present?\n+      ) ||\n+      ENV[\"DISCOURSE_S3_USE_IAM_PROFILE\"].present?\n+    )\n \n     puts <<~TEXT\n       Please provide the following environment variables\n         - DISCOURSE_S3_BUCKET\n         - DISCOURSE_S3_REGION\n+        and either\n         - DISCOURSE_S3_ACCESS_KEY_ID\n         - DISCOURSE_S3_SECRET_ACCESS_KEY\n+        or\n+        - DISCOURSE_S3_USE_IAM_PROFILE\n     TEXT\n     exit 2\n   end"
+    }
+  ]
+}
