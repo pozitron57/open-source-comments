@@ -1,0 +1,98 @@
+{
+  "sha": "864912946d57c1d97835676e0eb97f75cfa05dd5",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ODY0OTEyOTQ2ZDU3YzFkOTc4MzU2NzZlMGViOTdmNzVjZmEwNWRkNQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-06-04T08:24:38Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-06-04T08:24:38Z"
+    },
+    "message": "Scala compiler stack 30 mb, fixes stack overflow?",
+    "tree": {
+      "sha": "44b12dc80f35d2bf945e1cb74ce39a4e886bab52",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/44b12dc80f35d2bf945e1cb74ce39a4e886bab52"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/864912946d57c1d97835676e0eb97f75cfa05dd5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/864912946d57c1d97835676e0eb97f75cfa05dd5",
+  "html_url": "https://github.com/debiki/talkyard/commit/864912946d57c1d97835676e0eb97f75cfa05dd5",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/864912946d57c1d97835676e0eb97f75cfa05dd5/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6c6eb492bba09cbf7a011db317ddc11cfcdf4f9e",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/6c6eb492bba09cbf7a011db317ddc11cfcdf4f9e",
+      "html_url": "https://github.com/debiki/talkyard/commit/6c6eb492bba09cbf7a011db317ddc11cfcdf4f9e"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "61a1fade023a57e4f0f0be6823d27b433fc6f93d",
+      "filename": "images/app/Dockerfile.dev",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/864912946d57c1d97835676e0eb97f75cfa05dd5/images/app/Dockerfile.dev",
+      "raw_url": "https://github.com/debiki/talkyard/raw/864912946d57c1d97835676e0eb97f75cfa05dd5/images/app/Dockerfile.dev",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/images/app/Dockerfile.dev?ref=864912946d57c1d97835676e0eb97f75cfa05dd5",
+      "patch": "@@ -65,7 +65,7 @@ CMD cd /opt/talkyard/app/ && exec /opt/typesafe-activator/bin/activator \\\n   -jvm-debug 9999 \\\n   # Avoid SBT compilation java.lang.StackOverflowError in\n   # scala.tools.nsc.transform.Erasure.\n-  -J-Xss10m \\\n+  -J-Xss30m \\\n   -Duser.home=/home/owner \\\n    # see [30PUK42] in app-prod/Dockerfile\n   -Djava.security.egd=file:/dev/./urandom \\"
+    }
+  ]
+}
