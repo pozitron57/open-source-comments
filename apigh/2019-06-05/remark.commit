@@ -1,0 +1,170 @@
+{
+  "sha": "20764b7b4e6d623ce79a5962751035663eed4bb5",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjIwNzY0YjdiNGU2ZDYyM2NlNzlhNTk2Mjc1MTAzNTY2M2VlZDRiYjU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-06-05T07:14:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-06-05T07:14:34Z"
+    },
+    "message": "enclose streamer in rest's struct",
+    "tree": {
+      "sha": "d3c341483458ea904735cfe3b9989e34c225d256",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/d3c341483458ea904735cfe3b9989e34c225d256"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/20764b7b4e6d623ce79a5962751035663eed4bb5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/20764b7b4e6d623ce79a5962751035663eed4bb5",
+  "html_url": "https://github.com/umputun/remark/commit/20764b7b4e6d623ce79a5962751035663eed4bb5",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/20764b7b4e6d623ce79a5962751035663eed4bb5/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a8b2dee85c1f8275356dbe4f208e7556237aca63",
+      "url": "https://api.github.com/repos/umputun/remark/commits/a8b2dee85c1f8275356dbe4f208e7556237aca63",
+      "html_url": "https://github.com/umputun/remark/commit/a8b2dee85c1f8275356dbe4f208e7556237aca63"
+    }
+  ],
+  "stats": {
+    "total": 123,
+    "additions": 61,
+    "deletions": 62
+  },
+  "files": [
+    {
+      "sha": "a13d29e1f0fc2eda3d3fb7497079156f73eca4d0",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -312,9 +312,11 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \t\tSSLConfig:        sslConfig,\n \t\tUpdateLimiter:    s.UpdateLimit,\n \t\tImageService:     imageService,\n-\t\tStreamTimeOut:    s.Stream.TimeOut,\n-\t\tStreamRefresh:    s.Stream.RefreshInterval,\n-\t\tStreamMaxActive:  s.Stream.MaxActive,\n+\t\tStreamer: &api.Streamer{\n+\t\t\tTimeOut:   s.Stream.TimeOut,\n+\t\t\tRefresh:   s.Stream.RefreshInterval,\n+\t\t\tMaxActive: int32(s.Stream.MaxActive),\n+\t\t},\n \t}\n \n \tsrv.ScoreThresholds.Low, srv.ScoreThresholds.Critical = s.LowScore, s.CriticalScore"
+    },
+    {
+      "sha": "47ba1f8df5cb733613e485cf99b6ae992759548c",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 9,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -44,6 +44,7 @@ type Rest struct {\n \tMigrator         *Migrator\n \tNotifyService    *notify.Service\n \tImageService     *image.Service\n+\tStreamer         *Streamer\n \n \tWebRoot         string\n \tRemarkURL       string\n@@ -55,10 +56,6 @@ type Rest struct {\n \t}\n \tUpdateLimiter float64\n \n-\tStreamTimeOut   time.Duration\n-\tStreamRefresh   time.Duration\n-\tStreamMaxActive int\n-\n \tSSLConfig   SSLConfig\n \thttpsServer *http.Server\n \thttpServer  *http.Server\n@@ -337,11 +334,7 @@ func (s *Rest) controllerGroups() (public, private, admin, rss) {\n \t\tcommentFormatter: s.CommentFormatter,\n \t\treadOnlyAge:      s.ReadOnlyAge,\n \t\twebRoot:          s.WebRoot,\n-\t\tstreamer: &streamer{\n-\t\t\ttimeout:   s.StreamTimeOut,\n-\t\t\trefresh:   s.StreamRefresh,\n-\t\t\tmaxActive: int32(s.StreamMaxActive),\n-\t\t},\n+\t\tstreamer:         s.Streamer,\n \t}\n \n \tprivGrp := private{"
+    },
+    {
+      "sha": "7cc5f12c36814beb4008596347c4367879344e51",
+      "filename": "backend/app/rest/api/rest_public.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest_public.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest_public.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_public.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -29,8 +29,8 @@ type public struct {\n \treadOnlyAge      int\n \tcommentFormatter *store.CommentFormatter\n \timageService     *image.Service\n+\tstreamer         *Streamer\n \twebRoot          string\n-\tstreamer         *streamer\n }\n \n type pubStore interface {\n@@ -150,7 +150,7 @@ func (s *public) infoCtrl(w http.ResponseWriter, r *http.Request) {\n // GET /stream/info?site=siteID&url=post-url - get info stream about the post\n func (s *public) infoStreamCtrl(w http.ResponseWriter, r *http.Request) {\n \tlocator := store.Locator{SiteID: r.URL.Query().Get(\"site\"), URL: r.URL.Query().Get(\"url\")}\n-\tlog.Printf(\"[DEBUG] start stream for %+v, timeout=%v, refresh=%v\", locator, s.streamer.timeout, s.streamer.refresh)\n+\tlog.Printf(\"[DEBUG] start stream for %+v, timeout=%v, refresh=%v\", locator, s.streamer.TimeOut, s.streamer.Refresh)\n \n \tfn := func() steamEventFn {\n \t\tlastTS := time.Time{}\n@@ -179,7 +179,7 @@ func (s *public) infoStreamCtrl(w http.ResponseWriter, r *http.Request) {\n \t\t}\n \t}\n \n-\tif err := s.streamer.activate(r.Context(), fn, w); err != nil {\n+\tif err := s.streamer.Activate(r.Context(), fn, w); err != nil {\n \t\trest.SendErrorJSON(w, r, http.StatusInternalServerError, err, \"can't stream\", rest.ErrInternal)\n \t}\n }\n@@ -252,7 +252,7 @@ func (s *public) lastCommentsStreamCtrl(w http.ResponseWriter, r *http.Request)\n \t\t}\n \t}\n \n-\tif err := s.streamer.activate(r.Context(), fn, w); err != nil {\n+\tif err := s.streamer.Activate(r.Context(), fn, w); err != nil {\n \t\trest.SendErrorJSON(w, r, http.StatusInternalServerError, err, \"can't stream\", rest.ErrInternal)\n \t}\n }"
+    },
+    {
+      "sha": "74aa6544f274a28d9ac3efa4b386568ab75d41e2",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 25,
+      "changes": 49,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_public_test.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -42,7 +42,6 @@ func TestRest_Preview(t *testing.T) {\n \tassert.Nil(t, err)\n \tassert.Equal(t, \"<p>test 123</p>\\n\", string(b))\n \n-\n \tresp, err = post(t, ts.URL+\"/api/v1/preview\", \"bad\")\n \tassert.Nil(t, err)\n \tassert.Equal(t, 400, resp.StatusCode)\n@@ -550,9 +549,9 @@ func TestRest_InfoStream(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 1 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 300 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 100\n+\tsrv.pubRest.streamer.Refresh = 1 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 300 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 100\n \n \tpostComment(t, ts.URL)\n \n@@ -583,9 +582,9 @@ func TestRest_InfoStreamTooMany(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 1 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 300 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 10\n+\tsrv.pubRest.streamer.Refresh = 1 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 300 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 10\n \n \tpostComment(t, ts.URL)\n \n@@ -609,9 +608,9 @@ func TestRest_InfoStreamTimeout(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 10 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 450 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 100\n+\tsrv.pubRest.streamer.Refresh = 10 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 450 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 100\n \n \tpostComment(t, ts.URL)\n \n@@ -625,9 +624,9 @@ func TestRest_InfoStreamCancel(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 10 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 500 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 100\n+\tsrv.pubRest.streamer.Refresh = 10 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 500 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 100\n \n \tpostComment(t, ts.URL)\n \n@@ -679,9 +678,9 @@ func TestRest_Robots(t *testing.T) {\n func TestRest_LastCommentsStream(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 10 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 500 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 100\n+\tsrv.pubRest.streamer.Refresh = 10 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 500 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 100\n \n \tpostComment(t, ts.URL)\n \n@@ -718,9 +717,9 @@ func TestRest_LastCommentsStreamTimeout(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 10 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 450 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 100\n+\tsrv.pubRest.streamer.Refresh = 10 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 450 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 100\n \n \tpostComment(t, ts.URL)\n \n@@ -733,9 +732,9 @@ func TestRest_LastCommentsStreamTimeout(t *testing.T) {\n func TestRest_LastCommentsStreamCancel(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 10 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 500 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 100\n+\tsrv.pubRest.streamer.Refresh = 10 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 500 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 100\n \n \tpostComment(t, ts.URL)\n \n@@ -774,9 +773,9 @@ func TestRest_LastCommentsStreamTooMany(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()\n \tsrv.pubRest.readOnlyAge = 10000000 // make sure we don't hit read-only\n-\tsrv.pubRest.streamer.refresh = 1 * time.Millisecond\n-\tsrv.pubRest.streamer.timeout = 300 * time.Millisecond\n-\tsrv.pubRest.streamer.maxActive = 10\n+\tsrv.pubRest.streamer.Refresh = 1 * time.Millisecond\n+\tsrv.pubRest.streamer.TimeOut = 300 * time.Millisecond\n+\tsrv.pubRest.streamer.MaxActive = 10\n \n \tpostComment(t, ts.URL)\n "
+    },
+    {
+      "sha": "a0e8566a6bf966ce3f70b1f2533f4ef176ccfa76",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/rest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_test.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -339,6 +339,11 @@ func startupT(t *testing.T) (ts *httptest.Server, srv *Rest, teardown func()) {\n \t\t\tCache:             &cache.Nop{},\n \t\t\tKeyStore:          adminStore,\n \t\t},\n+\t\tStreamer: &Streamer{\n+\t\t\tRefresh:   100 * time.Millisecond,\n+\t\t\tTimeOut:   5 * time.Second,\n+\t\t\tMaxActive: 100,\n+\t\t},\n \t}\n \tsrv.ScoreThresholds.Low, srv.ScoreThresholds.Critical = -5, -10\n "
+    },
+    {
+      "sha": "18d5ff7fbc1936660076548ed7501dbffba342b9",
+      "filename": "backend/app/rest/api/stream.go",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 11,
+      "changes": 22,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/stream.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/stream.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/stream.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -11,11 +11,11 @@ import (\n \t\"github.com/pkg/errors\"\n )\n \n-// streamer creates endless stream of \\n seprated json records send to remote client\n-type streamer struct {\n-\ttimeout   time.Duration\n-\trefresh   time.Duration\n-\tmaxActive int32\n+// Streamer creates endless stream of \\n separated json records send to remote client\n+type Streamer struct {\n+\tTimeOut   time.Duration\n+\tRefresh   time.Duration\n+\tMaxActive int32\n \n \tactiveCount int32\n }\n@@ -27,15 +27,15 @@ type steamEventResp struct {\n \terr  error\n }\n \n-// activate starts blocking function streaming update created by eventFn to ResponseWriter\n+// Activate starts blocking function streaming update created by eventFn to ResponseWriter\n // canceled on context or inactivity timeout\n // note: eventFn is a closure needed to allow state management inside eventFn\n-func (s *streamer) activate(ctx context.Context, eventFn func() steamEventFn, w io.Writer) error {\n+func (s *Streamer) Activate(ctx context.Context, eventFn func() steamEventFn, w io.Writer) error {\n \tupdCh := s.eventsCh(ctx, eventFn())\n \n \tcount := atomic.AddInt32(&s.activeCount, 1)\n \tdefer atomic.AddInt32(&s.activeCount, -1)\n-\tif count > s.maxActive {\n+\tif count > s.MaxActive {\n \t\treturn errors.New(\"too many streams\")\n \t}\n \n@@ -44,7 +44,7 @@ func (s *streamer) activate(ctx context.Context, eventFn func() steamEventFn, w\n \t\tcase <-ctx.Done(): // request closed by remote client\n \t\t\tlog.Printf(\"[DEBUG] stream closed by remote client, %s\", ctx.Err())\n \t\t\treturn nil\n-\t\tcase <-time.After(s.timeout): // request closed by timeout\n+\t\tcase <-time.After(s.TimeOut): // request closed by timeout\n \t\t\tlog.Printf(\"[DEBUG] stream closed due to timeout\")\n \t\t\treturn nil\n \t\tcase resp, ok := <-updCh: // new update\n@@ -65,10 +65,10 @@ func (s *streamer) activate(ctx context.Context, eventFn func() steamEventFn, w\n }\n \n // populate updates to chan, break on context close\n-func (s *streamer) eventsCh(ctx context.Context, fn steamEventFn) <-chan steamEventResp {\n+func (s *Streamer) eventsCh(ctx context.Context, fn steamEventFn) <-chan steamEventResp {\n \tch := make(chan steamEventResp)\n \tgo func() {\n-\t\ttick := time.NewTicker(s.refresh)\n+\t\ttick := time.NewTicker(s.Refresh)\n \t\tdefer func() {\n \t\t\tclose(ch)\n \t\t\ttick.Stop()"
+    },
+    {
+      "sha": "0a15374fa5e3468e9b4c186b0d6a9059ac12fa51",
+      "filename": "backend/app/rest/api/stream_test.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 10,
+      "changes": 20,
+      "blob_url": "https://github.com/umputun/remark/blob/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/stream_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/20764b7b4e6d623ce79a5962751035663eed4bb5/backend/app/rest/api/stream_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/stream_test.go?ref=20764b7b4e6d623ce79a5962751035663eed4bb5",
+      "patch": "@@ -11,10 +11,10 @@ import (\n )\n \n func TestStream_Timeout(t *testing.T) {\n-\ts := streamer{\n-\t\trefresh:   10 * time.Millisecond,\n-\t\ttimeout:   100 * time.Millisecond,\n-\t\tmaxActive: 10,\n+\ts := Streamer{\n+\t\tRefresh:   10 * time.Millisecond,\n+\t\tTimeOut:   100 * time.Millisecond,\n+\t\tMaxActive: 10,\n \t}\n \n \teventFn := func() steamEventFn {\n@@ -29,16 +29,16 @@ func TestStream_Timeout(t *testing.T) {\n \t}\n \n \tbuf := bytes.Buffer{}\n-\terr := s.activate(context.Background(), eventFn, &buf)\n+\terr := s.Activate(context.Background(), eventFn, &buf)\n \tassert.NoError(t, err)\n \tassert.Equal(t, \"some data 1\\nsome data 3\\nsome data 5\\nsome data 7\\nsome data 9\\n\", buf.String())\n }\n \n func TestStream_Cancel(t *testing.T) {\n-\ts := streamer{\n-\t\trefresh:   10 * time.Millisecond,\n-\t\ttimeout:   100 * time.Millisecond,\n-\t\tmaxActive: 10,\n+\ts := Streamer{\n+\t\tRefresh:   10 * time.Millisecond,\n+\t\tTimeOut:   100 * time.Millisecond,\n+\t\tMaxActive: 10,\n \t}\n \n \teventFn := func() steamEventFn {\n@@ -55,7 +55,7 @@ func TestStream_Cancel(t *testing.T) {\n \tbuf := bytes.Buffer{}\n \tctx, cancel := context.WithTimeout(context.Background(), 100*time.Millisecond)\n \tdefer cancel()\n-\terr := s.activate(ctx, eventFn, &buf)\n+\terr := s.Activate(ctx, eventFn, &buf)\n \tassert.NoError(t, err)\n \tassert.Equal(t, \"some data 1\\nsome data 3\\nsome data 5\\nsome data 7\\nsome data 9\\n\", buf.String())\n }"
+    }
+  ]
+}
