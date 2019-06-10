@@ -1,0 +1,110 @@
+{
+  "sha": "8b31b812f8f429f9805eea617627be1edf39c036",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4YjMxYjgxMmY4ZjQyOWY5ODA1ZWVhNjE3NjI3YmUxZWRmMzljMDM2",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-06-10T16:43:20Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-06-10T16:43:20Z"
+    },
+    "message": "UX: Use a glyph to indicate a new topic instead of \"New Topic:\"\n\nIn the review queue it was easy to miss \"New Topic:\" so let's try a font\nawesome glyph instead.",
+    "tree": {
+      "sha": "c9ccd2414cbe12bd1a8c7413870a20936425ad07",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c9ccd2414cbe12bd1a8c7413870a20936425ad07"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/8b31b812f8f429f9805eea617627be1edf39c036",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/8b31b812f8f429f9805eea617627be1edf39c036",
+  "html_url": "https://github.com/discourse/discourse/commit/8b31b812f8f429f9805eea617627be1edf39c036",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/8b31b812f8f429f9805eea617627be1edf39c036/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ef37af5ab0b2aafee8959607694ddd6b6b248e91",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ef37af5ab0b2aafee8959607694ddd6b6b248e91",
+      "html_url": "https://github.com/discourse/discourse/commit/ef37af5ab0b2aafee8959607694ddd6b6b248e91"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "fb54fe97639db392361b2fb6734946dd11bc25c9",
+      "filename": "app/assets/javascripts/discourse/templates/components/reviewable-queued-post.hbs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/8b31b812f8f429f9805eea617627be1edf39c036/app/assets/javascripts/discourse/templates/components/reviewable-queued-post.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/8b31b812f8f429f9805eea617627be1edf39c036/app/assets/javascripts/discourse/templates/components/reviewable-queued-post.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/reviewable-queued-post.hbs?ref=8b31b812f8f429f9805eea617627be1edf39c036",
+      "patch": "@@ -1,5 +1,6 @@\n {{#reviewable-topic-link reviewable=reviewable tagName=''}}\n-  <div class=\"title-text\">{{i18n \"review.new_topic\"}}\n+  <div class=\"title-text\">\n+    {{d-icon \"plus-square\" title=\"review.new_topic\"}}\n     {{reviewable.payload.title}}\n   </div>\n   {{category-badge reviewable.category}}"
+    },
+    {
+      "sha": "24f5a293c619d4e4c5adc4a6ca724fa88f564b69",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/8b31b812f8f429f9805eea617627be1edf39c036/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/8b31b812f8f429f9805eea617627be1edf39c036/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=8b31b812f8f429f9805eea617627be1edf39c036",
+      "patch": "@@ -433,7 +433,7 @@ en:\n       edit: \"Edit\"\n       save: \"Save\"\n       cancel: \"Cancel\"\n-      new_topic: \"New Topic:\"\n+      new_topic: \"Approving this item will create a new topic\"\n \n       filters:\n         type:"
+    }
+  ]
+}
