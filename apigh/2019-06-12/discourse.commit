@@ -1,0 +1,98 @@
+{
+  "sha": "b4686934dd49b9f258e8564fd883b98c45fcc14c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiNDY4NjkzNGRkNDliOWYyNThlODU2NGZkODgzYjk4YzQ1ZmNjMTRj",
+  "commit": {
+    "author": {
+      "name": "Maja Komel",
+      "email": "maja.komel@gmail.com",
+      "date": "2019-06-12T15:37:44Z"
+    },
+    "committer": {
+      "name": "Maja Komel",
+      "email": "maja.komel@gmail.com",
+      "date": "2019-06-12T16:03:29Z"
+    },
+    "message": "DEV: add spec for removed group bio",
+    "tree": {
+      "sha": "5afb3ec83c81586bb1fc80bcf905bb5d61b83f59",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5afb3ec83c81586bb1fc80bcf905bb5d61b83f59"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b4686934dd49b9f258e8564fd883b98c45fcc14c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b4686934dd49b9f258e8564fd883b98c45fcc14c",
+  "html_url": "https://github.com/discourse/discourse/commit/b4686934dd49b9f258e8564fd883b98c45fcc14c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b4686934dd49b9f258e8564fd883b98c45fcc14c/comments",
+  "author": {
+    "login": "majakomel",
+    "id": 3431279,
+    "node_id": "MDQ6VXNlcjM0MzEyNzk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/3431279?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/majakomel",
+    "html_url": "https://github.com/majakomel",
+    "followers_url": "https://api.github.com/users/majakomel/followers",
+    "following_url": "https://api.github.com/users/majakomel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/majakomel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/majakomel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/majakomel/subscriptions",
+    "organizations_url": "https://api.github.com/users/majakomel/orgs",
+    "repos_url": "https://api.github.com/users/majakomel/repos",
+    "events_url": "https://api.github.com/users/majakomel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/majakomel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "majakomel",
+    "id": 3431279,
+    "node_id": "MDQ6VXNlcjM0MzEyNzk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/3431279?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/majakomel",
+    "html_url": "https://github.com/majakomel",
+    "followers_url": "https://api.github.com/users/majakomel/followers",
+    "following_url": "https://api.github.com/users/majakomel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/majakomel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/majakomel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/majakomel/subscriptions",
+    "organizations_url": "https://api.github.com/users/majakomel/orgs",
+    "repos_url": "https://api.github.com/users/majakomel/repos",
+    "events_url": "https://api.github.com/users/majakomel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/majakomel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "19ca2d4772e1aabe706a210ba50c274312f0818c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/19ca2d4772e1aabe706a210ba50c274312f0818c",
+      "html_url": "https://github.com/discourse/discourse/commit/19ca2d4772e1aabe706a210ba50c274312f0818c"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "f48d6f954c369101959c73d9d1bd135f855e1685",
+      "filename": "spec/models/group_spec.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/b4686934dd49b9f258e8564fd883b98c45fcc14c/spec/models/group_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b4686934dd49b9f258e8564fd883b98c45fcc14c/spec/models/group_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/group_spec.rb?ref=b4686934dd49b9f258e8564fd883b98c45fcc14c",
+      "patch": "@@ -622,6 +622,10 @@ def real_staff\n     group.update!(bio_raw: 'This is a group for :unicorn: lovers')\n \n     expect(group.bio_cooked).to include(\"unicorn.png\")\n+\n+    group.update!(bio_raw: '')\n+\n+    expect(group.bio_cooked).to eq(nil)\n   end\n \n   describe \".visible_groups\" do"
+    }
+  ]
+}
