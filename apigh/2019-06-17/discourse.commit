@@ -1,0 +1,146 @@
+{
+  "sha": "e6e47f2fb22764c92aaa90445c7bf203192fba11",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplNmU0N2YyZmIyMjc2NGM5MmFhYTkwNDQ1YzdiZjIwMzE5MmZiYTEx",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-06-12T17:32:13Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-06-17T15:18:44Z"
+    },
+    "message": "SECURITY: Add confirmation screen when logging in via user-api OTP",
+    "tree": {
+      "sha": "ac49d2573e058fc5a2a537c4dafe890b2aca18e5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ac49d2573e058fc5a2a537c4dafe890b2aca18e5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e6e47f2fb22764c92aaa90445c7bf203192fba11",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e6e47f2fb22764c92aaa90445c7bf203192fba11",
+  "html_url": "https://github.com/discourse/discourse/commit/e6e47f2fb22764c92aaa90445c7bf203192fba11",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e6e47f2fb22764c92aaa90445c7bf203192fba11/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "52387be4a44cdeaca5421ee955ba1343e836bade",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/52387be4a44cdeaca5421ee955ba1343e836bade",
+      "html_url": "https://github.com/discourse/discourse/commit/52387be4a44cdeaca5421ee955ba1343e836bade"
+    }
+  ],
+  "stats": {
+    "total": 59,
+    "additions": 54,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "b48ee8a8f145b6359982070e5cf92e8402d4faf4",
+      "filename": "app/controllers/session_controller.rb",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 4,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6e47f2fb22764c92aaa90445c7bf203192fba11/app/controllers/session_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6e47f2fb22764c92aaa90445c7bf203192fba11/app/controllers/session_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/session_controller.rb?ref=e6e47f2fb22764c92aaa90445c7bf203192fba11",
+      "patch": "@@ -365,12 +365,19 @@ def email_login\n   end\n \n   def one_time_password\n-    otp_username = $redis.get \"otp_#{params[:token]}\"\n+    @otp_username = otp_username = $redis.get \"otp_#{params[:token]}\"\n \n     if otp_username && user = User.find_by_username(otp_username)\n-      log_on_user(user)\n-      $redis.del \"otp_#{params[:token]}\"\n-      return redirect_to path(\"/\")\n+      if current_user&.username == otp_username\n+        $redis.del \"otp_#{params[:token]}\"\n+        return redirect_to path(\"/\")\n+      elsif request.post?\n+        log_on_user(user)\n+        $redis.del \"otp_#{params[:token]}\"\n+        return redirect_to path(\"/\")\n+      else\n+        # Display the form\n+      end\n     else\n       @error = I18n.t('user_api_key.invalid_token')\n     end"
+    },
+    {
+      "sha": "e86e371298ffafb275bdefc91e168b6b9231b570",
+      "filename": "app/views/session/one_time_password.html.erb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6e47f2fb22764c92aaa90445c7bf203192fba11/app/views/session/one_time_password.html.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6e47f2fb22764c92aaa90445c7bf203192fba11/app/views/session/one_time_password.html.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/views/session/one_time_password.html.erb?ref=e6e47f2fb22764c92aaa90445c7bf203192fba11",
+      "patch": "@@ -2,4 +2,10 @@\n   <div class='alert alert-error'>\n     <%= @error %>\n   </div>\n+<%else%>\n+  <%= form_tag do%>\n+    <h2><%= t(\"user_api_key.otp_confirmation.confirm_title\", site_name: SiteSetting.title) %></h2>\n+    <p><%= t(\"user_api_key.otp_confirmation.logging_in_as\", username: @otp_username) %></p>\n+    <%= submit_tag(t(\"user_api_key.otp_confirmation.confirm_button\"), class: \"btn btn-primary\") %>\n+  <%end%>\n <%end%>"
+    },
+    {
+      "sha": "2140b1f407ae1ef5f879edbd74558709986b0edc",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6e47f2fb22764c92aaa90445c7bf203192fba11/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6e47f2fb22764c92aaa90445c7bf203192fba11/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=e6e47f2fb22764c92aaa90445c7bf203192fba11",
+      "patch": "@@ -939,6 +939,10 @@ en:\n     description: '\"%{application_name}\" is requesting the following access to your account:'\n     instructions: 'We just generated a new user API key for you to use with \"%{application_name}\", please paste the following key into your application:'\n     otp_description: 'Would you like to allow \"%{application_name}\" to access this site?'\n+    otp_confirmation: \n+      confirm_title: Continue to %{site_name}\n+      logging_in_as: Logging in as %{username}\n+      confirm_button: Finish Login\n     no_trust_level: \"Sorry, you do not have the required trust level to access the user API\"\n     generic_error: \"Sorry, we are unable to issue user API keys, this feature may be disabled by the site admin\"\n     scopes:"
+    },
+    {
+      "sha": "d6132b9da298df4db09d3a24fe4204fd9f31e34d",
+      "filename": "config/routes.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6e47f2fb22764c92aaa90445c7bf203192fba11/config/routes.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6e47f2fb22764c92aaa90445c7bf203192fba11/config/routes.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/routes.rb?ref=e6e47f2fb22764c92aaa90445c7bf203192fba11",
+      "patch": "@@ -340,6 +340,7 @@\n   get \"session/email-login/:token\" => \"session#email_login_info\"\n   post \"session/email-login/:token\" => \"session#email_login\"\n   get \"session/otp/:token\" => \"session#one_time_password\", constraints: { token: /[0-9a-f]+/ }\n+  post \"session/otp/:token\" => \"session#one_time_password\", constraints: { token: /[0-9a-f]+/ }\n   get \"composer_messages\" => \"composer_messages#index\"\n   post \"composer/parse_html\" => \"composer#parse_html\"\n "
+    },
+    {
+      "sha": "f3491ef5bdc3930bd8a08544c18dc314dd339216",
+      "filename": "spec/requests/session_controller_spec.rb",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 1,
+      "changes": 33,
+      "blob_url": "https://github.com/discourse/discourse/blob/e6e47f2fb22764c92aaa90445c7bf203192fba11/spec/requests/session_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e6e47f2fb22764c92aaa90445c7bf203192fba11/spec/requests/session_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/session_controller_spec.rb?ref=e6e47f2fb22764c92aaa90445c7bf203192fba11",
+      "patch": "@@ -1369,9 +1369,40 @@ def post_login\n         get \"/session/otp/asd1231dasd123\"\n \n         expect(response.status).to eq(404)\n+\n+        post \"/session/otp/asd1231dasd123\"\n+\n+        expect(response.status).to eq(404)\n       end\n \n       context 'when token is valid' do\n+        it \"should display the form for GET\" do\n+          token = SecureRandom.hex\n+          $redis.setex \"otp_#{token}\", 10.minutes, user.username\n+\n+          get \"/session/otp/#{token}\"\n+\n+          expect(response.status).to eq(200)\n+          expect(response.body).to include(\n+            I18n.t(\"user_api_key.otp_confirmation.logging_in_as\", username: user.username)\n+          )\n+          expect($redis.get(\"otp_#{token}\")).to eq(user.username)\n+\n+          expect(session[:current_user_id]).to eq(nil)\n+        end\n+\n+        it \"should redirect on GET if already logged in\" do\n+          sign_in(user)\n+          token = SecureRandom.hex\n+          $redis.setex \"otp_#{token}\", 10.minutes, user.username\n+\n+          get \"/session/otp/#{token}\"\n+          expect(response.status).to eq(302)\n+\n+          expect($redis.get(\"otp_#{token}\")).to eq(nil)\n+          expect(session[:current_user_id]).to eq(user.id)\n+        end\n+\n         it 'should authenticate user and delete token' do\n           user = Fabricate(:user)\n \n@@ -1381,7 +1412,7 @@ def post_login\n           token = SecureRandom.hex\n           $redis.setex \"otp_#{token}\", 10.minutes, user.username\n \n-          get \"/session/otp/#{token}\"\n+          post \"/session/otp/#{token}\"\n \n           expect(response.status).to eq(302)\n           expect(response).to redirect_to(\"/\")"
+    }
+  ]
+}
