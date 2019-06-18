@@ -1,0 +1,98 @@
+{
+  "sha": "dad51f052f500fe2fb0d413cd0985e605936a5b6",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmRhZDUxZjA1MmY1MDBmZTJmYjBkNDEzY2QwOTg1ZTYwNTkzNmE1YjY=",
+  "commit": {
+    "author": {
+      "name": "Vyrtsev Mikhail",
+      "email": "reeywhaar@gmail.com",
+      "date": "2019-06-16T21:46:57Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-06-16T22:35:56Z"
+    },
+    "message": "fix sorting change makes hidden users to appear",
+    "tree": {
+      "sha": "6489d341df316e71097d68a742f91d4771ec5b05",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/6489d341df316e71097d68a742f91d4771ec5b05"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/dad51f052f500fe2fb0d413cd0985e605936a5b6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/dad51f052f500fe2fb0d413cd0985e605936a5b6",
+  "html_url": "https://github.com/umputun/remark/commit/dad51f052f500fe2fb0d413cd0985e605936a5b6",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/dad51f052f500fe2fb0d413cd0985e605936a5b6/comments",
+  "author": {
+    "login": "Reeywhaar",
+    "id": 884649,
+    "node_id": "MDQ6VXNlcjg4NDY0OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/884649?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Reeywhaar",
+    "html_url": "https://github.com/Reeywhaar",
+    "followers_url": "https://api.github.com/users/Reeywhaar/followers",
+    "following_url": "https://api.github.com/users/Reeywhaar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Reeywhaar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Reeywhaar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Reeywhaar/subscriptions",
+    "organizations_url": "https://api.github.com/users/Reeywhaar/orgs",
+    "repos_url": "https://api.github.com/users/Reeywhaar/repos",
+    "events_url": "https://api.github.com/users/Reeywhaar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Reeywhaar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "556b053ae7ff43a3ecfa79ad39c29cbff10ec632",
+      "url": "https://api.github.com/repos/umputun/remark/commits/556b053ae7ff43a3ecfa79ad39c29cbff10ec632",
+      "html_url": "https://github.com/umputun/remark/commit/556b053ae7ff43a3ecfa79ad39c29cbff10ec632"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 25,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "6ca70e5a2fdb70f2df9b363184dab410455e93c6",
+      "filename": "frontend/app/store/sort/actions.ts",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 13,
+      "changes": 38,
+      "blob_url": "https://github.com/umputun/remark/blob/dad51f052f500fe2fb0d413cd0985e605936a5b6/frontend/app/store/sort/actions.ts",
+      "raw_url": "https://github.com/umputun/remark/raw/dad51f052f500fe2fb0d413cd0985e605936a5b6/frontend/app/store/sort/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/store/sort/actions.ts?ref=dad51f052f500fe2fb0d413cd0985e605936a5b6",
+      "patch": "@@ -1,28 +1,40 @@\n-import api from '@app/common/api';\n import { Sorting } from '@app/common/types';\n import { COOKIE_SORT_KEY } from '@app/common/constants';\n import { setCookie } from '@app/common/cookies';\n \n import { StoreAction } from '../index';\n-import { setPostInfo } from '../post_info/actions';\n-import { setComments } from '../comments/actions';\n+import { fetchComments } from '../comments/actions';\n import { SORT_SET, SORT_SET_ACTION } from './types';\n \n-export const setSort = (sort: Sorting): StoreAction<Promise<void>> => async dispatch => {\n+function setSortCookie(sort: Sorting) {\n   try {\n     setCookie(COOKIE_SORT_KEY, sort, { expires: 60 * 60 * 24 * 365 }); // save sorting for a year\n-  } catch (e) {\n+  } catch {\n     // can't save; ignore it\n   }\n+}\n \n-  const info = await api.getPostComments(sort);\n+export const setSort = (sort: Sorting): StoreAction<Promise<void>> => async (dispatch, getState) => {\n+  const originalSort = getState().sort;\n+  setSortCookie(sort);\n \n-  const action: SORT_SET_ACTION = {\n-    type: SORT_SET,\n-    sort,\n-  };\n+  try {\n+    const action: SORT_SET_ACTION = {\n+      type: SORT_SET,\n+      sort,\n+    };\n+\n+    await dispatch(action);\n+    await dispatch(fetchComments(sort));\n+  } catch {\n+    // restore sort in case of error, probably network error\n \n-  dispatch(action);\n-  dispatch(setPostInfo(info.info));\n-  dispatch(setComments(info.comments));\n+    const action: SORT_SET_ACTION = {\n+      type: SORT_SET,\n+      sort: originalSort,\n+    };\n+\n+    setSortCookie(originalSort);\n+    await dispatch(action);\n+  }\n };"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sha": "6fec4982d903cbb088f95b5dcae7b67f52a90e99",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2ZmVjNDk4MmQ5MDNjYmIwODhmOTViNWRjYWU3YjY3ZjUyYTkwZTk5",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-06-18T16:28:18Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-06-18T16:28:18Z"
+    },
+    "message": "FIX: Couldn't modify a widget that wasn't in the registry",
+    "tree": {
+      "sha": "d98f066f8f9b02bdc39ca16b231c8416365b9630",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d98f066f8f9b02bdc39ca16b231c8416365b9630"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6fec4982d903cbb088f95b5dcae7b67f52a90e99",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6fec4982d903cbb088f95b5dcae7b67f52a90e99",
+  "html_url": "https://github.com/discourse/discourse/commit/6fec4982d903cbb088f95b5dcae7b67f52a90e99",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6fec4982d903cbb088f95b5dcae7b67f52a90e99/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d30be1f94538218fd3f2857b11a6db766bea4fb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6d30be1f94538218fd3f2857b11a6db766bea4fb",
+      "html_url": "https://github.com/discourse/discourse/commit/6d30be1f94538218fd3f2857b11a6db766bea4fb"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "19c2c5fc0d18030489901d5ca8b542161591e56c",
+      "filename": "app/assets/javascripts/discourse/lib/plugin-api.js.es6",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/6fec4982d903cbb088f95b5dcae7b67f52a90e99/app/assets/javascripts/discourse/lib/plugin-api.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/6fec4982d903cbb088f95b5dcae7b67f52a90e99/app/assets/javascripts/discourse/lib/plugin-api.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/plugin-api.js.es6?ref=6fec4982d903cbb088f95b5dcae7b67f52a90e99",
+      "patch": "@@ -42,6 +42,7 @@ import { registerCustomPostMessageCallback as registerCustomPostMessageCallback1\n import Sharing from \"discourse/lib/sharing\";\n import { addComposerUploadHandler } from \"discourse/components/composer-editor\";\n import { addCategorySortCriteria } from \"discourse/components/edit-category-settings\";\n+import { queryRegistry } from \"discourse/widgets/widget\";\n \n // If you add any methods to the API ensure you bump up this number\n const PLUGIN_API_VERSION = \"0.8.31\";\n@@ -325,7 +326,9 @@ class PluginApi {\n    * ```\n    **/\n   attachWidgetAction(widget, actionName, fn) {\n-    const widgetClass = this.container.factoryFor(`widget:${widget}`).class;\n+    const widgetClass =\n+      queryRegistry(widget) ||\n+      this.container.factoryFor(`widget:${widget}`).class;\n     widgetClass.prototype[actionName] = fn;\n   }\n "
+    }
+  ]
+}
