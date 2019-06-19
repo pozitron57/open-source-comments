@@ -1,0 +1,110 @@
+{
+  "sha": "34f382b75834f7da91892fcb2a2125a8cb42ca5b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozNGYzODJiNzU4MzRmN2RhOTE4OTJmY2IyYTIxMjVhOGNiNDJjYTVi",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2019-06-19T03:14:46Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2019-06-19T03:15:02Z"
+    },
+    "message": "FIX: `InlineUploads` should replace attachment links with markdown text.",
+    "tree": {
+      "sha": "c8f39a5f9faad383359988173178fa5f442ec70b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c8f39a5f9faad383359988173178fa5f442ec70b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/34f382b75834f7da91892fcb2a2125a8cb42ca5b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/34f382b75834f7da91892fcb2a2125a8cb42ca5b",
+  "html_url": "https://github.com/discourse/discourse/commit/34f382b75834f7da91892fcb2a2125a8cb42ca5b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/34f382b75834f7da91892fcb2a2125a8cb42ca5b/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "73a45048a015890a4bce6ec7c203430900adfa02",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/73a45048a015890a4bce6ec7c203430900adfa02",
+      "html_url": "https://github.com/discourse/discourse/commit/73a45048a015890a4bce6ec7c203430900adfa02"
+    }
+  ],
+  "stats": {
+    "total": 22,
+    "additions": 21,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "816e848f7d19548082abcbbdd5df4427b376b513",
+      "filename": "app/services/inline_uploads.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 1,
+      "changes": 18,
+      "blob_url": "https://github.com/discourse/discourse/blob/34f382b75834f7da91892fcb2a2125a8cb42ca5b/app/services/inline_uploads.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/34f382b75834f7da91892fcb2a2125a8cb42ca5b/app/services/inline_uploads.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/inline_uploads.rb?ref=34f382b75834f7da91892fcb2a2125a8cb42ca5b",
+      "patch": "@@ -24,7 +24,9 @@ def self.process(markdown, on_missing: nil)\n     cooked_fragment.traverse do |node|\n       if node.name == \"img\"\n         # Do nothing\n-      elsif !(node.children.count == 1 && (node.children[0].name != \"img\" && node.children[0].children.blank?))\n+      elsif !(node.children.count == 1 && (node.children[0].name != \"img\" && node.children[0].children.blank?)) &&\n+        !(node.name == \"a\" && node.children.count > 1 && !node_children_names(node).include?(\"img\"))\n+\n         next\n       end\n \n@@ -293,4 +295,18 @@ def self.matched_uploads(node)\n     matches\n   end\n   private_class_method :matched_uploads\n+\n+  def self.node_children_names(node, names = Set.new)\n+    if node.children.blank?\n+      names << node.name\n+      return names\n+    end\n+\n+    node.children.each do |child|\n+      names = node_children_names(child, names)\n+    end\n+\n+    names\n+  end\n+  private_class_method :node_children_names\n end"
+    },
+    {
+      "sha": "e563eee1435acb8d8dc0281cb59358c1937df532",
+      "filename": "spec/services/inline_uploads_spec.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/34f382b75834f7da91892fcb2a2125a8cb42ca5b/spec/services/inline_uploads_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/34f382b75834f7da91892fcb2a2125a8cb42ca5b/spec/services/inline_uploads_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/inline_uploads_spec.rb?ref=34f382b75834f7da91892fcb2a2125a8cb42ca5b",
+      "patch": "@@ -452,6 +452,8 @@\n \n         <a class=\"test attachment\" href=\"#{upload.url}\">test3</a>\n         <a class=\"test attachment\" href=\"#{upload2.url}\">test3</a><a class=\"test attachment\" href=\"#{upload3.url}\">test3</a>\n+\n+        <a class=\"test attachment\" href=\"#{upload3.url}\">This is some _test_ here</a>\n         MD\n \n         expect(InlineUploads.process(md)).to eq(<<~MD)\n@@ -463,6 +465,8 @@\n \n         [test3|attachment](#{upload.short_url})\n         [test3|attachment](#{upload2.short_url})[test3|attachment](#{upload3.short_url})\n+\n+        [This is some _test_ here|attachment](#{upload3.short_url})\n         MD\n       end\n "
+    }
+  ]
+}
