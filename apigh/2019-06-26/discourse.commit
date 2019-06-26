@@ -1,0 +1,110 @@
+{
+  "sha": "817661aed9b114d8ea2d98a2c5593a4af450889f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4MTc2NjFhZWQ5YjExNGQ4ZWEyZDk4YTJjNTU5M2E0YWY0NTA4ODlm",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-06-26T16:20:38Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-06-26T16:21:49Z"
+    },
+    "message": "UX: Require a confirmation if approving a post in a closed topic",
+    "tree": {
+      "sha": "10471cbcc3b868cc50ed45a5f6d78710df70e97f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/10471cbcc3b868cc50ed45a5f6d78710df70e97f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/817661aed9b114d8ea2d98a2c5593a4af450889f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/817661aed9b114d8ea2d98a2c5593a4af450889f",
+  "html_url": "https://github.com/discourse/discourse/commit/817661aed9b114d8ea2d98a2c5593a4af450889f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/817661aed9b114d8ea2d98a2c5593a4af450889f/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b3ec3fac931e3b7655168d01a4c392788389d77b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b3ec3fac931e3b7655168d01a4c392788389d77b",
+      "html_url": "https://github.com/discourse/discourse/commit/b3ec3fac931e3b7655168d01a4c392788389d77b"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 17,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "7fc6bc17fd350870b2e11a68e43a28105e545e24",
+      "filename": "app/models/reviewable_queued_post.rb",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 3,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/817661aed9b114d8ea2d98a2c5593a4af450889f/app/models/reviewable_queued_post.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/817661aed9b114d8ea2d98a2c5593a4af450889f/app/models/reviewable_queued_post.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/reviewable_queued_post.rb?ref=817661aed9b114d8ea2d98a2c5593a4af450889f",
+      "patch": "@@ -13,9 +13,18 @@ class ReviewableQueuedPost < Reviewable\n   def build_actions(actions, guardian, args)\n \n     unless approved?\n-      actions.add(:approve_post) do |a|\n-        a.icon = 'check'\n-        a.label = \"reviewables.actions.approve_post.title\"\n+\n+      if topic&.closed?\n+        actions.add(:approve_post_closed) do |a|\n+          a.icon = 'check'\n+          a.label = \"reviewables.actions.approve_post.title\"\n+          a.confirm_message = \"reviewables.actions.approve_post.confirm_closed\"\n+        end\n+      else\n+        actions.add(:approve_post) do |a|\n+          a.icon = 'check'\n+          a.label = \"reviewables.actions.approve_post.title\"\n+        end\n       end\n     end\n \n@@ -106,6 +115,10 @@ def perform_approve_post(performed_by, args)\n     end\n   end\n \n+  def perform_approve_post_closed(performed_by, args)\n+    perform_approve_post(performed_by, args)\n+  end\n+\n   def perform_reject_post(performed_by, args)\n     # Backwards compatibility, new code should listen for `reviewable_transitioned_to`\n     DiscourseEvent.trigger(:rejected_post, self)"
+    },
+    {
+      "sha": "69b00cb78bb05451b9ee7fe6d201a28f4617f8bc",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/817661aed9b114d8ea2d98a2c5593a4af450889f/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/817661aed9b114d8ea2d98a2c5593a4af450889f/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=817661aed9b114d8ea2d98a2c5593a4af450889f",
+      "patch": "@@ -4521,6 +4521,7 @@ en:\n         title: \"Approve\"\n       approve_post:\n         title: \"Approve Post\"\n+        confirm_closed: \"This topic is closed. Would you like to create the post anyway?\"\n       reject_post:\n         title: \"Reject Post\"\n       approve_user:"
+    }
+  ]
+}
