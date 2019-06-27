@@ -1,0 +1,110 @@
+{
+  "sha": "23c5da461725dc6048bbe67a6b2712b132160616",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyM2M1ZGE0NjE3MjVkYzYwNDhiYmU2N2E2YjI3MTJiMTMyMTYwNjE2",
+  "commit": {
+    "author": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-06-27T15:41:09Z"
+    },
+    "committer": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-06-27T15:41:19Z"
+    },
+    "message": "DEV: Check for pending migrations before starting the turbo tests",
+    "tree": {
+      "sha": "2fe0f4709be159ab97dc88a1ed2766d720e8a141",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/2fe0f4709be159ab97dc88a1ed2766d720e8a141"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/23c5da461725dc6048bbe67a6b2712b132160616",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/23c5da461725dc6048bbe67a6b2712b132160616",
+  "html_url": "https://github.com/discourse/discourse/commit/23c5da461725dc6048bbe67a6b2712b132160616",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/23c5da461725dc6048bbe67a6b2712b132160616/comments",
+  "author": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d6aa92e98e219068438f74f0926b315f0827fbc5",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d6aa92e98e219068438f74f0926b315f0827fbc5",
+      "html_url": "https://github.com/discourse/discourse/commit/d6aa92e98e219068438f74f0926b315f0827fbc5"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 20,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "acb01a909cc91699cd3567d80b3225c5509e6d82",
+      "filename": "lib/turbo_tests.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/23c5da461725dc6048bbe67a6b2712b132160616/lib/turbo_tests.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/23c5da461725dc6048bbe67a6b2712b132160616/lib/turbo_tests.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/turbo_tests.rb?ref=23c5da461725dc6048bbe67a6b2712b132160616",
+      "patch": "@@ -1,10 +1,13 @@\n # frozen_string_literal: true\n \n+require 'bundler/setup'\n+\n require 'open3'\n require 'fileutils'\n require 'json'\n require 'rspec'\n require 'rails'\n+require File.expand_path('../../config/environment', __FILE__)\n \n require 'parallel_tests'\n require 'parallel_tests/rspec/runner'"
+    },
+    {
+      "sha": "ad9ca2b36888526edd5905a4975ab72737218fa2",
+      "filename": "lib/turbo_tests/runner.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/23c5da461725dc6048bbe67a6b2712b132160616/lib/turbo_tests/runner.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/23c5da461725dc6048bbe67a6b2712b132160616/lib/turbo_tests/runner.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/turbo_tests/runner.rb?ref=23c5da461725dc6048bbe67a6b2712b132160616",
+      "patch": "@@ -31,6 +31,8 @@ def initialize(opts)\n     end\n \n     def run\n+      check_for_migrations\n+\n       @num_processes = ParallelTests.determine_number_of_processes(nil)\n \n       tests_in_groups =\n@@ -55,6 +57,21 @@ def run\n \n     protected\n \n+    def check_for_migrations\n+      config =\n+        ActiveRecord::Base\n+          .configurations[\"test\"]\n+          .merge(\"database\" => \"discourse_test_1\")\n+\n+      conn = ActiveRecord::Base.establish_connection(config).connection\n+      begin\n+        ActiveRecord::Migration.check_pending!(conn)\n+      rescue ActiveRecord::PendingMigrationError\n+        puts \"There are pending migrations, run rake parallel:migrate\"\n+        exit 1\n+      end\n+    end\n+\n     def setup_tmp_dir\n       begin\n         FileUtils.rm_r('tmp/test-pipes')"
+    }
+  ]
+}
