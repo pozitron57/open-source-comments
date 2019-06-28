@@ -1,0 +1,110 @@
+{
+  "sha": "60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjYwZDlmMjA3YWU1NzUxNjVhNzkyYzNiN2RiZmVhOWFlMmZjODBhODk=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-06-28T16:58:09Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-06-28T16:58:09Z"
+    },
+    "message": "only permanent blocking delete all comments",
+    "tree": {
+      "sha": "83d837645b2312b16da7fff6ce95aa7afd22f58e",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/83d837645b2312b16da7fff6ce95aa7afd22f58e"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+  "html_url": "https://github.com/umputun/remark/commit/60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/60d9f207ae575165a792c3b7dbfea9ae2fc80a89/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c09eaa6e00180821455aecdc0cf61bcdf8530906",
+      "url": "https://api.github.com/repos/umputun/remark/commits/c09eaa6e00180821455aecdc0cf61bcdf8530906",
+      "html_url": "https://github.com/umputun/remark/commit/c09eaa6e00180821455aecdc0cf61bcdf8530906"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "cc0e64101195cba39bf71f05d57fbfef9065f7f3",
+      "filename": "backend/app/rest/api/admin.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/60d9f207ae575165a792c3b7dbfea9ae2fc80a89/backend/app/rest/api/admin.go",
+      "raw_url": "https://github.com/umputun/remark/raw/60d9f207ae575165a792c3b7dbfea9ae2fc80a89/backend/app/rest/api/admin.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/admin.go?ref=60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+      "patch": "@@ -145,8 +145,8 @@ func (a *admin) setBlockCtrl(w http.ResponseWriter, r *http.Request) {\n \t\treturn\n \t}\n \n-\t// delete comments for blocked user.\n-\tif blockStatus {\n+\t// delete comments for permanently blocked user.\n+\tif blockStatus && ttl == time.Duration(0) {\n \t\tif err := a.dataService.DeleteUser(siteID, userID, store.SoftDelete); err != nil {\n \t\t\tlog.Printf(\"[WARN] can't delete comments for blocked user %s on site %s, %v\", userID, siteID, err)\n \t\t}"
+    },
+    {
+      "sha": "6398cc2431448e6662f1f6d8ce2466e48f67d658",
+      "filename": "backend/app/rest/api/admin_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/60d9f207ae575165a792c3b7dbfea9ae2fc80a89/backend/app/rest/api/admin_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/60d9f207ae575165a792c3b7dbfea9ae2fc80a89/backend/app/rest/api/admin_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/admin_test.go?ref=60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+      "patch": "@@ -348,8 +348,8 @@ func TestAdmin_Block(t *testing.T) {\n \terr = json.Unmarshal([]byte(res), &comments)\n \tassert.Nil(t, err)\n \tassert.Equal(t, 4, len(comments.Comments), \"should have 4 comments\")\n-\tassert.Equal(t, \"\", comments.Comments[0].Text, \"still deleted\")\n-\tassert.True(t, comments.Comments[0].Deleted)\n+\tassert.Equal(t, \"test test #1\", comments.Comments[2].Text, \"restored\")\n+\tassert.False(t, comments.Comments[2].Deleted)\n \n \tassert.False(t, srv.adminRest.dataService.IsBlocked(\"radio-t\", \"user1\"))\n \tassert.False(t, srv.adminRest.dataService.IsBlocked(\"radio-t\", \"user2\"))"
+    }
+  ]
+}
