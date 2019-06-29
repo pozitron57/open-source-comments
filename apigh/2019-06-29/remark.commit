@@ -1,0 +1,110 @@
+{
+  "sha": "e5cc5e677b54ca043604e61de7672b46e5c864bf",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmU1Y2M1ZTY3N2I1NGNhMDQzNjA0ZTYxZGU3NjcyYjQ2ZTVjODY0YmY=",
+  "commit": {
+    "author": {
+      "name": "Vyrtsev Mikhail",
+      "email": "reeywhaar@gmail.com",
+      "date": "2019-06-29T14:48:29Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-06-29T16:13:05Z"
+    },
+    "message": "fix: settings widget fails because it expects list but gets null",
+    "tree": {
+      "sha": "59228c06b3ebcb048ccb41162f8d2deab6c78b32",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/59228c06b3ebcb048ccb41162f8d2deab6c78b32"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/e5cc5e677b54ca043604e61de7672b46e5c864bf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/e5cc5e677b54ca043604e61de7672b46e5c864bf",
+  "html_url": "https://github.com/umputun/remark/commit/e5cc5e677b54ca043604e61de7672b46e5c864bf",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/e5cc5e677b54ca043604e61de7672b46e5c864bf/comments",
+  "author": {
+    "login": "Reeywhaar",
+    "id": 884649,
+    "node_id": "MDQ6VXNlcjg4NDY0OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/884649?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Reeywhaar",
+    "html_url": "https://github.com/Reeywhaar",
+    "followers_url": "https://api.github.com/users/Reeywhaar/followers",
+    "following_url": "https://api.github.com/users/Reeywhaar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Reeywhaar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Reeywhaar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Reeywhaar/subscriptions",
+    "organizations_url": "https://api.github.com/users/Reeywhaar/orgs",
+    "repos_url": "https://api.github.com/users/Reeywhaar/repos",
+    "events_url": "https://api.github.com/users/Reeywhaar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Reeywhaar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+      "url": "https://api.github.com/repos/umputun/remark/commits/60d9f207ae575165a792c3b7dbfea9ae2fc80a89",
+      "html_url": "https://github.com/umputun/remark/commit/60d9f207ae575165a792c3b7dbfea9ae2fc80a89"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "490bb2f6a3bdc8e1a7e20c1dd81cc596ac283b3f",
+      "filename": "frontend/app/common/api.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/e5cc5e677b54ca043604e61de7672b46e5c864bf/frontend/app/common/api.ts",
+      "raw_url": "https://github.com/umputun/remark/raw/e5cc5e677b54ca043604e61de7672b46e5c864bf/frontend/app/common/api.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/common/api.ts?ref=e5cc5e677b54ca043604e61de7672b46e5c864bf",
+      "patch": "@@ -220,7 +220,7 @@ export const unblockUser = (\n     withCredentials: true,\n   });\n \n-export const getBlocked = (): Promise<BlockedUser[]> =>\n+export const getBlocked = (): Promise<BlockedUser[] | null> =>\n   fetcher.get({\n     url: '/admin/blocked',\n     withCredentials: true,"
+    },
+    {
+      "sha": "f71921c93a3c1be9b0a9cb80d078532c0ba4a1e0",
+      "filename": "frontend/app/store/user/actions.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/e5cc5e677b54ca043604e61de7672b46e5c864bf/frontend/app/store/user/actions.ts",
+      "raw_url": "https://github.com/umputun/remark/raw/e5cc5e677b54ca043604e61de7672b46e5c864bf/frontend/app/store/user/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/store/user/actions.ts?ref=e5cc5e677b54ca043604e61de7672b46e5c864bf",
+      "patch": "@@ -50,7 +50,7 @@ export const logout = (): StoreAction<Promise<void>> => async dispatch => {\n };\n \n export const fetchBlockedUsers = (): StoreAction<Promise<BlockedUser[]>> => async dispatch => {\n-  const list = await api.getBlocked();\n+  const list = (await api.getBlocked()) || [];\n   dispatch({\n     type: USER_BANLIST_SET,\n     list,"
+    }
+  ]
+}
