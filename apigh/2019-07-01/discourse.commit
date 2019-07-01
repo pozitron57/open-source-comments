@@ -1,0 +1,110 @@
+{
+  "sha": "dc5eb7655148742593257dbe690d829c264f26d2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkYzVlYjc2NTUxNDg3NDI1OTMyNTdkYmU2OTBkODI5YzI2NGYyNmQy",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2019-07-01T16:13:11Z"
+    },
+    "committer": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-07-01T16:13:11Z"
+    },
+    "message": "DEV: Let OmniAuth strategies return auth result. (#7833)",
+    "tree": {
+      "sha": "f561a4bad5100ae765e4210be44b20f27582d1aa",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f561a4bad5100ae765e4210be44b20f27582d1aa"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/dc5eb7655148742593257dbe690d829c264f26d2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/dc5eb7655148742593257dbe690d829c264f26d2",
+  "html_url": "https://github.com/discourse/discourse/commit/dc5eb7655148742593257dbe690d829c264f26d2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/dc5eb7655148742593257dbe690d829c264f26d2/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f56d86a85267128c511771e06a5c09967eb994d1",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f56d86a85267128c511771e06a5c09967eb994d1",
+      "html_url": "https://github.com/discourse/discourse/commit/f56d86a85267128c511771e06a5c09967eb994d1"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 29,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "138481eca07be3ba9019d4226efc64f1c0465e03",
+      "filename": "app/controllers/users/omniauth_callbacks_controller.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/dc5eb7655148742593257dbe690d829c264f26d2/app/controllers/users/omniauth_callbacks_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dc5eb7655148742593257dbe690d829c264f26d2/app/controllers/users/omniauth_callbacks_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/users/omniauth_callbacks_controller.rb?ref=dc5eb7655148742593257dbe690d829c264f26d2",
+      "patch": "@@ -19,6 +19,15 @@ class Users::OmniauthCallbacksController < ApplicationController\n   skip_before_action :verify_authenticity_token, only: :complete\n \n   def complete\n+    if result = request.env[\"omniauth.result\"]\n+      @auth_result = result\n+\n+      return respond_to do |format|\n+        format.html\n+        format.json { render json: @auth_result.to_client_hash }\n+      end\n+    end\n+\n     auth = request.env[\"omniauth.auth\"]\n     raise Discourse::NotFound unless request.env[\"omniauth.auth\"]\n "
+    },
+    {
+      "sha": "1ed3284971c5e6318c58a966a74dc689e7e478fc",
+      "filename": "spec/requests/omniauth_callbacks_controller_spec.rb",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/dc5eb7655148742593257dbe690d829c264f26d2/spec/requests/omniauth_callbacks_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dc5eb7655148742593257dbe690d829c264f26d2/spec/requests/omniauth_callbacks_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/omniauth_callbacks_controller_spec.rb?ref=dc5eb7655148742593257dbe690d829c264f26d2",
+      "patch": "@@ -12,6 +12,7 @@\n \n   after do\n     Rails.application.env_config[\"omniauth.auth\"] = OmniAuth.config.mock_auth[:google_oauth2] = nil\n+    Rails.application.env_config[\"omniauth.result\"] = nil\n     OmniAuth.config.test_mode = false\n   end\n \n@@ -79,6 +80,25 @@ def enabled?\n     end\n   end\n \n+  describe '.complete' do\n+    it 'will return result if present' do\n+      result = Auth::Result.new\n+      result.user = Fabricate(:user)\n+      result.authenticated = true\n+      result.destination_url = \"/anotherpath\"\n+\n+      Rails.application.env_config[\"omniauth.origin\"] = '/somepath'\n+      Rails.application.env_config[\"omniauth.result\"] = result\n+\n+      get \"/auth/test/callback.json\"\n+      response_body = JSON.parse(response.body)\n+\n+      expect(response.status).to eq(200)\n+      expect(response_body[\"authenticated\"]).to eq(true)\n+      expect(response_body[\"destination_url\"]).to eq(\"/anotherpath\")\n+    end\n+  end\n+\n   context 'Google Oauth2' do\n     before do\n       SiteSetting.enable_google_oauth2_logins = true"
+    }
+  ]
+}
