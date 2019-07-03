@@ -1,0 +1,110 @@
+{
+  "sha": "459932f4e2a9d46f1d250ab03bba50c272c769ef",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0NTk5MzJmNGUyYTlkNDZmMWQyNTBhYjAzYmJhNTBjMjcyYzc2OWVm",
+  "commit": {
+    "author": {
+      "name": "Bianca Nenciu",
+      "email": "nbianca@users.noreply.github.com",
+      "date": "2019-07-03T14:48:13Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-07-03T14:48:13Z"
+    },
+    "message": "FIX: Use title attribute for notification items. (#7840)",
+    "tree": {
+      "sha": "e19d138e647c47e480261d9ab83a1f681fe0a203",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e19d138e647c47e480261d9ab83a1f681fe0a203"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/459932f4e2a9d46f1d250ab03bba50c272c769ef",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/459932f4e2a9d46f1d250ab03bba50c272c769ef",
+  "html_url": "https://github.com/discourse/discourse/commit/459932f4e2a9d46f1d250ab03bba50c272c769ef",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/459932f4e2a9d46f1d250ab03bba50c272c769ef/comments",
+  "author": {
+    "login": "nbianca",
+    "id": 23153890,
+    "node_id": "MDQ6VXNlcjIzMTUzODkw",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/23153890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nbianca",
+    "html_url": "https://github.com/nbianca",
+    "followers_url": "https://api.github.com/users/nbianca/followers",
+    "following_url": "https://api.github.com/users/nbianca/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nbianca/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nbianca/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nbianca/subscriptions",
+    "organizations_url": "https://api.github.com/users/nbianca/orgs",
+    "repos_url": "https://api.github.com/users/nbianca/repos",
+    "events_url": "https://api.github.com/users/nbianca/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nbianca/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f3c9dbcf206e85a001201a695708e29aacdfc9c5",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f3c9dbcf206e85a001201a695708e29aacdfc9c5",
+      "html_url": "https://github.com/discourse/discourse/commit/f3c9dbcf206e85a001201a695708e29aacdfc9c5"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "ec567b51e5e89561f0a526239a83310df1690d69",
+      "filename": "app/assets/javascripts/discourse/widgets/custom-notification-item.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/459932f4e2a9d46f1d250ab03bba50c272c769ef/app/assets/javascripts/discourse/widgets/custom-notification-item.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/459932f4e2a9d46f1d250ab03bba50c272c769ef/app/assets/javascripts/discourse/widgets/custom-notification-item.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/custom-notification-item.js.es6?ref=459932f4e2a9d46f1d250ab03bba50c272c769ef",
+      "patch": "@@ -4,7 +4,7 @@ import { formatUsername } from \"discourse/lib/utilities\";\n import { iconNode } from \"discourse-common/lib/icon-library\";\n \n createWidgetFrom(DefaultNotificationItem, \"custom-notification-item\", {\n-  title(notificationName, data) {\n+  notificationTitle(notificationName, data) {\n     return data.title ? I18n.t(data.title) : \"\";\n   },\n "
+    },
+    {
+      "sha": "afbdbb59bdfd540df6699db5ba46f92c760bbde5",
+      "filename": "app/assets/javascripts/discourse/widgets/default-notification-item.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/459932f4e2a9d46f1d250ab03bba50c272c769ef/app/assets/javascripts/discourse/widgets/default-notification-item.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/459932f4e2a9d46f1d250ab03bba50c272c769ef/app/assets/javascripts/discourse/widgets/default-notification-item.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/default-notification-item.js.es6?ref=459932f4e2a9d46f1d250ab03bba50c272c769ef",
+      "patch": "@@ -91,7 +91,7 @@ export const DefaultNotificationItem = createWidget(\n       return iconNode(`notification.${notificationName}`);\n     },\n \n-    title(notificationName) {\n+    notificationTitle(notificationName) {\n       if (notificationName) {\n         return I18n.t(`notifications.titles.${notificationName}`);\n       } else {\n@@ -108,7 +108,7 @@ export const DefaultNotificationItem = createWidget(\n       let text = emojiUnescape(this.text(notificationName, data));\n       let icon = this.icon(notificationName, data);\n \n-      const title = this.title(notificationName, data);\n+      const title = this.notificationTitle(notificationName, data);\n \n       // We can use a `<p>` tag here once other languages have fixed their HTML\n       // translations."
+    }
+  ]
+}
