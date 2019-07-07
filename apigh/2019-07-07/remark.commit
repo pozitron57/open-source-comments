@@ -1,0 +1,98 @@
+{
+  "sha": "19efaf7e964fa8452974cef68ba8d27c011e345c",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjE5ZWZhZjdlOTY0ZmE4NDUyOTc0Y2VmNjhiYThkMjdjMDExZTM0NWM=",
+  "commit": {
+    "author": {
+      "name": "Vyrtsev Mikhail",
+      "email": "reeywhaar@gmail.com",
+      "date": "2019-07-07T00:08:37Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-07-07T00:24:24Z"
+    },
+    "message": "increase margins in email auth popup",
+    "tree": {
+      "sha": "9728df3498b67392773e2e01f6c9e85e3cc846a7",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/9728df3498b67392773e2e01f6c9e85e3cc846a7"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/19efaf7e964fa8452974cef68ba8d27c011e345c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/19efaf7e964fa8452974cef68ba8d27c011e345c",
+  "html_url": "https://github.com/umputun/remark/commit/19efaf7e964fa8452974cef68ba8d27c011e345c",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/19efaf7e964fa8452974cef68ba8d27c011e345c/comments",
+  "author": {
+    "login": "Reeywhaar",
+    "id": 884649,
+    "node_id": "MDQ6VXNlcjg4NDY0OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/884649?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Reeywhaar",
+    "html_url": "https://github.com/Reeywhaar",
+    "followers_url": "https://api.github.com/users/Reeywhaar/followers",
+    "following_url": "https://api.github.com/users/Reeywhaar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Reeywhaar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Reeywhaar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Reeywhaar/subscriptions",
+    "organizations_url": "https://api.github.com/users/Reeywhaar/orgs",
+    "repos_url": "https://api.github.com/users/Reeywhaar/repos",
+    "events_url": "https://api.github.com/users/Reeywhaar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Reeywhaar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "088294d36e6061f4860db0d909e57650d7e4d157",
+      "url": "https://api.github.com/repos/umputun/remark/commits/088294d36e6061f4860db0d909e57650d7e4d157",
+      "html_url": "https://github.com/umputun/remark/commit/088294d36e6061f4860db0d909e57650d7e4d157"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "6ff96ca5b7740083d7506ae80f9e45ce9ce855b7",
+      "filename": "frontend/app/components/auth-panel/__email-login-form/auth-panel__email-login-form.scss",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/19efaf7e964fa8452974cef68ba8d27c011e345c/frontend/app/components/auth-panel/__email-login-form/auth-panel__email-login-form.scss",
+      "raw_url": "https://github.com/umputun/remark/raw/19efaf7e964fa8452974cef68ba8d27c011e345c/frontend/app/components/auth-panel/__email-login-form/auth-panel__email-login-form.scss",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/auth-panel/__email-login-form/auth-panel__email-login-form.scss?ref=19efaf7e964fa8452974cef68ba8d27c011e345c",
+      "patch": "@@ -1,5 +1,5 @@\n .auth-panel-email-login-form {\n-  padding: 0.4em 0.6em;\n+  padding: 0.35em 0.55em;\n   display: flex;\n   flex-direction: column;\n   flex-wrap: nowrap;\n@@ -8,7 +8,7 @@\n .auth-panel-email-login-form__input,\n .auth-panel-email-login-form__token-input {\n   width: 12rem;\n-  margin: 0.1em;\n+  margin: 0.15rem;\n }\n \n .auth-panel-email-login-form__token-input {"
+    }
+  ]
+}
