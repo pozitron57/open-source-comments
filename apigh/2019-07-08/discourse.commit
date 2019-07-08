@@ -1,0 +1,122 @@
+{
+  "sha": "bb8cf810897cedb0740cda90a97694edc50a4085",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiYjhjZjgxMDg5N2NlZGIwNzQwY2RhOTBhOTc2OTRlZGM1MGE0MDg1",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-07-08T16:09:58Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-07-08T16:10:33Z"
+    },
+    "message": "Bump onebox version.\n\n- better placeholders for audio/video/trello/typeform oneboxes\n- added CSS for audio/video/trello/typeform onebox placeholders",
+    "tree": {
+      "sha": "25b6f5f19a6d9011321ebbb50b565d1b012fd809",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/25b6f5f19a6d9011321ebbb50b565d1b012fd809"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/bb8cf810897cedb0740cda90a97694edc50a4085",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/bb8cf810897cedb0740cda90a97694edc50a4085",
+  "html_url": "https://github.com/discourse/discourse/commit/bb8cf810897cedb0740cda90a97694edc50a4085",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/bb8cf810897cedb0740cda90a97694edc50a4085/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e49b5fa30c8eea6ca9aa5e85601ac2e6b4db9c27",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e49b5fa30c8eea6ca9aa5e85601ac2e6b4db9c27",
+      "html_url": "https://github.com/discourse/discourse/commit/e49b5fa30c8eea6ca9aa5e85601ac2e6b4db9c27"
+    }
+  ],
+  "stats": {
+    "total": 41,
+    "additions": 30,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "06f0719802d1d3f3cfa25799b3990a19b04cbcbd",
+      "filename": "Gemfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb8cf810897cedb0740cda90a97694edc50a4085/Gemfile",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb8cf810897cedb0740cda90a97694edc50a4085/Gemfile",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile?ref=bb8cf810897cedb0740cda90a97694edc50a4085",
+      "patch": "@@ -46,7 +46,7 @@ gem 'redis-namespace'\n \n gem 'active_model_serializers', '~> 0.8.3'\n \n-gem 'onebox', '1.8.99'\n+gem 'onebox', '1.9.0'\n \n gem 'http_accept_language', '~>2.0.5', require: false\n "
+    },
+    {
+      "sha": "c42577e8613ef4f6f20645d5aa080d639f287b98",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb8cf810897cedb0740cda90a97694edc50a4085/Gemfile.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb8cf810897cedb0740cda90a97694edc50a4085/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile.lock?ref=bb8cf810897cedb0740cda90a97694edc50a4085",
+      "patch": "@@ -238,7 +238,7 @@ GEM\n     omniauth-twitter (1.4.0)\n       omniauth-oauth (~> 1.1)\n       rack\n-    onebox (1.8.99)\n+    onebox (1.9.0)\n       htmlentities (~> 4.3)\n       moneta (~> 1.0)\n       multi_json (~> 1.11)\n@@ -487,7 +487,7 @@ DEPENDENCIES\n   omniauth-oauth2\n   omniauth-openid\n   omniauth-twitter\n-  onebox (= 1.8.99)\n+  onebox (= 1.9.0)\n   openid-redis-store\n   parallel_tests\n   pg"
+    },
+    {
+      "sha": "64e891c9415b57f3ae6ca17e82c4a0e962d75f1b",
+      "filename": "app/assets/stylesheets/common/base/onebox.scss",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 8,
+      "changes": 35,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb8cf810897cedb0740cda90a97694edc50a4085/app/assets/stylesheets/common/base/onebox.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb8cf810897cedb0740cda90a97694edc50a4085/app/assets/stylesheets/common/base/onebox.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/onebox.scss?ref=bb8cf810897cedb0740cda90a97694edc50a4085",
+      "patch": "@@ -607,24 +607,43 @@ aside.onebox.stackexchange .onebox-body {\n   }\n }\n \n-.onebox-video-placeholder {\n+.onebox-placeholder-container {\n   position: relative;\n   width: 100%;\n   padding: 0 0 48.25% 0;\n   background-color: $primary-low;\n \n-  .video-placeholder-icon {\n-    &:before {\n-      opacity: 0.8;\n-      content: svg-uri(\n-        '<svg width=\"128px\" height=\"128px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"><path fill=\"grey\" d=\"M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z\"></path></svg>'\n-      );\n-    }\n+  .placeholder-icon {\n     position: absolute;\n     width: 100%;\n     height: 100%;\n     display: flex;\n     justify-content: center;\n     align-items: center;\n+\n+    &.video {\n+      &:before {\n+        opacity: 0.8;\n+        content: svg-uri(\n+          '<svg width=\"128px\" height=\"128px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"><path fill=\"grey\" d=\"M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z\"></path></svg>'\n+        );\n+      }\n+    }\n+    &.audio {\n+      &:before {\n+        opacity: 0.4;\n+        content: svg-uri(\n+          '<svg width=\"128px\" height=\"128px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z\"></path></svg>'\n+        );\n+      }\n+    }\n+    &.generic {\n+      &:before {\n+        opacity: 0.4;\n+        content: svg-uri(\n+          '<svg width=\"128px\" height=\"128px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\"><path fill=\"currentColor\" d=\"M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z\"></path></svg>'\n+        );\n+      }\n+    }\n   }\n }"
+    }
+  ]
+}
