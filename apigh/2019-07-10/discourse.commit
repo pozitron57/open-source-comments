@@ -1,0 +1,254 @@
+{
+  "sha": "f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmODliZDU1NTc2M2JkNjFhMTMwMTQ1ZDJlZmY2YzJlZTc1ZmU2YjA2",
+  "commit": {
+    "author": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-07-10T14:38:51Z"
+    },
+    "committer": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-07-10T14:38:51Z"
+    },
+    "message": "Revert \"FEATURE: admin/user exports are compressed using the zip format (#7784)\"\n\nThis reverts commit 8b2580e20fc508f4e639210f7e64cbf096f95cfc.",
+    "tree": {
+      "sha": "a2275acadabfde6958711d26f936e871638ac972",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a2275acadabfde6958711d26f936e871638ac972"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+  "html_url": "https://github.com/discourse/discourse/commit/f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f89bd555763bd61a130145d2eff6c2ee75fe6b06/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "90fcdad3cdfac9fccfbd3c06ae5c0dc54833a522",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/90fcdad3cdfac9fccfbd3c06ae5c0dc54833a522",
+      "html_url": "https://github.com/discourse/discourse/commit/90fcdad3cdfac9fccfbd3c06ae5c0dc54833a522"
+    }
+  ],
+  "stats": {
+    "total": 117,
+    "additions": 29,
+    "deletions": 88
+  },
+  "files": [
+    {
+      "sha": "b7507fed24ca1080b6c8c60bbee43c78c7288e9a",
+      "filename": "Gemfile",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/Gemfile",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/Gemfile",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -203,8 +203,6 @@ gem \"sassc-rails\"\n gem 'rotp'\n gem 'rqrcode'\n \n-gem 'rubyzip', require: false\n-\n gem 'sshkey', require: false\n \n gem 'rchardet', require: false"
+    },
+    {
+      "sha": "b81b19fa6a72d5bfacd502323e3be91d013c4690",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/Gemfile.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile.lock?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -351,7 +351,6 @@ GEM\n       guess_html_encoding (>= 0.0.4)\n       nokogiri (>= 1.6.0)\n     ruby_dep (1.5.0)\n-    rubyzip (1.2.3)\n     safe_yaml (1.0.5)\n     sanitize (5.0.0)\n       crass (~> 1.0.2)\n@@ -517,7 +516,6 @@ DEPENDENCIES\n   rubocop\n   ruby-prof\n   ruby-readability\n-  rubyzip\n   sanitize\n   sassc\n   sassc-rails"
+    },
+    {
+      "sha": "153dbc9e8f1aa019b9f21ec7a31dea7b7757a90b",
+      "filename": "app/assets/javascripts/admin/templates/modal/admin-install-theme.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/app/assets/javascripts/admin/templates/modal/admin-install-theme.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/app/assets/javascripts/admin/templates/modal/admin-install-theme.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/modal/admin-install-theme.hbs?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -44,7 +44,7 @@\n \n     {{#if local}}\n       <div class=\"inputs\">\n-        <input onchange={{action \"uploadLocaleFile\"}} type=\"file\" id=\"file-input\" accept='.dcstyle.json,application/json,.tar.gz,application/x-gzip,.tar.zip,application/zip'><br>\n+        <input onchange={{action \"uploadLocaleFile\"}} type=\"file\" id=\"file-input\" accept='.dcstyle.json,application/json,.tar.gz,application/x-gzip'><br>\n         <span class=\"description\">{{i18n 'admin.customize.theme.import_file_tip'}}</span>\n       </div>\n     {{/if}}"
+    },
+    {
+      "sha": "5389269af870f05efc097f6bd0d28b5ac226aae2",
+      "filename": "app/controllers/admin/themes_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/app/controllers/admin/themes_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/app/controllers/admin/themes_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/themes_controller.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -88,7 +88,7 @@ def import\n       rescue RemoteTheme::ImportError => e\n         render_json_error e.message\n       end\n-    elsif params[:bundle] || (params[:theme] && [\"application/x-gzip\", \"application/gzip\", \"application/zip\"].include?(params[:theme].content_type))\n+    elsif params[:bundle] || (params[:theme] && [\"application/x-gzip\", \"application/gzip\"].include?(params[:theme].content_type))\n       # params[:bundle] used by theme CLI. params[:theme] used by admin UI\n       bundle = params[:bundle] || params[:theme]\n       theme_id = params[:theme_id]\n@@ -252,7 +252,6 @@ def export\n \n     exporter = ThemeStore::TgzExporter.new(@theme)\n     file_path = exporter.package_filename\n-\n     headers['Content-Length'] = File.size(file_path).to_s\n     send_data File.read(file_path),\n       filename: File.basename(file_path),"
+    },
+    {
+      "sha": "e1b57398c1a378c56db82d0fe812cb4d9f543292",
+      "filename": "app/jobs/regular/export_csv_file.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 7,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/app/jobs/regular/export_csv_file.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/app/jobs/regular/export_csv_file.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/regular/export_csv_file.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -1,7 +1,6 @@\n # frozen_string_literal: true\n \n require 'csv'\n-require 'zip'\n require_dependency 'system_message'\n require_dependency 'upload_creator'\n \n@@ -54,19 +53,18 @@ def execute(args)\n       # ensure directory exists\n       FileUtils.mkdir_p(UserExport.base_directory) unless Dir.exists?(UserExport.base_directory)\n \n-      # Generate a compressed CSV file\n-      csv_to_export = CSV.generate do |csv|\n+      # write to CSV file\n+      CSV.open(absolute_path, \"w\") do |csv|\n         csv << get_header if @entity != \"report\"\n         public_send(export_method).each { |d| csv << d }\n       end\n \n-      compressed_file_path = \"#{absolute_path}.zip\"\n-      Zip::File.open(compressed_file_path, Zip::File::CREATE) do |zipfile|\n-        zipfile.get_output_stream(file_name) { |f| f.puts csv_to_export }\n-      end\n+      # compress CSV file\n+      system('gzip', '-5', absolute_path)\n \n       # create upload\n       upload = nil\n+      compressed_file_path = \"#{absolute_path}.gz\"\n \n       if File.exist?(compressed_file_path)\n         File.open(compressed_file_path) do |file|"
+    },
+    {
+      "sha": "aad6399c5f256666a1d85cbcad1e511e1d0d2db6",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -3514,7 +3514,7 @@ en:\n           delete_upload_confirm: \"Delete this upload? (Theme CSS may stop working!)\"\n           import_web_tip: \"Repository containing theme\"\n           import_web_advanced: \"Advanced...\"\n-          import_file_tip: \".tar.gz, .tar.zip, or .dcstyle.json file containing theme\"\n+          import_file_tip: \".tar.gz or .dcstyle.json file containing theme\"\n           is_private: \"Theme is in a private git repository\"\n           remote_branch: \"Branch name (optional)\"\n           public_key: \"Grant the following public key access to the repo:\""
+    },
+    {
+      "sha": "74a2b8ee6144359f8fb92ae7845f41e4813fe623",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -2668,7 +2668,7 @@ en:\n \n         The above download link will be valid for 48 hours.\n \n-        The data is compressed as a zip archive. If the archive does not extract itself when you open it, use the tool recommended here: https://www.7-zip.org/\n+        The data is compressed as a gzip archive. If the archive does not extract itself when you open it, use the tools recommended here: https://www.gzip.org/#faq4\n \n     csv_export_failed:\n       title: \"CSV Export Failed\""
+    },
+    {
+      "sha": "1a9fbb94dd1767cbc6e905fa1aa0af7666d1fae5",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -1048,7 +1048,7 @@ files:\n     list_type: compact\n   export_authorized_extensions:\n     hidden: true\n-    default: \"zip\"\n+    default: \"gz\"\n     type: list\n     list_type: compact\n   responsive_post_image_sizes:"
+    },
+    {
+      "sha": "824a874ab947da4a8b427cfcd55413f586c3f5e1",
+      "filename": "lib/theme_store/tgz_exporter.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 12,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/lib/theme_store/tgz_exporter.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/lib/theme_store/tgz_exporter.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/theme_store/tgz_exporter.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -1,7 +1,5 @@\n # frozen_string_literal: true\n \n-require 'zip'\n-\n module ThemeStore; end\n \n class ThemeStore::TgzExporter\n@@ -60,19 +58,11 @@ def export_to_folder\n   private\n   def export_package\n     export_to_folder\n-\n     Dir.chdir(@temp_folder) do\n       tar_filename = \"#{@export_name}.tar\"\n       Discourse::Utils.execute_command('tar', '--create', '--file', tar_filename, @export_name, failure_message: \"Failed to tar theme.\")\n-\n-      zip_filename = \"#{tar_filename}.zip\"\n-      absolute_path = \"#{@temp_folder}/#{tar_filename}\"\n-      Zip::File.open(zip_filename, Zip::File::CREATE) do |zipfile|\n-        zipfile.add(tar_filename, absolute_path)\n-        zipfile.close\n-      end\n-\n-      \"#{absolute_path}.zip\"\n+      Discourse::Utils.execute_command('gzip', '-5', tar_filename, failure_message: \"Failed to gzip archive.\")\n+      \"#{@temp_folder}/#{tar_filename}.gz\"\n     end\n   end\n "
+    },
+    {
+      "sha": "5dfb0716e6810885f88e198aace78dacf20346e4",
+      "filename": "lib/theme_store/tgz_importer.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 17,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/lib/theme_store/tgz_importer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/lib/theme_store/tgz_importer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/theme_store/tgz_importer.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -1,7 +1,5 @@\n # frozen_string_literal: true\n \n-require 'zip'\n-\n module ThemeStore; end\n \n class ThemeStore::TgzImporter\n@@ -15,21 +13,8 @@ def initialize(filename)\n \n   def import!\n     FileUtils.mkdir(@temp_folder)\n-\n-    if @filename.include?('.zip')\n-      name = @filename.split('/').last.gsub('.zip', '')\n-\n-      Dir.chdir(@temp_folder) do\n-        Zip::File.open(@filename) do |zip_file|\n-          zip_file.each { |entry| entry.extract(name) }\n-        end\n-\n-        Discourse::Utils.execute_command(\"tar\", \"-xvf\", name, \"--strip\", \"1\")\n-      end\n-    else\n-      Dir.chdir(@temp_folder) do\n-        Discourse::Utils.execute_command(\"tar\", \"-xzvf\", @filename, \"--strip\", \"1\")\n-      end\n+    Dir.chdir(@temp_folder) do\n+      Discourse::Utils.execute_command(\"tar\", \"-xzvf\", @filename, \"--strip\", \"1\")\n     end\n   rescue RuntimeError\n     raise RemoteTheme::ImportError, I18n.t(\"themes.import_error.unpack_failed\")"
+    },
+    {
+      "sha": "b66bf6e1b08be684d8999ecfd5ce1f573c55551e",
+      "filename": "spec/components/theme_store/tgz_exporter_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 10,
+      "changes": 13,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/components/theme_store/tgz_exporter_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/components/theme_store/tgz_exporter_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/theme_store/tgz_exporter_spec.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -2,7 +2,6 @@\n \n require 'rails_helper'\n require 'theme_store/tgz_exporter'\n-require 'zip'\n \n describe ThemeStore::TgzExporter do\n   let!(:theme) do\n@@ -56,19 +55,13 @@\n     filename = exporter.package_filename\n     FileUtils.cp(filename, dir)\n     exporter.cleanup!\n-    \"#{dir}/discourse-header-icons.tar.zip\"\n+    \"#{dir}/discourse-header-icons.tar.gz\"\n   end\n \n   it \"exports the theme correctly\" do\n     package\n-    file = 'discourse-header-icons.tar.zip'\n-    dest = 'discourse-header-icons.tar'\n     Dir.chdir(\"#{dir}\") do\n-      Zip::File.open(file) do |zip_file|\n-        zip_file.each { |entry| entry.extract(dest) }\n-      end\n-\n-      `tar -xvf discourse-header-icons.tar 2> /dev/null`\n+      `tar -xzf discourse-header-icons.tar.gz`\n     end\n     Dir.chdir(\"#{dir}/discourse-header-icons\") do\n       folders = Dir.glob(\"**/*\").reject { |f| File.file?(f) }\n@@ -128,7 +121,7 @@\n     exporter = ThemeStore::TgzExporter.new(theme)\n     filename = exporter.package_filename\n     exporter.cleanup!\n-    expect(filename).to end_with \"/discourse-header-icons.tar.zip\"\n+    expect(filename).to end_with \"/discourse-header-icons.tar.gz\"\n   end\n \n end"
+    },
+    {
+      "sha": "2986b1d2c9c4d5194dfcd480f317769ca9cd53c2",
+      "filename": "spec/components/theme_store/tgz_importer_spec.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 27,
+      "changes": 34,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/components/theme_store/tgz_importer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/components/theme_store/tgz_importer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/theme_store/tgz_importer_spec.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -4,46 +4,26 @@\n \n require 'rails_helper'\n require 'theme_store/tgz_importer'\n-require 'zip'\n \n describe ThemeStore::TgzImporter do\n   before do\n     @temp_folder = \"#{Pathname.new(Dir.tmpdir).realpath}/discourse_theme_#{SecureRandom.hex}\"\n-\n-    FileUtils.mkdir(@temp_folder)\n-    Dir.chdir(@temp_folder) do\n-      FileUtils.mkdir('test/')\n-      File.write(\"test/hello.txt\", \"hello world\")\n-      FileUtils.mkdir('test/a')\n-      File.write(\"test/a/inner\", \"hello world inner\")\n-    end\n   end\n \n   after do\n     FileUtils.rm_rf @temp_folder\n   end\n \n-  it \"can import a simple zipped theme\" do\n-    Dir.chdir(@temp_folder) do\n-      `tar -cvf test.tar test/* 2> /dev/null`\n-\n-      Zip::File.open('test.tar.zip', Zip::File::CREATE) do |zipfile|\n-        zipfile.add('test.tar', \"#{@temp_folder}/test.tar\")\n-        zipfile.close\n-      end\n-    end\n-\n-    importer = ThemeStore::TgzImporter.new(\"#{@temp_folder}/test.tar.zip\")\n-    importer.import!\n-\n-    expect(importer[\"hello.txt\"]).to eq(\"hello world\")\n-    expect(importer[\"a/inner\"]).to eq(\"hello world inner\")\n+  it \"can import a simple theme\" do\n \n-    importer.cleanup!\n-  end\n+    FileUtils.mkdir(@temp_folder)\n \n-  it \"can import a simple gzipped theme\" do\n     Dir.chdir(@temp_folder) do\n+      FileUtils.mkdir('test/')\n+      File.write(\"test/hello.txt\", \"hello world\")\n+      FileUtils.mkdir('test/a')\n+      File.write(\"test/a/inner\", \"hello world inner\")\n+\n       `tar -cvzf test.tar.gz test/* 2> /dev/null`\n     end\n "
+    },
+    {
+      "sha": "e9a3dfe601ab103f4f1d1fc94d5b8ae38d000141",
+      "filename": "spec/components/validators/upload_validator_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/components/validators/upload_validator_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/components/validators/upload_validator_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/validators/upload_validator_spec.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -22,14 +22,14 @@\n     it \"allows 'gz' as extension when uploading export file\" do\n       SiteSetting.authorized_extensions = \"\"\n \n-      expect(UploadCreator.new(csv_file, \"#{filename}.zip\", for_export: true).create_for(user.id)).to be_valid\n+      expect(UploadCreator.new(csv_file, \"#{filename}.gz\", for_export: true).create_for(user.id)).to be_valid\n     end\n \n     it \"allows uses max_export_file_size_kb when uploading export file\" do\n       SiteSetting.max_attachment_size_kb = \"0\"\n-      SiteSetting.authorized_extensions = \"zip\"\n+      SiteSetting.authorized_extensions = \"gz\"\n \n-      expect(UploadCreator.new(csv_file, \"#{filename}.zip\", for_export: true).create_for(user.id)).to be_valid\n+      expect(UploadCreator.new(csv_file, \"#{filename}.gz\", for_export: true).create_for(user.id)).to be_valid\n     end\n \n     describe 'when allow_staff_to_upload_any_file_in_pm is true' do"
+    },
+    {
+      "sha": "4f32a63e0130fb6ba06c3d7409585ddd6a796a85",
+      "filename": "spec/requests/admin/themes_controller_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/requests/admin/themes_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f89bd555763bd61a130145d2eff6c2ee75fe6b06/spec/requests/admin/themes_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/themes_controller_spec.rb?ref=f89bd555763bd61a130145d2eff6c2ee75fe6b06",
+      "patch": "@@ -51,10 +51,10 @@\n       expect(response.status).to eq(200)\n \n       # Save the output in a temp file (automatically cleaned up)\n-      file = Tempfile.new('archive.tar.zip')\n+      file = Tempfile.new('archive.tar.gz')\n       file.write(response.body)\n       file.rewind\n-      uploaded_file = Rack::Test::UploadedFile.new(file.path, \"application/zip\")\n+      uploaded_file = Rack::Test::UploadedFile.new(file.path, \"application/x-gzip\")\n \n       # Now import it again\n       expect do"
+    }
+  ]
+}
