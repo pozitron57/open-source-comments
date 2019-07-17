@@ -1,0 +1,134 @@
+{
+  "sha": "2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjJmN2M0ZTdlMDM4MTgxZmM5ZmRiNGFhOTk5ZGEyOWY2NzA4NjZiNWU=",
+  "commit": {
+    "author": {
+      "name": "Konstantin Krivlenia",
+      "email": "krivlenia@gmail.com",
+      "date": "2019-07-16T15:27:44Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-07-16T15:27:44Z"
+    },
+    "message": "Add a button for image upload (#372)\n\n* #371 add image icon for toolbar\r\n\r\n* #371 add file upload handler\r\n\r\n* #371 upload image from clipboard\r\n\r\n* #371 change title and decrease size for upload button\r\n\r\n* #371 allow upload few files\r\n\r\n* #371 prevent paste text after file was uploaded in firefox",
+    "tree": {
+      "sha": "0268b25804cc705f6b49e6357557168acedfdcee",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/0268b25804cc705f6b49e6357557168acedfdcee"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+  "html_url": "https://github.com/umputun/remark/commit/2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/comments",
+  "author": {
+    "login": "Mavrin",
+    "id": 1193817,
+    "node_id": "MDQ6VXNlcjExOTM4MTc=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1193817?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Mavrin",
+    "html_url": "https://github.com/Mavrin",
+    "followers_url": "https://api.github.com/users/Mavrin/followers",
+    "following_url": "https://api.github.com/users/Mavrin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Mavrin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Mavrin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Mavrin/subscriptions",
+    "organizations_url": "https://api.github.com/users/Mavrin/orgs",
+    "repos_url": "https://api.github.com/users/Mavrin/repos",
+    "events_url": "https://api.github.com/users/Mavrin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Mavrin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "17f61ee33930148fd1a297b9a7199dbe6ff08e48",
+      "url": "https://api.github.com/repos/umputun/remark/commits/17f61ee33930148fd1a297b9a7199dbe6ff08e48",
+      "html_url": "https://github.com/umputun/remark/commit/17f61ee33930148fd1a297b9a7199dbe6ff08e48"
+    }
+  ],
+  "stats": {
+    "total": 68,
+    "additions": 67,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "fd58dca5e0387ef44d4b3ccaf6053a4776514e9a",
+      "filename": "frontend/app/components/input/__markdown-toolbar/input__markdown-toolbar.scss",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/__markdown-toolbar/input__markdown-toolbar.scss",
+      "raw_url": "https://github.com/umputun/remark/raw/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/__markdown-toolbar/input__markdown-toolbar.scss",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/input/__markdown-toolbar/input__markdown-toolbar.scss?ref=2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+      "patch": "@@ -3,6 +3,14 @@\n   float: right;\n }\n \n+.input__toolbar-file-input {\n+  position: absolute;\n+  width: 1px;\n+  height: 1px;\n+  overflow: hidden;\n+  clip: rect(0 0 0 0);\n+}\n+\n .input__toolbar-item {\n   background: none;\n   border: 0;"
+    },
+    {
+      "sha": "8478e8a925d7cc19451f92fda03063041a814c1f",
+      "filename": "frontend/app/components/input/input.tsx",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 1,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark/blob/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/input.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/input.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/input/input.tsx?ref=2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+      "patch": "@@ -92,6 +92,7 @@ export class Input extends Component<Props, State> {\n     this.appendError = this.appendError.bind(this);\n     this.uploadImage = this.uploadImage.bind(this);\n     this.uploadImages = this.uploadImages.bind(this);\n+    this.onPaste = this.onPaste.bind(this);\n   }\n \n   componentWillReceiveProps(nextProps: Props) {\n@@ -135,6 +136,15 @@ export class Input extends Component<Props, State> {\n     });\n   }\n \n+  async onPaste(e: ClipboardEvent) {\n+    if (!(e.clipboardData && e.clipboardData.files.length > 0)) {\n+      return;\n+    }\n+    e.preventDefault();\n+    const files = Array.from(e.clipboardData.files);\n+    await this.uploadImages(files);\n+  }\n+\n   send(e: Event) {\n     const text = this.state.text;\n     const props = this.props;\n@@ -354,11 +364,16 @@ export class Input extends Component<Props, State> {\n         onDrop={this.onDrop}\n       >\n         <div className=\"input__control-panel\">\n-          <MarkdownToolbar textareaId={this.textareaId} />\n+          <MarkdownToolbar\n+            allowUpload={Boolean(this.props.uploadImage)}\n+            uploadImages={this.uploadImages}\n+            textareaId={this.textareaId}\n+          />\n         </div>\n         <div className=\"input__field-wrapper\">\n           <TextareaAutosize\n             id={this.textareaId}\n+            onPaste={this.onPaste}\n             ref={ref => (this.textAreaRef = ref)}\n             className=\"input__field\"\n             placeholder=\"Your comment here\""
+    },
+    {
+      "sha": "d1766ab1b663b2f247631179038bdf3f31767f87",
+      "filename": "frontend/app/components/input/markdown-toolbar-icons/image-icon.tsx",
+      "status": "added",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark/blob/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/markdown-toolbar-icons/image-icon.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/markdown-toolbar-icons/image-icon.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/input/markdown-toolbar-icons/image-icon.tsx?ref=2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+      "patch": "@@ -0,0 +1,13 @@\n+/** @jsx h */\n+import { h } from 'preact';\n+\n+export default function ImageIcon() {\n+  return (\n+    <svg className=\"input__toolbar-icon\" width=\"11.25\" height=\"15\" viewBox=\"0 0 384 512\" aria-hidden=\"true\">\n+      <path\n+        fill-rule=\"evenodd\"\n+        d=\"M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm32-48h224V288l-23.5-23.5c-4.7-4.7-12.3-4.7-17 0L176 352l-39.5-39.5c-4.7-4.7-12.3-4.7-17 0L80 352v64zm48-240c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z\"\n+      />\n+    </svg>\n+  );\n+}"
+    },
+    {
+      "sha": "9c29ebe7b1f644f9d2c624b4826045c042b00aa9",
+      "filename": "frontend/app/components/input/markdown-toolbar.tsx",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 0,
+      "changes": 30,
+      "blob_url": "https://github.com/umputun/remark/blob/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/markdown-toolbar.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/2f7c4e7e038181fc9fdb4aa999da29f670866b5e/frontend/app/components/input/markdown-toolbar.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/input/markdown-toolbar.tsx?ref=2f7c4e7e038181fc9fdb4aa999da29f670866b5e",
+      "patch": "@@ -7,11 +7,23 @@ import ItalicIcon from './markdown-toolbar-icons/italic-icon';\n import QuoteIcon from './markdown-toolbar-icons/quote-icon';\n import CodeIcon from './markdown-toolbar-icons/code-icon';\n import LinkIcon from './markdown-toolbar-icons/link-icon';\n+import ImageIcon from './markdown-toolbar-icons/image-icon';\n import UnorderedListIcon from './markdown-toolbar-icons/unordered-list-icon';\n import OrderedListIcon from './markdown-toolbar-icons/ordered-list-icon';\n \n interface Props {\n   textareaId: string;\n+  uploadImages: (files: File[]) => Promise<void>;\n+  allowUpload: boolean;\n+}\n+\n+interface FileEventTarget extends EventTarget {\n+  readonly files: FileList | null;\n+  value: string | null;\n+}\n+\n+interface FileInputEvent extends Event {\n+  readonly currentTarget: FileEventTarget | null;\n }\n \n const boldLabel = 'Add bold text <cmd-b>';\n@@ -22,8 +34,20 @@ const codeLabel = 'Insert a code';\n const linkLabel = 'Add a link <cmd-k>';\n const unorderedListLabel = 'Add a bulleted list';\n const orderedListLabel = 'Add a numbered list';\n+const attachImageLabel = 'Attach the image, drag & drop or paste from clipboard';\n \n export default class MarkdownToolbar extends Component<Props> {\n+  constructor(props: Props) {\n+    super(props);\n+    this.uploadImages = this.uploadImages.bind(this);\n+  }\n+  async uploadImages(e: Event) {\n+    const currentTarget = (e as FileInputEvent).currentTarget;\n+    if (!(this.props.allowUpload && currentTarget && currentTarget.files && currentTarget.files.length !== 0)) return;\n+    const files = Array.from(currentTarget.files);\n+    await this.props.uploadImages(files);\n+    currentTarget.value = null;\n+  }\n   render(props: RenderableProps<Props>) {\n     return (\n       <markdown-toolbar className=\"input__toolbar\" for={props.textareaId}>\n@@ -48,6 +72,12 @@ export default class MarkdownToolbar extends Component<Props> {\n           <md-link className=\"input__toolbar-item\" title={linkLabel} aria-label={linkLabel}>\n             <LinkIcon />\n           </md-link>\n+          {this.props.allowUpload ? (\n+            <label className=\"input__toolbar-item\" title={attachImageLabel} aria-label={attachImageLabel}>\n+              <input multiple class=\"input__toolbar-file-input\" type=\"file\" onChange={this.uploadImages} />\n+              <ImageIcon />\n+            </label>\n+          ) : null}\n         </div>\n         <div className=\"input__toolbar-group\">\n           <md-unordered-list className=\"input__toolbar-item\" title={unorderedListLabel} aria-label={unorderedListLabel}>"
+    }
+  ]
+}

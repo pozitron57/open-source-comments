@@ -1,0 +1,98 @@
+{
+  "sha": "98866ca0434a60da77224733f7e5c33cece5d077",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5ODg2NmNhMDQzNGE2MGRhNzcyMjQ3MzNmN2U1YzMzY2VjZTVkMDc3",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-07-17T13:15:13Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-07-17T13:15:29Z"
+    },
+    "message": "Adds down SQL statements to badge icons migration\n\nfollows up on a571efba",
+    "tree": {
+      "sha": "e01739427699e34129a8919777b40766d51d06ee",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e01739427699e34129a8919777b40766d51d06ee"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/98866ca0434a60da77224733f7e5c33cece5d077",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/98866ca0434a60da77224733f7e5c33cece5d077",
+  "html_url": "https://github.com/discourse/discourse/commit/98866ca0434a60da77224733f7e5c33cece5d077",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/98866ca0434a60da77224733f7e5c33cece5d077/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4f0004a0c277b6a32f144c99003726437c8c3b21",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/4f0004a0c277b6a32f144c99003726437c8c3b21",
+      "html_url": "https://github.com/discourse/discourse/commit/4f0004a0c277b6a32f144c99003726437c8c3b21"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "73540dd957b8f44098b04ed063d59230e1330400",
+      "filename": "db/migrate/20190716014949_rename_deprecated_badge_icons.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/98866ca0434a60da77224733f7e5c33cece5d077/db/migrate/20190716014949_rename_deprecated_badge_icons.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/98866ca0434a60da77224733f7e5c33cece5d077/db/migrate/20190716014949_rename_deprecated_badge_icons.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20190716014949_rename_deprecated_badge_icons.rb?ref=98866ca0434a60da77224733f7e5c33cece5d077",
+      "patch": "@@ -7,5 +7,7 @@ def up\n   end\n \n   def down\n+    execute \"UPDATE badges SET icon = 'fa-clock-o' WHERE icon = 'far-clock'\"\n+    execute \"UPDATE badges SET icon = 'fa-eye' WHERE icon = 'far-eye'\"\n   end\n end"
+    }
+  ]
+}
