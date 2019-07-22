@@ -1,0 +1,98 @@
+{
+  "sha": "240796b2d653394447bbc5506c1d6a9a66f199ef",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjI0MDc5NmIyZDY1MzM5NDQ0N2JiYzU1MDZjMWQ2YTlhNjZmMTk5ZWY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-07-21T17:26:15Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-07-21T17:26:15Z"
+    },
+    "message": "update doc with the current /config response document",
+    "tree": {
+      "sha": "90f988d450f6e281b1b7a44653a68cf2d2fedd97",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/90f988d450f6e281b1b7a44653a68cf2d2fedd97"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/240796b2d653394447bbc5506c1d6a9a66f199ef",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/240796b2d653394447bbc5506c1d6a9a66f199ef",
+  "html_url": "https://github.com/umputun/remark/commit/240796b2d653394447bbc5506c1d6a9a66f199ef",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/240796b2d653394447bbc5506c1d6a9a66f199ef/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ad3b7c695acdb7521564c29ec6a710c5f9ba372e",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ad3b7c695acdb7521564c29ec6a710c5f9ba372e",
+      "html_url": "https://github.com/umputun/remark/commit/ad3b7c695acdb7521564c29ec6a710c5f9ba372e"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 12,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "48c823a105d5cab05c9f158b9deb94b13df87c1c",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 11,
+      "changes": 23,
+      "blob_url": "https://github.com/umputun/remark/blob/240796b2d653394447bbc5506c1d6a9a66f199ef/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/240796b2d653394447bbc5506c1d6a9a66f199ef/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=240796b2d653394447bbc5506c1d6a9a66f199ef",
+      "patch": "@@ -624,17 +624,18 @@ Sort can be `time`, `active` or `score`. Supported sort order with prefix -/+, i\n \n   ```go\n   type Config struct {\n-      Version        string   `json:\"version\"`\n-      EditDuration   int      `json:\"edit_duration\"`\n-      MaxCommentSize int      `json:\"max_comment_size\"`\n-      Admins         []string `json:\"admins\"`\n-      AdminEmail     string   `json:\"admin_email\"`\n-      Auth           []string `json:\"auth_providers\"`\n-      LowScore       int      `json:\"low_score\"`\n-      CriticalScore  int      `json:\"critical_score\"`\n-      PositiveScore  bool     `json:\"positive_score\"`\n-      ReadOnlyAge    int      `json:\"readonly_age\"`\n-      MaxImageSize   int      `json:\"max_image_size\"`\n+     \tVersion        string   `json:\"version\"`\n+        EditDuration   int      `json:\"edit_duration\"`\n+        MaxCommentSize int      `json:\"max_comment_size\"`\n+        Admins         []string `json:\"admins\"`\n+        AdminEmail     string   `json:\"admin_email\"`\n+        Auth           []string `json:\"auth_providers\"`\n+        LowScore       int      `json:\"low_score\"`\n+        CriticalScore  int      `json:\"critical_score\"`\n+        PositiveScore  bool     `json:\"positive_score\"`\n+        ReadOnlyAge    int      `json:\"readonly_age\"`\n+        MaxImageSize   int      `json:\"max_image_size\"`\n+        EmojiEnabled   bool     `json:\"emoji_enabled\"`\n   }\n   ```\n "
+    }
+  ]
+}
