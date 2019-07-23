@@ -1,0 +1,110 @@
+{
+  "sha": "4d7699ec5e330d6618ee805711ffd3cb6c71e4c7",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjRkNzY5OWVjNWUzMzBkNjYxOGVlODA1NzExZmZkM2NiNmM3MWU0Yzc=",
+  "commit": {
+    "author": {
+      "name": "Misha Vyrtsev",
+      "email": "reeywhaar@gmail.com",
+      "date": "2019-07-23T00:05:02Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-07-23T00:05:02Z"
+    },
+    "message": "Fix blocking (#381)\n\n* fix blocked user appears unblocked after refresh\r\n\r\n* modify comment rendering to temporary blocking",
+    "tree": {
+      "sha": "f147dc08db75ead653eb4aaad9aa5763c74a7abc",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/f147dc08db75ead653eb4aaad9aa5763c74a7abc"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7",
+  "html_url": "https://github.com/umputun/remark/commit/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7/comments",
+  "author": {
+    "login": "Reeywhaar",
+    "id": 884649,
+    "node_id": "MDQ6VXNlcjg4NDY0OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/884649?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Reeywhaar",
+    "html_url": "https://github.com/Reeywhaar",
+    "followers_url": "https://api.github.com/users/Reeywhaar/followers",
+    "following_url": "https://api.github.com/users/Reeywhaar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Reeywhaar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Reeywhaar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Reeywhaar/subscriptions",
+    "organizations_url": "https://api.github.com/users/Reeywhaar/orgs",
+    "repos_url": "https://api.github.com/users/Reeywhaar/repos",
+    "events_url": "https://api.github.com/users/Reeywhaar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Reeywhaar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7103dbb58991975901cb63ea6f9ecc5b81141b47",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7103dbb58991975901cb63ea6f9ecc5b81141b47",
+      "html_url": "https://github.com/umputun/remark/commit/7103dbb58991975901cb63ea6f9ecc5b81141b47"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 7,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "2899d3e3c2a286dbbdb745558fc27b8df7690d2e",
+      "filename": "frontend/app/components/comment/comment.tsx",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 9,
+      "changes": 15,
+      "blob_url": "https://github.com/umputun/remark/blob/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7/frontend/app/components/comment/comment.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7/frontend/app/components/comment/comment.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/comment/comment.tsx?ref=4d7699ec5e330d6618ee805711ffd3cb6c71e4c7",
+      "patch": "@@ -454,15 +454,12 @@ export class Comment extends Component<Props, State> {\n     const o = {\n       ...props.data,\n       controversyText: `Controversy: ${(props.data.controversy || 0).toFixed(2)}`,\n-      text: props.data.text.length\n-        ? props.view === 'preview'\n+      text:\n+        props.view === 'preview'\n           ? getTextSnippet(props.data.text)\n-          : props.data.text\n-        : this.props.isUserBanned\n-        ? 'This user was blocked'\n-        : props.data.delete\n-        ? 'This comment was deleted'\n-        : props.data.text,\n+          : props.data.delete\n+          ? 'This comment was deleted'\n+          : props.data.text,\n       time: formatTime(new Date(props.data.time)),\n       orig: isEditing\n         ? props.data.orig &&\n@@ -587,7 +584,7 @@ export class Comment extends Component<Props, State> {\n               </a>\n             )}\n \n-            {isAdmin && props.isUserBanned && props.view !== 'user' && <span className=\"comment__status\">Blocked</span>}\n+            {props.isUserBanned && props.view !== 'user' && <span className=\"comment__status\">Blocked</span>}\n \n             {isAdmin && !props.isUserBanned && props.data.delete && <span className=\"comment__status\">Deleted</span>}\n "
+    },
+    {
+      "sha": "0fc6cae31edba7d157c10db0adbaeed38bad131d",
+      "filename": "frontend/app/components/comment/connected-comment.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7/frontend/app/components/comment/connected-comment.ts",
+      "raw_url": "https://github.com/umputun/remark/raw/4d7699ec5e330d6618ee805711ffd3cb6c71e4c7/frontend/app/components/comment/connected-comment.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/comment/connected-comment.ts?ref=4d7699ec5e330d6618ee805711ffd3cb6c71e4c7",
+      "patch": "@@ -40,7 +40,7 @@ const mapStateToProps = (state: StoreState, cprops: { data: CommentType }) => {\n   > = {\n     editMode: getCommentMode(state, cprops.data.id),\n     user: state.user,\n-    isUserBanned: state.bannedUsers.find(u => u.id === cprops.data.user.id) !== undefined,\n+    isUserBanned: cprops.data.user.block || state.bannedUsers.find(u => u.id === cprops.data.user.id) !== undefined,\n     post_info: state.info,\n     isCommentsDisabled: state.info.read_only || false,\n     theme: state.theme,"
+    }
+  ]
+}

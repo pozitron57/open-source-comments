@@ -1,0 +1,110 @@
+{
+  "sha": "9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5ZTBhM2I4MjI5Njc0N2UwMGE1ZDBhYzJkZjg1NWU3ZjEyYWE5YzJh",
+  "commit": {
+    "author": {
+      "name": "Saurabh Patel",
+      "email": "saurabh.finch@gmail.com",
+      "date": "2019-07-23T16:16:03Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-07-23T16:16:03Z"
+    },
+    "message": "bug: keep query params present in auth_redirect (#7923)\n\nhttps://meta.discourse.org/t/user-api-keys-payload-and-existing-query-string-leads-to-a-double-question-mark/123617",
+    "tree": {
+      "sha": "82f3a47ba8ad8d75212905defa0e00452100357c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/82f3a47ba8ad8d75212905defa0e00452100357c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a",
+  "html_url": "https://github.com/discourse/discourse/commit/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a/comments",
+  "author": {
+    "login": "mrfinch",
+    "id": 6376157,
+    "node_id": "MDQ6VXNlcjYzNzYxNTc=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/6376157?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mrfinch",
+    "html_url": "https://github.com/mrfinch",
+    "followers_url": "https://api.github.com/users/mrfinch/followers",
+    "following_url": "https://api.github.com/users/mrfinch/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mrfinch/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mrfinch/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mrfinch/subscriptions",
+    "organizations_url": "https://api.github.com/users/mrfinch/orgs",
+    "repos_url": "https://api.github.com/users/mrfinch/repos",
+    "events_url": "https://api.github.com/users/mrfinch/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mrfinch/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "abe6202af9c6cf4cccc0edc9ff546fd246ffa197",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/abe6202af9c6cf4cccc0edc9ff546fd246ffa197",
+      "html_url": "https://github.com/discourse/discourse/commit/abe6202af9c6cf4cccc0edc9ff546fd246ffa197"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 23,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "d5d9e09cb6d5cf31177673238a2bf40b59f92502",
+      "filename": "app/controllers/user_api_keys_controller.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a/app/controllers/user_api_keys_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a/app/controllers/user_api_keys_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/user_api_keys_controller.rb?ref=9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a",
+      "patch": "@@ -93,9 +93,12 @@ def create\n     end\n \n     if params[:auth_redirect]\n-      redirect_path = +\"#{params[:auth_redirect]}?payload=#{CGI.escape(@payload)}\"\n-      redirect_path << \"&oneTimePassword=#{CGI.escape(otp_payload)}\" if scopes.include?(\"one_time_password\")\n-      redirect_to(redirect_path)\n+      uri = URI.parse(params[:auth_redirect])\n+      query_attributes = [uri.query, \"payload=#{CGI.escape(@payload)}\"]\n+      query_attributes << \"oneTimePassword=#{CGI.escape(otp_payload)}\" if scopes.include?(\"one_time_password\")\n+      uri.query = query_attributes.compact.join('&')\n+\n+      redirect_to(uri.to_s)\n     else\n       respond_to do |format|\n         format.html { render :show }"
+    },
+    {
+      "sha": "43aac9e83f1a3a286455823d800aff828f3610d9",
+      "filename": "spec/requests/user_api_keys_controller_spec.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a/spec/requests/user_api_keys_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a/spec/requests/user_api_keys_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/user_api_keys_controller_spec.rb?ref=9e0a3b82296747e00a5d0ac2df855e7f12aa9c2a",
+      "patch": "@@ -260,6 +260,23 @@\n       post \"/user-api-key.json\", params: args\n       expect(response.status).to eq(302)\n     end\n+\n+    it 'will keep query_params added in auth_redirect' do\n+      SiteSetting.min_trust_level_for_user_api_key = 0\n+      SiteSetting.allowed_user_api_auth_redirects = args[:auth_redirect] + \"/*\"\n+\n+      user = Fabricate(:user, trust_level: 0)\n+      sign_in(user)\n+\n+      query_str = \"/?param1=val1\"\n+      args[:auth_redirect] = args[:auth_redirect] + query_str\n+\n+      post \"/user-api-key.json\", params: args\n+      expect(response.status).to eq(302)\n+\n+      uri = URI.parse(response.redirect_url)\n+      expect(uri.to_s).to include(query_str)\n+    end\n   end\n \n   context '#create-one-time-password' do"
+    }
+  ]
+}
