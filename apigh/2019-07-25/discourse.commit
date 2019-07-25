@@ -1,0 +1,122 @@
+{
+  "sha": "a7279681122e1ace90b72891de3a748e15f1610d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNzI3OTY4MTEyMmUxYWNlOTBiNzI4OTFkZTNhNzQ4ZTE1ZjE2MTBk",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-07-25T16:46:16Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-07-25T16:46:16Z"
+    },
+    "message": "FIX: Provide an error message if no valid tags were selected",
+    "tree": {
+      "sha": "ab560a809f6949a6ec9c2324915c533f0d540413",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ab560a809f6949a6ec9c2324915c533f0d540413"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a7279681122e1ace90b72891de3a748e15f1610d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a7279681122e1ace90b72891de3a748e15f1610d",
+  "html_url": "https://github.com/discourse/discourse/commit/a7279681122e1ace90b72891de3a748e15f1610d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a7279681122e1ace90b72891de3a748e15f1610d/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fd12c414e7c9484b38e4f2aac1f0911847e564f1",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fd12c414e7c9484b38e4f2aac1f0911847e564f1",
+      "html_url": "https://github.com/discourse/discourse/commit/fd12c414e7c9484b38e4f2aac1f0911847e564f1"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 25,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "fe6978038e0119b7a3acf82922ebfa4ef116a1dd",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/a7279681122e1ace90b72891de3a748e15f1610d/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/a7279681122e1ace90b72891de3a748e15f1610d/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=a7279681122e1ace90b72891de3a748e15f1610d",
+      "patch": "@@ -4231,6 +4231,9 @@ en:\n       other: \"You must select at least %{count} tags.\"\n     upload_row_too_long: \"The CSV file should have one tag per line. Optionally the tag can be followed by a comma, then the tag group name.\"\n     forbidden:\n+      invalid:\n+        one: \"The tag you selected cannot be used\"\n+        other: \"None of the tags you selected can be used\"\n       in_this_category: '\"%{tag_name}\" cannot be used in this category'\n       restricted_to:\n         one: '\"%{tag_name}\" is restricted to the \"%{category_names}\" category'"
+    },
+    {
+      "sha": "0213eb73fcebcbbb58c5c46ef473ea28bdd8605e",
+      "filename": "lib/discourse_tagging.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/a7279681122e1ace90b72891de3a748e15f1610d/lib/discourse_tagging.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a7279681122e1ace90b72891de3a748e15f1610d/lib/discourse_tagging.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/discourse_tagging.rb?ref=a7279681122e1ace90b72891de3a748e15f1610d",
+      "patch": "@@ -83,7 +83,11 @@ def self.tag_topic_by_names(topic, guardian, tag_names_arg, append: false)\n           return false\n         end\n \n-        return false if tags.size == 0\n+        if tags.size == 0\n+          topic.errors.add(:base, I18n.t(\"tags.forbidden.invalid\", count: new_tag_names.size))\n+          return false\n+        end\n+\n         topic.tags = tags\n       else\n         # validate minimum required tags for a category"
+    },
+    {
+      "sha": "7a8c83f97c4b74fffaf21d1645decdc23c019cae",
+      "filename": "spec/requests/posts_controller_spec.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/a7279681122e1ace90b72891de3a748e15f1610d/spec/requests/posts_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a7279681122e1ace90b72891de3a748e15f1610d/spec/requests/posts_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/posts_controller_spec.rb?ref=a7279681122e1ace90b72891de3a748e15f1610d",
+      "patch": "@@ -966,6 +966,23 @@\n         expect(response.status).to eq(403)\n       end\n \n+      it 'can not create a post with a tag that is restricted' do\n+        SiteSetting.tagging_enabled = true\n+        tag = Fabricate(:tag)\n+        category.allowed_tags = [tag.name]\n+        category.save!\n+\n+        post \"/posts.json\", params: {\n+          raw: 'this is the test content',\n+          title: 'this is the test title for the topic',\n+          tags: [tag.name],\n+        }\n+\n+        expect(response.status).to eq(422)\n+        json = JSON.parse(response.body)\n+        expect(json['errors']).to be_present\n+      end\n+\n       it 'creates the post' do\n         post \"/posts.json\", params: {\n           raw: 'this is the test content',"
+    }
+  ]
+}
