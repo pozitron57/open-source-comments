@@ -1,0 +1,110 @@
+{
+  "sha": "f408c583e8b5f2767f4ec33ce9134966db5b5963",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmNDA4YzU4M2U4YjVmMjc2N2Y0ZWMzM2NlOTEzNDk2NmRiNWI1OTYz",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-07-26T14:57:22Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-07-26T14:57:22Z"
+    },
+    "message": "DEV: Remove lightbox CSS rules",
+    "tree": {
+      "sha": "3af47606e1288536561ff31ba1823465a8a3eca7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3af47606e1288536561ff31ba1823465a8a3eca7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f408c583e8b5f2767f4ec33ce9134966db5b5963",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f408c583e8b5f2767f4ec33ce9134966db5b5963",
+  "html_url": "https://github.com/discourse/discourse/commit/f408c583e8b5f2767f4ec33ce9134966db5b5963",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f408c583e8b5f2767f4ec33ce9134966db5b5963/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "525920a9794a4582d6588250daa302c36029fce8",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/525920a9794a4582d6588250daa302c36029fce8",
+      "html_url": "https://github.com/discourse/discourse/commit/525920a9794a4582d6588250daa302c36029fce8"
+    }
+  ],
+  "stats": {
+    "total": 45,
+    "additions": 0,
+    "deletions": 45
+  },
+  "files": [
+    {
+      "sha": "20ed8ebea62242c0840e8fa01361ed420b3e5ac6",
+      "filename": "app/assets/stylesheets/common/base/lightbox.scss",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 30,
+      "changes": 30,
+      "blob_url": "https://github.com/discourse/discourse/blob/f408c583e8b5f2767f4ec33ce9134966db5b5963/app/assets/stylesheets/common/base/lightbox.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/f408c583e8b5f2767f4ec33ce9134966db5b5963/app/assets/stylesheets/common/base/lightbox.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/lightbox.scss?ref=f408c583e8b5f2767f4ec33ce9134966db5b5963",
+      "patch": "@@ -50,17 +50,6 @@ $meta-element-margin: 6px;\n     overflow: hidden;\n     white-space: nowrap;\n     text-overflow: ellipsis;\n-    // TODO: delete this by May 2019\n-    &:before {\n-      // ideally, the SVG used here should be in HTML and reference the SVG sprite\n-      content: svg-uri(\n-        '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14px\" height=\"16px\" viewBox=\"0 0 512 512\" fill=\"#{$secondary}\"><path d=\"M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z\"/></svg>'\n-      );\n-      margin-right: $meta-element-margin;\n-      display: inline-block;\n-      vertical-align: middle;\n-      opacity: 0.8;\n-    }\n   }\n \n   .d-icon {\n@@ -70,10 +59,6 @@ $meta-element-margin: 6px;\n     + .filename {\n       margin-left: 0px;\n     }\n-    // TODO: delete this by May 2019\n-    + .filename:before {\n-      display: none;\n-    }\n   }\n \n   .informations {\n@@ -84,21 +69,6 @@ $meta-element-margin: 6px;\n     flex-shrink: 0;\n     flex-grow: 3;\n   }\n-\n-  // TODO: delete this by May 2019\n-  .expand {\n-    position: absolute;\n-    bottom: 2px;\n-    right: 7px;\n-    &:before {\n-      // ideally, the SVG used here should be in HTML and reference the SVG sprite\n-      // the SVG used here is the \"expand\" icon from FontAwesome 4.7.0\n-      content: svg-uri(\n-        '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14px\" height=\"16px\" viewBox=\"0 0 1792 1792\" fill=\"#{$secondary}\"><path d=\"M883 1056q0 13-10 23l-332 332 144 144q19 19 19 45t-19 45-45 19h-448q-26 0-45-19t-19-45v-448q0-26 19-45t45-19 45 19l144 144 332-332q10-10 23-10t23 10l114 114q10 10 10 23zm781-864v448q0 26-19 45t-45 19-45-19l-144-144-332 332q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l332-332-144-144q-19-19-19-45t19-45 45-19h448q26 0 45 19t19 45z\"/></svg>'\n-      );\n-      opacity: 0.8;\n-    }\n-  }\n }\n \n .mfp-preloader .spinner {"
+    },
+    {
+      "sha": "8c864502ba572781894caeb93f99e7a2f84445ef",
+      "filename": "app/assets/stylesheets/mobile/lightbox.scss",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 15,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/f408c583e8b5f2767f4ec33ce9134966db5b5963/app/assets/stylesheets/mobile/lightbox.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/f408c583e8b5f2767f4ec33ce9134966db5b5963/app/assets/stylesheets/mobile/lightbox.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/mobile/lightbox.scss?ref=f408c583e8b5f2767f4ec33ce9134966db5b5963",
+      "patch": "@@ -22,19 +22,4 @@\n   .d-icon-discourse-expand {\n     color: $primary-high;\n   }\n-\n-  // TODO: Delete by May 2019\n-  .expand {\n-    position: initial;\n-    float: none;\n-    height: 16px;\n-    &:before {\n-      // ideally, the SVG used here should be in HTML and reference the SVG sprite\n-      // the SVG used here is the \"expand\" icon from FontAwesome 4.7.0\n-      content: svg-uri(\n-        '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14px\" height=\"16px\" viewBox=\"0 0 1792 1792\" fill=\"#{$primary-high}\"><path d=\"M883 1056q0 13-10 23l-332 332 144 144q19 19 19 45t-19 45-45 19h-448q-26 0-45-19t-19-45v-448q0-26 19-45t45-19 45 19l144 144 332-332q10-10 23-10t23 10l114 114q10 10 10 23zm781-864v448q0 26-19 45t-45 19-45-19l-144-144-332 332q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l332-332-144-144q-19-19-19-45t19-45 45-19h448q26 0 45 19t19 45z\"/></svg>'\n-      );\n-      opacity: inherit;\n-    }\n-  }\n }"
+    }
+  ]
+}
