@@ -1,0 +1,338 @@
+{
+  "sha": "d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkODNmOTlmYzJlYzk3ZmNhYjNhMGQ1MGY3NTFhZTk2ZmYzMmVhZTk2",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2019-07-27T16:21:44Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-07-27T16:21:44Z"
+    },
+    "message": "DEV: improves rails plugin generator (#7949)\n\nFixes bugs, simplifies code, more default files. General idea, more is more here as it's easier to just delete things than reading and passing all the options.",
+    "tree": {
+      "sha": "b7b77c02ad704cb587ddafa428e3e52d8ec6ff3d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b7b77c02ad704cb587ddafa428e3e52d8ec6ff3d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+    "comment_count": 1,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdPHoYCRBK7hj4Ov3rIwAAdHIIAE3J21kRVLxwPnBmtRo3ZUrx\npJQ0fPdCeoPpxi2MJWax2ZCpsXaD5zRW51EuEC5eYa0FEGdrys5lRg5QRhtGK26L\nY/RgNFeIfhtuwBvh1aWp2RGlhuS35Hzmpnc4WOOMCDbLg9lvCHHZdkz9Aee8R8iI\nyS8oOQJW0Nxpzu37I5D259F5HdO6c/mFn6VKT2vcmDK29a1lVdv/K02K3EGlSA24\nxr2cznmiarDR+0bX+HZfSg0RS0+g1xrFRfMF6ah930ZRQezaHVv7ovm1rhVwNvbT\nd7/9PZE5D3LIq+HxWucQESmDG8a4GrlV45Gqrv5TfUHjJQMcdNLyhG1ZLjcznqE=\n=4tea\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree b7b77c02ad704cb587ddafa428e3e52d8ec6ff3d\nparent 3324747afe4ac6656803657892b5cc5a242f5e0a\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1564244504 +0200\ncommitter GitHub <noreply@github.com> 1564244504 +0200\n\nDEV: improves rails plugin generator (#7949)\n\nFixes bugs, simplifies code, more default files. General idea, more is more here as it's easier to just delete things than reading and passing all the options."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+  "html_url": "https://github.com/discourse/discourse/commit/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3324747afe4ac6656803657892b5cc5a242f5e0a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3324747afe4ac6656803657892b5cc5a242f5e0a",
+      "html_url": "https://github.com/discourse/discourse/commit/3324747afe4ac6656803657892b5cc5a242f5e0a"
+    }
+  ],
+  "stats": {
+    "total": 288,
+    "additions": 193,
+    "deletions": 95
+  },
+  "files": [
+    {
+      "sha": "2064f61291f40223325f30ced00d9177fb31a194",
+      "filename": "lib/generators/plugin/plugin_generator.rb",
+      "status": "modified",
+      "additions": 64,
+      "deletions": 40,
+      "changes": 104,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/plugin_generator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/plugin_generator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/plugin_generator.rb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -3,75 +3,99 @@\n require 'rails/generators/named_base'\n \n class PluginGenerator < Rails::Generators::NamedBase\n+  attr_writer :about\n   attr_writer :github_username\n \n   desc 'This generator creates a Discourse plugin skeleton'\n \n   source_root File.expand_path('templates', __dir__)\n \n-  class_option :controller, type: :boolean, desc: \"Generate controller\", default: true\n-  class_option :spec, type: :boolean, desc: \"Generate spec\", default: true\n-  class_option :acceptance, type: :boolean, desc: \"Generate acceptance test\", default: true\n-  class_option :stylesheet, type: :boolean, desc: \"Generate Stylesheet\", default: true\n-  class_option :javascript, type: :boolean, desc: \"Generate Javascript initializer\", default: true\n-  class_option :scheduled_job, type: :boolean, desc: \"Generate scheduled job\", default: false\n-  class_option :help, type: :boolean, desc: \"Adds help comments in generated files\", default: true\n+  class_option :no_license, type: :boolean, desc: \"No license\", default: false\n \n-  def create_acceptance_file\n-    return unless @options['acceptance']\n+  def create_plugin\n+    @about ||= ask(\"What is the purpose of your plugin?\")\n+    @github_username ||= ask(\"Github username?\")\n \n-    template 'acceptance-test.js.es6.erb', File.join('plugins', dasherized_name, \"test/javascripts/acceptance\", \"#{dasherized_name}-test.js.es6\")\n+    readme_file\n+    routes_file\n+    engine_file\n+    plugin_file\n+    controller_file\n+    license_file\n+    stylesheet_file\n+    javascript_file\n+    settings_file\n+    locales_file\n   end\n \n-  def create_spec_file\n-    return if !@options['spec'] || !@options['controller']\n-\n+  def controller_file\n+    template 'plugin_controller.rb.erb', File.join('plugins', dasherized_name, \"app/controllers/#{dasherized_name}/#{underscored_name}_controller.rb\")\n+    template 'controller.rb.erb', File.join('plugins', dasherized_name, \"app/controllers/#{dasherized_name}/actions_controller.rb\")\n     template 'controller_spec.rb.erb', File.join('plugins', dasherized_name, \"spec/requests/actions_controller_spec.rb\")\n   end\n \n-  def create_scheduled_job_file\n-    return unless @options['scheduled_job']\n-\n-    path = File.join('plugins', dasherized_name, 'jobs/scheduled', \"check_#{underscored_name}.rb\")\n-    template 'scheduled_job.rb.erb', path\n-  end\n-\n-  def create_readme_file\n-    ensure_github_username\n-\n+  def readme_file\n     template 'README.md.erb', File.join('plugins', dasherized_name, \"README.md\")\n   end\n \n-  def create_license_file\n-    ensure_github_username\n+  def license_file\n+    return if @options['no_license']\n \n     template 'LICENSE.erb', File.join('plugins', dasherized_name, \"LICENSE\")\n   end\n \n-  def create_plugin_file\n-    ensure_github_username\n+  def engine_file\n+    template 'engine.rb.erb', File.join('plugins', dasherized_name, \"lib\", dasherized_name, \"engine.rb\")\n+  end\n \n-    template 'plugin.rb.erb', File.join('plugins', dasherized_name, \"plugin.rb\")\n+  def routes_file\n+    template 'routes.rb.erb', File.join('plugins', dasherized_name, \"config\", \"routes.rb\")\n+    template 'route_constraint.rb.erb', File.join('plugins', dasherized_name, \"lib\", \"#{underscored_name}_constraint.rb\")\n   end\n \n-  def create_stylesheet_file\n-    return unless @options['stylesheet']\n+  def plugin_file\n+    template 'plugin.rb.erb', File.join('plugins', dasherized_name, \"plugin.rb\")\n+  end\n \n+  def stylesheet_file\n     template 'stylesheet.scss.erb', File.join('plugins', dasherized_name, 'assets/stylesheets/common', \"#{dasherized_name}.scss\")\n+    template 'stylesheet.scss.erb', File.join('plugins', dasherized_name, 'assets/stylesheets/desktop', \"#{dasherized_name}.scss\")\n+    template 'stylesheet.scss.erb', File.join('plugins', dasherized_name, 'assets/stylesheets/mobile', \"#{dasherized_name}.scss\")\n   end\n \n-  def create_javascript_file\n-    return unless @options['javascript']\n+  def javascript_file\n+    template 'acceptance-test.js.es6.erb', File.join('plugins', dasherized_name, \"test/javascripts/acceptance\", \"#{dasherized_name}-test.js.es6\")\n+    template 'javascript.js.es6.erb', File.join('plugins', dasherized_name, 'assets/javascripts/initializers', \"#{dasherized_name}.js.es6\")\n+    template 'route-map.js.es6.erb', File.join('plugins', dasherized_name, 'assets/javascripts/discourse', \"#{dasherized_name}-route-map.js.es6\")\n+\n+    folder = 'assets/javascripts/discourse/templates'\n+    template \"#{folder}/template.hbs.erb\", path(folder, \"actions.hbs\")\n+    template \"#{folder}/template-show.hbs.erb\", path(folder, \"actions-show.hbs\")\n+    template \"#{folder}/template-index.hbs.erb\", path(folder, \"actions-index.hbs\")\n+\n+    folder = 'assets/javascripts/discourse/routes'\n+    template \"#{folder}/route.js.es6.erb\", path(folder, \"#{dasherized_name}-actions.js.es6\")\n+    template \"#{folder}/route-show.js.es6.erb\", path(folder, \"#{dasherized_name}-actions-show.js.es6\")\n+    template \"#{folder}/route-index.js.es6.erb\", path(folder, \"#{dasherized_name}-actions-index.js.es6\")\n+\n+    folder = 'assets/javascripts/discourse/controllers'\n+    template \"#{folder}/controller.js.es6.erb\", path(folder, \"actions.js.es6\")\n+    template \"#{folder}/controller-show.js.es6.erb\", path(folder, \"actions-show.js.es6\")\n+    template \"#{folder}/controller-index.js.es6.erb\", path(folder, \"actions-index.js.es6\")\n+\n+    folder = 'assets/javascripts/discourse/models'\n+    template \"#{folder}/model.js.es6.erb\", path(folder, \"action.js.es6\")\n \n-    template 'javascript.es6.erb', File.join('plugins', dasherized_name, 'assets/javascripts/initializers', \"#{dasherized_name}.es6\")\n+    folder = 'assets/javascripts/discourse/adapters'\n+    template \"#{folder}/adapter.js.es6.erb\", path(folder, \"action.js.es6\")\n   end\n \n-  def create_settings_file\n+  def settings_file\n     template 'settings.yml.erb', File.join('plugins', dasherized_name, 'config', 'settings.yml')\n   end\n \n-  def create_locales_file\n-    template 'client.en.yml.erb', File.join('plugins', dasherized_name, 'config/locales', 'client.en.yml')\n+  def locales_file\n+    template 'client.en.yml.erb', path('config/locales/client.en.yml')\n     template 'server.en.yml.erb', File.join('plugins', dasherized_name, 'config/locales', 'server.en.yml')\n   end\n \n@@ -83,10 +107,6 @@ def create_gitignore_entry\n     end\n   end\n \n-  def ensure_github_username\n-    @github_username ||= ask(\"Github username?\")\n-  end\n-\n   def underscored_name\n     name.underscore\n   end\n@@ -98,4 +118,8 @@ def dasherized_name\n   def classified_name\n     name.tableize.classify\n   end\n+\n+  def path(*args)\n+    File.join('plugins', dasherized_name, args)\n+  end\n end"
+    },
+    {
+      "sha": "f952121c62d753e345400ec9482af9aacfd8d6d3",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/adapters/adapter.js.es6.erb",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/adapters/adapter.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/adapters/adapter.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/adapters/adapter.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,7 @@\n+import RestAdapter from \"discourse/adapters/rest\";\n+\n+export default RestAdapter.extend({\n+  basePath() {\n+    return \"/<%= dasherized_name %>/\";\n+  }\n+});"
+    },
+    {
+      "sha": "044750a7ed6fc5410301c19bf47696662f0a132c",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-index.js.es6.erb",
+      "status": "added",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-index.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-index.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-index.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,4 @@\n+export default Ember.Controller.extend({\n+  actions: {\n+  }\n+});"
+    },
+    {
+      "sha": "044750a7ed6fc5410301c19bf47696662f0a132c",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-show.js.es6.erb",
+      "status": "added",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-show.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-show.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller-show.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,4 @@\n+export default Ember.Controller.extend({\n+  actions: {\n+  }\n+});"
+    },
+    {
+      "sha": "2d3f9600e214f92768508e41b37b5d9df681f6be",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller.js.es6.erb",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/controllers/controller.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1 @@\n+export default Ember.Controller.extend({});"
+    },
+    {
+      "sha": "0c432d3f71d87806b8572234735202261a7570de",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/models/model.js.es6.erb",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/models/model.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/models/model.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/models/model.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,3 @@\n+import RestModel from \"discourse/models/rest\";\n+\n+export default RestModel.extend({});"
+    },
+    {
+      "sha": "998eff2a6f7c27d102d79364c9e6ebf22466db90",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-index.js.es6.erb",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-index.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-index.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-index.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,11 @@\n+export default Discourse.Route.extend({\n+  controllerName: \"actions-index\",\n+\n+  model(params) {\n+    return this.store.findAll(\"action\");\n+  },\n+\n+  renderTemplate() {\n+    this.render(\"actions-index\");\n+  }\n+});"
+    },
+    {
+      "sha": "74274ebe3aa7dca36c63cf037d1e6ae65ede5cb1",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-show.js.es6.erb",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-show.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-show.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route-show.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,11 @@\n+export default Discourse.Route.extend({\n+  controllerName: \"actions-show\",\n+\n+  model(params) {\n+    return this.store.find(\"action\", params.id);\n+  },\n+\n+  renderTemplate() {\n+    this.render(\"actions-show\");\n+  }\n+});"
+    },
+    {
+      "sha": "be3f4f1241e4cf5b1ca1d14d599c420b68a3c42e",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/routes/route.js.es6.erb",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/routes/route.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,7 @@\n+export default Discourse.Route.extend({\n+  controllerName: \"actions\",\n+\n+  renderTemplate() {\n+    this.render(\"actions\");\n+  }\n+});"
+    },
+    {
+      "sha": "2f9b14cc03985c70179aa7fe74243bb07deab2a2",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-index.hbs.erb",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-index.hbs.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-index.hbs.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-index.hbs.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1 @@\n+controller-index.hbs"
+    },
+    {
+      "sha": "c15471b8b9fa6c10ce5cd464ea16445687fd5afa",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-show.hbs.erb",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-show.hbs.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-show.hbs.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template-show.hbs.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1 @@\n+controller-show.hbs id: {{model.id}}"
+    },
+    {
+      "sha": "ed4d67a9483febfbab8be634c9cce8ae9ec6d73f",
+      "filename": "lib/generators/plugin/templates/assets/javascripts/discourse/templates/template.hbs.erb",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template.hbs.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template.hbs.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/assets/javascripts/discourse/templates/template.hbs.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,3 @@\n+controller.hbs\n+\n+{{outlet}}"
+    },
+    {
+      "sha": "2c88888a516b81206c95ec68beeea318c112fdb8",
+      "filename": "lib/generators/plugin/templates/controller.rb.erb",
+      "status": "added",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/controller.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/controller.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/controller.rb.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,15 @@\n+module <%= classified_name %>\n+  class ActionsController < ::ApplicationController\n+    requires_plugin <%= classified_name %>\n+\n+    before_action :ensure_logged_in\n+\n+    def index\n+      render_json_dump({ actions: [] })\n+    end\n+\n+    def show\n+      render_json_dump({ action: { id: params[:id] } })\n+    end\n+  end\n+end"
+    },
+    {
+      "sha": "449db3929f19b8133ad2c5443b61f97be9b3d5d6",
+      "filename": "lib/generators/plugin/templates/engine.rb.erb",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/engine.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/engine.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/engine.rb.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,12 @@\n+module <%= classified_name %>\n+  class Engine < ::Rails::Engine\n+    engine_name \"<%= classified_name %>\".freeze\n+    isolate_namespace <%= classified_name %>\n+\n+    config.after_initialize do\n+      Discourse::Application.routes.append do\n+        mount ::<%= classified_name %>::Engine, at: \"/<%= dasherized_name %>\"\n+      end\n+    end\n+  end\n+end"
+    },
+    {
+      "sha": "37fb2881c6bc7fa60367183c28218b3a8d364469",
+      "filename": "lib/generators/plugin/templates/javascript.es6.erb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 16,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/3324747afe4ac6656803657892b5cc5a242f5e0a/lib/generators/plugin/templates/javascript.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3324747afe4ac6656803657892b5cc5a242f5e0a/lib/generators/plugin/templates/javascript.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/javascript.es6.erb?ref=3324747afe4ac6656803657892b5cc5a242f5e0a",
+      "patch": "@@ -1,16 +0,0 @@\n-import { withPluginApi } from \"discourse/lib/plugin-api\";\n-\n-function initialize<%= classified_name %>(api) {\n-  <% if @options['help'] %>\n-  // see app/assets/javascripts/discourse/lib/plugin-api\n-  // for the functions available via the api object\n-  <% end %>\n-}\n-\n-export default {\n-  name: \"<%= dasherized_name %>\",\n-\n-  initialize() {\n-    withPluginApi(\"0.8.24\", initialize<%= classified_name %>);\n-  }\n-};"
+    },
+    {
+      "sha": "5be3cfc104b0dc7d97ee6944b6f805c61738891c",
+      "filename": "lib/generators/plugin/templates/javascript.js.es6.erb",
+      "status": "added",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/javascript.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/javascript.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/javascript.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,13 @@\n+import { withPluginApi } from \"discourse/lib/plugin-api\";\n+\n+function initialize<%= classified_name %>(api) {\n+  // https://github.com/discourse/discourse/blob/master/app/assets/javascripts/discourse/lib/plugin-api.js.es6\n+}\n+\n+export default {\n+  name: \"<%= dasherized_name %>\",\n+\n+  initialize() {\n+    withPluginApi(\"0.8.31\", initialize<%= classified_name %>);\n+  }\n+};"
+    },
+    {
+      "sha": "d081152943c0d225051e53f160e1834c2fcd1848",
+      "filename": "lib/generators/plugin/templates/plugin.rb.erb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 39,
+      "changes": 46,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/plugin.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/plugin.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/plugin.rb.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -1,51 +1,19 @@\n # name: <%= name %>\n-# about:\n+# about: <%= @about %>\n # version: 0.1\n # authors: <%= @github_username %>\n # url: https://github.com/<%= @github_username %>\n \n-<% if @options[\"stylesheet\"] %>\n register_asset \"stylesheets/common/<%= dasherized_name %>.scss\"\n-<% end %>\n+register_asset \"stylesheets/desktop/<%= dasherized_name %>.scss\"\n+register_asset \"stylesheets/mobile/<%= dasherized_name %>.scss\"\n \n enabled_site_setting :<%= underscored_name %>_enabled\n \n-PLUGIN_NAME ||= \"<%= name %>\".freeze\n+PLUGIN_NAME ||= \"<%= classified_name %>\".freeze\n \n-after_initialize do\n-  <% if @options['help'] %>\n-  # see lib/plugin/instance.rb for the methods available in this context\n-  <% end %>\n-\n-  module ::<%= classified_name %>\n-    class Engine < ::Rails::Engine\n-      engine_name PLUGIN_NAME\n-      isolate_namespace <%= classified_name %>\n-    end\n-  end\n-\n-  <% if @options[\"scheduled_job\"] %>\n-  require File.expand_path(\"../jobs/scheduled/check_<%= underscored_name %>.rb\", __FILE__)\n-  <% end %>\n-\n-  <% if @options[\"controller\"] %>\n-  require_dependency \"application_controller\"\n-  class <%= name %>::ActionsController < ::ApplicationController\n-    requires_plugin PLUGIN_NAME\n+load File.expand_path('../lib/<%= dasherized_name %>/engine.rb', __FILE__)\n \n-    before_action :ensure_logged_in\n-\n-    def list\n-      render json: success_json\n-    end\n-  end\n-\n-  <%= name %>::Engine.routes.draw do\n-    get \"/list\" => \"actions#list\"\n-  end\n-\n-  Discourse::Application.routes.append do\n-    mount ::<%= name %>::Engine, at: \"/<%= dasherized_name %>\"\n-  end\n-  <% end %>\n+after_initialize do\n+  # https://github.com/discourse/discourse/blob/master/lib/plugin/instance.rb\n end"
+    },
+    {
+      "sha": "4f86ef504c5f0b307c5383cc21e82eb85e093e27",
+      "filename": "lib/generators/plugin/templates/plugin_controller.rb.erb",
+      "status": "added",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/plugin_controller.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/plugin_controller.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/plugin_controller.rb.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,10 @@\n+module <%= classified_name %>\n+  class <%= classified_name %>Controller < ::ApplicationController\n+    requires_plugin <%= classified_name %>\n+\n+    before_action :ensure_logged_in\n+\n+    def index\n+    end\n+  end\n+end"
+    },
+    {
+      "sha": "76f1c73ed4e67323ca9a31c8809ad4ed63dc1346",
+      "filename": "lib/generators/plugin/templates/route-map.js.es6.erb",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/route-map.js.es6.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/route-map.js.es6.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/route-map.js.es6.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,7 @@\n+export default function() {\n+  this.route(\"<%= dasherized_name %>\", function() {\n+    this.route(\"actions\", function() {\n+      this.route(\"show\", { path: \"/:id\" });\n+    });\n+  });\n+};"
+    },
+    {
+      "sha": "2954ac262f4da95013c8f68eaec167e3bea6dd80",
+      "filename": "lib/generators/plugin/templates/route_constraint.rb.erb",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/route_constraint.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/route_constraint.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/route_constraint.rb.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,5 @@\n+class <%= classified_name %>Constraint\n+  def matches?(request)\n+    SiteSetting.<%= underscored_name %>_enabled\n+  end\n+end"
+    },
+    {
+      "sha": "5a4d6c6d9ac3adf4319adac1fb00f99ba1f49c5c",
+      "filename": "lib/generators/plugin/templates/routes.rb.erb",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/routes.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d83f99fc2ec97fcab3a0d50f751ae96ff32eae96/lib/generators/plugin/templates/routes.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/routes.rb.erb?ref=d83f99fc2ec97fcab3a0d50f751ae96ff32eae96",
+      "patch": "@@ -0,0 +1,7 @@\n+require_dependency \"<%= underscored_name %>_constraint\"\n+\n+<%= classified_name %>::Engine.routes.draw do\n+  get \"/\" => \"<%= dasherized_name %>#index\", constraints: <%= classified_name %>Constraint.new\n+  get \"/actions\" => \"actions#index\", constraints: <%= classified_name %>Constraint.new\n+  get \"/actions/:id\" => \"actions#show\", constraints: <%= classified_name %>Constraint.new\n+end"
+    }
+  ]
+}
