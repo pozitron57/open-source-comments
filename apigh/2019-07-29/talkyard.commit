@@ -1,0 +1,158 @@
+{
+  "sha": "5602566b98e207f66e2724f8455b98e3d2850fff",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NTYwMjU2NmI5OGUyMDdmNjZlMjcyNGY4NDU1Yjk4ZTNkMjg1MGZmZg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-07-29T04:21:51Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-07-29T04:22:34Z"
+    },
+    "message": "Build to-talkyard, from Makefile. Edit docs.",
+    "tree": {
+      "sha": "507a32e758d29f33b6ac8ea6b21c1879431cb0a4",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/507a32e758d29f33b6ac8ea6b21c1879431cb0a4"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/5602566b98e207f66e2724f8455b98e3d2850fff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/5602566b98e207f66e2724f8455b98e3d2850fff",
+  "html_url": "https://github.com/debiki/talkyard/commit/5602566b98e207f66e2724f8455b98e3d2850fff",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/5602566b98e207f66e2724f8455b98e3d2850fff/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7be6868e630af853f90d5d390679b578b957e954",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/7be6868e630af853f90d5d390679b578b957e954",
+      "html_url": "https://github.com/debiki/talkyard/commit/7be6868e630af853f90d5d390679b578b957e954"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 35,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "3a445353d02340197911b60285d364044783dd2b",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 1,
+      "changes": 15,
+      "blob_url": "https://github.com/debiki/talkyard/blob/5602566b98e207f66e2724f8455b98e3d2850fff/Makefile",
+      "raw_url": "https://github.com/debiki/talkyard/raw/5602566b98e207f66e2724f8455b98e3d2850fff/Makefile",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/Makefile?ref=5602566b98e207f66e2724f8455b98e3d2850fff",
+      "patch": "@@ -137,6 +137,19 @@ $(zipped_bundles): $@\n \tsudo s/d-gulp release\n \n \n+# ----- To-Talkyard Javascript\n+\n+# For now:\n+to-talkyard: to-talkyard/dist/to-talkyard/src/to-talkyard.js\n+\n+to-talkyard/dist/to-talkyard/src/to-talkyard.js:\n+\techo \"Building To-Talkyard ...\"\n+\tset -x ;\\\n+\tcd to-talkyard ;\\\n+\tyarn ;\\\n+\tyarn build ;\\\n+\techo \"... Done building To-Talkyard.\"\n+\n \n # ----- Clean (wip)\n \n@@ -273,7 +286,7 @@ define if_selenium_not_running\n   fi\n endef\n \n-e2e-tests: invisible-selenium-server\n+e2e-tests: invisible-selenium-server to_talkyard\n \ts/run-e2e-tests.sh\n \tif [ -f .selenium.pid ]; then kill `cat .selenium.pid`; rm .selenium.pid ; fi\n "
+    },
+    {
+      "sha": "344509aa0e15c341e66a73d43c80ae60b9d8ad0c",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/5602566b98e207f66e2724f8455b98e3d2850fff/README.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/5602566b98e207f66e2724f8455b98e3d2850fff/README.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/README.md?ref=5602566b98e207f66e2724f8455b98e3d2850fff",
+      "patch": "@@ -339,7 +339,8 @@ Tests\n \n The end-to-end tests are written in TypeScript and uses Selenium and Webdriver.io.\n See the [end-to-end tests readme](./docs/e2e-tests-readme.md).\n-And, if you want to test in a browser other than Chrome, see [Making *.localhost addresses work](./docs/wildcard-dot-localhost.md).\n+And, you also need to [make *.localhost addresses work](./docs/wildcard-dot-localhost.md),\n+because the e2e tests creates test sites at `*.localhost` sub domains.\n \n \n #### Security tests"
+    },
+    {
+      "sha": "bc28b1396b82acc4200a52493749ded8b5d23a8a",
+      "filename": "docs/e2e-tests-readme.md",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/5602566b98e207f66e2724f8455b98e3d2850fff/docs/e2e-tests-readme.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/5602566b98e207f66e2724f8455b98e3d2850fff/docs/e2e-tests-readme.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/e2e-tests-readme.md?ref=5602566b98e207f66e2724f8455b98e3d2850fff",
+      "patch": "@@ -20,6 +20,7 @@ Run tests like so:\n \n         make up\n \n+<!--\n 1. In another shell, build a certain Fibers Node.js module, and start Selenium: (on the host,\n    not in any Docker container)\n    \n@@ -43,8 +44,10 @@ Run tests like so:\n     Note: Whenever Yarn does something, you'll need to reinstall the Selenium files, because\n     Yarn removes them. See https://github.com/yarnpkg/yarn/issues/1955\n     That is, you need to run `s/selenium-install` again.\n+     -->\n \n 1. In yet another shell, run the test code. Do one of these:\n+   (if there's an issue with node-fibers — then see the next step below)\n \n         # Runs one test: (with \"links\" in the test file name)\n         s/wdio target/e2e/wdio.conf.js --only links\n@@ -67,6 +70,15 @@ Run tests like so:\n \n         s/d-gulp build-e2e\n \n+\n+1. If this happens: `There is an issue with node-fibers ... ` and:\n+   `node_modules/fibers/bin/linux-x64-67-glibc/fibers.node is missing`, then, try this:\n+\n+        yarn --force\n+\n+   That'll recompile the `fibers.node` binary, needed by wdio-mocha-framework.\n+\n+\n 1. Some tests, e.g. `chat.2browsers.test.ts`, require two browsers. Then use the 2whatever config files, e.g.:\n \n         s/wdio target/e2e/wdio.2chrome.conf.js --only 'chat.2browsers'"
+    },
+    {
+      "sha": "a72a7ff3a7bfde32a2ab96083257094fe262c1d3",
+      "filename": "modules/ed-versions",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-versions?ref=5602566b98e207f66e2724f8455b98e3d2850fff",
+      "patch": "@@ -1 +1 @@\n-Subproject commit f0d9c86e639e4dde102078795dec9ee0b60b49c2\n+Subproject commit a72a7ff3a7bfde32a2ab96083257094fe262c1d3"
+    },
+    {
+      "sha": "1cf264d6334c79a9fa07a7487453e41c681b94f0",
+      "filename": "to-talkyard/package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/5602566b98e207f66e2724f8455b98e3d2850fff/to-talkyard/package.json",
+      "raw_url": "https://github.com/debiki/talkyard/raw/5602566b98e207f66e2724f8455b98e3d2850fff/to-talkyard/package.json",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/to-talkyard/package.json?ref=5602566b98e207f66e2724f8455b98e3d2850fff",
+      "patch": "@@ -45,6 +45,7 @@\n     \"nodemon\": \"^1.18.10\",\n     \"shelljs\": \"^0.8.1\",\n     \"supertest\": \"^3.0.0\",\n+    \"typescript\": \"^3.5\",\n     \"ts-node\": \"^5.0.0\",\n     \"tslint\": \"^5.9.1\"\n   }"
+    },
+    {
+      "sha": "f8c59062f6cf8b4cd0d4587ca9800ec7ee5becc7",
+      "filename": "to-talkyard/yarn.lock",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/debiki/talkyard/blob/5602566b98e207f66e2724f8455b98e3d2850fff/to-talkyard/yarn.lock",
+      "raw_url": "https://github.com/debiki/talkyard/raw/5602566b98e207f66e2724f8455b98e3d2850fff/to-talkyard/yarn.lock",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/to-talkyard/yarn.lock?ref=5602566b98e207f66e2724f8455b98e3d2850fff",
+      "patch": "@@ -1886,6 +1886,11 @@ type-detect@^4.0.0:\n   version \"4.0.8\"\n   resolved \"https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c\"\n \n+typescript@^3.5:\n+  version \"3.5.3\"\n+  resolved \"https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977\"\n+  integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==\n+\n undefsafe@^2.0.2:\n   version \"2.0.2\"\n   resolved \"https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.2.tgz#225f6b9e0337663e0d8e7cfd686fc2836ccace76\""
+    }
+  ]
+}
