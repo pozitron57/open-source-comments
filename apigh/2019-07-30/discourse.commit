@@ -1,0 +1,122 @@
+{
+  "sha": "340173eb121da6d3db899bf8c802fa78a24c068f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozNDAxNzNlYjEyMWRhNmQzZGI4OTliZjhjODAyZmE3OGEyNGMwNjhm",
+  "commit": {
+    "author": {
+      "name": "Joe",
+      "email": "johani@discourse.org",
+      "date": "2019-07-30T17:00:46Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-07-30T17:00:46Z"
+    },
+    "message": "DEV: consistent theme lookup in application / crawler / no-ember views (#7955)\n\n* removes `raw` helpers\r\n\r\n* include theme footer in the crawler view\r\n\r\n* include theme body tag content in no-ember pages",
+    "tree": {
+      "sha": "9742455e4255d62508d9f9b8292b5ba68c017540",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9742455e4255d62508d9f9b8292b5ba68c017540"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/340173eb121da6d3db899bf8c802fa78a24c068f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/340173eb121da6d3db899bf8c802fa78a24c068f",
+  "html_url": "https://github.com/discourse/discourse/commit/340173eb121da6d3db899bf8c802fa78a24c068f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/340173eb121da6d3db899bf8c802fa78a24c068f/comments",
+  "author": {
+    "login": "hnb-ku",
+    "id": 33972521,
+    "node_id": "MDQ6VXNlcjMzOTcyNTIx",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/33972521?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hnb-ku",
+    "html_url": "https://github.com/hnb-ku",
+    "followers_url": "https://api.github.com/users/hnb-ku/followers",
+    "following_url": "https://api.github.com/users/hnb-ku/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hnb-ku/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hnb-ku/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hnb-ku/subscriptions",
+    "organizations_url": "https://api.github.com/users/hnb-ku/orgs",
+    "repos_url": "https://api.github.com/users/hnb-ku/repos",
+    "events_url": "https://api.github.com/users/hnb-ku/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hnb-ku/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a1fb718340c9768cd85e1683e5625169672d157c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a1fb718340c9768cd85e1683e5625169672d157c",
+      "html_url": "https://github.com/discourse/discourse/commit/a1fb718340c9768cd85e1683e5625169672d157c"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 6,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "3f6c9ff74410afc05a06e7d7f2cb91180eed841a",
+      "filename": "app/views/layouts/application.html.erb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/340173eb121da6d3db899bf8c802fa78a24c068f/app/views/layouts/application.html.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/340173eb121da6d3db899bf8c802fa78a24c068f/app/views/layouts/application.html.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/views/layouts/application.html.erb?ref=340173eb121da6d3db899bf8c802fa78a24c068f",
+      "patch": "@@ -34,9 +34,9 @@\n     <%- end %>\n \n     <%- unless customization_disabled? %>\n-      <%= raw theme_translations_lookup %>\n-      <%= raw theme_js_lookup %>\n-      <%= raw theme_lookup(\"head_tag\") %>\n+      <%= theme_translations_lookup %>\n+      <%= theme_js_lookup %>\n+      <%= theme_lookup(\"head_tag\") %>\n     <%- end %>\n \n     <%= render_google_tag_manager_head_code %>\n@@ -112,7 +112,7 @@\n     <%= preload_script 'browser-update' %>\n \n     <%- unless customization_disabled? %>\n-      <%= raw theme_lookup(\"body_tag\") %>\n+      <%= theme_lookup(\"body_tag\") %>\n     <%- end %>\n     <%= build_plugin_html 'server:before-body-close' %>\n   </body>"
+    },
+    {
+      "sha": "e8fc43c02310abb6ffadd5aa72a8fe69489c43b6",
+      "filename": "app/views/layouts/crawler.html.erb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/340173eb121da6d3db899bf8c802fa78a24c068f/app/views/layouts/crawler.html.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/340173eb121da6d3db899bf8c802fa78a24c068f/app/views/layouts/crawler.html.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/views/layouts/crawler.html.erb?ref=340173eb121da6d3db899bf8c802fa78a24c068f",
+      "patch": "@@ -45,6 +45,7 @@\n       </nav>\n       <p class='powered-by-link'><%= t 'powered_by_html' %></p>\n     </footer>\n+    <%= theme_lookup(\"footer\") %>\n     <%= theme_lookup(\"body_tag\") %>\n   </body>\n   <%= yield :after_body %>"
+    },
+    {
+      "sha": "4a0264b0055fcd9214f907b50ee826eb52ddb118",
+      "filename": "app/views/layouts/no_ember.html.erb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/340173eb121da6d3db899bf8c802fa78a24c068f/app/views/layouts/no_ember.html.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/340173eb121da6d3db899bf8c802fa78a24c068f/app/views/layouts/no_ember.html.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/views/layouts/no_ember.html.erb?ref=340173eb121da6d3db899bf8c802fa78a24c068f",
+      "patch": "@@ -22,6 +22,7 @@\n     </div>\n   </section>\n   <%= theme_lookup(\"footer\") %>\n+  <%= theme_lookup(\"body_tag\") %>\n   <%= build_plugin_html 'no-client:footer' %>\n   <%= build_plugin_html 'server:before-body-close' %>\n </body>"
+    }
+  ]
+}
