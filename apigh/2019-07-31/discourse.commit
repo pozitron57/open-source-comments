@@ -1,0 +1,98 @@
+{
+  "sha": "fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmZTY0NWMwZjBiYzM4ZjBhNThkNWJiMDVmNWQ0Yjc4NmRmMmE0YTg4",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-07-31T15:39:28Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-07-31T15:39:28Z"
+    },
+    "message": "UX: remove confusing border on ignored users list",
+    "tree": {
+      "sha": "5e456dd804b3a7011b0c3a4bb2301918d365a789",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5e456dd804b3a7011b0c3a4bb2301918d365a789"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88",
+  "html_url": "https://github.com/discourse/discourse/commit/fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "19dda59932e2cc4ce1ee0b4c009595b32d0ce5cd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/19dda59932e2cc4ce1ee0b4c009595b32d0ce5cd",
+      "html_url": "https://github.com/discourse/discourse/commit/19dda59932e2cc4ce1ee0b4c009595b32d0ce5cd"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 0,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "eff8929a8e787d15758b3f6bdfa0c96e96f414c0",
+      "filename": "app/assets/stylesheets/common/components/ignored-user-list.scss",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88/app/assets/stylesheets/common/components/ignored-user-list.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88/app/assets/stylesheets/common/components/ignored-user-list.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/components/ignored-user-list.scss?ref=fe645c0f0bc38f0a58d5bb05f5d4b786df2a4a88",
+      "patch": "@@ -5,10 +5,8 @@\n   flex-wrap: wrap;\n   align-items: center;\n   background-color: $secondary;\n-  border: 1px solid $primary-medium;\n   min-height: 30px;\n   box-sizing: border-box;\n-  padding: 5px;\n }\n \n .ignored-user-list-item {"
+    }
+  ]
+}
