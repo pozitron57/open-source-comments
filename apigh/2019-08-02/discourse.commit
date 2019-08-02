@@ -1,0 +1,110 @@
+{
+  "sha": "272b38a5738b56b92bedeb4a9db6c32cb16f7508",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyNzJiMzhhNTczOGI1NmI5MmJlZGViNGE5ZGI2YzMyY2IxNmY3NTA4",
+  "commit": {
+    "author": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-08-02T15:43:25Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-08-02T15:43:25Z"
+    },
+    "message": "FIX: Better detection of Apple browsers (#7961)\n\nIntroduces isIpadOS to our capabilities sniffer, which is currently\r\ncompatible with latest iPad beta OS. Older iPad versions will match our\r\nisIOS detection.\r\n\r\nUsing this new feature, fixes the service worker being blocked in Google\r\nChrome, Firefox and other browsers while running on Mac OS, where they\r\nwork just fine. This enables Desktop PWA install in Mac OS.",
+    "tree": {
+      "sha": "752c1ad4954e4fa60fbfdd762f4c75f12215d208",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/752c1ad4954e4fa60fbfdd762f4c75f12215d208"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/272b38a5738b56b92bedeb4a9db6c32cb16f7508",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdRFodCRBK7hj4Ov3rIwAAdHIIAK6mNe/WLt9b/t+qeo5EH0Ku\naUqDgeMw845z5c9RZDArLXeEK2oDjEEfj0Pwwv5mN5o0M244bU+E6+QLmNivJsro\nyUQPLESdtKvUhvJjARvWhUESJaB2hj19Y54r3LxZ/GW7sDpOXLpzYvVvC+vYwFap\nh12M2wFPxytmxJdvJCJE6gG9eY5f+8ttHxO1hsYKSy5ZcmabHdY0eU4+8+z7P0NF\ncmoUTWFVW0uwnmFommxGUXS3LsGzwfEnKZ6MXLItQK+URadCWLcUuGFiYqgWCcLw\nsRoS3GawEYlWYIPwdmKFWQw16mL7JllBF2wtQlMiAtgY2F/4tv0WLnzqQuQEcaw=\n=i6j6\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 752c1ad4954e4fa60fbfdd762f4c75f12215d208\nparent 06e757245f081ee18e94015179187cdd9bbf9d6f\nauthor Rafael dos Santos Silva <xfalcox@gmail.com> 1564760605 -0300\ncommitter GitHub <noreply@github.com> 1564760605 -0300\n\nFIX: Better detection of Apple browsers (#7961)\n\nIntroduces isIpadOS to our capabilities sniffer, which is currently\r\ncompatible with latest iPad beta OS. Older iPad versions will match our\r\nisIOS detection.\r\n\r\nUsing this new feature, fixes the service worker being blocked in Google\r\nChrome, Firefox and other browsers while running on Mac OS, where they\r\nwork just fine. This enables Desktop PWA install in Mac OS."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/272b38a5738b56b92bedeb4a9db6c32cb16f7508",
+  "html_url": "https://github.com/discourse/discourse/commit/272b38a5738b56b92bedeb4a9db6c32cb16f7508",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/272b38a5738b56b92bedeb4a9db6c32cb16f7508/comments",
+  "author": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "06e757245f081ee18e94015179187cdd9bbf9d6f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/06e757245f081ee18e94015179187cdd9bbf9d6f",
+      "html_url": "https://github.com/discourse/discourse/commit/06e757245f081ee18e94015179187cdd9bbf9d6f"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "c0099d7f3062a1ae03a144b6f842ca3bcc8c3536",
+      "filename": "app/assets/javascripts/discourse/initializers/register-service-worker.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/272b38a5738b56b92bedeb4a9db6c32cb16f7508/app/assets/javascripts/discourse/initializers/register-service-worker.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/272b38a5738b56b92bedeb4a9db6c32cb16f7508/app/assets/javascripts/discourse/initializers/register-service-worker.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/initializers/register-service-worker.js.es6?ref=272b38a5738b56b92bedeb4a9db6c32cb16f7508",
+      "patch": "@@ -9,7 +9,8 @@ export default {\n     const isSupported = isSecured && \"serviceWorker\" in navigator;\n \n     if (isSupported) {\n-      const isApple = !!navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i);\n+      const caps = Discourse.__container__.lookup(\"capabilities:main\");\n+      const isApple = caps.isSafari || caps.isIOS || caps.isIpadOS;\n \n       if (Discourse.ServiceWorkerURL && !isApple) {\n         navigator.serviceWorker.getRegistrations().then(registrations => {"
+    },
+    {
+      "sha": "0a41fbab9a03ecd2c8df94260dde430f3271267d",
+      "filename": "app/assets/javascripts/discourse/pre-initializers/sniff-capabilities.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/272b38a5738b56b92bedeb4a9db6c32cb16f7508/app/assets/javascripts/discourse/pre-initializers/sniff-capabilities.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/272b38a5738b56b92bedeb4a9db6c32cb16f7508/app/assets/javascripts/discourse/pre-initializers/sniff-capabilities.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/pre-initializers/sniff-capabilities.js.es6?ref=272b38a5738b56b92bedeb4a9db6c32cb16f7508",
+      "patch": "@@ -37,6 +37,8 @@ export default {\n \n       caps.isIOS =\n         /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;\n+\n+      caps.isIpadOS = ua.indexOf(\"Mac OS\") !== -1 && touch;\n     }\n \n     // We consider high res a device with 1280 horizontal pixels. High DPI tablets like"
+    }
+  ]
+}
