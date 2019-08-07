@@ -1,0 +1,98 @@
+{
+  "sha": "e90aac11cbd133263f1bd9c222ae87892fb3f8e4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplOTBhYWMxMWNiZDEzMzI2M2YxYmQ5YzIyMmFlODc4OTJmYjNmOGU0",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-08-07T11:09:58Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2019-08-07T11:09:58Z"
+    },
+    "message": "fix the build",
+    "tree": {
+      "sha": "7f62f4539cfdf11f31eb5ecfa9ad102d0e1eccc7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7f62f4539cfdf11f31eb5ecfa9ad102d0e1eccc7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e90aac11cbd133263f1bd9c222ae87892fb3f8e4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e90aac11cbd133263f1bd9c222ae87892fb3f8e4",
+  "html_url": "https://github.com/discourse/discourse/commit/e90aac11cbd133263f1bd9c222ae87892fb3f8e4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e90aac11cbd133263f1bd9c222ae87892fb3f8e4/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b0e781e2d4fc7790102f1a4f3a9d514c4ebe7b26",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b0e781e2d4fc7790102f1a4f3a9d514c4ebe7b26",
+      "html_url": "https://github.com/discourse/discourse/commit/b0e781e2d4fc7790102f1a4f3a9d514c4ebe7b26"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f0829d1416f76ebf5b8c6f3295f29bf2bb39e070",
+      "filename": "lib/final_destination.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e90aac11cbd133263f1bd9c222ae87892fb3f8e4/lib/final_destination.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e90aac11cbd133263f1bd9c222ae87892fb3f8e4/lib/final_destination.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/final_destination.rb?ref=e90aac11cbd133263f1bd9c222ae87892fb3f8e4",
+      "patch": "@@ -238,7 +238,7 @@ def resolve\n       old_port = @uri.port\n       location = \"#{location}##{@uri.fragment}\" if @preserve_fragment_url && @uri.fragment.present?\n       location = \"#{@uri.scheme}://#{@uri.host}#{location}\" if location[0] == \"/\"\n-      @uri = redirect_uri\n+      @uri = uri(location)\n       @limit -= 1\n \n       # https redirect, so just cache that whole new domain is https"
+    }
+  ]
+}
