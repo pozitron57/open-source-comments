@@ -1,0 +1,98 @@
+{
+  "sha": "d01c938e1a8b5f96e16043aa8ec2aeeaee1be910",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkMDFjOTM4ZTFhOGI1Zjk2ZTE2MDQzYWE4ZWMyYWVlYWVlMWJlOTEw",
+  "commit": {
+    "author": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-08-09T14:35:22Z"
+    },
+    "committer": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-08-09T14:35:22Z"
+    },
+    "message": "Revert \"FIX: Use #dup instead of #+@ since content could be an instance of Nokogiri::XML::Element.\"\n\nThis reverts commit 50afe59306ec41a4fd74b01ca001734840adca8d.",
+    "tree": {
+      "sha": "55a913f018536d2f22a4cf61d5a6290549a3f661",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/55a913f018536d2f22a4cf61d5a6290549a3f661"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d01c938e1a8b5f96e16043aa8ec2aeeaee1be910",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d01c938e1a8b5f96e16043aa8ec2aeeaee1be910",
+  "html_url": "https://github.com/discourse/discourse/commit/d01c938e1a8b5f96e16043aa8ec2aeeaee1be910",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d01c938e1a8b5f96e16043aa8ec2aeeaee1be910/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "50afe59306ec41a4fd74b01ca001734840adca8d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/50afe59306ec41a4fd74b01ca001734840adca8d",
+      "html_url": "https://github.com/discourse/discourse/commit/50afe59306ec41a4fd74b01ca001734840adca8d"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "973b4896c510e41e193cb625865b9b230722da94",
+      "filename": "app/models/topic_embed.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/d01c938e1a8b5f96e16043aa8ec2aeeaee1be910/app/models/topic_embed.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d01c938e1a8b5f96e16043aa8ec2aeeaee1be910/app/models/topic_embed.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic_embed.rb?ref=d01c938e1a8b5f96e16043aa8ec2aeeaee1be910",
+      "patch": "@@ -37,7 +37,7 @@ def self.import(user, url, title, contents)\n       contents = first_paragraph_from(contents)\n     end\n     contents ||= ''\n-    contents = contents.dup << imported_from_html(url)\n+    contents = +contents << imported_from_html(url)\n \n     url = normalize_url(url)\n "
+    }
+  ]
+}
