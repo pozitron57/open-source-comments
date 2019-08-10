@@ -1,0 +1,122 @@
+{
+  "sha": "808a6a18751cfb812653853138f123467baaf87b",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ODA4YTZhMTg3NTFjZmI4MTI2NTM4NTMxMzhmMTIzNDY3YmFhZjg3Yg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-08-10T10:21:18Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-08-10T10:21:37Z"
+    },
+    "message": "Bump version. Fix linter complaint.",
+    "tree": {
+      "sha": "521dd56ab21aa58493d7fe8c2f4b6d6a59051ee2",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/521dd56ab21aa58493d7fe8c2f4b6d6a59051ee2"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/808a6a18751cfb812653853138f123467baaf87b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/808a6a18751cfb812653853138f123467baaf87b",
+  "html_url": "https://github.com/debiki/talkyard/commit/808a6a18751cfb812653853138f123467baaf87b",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/808a6a18751cfb812653853138f123467baaf87b/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "02f7ae55ed7f38a3c3c124168bf60f9e41be6e5c",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/02f7ae55ed7f38a3c3c124168bf60f9e41be6e5c",
+      "html_url": "https://github.com/debiki/talkyard/commit/02f7ae55ed7f38a3c3c124168bf60f9e41be6e5c"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "5c3728a59eb3db41d312cdfaf27e740ea957b692",
+      "filename": "modules/ed-versions",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-versions?ref=808a6a18751cfb812653853138f123467baaf87b",
+      "patch": "@@ -1 +1 @@\n-Subproject commit a72a7ff3a7bfde32a2ab96083257094fe262c1d3\n+Subproject commit 5c3728a59eb3db41d312cdfaf27e740ea957b692"
+    },
+    {
+      "sha": "6a59aca73683f4fb834de6b70acea907dc622e3f",
+      "filename": "tests/e2e/test-constants.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/808a6a18751cfb812653853138f123467baaf87b/tests/e2e/test-constants.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/808a6a18751cfb812653853138f123467baaf87b/tests/e2e/test-constants.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/test-constants.ts?ref=808a6a18751cfb812653853138f123467baaf87b",
+      "patch": "@@ -73,7 +73,7 @@ const TestPageNotfLevel = {\n \n \n export = {\n-  LowestTempImpId: 2*1000*1000*1000 + 1, //2000000001,\n+  LowestTempImpId: 2 * 1000 * 1000 * 1000 + 1, //2000000001,\n   TestPageRole,\n   TestPageNotfLevel,\n   TestPostType,"
+    },
+    {
+      "sha": "42648aad438bd7d5103d99abeb4dda24e77fc019",
+      "filename": "version.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/808a6a18751cfb812653853138f123467baaf87b/version.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/808a6a18751cfb812653853138f123467baaf87b/version.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/version.txt?ref=808a6a18751cfb812653853138f123467baaf87b",
+      "patch": "@@ -1 +1 @@\n-v0.6.41-WIP-1\n+v0.6.42-WIP-1"
+    }
+  ]
+}
