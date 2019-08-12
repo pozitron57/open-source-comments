@@ -1,0 +1,98 @@
+{
+  "sha": "f77ad01fbfefa466282eb1f606fe39471a0171fc",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmY3N2FkMDFmYmZlZmE0NjYyODJlYjFmNjA2ZmUzOTQ3MWEwMTcxZmM=",
+  "commit": {
+    "author": {
+      "name": "Ivan Bessarabov",
+      "email": "ivan@bessarabov.ru",
+      "date": "2019-08-11T20:30:21Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-11T21:01:35Z"
+    },
+    "message": "Fixing indent in README.md",
+    "tree": {
+      "sha": "a152ad7cbe81f9929b50facbb283b96ca2eaa19c",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/a152ad7cbe81f9929b50facbb283b96ca2eaa19c"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/f77ad01fbfefa466282eb1f606fe39471a0171fc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/f77ad01fbfefa466282eb1f606fe39471a0171fc",
+  "html_url": "https://github.com/umputun/remark/commit/f77ad01fbfefa466282eb1f606fe39471a0171fc",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/f77ad01fbfefa466282eb1f606fe39471a0171fc/comments",
+  "author": {
+    "login": "bessarabov",
+    "id": 47263,
+    "node_id": "MDQ6VXNlcjQ3MjYz",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/47263?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bessarabov",
+    "html_url": "https://github.com/bessarabov",
+    "followers_url": "https://api.github.com/users/bessarabov/followers",
+    "following_url": "https://api.github.com/users/bessarabov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bessarabov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bessarabov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bessarabov/subscriptions",
+    "organizations_url": "https://api.github.com/users/bessarabov/orgs",
+    "repos_url": "https://api.github.com/users/bessarabov/repos",
+    "events_url": "https://api.github.com/users/bessarabov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bessarabov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3ec9d0d8b258ccd6a9bee542b8c657cf5b54fdc5",
+      "url": "https://api.github.com/repos/umputun/remark/commits/3ec9d0d8b258ccd6a9bee542b8c657cf5b54fdc5",
+      "html_url": "https://github.com/umputun/remark/commit/3ec9d0d8b258ccd6a9bee542b8c657cf5b54fdc5"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "6a56a36d815a3a1bc6e278c5c2e11734be666e53",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/f77ad01fbfefa466282eb1f606fe39471a0171fc/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/f77ad01fbfefa466282eb1f606fe39471a0171fc/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=f77ad01fbfefa466282eb1f606fe39471a0171fc",
+      "patch": "@@ -633,7 +633,7 @@ Sort can be `time`, `active` or `score`. Supported sort order with prefix -/+, i\n \n   ```go\n   type Config struct {\n-     \tVersion        string   `json:\"version\"`\n+        Version        string   `json:\"version\"`\n         EditDuration   int      `json:\"edit_duration\"`\n         MaxCommentSize int      `json:\"max_comment_size\"`\n         Admins         []string `json:\"admins\"`"
+    }
+  ]
+}
