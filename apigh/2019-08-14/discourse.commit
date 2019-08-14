@@ -1,0 +1,350 @@
+{
+  "sha": "88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4ODM1OWIwZjE2N2ExNmI5ZWI1OWE5MzE1Y2VlZmE4NGU0YzdlYzdj",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2019-08-14T13:30:04Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-08-14T13:30:04Z"
+    },
+    "message": "FEATURE: add support for group members visibility level (#8004)\n\nThere are 5 visibility levels (similar to group visibility)\r\n\r\npublic (default)\r\nlogged-in users\r\nmembers only\r\nstaff\r\nowners\r\n\r\nAdmins & group owners always have visibility to group members.",
+    "tree": {
+      "sha": "b158c1efd1cda2984dca78799ff3d05c3fefb41c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b158c1efd1cda2984dca78799ff3d05c3fefb41c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+    "comment_count": 1,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdVAzcCRBK7hj4Ov3rIwAAdHIIACZE51ZovwbE/IMyEmn6L4sG\nDiuJQ1Q6huzAU57DdLVI6QJdumX6nsOzgE87vcG9hFv6sQaJpwQ4CyCHLrWP/xN/\ngeNnCwR8fUxD5IgSHHG8OHua/q7yKQdgNLhjX6CRxKYL9+UcdK7m0oQN4yE7DPYo\nEKi7ovEW2TyqQpN9awWanoANTJSXnHvOVqt4kD+4fEOSAem+fTpwBKtSDAG10mJh\ncSBft+wB+fPvcpflWwsQ1Gooh2iMNlsc4l5sHj9U9AJ0qSv6Fej2InRfTzPUp2PH\npthMvryuviZvazWU2jj1PIKzGJHczLWKn/WN2i5A/n/pi+iQiVS63CcOX9qpEEs=\n=gBf+\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree b158c1efd1cda2984dca78799ff3d05c3fefb41c\nparent f4aa6096abd8daf06fbfe6f9471340182d814bdf\nauthor Vinoth Kannan <svkn.87@gmail.com> 1565789404 +0530\ncommitter GitHub <noreply@github.com> 1565789404 +0530\n\nFEATURE: add support for group members visibility level (#8004)\n\nThere are 5 visibility levels (similar to group visibility)\r\n\r\npublic (default)\r\nlogged-in users\r\nmembers only\r\nstaff\r\nowners\r\n\r\nAdmins & group owners always have visibility to group members."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+  "html_url": "https://github.com/discourse/discourse/commit/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f4aa6096abd8daf06fbfe6f9471340182d814bdf",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f4aa6096abd8daf06fbfe6f9471340182d814bdf",
+      "html_url": "https://github.com/discourse/discourse/commit/f4aa6096abd8daf06fbfe6f9471340182d814bdf"
+    }
+  ],
+  "stats": {
+    "total": 366,
+    "additions": 351,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "690997aa5461c6a92a42341370c3af33ed432f39",
+      "filename": "app/assets/javascripts/discourse/controllers/group-index.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/controllers/group-index.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/controllers/group-index.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/group-index.js.es6?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -29,7 +29,7 @@ export default Ember.Controller.extend({\n     this.set(\"loading\", true);\n     const model = this.model;\n \n-    if (model) {\n+    if (model && model.can_see_members) {\n       model.findMembers(this.memberParams).finally(() => {\n         this.set(\n           \"application.showFooter\","
+    },
+    {
+      "sha": "5ea8f11616f367af0b9b1edb3178a45697640e4b",
+      "filename": "app/assets/javascripts/discourse/models/group.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/models/group.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/models/group.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/models/group.js.es6?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -162,6 +162,7 @@ const Group = RestModel.extend({\n       mentionable_level: this.mentionable_level,\n       messageable_level: this.messageable_level,\n       visibility_level: this.visibility_level,\n+      members_visibility_level: this.members_visibility_level,\n       automatic_membership_email_domains: this.emailDomains,\n       automatic_membership_retroactive: !!this.automatic_membership_retroactive,\n       title: this.title,"
+    },
+    {
+      "sha": "4ad23d5f648a8fb4c53bb037bcec94c368914549",
+      "filename": "app/assets/javascripts/discourse/routes/group-activity-index.js.es6",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/routes/group-activity-index.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/routes/group-activity-index.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/routes/group-activity-index.js.es6?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -1,5 +1,10 @@\n export default Ember.Route.extend({\n-  beforeModel: function() {\n-    this.transitionTo(\"group.activity.posts\");\n+  beforeModel() {\n+    const group = this.modelFor(\"group\");\n+    if (group.can_see_members) {\n+      this.transitionTo(\"group.activity.posts\");\n+    } else {\n+      this.transitionTo(\"group.activity.mentions\");\n+    }\n   }\n });"
+    },
+    {
+      "sha": "b2f254ca3280709bfab706824ead1c681226e47a",
+      "filename": "app/assets/javascripts/discourse/templates/components/groups-form-interaction-fields.hbs",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/templates/components/groups-form-interaction-fields.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/templates/components/groups-form-interaction-fields.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/groups-form-interaction-fields.hbs?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -14,6 +14,21 @@\n       {{i18n 'admin.groups.manage.interaction.visibility_levels.description'}}\n     </div>\n   </div>\n+\n+  <div class=\"control-group\">\n+    <label for=\"visiblity\">{{i18n 'admin.groups.manage.interaction.members_visibility_levels.title'}}</label>\n+\n+    {{combo-box name=\"alias\"\n+        valueAttribute=\"value\"\n+        value=model.members_visibility_level\n+        content=visibilityLevelOptions\n+        castInteger=true\n+        class=\"groups-form-members-visibility-level\"}}\n+\n+    <div class=\"control-instructions\">\n+      {{i18n 'admin.groups.manage.interaction.members_visibility_levels.description'}}\n+    </div>\n+  </div>\n {{/if}}\n \n <div class=\"control-group\">"
+    },
+    {
+      "sha": "a29fc281b6fba6fc6037533b770acb70996a138c",
+      "filename": "app/assets/javascripts/discourse/templates/group-index.hbs",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 6,
+      "changes": 18,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/templates/group-index.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/templates/group-index.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/group-index.hbs?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -1,10 +1,12 @@\n <section class=\"user-content\">\n \n <div class=\"group-members-actions\">\n-    {{text-field value=filterInput\n-        placeholderKey=filterPlaceholder\n-        autocomplete=\"discourse\"\n-        class=\"group-username-filter no-blur\"}}\n+    {{#if model.can_see_members}}\n+      {{text-field value=filterInput\n+          placeholderKey=filterPlaceholder\n+          autocomplete=\"discourse\"\n+          class=\"group-username-filter no-blur\"}}\n+    {{/if}}\n \n   <div class=\"group-members-manage\">\n     {{#if canManageGroup}}\n@@ -76,9 +78,13 @@\n   {{/load-more}}\n \n   {{conditional-loading-spinner condition=loading}}\n-{{else}}\n+{{else if model.can_see_members}}\n   <br>\n \n   <div>{{i18n \"groups.empty.members\"}}</div>\n+{{else}}\n+  <br>\n+\n+  <div>{{i18n \"groups.members.forbidden\"}}</div>\n {{/if}}\n-</section>\n\\ No newline at end of file\n+</section>"
+    },
+    {
+      "sha": "896228f9594f0af3a1e6a0522b9b270dcde59622",
+      "filename": "app/assets/javascripts/discourse/templates/group/activity.hbs",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/templates/group/activity.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/assets/javascripts/discourse/templates/group/activity.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/group/activity.hbs?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -1,7 +1,9 @@\n   <section class=\"user-secondary-navigation\">\n   {{#mobile-nav class='activity-nav' desktopClass='action-list activity-list nav-stacked' currentPath=router._router.currentPath}}\n-    {{group-activity-filter filter=\"posts\" categoryId=category_id}}\n-    {{group-activity-filter filter=\"topics\" categoryId=category_id}}\n+    {{#if model.can_see_members}}\n+      {{group-activity-filter filter=\"posts\" categoryId=category_id}}\n+      {{group-activity-filter filter=\"topics\" categoryId=category_id}}\n+    {{/if}}\n     {{#if siteSettings.enable_mentions}}\n       {{group-activity-filter filter=\"mentions\" categoryId=category_id}}\n     {{/if}}"
+    },
+    {
+      "sha": "48ea9822b35ec8619e4a88980e2d79cbb3227b23",
+      "filename": "app/controllers/admin/groups_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/controllers/admin/groups_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/controllers/admin/groups_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/groups_controller.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -135,6 +135,7 @@ def group_params\n       :mentionable_level,\n       :messageable_level,\n       :visibility_level,\n+      :members_visibility_level,\n       :automatic_membership_email_domains,\n       :automatic_membership_retroactive,\n       :title,"
+    },
+    {
+      "sha": "724d9818af5a9efee821aee393589aa88337cd5d",
+      "filename": "app/controllers/groups_controller.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/controllers/groups_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/controllers/groups_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/groups_controller.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -159,6 +159,8 @@ def update\n \n   def posts\n     group = find_group(:group_id)\n+    guardian.ensure_can_see_group_members!(group)\n+\n     posts = group.posts_for(\n       guardian,\n       params.permit(:before_post_id, :category_id)\n@@ -168,6 +170,8 @@ def posts\n \n   def posts_feed\n     group = find_group(:group_id)\n+    guardian.ensure_can_see_group_members!(group)\n+\n     @posts = group.posts_for(\n       guardian,\n       params.permit(:before_post_id, :category_id)\n@@ -204,6 +208,8 @@ def mentions_feed\n   def members\n     group = find_group(:group_id)\n \n+    guardian.ensure_can_see_group_members!(group)\n+\n     limit = (params[:limit] || 20).to_i\n     offset = params[:offset].to_i\n \n@@ -542,6 +548,7 @@ def group_params(automatic: false)\n             :incoming_email,\n             :primary_group,\n             :visibility_level,\n+            :members_visibility_level,\n             :name,\n             :grant_trust_level,\n             :automatic_membership_email_domains,"
+    },
+    {
+      "sha": "69a6c96d6a5a067c2c7fbfa1152e8aabc71082a2",
+      "filename": "app/controllers/list_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/controllers/list_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/controllers/list_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/list_controller.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -161,6 +161,7 @@ def group_topics\n     group = Group.find_by(name: params[:group_name])\n     raise Discourse::NotFound unless group\n     guardian.ensure_can_see_group!(group)\n+    guardian.ensure_can_see_group_members!(group)\n \n     list_opts = build_topic_list_options\n     list = generate_list_for(\"group_topics\", group, list_opts)"
+    },
+    {
+      "sha": "7e560dcf2a7e221d4c32ecf1b7f3ae81a3a789fc",
+      "filename": "app/models/group.rb",
+      "status": "modified",
+      "additions": 54,
+      "deletions": 0,
+      "changes": 54,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/models/group.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/models/group.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/group.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -153,6 +153,59 @@ def self.visibility_levels\n     groups\n   }\n \n+  scope :members_visible_groups, Proc.new { |user, order, opts|\n+    groups = self.order(order || \"name ASC\")\n+\n+    if !opts || !opts[:include_everyone]\n+      groups = groups.where(\"groups.id > 0\")\n+    end\n+\n+    unless user&.admin\n+      sql = <<~SQL\n+        groups.id IN (\n+          SELECT g.id FROM groups g WHERE g.members_visibility_level = :public\n+\n+          UNION ALL\n+\n+          SELECT g.id FROM groups g\n+          WHERE g.members_visibility_level = :logged_on_users AND :user_id IS NOT NULL\n+\n+          UNION ALL\n+\n+          SELECT g.id FROM groups g\n+          JOIN group_users gu ON gu.group_id = g.id AND\n+                                 gu.user_id = :user_id\n+          WHERE g.members_visibility_level = :members\n+\n+          UNION ALL\n+\n+          SELECT g.id FROM groups g\n+          LEFT JOIN group_users gu ON gu.group_id = g.id AND\n+                                 gu.user_id = :user_id AND\n+                                 gu.owner\n+          WHERE g.members_visibility_level = :staff AND (gu.id IS NOT NULL OR :is_staff)\n+\n+          UNION ALL\n+\n+          SELECT g.id FROM groups g\n+          JOIN group_users gu ON gu.group_id = g.id AND\n+                                 gu.user_id = :user_id AND\n+                                 gu.owner\n+          WHERE g.members_visibility_level = :owners\n+\n+        )\n+      SQL\n+\n+      groups = groups.where(\n+        sql,\n+        Group.visibility_levels.to_h.merge(user_id: user&.id, is_staff: !!user&.staff?)\n+      )\n+\n+    end\n+\n+    groups\n+  }\n+\n   scope :mentionable, lambda { |user|\n     where(self.mentionable_sql_clause,\n       levels: alias_levels(user),\n@@ -828,6 +881,7 @@ def enqueue_update_mentions_job\n #  membership_request_template        :text\n #  messageable_level                  :integer          default(0)\n #  mentionable_level                  :integer          default(0)\n+#  members_visibility_level           :integer          default(0), not null\n #\n # Indexes\n #"
+    },
+    {
+      "sha": "3f1cb66dab8ce1682a3c3b5354b189c48aaaa1d0",
+      "filename": "app/serializers/basic_group_serializer.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/serializers/basic_group_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/serializers/basic_group_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/basic_group_serializer.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -29,7 +29,9 @@ class BasicGroupSerializer < ApplicationSerializer\n              :default_notification_level,\n              :membership_request_template,\n              :is_group_user,\n-             :is_group_owner\n+             :is_group_owner,\n+             :members_visibility_level,\n+             :can_see_members\n \n   def include_display_name?\n     object.automatic\n@@ -81,6 +83,10 @@ def is_group_owner\n     owner_group_ids.include?(object.id)\n   end\n \n+  def can_see_members\n+    scope.can_see_group_members?(object)\n+  end\n+\n   private\n \n   def staff?"
+    },
+    {
+      "sha": "0379feede45271b7aa44d4cb95166bac2532edce",
+      "filename": "app/serializers/user_serializer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/serializers/user_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/app/serializers/user_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/user_serializer.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -143,7 +143,7 @@ def mailing_list_posts_per_day\n \n   def groups\n     object.groups.order(:id)\n-      .visible_groups(scope.user)\n+      .visible_groups(scope.user).members_visible_groups(scope.user)\n   end\n \n   def group_users"
+    },
+    {
+      "sha": "583e88637c9c55b4383cdefe7ef3af6664913606",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -651,6 +651,7 @@ en:\n         remove_owner: \"Remove as Owner\"\n         remove_owner_description: \"Remove <b>%{username}</b> as an owner of this group\"\n         owner: \"Owner\"\n+        forbidden: \"You're not allowed to view the members.\"\n       topics: \"Topics\"\n       posts: \"Posts\"\n       mentions: \"Mentions\"\n@@ -3211,6 +3212,9 @@ en:\n               staff: \"Group owners and staff\"\n               owners: \"Group owners\"\n               description: \"Admins can see all groups.\"\n+            members_visibility_levels:\n+              title: \"Who can see this group members?\"\n+              description: \"Admins can see members of all groups.\"\n \n           membership:\n             automatic: Automatic"
+    },
+    {
+      "sha": "70fbb7a80822140f064f4e1e5704bd7430663271",
+      "filename": "db/migrate/20190812141433_add_members_visibility_level_to_groups.rb",
+      "status": "added",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/db/migrate/20190812141433_add_members_visibility_level_to_groups.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/db/migrate/20190812141433_add_members_visibility_level_to_groups.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20190812141433_add_members_visibility_level_to_groups.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -0,0 +1,7 @@\n+# frozen_string_literal: true\n+\n+class AddMembersVisibilityLevelToGroups < ActiveRecord::Migration[5.2]\n+  def change\n+    add_column :groups, :members_visibility_level, :integer, default: 0, null: false\n+  end\n+end"
+    },
+    {
+      "sha": "28e7d369364f5a89019479e0da31d37aaa706063",
+      "filename": "lib/guardian.rb",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/lib/guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/lib/guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -209,6 +209,26 @@ def can_see_group?(group)\n     true\n   end\n \n+  def can_see_group_members?(group)\n+    return false if group.blank?\n+    return true if group.members_visibility_level == Group.visibility_levels[:public]\n+    return true if is_admin?\n+    return true if is_staff? && group.members_visibility_level == Group.visibility_levels[:staff]\n+    return true if authenticated? && group.members_visibility_level == Group.visibility_levels[:logged_on_users]\n+    return false if user.blank?\n+\n+    membership = GroupUser.find_by(group_id: group.id, user_id: user.id)\n+\n+    return false unless membership\n+\n+    if !membership.owner\n+      return false if group.members_visibility_level == Group.visibility_levels[:owners]\n+      return false if group.members_visibility_level == Group.visibility_levels[:staff]\n+    end\n+\n+    true\n+  end\n+\n   def can_see_groups?(groups)\n     return false if groups.blank?\n     return true if groups.all? { |g| g.visibility_level == Group.visibility_levels[:public] }"
+    },
+    {
+      "sha": "926bf310e8308776859046ddd0e8d6c331d3327b",
+      "filename": "spec/components/guardian_spec.rb",
+      "status": "modified",
+      "additions": 84,
+      "deletions": 0,
+      "changes": 84,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/components/guardian_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/components/guardian_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/guardian_spec.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -3048,6 +3048,90 @@\n \n   end\n \n+  describe(:can_see_group_members) do\n+    it 'Correctly handles group members visibility for owner' do\n+      group = Group.new(name: 'group', members_visibility_level: Group.visibility_levels[:owners])\n+\n+      member = Fabricate(:user)\n+      group.add(member)\n+      group.save!\n+\n+      owner = Fabricate(:user)\n+      group.add_owner(owner)\n+      group.reload\n+\n+      expect(Guardian.new(admin).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(another_user).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(moderator).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(member).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new.can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(owner).can_see_group_members?(group)).to eq(true)\n+    end\n+\n+    it 'Correctly handles group members visibility for staff' do\n+      group = Group.new(name: 'group', members_visibility_level: Group.visibility_levels[:staff])\n+\n+      member = Fabricate(:user)\n+      group.add(member)\n+      group.save!\n+\n+      owner = Fabricate(:user)\n+      group.add_owner(owner)\n+      group.reload\n+\n+      expect(Guardian.new(another_user).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(member).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(admin).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(moderator).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(owner).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new.can_see_group_members?(group)).to eq(false)\n+    end\n+\n+    it 'Correctly handles group members visibility for member' do\n+      group = Group.new(name: 'group', members_visibility_level: Group.visibility_levels[:members])\n+\n+      member = Fabricate(:user)\n+      group.add(member)\n+      group.save!\n+\n+      owner = Fabricate(:user)\n+      group.add_owner(owner)\n+      group.reload\n+\n+      expect(Guardian.new(moderator).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new.can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(another_user).can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(admin).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(member).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(owner).can_see_group_members?(group)).to eq(true)\n+    end\n+\n+    it 'Correctly handles group members visibility for logged-on-user' do\n+      group = Group.new(name: 'group', members_visibility_level: Group.visibility_levels[:logged_on_users])\n+      member = Fabricate(:user)\n+      group.add(member)\n+      group.save!\n+\n+      owner = Fabricate(:user)\n+      group.add_owner(owner)\n+      group.reload\n+\n+      expect(Guardian.new.can_see_group_members?(group)).to eq(false)\n+      expect(Guardian.new(moderator).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(admin).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(member).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(owner).can_see_group_members?(group)).to eq(true)\n+      expect(Guardian.new(another_user).can_see_group_members?(group)).to eq(true)\n+    end\n+\n+    it 'Correctly handles group members visibility for public' do\n+      group = Group.new(name: 'group', members_visibility_level: Group.visibility_levels[:public])\n+\n+      expect(Guardian.new.can_see_group_members?(group)).to eq(true)\n+    end\n+\n+  end\n+\n   describe '#can_see_groups?' do\n     it 'correctly handles owner visible groups' do\n       group = Group.new(name: 'group', visibility_level: Group.visibility_levels[:owners])"
+    },
+    {
+      "sha": "4739357d1922fc9183b0bf5b5aceabcb01fa58d6",
+      "filename": "spec/models/group_spec.rb",
+      "status": "modified",
+      "additions": 65,
+      "deletions": 0,
+      "changes": 65,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/models/group_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/models/group_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/group_spec.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -716,6 +716,71 @@ def can_view?(user, group)\n \n   end\n \n+  describe \".members_visible_groups\" do\n+\n+    def can_view?(user, group)\n+      Group.members_visible_groups(user).exists?(id: group.id)\n+    end\n+\n+    it 'correctly restricts group members visibility' do\n+      group = Fabricate.build(:group, members_visibility_level: Group.visibility_levels[:owners])\n+      logged_on_user = Fabricate(:user)\n+      member = Fabricate(:user)\n+      group.add(member)\n+      group.save!\n+\n+      owner = Fabricate(:user)\n+      group.add_owner(owner)\n+\n+      moderator = Fabricate(:user, moderator: true)\n+      admin = Fabricate(:user, admin: true)\n+\n+      expect(can_view?(admin, group)).to eq(true)\n+      expect(can_view?(owner, group)).to eq(true)\n+      expect(can_view?(moderator, group)).to eq(false)\n+      expect(can_view?(member, group)).to eq(false)\n+      expect(can_view?(logged_on_user, group)).to eq(false)\n+      expect(can_view?(nil, group)).to eq(false)\n+\n+      group.update_columns(members_visibility_level: Group.visibility_levels[:staff])\n+\n+      expect(can_view?(admin, group)).to eq(true)\n+      expect(can_view?(owner, group)).to eq(true)\n+      expect(can_view?(moderator, group)).to eq(true)\n+      expect(can_view?(member, group)).to eq(false)\n+      expect(can_view?(logged_on_user, group)).to eq(false)\n+      expect(can_view?(nil, group)).to eq(false)\n+\n+      group.update_columns(members_visibility_level: Group.visibility_levels[:members])\n+\n+      expect(can_view?(admin, group)).to eq(true)\n+      expect(can_view?(owner, group)).to eq(true)\n+      expect(can_view?(moderator, group)).to eq(false)\n+      expect(can_view?(member, group)).to eq(true)\n+      expect(can_view?(logged_on_user, group)).to eq(false)\n+      expect(can_view?(nil, group)).to eq(false)\n+\n+      group.update_columns(members_visibility_level: Group.visibility_levels[:public])\n+\n+      expect(can_view?(admin, group)).to eq(true)\n+      expect(can_view?(owner, group)).to eq(true)\n+      expect(can_view?(moderator, group)).to eq(true)\n+      expect(can_view?(member, group)).to eq(true)\n+      expect(can_view?(logged_on_user, group)).to eq(true)\n+      expect(can_view?(nil, group)).to eq(true)\n+\n+      group.update_columns(members_visibility_level: Group.visibility_levels[:logged_on_users])\n+\n+      expect(can_view?(admin, group)).to eq(true)\n+      expect(can_view?(owner, group)).to eq(true)\n+      expect(can_view?(moderator, group)).to eq(true)\n+      expect(can_view?(member, group)).to eq(true)\n+      expect(can_view?(logged_on_user, group)).to eq(true)\n+      expect(can_view?(nil, group)).to eq(false)\n+    end\n+\n+  end\n+\n   describe '#remove' do\n     before { group.add(user) }\n "
+    },
+    {
+      "sha": "ea7e77bbbda08712d6c0dd096b42376d16c23827",
+      "filename": "spec/requests/admin/groups_controller_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/requests/admin/groups_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/requests/admin/groups_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/groups_controller_spec.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -20,6 +20,7 @@\n           owner_usernames: [user.username].join(\",\"),\n           allow_membership_requests: true,\n           membership_request_template: 'Testing',\n+          members_visibility_level: Group.visibility_levels[:staff]\n         }\n       }\n     end\n@@ -35,6 +36,7 @@\n       expect(group.users).to contain_exactly(admin, user)\n       expect(group.allow_membership_requests).to eq(true)\n       expect(group.membership_request_template).to eq('Testing')\n+      expect(group.members_visibility_level).to eq(Group.visibility_levels[:staff])\n     end\n \n     context \"custom_fields\" do"
+    },
+    {
+      "sha": "124eaf5c7d768e162f4b45ec0293080f533a5980",
+      "filename": "spec/requests/groups_controller_spec.rb",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 1,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/requests/groups_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/requests/groups_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/groups_controller_spec.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -335,6 +335,15 @@ def expect_type_to_return_right_groups(type, expected_group_ids)\n       expect(response.status).to eq(403)\n     end\n \n+    it \"ensures the group members can be seen\" do\n+      sign_in(Fabricate(:user))\n+      group.update!(members_visibility_level: Group.visibility_levels[:owners])\n+\n+      get \"/groups/#{group.name}/posts.json\"\n+\n+      expect(response.status).to eq(403)\n+    end\n+\n     it \"calls `posts_for` and responds with JSON\" do\n       sign_in(user)\n       post = Fabricate(:post, user: user)\n@@ -369,6 +378,14 @@ def expect_type_to_return_right_groups(type, expected_group_ids)\n       expect(response.status).to eq(403)\n     end\n \n+    it \"ensures the group members can be seen\" do\n+      group.update!(members_visibility_level: Group.visibility_levels[:logged_on_users])\n+\n+      get \"/groups/#{group.name}/members.json\", params: { limit: 1 }\n+\n+      expect(response.status).to eq(403)\n+    end\n+\n     it \"ensures that membership can be paginated\" do\n \n       freeze_time\n@@ -613,6 +630,7 @@ def expect_type_to_return_right_groups(type, expected_group_ids)\n       it 'should be able to update the group' do\n         group.update!(\n           visibility_level: 2,\n+          members_visibility_level: 2,\n           automatic_membership_retroactive: false,\n           grant_trust_level: 0\n         )\n@@ -626,7 +644,8 @@ def expect_type_to_return_right_groups(type, expected_group_ids)\n             automatic_membership_email_domains: 'test.org',\n             automatic_membership_retroactive: true,\n             grant_trust_level: 2,\n-            visibility_level: 1\n+            visibility_level: 1,\n+            members_visibility_level: 3\n           }\n         }\n \n@@ -638,6 +657,7 @@ def expect_type_to_return_right_groups(type, expected_group_ids)\n         expect(group.incoming_email).to eq(\"test@mail.org\")\n         expect(group.primary_group).to eq(true)\n         expect(group.visibility_level).to eq(1)\n+        expect(group.members_visibility_level).to eq(3)\n         expect(group.automatic_membership_email_domains).to eq('test.org')\n         expect(group.automatic_membership_retroactive).to eq(true)\n         expect(group.grant_trust_level).to eq(2)"
+    },
+    {
+      "sha": "dd94355045214acad7dcd4f14e2bb4a7e7a31c07",
+      "filename": "spec/requests/list_controller_spec.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/requests/list_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/requests/list_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/list_controller_spec.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -261,6 +261,16 @@\n           expect(response.status).to eq(403)\n         end\n       end\n+\n+      describe 'group members visibility restricted to logged-on-users' do\n+        before { group.update!(members_visibility_level: Group.visibility_levels[:logged_on_users]) }\n+\n+        it 'should return the right response' do\n+          get \"/topics/groups/#{group.name}.json\"\n+\n+          expect(response.status).to eq(403)\n+        end\n+      end\n     end\n \n     describe 'for a normal user' do"
+    },
+    {
+      "sha": "3dace7fcf44ae3be1df0de8995b1e62911f413b0",
+      "filename": "spec/serializers/basic_group_serializer_spec.rb",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/serializers/basic_group_serializer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/spec/serializers/basic_group_serializer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/serializers/basic_group_serializer_spec.rb?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -89,4 +89,29 @@\n       end\n     end\n   end\n+\n+  describe '#can_see_members' do\n+    fab!(:group) { Fabricate(:group, members_visibility_level: Group.visibility_levels[:members]) }\n+\n+    describe 'for a group user' do\n+      fab!(:user) { Fabricate(:user) }\n+      let(:guardian) { Guardian.new(user) }\n+\n+      before do\n+        group.add(user)\n+      end\n+\n+      it 'should be true' do\n+        expect(subject.as_json[:can_see_members]).to eq(true)\n+      end\n+    end\n+\n+    describe 'for a normal user' do\n+      let(:guardian) { Guardian.new(Fabricate(:user)) }\n+\n+      it 'should be false' do\n+        expect(subject.as_json[:can_see_members]).to eq(false)\n+      end\n+    end\n+  end\n end"
+    },
+    {
+      "sha": "89842f3245ac92988490dc6af9af8008b74e58ce",
+      "filename": "test/javascripts/fixtures/group-fixtures.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/test/javascripts/fixtures/group-fixtures.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/88359b0f167a16b9eb59a9315ceefa84e4c7ec7c/test/javascripts/fixtures/group-fixtures.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/fixtures/group-fixtures.js.es6?ref=88359b0f167a16b9eb59a9315ceefa84e4c7ec7c",
+      "patch": "@@ -46,7 +46,8 @@ export default {\n       flair_url: \"fa-adjust\",\n       is_group_owner: true,\n       mentionable: true,\n-      messageable: true\n+      messageable: true,\n+      can_see_members: true\n     },\n     extras: {\n       visible_group_names: [\"discourse\"]"
+    }
+  ]
+}
