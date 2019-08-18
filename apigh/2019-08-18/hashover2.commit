@@ -1,0 +1,110 @@
+{
+  "sha": "2b87a084f84b073b208b4157500d16a5ba17dbe3",
+  "node_id": "MDY6Q29tbWl0MTgwOTYzMjI6MmI4N2EwODRmODRiMDczYjIwOGI0MTU3NTAwZDE2YTViYTE3ZGJlMw==",
+  "commit": {
+    "author": {
+      "name": "Jacob Barkdull",
+      "email": "jacobbarkdull@gmail.com",
+      "date": "2019-08-17T20:09:48Z"
+    },
+    "committer": {
+      "name": "Jacob Barkdull",
+      "email": "jacobbarkdull@gmail.com",
+      "date": "2019-08-17T20:09:48Z"
+    },
+    "message": "Fixed new comments getting posted out of sort order\n\nNew comments are now added to the under-the-hood comment storage in canonical order, the comments are then sorted and (re)appended to the page. This ensures new comments appear in the correct place no matter what sorting is selected.\n\nFor example, if you were to select the \"Newest First\" sorting order, and then post a comment, that comment would be added at the bottom of the comments, which would make it appear to be the first comment ever posted according to the sorting order. This is no longer the case, the comment would now appear at the top.\n\nThis is also an example of a great commit. It expands functionality while reducing the codebase.",
+    "tree": {
+      "sha": "7ca62471c492085a7c7c3f19707192a71527a6b4",
+      "url": "https://api.github.com/repos/jacobwb/hashover-next/git/trees/7ca62471c492085a7c7c3f19707192a71527a6b4"
+    },
+    "url": "https://api.github.com/repos/jacobwb/hashover-next/git/commits/2b87a084f84b073b208b4157500d16a5ba17dbe3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEofOubkBFMHW68fO7nCRq6Ma+3AkFAl1YYFgACgkQnCRq6Ma+\n3AmfLhAAmbvy4HHuTcB2KXmwua9HHMq/r0YV6RHgbbC+J3mkuMzX87De5fOIiA7D\n/+XJ5q8ah7cYhlFR832jjv80GKPGnJ+pl9zP97MrLeCN6xMwlWl+k8jBiTc1n6cR\nhwEMLEGm8DdQBiFTaKw76HRNcWX3MegJYDJMgVlyJSitfwLdueUpC6AhULod3kwj\nxuNXef9nXBqFStm2UpXll5VK5teE2vJ6528S6spFOiHFoh4zuu7LIyeB8AgnigOs\noGFhhkpnls+ahYXbSAxZaB0QwxjkogqyM5AIOzoqqSgq+t52UVDqucTG435cAL+E\nevzWjhWlkCs72jIa6XtZW82qztd6ix5c5HQ45R6PZhqcMfaWORloOBNsFd9RA17M\nkaTQ931R52gyKnF67m9snHCdnZD7sUiNudgIDRnUIwf0Hb1RF3TixtcgiGuDv7Hx\njuorOUqyc5L4H1a1CVBztMp5v8HEJNLBOn0/WPMhLbZ4O+AvYIQhUWYZnHwhtEeC\nTz1l5hpwjLK9ii9ZRclaM2vJ31mBeQiXF0fkLoje3FdYUsa98SdlgjdVgAbz17zg\nhtSZw1BhoiySQhTaNmN4Gwz8cTa474mITDLSqdPAPSupXAjiSrMNckcduyULkcNv\nKowsOLrxZWLgNbVBrxi9VAZPrWSUqA4B32EC2OtUC6vp/3gRLAc=\n=zlqA\n-----END PGP SIGNATURE-----",
+      "payload": "tree 7ca62471c492085a7c7c3f19707192a71527a6b4\nparent 4591c7a155fef05e5d7058a2c5d62914a2ef3565\nauthor Jacob Barkdull <jacobbarkdull@gmail.com> 1566072588 -0700\ncommitter Jacob Barkdull <jacobbarkdull@gmail.com> 1566072588 -0700\n\nFixed new comments getting posted out of sort order\n\nNew comments are now added to the under-the-hood comment storage in canonical order, the comments are then sorted and (re)appended to the page. This ensures new comments appear in the correct place no matter what sorting is selected.\n\nFor example, if you were to select the \"Newest First\" sorting order, and then post a comment, that comment would be added at the bottom of the comments, which would make it appear to be the first comment ever posted according to the sorting order. This is no longer the case, the comment would now appear at the top.\n\nThis is also an example of a great commit. It expands functionality while reducing the codebase.\n"
+    }
+  },
+  "url": "https://api.github.com/repos/jacobwb/hashover-next/commits/2b87a084f84b073b208b4157500d16a5ba17dbe3",
+  "html_url": "https://github.com/jacobwb/hashover-next/commit/2b87a084f84b073b208b4157500d16a5ba17dbe3",
+  "comments_url": "https://api.github.com/repos/jacobwb/hashover-next/commits/2b87a084f84b073b208b4157500d16a5ba17dbe3/comments",
+  "author": {
+    "login": "jacobwb",
+    "id": 4677622,
+    "node_id": "MDQ6VXNlcjQ2Nzc2MjI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4677622?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jacobwb",
+    "html_url": "https://github.com/jacobwb",
+    "followers_url": "https://api.github.com/users/jacobwb/followers",
+    "following_url": "https://api.github.com/users/jacobwb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jacobwb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jacobwb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jacobwb/subscriptions",
+    "organizations_url": "https://api.github.com/users/jacobwb/orgs",
+    "repos_url": "https://api.github.com/users/jacobwb/repos",
+    "events_url": "https://api.github.com/users/jacobwb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jacobwb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jacobwb",
+    "id": 4677622,
+    "node_id": "MDQ6VXNlcjQ2Nzc2MjI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4677622?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jacobwb",
+    "html_url": "https://github.com/jacobwb",
+    "followers_url": "https://api.github.com/users/jacobwb/followers",
+    "following_url": "https://api.github.com/users/jacobwb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jacobwb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jacobwb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jacobwb/subscriptions",
+    "organizations_url": "https://api.github.com/users/jacobwb/orgs",
+    "repos_url": "https://api.github.com/users/jacobwb/repos",
+    "events_url": "https://api.github.com/users/jacobwb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jacobwb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4591c7a155fef05e5d7058a2c5d62914a2ef3565",
+      "url": "https://api.github.com/repos/jacobwb/hashover-next/commits/4591c7a155fef05e5d7058a2c5d62914a2ef3565",
+      "html_url": "https://github.com/jacobwb/hashover-next/commit/4591c7a155fef05e5d7058a2c5d62914a2ef3565"
+    }
+  ],
+  "stats": {
+    "total": 45,
+    "additions": 8,
+    "deletions": 37
+  },
+  "files": [
+    {
+      "sha": "15af5a6133ae5f2b2790251f2623679647ff3540",
+      "filename": "frontend/ajaxpost.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 35,
+      "changes": 41,
+      "blob_url": "https://github.com/jacobwb/hashover-next/blob/2b87a084f84b073b208b4157500d16a5ba17dbe3/frontend/ajaxpost.js",
+      "raw_url": "https://github.com/jacobwb/hashover-next/raw/2b87a084f84b073b208b4157500d16a5ba17dbe3/frontend/ajaxpost.js",
+      "contents_url": "https://api.github.com/repos/jacobwb/hashover-next/contents/frontend/ajaxpost.js?ref=2b87a084f84b073b208b4157500d16a5ba17dbe3",
+      "patch": "@@ -39,42 +39,13 @@ HashOver.prototype.AJAXPost = function (json, permalink, type)\n \t\t// If not, add comment to comments array\n \t\tthis.addComments (json.comment, type);\n \n-\t\t// Fetch parent comment by its permalink\n-\t\tvar parent = this.permalinkComment (\n-\t\t\tthis.permalinkParent (json.comment.permalink),\n-\t\t\tthis.instance.comments.primary\n-\t\t);\n-\n-\t\t// Parse comment\n-\t\tvar comment = this.parseComment (json.comment, parent);\n-\n-\t\t// Get comment child elements\n-\t\tvar elements = this.htmlChildren (comment);\n-\n-\t\t// Check if the comment is a reply and has a permalink\n-\t\tif (type === 'reply' && permalink !== undefined) {\n-\t\t\t// If so, store indicator of when comment is out of stream depth\n-\t\t\tvar outOfDepth = (permalink.split ('r').length > this.setup['stream-depth']);\n-\n-\t\t\t// Check if we are in stream mode and out of the allowed depth\n-\t\t\tif (this.setup['stream-mode'] === true && outOfDepth === true) {\n-\t\t\t\t// If so, append comment to parent element\n-\t\t\t\tdest.parentNode.insertBefore (elements[0], dest.nextSibling);\n-\t\t\t} else {\n-\t\t\t\t// If not, append to destination element\n-\t\t\t\tdest.appendChild (elements[0]);\n-\t\t\t}\n-\t\t} else {\n-\t\t\t// If not, append to destination element\n-\t\t\tdest.appendChild (elements[0]);\n-\t\t}\n-\t}\n-\n-\t// Add class to indicate comment is out of order\n-\tif (type !== 'reply' && this.instance['showing-more'] === false) {\n-\t\tthis.elementExists (json.comment.permalink, function (comment) {\n-\t\t\thashover.classes.add (comment, 'hashover-disjoined');\n+\t\t// Sort comments if sort method drop down menu exists\n+\t\tthis.elementExists ('sort-select', function (sortSelect) {\n+\t\t\tcomments = hashover.sortComments (comments, sortSelect.value);\n \t\t});\n+\n+\t\t// And append comments\n+\t\tthis.appendComments (comments);\n \t}\n \n \t// Add controls to the new comment"
+    },
+    {
+      "sha": "0c90a305ece231f3e204f46bf00d10b14e26f298",
+      "filename": "frontend/permalinks.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/jacobwb/hashover-next/blob/2b87a084f84b073b208b4157500d16a5ba17dbe3/frontend/permalinks.js",
+      "raw_url": "https://github.com/jacobwb/hashover-next/raw/2b87a084f84b073b208b4157500d16a5ba17dbe3/frontend/permalinks.js",
+      "contents_url": "https://api.github.com/repos/jacobwb/hashover-next/contents/frontend/permalinks.js?ref=2b87a084f84b073b208b4157500d16a5ba17dbe3",
+      "patch": "@@ -1,5 +1,5 @@\n // Returns the permalink of a comment's parent (permalinks.js)\n-HashOverConstructor.prototype.permalinkParent = function (permalink, flatten)\n+HashOverConstructor.prototype.permalinkParent = function (permalink)\n {\n \t// Split permalink by reply 'r'\n \tvar parent = permalink.split ('r');\n@@ -8,7 +8,7 @@ HashOverConstructor.prototype.permalinkParent = function (permalink, flatten)\n \tvar length = parent.length - 1;\n \n \t// Limit depth if in stream mode\n-\tif (this.setup['stream-mode'] === true && flatten === true) {\n+\tif (this.setup['stream-mode'] === true) {\n \t\tlength = Math.min (this.setup['stream-depth'], length);\n \t}\n "
+    }
+  ]
+}

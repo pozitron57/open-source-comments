@@ -1,0 +1,110 @@
+{
+  "sha": "1354a5add38d9db3cb74bdfe058be1ee5083d291",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MTM1NGE1YWRkMzhkOWRiM2NiNzRiZGZlMDU4YmUxZWU1MDgzZDI5MQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-08-18T05:10:24Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-08-18T05:43:42Z"
+    },
+    "message": "Feeds: Add <link rel=alternate> to comments over at the embedding site\n\nAnd excl titles, and auto gen body posts for emb cmts pages.",
+    "tree": {
+      "sha": "adc3dbdb095ef3dcef00b06a584527136cb17dee",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/adc3dbdb095ef3dcef00b06a584527136cb17dee"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/1354a5add38d9db3cb74bdfe058be1ee5083d291",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/1354a5add38d9db3cb74bdfe058be1ee5083d291",
+  "html_url": "https://github.com/debiki/talkyard/commit/1354a5add38d9db3cb74bdfe058be1ee5083d291",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/1354a5add38d9db3cb74bdfe058be1ee5083d291/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dfa484a1a401ef237144e463d1dfae2839688618",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/dfa484a1a401ef237144e463d1dfae2839688618",
+      "html_url": "https://github.com/debiki/talkyard/commit/dfa484a1a401ef237144e463d1dfae2839688618"
+    }
+  ],
+  "stats": {
+    "total": 57,
+    "additions": 47,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "0dc2bef2c82150e1545660723a22eb41108bee0a",
+      "filename": "app/controllers/ApiV0Controller.scala",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/debiki/talkyard/blob/1354a5add38d9db3cb74bdfe058be1ee5083d291/app/controllers/ApiV0Controller.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/1354a5add38d9db3cb74bdfe058be1ee5083d291/app/controllers/ApiV0Controller.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/ApiV0Controller.scala?ref=1354a5add38d9db3cb74bdfe058be1ee5083d291",
+      "patch": "@@ -143,6 +143,15 @@ class ApiV0Controller @Inject()(cc: ControllerComponents, edContext: EdContext,\n \n         TemporaryRedirect(thenGoTo)\n             .withCookies(sidAndXsrfCookies: _*)\n+\n+      // Later:\n+      // /-/v0/comments-feed —> lists all recent blog comments   [CMTSFEED]\n+      // /-/v0/comments-feed?forEmbeddingHost=www.myblog.com — if a multi-host blog\n+      // Or:\n+      // /-/v0/embedded-comments-feed ?  Probably better — \"comment\" can be interpreted\n+      // as StackOverflow style \"comments\" below a Q&A answer post.\n+      //\n+      // Whilst this (/-/v0/feed) is about the Talkyard site only and links to it:\n       case \"feed\" =>\n         /*\n         https://server.address/-/v0/recent-posts.rss"
+    },
+    {
+      "sha": "761d3b12cc6d424669e70ece560e3c6df343770f",
+      "filename": "app/debiki/feed-serializers.scala",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 10,
+      "changes": 48,
+      "blob_url": "https://github.com/debiki/talkyard/blob/1354a5add38d9db3cb74bdfe058be1ee5083d291/app/debiki/feed-serializers.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/1354a5add38d9db3cb74bdfe058be1ee5083d291/app/debiki/feed-serializers.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/feed-serializers.scala?ref=1354a5add38d9db3cb74bdfe058be1ee5083d291",
+      "patch": "@@ -56,13 +56,39 @@ object AtomFeedXml {   // RENAME file, and class? to AtomFeedBuilder?\n     if (!hostUrl.startsWith(\"http\"))\n       warnDbgDie(\"Bad host URL: \"+ safed(hostUrl))\n \n-    val baseUrl = hostUrl +\"/\"\n-    def urlTo(pp: PagePath) = baseUrl + pp.value.dropWhile(_ == '/')\n+    def atomEntryFor(post: Post, page: PageStuff): Option[NodeSeq] = {\n+      if (post.isTitle) {\n+        // Generate an entry only for the page body with the actual text — skip the title.\n+        return None\n+      }\n+      if (page.pageRole == PageType.EmbeddedComments && post.isOrigPost) {\n+        // Then this is an auto generated text like \"Comments for ...\" — pretty\n+        // uninteresting; don't generate any entry.\n+        return None\n+      }\n \n-    def atomEntryFor(post: Post, page: PageStuff): NodeSeq = {\n       //val pageBodyAuthor =\n       //      pageBody.user.map(_.displayName) getOrElse \"(Author name unknown)\"\n-      val urlToPage = hostUrl + \"/-\" + page.pageId  // for now\n+\n+      val urlToPageAndPost = hostUrl + \"/-\" + page.pageId + \"#post-\" + post.nr  // for now\n+\n+      // If this is a blog comment, let's include a link to the comment over at the\n+      // embedding site, in a rel=alternate link.\n+      //\n+      // Later: [CMTSFEED] Add a /-/v0/comments-feed that only includes blog comments, and\n+      // in the primary <id> links, links to the *embedding* site. This feed bloggers\n+      // can use, to embed a recent-comments feed in their blog — then, the recent\n+      // comments entries will link to their *blog*, not the Talkyard site.\n+      // But let the /-/v0/feed feed be about the Talkyard site, with links to\n+      // the Talkyard site the <id> links (as is done now); only link to any\n+      // embedding site in these secondary \"alternate\" links.\n+      //\n+      val commentNr = post.nr - 1 // the comment nr is post nr - 1  [2PAWC0].\n+      val anyEmbeddedCommentUrl =\n+        page.pageMeta.embeddingPageUrl.map(_ + \"#comment-\" + commentNr)\n+      val anyAlternateUrlToEmbeddingPage = anyEmbeddedCommentUrl map { url =>\n+        <link rel=\"alternate\" href={url}/>\n+      } getOrElse xml.Null\n \n       // Convert HTML to XHTML.\n       // Atom parsers wants xml — they apparently choke on unclosed html tags.\n@@ -77,10 +103,10 @@ object AtomFeedXml {   // RENAME file, and class? to AtomFeedBuilder?\n         .escapeMode(org.jsoup.nodes.Entities.EscapeMode.xhtml)\n       val postXhtml: String = jsoupDoc.body().html()\n \n-      <entry>{\n+      val entry = <entry>{\n         /* Identifies the entry using a universally unique and\n         permanent URI. */}\n-        <id>{urlToPage + \"#post-\" + post.nr}</id>{\n+        <id>{urlToPageAndPost}</id>{\n         /* Contains a human readable title for the entry. */}\n         <title>{page.title}</title>{\n         /* Indicates the last time the entry was modified in a\n@@ -99,16 +125,18 @@ object AtomFeedXml {   // RENAME file, and class? to AtomFeedBuilder?\n         of the entry.  -- but that shouldn't be the ctime, the page\n         shouldn't be published at creation.\n         COULD indroduce a page's publishedTime? publishing time?\n-        <published>{toIso8601T(ctime)}</published> */\n-        /* Identifies a related Web page. */}\n-        <link rel=\"alternate\" href={urlToPage}/>{\n+        <published>{toIso8601T(ctime)}</published> */ }{\n+        /* Identifies a related Web page. */\n+        anyAlternateUrlToEmbeddingPage }{\n         /* Contains or links to the complete content of the entry. */}\n         <content type=\"xhtml\">\n           <div xmlns=\"http://www.w3.org/1999/xhtml\">\n             { xml.Unparsed(postXhtml) }\n           </div>\n         </content>\n       </entry>\n+\n+      Some(entry)\n     }\n \n     val feedUrl = hostUrl + routes.ApiV0Controller.getFromApi(\"feed\")\n@@ -133,7 +161,7 @@ object AtomFeedXml {   // RENAME file, and class? to AtomFeedBuilder?\n       <generator uri=\"https://www.talkyard.io\">Talkyard</generator>\n       {\n         posts flatMap { post =>\n-          pageStuffById.get(post.pageId) map { page =>\n+          pageStuffById.get(post.pageId) flatMap { page =>\n             atomEntryFor(post, page)\n           }\n         }"
+    }
+  ]
+}
