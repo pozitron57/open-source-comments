@@ -1,0 +1,110 @@
+{
+  "sha": "6924f1ab15796f2e20b918fdf91c98d06f8c8369",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2OTI0ZjFhYjE1Nzk2ZjJlMjBiOTE4ZmRmOTFjOThkMDZmOGM4MzY5",
+  "commit": {
+    "author": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-08-21T13:47:44Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-08-21T13:47:44Z"
+    },
+    "message": "FIX: Race-condition in fallback handlers (#8005)\n\nCalling `verify_master` in multiple threads simultaneously would cause\r\nmultiple threads to be spawned.",
+    "tree": {
+      "sha": "c7ba542a813f937db5a09f69180996ac2d7554e4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c7ba542a813f937db5a09f69180996ac2d7554e4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6924f1ab15796f2e20b918fdf91c98d06f8c8369",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6924f1ab15796f2e20b918fdf91c98d06f8c8369",
+  "html_url": "https://github.com/discourse/discourse/commit/6924f1ab15796f2e20b918fdf91c98d06f8c8369",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6924f1ab15796f2e20b918fdf91c98d06f8c8369/comments",
+  "author": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "00b75b4f4eedfe3b2021a6adb2ebe019cd264566",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/00b75b4f4eedfe3b2021a6adb2ebe019cd264566",
+      "html_url": "https://github.com/discourse/discourse/commit/00b75b4f4eedfe3b2021a6adb2ebe019cd264566"
+    }
+  ],
+  "stats": {
+    "total": 48,
+    "additions": 26,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "ce37de7c14e4f28b1ab405e2b87919db40c32c46",
+      "filename": "lib/active_record/connection_adapters/postgresql_fallback_adapter.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 11,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/6924f1ab15796f2e20b918fdf91c98d06f8c8369/lib/active_record/connection_adapters/postgresql_fallback_adapter.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6924f1ab15796f2e20b918fdf91c98d06f8c8369/lib/active_record/connection_adapters/postgresql_fallback_adapter.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/active_record/connection_adapters/postgresql_fallback_adapter.rb?ref=6924f1ab15796f2e20b918fdf91c98d06f8c8369",
+      "patch": "@@ -32,19 +32,21 @@ def initialize\n   end\n \n   def verify_master\n-    synchronize { return if @thread && @thread.alive? }\n-\n-    @thread = Thread.new do\n-      while true do\n-        thread = Thread.new { initiate_fallback_to_master }\n-        thread.abort_on_exception = true\n-        thread.join\n-        break if synchronize { @masters_down.hash.empty? }\n-        sleep 5\n+    synchronize do\n+      return if @thread && @thread.alive?\n+\n+      @thread = Thread.new do\n+        while true do\n+          thread = Thread.new { initiate_fallback_to_master }\n+          thread.abort_on_exception = true\n+          thread.join\n+          break if synchronize { @masters_down.hash.empty? }\n+          sleep 5\n+        end\n       end\n-    end\n \n-    @thread.abort_on_exception = true\n+      @thread.abort_on_exception = true\n+    end\n   end\n \n   def master_down?"
+    },
+    {
+      "sha": "e63ec530ab49e8f88141d16b78eb2ae8c6c65eec",
+      "filename": "lib/discourse_redis.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 11,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/6924f1ab15796f2e20b918fdf91c98d06f8c8369/lib/discourse_redis.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6924f1ab15796f2e20b918fdf91c98d06f8c8369/lib/discourse_redis.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/discourse_redis.rb?ref=6924f1ab15796f2e20b918fdf91c98d06f8c8369",
+      "patch": "@@ -23,17 +23,19 @@ def initialize\n     end\n \n     def verify_master\n-      synchronize { return if @thread && @thread.alive? }\n-\n-      @thread = Thread.new do\n-        loop do\n-          begin\n-            thread = Thread.new { initiate_fallback_to_master }\n-            thread.join\n-            break if synchronize { @master }\n-            sleep 5\n-          ensure\n-            thread.kill\n+      synchronize do\n+        return if @thread && @thread.alive?\n+\n+        @thread = Thread.new do\n+          loop do\n+            begin\n+              thread = Thread.new { initiate_fallback_to_master }\n+              thread.join\n+              break if synchronize { @master }\n+              sleep 5\n+            ensure\n+              thread.kill\n+            end\n           end\n         end\n       end"
+    }
+  ]
+}
