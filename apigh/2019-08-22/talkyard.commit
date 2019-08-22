@@ -1,0 +1,98 @@
+{
+  "sha": "500b1dad060e9c3ee3ee420914c8459260736189",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NTAwYjFkYWQwNjBlOWMzZWUzZWU0MjA5MTRjODQ1OTI2MDczNjE4OQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-08-22T12:01:45Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-08-22T13:29:34Z"
+    },
+    "message": "Edit readme.",
+    "tree": {
+      "sha": "9b13e4a457336efe9744706a8cfaa561a0cd17e1",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/9b13e4a457336efe9744706a8cfaa561a0cd17e1"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/500b1dad060e9c3ee3ee420914c8459260736189",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/500b1dad060e9c3ee3ee420914c8459260736189",
+  "html_url": "https://github.com/debiki/talkyard/commit/500b1dad060e9c3ee3ee420914c8459260736189",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/500b1dad060e9c3ee3ee420914c8459260736189/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ba31fe8e6e4010da0bf413f1ac9f4aa8a9dc34a8",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/ba31fe8e6e4010da0bf413f1ac9f4aa8a9dc34a8",
+      "html_url": "https://github.com/debiki/talkyard/commit/ba31fe8e6e4010da0bf413f1ac9f4aa8a9dc34a8"
+    }
+  ],
+  "stats": {
+    "total": 73,
+    "additions": 46,
+    "deletions": 27
+  },
+  "files": [
+    {
+      "sha": "26ccba26d5d3d3abb1d006a83fc05d57e33b7735",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 46,
+      "deletions": 27,
+      "changes": 73,
+      "blob_url": "https://github.com/debiki/talkyard/blob/500b1dad060e9c3ee3ee420914c8459260736189/README.md",
+      "raw_url": "https://github.com/debiki/talkyard/raw/500b1dad060e9c3ee3ee420914c8459260736189/README.md",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/README.md?ref=500b1dad060e9c3ee3ee420914c8459260736189",
+      "patch": "@@ -15,7 +15,7 @@ to do, to change society, or grow your startup.\n Talkyard\n =============================\n \n-Discussion software. Open source, install yourself. There's SaaS hosting too.\n+Forum software, brings together the best from StackOverflow, Discourse, Slack etc.\n \n <!--\n Create a place to talk,\n@@ -26,18 +26,22 @@ Place it at `talkyard.Your-Website.org`.\n -->\n \n  - **Save time.** People find help \"instantly\", in Question & Answers topics.\n- - **Crowdsource ideas and feedback.** Discuss, upvote, pick the right things to do.\n+ - **Crowdsource feedback and ideas.** Discuss, upvote, choose the right things to do.\n  - **Collaborate,** in team chats.\n  - **Talk with your blog readers,** in embedded comments.\n \n For your co-workers / customers /\n students / volunteers /\n-contributors / users / community.\n-Brings together the best from StackOverflow, Slack, Discourse, Reddit, HackerNews, Disqus.\n+contributors / users.\n \n+But how does it compare with\n+StackOverflow for Teams, Discourse, Slack, Facebook Groups, Disqus?<br>\n+— <a href=\"https://www.talkyard.io/compared-with\">Find out here.</a>\n \n-This Git repository is for *development*. **installation instructions** are elsewhere:<br>\n-https://github.com/debiki/talkyard-prod-one\n+\n+This Git repository is for *development*.<br>\n+**Installation instructions** are elsewhere: https://github.com/debiki/talkyard-prod-one.<br>\n+There's a hosting service: https://www.talkyard.io.\n \n <!--\n For your students / volunteers / colleagues / customers / donors /\n@@ -50,7 +54,7 @@ open source users / city / community. -->\n \n <!-- (The staff configure the topic type just once, in a per category setting.) -->\n \n-[**Support forum here**](https://www.talkyard.io/forum/latest/support), at Talkyard<i></i>.io — and report bugs there too.\n+[**Support forum here**](https://www.talkyard.io/forum/latest/support) (& live \"demo\"), at Talkyard<i></i>.io — and report bugs there too.\n \n <!--\n Use Talkyard for your workplace, as a self building FAQ. Or for customer support.\n@@ -70,31 +74,21 @@ Talkyard (formerly EffectiveDiscussions) is discussion forum software, with chat\n And embedded comments for static websites / blogs.\n Inspired by Discourse, Slack, StackOverflow, Reddit and Hacker News, Disqus. -->\n \n-Screenshots a bit below.<br>\n-See it live: https://www.talkyard.io/forum/latest<br>\n-Read about it, and demo forums: https://www.talkyard.io\n-\n You'll find **Docker image** build files in: <code>./images/<i>image-name</i>/</code>\n \n This is beta software; there might be bugs.\n \n \n-Screenshots\n------------\n-\n-### Topic list:\n-\n-<!--\n-![topic-list-borders](https://user-images.githubusercontent.com/7477359/44306130-a3930080-a388-11e8-9cbc-e569f5ddb7a1.jpg)\n- the old demo forum looks better? so use instead.  -->\n-\n-![ideas-topics](https://raw.githubusercontent.com/debiki/talkyard-media/bf78d26ec3f4da976d9c694a660d40b718d86043/for-docs/2019-08-10-idea-topics-list-ex.jpg \"Topics list\")\n-<!--\n-![ideas-topics](/images/web/ty-media/for-docs/2019-08-10-idea-topics-list-ex.jpg?raw=true \"Topics list\")\n+<!-- Some Features -----------\n+- Avoid mistakes: See if people disagree.\n+- Anonymous questions: So people dare to ask embarassing questions, or post crazy creative ideas.\n+- \n+- \n+-->\n \n-![ed-demo-forum-index](https://cloud.githubusercontent.com/assets/7477359/19650764/bb3a1450-9a0a-11e6-884d-d23c93476db3.jpg) -->\n \n-<br>\n+Screenshots\n+-----------\n \n ### Question-Answers:\n \n@@ -108,13 +102,24 @@ The good answers surface to the top.\n ![how-work-from-home-vpn-broken-borders](https://user-images.githubusercontent.com/7477359/44306101-0041eb80-a388-11e8-92e8-b8d417c47139.jpg)\n -->\n \n+### Avoid mistakes\n+\n+See if others disagree with something, so you can avoid following the wrong advice.\n+\n+<br>\n+\n+![Avoid mistakes](https://tyw-49f8.kxcdn.com/-/u/e7ef490a72/2/m/nu/zecljq7vwtuyxqfabsjwqzg6bfmyvr.jpg)\n+\n+<br>\n+\n+\n ### Recent replies — find them:\n \n You leave for lunch, or go home over the night — and return to a Question-Answers topic the next day. Did someone post more replies, when you were away? You want to find and read?\n \n-At StackOverflow, Reddit, HackerNews and everywhere else, it's hard to find them. You need to carefully scan the whole discussion from top to bottom. This can take an hour, e.g. a large discusson at Reddit or HN — often I just don't do this at all, becasue, too much work.\n+You can directly find the most recent answers and replies: Open the sidebar, click the Recent tab, and find the most recent replies, click to scroll.\n \n-Talkyard lets you directly find the most recent answers and replies, although the discussion is threaded: Open the sidebar, click the Recen tab, and find the most recent replies, click to scroll.\n+(But at StackOverflow, Reddit, HackerNews etc, it's hard to find them (since the discussions are threaded). You need to carefully scan the whole discussion from top to bottom.)\n \n <br>\n <br>\n@@ -126,6 +131,20 @@ Talkyard lets you directly find the most recent answers and replies, although th\n \n <br>\n \n+### Topic list:\n+\n+<!--\n+![topic-list-borders](https://user-images.githubusercontent.com/7477359/44306130-a3930080-a388-11e8-9cbc-e569f5ddb7a1.jpg)\n+ the old demo forum looks better? so use instead.  -->\n+\n+![ideas-topics](https://raw.githubusercontent.com/debiki/talkyard-media/bf78d26ec3f4da976d9c694a660d40b718d86043/for-docs/2019-08-10-idea-topics-list-ex.jpg \"Topics list\")\n+<!--\n+![ideas-topics](/images/web/ty-media/for-docs/2019-08-10-idea-topics-list-ex.jpg?raw=true \"Topics list\")\n+\n+![ed-demo-forum-index](https://cloud.githubusercontent.com/assets/7477359/19650764/bb3a1450-9a0a-11e6-884d-d23c93476db3.jpg) -->\n+\n+<br>\n+\n ### Chat:\n \n Notifications via email, as of now. Some time later, there'll be a PWA mobile app with push notifications."
+    }
+  ]
+}
