@@ -1,0 +1,218 @@
+{
+  "sha": "a6149ae06449652f083351eabd9ffa444347e102",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmE2MTQ5YWUwNjQ0OTY1MmYwODMzNTFlYWJkOWZmYTQ0NDM0N2UxMDI=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-24T06:59:24Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-24T06:59:24Z"
+    },
+    "message": "add support for avatar store uri",
+    "tree": {
+      "sha": "48085ff31a6b80ac50e380bc0a65bbb78d523145",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/48085ff31a6b80ac50e380bc0a65bbb78d523145"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/a6149ae06449652f083351eabd9ffa444347e102",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/a6149ae06449652f083351eabd9ffa444347e102",
+  "html_url": "https://github.com/umputun/remark/commit/a6149ae06449652f083351eabd9ffa444347e102",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/a6149ae06449652f083351eabd9ffa444347e102/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "141c75401a60c90b9ecefafde9bb1f17740b6ff1",
+      "url": "https://api.github.com/repos/umputun/remark/commits/141c75401a60c90b9ecefafde9bb1f17740b6ff1",
+      "html_url": "https://github.com/umputun/remark/commit/141c75401a60c90b9ecefafde9bb1f17740b6ff1"
+    }
+  ],
+  "stats": {
+    "total": 94,
+    "additions": 85,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "1689b23f60a3c565f71ab6cfe519a8ef4722bcc3",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -115,9 +115,10 @@ _this is the recommended way to run remark42_\n | cache.max.items         | CACHE_MAX_ITEMS         | `1000`                   | max number of cached items, `0` - unlimited      |\n | cache.max.value         | CACHE_MAX_VALUE         | `65536`                  | max size of cached value, `0` - unlimited        |\n | cache.max.size          | CACHE_MAX_SIZE          | `50000000`               | max size of all cached values, `0` - unlimited   |\n-| avatar.type             | AVATAR_TYPE             | `fs`                     | type of avatar storage, `fs`, `bolt`, or `mongo` |\n+| avatar.type             | AVATAR_TYPE             | `fs`                     | type of avatar storage, `fs`, `bolt`, or `uri`   |\n | avatar.fs.path          | AVATAR_FS_PATH          | `./var/avatars`          | avatars location for `fs` store                  |\n | avatar.bolt.file        | AVATAR_BOLT_FILE        | `./var/avatars.db`       | file name for  `bolt` store                      |\n+| avatar.uri              | AVATAR_URI              | `./var/avatars`          | avatar store uri                                 |\n | avatar.rsz-lmt          | AVATAR_RSZ_LMT          | `0` (disabled)           | max image size for resizing avatars on save      |\n | image.type              | IMAGE_TYPE              | `fs`                     | type of image storage, `fs`, `bolt`, or `mongo`  |\n | image.max-size          | IMAGE_MAX_SIZE          | `5000000`                | max size of image file                           |"
+    },
+    {
+      "sha": "4ce03db1c315de3e744536e121acff468d14fbb4",
+      "filename": "backend/_example/memory_store/go.sum",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/_example/memory_store/go.sum",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/_example/memory_store/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/_example/memory_store/go.sum?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -48,6 +48,7 @@ github.com/go-chi/render v1.0.1/go.mod h1:pq4Rr7HbnsdaeHagklXub+p6Wd16Af5l9koip1\n github.com/go-pkgz/auth v0.4.1/go.mod h1:CWtB8dHmOv+TfF3MUzKwk/YwTLepC2TaDL05A+pFVBM=\n github.com/go-pkgz/auth v0.7.2/go.mod h1:ibOpZYISiaOvAHe2bsKj2s3v4AkMam2WxxIFn+zhulo=\n github.com/go-pkgz/auth v0.8.0/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n+github.com/go-pkgz/auth v0.8.1/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n github.com/go-pkgz/auth/_example v0.0.0-20190722170031-705d3f732438/go.mod h1:rvZtFFkmm3p+E0CHmfUqTGKweCVg2ddsRUrEEPB1iaE=\n github.com/go-pkgz/auth/_example v0.0.0-20190823054154-cc9c87832e19/go.mod h1:M9HLEzuiKQQ+rwGA9bAzmUDguCJi2HyGwKkxb5ouGJU=\n github.com/go-pkgz/jrpc v0.1.0 h1:hNg/IyfEqJcSWOKkuHw0ZwcuGc9TDp7QZREsD2ycmiM="
+    },
+    {
+      "sha": "473931d1da16f2bd5a5b7724ad36b4906671ae28",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server.go?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -132,14 +132,15 @@ type ImageGroup struct {\n \n // AvatarGroup defines options group for avatar params\n type AvatarGroup struct {\n-\tType string `long:\"type\" env:\"TYPE\" description:\"type of avatar storage\" choice:\"fs\" choice:\"bolt\" default:\"fs\"`\n+\tType string `long:\"type\" env:\"TYPE\" description:\"type of avatar storage\" choice:\"fs\" choice:\"bolt\" choice:\"uri\" default:\"fs\"`\n \tFS   struct {\n \t\tPath string `long:\"path\" env:\"PATH\" default:\"./var/avatars\" description:\"avatars location\"`\n \t} `group:\"fs\" namespace:\"fs\" env-namespace:\"FS\"`\n \tBolt struct {\n \t\tFile string `long:\"file\" env:\"FILE\" default:\"./var/avatars.db\" description:\"avatars bolt file location\"`\n \t} `group:\"bolt\" namespace:\"bolt\" env-namespace:\"bolt\"`\n-\tRszLmt int `long:\"rsz-lmt\" env:\"RESIZE\" default:\"0\" description:\"max image size for resizing avatars on save\"`\n+\tURI    string `long:\"uri\" env:\"URI\" default:\"./var/avatars\" description:\"avatar's store URI\"`\n+\tRszLmt int    `long:\"rsz-lmt\" env:\"RESIZE\" default:\"0\" description:\"max image size for resizing avatars on save\"`\n }\n \n // CacheGroup defines options group for cache params\n@@ -470,6 +471,8 @@ func (s *ServerCommand) makeAvatarStore() (avatar.Store, error) {\n \t\t\treturn nil, err\n \t\t}\n \t\treturn avatar.NewBoltDB(s.Avatar.Bolt.File, bolt.Options{})\n+\tcase \"uri\":\n+\t\treturn avatar.NewStore(s.Avatar.URI)\n \t}\n \treturn nil, errors.Errorf(\"unsupported avatar store type %s\", s.Avatar.Type)\n }"
+    },
+    {
+      "sha": "a2bee37ea176c0a6af164593a1795cda3b5528fd",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/go.mod",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/go.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/go.mod?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -17,7 +17,7 @@ require (\n \tgithub.com/go-chi/chi v4.0.2+incompatible\n \tgithub.com/go-chi/cors v1.0.0\n \tgithub.com/go-chi/render v1.0.1\n-\tgithub.com/go-pkgz/auth v0.8.0\n+\tgithub.com/go-pkgz/auth v0.8.1\n \tgithub.com/go-pkgz/jrpc v0.1.0\n \tgithub.com/go-pkgz/lcw v0.3.1\n \tgithub.com/go-pkgz/lgr v0.6.3"
+    },
+    {
+      "sha": "5dc308df4c0c9ce5069c586da19dd5a8ddc1f2f5",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/go.sum",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/go.sum?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -53,8 +53,8 @@ github.com/go-chi/cors v1.0.0/go.mod h1:K2Yje0VW/SJzxiyMYu6iPQYa7hMjQX2i/F491VCh\n github.com/go-chi/render v1.0.1 h1:4/5tis2cKaNdnv9zFLfXzcquC9HbeZgCnxGnKrltBS8=\n github.com/go-chi/render v1.0.1/go.mod h1:pq4Rr7HbnsdaeHagklXub+p6Wd16Af5l9koip1OvJns=\n github.com/go-pkgz/auth v0.4.1/go.mod h1:CWtB8dHmOv+TfF3MUzKwk/YwTLepC2TaDL05A+pFVBM=\n-github.com/go-pkgz/auth v0.8.0 h1:8m0HyTbYGA568NEBQE7CqMgBZ+ZZFwBIZaVOzOWC2uI=\n-github.com/go-pkgz/auth v0.8.0/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n+github.com/go-pkgz/auth v0.8.1 h1:HBJau0LDOZ9NI5+fnrJu5azETuXLJx9ipx5uosYdK8I=\n+github.com/go-pkgz/auth v0.8.1/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n github.com/go-pkgz/auth/_example v0.0.0-20190722170031-705d3f732438/go.mod h1:rvZtFFkmm3p+E0CHmfUqTGKweCVg2ddsRUrEEPB1iaE=\n github.com/go-pkgz/jrpc v0.1.0 h1:hNg/IyfEqJcSWOKkuHw0ZwcuGc9TDp7QZREsD2ycmiM=\n github.com/go-pkgz/jrpc v0.1.0/go.mod h1:JxZsvoBklA50DNhELVJnJ567Rt+KrMH9rR3u515wvE8="
+    },
+    {
+      "sha": "1afccf7451e4ee5562a8f0c4cb594fc40d65b0f9",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/README.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/README.md?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -34,7 +34,7 @@ Example with chi router:\n ```go\n \n func main() {\n-\t/// define options\n+\t// define options\n \toptions := auth.Opts{\n \t\tSecretReader: token.SecretFunc(func(id string) (string, error) { // secret key for JWT\n \t\t\treturn \"secret\", nil\n@@ -129,7 +129,10 @@ Direct links to avatars won't survive any real-life usage if they linked from a\n     - `avatar.GridFS` - external [GridFS](https://docs.mongodb.com/manual/core/gridfs/) (mongo db).\n - In case of need custom implementations of other stores can be passed in and used by `auth` library. Each store has to implement `avatar.Store` [interface](https://github.com/go-pkgz/auth/blob/master/avatar/store.go#L25).\n - All avatar-related setup done as a part of `auth.Opts` and needs:\n-    - `AvatarStore` - avatar store to use, i.e. `avatar.NewLocalFS(\"/tmp/avatars\")`\n+    - `AvatarStore` - avatar store to use, i.e. `avatar.NewLocalFS(\"/tmp/avatars\")` or more generic `avatar.NewStore(uri)`\n+        - file system uri - `file:///tmp/location` or just `/tmp/location`\n+        - boltdb - `bolt://tmp/avatars.bdb`\n+        - mongo - `\"mongodb://127.0.0.1:27017/test?ava_db=db1&ava_coll=coll1`\n     - `AvatarRoutePath` - route prefix for direct links to proxied avatar. For example `/api/v1/avatars` will make full links like this - `http://example.com/api/v1/avatars/1234567890123.image`. The url will be stored in user's token and retrieved by middleware (see \"User Info\")\n     - `AvatarResizeLimit` - size (in pixels) used to resize the avatar. Pls note - resize happens once as a part of `Put` call, i.e. on login. 0 size (default) disables resizing.      \n "
+    },
+    {
+      "sha": "24b1092c7db02bc851a5c193d6eb8d11e1a7be59",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/avatar/bolt.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/bolt.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/bolt.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/avatar/bolt.go?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -4,6 +4,7 @@ import (\n \t\"bytes\"\n \t\"crypto/sha1\"\n \t\"encoding/hex\"\n+\t\"fmt\"\n \t\"io\"\n \t\"io/ioutil\"\n \t\"log\"\n@@ -126,6 +127,10 @@ func (b *BoltDB) Close() error {\n \treturn errors.Wrapf(b.db.Close(), \"failed to close %s\", b.fileName)\n }\n \n+func (b *BoltDB) String() string {\n+\treturn fmt.Sprintf(\"boltdb, path=%s\", b.fileName)\n+}\n+\n func (b *BoltDB) sha1(data []byte, avatarID string) (id string) {\n \th := sha1.New()\n \tif _, err := h.Write(data); err != nil {"
+    },
+    {
+      "sha": "04d54e739fa4c14561274f5eee59e0644ccae66e",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/avatar/gridfs.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/gridfs.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/gridfs.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/avatar/gridfs.go?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -2,6 +2,7 @@ package avatar\n \n import (\n \t\"bytes\"\n+\t\"fmt\"\n \t\"io\"\n \t\"io/ioutil\"\n \t\"log\"\n@@ -116,3 +117,7 @@ func (gf *GridFS) List() (ids []string, err error) {\n func (gf *GridFS) Close() error {\n \treturn nil\n }\n+\n+func (gf *GridFS) String() string {\n+\treturn fmt.Sprintf(\"mongo (grid fs), conn=%s\", gf.Connection)\n+}"
+    },
+    {
+      "sha": "7336c3a832092f48314a730aa5be898d8526b616",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/avatar/localfs.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/localfs.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/localfs.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/avatar/localfs.go?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -108,6 +108,10 @@ func (fs *LocalFS) Close() error {\n \treturn nil\n }\n \n+func (fs *LocalFS) String() string {\n+\treturn fmt.Sprintf(\"localfs, path=%s\", fs.storePath)\n+}\n+\n // get location (directory) for user id by adding partition to final path in order to keep files\n // in different subdirectories and avoid too many files in a single place.\n // the end result is a full path like this - /tmp/avatars.test/92"
+    },
+    {
+      "sha": "e6c587405e69625bd00da7078773fc02ebfa86b5",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/avatar/store.go",
+      "status": "modified",
+      "additions": 54,
+      "deletions": 0,
+      "changes": 54,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/store.go",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/github.com/go-pkgz/auth/avatar/store.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/avatar/store.go?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -4,15 +4,21 @@ package avatar\n \n import (\n \t\"crypto/sha1\"\n+\t\"fmt\"\n \t_ \"image/gif\"  // initializing packages for supporting GIF\n \t_ \"image/jpeg\" // initializing packages for supporting JPEG.\n \t_ \"image/png\"  // initializing packages for supporting PNG.\n \t\"io\"\n \t\"log\"\n+\t\"net/url\"\n \t\"regexp\"\n \t\"strings\"\n+\t\"time\"\n \n+\tbolt \"github.com/coreos/bbolt\"\n \t\"github.com/go-pkgz/auth/token\"\n+\t\"github.com/go-pkgz/mongo\"\n+\t\"github.com/pkg/errors\"\n )\n \n // imgSfx for avatars\n@@ -22,6 +28,7 @@ var reValidAvatarID = regexp.MustCompile(`^[a-fA-F0-9]{40}\\.image$`)\n \n // Store defines interface to store and and load avatars\n type Store interface {\n+\tfmt.Stringer\n \tPut(userID string, reader io.Reader) (avatarID string, err error) // save avatar data from the reader and return base name\n \tGet(avatarID string) (reader io.ReadCloser, size int, err error)  // load avatar via reader\n \tID(avatarID string) (id string)                                   // unique id of stored avatar's data\n@@ -30,6 +37,30 @@ type Store interface {\n \tClose() error                                                     // close store\n }\n \n+// NewStore provides factory for all supported stores making the one\n+// based on uri protocol. Default (no protocol) is file-system\n+func NewStore(uri string) (Store, error) {\n+\tswitch {\n+\tcase strings.HasPrefix(uri, \"file://\"):\n+\t\treturn NewLocalFS(strings.TrimPrefix(uri, \"file://\")), nil\n+\tcase !strings.Contains(uri, \"://\"):\n+\t\treturn NewLocalFS(uri), nil\n+\tcase strings.HasPrefix(uri, \"mongodb://\"):\n+\t\tdb, coll, u, err := parseExtMongoURI(uri)\n+\t\tif err != nil {\n+\t\t\treturn nil, errors.Wrapf(err, \"can't parse mongo store uri %s\", uri)\n+\t\t}\n+\t\tmg, err := mongo.NewServerWithURL(u, time.Second)\n+\t\tif err != nil {\n+\t\t\treturn nil, errors.Wrap(err, \"failed to make mongo server\")\n+\t\t}\n+\t\treturn NewGridFS(mongo.NewConnection(mg, db, coll)), nil\n+\tcase strings.HasPrefix(uri, \"bolt://\"):\n+\t\treturn NewBoltDB(strings.TrimPrefix(uri, \"bolt://\"), bolt.Options{})\n+\t}\n+\treturn nil, errors.Errorf(\"can't parse store url %s\", uri)\n+}\n+\n // Migrate avatars between stores\n func Migrate(dst, src Store) (int, error) {\n \tids, err := src.List()\n@@ -59,3 +90,26 @@ func encodeID(id string) string {\n \t}\n \treturn token.HashID(sha1.New(), id)\n }\n+\n+// parseExtMongoURI extracts extra params ava_db and ava_coll and remove\n+// from the url. Input example: mongodb://user:password@127.0.0.1:27017/test?ssl=true&ava_db=db1&ava_coll=coll1\n+func parseExtMongoURI(uri string) (db, collection, cleanURI string, err error) {\n+\n+\tdb, collection = \"test\", \"avatars_fs\"\n+\tu, err := url.Parse(uri)\n+\tif err != nil {\n+\t\treturn \"\", \"\", \"\", err\n+\t}\n+\tif val := u.Query().Get(\"ava_db\"); val != \"\" {\n+\t\tdb = val\n+\t}\n+\tif val := u.Query().Get(\"ava_coll\"); val != \"\" {\n+\t\tcollection = val\n+\t}\n+\n+\tq := u.Query()\n+\tq.Del(\"ava_db\")\n+\tq.Del(\"ava_coll\")\n+\tu.RawQuery = q.Encode()\n+\treturn db, collection, u.String(), nil\n+}"
+    },
+    {
+      "sha": "3eb350cf2bbf79d18e6d60bc8c086c8f8fa2c2e9",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/modules.txt",
+      "raw_url": "https://github.com/umputun/remark/raw/a6149ae06449652f083351eabd9ffa444347e102/backend/vendor/modules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/modules.txt?ref=a6149ae06449652f083351eabd9ffa444347e102",
+      "patch": "@@ -33,7 +33,7 @@ github.com/go-chi/chi/middleware\n github.com/go-chi/cors\n # github.com/go-chi/render v1.0.1\n github.com/go-chi/render\n-# github.com/go-pkgz/auth v0.8.0\n+# github.com/go-pkgz/auth v0.8.1\n github.com/go-pkgz/auth\n github.com/go-pkgz/auth/avatar\n github.com/go-pkgz/auth/provider"
+    }
+  ]
+}
