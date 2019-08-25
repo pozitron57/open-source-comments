@@ -1,0 +1,146 @@
+{
+  "sha": "ef7476d3e17ed56b1e1152038163d188becc2b4f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmVmNzQ3NmQzZTE3ZWQ1NmIxZTExNTIwMzgxNjNkMTg4YmVjYzJiNGY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-24T19:17:35Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-24T19:17:35Z"
+    },
+    "message": "change auth lib to 0.8.2, fixed user's aud promotion",
+    "tree": {
+      "sha": "73d4783d886fc81e6ca806c48250b3c0823558e8",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/73d4783d886fc81e6ca806c48250b3c0823558e8"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/ef7476d3e17ed56b1e1152038163d188becc2b4f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/ef7476d3e17ed56b1e1152038163d188becc2b4f",
+  "html_url": "https://github.com/umputun/remark/commit/ef7476d3e17ed56b1e1152038163d188becc2b4f",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/ef7476d3e17ed56b1e1152038163d188becc2b4f/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a6149ae06449652f083351eabd9ffa444347e102",
+      "url": "https://api.github.com/repos/umputun/remark/commits/a6149ae06449652f083351eabd9ffa444347e102",
+      "html_url": "https://github.com/umputun/remark/commit/a6149ae06449652f083351eabd9ffa444347e102"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 11,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "28489590fe5c4de9c8c933654002746a719bbe8a",
+      "filename": "backend/_example/memory_store/go.sum",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/_example/memory_store/go.sum",
+      "raw_url": "https://github.com/umputun/remark/raw/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/_example/memory_store/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/_example/memory_store/go.sum?ref=ef7476d3e17ed56b1e1152038163d188becc2b4f",
+      "patch": "@@ -49,6 +49,7 @@ github.com/go-pkgz/auth v0.4.1/go.mod h1:CWtB8dHmOv+TfF3MUzKwk/YwTLepC2TaDL05A+p\n github.com/go-pkgz/auth v0.7.2/go.mod h1:ibOpZYISiaOvAHe2bsKj2s3v4AkMam2WxxIFn+zhulo=\n github.com/go-pkgz/auth v0.8.0/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n github.com/go-pkgz/auth v0.8.1/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n+github.com/go-pkgz/auth v0.8.2/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n github.com/go-pkgz/auth/_example v0.0.0-20190722170031-705d3f732438/go.mod h1:rvZtFFkmm3p+E0CHmfUqTGKweCVg2ddsRUrEEPB1iaE=\n github.com/go-pkgz/auth/_example v0.0.0-20190823054154-cc9c87832e19/go.mod h1:M9HLEzuiKQQ+rwGA9bAzmUDguCJi2HyGwKkxb5ouGJU=\n github.com/go-pkgz/jrpc v0.1.0 h1:hNg/IyfEqJcSWOKkuHw0ZwcuGc9TDp7QZREsD2ycmiM="
+    },
+    {
+      "sha": "6bf32186aa00d6c3a0b4334786bd9577b0a60fc5",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/go.mod",
+      "raw_url": "https://github.com/umputun/remark/raw/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/go.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/go.mod?ref=ef7476d3e17ed56b1e1152038163d188becc2b4f",
+      "patch": "@@ -17,7 +17,7 @@ require (\n \tgithub.com/go-chi/chi v4.0.2+incompatible\n \tgithub.com/go-chi/cors v1.0.0\n \tgithub.com/go-chi/render v1.0.1\n-\tgithub.com/go-pkgz/auth v0.8.1\n+\tgithub.com/go-pkgz/auth v0.8.2\n \tgithub.com/go-pkgz/jrpc v0.1.0\n \tgithub.com/go-pkgz/lcw v0.3.1\n \tgithub.com/go-pkgz/lgr v0.6.3"
+    },
+    {
+      "sha": "079cf54c9df8606cf31e86558b07acacf71e00e7",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/go.sum",
+      "raw_url": "https://github.com/umputun/remark/raw/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/go.sum?ref=ef7476d3e17ed56b1e1152038163d188becc2b4f",
+      "patch": "@@ -53,8 +53,8 @@ github.com/go-chi/cors v1.0.0/go.mod h1:K2Yje0VW/SJzxiyMYu6iPQYa7hMjQX2i/F491VCh\n github.com/go-chi/render v1.0.1 h1:4/5tis2cKaNdnv9zFLfXzcquC9HbeZgCnxGnKrltBS8=\n github.com/go-chi/render v1.0.1/go.mod h1:pq4Rr7HbnsdaeHagklXub+p6Wd16Af5l9koip1OvJns=\n github.com/go-pkgz/auth v0.4.1/go.mod h1:CWtB8dHmOv+TfF3MUzKwk/YwTLepC2TaDL05A+pFVBM=\n-github.com/go-pkgz/auth v0.8.1 h1:HBJau0LDOZ9NI5+fnrJu5azETuXLJx9ipx5uosYdK8I=\n-github.com/go-pkgz/auth v0.8.1/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n+github.com/go-pkgz/auth v0.8.2 h1:cMpLwoIeVAP1QwwRRDRlgQcsDvBS+yT/gL0m8p4gmcI=\n+github.com/go-pkgz/auth v0.8.2/go.mod h1:MBNrhig13KG0iXz/0d+30lnFUgzTxncUlaQ8suH/2p8=\n github.com/go-pkgz/auth/_example v0.0.0-20190722170031-705d3f732438/go.mod h1:rvZtFFkmm3p+E0CHmfUqTGKweCVg2ddsRUrEEPB1iaE=\n github.com/go-pkgz/jrpc v0.1.0 h1:hNg/IyfEqJcSWOKkuHw0ZwcuGc9TDp7QZREsD2ycmiM=\n github.com/go-pkgz/jrpc v0.1.0/go.mod h1:JxZsvoBklA50DNhELVJnJ567Rt+KrMH9rR3u515wvE8="
+    },
+    {
+      "sha": "291fce722dfa3eb44138e97e673a5c2edeaceadc",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/token/jwt.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark/blob/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/vendor/github.com/go-pkgz/auth/token/jwt.go",
+      "raw_url": "https://github.com/umputun/remark/raw/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/vendor/github.com/go-pkgz/auth/token/jwt.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/github.com/go-pkgz/auth/token/jwt.go?ref=ef7476d3e17ed56b1e1152038163d188becc2b4f",
+      "patch": "@@ -245,6 +245,11 @@ func (j *Service) Get(r *http.Request) (Claims, string, error) {\n \t\treturn Claims{}, \"\", errors.Wrap(err, \"failed to get token\")\n \t}\n \n+\t// promote claim's aud to User.Audience\n+\tif claims.User != nil {\n+\t\tclaims.User.Audience = claims.Audience\n+\t}\n+\n \tif !fromCookie && j.IsExpired(claims) {\n \t\treturn Claims{}, \"\", errors.New(\"token expired\")\n \t}\n@@ -259,9 +264,7 @@ func (j *Service) Get(r *http.Request) (Claims, string, error) {\n \t\t\treturn Claims{}, \"\", errors.New(\"xsrf mismatch\")\n \t\t}\n \t}\n-\tif claims.User != nil {\n-\t\tclaims.User.Audience = claims.Audience\n-\t}\n+\n \treturn claims, tokenString, nil\n }\n "
+    },
+    {
+      "sha": "3e84967bd21c6235d5d577f4fe9cfa3b611d2aa8",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/vendor/modules.txt",
+      "raw_url": "https://github.com/umputun/remark/raw/ef7476d3e17ed56b1e1152038163d188becc2b4f/backend/vendor/modules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/vendor/modules.txt?ref=ef7476d3e17ed56b1e1152038163d188becc2b4f",
+      "patch": "@@ -33,7 +33,7 @@ github.com/go-chi/chi/middleware\n github.com/go-chi/cors\n # github.com/go-chi/render v1.0.1\n github.com/go-chi/render\n-# github.com/go-pkgz/auth v0.8.1\n+# github.com/go-pkgz/auth v0.8.2\n github.com/go-pkgz/auth\n github.com/go-pkgz/auth/avatar\n github.com/go-pkgz/auth/provider"
+    }
+  ]
+}
