@@ -1,0 +1,98 @@
+{
+  "sha": "e9414f72676346b515c33c271a651e4d6cc0a45a",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmU5NDE0ZjcyNjc2MzQ2YjUxNWMzM2MyNzFhNjUxZTRkNmNjMGE0NWE=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-26T05:59:26Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-26T05:59:26Z"
+    },
+    "message": "fix comment typo",
+    "tree": {
+      "sha": "3e5cad1efd0bc352ed76584c15eac65b9e2cdac3",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/3e5cad1efd0bc352ed76584c15eac65b9e2cdac3"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/e9414f72676346b515c33c271a651e4d6cc0a45a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/e9414f72676346b515c33c271a651e4d6cc0a45a",
+  "html_url": "https://github.com/umputun/remark/commit/e9414f72676346b515c33c271a651e4d6cc0a45a",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/e9414f72676346b515c33c271a651e4d6cc0a45a/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "106c018ef1aa9061fd9898e1299efea9c4d07a1c",
+      "url": "https://api.github.com/repos/umputun/remark/commits/106c018ef1aa9061fd9898e1299efea9c4d07a1c",
+      "html_url": "https://github.com/umputun/remark/commit/106c018ef1aa9061fd9898e1299efea9c4d07a1c"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "20cf03a6f22db6ba057e8a277c1b0d1edb978936",
+      "filename": "backend/_example/memory_store/server/rpc.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/e9414f72676346b515c33c271a651e4d6cc0a45a/backend/_example/memory_store/server/rpc.go",
+      "raw_url": "https://github.com/umputun/remark/raw/e9414f72676346b515c33c271a651e4d6cc0a45a/backend/_example/memory_store/server/rpc.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/_example/memory_store/server/rpc.go?ref=e9414f72676346b515c33c271a651e4d6cc0a45a",
+      "patch": "@@ -183,7 +183,7 @@ func (s *RPC) admEmailHndl(id uint64, params json.RawMessage) (rr jrpc.Response)\n \treturn jrpc.EncodeResponse(id, email, err)\n }\n \n-// get admin email\n+// return site enabled status\n func (s *RPC) admEnabledHndl(id uint64, params json.RawMessage) (rr jrpc.Response) {\n \tvar siteID string\n \tif err := json.Unmarshal(params, &siteID); err != nil {"
+    }
+  ]
+}

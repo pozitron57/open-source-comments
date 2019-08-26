@@ -1,0 +1,242 @@
+{
+  "sha": "3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozMjU5ZWE2MGE2OTQ5YjA2MDVhZGMyZWJiNjE1NWJkZDkwZGNlMzFk",
+  "commit": {
+    "author": {
+      "name": "Roman Rizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-08-26T13:33:26Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-08-26T13:33:26Z"
+    },
+    "message": "DEV: Remove code deprecated by the new Reviewable API (#8023)\n\n* Remove flag hooks and endpoints\r\n\r\n* Remove #reject_bulk for users\r\n\r\n* Remove code for quued_posts_controller",
+    "tree": {
+      "sha": "6cca437c29222852040ae9bcc8ed9422bb23b6a2",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/6cca437c29222852040ae9bcc8ed9422bb23b6a2"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdY9+mCRBK7hj4Ov3rIwAAdHIIAIIBp8X7KPZJ9M3iBtP4KPf9\nRaB9ZoFJ5HQGQspKD5l1H0mN7xe5+njtalTwo1vHFuzvbvPmkZ8ft5h0cXZKXSZ4\nFUq13hNFAtnh0N6UdMUs8Q0M4LdCjB8sHGL6c9/ybGoG9SA2XADXlVhouDYHR7ZS\nE7gPD87mvKWYXu3k0NiQzJKwnLu8eaCsIwomVpmXnk/96UWizWiZJvph2XD1SRst\nS1Ql3TWgm+iDc9sZjHE1kOjn+p782N1ITt25Vpp7xCGgbxcSLC7i7Dh6mP8hPXBW\nGBCtDJ/PrLdrF+snp/IYyB20fVXefzwiz1bWdo6zxU51vKkGuddkg4P3unsKq1k=\n=tRnZ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 6cca437c29222852040ae9bcc8ed9422bb23b6a2\nparent 8841563f8a2517b0acff2636f297e8dd783251bb\nauthor Roman Rizzi <rizziromanalejandro@gmail.com> 1566826406 -0300\ncommitter GitHub <noreply@github.com> 1566826406 -0300\n\nDEV: Remove code deprecated by the new Reviewable API (#8023)\n\n* Remove flag hooks and endpoints\r\n\r\n* Remove #reject_bulk for users\r\n\r\n* Remove code for quued_posts_controller\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+  "html_url": "https://github.com/discourse/discourse/commit/3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/3259ea60a6949b0605adc2ebb6155bdd90dce31d/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8841563f8a2517b0acff2636f297e8dd783251bb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/8841563f8a2517b0acff2636f297e8dd783251bb",
+      "html_url": "https://github.com/discourse/discourse/commit/8841563f8a2517b0acff2636f297e8dd783251bb"
+    }
+  ],
+  "stats": {
+    "total": 770,
+    "additions": 0,
+    "deletions": 770
+  },
+  "files": [
+    {
+      "sha": "10680b9ecea773ef91a46a921fb2266a29dd0017",
+      "filename": "app/controllers/admin/flagged_topics_controller.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 19,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/8841563f8a2517b0acff2636f297e8dd783251bb/app/controllers/admin/flagged_topics_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8841563f8a2517b0acff2636f297e8dd783251bb/app/controllers/admin/flagged_topics_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/flagged_topics_controller.rb?ref=8841563f8a2517b0acff2636f297e8dd783251bb",
+      "patch": "@@ -1,19 +0,0 @@\n-# frozen_string_literal: true\n-\n-require_dependency 'flag_query'\n-\n-class Admin::FlaggedTopicsController < Admin::AdminController\n-\n-  def index\n-    result = FlagQuery.flagged_topics\n-\n-    render_json_dump(\n-      {\n-        flagged_topics: serialize_data(result[:flagged_topics], FlaggedTopicSummarySerializer),\n-        users: serialize_data(result[:users], BasicUserSerializer),\n-      },\n-      rest_serializer: true\n-    )\n-  end\n-\n-end"
+    },
+    {
+      "sha": "9ede2f7c8f276f7020a1b5bdaa4190ead5f999fa",
+      "filename": "app/controllers/admin/flags_controller.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 146,
+      "changes": 146,
+      "blob_url": "https://github.com/discourse/discourse/blob/8841563f8a2517b0acff2636f297e8dd783251bb/app/controllers/admin/flags_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8841563f8a2517b0acff2636f297e8dd783251bb/app/controllers/admin/flags_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/flags_controller.rb?ref=8841563f8a2517b0acff2636f297e8dd783251bb",
+      "patch": "@@ -1,146 +0,0 @@\n-# frozen_string_literal: true\n-\n-require 'flag_query'\n-\n-class Admin::FlagsController < Admin::AdminController\n-\n-  def self.flags_per_page\n-    10\n-  end\n-\n-  def index\n-    Discourse.deprecate(\"FlagsController#index has been deprecated, please use the Reviewable API instead\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-\n-    offset = params[:offset].to_i\n-    per_page = Admin::FlagsController.flags_per_page\n-\n-    posts, topics, users, post_actions, total_rows = FlagQuery.flagged_posts_report(\n-      current_user,\n-      filter: params[:filter],\n-      user_id: params[:user_id],\n-      offset: offset,\n-      topic_id: params[:topic_id],\n-      per_page: per_page\n-    )\n-\n-    meta = {\n-      types: {\n-        disposed_by: 'user'\n-      }\n-    }\n-\n-    next_segment = offset + per_page\n-    if (total_rows || 0) > next_segment\n-      meta[:total_rows_flagged_posts] = total_rows\n-      meta[:load_more_flagged_posts] = admin_flags_filtered_path(\n-        filter: params[:filter],\n-        offset: next_segment,\n-        topic_id: params[:topic_id]\n-      )\n-    end\n-\n-    render_json_dump(\n-      {\n-        flagged_posts: posts,\n-        topics: serialize_data(topics, FlaggedTopicSerializer),\n-        users: serialize_data(users, FlaggedUserSerializer),\n-        post_actions: post_actions\n-      },\n-      rest_serializer: true,\n-      meta: meta\n-    )\n-  end\n-\n-  def agree\n-    Discourse.deprecate(\"FlagsController#agree has been deprecated, please use the Reviewable API instead\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-\n-    params.permit(:id, :action_on_post)\n-    post = Post.find(params[:id])\n-\n-    DiscourseEvent.trigger(\n-      :before_staff_flag_action,\n-      type: 'agree',\n-      post: post,\n-      action_on_post: params[:action_on_post],\n-      user: current_user\n-    )\n-\n-    reviewable = post.reviewable_flag\n-    return render_json_error(I18n.t(\"flags.errors.already_handled\"), status: 409) if reviewable.blank?\n-\n-    keep_post = ['silenced', 'suspended', 'keep'].include?(params[:action_on_post])\n-    delete_post = params[:action_on_post] == \"delete\"\n-    restore_post = params[:action_on_post] == \"restore\"\n-\n-    if delete_post\n-      # PostDestroy automatically agrees with flags\n-      destroy_post(post)\n-    elsif restore_post\n-      reviewable.perform(current_user, :agree_and_restore)\n-    else\n-      reviewable.perform(\n-        current_user,\n-        :agree_and_keep,\n-        post_was_deleted: delete_post,\n-        hide_post: !keep_post\n-      )\n-    end\n-\n-    render body: nil\n-  end\n-\n-  def disagree\n-    Discourse.deprecate(\"FlagsController#disagree has been deprecated, please use the Reviewable API instead\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-    params.permit(:id)\n-    post = Post.find(params[:id])\n-\n-    if reviewable = post.reviewable_flag\n-      DiscourseEvent.trigger(\n-        :before_staff_flag_action,\n-        type: 'disagree',\n-        post: post,\n-        user: current_user\n-      )\n-\n-      if post.hidden?\n-        reviewable.perform(current_user, :disagree_and_restore)\n-      else\n-        reviewable.perform(current_user, :disagree)\n-      end\n-    end\n-\n-    render body: nil\n-  end\n-\n-  def defer\n-    Discourse.deprecate(\"FlagsController#defer has been deprecated, please use the Reviewable API instead\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-\n-    params.permit(:id, :delete_post)\n-    post = Post.find(params[:id])\n-\n-    if reviewable = post.reviewable_flag\n-      DiscourseEvent.trigger(\n-        :before_staff_flag_action,\n-        type: 'defer',\n-        post: post,\n-        user: current_user\n-      )\n-\n-      reviewable.perform(current_user, :ignore, post_was_deleted: params[:delete_post])\n-      destroy_post(post) if params[:delete_post]\n-    end\n-\n-    render body: nil\n-  end\n-\n-  private\n-\n-  def destroy_post(post)\n-    if post.is_first_post?\n-      topic = Topic.find_by(id: post.topic_id)\n-      guardian.ensure_can_delete!(topic) if topic.present?\n-    end\n-\n-    PostDestroyer.new(current_user, post).destroy\n-  end\n-end"
+    },
+    {
+      "sha": "59b9f037148fddb462e51fa0970f60d4bbd3a0e2",
+      "filename": "app/controllers/admin/users_controller.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 17,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/app/controllers/admin/users_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/app/controllers/admin/users_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/users_controller.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -370,23 +370,6 @@ def unsilence\n     )\n   end\n \n-  # Kept for backwards compatibility, but is replaced by the Reviewable Queue\n-  def reject_bulk\n-    Discourse.deprecate(\"AdminUsersController#reject_bulk is deprecated. Please use the Reviewable API instead.\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-\n-    success_count = 0\n-    d = UserDestroyer.new(current_user)\n-\n-    User.where(id: params[:users]).each do |u|\n-      success_count += 1 if guardian.can_delete_user?(u) && d.destroy(u, params.slice(:context)) rescue UserDestroyer::PostsExistError\n-    end\n-\n-    render json: {\n-      success: success_count,\n-      failed: (params[:users].try(:size) || 0) - success_count\n-    }\n-  end\n-\n   def disable_second_factor\n     guardian.ensure_can_disable_second_factor!(@user)\n     user_second_factor = @user.user_second_factors"
+    },
+    {
+      "sha": "02207905cd6e5a1857199aca1ba6ebea9c63eb68",
+      "filename": "app/controllers/queued_posts_controller.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 72,
+      "changes": 72,
+      "blob_url": "https://github.com/discourse/discourse/blob/8841563f8a2517b0acff2636f297e8dd783251bb/app/controllers/queued_posts_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8841563f8a2517b0acff2636f297e8dd783251bb/app/controllers/queued_posts_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/queued_posts_controller.rb?ref=8841563f8a2517b0acff2636f297e8dd783251bb",
+      "patch": "@@ -1,72 +0,0 @@\n-# frozen_string_literal: true\n-\n-require_dependency 'queued_post_serializer'\n-\n-class QueuedPostsController < ApplicationController\n-\n-  before_action :ensure_staff\n-\n-  def index\n-    Discourse.deprecate(\"QueuedPostController#index is deprecated. Please use the Reviewable API instead.\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-\n-    status = params[:state] || 'pending'\n-    status = 'pending' if status == 'new'\n-\n-    reviewables = Reviewable.list_for(current_user, status: status.to_sym, type: ReviewableQueuedPost.name)\n-    render_serialized(reviewables,\n-                      QueuedPostSerializer,\n-                      root: :queued_posts,\n-                      rest_serializer: true,\n-                      refresh_queued_posts: \"/queued_posts?status=new\")\n-  end\n-\n-  def update\n-    Discourse.deprecate(\"QueuedPostController#update is deprecated. Please use the Reviewable API instead.\", since: \"2.3.0beta5\", drop_from: \"2.4\")\n-    reviewable = Reviewable.find_by(id: params[:id])\n-    raise Discourse::NotFound if reviewable.blank?\n-\n-    update_params = params[:queued_post]\n-\n-    reviewable.payload['raw'] = update_params[:raw] if update_params[:raw].present?\n-    if reviewable.topic_id.blank? && update_params[:state].blank?\n-      reviewable.payload['title'] = update_params[:title] if update_params[:title].present?\n-      reviewable.payload['tags'] = update_params[:tags]\n-      reviewable.category_id = update_params[:category_id].to_i if update_params[:category_id].present?\n-    end\n-\n-    reviewable.save(validate: false)\n-\n-    state = update_params[:state]\n-    begin\n-      if state == 'approved'\n-        reviewable.perform(current_user, :approve_post)\n-      elsif state == 'rejected'\n-        reviewable.perform(current_user, :reject_post)\n-        if update_params[:delete_user] == 'true' && guardian.can_delete_user?(reviewable.created_by)\n-          UserDestroyer.new(current_user).destroy(reviewable.created_by, user_deletion_opts)\n-        end\n-      end\n-    rescue StandardError => e\n-      return render_json_error e.message\n-    end\n-\n-    render_serialized(reviewable, QueuedPostSerializer, root: :queued_posts)\n-  end\n-\n-  private\n-\n-  def user_deletion_opts\n-    base = {\n-      context: I18n.t('queue.delete_reason', performed_by: current_user.username),\n-      delete_posts: true,\n-      delete_as_spammer: true\n-    }\n-\n-    if Rails.env.production? && ENV[\"Staging\"].nil?\n-      base.merge!(block_email: true, block_ip: true)\n-    end\n-\n-    base\n-  end\n-\n-end"
+    },
+    {
+      "sha": "b0be74a26befbb4ce0b689fac57da383b2f44011",
+      "filename": "app/models/user.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 19,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/app/models/user.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/app/models/user.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/user.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -439,25 +439,6 @@ def should_validate_email_address?\n     !skip_email_validation && !staged?\n   end\n \n-  # Approve this user\n-  def approve(approved_by, send_mail = true)\n-    Discourse.deprecate(\"User#approve is deprecated. Please use the Reviewable API instead.\", output_in_test: true, since: \"2.3.0beta5\", drop_from: \"2.4\")\n-\n-    # Backwards compatibility - in case plugins or something is using the old API which accepted\n-    # either a Number or object. Probably should remove at some point\n-    approved_by = User.find_by(id: approved_by) if approved_by.is_a?(Numeric)\n-\n-    if reviewable_user = ReviewableUser.find_by(target: self)\n-      result = reviewable_user.perform(approved_by, :approve_user, send_email: send_mail)\n-      if result.success?\n-        Reviewable.set_approved_fields!(self, approved_by)\n-        return true\n-      end\n-    end\n-\n-    false\n-  end\n-\n   def self.email_hash(email)\n     Digest::MD5.hexdigest(email.strip.downcase)\n   end"
+    },
+    {
+      "sha": "fd889aa18c9c87a4dbd04f2a2f083c4069c80658",
+      "filename": "app/models/web_hook.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 4,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/app/models/web_hook.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/app/models/web_hook.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/web_hook.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -59,10 +59,6 @@ def self.enqueue_hooks(type, event, opts = {})\n \n   def self.enqueue_object_hooks(type, object, event, serializer = nil)\n     if active_web_hooks(type).exists?\n-      if type == :flag\n-        Discourse.deprecate(\"The flags webhook is deprecated. Please use reviewable instead.\")\n-      end\n-\n       payload = WebHook.generate_payload(type, object, serializer)\n \n       WebHook.enqueue_hooks(type, event,"
+    },
+    {
+      "sha": "6ce6501ff32426da27f43a062a9a74b8441bd508",
+      "filename": "config/initializers/012-web_hook_events.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 25,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/config/initializers/012-web_hook_events.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/config/initializers/012-web_hook_events.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/initializers/012-web_hook_events.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -74,37 +74,12 @@\n   end\n end\n \n-%i(\n-  flag_created\n-  flag_agreed\n-  flag_disagreed\n-  flag_deferred\n-).each do |event|\n-  DiscourseEvent.on(event) do |flag|\n-    WebHook.enqueue_object_hooks(:flag, flag, event)\n-  end\n-end\n-\n DiscourseEvent.on(:reviewable_created) do |reviewable|\n   WebHook.enqueue_object_hooks(:reviewable, reviewable, :reviewable_created, reviewable.serializer)\n-\n-  # TODO: Backwards compatibility for Queued Post webhooks. Remve in favor of Reviewable API\n-  if reviewable.is_a?(ReviewableQueuedPost)\n-    WebHook.enqueue_object_hooks(:queued_post, reviewable, :queued_post_created, reviewable.serializer)\n-  end\n end\n \n DiscourseEvent.on(:reviewable_transitioned_to) do |status, reviewable|\n   WebHook.enqueue_object_hooks(:reviewable, reviewable, :reviewable_transitioned_to, reviewable.serializer)\n-\n-  # TODO: Backwards compatibility for Queued Post webhooks. Remove in favor of Reviewable API\n-  if reviewable.is_a?(ReviewableQueuedPost)\n-    if reviewable.approved?\n-      WebHook.enqueue_object_hooks(:queued_post, reviewable, :approved_post, QueuedPostSerializer)\n-    elsif reviewable.rejected?\n-      WebHook.enqueue_object_hooks(:queued_post, reviewable, :rejected_post, QueuedPostSerializer)\n-    end\n-  end\n end\n \n DiscourseEvent.on(:notification_created) do |notification|"
+    },
+    {
+      "sha": "9a8cd888943a1792dac8773f037bb2cfc9bc26d8",
+      "filename": "config/routes.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 12,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/config/routes.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/config/routes.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/routes.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -107,7 +107,6 @@\n         delete \"delete-others-with-same-ip\" => \"users#delete_other_accounts_with_same_ip\"\n         get \"total-others-with-same-ip\" => \"users#total_other_accounts_with_same_ip\"\n         put \"approve-bulk\" => \"users#approve_bulk\"\n-        delete \"reject-bulk\" => \"users#reject_bulk\"\n       end\n       delete \"penalty_history\", constraints: AdminConstraint.new\n       put \"suspend\"\n@@ -199,14 +198,6 @@\n     get \"customize/embedding\" => \"embedding#show\", constraints: AdminConstraint.new\n     put \"customize/embedding\" => \"embedding#update\", constraints: AdminConstraint.new\n \n-    get \"flags\" => \"flags#index\"\n-    get \"flags/:filter\" => \"flags#index\", as: 'flags_filtered'\n-    get \"flags/topics/:topic_id\" => \"flags#index\"\n-    post \"flags/agree/:id\" => \"flags#agree\"\n-    post \"flags/disagree/:id\" => \"flags#disagree\"\n-    post \"flags/defer/:id\" => \"flags#defer\"\n-\n-    resources :flagged_topics, constraints: StaffConstraint.new\n     resources :themes, constraints: AdminConstraint.new\n \n     post \"themes/import\" => \"themes#import\"\n@@ -771,9 +762,6 @@\n   get \"/posts/:id/raw-email\" => \"posts#raw_email\"\n   get \"raw/:topic_id(/:post_number)\" => \"posts#markdown_num\"\n \n-  resources :queued_posts, constraints: StaffConstraint.new\n-  get 'queued-posts' => 'queued_posts#index'\n-\n   resources :invites\n   post \"invites/upload_csv\" => \"invites#upload_csv\"\n   post \"invites/rescind-all\" => \"invites#rescind_all_invites\""
+    },
+    {
+      "sha": "8b0fbb0e52dea4b9061b7a1ac2cf6a43f878826d",
+      "filename": "spec/models/web_hook_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 64,
+      "changes": 64,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/spec/models/web_hook_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/spec/models/web_hook_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/web_hook_spec.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -444,70 +444,6 @@\n       expect(payload[\"id\"]).to eq(tag.id)\n     end\n \n-    # NOTE: Backwards compatibility, people should use reviewable instead\n-    it 'should enqueue the right hooks for flag events' do\n-      post = Fabricate(:post)\n-      admin = Fabricate(:admin)\n-      moderator = Fabricate(:moderator)\n-      Fabricate(:flag_web_hook)\n-\n-      result = PostActionCreator.spam(admin, post)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"flag_created\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(result.post_action.id)\n-\n-      result.reviewable.perform(moderator, :agree_and_keep)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"flag_agreed\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(result.post_action.id)\n-\n-      result = PostActionCreator.spam(Fabricate(:user), post)\n-      result.reviewable.perform(moderator, :disagree)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"flag_disagreed\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(result.post_action.id)\n-\n-      post = Fabricate(:post)\n-      result = PostActionCreator.spam(admin, post)\n-      result.reviewable.perform(moderator, :ignore)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"flag_deferred\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(result.post_action.id)\n-    end\n-\n-    # NOTE: Backwards compatibility, people should use reviewable instead\n-    it 'should enqueue the right hooks for queued post events' do\n-      Fabricate(:queued_post_web_hook)\n-      reviewable = Fabricate(:reviewable_queued_post)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"queued_post_created\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(reviewable.id)\n-\n-      reviewable.perform(Discourse.system_user, :approve_post)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"approved_post\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(reviewable.id)\n-\n-      reviewable.perform(Discourse.system_user, :reject_post)\n-      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n-\n-      expect(job_args[\"event_name\"]).to eq(\"rejected_post\")\n-      payload = JSON.parse(job_args[\"payload\"])\n-      expect(payload[\"id\"]).to eq(reviewable.id)\n-    end\n-\n     it 'should enqueue the right hooks for notifications' do\n       Fabricate(:notification_web_hook)\n       notification = Fabricate(:notification)"
+    },
+    {
+      "sha": "2e0827d2f622cc8756b0ce19ec55ab696caa8e04",
+      "filename": "spec/requests/admin/flagged_topics_controller_spec.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 42,
+      "changes": 42,
+      "blob_url": "https://github.com/discourse/discourse/blob/8841563f8a2517b0acff2636f297e8dd783251bb/spec/requests/admin/flagged_topics_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8841563f8a2517b0acff2636f297e8dd783251bb/spec/requests/admin/flagged_topics_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/flagged_topics_controller_spec.rb?ref=8841563f8a2517b0acff2636f297e8dd783251bb",
+      "patch": "@@ -1,42 +0,0 @@\n-# frozen_string_literal: true\n-\n-require 'rails_helper'\n-\n-RSpec.describe Admin::FlaggedTopicsController do\n-  fab!(:post) { Fabricate(:post) }\n-  fab!(:user) { Fabricate(:user) }\n-\n-  before do\n-    PostActionCreator.spam(user, post)\n-  end\n-\n-  fab!(:flag) { Fabricate(:flag) }\n-\n-  shared_examples \"successfully retrieve list of flagged topics\" do\n-    it \"returns a list of flagged topics\" do\n-      get \"/admin/flagged_topics.json\"\n-      expect(response.status).to eq(200)\n-\n-      data = ::JSON.parse(response.body)\n-      expect(data['flagged_topics']).to be_present\n-      expect(data['users']).to be_present\n-    end\n-  end\n-\n-  context \"as admin\" do\n-    before do\n-      sign_in(Fabricate(:admin))\n-    end\n-\n-    include_examples \"successfully retrieve list of flagged topics\"\n-  end\n-\n-  context \"as moderator\" do\n-    before do\n-      sign_in(Fabricate(:moderator))\n-    end\n-\n-    include_examples \"successfully retrieve list of flagged topics\"\n-  end\n-\n-end"
+    },
+    {
+      "sha": "f21f36f5005372bf9e16fd90a24678bb46e711dc",
+      "filename": "spec/requests/admin/flags_controller_spec.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 138,
+      "changes": 138,
+      "blob_url": "https://github.com/discourse/discourse/blob/8841563f8a2517b0acff2636f297e8dd783251bb/spec/requests/admin/flags_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8841563f8a2517b0acff2636f297e8dd783251bb/spec/requests/admin/flags_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/flags_controller_spec.rb?ref=8841563f8a2517b0acff2636f297e8dd783251bb",
+      "patch": "@@ -1,138 +0,0 @@\n-# frozen_string_literal: true\n-\n-require 'rails_helper'\n-\n-RSpec.describe Admin::FlagsController do\n-  fab!(:user) { Fabricate(:user) }\n-  fab!(:admin) { Fabricate(:admin) }\n-  fab!(:post_1) { Fabricate(:post) }\n-  fab!(:category) { Fabricate(:category) }\n-  fab!(:first_post) { Fabricate(:post, post_number: 1) }\n-\n-  before do\n-    sign_in(admin)\n-  end\n-\n-  context '#index' do\n-    it 'should return the right response when nothing is flagged' do\n-      get '/admin/flags.json'\n-\n-      expect(response.status).to eq(200)\n-\n-      data = ::JSON.parse(response.body)\n-      expect(data[\"users\"]).to eq([])\n-      expect(data[\"flagged_posts\"]).to eq([])\n-    end\n-\n-    it 'should return the right response' do\n-      PostActionCreator.create(user, post_1, :spam)\n-\n-      get '/admin/flags.json'\n-\n-      expect(response.status).to eq(200)\n-\n-      data = ::JSON.parse(response.body)\n-      expect(data[\"users\"].length).to eq(2)\n-      expect(data[\"flagged_posts\"].length).to eq(1)\n-    end\n-  end\n-\n-  context '#agree' do\n-    it 'should raise a reasonable error if a flag was deferred and then someone else agreed' do\n-      Jobs.run_immediately!\n-\n-      reviewable = PostActionCreator.spam(user, post_1).reviewable\n-\n-      post \"/admin/flags/defer/#{post_1.id}.json\"\n-      expect(response.status).to eq(200)\n-      expect(reviewable.reload).to be_ignored\n-\n-      post \"/admin/flags/agree/#{post_1.id}.json\", params: { action_on_post: 'keep' }\n-      # 409 means conflict which is what is happening here\n-      expect(response.status).to eq(409)\n-      error = JSON.parse(response.body)[\"errors\"].first\n-      expect(error).to eq(I18n.t(\"flags.errors.already_handled\"))\n-    end\n-\n-    it 'should be able to agree and keep content' do\n-      Jobs.run_immediately!\n-\n-      result = PostActionCreator.spam(user, post_1)\n-      reviewable = result.reviewable\n-\n-      post \"/admin/flags/agree/#{post_1.id}.json\", params: { action_on_post: 'keep' }\n-      expect(response.status).to eq(200)\n-\n-      expect(reviewable.reload).to be_approved\n-\n-      approve_history = reviewable.reviewable_histories.where(\n-        created_by: admin,\n-        reviewable_history_type: ReviewableHistory.types[:transitioned],\n-        status: Reviewable.statuses[:approved]\n-      )\n-      expect(approve_history).to be_present\n-      expect(user.user_stat.reload.flags_agreed).to eq(1)\n-\n-      post_1.reload\n-      expect(post_1.deleted_at).to eq(nil)\n-    end\n-\n-    it 'should be able to hide spam' do\n-      SiteSetting.allow_user_locale = true\n-      Jobs.run_immediately!\n-\n-      post_action = PostActionCreator.new(user, post_1, PostActionType.types[:spam], message: 'bad').perform.post_action\n-      admin.update!(locale: 'ja')\n-\n-      post \"/admin/flags/agree/#{post_1.id}.json\", params: { action_on_post: 'delete' }\n-      expect(response.status).to eq(200)\n-\n-      post_action.reload\n-\n-      expect(post_action.agreed_by_id).to eq(admin.id)\n-      expect(user.user_stat.reload.flags_agreed).to eq(1)\n-\n-      agree_post = Topic.joins(:topic_allowed_users).where('topic_allowed_users.user_id = ?', user.id).order(:id).last.posts.last\n-      expect(agree_post.raw).to eq(I18n.with_locale(:en) { I18n.t('flags_dispositions.agreed_and_deleted') })\n-\n-      post_1.reload\n-      expect(post_1.deleted_at).to be_present\n-    end\n-\n-    it 'should not delete category topic' do\n-      Jobs.run_immediately!\n-      category.update_column(:topic_id, first_post.topic_id)\n-\n-      PostActionCreator.new(user, first_post, PostActionType.types[:spam], message: 'bad').perform\n-\n-      post \"/admin/flags/agree/#{first_post.id}.json\", params: { action_on_post: 'delete' }\n-      expect(response.status).to eq(403)\n-\n-      first_post.reload\n-      expect(first_post.deleted_at).to eq(nil)\n-    end\n-  end\n-\n-  context '#disagree' do\n-    it \"unhides the post and unsilences the user if disagreed\" do\n-      Reviewable.set_priorities(high: 1.0)\n-      SiteSetting.silence_new_user_sensitivity = Reviewable.sensitivity[:low]\n-      SiteSetting.num_users_to_silence_new_user = 1\n-\n-      new_user = Fabricate(:newuser)\n-      new_post = create_post(user: new_user)\n-\n-      PostActionCreator.spam(Fabricate(:leader), new_post)\n-\n-      post \"/admin/flags/disagree/#{new_post.id}.json\"\n-      expect(response.status).to eq(200)\n-\n-      new_post.reload\n-      new_user.reload\n-\n-      expect(new_post).to_not be_hidden\n-      expect(new_post.spam_count).to eq(0)\n-      expect(new_user).to_not be_silenced\n-    end\n-  end\n-end"
+    },
+    {
+      "sha": "9a3d280b48c9ca5fa521a0bad1f2a27e680659df",
+      "filename": "spec/requests/admin/users_controller_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 68,
+      "changes": 68,
+      "blob_url": "https://github.com/discourse/discourse/blob/3259ea60a6949b0605adc2ebb6155bdd90dce31d/spec/requests/admin/users_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3259ea60a6949b0605adc2ebb6155bdd90dce31d/spec/requests/admin/users_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/users_controller_spec.rb?ref=3259ea60a6949b0605adc2ebb6155bdd90dce31d",
+      "patch": "@@ -715,74 +715,6 @@\n     end\n   end\n \n-  describe '#reject_bulk' do\n-    fab!(:reject_me)     { Fabricate(:user) }\n-    fab!(:reject_me_too) { Fabricate(:user) }\n-\n-    it 'does nothing without users' do\n-      delete \"/admin/users/reject-bulk.json\"\n-      expect(response.status).to eq(200)\n-      expect(User.where(id: reject_me.id).count).to eq(1)\n-      expect(User.where(id: reject_me_too.id).count).to eq(1)\n-    end\n-\n-    it \"won't delete users if not allowed\" do\n-      sign_in(user)\n-      delete \"/admin/users/reject-bulk.json\", params: {\n-        users: [reject_me.id]\n-      }\n-      expect(response.status).to eq(404)\n-      expect(User.where(id: reject_me.id).count).to eq(1)\n-    end\n-\n-    it \"reports successes\" do\n-      delete \"/admin/users/reject-bulk.json\", params: {\n-        users: [reject_me.id, reject_me_too.id]\n-      }\n-\n-      expect(response.status).to eq(200)\n-      json = ::JSON.parse(response.body)\n-      expect(json['success'].to_i).to eq(2)\n-      expect(json['failed'].to_i).to eq(0)\n-      expect(User.where(id: reject_me.id).count).to eq(0)\n-      expect(User.where(id: reject_me_too.id).count).to eq(0)\n-    end\n-\n-    context 'failures' do\n-      it 'can handle some successes and some failures' do\n-        stat = reject_me_too.user_stat\n-        stat.first_post_created_at = (SiteSetting.delete_user_max_post_age.to_i + 1).days.ago\n-        stat.post_count = 10\n-        stat.save!\n-\n-        delete \"/admin/users/reject-bulk.json\", params: {\n-          users: [reject_me.id, reject_me_too.id]\n-        }\n-\n-        expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n-        expect(json['success'].to_i).to eq(1)\n-        expect(json['failed'].to_i).to eq(1)\n-        expect(User.where(id: reject_me.id).count).to eq(0)\n-        expect(User.where(id: reject_me_too.id).count).to eq(1)\n-      end\n-\n-      it 'reports failure due to a user still having posts' do\n-        Fabricate(:post, user: reject_me)\n-\n-        delete \"/admin/users/reject-bulk.json\", params: {\n-          users: [reject_me.id]\n-        }\n-\n-        expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n-        expect(json['success'].to_i).to eq(0)\n-        expect(json['failed'].to_i).to eq(1)\n-        expect(User.where(id: reject_me.id).count).to eq(1)\n-      end\n-    end\n-  end\n-\n   describe '#ip_info' do\n     it \"retrieves IP info\" do\n       ip = \"81.2.69.142\""
+    },
+    {
+      "sha": "b0f604cca26a139008af065e3c5aac81810ef9cc",
+      "filename": "spec/requests/queued_posts_controller_spec.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 144,
+      "changes": 144,
+      "blob_url": "https://github.com/discourse/discourse/blob/8841563f8a2517b0acff2636f297e8dd783251bb/spec/requests/queued_posts_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8841563f8a2517b0acff2636f297e8dd783251bb/spec/requests/queued_posts_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/queued_posts_controller_spec.rb?ref=8841563f8a2517b0acff2636f297e8dd783251bb",
+      "patch": "@@ -1,144 +0,0 @@\n-# frozen_string_literal: true\n-\n-require 'rails_helper'\n-require_dependency 'queued_posts_controller'\n-\n-# NOTE: This controller only exists for backwards compatibility\n-describe QueuedPostsController do\n-  context 'without authentication' do\n-    it 'fails' do\n-      get \"/queued-posts.json\"\n-      expect(response).to be_forbidden\n-    end\n-  end\n-\n-  context 'as a regular user' do\n-    before { sign_in(Fabricate(:user)) }\n-\n-    it 'fails' do\n-      get \"/queued-posts.json\"\n-      expect(response).to be_forbidden\n-    end\n-  end\n-\n-  context 'as an admin' do\n-    before { sign_in(Fabricate(:moderator)) }\n-\n-    it 'returns the queued posts' do\n-      get \"/queued-posts.json\"\n-      expect(response.status).to eq(200)\n-    end\n-  end\n-\n-  describe '#update' do\n-    before { sign_in(Fabricate(:moderator)) }\n-    fab!(:qp) { Fabricate(:reviewable_queued_post) }\n-\n-    context 'not found' do\n-      it 'returns json error' do\n-        qp.destroy!\n-\n-        put \"/queued_posts/#{qp.id}.json\", params: {\n-          queued_post: { state: 'approved' }\n-        }\n-\n-        expect(response.status).to eq(404)\n-      end\n-    end\n-\n-    context 'approved' do\n-      it 'updates the post to approved' do\n-\n-        put \"/queued_posts/#{qp.id}.json\", params: {\n-          queued_post: { state: 'approved' }\n-        }\n-\n-        expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n-        qp_json = json['queued_posts']\n-\n-        expect(qp_json['state']).to eq(2)\n-      end\n-    end\n-\n-    context 'rejected' do\n-      it 'updates the post to rejected' do\n-\n-        put \"/queued_posts/#{qp.id}.json\", params: {\n-          queued_post: { state: 'rejected' }\n-        }\n-\n-        expect(response.status).to eq(200)\n-\n-        json = ::JSON.parse(response.body)\n-        qp_json = json['queued_posts']\n-        expect(qp_json['state']).to eq(3)\n-      end\n-    end\n-\n-    context 'editing content' do\n-      let(:changes) do\n-        {\n-          raw: 'new raw',\n-          title: 'new title',\n-          category_id: 10,\n-          tags: ['new_tag']\n-        }\n-      end\n-\n-      context 'when it is a topic' do\n-        fab!(:queued_topic) { Fabricate(:reviewable_queued_post_topic,) }\n-\n-        it 'updates the topic attributes' do\n-          put \"/queued_posts/#{queued_topic.id}.json\", params: {\n-            queued_post: changes\n-          }\n-\n-          expect(response.status).to eq(200)\n-          queued_topic.reload\n-\n-          expect(queued_topic.payload['raw']).to eq(changes[:raw])\n-          expect(queued_topic.payload['title']).to eq(changes[:title])\n-          expect(queued_topic.category_id).to eq(changes[:category_id])\n-          expect(queued_topic.payload['tags']).to eq(changes[:tags])\n-        end\n-\n-        it 'removes tags if not present' do\n-          queued_topic.payload[:tags] = ['another-tag']\n-          queued_topic.save!\n-\n-          put \"/queued_posts/#{queued_topic.id}.json\", params: {\n-            queued_post: changes.except(:tags)\n-          }\n-\n-          expect(response.status).to eq(200)\n-          queued_topic.reload\n-\n-          expect(queued_topic.payload['raw']).to eq(changes[:raw])\n-          expect(queued_topic.payload['title']).to eq(changes[:title])\n-          expect(queued_topic.category_id).to eq(changes[:category_id])\n-          expect(queued_topic.payload['tags']).to be_nil\n-        end\n-      end\n-\n-      context 'when it is a reply' do\n-        fab!(:queued_reply) { Fabricate(:reviewable_queued_post) }\n-\n-        it 'updates the reply attributes' do\n-          put \"/queued_posts/#{queued_reply.id}.json\", params: {\n-            queued_post: changes\n-          }\n-\n-          original_category = queued_reply.category_id\n-          expect(response.status).to eq(200)\n-          queued_reply.reload\n-\n-          expect(queued_reply.payload['raw']).to eq(changes[:raw])\n-          expect(queued_reply.payload['title']).to be_nil\n-          expect(queued_reply.category_id).to eq(original_category)\n-          expect(queued_reply.payload['tags']).to be_nil\n-        end\n-      end\n-    end\n-  end\n-end"
+    }
+  ]
+}
