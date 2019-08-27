@@ -1,0 +1,98 @@
+{
+  "sha": "074edc25edff529f3c01559938af9060346de3d8",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjA3NGVkYzI1ZWRmZjUyOWYzYzAxNTU5OTM4YWY5MDYwMzQ2ZGUzZDg=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-27T08:12:11Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-08-27T08:12:11Z"
+    },
+    "message": "fix unstable auth hook test",
+    "tree": {
+      "sha": "10b9955b52a0828251f4d57580079593abb3192c",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/10b9955b52a0828251f4d57580079593abb3192c"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/074edc25edff529f3c01559938af9060346de3d8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/074edc25edff529f3c01559938af9060346de3d8",
+  "html_url": "https://github.com/umputun/remark/commit/074edc25edff529f3c01559938af9060346de3d8",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/074edc25edff529f3c01559938af9060346de3d8/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8b6452f938524c2fa14c99a6d8a4340371f0bb54",
+      "url": "https://api.github.com/repos/umputun/remark/commits/8b6452f938524c2fa14c99a6d8a4340371f0bb54",
+      "html_url": "https://github.com/umputun/remark/commit/8b6452f938524c2fa14c99a6d8a4340371f0bb54"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 9,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "5fd183e4399b4d6a73699b6f0cdcd52f82752e00",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark/blob/074edc25edff529f3c01559938af9060346de3d8/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/074edc25edff529f3c01559938af9060346de3d8/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server_test.go?ref=074edc25edff529f3c01559938af9060346de3d8",
+      "patch": "@@ -388,13 +388,12 @@ func TestServerAuthHooks(t *testing.T) {\n \tdefer resp.Body.Close()\n \tassert.Equal(t, http.StatusCreated, resp.StatusCode, \"non-blocked user able to post\")\n \n-\ttime.Sleep(1200 * time.Millisecond) // prevent limiter to be triggered\n \t// add comment with no-aud claim\n \tclaimsNoAud := claims\n-\tclaims.Audience = \"\"\n+\tclaimsNoAud.Audience = \"\"\n \ttkNoAud, err := tkService.Token(claimsNoAud)\n \trequire.NoError(t, err)\n-\tt.Log(tkNoAud)\n+\tt.Logf(\"no-aud claims: %s\", tkNoAud)\n \treq, err = http.NewRequest(\"POST\", fmt.Sprintf(\"http://localhost:%d/api/v1/comment\", port),\n \t\tstrings.NewReader(`{\"text\": \"test 123\", \"locator\":{\"url\": \"https://radio-t.com/p/2018/12/29/podcast-631/\", \n \"site\": \"remark\"}}`))\n@@ -403,7 +402,9 @@ func TestServerAuthHooks(t *testing.T) {\n \tresp, err = client.Do(req)\n \trequire.NoError(t, err)\n \tdefer resp.Body.Close()\n-\tassert.Equal(t, http.StatusUnauthorized, resp.StatusCode, \"user without aud claim rejected\")\n+\tbody, err := ioutil.ReadAll(resp.Body)\n+\trequire.NoError(t, err)\n+\tassert.Equal(t, http.StatusUnauthorized, resp.StatusCode, \"user without aud claim rejected, \\n\"+tkNoAud+\"\\n\"+string(body))\n \n \t// block user dev as admin\n \treq, e := http.NewRequest(http.MethodPut,\n@@ -426,7 +427,10 @@ func TestServerAuthHooks(t *testing.T) {\n \tresp, err = client.Do(req)\n \trequire.Nil(t, err)\n \tdefer resp.Body.Close()\n-\tassert.Equal(t, http.StatusUnauthorized, resp.StatusCode, \"blocked user can't post\")\n+\tbody, err = ioutil.ReadAll(resp.Body)\n+\trequire.NoError(t, err)\n+\tassert.True(t, resp.StatusCode == http.StatusForbidden || resp.StatusCode == http.StatusUnauthorized,\n+\t\t\"blocked user can't post, \\n\"+tk+\"\\n\"+string(body))\n \n \tapp.Wait()\n }"
+    }
+  ]
+}
