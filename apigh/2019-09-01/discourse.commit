@@ -1,0 +1,110 @@
+{
+  "sha": "75eebc904e93d6794ecc04dc3e754dffbaf56d35",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3NWVlYmM5MDRlOTNkNjc5NGVjYzA0ZGMzZTc1NGRmZmJhZjU2ZDM1",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-08-30T18:45:18Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-08-30T18:45:18Z"
+    },
+    "message": "FEATURE: new 'Discourse-Render' HTTP header",
+    "tree": {
+      "sha": "bdc407efc6963b40842fa296ea321e55694ff2db",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/bdc407efc6963b40842fa296ea321e55694ff2db"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/75eebc904e93d6794ecc04dc3e754dffbaf56d35",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/75eebc904e93d6794ecc04dc3e754dffbaf56d35",
+  "html_url": "https://github.com/discourse/discourse/commit/75eebc904e93d6794ecc04dc3e754dffbaf56d35",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/75eebc904e93d6794ecc04dc3e754dffbaf56d35/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "34ac199be78b35c7eff6920756a6d0cf7f281d04",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/34ac199be78b35c7eff6920756a6d0cf7f281d04",
+      "html_url": "https://github.com/discourse/discourse/commit/34ac199be78b35c7eff6920756a6d0cf7f281d04"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 18,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "069b3c097db1246284181b1ea3fc8a28102f0f71",
+      "filename": "app/controllers/application_controller.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/75eebc904e93d6794ecc04dc3e754dffbaf56d35/app/controllers/application_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75eebc904e93d6794ecc04dc3e754dffbaf56d35/app/controllers/application_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/application_controller.rb?ref=75eebc904e93d6794ecc04dc3e754dffbaf56d35",
+      "patch": "@@ -102,6 +102,13 @@ def dont_cache_page\n   end\n \n   def set_layout\n+    case request.headers[\"Discourse-Render\"]\n+    when \"desktop\"\n+      return \"application\"\n+    when \"crawler\"\n+      return \"crawler\"\n+    end\n+\n     use_crawler_layout? ? 'crawler' : 'application'\n   end\n "
+    },
+    {
+      "sha": "118d47c9230dc35a87a03828557e28382b764191",
+      "filename": "lib/middleware/anonymous_cache.rb",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 11,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/75eebc904e93d6794ecc04dc3e754dffbaf56d35/lib/middleware/anonymous_cache.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75eebc904e93d6794ecc04dc3e754dffbaf56d35/lib/middleware/anonymous_cache.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/middleware/anonymous_cache.rb?ref=75eebc904e93d6794ecc04dc3e754dffbaf56d35",
+      "patch": "@@ -12,9 +12,10 @@ def self.anon_cache(env, duration)\n     end\n \n     class Helper\n-      USER_AGENT = \"HTTP_USER_AGENT\"\n-      RACK_SESSION = \"rack.session\"\n-      ACCEPT_ENCODING = \"HTTP_ACCEPT_ENCODING\"\n+      RACK_SESSION     = \"rack.session\"\n+      USER_AGENT       = \"HTTP_USER_AGENT\"\n+      ACCEPT_ENCODING  = \"HTTP_ACCEPT_ENCODING\"\n+      DISCOURSE_RENDER = \"HTTP_DISCOURSE_RENDER\"\n \n       def initialize(env)\n         @env = env\n@@ -28,7 +29,7 @@ def blocked_crawler?\n         !@request.path.ends_with?('srv/status') &&\n         @request[Auth::DefaultCurrentUserProvider::API_KEY].nil? &&\n         @env[Auth::DefaultCurrentUserProvider::USER_API_KEY].nil? &&\n-        CrawlerDetection.is_blocked_crawler?(@request.env['HTTP_USER_AGENT'])\n+        CrawlerDetection.is_blocked_crawler?(@env[USER_AGENT])\n       end\n \n       def is_mobile=(val)\n@@ -39,12 +40,11 @@ def is_mobile?\n         @is_mobile ||=\n           begin\n             session = @env[RACK_SESSION]\n-            # don't initialize params until later otherwise\n-            # you get a broken params on the request\n+            # don't initialize params until later\n+            # otherwise you get a broken params on the request\n             params = {}\n-            user_agent = @env[USER_AGENT]\n \n-            MobileDetection.resolve_mobile_view!(user_agent, params, session) ? :true : :false\n+            MobileDetection.resolve_mobile_view!(@env[USER_AGENT], params, session) ? :true : :false\n           end\n \n         @is_mobile == :true\n@@ -62,7 +62,8 @@ def is_crawler?\n         @is_crawler ||=\n           begin\n             user_agent = @env[USER_AGENT]\n-            if CrawlerDetection.crawler?(user_agent, @env[\"HTTP_VIA\"])\n+\n+            if @env[DISCOURSE_RENDER] == \"crawler\" || CrawlerDetection.crawler?(user_agent, @env[\"HTTP_VIA\"])\n               :true\n             else\n               user_agent.downcase.include?(\"discourse\") ? :true : :false\n@@ -122,7 +123,7 @@ def force_anonymous!\n       def logged_in_anon_limiter\n         @logged_in_anon_limiter ||= RateLimiter.new(\n           nil,\n-          \"logged_in_anon_cache_#{@env[\"HOST\"]}/#{@env[\"REQUEST_URI\"]}\",\n+          \"logged_in_anon_cache_#{@env[\"HTTP_HOST\"]}/#{@env[\"REQUEST_URI\"]}\",\n           GlobalSetting.force_anonymous_min_per_10_seconds,\n           10\n         )\n@@ -225,7 +226,6 @@ def call(env)\n       end\n \n       result\n-\n     end\n \n   end"
+    }
+  ]
+}
