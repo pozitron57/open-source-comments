@@ -1,0 +1,98 @@
+{
+  "sha": "c468abe9d0cf40cbf9a0997120e9da28107d9fca",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjNDY4YWJlOWQwY2Y0MGNiZjlhMDk5NzEyMGU5ZGEyODEwN2Q5ZmNh",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-09-03T16:47:00Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-09-03T16:47:00Z"
+    },
+    "message": "FIX: Adjust composer size for iPhone Xs Max and Xʀ",
+    "tree": {
+      "sha": "60773c6aa66d188c42ede43dd09348063a5bbe85",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/60773c6aa66d188c42ede43dd09348063a5bbe85"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c468abe9d0cf40cbf9a0997120e9da28107d9fca",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c468abe9d0cf40cbf9a0997120e9da28107d9fca",
+  "html_url": "https://github.com/discourse/discourse/commit/c468abe9d0cf40cbf9a0997120e9da28107d9fca",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c468abe9d0cf40cbf9a0997120e9da28107d9fca/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dc9110cc434b0c0f3d6bec8d992c6caea31e273c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/dc9110cc434b0c0f3d6bec8d992c6caea31e273c",
+      "html_url": "https://github.com/discourse/discourse/commit/dc9110cc434b0c0f3d6bec8d992c6caea31e273c"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "fa619da659dfdbf566464089c1107529dd6886b2",
+      "filename": "app/assets/javascripts/discourse/lib/safari-hacks.js.es6",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/c468abe9d0cf40cbf9a0997120e9da28107d9fca/app/assets/javascripts/discourse/lib/safari-hacks.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/c468abe9d0cf40cbf9a0997120e9da28107d9fca/app/assets/javascripts/discourse/lib/safari-hacks.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/safari-hacks.js.es6?ref=c468abe9d0cf40cbf9a0997120e9da28107d9fca",
+      "patch": "@@ -41,6 +41,11 @@ function calcHeight() {\n       withoutKeyboard = smallViewport ? 340 : 370;\n     }\n \n+    // iPhone Xs Max and iPhone Xʀ\n+    if (window.screen.height === 896) {\n+      withoutKeyboard = smallViewport ? 410 : 440;\n+    }\n+\n     // iPad can use innerHeight cause it renders nothing in the footer\n     if (window.innerHeight > 920) {\n       withoutKeyboard -= 45;"
+    }
+  ]
+}
