@@ -1,0 +1,110 @@
+{
+  "sha": "7971ebe6f49e5a9a944407ef2f380d0fb405572b",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjc5NzFlYmU2ZjQ5ZTVhOWE5NDQ0MDdlZjJmMzgwZDBmYjQwNTU3MmI=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-09-03T21:39:14Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-09-03T21:39:14Z"
+    },
+    "message": "ignore deleted comment for activity sorting",
+    "tree": {
+      "sha": "d9f006b99804d100c053d775a0d5c736121b7768",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/d9f006b99804d100c053d775a0d5c736121b7768"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/7971ebe6f49e5a9a944407ef2f380d0fb405572b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/7971ebe6f49e5a9a944407ef2f380d0fb405572b",
+  "html_url": "https://github.com/umputun/remark/commit/7971ebe6f49e5a9a944407ef2f380d0fb405572b",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/7971ebe6f49e5a9a944407ef2f380d0fb405572b/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cdc1ae1e85d6efe5f0bbf341df71a77bfe09cd2e",
+      "url": "https://api.github.com/repos/umputun/remark/commits/cdc1ae1e85d6efe5f0bbf341df71a77bfe09cd2e",
+      "html_url": "https://github.com/umputun/remark/commit/cdc1ae1e85d6efe5f0bbf341df71a77bfe09cd2e"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "fead012e3c51e50c89410425905bca60c08a88f9",
+      "filename": "backend/app/store/service/tree.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/7971ebe6f49e5a9a944407ef2f380d0fb405572b/backend/app/store/service/tree.go",
+      "raw_url": "https://github.com/umputun/remark/raw/7971ebe6f49e5a9a944407ef2f380d0fb405572b/backend/app/store/service/tree.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/tree.go?ref=7971ebe6f49e5a9a944407ef2f380d0fb405572b",
+      "patch": "@@ -87,10 +87,10 @@ func (t *Tree) proc(comments []store.Comment, node *Node, rd *recurData, parentI\n \n \trepComments := t.filter(comments, func(comment store.Comment) bool { return comment.ParentID == parentID })\n \tfor _, rc := range repComments {\n-\t\tif !rc.Timestamp.IsZero() && rc.Timestamp.After(rd.tsModified) {\n+\t\tif !rc.Timestamp.IsZero() && rc.Timestamp.After(rd.tsModified) && !rc.Deleted {\n \t\t\trd.tsModified = rc.Timestamp\n \t\t}\n-\t\tif !rc.Timestamp.IsZero() && rc.Timestamp.Before(rd.tsCreated) {\n+\t\tif !rc.Timestamp.IsZero() && rc.Timestamp.Before(rd.tsCreated) && !rc.Deleted {\n \t\t\trd.tsCreated = rc.Timestamp\n \t\t}\n \t\tif !rc.Deleted {"
+    },
+    {
+      "sha": "9df9c9b76f3d4c00bd4fa76a48c1329ced9df36e",
+      "filename": "backend/app/store/service/tree_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark/blob/7971ebe6f49e5a9a944407ef2f380d0fb405572b/backend/app/store/service/tree_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/7971ebe6f49e5a9a944407ef2f380d0fb405572b/backend/app/store/service/tree_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/store/service/tree_test.go?ref=7971ebe6f49e5a9a944407ef2f380d0fb405572b",
+      "patch": "@@ -105,6 +105,7 @@ func TestTreeSortNodes(t *testing.T) {\n \t\t{ID: \"21\", ParentID: \"2\", Timestamp: time.Date(2017, 12, 25, 19, 47, 21, 0, time.UTC)},\n \t\t{ID: \"22\", ParentID: \"2\", Timestamp: time.Date(2017, 12, 25, 19, 47, 22, 0, time.UTC)},\n \t\t{ID: \"4\", Timestamp: time.Date(2017, 12, 25, 19, 47, 22, 0, time.UTC), Score: -2, Controversy: 7},\n+\t\t{ID: \"19\", ParentID: \"4\", Timestamp: time.Date(2019, 12, 25, 19, 46, 14, 0, time.UTC), Deleted: true},\n \t\t{ID: \"3\", Timestamp: time.Date(2017, 12, 25, 19, 47, 22, 100, time.UTC)},\n \t\t{ID: \"6\", Timestamp: time.Date(2017, 12, 25, 19, 47, 22, 200, time.UTC)},\n \t\t{ID: \"5\", Deleted: true, Timestamp: time.Date(2017, 12, 25, 19, 47, 22, 150, time.UTC)},"
+    }
+  ]
+}
