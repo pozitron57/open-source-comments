@@ -1,0 +1,110 @@
+{
+  "sha": "cd894b7d17a5d0712facb943229cdb2504818a7f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjZDg5NGI3ZDE3YTVkMDcxMmZhY2I5NDMyMjljZGIyNTA0ODE4YTdm",
+  "commit": {
+    "author": {
+      "name": "Sam Saffron",
+      "email": "sam.saffron@gmail.com",
+      "date": "2019-09-05T05:31:49Z"
+    },
+    "committer": {
+      "name": "Sam Saffron",
+      "email": "sam.saffron@gmail.com",
+      "date": "2019-09-05T05:32:33Z"
+    },
+    "message": "FIX: inline_uploads not working on subfolder setups",
+    "tree": {
+      "sha": "518f8b5205a1c3dabe70efe04e0d7e9b95e5f65c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/518f8b5205a1c3dabe70efe04e0d7e9b95e5f65c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/cd894b7d17a5d0712facb943229cdb2504818a7f",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/cd894b7d17a5d0712facb943229cdb2504818a7f",
+  "html_url": "https://github.com/discourse/discourse/commit/cd894b7d17a5d0712facb943229cdb2504818a7f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/cd894b7d17a5d0712facb943229cdb2504818a7f/comments",
+  "author": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6b6b0f09c4c91a72fd8840af76f74e3abd527304",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6b6b0f09c4c91a72fd8840af76f74e3abd527304",
+      "html_url": "https://github.com/discourse/discourse/commit/6b6b0f09c4c91a72fd8840af76f74e3abd527304"
+    }
+  ],
+  "stats": {
+    "total": 24,
+    "additions": 23,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "039d5f377386e2fa4394b956e0694459863d6a00",
+      "filename": "app/services/inline_uploads.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/cd894b7d17a5d0712facb943229cdb2504818a7f/app/services/inline_uploads.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/cd894b7d17a5d0712facb943229cdb2504818a7f/app/services/inline_uploads.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/inline_uploads.rb?ref=cd894b7d17a5d0712facb943229cdb2504818a7f",
+      "patch": "@@ -278,7 +278,7 @@ def self.matched_uploads(node)\n       /(upload:\\/\\/([a-zA-Z0-9]+)[a-zA-Z0-9\\.]*)/,\n       /(\\/uploads\\/short-url\\/([a-zA-Z0-9]+)[a-zA-Z0-9\\.]*)/,\n       /(#{base_url}\\/uploads\\/short-url\\/([a-zA-Z0-9]+)[a-zA-Z0-9\\.]*)/,\n-      /(\\/uploads\\/#{db}#{UPLOAD_REGEXP_PATTERN})/,\n+      /(#{GlobalSetting.relative_url_root}\\/uploads\\/#{db}#{UPLOAD_REGEXP_PATTERN})/,\n       /(#{base_url}\\/uploads\\/#{db}#{UPLOAD_REGEXP_PATTERN})/,\n     ]\n "
+    },
+    {
+      "sha": "41646c341ea700cfa9b84a57d63f2ddd01a88bdf",
+      "filename": "spec/services/inline_uploads_spec.rb",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/cd894b7d17a5d0712facb943229cdb2504818a7f/spec/services/inline_uploads_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/cd894b7d17a5d0712facb943229cdb2504818a7f/spec/services/inline_uploads_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/inline_uploads_spec.rb?ref=cd894b7d17a5d0712facb943229cdb2504818a7f",
+      "patch": "@@ -206,6 +206,28 @@\n         MD\n       end\n \n+      context \"subfolder\" do\n+        before do\n+          global_setting :relative_url_root, \"/community\"\n+          ActionController::Base.config.relative_url_root = \"/community\"\n+        end\n+\n+        after do\n+          ActionController::Base.config.relative_url_root = nil\n+        end\n+\n+        it \"should correct subfolder images\" do\n+\n+          md = <<~MD\n+            <img src=\"/community#{upload.url}\">\n+          MD\n+\n+          expect(InlineUploads.process(md)).to eq(<<~MD)\n+            ![](#{upload.short_url})\n+          MD\n+        end\n+      end\n+\n       it \"should correct raw image URLs to the short url and paths\" do\n         md = <<~MD\n         #{Discourse.base_url}#{upload.url}"
+    }
+  ]
+}
