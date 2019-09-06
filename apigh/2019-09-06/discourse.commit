@@ -1,0 +1,182 @@
+{
+  "sha": "6bbd83067d67a115af31cf4b2fc4a907a7870911",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2YmJkODMwNjdkNjdhMTE1YWYzMWNmNGIyZmM0YTkwN2E3ODcwOTEx",
+  "commit": {
+    "author": {
+      "name": "Rimian Perkins",
+      "email": "rimian@users.noreply.github.com",
+      "date": "2019-09-06T11:44:12Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-09-06T11:44:12Z"
+    },
+    "message": "FEATURE: New post editing period for >= tl2 users (#8070)\n\n* FEATURE: Add tl2 threshold for editing new posts\r\n\r\n* Adds a new setting and for tl2 editing posts (30 days same as old value)\r\n* Sets the tl0/tl1 editing period as 1 day\r\n\r\n* FIX: Spec uses wrong setting\r\n\r\n* Fix site setting on guardian spec\r\n\r\n* FIX: post editing period specs\r\n\r\n* Avoid shared examples\r\n* Use update_columns to avoid callbacks on user during tests",
+    "tree": {
+      "sha": "0f3da9066e4d282593bc5f37ac074a9e9283cb14",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0f3da9066e4d282593bc5f37ac074a9e9283cb14"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6bbd83067d67a115af31cf4b2fc4a907a7870911",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6bbd83067d67a115af31cf4b2fc4a907a7870911",
+  "html_url": "https://github.com/discourse/discourse/commit/6bbd83067d67a115af31cf4b2fc4a907a7870911",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6bbd83067d67a115af31cf4b2fc4a907a7870911/comments",
+  "author": {
+    "login": "rimian",
+    "id": 64749,
+    "node_id": "MDQ6VXNlcjY0NzQ5",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/64749?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rimian",
+    "html_url": "https://github.com/rimian",
+    "followers_url": "https://api.github.com/users/rimian/followers",
+    "following_url": "https://api.github.com/users/rimian/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rimian/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rimian/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rimian/subscriptions",
+    "organizations_url": "https://api.github.com/users/rimian/orgs",
+    "repos_url": "https://api.github.com/users/rimian/repos",
+    "events_url": "https://api.github.com/users/rimian/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rimian/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "103629d2575f079223c16bfda8b7f815520763d7",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/103629d2575f079223c16bfda8b7f815520763d7",
+      "html_url": "https://github.com/discourse/discourse/commit/103629d2575f079223c16bfda8b7f815520763d7"
+    }
+  ],
+  "stats": {
+    "total": 124,
+    "additions": 95,
+    "deletions": 29
+  },
+  "files": [
+    {
+      "sha": "d5a9a12c0da8edc695126b0f4b3371feb497e56f",
+      "filename": "app/controllers/posts_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/app/controllers/posts_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/app/controllers/posts_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/posts_controller.rb?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -204,7 +204,7 @@ def update\n \n     if !guardian.public_send(\"can_edit?\", post) &&\n        post.user_id == current_user.id &&\n-       post.edit_time_limit_expired?\n+       post.edit_time_limit_expired?(current_user)\n \n       return render_json_error(I18n.t('too_late_to_edit'))\n     end"
+    },
+    {
+      "sha": "bfd21392b5b8928cf7f50dbcb39d9310a3eb7c3d",
+      "filename": "app/models/concerns/limited_edit.rb",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 3,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/app/models/concerns/limited_edit.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/app/models/concerns/limited_edit.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/concerns/limited_edit.rb?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -3,11 +3,22 @@\n module LimitedEdit\n   extend ActiveSupport::Concern\n \n-  def edit_time_limit_expired?\n-    if created_at && SiteSetting.post_edit_time_limit.to_i > 0\n-      created_at < SiteSetting.post_edit_time_limit.to_i.minutes.ago\n+  def edit_time_limit_expired?(user)\n+    time_limit = user_time_limit(user)\n+    if created_at && time_limit > 0\n+      created_at < time_limit.minutes.ago\n     else\n       false\n     end\n   end\n+\n+  private\n+\n+  def user_time_limit(user)\n+    if user.trust_level < 2\n+      SiteSetting.post_edit_time_limit.to_i\n+    else\n+      SiteSetting.tl2_post_edit_time_limit.to_i\n+    end\n+  end\n end"
+    },
+    {
+      "sha": "ff522b004eccf1a7367b033f3ed3a351d0794e13",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -1361,7 +1361,8 @@ en:\n     editing_grace_period_max_diff: \"Maximum number of character changes allowed in editing grace period, if more changed store another post revision (trust level 0 and 1)\"\n     editing_grace_period_max_diff_high_trust: \"Maximum number of character changes allowed in editing grace period, if more changed store another post revision (trust level 2 and up)\"\n     staff_edit_locks_post: \"Posts will be locked from editing if they are edited by staff members\"\n-    post_edit_time_limit: \"The author can edit their post for (n) minutes after posting. Set to 0 for forever.\"\n+    post_edit_time_limit: \"A tl0 or tl1 author can edit their post for (n) minutes after posting. Set to 0 for forever.\"\n+    tl2_post_edit_time_limit: \"A tl2 author can edit their post for (n) minutes after posting. Set to 0 for forever.\"\n     edit_history_visible_to_public: \"Allow everyone to see previous versions of an edited post. When disabled, only staff members can view.\"\n     delete_removed_posts_after: \"Posts removed by the author will be automatically deleted after (n) hours. If set to 0, posts will be deleted immediately.\"\n     max_image_width: \"Maximum thumbnail width of images in a post\""
+    },
+    {
+      "sha": "c1a6cbfd74f99a0884ca861535e50748c0f4730c",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -700,6 +700,9 @@ posting:\n     type: category\n     default: \"\"\n   post_edit_time_limit:\n+    default: 1440\n+    max: 10080\n+  tl2_post_edit_time_limit:\n     default: 43200\n     max: 525600\n   edit_history_visible_to_public:"
+    },
+    {
+      "sha": "25c46de3c5d03f0b58dc4b14c9a90227a6d66c64",
+      "filename": "lib/guardian/post_guardian.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/lib/guardian/post_guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/lib/guardian/post_guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian/post_guardian.rb?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -158,7 +158,7 @@ def can_edit_post?(post)\n         return true\n       end\n \n-      return !post.edit_time_limit_expired?\n+      return !post.edit_time_limit_expired?(@user)\n     end\n \n     false\n@@ -238,7 +238,7 @@ def can_wiki?(post)\n \n     if @user.has_trust_level?(SiteSetting.min_trust_to_allow_self_wiki) && is_my_own?(post)\n       return false if post.hidden?\n-      return !post.edit_time_limit_expired?\n+      return !post.edit_time_limit_expired?(@user)\n     end\n \n     false"
+    },
+    {
+      "sha": "89f5fe6e54ae73aaa8c5250ad9a92cb97b2ee443",
+      "filename": "lib/guardian/topic_guardian.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/lib/guardian/topic_guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/lib/guardian/topic_guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian/topic_guardian.rb?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -106,7 +106,7 @@ def can_edit_topic?(topic)\n \n     return false if topic.archived\n     is_my_own?(topic) &&\n-      !topic.edit_time_limit_expired? &&\n+      !topic.edit_time_limit_expired?(user) &&\n       !Post.where(topic_id: topic.id, post_number: 1).where.not(locked_by_id: nil).exists?\n   end\n "
+    },
+    {
+      "sha": "0dddab72819842d2458db4b0d95f6459fc86915e",
+      "filename": "spec/components/guardian_spec.rb",
+      "status": "modified",
+      "additions": 53,
+      "deletions": 20,
+      "changes": 73,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/spec/components/guardian_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/spec/components/guardian_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/guardian_spec.rb?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -1389,32 +1389,65 @@\n         expect(Guardian.new(post.user).can_edit?(post)).to be_truthy\n       end\n \n-      context 'post is older than post_edit_time_limit' do\n-        let(:old_post) { build(:post, topic: topic, user: topic.user, created_at: 6.minutes.ago) }\n+      describe 'post edit time limits' do\n+        context 'post is older than post_edit_time_limit' do\n+          let(:old_post) { build(:post, topic: topic, user: topic.user, created_at: 6.minutes.ago) }\n \n-        before do\n-          SiteSetting.post_edit_time_limit = 5\n-        end\n+          before do\n+            topic.user.update_columns(trust_level:  1)\n+            SiteSetting.post_edit_time_limit = 5\n+          end\n \n-        it 'returns false to the author of the post' do\n-          expect(Guardian.new(old_post.user).can_edit?(old_post)).to be_falsey\n-        end\n+          it 'returns false to the author of the post' do\n+            expect(Guardian.new(old_post.user).can_edit?(old_post)).to be_falsey\n+          end\n \n-        it 'returns true as a moderator' do\n-          expect(Guardian.new(moderator).can_edit?(old_post)).to eq(true)\n-        end\n+          it 'returns true as a moderator' do\n+            expect(Guardian.new(moderator).can_edit?(old_post)).to eq(true)\n+          end\n \n-        it 'returns true as an admin' do\n-          expect(Guardian.new(admin).can_edit?(old_post)).to eq(true)\n-        end\n+          it 'returns true as an admin' do\n+            expect(Guardian.new(admin).can_edit?(old_post)).to eq(true)\n+          end\n+\n+          it 'returns false for another regular user trying to edit your post' do\n+            expect(Guardian.new(coding_horror).can_edit?(old_post)).to be_falsey\n+          end\n \n-        it 'returns false for another regular user trying to edit your post' do\n-          expect(Guardian.new(coding_horror).can_edit?(old_post)).to be_falsey\n+          it 'returns true for another regular user trying to edit a wiki post' do\n+            old_post.wiki = true\n+            expect(Guardian.new(coding_horror).can_edit?(old_post)).to be_truthy\n+          end\n         end\n \n-        it 'returns true for another regular user trying to edit a wiki post' do\n-          old_post.wiki = true\n-          expect(Guardian.new(coding_horror).can_edit?(old_post)).to be_truthy\n+        context 'post is older than tl2_post_edit_time_limit' do\n+          let(:old_post) { build(:post, topic: topic, user: topic.user, created_at: 12.minutes.ago) }\n+\n+          before do\n+            topic.user.update_columns(trust_level: 2)\n+            SiteSetting.tl2_post_edit_time_limit = 10\n+          end\n+\n+          it 'returns false to the author of the post' do\n+            expect(Guardian.new(old_post.user).can_edit?(old_post)).to be_falsey\n+          end\n+\n+          it 'returns true as a moderator' do\n+            expect(Guardian.new(moderator).can_edit?(old_post)).to eq(true)\n+          end\n+\n+          it 'returns true as an admin' do\n+            expect(Guardian.new(admin).can_edit?(old_post)).to eq(true)\n+          end\n+\n+          it 'returns false for another regular user trying to edit your post' do\n+            expect(Guardian.new(coding_horror).can_edit?(old_post)).to be_falsey\n+          end\n+\n+          it 'returns true for another regular user trying to edit a wiki post' do\n+            old_post.wiki = true\n+            expect(Guardian.new(coding_horror).can_edit?(old_post)).to be_truthy\n+          end\n         end\n       end\n \n@@ -2854,7 +2887,7 @@\n       let(:old_post) { build(:post, user: trust_level_2, created_at: 6.minutes.ago) }\n       before do\n         SiteSetting.min_trust_to_allow_self_wiki = 2\n-        SiteSetting.post_edit_time_limit = 5\n+        SiteSetting.tl2_post_edit_time_limit = 5\n       end\n \n       it 'returns false when user satisfies trust level and owns the post' do"
+    },
+    {
+      "sha": "7e10e1a4ae043b8e29cbc01edf4b0bd0492b6fab",
+      "filename": "spec/requests/posts_controller_spec.rb",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 1,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/6bbd83067d67a115af31cf4b2fc4a907a7870911/spec/requests/posts_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6bbd83067d67a115af31cf4b2fc4a907a7870911/spec/requests/posts_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/posts_controller_spec.rb?ref=6bbd83067d67a115af31cf4b2fc4a907a7870911",
+      "patch": "@@ -313,8 +313,26 @@\n         sign_in(user)\n       end\n \n-      it 'does not allow to update when edit time limit expired' do\n+      it 'does not allow TL0 or TL1 to update when edit time limit expired' do\n         SiteSetting.post_edit_time_limit = 5\n+        SiteSetting.tl2_post_edit_time_limit = 30\n+\n+        post = Fabricate(:post, created_at: 10.minutes.ago, user: user)\n+\n+        user.update_columns(trust_level: 1)\n+\n+        put \"/posts/#{post.id}.json\", params: update_params\n+\n+        expect(response.status).to eq(422)\n+        expect(JSON.parse(response.body)['errors']).to include(I18n.t('too_late_to_edit'))\n+      end\n+\n+      it 'does not allow TL2 to update when edit time limit expired' do\n+        SiteSetting.post_edit_time_limit = 12\n+        SiteSetting.tl2_post_edit_time_limit = 8\n+\n+        user.update_columns(trust_level: 2)\n+\n         post = Fabricate(:post, created_at: 10.minutes.ago, user: user)\n \n         put \"/posts/#{post.id}.json\", params: update_params"
+    }
+  ]
+}
