@@ -1,0 +1,98 @@
+{
+  "sha": "7453e19c68bc419072e264a416d5804920250507",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3NDUzZTE5YzY4YmM0MTkwNzJlMjY0YTQxNmQ1ODA0OTIwMjUwNTA3",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-09-09T16:17:28Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-09-09T16:17:28Z"
+    },
+    "message": "DEV: Update set-value dependency to 2.0.1",
+    "tree": {
+      "sha": "317579f90061a79f2e295f8cb349979a3b37c415",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/317579f90061a79f2e295f8cb349979a3b37c415"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7453e19c68bc419072e264a416d5804920250507",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7453e19c68bc419072e264a416d5804920250507",
+  "html_url": "https://github.com/discourse/discourse/commit/7453e19c68bc419072e264a416d5804920250507",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7453e19c68bc419072e264a416d5804920250507/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "972c1acef8d1eca679f7f50fc6affabe265222f2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/972c1acef8d1eca679f7f50fc6affabe265222f2",
+      "html_url": "https://github.com/discourse/discourse/commit/972c1acef8d1eca679f7f50fc6affabe265222f2"
+    }
+  ],
+  "stats": {
+    "total": 34,
+    "additions": 17,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "8f4e935f61ce3056585d9a1bd231279546510544",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 17,
+      "changes": 34,
+      "blob_url": "https://github.com/discourse/discourse/blob/7453e19c68bc419072e264a416d5804920250507/yarn.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/7453e19c68bc419072e264a416d5804920250507/yarn.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/yarn.lock?ref=7453e19c68bc419072e264a416d5804920250507",
+      "patch": "@@ -1352,7 +1352,7 @@ is-number@^3.0.0:\n   dependencies:\n     kind-of \"^3.0.2\"\n \n-is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:\n+is-plain-object@^2.0.3, is-plain-object@^2.0.4:\n   version \"2.0.4\"\n   resolved \"https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677\"\n   integrity sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==\n@@ -1535,12 +1535,12 @@ linkify-it@^2.0.0:\n     uc.micro \"^1.0.1\"\n \n \"lodash-cli@https://github.com/lodash-archive/lodash-cli.git\":\n-  version \"4.17.14\"\n+  version \"4.17.15\"\n   resolved \"https://github.com/lodash-archive/lodash-cli.git#91176e422d7c10634a59c7e367fe224795ef5a24\"\n   dependencies:\n     closure-compiler \"0.2.12\"\n     glob \"7.1.1\"\n-    lodash \"4.17.14\"\n+    lodash \"4.17.15\"\n     semver \"5.3.0\"\n     uglify-js \"2.7.5\"\n \n@@ -2188,16 +2188,6 @@ semver@^5.3.0, semver@^5.5.0:\n   resolved \"https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004\"\n   integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==\n \n-set-value@^0.4.3:\n-  version \"0.4.3\"\n-  resolved \"https://registry.yarnpkg.com/set-value/-/set-value-0.4.3.tgz#7db08f9d3d22dc7f78e53af3c3bf4666ecdfccf1\"\n-  integrity sha1-fbCPnT0i3H945Trzw79GZuzfzPE=\n-  dependencies:\n-    extend-shallow \"^2.0.1\"\n-    is-extendable \"^0.1.1\"\n-    is-plain-object \"^2.0.1\"\n-    to-object-path \"^0.3.0\"\n-\n set-value@^2.0.0:\n   version \"2.0.0\"\n   resolved \"https://registry.yarnpkg.com/set-value/-/set-value-2.0.0.tgz#71ae4a88f0feefbbf52d1ea604f3fb315ebb6274\"\n@@ -2208,6 +2198,16 @@ set-value@^2.0.0:\n     is-plain-object \"^2.0.3\"\n     split-string \"^3.0.1\"\n \n+set-value@^2.0.1:\n+  version \"2.0.1\"\n+  resolved \"https://registry.yarnpkg.com/set-value/-/set-value-2.0.1.tgz#a18d40530e6f07de4228c7defe4227af8cad005b\"\n+  integrity sha512-JxHc1weCN68wRY0fhCoXpyK55m/XPHafOmK4UWD7m2CI14GMcFypt4w/0+NV5f/ZMby2F6S2wwA7fgynh9gWSw==\n+  dependencies:\n+    extend-shallow \"^2.0.1\"\n+    is-extendable \"^0.1.1\"\n+    is-plain-object \"^2.0.3\"\n+    split-string \"^3.0.1\"\n+\n shebang-command@^1.2.0:\n   version \"1.2.0\"\n   resolved \"https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea\"\n@@ -2497,14 +2497,14 @@ ultron@~1.1.0:\n   integrity sha512-UIEXBNeYmKptWH6z8ZnqTeS8fV74zG0/eRU9VGkpzz+LIJNs8W/zM/L+7ctCkRrgbNnnR0xxw4bKOr0cW0N0Og==\n \n union-value@^1.0.0:\n-  version \"1.0.0\"\n-  resolved \"https://registry.yarnpkg.com/union-value/-/union-value-1.0.0.tgz#5c71c34cb5bad5dcebe3ea0cd08207ba5aa1aea4\"\n-  integrity sha1-XHHDTLW61dzr4+oM0IIHulqhrqQ=\n+  version \"1.0.1\"\n+  resolved \"https://registry.yarnpkg.com/union-value/-/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847\"\n+  integrity sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg==\n   dependencies:\n     arr-union \"^3.1.0\"\n     get-value \"^2.0.6\"\n     is-extendable \"^0.1.1\"\n-    set-value \"^0.4.3\"\n+    set-value \"^2.0.1\"\n \n unset-value@^1.0.0:\n   version \"1.0.0\""
+    }
+  ]
+}
