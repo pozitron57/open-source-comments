@@ -1,0 +1,98 @@
+{
+  "sha": "7fa2ae912cd5a892a6b256984d23199ff530076e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3ZmEyYWU5MTJjZDVhODkyYTZiMjU2OTg0ZDIzMTk5ZmY1MzAwNzZl",
+  "commit": {
+    "author": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-09-13T20:16:35Z"
+    },
+    "committer": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-09-13T20:16:35Z"
+    },
+    "message": "Add spec description",
+    "tree": {
+      "sha": "c38ba2c675f0a513916014f8566f92e519b06557",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c38ba2c675f0a513916014f8566f92e519b06557"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7fa2ae912cd5a892a6b256984d23199ff530076e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7fa2ae912cd5a892a6b256984d23199ff530076e",
+  "html_url": "https://github.com/discourse/discourse/commit/7fa2ae912cd5a892a6b256984d23199ff530076e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7fa2ae912cd5a892a6b256984d23199ff530076e/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "08b7a3fdfee3bc843ee5802842111e52c82cb8c6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/08b7a3fdfee3bc843ee5802842111e52c82cb8c6",
+      "html_url": "https://github.com/discourse/discourse/commit/08b7a3fdfee3bc843ee5802842111e52c82cb8c6"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "adb335e577ed482bf484ef069d2feb9a3ffd8dcf",
+      "filename": "spec/requests/post_readers_controller_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7fa2ae912cd5a892a6b256984d23199ff530076e/spec/requests/post_readers_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7fa2ae912cd5a892a6b256984d23199ff530076e/spec/requests/post_readers_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/post_readers_controller_spec.rb?ref=7fa2ae912cd5a892a6b256984d23199ff530076e",
+      "patch": "@@ -77,7 +77,7 @@\n         expect(readers).to be_empty\n       end\n \n-      it 'xxxxx' do\n+      it \"doesn't include non-members when the post is a whisper\" do\n         @post.update(post_type: Post.types[:whisper])\n         non_member_reader = Fabricate(:user)\n         @group_message.allowed_users << non_member_reader"
+    }
+  ]
+}
