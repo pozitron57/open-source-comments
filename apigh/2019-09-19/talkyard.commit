@@ -1,0 +1,182 @@
+{
+  "sha": "2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MmYxZjYxM2NmNDFlYzQ4MTRmYWI1MWZhOTY0ZDE3N2NiZTliZDQyMQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-09-19T01:40:53Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-09-19T12:13:34Z"
+    },
+    "message": "Add e2e test for embeddedOriginOrEmpty, and upload links pub site id.",
+    "tree": {
+      "sha": "dee14e02cf3fb324c21d7a1e3022aa06884ca4c3",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/dee14e02cf3fb324c21d7a1e3022aa06884ca4c3"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+  "html_url": "https://github.com/debiki/talkyard/commit/2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/2f1f613cf41ec4814fab51fa964d177cbe9bd421/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1146b1ec6fa307780996f78be19c2a4c6d5d6ad7",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/1146b1ec6fa307780996f78be19c2a4c6d5d6ad7",
+      "html_url": "https://github.com/debiki/talkyard/commit/1146b1ec6fa307780996f78be19c2a4c6d5d6ad7"
+    }
+  ],
+  "stats": {
+    "total": 253,
+    "additions": 248,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "9dab128902b00555dde13c4261fc575300cb6d79",
+      "filename": "app/talkyard/server/backup/SiteBackupController.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/app/talkyard/server/backup/SiteBackupController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/app/talkyard/server/backup/SiteBackupController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/talkyard/server/backup/SiteBackupController.scala?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -197,6 +197,7 @@ class SiteBackupController @Inject()(cc: ControllerComponents, edContext: EdCont\n \n     Ok(Json.obj(\n       \"id\" -> newSite.id,\n+      \"pubId\" -> newSite.pubId,\n       \"origin\" -> JsStringOrNull(anyHostname),\n       \"siteIdOrigin\" -> globals.siteByIdOrigin(newSite.id))) as JSON\n   }"
+    },
+    {
+      "sha": "a04b034448c26e5a862cf17546cdaca973826617",
+      "filename": "docs/e2e-tests-map.txt",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/docs/e2e-tests-map.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/docs/e2e-tests-map.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/e2e-tests-map.txt?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -458,12 +458,16 @@ embedded comments:\n           - embedded-comments-scroll  TyT2K4DHR49   MISSING\n   import from Disqus xml export file:  (impexp)\n           - embedded-comments-create-site-import-disqus.2browsers.test.ts  TyT5KFG0P75\n+  image links work although <base> tag: (EMBORG)\n \n uploads -  (7KFC2)\n   upload profile pic:  (8PK2)\n   upload jpg, png:\n   upload video:\n   upload pdf, tar.gz:\n+  embedded origin added,  (EMBORG)\n+  pub site id added:\n+          - embedded-comments-uploads-origin.test.ts  TyT603RKDJA6\n \n recent comments:\n "
+    },
+    {
+      "sha": "479d06f14c62818ce2a7b1cd4b92ebe1ecc94b02",
+      "filename": "s/run-e2e-tests.sh",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/s/run-e2e-tests.sh",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/s/run-e2e-tests.sh",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/s/run-e2e-tests.sh?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -403,6 +403,7 @@ function runAllE2eTests {\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-edit-and-vote-old-name $args\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-vote-first $args\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-conf-notf-pref-first $args\n+  runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-uploads-origin $args\n   runE2eTest s/wdio target/e2e/wdio.conf.js            --only embedded-comments-short-script-cache-time $args\n   # (all names included in short-cache-time already)\n "
+    },
+    {
+      "sha": "dc997263362f531aeaaecf4f83f2e81d3526a56f",
+      "filename": "tests/e2e/specs/drafts-delete.test.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/specs/drafts-delete.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/specs/drafts-delete.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/drafts-delete.test.ts?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -154,7 +154,9 @@ describe(\"drafts-delete  TyT5BKRQ0\", () => {\n   });\n \n   it(\"... she deletes the title\", () => {\n-    mariasBrowser.editor.editTitle('  ');\n+    // 2019-09: editTitle('  ') didn't remove all chars. In Chrome. Weird. So retry. [E2EBUG]\n+    // Maybe have waitAndSetValue() always inspect the result and retry?\n+    mariasBrowser.editor.editTitle('  ', { checkAndRetry: true });\n   });\n \n   it(\"... so now the draft gets deleted\", () => {"
+    },
+    {
+      "sha": "0070e65924dac627f83cc08c10004a16f4829144",
+      "filename": "tests/e2e/specs/embedded-comments-edit-and-vote.test.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/specs/embedded-comments-edit-and-vote.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/specs/embedded-comments-edit-and-vote.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-edit-and-vote.test.ts?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -6,6 +6,7 @@ import fs = require('fs');\n import server = require('../utils/server');\n import pagesFor = require('../utils/pages-for');\n import make = require('../utils/make');\n+import c = require('../test-constants');\n \n declare let browser: any;\n \n@@ -106,7 +107,7 @@ describe(\"emb cmts edit and vote\", () => {\n   it(\"She can edit it, also after reloading the page (old comment, old page)\", () => {\n     majasBrowser.refresh();\n     majasBrowser.switchToEmbeddedCommentsIrame();\n-    majasBrowser.topic.clickEditoPostNr(2);\n+    majasBrowser.topic.clickEditoPostNr(c.FirstReplyNr);\n     majasBrowser.switchToEmbeddedEditorIrame();\n     majasBrowser.editor.editText(majasFirstCommentEditedTwice);\n     majasBrowser.editor.save();"
+    },
+    {
+      "sha": "807f32271712c8c317cb3531b4262e3b3132f5e0",
+      "filename": "tests/e2e/specs/embedded-comments-uploads-origin.test.ts",
+      "status": "added",
+      "additions": 200,
+      "deletions": 0,
+      "changes": 200,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/specs/embedded-comments-uploads-origin.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/specs/embedded-comments-uploads-origin.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-uploads-origin.test.ts?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -0,0 +1,200 @@\n+/// <reference path=\"../test-types.ts\"/>\n+\n+import * as _ from 'lodash';\n+import assert = require('assert');\n+import fs = require('fs');\n+import server = require('../utils/server');\n+import utils = require('../utils/utils');\n+import pagesFor = require('../utils/pages-for');\n+import settings = require('../utils/settings');\n+import make = require('../utils/make');\n+import logAndDie = require('../utils/log-and-die');\n+import c = require('../test-constants');\n+declare let browser: any;\n+\n+let everyonesBrowsers;\n+let maria;\n+let mariasBrowser;\n+\n+let idAddress: IdAddress;\n+let siteId: any;\n+\n+\n+const uplImgLink = (origin: string, sitePubId: string) =>\n+  `${origin}/-/u/${sitePubId ? sitePubId + '/' : ''}dummyimagepath.jpg`;\n+\n+const uplFileLinkOne = (origin: string, sitePubId: string) =>\n+  `${origin}/-/u/${sitePubId ? sitePubId + '/' : ''}dummyfilepathone.pdf`;\n+\n+const uplFileLinkTwo = (origin: string, sitePubId: string) =>\n+  `${origin}/-/u/${sitePubId ? sitePubId + '/' : ''}dummyfilepathtwo.pdf`;\n+\n+const extImgLink  = 'https://elsewhere.example.com/ext-img.jpg';\n+const extFileLink = 'https://elsewhere.example.com/document.pdf';\n+const extFile2Link = 'https://galaxytwo.example.com/doctwo.odf';\n+\n+\n+const mariasImageLinksOrig = `\n+![uploaded img descr](${uplImgLink('', '')})\n+\n+![external img descr](${extImgLink})\n+\n+[uploaded-doc-one.pdf](${uplFileLinkOne('', '')})\n+\n+<a href=\"${uplFileLinkTwo('', '')}\">uploaded-doc-two.pdf</a>\n+\n+[external-doc.pdf](${extFileLink})\n+\n+<a href=\"${extFile2Link}\">external-doc-two.pdf</a>\n+`;\n+\n+\n+const mariasImageLinksEdited = mariasImageLinksOrig + \"\\n\\n Extra_text.\";\n+\n+\n+\n+const localHostname = 'comments-for-e2e-test-embuplorg-localhost-8080';\n+const embeddingOrigin = 'http://e2e-test-embuplorg.localhost:8080';\n+const pageDddSlug = 'emb-cmts-ddd.html';\n+\n+\n+describe(\"emb cmts uploads origin  TyT603RKDJA6\", () => {\n+\n+  it(\"initialize people\", () => {\n+    everyonesBrowsers = _.assign(browser, pagesFor(browser));\n+    mariasBrowser = everyonesBrowsers;\n+    maria = make.memberMaria();\n+  });\n+\n+  it(\"import a site\", () => {\n+    const site: SiteData = make.forumOwnedByOwen('embuplorg', { title: \"Emb Cmts Upl Orig Test\" });\n+    site.meta.localHostname = localHostname;\n+    site.settings.allowEmbeddingFrom = embeddingOrigin;\n+    site.settings.requireVerifiedEmail = false;\n+    site.settings.mayComposeBeforeSignup = true;\n+    site.settings.mayPostBeforeEmailVerified = true;\n+    site.settings.allowGuestLogin = true;\n+    site.members.push(maria);\n+    idAddress = server.importSiteData(site);\n+    siteId = idAddress.id;\n+  });\n+\n+  it(\"create an embedding pages ddd\", () => {\n+    const dir = 'target';\n+    fs.writeFileSync(`${dir}/${pageDddSlug}`, makeHtml('ddd', '', '#500'));\n+    function makeHtml(pageName: string, discussionId: string, bgColor: string): string {\n+      return utils.makeEmbeddedCommentsHtml({ pageName, discussionId, localHostname, bgColor });\n+    }\n+  });\n+\n+  it(\"Maria opens embedding page ddd\", () => {\n+    mariasBrowser.go(embeddingOrigin + '/' + pageDddSlug);\n+  });\n+\n+  it(\"Starts writing a reply, when not logged in\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.clickReplyToEmbeddingBlogPost();\n+  });\n+\n+  it(\"... typen image links\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.editText(mariasImageLinksOrig);\n+  });\n+\n+  let correctLinksRegexStr: string;\n+\n+  it(\"... that get prefixed with the Talkyard server origin, in the preview\", () => {\n+    correctLinksRegexStr =\n+      'src=\"' + uplImgLink(idAddress.origin, idAddress.pubId) + '\".*' +\n+      'src=\"' + extImgLink + '\".*' +\n+      'href=\"' + uplFileLinkOne(idAddress.origin, idAddress.pubId) + '\".*' +\n+      'href=\"' + uplFileLinkTwo(idAddress.origin, idAddress.pubId) + '\".*' +\n+      'href=\"' + extFileLink + '\".*' +\n+      'href=\"' + extFile2Link + '\"';\n+    mariasBrowser.editor.preview.waitUntilPreviewHtmlMatches(correctLinksRegexStr);\n+  });\n+\n+\n+  it(\"She clicks Post Reply\", () => {\n+    mariasBrowser.editor.save();\n+  });\n+\n+  it(\"... logs in, to post the comment\", () => {\n+    mariasBrowser.loginDialog.loginWithPasswordInPopup(maria);\n+  });\n+\n+  it(\"The comment is there, with links to the Talkyard server origin\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.waitUntilPostHtmlMatches(c.FirstReplyNr, correctLinksRegexStr);\n+  });\n+\n+  it(\"... also after reload\", () => {\n+    mariasBrowser.refresh();\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.waitUntilPostHtmlMatches(c.FirstReplyNr, correctLinksRegexStr);\n+  });\n+\n+  it(\"Clicks edit\", () => {\n+    mariasBrowser.topic.clickEditoPostNr(c.FirstReplyNr);\n+  });\n+\n+  it(\"... and edits\", () => {\n+    mariasBrowser.switchToEmbeddedEditorIrame();\n+    mariasBrowser.editor.editText(mariasImageLinksEdited);\n+  });\n+\n+  it(\"... and saves\", () => {\n+    mariasBrowser.editor.save();\n+  });\n+\n+  it(\"The links are still okay\", () => {\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.waitUntilPostHtmlMatches(\n+        c.FirstReplyNr, correctLinksRegexStr + '.*Extra_text');\n+  });\n+\n+  it(\"... also after reload, this time too\", () => {\n+    mariasBrowser.refresh();\n+    mariasBrowser.switchToEmbeddedCommentsIrame();\n+    mariasBrowser.topic.waitUntilPostHtmlMatches(c.FirstReplyNr,\n+        correctLinksRegexStr + '.*Extra_text');\n+  });\n+\n+\n+  // ----- Add image, directly via Talkyards server\n+\n+  it(\"Maria goes to the Talkard server, the topics list\", () => {\n+    mariasBrowser.go(idAddress.origin);\n+  });\n+\n+  it(\"She posts a new topic, with the same links\", () => {\n+    mariasBrowser.complex.createAndSaveTopic({\n+      title: \"Maria's Topic, not embedded\",\n+      body: mariasImageLinksOrig,\n+      bodyMatchAfter: false,\n+    });\n+  });\n+\n+  let correctLinksRegexStrNoOrigin: string;\n+\n+  it(\"The links don't get prefixed with the Talkyard server origin — not needed, not embedded\", () => {\n+    correctLinksRegexStrNoOrigin =\n+        'src=\"' + uplImgLink('', idAddress.pubId) + '\".*' +\n+        'src=\"' + extImgLink + '\".*' +\n+        'href=\"' + uplFileLinkOne('', idAddress.pubId) + '\".*' +\n+        'href=\"' + uplFileLinkTwo('', idAddress.pubId) + '\".*' +\n+        'href=\"' + extFileLink + '\".*' +\n+        'href=\"' + extFile2Link + '\"';\n+    mariasBrowser.topic.waitUntilPostHtmlMatches(c.BodyNr, correctLinksRegexStrNoOrigin);\n+  });\n+\n+  it(\"She posts a reply\", () => {\n+    mariasBrowser.complex.replyToOrigPost(mariasImageLinksOrig);\n+  });\n+\n+  it(\"The links in the reply also don't get prefixed with the Talkyard server origin\", () => {\n+    mariasBrowser.topic.waitUntilPostHtmlMatches(c.FirstReplyNr, correctLinksRegexStrNoOrigin);\n+  });\n+\n+});\n+"
+    },
+    {
+      "sha": "fdeae4db7b3049b48af3537e0dd49007b383a4d4",
+      "filename": "tests/e2e/test-types2.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/test-types2.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/test-types2.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/test-types2.ts?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -366,6 +366,7 @@ interface TestPost {  // later: try to unify with Post?\n \n interface IdAddress {\n   id: SiteId;\n+  pubId: string;\n   origin?: string; // e.g. kittens-forum.example.com\n   siteIdOrigin: string; // e.g. site-123.example.com\n }"
+    },
+    {
+      "sha": "d34968e4d0589d8ef6c25b21b271fbc858a97ed9",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 3,
+      "changes": 39,
+      "blob_url": "https://github.com/debiki/talkyard/blob/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/2f1f613cf41ec4814fab51fa964d177cbe9bd421/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=2f1f613cf41ec4814fab51fa964d177cbe9bd421",
+      "patch": "@@ -844,6 +844,28 @@ function pagesFor(browser) {\n     },\n \n \n+    waitUntilHtmlMatches: function(selector, regexOrStr) {\n+      const regex = _.isString(regexOrStr)\n+          ? new RegExp(regexOrStr, 's')  // s makes '.' match newlines\n+          : regexOrStr;\n+\n+      browser.waitForExist(selector);\n+\n+      for (let i = 0; true; ++i) {\n+        const html = browser.getHTML(selector);\n+        const matches = regex.test(html);\n+        if (matches)\n+          break;\n+\n+        browser.pause(PollMs);\n+        if (i > 10 && (i % 10 === 0)) {\n+          console.log(`Waiting for '${selector}' to match ${regexOrStr},\\n` +\n+            `but the html is:\\n-----${html}\\n----`);\n+        }\n+      }\n+    },\n+\n+\n     waitAndAssertVisibleTextMatches: function(selector, regex) {\n       if (_.isString(regex)) regex = new RegExp(regex);\n       const text = api.waitAndGetVisibleText(selector);\n@@ -2705,7 +2727,7 @@ function pagesFor(browser) {\n         // For some reason, FF is so fast, so typing the title now after new page load, fails\n         // the first time  [6AKBR45] [E2EBUG] — but only in an invisible browser, and within\n         // fractions of a second after page load, so hard to fix. As of 2019-01.\n-        utils.tryManyTimes(\"Type direct message title\", 2, () => {\n+        utils.tryManyTimes(\"Clearing the title field\", 2, () => {\n           api.editor.editTitle(' ');\n         });\n       },\n@@ -2793,8 +2815,8 @@ function pagesFor(browser) {\n \n \n     editor: {\n-      editTitle: function(title) {\n-        api.waitAndSetValue('.esEdtr_titleEtc_title', title);\n+      editTitle: function(title, opts: { checkAndRetry?: true } = {}) {\n+        api.waitAndSetValue('.esEdtr_titleEtc_title', title, opts);\n       },\n \n       isTitleVisible: function() {\n@@ -2905,6 +2927,12 @@ function pagesFor(browser) {\n       waitForDraftTextToLoad: function(text: string) {\n         api.waitUntilValueIs('.editor-area textarea', text);\n       },\n+\n+      preview: {\n+        waitUntilPreviewHtmlMatches: function(text: string) {\n+          api.waitUntilHtmlMatches('#t_E_Preview', text);\n+        },\n+      }\n     },\n \n \n@@ -3023,6 +3051,11 @@ function pagesFor(browser) {\n         });\n       },\n \n+      waitUntilPostHtmlMatches: function(postNr, text: string) {\n+        const selector = api.topic.postBodySelector(postNr);\n+        api.waitUntilHtmlMatches(selector, text)\n+      },\n+\n       postNrContains: function(postNr: PostNr, selector: string) {\n         return browser.isExisting(api.topic.postBodySelector(postNr) + ' ' + selector);\n       },"
+    }
+  ]
+}
