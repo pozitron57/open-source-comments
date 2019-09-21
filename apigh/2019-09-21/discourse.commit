@@ -1,0 +1,98 @@
+{
+  "sha": "3e590b87cf0901f1e864e5e528d74690c7c5857a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozZTU5MGI4N2NmMDkwMWYxZTg2NGU1ZTUyOGQ3NDY5MGM3YzU4NTdh",
+  "commit": {
+    "author": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-09-21T15:50:00Z"
+    },
+    "committer": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-09-21T15:50:00Z"
+    },
+    "message": "FEATURE: Add support for maskable icons in the PWA manifest\n\nBecause:\n\n- Chrome 78 and Firefox Fenix have support for it\n- The icons will look better by using all the availiable space\n- Admins can control the icon and add appropriate padding since we have a\ndedicated asset for the manifest logo. Read more about it on\nhttps://css-tricks.com/maskable-icons-android-adaptive-icons-for-your-pwa/\n\nThis commit:\n\n- Adds a new key under the icons array in the webmanifest, named purpose\nwith maskable value.",
+    "tree": {
+      "sha": "67571cd68bf3753e150f4105e34d9a058b1d1092",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/67571cd68bf3753e150f4105e34d9a058b1d1092"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/3e590b87cf0901f1e864e5e528d74690c7c5857a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/3e590b87cf0901f1e864e5e528d74690c7c5857a",
+  "html_url": "https://github.com/discourse/discourse/commit/3e590b87cf0901f1e864e5e528d74690c7c5857a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/3e590b87cf0901f1e864e5e528d74690c7c5857a/comments",
+  "author": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7f8cdea9244760b7f27bcebb86de0121006f0ce3",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/7f8cdea9244760b7f27bcebb86de0121006f0ce3",
+      "html_url": "https://github.com/discourse/discourse/commit/7f8cdea9244760b7f27bcebb86de0121006f0ce3"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "51d1a1e1f88872ae7b28c05e9fdb9d49962f30af",
+      "filename": "app/controllers/metadata_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/3e590b87cf0901f1e864e5e528d74690c7c5857a/app/controllers/metadata_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3e590b87cf0901f1e864e5e528d74690c7c5857a/app/controllers/metadata_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/metadata_controller.rb?ref=3e590b87cf0901f1e864e5e528d74690c7c5857a",
+      "patch": "@@ -49,6 +49,7 @@ def default_manifest\n     logo = SiteSetting.site_manifest_icon_url\n     manifest[:icons] << {\n       src: UrlHelper.absolute(logo),\n+      purpose: \"maskable\",\n       sizes: \"512x512\",\n       type: MiniMime.lookup_by_filename(logo)&.content_type || \"image/png\"\n     } if logo"
+    }
+  ]
+}
