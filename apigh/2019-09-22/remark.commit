@@ -1,0 +1,98 @@
+{
+  "sha": "582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjU4MmM5ZDZiY2U0MWZlYjJlOWRjNWJhNDVhZDFiYmZmNGU3YjNjN2U=",
+  "commit": {
+    "author": {
+      "name": "Stas",
+      "email": "smolevich90@gmail.com",
+      "date": "2019-09-20T20:12:50Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-09-20T20:12:50Z"
+    },
+    "message": "Fix problem with DEBUG variable (#435)\n\n* Fix problem with DEBUG variable\r\n\r\n* Add condition for starting ci on pull requests\r\n\r\n* Add default value\r\n\r\n* Add default value in another place\r\n\r\n* Fix error in bash statement\r\n\r\n* Replace && on if condition",
+    "tree": {
+      "sha": "f069fab085ae625c2603308d68a0accb16574bb5",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/f069fab085ae625c2603308d68a0accb16574bb5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e",
+  "html_url": "https://github.com/umputun/remark/commit/582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e/comments",
+  "author": {
+    "login": "Smolevich",
+    "id": 7188867,
+    "node_id": "MDQ6VXNlcjcxODg4Njc=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7188867?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Smolevich",
+    "html_url": "https://github.com/Smolevich",
+    "followers_url": "https://api.github.com/users/Smolevich/followers",
+    "following_url": "https://api.github.com/users/Smolevich/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Smolevich/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Smolevich/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Smolevich/subscriptions",
+    "organizations_url": "https://api.github.com/users/Smolevich/orgs",
+    "repos_url": "https://api.github.com/users/Smolevich/repos",
+    "events_url": "https://api.github.com/users/Smolevich/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Smolevich/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4f6c336f6c5af9922f89b8f414b8dc23650dbd52",
+      "url": "https://api.github.com/repos/umputun/remark/commits/4f6c336f6c5af9922f89b8f414b8dc23650dbd52",
+      "html_url": "https://github.com/umputun/remark/commit/4f6c336f6c5af9922f89b8f414b8dc23650dbd52"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 11,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "7fb88b165f4967f29a828d961265fb094c93d318",
+      "filename": ".github/workflows/blank.yml",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 1,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark/blob/582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e/.github/workflows/blank.yml",
+      "raw_url": "https://github.com/umputun/remark/raw/582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e/.github/workflows/blank.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/.github/workflows/blank.yml?ref=582c9d6bce41feb2e9dc5ba45ad1bbff4e7b3c7e",
+      "patch": "@@ -4,6 +4,7 @@ on:\n   push:\n     branches:\n     tags:\n+  pull_request:\n \n jobs:\n   build:\n@@ -14,12 +15,21 @@ jobs:\n       run: docker version\n     - name: Debug if needed\n       run: |\n-        [[ \"$DEBUG\" ]] && env\n+        export DEBUG=${DEBUG:-false}\n+\n+        if [[ \"$DEBUG\" == \"true\" ]]; then\n+          env\n+        fi\n       env:\n         DEBUG: ${{secrets.DEBUG}}\n     - name: Build image\n       run: |\n         export GIT_BRANCH=\"${GITHUB_REF/refs\\/heads\\//}\"\n+        export GIT_TAG=\"${GITHUB_REF/refs\\/tags\\//}\"\n+\n+        if [[ \"$GIT_TAG\" != \"$GITHUB_REF\" ]]; then\n+          export GIT_BRANCH=$GIT_TAG\n+        fi\n \n         docker build \\\n         --build-arg CI=\"$GITHUB_WORKFLOW\" \\"
+    }
+  ]
+}
