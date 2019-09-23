@@ -1,0 +1,206 @@
+{
+  "sha": "b3064c89deeea0c66354c81fef8cb167cd962e32",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YjMwNjRjODlkZWVlYTBjNjYzNTRjODFmZWY4Y2IxNjdjZDk2MmUzMg==",
+  "commit": {
+    "author": {
+      "name": "Tessa Thornton",
+      "email": "tessathornton@gmail.com",
+      "date": "2019-09-20T20:11:05Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-09-20T20:11:05Z"
+    },
+    "message": "[CORL-623] add live updates for comments moving from premod to approved (#2571)\n\n* add live updates for comments moving from premod to approved\r\n\r\n* rename disposables\r\n\r\n* check if comment is system withheld as well as premod to publish event",
+    "tree": {
+      "sha": "8d7f07ca0907ae9820259b7934e7c64d551e8cd4",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/8d7f07ca0907ae9820259b7934e7c64d551e8cd4"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/b3064c89deeea0c66354c81fef8cb167cd962e32",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/b3064c89deeea0c66354c81fef8cb167cd962e32",
+  "html_url": "https://github.com/coralproject/talk/commit/b3064c89deeea0c66354c81fef8cb167cd962e32",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/b3064c89deeea0c66354c81fef8cb167cd962e32/comments",
+  "author": {
+    "login": "tessalt",
+    "id": 1789029,
+    "node_id": "MDQ6VXNlcjE3ODkwMjk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1789029?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tessalt",
+    "html_url": "https://github.com/tessalt",
+    "followers_url": "https://api.github.com/users/tessalt/followers",
+    "following_url": "https://api.github.com/users/tessalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tessalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tessalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tessalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/tessalt/orgs",
+    "repos_url": "https://api.github.com/users/tessalt/repos",
+    "events_url": "https://api.github.com/users/tessalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tessalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e4bfbbc1f8d1a8e9b53fc9b78e8cfe059cb3a800",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/e4bfbbc1f8d1a8e9b53fc9b78e8cfe059cb3a800",
+      "html_url": "https://github.com/coralproject/talk/commit/e4bfbbc1f8d1a8e9b53fc9b78e8cfe059cb3a800"
+    }
+  ],
+  "stats": {
+    "total": 194,
+    "additions": 191,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "7189bff486b3c1e626cc9ceb422fafe09fe63721",
+      "filename": "src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/AllCommentsTabContainer.tsx",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 2,
+      "changes": 14,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/AllCommentsTabContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/AllCommentsTabContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/AllCommentsTabContainer.tsx?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -25,6 +25,7 @@ import IgnoredTombstoneOrHideContainer from \"../../IgnoredTombstoneOrHideContain\n import { ReplyListContainer } from \"../../ReplyList\";\n import AllCommentsTabViewNewMutation from \"./AllCommentsTabViewNewMutation\";\n import CommentCreatedSubscription from \"./CommentCreatedSubscription\";\n+import CommentReleasedSubscription from \"./CommentReleasedSubscription\";\n \n import styles from \"./AllCommentsTabContainer.css\";\n \n@@ -54,6 +55,9 @@ export const AllCommentsTabContainer: FunctionComponent<Props> = props => {\n     `\n   );\n   const subscribeToCommentCreated = useSubscription(CommentCreatedSubscription);\n+  const subscribeToCommentReleased = useSubscription(\n+    CommentReleasedSubscription\n+  );\n   useEffect(() => {\n     if (!props.story.settings.live.enabled) {\n       return;\n@@ -78,16 +82,22 @@ export const AllCommentsTabContainer: FunctionComponent<Props> = props => {\n       // Only chronological sort supports top level live updates of incoming comments.\n       return;\n     }\n-    const disposable = subscribeToCommentCreated({\n+    const newCommentDisposable = subscribeToCommentCreated({\n+      storyID: props.story.id,\n+      orderBy: commentsOrderBy,\n+    });\n+    const releasedCommentDisposable = subscribeToCommentReleased({\n       storyID: props.story.id,\n       orderBy: commentsOrderBy,\n     });\n     return () => {\n-      disposable.dispose();\n+      newCommentDisposable.dispose();\n+      releasedCommentDisposable.dispose();\n     };\n   }, [\n     commentsOrderBy,\n     subscribeToCommentCreated,\n+    subscribeToCommentReleased,\n     props.story.id,\n     props.relay.hasMore(),\n     props.story.settings.live.enabled,"
+    },
+    {
+      "sha": "62aa449cde6a51d0286777e46497924b978b7f6f",
+      "filename": "src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/CommentReleasedSubscription.tsx",
+      "status": "added",
+      "additions": 91,
+      "deletions": 0,
+      "changes": 91,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/CommentReleasedSubscription.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/CommentReleasedSubscription.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/stream/tabs/Comments/Stream/AllCommentsTab/CommentReleasedSubscription.tsx?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -0,0 +1,91 @@\n+import { graphql, requestSubscription } from \"react-relay\";\n+import {\n+  ConnectionHandler,\n+  Environment,\n+  RecordProxy,\n+  RecordSourceSelectorProxy,\n+} from \"relay-runtime\";\n+\n+import {\n+  createSubscription,\n+  SubscriptionVariables,\n+} from \"coral-framework/lib/relay\";\n+import { GQLCOMMENT_SORT, GQLCOMMENT_SORT_RL } from \"coral-framework/schema\";\n+import { CommentReleasedSubscription } from \"coral-stream/__generated__/CommentReleasedSubscription.graphql\";\n+\n+function updateForNewestFirst(\n+  store: RecordSourceSelectorProxy,\n+  storyID: string\n+) {\n+  const rootField = store.getRootField(\"commentReleased\");\n+  if (!rootField) {\n+    return;\n+  }\n+  const comment = rootField.getLinkedRecord(\"comment\")!;\n+  comment.setValue(true, \"enteredLive\");\n+  const commentsEdge = store.create(\n+    `edge-${comment.getValue(\"id\")!}`,\n+    \"CommentsEdge\"\n+  );\n+  commentsEdge.setValue(comment.getValue(\"createdAt\"), \"cursor\");\n+  commentsEdge.setLinkedRecord(comment, \"node\");\n+  const story = store.get(storyID)!;\n+  const connection = ConnectionHandler.getConnection(story, \"Stream_comments\", {\n+    orderBy: GQLCOMMENT_SORT.CREATED_AT_DESC,\n+  })!;\n+  const linked = connection.getLinkedRecords(\"viewNewEdges\") || [];\n+  connection.setLinkedRecords(linked.concat(commentsEdge), \"viewNewEdges\");\n+}\n+\n+function updateForOldestFirst(\n+  store: RecordSourceSelectorProxy,\n+  storyID: string\n+) {\n+  const story = store.get(storyID)!;\n+  const connection = ConnectionHandler.getConnection(story, \"Stream_comments\", {\n+    orderBy: GQLCOMMENT_SORT.CREATED_AT_ASC,\n+  })!;\n+  const pageInfo = connection.getLinkedRecord(\"pageInfo\") as RecordProxy;\n+  pageInfo.setValue(true, \"hasNextPage\");\n+}\n+\n+const CommentReleasedSubscription = createSubscription(\n+  \"subscribeToCommentReleased\",\n+  (\n+    environment: Environment,\n+    variables: SubscriptionVariables<CommentReleasedSubscription> & {\n+      orderBy: GQLCOMMENT_SORT_RL;\n+    }\n+  ) =>\n+    requestSubscription(environment, {\n+      subscription: graphql`\n+        subscription CommentReleasedSubscription($storyID: ID!) {\n+          commentReleased(storyID: $storyID) {\n+            comment {\n+              id\n+              createdAt\n+              ...AllCommentsTabContainer_comment\n+            }\n+          }\n+        }\n+      `,\n+      variables,\n+      updater: store => {\n+        if (variables.orderBy === GQLCOMMENT_SORT.CREATED_AT_DESC) {\n+          updateForNewestFirst(store, variables.storyID);\n+          return;\n+        }\n+        if (variables.orderBy === GQLCOMMENT_SORT.CREATED_AT_ASC) {\n+          updateForOldestFirst(store, variables.storyID);\n+          return;\n+        }\n+        throw new Error(\n+          `Unsupport new top level comment live updates for sort ${\n+            variables.orderBy\n+          }`\n+        );\n+      },\n+    })\n+);\n+\n+export default CommentReleasedSubscription;"
+    },
+    {
+      "sha": "8ccd84300e70f460e248d9bce578c394bd51229a",
+      "filename": "src/core/server/graph/tenant/resolvers/CommentReleasedPayload.ts",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/CommentReleasedPayload.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/CommentReleasedPayload.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/resolvers/CommentReleasedPayload.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -0,0 +1,11 @@\n+import { GQLCommentReleasedPayloadTypeResolver } from \"coral-server/graph/tenant/schema/__generated__/types\";\n+\n+import { maybeLoadOnlyID } from \"./Comment\";\n+import { CommentReleasedInput } from \"./Subscription/commentReleased\";\n+\n+export const CommentReleasedPayload: GQLCommentReleasedPayloadTypeResolver<\n+  CommentReleasedInput\n+> = {\n+  comment: ({ commentID }, args, ctx, info) =>\n+    maybeLoadOnlyID(ctx, info, commentID),\n+};"
+    },
+    {
+      "sha": "4e420cceac076b390114a8b96c769bd7fa83680a",
+      "filename": "src/core/server/graph/tenant/resolvers/Subscription/commentReleased.ts",
+      "status": "added",
+      "additions": 30,
+      "deletions": 0,
+      "changes": 30,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/Subscription/commentReleased.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/Subscription/commentReleased.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/resolvers/Subscription/commentReleased.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -0,0 +1,30 @@\n+import { SubscriptionToCommentReleasedResolver } from \"coral-server/graph/tenant/schema/__generated__/types\";\n+\n+import { createIterator } from \"./helpers\";\n+import {\n+  SUBSCRIPTION_CHANNELS,\n+  SubscriptionPayload,\n+  SubscriptionType,\n+} from \"./types\";\n+\n+export interface CommentReleasedInput extends SubscriptionPayload {\n+  storyID: string;\n+  commentID: string;\n+}\n+\n+export type CommentReleasedSubscription = SubscriptionType<\n+  SUBSCRIPTION_CHANNELS.COMMENT_RELEASED,\n+  CommentReleasedInput\n+>;\n+\n+export const commentReleased: SubscriptionToCommentReleasedResolver<\n+  CommentReleasedInput\n+> = createIterator(SUBSCRIPTION_CHANNELS.COMMENT_RELEASED, {\n+  filter: (source, { storyID }) => {\n+    if (source.storyID !== storyID) {\n+      return false;\n+    }\n+\n+    return true;\n+  },\n+});"
+    },
+    {
+      "sha": "e7283dc09c675f5335b0576527a306e7bbf5d5b2",
+      "filename": "src/core/server/graph/tenant/resolvers/Subscription/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/Subscription/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/Subscription/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/resolvers/Subscription/index.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -4,6 +4,7 @@ import { commentCreated } from \"./commentCreated\";\n import { commentEnteredModerationQueue } from \"./commentEnteredModerationQueue\";\n import { commentFeatured } from \"./commentFeatured\";\n import { commentLeftModerationQueue } from \"./commentLeftModerationQueue\";\n+import { commentReleased } from \"./commentReleased\";\n import { commentReplyCreated } from \"./commentReplyCreated\";\n import { commentStatusUpdated } from \"./commentStatusUpdated\";\n \n@@ -14,4 +15,5 @@ export const Subscription: GQLSubscriptionTypeResolver = {\n   commentReplyCreated,\n   commentStatusUpdated,\n   commentFeatured,\n+  commentReleased,\n };"
+    },
+    {
+      "sha": "72c44904d0de070d975385a2b9e47281cb60cc0c",
+      "filename": "src/core/server/graph/tenant/resolvers/Subscription/types.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/Subscription/types.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/Subscription/types.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/resolvers/Subscription/types.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -2,6 +2,7 @@ import { CommentCreatedSubscription } from \"./commentCreated\";\n import { CommentEnteredModerationQueueSubscription } from \"./commentEnteredModerationQueue\";\n import { CommentFeaturedSubscription } from \"./commentFeatured\";\n import { CommentLeftModerationQueueSubscription } from \"./commentLeftModerationQueue\";\n+import { CommentReleasedSubscription } from \"./commentReleased\";\n import { CommentReplyCreatedSubscription } from \"./commentReplyCreated\";\n import { CommentStatusUpdatedSubscription } from \"./commentStatusUpdated\";\n \n@@ -12,6 +13,7 @@ export enum SUBSCRIPTION_CHANNELS {\n   COMMENT_REPLY_CREATED = \"COMMENT_REPLY_CREATED\",\n   COMMENT_CREATED = \"COMMENT_CREATED\",\n   COMMENT_FEATURED = \"COMMENT_FEATURED\",\n+  COMMENT_RELEASED = \"COMMENT_RELEASED\",\n }\n \n export interface SubscriptionPayload {\n@@ -32,4 +34,5 @@ export type SUBSCRIPTION_INPUT =\n   | CommentStatusUpdatedSubscription\n   | CommentReplyCreatedSubscription\n   | CommentCreatedSubscription\n-  | CommentFeaturedSubscription;\n+  | CommentFeaturedSubscription\n+  | CommentReleasedSubscription;"
+    },
+    {
+      "sha": "8404e5bebc411a79c83b4062f758c6185fea9abf",
+      "filename": "src/core/server/graph/tenant/resolvers/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/resolvers/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/resolvers/index.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -14,6 +14,7 @@ import { CommentCreatedPayload } from \"./CommentCreatedPayload\";\n import { CommentEnteredModerationQueuePayload } from \"./CommentEnteredModerationQueuePayload\";\n import { CommentLeftModerationQueuePayload } from \"./CommentLeftModerationQueuePayload\";\n import { CommentModerationAction } from \"./CommentModerationAction\";\n+import { CommentReleasedPayload } from \"./CommentReleasedPayload\";\n import { CommentReplyCreatedPayload } from \"./CommentReplyCreatedPayload\";\n import { CommentRevision } from \"./CommentRevision\";\n import { CommentStatusUpdatedPayload } from \"./CommentStatusUpdatedPayload\";\n@@ -52,6 +53,7 @@ const Resolvers: GQLResolver = {\n   Comment,\n   CommentCounts,\n   CommentCreatedPayload,\n+  CommentReleasedPayload,\n   CommentEnteredModerationQueuePayload,\n   CommentLeftModerationQueuePayload,\n   CommentModerationAction,"
+    },
+    {
+      "sha": "674369f16d9636a172d1d0268a13e4f4841bb2e1",
+      "filename": "src/core/server/graph/tenant/schema/schema.graphql",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/schema/schema.graphql",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/graph/tenant/schema/schema.graphql",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/schema/schema.graphql?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -5321,6 +5321,16 @@ type CommentFeaturedPayload {\n   comment: Comment!\n }\n \n+\"\"\"\n+CommentReleasedPayload is returned when a new top level Comment is approved from premod stream\n+\"\"\"\n+type CommentReleasedPayload {\n+  \"\"\"\n+  comment is the new top level Comment that was approved on the Story.\n+  \"\"\"\n+  comment: Comment!\n+}\n+\n type Subscription {\n   \"\"\"\n   commentEnteredModerationQueue returns when a Comment enters a ModerationQueue.\n@@ -5353,6 +5363,11 @@ type Subscription {\n   \"\"\"\n   commentCreated(storyID: ID!): CommentCreatedPayload!\n \n+  \"\"\"\n+  commentReleased returns when a Comment on a premoderated stream is approved\n+  \"\"\"\n+  commentReleased(storyID: ID!): CommentReleasedPayload!\n+  \n   \"\"\"\n   commentReplyCreated returns when a Comment is posted in the ancestor chain of\n   comments."
+    },
+    {
+      "sha": "7922689a0618b537236b8f98898f8fc24ed72c64",
+      "filename": "src/core/server/services/comments/moderation/index.ts",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/services/comments/moderation/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/services/comments/moderation/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/moderation/index.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -13,6 +13,7 @@ import { updateCommentStatus } from \"coral-server/models/comment\";\n import { updateStoryCounts } from \"coral-server/models/story\";\n import { Tenant } from \"coral-server/models/tenant\";\n import {\n+  publishCommentReleased,\n   publishCommentStatusChanges,\n   publishModerationQueueChanges,\n } from \"coral-server/services/events\";\n@@ -114,6 +115,14 @@ const moderate = (\n     result.comment.id,\n     input.moderatorID\n   );\n+  if (\n+    [GQLCOMMENT_STATUS.PREMOD, GQLCOMMENT_STATUS.SYSTEM_WITHHELD].includes(\n+      result.oldStatus\n+    ) &&\n+    status === \"APPROVED\"\n+  ) {\n+    publishCommentReleased(publish, result.comment);\n+  }\n \n   log.trace({ oldStatus: result.oldStatus }, \"adjusted story comment counts\");\n "
+    },
+    {
+      "sha": "4ebdff5e0030a41fc9befc52fc0df905ba1fd4e5",
+      "filename": "src/core/server/services/events/comments.ts",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/coralproject/talk/blob/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/services/events/comments.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/b3064c89deeea0c66354c81fef8cb167cd962e32/src/core/server/services/events/comments.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/events/comments.ts?ref=b3064c89deeea0c66354c81fef8cb167cd962e32",
+      "patch": "@@ -57,6 +57,21 @@ export function publishCommentCreated(\n   }\n }\n \n+export function publishCommentReleased(\n+  publish: Publisher,\n+  comment: Pick<Comment, \"id\" | \"storyID\" | \"parentID\" | \"status\">\n+) {\n+  if (!comment.parentID && hasPublishedStatus(comment)) {\n+    publish({\n+      channel: SUBSCRIPTION_CHANNELS.COMMENT_RELEASED,\n+      payload: {\n+        commentID: comment.id,\n+        storyID: comment.storyID,\n+      },\n+    });\n+  }\n+}\n+\n export function publishCommentFeatured(\n   publish: Publisher,\n   comment: Pick<Comment, \"id\" | \"status\" | \"storyID\">"
+    }
+  ]
+}
