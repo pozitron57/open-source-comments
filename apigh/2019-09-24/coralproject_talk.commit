@@ -1,0 +1,290 @@
+{
+  "sha": "4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6NGU0OTg2ZmMwM2E2N2MwYmQxY2IyZTAwYWNiNzcwYjFmOWEyMDNhMw==",
+  "commit": {
+    "author": {
+      "name": "Vinh",
+      "email": "vinh@vinh.tech",
+      "date": "2019-09-23T21:36:24Z"
+    },
+    "committer": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-09-23T21:36:24Z"
+    },
+    "message": "fix: some form fields are not nullable (#2577)",
+    "tree": {
+      "sha": "33089fe9d7d6b5f11a984bf74f6a0fb82cfb73e5",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/33089fe9d7d6b5f11a984bf74f6a0fb82cfb73e5"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+  "html_url": "https://github.com/coralproject/talk/commit/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/comments",
+  "author": {
+    "login": "cvle",
+    "id": 14221600,
+    "node_id": "MDQ6VXNlcjE0MjIxNjAw",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/14221600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cvle",
+    "html_url": "https://github.com/cvle",
+    "followers_url": "https://api.github.com/users/cvle/followers",
+    "following_url": "https://api.github.com/users/cvle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cvle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cvle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cvle/subscriptions",
+    "organizations_url": "https://api.github.com/users/cvle/orgs",
+    "repos_url": "https://api.github.com/users/cvle/repos",
+    "events_url": "https://api.github.com/users/cvle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cvle/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "37e39ff8c500d6a8eacd6a2060c333cece0d06f8",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/37e39ff8c500d6a8eacd6a2060c333cece0d06f8",
+      "html_url": "https://github.com/coralproject/talk/commit/37e39ff8c500d6a8eacd6a2060c333cece0d06f8"
+    }
+  ],
+  "stats": {
+    "total": 95,
+    "additions": 63,
+    "deletions": 32
+  },
+  "files": [
+    {
+      "sha": "67aaa38468768607a4851625203dc5a1a28623c9",
+      "filename": "package-lock.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/package-lock.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/package-lock.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/package-lock.json?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -21061,7 +21061,7 @@\n       \"dependencies\": {\n         \"chalk\": {\n           \"version\": \"1.1.3\",\n-          \"resolved\": \"https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz\",\n+          \"resolved\": \"http://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz\",\n           \"integrity\": \"sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=\",\n           \"dev\": true,\n           \"requires\": {\n@@ -24246,7 +24246,7 @@\n       \"dependencies\": {\n         \"async\": {\n           \"version\": \"1.5.2\",\n-          \"resolved\": \"https://registry.npmjs.org/async/-/async-1.5.2.tgz\",\n+          \"resolved\": \"http://registry.npmjs.org/async/-/async-1.5.2.tgz\",\n           \"integrity\": \"sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=\",\n           \"dev\": true\n         }"
+    },
+    {
+      "sha": "96b880069eac8b187b7ba2f37b915b47483ede67",
+      "filename": "src/core/client/admin/routes/Configure/UpdateSettingsMutation.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/UpdateSettingsMutation.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/UpdateSettingsMutation.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/UpdateSettingsMutation.ts?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -21,6 +21,9 @@ const UpdateSettingsMutation = createMutation(\n               auth {\n                 ...AuthConfigContainer_auth\n               }\n+              email {\n+                ...EmailConfigContainer_email\n+              }\n               ...ModerationConfigContainer_settings\n               ...GeneralConfigContainer_settings\n               ...OrganizationConfigContainer_settings"
+    },
+    {
+      "sha": "948958df5694d802273483431b2b17e0ec64e201",
+      "filename": "src/core/client/admin/routes/Configure/sections/Advanced/StoryCreationConfig.tsx",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Advanced/StoryCreationConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Advanced/StoryCreationConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Advanced/StoryCreationConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -2,7 +2,7 @@ import { Localized } from \"fluent-react/compat\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { ValidationMessage } from \"coral-framework/lib/form\";\n+import { parseEmptyAsNull, ValidationMessage } from \"coral-framework/lib/form\";\n import { ExternalLink } from \"coral-framework/lib/i18n/components\";\n import { validateURL } from \"coral-framework/lib/validation\";\n import {\n@@ -72,7 +72,11 @@ const StoryCreationConfig: FunctionComponent<Props> = ({ disabled }) => (\n               proxy as parsed by the npm proxy-agent package.\n             </Typography>\n           </Localized>\n-          <Field name=\"stories.scraping.proxyURL\" validate={validateURL}>\n+          <Field\n+            name=\"stories.scraping.proxyURL\"\n+            parse={parseEmptyAsNull}\n+            validate={validateURL}\n+          >\n             {({ input, meta }) => (\n               <>\n                 <TextField"
+    },
+    {
+      "sha": "7fbc5b8c244d0a50b395b7436b8ed1b0957e6d7b",
+      "filename": "src/core/client/admin/routes/Configure/sections/Auth/ClientIDField.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Auth/ClientIDField.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Auth/ClientIDField.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Auth/ClientIDField.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -1,9 +1,8 @@\n import { Localized } from \"fluent-react/compat\";\n-import { identity } from \"lodash\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { colorFromMeta } from \"coral-framework/lib/form\";\n+import { colorFromMeta, parseEmptyAsNull } from \"coral-framework/lib/form\";\n import { Validator } from \"coral-framework/lib/validation\";\n import { FormField, InputLabel, TextField } from \"coral-ui/components\";\n \n@@ -24,7 +23,7 @@ const ClientSecretField: FunctionComponent<Props> = ({\n     <Localized id=\"configure-auth-clientID\">\n       <InputLabel>Client ID</InputLabel>\n     </Localized>\n-    <Field name={name} parse={identity} validate={validate}>\n+    <Field name={name} parse={parseEmptyAsNull} validate={validate}>\n       {({ input, meta }) => (\n         <>\n           <TextField"
+    },
+    {
+      "sha": "4171554efd5e6a5072cc1792ac891e91b684f72e",
+      "filename": "src/core/client/admin/routes/Configure/sections/Auth/ClientSecretField.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Auth/ClientSecretField.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Auth/ClientSecretField.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Auth/ClientSecretField.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -1,9 +1,8 @@\n import { Localized } from \"fluent-react/compat\";\n-import { identity } from \"lodash\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { ValidationMessage } from \"coral-framework/lib/form\";\n+import { parseEmptyAsNull, ValidationMessage } from \"coral-framework/lib/form\";\n import { Validator } from \"coral-framework/lib/validation\";\n import { FormField, InputLabel, PasswordField } from \"coral-ui/components\";\n \n@@ -25,7 +24,7 @@ const ClientSecretField: FunctionComponent<Props> = ({\n     <Field\n       name={name}\n       key={(disabled && \"on\") || \"off\"}\n-      parse={identity}\n+      parse={parseEmptyAsNull}\n       validate={validate}\n     >\n       {({ input, meta }) => ("
+    },
+    {
+      "sha": "ef3601de3b2871330c65ee0f02123dc074022231",
+      "filename": "src/core/client/admin/routes/Configure/sections/Auth/OIDCConfig.tsx",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 7,
+      "changes": 17,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Auth/OIDCConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Auth/OIDCConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Auth/OIDCConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -1,9 +1,12 @@\n import { Localized } from \"fluent-react/compat\";\n-import { identity } from \"lodash\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { colorFromMeta, ValidationMessage } from \"coral-framework/lib/form\";\n+import {\n+  colorFromMeta,\n+  parseEmptyAsNull,\n+  ValidationMessage,\n+} from \"coral-framework/lib/form\";\n import {\n   composeValidatorsWhen,\n   Condition,\n@@ -86,7 +89,7 @@ const OIDCConfig: FunctionComponent<Props> = ({\n             <Field\n               name=\"auth.integrations.oidc.name\"\n               validate={composeValidatorsWhen(isEnabled, required)}\n-              parse={identity}\n+              parse={parseEmptyAsNull}\n             >\n               {({ input, meta }) => (\n                 <>\n@@ -129,7 +132,7 @@ const OIDCConfig: FunctionComponent<Props> = ({\n             <Field\n               name=\"auth.integrations.oidc.issuer\"\n               validate={composeValidatorsWhen(isEnabled, required, validateURL)}\n-              parse={identity}\n+              parse={parseEmptyAsNull}\n             >\n               {({ input, meta }) => (\n                 <>\n@@ -167,7 +170,7 @@ const OIDCConfig: FunctionComponent<Props> = ({\n             <Field\n               name=\"auth.integrations.oidc.authorizationURL\"\n               validate={composeValidatorsWhen(isEnabled, required, validateURL)}\n-              parse={identity}\n+              parse={parseEmptyAsNull}\n             >\n               {({ input, meta }) => (\n                 <>\n@@ -193,7 +196,7 @@ const OIDCConfig: FunctionComponent<Props> = ({\n             <Field\n               name=\"auth.integrations.oidc.tokenURL\"\n               validate={composeValidatorsWhen(isEnabled, required, validateURL)}\n-              parse={identity}\n+              parse={parseEmptyAsNull}\n             >\n               {({ input, meta }) => (\n                 <>\n@@ -219,7 +222,7 @@ const OIDCConfig: FunctionComponent<Props> = ({\n             <Field\n               name=\"auth.integrations.oidc.jwksURI\"\n               validate={composeValidatorsWhen(isEnabled, required, validateURL)}\n-              parse={identity}\n+              parse={parseEmptyAsNull}\n             >\n               {({ input, meta }) => (\n                 <>"
+    },
+    {
+      "sha": "29306270e0d953693b19aa28b51b87d502f1a5fe",
+      "filename": "src/core/client/admin/routes/Configure/sections/Email/From.tsx",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 3,
+      "changes": 14,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Email/From.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Email/From.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Email/From.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -2,7 +2,11 @@ import { Localized } from \"fluent-react/compat\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { colorFromMeta, ValidationMessage } from \"coral-framework/lib/form\";\n+import {\n+  colorFromMeta,\n+  parseEmptyAsNull,\n+  ValidationMessage,\n+} from \"coral-framework/lib/form\";\n import { validateEmail } from \"coral-framework/lib/validation\";\n import {\n   FieldSet,\n@@ -28,7 +32,7 @@ const From: FunctionComponent<Props> = ({ disabled }) => (\n           Name as it will appear on all outgoing emails\n         </InputDescription>\n       </Localized>\n-      <Field name=\"email.fromName\">\n+      <Field name=\"email.fromName\" parse={parseEmptyAsNull}>\n         {({ input, meta }) => (\n           <>\n             <TextField\n@@ -51,7 +55,11 @@ const From: FunctionComponent<Props> = ({ disabled }) => (\n           Email address that will be used to send messages\n         </InputDescription>\n       </Localized>\n-      <Field name=\"email.fromEmail\" validate={validateEmail}>\n+      <Field\n+        name=\"email.fromEmail\"\n+        parse={parseEmptyAsNull}\n+        validate={validateEmail}\n+      >\n         {({ input, meta }) => (\n           <>\n             <TextField"
+    },
+    {
+      "sha": "73943ae4082b8927c9db4fd631916c8c8b37a64a",
+      "filename": "src/core/client/admin/routes/Configure/sections/Email/SMTP.tsx",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Email/SMTP.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Email/SMTP.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Email/SMTP.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -2,7 +2,11 @@ import { Localized } from \"fluent-react/compat\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { colorFromMeta, ValidationMessage } from \"coral-framework/lib/form\";\n+import {\n+  colorFromMeta,\n+  parseEmptyAsNull,\n+  ValidationMessage,\n+} from \"coral-framework/lib/form\";\n import {\n   composeValidatorsWhen,\n   Condition,\n@@ -117,6 +121,7 @@ const SMTP: FunctionComponent<Props> = ({ disabled }) => (\n             </Localized>\n             <Field\n               name=\"email.smtp.username\"\n+              parse={parseEmptyAsNull}\n               validate={composeValidatorsWhen(isAuthenticating, required)}\n             >\n               {({ input, meta }) => (\n@@ -139,6 +144,7 @@ const SMTP: FunctionComponent<Props> = ({ disabled }) => (\n             </Localized>\n             <Field\n               name=\"email.smtp.password\"\n+              parse={parseEmptyAsNull}\n               validate={composeValidatorsWhen(isAuthenticating, required)}\n             >\n               {({ input, meta }) => ("
+    },
+    {
+      "sha": "2c5673ba7cb944cb6e8822ea26c31c6caf369e40",
+      "filename": "src/core/client/admin/routes/Configure/sections/General/ClosedStreamMessageConfig.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/General/ClosedStreamMessageConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/General/ClosedStreamMessageConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/General/ClosedStreamMessageConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -3,6 +3,7 @@ import React, { FunctionComponent, Suspense } from \"react\";\n import { Field } from \"react-final-form\";\n \n import { MarkdownEditor } from \"coral-framework/components/loadables\";\n+import { parseEmptyAsNull } from \"coral-framework/lib/form\";\n import { HorizontalGutter, Spinner, Typography } from \"coral-ui/components\";\n \n import Header from \"../../Header\";\n@@ -34,7 +35,7 @@ const ClosedStreamMessageConfig: FunctionComponent<Props> = ({ disabled }) => (\n           Write a message to appear after a story is closed for commenting.\n         </Typography>\n       </Localized>\n-      <Field name=\"closeCommenting.message\">\n+      <Field name=\"closeCommenting.message\" parse={parseEmptyAsNull}>\n         {({ input, meta }) => (\n           <>\n             <Suspense fallback={<Spinner />}>"
+    },
+    {
+      "sha": "9bcb512a525d3f58cdaac33821bc930a25b79646",
+      "filename": "src/core/client/admin/routes/Configure/sections/General/GuidelinesConfig.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/General/GuidelinesConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/General/GuidelinesConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/General/GuidelinesConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -3,6 +3,7 @@ import React, { FunctionComponent, Suspense } from \"react\";\n import { Field } from \"react-final-form\";\n \n import { MarkdownEditor } from \"coral-framework/components/loadables\";\n+import { parseEmptyAsNull } from \"coral-framework/lib/form\";\n import { ExternalLink } from \"coral-framework/lib/i18n/components\";\n import {\n   FieldSet,\n@@ -57,7 +58,7 @@ const GuidelinesConfig: FunctionComponent<Props> = ({ disabled }) => (\n         </Localized>\n       </FormField>\n \n-      <Field name=\"communityGuidelines.content\">\n+      <Field name=\"communityGuidelines.content\" parse={parseEmptyAsNull}>\n         {({ input, meta }) => (\n           <>\n             <Suspense fallback={<Spinner />}>"
+    },
+    {
+      "sha": "99399a7fbbf37499a2b1ad6d38998107d29b4ac4",
+      "filename": "src/core/client/admin/routes/Configure/sections/General/SitewideCommentingConfig.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/General/SitewideCommentingConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/General/SitewideCommentingConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/General/SitewideCommentingConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -3,6 +3,7 @@ import React, { FunctionComponent, Suspense } from \"react\";\n import { Field } from \"react-final-form\";\n \n import { MarkdownEditor } from \"coral-framework/components/loadables\";\n+import { parseEmptyAsNull } from \"coral-framework/lib/form\";\n import {\n   FormField,\n   HorizontalGutter,\n@@ -73,7 +74,7 @@ const SitewideCommentingConfig: FunctionComponent<Props> = ({ disabled }) => (\n         </Localized>\n       </FormField>\n \n-      <Field name=\"disableCommenting.message\">\n+      <Field name=\"disableCommenting.message\" parse={parseEmptyAsNull}>\n         {({ input, meta }) => (\n           <>\n             <Suspense fallback={<Spinner />}>"
+    },
+    {
+      "sha": "f2be8b3be03702d6d28bd78dfed8762c53f1bc16",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/APIKeyField.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/APIKeyField.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/APIKeyField.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/APIKeyField.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -1,9 +1,8 @@\n import { Localized } from \"fluent-react/compat\";\n-import { identity } from \"lodash\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { colorFromMeta } from \"coral-framework/lib/form\";\n+import { colorFromMeta, parseEmptyAsNull } from \"coral-framework/lib/form\";\n import { Validator } from \"coral-framework/lib/validation\";\n import { FormField, InputLabel, PasswordField } from \"coral-ui/components\";\n \n@@ -21,7 +20,7 @@ const APIKeyField: FunctionComponent<Props> = ({\n   validate,\n }) => (\n   <FormField>\n-    <Field name={name} parse={identity} validate={validate}>\n+    <Field name={name} parse={parseEmptyAsNull} validate={validate}>\n       {({ input, meta }) => (\n         <>\n           <Localized id=\"configure-moderation-apiKey\">"
+    },
+    {
+      "sha": "b274d1ee3ce669f80f4f6b5441e752c5ee99a04a",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/AkismetConfig.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/AkismetConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/AkismetConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/AkismetConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -2,7 +2,7 @@ import { Localized } from \"fluent-react/compat\";\n import React, { FunctionComponent } from \"react\";\n import { Field } from \"react-final-form\";\n \n-import { colorFromMeta } from \"coral-framework/lib/form\";\n+import { colorFromMeta, parseEmptyAsNull } from \"coral-framework/lib/form\";\n import { ExternalLink } from \"coral-framework/lib/i18n/components\";\n import {\n   Condition,\n@@ -90,6 +90,7 @@ const AkismetConfig: FunctionComponent<Props> = ({ disabled }) => {\n           </Localized>\n           <Field\n             name=\"integrations.akismet.site\"\n+            parse={parseEmptyAsNull}\n             validate={validateWhen(isEnabled, required)}\n           >\n             {({ input, meta }) => ("
+    },
+    {
+      "sha": "b5fece1fa87d8aad4120a7dc230bb652b8494bd0",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/PerspectiveConfig.tsx",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/PerspectiveConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/PerspectiveConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/PerspectiveConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -7,7 +7,11 @@ import {\n   TOXICITY_MODEL_DEFAULT,\n   TOXICITY_THRESHOLD_DEFAULT,\n } from \"coral-common/constants\";\n-import { formatPercentage, parsePercentage } from \"coral-framework/lib/form\";\n+import {\n+  formatPercentage,\n+  parseEmptyAsNull,\n+  parsePercentage,\n+} from \"coral-framework/lib/form\";\n import { ExternalLink } from \"coral-framework/lib/i18n/components\";\n import {\n   Condition,\n@@ -144,7 +148,7 @@ const PerspectiveConfig: FunctionComponent<Props> = ({ disabled }) => {\n               find out more about model choices here.\n             </InputDescription>\n           </Localized>\n-          <Field name=\"integrations.perspective.model\">\n+          <Field name=\"integrations.perspective.model\" parse={parseEmptyAsNull}>\n             {({ input, meta }) => (\n               <>\n                 <TextField\n@@ -219,6 +223,7 @@ const PerspectiveConfig: FunctionComponent<Props> = ({ disabled }) => {\n           </Localized>\n           <Field\n             name=\"integrations.perspective.endpoint\"\n+            parse={parseEmptyAsNull}\n             validate={validateURL}\n           >\n             {({ input, meta }) => ("
+    },
+    {
+      "sha": "4767baf89a0a07165b5ba4b03df1d36074e84247",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/RecentCommentHistoryConfig.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/RecentCommentHistoryConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/routes/Configure/sections/Moderation/RecentCommentHistoryConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/RecentCommentHistoryConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -106,7 +106,7 @@ const RecentCommentHistoryConfig: FunctionComponent<Props> = ({ disabled }) => {\n             name=\"recentCommentHistory.triggerRejectionRate\"\n             parse={parsePercentage}\n             format={formatPercentage}\n-            validate={validatePercentage(0, 1)}\n+            validate={composeValidators(required, validatePercentage(0, 1))}\n           >\n             {({ input, meta }) => (\n               <>"
+    },
+    {
+      "sha": "8d70943d3efe70dfb3d876775949afd775ff2454",
+      "filename": "src/core/client/admin/test/fixtures.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/test/fixtures.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/admin/test/fixtures.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/test/fixtures.ts?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -58,6 +58,7 @@ export const settings = createFixture<GQLSettings>({\n   },\n   email: {\n     enabled: true,\n+    smtp: {},\n   },\n   customCSSURL: \"\",\n   allowedDomains: [\"http://localhost:8080\"],"
+    },
+    {
+      "sha": "c616b2cec9a23df5415802e72099aac2e5daaafb",
+      "filename": "src/core/client/stream/tabs/Configure/ConfigureStream/MessageBoxConfig/MessageBoxConfig.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/stream/tabs/Configure/ConfigureStream/MessageBoxConfig/MessageBoxConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3/src/core/client/stream/tabs/Configure/ConfigureStream/MessageBoxConfig/MessageBoxConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/stream/tabs/Configure/ConfigureStream/MessageBoxConfig/MessageBoxConfig.tsx?ref=4e4986fc03a67c0bd1cb2e00acb770b1f9a203a3",
+      "patch": "@@ -62,7 +62,7 @@ const MessageBoxConfig: FunctionComponent<Props> = ({ disabled }) => (\n               format={formatEmpty}\n             >\n               {({ input: iconInput }) => (\n-                <Field name=\"messageBox.content\">\n+                <Field name=\"messageBox.content\" parse={parseEmptyAsNull}>\n                   {({ input: contentInput, meta }) => (\n                     <>\n                       <HorizontalGutter size=\"half\" container=\"section\">"
+    }
+  ]
+}
