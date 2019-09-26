@@ -1,0 +1,110 @@
+{
+  "sha": "240c13889c40e0f3f9e93d7da6b6466df686af77",
+  "node_id": "MDY6Q29tbWl0MTI2ODkxODQ6MjQwYzEzODg5YzQwZTBmM2Y5ZTkzZDdkYTZiNjQ2NmRmNjg2YWY3Nw==",
+  "commit": {
+    "author": {
+      "name": "Renovate Bot",
+      "email": "bot@renovateapp.com",
+      "date": "2019-08-24T15:12:01Z"
+    },
+    "committer": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2019-08-24T15:21:14Z"
+    },
+    "message": "Update dependency @voxpelli/metadataparser-mf2 to ^0.4.0",
+    "tree": {
+      "sha": "6aea65928e7411f340929058ecd746b160b4c646",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/trees/6aea65928e7411f340929058ecd746b160b4c646"
+    },
+    "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/commits/240c13889c40e0f3f9e93d7da6b6466df686af77",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/240c13889c40e0f3f9e93d7da6b6466df686af77",
+  "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/240c13889c40e0f3f9e93d7da6b6466df686af77",
+  "comments_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/240c13889c40e0f3f9e93d7da6b6466df686af77/comments",
+  "author": {
+    "login": "renovate-bot",
+    "id": 25180681,
+    "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/25180681?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/renovate-bot",
+    "html_url": "https://github.com/renovate-bot",
+    "followers_url": "https://api.github.com/users/renovate-bot/followers",
+    "following_url": "https://api.github.com/users/renovate-bot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/renovate-bot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/renovate-bot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/renovate-bot/subscriptions",
+    "organizations_url": "https://api.github.com/users/renovate-bot/orgs",
+    "repos_url": "https://api.github.com/users/renovate-bot/repos",
+    "events_url": "https://api.github.com/users/renovate-bot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/renovate-bot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f6ceec6d318158a875c0ef1deaa09c6409402e7b",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/f6ceec6d318158a875c0ef1deaa09c6409402e7b",
+      "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/f6ceec6d318158a875c0ef1deaa09c6409402e7b"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "0a66ff9a5d8725ca1222895a2e77ce8fb9e2950d",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/240c13889c40e0f3f9e93d7da6b6466df686af77/package.json",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/240c13889c40e0f3f9e93d7da6b6466df686af77/package.json",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/package.json?ref=240c13889c40e0f3f9e93d7da6b6466df686af77",
+      "patch": "@@ -13,7 +13,7 @@\n   },\n   \"dependencies\": {\n     \"@voxpelli/metadataparser\": \"^2.0.0\",\n-    \"@voxpelli/metadataparser-mf2\": \"^0.3.0\",\n+    \"@voxpelli/metadataparser-mf2\": \"^0.4.0\",\n     \"@voxpelli/passport-dummy\": \"^1.0.0\",\n     \"body-parser\": \"^1.18.3\",\n     \"cors\": \"^2.5.2\","
+    },
+    {
+      "sha": "01295484286730e06ec8ada639281c4421082f85",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/240c13889c40e0f3f9e93d7da6b6466df686af77/yarn.lock",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/240c13889c40e0f3f9e93d7da6b6466df686af77/yarn.lock",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/yarn.lock?ref=240c13889c40e0f3f9e93d7da6b6466df686af77",
+      "patch": "@@ -299,10 +299,10 @@\n   resolved \"https://registry.yarnpkg.com/@tyriar/fibonacci-heap/-/fibonacci-heap-2.0.9.tgz#df3dcbdb1b9182168601f6318366157ee16666e9\"\n   integrity sha512-bYuSNomfn4hu2tPiDN+JZtnzCpSpbJ/PNeulmocDy3xN2X5OkJL65zo6rPZp65cPPhLF9vfT/dgE+RtFRCSxOA==\n \n-\"@voxpelli/metadataparser-mf2@^0.3.0\":\n-  version \"0.3.0\"\n-  resolved \"https://registry.yarnpkg.com/@voxpelli/metadataparser-mf2/-/metadataparser-mf2-0.3.0.tgz#77da72d90e242edb5ed3331e391b96c532bd8037\"\n-  integrity sha1-d9py2Q4kLtte0zMeORuWxTK9gDc=\n+\"@voxpelli/metadataparser-mf2@^0.4.0\":\n+  version \"0.4.0\"\n+  resolved \"https://registry.yarnpkg.com/@voxpelli/metadataparser-mf2/-/metadataparser-mf2-0.4.0.tgz#4a2669ea1a04e48457e0246e6c2784a486f7fa83\"\n+  integrity sha512-nZ9TGVy/XZj6rYaU+vMaJZwxUDYJNwtAia4/yYXlMelcr0Ba9H+K4LSiYC3wI1nc89Gih6LlBylwktYpIlAzog==\n   dependencies:\n     microformat-node \"^2.0.1\"\n "
+    }
+  ]
+}
