@@ -1,0 +1,98 @@
+{
+  "sha": "756104432e228de844f9e5561a9adac32bf8b127",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3NTYxMDQ0MzJlMjI4ZGU4NDRmOWU1NTYxYTlhZGFjMzJiZjhiMTI3",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2019-09-27T13:34:56Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2019-09-27T13:34:56Z"
+    },
+    "message": "UX: add class to distinguish specific moderator categories on about page",
+    "tree": {
+      "sha": "4bb49f64b3456468fd5b665d286aa06781c8a97e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4bb49f64b3456468fd5b665d286aa06781c8a97e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/756104432e228de844f9e5561a9adac32bf8b127",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/756104432e228de844f9e5561a9adac32bf8b127",
+  "html_url": "https://github.com/discourse/discourse/commit/756104432e228de844f9e5561a9adac32bf8b127",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/756104432e228de844f9e5561a9adac32bf8b127/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8adec48b335b8cdf3ee7d674e0075f7f461e3a97",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/8adec48b335b8cdf3ee7d674e0075f7f461e3a97",
+      "html_url": "https://github.com/discourse/discourse/commit/8adec48b335b8cdf3ee7d674e0075f7f461e3a97"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e9be34403216f0604060c288e5bed7d168b2f472",
+      "filename": "app/assets/javascripts/discourse/templates/about.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/756104432e228de844f9e5561a9adac32bf8b127/app/assets/javascripts/discourse/templates/about.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/756104432e228de844f9e5561a9adac32bf8b127/app/assets/javascripts/discourse/templates/about.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/about.hbs?ref=756104432e228de844f9e5561a9adac32bf8b127",
+      "patch": "@@ -59,7 +59,7 @@\n \n       {{#if model.category_moderators.length}}\n         {{#each model.category_moderators as |cm|}}\n-          <section class='about category-moderators'>\n+          <section class='about category-moderators moderators-{{cm.category.slug}}'>\n             <h3>{{category-link cm.category}}{{i18n \"about.moderators\"}}</h3>\n             <div class='users'>\n               {{#each cm.moderators as |m|}}"
+    }
+  ]
+}
