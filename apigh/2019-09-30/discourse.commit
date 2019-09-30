@@ -1,0 +1,110 @@
+{
+  "sha": "d5c5ca46b61ef7701e250db88feb523ea5266b9a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkNWM1Y2E0NmI2MWVmNzcwMWUyNTBkYjg4ZmViNTIzZWE1MjY2Yjlh",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-09-30T00:51:59Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-09-30T00:51:59Z"
+    },
+    "message": "SECURITY: Don't allow base_uri as embeddable host if none exist",
+    "tree": {
+      "sha": "c996492d17d3ffd87a1895b016de5bc8cb0736f3",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c996492d17d3ffd87a1895b016de5bc8cb0736f3"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d5c5ca46b61ef7701e250db88feb523ea5266b9a",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d5c5ca46b61ef7701e250db88feb523ea5266b9a",
+  "html_url": "https://github.com/discourse/discourse/commit/d5c5ca46b61ef7701e250db88feb523ea5266b9a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d5c5ca46b61ef7701e250db88feb523ea5266b9a/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "756104432e228de844f9e5561a9adac32bf8b127",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/756104432e228de844f9e5561a9adac32bf8b127",
+      "html_url": "https://github.com/discourse/discourse/commit/756104432e228de844f9e5561a9adac32bf8b127"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "788fc8b4d9a9e8a579df76620a7c11058a1ac8a2",
+      "filename": "app/models/embeddable_host.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/d5c5ca46b61ef7701e250db88feb523ea5266b9a/app/models/embeddable_host.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d5c5ca46b61ef7701e250db88feb523ea5266b9a/app/models/embeddable_host.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/embeddable_host.rb?ref=d5c5ca46b61ef7701e250db88feb523ea5266b9a",
+      "patch": "@@ -44,7 +44,7 @@ def self.record_for_url(uri)\n \n   def self.url_allowed?(url)\n     # Work around IFRAME reload on WebKit where the referer will be set to the Forum URL\n-    return true if url&.starts_with?(Discourse.base_url)\n+    return true if url&.starts_with?(Discourse.base_url) && EmbeddableHost.exists?\n \n     uri = begin\n       URI(UrlHelper.escape_uri(url))"
+    },
+    {
+      "sha": "d55e112e6019166878c203710e396663bbfcdc4a",
+      "filename": "spec/models/embeddable_host_spec.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/d5c5ca46b61ef7701e250db88feb523ea5266b9a/spec/models/embeddable_host_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/d5c5ca46b61ef7701e250db88feb523ea5266b9a/spec/models/embeddable_host_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/embeddable_host_spec.rb?ref=d5c5ca46b61ef7701e250db88feb523ea5266b9a",
+      "patch": "@@ -65,6 +65,10 @@\n     end\n   end\n \n+  it \"doesn't allow forum own URL if no hosts exist\" do\n+    expect(EmbeddableHost.url_allowed?(Discourse.base_url)).to eq(false)\n+  end\n+\n   describe \"url_allowed?\" do\n     fab!(:host) { Fabricate(:embeddable_host) }\n "
+    }
+  ]
+}
