@@ -1,0 +1,98 @@
+{
+  "sha": "a404cab5096c4630777e618e9dc02286906daa28",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNDA0Y2FiNTA5NmM0NjMwNzc3ZTYxOGU5ZGMwMjI4NjkwNmRhYTI4",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-10-03T15:43:36Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-10-03T15:43:36Z"
+    },
+    "message": "The generated plugin should also freeze strings",
+    "tree": {
+      "sha": "79a7b1f654ba7229acd7597516e6855f5b7f7007",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/79a7b1f654ba7229acd7597516e6855f5b7f7007"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a404cab5096c4630777e618e9dc02286906daa28",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a404cab5096c4630777e618e9dc02286906daa28",
+  "html_url": "https://github.com/discourse/discourse/commit/a404cab5096c4630777e618e9dc02286906daa28",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a404cab5096c4630777e618e9dc02286906daa28/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "32a11a93acfadebffded16cfcca8b0262058ef26",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/32a11a93acfadebffded16cfcca8b0262058ef26",
+      "html_url": "https://github.com/discourse/discourse/commit/32a11a93acfadebffded16cfcca8b0262058ef26"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e5e963734ee47330bf3f70038eead8ed98e4bdc3",
+      "filename": "lib/generators/plugin/templates/plugin.rb.erb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/a404cab5096c4630777e618e9dc02286906daa28/lib/generators/plugin/templates/plugin.rb.erb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a404cab5096c4630777e618e9dc02286906daa28/lib/generators/plugin/templates/plugin.rb.erb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/generators/plugin/templates/plugin.rb.erb?ref=a404cab5096c4630777e618e9dc02286906daa28",
+      "patch": "@@ -1,3 +1,5 @@\n+# frozen_string_literal: true\n+\n # name: <%= name %>\n # about: <%= @about %>\n # version: 0.1\n@@ -10,7 +12,7 @@ register_asset 'stylesheets/mobile/<%= dasherized_name %>.scss'\n \n enabled_site_setting :<%= underscored_name %>_enabled\n \n-PLUGIN_NAME ||= '<%= classified_name %>'.freeze\n+PLUGIN_NAME ||= '<%= classified_name %>'\n \n load File.expand_path('lib/<%= dasherized_name %>/engine.rb', __dir__)\n "
+    }
+  ]
+}
