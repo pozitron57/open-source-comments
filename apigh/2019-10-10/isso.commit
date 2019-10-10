@@ -1,0 +1,110 @@
+{
+  "sha": "f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTpmNGIwMzc2ZjFhOWQ0M2EyMzBhMmFlZWY1N2M5NzdhZjkzY2JhOWRk",
+  "commit": {
+    "author": {
+      "name": "tdro",
+      "email": "tdro@users.noreply.github.com",
+      "date": "2019-09-30T23:04:28Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-09-30T23:04:28Z"
+    },
+    "message": "Return 200 with empty array when there are no comments #301 (#565)\n\n* Return 200 with empty array when there are no comments #301\r\n{\"id\": null, \"total_replies\": 0, \"hidden_replies\": 0, \"replies\": []}",
+    "tree": {
+      "sha": "55485f4bee6f0860e95cdc9a6ceebc8996d5bb9e",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/55485f4bee6f0860e95cdc9a6ceebc8996d5bb9e"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+  "html_url": "https://github.com/posativ/isso/commit/f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/f4b0376f1a9d43a230a2aeef57c977af93cba9dd/comments",
+  "author": {
+    "login": "tdro",
+    "id": 5060300,
+    "node_id": "MDQ6VXNlcjUwNjAzMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5060300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tdro",
+    "html_url": "https://github.com/tdro",
+    "followers_url": "https://api.github.com/users/tdro/followers",
+    "following_url": "https://api.github.com/users/tdro/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tdro/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tdro/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tdro/subscriptions",
+    "organizations_url": "https://api.github.com/users/tdro/orgs",
+    "repos_url": "https://api.github.com/users/tdro/repos",
+    "events_url": "https://api.github.com/users/tdro/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tdro/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1f77ecc25eb6feef8d81d5f5247d3711832a0d4d",
+      "url": "https://api.github.com/repos/posativ/isso/commits/1f77ecc25eb6feef8d81d5f5247d3711832a0d4d",
+      "html_url": "https://github.com/posativ/isso/commit/1f77ecc25eb6feef8d81d5f5247d3711832a0d4d"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 23,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "dbdb4d6ada49b4c007871fa01e05700658b4c7cf",
+      "filename": "isso/tests/test_comments.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 6,
+      "changes": 29,
+      "blob_url": "https://github.com/posativ/isso/blob/f4b0376f1a9d43a230a2aeef57c977af93cba9dd/isso/tests/test_comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/f4b0376f1a9d43a230a2aeef57c977af93cba9dd/isso/tests/test_comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/tests/test_comments.py?ref=f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+      "patch": "@@ -159,10 +159,18 @@ def verify(comment):\n \n     def testGetInvalid(self):\n \n-        self.assertEqual(self.get('/?uri=%2Fpath%2F&id=123').status_code, 404)\n+        self.assertEqual(self.get('/?uri=%2Fpath%2F&id=123').status_code, 200)\n+        data = loads(self.get('/?uri=%2Fpath%2F&id=123').data)\n+        self.assertEqual(len(data['replies']), 0)\n+\n         self.assertEqual(\n-            self.get('/?uri=%2Fpath%2Fspam%2F&id=123').status_code, 404)\n-        self.assertEqual(self.get('/?uri=?uri=%foo%2F').status_code, 404)\n+            self.get('/?uri=%2Fpath%2Fspam%2F&id=123').status_code, 200)\n+        data = loads(self.get('/?uri=%2Fpath%2Fspam%2F&id=123').data)\n+        self.assertEqual(len(data['replies']), 0)\n+\n+        self.assertEqual(self.get('/?uri=?uri=%foo%2F').status_code, 200)\n+        data = loads(self.get('/?uri=?uri=%foo%2F').data)\n+        self.assertEqual(len(data['replies']), 0)\n \n     def testGetLimited(self):\n \n@@ -244,9 +252,12 @@ def testDeleteWithReference(self):\n         self.assertEqual(self.get('/?uri=%2Fpath%2F&id=2').status_code, 200)\n \n         r = client.delete('/id/2')\n-        self.assertEqual(self.get('/?uri=%2Fpath%2F').status_code, 404)\n+        self.assertEqual(self.get('/?uri=%2Fpath%2F').status_code, 200)\n         self.assertNotIn('/path/', self.app.db.threads)\n \n+        data = loads(client.get('/?uri=%2Fpath%2F').data)\n+        self.assertEqual(len(data['replies']), 0)\n+\n     def testDeleteWithMultipleReferences(self):\n         \"\"\"\n         [ comment 1 ]\n@@ -272,7 +283,10 @@ def testDeleteWithMultipleReferences(self):\n         client.delete('/id/3')\n         self.assertEqual(self.get('/?uri=%2Fpath%2F').status_code, 200)\n         client.delete('/id/4')\n-        self.assertEqual(self.get('/?uri=%2Fpath%2F').status_code, 404)\n+        self.assertEqual(self.get('/?uri=%2Fpath%2F').status_code, 200)\n+\n+        data = loads(client.get('/?uri=%2Fpath%2F').data)\n+        self.assertEqual(len(data['replies']), 0)\n \n     def testPathVariations(self):\n \n@@ -465,7 +479,10 @@ def testAddComment(self):\n         self.assertEqual(rv.status_code, 202)\n \n         self.assertEqual(self.client.get('/id/1').status_code, 200)\n-        self.assertEqual(self.client.get('/?uri=test').status_code, 404)\n+        self.assertEqual(self.client.get('/?uri=test').status_code, 200)\n+\n+        data = loads(self.client.get('/?uri=test').data)\n+        self.assertEqual(len(data['replies']), 0)\n \n         self.app.db.comments.activate(1)\n         self.assertEqual(self.client.get('/?uri=test').status_code, 200)"
+    },
+    {
+      "sha": "973661f30ea73c5f2f501adae53c59863fddae30",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/f4b0376f1a9d43a230a2aeef57c977af93cba9dd/isso/views/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/f4b0376f1a9d43a230a2aeef57c977af93cba9dd/isso/views/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/views/comments.py?ref=f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+      "patch": "@@ -769,8 +769,6 @@ def fetch(self, environ, request, uri):\n             root_list = []\n         else:\n             root_list = list(self.comments.fetch(**args))\n-            if not root_list:\n-                raise NotFound\n \n         if root_id not in reply_counts:\n             reply_counts[root_id] = 0"
+    }
+  ]
+}

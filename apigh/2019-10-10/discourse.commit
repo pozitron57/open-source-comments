@@ -1,0 +1,98 @@
+{
+  "sha": "09021c35a322d7bf642f50a2cce830dbdaf40797",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowOTAyMWMzNWEzMjJkN2JmNjQyZjUwYTJjY2U4MzBkYmRhZjQwNzk3",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2019-10-10T15:46:28Z"
+    },
+    "committer": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2019-10-10T15:46:28Z"
+    },
+    "message": "Version bump to v2.4.0.beta6",
+    "tree": {
+      "sha": "997a78f70d62ed04ff548d506e7a6513cc8d089a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/997a78f70d62ed04ff548d506e7a6513cc8d089a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/09021c35a322d7bf642f50a2cce830dbdaf40797",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/09021c35a322d7bf642f50a2cce830dbdaf40797",
+  "html_url": "https://github.com/discourse/discourse/commit/09021c35a322d7bf642f50a2cce830dbdaf40797",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/09021c35a322d7bf642f50a2cce830dbdaf40797/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3007c9320561b7c271e48c7b7b8214d1f72e5f8f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3007c9320561b7c271e48c7b7b8214d1f72e5f8f",
+      "html_url": "https://github.com/discourse/discourse/commit/3007c9320561b7c271e48c7b7b8214d1f72e5f8f"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "2116856b1b49c9292b2dbb75f82b8867521191a3",
+      "filename": "lib/version.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/09021c35a322d7bf642f50a2cce830dbdaf40797/lib/version.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/09021c35a322d7bf642f50a2cce830dbdaf40797/lib/version.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/version.rb?ref=09021c35a322d7bf642f50a2cce830dbdaf40797",
+      "patch": "@@ -9,7 +9,7 @@ module VERSION #:nodoc:\n       MAJOR = 2\n       MINOR = 4\n       TINY  = 0\n-      PRE   = 'beta5'\n+      PRE   = 'beta6'\n \n       STRING = [MAJOR, MINOR, TINY, PRE].compact.join('.')\n     end"
+    }
+  ]
+}

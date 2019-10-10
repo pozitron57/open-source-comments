@@ -1,0 +1,98 @@
+{
+  "sha": "bae88f476e78335b77820691027bc7ccd0f8a4d4",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YmFlODhmNDc2ZTc4MzM1Yjc3ODIwNjkxMDI3YmM3Y2NkMGY4YTRkNA==",
+  "commit": {
+    "author": {
+      "name": "Sami Safatli",
+      "email": "samisafatli@live.com",
+      "date": "2019-10-09T15:07:28Z"
+    },
+    "committer": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2019-10-09T15:07:28Z"
+    },
+    "message": "Fix Typo (#2629)",
+    "tree": {
+      "sha": "617c32fcea250e37021c8bf7dd4b4257cb6a3513",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/617c32fcea250e37021c8bf7dd4b4257cb6a3513"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/bae88f476e78335b77820691027bc7ccd0f8a4d4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/bae88f476e78335b77820691027bc7ccd0f8a4d4",
+  "html_url": "https://github.com/coralproject/talk/commit/bae88f476e78335b77820691027bc7ccd0f8a4d4",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/bae88f476e78335b77820691027bc7ccd0f8a4d4/comments",
+  "author": {
+    "login": "samisafatli",
+    "id": 20875849,
+    "node_id": "MDQ6VXNlcjIwODc1ODQ5",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/20875849?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samisafatli",
+    "html_url": "https://github.com/samisafatli",
+    "followers_url": "https://api.github.com/users/samisafatli/followers",
+    "following_url": "https://api.github.com/users/samisafatli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samisafatli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samisafatli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samisafatli/subscriptions",
+    "organizations_url": "https://api.github.com/users/samisafatli/orgs",
+    "repos_url": "https://api.github.com/users/samisafatli/repos",
+    "events_url": "https://api.github.com/users/samisafatli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samisafatli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "918ba1086719282ddda04593abe5e1404182d0ac",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/918ba1086719282ddda04593abe5e1404182d0ac",
+      "html_url": "https://github.com/coralproject/talk/commit/918ba1086719282ddda04593abe5e1404182d0ac"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "a3605fd964d60bae7d2239d1bbfb7a4d78fa8f6c",
+      "filename": "src/locales/pt-BR/admin.ftl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/bae88f476e78335b77820691027bc7ccd0f8a4d4/src/locales/pt-BR/admin.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/bae88f476e78335b77820691027bc7ccd0f8a4d4/src/locales/pt-BR/admin.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/pt-BR/admin.ftl?ref=bae88f476e78335b77820691027bc7ccd0f8a4d4",
+      "patch": "@@ -591,7 +591,7 @@ community-userStatus-popover =\n \n community-userStatus-banUser = Banir Usário\n community-userStatus-removeBan = Remover Banimento\n-community-userStatus-suspendUser = Suspender Userário\n+community-userStatus-suspendUser = Suspender Usuário\n community-userStatus-removeSupsension = Remover Suspensão\n community-userStatus-unknown = Desconhecido\n community-userStatus-changeButton ="
+    }
+  ]
+}
