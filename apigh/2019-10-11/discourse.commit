@@ -1,0 +1,122 @@
+{
+  "sha": "f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmNjNkYjFjNGM4ZjZhOGYxMGRlZmQxZGFlYTlmYjJhZThkMjUxOWIz",
+  "commit": {
+    "author": {
+      "name": "Mark VanLandingham",
+      "email": "mark.vanlandingham@discourse.org",
+      "date": "2019-10-11T16:07:19Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-10-11T16:07:19Z"
+    },
+    "message": "FIX: Accurate sub_total calculation for reviewable_scores (#8184)",
+    "tree": {
+      "sha": "a413c594f3c05cce9468629220d4bdb22ddb834f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a413c594f3c05cce9468629220d4bdb22ddb834f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdoKi3CRBK7hj4Ov3rIwAAdHIIAJNemBixTj8SrElfru36SfiW\n+RCUYWEStapZGSeyfRlp12KjnAoAWzrHUBv1tx2kA4AgfwSsahpOi+eogobdGvYL\nbDcsWrTjMy3LqNdZ3RvHIYvtUViyRu/nGLd9/iN/ZfZ5etdTLydj7VUhqUpQk3jL\nyp0nV2BmHvK/IrZqmgrOyijtQPNrPaPTEd+LKxehPpuKHzrvYRD+wIxM3twNxuY1\nukTf/Gq2PCbjgFwNA6QtSnSRdxU5fBo/9azVjbmIvUGBXffeFLRgj+IEsJc1PGI6\nWBQ8h1cZBz0dnJamHBDPbO98rksIdYL28rxbWKuZPxIoiZQoUwX+ExkGI6Av6Os=\n=SaQm\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree a413c594f3c05cce9468629220d4bdb22ddb834f\nparent 76ab0350f19e72cf33395768a8ce6736fec9565e\nauthor Mark VanLandingham <mark.vanlandingham@discourse.org> 1570810039 -0500\ncommitter GitHub <noreply@github.com> 1570810039 -0500\n\nFIX: Accurate sub_total calculation for reviewable_scores (#8184)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+  "html_url": "https://github.com/discourse/discourse/commit/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/comments",
+  "author": {
+    "login": "markvanlan",
+    "id": 16214023,
+    "node_id": "MDQ6VXNlcjE2MjE0MDIz",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/16214023?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/markvanlan",
+    "html_url": "https://github.com/markvanlan",
+    "followers_url": "https://api.github.com/users/markvanlan/followers",
+    "following_url": "https://api.github.com/users/markvanlan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/markvanlan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/markvanlan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/markvanlan/subscriptions",
+    "organizations_url": "https://api.github.com/users/markvanlan/orgs",
+    "repos_url": "https://api.github.com/users/markvanlan/repos",
+    "events_url": "https://api.github.com/users/markvanlan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/markvanlan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "76ab0350f19e72cf33395768a8ce6736fec9565e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/76ab0350f19e72cf33395768a8ce6736fec9565e",
+      "html_url": "https://github.com/discourse/discourse/commit/76ab0350f19e72cf33395768a8ce6736fec9565e"
+    }
+  ],
+  "stats": {
+    "total": 39,
+    "additions": 29,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "8966621a7ed694b25ace755036b9ffe136452cce",
+      "filename": "app/models/reviewable.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/app/models/reviewable.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/app/models/reviewable.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/reviewable.rb?ref=f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+      "patch": "@@ -158,8 +158,8 @@ def add_score(\n \n     type_bonus = PostActionType.where(id: reviewable_score_type).pluck(:score_bonus)[0] || 0\n     take_action_bonus = take_action ? 5.0 : 0.0\n-    sub_total = (ReviewableScore.user_flag_score(user) + type_bonus + take_action_bonus)\n     user_accuracy_bonus = ReviewableScore.user_accuracy_bonus(user)\n+    sub_total = ReviewableScore.calculate_score(user, type_bonus, take_action_bonus)\n \n     # We can force a reviewable to hit the threshold, for example with queued posts\n     if force_review && sub_total < Reviewable.min_score_for_priority"
+    },
+    {
+      "sha": "cbe561f355cb4462ad088062d4cedadb64ae6288",
+      "filename": "app/models/reviewable_score.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/app/models/reviewable_score.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/app/models/reviewable_score.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/reviewable_score.rb?ref=f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+      "patch": "@@ -45,12 +45,16 @@ def took_action?\n     take_action_bonus > 0\n   end\n \n+  def self.calculate_score(user, type_bonus, take_action_bonus)\n+    score = user_flag_score(user) + type_bonus + take_action_bonus\n+    score > 0 ? score : 0\n+  end\n+\n   # A user's flag score is:\n   #   1.0 + trust_level + user_accuracy_bonus\n   #   (trust_level is 5 for staff)\n   def self.user_flag_score(user)\n-    score = 1.0 + (user.staff? ? 5.0 : user.trust_level.to_f) + user_accuracy_bonus(user)\n-    score >= 0 ? score : 0\n+    1.0 + (user.staff? ? 5.0 : user.trust_level.to_f) + user_accuracy_bonus(user)\n   end\n \n   # A user's accuracy bonus is:"
+    },
+    {
+      "sha": "1b74a26d484f448f667f877baaa066d80bfda7a9",
+      "filename": "spec/models/reviewable_score_spec.rb",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 7,
+      "changes": 29,
+      "blob_url": "https://github.com/discourse/discourse/blob/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/spec/models/reviewable_score_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3/spec/models/reviewable_score_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/reviewable_score_spec.rb?ref=f63db1c4c8f6a8f10defd1daea9fb2ae8d2519b3",
+      "patch": "@@ -145,7 +145,6 @@\n       user_stat.flags_disagreed = 12\n       expect(ReviewableScore.user_accuracy_bonus(user).floor(2)).to eq(12.27)\n     end\n-\n   end\n \n   describe \".user_flag_score\" do\n@@ -172,13 +171,29 @@\n         user_stat.flags_ignored = 2\n         expect(ReviewableScore.user_flag_score(user).floor(2)).to eq(7.99)\n       end\n+    end\n+  end\n \n-      it 'return 0 if the accuracy_bonus would make the score negative' do\n-        user.trust_level = 3\n-        user_stat.flags_agreed = 0\n-        user_stat.flags_disagreed = 1000\n-        expect(ReviewableScore.user_flag_score(user)).to eq(0)\n-      end\n+  describe \".calculate_score\" do\n+    fab!(:user) { Fabricate(:user) }\n+    let(:user_stat) { user.user_stat }\n+\n+    it 'never returns less than 0' do\n+      user.trust_level = 2\n+      user_stat.flags_agreed = 1\n+      user_stat.flags_disagreed = 1000\n+      flag_score = -21.88\n+      expect(ReviewableScore.user_flag_score(user).floor(2)).to eq(flag_score)\n+      expect(ReviewableScore.calculate_score(user, 5, 5)).to eq(0)\n+    end\n+\n+    it 'returns user_flag_score + type_bonus + take_action_bonus' do\n+      user.trust_level = 2\n+      user_stat.flags_agreed = 12\n+      user_stat.flags_disagreed = 2\n+      flag_score = 7.99\n+      expect(ReviewableScore.user_flag_score(user).floor(2)).to eq(flag_score)\n+      expect(ReviewableScore.calculate_score(user, 2, 3)).to eq(flag_score + 2 + 3)\n     end\n   end\n "
+    }
+  ]
+}
