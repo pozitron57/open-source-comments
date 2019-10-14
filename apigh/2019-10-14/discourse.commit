@@ -1,0 +1,98 @@
+{
+  "sha": "392f6cdf336261f9ec1cc0b6b6ce71366665cbcb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozOTJmNmNkZjMzNjI2MWY5ZWMxY2MwYjZiNmNlNzEzNjY2NjVjYmNi",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-10-14T15:26:48Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-10-14T15:26:48Z"
+    },
+    "message": "DEV: Stop overriding computed property on `models/category.js.es6`\n\nThis causes an Ember deprecation notice, and is a confusing pattern. We never used the default values, so there is no benefit to including them.",
+    "tree": {
+      "sha": "a51a0a8110861f0e55bf1ae21812c8fa4edf94ce",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a51a0a8110861f0e55bf1ae21812c8fa4edf94ce"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/392f6cdf336261f9ec1cc0b6b6ce71366665cbcb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/392f6cdf336261f9ec1cc0b6b6ce71366665cbcb",
+  "html_url": "https://github.com/discourse/discourse/commit/392f6cdf336261f9ec1cc0b6b6ce71366665cbcb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/392f6cdf336261f9ec1cc0b6b6ce71366665cbcb/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2c011252f1c0443965ca5317169550083a43c657",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/2c011252f1c0443965ca5317169550083a43c657",
+      "html_url": "https://github.com/discourse/discourse/commit/2c011252f1c0443965ca5317169550083a43c657"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 2,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "8f53b70f5d353a61222a1a198c181b52c7a4fab6",
+      "filename": "app/assets/javascripts/discourse/models/category.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 9,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/392f6cdf336261f9ec1cc0b6b6ce71366665cbcb/app/assets/javascripts/discourse/models/category.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/392f6cdf336261f9ec1cc0b6b6ce71366665cbcb/app/assets/javascripts/discourse/models/category.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/models/category.js.es6?ref=392f6cdf336261f9ec1cc0b6b6ce71366665cbcb",
+      "patch": "@@ -5,6 +5,8 @@ import { on } from \"ember-addons/ember-computed-decorators\";\n import PermissionType from \"discourse/models/permission-type\";\n \n const Category = RestModel.extend({\n+  permissions: null,\n+\n   @on(\"init\")\n   setupGroupsAndPermissions() {\n     const availableGroups = this.available_groups;\n@@ -161,15 +163,6 @@ const Category = RestModel.extend({\n     this.availableGroups.addObject(permission.group_name);\n   },\n \n-  @computed\n-  permissions() {\n-    return Ember.A([\n-      { group_name: \"everyone\", permission: PermissionType.create({ id: 1 }) },\n-      { group_name: \"admins\", permission: PermissionType.create({ id: 2 }) },\n-      { group_name: \"crap\", permission: PermissionType.create({ id: 3 }) }\n-    ]);\n-  },\n-\n   @computed(\"topics\")\n   latestTopic(topics) {\n     if (topics && topics.length) {"
+    }
+  ]
+}
