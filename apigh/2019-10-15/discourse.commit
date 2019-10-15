@@ -1,0 +1,122 @@
+{
+  "sha": "5f5b232cdec46b43e44a27f88097636679fe212d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1ZjViMjMyY2RlYzQ2YjQzZTQ0YTI3Zjg4MDk3NjM2Njc5ZmUyMTJk",
+  "commit": {
+    "author": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-10-15T15:39:09Z"
+    },
+    "committer": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-10-15T15:44:24Z"
+    },
+    "message": "FIX: Category.find_by_slug\n\nfind_by_slug should ensure that the parent actually exists when its\nlooking for a parent.",
+    "tree": {
+      "sha": "6c017ec7bff5d668a12e4d40414274c388d85e77",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/6c017ec7bff5d668a12e4d40414274c388d85e77"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5f5b232cdec46b43e44a27f88097636679fe212d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5f5b232cdec46b43e44a27f88097636679fe212d",
+  "html_url": "https://github.com/discourse/discourse/commit/5f5b232cdec46b43e44a27f88097636679fe212d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5f5b232cdec46b43e44a27f88097636679fe212d/comments",
+  "author": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e83c2488a2d9c686fde83cef93878ee4a9d0f119",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e83c2488a2d9c686fde83cef93878ee4a9d0f119",
+      "html_url": "https://github.com/discourse/discourse/commit/e83c2488a2d9c686fde83cef93878ee4a9d0f119"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 33,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "a548e6c815a7400a495757de77a462723e94096d",
+      "filename": "app/controllers/categories_controller.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f5b232cdec46b43e44a27f88097636679fe212d/app/controllers/categories_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f5b232cdec46b43e44a27f88097636679fe212d/app/controllers/categories_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/categories_controller.rb?ref=5f5b232cdec46b43e44a27f88097636679fe212d",
+      "patch": "@@ -206,6 +206,9 @@ def destroy\n   def find_by_slug\n     params.require(:category_slug)\n     @category = Category.find_by_slug(params[:category_slug], params[:parent_category_slug])\n+\n+    raise Discourse::NotFound unless @category.present?\n+\n     if !guardian.can_see?(@category)\n       if SiteSetting.detailed_404 && group = @category.access_category_via_group\n         raise Discourse::InvalidAccess.new("
+    },
+    {
+      "sha": "a903c8f36641adbf949fc008aa17255eea46d61d",
+      "filename": "app/models/category.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f5b232cdec46b43e44a27f88097636679fe212d/app/models/category.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f5b232cdec46b43e44a27f88097636679fe212d/app/models/category.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/category.rb?ref=5f5b232cdec46b43e44a27f88097636679fe212d",
+      "patch": "@@ -709,7 +709,8 @@ def update_reviewables\n \n   def self.find_by_slug(category_slug, parent_category_slug = nil)\n     if parent_category_slug\n-      parent_category_id = self.where(slug: parent_category_slug, parent_category_id: nil).pluck(:id).first\n+      parent_category_id = self.where(slug: parent_category_slug, parent_category_id: nil).select(:id)\n+\n       self.where(slug: category_slug, parent_category_id: parent_category_id).first\n     else\n       self.where(slug: category_slug, parent_category_id: nil).first"
+    },
+    {
+      "sha": "225b87eeab7aea54269a0e5e6513ae85b886244c",
+      "filename": "spec/models/category_spec.rb",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 4,
+      "changes": 32,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f5b232cdec46b43e44a27f88097636679fe212d/spec/models/category_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f5b232cdec46b43e44a27f88097636679fe212d/spec/models/category_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/category_spec.rb?ref=5f5b232cdec46b43e44a27f88097636679fe212d",
+      "patch": "@@ -742,12 +742,36 @@\n   end\n \n   describe \"find_by_slug\" do\n-    it \"finds with category and sub category\" do\n-      category = Fabricate(:category_with_definition, slug: 'awesome-category')\n-      sub_category = Fabricate(:category_with_definition, parent_category_id: category.id, slug: 'awesome-sub-category')\n+    fab!(:category) do\n+      Fabricate(:category_with_definition, slug: 'awesome-category')\n+    end\n \n+    fab!(:subcategory) do\n+      Fabricate(\n+        :category_with_definition,\n+        parent_category_id: category.id,\n+        slug: 'awesome-sub-category'\n+      )\n+    end\n+\n+    it \"finds a category that exists\" do\n       expect(Category.find_by_slug('awesome-category')).to eq(category)\n-      expect(Category.find_by_slug('awesome-sub-category', 'awesome-category')).to eq(sub_category)\n+    end\n+\n+    it \"finds a subcategory that exists\" do\n+      expect(Category.find_by_slug('awesome-sub-category', 'awesome-category')).to eq(subcategory)\n+    end\n+\n+    it \"produces nil if the parent doesn't exist\" do\n+      expect(Category.find_by_slug('awesome-sub-category', 'no-such-category')).to eq(nil)\n+    end\n+\n+    it \"produces nil if the parent doesn't exist and the requested category is a root category\" do\n+      expect(Category.find_by_slug('awesome-category', 'no-such-category')).to eq(nil)\n+    end\n+\n+    it \"produces nil if the subcategory doesn't exist\" do\n+      expect(Category.find_by_slug('no-such-category', 'awesome-category')).to eq(nil)\n     end\n   end\n "
+    }
+  ]
+}
