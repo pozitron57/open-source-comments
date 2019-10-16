@@ -1,0 +1,98 @@
+{
+  "sha": "48c123849228cc8a392e989558fe89734cd02656",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0OGMxMjM4NDkyMjhjYzhhMzkyZTk4OTU1OGZlODk3MzRjZDAyNjU2",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-10-16T15:27:07Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-10-16T15:27:07Z"
+    },
+    "message": "FIX: Do not send notification to empty push_url\n\nCompletes e4424d7",
+    "tree": {
+      "sha": "de4ded97541c6e95fd2770da3ad23d487db5a4e7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/de4ded97541c6e95fd2770da3ad23d487db5a4e7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/48c123849228cc8a392e989558fe89734cd02656",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/48c123849228cc8a392e989558fe89734cd02656",
+  "html_url": "https://github.com/discourse/discourse/commit/48c123849228cc8a392e989558fe89734cd02656",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/48c123849228cc8a392e989558fe89734cd02656/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d6118c8bc86a8ac0edd0a878b17671e15be1b760",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d6118c8bc86a8ac0edd0a878b17671e15be1b760",
+      "html_url": "https://github.com/discourse/discourse/commit/d6118c8bc86a8ac0edd0a878b17671e15be1b760"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "bcf1f0538511e40be515412dcdbfdeaf1dbdab8c",
+      "filename": "app/services/post_alerter.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/48c123849228cc8a392e989558fe89734cd02656/app/services/post_alerter.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/48c123849228cc8a392e989558fe89734cd02656/app/services/post_alerter.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/post_alerter.rb?ref=48c123849228cc8a392e989558fe89734cd02656",
+      "patch": "@@ -453,7 +453,7 @@ def push_notification(user, payload)\n     if SiteSetting.allow_user_api_key_scopes.split(\"|\").include?(\"push\") && SiteSetting.allowed_user_api_push_urls.present?\n       clients = user.user_api_keys\n         .where(\"('push' = ANY(scopes) OR 'notifications' = ANY(scopes))\")\n-        .where(\"push_url IS NOT NULL\")\n+        .where(\"push_url IS NOT NULL AND push_url <> ''\")\n         .where(\"position(push_url IN ?) > 0\", SiteSetting.allowed_user_api_push_urls)\n         .where(\"revoked_at IS NULL\")\n         .pluck(:client_id, :push_url)"
+    }
+  ]
+}
