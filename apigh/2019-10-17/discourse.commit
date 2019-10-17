@@ -1,0 +1,110 @@
+{
+  "sha": "2304dcf993f626c86b0cab43d33dc7005e850fb9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyMzA0ZGNmOTkzZjYyNmM4NmIwY2FiNDNkMzNkYzcwMDVlODUwZmI5",
+  "commit": {
+    "author": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-10-17T16:38:31Z"
+    },
+    "committer": {
+      "name": "Rafael dos Santos Silva",
+      "email": "xfalcox@gmail.com",
+      "date": "2019-10-17T16:38:31Z"
+    },
+    "message": "FIX: Do not truncate encoded slugs\n\nTrying to truncate encoded slugs will mean that we have to keep the URL\nvalid, which can be tricky as you have to be aware of multibyte\ncharacters.\n\nSince we already have upper bounds for the title, the slug won't grow\nfor more than title*6 in the worst case. The slug column in the topic\ntable can store that just fine.\n\nAdded a test to ensure that a generated slug is a valid URL too, so we\ndon't introduce regressions in the future.",
+    "tree": {
+      "sha": "28c838256cc3702771d98445bf6438504e707d65",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/28c838256cc3702771d98445bf6438504e707d65"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2304dcf993f626c86b0cab43d33dc7005e850fb9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2304dcf993f626c86b0cab43d33dc7005e850fb9",
+  "html_url": "https://github.com/discourse/discourse/commit/2304dcf993f626c86b0cab43d33dc7005e850fb9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2304dcf993f626c86b0cab43d33dc7005e850fb9/comments",
+  "author": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "xfalcox",
+    "id": 1385470,
+    "node_id": "MDQ6VXNlcjEzODU0NzA=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1385470?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xfalcox",
+    "html_url": "https://github.com/xfalcox",
+    "followers_url": "https://api.github.com/users/xfalcox/followers",
+    "following_url": "https://api.github.com/users/xfalcox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xfalcox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xfalcox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xfalcox/subscriptions",
+    "organizations_url": "https://api.github.com/users/xfalcox/orgs",
+    "repos_url": "https://api.github.com/users/xfalcox/repos",
+    "events_url": "https://api.github.com/users/xfalcox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xfalcox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3cdcd093ee428c8e28150ab0e33e5cec5a432c14",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3cdcd093ee428c8e28150ab0e33e5cec5a432c14",
+      "html_url": "https://github.com/discourse/discourse/commit/3cdcd093ee428c8e28150ab0e33e5cec5a432c14"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 9,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "f50492bddfde13f91bf19df367be65674bb6336a",
+      "filename": "lib/slug.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/2304dcf993f626c86b0cab43d33dc7005e850fb9/lib/slug.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2304dcf993f626c86b0cab43d33dc7005e850fb9/lib/slug.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/slug.rb?ref=2304dcf993f626c86b0cab43d33dc7005e850fb9",
+      "patch": "@@ -9,6 +9,10 @@ module Slug\n   def self.for(string, default = 'topic', max_length = MAX_LENGTH)\n     string = string.gsub(/:([\\w\\-+]+(?::t\\d)?):/, '') if string.present? # strip emoji strings\n \n+    if SiteSetting.slug_generation_method == 'encoded'\n+      max_length = 9999 # do not truncate encoded slugs\n+    end\n+\n     slug =\n       case (SiteSetting.slug_generation_method || :ascii).to_sym\n       when :ascii then self.ascii_generator(string)"
+    },
+    {
+      "sha": "699d3e0c6b2290766718a508e3b2ea15e43ead37",
+      "filename": "spec/components/slug_spec.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/2304dcf993f626c86b0cab43d33dc7005e850fb9/spec/components/slug_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2304dcf993f626c86b0cab43d33dc7005e850fb9/spec/components/slug_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/slug_spec.rb?ref=2304dcf993f626c86b0cab43d33dc7005e850fb9",
+      "patch": "@@ -81,6 +81,11 @@\n       it \"kills the trailing dash\" do\n         expect(Slug.for(\"2- -this!~-_|,we-#-=^-\")).to eq('2-this-we')\n       end\n+\n+      it \"returns a slug that can be used in a valid URL\" do\n+        slug = Slug.for(\"Γνωμη για αγορα μπουζουκιου μεσω ιντερνετ και εκτίμηση\")\n+        expect { URI.parse(\"http://example.com/#{slug}\") }.not_to raise_error\n+      end\n     end\n \n     context 'none generator' do"
+    }
+  ]
+}
