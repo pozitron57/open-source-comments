@@ -1,0 +1,98 @@
+{
+  "sha": "153c910de750763b51de5591ab6bb72d070a09e9",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MTUzYzkxMGRlNzUwNzYzYjUxZGU1NTkxYWI2YmI3MmQwNzBhMDllOQ==",
+  "commit": {
+    "author": {
+      "name": "Cristian Dean",
+      "email": "cristian.dean@corp.globo.com",
+      "date": "2019-10-18T16:44:41Z"
+    },
+    "committer": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2019-10-18T16:44:41Z"
+    },
+    "message": "Fix pt-BR moderate-comment-deleted-body translation (#2647)",
+    "tree": {
+      "sha": "07a6f3f87cf57e1a5239d5f47fa1fea7e12c9630",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/07a6f3f87cf57e1a5239d5f47fa1fea7e12c9630"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/153c910de750763b51de5591ab6bb72d070a09e9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/153c910de750763b51de5591ab6bb72d070a09e9",
+  "html_url": "https://github.com/coralproject/talk/commit/153c910de750763b51de5591ab6bb72d070a09e9",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/153c910de750763b51de5591ab6bb72d070a09e9/comments",
+  "author": {
+    "login": "cristiandean",
+    "id": 25023177,
+    "node_id": "MDQ6VXNlcjI1MDIzMTc3",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/25023177?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cristiandean",
+    "html_url": "https://github.com/cristiandean",
+    "followers_url": "https://api.github.com/users/cristiandean/followers",
+    "following_url": "https://api.github.com/users/cristiandean/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cristiandean/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cristiandean/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cristiandean/subscriptions",
+    "organizations_url": "https://api.github.com/users/cristiandean/orgs",
+    "repos_url": "https://api.github.com/users/cristiandean/repos",
+    "events_url": "https://api.github.com/users/cristiandean/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cristiandean/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "990a70d6f9187cc1caa8aa601244aeedaefc99e3",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/990a70d6f9187cc1caa8aa601244aeedaefc99e3",
+      "html_url": "https://github.com/coralproject/talk/commit/990a70d6f9187cc1caa8aa601244aeedaefc99e3"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b215c16f62bde232471a12a59acdf7cb459b0138",
+      "filename": "src/locales/pt-BR/admin.ftl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/153c910de750763b51de5591ab6bb72d070a09e9/src/locales/pt-BR/admin.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/153c910de750763b51de5591ab6bb72d070a09e9/src/locales/pt-BR/admin.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/pt-BR/admin.ftl?ref=153c910de750763b51de5591ab6bb72d070a09e9",
+      "patch": "@@ -431,7 +431,7 @@ moderate-queue-viewNew =\n     [1] Ver {$count} novo comentário\n     *[other] Ver {$count} novos comentários\n   }\n-  moderate-comment-deleted-body =\n+moderate-comment-deleted-body =\n   Este comentário não está mais disponível. O comentarista deletou a conta.\n \n ### Moderate Search Bar"
+    }
+  ]
+}
