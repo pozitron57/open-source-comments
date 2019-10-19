@@ -1,0 +1,182 @@
+{
+  "sha": "054fbd7846546ae68a5703d47e1750db1bc34ffd",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowNTRmYmQ3ODQ2NTQ2YWU2OGE1NzAzZDQ3ZTE3NTBkYjFiYzM0ZmZk",
+  "commit": {
+    "author": {
+      "name": "Mark VanLandingham",
+      "email": "mark.vanlandingham@discourse.org",
+      "date": "2019-10-18T18:16:52Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-10-18T18:16:52Z"
+    },
+    "message": "FEATURE: Remember scroll position in private message lists (#8212)\n\n* FEATURE: remember position in private message lists\r\n\r\n* Unified saving scroll position between topic lists\r\n\r\n* added discovery-topics-list template\r\n\r\n* ran prettier\r\n\r\n* removed dynamic scroll key\r\n\r\n* JS cleanup",
+    "tree": {
+      "sha": "671c1ef1951e6930b21545ce21f6087c9d5625d6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/671c1ef1951e6930b21545ce21f6087c9d5625d6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/054fbd7846546ae68a5703d47e1750db1bc34ffd",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdqgGUCRBK7hj4Ov3rIwAAdHIIAAI7UAHoU2lsrMlpqXVNzJJz\niTO/FebEk0hfdCIW7soeRmvRkuhfHIaooE0dhK6cNO+Egm8DfgUfWQjqrIhhkNMT\nR0MlVo48QtMs670uLzLn3aOlB2EiBWT9GmlrDmeDp65fPGtZrJwmD2nVONmmmwhs\nq39B0VZzxisz5VlYSm9GnxpwswR3p1kPPOpMAY5HSCtTokXgkpOXzA1sg+axZWXi\nxO+NvMqaotdznxKgD+6llxAmk45dE9Y7nKuqlqRGC/bZcm5sQUV/lz6Vf7oYr0cq\nvC2Zc5xTVoXepAL+IGylSd8JvALtvecSZ5B7Yqei28fO6lzhxGUMqV4f9eHm94A=\n=BlE9\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 671c1ef1951e6930b21545ce21f6087c9d5625d6\nparent 95114f87ae3f93e0e2234b1298c6280975b63d6e\nauthor Mark VanLandingham <mark.vanlandingham@discourse.org> 1571422612 -0500\ncommitter GitHub <noreply@github.com> 1571422612 -0500\n\nFEATURE: Remember scroll position in private message lists (#8212)\n\n* FEATURE: remember position in private message lists\r\n\r\n* Unified saving scroll position between topic lists\r\n\r\n* added discovery-topics-list template\r\n\r\n* ran prettier\r\n\r\n* removed dynamic scroll key\r\n\r\n* JS cleanup\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/054fbd7846546ae68a5703d47e1750db1bc34ffd",
+  "html_url": "https://github.com/discourse/discourse/commit/054fbd7846546ae68a5703d47e1750db1bc34ffd",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/054fbd7846546ae68a5703d47e1750db1bc34ffd/comments",
+  "author": {
+    "login": "markvanlan",
+    "id": 16214023,
+    "node_id": "MDQ6VXNlcjE2MjE0MDIz",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/16214023?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/markvanlan",
+    "html_url": "https://github.com/markvanlan",
+    "followers_url": "https://api.github.com/users/markvanlan/followers",
+    "following_url": "https://api.github.com/users/markvanlan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/markvanlan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/markvanlan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/markvanlan/subscriptions",
+    "organizations_url": "https://api.github.com/users/markvanlan/orgs",
+    "repos_url": "https://api.github.com/users/markvanlan/repos",
+    "events_url": "https://api.github.com/users/markvanlan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/markvanlan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "95114f87ae3f93e0e2234b1298c6280975b63d6e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/95114f87ae3f93e0e2234b1298c6280975b63d6e",
+      "html_url": "https://github.com/discourse/discourse/commit/95114f87ae3f93e0e2234b1298c6280975b63d6e"
+    }
+  ],
+  "stats": {
+    "total": 70,
+    "additions": 56,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "3a5f30e4f590c2f3107d1a73cecb0c79862c50dd",
+      "filename": "app/assets/javascripts/discourse/components/discovery-topics-list.js.es6",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 5,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/components/discovery-topics-list.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/components/discovery-topics-list.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/discovery-topics-list.js.es6?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -36,11 +36,6 @@ const DiscoveryTopicsListComponent = Ember.Component.extend(\n       this.session.set(\"topicListScrollPosition\", $(window).scrollTop());\n     },\n \n-    scrolled() {\n-      this._super(...arguments);\n-      this.saveScrollPosition();\n-    },\n-\n     actions: {\n       loadMore() {\n         Discourse.updateContextCount(0);"
+    },
+    {
+      "sha": "8eaa73dd266c4c5a20bec8e17e816dddb97e4eb8",
+      "filename": "app/assets/javascripts/discourse/components/topic-list.js.es6",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 1,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/components/topic-list.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/components/topic-list.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/topic-list.js.es6?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -2,8 +2,9 @@ import {\n   default as computed,\n   observes\n } from \"ember-addons/ember-computed-decorators\";\n+import LoadMore from \"discourse/mixins/load-more\";\n \n-export default Ember.Component.extend({\n+export default Ember.Component.extend(LoadMore, {\n   tagName: \"table\",\n   classNames: [\"topic-list\"],\n   showTopicPostBadges: true,\n@@ -54,6 +55,30 @@ export default Ember.Component.extend({\n     this.refreshLastVisited();\n   },\n \n+  scrolled() {\n+    this._super(...arguments);\n+    let onScroll = this.onScroll;\n+    if (!onScroll) return;\n+\n+    onScroll.call(this);\n+  },\n+\n+  scrollToLastPosition() {\n+    if (!this.scrollOnLoad) return;\n+\n+    let scrollTo = this.session.get(\"topicListScrollPosition\");\n+    if (scrollTo && scrollTo >= 0) {\n+      Ember.run.schedule(\"afterRender\", () =>\n+        $(window).scrollTop(scrollTo + 1)\n+      );\n+    }\n+  },\n+\n+  didInsertElement() {\n+    this._super(...arguments);\n+    this.scrollToLastPosition();\n+  },\n+\n   _updateLastVisitedTopic(topics, order, ascending, top) {\n     this.set(\"lastVisitedTopic\", null);\n "
+    },
+    {
+      "sha": "dd453138d8b4e840bd6168fb0efb4f8c6d775447",
+      "filename": "app/assets/javascripts/discourse/controllers/user-topics-list.js.es6",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/controllers/user-topics-list.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/controllers/user-topics-list.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/user-topics-list.js.es6?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -16,6 +16,10 @@ export default Ember.Controller.extend({\n     this.newIncoming = [];\n   },\n \n+  saveScrollPosition: function() {\n+    this.session.set(\"topicListScrollPosition\", $(window).scrollTop());\n+  },\n+\n   _showFooter: function() {\n     this.set(\"application.showFooter\", !this.get(\"model.canLoadMore\"));\n   }.observes(\"model.canLoadMore\"),"
+    },
+    {
+      "sha": "820a41cf8d78ef483d65331c912f3ac047a9c1aa",
+      "filename": "app/assets/javascripts/discourse/routes/build-private-messages-route.js.es6",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 4,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/routes/build-private-messages-route.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/routes/build-private-messages-route.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/routes/build-private-messages-route.js.es6?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -18,10 +18,19 @@ export default (viewName, path, channel) => {\n     },\n \n     model() {\n-      return this.store.findFiltered(\"topicList\", {\n-        filter:\n-          \"topics/\" + path + \"/\" + this.modelFor(\"user\").get(\"username_lower\")\n-      });\n+      const session = Discourse.Session.current();\n+      let filter =\n+        \"topics/\" + path + \"/\" + this.modelFor(\"user\").get(\"username_lower\");\n+      let lastTopicList = session.get(\"topicList\");\n+      if (lastTopicList && lastTopicList.filter === filter) {\n+        return lastTopicList;\n+      } else {\n+        session.setProperties({\n+          topicList: null,\n+          topicListScrollPosition: null\n+        });\n+        return this.store.findFiltered(\"topicList\", { filter });\n+      }\n     },\n \n     setupController() {"
+    },
+    {
+      "sha": "44d9dc579d8f34295b6a46df87e795d43de5083e",
+      "filename": "app/assets/javascripts/discourse/templates/components/basic-topic-list.hbs",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/components/basic-topic-list.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/components/basic-topic-list.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/basic-topic-list.hbs?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -18,7 +18,10 @@\n                  canBulkSelect=canBulkSelect\n                  selected=selected\n                  skipHeader=skipHeader\n-                 tagsForUser=tagsForUser}}\n+                 tagsForUser=tagsForUser\n+                 onScroll=onScroll\n+                 scrollOnLoad=scrollOnLoad}}\n+\n   {{else}}\n     {{#unless loadingMore}}\n     <div class='alert alert-info'>"
+    },
+    {
+      "sha": "c1528526e6323e65af0d3a7c39185a84756f6b46",
+      "filename": "app/assets/javascripts/discourse/templates/components/discovery-topics-list.hbs",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/components/discovery-topics-list.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/components/discovery-topics-list.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/components/discovery-topics-list.hbs?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -0,0 +1,3 @@\n+{{yield (hash\n+  saveScrollPosition=saveScrollPosition\n+)}}"
+    },
+    {
+      "sha": "a449e010a9092216c74392224e928c967b1acafc",
+      "filename": "app/assets/javascripts/discourse/templates/discovery/topics.hbs",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/discovery/topics.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/discovery/topics.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/discovery/topics.hbs?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -26,7 +26,7 @@\n \n {{bulk-select-button selected=selected action=(action \"refresh\") category=category}}\n \n-{{#discovery-topics-list model=model refresh=(action \"refresh\") incomingCount=topicTrackingState.incomingCount}}\n+{{#discovery-topics-list model=model refresh=(action \"refresh\") incomingCount=topicTrackingState.incomingCount as |discoveryTopicList|}}\n   {{#if top}}\n     <div class='top-lists'>\n       {{period-chooser period=period action=(action \"changePeriod\")}}\n@@ -61,7 +61,8 @@\n       expandAllPinned=expandAllPinned\n       category=category\n       topics=model.topics\n-      discoveryList=true}}\n+      discoveryList=true\n+      onScroll=discoveryTopicList.saveScrollPosition}}\n   {{/if}}\n {{/discovery-topics-list}}\n "
+    },
+    {
+      "sha": "adeab89c7f16194db1624566e2ebd959af0c60cc",
+      "filename": "app/assets/javascripts/discourse/templates/user-topics-list.hbs",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/user-topics-list.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/054fbd7846546ae68a5703d47e1750db1bc34ffd/app/assets/javascripts/discourse/templates/user-topics-list.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/user-topics-list.hbs?ref=054fbd7846546ae68a5703d47e1750db1bc34ffd",
+      "patch": "@@ -7,7 +7,9 @@\n                      hasIncoming=hasIncoming\n                      incomingCount=incomingCount\n                      showInserted=(action \"showInserted\")\n-                     tagsForUser=tagsForUser}}\n+                     tagsForUser=tagsForUser\n+                     onScroll=saveScrollPosition\n+                     scrollOnLoad=true}}\n \n   {{conditional-loading-spinner condition=model.loadingMore}}\n {{/load-more}}"
+    }
+  ]
+}
