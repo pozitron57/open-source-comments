@@ -1,0 +1,110 @@
+{
+  "sha": "51ecbeef4df9baf6262aae633d02a918f8c9a6f0",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1MWVjYmVlZjRkZjliYWY2MjYyYWFlNjMzZDAyYTkxOGY4YzlhNmYw",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2019-10-22T16:00:12Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2019-10-22T16:00:20Z"
+    },
+    "message": "DEV: Upgrade lefthook\n\n`yarn install` didn't work on a fresh system",
+    "tree": {
+      "sha": "ac2dbbb9eba81f8ac648bab366d6d807d6c5246d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ac2dbbb9eba81f8ac648bab366d6d807d6c5246d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/51ecbeef4df9baf6262aae633d02a918f8c9a6f0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/51ecbeef4df9baf6262aae633d02a918f8c9a6f0",
+  "html_url": "https://github.com/discourse/discourse/commit/51ecbeef4df9baf6262aae633d02a918f8c9a6f0",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/51ecbeef4df9baf6262aae633d02a918f8c9a6f0/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a411806551dbbc46c27b7df3579b9b2b0c7214b6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a411806551dbbc46c27b7df3579b9b2b0c7214b6",
+      "html_url": "https://github.com/discourse/discourse/commit/a411806551dbbc46c27b7df3579b9b2b0c7214b6"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "a335185a054f44ae35429413a0adcdf6bbab4f35",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/51ecbeef4df9baf6262aae633d02a918f8c9a6f0/package.json",
+      "raw_url": "https://github.com/discourse/discourse/raw/51ecbeef4df9baf6262aae633d02a918f8c9a6f0/package.json",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/package.json?ref=51ecbeef4df9baf6262aae633d02a918f8c9a6f0",
+      "patch": "@@ -38,7 +38,7 @@\n     \"workbox-sw\": \"^4.3.1\"\n   },\n   \"devDependencies\": {\n-    \"@arkweid/lefthook\": \"^0.5.6\",\n+    \"@arkweid/lefthook\": \"^0.6.3\",\n     \"babel-eslint\": \"^8.2\",\n     \"chrome-launcher\": \"^0.10\",\n     \"chrome-remote-interface\": \"^0.25\","
+    },
+    {
+      "sha": "c0533e3dff109b8e72dcb6854997b90e97e4d695",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/51ecbeef4df9baf6262aae633d02a918f8c9a6f0/yarn.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/51ecbeef4df9baf6262aae633d02a918f8c9a6f0/yarn.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/yarn.lock?ref=51ecbeef4df9baf6262aae633d02a918f8c9a6f0",
+      "patch": "@@ -2,10 +2,10 @@\n # yarn lockfile v1\n \n \n-\"@arkweid/lefthook@^0.5.6\":\n-  version \"0.5.6\"\n-  resolved \"https://registry.yarnpkg.com/@arkweid/lefthook/-/lefthook-0.5.6.tgz#6c44bc257c2ea2c2498c25df1757fd224a69a088\"\n-  integrity sha512-hnzXNq/tq7LZGOFE1CigEdSOd1lkhJpUX83pyseIQg7hzrwytnm3+qVLqnMAY/Zk/L7kvWVLXiYxJofDc+2TNg==\n+\"@arkweid/lefthook@^0.6.3\":\n+  version \"0.6.3\"\n+  resolved \"https://registry.yarnpkg.com/@arkweid/lefthook/-/lefthook-0.6.3.tgz#59ed1e2861ec924181b40c4edd8f60c720df42f6\"\n+  integrity sha512-mKtMBRAs2YgH9J49KogVSAJWI9WJQdJkoH8LfMfHNs+foDOgLqFLEngPI8XiekHupHDH6YF5ZInbvm2ndc2uug==\n \n \"@babel/code-frame@7.0.0-beta.44\":\n   version \"7.0.0-beta.44\""
+    }
+  ]
+}
