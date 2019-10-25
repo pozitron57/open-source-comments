@@ -1,0 +1,98 @@
+{
+  "sha": "4f452f0205f1699dd1ff194b5792eb1a7b3f2847",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0ZjQ1MmYwMjA1ZjE2OTlkZDFmZjE5NGI1NzkyZWIxYTdiM2YyODQ3",
+  "commit": {
+    "author": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-10-25T13:52:23Z"
+    },
+    "committer": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-10-25T13:52:23Z"
+    },
+    "message": "DEV: Add variable to warmup tmp folder and obtain accurate results when profiling specs",
+    "tree": {
+      "sha": "7813dfe01b5de0acbdd298e3c481ee56ffd2369c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7813dfe01b5de0acbdd298e3c481ee56ffd2369c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4f452f0205f1699dd1ff194b5792eb1a7b3f2847",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4f452f0205f1699dd1ff194b5792eb1a7b3f2847",
+  "html_url": "https://github.com/discourse/discourse/commit/4f452f0205f1699dd1ff194b5792eb1a7b3f2847",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4f452f0205f1699dd1ff194b5792eb1a7b3f2847/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "070a3dcf9bf5013c0f925166e016d62be0e2a9d4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/070a3dcf9bf5013c0f925166e016d62be0e2a9d4",
+      "html_url": "https://github.com/discourse/discourse/commit/070a3dcf9bf5013c0f925166e016d62be0e2a9d4"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "4c72bc69165cfc0bfd20a6894be0b3c8acbb9b78",
+      "filename": "script/docker_test.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/4f452f0205f1699dd1ff194b5792eb1a7b3f2847/script/docker_test.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4f452f0205f1699dd1ff194b5792eb1a7b3f2847/script/docker_test.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/script/docker_test.rb?ref=4f452f0205f1699dd1ff194b5792eb1a7b3f2847",
+      "patch": "@@ -6,6 +6,7 @@\n # => COMMIT_HASH      used by the discourse_test docker image to load a specific commit of discourse\n #                     this can also be set to a branch, e.g. \"origin/tests-passed\"\n # => RUN_SMOKE_TESTS  executes the smoke tests instead of the regular tests from docker.rake\n+# => WARMUP_TMP_FOLDER runs a single spec to warmup the tmp folder and obtain accurate results when profiling specs.\n # See lib/tasks/docker.rake and lib/tasks/smoke_test.rake for more information\n \n puts \"travis_fold:end:starting_docker_container\" if ENV[\"TRAVIS\"]\n@@ -39,6 +40,10 @@ def run_or_fail(command)\n   puts \"travis_fold:end:bundle\" if ENV[\"TRAVIS\"]\n end\n \n+if ENV['WARMPUP_TMP_FOLDER']\n+  run_or_fail('bundle exec rspec ./spec/requests/users_controller_spec.rb:222')\n+end\n+\n log(\"Running tests\")\n if ENV['RUN_SMOKE_TESTS']\n   run_or_fail(\"bundle exec rake smoke:test\")"
+    }
+  ]
+}
