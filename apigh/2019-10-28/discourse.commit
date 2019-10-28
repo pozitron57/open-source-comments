@@ -1,0 +1,134 @@
+{
+  "sha": "e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplN2ZmNjgwOWEzOWJiYWFmYjVkMGI4OGIyM2VjMzMwZjUyMzNjY2Y0",
+  "commit": {
+    "author": {
+      "name": "Leo McArdle",
+      "email": "lmcardle@mozilla.com",
+      "date": "2019-10-28T16:46:53Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-10-28T16:46:53Z"
+    },
+    "message": "FEATURE: add SES spam header to recognised spam headers (#8254)",
+    "tree": {
+      "sha": "daee8954dc7388439b9a975be6e397480ffc3e4f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/daee8954dc7388439b9a975be6e397480ffc3e4f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+  "html_url": "https://github.com/discourse/discourse/commit/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/comments",
+  "author": {
+    "login": "LeoMcA",
+    "id": 755354,
+    "node_id": "MDQ6VXNlcjc1NTM1NA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/755354?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LeoMcA",
+    "html_url": "https://github.com/LeoMcA",
+    "followers_url": "https://api.github.com/users/LeoMcA/followers",
+    "following_url": "https://api.github.com/users/LeoMcA/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LeoMcA/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LeoMcA/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LeoMcA/subscriptions",
+    "organizations_url": "https://api.github.com/users/LeoMcA/orgs",
+    "repos_url": "https://api.github.com/users/LeoMcA/repos",
+    "events_url": "https://api.github.com/users/LeoMcA/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LeoMcA/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5776251cdd64317d58cbf56a4946db052ae3ac93",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/5776251cdd64317d58cbf56a4946db052ae3ac93",
+      "html_url": "https://github.com/discourse/discourse/commit/5776251cdd64317d58cbf56a4946db052ae3ac93"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 30,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "ce1fe165750a9f1b28741468f07c3cbdf09a7040",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+      "patch": "@@ -969,6 +969,7 @@ email:\n       - none\n       - X-Spam-Flag\n       - X-Spam-Status\n+      - X-SES-Spam-Verdict\n   email_prefix: \"\"\n   email_site_title: \"\"\n   disable_emails:"
+    },
+    {
+      "sha": "eb78a0ef01c5bc72b1ca12d4625ec92b014b3a94",
+      "filename": "lib/email/receiver.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/lib/email/receiver.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/lib/email/receiver.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/email/receiver.rb?ref=e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+      "patch": "@@ -301,6 +301,8 @@ def is_spam?\n         @mail[:x_spam_flag].to_s[/YES/i]\n       when 'X-Spam-Status'\n         @mail[:x_spam_status].to_s[/^Yes, /i]\n+      when 'X-SES-Spam-Verdict'\n+        @mail[:x_ses_spam_verdict].to_s[/FAIL/i]\n       else\n         false\n       end"
+    },
+    {
+      "sha": "811fc3839c8bdd5d338c2fad1fdb28f2f28241b1",
+      "filename": "spec/components/email/receiver_spec.rb",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/spec/components/email/receiver_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/spec/components/email/receiver_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/email/receiver_spec.rb?ref=e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+      "patch": "@@ -1006,6 +1006,21 @@ def create_post_reply_key(value)\n       expect(post.hidden_reason_id).to eq(Post.hidden_reasons[:email_spam_header_found])\n     end\n \n+    it \"creates hidden topic for X-SES-Spam-Verdict\" do\n+      SiteSetting.email_in_spam_header = 'X-SES-Spam-Verdict'\n+\n+      Fabricate(:user, email: \"existing@bar.com\", trust_level: SiteSetting.email_in_min_trust)\n+      expect { process(:spam_x_ses_spam_verdict) }.to change { Topic.count }.by(1) # Topic created\n+\n+      topic = Topic.last\n+      expect(topic.visible).to eq(false)\n+\n+      post = Post.last\n+      expect(post.hidden).to eq(true)\n+      expect(post.hidden_at).not_to eq(nil)\n+      expect(post.hidden_reason_id).to eq(Post.hidden_reasons[:email_spam_header_found])\n+    end\n+\n     it \"adds the 'elided' part of the original message when always_show_trimmed_content is enabled\" do\n       SiteSetting.always_show_trimmed_content = true\n "
+    },
+    {
+      "sha": "58f34257210da6077ae748fc73f9ad5cf368c44c",
+      "filename": "spec/fixtures/emails/spam_x_ses_spam_verdict.eml",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/spec/fixtures/emails/spam_x_ses_spam_verdict.eml",
+      "raw_url": "https://github.com/discourse/discourse/raw/e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4/spec/fixtures/emails/spam_x_ses_spam_verdict.eml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/fixtures/emails/spam_x_ses_spam_verdict.eml?ref=e7ff6809a39bbaafb5d0b88b23ec330f5233ccf4",
+      "patch": "@@ -0,0 +1,12 @@\n+Return-Path: <existing@bar.com>\n+From: Foo Bar <existing@bar.com>\n+To: category@bar.com\n+Subject: This is a topic from an existing user\n+Date: Fri, 15 Jan 2016 00:12:43 +0100\n+Message-ID: <32@foo.bar.mail>\n+Mime-Version: 1.0\n+Content-Type: text/plain; charset=UTF-8\n+Content-Transfer-Encoding: quoted-printable\n+X-SES-Spam-Verdict: FAIL\n+\n+Hey, this is a topic from an existing user ;)"
+    }
+  ]
+}
