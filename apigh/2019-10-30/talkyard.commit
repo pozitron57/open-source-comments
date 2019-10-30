@@ -1,0 +1,230 @@
+{
+  "sha": "535d68463841e9ea52d0738f95b359e58f4711d9",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NTM1ZDY4NDYzODQxZTllYTUyZDA3MzhmOTViMzU5ZTU4ZjQ3MTFkOQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-10-08T08:14:01Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2019-10-09T04:52:02Z"
+    },
+    "message": "Fix tests & priv notf bug: Lookup priv message members in tx\n\nAnd, turn of UTX notfs after a while. Add some tests.",
+    "tree": {
+      "sha": "952016d5a3aaed608169dcda4b6b47e66af4f137",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/952016d5a3aaed608169dcda4b6b47e66af4f137"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/535d68463841e9ea52d0738f95b359e58f4711d9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/535d68463841e9ea52d0738f95b359e58f4711d9",
+  "html_url": "https://github.com/debiki/talkyard/commit/535d68463841e9ea52d0738f95b359e58f4711d9",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/535d68463841e9ea52d0738f95b359e58f4711d9/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7286e33ecdf4253b594cedf7bea8c2b5c5ab8ece",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/7286e33ecdf4253b594cedf7bea8c2b5c5ab8ece",
+      "html_url": "https://github.com/debiki/talkyard/commit/7286e33ecdf4253b594cedf7bea8c2b5c5ab8ece"
+    }
+  ],
+  "stats": {
+    "total": 331,
+    "additions": 285,
+    "deletions": 46
+  },
+  "files": [
+    {
+      "sha": "2a63f88aefbecf59152054f812f020aabca350ff",
+      "filename": "app/debiki/dao/FeedsDao.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/app/debiki/dao/FeedsDao.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/app/debiki/dao/FeedsDao.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/dao/FeedsDao.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -65,7 +65,7 @@ trait FeedsDao {\n       post <- postsInclForbidden\n       pageMeta <- pageMetaById.get(post.pageId)\n       if maySeePostUseCache(\n-        post, pageMeta, user = None, maySeeUnlistedPages = onlyEmbeddedComments)._1.may\n+        post, pageMeta, ppt = None, maySeeUnlistedPages = onlyEmbeddedComments)._1.may\n     } yield post\n     val pageIds = postsOneMaySee.map(_.pageId).distinct\n     val pageStuffById = getPageStuffById(pageIds)"
+    },
+    {
+      "sha": "c2e62b584f4733e533b8043b630dd7e4fc0dfaa6",
+      "filename": "app/ed/server/auth/AuthzSiteDaoMixin.scala",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 14,
+      "changes": 33,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/app/ed/server/auth/AuthzSiteDaoMixin.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/app/ed/server/auth/AuthzSiteDaoMixin.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/ed/server/auth/AuthzSiteDaoMixin.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -172,43 +172,48 @@ trait AuthzSiteDaoMixin {\n     */\n   def maySeePostUseCache(pageId: PageId, postNr: PostNr, user: Option[Participant])\n         : (MaySeeOrWhyNot, String) = {\n-    maySeePostImpl(pageId, postNr, user, anyPost = None, anyTransaction = None)\n+    maySeePostImpl(pageId, postNr, user, anyPost = None, anyTx = None)\n   }\n \n \n-  def maySeePostUseCache(post: Post, pageMeta: PageMeta, user: Option[Participant],\n+  def maySeePostUseCache(post: Post, pageMeta: PageMeta, ppt: Option[Participant],\n                          maySeeUnlistedPages: Boolean): (MaySeeOrWhyNot, String) = {\n-    maySeePostImpl(pageId = null, postNr = PageParts.NoNr, user, anyPost = Some(post),\n+    maySeePostImpl(pageId = null, postNr = PageParts.NoNr, ppt, anyPost = Some(post),\n       anyPageMeta = Some(pageMeta), maySeeUnlistedPages = maySeeUnlistedPages,\n-      anyTransaction = None)\n+      anyTx = None)\n   }\n \n \n-  def throwIfMayNotSeePost(post: Post, author: Option[Participant])(transaction: SiteTransaction) {\n-    val (result, debugCode) =\n-      maySeePostImpl(post.pageId, postNr = PageParts.NoNr, author, anyPost = Some(post),\n-        anyTransaction = Some(transaction))\n+  def throwIfMayNotSeePost(post: Post, ppt: Option[Participant])(tx: SiteTransaction) {\n+    val (result, debugCode) = maySeePost(post, ppt, maySeeUnlistedPages = true)(tx)\n     if (!result.may)\n       throwIndistinguishableNotFound(s\"EdE4KFA20-$debugCode\")\n   }\n \n \n-  private def maySeePostImpl(pageId: PageId, postNr: PostNr, user: Option[Participant],\n+  def maySeePost(post: Post, ppt: Option[Participant], maySeeUnlistedPages: Boolean)\n+        (tx: SiteTransaction): (MaySeeOrWhyNot, String) = {\n+    maySeePostImpl(post.pageId, postNr = PageParts.NoNr, ppt, anyPost = Some(post),\n+      anyTx = Some(tx))\n+  }\n+\n+\n+  private def maySeePostImpl(pageId: PageId, postNr: PostNr, ppt: Option[Participant],\n                              anyPost: Option[Post], anyPageMeta: Option[PageMeta] = None,\n-                             maySeeUnlistedPages: Boolean = true, anyTransaction: Option[SiteTransaction])\n+                             maySeeUnlistedPages: Boolean = true, anyTx: Option[SiteTransaction])\n         : (MaySeeOrWhyNot, String) = {\n \n     require(anyPageMeta.isDefined ^ (pageId ne null), \"EdE25KWU24\")\n     require(anyPost.isDefined == (postNr == PageParts.NoNr), \"TyE3DJ8A0\")\n \n     val pageMeta = anyPageMeta getOrElse {\n-      anyTransaction.map(_.loadPageMeta(pageId)).getOrElse(getPageMeta(pageId)) getOrElse {\n+      anyTx.map(_.loadPageMeta(pageId)).getOrElse(getPageMeta(pageId)) getOrElse {\n         // Apparently the page was just deleted.\n         return (MaySeeOrWhyNot.NopeUnspecified, \"5KFUP2R0-Page-Not-Found\")\n       }\n     }\n \n-    val (maySeePage, debugCode) = maySeePageImpl(pageMeta, user, anyTransaction,\n+    val (maySeePage, debugCode) = maySeePageImpl(pageMeta, ppt, anyTx,\n           maySeeUnlisted = maySeeUnlistedPages)\n     if (!maySeePage)\n       return (MaySeeOrWhyNot.NopeUnspecified, s\"$debugCode-ABX94WN\")\n@@ -228,7 +233,7 @@ trait AuthzSiteDaoMixin {\n \n     // Staff may see all posts, if they may see the page. [5I8QS2A]\n     def isStaffOrAuthor =\n-      user.exists(_.isStaff) || user.exists(_.id == post.createdById)\n+      ppt.exists(_.isStaff) || ppt.exists(_.id == post.createdById)\n \n     if (post.isDeleted && !isStaffOrAuthor)\n       return (MaySeeOrWhyNot.NopePostDeleted, \"6PKJ2RU-Post-Deleted\")\n@@ -246,7 +251,7 @@ trait AuthzSiteDaoMixin {\n     val requester = getTheParticipant(forWho.id)\n     val (result, debugCode) =\n       maySeePostImpl(post.pageId, postNr = PageParts.NoNr, Some(requester), anyPost = Some(post),\n-        anyTransaction = None)\n+        anyTx = None)\n     if (!result.may)\n       throwIndistinguishableNotFound(s\"TyEM0REVTSK-$debugCode\")\n   }"
+    },
+    {
+      "sha": "ee83ecccaaf573fa7520fbd02138c340927d9ec2",
+      "filename": "app/ed/server/notf/NotificationGenerator.scala",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/app/ed/server/notf/NotificationGenerator.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/app/ed/server/notf/NotificationGenerator.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/ed/server/notf/NotificationGenerator.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -270,8 +270,8 @@ case class NotificationGenerator(\n     // notfs on behalf of this group, even if there're individual group *members*\n     // who may see the post (because of other groups they're in). [5AKTG7374])\n     val pageMeta = tx.loadPageMeta(newPost.pageId) getOrDie \"TyE05WKSJF3\"\n-    val (maySeePost, whyNot) = dao.maySeePostUseCache(newPost, pageMeta, Some(toUserMaybeGroup),\n-        maySeeUnlistedPages = true)\n+    val (maySeePost, whyNot) = dao.maySeePost(newPost, Some(toUserMaybeGroup),\n+        maySeeUnlistedPages = true)(tx)\n     if (!maySeePost.may)\n       return\n \n@@ -386,10 +386,10 @@ case class NotificationGenerator(\n \n     // Sync w [2069RSK25].  Test: [2069RSK25-B]\n     val pageMeta = tx.loadPageMeta(newPost.pageId) getOrDie \"TyE05WKSJF2\"\n-    def maySeePost(pp: Participant): Boolean = {\n-      val (maySeePost, whyNot) = dao.maySeePostUseCache(newPost, pageMeta, Some(pp),\n-          maySeeUnlistedPages = true)\n-      maySeePost.may\n+    def maySeePost(ppt: Participant): Boolean = {\n+      val (maySee, whyNot) = dao.maySeePost(\n+          newPost, Some(ppt), maySeeUnlistedPages = true)(tx)\n+      maySee.may\n     }\n \n     // Individual users' preferences override group preferences, on the same"
+    },
+    {
+      "sha": "09e4412fee3cfa560974b9f9d865a03c729f0ba9",
+      "filename": "app/ed/server/notf/Notifier.scala",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 17,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/app/ed/server/notf/Notifier.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/app/ed/server/notf/Notifier.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/ed/server/notf/Notifier.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -134,7 +134,7 @@ class Notifier(val systemDao: SystemDao, val siteDaoFactory: SiteDaoFactory)\n     val aDayAgo = now.minusDays(1)\n     val aWeekAgo = now.minusDays(7)\n     val dao = siteDaoFactory.newSiteDao(UtxSiteId)\n-    var usersById: Map[UserId, Participant] = null\n+    var usersById: Map[UserId, ParticipantInclDetails] = null\n     val userIdsNoReminder = dao.readOnlyTransaction { tx =>\n       val topics: Seq[PagePathAndMeta] =\n         tx.loadPagesInCategories(\n@@ -145,17 +145,24 @@ class Notifier(val systemDao: SystemDao, val siteDaoFactory: SiteDaoFactory)\n             includeAboutCategoryPages = false),\n           limit = 100)\n       val createdByUserIds = topics.map(_.meta.authorId).toSet\n-      usersById = tx.loadParticipantsAsMap(createdByUserIds)\n+      usersById = tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(createdByUserIds)\n       val emailsSentToAuthors: Map[UserId, Seq[Email]] = tx.loadEmailsSentTo(\n         createdByUserIds, after = aWeekAgo, emailType = EmailType.HelpExchangeReminder)\n       createdByUserIds filterNot { userId =>\n         emailsSentToAuthors.get(userId).exists(_.exists(_.tyype == EmailType.HelpExchangeReminder))\n       }\n     }\n \n-    for (userId <- userIdsNoReminder ; user <- usersById.get(userId) ; if user.email.nonEmpty ;\n-          userName <- user.anyName orElse user.anyUsername ;\n-          if userId <= 101 || globals.conf.getBoolean(\"utx.reminders.enabled\").is(true)) { HACK; SHOULD // remove when done testing live\n+    for {\n+      userId <- userIdsNoReminder\n+      userWithDetails: ParticipantInclDetails <- usersById.get(userId)\n+      // Completely stop sending reminders soon, so people won't flag as spam.\n+      if now.daysSince(userWithDetails.createdAt) < 21\n+      user = userWithDetails.noDetails  // weird. Maybe copy fns to InclDetails class too? Oh well\n+      if user.email.nonEmpty\n+      userName <- user.anyName orElse user.anyUsername\n+      if userId <= 101 || globals.conf.getBoolean(\"utx.reminders.enabled\").is(true)\n+    } { HACK; SHOULD // remove when done testing live\n       val UtxTestQueueCategoryId = 5\n \n       val email = Email.newWithId("
+    },
+    {
+      "sha": "128eda99fb458dde2a1be68a15ffc03b8e690d1b",
+      "filename": "client/app-staff/admin/users.staff.ts",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 8,
+      "changes": 17,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/client/app-staff/admin/users.staff.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/client/app-staff/admin/users.staff.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-staff/admin/users.staff.ts?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -203,14 +203,15 @@ const InvitedUsersPanel = createFactory({\n         r.div({ className: 'esAdminSectionIntro' },\n           r.h3({}, introText)),\n \n-        Input({ type: 'checkbox', label: \"Hide old invites, show only pending\", id: 'e_OnlPend',\n-          checked: onlyPending, onChange: () => this.setState({ onlyPending: !onlyPending }),\n-          }),\n-\n-        Input({ type: 'checkbox', label: \"Show only most recent invite, per person\", id: 'e_OnePerP',\n-          checked: onlyOnePerPerson, onChange: () => this.setState({\n-              onlyOnePerPerson: !onlyOnePerPerson }),\n-          }),\n+        Input({ type: 'checkbox', className: 'e_OnlPend',\n+            label: \"Hide old invites, show only pending\",\n+            checked: onlyPending,\n+            onChange: () => this.setState({ onlyPending: !onlyPending }) }),\n+\n+        Input({ type: 'checkbox', className: 'e_OnePerP',\n+            label: \"Show most recent invite only, per person\",\n+            checked: onlyOnePerPerson,\n+            onChange: () => this.setState({ onlyOnePerPerson: !onlyOnePerPerson }) }),\n \n         // Dupl table headers [3GK0YU2]\n         r.table({ className: 'dw-invites-table' },"
+    },
+    {
+      "sha": "b1f1eb456b183193b6b30f2969b1b32a66d87a4a",
+      "filename": "modules/ed-core/src/main/scala/com/debiki/core/SiteTransaction.scala",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/modules/ed-core/src/main/scala/com/debiki/core/SiteTransaction.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/modules/ed-core/src/main/scala/com/debiki/core/SiteTransaction.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/src/main/scala/com/debiki/core/SiteTransaction.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -485,6 +485,9 @@ trait SiteTransaction {\n   def loadMembersAndGroupsInclDetailsById(userIds: Iterable[UserId])\n         : immutable.Seq[MemberInclDetails]\n \n+  def loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(ids: Iterable[UserId])\n+        : immutable.Map[UserId, ParticipantInclDetails]\n+\n   def loadParticipantsInclDetailsByExtIdsAsMap_wrongGuestEmailNotfPerf(extImpIds: Iterable[ExtImpId])\n         : immutable.Map[ExtImpId, ParticipantInclDetails]\n "
+    },
+    {
+      "sha": "77db1624a6011241b7d4ddb25690c13e3343ff0c",
+      "filename": "modules/ed-core/src/main/scala/com/debiki/core/user.scala",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 5,
+      "changes": 16,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/modules/ed-core/src/main/scala/com/debiki/core/user.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/modules/ed-core/src/main/scala/com/debiki/core/user.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/src/main/scala/com/debiki/core/user.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -20,7 +20,7 @@ package com.debiki.core\n import com.google.{common => guava}\n import java.net.InetAddress\n import java.{net => jn, util => ju}\n-import org.scalactic.{ErrorMessage, Or}\n+import org.scalactic.{Bad, ErrorMessage, Or}\n import scala.collection.{immutable, mutable}\n import Prelude._\n import Participant._\n@@ -164,13 +164,14 @@ case class NewPasswordUserData(\n   username: String,\n   email: String,\n   password: Option[String],\n-  externalId: Option[String],\n+  externalId: Option[String],  // RENAME to ssoId\n   createdAt: When,\n   firstSeenAt: Option[When],\n   isAdmin: Boolean,\n   isOwner: Boolean,\n   isModerator: Boolean = false,\n   emailVerifiedAt: Option[When] = None,\n+  extId: Option[ExtImpId] = None,\n   trustLevel: TrustLevel = TrustLevel.NewMember,\n   threatLevel: ThreatLevel = ThreatLevel.HopefullySafe) {\n \n@@ -179,6 +180,7 @@ case class NewPasswordUserData(\n \n   def makeUser(userId: UserId) = UserInclDetails(\n     id = userId,\n+    extImpId = extId,\n     externalId = externalId,\n     fullName = name,\n     username = username,\n@@ -210,12 +212,16 @@ object NewPasswordUserData {\n   def create(\n         name: Option[String], username: String, email: String,\n         password: Option[String] = None,\n-        externalId: Option[String] = None,\n+        extId: Option[ExtImpId] = None,\n+        externalId: Option[String] = None, // RENAME to ssoId   SECURITY validate?\n         createdAt: When,\n         isAdmin: Boolean, isOwner: Boolean, isModerator: Boolean = false,\n         emailVerifiedAt: Option[When] = None,\n         trustLevel: TrustLevel = TrustLevel.NewMember,\n         threatLevel: ThreatLevel = ThreatLevel.HopefullySafe): NewPasswordUserData Or ErrorMessage = {\n+    extId.flatMap(Validation.findExtIdProblem) foreach { problem =>\n+      return Bad(problem)\n+    }\n     for {\n       okName <- Validation.checkName(name)\n       okUsername <- Validation.checkUsername(username)\n@@ -227,7 +233,7 @@ object NewPasswordUserData {\n         password = password, externalId = externalId, createdAt = createdAt,\n         firstSeenAt = Some(createdAt),  // for now\n         isAdmin = isAdmin, isOwner = isOwner, isModerator = isModerator,\n-        emailVerifiedAt = emailVerifiedAt,\n+        emailVerifiedAt = emailVerifiedAt, extId = extId,\n         trustLevel, threatLevel)\n     }\n   }\n@@ -861,7 +867,7 @@ sealed trait MemberInclDetails extends ParticipantInclDetails {\n case class UserInclDetails(  // ok for export\n   id: UserId,\n   extImpId: Option[ExtImpId] = None,  // RENAME to extId\n-  externalId: Option[String],   // RENAME to extSsoId NO, just 'ssoId', + in API protocol too? [395KSH20], no, just ssoId?\n+  externalId: Option[String],   // RENAME to 'ssoId', + in API protocol too? [395KSH20], no, just ssoId?\n   fullName: Option[String],\n   username: String,\n   createdAt: When,"
+    },
+    {
+      "sha": "b139274e9e337b92225e604292019d7d9738e5e6",
+      "filename": "modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/UserSiteDaoMixin.scala",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 4,
+      "changes": 23,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/UserSiteDaoMixin.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/UserSiteDaoMixin.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/UserSiteDaoMixin.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -1005,20 +1005,35 @@ trait UserSiteDaoMixin extends SiteTransaction {\n   }\n \n \n+  def loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+        ids: Iterable[UserId]): immutable.Map[UserId, ParticipantInclDetails] = {\n+    loadParticipantsInclDetails_wrongGuestEmailNotfPerf_Impl[UserId](\n+      ids.map(_.asAnyRef), \"user_id\", _.id)\n+  }\n+\n+\n   def loadParticipantsInclDetailsByExtIdsAsMap_wrongGuestEmailNotfPerf(\n         extImpIds: Iterable[ExtImpId])\n         : immutable.Map[ExtImpId, ParticipantInclDetails] = {\n-    if (extImpIds.isEmpty) return Map.empty\n+    loadParticipantsInclDetails_wrongGuestEmailNotfPerf_Impl[ExtImpId](\n+      extImpIds, \"ext_id\", _.extImpId.getOrDie(\"TyE205HKSD63\"))\n+  }\n+\n+\n+  def loadParticipantsInclDetails_wrongGuestEmailNotfPerf_Impl[ID](\n+        ids: Iterable[AnyRef], columnName: String, idFn: ParticipantInclDetails => ID)\n+        : immutable.Map[ID, ParticipantInclDetails] = {\n+    if (ids.isEmpty) return Map.empty\n     val query = s\"\"\"\n       select $CompleteUserSelectListItemsWithUserId\n       from users3\n       -- Should join w guest_prefs3 here to get guests' email notf prefs [_wrongGuestEmailNotfPerf]\n-      where site_id = ? and ext_id in (${makeInListFor(extImpIds)})\n+      where site_id = ? and $columnName in (${makeInListFor(ids)})\n       \"\"\"\n-    val values = siteId.asAnyRef :: extImpIds.toList\n+    val values = siteId.asAnyRef :: ids.toList\n     runQueryBuildMap(query, values, rs => {\n       val pp = getParticipantInclDetails_wrongGuestEmailNotfPerf(rs)\n-      pp.extImpId.getOrDie(\"TyE205HKSD63\") -> pp\n+      idFn(pp) -> pp\n     })\n   }\n "
+    },
+    {
+      "sha": "d3e6f7e2195ac0ee0f7ec9e6e0dff9b878fb74cf",
+      "filename": "tests/app/debiki/dao/DaoAppSuite.scala",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/tests/app/debiki/dao/DaoAppSuite.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/tests/app/debiki/dao/DaoAppSuite.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/debiki/dao/DaoAppSuite.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -192,12 +192,14 @@ class DaoAppSuite(\n   def createPasswordUser(username: String, dao: SiteDao,\n         trustLevel: TrustLevel = TrustLevel.NewMember,\n         threatLevel: ThreatLevel = ThreatLevel.HopefullySafe,\n-        createdAt: Option[When] = None, emailVerified: Boolean = false): User = {\n+        createdAt: Option[When] = None, emailVerified: Boolean = false,\n+        extId: Option[ExtImpId] = None): User = {\n     val theCreatedAt = createdAt.getOrElse(globals.now())\n     val member = dao.createPasswordUserCheckPasswordStrong(NewPasswordUserData.create(\n       name = Some(s\"User $username\"), username = username, email = s\"$username@x.co\",\n       password = Some(s\"public-$username\"), createdAt = theCreatedAt,\n-      isAdmin = false, isOwner = false, trustLevel = trustLevel, threatLevel = threatLevel).get,\n+      isAdmin = false, isOwner = false, trustLevel = trustLevel, threatLevel = threatLevel,\n+      extId = extId).get,\n       browserIdData)\n     if (emailVerified) {\n       dao.verifyPrimaryEmailAddress(member.id, theCreatedAt.toJavaDate)\n@@ -206,6 +208,12 @@ class DaoAppSuite(\n   }\n \n \n+  def createGroup(dao: SiteDao, username: String, fullName: Option[String],\n+      createdAt: Option[When] = None, firstSeenAt: Option[When] = None): Group = {\n+    dao.createGroup(username, fullName, Who(SystemUserId, browserIdData)).get\n+  }\n+\n+\n   def updateMemberPreferences(dao: SiteDao, memberId: UserId,\n         fn: Function1[AboutUserPrefs, AboutUserPrefs]) {\n     val member = dao.loadTheUserInclDetailsById(memberId)"
+    },
+    {
+      "sha": "1c761af1742863b1ff2562c71fd771a46d83f84e",
+      "filename": "tests/app/ed/server/dao/SiteTxLoadParticipantsAppSpec.scala",
+      "status": "added",
+      "additions": 147,
+      "deletions": 0,
+      "changes": 147,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/tests/app/ed/server/dao/SiteTxLoadParticipantsAppSpec.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/tests/app/ed/server/dao/SiteTxLoadParticipantsAppSpec.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/ed/server/dao/SiteTxLoadParticipantsAppSpec.scala?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -0,0 +1,147 @@\n+/**\n+ * Copyright (c) 2019 Kaj Magnus Lindberg\n+ *\n+ * This program is free software: you can redistribute it and/or modify\n+ * it under the terms of the GNU Affero General Public License as\n+ * published by the Free Software Foundation, either version 3 of the\n+ * License, or (at your option) any later version.\n+ *\n+ * This program is distributed in the hope that it will be useful,\n+ * but WITHOUT ANY WARRANTY; without even the implied warranty of\n+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n+ * GNU Affero General Public License for more details.\n+ *\n+ * You should have received a copy of the GNU Affero General Public License\n+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n+ */\n+\n+package ed.server.dao\n+\n+import com.debiki.core._\n+import debiki._\n+import debiki.dao.{CreateForumResult, DaoAppSuite, SiteDao}\n+\n+\n+class SiteTxLoadParticipantsAppSpec extends DaoAppSuite {\n+\n+\n+  \"SiteTransaction can load participants\" - {\n+    var dao: SiteDao = null\n+    var admin: Participant = null\n+    var group: Group = null\n+    var userA: Participant = null\n+    var userADetails: UserInclDetails = null\n+    var userB: Participant = null\n+    var userBDetails: UserInclDetails = null\n+    var guest: Participant = null\n+\n+    val userBExtId = \"u_b_ext_id space .,:;-?^#! chars\"\n+\n+    \"prepare: create site and users\" in {\n+      globals.systemDao.getOrCreateFirstSite()\n+      dao = globals.siteDao(Site.FirstSiteId)\n+    }\n+\n+    \"find no participants when there are none\" - {\n+      \"by id\" in {\n+        dao.readOnlyTransaction { tx =>\n+          info(\"with details\")\n+          tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+            Nil) mustBe Map.empty\n+          tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+            Seq(100, 101, 102)) mustBe Map.empty\n+\n+          info(\"no details\")\n+          tx.loadParticipantsAsMap(Nil) mustBe Map.empty\n+          tx.loadParticipantsAsMap(Seq(100, 101, 102)) mustBe Map.empty\n+        }\n+      }\n+\n+      \"by ext id\" in {\n+        dao.readOnlyTransaction { tx =>\n+          tx.loadParticipantsInclDetailsByExtIdsAsMap_wrongGuestEmailNotfPerf(\n+            Nil) mustBe Map.empty\n+          tx.loadParticipantsInclDetailsByExtIdsAsMap_wrongGuestEmailNotfPerf(\n+            Seq(\"id_one\", \"id_two\", userBExtId)) mustBe Map.empty\n+        }\n+      }\n+    }\n+\n+\n+    \"prepare 2: create participants\" in {\n+      admin = createPasswordOwner(s\"poc_adm\", dao)\n+      group = createGroup(dao, \"poc_grp\", fullName = None)\n+      userA = createPasswordUser(s\"poc_u_a\", dao)\n+      userADetails = dao.loadTheUserInclDetailsById(userA.id)\n+      userB = createPasswordUser(s\"poc_u_b\", dao, extId = Some(userBExtId))\n+      userBDetails = dao.loadTheUserInclDetailsById(userB.id)\n+      guest = dao.loginAsGuest(GuestLoginAttempt(ip = \"2.2.2.2\", globals.now().toJavaDate,\n+        name = \"Guestellina\", guestBrowserId = \"guestellinacookie\"))\n+    }\n+\n+\n+    \"load groups\" in {\n+      dao.readOnlyTransaction { tx =>\n+        info(\"with details\")\n+        tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+          Seq(group.id)) mustBe Map(group.id -> group)\n+\n+        info(\"no details\")\n+        tx.loadParticipantsAsMap(Seq(group.id)) mustBe Map(group.id -> group)\n+      }\n+    }\n+\n+\n+    \"load users\" - {\n+      \"by id\" in {\n+        dao.readOnlyTransaction { tx =>\n+          info(\"with details\")\n+          tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+            Seq(userA.id)) mustBe Map(userA.id -> userADetails)\n+\n+          info(\"no details\")\n+          tx.loadParticipantsAsMap(Seq(userB.id)) mustBe Map(userB.id -> userB)\n+        }\n+      }\n+\n+      \"by ext id\" in {\n+        dao.readOnlyTransaction { tx =>\n+          tx.loadParticipantsInclDetailsByExtIdsAsMap_wrongGuestEmailNotfPerf(\n+            Seq(\"id_one\", \"id_two\", userBExtId)) mustBe Map(\n+              userBExtId -> userBDetails)\n+        }\n+      }\n+    }\n+\n+\n+    \"load guests\" in {\n+      dao.readOnlyTransaction { tx =>\n+        tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+          Seq(guest.id)) mustBe Map(guest.id -> guest)\n+\n+        info(\"no details\")\n+        tx.loadParticipantsAsMap(Seq(guest.id)) mustBe Map(guest.id -> guest)\n+      }\n+    }\n+\n+\n+    \"load all: groups, users, guests\" in {\n+      dao.readOnlyTransaction { tx =>\n+        info(\"with details\")\n+        tx.loadParticipantsInclDetailsByIdsAsMap_wrongGuestEmailNotfPerf(\n+          Seq(guest.id, userB.id, group.id)) mustBe Map(\n+            group.id -> group,\n+            guest.id -> guest,\n+            userB.id -> userBDetails)\n+\n+        info(\"no details\")\n+        tx.loadParticipantsAsMap(\n+          Seq(guest.id, userB.id, group.id)) mustBe Map(\n+          group.id -> group,\n+          guest.id -> guest,\n+          userB.id -> userB)\n+      }\n+    }\n+  }\n+\n+}"
+    },
+    {
+      "sha": "14c2f8a0ba6aaebac99066aa24a4213a5af37b99",
+      "filename": "tests/e2e/specs/invites-many-retry.2browsers.test.ts",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 1,
+      "changes": 41,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/tests/e2e/specs/invites-many-retry.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/tests/e2e/specs/invites-many-retry.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/invites-many-retry.2browsers.test.ts?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -194,7 +194,27 @@ describe(\"invites-many-retry  TyT5BKA2WA30\", () => {\n     owensBrowser.inviteDialog.cancel();\n   });\n \n-  it(\"Now: the invite list lists all invites, in the correct statuses\", () => {\n+  it(\"Now: the invite list lists all invites, in the correct statuses \" +\n+      \"— but only once per user: addr2Retry just once\", () => {\n+    owensBrowser.invitedUsersList.waitAssertInviteRowPresent(1, {\n+      email: addr2Retry, accepted: false,\n+    });\n+    owensBrowser.invitedUsersList.waitAssertInviteRowPresent(2, {\n+      email: addr1Accepts, acceptedByUsername: addr1Username,\n+    });\n+    owensBrowser.invitedUsersList.waitAssertInviteRowPresent(3, {\n+      email: addr3, accepted: false,\n+    });\n+    owensBrowser.invitedUsersList.waitAssertInviteRowPresent(4, {\n+      email: addr4, accepted: false,\n+    });\n+  });\n+\n+  it(\"Owen unchecks the Show-one-per-user filter\", () => {\n+    owensBrowser.invitedUsersList.setShowOnePerUserOnly(false);\n+  });\n+\n+  it(\"Now: the invite list lists *all* invites, incl addr2Retry twice\", () => {\n     owensBrowser.invitedUsersList.waitAssertInviteRowPresent(1, {\n       email: addr2Retry, accepted: false,\n     });\n@@ -260,6 +280,25 @@ describe(\"invites-many-retry  TyT5BKA2WA30\", () => {\n     // Inv to addr 1 = accepted       index 5\n   });\n \n+  it(\"Owen hides old invites, shows only pending\", () => {\n+    owensBrowser.invitedUsersList.setHideOld(true);\n+  });\n+\n+  it(\"... Owens now sees only one invite, waiting to be accepted\", () => {\n+    owensBrowser.invitedUsersList.waitAssertInviteRowPresent(1, {\n+      email: addr4, accepted: false,\n+    });\n+  });\n+\n+  it(\"... but no other invites; they're filtered away\", () => {\n+    assert.equal(owensBrowser.invitedUsersList.countNumInvited(), 1);\n+  });\n+\n+  it(\"Owen shows all invites\", () => {\n+    owensBrowser.invitedUsersList.setHideOld(false);\n+    owensBrowser.invitedUsersList.setShowOnePerUserOnly(false);\n+  });\n+\n   it(\"... in Owens browser, the most recent addr2 invite now appears as accepted\", () => {\n     owensBrowser.invitedUsersList.waitAssertInviteRowPresent(3, {\n       email: addr2Retry, acceptedByUsername: addr2Username,"
+    },
+    {
+      "sha": "4d781559d37e96b985001282f3cab10694ff98bc",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/debiki/talkyard/blob/535d68463841e9ea52d0738f95b359e58f4711d9/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/535d68463841e9ea52d0738f95b359e58f4711d9/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=535d68463841e9ea52d0738f95b359e58f4711d9",
+      "patch": "@@ -5019,6 +5019,14 @@ function pagesFor(browser) {\n         api.waitForExist('.s_InvsL');\n       },\n \n+      setHideOld: (value: boolean) => {\n+        setCheckbox('.e_OnlPend input', value);\n+      },\n+\n+      setShowOnePerUserOnly: (value: boolean) => {\n+        setCheckbox('.e_OnePerP input', value);\n+      },\n+\n       assertHasAcceptedInvite: (username: string) => {\n         api.assertAnyTextMatches(api.invitedUsersList.invitedUserSelector, username);\n       },"
+    }
+  ]
+}
