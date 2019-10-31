@@ -1,0 +1,182 @@
+{
+  "sha": "11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxMWY1MGVlZTNiYjNmZGQ0MGRiMWYxOTJjMmU2YjdiMzFkOTYxZjEz",
+  "commit": {
+    "author": {
+      "name": "Mark VanLandingham",
+      "email": "mark.vanlandingham@discourse.org",
+      "date": "2019-10-31T16:54:46Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-10-31T16:54:46Z"
+    },
+    "message": "DEV: Remove pretty_text import hack & still work server-side (#8266)\n\n* FIX: move attachment_css_class constant out of upload-short-url for discourse-markdown-it\r\n\r\n* Use setTimeout instead of ember later\r\n\r\n* WIP. Not sure if this worked.\r\n\r\n* oneboxer cache in separate file\r\n\r\n* Reset onebox cache still\r\n\r\n* set functions for oneboxers cache",
+    "tree": {
+      "sha": "ae86da0990df85b89c38da05184c9dcd3c8e409e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ae86da0990df85b89c38da05184c9dcd3c8e409e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJduxHWCRBK7hj4Ov3rIwAAdHIIAJZtMKL8q4mT8y1RmpROSN5k\nZD98+MO3fU8XwZvHIAmCIoDJvCmezH4vzKvdMFZitLt4ZTDmT2nHx7T4cz8phwv2\nV1kus4EFXV7ez6XWO/WtBkQj56b4EMfi27Y7Hm2VOXCkqmU4YKtGGh1j2tWD6hpO\nJfZb4k5byZXiPOR169Uq2uIOpplFKwWjESurRyq69UMVF0rrcojcKaruOElb0tMm\ndCFexHwf3lfUNcFfuYG4Cts/f2fUF2sFqDtc/sRVycmy5r25tMHW4NafymHK3A3B\nkF8Ro8tv0wRNMoGLz8XtT0Btu6qi34Y6Tiix2Y/D8WadlJoRozKFsZV1vk8vV9s=\n=Hq65\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ae86da0990df85b89c38da05184c9dcd3c8e409e\nparent 1f88ecf6d85347fdbd1114c5447947f690d0eaef\nauthor Mark VanLandingham <mark.vanlandingham@discourse.org> 1572540886 -0500\ncommitter GitHub <noreply@github.com> 1572540886 -0500\n\nDEV: Remove pretty_text import hack & still work server-side (#8266)\n\n* FIX: move attachment_css_class constant out of upload-short-url for discourse-markdown-it\r\n\r\n* Use setTimeout instead of ember later\r\n\r\n* WIP. Not sure if this worked.\r\n\r\n* oneboxer cache in separate file\r\n\r\n* Reset onebox cache still\r\n\r\n* set functions for oneboxers cache\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+  "html_url": "https://github.com/discourse/discourse/commit/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/comments",
+  "author": {
+    "login": "markvanlan",
+    "id": 16214023,
+    "node_id": "MDQ6VXNlcjE2MjE0MDIz",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/16214023?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/markvanlan",
+    "html_url": "https://github.com/markvanlan",
+    "followers_url": "https://api.github.com/users/markvanlan/followers",
+    "following_url": "https://api.github.com/users/markvanlan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/markvanlan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/markvanlan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/markvanlan/subscriptions",
+    "organizations_url": "https://api.github.com/users/markvanlan/orgs",
+    "repos_url": "https://api.github.com/users/markvanlan/repos",
+    "events_url": "https://api.github.com/users/markvanlan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/markvanlan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1f88ecf6d85347fdbd1114c5447947f690d0eaef",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/1f88ecf6d85347fdbd1114c5447947f690d0eaef",
+      "html_url": "https://github.com/discourse/discourse/commit/1f88ecf6d85347fdbd1114c5447947f690d0eaef"
+    }
+  ],
+  "stats": {
+    "total": 78,
+    "additions": 50,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "11bdb9d2fd4bb8bbd831af284cf93c33dfb486ec",
+      "filename": "app/assets/javascripts/discourse-loader.js",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 6,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/discourse-loader.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/discourse-loader.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse-loader.js?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -68,12 +68,6 @@ var define, requirejs;\n         inject: Ember.inject.service\n       }\n     };\n-  } else if (typeof __PRETTY_TEXT !== \"undefined\") {\n-    // This is a hack because our server side code includes the pretty_text bundle\n-    // which relies on ember now that we're using modules properly.\n-    // The proper fix would be to move the upload urls code out of the pretty text\n-    // bundle and remove this code. It should never be called;\n-    EMBER_MODULES[\"@ember/runloop\"] = {};\n   }\n \n   var _isArray;"
+    },
+    {
+      "sha": "556b24bda86c2d0c017c67b25a12421548483266",
+      "filename": "app/assets/javascripts/discourse/components/composer-title.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/discourse/components/composer-title.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/discourse/components/composer-title.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/composer-title.js.es6?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -8,7 +8,8 @@ import {\n   observes\n } from \"ember-addons/ember-computed-decorators\";\n import InputValidation from \"discourse/models/input-validation\";\n-import { load, lookupCache } from \"pretty-text/oneboxer\";\n+import { load } from \"pretty-text/oneboxer\";\n+import { lookupCache } from \"pretty-text/oneboxer-cache\";\n import { ajax } from \"discourse/lib/ajax\";\n import afterTransition from \"discourse/lib/after-transition\";\n "
+    },
+    {
+      "sha": "c964a71cdaf4c0b43da86224a9a7dafdda2df524",
+      "filename": "app/assets/javascripts/pretty-text-bundle.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text-bundle.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text-bundle.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text-bundle.js?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -10,6 +10,7 @@\n //= require ./pretty-text/white-lister\n //= require ./pretty-text/sanitizer\n //= require ./pretty-text/oneboxer\n+//= require ./pretty-text/oneboxer-cache\n //= require ./pretty-text/context/inline-onebox-css-classes\n //= require ./pretty-text/inline-oneboxer\n //= require ./pretty-text/upload-short-url"
+    },
+    {
+      "sha": "7bf824de7f6f61fc3576834729003dd15887e825",
+      "filename": "app/assets/javascripts/pretty-text/engines/discourse-markdown-it.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/engines/discourse-markdown-it.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/engines/discourse-markdown-it.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/engines/discourse-markdown-it.js.es6?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -1,7 +1,8 @@\n import { default as WhiteLister } from \"pretty-text/white-lister\";\n import { sanitize } from \"pretty-text/sanitizer\";\n import guid from \"pretty-text/guid\";\n-import { ATTACHMENT_CSS_CLASS } from \"pretty-text/upload-short-url\";\n+\n+export const ATTACHMENT_CSS_CLASS = \"attachment\";\n \n function deprecate(feature, name) {\n   return function() {"
+    },
+    {
+      "sha": "3203110c9466267c8875934e01f3479901bc9a41",
+      "filename": "app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js.es6?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -1,4 +1,4 @@\n-import { lookupCache } from \"pretty-text/oneboxer\";\n+import { lookupCache } from \"pretty-text/oneboxer-cache\";\n import { cachedInlineOnebox } from \"pretty-text/inline-oneboxer\";\n \n import {"
+    },
+    {
+      "sha": "c9a98165ce77564d98440891b90d95bad12a829b",
+      "filename": "app/assets/javascripts/pretty-text/oneboxer-cache.js.es6",
+      "status": "added",
+      "additions": 29,
+      "deletions": 0,
+      "changes": 29,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/oneboxer-cache.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/oneboxer-cache.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/oneboxer-cache.js.es6?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -0,0 +1,29 @@\n+export let localCache = {};\n+export let failedCache = {};\n+\n+// Sometimes jQuery will return URLs with trailing slashes when the\n+// `href` didn't have them.\n+export function resetLocalCache() {\n+  localCache = {};\n+}\n+\n+export function resetFailedCache() {\n+  failedCache = {};\n+}\n+\n+export function setLocalCache(key, value) {\n+  localCache[key] = value;\n+}\n+\n+export function setFailedCache(key, value) {\n+  failedCache[key] = value;\n+}\n+\n+export function normalize(url) {\n+  return url.replace(/\\/$/, \"\");\n+}\n+\n+export function lookupCache(url) {\n+  const cached = localCache[normalize(url)];\n+  return cached && cached.prop(\"outerHTML\");\n+}"
+    },
+    {
+      "sha": "cb7d94b641f42d19a04e7dc856037c854d52fa9b",
+      "filename": "app/assets/javascripts/pretty-text/oneboxer.js.es6",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 17,
+      "changes": 31,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/oneboxer.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/oneboxer.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/oneboxer.js.es6?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -1,15 +1,23 @@\n import { later } from \"@ember/runloop\";\n+import {\n+  localCache,\n+  failedCache,\n+  setLocalCache,\n+  setFailedCache,\n+  resetLocalCache,\n+  resetFailedCache,\n+  normalize\n+} from \"pretty-text/oneboxer-cache\";\n+\n let timeout;\n const loadingQueue = [];\n-let localCache = {};\n-let failedCache = {};\n \n export const LOADING_ONEBOX_CSS_CLASS = \"loading-onebox\";\n \n export function resetCache() {\n   loadingQueue.clear();\n-  localCache = {};\n-  failedCache = {};\n+  resetLocalCache();\n+  resetFailedCache();\n }\n \n function resolveSize(img) {\n@@ -68,7 +76,7 @@ function loadNext(ajax) {\n     .then(\n       html => {\n         let $html = $(html);\n-        localCache[normalize(url)] = $html;\n+        setLocalCache(normalize(url), $html);\n         $elem.replaceWith($html);\n         applySquareGenericOnebox($html, normalize(url));\n       },\n@@ -78,7 +86,7 @@ function loadNext(ajax) {\n           removeLoading = false;\n           loadingQueue.unshift({ url, refresh, $elem, categoryId, topicId });\n         } else {\n-          failedCache[normalize(url)] = true;\n+          setFailedCache[normalize(url)] = true;\n         }\n       }\n     )\n@@ -133,14 +141,3 @@ export function load({\n     timeout = timeout || later(() => loadNext(ajax), 150);\n   }\n }\n-\n-// Sometimes jQuery will return URLs with trailing slashes when the\n-// `href` didn't have them.\n-function normalize(url) {\n-  return url.replace(/\\/$/, \"\");\n-}\n-\n-export function lookupCache(url) {\n-  const cached = localCache[normalize(url)];\n-  return cached && cached.prop(\"outerHTML\");\n-}"
+    },
+    {
+      "sha": "916f899b6ac6de15526fd3b2d93bfa04da0afa95",
+      "filename": "app/assets/javascripts/pretty-text/upload-short-url.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/upload-short-url.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/11f50eee3bb3fdd40db1f192c2e6b7b31d961f13/app/assets/javascripts/pretty-text/upload-short-url.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/upload-short-url.js.es6?ref=11f50eee3bb3fdd40db1f192c2e6b7b31d961f13",
+      "patch": "@@ -1,4 +1,5 @@\n import { debounce } from \"@ember/runloop\";\n+import { ATTACHMENT_CSS_CLASS } from \"./engines/discourse-markdown-it\";\n let _cache = {};\n \n export function lookupCachedUploadUrl(shortUrl) {\n@@ -38,8 +39,6 @@ export function resetCache() {\n   _cache = {};\n }\n \n-export const ATTACHMENT_CSS_CLASS = \"attachment\";\n-\n function _loadCachedShortUrls($uploads) {\n   $uploads.each((idx, upload) => {\n     const $upload = $(upload);"
+    }
+  ]
+}

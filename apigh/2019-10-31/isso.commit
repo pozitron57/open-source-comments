@@ -1,0 +1,110 @@
+{
+  "sha": "c24ee69a1e069795961ff073bc090c8380eee852",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTpjMjRlZTY5YTFlMDY5Nzk1OTYxZmYwNzNiYzA5MGM4MzgwZWVlODUy",
+  "commit": {
+    "author": {
+      "name": "Alberto Mardegan",
+      "email": "mardy@users.sourceforge.net",
+      "date": "2019-10-13T17:55:17Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-10-13T17:55:17Z"
+    },
+    "message": "contrib: Add Blogger importer tool (#529)\n\n* contrib: Add Blogger importer tool\r\n* doc: fix minor issues in migration documentation",
+    "tree": {
+      "sha": "e239bf1f2a6d5f49a376073eef2899adce2d5c52",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/e239bf1f2a6d5f49a376073eef2899adce2d5c52"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/c24ee69a1e069795961ff073bc090c8380eee852",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/c24ee69a1e069795961ff073bc090c8380eee852",
+  "html_url": "https://github.com/posativ/isso/commit/c24ee69a1e069795961ff073bc090c8380eee852",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/c24ee69a1e069795961ff073bc090c8380eee852/comments",
+  "author": {
+    "login": "mardy",
+    "id": 59287,
+    "node_id": "MDQ6VXNlcjU5Mjg3",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/59287?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mardy",
+    "html_url": "https://github.com/mardy",
+    "followers_url": "https://api.github.com/users/mardy/followers",
+    "following_url": "https://api.github.com/users/mardy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mardy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mardy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mardy/subscriptions",
+    "organizations_url": "https://api.github.com/users/mardy/orgs",
+    "repos_url": "https://api.github.com/users/mardy/repos",
+    "events_url": "https://api.github.com/users/mardy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mardy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+      "url": "https://api.github.com/repos/posativ/isso/commits/f4b0376f1a9d43a230a2aeef57c977af93cba9dd",
+      "html_url": "https://github.com/posativ/isso/commit/f4b0376f1a9d43a230a2aeef57c977af93cba9dd"
+    }
+  ],
+  "stats": {
+    "total": 127,
+    "additions": 125,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "7ee57fbd84f8c4ce2d3f241c7519e926fb28a410",
+      "filename": "contrib/import_blogger.py",
+      "status": "added",
+      "additions": 123,
+      "deletions": 0,
+      "changes": 123,
+      "blob_url": "https://github.com/posativ/isso/blob/c24ee69a1e069795961ff073bc090c8380eee852/contrib/import_blogger.py",
+      "raw_url": "https://github.com/posativ/isso/raw/c24ee69a1e069795961ff073bc090c8380eee852/contrib/import_blogger.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/contrib/import_blogger.py?ref=c24ee69a1e069795961ff073bc090c8380eee852",
+      "patch": "@@ -0,0 +1,123 @@\n+#!/usr/bin/env python\n+# -*- encoding: utf-8 -*-\n+\n+\"\"\"Comment importer from Blogger\n+\n+This python script can convert comments posted to a Blogger-powered blog to a\n+JSON file with can then be imported into Isso (by following the procedure\n+explained in docs/docs/extras/advanced-migration.rst.\n+\n+The script can be run like this:\n+\n+    python import_blogger.py -p 'http://myblog.com/' blogger.xml out.json\n+\n+where `blogger.xml` is a dump of the blog produced by the Blogger platform, and\n+the URL following the `-p` option is a prefix that will be applied to all post\n+URLs: the original host will be stripped and the path will be appended to the\n+string you specify here (this can be useful in the case that your blog moved to\n+a different domain, subdomain, or just into a new directory).\n+The `out.json` file is the file which will be generated by this tool, and which\n+can then be fed into isso:\n+\n+    isso -c /path/to/isso.cfg import -t generic out.json\n+\"\"\"\n+\n+from __future__ import unicode_literals\n+\n+import json\n+\n+import feedparser\n+import time\n+from urllib.parse import urlparse\n+\n+\n+class Post:\n+    def __init__(self, url):\n+        self.url = url\n+        self.title = None\n+        self.comments = []\n+\n+    def add_comment(self, comment):\n+        comment['id'] = len(self.comments) + 1\n+        self.comments.append(comment)\n+\n+\n+def encode_post(post):\n+    ret = {}\n+    ret['id'] = post.url\n+    ret['title'] = post.title\n+    ret['comments'] = post.comments\n+    return ret\n+\n+\n+class ImportBlogger:\n+    TYPE_COMMENT = 'http://schemas.google.com/blogger/2008/kind#comment'\n+    TYPE_POST = 'http://schemas.google.com/blogger/2008/kind#post'\n+\n+    def __init__(self, filename_in, filename_out, prefix):\n+        self.channel = feedparser.parse(filename_in)\n+        self.filename_out = filename_out\n+        self.prefix = prefix\n+\n+    def run(self):\n+        self.posts = {}\n+        for item in self.channel.entries:\n+            terms = [tag.term for tag in item.tags]\n+            if not terms:\n+                continue\n+            if terms[0] == self.TYPE_COMMENT:\n+                post = self.ensure_post(item)\n+                post.add_comment(self.process_comment(item))\n+            elif terms[0] == self.TYPE_POST:\n+                self.process_post(item)\n+\n+        data = [encode_post(p) for p in self.posts.values() if p.comments]\n+        with open(self.filename_out, 'w') as fp:\n+            json.dump(data, fp, indent=2)\n+\n+    def process_post(self, item):\n+        pid = self.post_id(item)\n+        if pid in self.posts:\n+            post = self.posts[pid]\n+        else:\n+            post = Post(pid)\n+            self.posts[pid] = post\n+        post.title = item.title\n+\n+    def ensure_post(self, item):\n+        pid = self.post_id(item)\n+        post = self.posts.get(pid, None)\n+        if not post:\n+            post = Post(pid)\n+            self.posts[pid] = post\n+        return post\n+\n+    def process_comment(self, item):\n+        comment = {}\n+        comment['author'] = item.author_detail.name\n+        comment['email'] = item.author_detail.email\n+        comment['website'] = item.author_detail.get('href', '')\n+        t = time.strftime('%Y-%m-%d %H:%M:%S', item.published_parsed)\n+        comment['created'] = t\n+        comment['text'] = item.content[0].value\n+        comment['remote_addr'] = '127.0.0.1'\n+        return comment\n+\n+    def post_id(self, item):\n+        u = urlparse(item.link)\n+        return self.prefix + u.path\n+\n+\n+if __name__ == '__main__':\n+    import argparse\n+    parser = argparse.ArgumentParser(\n+        description='Convert comments from blogger.com')\n+    parser.add_argument('input', help='input file')\n+    parser.add_argument('output', help='output file')\n+    parser.add_argument('-p', dest='prefix',\n+                        help='prefix to be added to paths (ID)',\n+                        type=str, default='')\n+    args = parser.parse_args()\n+\n+    importer = ImportBlogger(args.input, args.output, args.prefix)\n+    importer.run()"
+    },
+    {
+      "sha": "7b8555bcf29ea5529aca80287a924ffaaca794a1",
+      "filename": "docs/docs/extras/advanced-migration.rst",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/c24ee69a1e069795961ff073bc090c8380eee852/docs/docs/extras/advanced-migration.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/c24ee69a1e069795961ff073bc090c8380eee852/docs/docs/extras/advanced-migration.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs/docs/extras/advanced-migration.rst?ref=c24ee69a1e069795961ff073bc090c8380eee852",
+      "patch": "@@ -35,8 +35,8 @@ Example:\n     [\n         {\n             \"id\": \"/blog/article1\",\n-            \"title\": \"First article!\"\n-            comments\": [\n+            \"title\": \"First article!\",\n+            \"comments\": [\n                 {\n                     \"author\": \"James\",\n                     \"created\": \"2018-11-28 17:24:23\","
+    }
+  ]
+}
