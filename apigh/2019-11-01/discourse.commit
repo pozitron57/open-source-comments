@@ -1,0 +1,98 @@
+{
+  "sha": "2b8a013e322c591f862d37bec653b6ed8aedb28d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyYjhhMDEzZTMyMmM1OTFmODYyZDM3YmVjNjUzYjZlZDhhZWRiMjhk",
+  "commit": {
+    "author": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-11-01T13:00:40Z"
+    },
+    "committer": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2019-11-01T13:07:51Z"
+    },
+    "message": "DEV: Reduce duplication",
+    "tree": {
+      "sha": "d4022c822e12e335b379350c49fdcc52540a48c2",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d4022c822e12e335b379350c49fdcc52540a48c2"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2b8a013e322c591f862d37bec653b6ed8aedb28d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2b8a013e322c591f862d37bec653b6ed8aedb28d",
+  "html_url": "https://github.com/discourse/discourse/commit/2b8a013e322c591f862d37bec653b6ed8aedb28d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2b8a013e322c591f862d37bec653b6ed8aedb28d/comments",
+  "author": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f9a05e4ae79fb6a4f7568e183cb0fcc24de0a12a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f9a05e4ae79fb6a4f7568e183cb0fcc24de0a12a",
+      "html_url": "https://github.com/discourse/discourse/commit/f9a05e4ae79fb6a4f7568e183cb0fcc24de0a12a"
+    }
+  ],
+  "stats": {
+    "total": 33,
+    "additions": 15,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "f1b0d3a2f2ae4a9fc4df0b996773132741b649d3",
+      "filename": "spec/requests/tags_controller_spec.rb",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 18,
+      "changes": 33,
+      "blob_url": "https://github.com/discourse/discourse/blob/2b8a013e322c591f862d37bec653b6ed8aedb28d/spec/requests/tags_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2b8a013e322c591f862d37bec653b6ed8aedb28d/spec/requests/tags_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/tags_controller_spec.rb?ref=2b8a013e322c591f862d37bec653b6ed8aedb28d",
+      "patch": "@@ -3,6 +3,12 @@\n require 'rails_helper'\n \n describe TagsController do\n+  define_method(:get_json_body) do\n+    ::JSON.parse(response.body)\n+  end\n+\n+  let(:json) { get_json_body }\n+\n   fab!(:user) { Fabricate(:user) }\n   fab!(:admin) { Fabricate(:admin) }\n   fab!(:regular_user) { Fabricate(:trust_level_4) }\n@@ -28,7 +34,7 @@\n \n         expect(response.status).to eq(200)\n \n-        tags = JSON.parse(response.body)[\"tags\"]\n+        tags = json[\"tags\"]\n         expect(tags.length).to eq(1)\n         expect(tags[0]['text']).to eq(\"topic-test\")\n       end\n@@ -53,7 +59,7 @@\n \n         expect(response.status).to eq(200)\n \n-        tags = JSON.parse(response.body)[\"tags\"]\n+        tags = json[\"tags\"]\n         expect(tags.length).to eq(2)\n       end\n \n@@ -94,7 +100,7 @@\n \n       expect(response.status).to eq(200)\n \n-      response_tag = JSON.parse(response.body)[\"valid\"].first\n+      response_tag = json[\"valid\"].first\n       expect(response_tag[\"value\"]).to eq(tag.name)\n     end\n   end\n@@ -160,7 +166,7 @@\n \n         expect(response.status).to eq(200)\n \n-        tag = JSON.parse(response.body)['tags']\n+        tag = json['tags']\n         expect(tag[0][\"id\"]).to eq('test')\n       end\n     end\n@@ -175,7 +181,7 @@\n \n         expect(response.status).to eq(200)\n \n-        tag = JSON.parse(response.body)['tags']\n+        tag = json['tags']\n         expect(tag[0][\"id\"]).to eq('test')\n       end\n \n@@ -184,7 +190,7 @@\n \n         expect(response.status).to eq(200)\n \n-        tag = JSON.parse(response.body)['tags']\n+        tag = json['tags']\n         expect(tag[0][\"id\"]).to eq('test')\n       end\n     end\n@@ -209,7 +215,7 @@\n \n     context 'tagging enabled' do\n       def parse_topic_ids\n-        JSON.parse(response.body)[\"topic_list\"][\"topics\"]\n+        get_json_body[\"topic_list\"][\"topics\"]\n           .map { |topic| topic[\"id\"] }\n       end\n \n@@ -353,7 +359,6 @@ def parse_topic_ids\n         tag_names.each { |name| Fabricate(:tag, name: name) }\n         get \"/tags/filter/search.json\", params: { q: 'stu' }\n         expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n         expect(json[\"results\"].map { |j| j[\"id\"] }.sort).to eq(['stuff', 'stumped'])\n       end\n \n@@ -364,7 +369,6 @@ def parse_topic_ids\n \n         get '/tags/filter/search.json', params: { q: 'tag', limit: 2 }\n         expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n         expect(json['results'].map { |j| j['id'] }).to eq(['tag', 'tag2'])\n       end\n \n@@ -376,7 +380,6 @@ def parse_topic_ids\n           nope = Fabricate(:tag, name: 'nope')\n           get \"/tags/filter/search.json\", params: { q: nope.name, categoryId: category.id }\n           expect(response.status).to eq(200)\n-          json = ::JSON.parse(response.body)\n           expect(json[\"results\"].map { |j| j[\"id\"] }.sort).to eq([])\n           expect(json[\"forbidden\"]).to be_present\n           expect(json[\"forbidden_message\"]).to eq(I18n.t(\"tags.forbidden.in_this_category\", tag_name: nope.name))\n@@ -385,7 +388,6 @@ def parse_topic_ids\n         it \"can say if given tag is restricted to different category\" do\n           category\n           get \"/tags/filter/search.json\", params: { q: yup.name, categoryId: Fabricate(:category).id }\n-          json = ::JSON.parse(response.body)\n           expect(json[\"results\"].map { |j| j[\"id\"] }.sort).to eq([])\n           expect(json[\"forbidden\"]).to be_present\n           expect(json[\"forbidden_message\"]).to eq(I18n.t(\n@@ -400,7 +402,6 @@ def parse_topic_ids\n           nope = Fabricate(:tag, name: 'nope')\n           get \"/tags/filter/search.json\", params: { categoryId: category.id }\n           expect(response.status).to eq(200)\n-          json = ::JSON.parse(response.body)\n           expect(json[\"results\"].map { |j| j[\"id\"] }.sort).to eq([yup.name])\n         end\n       end\n@@ -409,7 +410,6 @@ def parse_topic_ids\n         yup, nope = Fabricate(:tag, name: 'yup'), Fabricate(:tag, name: 'nope')\n         get \"/tags/filter/search.json\", params: { q: 'N/ope' }\n         expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n         expect(json[\"results\"].map { |j| j[\"id\"] }.sort).to eq([\"nope\"])\n       end\n \n@@ -418,7 +418,6 @@ def parse_topic_ids\n         Fabricate(:topic, category: c, tags: [Fabricate(:tag, name: \"cooltag\")])\n         get \"/tags/filter/search.json\", params: { q: \"cool\" }\n         expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n         expect(json[\"results\"].map { |j| j[\"id\"] }).to eq(['cooltag'])\n       end\n \n@@ -428,12 +427,12 @@ def parse_topic_ids\n \n         get \"/tags/filter/search.json\", params: { q: '房' }\n         expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n+        json = get_json_body\n         expect(json[\"results\"].map { |j| j[\"id\"] }).to eq(['房地产'])\n \n         get \"/tags/filter/search.json\", params: { q: 'тема' }\n         expect(response.status).to eq(200)\n-        json = ::JSON.parse(response.body)\n+        json = get_json_body\n         expect(json[\"results\"].map { |j| j[\"id\"] }).to eq(['тема-в-разработке'])\n       end\n     end\n@@ -458,7 +457,6 @@ def parse_topic_ids\n         it 'returns a tag not found message' do\n           delete \"/tags/doesntexists.json\"\n           expect(response).not_to be_successful\n-          json = ::JSON.parse(response.body)\n           expect(json['error_type']).to eq('not_found')\n         end\n       end\n@@ -491,7 +489,6 @@ def parse_topic_ids\n         it 'returns the correct unused tags' do\n           get \"/tags/unused.json\"\n           expect(response.status).to eq(200)\n-          json = ::JSON.parse(response.body)\n           expect(json[\"tags\"]).to contain_exactly(\"unused1\", \"unused2\")\n         end\n "
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sha": "e334c3266acb038d325fd4e249ca0d87c434183f",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZTMzNGMzMjY2YWNiMDM4ZDMyNWZkNGUyNDljYTBkODdjNDM0MTgzZg==",
+  "commit": {
+    "author": {
+      "name": "Tessa Thornton",
+      "email": "tessathornton@gmail.com",
+      "date": "2019-10-29T14:13:34Z"
+    },
+    "committer": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2019-10-29T14:13:34Z"
+    },
+    "message": "update hotkeys legend to match implemented hotkeys (#2679)",
+    "tree": {
+      "sha": "f69489c170a9c1c0c3869934d885a7013e36fd4e",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/f69489c170a9c1c0c3869934d885a7013e36fd4e"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/e334c3266acb038d325fd4e249ca0d87c434183f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/e334c3266acb038d325fd4e249ca0d87c434183f",
+  "html_url": "https://github.com/coralproject/talk/commit/e334c3266acb038d325fd4e249ca0d87c434183f",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/e334c3266acb038d325fd4e249ca0d87c434183f/comments",
+  "author": {
+    "login": "tessalt",
+    "id": 1789029,
+    "node_id": "MDQ6VXNlcjE3ODkwMjk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1789029?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tessalt",
+    "html_url": "https://github.com/tessalt",
+    "followers_url": "https://api.github.com/users/tessalt/followers",
+    "following_url": "https://api.github.com/users/tessalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tessalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tessalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tessalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/tessalt/orgs",
+    "repos_url": "https://api.github.com/users/tessalt/repos",
+    "events_url": "https://api.github.com/users/tessalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tessalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a31ee3bc96d5246b97a1e4dc1fa83c545ed297ab",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/a31ee3bc96d5246b97a1e4dc1fa83c545ed297ab",
+      "html_url": "https://github.com/coralproject/talk/commit/a31ee3bc96d5246b97a1e4dc1fa83c545ed297ab"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "88b282d3f0a9503627600c1f0f2d0e05c3bb91a1",
+      "filename": "src/core/client/admin/routes/Moderate/HotkeysModal.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/e334c3266acb038d325fd4e249ca0d87c434183f/src/core/client/admin/routes/Moderate/HotkeysModal.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/e334c3266acb038d325fd4e249ca0d87c434183f/src/core/client/admin/routes/Moderate/HotkeysModal.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Moderate/HotkeysModal.tsx?ref=e334c3266acb038d325fd4e249ca0d87c434183f",
+      "patch": "@@ -98,15 +98,15 @@ const HotkeysModal: FunctionComponent<Props> = ({ open, onClose }) => {\n                 </Localized>\n                 <Flex>\n                   <div className={styles.hotKeyContainer}>\n-                    <div className={styles.hotKey}>d</div>\n+                    <div className={styles.hotKey}>f</div>\n                   </div>\n                   <Localized id=\"hotkeysModal-shortcuts-approve\">\n                     <Typography>Approve</Typography>\n                   </Localized>\n                 </Flex>\n                 <Flex>\n                   <div className={styles.hotKeyContainer}>\n-                    <div className={styles.hotKey}>f</div>\n+                    <div className={styles.hotKey}>d</div>\n                   </div>\n                   <Localized id=\"hotkeysModal-shortcuts-reject\">\n                     <Typography>Reject</Typography>"
+    }
+  ]
+}
