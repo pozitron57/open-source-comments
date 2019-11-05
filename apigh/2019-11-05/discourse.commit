@@ -1,0 +1,110 @@
+{
+  "sha": "ca6adfbdd6c8c648eaec740031adf06f51b73bdf",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjYTZhZGZiZGQ2YzhjNjQ4ZWFlYzc0MDAzMWFkZjA2ZjUxYjczYmRm",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-11-05T16:52:04Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-11-05T16:52:04Z"
+    },
+    "message": "DEV: Ignore renames when diffing theme changes\n\nRenamed assets are quite noisy when checking whether a remote theme has local changes.",
+    "tree": {
+      "sha": "aa9f099f9db69d6f9a020d87954f3f7a35136636",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/aa9f099f9db69d6f9a020d87954f3f7a35136636"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ca6adfbdd6c8c648eaec740031adf06f51b73bdf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ca6adfbdd6c8c648eaec740031adf06f51b73bdf",
+  "html_url": "https://github.com/discourse/discourse/commit/ca6adfbdd6c8c648eaec740031adf06f51b73bdf",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ca6adfbdd6c8c648eaec740031adf06f51b73bdf/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "014f19b6ea5279f4cb236af70d217b933fd31f1c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/014f19b6ea5279f4cb236af70d217b933fd31f1c",
+      "html_url": "https://github.com/discourse/discourse/commit/014f19b6ea5279f4cb236af70d217b933fd31f1c"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b844547e7db7cdcf99153105087d17c8e8355053",
+      "filename": "lib/theme_store/git_importer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/ca6adfbdd6c8c648eaec740031adf06f51b73bdf/lib/theme_store/git_importer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ca6adfbdd6c8c648eaec740031adf06f51b73bdf/lib/theme_store/git_importer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/theme_store/git_importer.rb?ref=ca6adfbdd6c8c648eaec740031adf06f51b73bdf",
+      "patch": "@@ -40,7 +40,7 @@ def diff_local_changes(remote_theme_id)\n       Discourse::Utils.execute_command(\"git\", \"checkout\", \"about.json\")\n       # adding and diffing on staged so that we catch uploads\n       Discourse::Utils.execute_command(\"git\", \"add\", \"-A\")\n-      return Discourse::Utils.execute_command(\"git\", \"diff\", \"--staged\")\n+      return Discourse::Utils.execute_command(\"git\", \"diff\", \"--staged\", \"--no-renames\")\n     end\n   ensure\n     FileUtils.rm_rf local_temp_folder if local_temp_folder"
+    },
+    {
+      "sha": "e1e8af9fb4647d73691b23882a28eeb03448571a",
+      "filename": "spec/models/remote_theme_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/ca6adfbdd6c8c648eaec740031adf06f51b73bdf/spec/models/remote_theme_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ca6adfbdd6c8c648eaec740031adf06f51b73bdf/spec/models/remote_theme_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/remote_theme_spec.rb?ref=ca6adfbdd6c8c648eaec740031adf06f51b73bdf",
+      "patch": "@@ -170,6 +170,7 @@ def about_json(love_color: \"FAFAFA\", tertiary_low_color: \"FFFFFF\", color_scheme_\n       @theme.save\n       @theme.reload\n \n+      expect(remote.diff_local_changes[:diff]).not_to include(\"similarity index 100%\")\n       expect(remote.diff_local_changes[:diff]).to include(\"background-color: blue\")\n     end\n   end"
+    }
+  ]
+}
