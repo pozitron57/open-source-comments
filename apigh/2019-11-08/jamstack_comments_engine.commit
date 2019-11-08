@@ -1,0 +1,133 @@
+{
+  "sha": "0073b815fdc14a0894c79f2fab3d690e0b8db687",
+  "node_id": "MDY6Q29tbWl0MTI2MTk5MTQyOjAwNzNiODE1ZmRjMTRhMDg5NGM3OWYyZmFiM2Q2OTBlMGI4ZGI2ODc=",
+  "commit": {
+    "author": {
+      "name": "Phil Hawksworth",
+      "email": "phil@netlify.com",
+      "date": "2019-08-20T14:26:42Z"
+    },
+    "committer": {
+      "name": "Phil Hawksworth",
+      "email": "phil@netlify.com",
+      "date": "2019-08-20T14:26:42Z"
+    },
+    "message": "updating dependencies",
+    "tree": {
+      "sha": "966287f5b3db06a5f3dc55e5631a1ed2859b29ea",
+      "url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/git/trees/966287f5b3db06a5f3dc55e5631a1ed2859b29ea"
+    },
+    "url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/git/commits/0073b815fdc14a0894c79f2fab3d690e0b8db687",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/commits/0073b815fdc14a0894c79f2fab3d690e0b8db687",
+  "html_url": "https://github.com/philhawksworth/jamstack-comments-engine/commit/0073b815fdc14a0894c79f2fab3d690e0b8db687",
+  "comments_url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/commits/0073b815fdc14a0894c79f2fab3d690e0b8db687/comments",
+  "author": {
+    "login": "philhawksworth",
+    "id": 5865,
+    "node_id": "MDQ6VXNlcjU4NjU=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/5865?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/philhawksworth",
+    "html_url": "https://github.com/philhawksworth",
+    "followers_url": "https://api.github.com/users/philhawksworth/followers",
+    "following_url": "https://api.github.com/users/philhawksworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/philhawksworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/philhawksworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/philhawksworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/philhawksworth/orgs",
+    "repos_url": "https://api.github.com/users/philhawksworth/repos",
+    "events_url": "https://api.github.com/users/philhawksworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/philhawksworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "philhawksworth",
+    "id": 5865,
+    "node_id": "MDQ6VXNlcjU4NjU=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/5865?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/philhawksworth",
+    "html_url": "https://github.com/philhawksworth",
+    "followers_url": "https://api.github.com/users/philhawksworth/followers",
+    "following_url": "https://api.github.com/users/philhawksworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/philhawksworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/philhawksworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/philhawksworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/philhawksworth/orgs",
+    "repos_url": "https://api.github.com/users/philhawksworth/repos",
+    "events_url": "https://api.github.com/users/philhawksworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/philhawksworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4ec67e95c3119d40e3edccecac3a9cde753ac169",
+      "url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/commits/4ec67e95c3119d40e3edccecac3a9cde753ac169",
+      "html_url": "https://github.com/philhawksworth/jamstack-comments-engine/commit/4ec67e95c3119d40e3edccecac3a9cde753ac169"
+    }
+  ],
+  "stats": {
+    "total": 6534,
+    "additions": 4446,
+    "deletions": 2088
+  },
+  "files": [
+    {
+      "sha": "b25ca32c38bff40f54a6a6a809e3347bb59dc8bf",
+      "filename": "eleventy.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 4,
+      "changes": 5,
+      "blob_url": "https://github.com/philhawksworth/jamstack-comments-engine/blob/0073b815fdc14a0894c79f2fab3d690e0b8db687/eleventy.js",
+      "raw_url": "https://github.com/philhawksworth/jamstack-comments-engine/raw/0073b815fdc14a0894c79f2fab3d690e0b8db687/eleventy.js",
+      "contents_url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/contents/eleventy.js?ref=0073b815fdc14a0894c79f2fab3d690e0b8db687",
+      "patch": "@@ -3,8 +3,6 @@ module.exports = function(config) {\n   // Add a date formatter filter to Nunjucks\n   config.addFilter(\"dateDisplay\", require(\"./filters/dates.js\") );\n \n-  // pass through our js when we build to dist\n-  // config.addPassthroughCopy(\"js\");\n \n   // eleventy config settings\n   return {\n@@ -15,7 +13,6 @@ module.exports = function(config) {\n     },\n     templateFormats : [\"njk\", \"md\"],\n     htmlTemplateEngine : \"njk\",\n-    markdownTemplateEngine : \"njk\",\n-    // passthroughFileCopy: true\n+    markdownTemplateEngine : \"njk\"\n   };\n };"
+    },
+    {
+      "sha": "105e59ed2c260d718c75c50817fdde3204328323",
+      "filename": "netlify.toml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/philhawksworth/jamstack-comments-engine/blob/0073b815fdc14a0894c79f2fab3d690e0b8db687/netlify.toml",
+      "raw_url": "https://github.com/philhawksworth/jamstack-comments-engine/raw/0073b815fdc14a0894c79f2fab3d690e0b8db687/netlify.toml",
+      "contents_url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/contents/netlify.toml?ref=0073b815fdc14a0894c79f2fab3d690e0b8db687",
+      "patch": "@@ -2,4 +2,4 @@\n   Functions = \"functions\"\n   command = \"yarn run build\"\n   publish = \"dist\"\n-  NODE_ENV = \"8.9.0\"\n+  NODE_ENV = \"10.15.3\""
+    },
+    {
+      "sha": "f8355b4c37916c7ee360885a0af8d6e6fd30591f",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/philhawksworth/jamstack-comments-engine/blob/0073b815fdc14a0894c79f2fab3d690e0b8db687/package.json",
+      "raw_url": "https://github.com/philhawksworth/jamstack-comments-engine/raw/0073b815fdc14a0894c79f2fab3d690e0b8db687/package.json",
+      "contents_url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/contents/package.json?ref=0073b815fdc14a0894c79f2fab3d690e0b8db687",
+      "patch": "@@ -15,15 +15,15 @@\n     \"check\": \"gulp check-init\"\n   },\n   \"dependencies\": {\n-    \"@11ty/eleventy\": \"^0.3.0ya\",\n-    \"dotenv\": \"^5.0.1\",\n-    \"gravatar\": \"^1.6.0\",\n-    \"gulp\": \"^4.0.0\",\n+    \"@11ty/eleventy\": \"^0.8.3\",\n+    \"dotenv\": \"^8.1.0\",\n+    \"gravatar\": \"^1.8.0\",\n+    \"gulp\": \"^4.0.2\",\n     \"gulp-clean\": \"^0.4.0\",\n     \"gulp-concat\": \"^2.6.1\",\n-    \"gulp-sass\": \"^3.1.0\",\n+    \"gulp-sass\": \"^4.0.2\",\n     \"gulp-serve\": \"^1.4.0\",\n-    \"gulp-shell\": \"^0.6.5\",\n-    \"netlify-lambda\": \"^0.2.0\"\n+    \"gulp-shell\": \"^0.7.1\",\n+    \"netlify-lambda\": \"^1.6.2\"\n   }\n }"
+    },
+    {
+      "sha": "5663c03911954955357999e68e9424283ca7d846",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 4437,
+      "deletions": 2076,
+      "changes": 6513,
+      "blob_url": "https://github.com/philhawksworth/jamstack-comments-engine/blob/0073b815fdc14a0894c79f2fab3d690e0b8db687/yarn.lock",
+      "raw_url": "https://github.com/philhawksworth/jamstack-comments-engine/raw/0073b815fdc14a0894c79f2fab3d690e0b8db687/yarn.lock",
+      "contents_url": "https://api.github.com/repos/philhawksworth/jamstack-comments-engine/contents/yarn.lock?ref=0073b815fdc14a0894c79f2fab3d690e0b8db687"
+    }
+  ]
+}
