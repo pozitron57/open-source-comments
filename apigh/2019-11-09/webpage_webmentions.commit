@@ -1,0 +1,98 @@
+{
+  "sha": "3c278cf5a81719d990148941eb945791161a28ec",
+  "node_id": "MDY6Q29tbWl0MTI2ODkxODQ6M2MyNzhjZjVhODE3MTlkOTkwMTQ4OTQxZWI5NDU3OTExNjFhMjhlYw==",
+  "commit": {
+    "author": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2019-11-09T14:56:41Z"
+    },
+    "committer": {
+      "name": "Pelle Wessman",
+      "email": "pelle@kodfabrik.se",
+      "date": "2019-11-09T14:56:41Z"
+    },
+    "message": "Instruct Heorku to use Node 10 or 12",
+    "tree": {
+      "sha": "d70760efba9d014c6dde14dae745311b3f6f7ed3",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/trees/d70760efba9d014c6dde14dae745311b3f6f7ed3"
+    },
+    "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/git/commits/3c278cf5a81719d990148941eb945791161a28ec",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/3c278cf5a81719d990148941eb945791161a28ec",
+  "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/3c278cf5a81719d990148941eb945791161a28ec",
+  "comments_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/3c278cf5a81719d990148941eb945791161a28ec/comments",
+  "author": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "voxpelli",
+    "id": 34457,
+    "node_id": "MDQ6VXNlcjM0NDU3",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/34457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/voxpelli",
+    "html_url": "https://github.com/voxpelli",
+    "followers_url": "https://api.github.com/users/voxpelli/followers",
+    "following_url": "https://api.github.com/users/voxpelli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/voxpelli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/voxpelli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/voxpelli/subscriptions",
+    "organizations_url": "https://api.github.com/users/voxpelli/orgs",
+    "repos_url": "https://api.github.com/users/voxpelli/repos",
+    "events_url": "https://api.github.com/users/voxpelli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/voxpelli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "440edd67aa2742457cea6681644f55317176a7fe",
+      "url": "https://api.github.com/repos/voxpelli/webpage-webmentions/commits/440edd67aa2742457cea6681644f55317176a7fe",
+      "html_url": "https://github.com/voxpelli/webpage-webmentions/commit/440edd67aa2742457cea6681644f55317176a7fe"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "05cd62a2f8eff16029a0490f7efccd2bdeca505f",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/voxpelli/webpage-webmentions/blob/3c278cf5a81719d990148941eb945791161a28ec/package.json",
+      "raw_url": "https://github.com/voxpelli/webpage-webmentions/raw/3c278cf5a81719d990148941eb945791161a28ec/package.json",
+      "contents_url": "https://api.github.com/repos/voxpelli/webpage-webmentions/contents/package.json?ref=3c278cf5a81719d990148941eb945791161a28ec",
+      "patch": "@@ -9,7 +9,7 @@\n   },\n   \"license\": \"MIT\",\n   \"engines\": {\n-    \"node\": \">=10.0.0\"\n+    \"node\": \"^10.0.0 || ^12.0.0\"\n   },\n   \"dependencies\": {\n     \"@voxpelli/metadataparser\": \"^2.0.0\","
+    }
+  ]
+}
