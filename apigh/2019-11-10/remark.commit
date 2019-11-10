@@ -1,0 +1,110 @@
+{
+  "sha": "c5c065975a6f0055d73d2687804644a8dc192daf",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmM1YzA2NTk3NWE2ZjAwNTVkNzNkMjY4NzgwNDY0NGE4ZGMxOTJkYWY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-11-09T19:50:14Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-11-09T19:50:14Z"
+    },
+    "message": "adjust tests for updated error logs",
+    "tree": {
+      "sha": "95dac4a8717e2fb5e22024a048311a1db216b0d4",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/95dac4a8717e2fb5e22024a048311a1db216b0d4"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/c5c065975a6f0055d73d2687804644a8dc192daf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/c5c065975a6f0055d73d2687804644a8dc192daf",
+  "html_url": "https://github.com/umputun/remark/commit/c5c065975a6f0055d73d2687804644a8dc192daf",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/c5c065975a6f0055d73d2687804644a8dc192daf/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "731bcb9606078d377aa42e0442570556fa0bd8d7",
+      "url": "https://api.github.com/repos/umputun/remark/commits/731bcb9606078d377aa42e0442570556fa0bd8d7",
+      "html_url": "https://github.com/umputun/remark/commit/731bcb9606078d377aa42e0442570556fa0bd8d7"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "e1539c3605624e0f2a05d11ebc8350a4edd7c82b",
+      "filename": "backend/app/rest/httperrors.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/c5c065975a6f0055d73d2687804644a8dc192daf/backend/app/rest/httperrors.go",
+      "raw_url": "https://github.com/umputun/remark/raw/c5c065975a6f0055d73d2687804644a8dc192daf/backend/app/rest/httperrors.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/httperrors.go?ref=c5c065975a6f0055d73d2687804644a8dc192daf",
+      "patch": "@@ -56,10 +56,10 @@ func errDetailsMsg(r *http.Request, httpStatusCode int, err error, details strin\n \tif pc, file, line, ok := runtime.Caller(2); ok {\n \t\tfnameElems := strings.Split(file, \"/\")\n \t\tfuncNameElems := strings.Split(runtime.FuncForPC(pc).Name(), \"/\")\n-\t\tsrcFileInfo = fmt.Sprintf(\" [%s:%d %s]\", strings.Join(fnameElems[len(fnameElems)-3:], \"/\"),\n+\t\tsrcFileInfo = fmt.Sprintf(\"[%s:%d %s]\", strings.Join(fnameElems[len(fnameElems)-3:], \"/\"),\n \t\t\tline, funcNameElems[len(funcNameElems)-1])\n \t}\n \n-\treturn fmt.Sprintf(\"%s - %v - %d (%d) - %s%s - %s%s\",\n+\treturn fmt.Sprintf(\"%s - %v - %d (%d) - %s%s - %s\",\n \t\tdetails, err, httpStatusCode, errCode, uinfoStr, q, srcFileInfo)\n }"
+    },
+    {
+      "sha": "320e8dbc3ae4ac86112079ba84a702e452dfcdd9",
+      "filename": "backend/app/rest/httperrors_test.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/c5c065975a6f0055d73d2687804644a8dc192daf/backend/app/rest/httperrors_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/c5c065975a6f0055d73d2687804644a8dc192daf/backend/app/rest/httperrors_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/httperrors_test.go?ref=c5c065975a6f0055d73d2687804644a8dc192daf",
+      "patch": "@@ -42,7 +42,7 @@ func TestErrorDetailsMsg(t *testing.T) {\n \t\trequire.Nil(t, err)\n \t\treq.RemoteAddr = \"1.2.3.4\"\n \t\tmsg := errDetailsMsg(req, 500, errors.New(\"error 500\"), \"error details 123456\", 123)\n-\t\tassert.Equal(t, \"error details 123456 - error 500 - 500 (123) - 1.2.3.4 - https://example.com/test?k1=v1&k2=v2 [caused by app/rest/httperrors_test.go:47 rest.TestErrorDetailsMsg]\", msg)\n+\t\tassert.Equal(t, \"error details 123456 - error 500 - 500 (123) - https://example.com/test?k1=v1&k2=v2 - [app/rest/httperrors_test.go:47 rest.TestErrorDetailsMsg]\", msg)\n \t}\n \tcallerFn()\n }\n@@ -55,8 +55,8 @@ func TestErrorDetailsMsgWithUser(t *testing.T) {\n \t\treq = SetUserInfo(req, store.User{Name: \"test\", ID: \"id\"})\n \t\trequire.Nil(t, err)\n \t\tmsg := errDetailsMsg(req, 500, errors.New(\"error 500\"), \"error details 123456\", 34567)\n-\t\tassert.Equal(t, \"error details 123456 - error 500 - 500 (34567) - test/id - 127.0.0.1 - https://example.\"+\n-\t\t\t\"com/test?k1=v1&k2=v2 [caused by app/rest/httperrors_test.go:61 rest.TestErrorDetailsMsgWithUser]\", msg)\n+\t\tassert.Equal(t, \"error details 123456 - error 500 - 500 (34567) - test/id - https://example.\"+\n+\t\t\t\"com/test?k1=v1&k2=v2 - [app/rest/httperrors_test.go:61 rest.TestErrorDetailsMsgWithUser]\", msg)\n \t}\n \tcallerFn()\n }"
+    }
+  ]
+}

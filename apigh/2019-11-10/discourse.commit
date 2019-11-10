@@ -1,0 +1,122 @@
+{
+  "sha": "15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxNWY2ZjU3Y2RjZWJjNzU4M2RkYjVhMzExMTc0ZDEwYTczMDBhZTRh",
+  "commit": {
+    "author": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2019-11-09T00:28:48Z"
+    },
+    "committer": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2019-11-09T00:32:22Z"
+    },
+    "message": "DEV: Add update message for an outdated mail-receiver\n\nPrevious versions of the mail-receiver used query based api credentials,\nif we detect this we will show a message in the admin panel to update\nthe mail receiver.",
+    "tree": {
+      "sha": "e3a2625d73f677fd239e4d0474e4c33553f4d621",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e3a2625d73f677fd239e4d0474e4c33553f4d621"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+  "html_url": "https://github.com/discourse/discourse/commit/15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/comments",
+  "author": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "63bd07492ea07a999d8359409a0ea4000bce364f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/63bd07492ea07a999d8359409a0ea4000bce364f",
+      "html_url": "https://github.com/discourse/discourse/commit/63bd07492ea07a999d8359409a0ea4000bce364f"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 12,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "288158eb3298f5df79a90f025c579d2f99665db2",
+      "filename": "app/models/admin_dashboard_data.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/app/models/admin_dashboard_data.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/app/models/admin_dashboard_data.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/admin_dashboard_data.rb?ref=15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+      "patch": "@@ -85,7 +85,8 @@ def self.reset_problem_checks\n       'dashboard.bad_favicon_url',\n       'dashboard.poll_pop3_timeout',\n       'dashboard.poll_pop3_auth_error',\n-      'dashboard.deprecated_api_usage'\n+      'dashboard.deprecated_api_usage',\n+      'dashboard.update_mail_receiver'\n     ]\n \n     add_problem_check :rails_env_check, :host_names_check, :force_https_check,"
+    },
+    {
+      "sha": "6d3cefe305618725e371c1113888ba9e4f1195bf",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+      "patch": "@@ -1339,6 +1339,7 @@ en:\n     missing_mailgun_api_key: \"The server is configured to send emails via Mailgun but you haven't provided an API key used to verify the webhook messages.\"\n     bad_favicon_url: \"The favicon is failing to load. Check your favicon setting in <a href='%{base_path}/admin/site_settings'>Site Settings</a>.\"\n     deprecated_api_usage: \"We detected an API request using a deprecated authentication method. Please update it to use <a href='https://meta.discourse.org/t/discourse-api-documentation/22706'>header based auth</a>.\"\n+    update_mail_receiver: \"We detected an outdated version of mail-receiver. Please ssh into this server and run `/var/discourse/launcher rebuild mail-receiver`.\"\n     poll_pop3_timeout: \"Connection to the POP3 server is timing out. Incoming email could not be retrieved. Please check your <a href='%{base_path}/admin/site_settings/category/email'>POP3 settings</a> and service provider.\"\n     poll_pop3_auth_error: \"Connection to the POP3 server is failing with an authentication error. Please check your <a href='%{base_path}/admin/site_settings/category/email'>POP3 settings</a>.\"\n     force_https_warning: \"Your website is using SSL. But `<a href='%{base_path}/admin/site_settings/category/all_results?filter=force_https'>force_https</a>` is not yet enabled in your site settings.\""
+    },
+    {
+      "sha": "3f405233ccd16d4903aab288dec7e1176a90c0e0",
+      "filename": "lib/auth/default_current_user_provider.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/lib/auth/default_current_user_provider.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/15f6f57cdcebc7583ddb5a311174d10a7300ae4a/lib/auth/default_current_user_provider.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/auth/default_current_user_provider.rb?ref=15f6f57cdcebc7583ddb5a311174d10a7300ae4a",
+      "patch": "@@ -283,9 +283,16 @@ def lookup_user_api_user_and_update_key(user_api_key, client_id)\n   def lookup_api_user(api_key_value, request)\n     if api_key = ApiKey.active.where(key: api_key_value).includes(:user).first\n       api_username = header_api_key? ? @env[HEADER_API_USERNAME] : request[API_USERNAME]\n+\n+      # Check for deprecated api auth\n       if !header_api_key?\n-        # Notify admins of deprecated auth method\n-        AdminDashboardData.add_problem_message('dashboard.deprecated_api_usage', 1.day)\n+        if request.path == \"/admin/email/handle_mail\"\n+          # Notify admins that the mail receiver is still using query auth and to update\n+          AdminDashboardData.add_problem_message('dashboard.update_mail_receiver', 1.day)\n+        else\n+          # Notify admins of deprecated auth method\n+          AdminDashboardData.add_problem_message('dashboard.deprecated_api_usage', 1.day)\n+        end\n       end\n \n       if api_key.allowed_ips.present? && !api_key.allowed_ips.any? { |ip| ip.include?(request.ip) }"
+    }
+  ]
+}
