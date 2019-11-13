@@ -1,0 +1,266 @@
+{
+  "sha": "f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmNTE4MDY1NjU0MDA4NGNkZGNiM2U0MDcyZDdhZTllNGFhMzMzZWU0",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-11-13T16:57:42Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-11-13T16:58:09Z"
+    },
+    "message": "FIX: computed is part of `@ember/object` not `@ember/object/computed`",
+    "tree": {
+      "sha": "e8049cd882c5ed0c8ad037d878544d28b5bf126b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e8049cd882c5ed0c8ad037d878544d28b5bf126b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+  "html_url": "https://github.com/discourse/discourse/commit/f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f5180656540084cddcb3e4072d7ae9e4aa333ee4/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e98d94f17fb51448534d9b27aa81229da680cf1d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e98d94f17fb51448534d9b27aa81229da680cf1d",
+      "html_url": "https://github.com/discourse/discourse/commit/e98d94f17fb51448534d9b27aa81229da680cf1d"
+    }
+  ],
+  "stats": {
+    "total": 61,
+    "additions": 22,
+    "deletions": 39
+  },
+  "files": [
+    {
+      "sha": "b77e3e0288414ea214a7aea78b5df3d737db3633",
+      "filename": "app/assets/javascripts/admin/controllers/admin-dashboard-general.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/admin/controllers/admin-dashboard-general.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/admin/controllers/admin-dashboard-general.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/controllers/admin-dashboard-general.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -6,7 +6,7 @@ import { setting } from \"discourse/lib/computed\";\n import AdminDashboard from \"admin/models/admin-dashboard\";\n import Report from \"admin/models/report\";\n import PeriodComputationMixin from \"admin/mixins/period-computation\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n function staticReport(reportType) {\n   return computed(\"reports.[]\", function() {"
+    },
+    {
+      "sha": "7a20c288aea1ec8123b7ea192d7026007b384560",
+      "filename": "app/assets/javascripts/admin/models/api-key.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/admin/models/api-key.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/admin/models/api-key.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/models/api-key.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -2,7 +2,7 @@ import discourseComputed from \"discourse-common/utils/decorators\";\n import AdminUser from \"admin/models/admin-user\";\n import RestModel from \"discourse/models/rest\";\n import { ajax } from \"discourse/lib/ajax\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n const ApiKey = RestModel.extend({\n   user: computed(\"_user\", {"
+    },
+    {
+      "sha": "6b8f90de229205e09ab4662956773e3b0b0c8518",
+      "filename": "app/assets/javascripts/discourse-loader.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse-loader.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse-loader.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse-loader.js?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -20,10 +20,10 @@ var define, requirejs;\n         get: Ember.get,\n         getProperties: Ember.getProperties,\n         set: Ember.set,\n-        setProperties: Ember.setProperties\n+        setProperties: Ember.setProperties,\n+        computed: Ember.computed\n       },\n       \"@ember/object/computed\": {\n-        default: Ember.computed,\n         alias: Ember.computed.alias,\n         and: Ember.computed.and,\n         bool: Ember.computed.bool,"
+    },
+    {
+      "sha": "42340cdfadcc90633b2fed05e09bfd6e37feca36",
+      "filename": "app/assets/javascripts/discourse.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -4,7 +4,7 @@ import {\n   default as discourseComputed,\n   observes\n } from \"discourse-common/utils/decorators\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n import FocusEvent from \"discourse-common/mixins/focus-event\";\n import EmberObject from \"@ember/object\";\n import deprecated from \"discourse-common/lib/deprecated\";"
+    },
+    {
+      "sha": "59db7aee75b2e9f7350e9f551d3c52ad91abf2d1",
+      "filename": "app/assets/javascripts/discourse/components/about-page-users.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/components/about-page-users.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/components/about-page-users.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/about-page-users.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -3,7 +3,7 @@ import { userPath } from \"discourse/lib/url\";\n import { formatUsername, escapeExpression } from \"discourse/lib/utilities\";\n import { normalize } from \"discourse/components/user-info\";\n import { renderAvatar } from \"discourse/helpers/user-avatar\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n export default Component.extend({\n   usersTemplates: computed(\"users.[]\", function() {"
+    },
+    {
+      "sha": "e9c7ad739758138509ee839ed48f21eabcba4d46",
+      "filename": "app/assets/javascripts/discourse/components/date-time-input.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/components/date-time-input.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/components/date-time-input.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/date-time-input.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,5 +1,5 @@\n import Component from \"@ember/component\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n export default Component.extend({\n   classNames: [\"d-date-time-input\"],"
+    },
+    {
+      "sha": "2289470cfa9bcc8486fdcf355be38a1da2f81e23",
+      "filename": "app/assets/javascripts/discourse/controllers/composer.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 8,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/controllers/composer.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/controllers/composer.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/composer.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,11 +1,5 @@\n import { isEmpty } from \"@ember/utils\";\n-import {\n-  default as computed,\n-  and,\n-  or,\n-  alias,\n-  reads\n-} from \"@ember/object/computed\";\n+import { and, or, alias, reads } from \"@ember/object/computed\";\n import { debounce } from \"@ember/runloop\";\n import { inject as service } from \"@ember/service\";\n import { inject } from \"@ember/controller\";\n@@ -31,7 +25,7 @@ import { shortDate } from \"discourse/lib/formatter\";\n import { SAVE_LABELS, SAVE_ICONS } from \"discourse/models/composer\";\n import { Promise } from \"rsvp\";\n import ENV from \"discourse-common/config/environment\";\n-import EmberObject from \"@ember/object\";\n+import EmberObject, { computed } from \"@ember/object\";\n \n function loadDraft(store, opts) {\n   opts = opts || {};"
+    },
+    {
+      "sha": "c1ec7fc42c0858224eb3019940252bf97177ab1b",
+      "filename": "app/assets/javascripts/discourse/controllers/history.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 8,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/controllers/history.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/controllers/history.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/history.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,12 +1,5 @@\n import discourseComputed from \"discourse-common/utils/decorators\";\n-import {\n-  default as computed,\n-  alias,\n-  gt,\n-  not,\n-  or,\n-  equal\n-} from \"@ember/object/computed\";\n+import { alias, gt, not, or, equal } from \"@ember/object/computed\";\n import Controller from \"@ember/controller\";\n import ModalFunctionality from \"discourse/mixins/modal-functionality\";\n import { categoryBadgeHTML } from \"discourse/helpers/category-link\";\n@@ -16,6 +9,7 @@ import { sanitizeAsync } from \"discourse/lib/text\";\n import { iconHTML } from \"discourse-common/lib/icon-library\";\n import Post from \"discourse/models/post\";\n import Category from \"discourse/models/category\";\n+import computed from \"@ember/object\";\n \n function customTagArray(fieldName) {\n   return computed(fieldName, function() {"
+    },
+    {
+      "sha": "c2dd9eb96cfe17ffbfdcb182a5cb5dbec34d8e11",
+      "filename": "app/assets/javascripts/discourse/lib/register-topic-footer-button.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/lib/register-topic-footer-button.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/lib/register-topic-footer-button.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/register-topic-footer-button.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,5 +1,5 @@\n import error from \"@ember/error\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n let _topicFooterButtons = {};\n "
+    },
+    {
+      "sha": "beb145a3ec20b3360c0a625a6348e27607abd848",
+      "filename": "app/assets/javascripts/discourse/mixins/buffered-content.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/mixins/buffered-content.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/mixins/buffered-content.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/mixins/buffered-content.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,6 +1,6 @@\n import EmberObjectProxy from \"@ember/object/proxy\";\n import Mixin from \"@ember/object/mixin\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n /* global BufferedProxy: true */\n export function bufferedProperty(property) {"
+    },
+    {
+      "sha": "eebd4f67ecd1f78388b82a3dc8a829f565a1db83",
+      "filename": "app/assets/javascripts/discourse/models/post.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 8,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/models/post.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/models/post.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/models/post.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,13 +1,7 @@\n import discourseComputed from \"discourse-common/utils/decorators\";\n-import { get } from \"@ember/object\";\n+import { computed, get } from \"@ember/object\";\n import { isEmpty } from \"@ember/utils\";\n-import {\n-  default as computed,\n-  equal,\n-  and,\n-  or,\n-  not\n-} from \"@ember/object/computed\";\n+import { equal, and, or, not } from \"@ember/object/computed\";\n import EmberObject from \"@ember/object\";\n import { ajax } from \"discourse/lib/ajax\";\n import RestModel from \"discourse/models/rest\";"
+    },
+    {
+      "sha": "2906dee77fa816b923852c1c8ca7e36105b9f96f",
+      "filename": "app/assets/javascripts/discourse/models/user.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/models/user.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/models/user.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/models/user.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,6 +1,6 @@\n import { isEmpty } from \"@ember/utils\";\n-import { default as computed, gt, equal, or } from \"@ember/object/computed\";\n-import EmberObject from \"@ember/object\";\n+import { gt, equal, or } from \"@ember/object/computed\";\n+import EmberObject, { computed } from \"@ember/object\";\n import { ajax } from \"discourse/lib/ajax\";\n import { url } from \"discourse/lib/computed\";\n import RestModel from \"discourse/models/rest\";"
+    },
+    {
+      "sha": "709d70153a93bc2b798141a1169876f9f134435e",
+      "filename": "app/assets/javascripts/discourse/widgets/post-small-action.js.es6",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/widgets/post-small-action.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/discourse/widgets/post-small-action.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/post-small-action.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -5,7 +5,7 @@ import { h } from \"virtual-dom\";\n import { avatarFor } from \"discourse/widgets/post\";\n import { userPath } from \"discourse/lib/url\";\n import { autoUpdatingRelativeAge } from \"discourse/lib/formatter\";\n-import computed from \"@ember/object/computed\";\n+import { computed } from \"@ember/object\";\n \n export function actionDescriptionHtml(actionCode, createdAt, username) {\n   const dt = new Date(createdAt);"
+    },
+    {
+      "sha": "ab6a36c36cd7a19bb68f9586636adf144b24e967",
+      "filename": "app/assets/javascripts/select-kit/components/multi-select/selected-name.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/select-kit/components/multi-select/selected-name.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/app/assets/javascripts/select-kit/components/multi-select/selected-name.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/select-kit/components/multi-select/selected-name.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,6 +1,7 @@\n-import { default as computed, or, alias } from \"@ember/object/computed\";\n+import { or, alias } from \"@ember/object/computed\";\n import Component from \"@ember/component\";\n import discourseComputed from \"discourse-common/utils/decorators\";\n+import { computed } from \"@ember/object\";\n \n export default Component.extend({\n   attributeBindings: ["
+    },
+    {
+      "sha": "d9da92d25265cdd7dc37b17f915fd940ef087d04",
+      "filename": "plugins/poll/assets/javascripts/initializers/add-poll-ui-builder.js.es6",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5180656540084cddcb3e4072d7ae9e4aa333ee4/plugins/poll/assets/javascripts/initializers/add-poll-ui-builder.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5180656540084cddcb3e4072d7ae9e4aa333ee4/plugins/poll/assets/javascripts/initializers/add-poll-ui-builder.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/poll/assets/javascripts/initializers/add-poll-ui-builder.js.es6?ref=f5180656540084cddcb3e4072d7ae9e4aa333ee4",
+      "patch": "@@ -1,10 +1,10 @@\n import { withPluginApi } from \"discourse/lib/plugin-api\";\n-import computed from \"ember-addons/ember-computed-decorators\";\n+import discourseComputed from \"discourse-common/utils/decorators\";\n import showModal from \"discourse/lib/show-modal\";\n \n function initializePollUIBuilder(api) {\n   api.modifyClass(\"controller:composer\", {\n-    @computed(\n+    @discourseComputed(\n       \"siteSettings.poll_enabled\",\n       \"siteSettings.poll_minimum_trust_level_to_create\",\n       \"model.topic.pm_with_non_human_user\""
+    }
+  ]
+}
