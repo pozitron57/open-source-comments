@@ -1,0 +1,98 @@
+{
+  "sha": "20f5a062f496a7023885c957ab676dbcece718ee",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyMGY1YTA2MmY0OTZhNzAyMzg4NWM5NTdhYjY3NmRiY2VjZTcxOGVl",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-11-15T16:01:22Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-11-15T16:01:22Z"
+    },
+    "message": "Fix Prettier in poll plugin",
+    "tree": {
+      "sha": "e5768b5ddd4650cddc04b53293429360dec5fb7f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e5768b5ddd4650cddc04b53293429360dec5fb7f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/20f5a062f496a7023885c957ab676dbcece718ee",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/20f5a062f496a7023885c957ab676dbcece718ee",
+  "html_url": "https://github.com/discourse/discourse/commit/20f5a062f496a7023885c957ab676dbcece718ee",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/20f5a062f496a7023885c957ab676dbcece718ee/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6e74350f18710a9b5cf3e5d91425ce7ba31795ce",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6e74350f18710a9b5cf3e5d91425ce7ba31795ce",
+      "html_url": "https://github.com/discourse/discourse/commit/6e74350f18710a9b5cf3e5d91425ce7ba31795ce"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 13,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "d22ad137544b088d72cba0d121ce071aefeb3f40",
+      "filename": "plugins/poll/test/javascripts/controllers/poll-ui-builder-test.js.es6",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 3,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/20f5a062f496a7023885c957ab676dbcece718ee/plugins/poll/test/javascripts/controllers/poll-ui-builder-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/20f5a062f496a7023885c957ab676dbcece718ee/plugins/poll/test/javascripts/controllers/poll-ui-builder-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/poll/test/javascripts/controllers/poll-ui-builder-test.js.es6?ref=20f5a062f496a7023885c957ab676dbcece718ee",
+      "patch": "@@ -101,7 +101,10 @@ test(\"pollMinOptions\", function(assert) {\n \n   assert.deepEqual(\n     controller.get(\"pollMinOptions\"),\n-    [{ name: 1, value: 1 }, { name: 2, value: 2 }],\n+    [\n+      { name: 1, value: 1 },\n+      { name: 2, value: 2 }\n+    ],\n     \"it should return the right options\"\n   );\n \n@@ -110,7 +113,10 @@ test(\"pollMinOptions\", function(assert) {\n \n   assert.deepEqual(\n     controller.get(\"pollMinOptions\"),\n-    [{ name: 1, value: 1 }, { name: 2, value: 2 }],\n+    [\n+      { name: 1, value: 1 },\n+      { name: 2, value: 2 }\n+    ],\n     \"it should return the right options\"\n   );\n });\n@@ -177,7 +183,11 @@ test(\"pollStepOptions\", function(assert) {\n \n   assert.deepEqual(\n     controller.get(\"pollStepOptions\"),\n-    [{ name: 1, value: 1 }, { name: 2, value: 2 }, { name: 3, value: 3 }],\n+    [\n+      { name: 1, value: 1 },\n+      { name: 2, value: 2 },\n+      { name: 3, value: 3 }\n+    ],\n     \"it should return the right options\"\n   );\n });"
+    }
+  ]
+}
