@@ -1,0 +1,98 @@
+{
+  "sha": "397852a9a62d9caef4e6afde11a6e58a7ddbf908",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozOTc4NTJhOWE2MmQ5Y2FlZjRlNmFmZGUxMWE2ZTU4YTdkZGJmOTA4",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-11-15T21:37:47Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-11-15T21:38:46Z"
+    },
+    "message": "FIX: Support for `rake db:rollback` with plugins\n\nFor this to work we need to overwrite `db:rollback` in our Rakefile like\nwe do for migrate, so that it removes the load_config dependency. This\nallows our custom migration paths to work.",
+    "tree": {
+      "sha": "4feaaa59b63f3f752a81d3c91c6b0fbe5280c07a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4feaaa59b63f3f752a81d3c91c6b0fbe5280c07a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/397852a9a62d9caef4e6afde11a6e58a7ddbf908",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/397852a9a62d9caef4e6afde11a6e58a7ddbf908",
+  "html_url": "https://github.com/discourse/discourse/commit/397852a9a62d9caef4e6afde11a6e58a7ddbf908",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/397852a9a62d9caef4e6afde11a6e58a7ddbf908/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eb4d8a43e310e1568339e8563797b0e572cfb403",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/eb4d8a43e310e1568339e8563797b0e572cfb403",
+      "html_url": "https://github.com/discourse/discourse/commit/eb4d8a43e310e1568339e8563797b0e572cfb403"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 7,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c0ceea5e193f0a786fda1140a08a445d9be85ce1",
+      "filename": "lib/tasks/db.rake",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/397852a9a62d9caef4e6afde11a6e58a7ddbf908/lib/tasks/db.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/397852a9a62d9caef4e6afde11a6e58a7ddbf908/lib/tasks/db.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/db.rake?ref=397852a9a62d9caef4e6afde11a6e58a7ddbf908",
+      "patch": "@@ -50,6 +50,13 @@ end\n \n begin\n   Rake::Task[\"db:migrate\"].clear\n+  Rake::Task[\"db:rollback\"].clear\n+end\n+\n+task 'db:rollback' => ['environment', 'set_locale'] do |_, args|\n+  step = ENV[\"STEP\"] ? ENV[\"STEP\"].to_i : 1\n+  ActiveRecord::Base.connection.migration_context.rollback(step)\n+  Rake::Task['db:_dump'].invoke\n end\n \n # we need to run seed_fu every time we run rake db:migrate"
+    }
+  ]
+}

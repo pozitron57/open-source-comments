@@ -1,0 +1,98 @@
+{
+  "sha": "6f969a0a76acad13a063937bfdcc5f3b987fde77",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjZmOTY5YTBhNzZhY2FkMTNhMDYzOTM3YmZkY2M1ZjNiOTg3ZmRlNzc=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-11-12T00:55:23Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-11-12T00:55:23Z"
+    },
+    "message": "fix _example test call",
+    "tree": {
+      "sha": "3995545701aeed8f21a7e564b2bdf49793b3cb7b",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/3995545701aeed8f21a7e564b2bdf49793b3cb7b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/6f969a0a76acad13a063937bfdcc5f3b987fde77",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/6f969a0a76acad13a063937bfdcc5f3b987fde77",
+  "html_url": "https://github.com/umputun/remark/commit/6f969a0a76acad13a063937bfdcc5f3b987fde77",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/6f969a0a76acad13a063937bfdcc5f3b987fde77/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ae40fbeaf4c5c2c2315bb2c15a6b39e4e3122a64",
+      "url": "https://api.github.com/repos/umputun/remark/commits/ae40fbeaf4c5c2c2315bb2c15a6b39e4e3122a64",
+      "html_url": "https://github.com/umputun/remark/commit/ae40fbeaf4c5c2c2315bb2c15a6b39e4e3122a64"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "4b9553e9ee461d09334c3d3c608bd5978689df47",
+      "filename": ".github/workflows/ci-build.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/6f969a0a76acad13a063937bfdcc5f3b987fde77/.github/workflows/ci-build.yml",
+      "raw_url": "https://github.com/umputun/remark/raw/6f969a0a76acad13a063937bfdcc5f3b987fde77/.github/workflows/ci-build.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/.github/workflows/ci-build.yml?ref=6f969a0a76acad13a063937bfdcc5f3b987fde77",
+      "patch": "@@ -35,8 +35,8 @@ jobs:\n         cd backend/app\n         go test -mod=vendor -timeout=60s -covermode=count -coverprofile=$GITHUB_WORKSPACE/profile.cov_tmp ./...\n         cat $GITHUB_WORKSPACE/profile.cov_tmp | grep -v \"_mock.go\" > $GITHUB_WORKSPACE/profile.cov\n-        cd ../_example\n-        go test -timeout=60s ./...\n+        cd ../_example/memory_store\n+        go test ./...\n \n     - name: install golangci-lint and goveralls\n       run: |"
+    }
+  ]
+}
