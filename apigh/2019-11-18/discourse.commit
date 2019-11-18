@@ -1,0 +1,98 @@
+{
+  "sha": "0350247130dd425f30ee484b8afea02c20586de6",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowMzUwMjQ3MTMwZGQ0MjVmMzBlZTQ4NGI4YWZlYTAyYzIwNTg2ZGU2",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-11-18T16:00:18Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-11-18T16:00:18Z"
+    },
+    "message": "DEV: Exclude plugin specs when running chdir cop",
+    "tree": {
+      "sha": "b1769201689da88f8b4f1b3aba96a005dcf0f4eb",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b1769201689da88f8b4f1b3aba96a005dcf0f4eb"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0350247130dd425f30ee484b8afea02c20586de6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0350247130dd425f30ee484b8afea02c20586de6",
+  "html_url": "https://github.com/discourse/discourse/commit/0350247130dd425f30ee484b8afea02c20586de6",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0350247130dd425f30ee484b8afea02c20586de6/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eaf6096890120906b4f4e6282eb399afc5039559",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/eaf6096890120906b4f4e6282eb399afc5039559",
+      "html_url": "https://github.com/discourse/discourse/commit/eaf6096890120906b4f4e6282eb399afc5039559"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9a5cd47be772c602bdf9dedf0607e3919c9dd09b",
+      "filename": ".rubocop.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/0350247130dd425f30ee484b8afea02c20586de6/.rubocop.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/0350247130dd425f30ee484b8afea02c20586de6/.rubocop.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/.rubocop.yml?ref=0350247130dd425f30ee484b8afea02c20586de6",
+      "patch": "@@ -136,3 +136,4 @@ DiscourseCops/NoChdir:\n   Enabled: true\t\n   Exclude:\t\n     - 'spec/**/*' # Specs are run sequentially, so chdir can be used\t\n+    - 'plugins/*/spec/**/*'"
+    }
+  ]
+}
