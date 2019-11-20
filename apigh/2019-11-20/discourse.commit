@@ -1,0 +1,98 @@
+{
+  "sha": "b8e5208162576d3c8529fce525a183667b4e9a62",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiOGU1MjA4MTYyNTc2ZDNjODUyOWZjZTUyNWExODM2NjdiNGU5YTYy",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-11-20T16:39:47Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-11-20T16:39:47Z"
+    },
+    "message": "DEV: Add convenience method to check info about a site setting\n\nThis is only defined in a console environment. For example:\n\n```\n[1] pry(main)> SiteSetting.info(:title)\n=> {:resolved_value=>\"Globally Overridden Title\",\n :default_value=>\"Discourse\",\n :global_override=>\"Globally Overridden Title\",\n :database_value=>\"Test Discourse\",\n :refresh?=>false,\n :client?=>true,\n :secret?=>false}\n```",
+    "tree": {
+      "sha": "3776f39164cb0b1354c67adb2e7e63fcddfd1d8f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3776f39164cb0b1354c67adb2e7e63fcddfd1d8f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b8e5208162576d3c8529fce525a183667b4e9a62",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b8e5208162576d3c8529fce525a183667b4e9a62",
+  "html_url": "https://github.com/discourse/discourse/commit/b8e5208162576d3c8529fce525a183667b4e9a62",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b8e5208162576d3c8529fce525a183667b4e9a62/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e1fcbf4aef13a6d9815e259743a73cb710dcf46b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e1fcbf4aef13a6d9815e259743a73cb710dcf46b",
+      "html_url": "https://github.com/discourse/discourse/commit/e1fcbf4aef13a6d9815e259743a73cb710dcf46b"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 16,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c19eb8814e73503b91943d3059b90d41465fd3c4",
+      "filename": "lib/site_setting_extension.rb",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/b8e5208162576d3c8529fce525a183667b4e9a62/lib/site_setting_extension.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b8e5208162576d3c8529fce525a183667b4e9a62/lib/site_setting_extension.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/site_setting_extension.rb?ref=b8e5208162576d3c8529fce525a183667b4e9a62",
+      "patch": "@@ -413,6 +413,22 @@ def get(name)\n     end\n   end\n \n+  if defined?(Rails::Console)\n+    # Convenience method for debugging site setting issues\n+    # Returns a hash with information about a specific setting\n+    def info(name)\n+      {\n+        resolved_value: get(name),\n+        default_value: defaults[name],\n+        global_override: GlobalSetting.respond_to?(name) ? GlobalSetting.public_send(name) : nil,\n+        database_value: provider.find(name)&.value,\n+        refresh?: refresh_settings.include?(name),\n+        client?: client_settings.include?(name),\n+        secret?: secret_settings.include?(name),\n+      }\n+    end\n+  end\n+\n   protected\n \n   def clear_cache!"
+    }
+  ]
+}

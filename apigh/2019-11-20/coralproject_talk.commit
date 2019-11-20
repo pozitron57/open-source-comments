@@ -1,0 +1,206 @@
+{
+  "sha": "bb23c80004f156e3f117255d6b662fb38e5af561",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YmIyM2M4MDAwNGYxNTZlM2YxMTcyNTVkNmI2NjJmYjM4ZTVhZjU2MQ==",
+  "commit": {
+    "author": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2019-11-19T21:20:36Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-11-19T21:20:36Z"
+    },
+    "message": "feat: generalized rate limiting for graphql (#2709)",
+    "tree": {
+      "sha": "3f10053b6ff6d4d13f5a21ac7917e68505e8790b",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/3f10053b6ff6d4d13f5a21ac7917e68505e8790b"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/bb23c80004f156e3f117255d6b662fb38e5af561",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJd1FykCRBK7hj4Ov3rIwAAdHIIAAtnKCa7QpasZ1DgQbb4Bykh\nIEe+5zYfJRzMw/C3myQqJIY9B2KsIblekyX2wirSkH77BO35BaFZ5SsEkeN8CqxF\n/9JOwXRgHmv01peUhNStGLDpssdIa4hsWv0CB76hIF/XuOynw7KR1MmDWCmUVHWb\ng51/UIHSsFpVycAyD4/iMH+oUbipukg5R3+h+zH4FqXCA388Wj39Waw6ttZCSCLA\n2s4nv5eNkYbNFJRyfZQ2R3ExmBb8by8U7SUVTVCcPCVOQsx5MUYMPmnFHzeXHJUE\nWl4wWDtUTTDD6KcCUdR3UeWXvj9UqggzHvbV2j3owy0X48FBJjRJDv5boTbadsE=\n=8JZS\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 3f10053b6ff6d4d13f5a21ac7917e68505e8790b\nparent 24914455791223aa138311a128446d3083c603c2\nauthor Wyatt Johnson <wyattjoh@gmail.com> 1574198436 -0700\ncommitter GitHub <noreply@github.com> 1574198436 -0700\n\nfeat: generalized rate limiting for graphql (#2709)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/bb23c80004f156e3f117255d6b662fb38e5af561",
+  "html_url": "https://github.com/coralproject/talk/commit/bb23c80004f156e3f117255d6b662fb38e5af561",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/bb23c80004f156e3f117255d6b662fb38e5af561/comments",
+  "author": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "24914455791223aa138311a128446d3083c603c2",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/24914455791223aa138311a128446d3083c603c2",
+      "html_url": "https://github.com/coralproject/talk/commit/24914455791223aa138311a128446d3083c603c2"
+    }
+  ],
+  "stats": {
+    "total": 333,
+    "additions": 139,
+    "deletions": 194
+  },
+  "files": [
+    {
+      "sha": "0f9dc3df9e563f4e1bea6dcbde9ee0a62efa4d1b",
+      "filename": "src/core/common/constants.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 6,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/common/constants.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/common/constants.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/common/constants.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -53,12 +53,6 @@ export const ALLOWED_USERNAME_CHANGE_FREQUENCY = 14 * 86400;\n  */\n export const SCHEDULED_DELETION_TIMESPAN_DAYS = 14;\n \n-/**\n- * COMMENT_LIMIT_WINDOW_SECONDS is the number of seconds that a user has to\n- * wait in-between writing comments.\n- */\n-export const COMMENT_LIMIT_WINDOW_SECONDS = 3;\n-\n /**\n  * DEFAULT_SESSION_LENTTH is the length of time in seconds a session is valid for unless configured in tenant.\n  */"
+    },
+    {
+      "sha": "b5727f04abfb14a075ef26116a8dbf03d3e05cff",
+      "filename": "src/core/server/graph/common/directives/auth.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 37,
+      "changes": 44,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/common/directives/auth.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/common/directives/auth.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/common/directives/auth.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -7,16 +7,18 @@ import {\n   UserSuspended,\n } from \"coral-server/errors\";\n import CommonContext from \"coral-server/graph/common/context\";\n-import {\n-  GQLUSER_AUTH_CONDITIONS,\n-  GQLUSER_ROLE,\n-} from \"coral-server/graph/tenant/schema/__generated__/types\";\n import {\n   consolidateUserStatus,\n   consolidateUserSuspensionStatus,\n   User,\n } from \"coral-server/models/user\";\n-import { GraphQLResolveInfo, ResponsePath } from \"graphql\";\n+\n+import {\n+  GQLUSER_AUTH_CONDITIONS,\n+  GQLUSER_ROLE,\n+} from \"coral-server/graph/tenant/schema/__generated__/types\";\n+\n+import { calculateLocationKey } from \"./helpers\";\n \n // Replace `memoize.Cache`.\n memoize.Cache = WeakMap;\n@@ -58,38 +60,6 @@ function calculateAuthConditions(\n   return conditions.sort();\n }\n \n-/**\n- * calculateLocationKey will reduce the resolve information to determine the\n- * path to where the key that is being accessed.\n- *\n- * @param info the info from the graph request\n- */\n-function calculateLocationKey(info: Pick<GraphQLResolveInfo, \"path\">): string {\n-  // Guard against invalid input.\n-  if (!info || !info.path || !info.path.key) {\n-    return \"\";\n-  }\n-\n-  // Grab the first part of the path.\n-  const parts: string[] = [info.path.key.toString()];\n-\n-  // Grab the parent previous part of the path.\n-  let prev: ResponsePath | undefined = info.path.prev;\n-\n-  // While there is still a previous part of the path, keep looping to find the\n-  // all the parts.\n-  while (prev && prev.key) {\n-    // Push the key into the front of the array.\n-    parts.unshift(prev.key.toString());\n-\n-    // Change the selection to the previous path element.\n-    prev = prev.prev;\n-  }\n-\n-  // Join it together with a dotted path.\n-  return parts.join(\".\");\n-}\n-\n const calculateAuthConditionsMemoized = memoize(calculateAuthConditions);\n \n const auth: DirectiveResolverFn<"
+    },
+    {
+      "sha": "2c8ee3ea81ee1c1d88e236d7504ae328e0bdd3d2",
+      "filename": "src/core/server/graph/common/directives/helpers.ts",
+      "status": "added",
+      "additions": 35,
+      "deletions": 0,
+      "changes": 35,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/common/directives/helpers.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/common/directives/helpers.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/common/directives/helpers.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -0,0 +1,35 @@\n+import { GraphQLResolveInfo, ResponsePath } from \"graphql\";\n+\n+/**\n+ * calculateLocationKey will reduce the resolve information to determine the\n+ * path to where the key that is being accessed.\n+ *\n+ * @param info the info from the graph request\n+ */\n+export function calculateLocationKey(\n+  info: Pick<GraphQLResolveInfo, \"path\" | \"operation\" | \"parentType\">\n+): string {\n+  // Guard against invalid input.\n+  if (!info || !info.path || !info.path.key) {\n+    return \"\";\n+  }\n+\n+  // Grab the first part of the path.\n+  const parts: string[] = [info.path.key.toString()];\n+\n+  // Grab the parent previous part of the path.\n+  let prev: ResponsePath | undefined = info.path.prev;\n+\n+  // While there is still a previous part of the path, keep looping to find the\n+  // all the parts.\n+  while (prev && prev.key) {\n+    // Push the key into the front of the array.\n+    parts.unshift(prev.key.toString());\n+\n+    // Change the selection to the previous path element.\n+    prev = prev.prev;\n+  }\n+\n+  // Join it together with a dotted path.\n+  return parts.join(\".\");\n+}"
+    },
+    {
+      "sha": "e2e95e779e0875a909d0ea0c2de2a0c849a47910",
+      "filename": "src/core/server/graph/tenant/directives/rate.ts",
+      "status": "added",
+      "additions": 69,
+      "deletions": 0,
+      "changes": 69,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/tenant/directives/rate.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/tenant/directives/rate.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/directives/rate.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -0,0 +1,69 @@\n+import { DirectiveResolverFn } from \"graphql-tools\";\n+import { DateTime } from \"luxon\";\n+\n+import { RateLimitExceeded } from \"coral-server/errors\";\n+import { calculateLocationKey } from \"coral-server/graph/common/directives/helpers\";\n+\n+import TenantContext from \"../context\";\n+\n+export interface RateDirectiveArgs {\n+  max?: number;\n+  seconds?: number;\n+  key?: string;\n+}\n+\n+const rate: DirectiveResolverFn<\n+  Record<string, string | undefined>,\n+  TenantContext\n+> = async (\n+  next,\n+  src,\n+  { max = 1, seconds, key: forceResource }: RateDirectiveArgs,\n+  { user, tenant, now, redis, config },\n+  info\n+) => {\n+  // If we're in development mode and rate limiters are disabled, then just\n+  // continue anyways now.\n+  if (\n+    config.get(\"env\") === \"development\" &&\n+    config.get(\"disable_rate_limiters\")\n+  ) {\n+    return next();\n+  }\n+\n+  // Check if the rate limiting makes sense.\n+  if (!seconds) {\n+    return next();\n+  }\n+\n+  // Current implementations do not handle anonymous requests.\n+  if (!user) {\n+    // TODO: (wyattjoh) handle anonymous requests\n+    return next();\n+  }\n+\n+  // Compute the resource key for this element.\n+  const resource = forceResource || calculateLocationKey(info);\n+\n+  // TODO: (wyattjoh) depending on `resource`, maybe override (max, seconds)\n+\n+  // Calculate the storage key from the resource and user identifiers.\n+  const key = `${tenant.id}:rl:${user.id}:${info.operation.operation}.${resource}`;\n+\n+  // Perform the rate limiting check.\n+  const [[, tries]] = await redis\n+    .multi()\n+    .incr(key)\n+    .expire(key, seconds)\n+    .exec();\n+  if (tries && tries > max) {\n+    const resetsAt = DateTime.fromJSDate(now)\n+      .plus({ seconds })\n+      .toJSDate();\n+    throw new RateLimitExceeded(key, max, resetsAt, tries);\n+  }\n+\n+  return next();\n+};\n+\n+export default rate;"
+    },
+    {
+      "sha": "df717134a637a829a06d26a51fadc4925ec9b5ee",
+      "filename": "src/core/server/graph/tenant/schema/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/tenant/schema/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/tenant/schema/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/schema/index.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -7,13 +7,14 @@ import {\n import { loadSchema } from \"coral-common/graphql\";\n import auth from \"coral-server/graph/common/directives/auth\";\n import constraint from \"coral-server/graph/common/directives/constraint\";\n+import rate from \"coral-server/graph/tenant/directives/rate\";\n import resolvers from \"coral-server/graph/tenant/resolvers\";\n \n export default function getTenantSchema() {\n   const schema = loadSchema(\"tenant\", resolvers as IResolvers);\n \n   // Attach the directive resolvers.\n-  attachDirectiveResolvers(schema, { auth });\n+  attachDirectiveResolvers(schema, { auth, rate });\n \n   // Attach the constraint directive.\n   SchemaDirectiveVisitor.visitSchemaDirectives(schema, {"
+    },
+    {
+      "sha": "ce4be9a751058ca03c68b0bf83982e6fe1a22da2",
+      "filename": "src/core/server/graph/tenant/schema/schema.graphql",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 13,
+      "changes": 38,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/tenant/schema/schema.graphql",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/graph/tenant/schema/schema.graphql",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/schema/schema.graphql?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -60,6 +60,11 @@ arguments to parameters passed in to operations.\n \"\"\"\n directive @constraint(min: Int, max: Int) on ARGUMENT_DEFINITION\n \n+\"\"\"\n+rate enforces a rate limit on requests made by the user.\n+\"\"\"\n+directive @rate(max: Int = 1, seconds: Int!, key: String) on FIELD_DEFINITION\n+\n ################################################################################\n ## Custom Scalar Types\n ################################################################################\n@@ -5119,6 +5124,7 @@ type RequestUserCommentsDownloadPayload {\n   \"\"\"\n   archiveURL: String!\n }\n+\n ##################\n ## Mutation\n ##################\n@@ -5127,15 +5133,17 @@ type Mutation {\n   \"\"\"\n   createComment will create a Comment as the current logged in User.\n   \"\"\"\n-  createComment(input: CreateCommentInput!): CreateCommentPayload! @auth\n+  createComment(input: CreateCommentInput!): CreateCommentPayload!\n+    @auth\n+    @rate(seconds: 3, key: \"createComment\")\n \n   \"\"\"\n   createCommentReply will create a Comment as the current logged in User that is\n   in reply to another Comment.\n   \"\"\"\n   createCommentReply(\n     input: CreateCommentReplyInput!\n-  ): CreateCommentReplyPayload! @auth\n+  ): CreateCommentReplyPayload! @auth @rate(seconds: 3, key: \"createComment\")\n \n   \"\"\"\n   editComment will allow the author of a comment to change the body within the\n@@ -5162,38 +5170,39 @@ type Mutation {\n   \"\"\"\n   createCommentReaction(\n     input: CreateCommentReactionInput!\n-  ): CreateCommentReactionPayload @auth\n+  ): CreateCommentReactionPayload @auth @rate(max: 2, seconds: 1)\n \n   \"\"\"\n   removeCommentReaction will remove a Reaction authored by the current logged in\n   User on a Comment if it exists.\n   \"\"\"\n   removeCommentReaction(\n     input: RemoveCommentReactionInput!\n-  ): RemoveCommentReactionPayload @auth\n+  ): RemoveCommentReactionPayload @auth @rate(max: 2, seconds: 1)\n \n   \"\"\"\n   createCommentDontAgree will create a DontAgree authored by the current logged in\n   User on a Comment.\n   \"\"\"\n   createCommentDontAgree(\n     input: CreateCommentDontAgreeInput!\n-  ): CreateCommentDontAgreePayload @auth\n+  ): CreateCommentDontAgreePayload @auth @rate(seconds: 3)\n \n   \"\"\"\n   removeCommentDontAgree will remove a DontAgree authored by the current logged in\n   User on a Comment if it exists.\n   \"\"\"\n   removeCommentDontAgree(\n     input: RemoveCommentDontAgreeInput!\n-  ): RemoveCommentDontAgreePayload @auth\n+  ): RemoveCommentDontAgreePayload @auth @rate(seconds: 3)\n \n   \"\"\"\n   createCommentFlag will create a Flag authored by the current logged in User on\n   a given Comment.\n   \"\"\"\n   createCommentFlag(input: CreateCommentFlagInput!): CreateCommentFlagPayload!\n     @auth\n+    @rate(seconds: 3)\n \n   \"\"\"\n   featureComment will mark a given Comment as featured.\n@@ -5286,11 +5295,11 @@ type Mutation {\n     )\n \n   \"\"\"\n-  updateUsername will set the username on the current User if they have not set one\n-  before. This mutation will fail if the username is already set.\n+  updateUsername will update the users username.\n   \"\"\"\n   updateUsername(input: UpdateUsernameInput!): UpdateUsernamePayload!\n     @auth(permit: [SUSPENDED, BANNED, PENDING_DELETION])\n+    @rate(seconds: 10)\n \n   \"\"\"\n   setEmail will set the email address on the current User if they have not set\n@@ -5311,15 +5320,17 @@ type Mutation {\n   updatePassword allows the current logged in User to change their password if\n   they already have one associated with them.\n   \"\"\"\n-  updatePassword(input: UpdatePasswordInput!): UpdatePasswordPayload! @auth\n+  updatePassword(input: UpdatePasswordInput!): UpdatePasswordPayload!\n+    @auth\n+    @rate(seconds: 10)\n \n   \"\"\"\n   requestAccountDeletion allows the current logged in User to request to\n   delete their account.\n   \"\"\"\n   requestAccountDeletion(\n     input: RequestAccountDeletionInput!\n-  ): RequestAccountDeletionPayload! @auth\n+  ): RequestAccountDeletionPayload! @auth @rate(seconds: 10)\n \n   \"\"\"\n   deleteUserAccount will delete the target user now.\n@@ -5359,10 +5370,11 @@ type Mutation {\n   ): UpdateUserUsernamePayload! @auth(roles: [ADMIN])\n \n   \"\"\"\n-  updateEmail allows administrators to update a given User's email address\n-  to the one provided.\n+  updateEmail will update the current users email address.\n   \"\"\"\n-  updateEmail(input: UpdateEmailInput!): UpdateEmailPayload! @auth\n+  updateEmail(input: UpdateEmailInput!): UpdateEmailPayload!\n+    @auth\n+    @rate(seconds: 10)\n \n   \"\"\"\n   updateNotificationSettings can be used to update the notification settings for"
+    },
+    {
+      "sha": "b46452e495c5f3756dbc8e24415a9f00525c3cd8",
+      "filename": "src/core/server/services/comments/comments.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 8,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/services/comments/comments.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/services/comments/comments.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/comments.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -49,10 +49,7 @@ import {\n import { AugmentedRedis } from \"coral-server/services/redis\";\n import { Request } from \"coral-server/types/express\";\n \n-import {\n-  updateUserLastCommentID,\n-  updateUserLastWroteCommentTimestamp,\n-} from \"../users\";\n+import { updateUserLastCommentID } from \"../users\";\n import { addCommentActions, CreateAction } from \"./actions\";\n import { calculateCounts, calculateCountsDiff } from \"./moderation/counts\";\n import { PhaseResult, processForModeration } from \"./pipeline\";\n@@ -170,10 +167,6 @@ export async function create(\n     actionCounts = encodeActionCounts(...deDuplicatedActions);\n   }\n \n-  // Create the comment action in our rate limiter. This will throw an error if\n-  // there is a rate limit error.\n-  await updateUserLastWroteCommentTimestamp(redis, tenant, author, now);\n-\n   // Create the comment!\n   const comment = await createComment(\n     mongo,"
+    },
+    {
+      "sha": "baf14c50fe148d067c58eeb06bf677c58384f3e8",
+      "filename": "src/core/server/services/comments/pipeline/phases/index.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/services/comments/pipeline/phases/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/services/comments/pipeline/phases/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/index.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -13,14 +13,12 @@ import { spam } from \"./spam\";\n import { staff } from \"./staff\";\n import { storyClosed } from \"./storyClosed\";\n import { toxic } from \"./toxic\";\n-import { userRateLimit } from \"./userRateLimit\";\n import { wordList } from \"./wordList\";\n \n /**\n  * The moderation phases to apply for each comment being processed.\n  */\n export const moderationPhases: IntermediateModerationPhase[] = [\n-  userRateLimit,\n   commentLength,\n   storyClosed,\n   commentingDisabled,"
+    },
+    {
+      "sha": "4ee0c497d751e4a3d07fa256fafd1477d1588941",
+      "filename": "src/core/server/services/comments/pipeline/phases/userRateLimit.ts",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 59,
+      "changes": 59,
+      "blob_url": "https://github.com/coralproject/talk/blob/24914455791223aa138311a128446d3083c603c2/src/core/server/services/comments/pipeline/phases/userRateLimit.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/24914455791223aa138311a128446d3083c603c2/src/core/server/services/comments/pipeline/phases/userRateLimit.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/userRateLimit.ts?ref=24914455791223aa138311a128446d3083c603c2",
+      "patch": "@@ -1,59 +0,0 @@\n-import { DateTime } from \"luxon\";\n-\n-import { COMMENT_LIMIT_WINDOW_SECONDS } from \"coral-common/constants\";\n-import { RateLimitExceeded } from \"coral-server/errors\";\n-import {\n-  IntermediateModerationPhase,\n-  IntermediatePhaseResult,\n-  ModerationPhaseContext,\n-} from \"coral-server/services/comments/pipeline\";\n-import { retrieveUserLastWroteCommentTimestamp } from \"coral-server/services/users\";\n-\n-export const userRateLimit: IntermediateModerationPhase = async ({\n-  action,\n-  author,\n-  redis,\n-  config,\n-  tenant,\n-  now,\n-}: Pick<\n-  ModerationPhaseContext,\n-  \"author\" | \"redis\" | \"config\" | \"now\" | \"tenant\" | \"action\"\n->): Promise<IntermediatePhaseResult | void> => {\n-  // If we're in development mode and rate limiters are disabled, then just\n-  // continue anyways now.\n-  if (\n-    config.get(\"env\") === \"development\" &&\n-    config.get(\"disable_rate_limiters\")\n-  ) {\n-    return;\n-  }\n-\n-  // If this is an edit, we don't need to process this again here.\n-  if (action === \"EDIT\") {\n-    return;\n-  }\n-\n-  // Check when the last comment was written by this user.\n-  const timestamp = await retrieveUserLastWroteCommentTimestamp(\n-    redis,\n-    tenant,\n-    author\n-  );\n-  if (!timestamp) {\n-    // There is no timestamp written for this user, they are definitely allowed\n-    // to write a comment!\n-    return;\n-  }\n-\n-  // Check to see if this timestamp is still within the limit window. If it is,\n-  // reject the comment.\n-  const nextEditTime = DateTime.fromJSDate(timestamp)\n-    .plus({ seconds: COMMENT_LIMIT_WINDOW_SECONDS })\n-    .toJSDate();\n-  if (nextEditTime > now) {\n-    throw new RateLimitExceeded(\"createComment\", 1, nextEditTime);\n-  }\n-\n-  return;\n-};"
+    },
+    {
+      "sha": "b85c865ca403bd5c3e549f6d47fa5bee8b70bd38",
+      "filename": "src/core/server/services/users/users.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 68,
+      "changes": 68,
+      "blob_url": "https://github.com/coralproject/talk/blob/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/services/users/users.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/bb23c80004f156e3f117255d6b662fb38e5af561/src/core/server/services/users/users.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/users/users.ts?ref=bb23c80004f156e3f117255d6b662fb38e5af561",
+      "patch": "@@ -3,7 +3,6 @@ import { Db } from \"mongodb\";\n \n import {\n   ALLOWED_USERNAME_CHANGE_FREQUENCY,\n-  COMMENT_LIMIT_WINDOW_SECONDS,\n   COMMENT_REPEAT_POST_TIMESPAN,\n   DOWNLOAD_LIMIT_TIMEFRAME,\n } from \"coral-common/constants\";\n@@ -17,7 +16,6 @@ import {\n   LocalProfileAlreadySetError,\n   LocalProfileNotSetError,\n   PasswordIncorrect,\n-  RateLimitExceeded,\n   TokenNotFoundError,\n   UserAlreadyBannedError,\n   UserAlreadyPremoderated,\n@@ -1185,79 +1183,13 @@ export async function updateNotificationSettings(\n   return updateUserNotificationSettings(mongo, tenant.id, user.id, settings);\n }\n \n-function userLastWroteCommentTimestampKey(\n-  tenant: Pick<Tenant, \"id\">,\n-  user: Pick<User, \"id\">\n-) {\n-  return `${tenant.id}:lastCommentTimestamp:${user.id}`;\n-}\n-\n function userLastCommentIDKey(\n   tenant: Pick<Tenant, \"id\">,\n   user: Pick<User, \"id\">\n ) {\n   return `${tenant.id}:lastCommentID:${user.id}`;\n }\n \n-/**\n- * retrieveUserLastWroteCommentTimestamp will return the timestamp (if set) that\n- * the user last wrote a comment on. This will return null if the comment was\n- * written more than COMMENT_LIMIT_WINDOW_SECONDS seconds ago.\n- *\n- * @param redis the Redis instance that Coral interacts with\n- * @param tenant the Tenant to operate on\n- * @param user the User that we're looking up the limit for\n- */\n-export async function retrieveUserLastWroteCommentTimestamp(\n-  redis: AugmentedRedis,\n-  tenant: Tenant,\n-  user: User\n-): Promise<Date | null> {\n-  // Try to get the timestamp for the author.\n-  const timestamp: string | null = await redis.get(\n-    userLastWroteCommentTimestampKey(tenant, user)\n-  );\n-  if (!timestamp) {\n-    return null;\n-  }\n-\n-  return DateTime.fromISO(timestamp).toJSDate();\n-}\n-\n-/**\n- * updateUserLastWroteCommentTimestamp will update the last time that the user\n- * wrote a comment, and will throw an error if the rate limit was exceeded. If\n- * this throws an error, it means that the user has written a comment within\n- * COMMENT_LIMIT_WINDOW_SECONDS seconds, and should be prevented from writing\n- * another comment.\n- *\n- * @param redis the Redis instance that Coral interacts with\n- * @param tenant the Tenant to operate on\n- * @param user the User that we're setting the limit for\n- * @param when the date that the user wrote the comment\n- */\n-export async function updateUserLastWroteCommentTimestamp(\n-  redis: AugmentedRedis,\n-  tenant: Tenant,\n-  user: User,\n-  when: Date\n-) {\n-  const key = userLastWroteCommentTimestampKey(tenant, user);\n-\n-  // Try to set the last wrote comment timestamp.\n-  const [[, set]] = await redis\n-    .multi()\n-    .setnx(key, when.toISOString())\n-    .expire(key, COMMENT_LIMIT_WINDOW_SECONDS)\n-    .exec();\n-  if (!set) {\n-    const resetsAt = DateTime.fromJSDate(when)\n-      .plus({ seconds: COMMENT_LIMIT_WINDOW_SECONDS })\n-      .toJSDate();\n-    throw new RateLimitExceeded(\"createComment\", 1, resetsAt);\n-  }\n-}\n-\n /**\n  * updateUserLastCommentID will update the id of the users most recent comment.\n  *"
+    }
+  ]
+}
