@@ -1,0 +1,110 @@
+{
+  "sha": "d7b710194dfc0f5ab548d320a8238e68a99c2f9b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkN2I3MTAxOTRkZmMwZjVhYjU0OGQzMjBhODIzOGU2OGE5OWMyZjli",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-11-21T15:35:46Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-11-21T15:35:57Z"
+    },
+    "message": "Revert \"REVERT: Use 1.0.6 for linting for now\"\n\nThis reverts commit 457986d52ad47fd362a5b6464f1781173c7248bb.",
+    "tree": {
+      "sha": "5368ea48911fbe8481b6b27b58c302338106c2b6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5368ea48911fbe8481b6b27b58c302338106c2b6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d7b710194dfc0f5ab548d320a8238e68a99c2f9b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d7b710194dfc0f5ab548d320a8238e68a99c2f9b",
+  "html_url": "https://github.com/discourse/discourse/commit/d7b710194dfc0f5ab548d320a8238e68a99c2f9b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d7b710194dfc0f5ab548d320a8238e68a99c2f9b/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "11d22293fb30cff98bf29844fbc17964dac41556",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/11d22293fb30cff98bf29844fbc17964dac41556",
+      "html_url": "https://github.com/discourse/discourse/commit/11d22293fb30cff98bf29844fbc17964dac41556"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "a42bcfa7af0c364d9e01c47e8858e46f934dd8ae",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/d7b710194dfc0f5ab548d320a8238e68a99c2f9b/package.json",
+      "raw_url": "https://github.com/discourse/discourse/raw/d7b710194dfc0f5ab548d320a8238e68a99c2f9b/package.json",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/package.json?ref=d7b710194dfc0f5ab548d320a8238e68a99c2f9b",
+      "patch": "@@ -43,7 +43,7 @@\n     \"chrome-launcher\": \"^0.12.0\",\n     \"chrome-remote-interface\": \"^0.25\",\n     \"eslint\": \"^4.19\",\n-    \"eslint-config-discourse\": \"1.0.6\",\n+    \"eslint-config-discourse\": \"1.0.7\",\n     \"install-peerdeps\": \"^1.10.2\",\n     \"lodash-cli\": \"https://github.com/lodash-archive/lodash-cli.git\",\n     \"pretender\": \"^1.6\","
+    },
+    {
+      "sha": "fd0c8fe8eb9d36af0fed0793196ff5ae426100ec",
+      "filename": "yarn.lock",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/d7b710194dfc0f5ab548d320a8238e68a99c2f9b/yarn.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/d7b710194dfc0f5ab548d320a8238e68a99c2f9b/yarn.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/yarn.lock?ref=d7b710194dfc0f5ab548d320a8238e68a99c2f9b",
+      "patch": "@@ -886,10 +886,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:\n   resolved \"https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4\"\n   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=\n \n-eslint-config-discourse@1.0.6:\n-  version \"1.0.6\"\n-  resolved \"https://registry.yarnpkg.com/eslint-config-discourse/-/eslint-config-discourse-1.0.6.tgz#cfd23c7d7b92ca9c416cbc30272be197a823cbe3\"\n-  integrity sha512-JOTncJzusPnYC97rXRQLewk5CxToL31spw7dzDbVk9XkZpnmRenbWmRawW2OEkbbXow3AdcKj/ousmo9PttwbA==\n+eslint-config-discourse@1.0.7:\n+  version \"1.0.7\"\n+  resolved \"https://registry.yarnpkg.com/eslint-config-discourse/-/eslint-config-discourse-1.0.7.tgz#6e4a67fee63b7eb0f97c14fbf67d6fc5f84896bb\"\n+  integrity sha512-KPP/sfGWAfn7Wnx/lP9x6eMCmC2ag42NK5Dgj5EsOypQGe1Ct4KA2z0fEGuIqGxDoh5xEZB2Nf6qD/lv0gRg7w==\n \n eslint-scope@3.7.1:\n   version \"3.7.1\""
+    }
+  ]
+}
