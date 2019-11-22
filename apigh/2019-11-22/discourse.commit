@@ -1,0 +1,98 @@
+{
+  "sha": "a53b00a8583a6d7a99a4f2f85b252cfd1d80d867",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNTNiMDBhODU4M2E2ZDdhOTlhNGYyZjg1YjI1MmNmZDFkODBkODY3",
+  "commit": {
+    "author": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-11-22T16:44:31Z"
+    },
+    "committer": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2019-11-22T16:44:31Z"
+    },
+    "message": "DEV: Pass query to the icon outlet",
+    "tree": {
+      "sha": "0ac6aae5d897759a3c17b2f66b699d2bfe699a32",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0ac6aae5d897759a3c17b2f66b699d2bfe699a32"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a53b00a8583a6d7a99a4f2f85b252cfd1d80d867",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a53b00a8583a6d7a99a4f2f85b252cfd1d80d867",
+  "html_url": "https://github.com/discourse/discourse/commit/a53b00a8583a6d7a99a4f2f85b252cfd1d80d867",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a53b00a8583a6d7a99a4f2f85b252cfd1d80d867/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a40bc1e92b5a6880a36cc3a4e5a7ac55ebe7ccd9",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a40bc1e92b5a6880a36cc3a4e5a7ac55ebe7ccd9",
+      "html_url": "https://github.com/discourse/discourse/commit/a40bc1e92b5a6880a36cc3a4e5a7ac55ebe7ccd9"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "d31a38c1f642e4a5a69e85ef26b2e0296c899b1e",
+      "filename": "app/assets/javascripts/admin/templates/users-list-show.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a53b00a8583a6d7a99a4f2f85b252cfd1d80d867/app/assets/javascripts/admin/templates/users-list-show.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/a53b00a8583a6d7a99a4f2f85b252cfd1d80d867/app/assets/javascripts/admin/templates/users-list-show.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/templates/users-list-show.hbs?ref=a53b00a8583a6d7a99a4f2f85b252cfd1d80d867",
+      "patch": "@@ -91,7 +91,7 @@\n               {{#if user.second_factor_enabled}}\n                 {{d-icon \"lock\" title=\"admin.user.second_factor_enabled\" }}\n               {{/if}}\n-              {{plugin-outlet name=\"admin-users-list-icon\" tagName=\"\" args=(hash user=user)}}\n+              {{plugin-outlet name=\"admin-users-list-icon\" tagName=\"\" args=(hash user=user query=query)}}\n             </td>\n           </tr>\n         {{/each}}"
+    }
+  ]
+}
