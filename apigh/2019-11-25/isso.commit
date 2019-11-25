@@ -1,0 +1,98 @@
+{
+  "sha": "472c9ed3de3e252bc51cfa9fe2ee5774e339b43f",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTo0NzJjOWVkM2RlM2UyNTJiYzUxY2ZhOWZlMmVlNTc3NGUzMzliNDNm",
+  "commit": {
+    "author": {
+      "name": "Michiel Scholten",
+      "email": "github@diginaut.net",
+      "date": "2019-11-25T09:06:42Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-11-25T09:06:42Z"
+    },
+    "message": "Set subject for notification about new comment, subject should not be empty (#589)",
+    "tree": {
+      "sha": "94db5c4cdd27a6b7bff9eb5cabd04c21a25385c6",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/94db5c4cdd27a6b7bff9eb5cabd04c21a25385c6"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/472c9ed3de3e252bc51cfa9fe2ee5774e339b43f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/472c9ed3de3e252bc51cfa9fe2ee5774e339b43f",
+  "html_url": "https://github.com/posativ/isso/commit/472c9ed3de3e252bc51cfa9fe2ee5774e339b43f",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/472c9ed3de3e252bc51cfa9fe2ee5774e339b43f/comments",
+  "author": {
+    "login": "aquatix",
+    "id": 629545,
+    "node_id": "MDQ6VXNlcjYyOTU0NQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/629545?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aquatix",
+    "html_url": "https://github.com/aquatix",
+    "followers_url": "https://api.github.com/users/aquatix/followers",
+    "following_url": "https://api.github.com/users/aquatix/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aquatix/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aquatix/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aquatix/subscriptions",
+    "organizations_url": "https://api.github.com/users/aquatix/orgs",
+    "repos_url": "https://api.github.com/users/aquatix/repos",
+    "events_url": "https://api.github.com/users/aquatix/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aquatix/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "95b05bd3fecee630ea3452092c75d1f564a078b1",
+      "url": "https://api.github.com/repos/posativ/isso/commits/95b05bd3fecee630ea3452092c75d1f564a078b1",
+      "html_url": "https://github.com/posativ/isso/commit/95b05bd3fecee630ea3452092c75d1f564a078b1"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 7,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0743b6b2cc0000b050bf320e87e664b392f77a4b",
+      "filename": "isso/ext/notifications.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/posativ/isso/blob/472c9ed3de3e252bc51cfa9fe2ee5774e339b43f/isso/ext/notifications.py",
+      "raw_url": "https://github.com/posativ/isso/raw/472c9ed3de3e252bc51cfa9fe2ee5774e339b43f/isso/ext/notifications.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/ext/notifications.py?ref=472c9ed3de3e252bc51cfa9fe2ee5774e339b43f",
+      "patch": "@@ -149,7 +149,10 @@ def format(self, thread, comment, parent_comment, recipient=None, admin=False):\n     def notify_new(self, thread, comment):\n         if self.admin_notify:\n             body = self.format(thread, comment, None, admin=True)\n-            self.sendmail(thread[\"title\"], body, thread, comment)\n+            subject = \"New comment posted\"\n+            if thread['title']:\n+                subject = \"%s on %s\" % (subject, thread[\"title\"])\n+            self.sendmail(subject, body, thread, comment)\n \n         if comment[\"mode\"] == 1:\n             self.notify_users(thread, comment)\n@@ -175,6 +178,9 @@ def notify_users(self, thread, comment):\n \n     def sendmail(self, subject, body, thread, comment, to=None):\n         to = to or self.conf.get(\"to\")\n+        if not subject:\n+            # Fallback, just in case as an empty subject does not work\n+            subject = 'isso notification'\n         if uwsgi:\n             uwsgi.spool({b\"subject\": subject.encode(\"utf-8\"),\n                          b\"body\": body.encode(\"utf-8\"),"
+    }
+  ]
+}
