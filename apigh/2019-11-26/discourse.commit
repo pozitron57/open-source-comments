@@ -1,0 +1,182 @@
+{
+  "sha": "2714149fd217f0589a9a6040fb86b52e49994902",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyNzE0MTQ5ZmQyMTdmMDU4OWE5YTYwNDBmYjg2YjUyZTQ5OTk0OTAy",
+  "commit": {
+    "author": {
+      "name": "Leo McArdle",
+      "email": "leomcardle@gmail.com",
+      "date": "2019-11-26T14:55:22Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2019-11-26T14:55:22Z"
+    },
+    "message": "FEATURE: hide posts from incoming email based on dmarc verdict (#8333)",
+    "tree": {
+      "sha": "1f812f25ed0d3db80dfe6c047c93d3d52e2d78e6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1f812f25ed0d3db80dfe6c047c93d3d52e2d78e6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2714149fd217f0589a9a6040fb86b52e49994902",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2714149fd217f0589a9a6040fb86b52e49994902",
+  "html_url": "https://github.com/discourse/discourse/commit/2714149fd217f0589a9a6040fb86b52e49994902",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2714149fd217f0589a9a6040fb86b52e49994902/comments",
+  "author": {
+    "login": "LeoMcA",
+    "id": 755354,
+    "node_id": "MDQ6VXNlcjc1NTM1NA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/755354?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LeoMcA",
+    "html_url": "https://github.com/LeoMcA",
+    "followers_url": "https://api.github.com/users/LeoMcA/followers",
+    "following_url": "https://api.github.com/users/LeoMcA/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LeoMcA/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LeoMcA/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LeoMcA/subscriptions",
+    "organizations_url": "https://api.github.com/users/LeoMcA/orgs",
+    "repos_url": "https://api.github.com/users/LeoMcA/repos",
+    "events_url": "https://api.github.com/users/LeoMcA/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LeoMcA/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8ea114007f10588d6e8eca86aed212f45e2a4a47",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/8ea114007f10588d6e8eca86aed212f45e2a4a47",
+      "html_url": "https://github.com/discourse/discourse/commit/8ea114007f10588d6e8eca86aed212f45e2a4a47"
+    }
+  ],
+  "stats": {
+    "total": 453,
+    "additions": 451,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e34872324283ab0ad39c3ad902ae80536169973d",
+      "filename": "app/models/post.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/app/models/post.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/app/models/post.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post.rb?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -133,7 +133,8 @@ def self.hidden_reasons\n                                  new_user_spam_threshold_reached: 3,\n                                  flagged_by_tl3_user: 4,\n                                  email_spam_header_found: 5,\n-                                 flagged_by_tl4_user: 6)\n+                                 flagged_by_tl4_user: 6,\n+                                 email_authentication_result_header: 7)\n   end\n \n   def self.types"
+    },
+    {
+      "sha": "54e8ab91608bbe72d5f32dae4ee79d0b5f105884",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -1900,6 +1900,7 @@ en:\n     log_mail_processing_failures: \"Log all email processing failures to <a href='%{base_path}/logs' target='_blank'>/logs</a>\"\n     email_in: 'Allow users to post new topics via email (requires manual or pop3 polling). Configure the addresses in the \"Settings\" tab of each category.'\n     email_in_min_trust: \"The minimum trust level a user needs to have to be allowed to post new topics via email.\"\n+    email_in_authserv_id: \"The identifier of the service doing authentication checks on incoming emails. See <a href='https://meta.discourse.org/t/134358'>https://meta.discourse.org/t/134358</a> for instructions on how to configure this.\"\n     email_in_spam_header: \"The email header to detect spam.\"\n     email_prefix: \"The [label] used in the subject of emails. It will default to 'title' if not set.\"\n     email_site_title: \"The title of the site used as the sender of emails from the site. Default to 'title' if not set. If your 'title' contains characters that are not allowed in email sender strings, use this setting.\""
+    },
+    {
+      "sha": "9ad1751d21a50c7d0012406ee6864560d8ae1247",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -965,6 +965,8 @@ email:\n   email_in_min_trust:\n     default: 2\n     enum: \"TrustLevelSetting\"\n+  email_in_authserv_id:\n+    default: \"\"\n   email_in_spam_header:\n     type: enum\n     default: \"none\""
+    },
+    {
+      "sha": "c5ad6e2249996e5402199f7efe92745346e2bacd",
+      "filename": "lib/email/authentication_results.rb",
+      "status": "added",
+      "additions": 110,
+      "deletions": 0,
+      "changes": 110,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/lib/email/authentication_results.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/lib/email/authentication_results.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/email/authentication_results.rb?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -0,0 +1,110 @@\n+# frozen_string_literal: true\n+\n+module Email\n+  class AuthenticationResults\n+    attr_reader :results\n+\n+    VERDICT = Enum.new(\n+      :gray,\n+      :pass,\n+      :fail,\n+      start: 0,\n+    )\n+\n+    def initialize(headers)\n+      authserv_id = SiteSetting.email_in_authserv_id\n+      @results = Array(headers).map do |header|\n+        parse_header(header.to_s)\n+      end.filter do |result|\n+        authserv_id.blank? || authserv_id == result[:authserv_id]\n+      end\n+    end\n+\n+    def action\n+      @action ||= calc_action\n+    end\n+\n+    def verdict\n+      @verdict ||= calc_verdict\n+    end\n+\n+    private\n+\n+    def calc_action\n+      if verdict == :fail\n+        :hide\n+      else\n+        :accept\n+      end\n+    end\n+\n+    def calc_verdict\n+      VERDICT[calc_dmarc]\n+    end\n+\n+    def calc_dmarc\n+      verdict = VERDICT[:gray]\n+      @results.each do |result|\n+        result[:resinfo].each do |resinfo|\n+          if resinfo[:method] == \"dmarc\"\n+            v = VERDICT[resinfo[:result].to_sym].to_i\n+            verdict = v if v > verdict\n+          end\n+        end\n+      end\n+      verdict = VERDICT[:gray] if SiteSetting.email_in_authserv_id.blank? && verdict == VERDICT[:pass]\n+      verdict\n+    end\n+\n+    def parse_header(header)\n+      # based on https://tools.ietf.org/html/rfc8601#section-2.2\n+      cfws = /\\s*(\\([^()]*\\))?\\s*/\n+      value = /(?:\"([^\"]*)\")|(?:([^\\s\";]*))/\n+      authserv_id = value\n+      authres_version = /\\d+#{cfws}?/\n+      no_result = /#{cfws}?;#{cfws}?none/\n+      keyword = /([a-zA-Z0-9-]*[a-zA-Z0-9])/\n+      authres_payload = /\\A#{cfws}?#{authserv_id}(?:#{cfws}#{authres_version})?(?:#{no_result}|([\\S\\s]*))/\n+\n+      method_version = authres_version\n+      method = /#{keyword}\\s*(?:#{cfws}?\\/#{cfws}?#{method_version})?/\n+      result = keyword\n+      methodspec = /#{cfws}?#{method}#{cfws}?=#{cfws}?#{result}/\n+      reasonspec = /reason#{cfws}?=#{cfws}?#{value}/\n+      resinfo = /#{cfws}?;#{methodspec}(?:#{cfws}#{reasonspec})?(?:#{cfws}([^;]*))?/\n+\n+      ptype = keyword\n+      property = value\n+      pvalue = /#{cfws}?#{value}#{cfws}?/\n+      propspec = /#{ptype}#{cfws}?\\.#{cfws}?#{property}#{cfws}?=#{pvalue}/\n+\n+      authres_payload_match = authres_payload.match(header)\n+      parsed_authserv_id = authres_payload_match[2] || authres_payload_match[3]\n+      resinfo_val = authres_payload_match[-1]\n+\n+      if resinfo_val\n+        resinfo_scan = resinfo_val.scan(resinfo)\n+        parsed_resinfo = resinfo_scan.map do |x|\n+          {\n+            method: x[2],\n+            result: x[8],\n+            reason: x[12] || x[13],\n+            props: x[-1].scan(propspec).map do |y|\n+              {\n+                ptype: y[0],\n+                property: y[4],\n+                pvalue: y[8] || y[9]\n+              }\n+            end\n+          }\n+        end\n+      end\n+\n+      {\n+        authserv_id: parsed_authserv_id,\n+        resinfo: parsed_resinfo\n+      }\n+    end\n+\n+  end\n+end"
+    },
+    {
+      "sha": "836405aae50d2ba99357eb9ab9168b219197c656",
+      "filename": "lib/email/receiver.rb",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 1,
+      "changes": 13,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/lib/email/receiver.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/lib/email/receiver.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/email/receiver.rb?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -196,7 +196,14 @@ def process_internal\n     end\n \n     def hidden_reason_id\n-      @hidden_reason_id ||= is_spam? ? Post.hidden_reasons[:email_spam_header_found] : nil\n+      @hidden_reason_id ||=\n+        if is_spam?\n+          Post.hidden_reasons[:email_spam_header_found]\n+        elsif auth_res_action == :hide\n+          Post.hidden_reasons[:email_authentication_result_header]\n+        else\n+          nil\n+        end\n     end\n \n     def log_and_validate_user(user)\n@@ -308,6 +315,10 @@ def is_spam?\n       end\n     end\n \n+    def auth_res_action\n+      @auth_res_action ||= AuthenticationResults.new(@mail.header[:authentication_results]).action\n+    end\n+\n     def select_body\n       text = nil\n       html = nil"
+    },
+    {
+      "sha": "8a103c89bdd6fb1eb3235aad4c299688a77a44fc",
+      "filename": "spec/components/email/authentication_results_spec.rb",
+      "status": "added",
+      "additions": 299,
+      "deletions": 0,
+      "changes": 299,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/spec/components/email/authentication_results_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/spec/components/email/authentication_results_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/email/authentication_results_spec.rb?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -0,0 +1,299 @@\n+# frozen_string_literal: true\n+\n+require \"rails_helper\"\n+require \"email/authentication_results\"\n+\n+describe Email::AuthenticationResults do\n+  describe \"#results\" do\n+    it \"parses 'Nearly Trivial Case: Service Provided, but No Authentication Done' correctly\" do\n+      # https://tools.ietf.org/html/rfc8601#appendix-B.2\n+      results = described_class.new(\" example.org 1; none\").results\n+      expect(results[0][:authserv_id]).to eq \"example.org\"\n+      expect(results[0][:resinfo]).to be nil\n+    end\n+\n+    it \"parses 'Service Provided, Authentication Done' correctly\" do\n+      # https://tools.ietf.org/html/rfc8601#appendix-B.3\n+      results = described_class.new(<<~EOF\n+        example.com;\n+                 spf=pass smtp.mailfrom=example.net\n+      EOF\n+      ).results\n+      expect(results[0][:authserv_id]).to eq \"example.com\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"spf\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][0][:reason]).to be nil\n+      expect(results[0][:resinfo][0][:props][0][:ptype]).to eq \"smtp\"\n+      expect(results[0][:resinfo][0][:props][0][:property]).to eq \"mailfrom\"\n+      expect(results[0][:resinfo][0][:props][0][:pvalue]).to eq \"example.net\"\n+    end\n+\n+    it \"parses 'Service Provided, Several Authentications Done, Single MTA' correctly\" do\n+      # https://tools.ietf.org/html/rfc8601#appendix-B.4\n+      results = described_class.new([<<~EOF ,\n+        example.com;\n+                  auth=pass (cram-md5) smtp.auth=sender@example.net;\n+                  spf=pass smtp.mailfrom=example.net\n+      EOF\n+      <<~EOF ,\n+        example.com; iprev=pass\n+                  policy.iprev=192.0.2.200\n+      EOF\n+      ]).results\n+      expect(results[0][:authserv_id]).to eq \"example.com\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"auth\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][0][:reason]).to be nil\n+      expect(results[0][:resinfo][0][:props][0][:ptype]).to eq \"smtp\"\n+      expect(results[0][:resinfo][0][:props][0][:property]).to eq \"auth\"\n+      expect(results[0][:resinfo][0][:props][0][:pvalue]).to eq \"sender@example.net\"\n+      expect(results[0][:resinfo][1][:method]).to eq \"spf\"\n+      expect(results[0][:resinfo][1][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][1][:reason]).to be nil\n+      expect(results[0][:resinfo][1][:props][0][:ptype]).to eq \"smtp\"\n+      expect(results[0][:resinfo][1][:props][0][:property]).to eq \"mailfrom\"\n+      expect(results[0][:resinfo][1][:props][0][:pvalue]).to eq \"example.net\"\n+      expect(results[1][:authserv_id]).to eq \"example.com\"\n+      expect(results[1][:resinfo][0][:method]).to eq \"iprev\"\n+      expect(results[1][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[1][:resinfo][0][:reason]).to be nil\n+      expect(results[1][:resinfo][0][:props][0][:ptype]).to eq \"policy\"\n+      expect(results[1][:resinfo][0][:props][0][:property]).to eq \"iprev\"\n+      expect(results[1][:resinfo][0][:props][0][:pvalue]).to eq \"192.0.2.200\"\n+    end\n+\n+    it \"parses 'Service Provided, Several Authentications Done, Different MTAs' correctly\" do\n+      # https://tools.ietf.org/html/rfc8601#appendix-B.5\n+      results = described_class.new([<<~EOF ,\n+        example.com;\n+                 dkim=pass (good signature) header.d=example.com\n+      EOF\n+      <<~EOF ,\n+        example.com;\n+                  auth=pass (cram-md5) smtp.auth=sender@example.com;\n+                  spf=fail smtp.mailfrom=example.com\n+      EOF\n+      ]).results\n+\n+      expect(results[0][:authserv_id]).to eq \"example.com\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"dkim\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][0][:reason]).to be nil\n+      expect(results[0][:resinfo][0][:props][0][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][0][:props][0][:property]).to eq \"d\"\n+      expect(results[0][:resinfo][0][:props][0][:pvalue]).to eq \"example.com\"\n+      expect(results[1][:authserv_id]).to eq \"example.com\"\n+      expect(results[1][:resinfo][0][:method]).to eq \"auth\"\n+      expect(results[1][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[1][:resinfo][0][:reason]).to be nil\n+      expect(results[1][:resinfo][0][:props][0][:ptype]).to eq \"smtp\"\n+      expect(results[1][:resinfo][0][:props][0][:property]).to eq \"auth\"\n+      expect(results[1][:resinfo][0][:props][0][:pvalue]).to eq \"sender@example.com\"\n+      expect(results[1][:resinfo][1][:method]).to eq \"spf\"\n+      expect(results[1][:resinfo][1][:result]).to eq \"fail\"\n+      expect(results[1][:resinfo][1][:reason]).to be nil\n+      expect(results[1][:resinfo][1][:props][0][:ptype]).to eq \"smtp\"\n+      expect(results[1][:resinfo][1][:props][0][:property]).to eq \"mailfrom\"\n+      expect(results[1][:resinfo][1][:props][0][:pvalue]).to eq \"example.com\"\n+    end\n+\n+    it \"parses 'Service Provided, Multi-tiered Authentication Done' correctly\" do\n+      # https://tools.ietf.org/html/rfc8601#appendix-B.6\n+      results = described_class.new([<<~EOF ,\n+         example.com;\n+              dkim=pass reason=\"good signature\"\n+                header.i=@mail-router.example.net;\n+              dkim=fail reason=\"bad signature\"\n+                header.i=@newyork.example.com\n+      EOF\n+      <<~EOF ,\n+        example.net;\n+             dkim=pass (good signature) header.i=@newyork.example.com\n+      EOF\n+      ]).results\n+\n+      expect(results[0][:authserv_id]).to eq \"example.com\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"dkim\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][0][:reason]).to eq \"good signature\"\n+      expect(results[0][:resinfo][0][:props][0][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][0][:props][0][:property]).to eq \"i\"\n+      expect(results[0][:resinfo][0][:props][0][:pvalue]).to eq \"@mail-router.example.net\"\n+      expect(results[0][:resinfo][1][:method]).to eq \"dkim\"\n+      expect(results[0][:resinfo][1][:result]).to eq \"fail\"\n+      expect(results[0][:resinfo][1][:reason]).to eq \"bad signature\"\n+      expect(results[0][:resinfo][1][:props][0][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][1][:props][0][:property]).to eq \"i\"\n+      expect(results[0][:resinfo][1][:props][0][:pvalue]).to eq \"@newyork.example.com\"\n+      expect(results[1][:authserv_id]).to eq \"example.net\"\n+      expect(results[1][:resinfo][0][:method]).to eq \"dkim\"\n+      expect(results[1][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[1][:resinfo][0][:reason]).to be nil\n+      expect(results[1][:resinfo][0][:props][0][:ptype]).to eq \"header\"\n+      expect(results[1][:resinfo][0][:props][0][:property]).to eq \"i\"\n+      expect(results[1][:resinfo][0][:props][0][:pvalue]).to eq \"@newyork.example.com\"\n+    end\n+\n+    it \"parses 'Comment-Heavy Example' correctly\" do\n+      # https://tools.ietf.org/html/rfc8601#appendix-B.7\n+      results = described_class.new(<<~EOF\n+        foo.example.net (foobar) 1 (baz);\n+          dkim (Because I like it) / 1 (One yay) = (wait for it) fail\n+            policy (A dot can go here) . (like that) expired\n+            (this surprised me) = (as I wasn't expecting it) 1362471462\n+      EOF\n+      ).results\n+\n+      expect(results[0][:authserv_id]).to eq \"foo.example.net\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"dkim\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"fail\"\n+      expect(results[0][:resinfo][0][:reason]).to be nil\n+      expect(results[0][:resinfo][0][:props][0][:ptype]).to eq \"policy\"\n+      expect(results[0][:resinfo][0][:props][0][:property]).to eq \"expired\"\n+      expect(results[0][:resinfo][0][:props][0][:pvalue]).to eq \"1362471462\"\n+    end\n+\n+    it \"parses header with no props correctly\" do\n+      results = described_class.new(\" example.com; dmarc=pass\").results\n+      expect(results[0][:authserv_id]).to eq \"example.com\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"dmarc\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][0][:reason]).to be nil\n+      expect(results[0][:resinfo][0][:props]).to eq []\n+    end\n+\n+    it \"parses header with multiple props correctly\" do\n+      results = described_class.new(<<~EOF\n+        mx.google.com;\n+      dkim=pass header.i=@email.example.com header.s=20111006 header.b=URn9MW+F;\n+      spf=pass (google.com: domain of foo@b.email.example.com designates 1.2.3.4 as permitted sender) smtp.mailfrom=foo@b.email.example.com;\n+      dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=email.example.com\n+      EOF\n+      ).results\n+\n+      expect(results[0][:authserv_id]).to eq \"mx.google.com\"\n+      expect(results[0][:resinfo][0][:method]).to eq \"dkim\"\n+      expect(results[0][:resinfo][0][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][0][:reason]).to be nil\n+      expect(results[0][:resinfo][0][:props][0][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][0][:props][0][:property]).to eq \"i\"\n+      expect(results[0][:resinfo][0][:props][0][:pvalue]).to eq \"@email.example.com\"\n+      expect(results[0][:resinfo][0][:props][1][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][0][:props][1][:property]).to eq \"s\"\n+      expect(results[0][:resinfo][0][:props][1][:pvalue]).to eq \"20111006\"\n+      expect(results[0][:resinfo][0][:props][2][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][0][:props][2][:property]).to eq \"b\"\n+      expect(results[0][:resinfo][0][:props][2][:pvalue]).to eq \"URn9MW+F\"\n+      expect(results[0][:resinfo][1][:method]).to eq \"spf\"\n+      expect(results[0][:resinfo][1][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][1][:reason]).to be nil\n+      expect(results[0][:resinfo][1][:props][0][:ptype]).to eq \"smtp\"\n+      expect(results[0][:resinfo][1][:props][0][:property]).to eq \"mailfrom\"\n+      expect(results[0][:resinfo][1][:props][0][:pvalue]).to eq \"foo@b.email.example.com\"\n+      expect(results[0][:resinfo][2][:method]).to eq \"dmarc\"\n+      expect(results[0][:resinfo][2][:result]).to eq \"pass\"\n+      expect(results[0][:resinfo][2][:reason]).to be nil\n+      expect(results[0][:resinfo][2][:props][0][:ptype]).to eq \"header\"\n+      expect(results[0][:resinfo][2][:props][0][:property]).to eq \"from\"\n+      expect(results[0][:resinfo][2][:props][0][:pvalue]).to eq \"email.example.com\"\n+    end\n+  end\n+\n+  describe \"#verdict\" do\n+    before do\n+      SiteSetting.email_in_authserv_id = \"valid.com\"\n+    end\n+\n+    shared_examples \"is verdict\" do |verdict|\n+      it \"is #{verdict}\" do\n+        expect(described_class.new(headers).verdict).to eq verdict\n+      end\n+    end\n+\n+    context \"with no authentication-results headers\" do\n+      let(:headers) { \"\" }\n+\n+      it \"is gray\" do\n+        expect(described_class.new(headers).verdict).to eq :gray\n+      end\n+    end\n+\n+    context \"with a single authentication-results header\" do\n+      context \"with a valid fail\" do\n+        let(:headers) { \"valid.com; dmarc=fail\" }\n+        include_examples \"is verdict\", :fail\n+      end\n+\n+      context \"with a valid pass\" do\n+        let(:headers) { \"valid.com; dmarc=pass\" }\n+        include_examples \"is verdict\", :pass\n+      end\n+\n+      context \"with a valid error\" do\n+        let(:headers) { \"valid.com; dmarc=error\" }\n+        include_examples \"is verdict\", :gray\n+      end\n+\n+      context \"with no email_in_authserv_id set\" do\n+        before { SiteSetting.email_in_authserv_id = \"\" }\n+\n+        context \"with a fail\" do\n+          let(:headers) { \"foobar.com; dmarc=fail\" }\n+          include_examples \"is verdict\", :fail\n+        end\n+\n+        context \"with a pass\" do\n+          let(:headers) { \"foobar.com; dmarc=pass\" }\n+          include_examples \"is verdict\", :gray\n+        end\n+      end\n+    end\n+\n+    context \"with multiple authentication-results headers\" do\n+      context \"with a valid fail, and an invalid pass\" do\n+        let(:headers) { [\"valid.com; dmarc=fail\", \"invalid.com; dmarc=pass\"] }\n+        include_examples \"is verdict\", :fail\n+      end\n+\n+      context \"with a valid fail, and a valid pass\" do\n+        let(:headers) { [\"valid.com; dmarc=fail\", \"valid.com; dmarc=pass\"] }\n+        include_examples \"is verdict\", :fail\n+      end\n+\n+      context \"with a valid error, and a valid pass\" do\n+        let(:headers) { [\"valid.com; dmarc=foobar\", \"valid.com; dmarc=pass\"] }\n+        include_examples \"is verdict\", :pass\n+      end\n+\n+      context \"with no email_in_authserv_id set\" do\n+        before { SiteSetting.email_in_authserv_id = \"\" }\n+\n+        context \"with an error, and a pass\" do\n+          let(:headers) { [\"foobar.com; dmarc=foobar\", \"foobar.com; dmarc=pass\"] }\n+          include_examples \"is verdict\", :gray\n+        end\n+      end\n+    end\n+  end\n+\n+  describe \"#action\" do\n+    it \"hides a fail verdict\" do\n+      results = described_class.new(\"\")\n+      results.expects(:verdict).returns(:fail)\n+      expect(results.action).to eq (:hide)\n+    end\n+\n+    it \"accepts a pass verdict\" do\n+      results = described_class.new(\"\")\n+      results.expects(:verdict).returns(:pass)\n+      expect(results.action).to eq (:accept)\n+    end\n+\n+    it \"accepts a gray verdict\" do\n+      results = described_class.new(\"\")\n+      results.expects(:verdict).returns(:gray)\n+      expect(results.action).to eq (:accept)\n+    end\n+  end\n+\n+end"
+    },
+    {
+      "sha": "400f72385c741f3c6036e2784f62c6c4fe091dbf",
+      "filename": "spec/components/email/receiver_spec.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/spec/components/email/receiver_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/spec/components/email/receiver_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/email/receiver_spec.rb?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -1021,6 +1021,19 @@ def create_post_reply_key(value)\n       expect(post.hidden_reason_id).to eq(Post.hidden_reasons[:email_spam_header_found])\n     end\n \n+    it \"creates hidden topic for failed Authentication-Results header\" do\n+      Fabricate(:user, email: \"existing@bar.com\", trust_level: SiteSetting.email_in_min_trust)\n+      expect { process(:dmarc_fail) }.to change { Topic.count }.by(1) # Topic created\n+\n+      topic = Topic.last\n+      expect(topic.visible).to eq(false)\n+\n+      post = Post.last\n+      expect(post.hidden).to eq(true)\n+      expect(post.hidden_at).not_to eq(nil)\n+      expect(post.hidden_reason_id).to eq(Post.hidden_reasons[:email_authentication_result_header])\n+    end\n+\n     it \"adds the 'elided' part of the original message when always_show_trimmed_content is enabled\" do\n       SiteSetting.always_show_trimmed_content = true\n "
+    },
+    {
+      "sha": "4fe78ef7ed96d8cdba5e25957f7857a76314352a",
+      "filename": "spec/fixtures/emails/dmarc_fail.eml",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/2714149fd217f0589a9a6040fb86b52e49994902/spec/fixtures/emails/dmarc_fail.eml",
+      "raw_url": "https://github.com/discourse/discourse/raw/2714149fd217f0589a9a6040fb86b52e49994902/spec/fixtures/emails/dmarc_fail.eml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/fixtures/emails/dmarc_fail.eml?ref=2714149fd217f0589a9a6040fb86b52e49994902",
+      "patch": "@@ -0,0 +1,12 @@\n+Return-Path: <existing@bar.com>\n+From: Foo Bar <existing@bar.com>\n+To: category@bar.com\n+Subject: This is a topic from an existing user\n+Date: Fri, 15 Jan 2016 00:12:43 +0100\n+Message-ID: <32@foo.bar.mail>\n+Mime-Version: 1.0\n+Content-Type: text/plain; charset=UTF-8\n+Content-Transfer-Encoding: quoted-printable\n+Authentication-Results: example.com; dmarc=fail\n+\n+Hey, this is a topic from an existing user ;)"
+    }
+  ]
+}
