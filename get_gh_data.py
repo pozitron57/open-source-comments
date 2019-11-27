@@ -83,6 +83,7 @@ if not os.path.isdir(p):
         for line in f:
             github_username = line.split()[0]
             github_password = line.split()[1]
+            print (github_password)
 
     for url, cs in zip(github_urls, comment_systems):
         os.system('curl {} -u {}:{} -o {}'.format(url,github_username,github_password,p+cs))
