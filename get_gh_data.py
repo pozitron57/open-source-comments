@@ -67,7 +67,7 @@ p = 'apigh/'+str(date.today())+'/'
 
 # Write and download files only if haven't done today
 if not os.path.isdir(p):
-    os.system('mkdir -p {}'.format(p) )
+    os.system('mkdir -p {}'.format(p))
 
     # Save github repo info to apigh/YYYY-MM-DD/<comment_system>
     # Attention, there is a limit of requests per IP per hour
@@ -85,12 +85,12 @@ if not os.path.isdir(p):
             github_password = line.split()[1]
 
     for url, cs in zip(github_urls, comment_systems):
-        os.system('curl {} -u "{}:{}" -o {}'.format(url,github_username,github_password,p+cs))
+        os.system("curl {} -u '{}:{}' -o {}".format(url,github_username,github_password,p+cs))
 
     # Save info on the last commit to apigh/YYYY-MM-DD/<comment_system.commit>
     # (created, license, open_issues)
     for url, cs in zip(github_commit_urls, comment_systems):
-        os.system('curl {} -u "{}:{}" -o {}'.format(url,github_username,github_password,p+cs+'.commit'))
+        os.system("curl {} -u '{}:{}' -o {}".format(url,github_username,github_password,p+cs+'.commit'))
 
 
 
