@@ -1,0 +1,110 @@
+{
+  "sha": "c109188efe39b5fb030e832afaa0dfaa57d627f0",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6YzEwOTE4OGVmZTM5YjVmYjAzMGU4MzJhZmFhMGRmYWE1N2Q2MjdmMA==",
+  "commit": {
+    "author": {
+      "name": "Tessa Thornton",
+      "email": "tessathornton@gmail.com",
+      "date": "2019-12-03T00:03:10Z"
+    },
+    "committer": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2019-12-03T00:03:10Z"
+    },
+    "message": "better unsaved changes error message (#2734)",
+    "tree": {
+      "sha": "9061dbd32747980eb1f7b5918a6407528f662020",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/9061dbd32747980eb1f7b5918a6407528f662020"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/c109188efe39b5fb030e832afaa0dfaa57d627f0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/c109188efe39b5fb030e832afaa0dfaa57d627f0",
+  "html_url": "https://github.com/coralproject/talk/commit/c109188efe39b5fb030e832afaa0dfaa57d627f0",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/c109188efe39b5fb030e832afaa0dfaa57d627f0/comments",
+  "author": {
+    "login": "tessalt",
+    "id": 1789029,
+    "node_id": "MDQ6VXNlcjE3ODkwMjk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1789029?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tessalt",
+    "html_url": "https://github.com/tessalt",
+    "followers_url": "https://api.github.com/users/tessalt/followers",
+    "following_url": "https://api.github.com/users/tessalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tessalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tessalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tessalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/tessalt/orgs",
+    "repos_url": "https://api.github.com/users/tessalt/repos",
+    "events_url": "https://api.github.com/users/tessalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tessalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "08ead49629a0783f1f991ab35653db55e0eebbf9",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/08ead49629a0783f1f991ab35653db55e0eebbf9",
+      "html_url": "https://github.com/coralproject/talk/commit/08ead49629a0783f1f991ab35653db55e0eebbf9"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "717893fcd4fa979ca9488f476535df8c8d8a3fde",
+      "filename": "src/core/client/admin/routes/Configure/NavigationWarningContainer.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/c109188efe39b5fb030e832afaa0dfaa57d627f0/src/core/client/admin/routes/Configure/NavigationWarningContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/c109188efe39b5fb030e832afaa0dfaa57d627f0/src/core/client/admin/routes/Configure/NavigationWarningContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/NavigationWarningContainer.tsx?ref=c109188efe39b5fb030e832afaa0dfaa57d627f0",
+      "patch": "@@ -20,7 +20,7 @@ class NavigationWarningContainer extends React.Component<Props> {\n     const warningMessage = getMessage(\n       props.localeBundles,\n       \"configure-unsavedInputWarning\",\n-      \"You have unsaved input. Are you sure you want to leave this page?\"\n+      \"You have unsaved changes. Are you sure you want to continue?\"\n     );\n \n     this.removeTransitionHook = props.router.addTransitionHook(() =>"
+    },
+    {
+      "sha": "3d98fc896d4c037661598bd622c8384340e67733",
+      "filename": "src/locales/en-US/admin.ftl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/c109188efe39b5fb030e832afaa0dfaa57d627f0/src/locales/en-US/admin.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/c109188efe39b5fb030e832afaa0dfaa57d627f0/src/locales/en-US/admin.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/en-US/admin.ftl?ref=c109188efe39b5fb030e832afaa0dfaa57d627f0",
+      "patch": "@@ -69,7 +69,7 @@ login-signInWithOIDC = Sign in with { $name }\n ## Configure\n \n configure-unsavedInputWarning =\n-  You have unsaved input. Are you sure you want to leave this page?\n+  You have unsaved changes. Are you sure you want to continue?\n \n configure-sideBarNavigation-general = General\n configure-sideBarNavigation-authentication = Authentication"
+    }
+  ]
+}
