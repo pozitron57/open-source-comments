@@ -1,0 +1,98 @@
+{
+  "sha": "c5140ef3fb3146eb5a580beda254ae2bf4b6002c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjNTE0MGVmM2ZiMzE0NmViNWE1ODBiZWRhMjU0YWUyYmY0YjYwMDJj",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2019-12-04T15:45:23Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-12-04T15:45:23Z"
+    },
+    "message": "FIX: prevents multiple jumps to happen with LockOn (#8460)",
+    "tree": {
+      "sha": "1bf97c54974526fb842f7ed3744d0e84b98910fe",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1bf97c54974526fb842f7ed3744d0e84b98910fe"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c5140ef3fb3146eb5a580beda254ae2bf4b6002c",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJd59STCRBK7hj4Ov3rIwAAdHIIAKdP2hHVdHHkKX+ZvUlt4Lpl\nF1MrY5Y38kKFzlIRecGCG3MPak3/0vHW3HYNGKZUfqugG+9Sqc0n/k9sIOZbGMG/\niTBaF7YGO0NlF5fs/kALscMAXvNR3pL5rYDTjPdrt+IOJ/oMXpzcVlQJGaqvFq+8\nHGB1P1ZKMP6j/GtYtH8Vk0Ng6bw8nodej+U4nU2X0ukadwN+zTCjhEzHzsEpt7fC\n5TIqkRFkQpN3eM4+Xep2DkPK2V4I66zBdbd00slbjZxnpEJaTMrBCdyekbsS3Xoo\nDbkaW9qtYOrho1yQ3NCHIRW90ceMfRWGWuxICJ6ajOUpMkAL33FT2+SRjzKPeFU=\n=uYsV\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1bf97c54974526fb842f7ed3744d0e84b98910fe\nparent 46d8fd383104832646964019903d4e363ce2e0a7\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1575474323 +0100\ncommitter GitHub <noreply@github.com> 1575474323 +0100\n\nFIX: prevents multiple jumps to happen with LockOn (#8460)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c5140ef3fb3146eb5a580beda254ae2bf4b6002c",
+  "html_url": "https://github.com/discourse/discourse/commit/c5140ef3fb3146eb5a580beda254ae2bf4b6002c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c5140ef3fb3146eb5a580beda254ae2bf4b6002c/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "46d8fd383104832646964019903d4e363ce2e0a7",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/46d8fd383104832646964019903d4e363ce2e0a7",
+      "html_url": "https://github.com/discourse/discourse/commit/46d8fd383104832646964019903d4e363ce2e0a7"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 15,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "13720bfeecec1e7f233c860121a505e34989d3fd",
+      "filename": "app/assets/javascripts/discourse/lib/lock-on.js.es6",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 13,
+      "changes": 28,
+      "blob_url": "https://github.com/discourse/discourse/blob/c5140ef3fb3146eb5a580beda254ae2bf4b6002c/app/assets/javascripts/discourse/lib/lock-on.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/c5140ef3fb3146eb5a580beda254ae2bf4b6002c/app/assets/javascripts/discourse/lib/lock-on.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/lock-on.js.es6?ref=c5140ef3fb3146eb5a580beda254ae2bf4b6002c",
+      "patch": "@@ -51,23 +51,25 @@ export default class LockOn {\n   lock() {\n     const startedAt = new Date().getTime();\n     let previousTop = this.elementTop();\n+    previousTop && $(window).scrollTop(previousTop);\n \n     const interval = setInterval(() => {\n-      if (!previousTop) {\n-        previousTop = this.elementTop();\n-        previousTop && $(window).scrollTop(previousTop);\n-      } else {\n-        const top = Math.max(0, this.elementTop());\n-        const scrollTop = $(window).scrollTop();\n+      const elementTop = this.elementTop();\n+      if (!previousTop && !elementTop) {\n+        // we can't find the element yet, wait a little bit more\n+        return;\n+      }\n \n-        if (typeof top === \"undefined\" || isNaN(top)) {\n-          return this.clearLock(interval);\n-        }\n+      const top = Math.max(0, elementTop);\n+      const scrollTop = $(window).scrollTop();\n \n-        if (!within(4, top, previousTop) || !within(4, scrollTop, top)) {\n-          $(window).scrollTop(top);\n-          previousTop = top;\n-        }\n+      if (typeof top === \"undefined\" || isNaN(top)) {\n+        return this.clearLock(interval);\n+      }\n+\n+      if (!within(4, top, previousTop) || !within(4, scrollTop, top)) {\n+        $(window).scrollTop(top);\n+        previousTop = top;\n       }\n \n       // Commit suicide after a little while"
+    }
+  ]
+}
