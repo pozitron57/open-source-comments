@@ -1,0 +1,98 @@
+{
+  "sha": "78969d77199f51395c07a04c35a18bdb5ac8b87c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3ODk2OWQ3NzE5OWY1MTM5NWMwN2EwNGMzNWExOGJkYjVhYzhiODdj",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-12-06T15:57:10Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2019-12-06T15:57:10Z"
+    },
+    "message": "DEV: Support custom log level in dev\n\nSee https://guides.rubyonrails.org/debugging_rails_applications.html#log-levels\nCan be used to reduce noise when running \"bundle exec rails server\" in dev.\n\nSetting DISCOURSE_DEV_LOG_LEVEL=\"warn\" will make for easier puts debugging with unicorn.",
+    "tree": {
+      "sha": "a8f5f48aec4bf00caa2a21949ed5a90a0dfa7fac",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a8f5f48aec4bf00caa2a21949ed5a90a0dfa7fac"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/78969d77199f51395c07a04c35a18bdb5ac8b87c",
+    "comment_count": 2,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/78969d77199f51395c07a04c35a18bdb5ac8b87c",
+  "html_url": "https://github.com/discourse/discourse/commit/78969d77199f51395c07a04c35a18bdb5ac8b87c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/78969d77199f51395c07a04c35a18bdb5ac8b87c/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e51091f199a0c8429693ff8341877dce731e7d7f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e51091f199a0c8429693ff8341877dce731e7d7f",
+      "html_url": "https://github.com/discourse/discourse/commit/e51091f199a0c8429693ff8341877dce731e7d7f"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "55a8f8e6c93259b6af612aef91032d723760c54a",
+      "filename": "config/environments/development.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/78969d77199f51395c07a04c35a18bdb5ac8b87c/config/environments/development.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/78969d77199f51395c07a04c35a18bdb5ac8b87c/config/environments/development.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/environments/development.rb?ref=78969d77199f51395c07a04c35a18bdb5ac8b87c",
+      "patch": "@@ -1,7 +1,6 @@\n # frozen_string_literal: true\n \n Discourse::Application.configure do\n-\n   # Settings specified here will take precedence over those in config/application.rb\n \n   # In the development environment your application's code is reloaded on\n@@ -38,6 +37,8 @@\n \n   config.action_mailer.raise_delivery_errors = true\n \n+  config.log_level = ENV['DISCOURSE_DEV_LOG_LEVEL'] if ENV['DISCOURSE_DEV_LOG_LEVEL']\n+\n   BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']\n \n   if defined?(Unicorn) && ENV[\"UNICORN_WORKERS\"].to_i != 1"
+    }
+  ]
+}
