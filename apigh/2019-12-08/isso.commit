@@ -1,0 +1,134 @@
+{
+  "sha": "2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOToyZThjYjgxMTc5MjA5YTY5MjFmNThmMTNjNGQ1YWEwMDJlNWExZmI2",
+  "commit": {
+    "author": {
+      "name": "Charl P. Botha (X1E)",
+      "email": "cpbotha@vxlabs.com",
+      "date": "2019-12-07T18:28:51Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-12-07T18:28:51Z"
+    },
+    "message": "Add a approve-if-email-previously-approved setting.\n\nAutomatically approve comments by an email address if that address has\nhad a comment approved within the last 6 months. No ownership verification\nis done on the entered email address. This means that if someone is able\nto guess correctly the email address used by a previously approved author,\nthey will be able to have their new comment auto-approved.",
+    "tree": {
+      "sha": "6b3435493a8ebe498fa071ce2822f2c72a7974e2",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/6b3435493a8ebe498fa071ce2822f2c72a7974e2"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsjhixBXWVlpOhsvXV5wWDUyeI+gFAl3r74QACgkQV5wWDUye\nI+hNMA//SSNKL0xIkh2YUjSo/brMGfm3nI3m3CDfIe712opeyNHk6WPDIKjnlNTs\nmEDGHSZLoep8u5Qdc52aS5HPw6C5b+gnATkE51q0mslILklt62vzrISNbgtzzFN0\n3gFT3Td99djTNcEBi7Pi4ewwDgS5/NUZNlRzi1IbUyslFrZdr5lrdoDRNOlJE8Ol\naNnHc39r9yv/uTXhAlGdigbOgP+5CYRSx5q0PyAmc4bo0zQGFBibR7Oi2iutECtX\n7D2CA3CHo6TjrkflflfKEgRTQo9BvtL6PzokwN1OXWnCp0fiM+irhDRBKzrETD9m\nnqMD859GOZ+0AI9M3qMjVmfhJZXkUHtotFCwvJSlGANHcYo40dHF0doEn718y2LC\nNPTxtc7pPIw6e9t4gUw9wpa3tI2xU5d7kM6dFBKu549G4GapFzvjPvevRJ25M084\nE3MsqqZtopINNjwt5bMinoOrbWSi4Ojik+VnJMTXQKO0a12XM0w4sPdedQNPXsEl\nPvxHmlW6kNP0il/hahQDesCsYQINnsu/Ihl5MSKUMag3Rq9k8M1oBv+qy1WnG4zn\nwa0eu64+Ub78ujjwCtnjA8kCUdr2c9cuVCj20rb5zbndLrx/DxRnDnRfkUG2lfCL\nCJUZjgZyDdb+2D3EKMaqSvIchujBkJj4K1cIpd9jHmHzB3wM65U=\n=Uoe7\n-----END PGP SIGNATURE-----",
+      "payload": "tree 6b3435493a8ebe498fa071ce2822f2c72a7974e2\nparent 9eaaad4775927b109e5134393e295301852db8d5\nauthor Charl P. Botha (X1E) <cpbotha@vxlabs.com> 1575743331 +0000\ncommitter Jelmer Vernooĳ <jelmer@jelmer.uk> 1575743331 +0000\n\nAdd a approve-if-email-previously-approved setting.\n\nAutomatically approve comments by an email address if that address has\nhad a comment approved within the last 6 months. No ownership verification\nis done on the entered email address. This means that if someone is able\nto guess correctly the email address used by a previously approved author,\nthey will be able to have their new comment auto-approved.\n"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+  "html_url": "https://github.com/posativ/isso/commit/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/comments",
+  "author": {
+    "login": "cpbotha",
+    "id": 937871,
+    "node_id": "MDQ6VXNlcjkzNzg3MQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/937871?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cpbotha",
+    "html_url": "https://github.com/cpbotha",
+    "followers_url": "https://api.github.com/users/cpbotha/followers",
+    "following_url": "https://api.github.com/users/cpbotha/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cpbotha/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cpbotha/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cpbotha/subscriptions",
+    "organizations_url": "https://api.github.com/users/cpbotha/orgs",
+    "repos_url": "https://api.github.com/users/cpbotha/repos",
+    "events_url": "https://api.github.com/users/cpbotha/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cpbotha/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9eaaad4775927b109e5134393e295301852db8d5",
+      "url": "https://api.github.com/repos/posativ/isso/commits/9eaaad4775927b109e5134393e295301852db8d5",
+      "html_url": "https://github.com/posativ/isso/commit/9eaaad4775927b109e5134393e295301852db8d5"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 44,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9a70ca6fc0bb1ef7069f2db5918977223e0f3d22",
+      "filename": "docs/docs/configuration/server.rst",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/posativ/isso/blob/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/docs/docs/configuration/server.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/docs/docs/configuration/server.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs/docs/configuration/server.rst?ref=2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+      "patch": "@@ -124,13 +124,21 @@ Enable moderation queue and handling of comments still in moderation queue\n \n     [moderation]\n     enabled = false\n+    approve-if-email-previously-approved = false\n     purge-after = 30d\n \n enabled\n     enable comment moderation queue. This option only affects new comments.\n     Comments in moderation queue are not visible to other users until you\n     activate them.\n \n+approve-if-email-previously-approved\n+    automatically approve comments by an email address if that address has\n+    had a comment approved within the last 6 months. No ownership verification\n+    is done on the entered email address. This means that if someone is able\n+    to guess correctly the email address used by a previously approved author,\n+    they will be able to have their new comment auto-approved.\n+\n purge-after\n     remove unprocessed comments in moderation queue after given time.\n "
+    },
+    {
+      "sha": "ac39e3f83e83438b38300e012050fdd788265237",
+      "filename": "isso/db/comments.py",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/posativ/isso/blob/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/isso/db/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/isso/db/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/db/comments.py?ref=2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+      "patch": "@@ -81,6 +81,25 @@ def activate(self, id):\n             '    mode=1',\n             'WHERE id=? AND mode=2'], (id, ))\n \n+    def is_previously_approved_author(self, email):\n+        \"\"\"\n+        Search for previously activated comments with this author email.\n+        \"\"\"\n+\n+        # if the user has not entered email, email is None, in which case we can't check if they have previous comments\n+        if email is not None:\n+            # search for any activated comments within the last 6 months by email\n+            # this SQL should be one of the fastest ways of doing this check\n+            # https://stackoverflow.com/questions/18114458/fastest-way-to-determine-if-record-exists\n+            rv = self.db.execute([\n+                'SELECT CASE WHEN EXISTS(',\n+                '    select * from comments where email=? and mode=1 and ',\n+                '    created > strftime(\"%s\", DATETIME(\"now\", \"-6 month\"))',\n+                ') THEN 1 ELSE 0 END;'], (email,)).fetchone()\n+            return rv[0] == 1\n+        else:\n+            return False\n+\n     def unsubscribe(self, email, id):\n         \"\"\"\n         Turn off email notifications for replies to this comment."
+    },
+    {
+      "sha": "c7954a8fef7519486995b13ecc38ed065b032738",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/posativ/isso/blob/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/isso/views/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/isso/views/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/views/comments.py?ref=2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+      "patch": "@@ -132,6 +132,8 @@ def __init__(self, isso, hasher):\n \n         self.conf = isso.conf.section(\"general\")\n         self.moderated = isso.conf.getboolean(\"moderation\", \"enabled\")\n+        # this is similar to the wordpress setting \"Comment author must have a previously approved comment\"\n+        self.approve_if_email_previously_approved = isso.conf.getboolean(\"moderation\", \"approve-if-email-previously-approved\")\n \n         self.guard = isso.db.guard\n         self.threads = isso.db.threads\n@@ -294,6 +296,11 @@ def new(self, environ, request, uri):\n             raise Forbidden(reason)\n \n         with self.isso.lock:\n+            # if email-based auto-moderation enabled, check for previously approved author\n+            # right before approval.\n+            if self.approve_if_email_previously_approved and self.comments.is_previously_approved_author(data['email']):\n+                data['mode'] = 1\n+\n             rv = self.comments.add(uri, data)\n \n         # notify extension, that the new comment has been successfully saved"
+    },
+    {
+      "sha": "1761580706a8ccc906a316af1133a75ae5b6be36",
+      "filename": "share/isso.conf",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/posativ/isso/blob/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/share/isso.conf",
+      "raw_url": "https://github.com/posativ/isso/raw/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6/share/isso.conf",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/share/isso.conf?ref=2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+      "patch": "@@ -71,6 +71,16 @@ password = please_choose_a_strong_password\n # them.\n enabled = false\n \n+# with moderation enabled, automatically approve new comments by an\n+# author if they've had comments approved within the last 6 months\n+# Note: No verification is done on the email addresses entered by commenters.\n+# This means that if someone is able to guess correctly the email address used\n+# by a previously approved author, they will be able to have their new comment\n+# auto-approved. For this reason, we recommend that you also activate SMTP\n+# notification if you activate this option, so that you will see\n+# auto-approved comments as they get posted.\n+approve-if-email-previously-approved = false\n+\n # remove unprocessed comments in moderation queue after given time.\n purge-after = 30d\n "
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sha": "e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplN2JkMjg4ZDdiMTAxOWM2OTg2YTdlYWM3ZDhmOWNiOTUwNWNiMGJi",
+  "commit": {
+    "author": {
+      "name": "Jeff Wong",
+      "email": "awole20@gmail.com",
+      "date": "2019-12-07T00:42:15Z"
+    },
+    "committer": {
+      "name": "Jeff Wong",
+      "email": "awole20@gmail.com",
+      "date": "2019-12-07T00:42:15Z"
+    },
+    "message": "FIX: Skip validation on enforcing second factor change if the value is \"no\"\n\nWithout this, this site setting breaks plugin tests if local logins are\ndisabled in the plugin.",
+    "tree": {
+      "sha": "d708ca0e96a983c7fbe051620326d36bd7c347ad",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d708ca0e96a983c7fbe051620326d36bd7c347ad"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb",
+  "html_url": "https://github.com/discourse/discourse/commit/e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb/comments",
+  "author": {
+    "login": "featheredtoast",
+    "id": 1322534,
+    "node_id": "MDQ6VXNlcjEzMjI1MzQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1322534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/featheredtoast",
+    "html_url": "https://github.com/featheredtoast",
+    "followers_url": "https://api.github.com/users/featheredtoast/followers",
+    "following_url": "https://api.github.com/users/featheredtoast/following{/other_user}",
+    "gists_url": "https://api.github.com/users/featheredtoast/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/featheredtoast/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/featheredtoast/subscriptions",
+    "organizations_url": "https://api.github.com/users/featheredtoast/orgs",
+    "repos_url": "https://api.github.com/users/featheredtoast/repos",
+    "events_url": "https://api.github.com/users/featheredtoast/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/featheredtoast/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "featheredtoast",
+    "id": 1322534,
+    "node_id": "MDQ6VXNlcjEzMjI1MzQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1322534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/featheredtoast",
+    "html_url": "https://github.com/featheredtoast",
+    "followers_url": "https://api.github.com/users/featheredtoast/followers",
+    "following_url": "https://api.github.com/users/featheredtoast/following{/other_user}",
+    "gists_url": "https://api.github.com/users/featheredtoast/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/featheredtoast/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/featheredtoast/subscriptions",
+    "organizations_url": "https://api.github.com/users/featheredtoast/orgs",
+    "repos_url": "https://api.github.com/users/featheredtoast/repos",
+    "events_url": "https://api.github.com/users/featheredtoast/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/featheredtoast/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "da66950cf523adddf707f5b6768e1a189ffb40bd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/da66950cf523adddf707f5b6768e1a189ffb40bd",
+      "html_url": "https://github.com/discourse/discourse/commit/da66950cf523adddf707f5b6768e1a189ffb40bd"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "56987b0dfed4d317c80b083cfc46c4bcb667bea1",
+      "filename": "lib/site_settings/validations.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb/lib/site_settings/validations.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb/lib/site_settings/validations.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/site_settings/validations.rb?ref=e7bd288d7b1019c6986a7eac7d8f9cb9505cb0bb",
+      "patch": "@@ -151,6 +151,7 @@ def validate_s3_backup_bucket(new_val)\n \n   def validate_enforce_second_factor(new_val)\n     return if SiteSetting.enable_local_logins\n+    return if new_val == \"no\"\n     validate_error :second_factor_cannot_be_enforced_with_disabled_local_login\n   end\n "
+    }
+  ]
+}
