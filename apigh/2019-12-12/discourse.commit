@@ -1,0 +1,98 @@
+{
+  "sha": "8dcda65837573f99e10f335380181f3f5a45e1bb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4ZGNkYTY1ODM3NTczZjk5ZTEwZjMzNTM4MDE4MWYzZjVhNDVlMWJi",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-12-12T14:06:06Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2019-12-12T14:06:06Z"
+    },
+    "message": "DEV: Correct error message check in run-qunit\n\nFollowup to 43ca1bb132ca687a91ad6d182296212ad714e1c2",
+    "tree": {
+      "sha": "06c44e2c615f16cc96a5b28407294f0218d139e7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/06c44e2c615f16cc96a5b28407294f0218d139e7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/8dcda65837573f99e10f335380181f3f5a45e1bb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/8dcda65837573f99e10f335380181f3f5a45e1bb",
+  "html_url": "https://github.com/discourse/discourse/commit/8dcda65837573f99e10f335380181f3f5a45e1bb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/8dcda65837573f99e10f335380181f3f5a45e1bb/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ea6326c860bcca1d178054dbf70115379c9fcfb6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ea6326c860bcca1d178054dbf70115379c9fcfb6",
+      "html_url": "https://github.com/discourse/discourse/commit/ea6326c860bcca1d178054dbf70115379c9fcfb6"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "57a0676b47c50860977746c401a57d31833e5c40",
+      "filename": "test/run-qunit.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/8dcda65837573f99e10f335380181f3f5a45e1bb/test/run-qunit.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/8dcda65837573f99e10f335380181f3f5a45e1bb/test/run-qunit.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/run-qunit.js?ref=8dcda65837573f99e10f335380181f3f5a45e1bb",
+      "patch": "@@ -63,7 +63,7 @@ async function runAllTests() {\n     try {\n       protocol = await CDP({ port: chrome.port });\n     } catch (e) {\n-      if (e === \"No inspectable targets\" && connectAttempts < 50) {\n+      if (e.message === \"No inspectable targets\" && connectAttempts < 50) {\n         connectAttempts++;\n         console.log(\n           \"Unable to establish connection to chrome target - trying again...\""
+    }
+  ]
+}
