@@ -1,0 +1,98 @@
+{
+  "sha": "5f1e346e1622722626e6f10df4363474016b20dd",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1ZjFlMzQ2ZTE2MjI3MjI2MjZlNmYxMGRmNDM2MzQ3NDAxNmIyMGRk",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-12-13T21:37:19Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2019-12-13T21:37:19Z"
+    },
+    "message": "DEV: lint file",
+    "tree": {
+      "sha": "f7058436a34ce1a1724bb15158dad187e660e1b1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f7058436a34ce1a1724bb15158dad187e660e1b1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5f1e346e1622722626e6f10df4363474016b20dd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5f1e346e1622722626e6f10df4363474016b20dd",
+  "html_url": "https://github.com/discourse/discourse/commit/5f1e346e1622722626e6f10df4363474016b20dd",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5f1e346e1622722626e6f10df4363474016b20dd/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "13092625695ab85c3d1f884a485d249b88151cb5",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/13092625695ab85c3d1f884a485d249b88151cb5",
+      "html_url": "https://github.com/discourse/discourse/commit/13092625695ab85c3d1f884a485d249b88151cb5"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 8,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "f04fa9f70e6c41bd9881646b264c23cae3bd2155",
+      "filename": "app/assets/javascripts/discourse/widgets/post-menu.js.es6",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 6,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/5f1e346e1622722626e6f10df4363474016b20dd/app/assets/javascripts/discourse/widgets/post-menu.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/5f1e346e1622722626e6f10df4363474016b20dd/app/assets/javascripts/discourse/widgets/post-menu.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/widgets/post-menu.js.es6?ref=5f1e346e1622722626e6f10df4363474016b20dd",
+      "patch": "@@ -578,9 +578,10 @@ export default createWidget(\"post-menu\", {\n \n     if (state.readers.length) {\n       const remaining = state.totalReaders - state.readers.length;\n-      const description = remaining > 0\n-        ? \"post.actions.people.read_capped\"\n-        : \"post.actions.people.read\";\n+      const description =\n+        remaining > 0\n+          ? \"post.actions.people.read_capped\"\n+          : \"post.actions.people.read\";\n       const count = remaining > 0 ? remaining : state.totalReaders;\n \n       contents.push(\n@@ -596,9 +597,10 @@ export default createWidget(\"post-menu\", {\n \n     if (state.likedUsers.length) {\n       const remaining = state.total - state.likedUsers.length;\n-      const description = remaining > 0\n-        ? \"post.actions.people.like_capped\"\n-        : \"post.actions.people.like\";\n+      const description =\n+        remaining > 0\n+          ? \"post.actions.people.like_capped\"\n+          : \"post.actions.people.like\";\n       const count = remaining > 0 ? remaining : state.total;\n \n       contents.push("
+    }
+  ]
+}
