@@ -1,0 +1,98 @@
+{
+  "sha": "45fa60f5a1834c490b7a2ff8af331a6c90e75c26",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjQ1ZmE2MGY1YTE4MzRjNDkwYjdhMmZmOGFmMzMxYTZjOTBlNzVjMjY=",
+  "commit": {
+    "author": {
+      "name": "Slava Semushin",
+      "email": "slava.semushin@gmail.com",
+      "date": "2019-12-16T03:28:40Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-12-16T03:28:40Z"
+    },
+    "message": "README.md: fix a typo in a variable name from an example (#491)\n\ns/TIME_ZINE/TIME_ZONE/",
+    "tree": {
+      "sha": "f1ec25d426e4976f052cc47c737d46a9d31b8339",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/f1ec25d426e4976f052cc47c737d46a9d31b8339"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/45fa60f5a1834c490b7a2ff8af331a6c90e75c26",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/45fa60f5a1834c490b7a2ff8af331a6c90e75c26",
+  "html_url": "https://github.com/umputun/remark/commit/45fa60f5a1834c490b7a2ff8af331a6c90e75c26",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/45fa60f5a1834c490b7a2ff8af331a6c90e75c26/comments",
+  "author": {
+    "login": "php-coder",
+    "id": 87088,
+    "node_id": "MDQ6VXNlcjg3MDg4",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/87088?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/php-coder",
+    "html_url": "https://github.com/php-coder",
+    "followers_url": "https://api.github.com/users/php-coder/followers",
+    "following_url": "https://api.github.com/users/php-coder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/php-coder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/php-coder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/php-coder/subscriptions",
+    "organizations_url": "https://api.github.com/users/php-coder/orgs",
+    "repos_url": "https://api.github.com/users/php-coder/repos",
+    "events_url": "https://api.github.com/users/php-coder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/php-coder/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "30c42ce36b1a06073f970b16d08be65fd3542f12",
+      "url": "https://api.github.com/repos/umputun/remark/commits/30c42ce36b1a06073f970b16d08be65fd3542f12",
+      "html_url": "https://github.com/umputun/remark/commit/30c42ce36b1a06073f970b16d08be65fd3542f12"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "da8a34bc140f0e382dd6b998f00af4c897b99ff2",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark/blob/45fa60f5a1834c490b7a2ff8af331a6c90e75c26/README.md",
+      "raw_url": "https://github.com/umputun/remark/raw/45fa60f5a1834c490b7a2ff8af331a6c90e75c26/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/README.md?ref=45fa60f5a1834c490b7a2ff8af331a6c90e75c26",
+      "patch": "@@ -358,7 +358,7 @@ services:\n         container_name: \"remark42\"\n         environment:\n             - APP_UID=2000                          # runs remark42 app with non-default UID\n-            - TIME_ZINE=GTC                         # sets container time to UTC\n+            - TIME_ZONE=GTC                         # sets container time to UTC\n \n             - REMARK_URL=https://demo.remark42.com  # url pointing to your remark42 server\n             - SITE=YOUR_SITE_ID                     # site ID, same as used for `site_id`, see \"Setup on your website\""
+    }
+  ]
+}
