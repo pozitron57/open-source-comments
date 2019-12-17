@@ -1,0 +1,98 @@
+{
+  "sha": "3b06571f627b799876092bd87bf010aac54e1257",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjNiMDY1NzFmNjI3Yjc5OTg3NjA5MmJkODdiZjAxMGFhYzU0ZTEyNTc=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-12-17T09:22:10Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-12-17T09:22:10Z"
+    },
+    "message": "inject version number to bin builds #456",
+    "tree": {
+      "sha": "08592ca1e4f8811d37f32b9624605f01d05ebc39",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/08592ca1e4f8811d37f32b9624605f01d05ebc39"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/3b06571f627b799876092bd87bf010aac54e1257",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/3b06571f627b799876092bd87bf010aac54e1257",
+  "html_url": "https://github.com/umputun/remark/commit/3b06571f627b799876092bd87bf010aac54e1257",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/3b06571f627b799876092bd87bf010aac54e1257/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0e19d11df8f9cc94c036cf908fd7cbe2deb7e416",
+      "url": "https://api.github.com/repos/umputun/remark/commits/0e19d11df8f9cc94c036cf908fd7cbe2deb7e416",
+      "html_url": "https://github.com/umputun/remark/commit/0e19d11df8f9cc94c036cf908fd7cbe2deb7e416"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 16,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "bc5d61ce556ae215d1efc4fc68536eac39c2029f",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 11,
+      "changes": 27,
+      "blob_url": "https://github.com/umputun/remark/blob/3b06571f627b799876092bd87bf010aac54e1257/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark/raw/3b06571f627b799876092bd87bf010aac54e1257/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/Dockerfile.artifacts?ref=3b06571f627b799876092bd87bf010aac54e1257",
+      "patch": "@@ -32,27 +32,32 @@ FROM umputun/baseimage:buildgo-latest as build-backend\n ARG GITHUB_TOKEN\n ENV SKIP_BACKEND_TEST=true\n \n-WORKDIR /go/src/github.com/umputun/remark/backend\n-ADD backend /go/src/github.com/umputun/remark/backend\n-ADD README.md /go/src/github.com/umputun/remark/\n-ADD LICENSE /go/src/github.com/umputun/remark/\n+RUN go get github.com/rakyll/statik\n+\n+WORKDIR /build/backend\n+ADD backend /build/backend\n+ADD README.md /build/\n+ADD LICENSE /build/\n+\n+ADD .git/ /build/backend/.git/\n+\n COPY --from=build-frontend /srv/frontend/public/ web\n \n RUN \\\n-    export WEB_ROOT=/go/src/github.com/umputun/remark/backend/web && \\\n+    export WEB_ROOT=/build/backend/web && \\\n     sed -i \"s|https://demo.remark42.com|http://127.0.0.1:8080|g\" ${WEB_ROOT}/*.js && \\\n     sed -i \"/REMOVE-START/,/REMOVE-END/d\" ${WEB_ROOT}/iframe.html && \\\n-    go get -v github.com/rakyll/statik && \\\n-    statik --src=${WEB_ROOT} --dest=/go/src/github.com/umputun/remark/backend/app/rest -p api -f && \\\n-    ls -la /go/src/github.com/umputun/remark/backend/app/rest/api/statik.go && \\\n-    ls -la /go/src/github.com/umputun/remark/backend/web/\n+    statik --src=${WEB_ROOT} --dest=/build/backend/app/rest -p api -f && \\\n+    ls -la /build/backend/app/rest/api/statik.go && \\\n+    ls -la /build/backend/web/\n \n # if DRONE presented use DRONE_* git env to make version\n RUN \\\n     if [ -z \"$DRONE\" ] ; then \\\n-    echo \"runs outside of drone\" && version=\"local\"; \\\n+    echo \"runs outside of drone\" && version=$(/script/git-rev.sh); \\\n     else version=${DRONE_TAG}${DRONE_BRANCH}${DRONE_PULL_REQUEST}-${DRONE_COMMIT:0:7}-$(date +%Y%m%d-%H:%M:%S); fi && \\\n     echo \"version=$version\" && \\\n+    export GOFLAGS=\"-mod=vendor\" && \\\n     GOOS=linux GOARCH=amd64 go build -o remark42.linux-amd64 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n     GOOS=linux GOARCH=386 go build -o remark42.linux-386 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n     GOOS=linux GOARCH=arm go build -o remark42.linux-arm -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n@@ -95,6 +100,6 @@ RUN \\\n #    \"https://uploads.github.com/repos/umputun/remark/releases/${DRONE_TAG}/assets?name=remark_${DRONE_TAG}.windows-amd64.zip\"; fi\n \n FROM alpine\n-COPY --from=build-backend /go/src/github.com/umputun/remark/backend/remark42.* /artifacts/\n+COPY --from=build-backend /build/backend/remark42.* /artifacts/\n RUN ls -la /artifacts/*\n CMD [\"sleep\", \"100\"]"
+    }
+  ]
+}
