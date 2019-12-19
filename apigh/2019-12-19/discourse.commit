@@ -1,0 +1,98 @@
+{
+  "sha": "9fc1a754fe73a145b3a731693922e6b466d569b7",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5ZmMxYTc1NGZlNzNhMTQ1YjNhNzMxNjkzOTIyZTZiNDY2ZDU2OWI3",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-12-19T16:52:07Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2019-12-19T16:52:27Z"
+    },
+    "message": "DEV: Error message if multisite DB can't be created",
+    "tree": {
+      "sha": "3a285aff9a4c1bb3a0876291a90a6f8c5b61e8af",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3a285aff9a4c1bb3a0876291a90a6f8c5b61e8af"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/9fc1a754fe73a145b3a731693922e6b466d569b7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/9fc1a754fe73a145b3a731693922e6b466d569b7",
+  "html_url": "https://github.com/discourse/discourse/commit/9fc1a754fe73a145b3a731693922e6b466d569b7",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/9fc1a754fe73a145b3a731693922e6b466d569b7/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "069bc70bd41869a9afe868be3a33d67f046f2a4a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/069bc70bd41869a9afe868be3a33d67f046f2a4a",
+      "html_url": "https://github.com/discourse/discourse/commit/069bc70bd41869a9afe868be3a33d67f046f2a4a"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 8,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "05cf2bd343372d8261618a5564833445b4f83e59",
+      "filename": "lib/tasks/db.rake",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/9fc1a754fe73a145b3a731693922e6b466d569b7/lib/tasks/db.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/9fc1a754fe73a145b3a731693922e6b466d569b7/lib/tasks/db.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/db.rake?ref=9fc1a754fe73a145b3a731693922e6b466d569b7",
+      "patch": "@@ -32,7 +32,14 @@ end\n \n task 'db:create' => [:load_config] do |_, args|\n   if MultisiteTestHelpers.create_multisite?\n-    system(\"RAILS_ENV=test RAILS_DB=discourse_test_multisite rake db:create\")\n+    unless system(\"RAILS_ENV=test RAILS_DB=discourse_test_multisite rake db:create\")\n+\n+      STDERR.puts \"-\" * 80\n+      STDERR.puts \"ERROR: Could not create multisite DB. A common cause of this is a plugin\"\n+      STDERR.puts \"checking the column structure when initializing, which raises an error.\"\n+      STDERR.puts \"-\" * 80\n+      raise \"Could not initialize discourse_test_multisite\"\n+    end\n   end\n end\n "
+    }
+  ]
+}

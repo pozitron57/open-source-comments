@@ -1,0 +1,98 @@
+{
+  "sha": "7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTo3ZWVkNzQ3ZTdhOTRjYTFhMTljMDFjNjdkZTdlZDZiMTZkMmJiZTNk",
+  "commit": {
+    "author": {
+      "name": "Shimmy Xu",
+      "email": "12737903+shimmy1996@users.noreply.github.com",
+      "date": "2019-12-12T22:05:59Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2019-12-12T22:05:59Z"
+    },
+    "message": "Use `html.escape` for Python versions where `cgi.escape` is removed (#600)\n\nUse html.escape as cgi.escape is removed in 3.8",
+    "tree": {
+      "sha": "bfc963acb290caf342247fbddc6c8ac01cb18f76",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/bfc963acb290caf342247fbddc6c8ac01cb18f76"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d",
+  "html_url": "https://github.com/posativ/isso/commit/7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d/comments",
+  "author": {
+    "login": "shimmy1996",
+    "id": 12737903,
+    "node_id": "MDQ6VXNlcjEyNzM3OTAz",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/12737903?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shimmy1996",
+    "html_url": "https://github.com/shimmy1996",
+    "followers_url": "https://api.github.com/users/shimmy1996/followers",
+    "following_url": "https://api.github.com/users/shimmy1996/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shimmy1996/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shimmy1996/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shimmy1996/subscriptions",
+    "organizations_url": "https://api.github.com/users/shimmy1996/orgs",
+    "repos_url": "https://api.github.com/users/shimmy1996/repos",
+    "events_url": "https://api.github.com/users/shimmy1996/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shimmy1996/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+      "url": "https://api.github.com/repos/posativ/isso/commits/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6",
+      "html_url": "https://github.com/posativ/isso/commit/2e8cb81179209a6921f58f13c4d5aa002e5a1fb6"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 5,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "2e11277dfe60242990a9200e1a63ae5e34079e79",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 7,
+      "blob_url": "https://github.com/posativ/isso/blob/7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d/isso/views/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d/isso/views/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/views/comments.py?ref=7eed747e7a94ca1a19c01c67de7ed6b16d2bbe3d",
+      "patch": "@@ -3,7 +3,6 @@\n from __future__ import unicode_literals\n \n import re\n-import cgi\n import time\n import functools\n import json  # json.dumps to put URL in <script>\n@@ -29,6 +28,10 @@\n from isso.utils.hash import sha1\n from isso.utils.hash import md5\n \n+try:\n+    from cgi import escape\n+except ImportError:\n+    from html import escape\n try:\n     from urlparse import urlparse\n except ImportError:\n@@ -263,7 +266,7 @@ def new(self, environ, request, uri):\n \n         for field in (\"author\", \"email\", \"website\"):\n             if data.get(field) is not None:\n-                data[field] = cgi.escape(data[field])\n+                data[field] = escape(data[field], quote=False)\n \n         if data.get(\"website\"):\n             data[\"website\"] = normalize(data[\"website\"])"
+    }
+  ]
+}
