@@ -1,0 +1,110 @@
+{
+  "sha": "fde6f520c953a557bda6147fa76e8e9443af604e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmZkZTZmNTIwYzk1M2E1NTdiZGE2MTQ3ZmE3NmU4ZTk0NDNhZjYwNGU=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2019-12-21T17:31:01Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-12-21T17:31:01Z"
+    },
+    "message": "improve email notifications tests coverage (#498)",
+    "tree": {
+      "sha": "22ccb49726f0b98781a535d5d27643ed955baedb",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/22ccb49726f0b98781a535d5d27643ed955baedb"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/fde6f520c953a557bda6147fa76e8e9443af604e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/fde6f520c953a557bda6147fa76e8e9443af604e",
+  "html_url": "https://github.com/umputun/remark/commit/fde6f520c953a557bda6147fa76e8e9443af604e",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/fde6f520c953a557bda6147fa76e8e9443af604e/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3eacd6f20120f2cc0cfc1e38d532aec25a839bb0",
+      "url": "https://api.github.com/repos/umputun/remark/commits/3eacd6f20120f2cc0cfc1e38d532aec25a839bb0",
+      "html_url": "https://github.com/umputun/remark/commit/3eacd6f20120f2cc0cfc1e38d532aec25a839bb0"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 12,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "adfbd3ad3068c047b4cee8b1299f9f65dc8f61f8",
+      "filename": "backend/app/notify/email_test.go",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark/blob/fde6f520c953a557bda6147fa76e8e9443af604e/backend/app/notify/email_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/fde6f520c953a557bda6147fa76e8e9443af604e/backend/app/notify/email_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/notify/email_test.go?ref=fde6f520c953a557bda6147fa76e8e9443af604e",
+      "patch": "@@ -208,6 +208,13 @@ List-Unsubscribe: <https://remark42.com/api/v1/email/unsubscribe?site=&tkn=token\n Date: `)\n }\n \n+func Test_emailClient_Create(t *testing.T) {\n+\tcreator := emailClient{}\n+\tclient, err := creator.Create(SmtpParams{})\n+\tassert.Error(t, err, \"absence of address to connect results in error\")\n+\tassert.Nil(t, client, \"no client returned in case of error\")\n+}\n+\n type fakeTestSMTP struct {\n \tfail map[string]bool\n "
+    },
+    {
+      "sha": "157dfef86eab60fd810de6230958c3f51407c969",
+      "filename": "backend/app/rest/api/rest_private_test.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark/blob/fde6f520c953a557bda6147fa76e8e9443af604e/backend/app/rest/api/rest_private_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/fde6f520c953a557bda6147fa76e8e9443af604e/backend/app/rest/api/rest_private_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/rest_private_test.go?ref=fde6f520c953a557bda6147fa76e8e9443af604e",
+      "patch": "@@ -491,6 +491,11 @@ func TestRest_Email(t *testing.T) {\n \t\t{description: \"get user email\", url: \"/api/v1/email?site=remark42\", method: http.MethodGet, responseCode: http.StatusOK},\n \t\t{description: \"delete user email\", url: \"/api/v1/email?site=remark42\", method: http.MethodDelete, responseCode: http.StatusOK},\n \t\t{description: \"send another confirmation\", url: \"/api/v1/email/subscribe?site=remark42&address=good@example.com\", method: http.MethodPost, responseCode: http.StatusOK},\n+\t\t{description: \"set user email, token is good\", url: fmt.Sprintf(\"/api/v1/email/confirm?site=remark42&tkn=%s\", goodToken), method: http.MethodPost, responseCode: http.StatusOK, cookieEmail: \"good@example.com\"},\n+\t\t{description: \"unsubscribe user, no token\", url: \"/api/v1/email/unsubscribe?site=remark42\", method: http.MethodPost, responseCode: http.StatusBadRequest},\n+\t\t{description: \"unsubscribe user, wrong token\", url: \"/api/v1/email/unsubscribe?site=remark42&tkn=jwt\", method: http.MethodPost, responseCode: http.StatusForbidden},\n+\t\t{description: \"unsubscribe user, good token\", url: fmt.Sprintf(\"/api/v1/email/unsubscribe?site=remark42&tkn=%s\", goodToken), method: http.MethodPost, responseCode: http.StatusOK},\n+\t\t{description: \"unsubscribe user second time, good token\", url: fmt.Sprintf(\"/api/v1/email/unsubscribe?site=remark42&tkn=%s\", goodToken), method: http.MethodPost, responseCode: http.StatusConflict},\n \t}\n \tclient := http.Client{}\n \tfor _, x := range testData {"
+    }
+  ]
+}
