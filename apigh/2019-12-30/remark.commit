@@ -1,0 +1,110 @@
+{
+  "sha": "62cc504600699f29bcdd9c89cc54b23b647c6f75",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjYyY2M1MDQ2MDA2OTlmMjliY2RkOWM4OWNjNTRiMjNiNjQ3YzZmNzU=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2019-12-30T09:44:10Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2019-12-30T09:44:10Z"
+    },
+    "message": "Improve Test_Main reliability (#509)\n\n* adjust TestServerApp_WithSSL to use sslPort in all test checks\r\n\r\n* make Test_Main reliable and remove 5s sleep\r\n\r\n* make test finishing reliable using \"done\" channel for TestServerApp*",
+    "tree": {
+      "sha": "30bb3bafd35571bb94185396fd5da88916fa9bcf",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/30bb3bafd35571bb94185396fd5da88916fa9bcf"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/62cc504600699f29bcdd9c89cc54b23b647c6f75",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/62cc504600699f29bcdd9c89cc54b23b647c6f75",
+  "html_url": "https://github.com/umputun/remark/commit/62cc504600699f29bcdd9c89cc54b23b647c6f75",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/62cc504600699f29bcdd9c89cc54b23b647c6f75/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fddb737657f5ec1776347b8c9fa0653d61b9be71",
+      "url": "https://api.github.com/repos/umputun/remark/commits/fddb737657f5ec1776347b8c9fa0653d61b9be71",
+      "html_url": "https://github.com/umputun/remark/commit/fddb737657f5ec1776347b8c9fa0653d61b9be71"
+    }
+  ],
+  "stats": {
+    "total": 78,
+    "additions": 48,
+    "deletions": 30
+  },
+  "files": [
+    {
+      "sha": "aad9be0a6d03a199ff16288962876cfc955a6e0d",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark/blob/62cc504600699f29bcdd9c89cc54b23b647c6f75/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/62cc504600699f29bcdd9c89cc54b23b647c6f75/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server_test.go?ref=62cc504600699f29bcdd9c89cc54b23b647c6f75",
+      "patch": "@@ -135,12 +135,12 @@ func TestServerApp_AnonMode(t *testing.T) {\n \n func TestServerApp_WithSSL(t *testing.T) {\n \topts := ServerCommand{}\n-\topts.SetCommon(CommonOpts{RemarkURL: \"https://localhost:18443\", SharedSecret: \"123456\"})\n+\tsslPort := chooseRandomUnusedPort()\n+\topts.SetCommon(CommonOpts{RemarkURL: fmt.Sprintf(\"https://localhost:%d\", sslPort), SharedSecret: \"123456\"})\n \n \t// prepare options\n \tp := flags.NewParser(&opts, flags.Default)\n \tport := chooseRandomUnusedPort()\n-\tsslPort := chooseRandomUnusedPort()\n \t_, err := p.ParseArgs([]string{\"--admin-passwd=password\", \"--port=\" + strconv.Itoa(port), \"--store.bolt.path=/tmp/xyz\", \"--backup=/tmp\",\n \t\t\"--avatar.type=bolt\", \"--avatar.bolt.file=/tmp/ava-test.db\", \"--notify.type=none\",\n \t\t\"--ssl.type=static\", \"--ssl.cert=testdata/cert.pem\", \"--ssl.key=testdata/key.pem\",\n@@ -152,8 +152,9 @@ func TestServerApp_WithSSL(t *testing.T) {\n \trequire.NoError(t, err)\n \n \tctx, cancel := context.WithCancel(context.Background())\n+\tdone := make(chan struct{})\n \tgo func() {\n-\t\ttime.Sleep(1 * time.Second)\n+\t\t<-done\n \t\tlog.Print(\"[TEST] terminate app\")\n \t\tcancel()\n \t}()\n@@ -177,7 +178,7 @@ func TestServerApp_WithSSL(t *testing.T) {\n \trequire.NoError(t, err)\n \tdefer resp.Body.Close()\n \tassert.Equal(t, 307, resp.StatusCode)\n-\tassert.Equal(t, \"https://localhost:18443/blah?param=1\", resp.Header.Get(\"Location\"))\n+\tassert.Equal(t, fmt.Sprintf(\"https://localhost:%d/blah?param=1\", sslPort), resp.Header.Get(\"Location\"))\n \n \t// check https server\n \tresp, err = client.Get(fmt.Sprintf(\"https://localhost:%d/ping\", sslPort))\n@@ -188,6 +189,7 @@ func TestServerApp_WithSSL(t *testing.T) {\n \tassert.NoError(t, err)\n \tassert.Equal(t, \"pong\", string(body))\n \n+\tclose(done)\n \tapp.Wait()\n }\n \n@@ -211,8 +213,9 @@ func TestServerApp_WithRemote(t *testing.T) {\n \trequire.NoError(t, err)\n \n \tctx, cancel := context.WithCancel(context.Background())\n+\tdone := make(chan struct{})\n \tgo func() {\n-\t\ttime.Sleep(5 * time.Second)\n+\t\t<-done\n \t\tlog.Print(\"[TEST] terminate app\")\n \t\tcancel()\n \t}()\n@@ -228,6 +231,7 @@ func TestServerApp_WithRemote(t *testing.T) {\n \tassert.NoError(t, err)\n \tassert.Equal(t, \"pong\", string(body))\n \n+\tclose(done)\n \tapp.Wait()\n }\n "
+    },
+    {
+      "sha": "3e70c54d07e0b169597089b742c79a0243cced6e",
+      "filename": "backend/app/main_test.go",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 25,
+      "changes": 64,
+      "blob_url": "https://github.com/umputun/remark/blob/62cc504600699f29bcdd9c89cc54b23b647c6f75/backend/app/main_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/62cc504600699f29bcdd9c89cc54b23b647c6f75/backend/app/main_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/main_test.go?ref=62cc504600699f29bcdd9c89cc54b23b647c6f75",
+      "patch": "@@ -1,19 +1,20 @@\n package main\n \n import (\n-\t\"context\"\n+\t\"fmt\"\n \t\"io/ioutil\"\n+\t\"math/rand\"\n+\t\"net\"\n \t\"net/http\"\n \t\"os\"\n+\t\"strconv\"\n \t\"strings\"\n \t\"sync\"\n \t\"syscall\"\n \t\"testing\"\n \t\"time\"\n \n \tlog \"github.com/go-pkgz/lgr\"\n-\t\"github.com/go-pkgz/repeater\"\n-\n \t\"github.com/stretchr/testify/assert\"\n \t\"github.com/stretchr/testify/require\"\n )\n@@ -24,44 +25,34 @@ func Test_Main(t *testing.T) {\n \trequire.NoError(t, err)\n \tdefer os.RemoveAll(dir)\n \n+\tport := chooseRandomUnusedPort()\n \tos.Args = []string{\"test\", \"server\", \"--secret=123456\", \"--store.bolt.path=\" + dir, \"--backup=/tmp\",\n-\t\t\"--avatar.fs.path=\" + dir, \"--port=18222\", \"--url=https://demo.remark42.com\", \"--dbg\", \"--notify.type=none\"}\n+\t\t\"--avatar.fs.path=\" + dir, \"--port=\" + strconv.Itoa(port), \"--url=https://demo.remark42.com\", \"--dbg\", \"--notify.type=none\"}\n \n+\tdone := make(chan struct{})\n \tgo func() {\n-\t\ttime.Sleep(5000 * time.Millisecond)\n+\t\t<-done\n \t\te := syscall.Kill(syscall.Getpid(), syscall.SIGTERM)\n \t\trequire.Nil(t, e)\n \t}()\n \n \twg := sync.WaitGroup{}\n \twg.Add(1)\n \tgo func() {\n-\t\tst := time.Now()\n \t\tmain()\n-\t\tassert.True(t, time.Since(st).Seconds() >= 4, \"should take about 5s, took %s\", time.Since(st))\n \t\twg.Done()\n \t}()\n \n-\tvar passed bool\n-\terr = repeater.NewDefault(10, time.Millisecond*1000).Do(context.Background(), func() error {\n-\t\tresp, e := http.Get(\"http://localhost:18222/api/v1/ping\")\n-\t\tif e != nil {\n-\t\t\tt.Logf(\"%+v\", e)\n-\t\t\treturn e\n-\t\t}\n-\t\trequire.Nil(t, e)\n-\t\tdefer resp.Body.Close()\n-\t\tassert.Equal(t, 200, resp.StatusCode)\n-\t\tbody, e := ioutil.ReadAll(resp.Body)\n-\t\tassert.Nil(t, e)\n-\t\tassert.Equal(t, \"pong\", string(body))\n-\t\tpassed = true\n-\t\treturn nil\n-\t})\n-\n+\twaitForHTTPServerStart(port)\n+\tresp, err := http.Get(fmt.Sprintf(\"http://localhost:%d/api/v1/ping\", port))\n+\trequire.NoError(t, err)\n+\tdefer resp.Body.Close()\n+\tassert.Equal(t, 200, resp.StatusCode)\n+\tbody, err := ioutil.ReadAll(resp.Body)\n \tassert.NoError(t, err)\n-\tassert.Equal(t, true, passed, \"at least on ping passed\")\n+\tassert.Equal(t, \"pong\", string(body))\n \n+\tclose(done)\n \twg.Wait()\n }\n \n@@ -72,3 +63,26 @@ func TestGetDump(t *testing.T) {\n \tassert.True(t, strings.Contains(dump, \"backend/app/main.go\"))\n \tlog.Printf(\"\\n dump: %s\", dump)\n }\n+\n+func chooseRandomUnusedPort() (port int) {\n+\tfor i := 0; i < 10; i++ {\n+\t\tport = 40000 + int(rand.Int31n(10000))\n+\t\tif ln, err := net.Listen(\"tcp\", fmt.Sprintf(\":%d\", port)); err == nil {\n+\t\t\t_ = ln.Close()\n+\t\t\tbreak\n+\t\t}\n+\t}\n+\treturn port\n+}\n+\n+func waitForHTTPServerStart(port int) {\n+\t// wait for up to 5 seconds for server to start before returning it\n+\tclient := http.Client{Timeout: time.Second}\n+\tfor i := 0; i < 500; i++ {\n+\t\ttime.Sleep(time.Millisecond * 10)\n+\t\tif resp, err := client.Get(fmt.Sprintf(\"http://localhost:%d\", port)); err == nil {\n+\t\t\t_ = resp.Body.Close()\n+\t\t\treturn\n+\t\t}\n+\t}\n+}"
+    }
+  ]
+}
