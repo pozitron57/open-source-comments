@@ -1,0 +1,170 @@
+{
+  "sha": "57081acc0883e40b25c368708a3acc0eb85e2014",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1NzA4MWFjYzA4ODNlNDBiMjVjMzY4NzA4YTNhY2MwZWI4NWUyMDE0",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2020-01-01T11:23:36Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2020-01-01T11:23:36Z"
+    },
+    "message": "FIX: trigger commands are different for each locale, account for that.",
+    "tree": {
+      "sha": "0ff21d149f2805949de4d8bf005bc239805ba261",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0ff21d149f2805949de4d8bf005bc239805ba261"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/57081acc0883e40b25c368708a3acc0eb85e2014",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/57081acc0883e40b25c368708a3acc0eb85e2014",
+  "html_url": "https://github.com/discourse/discourse/commit/57081acc0883e40b25c368708a3acc0eb85e2014",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/57081acc0883e40b25c368708a3acc0eb85e2014/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ce512452b512b909c38e9c63f2a0e1f8c17a2399",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ce512452b512b909c38e9c63f2a0e1f8c17a2399",
+      "html_url": "https://github.com/discourse/discourse/commit/ce512452b512b909c38e9c63f2a0e1f8c17a2399"
+    }
+  ],
+  "stats": {
+    "total": 25,
+    "additions": 17,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "d151e6d76a8b60fea089f2c903cf333fd0db1385",
+      "filename": "plugins/discourse-narrative-bot/autoload/jobs/send_advanced_tutorial_message.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/autoload/jobs/send_advanced_tutorial_message.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/autoload/jobs/send_advanced_tutorial_message.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/autoload/jobs/send_advanced_tutorial_message.rb?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -6,10 +6,14 @@ def execute(args)\n       user = User.find_by(id: args[:user_id])\n       return if user.nil?\n \n+      raw = I18n.t(\"discourse_narrative_bot.tl2_promotion_message.text_body_template\",\n+                    discobot_username: ::DiscourseNarrativeBot::Base.new.discobot_user.username,\n+                    reset_trigger: \"#{::DiscourseNarrativeBot::TrackSelector.reset_trigger} #{::DiscourseNarrativeBot::AdvancedUserNarrative.reset_trigger}\")\n+\n       PostCreator.create!(\n         Discourse.system_user,\n         title: I18n.t(\"discourse_narrative_bot.tl2_promotion_message.subject_template\"),\n-        raw: I18n.t(\"discourse_narrative_bot.tl2_promotion_message.text_body_template\"),\n+        raw: raw,\n         archetype: Archetype.private_message,\n         target_usernames: user.username,\n         skip_validations: true"
+    },
+    {
+      "sha": "1aa80d2df1e188ff898a55bb18459daba2f5dbcd",
+      "filename": "plugins/discourse-narrative-bot/config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/config/locales/server.en.yml?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -25,10 +25,10 @@ en:\n     tl2_promotion_message:\n       subject_template: \"Congratulations on your trust level promotion!\"\n       text_body_template: |\n-        Now that you’ve been promoted, it’s time to learn about some advanced features! \n+        Now that you’ve been promoted, it’s time to learn about some advanced features!\n+\n+        Reply to this message with `@%{discobot_username} %{reset_trigger}` to find out more about what you can do.\n \n-        Reply to this message with `@discobot start advanced tutorial` to find out more about what you can do. \n- \n         We invite you to keep getting involved – we enjoy having you around.\n \n     timeout:"
+    },
+    {
+      "sha": "81164434af652faace8fdd4662eef4856ba002c6",
+      "filename": "plugins/discourse-narrative-bot/config/locales/server.es.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.es.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.es.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/config/locales/server.es.yml?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -31,7 +31,7 @@ es:\n       text_body_template: |\n         ¡Ahora que has sido promovido, es tiempo de que aprendas sobre las características avanzadas!\n \n-        Responde a este mensaje con `@discobot start advanced tutorial` para saber más sobre lo que puedes hacer.\n+        Responde a este mensaje con `@%{discobot_username} %{reset_trigger}` para saber más sobre lo que puedes hacer.\n \n         Te invitamos a que sigas participando  – disfrutamos tenerte cerca.\n     timeout:"
+    },
+    {
+      "sha": "26d417180058b17fdad815912fcf165ed246e469",
+      "filename": "plugins/discourse-narrative-bot/config/locales/server.he.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.he.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.he.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/config/locales/server.he.yml?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -31,7 +31,7 @@ he:\n       text_body_template: |\n         עכשיו, לאחר התקדמותך, הגיע הזמן ללמוד על תכונות מתקדמות!\n \n-        יש להגיב להודעה זו עם ‎`@discobot start advanced tutorial` כדי ללמוד עוד על דברים שבאפשרותך לבצע.\n+        יש להגיב להודעה זו עם ‎`@%{discobot_username} %{reset_trigger}` כדי ללמוד עוד על דברים שבאפשרותך לבצע.\n \n         אנו מזמינים אותך להמשיך ולהשתתף – פעילותך חשובה לנו.\n     timeout:"
+    },
+    {
+      "sha": "55c036394674fd57df675de982a7b6f2928878fc",
+      "filename": "plugins/discourse-narrative-bot/config/locales/server.nl.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.nl.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.nl.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/config/locales/server.nl.yml?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -31,7 +31,7 @@ nl:\n       text_body_template: |\n         Nu u bent gepromoveerd, is het tijd voor wat geavanceerde functies!\n \n-        Beantwoord dit bericht met `@discobot start advanced tutorial` om meer te lezen over wat u kunt doen.\n+        Beantwoord dit bericht met `@%{discobot_username} %{reset_trigger}` om meer te lezen over wat u kunt doen.\n \n         U bent van harte uitgenodigd om mee te blijven werken – we genieten van uw aanwezigheid.\n     dice:"
+    },
+    {
+      "sha": "0e9f87fc9d428d8a44fc0219966a93ddc28c8b82",
+      "filename": "plugins/discourse-narrative-bot/config/locales/server.pl_PL.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.pl_PL.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/config/locales/server.pl_PL.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/config/locales/server.pl_PL.yml?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -31,7 +31,7 @@ pl_PL:\n       text_body_template: |\n         Jako że wszedłeś na wyższy poziom zaufania, czas nauczyć się czegoś o zaawansowanych funkcjach!\n \n-        Odpisz na tę wiadomość tekstem \"@discobot start advanced tutorial\", aby dowiedzieć się, co możesz zrobić.\n+        Odpisz na tę wiadomość tekstem `@%{discobot_username} %{reset_trigger}`, aby dowiedzieć się, co możesz zrobić.\n \n         Zapraszamy do bycia zaangażowanym - cieszymy się, że jesteś z nami.\n     timeout:"
+    },
+    {
+      "sha": "5d3674cae08c6bc5ed295d9af2f0f81ea24c4a0e",
+      "filename": "plugins/discourse-narrative-bot/spec/jobs/send_advanced_tutorial_message_spec.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/spec/jobs/send_advanced_tutorial_message_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/57081acc0883e40b25c368708a3acc0eb85e2014/plugins/discourse-narrative-bot/spec/jobs/send_advanced_tutorial_message_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/plugins/discourse-narrative-bot/spec/jobs/send_advanced_tutorial_message_spec.rb?ref=57081acc0883e40b25c368708a3acc0eb85e2014",
+      "patch": "@@ -19,5 +19,10 @@\n     expect(topic.topic_allowed_users.pluck(:user_id)).to contain_exactly(\n       system_user.id, user.id\n     )\n+    expect(topic.first_post.raw).to eq(I18n.t(\n+      'discourse_narrative_bot.tl2_promotion_message.text_body_template',\n+      discobot_username: ::DiscourseNarrativeBot::Base.new.discobot_user.username,\n+      reset_trigger: \"#{::DiscourseNarrativeBot::TrackSelector.reset_trigger} #{::DiscourseNarrativeBot::AdvancedUserNarrative.reset_trigger}\"\n+    ).chomp)\n   end\n end"
+    }
+  ]
+}
