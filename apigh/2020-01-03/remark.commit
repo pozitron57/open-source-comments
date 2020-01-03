@@ -1,0 +1,98 @@
+{
+  "sha": "4cae7f0324d1ea5381fc1d86f27d5d393359243c",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjRjYWU3ZjAzMjRkMWVhNTM4MWZjMWQ4NmYyN2Q1ZDM5MzM1OTI0M2M=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2020-01-02T20:19:20Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-01-02T20:35:50Z"
+    },
+    "message": "make TestServerApp_MainSignal more robust",
+    "tree": {
+      "sha": "c9637e617bcd0d618e73ed7cda500b20475abf88",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/c9637e617bcd0d618e73ed7cda500b20475abf88"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/4cae7f0324d1ea5381fc1d86f27d5d393359243c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/4cae7f0324d1ea5381fc1d86f27d5d393359243c",
+  "html_url": "https://github.com/umputun/remark/commit/4cae7f0324d1ea5381fc1d86f27d5d393359243c",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/4cae7f0324d1ea5381fc1d86f27d5d393359243c/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "07a14edc3b07ba592cd2d0c78eecf1c65e25b961",
+      "url": "https://api.github.com/repos/umputun/remark/commits/07a14edc3b07ba592cd2d0c78eecf1c65e25b961",
+      "html_url": "https://github.com/umputun/remark/commit/07a14edc3b07ba592cd2d0c78eecf1c65e25b961"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 6,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "eccb2ca11624750e802dd0fdf5045f6a945cf425",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark/blob/4cae7f0324d1ea5381fc1d86f27d5d393359243c/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/4cae7f0324d1ea5381fc1d86f27d5d393359243c/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/cmd/server_test.go?ref=4cae7f0324d1ea5381fc1d86f27d5d393359243c",
+      "patch": "@@ -287,12 +287,13 @@ func TestServerApp_Shutdown(t *testing.T) {\n \n func TestServerApp_MainSignal(t *testing.T) {\n \n+\tdone := make(chan struct{})\n \tgo func() {\n+\t\t<-done\n \t\ttime.Sleep(250 * time.Millisecond)\n \t\terr := syscall.Kill(syscall.Getpid(), syscall.SIGTERM)\n \t\trequire.NoError(t, err)\n \t}()\n-\tst := time.Now()\n \n \ts := ServerCommand{}\n \ts.SetCommon(CommonOpts{RemarkURL: \"https://demo.remark42.com\", SharedSecret: \"123456\"})\n@@ -304,9 +305,11 @@ func TestServerApp_MainSignal(t *testing.T) {\n \tdefer os.Remove(\"/tmp/ava-test.db\")\n \t_, err := p.ParseArgs(args)\n \trequire.NoError(t, err)\n+\tst := time.Now()\n+\tclose(done)\n \terr = s.Execute(args)\n-\tassert.NoError(t, err, \"execute failed\")\n-\tassert.True(t, time.Since(st).Seconds() < 1, \"should take under sec\", time.Since(st).Seconds())\n+\tassert.NoError(t, err, \"execute should be without errors\")\n+\tassert.True(t, time.Since(st).Seconds() < 5, \"should take under five sec\", time.Since(st).Seconds())\n }\n \n func Test_ACMEEmail(t *testing.T) {"
+    }
+  ]
+}
