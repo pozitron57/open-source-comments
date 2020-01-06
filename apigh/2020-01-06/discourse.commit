@@ -1,0 +1,98 @@
+{
+  "sha": "e2e94202049586eb3d24038749712acf2e492794",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplMmU5NDIwMjA0OTU4NmViM2QyNDAzODc0OTcxMmFjZjJlNDkyNzk0",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-01-06T16:43:32Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-01-06T16:43:32Z"
+    },
+    "message": "DEV: Update deprecated icon name",
+    "tree": {
+      "sha": "a4b010792ff1c82ccb9a30cdb2172d779c8ca1c4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a4b010792ff1c82ccb9a30cdb2172d779c8ca1c4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e2e94202049586eb3d24038749712acf2e492794",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e2e94202049586eb3d24038749712acf2e492794",
+  "html_url": "https://github.com/discourse/discourse/commit/e2e94202049586eb3d24038749712acf2e492794",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e2e94202049586eb3d24038749712acf2e492794/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ca07a571c729653af2557add3e74e84d05caefd7",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ca07a571c729653af2557add3e74e84d05caefd7",
+      "html_url": "https://github.com/discourse/discourse/commit/ca07a571c729653af2557add3e74e84d05caefd7"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "64893e5c326355e90dba07e9a4089ba8bbd14434",
+      "filename": "app/assets/javascripts/discourse/templates/groups/index.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e2e94202049586eb3d24038749712acf2e492794/app/assets/javascripts/discourse/templates/groups/index.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/e2e94202049586eb3d24038749712acf2e492794/app/assets/javascripts/discourse/templates/groups/index.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/groups/index.hbs?ref=e2e94202049586eb3d24038749712acf2e492794",
+      "patch": "@@ -53,7 +53,7 @@\n                     {{#group-membership-button tagName='' model=group showLogin=(route-action \"showLogin\")}}\n                       {{#if group.is_group_owner}}\n                       <span class=\"is-group-owner\">\n-                        {{d-icon \"shield\"}}\n+                        {{d-icon \"shield-alt\"}}\n                         {{i18n \"groups.index.is_group_owner\"}}\n                       </span>\n                       {{else if group.is_group_user}}"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "sha": "c660d2a5229f8fd7959f9dab6b084d1c86cba7de",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmM2NjBkMmE1MjI5ZjhmZDc5NTlmOWRhYjZiMDg0ZDFjODZjYmE3ZGU=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2020-01-06T00:08:48Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-01-06T00:35:22Z"
+    },
+    "message": "Change text `sign in` to `login`",
+    "tree": {
+      "sha": "671e074e19fccaa65e79f9a570a4af312f23fae5",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/671e074e19fccaa65e79f9a570a4af312f23fae5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/c660d2a5229f8fd7959f9dab6b084d1c86cba7de",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/c660d2a5229f8fd7959f9dab6b084d1c86cba7de",
+  "html_url": "https://github.com/umputun/remark/commit/c660d2a5229f8fd7959f9dab6b084d1c86cba7de",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/c660d2a5229f8fd7959f9dab6b084d1c86cba7de/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "07137b34e7b44aee913f2d2e500f1877269ce0ab",
+      "url": "https://api.github.com/repos/umputun/remark/commits/07137b34e7b44aee913f2d2e500f1877269ce0ab",
+      "html_url": "https://github.com/umputun/remark/commit/07137b34e7b44aee913f2d2e500f1877269ce0ab"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 9,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "c1e41a01a6d27389e1cd9f446c74686bc7b8d8f2",
+      "filename": "frontend/app/components/auth-panel/auth-panel.test.tsx",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark/blob/c660d2a5229f8fd7959f9dab6b084d1c86cba7de/frontend/app/components/auth-panel/auth-panel.test.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/c660d2a5229f8fd7959f9dab6b084d1c86cba7de/frontend/app/components/auth-panel/auth-panel.test.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/auth-panel/auth-panel.test.tsx?ref=c660d2a5229f8fd7959f9dab6b084d1c86cba7de",
+      "patch": "@@ -30,7 +30,7 @@ describe('<AuthPanel />', () => {\n \n       const authForm = authPanelColumn.first();\n \n-      expect(authForm.text()).toEqual(expect.stringContaining('Sign in to comment using'));\n+      expect(authForm.text()).toEqual(expect.stringContaining('Login:'));\n \n       const providerLinks = authForm.find(Button);\n \n@@ -95,7 +95,7 @@ describe('<AuthPanel />', () => {\n \n       const authForm = authPanelColumn.first();\n \n-      expect(authForm.text()).toEqual(expect.stringContaining('Sign in using Google or GitHub'));\n+      expect(authForm.text()).toEqual(expect.stringContaining('Login: Google or GitHub'));\n \n       const providerLinks = authForm.find(Button);\n \n@@ -142,7 +142,7 @@ describe('<AuthPanel />', () => {\n \n       const userInfo = authPanelColumn.first();\n \n-      expect(userInfo.text()).toEqual(expect.stringContaining('You signed in as John'));\n+      expect(userInfo.text()).toEqual(expect.stringContaining('You logged in as John'));\n     });\n   });\n   describe('For admin user', () => {"
+    },
+    {
+      "sha": "3e6254432d17c82307b4d537666311c8fd3a2b81",
+      "filename": "frontend/app/components/auth-panel/auth-panel.tsx",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 7,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark/blob/c660d2a5229f8fd7959f9dab6b084d1c86cba7de/frontend/app/components/auth-panel/auth-panel.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/c660d2a5229f8fd7959f9dab6b084d1c86cba7de/frontend/app/components/auth-panel/auth-panel.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/auth-panel/auth-panel.tsx?ref=c660d2a5229f8fd7959f9dab6b084d1c86cba7de",
+      "patch": "@@ -155,7 +155,7 @@ export class AuthPanel extends Component<Props, State> {\n \n     return (\n       <div className=\"auth-panel__column\">\n-        You signed in as{' '}\n+        You logged in as{' '}\n         <Dropdown title={user.name} titleClass=\"auth-panel__user-dropdown-title\" theme={theme}>\n           <DropdownItem separator={!isUserAnonymous}>\n             <div\n@@ -176,7 +176,7 @@ export class AuthPanel extends Component<Props, State> {\n           )}\n         </Dropdown>{' '}\n         <Button kind=\"link\" theme={theme} onClick={onSignOut}>\n-          Sign out?\n+          Logout?\n         </Button>\n       </div>\n     );\n@@ -244,11 +244,10 @@ export class AuthPanel extends Component<Props, State> {\n   };\n \n   renderUnauthorized = () => {\n-    const { user, providers = [], postInfo } = this.props;\n+    const { user, providers = [] } = this.props;\n     const { threshold } = this.state;\n     if (user || !IS_STORAGE_AVAILABLE) return null;\n \n-    const signInMessage = postInfo.read_only ? 'Sign in using ' : 'Sign in to comment using ';\n     const sortedProviders = ((): typeof providers => {\n       if (!this.props.provider.name) return providers;\n       const lastProviderIndex = providers.indexOf(this.props.provider.name as typeof providers[0]);\n@@ -264,7 +263,7 @@ export class AuthPanel extends Component<Props, State> {\n \n     return (\n       <div className=\"auth-panel__column\">\n-        {signInMessage}\n+        {'Login: '}\n         {!isAboveThreshold &&\n           sortedProviders.map((provider, i) => {\n             const comma = i === 0 ? '' : i === sortedProviders.length - 1 ? ' or ' : ', ';\n@@ -301,7 +300,7 @@ export class AuthPanel extends Component<Props, State> {\n     if (IS_STORAGE_AVAILABLE || !IS_THIRD_PARTY) return null;\n     return (\n       <div className=\"auth-panel__column\">\n-        Disable third-party cookies blocking to sign in or open comments in{' '}\n+        Disable third-party cookies blocking to login or open comments in{' '}\n         <a\n           className=\"auth-panel__pseudo-link\"\n           href={`${window.location.origin}/web/comments.html${window.location.search}`}\n@@ -315,7 +314,7 @@ export class AuthPanel extends Component<Props, State> {\n \n   renderCookiesWarning = () => {\n     if (IS_STORAGE_AVAILABLE || IS_THIRD_PARTY) return null;\n-    return <div className=\"auth-panel__column\">Allow cookies to sign in and comment</div>;\n+    return <div className=\"auth-panel__column\">Allow cookies to login and comment</div>;\n   };\n \n   renderSettingsLabel = () => {"
+    }
+  ]
+}
