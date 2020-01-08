@@ -1,0 +1,326 @@
+{
+  "sha": "d26e331a4f75a646b518374ee14573c8c693fba4",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZDI2ZTMzMWE0Zjc1YTY0NmI1MTgzNzRlZTE0NTczYzhjNjkzZmJhNA==",
+  "commit": {
+    "author": {
+      "name": "Nick Funk",
+      "email": "nick.funk@outlook.com",
+      "date": "2020-01-07T21:38:50Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-01-07T21:38:50Z"
+    },
+    "message": "[CORL-664] Threshold moderate new commenters (#2752)\n\n* add new commenters config\r\n\r\n* fix specs and fixtures, add translation strings\r\n\r\n* save whether a commenter is new\r\n\r\n* fix specs and snaps\r\n\r\n* add admin role to new config options\r\n\r\n* Update copy\r\n\r\n* remvoe unused ref\r\n\r\n* feat: initial impl\r\n\r\n* Create preliminary comment moderation slices\r\n\r\nCORL-688\r\n\r\n* Move slices logic into stacks\r\n\r\nCORL-688\r\n\r\n* Create user comment counts\r\n\r\nCORL-688\r\n\r\n* Create naive mutation that initializes user comment counts\r\n\r\nCORL-688\r\n\r\n* Use bulk updates in user counts migration\r\n\r\nCORL-688\r\n\r\n* fix: review\r\n\r\n* fix: fixed issue with aggregation\r\n\r\n* Migrate creating comment into stacks\r\n\r\nCORL-688\r\n\r\n* Migrate editing a comment to the stacks\r\n\r\nCORL-688\r\n\r\n* Break publishing comment status out of updateAllCounts\r\n\r\nCORL-688\r\n\r\n* review: removed variable scoping in favor of export\r\n\r\n* revert: feb8e8196cd448f5cd24f1ca2eb0b91fe9bd43c7\r\n\r\n* review: simplification of stacks implementation\r\n\r\nThis simplifies the stacks implementation to better reuse code related\r\nto count management and event publishing. This can be used to great\r\neffect with the upcomming events PR #2738.\r\n\r\n* Remove un-necessary isNew flags on users\r\n\r\nCORL-664\r\n\r\n* review: removed variable scoping in favor of export\r\n\r\n* revert: feb8e8196cd448f5cd24f1ca2eb0b91fe9bd43c7\r\n\r\n* review: simplification of stacks implementation\r\n\r\nThis simplifies the stacks implementation to better reuse code related\r\nto count management and event publishing. This can be used to great\r\neffect with the upcomming events PR #2738.\r\n\r\n* fix: check if authorID is null before update user counts\r\n\r\nCORL-688\r\n\r\n* fix: addressed bug in shared count retrival\r\n\r\nCo-authored-by: Tessa Thornton <tessathornton@gmail.com>\r\nCo-authored-by: Wyatt Johnson <accounts+github@wyattjoh.ca>",
+    "tree": {
+      "sha": "31a9907c06cdc96d855132ef0c437f1fb0b5d0b1",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/31a9907c06cdc96d855132ef0c437f1fb0b5d0b1"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/d26e331a4f75a646b518374ee14573c8c693fba4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeFPpqCRBK7hj4Ov3rIwAAdHIIAF7bDlnndSVIDeE3J+a49VKN\nXeNwCiBIFamXCrx0k2ntPGj5GTPTLDODrFn/RqhuGbDeJD1hEwQ5Zma5Vfhjd1jj\nslW2Q5nddtGu2lCHuR+myB/ptNDMOYcRDqbJEDmsK+C9CC263hvFktNnIlVzEP+e\nIfBtrI1QIN8ZI1RUhC0H7JAdb78fgMSrdMSvtv2c25br7tt0i1vB+K+DPcwhOIfW\n4O1WxgGecd38KI7N7Ow8RTmHgOeX/fXywWUuk1AsicvXUMglwaY03kqYKRHTSIfG\no+SQQvbUZZJlsmp2+X0EreNm7l1nYcFEs921caFZGFhDsXZTEwGHeZaA+uhkNiE=\n=qZ1I\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 31a9907c06cdc96d855132ef0c437f1fb0b5d0b1\nparent e3e2e0f52e9fac4431abcf958aae0d8fac8d9633\nauthor Nick Funk <nick.funk@outlook.com> 1578433130 -0700\ncommitter GitHub <noreply@github.com> 1578433130 -0700\n\n[CORL-664] Threshold moderate new commenters (#2752)\n\n* add new commenters config\r\n\r\n* fix specs and fixtures, add translation strings\r\n\r\n* save whether a commenter is new\r\n\r\n* fix specs and snaps\r\n\r\n* add admin role to new config options\r\n\r\n* Update copy\r\n\r\n* remvoe unused ref\r\n\r\n* feat: initial impl\r\n\r\n* Create preliminary comment moderation slices\r\n\r\nCORL-688\r\n\r\n* Move slices logic into stacks\r\n\r\nCORL-688\r\n\r\n* Create user comment counts\r\n\r\nCORL-688\r\n\r\n* Create naive mutation that initializes user comment counts\r\n\r\nCORL-688\r\n\r\n* Use bulk updates in user counts migration\r\n\r\nCORL-688\r\n\r\n* fix: review\r\n\r\n* fix: fixed issue with aggregation\r\n\r\n* Migrate creating comment into stacks\r\n\r\nCORL-688\r\n\r\n* Migrate editing a comment to the stacks\r\n\r\nCORL-688\r\n\r\n* Break publishing comment status out of updateAllCounts\r\n\r\nCORL-688\r\n\r\n* review: removed variable scoping in favor of export\r\n\r\n* revert: feb8e8196cd448f5cd24f1ca2eb0b91fe9bd43c7\r\n\r\n* review: simplification of stacks implementation\r\n\r\nThis simplifies the stacks implementation to better reuse code related\r\nto count management and event publishing. This can be used to great\r\neffect with the upcomming events PR #2738.\r\n\r\n* Remove un-necessary isNew flags on users\r\n\r\nCORL-664\r\n\r\n* review: removed variable scoping in favor of export\r\n\r\n* revert: feb8e8196cd448f5cd24f1ca2eb0b91fe9bd43c7\r\n\r\n* review: simplification of stacks implementation\r\n\r\nThis simplifies the stacks implementation to better reuse code related\r\nto count management and event publishing. This can be used to great\r\neffect with the upcomming events PR #2738.\r\n\r\n* fix: check if authorID is null before update user counts\r\n\r\nCORL-688\r\n\r\n* fix: addressed bug in shared count retrival\r\n\r\nCo-authored-by: Tessa Thornton <tessathornton@gmail.com>\r\nCo-authored-by: Wyatt Johnson <accounts+github@wyattjoh.ca>\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/d26e331a4f75a646b518374ee14573c8c693fba4",
+  "html_url": "https://github.com/coralproject/talk/commit/d26e331a4f75a646b518374ee14573c8c693fba4",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/d26e331a4f75a646b518374ee14573c8c693fba4/comments",
+  "author": {
+    "login": "nick-funk",
+    "id": 5751504,
+    "node_id": "MDQ6VXNlcjU3NTE1MDQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5751504?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nick-funk",
+    "html_url": "https://github.com/nick-funk",
+    "followers_url": "https://api.github.com/users/nick-funk/followers",
+    "following_url": "https://api.github.com/users/nick-funk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nick-funk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nick-funk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nick-funk/subscriptions",
+    "organizations_url": "https://api.github.com/users/nick-funk/orgs",
+    "repos_url": "https://api.github.com/users/nick-funk/repos",
+    "events_url": "https://api.github.com/users/nick-funk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nick-funk/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e3e2e0f52e9fac4431abcf958aae0d8fac8d9633",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/e3e2e0f52e9fac4431abcf958aae0d8fac8d9633",
+      "html_url": "https://github.com/coralproject/talk/commit/e3e2e0f52e9fac4431abcf958aae0d8fac8d9633"
+    }
+  ],
+  "stats": {
+    "total": 439,
+    "additions": 437,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "d56e97e2b94da06933edde4157c949578b846cb7",
+      "filename": "package-lock.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/package-lock.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/package-lock.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/package-lock.json?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -25477,7 +25477,7 @@\n       \"dependencies\": {\n         \"async\": {\n           \"version\": \"1.5.2\",\n-          \"resolved\": \"https://registry.npmjs.org/async/-/async-1.5.2.tgz\",\n+          \"resolved\": \"http://registry.npmjs.org/async/-/async-1.5.2.tgz\",\n           \"integrity\": \"sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=\",\n           \"dev\": true\n         }"
+    },
+    {
+      "sha": "655ca144112b64091a516f4968c9621aebc1f8a0",
+      "filename": "src/core/client/admin/components/ModerateCard/MarkersContainer.spec.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/components/ModerateCard/MarkersContainer.spec.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/components/ModerateCard/MarkersContainer.spec.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/MarkersContainer.spec.tsx?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -28,6 +28,7 @@ it(\"renders all markers\", () => {\n               COMMENT_DETECTED_SUSPECT_WORD: 1,\n               COMMENT_REPORTED_OFFENSIVE: 2,\n               COMMENT_REPORTED_SPAM: 3,\n+              COMMENT_DETECTED_NEW_COMMENTER: 0,\n               COMMENT_DETECTED_REPEAT_POST: 1,\n             },\n           },\n@@ -72,6 +73,7 @@ it(\"renders some markers\", () => {\n               COMMENT_DETECTED_SUSPECT_WORD: 0,\n               COMMENT_REPORTED_OFFENSIVE: 2,\n               COMMENT_REPORTED_SPAM: 0,\n+              COMMENT_DETECTED_NEW_COMMENTER: 0,\n               COMMENT_DETECTED_REPEAT_POST: 0,\n             },\n           },"
+    },
+    {
+      "sha": "63697910919ab84f991ebc40f93e8dd1ccb1280f",
+      "filename": "src/core/client/admin/components/ModerateCard/MarkersContainer.tsx",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/components/ModerateCard/MarkersContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/components/ModerateCard/MarkersContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/MarkersContainer.tsx?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -120,6 +120,14 @@ const markers: Array<\n         </Marker>\n       )) ||\n     null,\n+  c =>\n+    (c.revision &&\n+      c.revision.actionCounts.flag.reasons.COMMENT_DETECTED_NEW_COMMENTER && (\n+        <Localized id=\"moderate-marker-newCommenter\" key={keyCounter++}>\n+          <Marker color=\"reported\">New commenter</Marker>\n+        </Localized>\n+      )) ||\n+    null,\n ];\n \n export class MarkersContainer extends React.Component<MarkersContainerProps> {\n@@ -170,6 +178,7 @@ const enhanced = withFragmentContainer<MarkersContainerProps>({\n               COMMENT_DETECTED_SUSPECT_WORD\n               COMMENT_REPORTED_OFFENSIVE\n               COMMENT_REPORTED_SPAM\n+              COMMENT_DETECTED_NEW_COMMENTER\n               COMMENT_DETECTED_REPEAT_POST\n             }\n           }"
+    },
+    {
+      "sha": "c3f571219326b9c0daad509217fe5204a3da6545",
+      "filename": "src/core/client/admin/components/ModerateCard/__snapshots__/MarkersContainer.spec.tsx.snap",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/components/ModerateCard/__snapshots__/MarkersContainer.spec.tsx.snap",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/components/ModerateCard/__snapshots__/MarkersContainer.spec.tsx.snap",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/__snapshots__/MarkersContainer.spec.tsx.snap?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -15,6 +15,7 @@ exports[`renders all markers 1`] = `\n                 \"reasons\": Object {\n                   \"COMMENT_DETECTED_BANNED_WORD\": 1,\n                   \"COMMENT_DETECTED_LINKS\": 1,\n+                  \"COMMENT_DETECTED_NEW_COMMENTER\": 0,\n                   \"COMMENT_DETECTED_RECENT_HISTORY\": 1,\n                   \"COMMENT_DETECTED_REPEAT_POST\": 1,\n                   \"COMMENT_DETECTED_SPAM\": 1,\n@@ -170,6 +171,7 @@ exports[`renders some markers 1`] = `\n                 \"reasons\": Object {\n                   \"COMMENT_DETECTED_BANNED_WORD\": 1,\n                   \"COMMENT_DETECTED_LINKS\": 0,\n+                  \"COMMENT_DETECTED_NEW_COMMENTER\": 0,\n                   \"COMMENT_DETECTED_RECENT_HISTORY\": 1,\n                   \"COMMENT_DETECTED_REPEAT_POST\": 0,\n                   \"COMMENT_DETECTED_SPAM\": 0,"
+    },
+    {
+      "sha": "fb5120be938acf610b648e6b15e5969ae622ba92",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/ModerationConfigContainer.tsx",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/routes/Configure/sections/Moderation/ModerationConfigContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/routes/Configure/sections/Moderation/ModerationConfigContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/ModerationConfigContainer.tsx?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -11,6 +11,7 @@ import { HorizontalGutter } from \"coral-ui/components\";\n import { ModerationConfigContainer_settings as SettingsData } from \"coral-admin/__generated__/ModerationConfigContainer_settings.graphql\";\n \n import AkismetConfig from \"./AkismetConfig\";\n+import NewCommentersConfig from \"./NewCommentersConfig\";\n import PerspectiveConfig from \"./PerspectiveConfig\";\n import PreModerationConfig from \"./PreModerationConfig\";\n import RecentCommentHistoryConfig from \"./RecentCommentHistoryConfig\";\n@@ -29,6 +30,7 @@ export const ModerationConfigContainer: React.FunctionComponent<Props> = ({\n   return (\n     <HorizontalGutter size=\"double\" data-testid=\"configure-moderationContainer\">\n       <PreModerationConfig disabled={submitting} />\n+      <NewCommentersConfig disabled={submitting} />\n       <RecentCommentHistoryConfig disabled={submitting} />\n       <PerspectiveConfig disabled={submitting} />\n       <AkismetConfig disabled={submitting} />\n@@ -43,6 +45,7 @@ const enhanced = withFragmentContainer<Props>({\n       ...PerspectiveConfig_formValues @relay(mask: false)\n       ...PreModerationConfig_formValues @relay(mask: false)\n       ...RecentCommentHistoryConfig_formValues @relay(mask: false)\n+      ...NewCommentersConfigContainer_settings @relay(mask: false)\n     }\n   `,\n })(ModerationConfigContainer);"
+    },
+    {
+      "sha": "3648e55cb7d8b5dcdfd09b4b1935cc556d3f7126",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.css",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.css",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.css",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.css?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -0,0 +1,3 @@\n+.thresholdTextField {\n+  width: calc(6 * var(--mini-unit));\n+}"
+    },
+    {
+      "sha": "b35e38f8653ecd95f5d3c52c15f2b6282deeb06b",
+      "filename": "src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.tsx",
+      "status": "added",
+      "additions": 100,
+      "deletions": 0,
+      "changes": 100,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/routes/Configure/sections/Moderation/NewCommentersConfig.tsx?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -0,0 +1,100 @@\n+import { Localized } from \"@fluent/react/compat\";\n+import React, { FunctionComponent } from \"react\";\n+import { Field } from \"react-final-form\";\n+import { graphql } from \"react-relay\";\n+\n+import { ValidationMessage } from \"coral-framework/lib/form\";\n+import {\n+  composeValidators,\n+  required,\n+  validateWholeNumberGreaterThan,\n+} from \"coral-framework/lib/validation\";\n+import {\n+  FieldSet,\n+  FormField,\n+  FormFieldDescription,\n+  Label,\n+  TextField,\n+} from \"coral-ui/components/v2\";\n+\n+import ConfigBox from \"../../ConfigBox\";\n+import Header from \"../../Header\";\n+import OnOffField from \"../../OnOffField\";\n+\n+import styles from \"./NewCommentersConfig.css\";\n+\n+interface Props {\n+  disabled: boolean;\n+}\n+\n+// eslint-disable-next-line no-unused-expressions\n+graphql`\n+  fragment NewCommentersConfigContainer_settings on Settings {\n+    newCommenters {\n+      premodEnabled\n+      approvedCommentsThreshold\n+    }\n+  }\n+`;\n+\n+const NewCommentersConfig: FunctionComponent<Props> = ({ disabled }) => {\n+  return (\n+    <ConfigBox\n+      title={\n+        <Localized id=\"configure-moderation-newCommenters-title\">\n+          <Header container=\"legend\">New commenter approval</Header>\n+        </Localized>\n+      }\n+    >\n+      <Localized id=\"configure-moderation-newCommenters-description\">\n+        <FormFieldDescription>\n+          When this is active, initial comments by a new commenter will be sent\n+          to Pending for moderator approval before publication.\n+        </FormFieldDescription>\n+      </Localized>\n+      <FormField container={<FieldSet />}>\n+        <Localized id=\"configure-moderation-newCommenters-enable\">\n+          <Label component=\"legend\">Enable new commenter approval</Label>\n+        </Localized>\n+        <OnOffField name=\"newCommenters.premodEnabled\" disabled={disabled} />\n+      </FormField>\n+      <FormField>\n+        <Localized id=\"configure-moderation-newCommenters-approvedCommentsThreshold\">\n+          <Label>Number of first comments sent for approval</Label>\n+        </Localized>\n+        <Field\n+          name=\"newCommenters.approvedCommentsThreshold\"\n+          validate={composeValidators(\n+            required,\n+            validateWholeNumberGreaterThan(1)\n+          )}\n+        >\n+          {({ input, meta }) => (\n+            <>\n+              <TextField\n+                classes={{\n+                  input: styles.thresholdTextField,\n+                }}\n+                disabled={disabled}\n+                autoComplete=\"off\"\n+                autoCorrect=\"off\"\n+                autoCapitalize=\"off\"\n+                spellCheck={false}\n+                textAlignCenter\n+                adornment={\n+                  <Localized id=\"configure-moderation-newCommenters-comments\">\n+                    comments\n+                  </Localized>\n+                }\n+                {...input}\n+              />\n+              <ValidationMessage meta={meta} />\n+            </>\n+          )}\n+        </Field>\n+      </FormField>\n+    </ConfigBox>\n+  );\n+};\n+\n+export default NewCommentersConfig;"
+    },
+    {
+      "sha": "d4a90365c663e63724a04ee8203fb3fb3e78007b",
+      "filename": "src/core/client/admin/test/configure/__snapshots__/moderation.spec.tsx.snap",
+      "status": "modified",
+      "additions": 122,
+      "deletions": 0,
+      "changes": 122,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/test/configure/__snapshots__/moderation.spec.tsx.snap",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/test/configure/__snapshots__/moderation.spec.tsx.snap",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/test/configure/__snapshots__/moderation.spec.tsx.snap?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -275,6 +275,128 @@ approved by a moderator.\n               </fieldset>\n             </div>\n           </fieldset>\n+          <div\n+            className=\"Box-root ConfigBox-root\"\n+          >\n+            <div\n+              className=\"Box-root Flex-root ConfigBox-title Flex-flex Flex-justifySpaceBetween\"\n+            >\n+              <div>\n+                <legend\n+                  className=\"Header-root\"\n+                >\n+                  New commenter approval\n+                </legend>\n+              </div>\n+              <div />\n+            </div>\n+            <div\n+              className=\"ConfigBox-content\"\n+            >\n+              <div\n+                className=\"Box-root HorizontalGutter-root HorizontalGutter-spacing-4\"\n+              >\n+                <p\n+                  className=\"FormFieldDescription-root\"\n+                >\n+                  When this is active, initial comments by a new commenter will be sent to Pending\n+for moderator approval before publication.\n+                </p>\n+                <fieldset\n+                  className=\"FieldSet-root Box-root HorizontalGutter-root FormField-root HorizontalGutter-spacing-2\"\n+                >\n+                  <legend\n+                    className=\"Label-root\"\n+                  >\n+                    Enable new commenter approval\n+                  </legend>\n+                  <div>\n+                    <div\n+                      className=\"Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter\"\n+                    >\n+                      <input\n+                        checked={false}\n+                        className=\"RadioButton-input\"\n+                        disabled={false}\n+                        id=\"newCommenters.premodEnabled-true\"\n+                        name=\"newCommenters.premodEnabled\"\n+                        onBlur={[Function]}\n+                        onChange={[Function]}\n+                        onFocus={[Function]}\n+                        type=\"radio\"\n+                        value=\"true\"\n+                      />\n+                      <label\n+                        className=\"RadioButton-label\"\n+                        htmlFor=\"newCommenters.premodEnabled-true\"\n+                      >\n+                        <span>\n+                          On\n+                        </span>\n+                      </label>\n+                    </div>\n+                    <div\n+                      className=\"Box-root Flex-root RadioButton-root Flex-flex Flex-alignCenter\"\n+                    >\n+                      <input\n+                        checked={true}\n+                        className=\"RadioButton-input\"\n+                        disabled={false}\n+                        id=\"newCommenters.premodEnabled-false\"\n+                        name=\"newCommenters.premodEnabled\"\n+                        onBlur={[Function]}\n+                        onChange={[Function]}\n+                        onFocus={[Function]}\n+                        type=\"radio\"\n+                        value=\"false\"\n+                      />\n+                      <label\n+                        className=\"RadioButton-label\"\n+                        htmlFor=\"newCommenters.premodEnabled-false\"\n+                      >\n+                        <span>\n+                          Off\n+                        </span>\n+                      </label>\n+                    </div>\n+                  </div>\n+                </fieldset>\n+                <div\n+                  className=\"Box-root HorizontalGutter-root FormField-root HorizontalGutter-spacing-2\"\n+                >\n+                  <label\n+                    className=\"Label-root\"\n+                  >\n+                    Number of first comments sent for approval\n+                  </label>\n+                  <div\n+                    className=\"TextField-root\"\n+                  >\n+                    <input\n+                      autoCapitalize=\"off\"\n+                      autoComplete=\"off\"\n+                      autoCorrect=\"off\"\n+                      className=\"TextField-input NewCommentersConfig-thresholdTextField TextField-colorRegular TextField-textAlignCenter\"\n+                      disabled={false}\n+                      name=\"newCommenters.approvedCommentsThreshold\"\n+                      onBlur={[Function]}\n+                      onChange={[Function]}\n+                      onFocus={[Function]}\n+                      placeholder=\"\"\n+                      spellCheck={false}\n+                      type=\"text\"\n+                      value={2}\n+                    />\n+                    <div\n+                      className=\"TextField-adornment\"\n+                    >\n+                      comments\n+                    </div>\n+                  </div>\n+                </div>\n+              </div>\n+            </div>\n+          </div>\n           <fieldset\n             className=\"FieldSet-root Box-root ConfigBox-root\"\n           >"
+    },
+    {
+      "sha": "200317f503dea33a00a144eb85cbfb462693de79",
+      "filename": "src/core/client/admin/test/fixtures.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/test/fixtures.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/admin/test/fixtures.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/test/fixtures.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -161,6 +161,10 @@ export const settings = createFixture<GQLSettings>({\n     changeUsername: true,\n     deleteAccount: true,\n   },\n+  newCommenters: {\n+    premodEnabled: false,\n+    approvedCommentsThreshold: 2,\n+  },\n   slack: {\n     channels: [],\n   },\n@@ -532,6 +536,7 @@ export const baseComment = createFixture<GQLComment>({\n           COMMENT_DETECTED_SUSPECT_WORD: 0,\n           COMMENT_REPORTED_OFFENSIVE: 0,\n           COMMENT_REPORTED_SPAM: 0,\n+          COMMENT_DETECTED_NEW_COMMENTER: 0,\n           COMMENT_DETECTED_REPEAT_POST: 0,\n         },\n       },"
+    },
+    {
+      "sha": "95990a0e8a4b6fb9e27c53930035fb986afeaf7e",
+      "filename": "src/core/client/test/helpers/fixture.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/test/helpers/fixture.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/client/test/helpers/fixture.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/test/helpers/fixture.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -100,6 +100,7 @@ export function createComment(author?: GQLUser) {\n             COMMENT_DETECTED_SUSPECT_WORD: 0,\n             COMMENT_REPORTED_OFFENSIVE: 0,\n             COMMENT_REPORTED_SPAM: 0,\n+            COMMENT_DETECTED_NEW_COMMENTER: 0,\n             COMMENT_DETECTED_REPEAT_POST: 0,\n           },\n         },\n@@ -148,6 +149,7 @@ export function createComment(author?: GQLUser) {\n           COMMENT_DETECTED_BANNED_WORD: 0,\n           COMMENT_DETECTED_SUSPECT_WORD: 0,\n           COMMENT_DETECTED_PREMOD_USER: 0,\n+          COMMENT_DETECTED_NEW_COMMENTER: 0,\n           COMMENT_DETECTED_REPEAT_POST: 0,\n         },\n       },\n@@ -286,6 +288,10 @@ export function createSettings() {\n         enabled: false,\n       },\n     },\n+    newCommenters: {\n+      premodEnabled: false,\n+      approvedCommentsThreshold: 2,\n+    },\n     auth: {\n       integrations: {\n         local: {"
+    },
+    {
+      "sha": "bec03d48258ad5c3fb5d5d271b38cea4bbdf3ab0",
+      "filename": "src/core/server/graph/tenant/schema/schema.graphql",
+      "status": "modified",
+      "additions": 46,
+      "deletions": 0,
+      "changes": 46,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/graph/tenant/schema/schema.graphql",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/graph/tenant/schema/schema.graphql",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/tenant/schema/schema.graphql?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -179,6 +179,7 @@ enum COMMENT_FLAG_REASON {\n   COMMENT_DETECTED_SUSPECT_WORD\n   COMMENT_DETECTED_RECENT_HISTORY\n   COMMENT_DETECTED_PREMOD_USER\n+  COMMENT_DETECTED_NEW_COMMENTER\n   COMMENT_DETECTED_REPEAT_POST\n }\n \n@@ -215,6 +216,7 @@ type FlagReasonActionCounts {\n   COMMENT_DETECTED_SUSPECT_WORD: Int!\n   COMMENT_DETECTED_RECENT_HISTORY: Int!\n   COMMENT_DETECTED_PREMOD_USER: Int!\n+  COMMENT_DETECTED_NEW_COMMENTER: Int!\n   COMMENT_DETECTED_REPEAT_POST: Int!\n }\n \n@@ -1194,6 +1196,23 @@ type StaffConfiguration {\n   label: String!\n }\n \n+\"\"\"\n+NewCommenterConfiguration specifies the features that apply to new commenters\n+\"\"\"\n+type NewCommentersConfiguration {\n+  \"\"\"\n+  premodEnabled ensures that new commenters' comments are pre-moderated until they have\n+  enough approved comments\n+  \"\"\"\n+  premodEnabled: Boolean!\n+\n+  \"\"\"\n+  approvedCommentsThreshold is the number of comments a user must have approved before their\n+  comments do not require premoderation\n+  \"\"\"\n+  approvedCommentsThreshold: Int!\n+}\n+\n \"\"\"\n Settings stores the global settings for a given Tenant.\n \"\"\"\n@@ -1339,6 +1358,11 @@ type Settings {\n   createdAt is the time that the Settings was created at.\n   \"\"\"\n   createdAt: Time! @auth(roles: [ADMIN])\n+\n+  \"\"\"\n+  newCommenters is the configuration for how new commenters comments are treated.\n+  \"\"\"\n+  newCommenters: NewCommentersConfiguration! @auth(roles: [ADMIN])\n }\n \n ################################################################################\n@@ -3525,6 +3549,23 @@ input SlackConfigurationInput {\n   channels: [SlackChannelConfigurationInput!]\n }\n \n+\"\"\"\n+NewCommenterConfigurationInput specifies the features that apply to new commenters\n+\"\"\"\n+input NewCommentersConfigurationInput {\n+  \"\"\"\n+  premodEnabled ensures that new commenters' comments are pre-moderated until they have\n+  enough approved comments\n+  \"\"\"\n+  premodEnabled: Boolean\n+\n+  \"\"\"\n+  approvedCommentsThreshold is the number of comments a user must have approved before their\n+  comments do not require premoderation\n+  \"\"\"\n+  approvedCommentsThreshold: Int\n+}\n+\n \"\"\"\n SettingsInput is the partial type of the Settings type for performing mutations.\n \"\"\"\n@@ -3644,6 +3685,11 @@ input SettingsInput {\n   locale specifies the locale for this Tenant.\n   \"\"\"\n   locale: Locale\n+\n+  \"\"\"\n+  newCommenters is the configuration for how new commenters comments are treated.\n+  \"\"\"\n+  newCommenters: NewCommentersConfigurationInput\n }\n \n \"\"\""
+    },
+    {
+      "sha": "02d0dd225b27bc3edca445f28b56690614608c56",
+      "filename": "src/core/server/models/action/__snapshots__/comment.spec.ts.snap",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/action/__snapshots__/comment.spec.ts.snap",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/action/__snapshots__/comment.spec.ts.snap",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/models/action/__snapshots__/comment.spec.ts.snap?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -19,6 +19,7 @@ Object {\n     \"reasons\": Object {\n       \"COMMENT_DETECTED_BANNED_WORD\": 1,\n       \"COMMENT_DETECTED_LINKS\": 0,\n+      \"COMMENT_DETECTED_NEW_COMMENTER\": 0,\n       \"COMMENT_DETECTED_PREMOD_USER\": 0,\n       \"COMMENT_DETECTED_RECENT_HISTORY\": 0,\n       \"COMMENT_DETECTED_REPEAT_POST\": 0,"
+    },
+    {
+      "sha": "3b96c4aadfbb09c6f0f420e3cb2c66e871e938d1",
+      "filename": "src/core/server/models/settings.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/settings.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/settings.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/models/settings.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -95,6 +95,14 @@ export interface AccountFeatures {\n   downloadComments: boolean;\n }\n \n+/**\n+ * NewCommentersConfiguration is the configuration for how new commenters comments are treated.\n+ */\n+export interface NewCommentersConfiguration {\n+  premodEnabled: boolean;\n+  approvedCommentsThreshold: number;\n+}\n+\n /**\n  * Auth is the set of configured authentication integrations.\n  */\n@@ -165,4 +173,9 @@ export type Settings = GlobalModerationSettings &\n      * AccountFeatures are features enabled for commenter accounts\n      */\n     accountFeatures: AccountFeatures;\n+\n+    /**\n+     * newCommenters is the configuration for how new commenters comments are treated.\n+     */\n+    newCommenters: NewCommentersConfiguration;\n   };"
+    },
+    {
+      "sha": "f20ebadf6974576fdb2d9c0622e5a38ebf97d50f",
+      "filename": "src/core/server/models/story/counts/shared.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/story/counts/shared.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/story/counts/shared.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/models/story/counts/shared.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -157,8 +157,8 @@ export async function retrieveSharedModerationQueueQueuesCounts(\n \n   const [[, fresh], [, queues]] = await redis\n     .pipeline()\n-    .hgetall(key)\n     .get(freshKey)\n+    .hgetall(key)\n     .exec();\n   if (!fresh || !queues) {\n     logger.debug({ tenantID }, \"comment moderation counts were not cached\");"
+    },
+    {
+      "sha": "573d3ce475eb1d5c5416248347dbf7789b7ec4ba",
+      "filename": "src/core/server/models/tenant/tenant.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/tenant/tenant.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/tenant/tenant.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/models/tenant/tenant.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -197,6 +197,10 @@ export async function createTenant(\n       deleteAccount: false,\n       downloadComments: false,\n     },\n+    newCommenters: {\n+      premodEnabled: false,\n+      approvedCommentsThreshold: 2,\n+    },\n     createdAt: now,\n     slack: {\n       channels: [],"
+    },
+    {
+      "sha": "c146a252cf8ba407e396cdb296e8fe16a8799075",
+      "filename": "src/core/server/models/user/user.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/user/user.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/models/user/user.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/models/user/user.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -472,6 +472,10 @@ export interface User extends TenantResource {\n    */\n   deletedAt?: Date;\n \n+  /**\n+   * commentCounts are the tallies of all comment statuses for this\n+   * user.\n+   */\n   commentCounts: UserCommentCounts;\n }\n "
+    },
+    {
+      "sha": "70506a16456b7587caea0baa8208af6e301378ef",
+      "filename": "src/core/server/services/comments/pipeline/phases/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/services/comments/pipeline/phases/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/services/comments/pipeline/phases/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/index.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -6,6 +6,7 @@ import { detectLinks } from \"./detectLinks\";\n import { linkify } from \"./linkify\";\n import { preModerate } from \"./preModerate\";\n import { premodUser } from \"./preModerateUser\";\n+import { premodNewCommenter } from \"./premodNewCommenter\";\n import { purify } from \"./purify\";\n import { recentCommentHistory } from \"./recentCommentHistory\";\n import { repeatPost } from \"./repeatPost\";\n@@ -33,4 +34,5 @@ export const moderationPhases: IntermediateModerationPhase[] = [\n   detectLinks,\n   preModerate,\n   premodUser,\n+  premodNewCommenter,\n ];"
+    },
+    {
+      "sha": "57eae4224ae3bbca52068a4316e8979d59a65a66",
+      "filename": "src/core/server/services/comments/pipeline/phases/premodNewCommenter.ts",
+      "status": "added",
+      "additions": 43,
+      "deletions": 0,
+      "changes": 43,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/services/comments/pipeline/phases/premodNewCommenter.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/services/comments/pipeline/phases/premodNewCommenter.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/premodNewCommenter.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -0,0 +1,43 @@\n+import {\n+  GQLCOMMENT_FLAG_REASON,\n+  GQLCOMMENT_STATUS,\n+} from \"coral-server/graph/tenant/schema/__generated__/types\";\n+import { ACTION_TYPE } from \"coral-server/models/action/comment\";\n+import {\n+  IntermediatePhaseResult,\n+  ModerationPhaseContext,\n+} from \"coral-server/services/comments/pipeline\";\n+\n+export const premodNewCommenter = async ({\n+  tenant,\n+  author,\n+  mongo,\n+  now,\n+}: Pick<\n+  ModerationPhaseContext,\n+  \"author\" | \"tenant\" | \"now\" | \"mongo\"\n+>): Promise<IntermediatePhaseResult | void> => {\n+  // Ensure this mode is enabled.\n+  if (!tenant.newCommenters.premodEnabled) {\n+    return;\n+  }\n+\n+  if (\n+    author.commentCounts.status.APPROVED <\n+    tenant.newCommenters.approvedCommentsThreshold\n+  ) {\n+    return {\n+      status: GQLCOMMENT_STATUS.SYSTEM_WITHHELD,\n+      actions: [\n+        {\n+          userID: null,\n+          actionType: ACTION_TYPE.FLAG,\n+          reason: GQLCOMMENT_FLAG_REASON.COMMENT_DETECTED_NEW_COMMENTER,\n+          metadata: {\n+            count: author.commentCounts.status.APPROVED,\n+          },\n+        },\n+      ],\n+    };\n+  }\n+};"
+    },
+    {
+      "sha": "1bea1db63b8c51b6b5efe6655b71030bec44373a",
+      "filename": "src/core/server/services/migrate/migrations/1570712877087_add_newcommenters_settings_to_tenant.ts",
+      "status": "added",
+      "additions": 56,
+      "deletions": 0,
+      "changes": 56,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/services/migrate/migrations/1570712877087_add_newcommenters_settings_to_tenant.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/core/server/services/migrate/migrations/1570712877087_add_newcommenters_settings_to_tenant.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/migrate/migrations/1570712877087_add_newcommenters_settings_to_tenant.ts?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -0,0 +1,56 @@\n+import { Db } from \"mongodb\";\n+\n+// Use the following collections reference to interact with specific\n+// collections.\n+import collections from \"coral-server/services/mongodb/collections\";\n+\n+import Migration from \"coral-server/services/migrate/migration\";\n+\n+export default class extends Migration {\n+  public async up(mongo: Db, tenantID: string) {\n+    const result = await collections.tenants(mongo).updateOne(\n+      {\n+        id: tenantID,\n+        newCommenters: null,\n+      },\n+      {\n+        $set: {\n+          newCommenters: {\n+            premodEnabled: false,\n+            approvedCommentsThreshold: 2,\n+          },\n+        },\n+      }\n+    );\n+    this.log(tenantID).warn(\n+      {\n+        matchedCount: result.matchedCount,\n+        modifiedCount: result.matchedCount,\n+      },\n+      \"added new commenters config\"\n+    );\n+  }\n+\n+  public async down(mongo: Db, tenantID: string) {\n+    const result = await collections.tenants(mongo).updateOne(\n+      {\n+        id: tenantID,\n+        newCommenters: {\n+          $exists: true,\n+        },\n+      },\n+      {\n+        $unset: {\n+          newCommenters: \"\",\n+        },\n+      }\n+    );\n+    this.log(tenantID).warn(\n+      {\n+        matchedCount: result.matchedCount,\n+        modifiedCount: result.matchedCount,\n+      },\n+      \"removed new commenters config\"\n+    );\n+  }\n+}"
+    },
+    {
+      "sha": "e717808b948471136461b2eaea039e2d422de80f",
+      "filename": "src/locales/en-US/admin.ftl",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/coralproject/talk/blob/d26e331a4f75a646b518374ee14573c8c693fba4/src/locales/en-US/admin.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/d26e331a4f75a646b518374ee14573c8c693fba4/src/locales/en-US/admin.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/en-US/admin.ftl?ref=d26e331a4f75a646b518374ee14573c8c693fba4",
+      "patch": "@@ -323,6 +323,19 @@ configure-moderation-perspective-accountNote =\n   For additional information on how to set up the Perspective Toxic Comment Filter please visit:\n   <externalLink>https://github.com/conversationai/perspectiveapi#readme</externalLink>\n \n+configure-moderation-newCommenters-title = New commenter approval\n+configure-moderation-newCommenters-enable = Enable new commenter approval\n+configure-moderation-newCommenters-description =\n+  When this is active, initial comments by a new commenter will be sent to Pending\n+  for moderator approval before publication.\n+configure-moderation-newCommenters-enable-description = Enable pre-moderation for new commenters\n+configure-moderation-newCommenters-approvedCommentsThreshold = Number of first comments sent for approval\n+configure-moderation-newCommenters-approvedCommentsThreshold-description =\n+  The number of comments a user must have approved before they do\n+  not have to be premoderated\n+configure-moderation-newCommenters-comments = comments\n+\n+\n #### Banned Words Configuration\n configure-wordList-banned-bannedWordsAndPhrases = Banned words and phrases\n configure-wordList-banned-explanation =\n@@ -426,6 +439,7 @@ moderate-marker-toxic = Toxic\n moderate-marker-recentHistory = Recent history\n moderate-marker-bodyCount = Body count\n moderate-marker-offensive = Offensive\n+moderate-marker-newCommenter = New commenter\n moderate-marker-repeatPost = Repeat comment\n \n moderate-markers-details = Details"
+    }
+  ]
+}
