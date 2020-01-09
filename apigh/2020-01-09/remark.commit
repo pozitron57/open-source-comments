@@ -1,0 +1,134 @@
+{
+  "sha": "7b67b10d5ddcfad80c58a4b76d6b065458320371",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjdiNjdiMTBkNWRkY2ZhZDgwYzU4YTRiNzZkNmIwNjU0NTgzMjAzNzE=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2020-01-08T10:53:35Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-01-08T22:18:39Z"
+    },
+    "message": "Run es-check by cli",
+    "tree": {
+      "sha": "0ef9e36e0259c5477d9bd2a55ea3089f61651f80",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/0ef9e36e0259c5477d9bd2a55ea3089f61651f80"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/7b67b10d5ddcfad80c58a4b76d6b065458320371",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/7b67b10d5ddcfad80c58a4b76d6b065458320371",
+  "html_url": "https://github.com/umputun/remark/commit/7b67b10d5ddcfad80c58a4b76d6b065458320371",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/7b67b10d5ddcfad80c58a4b76d6b065458320371/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7d9e8ce076a99c6f8cc41150d776923a762c9d20",
+      "url": "https://api.github.com/repos/umputun/remark/commits/7d9e8ce076a99c6f8cc41150d776923a762c9d20",
+      "html_url": "https://github.com/umputun/remark/commit/7d9e8ce076a99c6f8cc41150d776923a762c9d20"
+    }
+  ],
+  "stats": {
+    "total": 99,
+    "additions": 21,
+    "deletions": 78
+  },
+  "files": [
+    {
+      "sha": "4b27c465234267575c029e7d293a0fe272005ac3",
+      "filename": "frontend/escheck.js",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 28,
+      "changes": 28,
+      "blob_url": "https://github.com/umputun/remark/blob/7d9e8ce076a99c6f8cc41150d776923a762c9d20/frontend/escheck.js",
+      "raw_url": "https://github.com/umputun/remark/raw/7d9e8ce076a99c6f8cc41150d776923a762c9d20/frontend/escheck.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/escheck.js?ref=7d9e8ce076a99c6f8cc41150d776923a762c9d20",
+      "patch": "@@ -1,28 +0,0 @@\n-const spawn = require('child_process').spawn;\n-const path = require('path');\n-\n-module.exports = function({ mode = 'es5', glob } = {}) {\n-  return new Promise((resolve, reject) => {\n-    if (!glob) {\n-      reject(new Error('no glob provided'));\n-    }\n-    const check = spawn('./node_modules/.bin/es-check', [mode, glob], {\n-      cwd: path.resolve(__dirname, './'),\n-    });\n-\n-    const buffer = [];\n-\n-    check.stdout.on('data', data => {\n-      buffer.push(data.toString('utf-8'));\n-    });\n-\n-    check.stderr.on('data', data => {\n-      buffer.push(data.toString('utf-8'));\n-    });\n-\n-    check.on('close', code => {\n-      if (code === 0) resolve();\n-      reject(new Error(`es-check exited with code ${code}\\n\\n${buffer.join('\\n')}`));\n-    });\n-  });\n-};"
+    },
+    {
+      "sha": "f8f65834f311a5159f94c7ab8c66af9c15b4793d",
+      "filename": "frontend/package-lock.json",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 33,
+      "changes": 52,
+      "blob_url": "https://github.com/umputun/remark/blob/7b67b10d5ddcfad80c58a4b76d6b065458320371/frontend/package-lock.json",
+      "raw_url": "https://github.com/umputun/remark/raw/7b67b10d5ddcfad80c58a4b76d6b065458320371/frontend/package-lock.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/package-lock.json?ref=7b67b10d5ddcfad80c58a4b76d6b065458320371",
+      "patch": "@@ -2978,9 +2978,9 @@\n       \"dev\": true\n     },\n     \"bluebird\": {\n-      \"version\": \"3.5.3\",\n-      \"resolved\": \"https://registry.npmjs.org/bluebird/-/bluebird-3.5.3.tgz\",\n-      \"integrity\": \"sha512-/qKPUQlaW1OyR51WeCPBvRnAlnZFUJkCSG5HzGnuIqhgyJtF+T94lFnn33eiazjRm2LAHVy2guNnaq48X9SJuw==\",\n+      \"version\": \"3.7.2\",\n+      \"resolved\": \"https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz\",\n+      \"integrity\": \"sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==\",\n       \"dev\": true\n     },\n     \"bn.js\": {\n@@ -3378,18 +3378,16 @@\n       \"dev\": true\n     },\n     \"caporal\": {\n-      \"version\": \"1.1.0\",\n-      \"resolved\": \"https://registry.npmjs.org/caporal/-/caporal-1.1.0.tgz\",\n-      \"integrity\": \"sha512-R5qo2QGoqBM6RvzHonGhUuEJSeqEa4lD1r+cPUEY2+YsXhpQVTS2TvScfIbi6ydFdhzFCNeNUB1v0YrRBvsbdg==\",\n+      \"version\": \"1.3.0\",\n+      \"resolved\": \"https://registry.npmjs.org/caporal/-/caporal-1.3.0.tgz\",\n+      \"integrity\": \"sha512-4bj21UXbEu5cF+1gVjhwwRqMhY3lR7CUTlBr6YX3uzftL4l/sbu8EoHfOLZWHr+HeiosW9fTWkQCS2UZMAk5lw==\",\n       \"dev\": true,\n       \"requires\": {\n         \"bluebird\": \"^3.4.7\",\n         \"cli-table3\": \"^0.5.0\",\n-        \"colorette\": \"1.0.1\",\n+        \"colorette\": \"^1.0.1\",\n         \"fast-levenshtein\": \"^2.0.6\",\n-        \"lodash.camelcase\": \"^4.3.0\",\n-        \"lodash.kebabcase\": \"^4.1.1\",\n-        \"lodash.merge\": \"^4.6.0\",\n+        \"lodash\": \"^4.17.14\",\n         \"micromist\": \"1.1.0\",\n         \"prettyjson\": \"^1.2.1\",\n         \"tabtab\": \"^2.2.2\",\n@@ -3755,9 +3753,9 @@\n       \"dev\": true\n     },\n     \"colorette\": {\n-      \"version\": \"1.0.1\",\n-      \"resolved\": \"https://registry.npmjs.org/colorette/-/colorette-1.0.1.tgz\",\n-      \"integrity\": \"sha512-40MnlppkzHhFjRhtXunbpqKUT+eJn0gyVGi8aQlNSG8T2CCy31NdD7yktcS0aizH1VP2OhhQCyGMeTp0a/fvaw==\",\n+      \"version\": \"1.1.0\",\n+      \"resolved\": \"https://registry.npmjs.org/colorette/-/colorette-1.1.0.tgz\",\n+      \"integrity\": \"sha512-6S062WDQUXi6hOfkO/sBPVwE5ASXY4G2+b4atvhJfSsuUUhIaUKlkjLe9692Ipyt5/a+IPF5aVTu3V5gvXq5cg==\",\n       \"dev\": true\n     },\n     \"colors\": {\n@@ -4902,20 +4900,20 @@\n       }\n     },\n     \"es-check\": {\n-      \"version\": \"5.0.0\",\n-      \"resolved\": \"https://registry.npmjs.org/es-check/-/es-check-5.0.0.tgz\",\n-      \"integrity\": \"sha512-30n+EZt5KjazXEvyYr2DXJCOJJWfdT1unRp5+Szlcja6uGAB3Sh3QPjRsxd2xgN9SFj4S5P8pdBISwGcDdS45Q==\",\n+      \"version\": \"5.1.0\",\n+      \"resolved\": \"https://registry.npmjs.org/es-check/-/es-check-5.1.0.tgz\",\n+      \"integrity\": \"sha512-QlRhlUmEpdnleBFYWRFROm8u9cNPOWdE1iXQPWiQXnwmlJZ0hSxWpLOXwpFLyRrwnTmt5xqYM/5OR8Ao0MYa8w==\",\n       \"dev\": true,\n       \"requires\": {\n-        \"acorn\": \"6.0.4\",\n-        \"caporal\": \"1.1.0\",\n+        \"acorn\": \"6.1.1\",\n+        \"caporal\": \"1.3.0\",\n         \"glob\": \"^7.1.2\"\n       },\n       \"dependencies\": {\n         \"acorn\": {\n-          \"version\": \"6.0.4\",\n-          \"resolved\": \"https://registry.npmjs.org/acorn/-/acorn-6.0.4.tgz\",\n-          \"integrity\": \"sha512-VY4i5EKSKkofY2I+6QLTbTTN/UvEQPCo6eiwzzSaSWfpaDhOmStMCMod6wmuPciNq+XS0faCglFu2lHZpdHUtg==\",\n+          \"version\": \"6.1.1\",\n+          \"resolved\": \"https://registry.npmjs.org/acorn/-/acorn-6.1.1.tgz\",\n+          \"integrity\": \"sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==\",\n           \"dev\": true\n         }\n       }\n@@ -10143,12 +10141,6 @@\n       \"integrity\": \"sha1-yaR3SYYHUB2OhJTSg7h8OSgc72I=\",\n       \"dev\": true\n     },\n-    \"lodash.kebabcase\": {\n-      \"version\": \"4.1.1\",\n-      \"resolved\": \"https://registry.npmjs.org/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz\",\n-      \"integrity\": \"sha1-hImxyw0p/4gZXM7KRI/21swpXDY=\",\n-      \"dev\": true\n-    },\n     \"lodash.keys\": {\n       \"version\": \"3.1.2\",\n       \"resolved\": \"https://registry.npmjs.org/lodash.keys/-/lodash.keys-3.1.2.tgz\",\n@@ -10166,12 +10158,6 @@\n       \"integrity\": \"sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=\",\n       \"dev\": true\n     },\n-    \"lodash.merge\": {\n-      \"version\": \"4.6.2\",\n-      \"resolved\": \"https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz\",\n-      \"integrity\": \"sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==\",\n-      \"dev\": true\n-    },\n     \"lodash.pad\": {\n       \"version\": \"4.5.1\",\n       \"resolved\": \"https://registry.npmjs.org/lodash.pad/-/lodash.pad-4.5.1.tgz\","
+    },
+    {
+      "sha": "23239dba064e7faf55de536d152d6125d906dd6b",
+      "filename": "frontend/package.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark/blob/7b67b10d5ddcfad80c58a4b76d6b065458320371/frontend/package.json",
+      "raw_url": "https://github.com/umputun/remark/raw/7b67b10d5ddcfad80c58a4b76d6b065458320371/frontend/package.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/package.json?ref=7b67b10d5ddcfad80c58a4b76d6b065458320371",
+      "patch": "@@ -2,7 +2,7 @@\n   \"name\": \"remark-ui\",\n   \"version\": \"0.1.0\",\n   \"scripts\": {\n-    \"build\": \"webpack --mode production && node postbuild.js\",\n+    \"build\": \"webpack --mode production && es-check es5 './public/*.js'\",\n     \"start\": \"webpack-dev-server --mode development\",\n     \"check\": \"tsc -p tsconfig.json --noEmit --skipLibCheck\",\n     \"lint\": \"eslint --max-warnings=0 --ext=.ts,.tsx,.js,.jsx .\",\n@@ -53,7 +53,7 @@\n     \"document-register-element\": \"^1.14.3\",\n     \"enzyme\": \"^3.10.0\",\n     \"enzyme-adapter-preact-pure\": \"^2.1.0\",\n-    \"es-check\": \"^5.0.0\",\n+    \"es-check\": \"^5.1.0\",\n     \"eslint\": \"^6.6.0\",\n     \"eslint-config-prettier\": \"^6.5.0\",\n     \"eslint-plugin-jsx-a11y\": \"^6.2.3\","
+    },
+    {
+      "sha": "4fc15d31b84c97d29cb3a88f166bae7dfc98c03d",
+      "filename": "frontend/postbuild.js",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 15,
+      "changes": 15,
+      "blob_url": "https://github.com/umputun/remark/blob/7d9e8ce076a99c6f8cc41150d776923a762c9d20/frontend/postbuild.js",
+      "raw_url": "https://github.com/umputun/remark/raw/7d9e8ce076a99c6f8cc41150d776923a762c9d20/frontend/postbuild.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/postbuild.js?ref=7d9e8ce076a99c6f8cc41150d776923a762c9d20",
+      "patch": "@@ -1,15 +0,0 @@\n-/* eslint-disable no-console */\n-\n-const escheck = require('./escheck');\n-\n-async function main() {\n-  try {\n-    console.log('checking es5 compatibility...');\n-    escheck({ glob: './public/*.js' });\n-  } catch (e) {\n-    console.error(e);\n-    process.exit(1);\n-  }\n-}\n-\n-main();"
+    }
+  ]
+}
