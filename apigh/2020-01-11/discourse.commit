@@ -1,0 +1,98 @@
+{
+  "sha": "1a31a403cefda7ead706076cc0a0decdb38a80c8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxYTMxYTQwM2NlZmRhN2VhZDcwNjA3NmNjMGEwZGVjZGIzOGE4MGM4",
+  "commit": {
+    "author": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-01-11T01:19:23Z"
+    },
+    "committer": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-01-11T01:19:23Z"
+    },
+    "message": "DEV: Remove buffered-render file\n\nThis is the last and final commit in a multi-commit refactor to remove\nall uses of buffered-render.\n\nPrevious commit: fc94b6cb9ee709a6744dc0da477f4a37e43d37e4 in this\nseries.",
+    "tree": {
+      "sha": "8768aabb83fd4df500314c10bea59355e928f18a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/8768aabb83fd4df500314c10bea59355e928f18a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1a31a403cefda7ead706076cc0a0decdb38a80c8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1a31a403cefda7ead706076cc0a0decdb38a80c8",
+  "html_url": "https://github.com/discourse/discourse/commit/1a31a403cefda7ead706076cc0a0decdb38a80c8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1a31a403cefda7ead706076cc0a0decdb38a80c8/comments",
+  "author": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "648a1124eb106c25ef9cf2eff014a144ebb6186b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/648a1124eb106c25ef9cf2eff014a144ebb6186b",
+      "html_url": "https://github.com/discourse/discourse/commit/648a1124eb106c25ef9cf2eff014a144ebb6186b"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 0,
+    "deletions": 46
+  },
+  "files": [
+    {
+      "sha": "d3d301212ae468c402b6a278ceb8d8e4a21c61c4",
+      "filename": "app/assets/javascripts/discourse-common/lib/buffered-render.js.es6",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 46,
+      "changes": 46,
+      "blob_url": "https://github.com/discourse/discourse/blob/648a1124eb106c25ef9cf2eff014a144ebb6186b/app/assets/javascripts/discourse-common/lib/buffered-render.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/648a1124eb106c25ef9cf2eff014a144ebb6186b/app/assets/javascripts/discourse-common/lib/buffered-render.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse-common/lib/buffered-render.js.es6?ref=648a1124eb106c25ef9cf2eff014a144ebb6186b",
+      "patch": "@@ -1,46 +0,0 @@\n-import { scheduleOnce } from \"@ember/runloop\";\n-// Ember 2.0 removes buffered rendering, but we can still implement it ourselves.\n-// In the long term we'll want to remove this.\n-\n-const Mixin = {\n-  _customRender() {\n-    if (!this.element || this.isDestroying || this.isDestroyed) {\n-      return;\n-    }\n-\n-    const buffer = [];\n-    this.buildBuffer(buffer);\n-    this.element.innerHTML = buffer.join(\"\");\n-  },\n-\n-  rerenderBuffer() {\n-    scheduleOnce(\"render\", this, this._customRender);\n-  }\n-};\n-\n-export function bufferedRender(obj) {\n-  if (!obj.buildBuffer) {\n-    Ember.warn(\"Missing `buildBuffer` method\", {\n-      id: \"discourse.buffered-render.missing-build-buffer\"\n-    });\n-    return obj;\n-  }\n-\n-  const caller = {};\n-\n-  caller.didRender = function() {\n-    this._super(...arguments);\n-    this._customRender();\n-  };\n-\n-  const triggers = obj.rerenderTriggers;\n-  if (triggers) {\n-    caller.init = function() {\n-      this._super(...arguments);\n-      triggers.forEach(k => this.addObserver(k, this.rerenderBuffer));\n-    };\n-  }\n-  delete obj.rerenderTriggers;\n-\n-  return Ember.Mixin.create(Mixin, caller, obj);\n-}"
+    }
+  ]
+}
