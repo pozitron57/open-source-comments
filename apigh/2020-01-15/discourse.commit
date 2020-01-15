@@ -1,0 +1,122 @@
+{
+  "sha": "0f8695958bd8fd71068fadfd6503bce5a097354c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowZjg2OTU5NThiZDhmZDcxMDY4ZmFkZmQ2NTAzYmNlNWEwOTczNTRj",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2020-01-15T13:41:41Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2020-01-15T14:00:06Z"
+    },
+    "message": "FIX: better error message when topic deletion fails",
+    "tree": {
+      "sha": "7baa2c5b23baed60304174f523cf8e0cbf893b1d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7baa2c5b23baed60304174f523cf8e0cbf893b1d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0f8695958bd8fd71068fadfd6503bce5a097354c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0f8695958bd8fd71068fadfd6503bce5a097354c",
+  "html_url": "https://github.com/discourse/discourse/commit/0f8695958bd8fd71068fadfd6503bce5a097354c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0f8695958bd8fd71068fadfd6503bce5a097354c/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ff93c4b2f46271c8d5b9b02a33db98d6ef326b21",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ff93c4b2f46271c8d5b9b02a33db98d6ef326b21",
+      "html_url": "https://github.com/discourse/discourse/commit/ff93c4b2f46271c8d5b9b02a33db98d6ef326b21"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b8931c4dd9b1e8c49c92026ed84b1e303663939a",
+      "filename": "app/controllers/topics_controller.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/0f8695958bd8fd71068fadfd6503bce5a097354c/app/controllers/topics_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/0f8695958bd8fd71068fadfd6503bce5a097354c/app/controllers/topics_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/topics_controller.rb?ref=0f8695958bd8fd71068fadfd6503bce5a097354c",
+      "patch": "@@ -557,6 +557,8 @@ def destroy\n     PostDestroyer.new(current_user, first_post, context: params[:context]).destroy\n \n     render body: nil\n+  rescue Discourse::InvalidAccess\n+    render_json_error I18n.t(\"delete_topic_failed\")\n   end\n \n   def recover"
+    },
+    {
+      "sha": "45e61b0c492d3d78f0197082e754827f7edb4930",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/0f8695958bd8fd71068fadfd6503bce5a097354c/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/0f8695958bd8fd71068fadfd6503bce5a097354c/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=0f8695958bd8fd71068fadfd6503bce5a097354c",
+      "patch": "@@ -266,6 +266,7 @@ en:\n     request_membership: \"Request Membership\"\n     join_group: \"Join Group\"\n   deleted_topic: \"Oops! This topic has been deleted and is no longer available.\"\n+  delete_topic_failed: \"There was an error deleting that topic. Please contact the site's administrator.\"\n \n   reading_time: \"Reading time\"\n   likes: \"Likes\""
+    },
+    {
+      "sha": "4900b0555d2f198cb202fa90922d1979be2e9c54",
+      "filename": "spec/requests/topics_controller_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/0f8695958bd8fd71068fadfd6503bce5a097354c/spec/requests/topics_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/0f8695958bd8fd71068fadfd6503bce5a097354c/spec/requests/topics_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/topics_controller_spec.rb?ref=0f8695958bd8fd71068fadfd6503bce5a097354c",
+      "patch": "@@ -860,7 +860,7 @@ def topic_user_post_timings_count(user, topic)\n         it \"raises an exception when the user doesn't have permission to delete the topic\" do\n           sign_in(user)\n           delete \"/t/#{topic.id}.json\"\n-          expect(response).to be_forbidden\n+          expect(response.status).to eq(422)\n         end\n       end\n "
+    }
+  ]
+}
