@@ -1,0 +1,146 @@
+{
+  "sha": "eeefa1177f921eb9768830cd58623354876a6796",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplZWVmYTExNzdmOTIxZWI5NzY4ODMwY2Q1ODYyMzM1NDg3NmE2Nzk2",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2020-01-19T11:07:54Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-01-19T11:07:54Z"
+    },
+    "message": "FIX: Make category-chooser show all parent categories (#8706)",
+    "tree": {
+      "sha": "fc751e41d23b420ca65128ec545b414101c83e98",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fc751e41d23b420ca65128ec545b414101c83e98"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/eeefa1177f921eb9768830cd58623354876a6796",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeJDiKCRBK7hj4Ov3rIwAAdHIIAF+bQqz8wAJQjx3XU5eVXpuE\nWZCEN+y2a02gCl7RcnJ4zPbokGKFUtbkT4YE7+C2ayvjj3jxl/EYSi8NlKzclbaI\nc+ToqyvoxXJJOXxkBz0unwKYXaFlNg7C+FcpAV4Uc+AnWYGAAaqhp+pHCiQSRiQA\nsiOZ/p3GzlnuE0TYPoo2bqmwa/NNy0RgP/R7iXL2MtwdC5YDaqVFp8NkECkKX/xh\nBGsTHb8RiBiPWD2hNJC082Vx4hdPNRgJPzAOGlLx+CgchJrT01EegvC35YMditC8\nkLG378OP94S3XdtXYjxsbLuyvpCdUiXvcCXcupOxonEgIqzhMYOH1fKfB6IQsrg=\n=RCKe\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree fc751e41d23b420ca65128ec545b414101c83e98\nparent 79ec686ec94a81ff8ecf076b8ea247068cb627da\nauthor Dan Ungureanu <dan@ungureanu.me> 1579432074 +0200\ncommitter GitHub <noreply@github.com> 1579432074 +0200\n\nFIX: Make category-chooser show all parent categories (#8706)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/eeefa1177f921eb9768830cd58623354876a6796",
+  "html_url": "https://github.com/discourse/discourse/commit/eeefa1177f921eb9768830cd58623354876a6796",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/eeefa1177f921eb9768830cd58623354876a6796/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "79ec686ec94a81ff8ecf076b8ea247068cb627da",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/79ec686ec94a81ff8ecf076b8ea247068cb627da",
+      "html_url": "https://github.com/discourse/discourse/commit/79ec686ec94a81ff8ecf076b8ea247068cb627da"
+    }
+  ],
+  "stats": {
+    "total": 100,
+    "additions": 64,
+    "deletions": 36
+  },
+  "files": [
+    {
+      "sha": "b32c0c94522aed16d1d3691182aab4d181d29502",
+      "filename": "app/assets/javascripts/discourse/helpers/category-link.js.es6",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/discourse/helpers/category-link.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/discourse/helpers/category-link.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/helpers/category-link.js.es6?ref=eeefa1177f921eb9768830cd58623354876a6796",
+      "patch": "@@ -25,7 +25,9 @@ function categoryStripe(color, classes) {\n     @param {String}  [opts.url] The url that we want the category badge to link to.\n     @param {Boolean} [opts.allowUncategorized] If false, returns an empty string for the uncategorized category.\n     @param {Boolean} [opts.link] If false, the category badge will not be a link.\n-    @param {Boolean} [opts.hideParaent] If true, parent category will be hidden in the badge.\n+    @param {Boolean} [opts.hideParent] If true, parent category will be hidden in the badge.\n+    @param {Boolean} [opts.recursive] If true, the function will be called recursively for all parent categories\n+    @param {Number}  [opts.depth] Current category depth, used for limiting recursive calls\n **/\n export function categoryBadgeHTML(category, opts) {\n   opts = opts || {};\n@@ -38,6 +40,13 @@ export function categoryBadgeHTML(category, opts) {\n   )\n     return \"\";\n \n+  const depth = (opts.depth || 1) + 1;\n+  if (opts.recursive && depth <= Discourse.SiteSettings.max_category_nesting) {\n+    const parentCategory = Category.findById(category.parent_category_id);\n+    opts.depth = depth;\n+    return categoryBadgeHTML(parentCategory, opts) + _renderer(category, opts);\n+  }\n+\n   return _renderer(category, opts);\n }\n "
+    },
+    {
+      "sha": "07872a02ce5a10f362f4957cad4ebfeaba477bec",
+      "filename": "app/assets/javascripts/select-kit/components/category-chooser.js.es6",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 18,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/select-kit/components/category-chooser.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/select-kit/components/category-chooser.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/select-kit/components/category-chooser.js.es6?ref=eeefa1177f921eb9768830cd58623354876a6796",
+      "patch": "@@ -72,26 +72,12 @@ export default ComboBoxComponent.extend({\n \n     if (this.hasSelection) {\n       const category = Category.findById(content.value);\n-      const parentCategoryId = category.get(\"parent_category_id\");\n-      const hasParentCategory = Ember.isPresent(parentCategoryId);\n-\n-      let badge = \"\";\n-\n-      if (hasParentCategory) {\n-        const parentCategory = Category.findById(parentCategoryId);\n-        badge += categoryBadgeHTML(parentCategory, {\n-          link: false,\n-          allowUncategorized: true\n-        }).htmlSafe();\n-      }\n-\n-      badge += categoryBadgeHTML(category, {\n+      content.label = categoryBadgeHTML(category, {\n         link: false,\n-        hideParent: hasParentCategory ? true : false,\n-        allowUncategorized: true\n+        hideParent: !!category.parent_category_id,\n+        allowUncategorized: true,\n+        recursive: true\n       }).htmlSafe();\n-\n-      content.label = badge;\n     }\n \n     return content;"
+    },
+    {
+      "sha": "452aad22d53aa40f145e86491e4c746ee7958292",
+      "filename": "app/assets/javascripts/select-kit/components/category-row.js.es6",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/select-kit/components/category-row.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/select-kit/components/category-row.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/select-kit/components/category-row.js.es6?ref=eeefa1177f921eb9768830cd58623354876a6796",
+      "patch": "@@ -45,15 +45,16 @@ export default SelectKitRowComponent.extend({\n     return categoryBadgeHTML(category, {\n       link: this.categoryLink,\n       allowUncategorized: this.allowUncategorized,\n-      hideParent: parentCategory ? true : false\n+      hideParent: !!parentCategory\n     }).htmlSafe();\n   },\n \n   @discourseComputed(\"parentCategory\")\n   badgeForParentCategory(parentCategory) {\n     return categoryBadgeHTML(parentCategory, {\n       link: this.categoryLink,\n-      allowUncategorized: this.allowUncategorized\n+      allowUncategorized: this.allowUncategorized,\n+      recursive: true\n     }).htmlSafe();\n   },\n "
+    },
+    {
+      "sha": "b35247b47ebf181d327a0608b3d98fceffc40dac",
+      "filename": "app/assets/javascripts/select-kit/templates/components/category-row.hbs",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 15,
+      "changes": 23,
+      "blob_url": "https://github.com/discourse/discourse/blob/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/select-kit/templates/components/category-row.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/eeefa1177f921eb9768830cd58623354876a6796/app/assets/javascripts/select-kit/templates/components/category-row.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/select-kit/templates/components/category-row.hbs?ref=eeefa1177f921eb9768830cd58623354876a6796",
+      "patch": "@@ -1,22 +1,15 @@\n {{#if category}}\n-    {{#if hasParentCategory}}\n-      <div class=\"category-status\">\n+    <div class=\"category-status\">\n+      {{#if hasParentCategory}}\n         {{#unless hideParentCategory}}\n           {{badgeForParentCategory}}\n         {{/unless}}\n-        {{badgeForCategory}}\n-        <span class=\"topic-count\" aria-label={{i18n \"category_row.topic_count\" count=topicCount}}>\n-          &times; {{topicCount}}\n-        </span>\n-      </div>\n-    {{else}}\n-      <div class=\"category-status\">\n-        {{badgeForCategory}}\n-        <span class=\"topic-count\" aria-label={{i18n \"category_row.topic_count\" count=topicCount}}>\n-          &times; {{topicCount}}\n-        </span>\n-      </div>\n-    {{/if}}\n+      {{/if}}\n+      {{badgeForCategory}}\n+      <span class=\"topic-count\" aria-label={{i18n \"category_row.topic_count\" count=topicCount}}>\n+        &times; {{topicCount}}\n+      </span>\n+    </div>\n \n     {{#if shouldDisplayDescription}}\n       <div class=\"category-desc\">{{{dir-span description}}}</div>"
+    },
+    {
+      "sha": "965899eb11bd4d46e04d554017f461416e30bd2f",
+      "filename": "test/javascripts/lib/category-badge-test.js.es6",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 0,
+      "changes": 39,
+      "blob_url": "https://github.com/discourse/discourse/blob/eeefa1177f921eb9768830cd58623354876a6796/test/javascripts/lib/category-badge-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/eeefa1177f921eb9768830cd58623354876a6796/test/javascripts/lib/category-badge-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/lib/category-badge-test.js.es6?ref=eeefa1177f921eb9768830cd58623354876a6796",
+      "patch": "@@ -91,3 +91,42 @@ QUnit.test(\"category names are wrapped in dir-spans\", assert => {\n   dirSpan = tag.children[1].children[0];\n   assert.equal(dirSpan.dir, \"ltr\");\n });\n+\n+QUnit.test(\"recursive\", assert => {\n+  const store = createStore();\n+\n+  const foo = store.createRecord(\"category\", {\n+    name: \"foo\",\n+    id: 1\n+  });\n+\n+  const bar = store.createRecord(\"category\", {\n+    name: \"bar\",\n+    id: 2,\n+    parent_category_id: foo.id\n+  });\n+\n+  const baz = store.createRecord(\"category\", {\n+    name: \"baz\",\n+    id: 3,\n+    parent_category_id: bar.id\n+  });\n+\n+  Discourse.set(\"SiteSettings.max_category_nesting\", 0);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"baz\") !== -1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"bar\") === -1);\n+\n+  Discourse.set(\"SiteSettings.max_category_nesting\", 1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"baz\") !== -1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"bar\") === -1);\n+\n+  Discourse.set(\"SiteSettings.max_category_nesting\", 2);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"baz\") !== -1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"bar\") !== -1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"foo\") === -1);\n+\n+  Discourse.set(\"SiteSettings.max_category_nesting\", 3);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"baz\") !== -1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"bar\") !== -1);\n+  assert.ok(categoryBadgeHTML(baz, { recursive: true }).indexOf(\"foo\") !== -1);\n+});"
+    }
+  ]
+}
