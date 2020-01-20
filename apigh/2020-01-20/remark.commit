@@ -1,0 +1,98 @@
+{
+  "sha": "029f50c52c8d1109f523325775bf909ffda95ebb",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjAyOWY1MGM1MmM4ZDExMDlmNTIzMzI1Nzc1YmY5MDlmZmRhOTVlYmI=",
+  "commit": {
+    "author": {
+      "name": "Vyrtsev Mikhail",
+      "email": "reeywhaar@gmail.com",
+      "date": "2020-01-18T23:05:49Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-01-19T18:51:28Z"
+    },
+    "message": "do not render dummy for comment once it gets into viewport",
+    "tree": {
+      "sha": "4d92730c7b3e269d1e678b752f29df46d5dc8695",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/4d92730c7b3e269d1e678b752f29df46d5dc8695"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/029f50c52c8d1109f523325775bf909ffda95ebb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/029f50c52c8d1109f523325775bf909ffda95ebb",
+  "html_url": "https://github.com/umputun/remark/commit/029f50c52c8d1109f523325775bf909ffda95ebb",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/029f50c52c8d1109f523325775bf909ffda95ebb/comments",
+  "author": {
+    "login": "Reeywhaar",
+    "id": 884649,
+    "node_id": "MDQ6VXNlcjg4NDY0OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/884649?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Reeywhaar",
+    "html_url": "https://github.com/Reeywhaar",
+    "followers_url": "https://api.github.com/users/Reeywhaar/followers",
+    "following_url": "https://api.github.com/users/Reeywhaar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Reeywhaar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Reeywhaar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Reeywhaar/subscriptions",
+    "organizations_url": "https://api.github.com/users/Reeywhaar/orgs",
+    "repos_url": "https://api.github.com/users/Reeywhaar/repos",
+    "events_url": "https://api.github.com/users/Reeywhaar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Reeywhaar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8c37fac06e52be76adf371575f4c38f8027b275e",
+      "url": "https://api.github.com/repos/umputun/remark/commits/8c37fac06e52be76adf371575f4c38f8027b275e",
+      "html_url": "https://github.com/umputun/remark/commit/8c37fac06e52be76adf371575f4c38f8027b275e"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 7,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e40c20d9cc369422c25aae3abd82c121d6d8ede8",
+      "filename": "frontend/app/components/comment/comment.tsx",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark/blob/029f50c52c8d1109f523325775bf909ffda95ebb/frontend/app/components/comment/comment.tsx",
+      "raw_url": "https://github.com/umputun/remark/raw/029f50c52c8d1109f523325775bf909ffda95ebb/frontend/app/components/comment/comment.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/frontend/app/components/comment/comment.tsx?ref=029f50c52c8d1109f523325775bf909ffda95ebb",
+      "patch": "@@ -52,6 +52,7 @@ export type Props = {\n } & Partial<typeof boundActions>;\n \n export interface State {\n+  renderDummy: boolean;\n   isCopied: boolean;\n   editDeadline: Date | null;\n   voteErrorMessage: string | null;\n@@ -79,6 +80,7 @@ export class Comment extends Component<Props, State> {\n     super(props);\n \n     this.state = {\n+      renderDummy: typeof props.inView === 'boolean' ? !props.inView : false,\n       isCopied: false,\n       editDeadline: null,\n       voteErrorMessage: null,\n@@ -115,6 +117,10 @@ export class Comment extends Component<Props, State> {\n       cachedScore: props.data.score,\n     };\n \n+    if (props.inView) {\n+      newState.renderDummy = false;\n+    }\n+\n     // set comment edit timer\n     if (props.user && props.user.id === props.data.user.id) {\n       const editDuration = StaticStore.config.edit_duration;\n@@ -540,7 +546,7 @@ export class Comment extends Component<Props, State> {\n       );\n     }\n \n-    if (!props.editMode && this.props.inView === false) {\n+    if (this.state.renderDummy && !props.editMode) {\n       const [width, height] = this.base\n         ? [(this.base as Element).scrollWidth, (this.base as Element).scrollHeight]\n         : [100, 100];"
+    }
+  ]
+}
