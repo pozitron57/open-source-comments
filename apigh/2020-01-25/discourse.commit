@@ -1,0 +1,110 @@
+{
+  "sha": "5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1YzNmOTk0YzgwZTFhODU1YzhkNDdiYmU3ZTllNDg2ZTEyMGE2MTFm",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-01-24T18:18:03Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-01-24T18:18:51Z"
+    },
+    "message": "DEV: For now, re-enable unsafe-eval in development mode\n\nThis allows us to use `sourceURL` which otherwise does not work. In the\nfuture we hope to have proper source maps in development mode and\ndisable this again.",
+    "tree": {
+      "sha": "abaf3258407a735442066927219007254dfc8674",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/abaf3258407a735442066927219007254dfc8674"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+  "html_url": "https://github.com/discourse/discourse/commit/5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5c3f994c80e1a855c8d47bbe7e9e486e120a611f/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b0f2f1cfb62fecd44b4bcb2a87a0730f048ee9d7",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b0f2f1cfb62fecd44b4bcb2a87a0730f048ee9d7",
+      "html_url": "https://github.com/discourse/discourse/commit/b0f2f1cfb62fecd44b4bcb2a87a0730f048ee9d7"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "2526fc3c8d303da84c660cd97d7ab104a00cd555",
+      "filename": "lib/content_security_policy/default.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/5c3f994c80e1a855c8d47bbe7e9e486e120a611f/lib/content_security_policy/default.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5c3f994c80e1a855c8d47bbe7e9e486e120a611f/lib/content_security_policy/default.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/content_security_policy/default.rb?ref=5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+      "patch": "@@ -51,6 +51,7 @@ def script_src\n         \"#{base_url}/mini-profiler-resources/\",\n         *script_assets\n       ].tap do |sources|\n+        sources << :unsafe_eval if Rails.env.development? # TODO remove this once we have proper source maps in dev\n         sources << 'https://www.google-analytics.com/analytics.js' if SiteSetting.ga_universal_tracking_code.present?\n         sources << 'https://www.googletagmanager.com/gtm.js' if SiteSetting.gtm_container_id.present?\n       end"
+    },
+    {
+      "sha": "38078255f7133fd1e37ebf4dd22846d523ce1875",
+      "filename": "lib/source_url.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/5c3f994c80e1a855c8d47bbe7e9e486e120a611f/lib/source_url.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/5c3f994c80e1a855c8d47bbe7e9e486e120a611f/lib/source_url.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/source_url.rb?ref=5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+      "patch": "@@ -16,6 +16,9 @@ def prepare\n   end\n \n   def evaluate(scope, locals, &block)\n-    \"#{data.rstrip} //# sourceURL=#{scope.logical_path}\\n\\n\"\n+    code = +\"eval(\"\n+    code << data.inspect\n+    code << \" + \\\"\\\\n//# sourceURL=#{scope.logical_path}\\\"\"\n+    code << \");\\n\"\n   end\n end"
+    }
+  ]
+}
