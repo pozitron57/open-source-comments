@@ -1,0 +1,98 @@
+{
+  "sha": "7c30986b5efe231d4b22ad3e657fc83ec452e89c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3YzMwOTg2YjVlZmUyMzFkNGIyMmFkM2U2NTdmYzgzZWM0NTJlODlj",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2020-01-25T21:07:41Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2020-01-25T21:07:41Z"
+    },
+    "message": "FIX: Failed to notify user after restoring backup",
+    "tree": {
+      "sha": "0b414439f1205baaeedee81ef22fa1502110145e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0b414439f1205baaeedee81ef22fa1502110145e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7c30986b5efe231d4b22ad3e657fc83ec452e89c",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7c30986b5efe231d4b22ad3e657fc83ec452e89c",
+  "html_url": "https://github.com/discourse/discourse/commit/7c30986b5efe231d4b22ad3e657fc83ec452e89c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7c30986b5efe231d4b22ad3e657fc83ec452e89c/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/5c3f994c80e1a855c8d47bbe7e9e486e120a611f",
+      "html_url": "https://github.com/discourse/discourse/commit/5c3f994c80e1a855c8d47bbe7e9e486e120a611f"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "eaf3ee4083dd39d6719ec953ec6eb9db62bf31d1",
+      "filename": "lib/backup_restore/restorer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7c30986b5efe231d4b22ad3e657fc83ec452e89c/lib/backup_restore/restorer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7c30986b5efe231d4b22ad3e657fc83ec452e89c/lib/backup_restore/restorer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/backup_restore/restorer.rb?ref=7c30986b5efe231d4b22ad3e657fc83ec452e89c",
+      "patch": "@@ -131,7 +131,7 @@ def notify_user\n \n         SystemMessage.create_from_system_user(\n           user, status,\n-          logs: Discourse::Utils.pretty_logs(@logs)\n+          logs: Discourse::Utils.pretty_logs(@logger.logs)\n         )\n       else\n         log \"Could not send notification to '#{@user_info[:username]}' \" \\"
+    }
+  ]
+}

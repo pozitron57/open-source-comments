@@ -1,0 +1,254 @@
+{
+  "sha": "606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NjA2Mjk0ZTc4YTVhOGQzMTNlMmU1MzBjZTBmN2JjZWViYWY3MzVkNg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-01-15T20:45:24Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-01-15T20:45:24Z"
+    },
+    "message": "Add translation fields for drafts and previews.",
+    "tree": {
+      "sha": "13cf63d6ba30fa1469740ca0e016e2f63571731d",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/13cf63d6ba30fa1469740ca0e016e2f63571731d"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+  "html_url": "https://github.com/debiki/talkyard/commit/606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/606294e78a5a8d313e2e530ce0f7bceebaf735d6/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6c102d9a84f85a1a2052a252f38152d95dbe4485",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/6c102d9a84f85a1a2052a252f38152d95dbe4485",
+      "html_url": "https://github.com/debiki/talkyard/commit/6c102d9a84f85a1a2052a252f38152d95dbe4485"
+    }
+  ],
+  "stats": {
+    "total": 112,
+    "additions": 93,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "1b266caca9af1de5966e71a6e8c64a275d33225c",
+      "filename": "client/app-editor/editor/editor.editor.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-editor/editor/editor.editor.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-editor/editor/editor.editor.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-editor/editor/editor.editor.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -2012,7 +2012,7 @@ export function DraftStatusInfo(props: { draftStatus: DraftStatus, draftNr: numb\n     case DraftStatus.NotLoaded: draftStatusText = t.e.LoadingDraftDots; break;\n     case DraftStatus.NothingHappened: break;\n     case DraftStatus.EditsUndone: draftStatusText = t.e.DraftUnchanged; break;\n-    case DraftStatus.SavedInBrowser: draftStatusText = \"Draft saved, in browser session.\"; break;  // I18N\n+    case DraftStatus.SavedInBrowser: draftStatusText = t.e.DraftSavedBrwsr; break;\n     case DraftStatus.SavedServerSide: draftStatusText = t.e.DraftSaved(draftNr); break;\n     case DraftStatus.Deleted: draftStatusText = t.e.DraftDeleted(draftNr); break;\n     case DraftStatus.ShouldSave: draftStatusText = t.e.WillSaveDraft(draftNr); break;"
+    },
+    {
+      "sha": "8541a620a8422fea37c6a54a5515a548df66009f",
+      "filename": "client/app-more/users/users-page.styl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-more/users/users-page.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-more/users/users-page.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-more/users/users-page.styl?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -186,6 +186,7 @@ a.s_Dfs_Df\n   padding-right: 20px;\n   li\n     float: none;\n+    word-break: break-all;\n \n .s_UP_Act_List\n   display: table-cell;"
+    },
+    {
+      "sha": "307164a9ce250a96f6579bd87624d1a2c3de4801",
+      "filename": "client/app-slim/page/chat.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/chat.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/chat.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/chat.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -230,7 +230,7 @@ const ChatMessage = createComponent({\n           t.e.PreviewC + ' ',\n           r.span({ className: 's_T_YourPrvw_ToWho' },\n             isEditingExistingPost ?\n-                \"Your edits: \" : \"Your chat message: \"));  // I18N [052RKGUCG6]\n+            t.d.YourEdits : t.d.YourChatMsg));\n \n     return (anyPreviewInfo ?\n         rFragment({}, anyPreviewInfo, chatMessage) : chatMessage);"
+    },
+    {
+      "sha": "4370c7d522003bffa2592460e929c17e76c5d649",
+      "filename": "client/app-slim/page/discussion.ts",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 7,
+      "changes": 15,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/discussion.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/discussion.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/discussion.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -616,7 +616,7 @@ const RootPostAndComments = createComponent({\n         r.div({ className: 's_T_YourPrvw' },\n           t.e.PreviewC + ' ',\n           r.span({ className: 's_T_YourPrvw_ToWho' },\n-            \"Your edits: \"));  // I18N [052RKGUCG6]\n+            t.d.YourEdits));\n \n     let body = null;\n     if (pageRole !== PageRole.EmbeddedComments || !store.isEmbedded) {\n@@ -1215,7 +1215,7 @@ const Thread = createComponent({\n       const isProgrPost = post.parentNr === BodyNr && post.postType === PostType.BottomComment;\n       const yourWhat = post.isEditing\n           ? t.e.PreviewC + ' '\n-          : (t.d.YourDraft || \"Your draft\") + ', ';  // [03RKTG42] I18N\n+          : t.d.YourDraft + ', ';  // [03RKTG42]\n \n       const isEditingExistingPost = post.nr >= MinRealPostNr;\n \n@@ -1226,12 +1226,12 @@ const Thread = createComponent({\n         // @endif\n         toWho =\n             r.span({ className: 's_T_YourPrvw_ToWho' },\n-              \"Your edits: \");  // I18N [052RKGUCG6]\n+              t.d.YourEdits);\n       }\n       else if (!post.isEditing && isProgrPost) {\n         toWho =\n             r.span({ className: 's_T_YourPrvw_ToWho' },\n-              \"a progress note: \");  // I18N\n+              t.d.aProgrNote);\n       }\n       else if (!parentPost) {\n         // @ifdef DEBUG\n@@ -1246,8 +1246,8 @@ const Thread = createComponent({\n             store.usersByIdBrief[parentPost.authorId];\n         const yourReplyTo_or_repliesTo = post.isEditing\n             ? (isProgrPost\n-                ? t.d.YourProgrNoteC                   // I18N\n-                : (t.d.YourReplyTo || t.d.repliesTo))  // I18N YourReplyTo mising\n+                ? t.d.YourProgrNoteC\n+                : t.d.YourReplyTo)\n             : (isProgrPost\n                 ? ''  // doesn't really reply to anyone in particular\n                 : t.d.repliesTo);\n@@ -1259,7 +1259,8 @@ const Thread = createComponent({\n \n       const resumeDraftBtn = post.isEditing || store.isEditorOpen ? null :\n             Button({ onClick: this.resumeDraft, className: 's_T_YourPrvw_ResumeB' },\n-              \"Resume editing\");  // I18N\n+              t.d.ResumeEdting);\n+      // + \"Delete draft\"   t.d.DelDraft  button too, later\n \n       previewElem = r.div({ className: 's_T_YourPrvw' }, yourWhat, toWho, resumeDraftBtn);\n       previewClass = ' s_T-Prvw ' +"
+    },
+    {
+      "sha": "c77debe95c72a3520cfaa4d78b0e51866347455a",
+      "filename": "client/app-slim/page/post-actions.styl",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/post-actions.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/post-actions.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/post-actions.styl?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -190,13 +190,13 @@\n   &.dw-a-edit.s_UnfinEd\n     font-weight: bold;\n     font-size: 15px;\n-    color: hsl(0, 0%, 18%);\n+    color: hsl(0, 0%, 16%);\n     padding-left: 0;\n     padding-right: 2px;\n     margin-left: 6px;\n     margin-right: 8px;\n     &.icon-edit:before\n-      color: hsl(0, 0%, 34%);\n+      color: hsl(0, 0%, 32%);\n       margin-right: 4px;\n \n   &.dw-a-more"
+    },
+    {
+      "sha": "a3e364ca9b7b389094082fba99af362526a56075",
+      "filename": "client/app-slim/page/post-actions.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/post-actions.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/page/post-actions.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/post-actions.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -89,7 +89,7 @@ export const NoCommentsPageActions = createComponent({\n     const editBtn = store.isEditorOpen ? null :\n         r.a({ className: 'dw-a dw-a-edit icon-edit' + unfinEditsClass, onClick: this.onEditClick },\n           t.EditV + (\n-            anyEditsDraft ? \" — Unfinished edits\" : ''));  // I18N [0436BKRFP2]\n+            anyEditsDraft ? \" — \" + t.d.UnfinEdits : ''));\n \n     const actions = editBtn;\n \n@@ -364,7 +364,7 @@ export const PostActions = createComponent({\n     const editButton = !mayEdit || isEditorOpenAlready ? null :\n         r.a({ className: 'dw-a dw-a-edit icon-edit' + unfinEditsClass, title: t.EditV,\n               onClick: this.onEditClick },\n-          anyEditsDraft ? \"Unfinished edits\" : null);  // I18N [0436BKRFP2] [UFINEDT]\n+          anyEditsDraft ? t.d.UnfinEdits : null);  // [UFINEDT]\n \n     const link =\n         r.a({ className: 'dw-a dw-a-link icon-link', title: t.pa.LinkToPost,"
+    },
+    {
+      "sha": "d3623a826212817064f92442ba60779f45989bb5",
+      "filename": "client/app-slim/store-getters.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/store-getters.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/store-getters.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/store-getters.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -51,7 +51,7 @@ export function store_getAuthorOrMissing(store: Store, post: Post): BriefUser {\n     // @endif\n     return {\n        id: UnknownUserId,\n-       fullName: \"You\",  // I18N\n+       fullName: t.You,\n     };\n   }\n "
+    },
+    {
+      "sha": "f6752b1d40308aa1148a4c985f7612413ba5ecd2",
+      "filename": "client/app-slim/translations.d.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 4,
+      "changes": 17,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/translations.d.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/client/app-slim/translations.d.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/translations.d.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -106,6 +106,8 @@ interface TalkyardTranslations {\n   started: string;\n   Summary: string;\n   Submit: string;\n+  Tag?: string;  // MISSING\n+  Tags?: string;  // MISSING\n   Tools: string;\n   Topics: string;\n   TopicTitle: string;\n@@ -539,10 +541,16 @@ interface TalkyardTranslations {\n \n     repliesTo: string;\n     InReplyTo: string;\n-    YourReplyTo?: string;\n-    YourDraft?: string;\n-    YourProgrNoteC?: string;\n-    YourProgrNoteDraftC?: string;\n+    YourReplyTo: string;\n+    YourChatMsg: string;\n+    YourDraft: string;\n+    YourEdits: string;\n+    YourProgrNoteC: string;\n+    aProgrNote: string;\n+\n+    UnfinEdits: string;\n+    ResumeEdting: string;\n+    DelDraft: string;\n \n     ClickViewEdits: string;\n \n@@ -1047,6 +1055,7 @@ interface TalkyardTranslations {\n     LoadingDraftDots: string;\n     DraftUnchanged: string;\n     CannotSaveDraftC: string;\n+    DraftSavedBrwsr: string;\n     DraftSaved: (nr: string | number) => string;\n     DraftDeleted: (nr: string | number) => string;\n     WillSaveDraft: (nr: string | number) => string;"
+    },
+    {
+      "sha": "35543660fc76b819c31de90f6d948848e263f7ef",
+      "filename": "modules/ty-cla",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ty-cla?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -1 +1 @@\n-Subproject commit 13d8c0b2d77d1b87ae843a5e22303da6e8ad5942\n+Subproject commit 35543660fc76b819c31de90f6d948848e263f7ef"
+    },
+    {
+      "sha": "cc1067bc135705aa54840621d6a15081ef81ce18",
+      "filename": "translations/en_US/i18n.ts",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/en_US/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/en_US/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/en_US/i18n.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -105,6 +105,8 @@ var t_en_US: TalkyardTranslations = t = {\n   started: \"started\",\n   Summary: \"Summary\",\n   Submit: \"Submit\",\n+  Tag: \"Tag\",  // MISSING\n+  Tags: \"Tags\",  // MISSING\n   Tools: \"Tools\",\n   Topics: \"Topics\",\n   TopicTitle: \"Topic title\",\n@@ -567,8 +569,15 @@ var t_en_US: TalkyardTranslations = t = {\n     repliesTo: \"replies to\",\n     InReplyTo: \"In reply to\",\n     YourReplyTo: \"Your reply to \",  // MISSING\n+    YourChatMsg: \"Your chat message: \",   // MISSING\n     YourDraft: \"Your draft\",    // MISSING\n+    YourEdits: \"Your edits: \",   // MISSING\n     YourProgrNoteC: \"Your progress note:\",  // MISSING\n+    aProgrNote: \"a progress note: \",  // MISSING\n+\n+    UnfinEdits: \"Unfinished edits\",  // MISSING\n+    ResumeEdting: \"Resume editing\",  // MISSING\n+    DelDraft: \"Delete draft\",   // MISSING\n \n     ClickViewEdits: \"Click to view old edits\",\n \n@@ -1211,6 +1220,7 @@ var t_en_US: TalkyardTranslations = t = {\n     LoadingDraftDots: \"Loading any draft...\",\n     DraftUnchanged: \"Unchanged.\",\n     CannotSaveDraftC: \"Cannot save draft:\",\n+    DraftSavedBrwsr: \"Draft saved, in browser.\",   // MISSING\n     DraftSaved: (nr: string | number) => `Draft ${nr} saved.`,\n     DraftDeleted: (nr: string | number) => `Draft ${nr} deleted.`,\n     WillSaveDraft: (nr: string | number) => `Will save draft ${nr} ...`,"
+    },
+    {
+      "sha": "c5444aa4a60b89942d1aed95ae154c335f6ba149",
+      "filename": "translations/he_IL/i18n.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/he_IL/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/he_IL/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/he_IL/i18n.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -107,6 +107,8 @@ var t_en_US: TalkyardTranslations = t = {\n   started: \"started\",\n   Summary: \"Summary\",\n   Submit: \"Submit\",\n+  Tag: \"Tag\",  // MISSING\n+  Tags: \"Tags\",  // MISSING\n   Tools: \"Tools\",\n   Topics: \"Topics\",\n   TopicTitle: \"Topic title\",\n@@ -568,6 +570,16 @@ var t_en_US: TalkyardTranslations = t = {\n \n     repliesTo: \"replies to\",\n     InReplyTo: \"In reply to\",\n+    YourReplyTo: \"Your reply to \",  // MISSING\n+    YourChatMsg: \"Your chat message: \",   // MISSING\n+    YourDraft: \"Your draft\",    // MISSING\n+    YourEdits: \"Your edits: \",   // MISSING\n+    YourProgrNoteC: \"Your progress note:\",  // MISSING\n+    aProgrNote: \"a progress note: \",  // MISSING\n+\n+    UnfinEdits: \"Unfinished edits\",  // MISSING\n+    ResumeEdting: \"Resume editing\",  // MISSING\n+    DelDraft: \"Delete draft\",   // MISSING\n \n     ClickViewEdits: \"Click to view old edits\",\n \n@@ -1210,6 +1222,7 @@ var t_en_US: TalkyardTranslations = t = {\n     LoadingDraftDots: \"Loading any draft...\",\n     DraftUnchanged: \"Unchanged.\",\n     CannotSaveDraftC: \"Cannot save draft:\",\n+    DraftSavedBrwsr: \"Draft saved, in browser.\",   // MISSING\n     DraftSaved: (nr: string | number) => `Draft ${nr} saved.`,\n     DraftDeleted: (nr: string | number) => `Draft ${nr} deleted.`,\n     WillSaveDraft: (nr: string | number) => `Will save draft ${nr} ...`,"
+    },
+    {
+      "sha": "e4cc52baaf3a658522d96ee229e68e68083c3f8b",
+      "filename": "translations/pt_BR/i18n.ts",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/pt_BR/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/pt_BR/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/pt_BR/i18n.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -105,6 +105,8 @@ var t_pt_BR: TalkyardTranslations = t = {\n   started: \"started\",  // MISSING\n   Summary: \"Resumo\",\n   Submit: \"Enviar\",\n+  Tag: \"Tag\",  // MISSING\n+  Tags: \"Tags\",  // MISSING\n   Tools: \"Tools\",  // MISSING\n   Topics: \"Tópicos\",\n   TopicTitle: \"Topic title\",  // MISSING\n@@ -566,6 +568,16 @@ var t_pt_BR: TalkyardTranslations = t = {\n \n     repliesTo: \"replies to\",  // MISSING\n     InReplyTo: \"Em resposta a\",\n+    YourReplyTo: \"Your reply to \",  // MISSING\n+    YourChatMsg: \"Your chat message: \",   // MISSING\n+    YourDraft: \"Your draft\",    // MISSING\n+    YourEdits: \"Your edits: \",   // MISSING\n+    YourProgrNoteC: \"Your progress note:\",  // MISSING\n+    aProgrNote: \"a progress note: \",  // MISSING\n+\n+    UnfinEdits: \"Unfinished edits\",  // MISSING\n+    ResumeEdting: \"Resume editing\",  // MISSING\n+    DelDraft: \"Delete draft\",   // MISSING\n \n     ClickViewEdits: \"Clique para visualizar edições antigas\",\n \n@@ -1209,6 +1221,7 @@ var t_pt_BR: TalkyardTranslations = t = {\n     LoadingDraftDots: \"Loading any draft...\",  // MISSING\n     DraftUnchanged: \"Unchanged.\",     // MISSING\n     CannotSaveDraftC: \"Cannot save draft:\",     // MISSING\n+    DraftSavedBrwsr: \"Draft saved, in browser.\",   // MISSING\n     DraftSaved: (nr: string | number) => `Draft ${nr} saved.`,     // MISSING\n     DraftDeleted: (nr: string | number) => `Draft ${nr} deleted.`,     // MISSING\n     WillSaveDraft: (nr: string | number) => `Will save draft ${nr} ...`,     // MISSING\n@@ -1223,6 +1236,7 @@ var t_pt_BR: TalkyardTranslations = t = {\n     SelCat: \"Select category\",  // MISSING\n   },\n \n+\n   // Page type dropdown\n \n   pt: {"
+    },
+    {
+      "sha": "8aeddf5b00ea0502a4fd377e3333e5e06aa957d0",
+      "filename": "translations/ru_RU/i18n.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/ru_RU/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/ru_RU/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/ru_RU/i18n.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -105,6 +105,8 @@ var t_ru_RU: TalkyardTranslations = t = {\n   started: \"началось\",\n   Summary: \"Итого\",\n   Submit: \"Submit\",\n+  Tag: \"Tag\",  // MISSING\n+  Tags: \"Tags\",  // MISSING\n   Tools: \"Инструменты\",\n   Topics: \"Темы\",\n   TopicTitle: \"Название темы\",\n@@ -566,6 +568,16 @@ var t_ru_RU: TalkyardTranslations = t = {\n \n     repliesTo: \"ответы на\",\n     InReplyTo: \"В ответ на\",\n+    YourReplyTo: \"Your reply to \",  // MISSING\n+    YourChatMsg: \"Your chat message: \",   // MISSING\n+    YourDraft: \"Your draft\",    // MISSING\n+    YourEdits: \"Your edits: \",   // MISSING\n+    YourProgrNoteC: \"Your progress note:\",  // MISSING\n+    aProgrNote: \"a progress note: \",  // MISSING\n+\n+    UnfinEdits: \"Unfinished edits\",  // MISSING\n+    ResumeEdting: \"Resume editing\",  // MISSING\n+    DelDraft: \"Delete draft\",   // MISSING\n \n     ClickViewEdits: \"Нажмите, чтобы посмотреть старые правки\",\n \n@@ -1208,6 +1220,7 @@ var t_ru_RU: TalkyardTranslations = t = {\n     LoadingDraftDots: \"Загрузка любого черновика ...\",\n     DraftUnchanged: \"Без изменений.\",\n     CannotSaveDraftC: \"Не удается сохранить черновик:\",\n+    DraftSavedBrwsr: \"Draft saved, in browser.\",   // MISSING\n     DraftSaved: (nr: string | number) => `Черновик ${nr} сохранен.`,\n     DraftDeleted: (nr: string | number) => `Черновик ${nr} удален.`,\n     WillSaveDraft: (nr: string | number) => `Сохранит черновик ${nr} ...`,"
+    },
+    {
+      "sha": "886594f54398421d8e9225f91f0bd9deabd2c325",
+      "filename": "translations/sv_SE/i18n.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/debiki/talkyard/blob/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/sv_SE/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/606294e78a5a8d313e2e530ce0f7bceebaf735d6/translations/sv_SE/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/sv_SE/i18n.ts?ref=606294e78a5a8d313e2e530ce0f7bceebaf735d6",
+      "patch": "@@ -105,6 +105,8 @@ var t_sv_SE: TalkyardTranslations = t = {\n   started: \"started\",\n   Summary: \"Summary\",\n   Submit: \"Submit\",\n+  Tag: \"Tag\",  // MISSING\n+  Tags: \"Tags\",  // MISSING\n   Tools: \"Tools\",\n   Topics: \"Topics\",\n   TopicTitle: \"Topic title\",\n@@ -565,6 +567,16 @@ var t_sv_SE: TalkyardTranslations = t = {\n \n     repliesTo: \"replies to\",  // MISSING\n     InReplyTo: \"In reply to\",\n+    YourReplyTo: \"Your reply to \",  // MISSING\n+    YourChatMsg: \"Your chat message: \",   // MISSING\n+    YourDraft: \"Your draft\",    // MISSING\n+    YourEdits: \"Your edits: \",   // MISSING\n+    YourProgrNoteC: \"Your progress note:\",  // MISSING\n+    aProgrNote: \"a progress note: \",  // MISSING\n+\n+    UnfinEdits: \"Unfinished edits\",  // MISSING\n+    ResumeEdting: \"Resume editing\",  // MISSING\n+    DelDraft: \"Delete draft\",   // MISSING\n \n     ClickViewEdits: \"Click to view old edits\",\n \n@@ -1207,6 +1219,7 @@ var t_sv_SE: TalkyardTranslations = t = {\n     LoadingDraftDots: \"Loading any draft...\",\n     DraftUnchanged: \"Unchanged.\",\n     CannotSaveDraftC: \"Cannot save draft:\",\n+    DraftSavedBrwsr: \"Draft saved, in browser.\",   // MISSING\n     DraftSaved: (nr: string | number) => `Draft ${nr} saved.`,\n     DraftDeleted: (nr: string | number) => `Draft ${nr} deleted.`,\n     WillSaveDraft: (nr: string | number) => `Will save draft ${nr} ...`,"
+    }
+  ]
+}
