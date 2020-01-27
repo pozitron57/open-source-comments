@@ -1,0 +1,98 @@
+{
+  "sha": "22a88c579faf41407c8955fa959d7ba7f5a897ce",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjIyYTg4YzU3OWZhZjQxNDA3Yzg5NTVmYTk1OWQ3YmE3ZjVhODk3Y2U=",
+  "commit": {
+    "author": {
+      "name": "Artur Mullakhmetov",
+      "email": "mullakhmetov.art@gmail.com",
+      "date": "2020-01-26T09:51:23Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-01-26T17:35:17Z"
+    },
+    "message": "Fix unstable test\n\nMake comment consistent with code\nDecrease timeout param to prevent unwanted 200 response",
+    "tree": {
+      "sha": "7a93b1fba994c0420bf853f128b5e6f84ba6df51",
+      "url": "https://api.github.com/repos/umputun/remark/git/trees/7a93b1fba994c0420bf853f128b5e6f84ba6df51"
+    },
+    "url": "https://api.github.com/repos/umputun/remark/git/commits/22a88c579faf41407c8955fa959d7ba7f5a897ce",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark/commits/22a88c579faf41407c8955fa959d7ba7f5a897ce",
+  "html_url": "https://github.com/umputun/remark/commit/22a88c579faf41407c8955fa959d7ba7f5a897ce",
+  "comments_url": "https://api.github.com/repos/umputun/remark/commits/22a88c579faf41407c8955fa959d7ba7f5a897ce/comments",
+  "author": {
+    "login": "mullakhmetov",
+    "id": 5443029,
+    "node_id": "MDQ6VXNlcjU0NDMwMjk=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5443029?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mullakhmetov",
+    "html_url": "https://github.com/mullakhmetov",
+    "followers_url": "https://api.github.com/users/mullakhmetov/followers",
+    "following_url": "https://api.github.com/users/mullakhmetov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mullakhmetov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mullakhmetov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mullakhmetov/subscriptions",
+    "organizations_url": "https://api.github.com/users/mullakhmetov/orgs",
+    "repos_url": "https://api.github.com/users/mullakhmetov/repos",
+    "events_url": "https://api.github.com/users/mullakhmetov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mullakhmetov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dcab5a16223660bb7038a99a4fcb5120ed8f235b",
+      "url": "https://api.github.com/repos/umputun/remark/commits/dcab5a16223660bb7038a99a4fcb5120ed8f235b",
+      "html_url": "https://github.com/umputun/remark/commit/dcab5a16223660bb7038a99a4fcb5120ed8f235b"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 5,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "196f764afdbd00b36591eb3582a353a6e97e0bac",
+      "filename": "backend/app/rest/api/migrator_test.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark/blob/22a88c579faf41407c8955fa959d7ba7f5a897ce/backend/app/rest/api/migrator_test.go",
+      "raw_url": "https://github.com/umputun/remark/raw/22a88c579faf41407c8955fa959d7ba7f5a897ce/backend/app/rest/api/migrator_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark/contents/backend/app/rest/api/migrator_test.go?ref=22a88c579faf41407c8955fa959d7ba7f5a897ce",
+      "patch": "@@ -168,11 +168,12 @@ func TestMigrator_ImportWaitExpired(t *testing.T) {\n \"picture\":\"/api/v1/avatar/remark.image\",\"profile\":\"https://remark42.com\",\"admin\":true,\n \"ip\":\"ae12fe3b5f129b5cc4cdd2b136b7b7947c4d2741\"},\"locator\":{\"site\":\"remark42\",\"url\":\"https://radio-t.com/blah1\"},\"score\":0,\n \"votes\":{},\"time\":\"2018-04-30T01:37:00.849053725-05:00\"}`\n-\trecs := []string{}\n-\tfor i := 0; i < 50; i++ {\n+\tnRecs := 50\n+\trecs := make([]string, 0, nRecs)\n+\tfor i := 0; i < nRecs; i++ {\n \t\trecs = append(recs, fmt.Sprintf(tmpl, i))\n \t}\n-\tr := strings.NewReader(`{\"version\":1}` + strings.Join(recs, \"\\n\")) // reader with 10k records\n+\tr := strings.NewReader(`{\"version\":1}` + strings.Join(recs, \"\\n\")) // reader with `nRecs` records\n \tclient := &http.Client{Timeout: 5 * time.Second}\n \treq, err := http.NewRequest(\"POST\", ts.URL+\"/api/v1/admin/import?site=remark42&provider=native\", r)\n \trequire.NoError(t, err)\n@@ -183,7 +184,7 @@ func TestMigrator_ImportWaitExpired(t *testing.T) {\n \tassert.Equal(t, http.StatusAccepted, resp.StatusCode)\n \n \tclient = &http.Client{Timeout: 5 * time.Second}\n-\treq, err = http.NewRequest(\"GET\", ts.URL+\"/api/v1/admin/wait?site=remark42&timeout=10ms\", nil)\n+\treq, err = http.NewRequest(\"GET\", ts.URL+\"/api/v1/admin/wait?site=remark42&timeout=5ms\", nil)\n \trequire.NoError(t, err)\n \treq.SetBasicAuth(\"admin\", \"password\")\n \tassert.NoError(t, err)"
+    }
+  ]
+}
