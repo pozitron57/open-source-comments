@@ -1,0 +1,134 @@
+{
+  "sha": "e43a3ddf7528c11e69561fe006fd436025726246",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZTQzYTNkZGY3NTI4YzExZTY5NTYxZmUwMDZmZDQzNjAyNTcyNjI0Ng==",
+  "commit": {
+    "author": {
+      "name": "Dan Zajdband",
+      "email": "dan@accelrobotics.com",
+      "date": "2020-01-28T15:58:20Z"
+    },
+    "committer": {
+      "name": "Kim Gardner",
+      "email": "kgardnr@gmail.com",
+      "date": "2020-01-28T15:58:20Z"
+    },
+    "message": "Spanish translation fixes (#2812)",
+    "tree": {
+      "sha": "76d8d8ee6978d1928837597f9acfea92e012c541",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/76d8d8ee6978d1928837597f9acfea92e012c541"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/e43a3ddf7528c11e69561fe006fd436025726246",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/e43a3ddf7528c11e69561fe006fd436025726246",
+  "html_url": "https://github.com/coralproject/talk/commit/e43a3ddf7528c11e69561fe006fd436025726246",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/e43a3ddf7528c11e69561fe006fd436025726246/comments",
+  "author": {
+    "login": "impronunciable",
+    "id": 165799,
+    "node_id": "MDQ6VXNlcjE2NTc5OQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/165799?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/impronunciable",
+    "html_url": "https://github.com/impronunciable",
+    "followers_url": "https://api.github.com/users/impronunciable/followers",
+    "following_url": "https://api.github.com/users/impronunciable/following{/other_user}",
+    "gists_url": "https://api.github.com/users/impronunciable/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/impronunciable/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/impronunciable/subscriptions",
+    "organizations_url": "https://api.github.com/users/impronunciable/orgs",
+    "repos_url": "https://api.github.com/users/impronunciable/repos",
+    "events_url": "https://api.github.com/users/impronunciable/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/impronunciable/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kgardnr",
+    "id": 1077300,
+    "node_id": "MDQ6VXNlcjEwNzczMDA=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1077300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kgardnr",
+    "html_url": "https://github.com/kgardnr",
+    "followers_url": "https://api.github.com/users/kgardnr/followers",
+    "following_url": "https://api.github.com/users/kgardnr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kgardnr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kgardnr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kgardnr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kgardnr/orgs",
+    "repos_url": "https://api.github.com/users/kgardnr/repos",
+    "events_url": "https://api.github.com/users/kgardnr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kgardnr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6364eced63797e307ce641f8ca9ae861d34f5eaa",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/6364eced63797e307ce641f8ca9ae861d34f5eaa",
+      "html_url": "https://github.com/coralproject/talk/commit/6364eced63797e307ce641f8ca9ae861d34f5eaa"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 8,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "97a86d6cf87e0f5aba6ac274b9c4a7d487d1a820",
+      "filename": "src/locales/es/account.ftl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/account.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/account.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/es/account.ftl?ref=e43a3ddf7528c11e69561fe006fd436025726246",
+      "patch": "@@ -9,7 +9,7 @@ resetPassword-resetPassword = Restablecer la contraseña\n resetPassword-resetYourPassword = Restablecer tu contraseña\n resetPassword-pleaseEnterNewPassword =\n   Por favor, introduzca una nueva contraseña para acceder a su cuenta.\n-  Asegúrese de que sea único y asegúrese de mantenerlo seguro.\n+  Asegúrese de que sea única y asegúrese de mantenerlo seguro.\n resetPassword-passwordLabel = Contraseña\n resetPassword-passwordDescription = Debe tener al menos {$minLength} caracteres\n resetPassword-passwordTextField ="
+    },
+    {
+      "sha": "8f4cfff8302deda6a0d6110dcfb56961bb9016dc",
+      "filename": "src/locales/es/auth.ftl",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/auth.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/auth.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/es/auth.ftl?ref=e43a3ddf7528c11e69561fe006fd436025726246",
+      "patch": "@@ -11,7 +11,7 @@ general-emailAddressLabel = Correo electrónico\n general-emailAddressTextField =\n   .placeholder = Correo electrónico\n general-passwordLabel = Contraseña\n-general-passwordDescription = Must be at least {$minLength} characters\n+general-passwordDescription = Tiene que tener al menos {$minLength} caracteres\n general-passwordTextField =\n   .placeholder = Contraseña\n general-confirmPasswordLabel = Confirmar contraseña\n@@ -71,7 +71,7 @@ forgotPassword-enterEmailAndGetALink =\n \n ### Check Email\n \n-forgotPassword-checkEmail-checkEmailHeader = Check Your Email\n+forgotPassword-checkEmail-checkEmailHeader = Revisa tu Correo\n forgotPassword-checkEmail-receiveEmail =\n   Si hay una cuenta asociada con <email></email>,\n   recibirá un correo electrónico con un enlace para crear una nueva contraseña.\n@@ -86,7 +86,7 @@ resetPassword-resetPasswordButton = Restablecer la contraseña\n \n createUsername-createUsernameHeader = Crear nombre de usuario\n createUsername-whatItIs =\n-  Your username is an identifier that will appear on all of your comments.\n+  Tu nombre de usuario es un identificador que aparecerá en todos sus comentarios.\n createUsername-createUsernameButton = Crear nombre de usuario\n \n ## Add Email Address"
+    },
+    {
+      "sha": "03180eee718b1341e64fbfc88832808eeaed20dc",
+      "filename": "src/locales/es/framework.ftl",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/framework.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/framework.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/es/framework.ftl?ref=e43a3ddf7528c11e69561fe006fd436025726246",
+      "patch": "@@ -25,8 +25,8 @@ framework-timeago =\n           *[other] horas\n         }\n         [day] { $value ->\n-          [1] dia\n-          *[other] dias\n+          [1] día\n+          *[other] días\n         }\n         [week] { $value ->\n           [1] semana\n@@ -40,6 +40,6 @@ framework-timeago =\n           [1] año\n           *[other] años\n         }\n-        *[other] unknown unit\n+        *[other] unidad desconocida\n       }\n   }"
+    },
+    {
+      "sha": "8510c1b38c302aae2e93b848f75028d3e4a5c9f5",
+      "filename": "src/locales/es/stream.ftl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/stream.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/e43a3ddf7528c11e69561fe006fd436025726246/src/locales/es/stream.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/es/stream.ftl?ref=e43a3ddf7528c11e69561fe006fd436025726246",
+      "patch": "@@ -4,7 +4,7 @@\n \n general-userBoxUnauthenticated-joinTheConversation = Unirse a la conversación\n general-userBoxUnauthenticated-signIn = Iniciar sesión\n-general-userBoxUnauthenticated-register = Registrar\n+general-userBoxUnauthenticated-register = Registrarse\n \n general-userBoxAuthenticated-signedInAs =\n   Registrado como <Username></Username>."
+    }
+  ]
+}
