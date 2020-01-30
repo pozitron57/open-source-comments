@@ -1,0 +1,110 @@
+{
+  "sha": "62b9a432bd90f773ef95ceed31cd294808853a78",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2MmI5YTQzMmJkOTBmNzczZWY5NWNlZWQzMWNkMjk0ODA4ODUzYTc4",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2020-01-30T16:46:33Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-01-30T16:46:33Z"
+    },
+    "message": "FIX: Import sub-sub-categories (#8810)\n\nThis should make the importer more resilient to incomplete or damaged\r\nbackups. It will disable some validations and attempt to automatically\r\nrepair category permissions before importing.",
+    "tree": {
+      "sha": "d1e55a021cf2141c6c252ee1415e3db9e3f7e1d0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d1e55a021cf2141c6c252ee1415e3db9e3f7e1d0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/62b9a432bd90f773ef95ceed31cd294808853a78",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeMwhpCRBK7hj4Ov3rIwAAdHIIACbbgHJDirsR8mNrS2wjZgyW\nIreB/ICHjbqyJD17sbqPj/O274VkFanLZxEr7DNT4bJpF/QTwjrOD3nakzM9rKoC\ncGYzkaCONVKeEqfvB0WP0LZ+LYbbWRUitWGjtllDRYkXbK03dHY4s1nmUeWuKXWT\nH85KibGeIa+m2G49QpxFwocvYxa5QCWUJxSCvzscAx6ZkpTVlfAtNuYQjNA9TcqU\nx6ccGchqOXEhAyRykakddT8Z3v+qOQN2DDQ1MpQGLA8StjoKnD/FndC1z0g0l4aZ\n74PVNpLOvAw3J4LtoR2tzOdchGzLbfdQ3vI1wQPGcuvYavl929NSgSMzl8NoCzk=\n=LltD\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree d1e55a021cf2141c6c252ee1415e3db9e3f7e1d0\nparent e470b27b4159956cc82d55193256634e78ef1810\nauthor Dan Ungureanu <dan@ungureanu.me> 1580402793 +0200\ncommitter GitHub <noreply@github.com> 1580402793 +0200\n\nFIX: Import sub-sub-categories (#8810)\n\nThis should make the importer more resilient to incomplete or damaged\r\nbackups. It will disable some validations and attempt to automatically\r\nrepair category permissions before importing."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/62b9a432bd90f773ef95ceed31cd294808853a78",
+  "html_url": "https://github.com/discourse/discourse/commit/62b9a432bd90f773ef95ceed31cd294808853a78",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/62b9a432bd90f773ef95ceed31cd294808853a78/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e470b27b4159956cc82d55193256634e78ef1810",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e470b27b4159956cc82d55193256634e78ef1810",
+      "html_url": "https://github.com/discourse/discourse/commit/e470b27b4159956cc82d55193256634e78ef1810"
+    }
+  ],
+  "stats": {
+    "total": 121,
+    "additions": 107,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "a800b45d9b98f0a7c40e0ec8f7630fe0e211ed33",
+      "filename": "lib/import_export/importer.rb",
+      "status": "modified",
+      "additions": 71,
+      "deletions": 4,
+      "changes": 75,
+      "blob_url": "https://github.com/discourse/discourse/blob/62b9a432bd90f773ef95ceed31cd294808853a78/lib/import_export/importer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/62b9a432bd90f773ef95ceed31cd294808853a78/lib/import_export/importer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/import_export/importer.rb?ref=62b9a432bd90f773ef95ceed31cd294808853a78",
+      "patch": "@@ -80,8 +80,17 @@ def import_categories\n       existing_categories = CategoryCustomField.where(\"name = 'import_id' AND value IN (?)\", import_ids).select(:category_id, :value).to_a\n       existing_category_ids = existing_categories.pluck(:value)\n \n+      levels = category_levels\n+      max_level = levels.values.max\n+      if SiteSetting.max_category_nesting < max_level\n+        puts \"Setting max_category_nesting to #{max_level}...\"\n+        SiteSetting.max_category_nesting = max_level\n+      end\n+\n+      fix_permissions\n+\n       @categories.reject! { |c| existing_category_ids.include? c[:id].to_s }\n-      @categories.sort_by! { |c| c[:parent_category_id].presence || 0 }\n+      @categories.sort_by! { |c| levels[c[:id]] || 0 }\n \n       @categories.each do |cat_attrs|\n         begin\n@@ -93,18 +102,19 @@ def import_categories\n           category.user_id = new_user_id(cat_attrs[:user_id])\n           import_id = \"#{id}#{import_source}\"\n           category.custom_fields[\"import_id\"] = import_id\n-          category.permissions = permissions.present? ? permissions : { \"everyone\" => CategoryGroup.permission_types[:full] }\n+          category.permissions = permissions\n           category.save!\n           existing_categories << { category_id: category.id, value: import_id }\n \n           if cat_attrs[:description].present?\n             post = category.topic.ordered_posts.first\n             post.raw = cat_attrs[:description]\n+            post.skip_validation = true\n             post.save!\n             post.rebake!\n           end\n-        rescue\n-          next\n+        rescue => e\n+          puts \"Failed to import category (ID = #{id}, name = #{cat_attrs[:name]}): #{e.message}\"\n         end\n       end\n \n@@ -173,5 +183,62 @@ def import_source\n       @_import_source ||= \"#{ENV['IMPORT_SOURCE'] || ''}\"\n     end\n \n+    def category_levels\n+      @levels ||= begin\n+        levels = {}\n+\n+        # Incomplete backups may lack definitions for some parent categories\n+        # which would cause an infinite loop below.\n+        parent_ids = @categories.map { |category| category[:parent_category_id] }.uniq\n+        category_ids = @categories.map { |category| category[:id] }.uniq\n+        (parent_ids - category_ids).each { |id| levels[id] = 0 }\n+\n+        loop do\n+          changed = false\n+\n+          @categories.each do |category|\n+            if !levels[category[:id]]\n+              if !category[:parent_category_id]\n+                levels[category[:id]] = 1\n+              elsif levels[category[:parent_category_id]]\n+                levels[category[:id]] = levels[category[:parent_category_id]] + 1\n+              end\n+\n+              changed = true\n+            end\n+          end\n+\n+          break if !changed\n+        end\n+\n+        levels\n+      end\n+    end\n+\n+    def fix_permissions\n+      categories_by_id = @categories.to_h { |category| [category[:id], category] }\n+\n+      @categories.each do |category|\n+        if category[:permissions_params].blank?\n+          category[:permissions_params] = { \"everyone\" => CategoryGroup.permission_types[:full] }\n+        end\n+      end\n+\n+      max_level = category_levels.values.max\n+      max_level.times do\n+        @categories.each do |category|\n+          parent_category = categories_by_id[category[:parent_category_id]]\n+          next if !parent_category || !parent_category[:permissions_params] || parent_category[:permissions_params][:everyone]\n+\n+          parent_groups = parent_category[:permissions_params].map(&:first)\n+          child_groups = category[:permissions_params].map(&:first)\n+\n+          only_subcategory_groups = child_groups - parent_groups\n+          if only_subcategory_groups.present?\n+            parent_category[:permissions_params].merge!(category[:permissions_params].slice(*only_subcategory_groups))\n+          end\n+        end\n+      end\n+    end\n   end\n end"
+    },
+    {
+      "sha": "ea659e1191ee25f124c208334452a1d08f1cc0e8",
+      "filename": "spec/import_export/importer_spec.rb",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 10,
+      "changes": 46,
+      "blob_url": "https://github.com/discourse/discourse/blob/62b9a432bd90f773ef95ceed31cd294808853a78/spec/import_export/importer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/62b9a432bd90f773ef95ceed31cd294808853a78/spec/import_export/importer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/import_export/importer_spec.rb?ref=62b9a432bd90f773ef95ceed31cd294808853a78",
+      "patch": "@@ -33,17 +33,43 @@ def import(data)\n         .and change { User.count }.by(2)\n     end\n \n-    it 'categories and groups' do\n-      data = import_data.dup\n-      data[:topics] = nil\n-      data[:users] = nil\n+    context 'categories and groups' do\n+      it 'works' do\n+        data = import_data.dup\n+        data[:topics] = nil\n+        data[:users] = nil\n \n-      expect {\n-        import(data)\n-      }.to change { Category.count }.by(6)\n-        .and change { Group.count }.by(2)\n-        .and change { Topic.count }.by(6)\n-        .and change { User.count }.by(0)\n+        expect {\n+          import(data)\n+        }.to change { Category.count }.by(6)\n+          .and change { Group.count }.by(2)\n+          .and change { Topic.count }.by(6)\n+          .and change { User.count }.by(0)\n+      end\n+\n+      it 'works with sub-sub-categories' do\n+        data = import_data.dup\n+\n+        # 11 -> 10 -> 15\n+        data[:categories].find { |c| c[:id] == 10 }[:parent_category_id] = 11\n+        data[:categories].find { |c| c[:id] == 15 }[:parent_category_id] = 10\n+\n+        expect { import(data) }\n+          .to change { Category.count }.by(6)\n+          .and change { SiteSetting.max_category_nesting }.from(2).to(3)\n+      end\n+\n+      it 'fixes permissions' do\n+        data = import_data.dup\n+        data[:categories].find { |c| c[:id] == 10 }[:permissions_params] = { custom_group: 1 }\n+        data[:categories].find { |c| c[:id] == 15 }[:permissions_params] = { staff: 1 }\n+\n+        permissions = data[:categories].find { |c| c[:id] == 10 }[:permissions_params]\n+\n+        expect { import(data) }\n+          .to change { Category.count }.by(6)\n+          .and change { permissions[:staff] }.from(nil).to(1)\n+      end\n     end\n \n     it 'categories, groups and users' do"
+    }
+  ]
+}
