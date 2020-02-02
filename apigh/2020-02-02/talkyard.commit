@@ -1,0 +1,110 @@
+{
+  "sha": "ce823d8b51c0171f5bfd83c89fcac7534638a153",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6Y2U4MjNkOGI1MWMwMTcxZjViZmQ4M2M4OWZjYWM3NTM0NjM4YTE1Mw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-02T11:20:45Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-02T11:20:45Z"
+    },
+    "message": "Two small bug fixes, when no preview.",
+    "tree": {
+      "sha": "643dfa10bfd668fcc40445be71ca6d6b33c4840e",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/643dfa10bfd668fcc40445be71ca6d6b33c4840e"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/ce823d8b51c0171f5bfd83c89fcac7534638a153",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/ce823d8b51c0171f5bfd83c89fcac7534638a153",
+  "html_url": "https://github.com/debiki/talkyard/commit/ce823d8b51c0171f5bfd83c89fcac7534638a153",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/ce823d8b51c0171f5bfd83c89fcac7534638a153/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b17c5da1704b0371e0bf7ac26b99e7eb137a079f",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/b17c5da1704b0371e0bf7ac26b99e7eb137a079f",
+      "html_url": "https://github.com/debiki/talkyard/commit/b17c5da1704b0371e0bf7ac26b99e7eb137a079f"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 8,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "97fccabcf693d5140cffd910468852fa2f810ef9",
+      "filename": "client/app-editor/editor/editor.editor.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 7,
+      "blob_url": "https://github.com/debiki/talkyard/blob/ce823d8b51c0171f5bfd83c89fcac7534638a153/client/app-editor/editor/editor.editor.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/ce823d8b51c0171f5bfd83c89fcac7534638a153/client/app-editor/editor/editor.editor.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-editor/editor/editor.editor.ts?ref=ce823d8b51c0171f5bfd83c89fcac7534638a153",
+      "patch": "@@ -1877,6 +1877,7 @@ export const Editor = createFactory<any, EditorState>({\n         me_uiPrefs(me).inp !== UiPrefsIninePreviews.Skip &&\n         // If we're creating a new page, there's not any place to show an in-page preview.\n         !state.newForumTopicCategoryId;\n+\n     const previewTitleTagName = !thereIsAnInPagePreview ? 'span' : 'a';\n     const onPreviewTitleClick = !thereIsAnInPagePreview ? null : () => {\n       ReactActions.scrollToPreview({\n@@ -1888,8 +1889,10 @@ export const Editor = createFactory<any, EditorState>({\n     const previewTitle =\n         r.div({},\n           r[previewTitleTagName]({\n-              onMouseEnter: () => ReactActions.highlightPreview(true),\n-              onMouseLeave: () => ReactActions.highlightPreview(false),\n+              onMouseEnter: !thereIsAnInPagePreview ? null :\n+                  () => ReactActions.highlightPreview(true),\n+              onMouseLeave: !thereIsAnInPagePreview ? null :\n+                  () => ReactActions.highlightPreview(false),\n               onClick: onPreviewTitleClick },\n             t.e.PreviewC + (titleInput ? t.e.TitleExcl : '')));\n "
+    },
+    {
+      "sha": "457d6c934fea3ab11bd7e720e975662a83f5bd51",
+      "filename": "client/app-slim/ReactActions.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/ce823d8b51c0171f5bfd83c89fcac7534638a153/client/app-slim/ReactActions.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/ce823d8b51c0171f5bfd83c89fcac7534638a153/client/app-slim/ReactActions.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/ReactActions.ts?ref=ce823d8b51c0171f5bfd83c89fcac7534638a153",
+      "patch": "@@ -870,6 +870,7 @@ export function onEditorOpen(ps: EditorPatch, onDone?: () => void) {\n \n \n let origPostBeforeEdits: Post | undefined;\n+let lastFlashPostNr: PostNr | undefined;\n \n \n export function showEditsPreview(ps: ShowEditsPreviewParams) {\n@@ -888,7 +889,8 @@ export function showEditsPreview(ps: ShowEditsPreviewParams) {\n   const me: Myself = store.me;\n \n   if (me_uiPrefs(me).inp === UiPrefsIninePreviews.Skip) {\n-    if (ps.replyToNr) {\n+    if (ps.replyToNr && ps.replyToNr !== lastFlashPostNr) {\n+      lastFlashPostNr = ps.replyToNr;\n       flashPostNrIfThere(ps.replyToNr);\n     }\n     return;"
+    }
+  ]
+}
