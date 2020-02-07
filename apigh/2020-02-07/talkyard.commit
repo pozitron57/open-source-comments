@@ -1,0 +1,338 @@
+{
+  "sha": "6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NmJkMTEyOGU0ZWE1MDMwZGJlNmQyOWU5ZjUzYjQxNmIzNjVlNTc3Nw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-03T09:42:37Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-03T18:09:28Z"
+    },
+    "message": "Hide editor preview. \"Replying to:\" text bug fix. Tweak preview color\n\nAnd fix corner case SID and main-window-closed error messages.\nAnd, eitor text \"Add a comment:\".",
+    "tree": {
+      "sha": "e69c03e3a760f5967449e02c164a91cd493dfb5c",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/e69c03e3a760f5967449e02c164a91cd493dfb5c"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+  "html_url": "https://github.com/debiki/talkyard/commit/6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ce823d8b51c0171f5bfd83c89fcac7534638a153",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/ce823d8b51c0171f5bfd83c89fcac7534638a153",
+      "html_url": "https://github.com/debiki/talkyard/commit/ce823d8b51c0171f5bfd83c89fcac7534638a153"
+    }
+  ],
+  "stats": {
+    "total": 316,
+    "additions": 256,
+    "deletions": 60
+  },
+  "files": [
+    {
+      "sha": "98d60bf36ede9e0a2c05bf62bfc0355c00c918c0",
+      "filename": "app/ed/server/security/package.scala",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/app/ed/server/security/package.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/app/ed/server/security/package.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/ed/server/security/package.scala?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -294,7 +294,12 @@ class EdSecurity(globals: Globals) {\n           case s: SidOk => (s, xsrfOk, Nil)\n           case SidAbsent => (SidAbsent, xsrfOk, Nil)\n           case s: SidExpired => (s, xsrfOk, Nil)\n-          case _ => throwForbidden(\"TyEBADSID\", \"Bad SID\")\n+          case _ =>\n+            throw ResultException(\n+              ForbiddenResult(\"TyEBADSID\", \"Bad session ID\",\n+                  \"You can try again — I just deleted the bad session ID.\")\n+                .discardingCookies(\n+                  DiscardingSecureCookie(SessionIdCookieName)))\n         }\n       }\n "
+    },
+    {
+      "sha": "8b876bca2a3c4b6bcaa44ad3b9756ba320170ed3",
+      "filename": "client/app-editor/editor/editor.editor.ts",
+      "status": "modified",
+      "additions": 60,
+      "deletions": 28,
+      "changes": 88,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-editor/editor/editor.editor.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-editor/editor/editor.editor.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-editor/editor/editor.editor.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -1508,6 +1508,7 @@ export const Editor = createFactory<any, EditorState>({\n     const editorsPageType: PageType | undefined = editorsPage?.pageRole;\n \n     const me: Myself = store.me;\n+    const myUiPrefs: UiPrefs = me_uiPrefs(me);\n     let settings: SettingsVisibleClientSide = store.settings;\n     const isPrivateGroup = page_isPrivateGroup(state.newPageRole);\n \n@@ -1617,11 +1618,24 @@ export const Editor = createFactory<any, EditorState>({\n     const replyToPostNrs = state.replyToPostNrs;\n     const isOrigPostReply = _.isEqual([BodyNr], replyToPostNrs);\n     const repliesToNotOrigPost = replyToPostNrs.length && !isOrigPostReply;\n+\n+    // The page might not yet have been created — it's just {} before it gets\n+    // saved and lazy-created [EMBED0PG]. However, in such a situation, we're inside\n+    // the editor iframe, at the blog (not at the Talkyard site).\n+    const isBlogPostReply = isOrigPostReply && (\n+        // Might not work, at the blog:\n+        editorsPage?.pageRole === PageRole.EmbeddedComments ||\n+        // Works, but only at the blog:\n+        eds.isInEmbeddedEditor);\n+\n     // ----- Delete these?:\n     const isChatComment = replyToPostNrs.length === 1 && replyToPostNrs[0] === NoPostId;\n     const isMindMapNode = replyToPostNrs.length === 1 && editorsPage.pageRole === PageRole.MindMap;\n     // --------------------\n \n+\n+    // ----- \"Reply to\" or \"Editing\" text\n+\n     let doingWhatInfo: any;\n     if (_.isNumber(editingPostNr)) {\n       doingWhatInfo =\n@@ -1684,22 +1698,22 @@ export const Editor = createFactory<any, EditorState>({\n     else if (state.anyPostType === PostType.BottomComment && !repliesToNotOrigPost) {\n       doingWhatInfo = t.e.AppendComment;\n     }\n+    else if (isBlogPostReply) {\n+      // Blog post author name is unknown. (There's an orig post by System,\n+      // but \"Replying to @system\" would be incorrect.)\n+      doingWhatInfo = t.e.AddCommentC;\n+    }\n     else if (replyToPostNrs.length > 0) {\n       doingWhatInfo =\n         r.span({},\n           t.e.ReplyTo,\n           _.filter(replyToPostNrs, (id) => id !== NoPostId).map((replToPostNr, index) => {\n             // If replying to a blog post, then, it got auto created by the System\n             // user. Don't show \"Reply to System\".\n-            const isReplyingToBlogPost = eds.isInEmbeddedEditor && replToPostNr === BodyNr;\n             let replToPost: Post | undefined;\n \n             let replToAuthor: BriefUser | undefined;\n-            if (isReplyingToBlogPost) {\n-              // Blog post author name is unknown. (There's an orig post by System,\n-              // but \"Replying to @system\" would be incorect.)\n-            }\n-            else if (eds.isInEmbeddedEditor) {\n+            if (eds.isInEmbeddedEditor) {\n               // Here in the embedded editor, we haven't loaded any page or author names\n               // — get them from the main iframe instead (the one with all the comments).\n               // This is a new and a bit odd approach? (Jan 2020.) Let's wrap in try (although\n@@ -1869,37 +1883,53 @@ export const Editor = createFactory<any, EditorState>({\n \n     // ----- Preview\n \n-    const previewHelp =\n-        r.div({ className: 'dw-preview-help' },\n-          help.HelpMessageBox({ message: previewHelpMessage }));\n-\n     const thereIsAnInPagePreview =\n         me_uiPrefs(me).inp !== UiPrefsIninePreviews.Skip &&\n         // If we're creating a new page, there's not any place to show an in-page preview.\n         !state.newForumTopicCategoryId;\n \n+    // Don't show any in-editor preview, if we're showing an in-page preview,\n+    // and hasn't configured double previews (in editor too).\n+    const skipInEditorPreview =\n+        thereIsAnInPagePreview &&\n+        myUiPrefs.inp !== UiPrefsIninePreviews.Double &&\n+        // If the editor is full screen (i.e. textarea and preview split screen),\n+        // then show an in-editor preview as usual.\n+        !(state.showMaximized || state.splitHorizontally || state.showOnlyPreview);\n+\n+    const previewHelp = skipInEditorPreview ? null :\n+        r.div({ className: 'dw-preview-help' },\n+          help.HelpMessageBox({ message: previewHelpMessage }));\n+\n     const previewTitleTagName = !thereIsAnInPagePreview ? 'span' : 'a';\n-    const onPreviewTitleClick = !thereIsAnInPagePreview ? null : () => {\n-      ReactActions.scrollToPreview({\n-        isEditingBody: state.editingPostNr === BodyNr,\n-        isChat: page_isChat(editorsPageType),\n-      });\n+\n+    const scrollToPreviewProps = !thereIsAnInPagePreview ? {} : {\n+      onMouseEnter: () => ReactActions.highlightPreview(true),\n+      onMouseLeave: () => ReactActions.highlightPreview(false),\n+      onClick: () => {\n+        ReactActions.scrollToPreview({\n+          isEditingBody: state.editingPostNr === BodyNr,\n+          isChat: page_isChat(editorsPageType),\n+        });\n+      },\n     };\n \n-    const previewTitle =\n+    const previewTitle = skipInEditorPreview ? null :\n         r.div({},\n-          r[previewTitleTagName]({\n-              onMouseEnter: !thereIsAnInPagePreview ? null :\n-                  () => ReactActions.highlightPreview(true),\n-              onMouseLeave: !thereIsAnInPagePreview ? null :\n-                  () => ReactActions.highlightPreview(false),\n-              onClick: onPreviewTitleClick },\n+          r[previewTitleTagName](scrollToPreviewProps,\n             t.e.PreviewC + (titleInput ? t.e.TitleExcl : '')));\n \n+    // If no in-editor preview, instead well include a \"Scroll to preview\" button\n+    // above the textarea.\n+    const scrollToPreviewBtn = !skipInEditorPreview || !thereIsAnInPagePreview ? null :\n+        r.a({ ...scrollToPreviewProps, className: 's_E_ScrPrvwB' }, t.ShowPreview);\n+\n+    let editorClasses = skipInEditorPreview ? 's_E-NoInEdPrvw' : 's_E-WithInEdPrvw';\n+\n \n     // ----- Editor size\n \n-    let editorClasses = eds.isInEmbeddedEditor ? '' : 'editor-box-shadow';\n+    editorClasses += eds.isInEmbeddedEditor ? '' : ' editor-box-shadow';\n     editorClasses += state.showMaximized ? ' s_E-Max' : '';\n     editorClasses += state.splitHorizontally ? ' s_E-SplitHz' : '';\n     editorClasses += state.showMinimized ? ' s_E-Min' : (\n@@ -1940,6 +1970,7 @@ export const Editor = createFactory<any, EditorState>({\n                 r.div({ className: 's_E_DoingRow' },\n                   r.span({ className: 's_E_DoingWhat' }, doingWhatInfo),\n                   showGuidelinesBtn,\n+                  scrollToPreviewBtn,\n                   draftStatusText),\n                 r.div({ className: 'esEdtr_titleEtc' },\n                   // COULD use https://github.com/marcj/css-element-queries here so that\n@@ -1951,11 +1982,12 @@ export const Editor = createFactory<any, EditorState>({\n                     pageRoleDropdown)),\n                 textareaButtons,\n                 textarea)),\n-            r.div({ className: 'preview-area', style: previewStyles },\n-              previewTitle,\n-              previewHelp,\n-              r.div({ className: 'preview', id: 't_E_Preview', ref: 'preview',\n-                  dangerouslySetInnerHTML: { __html: state.safePreviewHtml }})),\n+             skipInEditorPreview ? null :\n+               r.div({ className: 'preview-area', style: previewStyles },\n+                previewTitle,\n+                previewHelp,\n+                r.div({ className: 'preview', id: 't_E_Preview', ref: 'preview',\n+                    dangerouslySetInnerHTML: { __html: state.safePreviewHtml }})),\n             r.div({ className: 'submit-cancel-btns' },\n               PrimaryButton({ onClick: this.onSaveClick, tabIndex: 1, className: 'e_E_SaveB' },\n                 saveButtonTitle),"
+    },
+    {
+      "sha": "ee2781eda77474b347dc494902b28a4c38b314c5",
+      "filename": "client/app-editor/editor/editor.styl",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 3,
+      "changes": 40,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-editor/editor/editor.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-editor/editor/editor.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-editor/editor/editor.styl?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -1,5 +1,5 @@\n \n-$spaceForButtons = 45px;\n+$spaceForButtons = 46px;\n $showPreviewMinWidth = 900px;\n $spacyButtonsMinWidth = 450px;\n $spacyYMinHeight = 400px;\n@@ -113,6 +113,40 @@ $spacyYMinHeight = 400px;\n     font-weight: bold;\n     color: hsl($uiHue, 100%, 35%);\n \n+$scrollPreviewButtonPaddingTop = 6px;\n+\n+#debiki-editor-controller.s_E-NoInEdPrvw\n+  // No in-editor preview — then, there's a Show-preview button instead that\n+  // scrolls to an in-page preview. Align the doing-what (e.g. \"Reply to:\") text\n+  // with that button.\n+  .s_E_DoingWhat,\n+  .icon-info-circled\n+    padding-top: $scrollPreviewButtonPaddingTop;\n+  .s_DfSts\n+    // Skip flex-position, it'd get placed \"far away\" to the right, hard to see,\n+    // now when the textarea is so wide (100%, no preview to the right).\n+    margin-left: 33px;\n+    padding-top: $scrollPreviewButtonPaddingTop;\n+\n+  // Also, there's more blank space above, because of the large \"Show preview\" button,\n+  // so can reduce 'top' from 12px (EDABSTOP) to this:\n+  // And, sice no preview, set width 100% (instead of 50%).\n+  .editor-area\n+    top: 8px;\n+    width: 100%;\n+  // And add a bit more padding, looks less claustrophobic.\n+  #editor-after-borders\n+    left: 21px;\n+    right: 21px;\n+\n+.s_E_ScrPrvwB\n+    margin: 0 0 5px 30px;\n+    background: white;\n+    color: #222;\n+    padding: $scrollPreviewButtonPaddingTop 12px;\n+    cursor: pointer;\n+    text-decoration: none;\n+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 50%);\n \n #debiki-editor-controller\n   position: fixed !important; // !important so jQuery.resizable() won't overwrite\n@@ -221,10 +255,10 @@ $spacyYMinHeight = 400px;\n     bottom: 0;\n     left: 15px;\n \n-  .editor-area\n+  .editor-area  // (EDABSTOP)\n     width: 50%\n     position: absolute\n-    top: 12px\n+    top: 12px;\n     bottom: $spaceForButtons - 4;\n     @media (min-height: $spacyYMinHeight)\n       bottom: $spaceForButtons;"
+    },
+    {
+      "sha": "724dd12c946bacc8f7c3b0d7af63a2a98977548f",
+      "filename": "client/app-slim/ReactActions.ts",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/ReactActions.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/ReactActions.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/ReactActions.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -477,9 +477,23 @@ export function scrollAndShowPost(postOrNr: Post | PostNr, anyShowPostOpts?: Sho\n     marginTop += 75;\n   }\n   showPostOpts.marginTop = marginTop;\n+\n   // Try to not scroll so much, that can be confusing; use fairly small margins by default.\n   showPostOpts.marginBottom = showPostOpts.marginBottom ?? 50;\n \n+  // ----- Dupl code [0396AKTSSJ46]\n+  let editorHeight = 0;\n+  if (eds.isInEmbeddedCommentsIframe) {\n+    try {\n+      editorHeight = window.parent.frames['edEditor'].innerHeight || 0;\n+    }\n+    catch (ex) {\n+      console.warn(\"Error reading editor iframe height [TyE603KSNJ507]\", ex);\n+    }\n+  }\n+  // ----- /Dupl code\n+  showPostOpts.marginBottom += editorHeight;\n+\n   ReactDispatcher.handleViewAction({\n     actionType: actionTypes.ShowPost,\n     postNr: post.nr,\n@@ -993,6 +1007,7 @@ export function scrollToPreview(ps: {\n   const isReplyingToOp = false; // todo\n   const marginTop = ps.isEditingBody || isReplyingToOp || ps.isChat ? 110 : 50;\n \n+  // ----- Dupl code [0396AKTSSJ46]\n   // If we're in an embedded comments iframe, then, there's another iframe for the\n   // editor. Then scroll a bit more, so that other iframe won't occlude the preview.\n   let editorHeight = ps.editorIframeHeightPx || 0;\n@@ -1008,6 +1023,7 @@ export function scrollToPreview(ps: {\n       console.warn(\"Error reading editor iframe height [TyE3062RKP4]\", ex);\n     }\n   }\n+  // ----- /Dupl code\n \n   // Or, if we're in a chat, there's a chat text box at the bottom, on top of\n   // the chat messages."
+    },
+    {
+      "sha": "1c69d20a36a05b379bf5ac781f3e5d6fd55f6620",
+      "filename": "client/app-slim/login/login-if-needed.ts",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 3,
+      "changes": 15,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/login/login-if-needed.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/login/login-if-needed.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/login/login-if-needed.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -197,9 +197,18 @@ export function continueAfterLogin(anyReturnToUrl?: string) {\n           `No weak session:  ${JSON.stringify(typs)}  [TyE50286KT]`);\n       // @endif\n \n-      window.opener['debiki'].internal.handleLoginResponse({ status: 'LoginOk' });\n-      // This should be a login popup. Close the whole popup window.\n-      close();\n+      // We should be a login popup.\n+      if (!window.opener) {\n+        // The user closed the main window, which opened this popup?\n+        pagedialogs.getServerErrorDialog().openForBrowserError(\n+          \"You closed the main browser window, which we were going to \" +\n+            \"continue in?  [TyEOPNRGONE]\", { mayClose: false });\n+      }\n+      else {\n+        window.opener['debiki'].internal.handleLoginResponse({ status: 'LoginOk' });\n+        // Close this popup window — we'll continue in the main window.\n+        close();\n+      }\n     }\n   }\n   else {"
+    },
+    {
+      "sha": "2aa8940b223640dfbc6ab3a56a638b0993d1edf5",
+      "filename": "client/app-slim/model.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/model.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/model.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/model.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -1164,8 +1164,12 @@ interface UiPrefs {\n }\n \n const enum UiPrefsIninePreviews {\n-  Show = 1,\n+  // Only an in-page preview, no in editor preview\n+  Show = 1, // RENAME to Only?\n+  // No in-page preview\n   Skip = 2,\n+  // Both in-page and in-editor previews.\n+  Double = 3,\n }\n \n const enum UiPrefsForumButtons {"
+    },
+    {
+      "sha": "fdbb2d2032ea3bdc7a4d531544c5a62b7170c01f",
+      "filename": "client/app-slim/page-dialogs/server-error-dialog.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/page-dialogs/server-error-dialog.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/page-dialogs/server-error-dialog.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page-dialogs/server-error-dialog.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -55,8 +55,9 @@ const ServerErrorDialog = createComponent({\n     };\n   },\n \n-  openForBrowserError: function(errorMessage: string) {\n+  openForBrowserError: function(errorMessage: string, opts: { mayClose?: boolean } = {}) {\n     this.setState({\n+      ...opts,\n       isOpen: true,\n       error: null,\n       dialogMessagePrefix: '',\n@@ -70,6 +71,7 @@ const ServerErrorDialog = createComponent({\n       dialogMessagePrefix = '';\n     }\n     this.setState({\n+      mayClose: true,\n       isOpen: true,\n       error: error,\n       dialogMessagePrefix: dialogMessagePrefix,\n@@ -156,8 +158,9 @@ const ServerErrorDialog = createComponent({\n               r.div({ className: 'modal-body' },\n                 r.div({ style: { whiteSpace: 'pre-wrap', fontFamily: 'monospace' }}, message)),\n               r.div({ className: 'modal-footer' },\n-                PrimaryButton({ onClick: this.close, className: 'e_SED_CloseB' },\n-                  \"Close\")))))));\n+                this.state.mayClose === false ? null :\n+                  PrimaryButton({ onClick: this.close, className: 'e_SED_CloseB' },\n+                    \"Close\")))))));\n   }\n });\n "
+    },
+    {
+      "sha": "6086ebb0710b2c07d78567d04021d97d1b14011e",
+      "filename": "client/app-slim/page/discussion.ts",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 17,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/page/discussion.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/page/discussion.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/discussion.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -597,6 +597,8 @@ const RootPostAndComments = createComponent({\n       postBodyClass += ' dw-ar-p-bd';\n     }\n \n+    postClass += rootPost.isPreview ? ' s_P-Prvw' : '';\n+\n     const isThreadedDiscussion = page_isThreadedDiscussion(page);\n     const isFlatProgress = page_isFlatProgress(page);\n     // @ifdef DEBUG\n@@ -1207,20 +1209,25 @@ const Thread = createComponent({\n \n     const branchSidewaysClass = horizontalCss(childrenSideways);\n \n+    const isEditorsPage =\n+        store.editorsPageId === page.pageId ||\n+        // The embedded editor doesn't know about page ids (as of now). [EMBED0PG]\n+        page.pageRole === PageRole.EmbeddedComments;\n+\n     let replyingToElem;\n-    if (store.replyingToPostNr === post.nr &&\n-        store.editorsPageId === page.pageId) {\n+    if (store.replyingToPostNr === post.nr && isEditorsPage) {\n       replyingToElem = r.div({ className: 's_T_ReTo' },\n         r.span({ className: 's_T_ReTo_Ttl' },\n-          \"Replying to:\"),  // [305KTJ4]  I18N\n+          t.d.ReplyingToC),  // [305KTJ4]\n         me_uiPrefs(store.me).inp === UiPrefsIninePreviews.Skip ? null :\n           r.span({ className: 's_T_ReTo_Prvw' },\n-            \"Scroll to \",   // I18N\n+            t.d.ScrollToPrevw_1,\n             r.a({ className: 's_T_ReTo_Prvw_B',\n                 onMouseEnter: () => ReactActions.highlightPreview(true),\n                 onMouseLeave: () => ReactActions.highlightPreview(false),\n                 onClick: () => ReactActions.scrollToPreview({}) },\n-              \"preview \", r.span({ className: 's_T_ReTo_Prvw_B_Arw' }, \"⬇️\")),  // I18N\n+              t.d.ScrollToPrevw_2,\n+                  r.span({ className: 's_T_ReTo_Prvw_B_Arw' }, \" ⬇️\")),\n             ));\n     }\n "
+    },
+    {
+      "sha": "47338c8d2cdcc66b12b06818088393488aa3187b",
+      "filename": "client/app-slim/page/posts.styl",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/page/posts.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/page/posts.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/page/posts.styl?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -67,7 +67,7 @@\n // Relying-to, draft and preview posts\n //===========================\n \n-$previewBackground = hsl($uiHueHighlightedBackground, 93%, 80%);\n+$previewBackground = hsl($uiHueHighlightedBackground, 100%, 80%);\n $previewBorderBottom = 15px solid $previewBackground !important;\n \n .s_T_ReTo,\n@@ -78,7 +78,7 @@ $previewBorderBottom = 15px solid $previewBackground !important;\n   background: $previewBackground;\n \n .s_T_ReTo\n-  background: hsl($uiHue, 94%, 89%);\n+  background: hsl($uiHue, 75%, 94%);\n   margin-bottom: 16px;  // the .s_T_YourPrvw has extra top padding, but not .s_T_ReTo\n \n .s_T-Prvw-IsEd > .s_T_YourPrvw"
+    },
+    {
+      "sha": "1c3483ca5ed4848484ec581bdde92d879c02f0fa",
+      "filename": "client/app-slim/translations.d.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/translations.d.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/translations.d.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/translations.d.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -101,6 +101,7 @@ interface TalkyardTranslations {\n   SavedDot: string;\n   Search: string;\n   SendMsg: string;\n+  ShowPreview: string;\n   SignUp: string;\n   Solution: string;\n   started: string;\n@@ -549,6 +550,10 @@ interface TalkyardTranslations {\n     YourProgrNoteC: string;\n     aProgrNote: string;\n \n+    ReplyingToC: string;\n+    ScrollToPrevw_1: string;\n+    ScrollToPrevw_2: string;\n+\n     UnfinEdits: string;\n     ResumeEdting: string;\n     DelDraft: string;\n@@ -1000,6 +1005,7 @@ interface TalkyardTranslations {\n     ReplyTo: string;\n     ReplyTo_theOrigPost: string;\n     ReplyTo_post: string;\n+    AddCommentC: string;\n \n     PleaseSelectPosts: string;\n "
+    },
+    {
+      "sha": "dd35ca3bbf0466288b3deffa04d61250f4aa1a39",
+      "filename": "client/app-slim/variables.styl",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/variables.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/client/app-slim/variables.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/variables.styl?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -11,7 +11,9 @@ $h1Color = #454545;\n $uiFont = 'Open Sans', sans-serif\n $uiHue = 207  // steel blue\n \n-$uiHueHighlightedBackground = 47  // yellow — needs to be far away from $uiHue\n+// 41 is orange — needs to be far away from $uiHue.\n+// Yellow = too bright (rgb 255 255 0 — i.e. 2 x 255).\n+$uiHueHighlightedBackground = 41\n \n $uiNavHue = 0;\n $uiNavSaturation = 37%;"
+    },
+    {
+      "sha": "c9efe81dc2ce8fe2c54ffce549d1848be7615d44",
+      "filename": "gulpfile.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/gulpfile.js",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/gulpfile.js",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/gulpfile.js?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -850,7 +850,8 @@ gulp.task('watch', gulp.series('default', (done) => {\n // (This makes the Web image assets dir 5.5 MB large instead of just 2.7 MB,\n // as of Jan 2020.  (An alternative, to keep the image small, could be to\n // unzip the files in a docker-entrypoint script. But scratch that — the assets dir\n-// is mounted read-only here in this dev repo; would need to mount read-write?))\n+// is mounted read-only here in this dev repo; would need to mount read-write?\n+// Or using ngx_http_gunzip_module — but that'd cause slightly higher CPU load?))\n //\n gulp.task('delete-non-gzipped', () => {\n   return del(["
+    },
+    {
+      "sha": "01e2aa09dc3e06f862d6162cbefdfc1d1e060d76",
+      "filename": "modules/ty-cla",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ty-cla?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -1 +1 @@\n-Subproject commit 35543660fc76b819c31de90f6d948848e263f7ef\n+Subproject commit 01e2aa09dc3e06f862d6162cbefdfc1d1e060d76"
+    },
+    {
+      "sha": "841594839f657016fbe54439e19bab2a4e7e9f20",
+      "filename": "tests/e2e/specs/editor-onebox.test.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 4,
+      "changes": 15,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/tests/e2e/specs/editor-onebox.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/tests/e2e/specs/editor-onebox.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/editor-onebox.test.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -39,6 +39,8 @@ let videoMp4Onebox = `aside.onebox.dw-ob-video video[src=\"${videoMp4Url}\"]`;\n let videoYouTubeOnebox =\n     `aside.onebox.dw-ob-youtube iframe[src^=\"https://www.youtube.com/embed/${videoYouTubeId}\"]`;\n \n+const inPagePreviewSelector = '.s_P-Prvw ';\n+const inEditorPreviewSelector = '#debiki-editor-controller .preview ';\n \n describe(\"editor onebox:\", () => {\n \n@@ -76,12 +78,14 @@ describe(\"editor onebox:\", () => {\n \n   it(\"The image url gets converted to a .onebox tag\", () => {\n     // Something in here timed out once. So do in two steps, simpler to troubleshoot. First: ...\n-    owensBrowser.waitForExist('#debiki-editor-controller .preview ' + dotOneboxClass);\n+    owensBrowser.preview.waitForExist(dotOneboxClass, { where: 'InEditor' });\n+    owensBrowser.waitForExist(inEditorPreviewSelector + dotOneboxClass);  // CLEAN_UP remove\n   });\n \n   it(\"... with an a[href=...] and img[src=...]\", () => {\n     // ...Then:\n-    owensBrowser.waitForExist('#debiki-editor-controller .preview ' + imageJpgOnebox);\n+    owensBrowser.preview.waitForExist(imageJpgOnebox, { where: 'InEditor' });\n+    owensBrowser.waitForExist(inEditorPreviewSelector + imageJpgOnebox);  // CLEAN_UP remove\n   });\n \n   it(\"Owen saves the page\", () => {\n@@ -102,8 +106,11 @@ describe(\"editor onebox:\", () => {\n   });\n \n   it(\"It appears as a onebox <video> tag in the preview\", () => {\n-    owensBrowser.waitForExist('#debiki-editor-controller .preview ' + dotOneboxClass);\n-    owensBrowser.waitForExist('#debiki-editor-controller .preview ' + videoMp4Onebox);\n+    owensBrowser.preview.waitForExist(dotOneboxClass, { where: 'InPage' });\n+    owensBrowser.waitForExist(inPagePreviewSelector + dotOneboxClass);  // CLEAN_UP remove\n+\n+    owensBrowser.preview.waitForExist(videoMp4Onebox, { where: 'InPage' });\n+    owensBrowser.waitForExist(inPagePreviewSelector + videoMp4Onebox);  // CLEAN_UP remove\n   });\n \n   it(\"Owen saves the edits, sees both the onebox <img> and the <video> tags\", () => {"
+    },
+    {
+      "sha": "fb6a4109173ca31bb80224f7787e8abb246214d0",
+      "filename": "tests/e2e/specs/embedded-comments-uploads-origin.test.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/tests/e2e/specs/embedded-comments-uploads-origin.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/tests/e2e/specs/embedded-comments-uploads-origin.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-uploads-origin.test.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -111,7 +111,7 @@ describe(\"emb cmts uploads origin  TyT603RKDJA6\", () => {\n       'href=\"' + uplFileLinkTwo(idAddress.origin, idAddress.pubId) + '\".*' +\n       'href=\"' + extFileLink + '\".*' +\n       'href=\"' + extFile2Link + '\"';\n-    mariasBrowser.editor.preview.waitUntilPreviewHtmlMatches(correctLinksRegexStr);\n+    mariasBrowser.preview.waitUntilPreviewHtmlMatches(correctLinksRegexStr, { where: 'InPage' });\n   });\n \n \n@@ -164,7 +164,7 @@ describe(\"emb cmts uploads origin  TyT603RKDJA6\", () => {\n   // ----- Add image, directly via Talkyards server\n \n   it(\"Maria goes to the Talkard server, the topics list\", () => {\n-    mariasBrowser.go(idAddress.origin);\n+    mariasBrowser.go2(idAddress.origin);\n   });\n \n   it(\"She posts a new topic, with the same links\", () => {"
+    },
+    {
+      "sha": "c64df9bb8a8a816b46499f3b2db06d316068f4da",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 5,
+      "changes": 50,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -486,6 +486,13 @@ function pagesFor(browser) {\n     },\n \n \n+    switchToEmbEditorIframeIfNeeded: () => {\n+      if (isWhere >= IsWhere.EmbeddingPage && isWhere !== IsWhere.EmbEditorIframe) {\n+        api.switchToEmbeddedEditorIrame();\n+      }\n+    },\n+\n+\n     switchToEmbeddedCommentsIrame: (ps: { waitForContent?: false } = {}) => {\n       api.switchToAnyParentFrame();\n       // Remove these out commented lines, after 2019-07-01?:\n@@ -1072,6 +1079,14 @@ function pagesFor(browser) {\n           else {\n             // DO_AFTER 2019-07-01, no, Webdriverio v5: see if this Chrome weirdness workaround is still needed.\n             browser.setValue(selector, '\\uE003'.repeat(oldValue.length) + value);\n+            // Try this:  — but causes this error:\n+            //  \"\"\"Error: The requested resource could not be found,\n+            //   or a request was received using an HTTP method that is\n+            //   not supported by the mapped resource.\"\"\"\n+            //browser.setValue(selector, 'x'); // focus?\n+            //browser.keys(['\\ue009', 'a']);   // CTRL-A   — but need to release CTRL too?\n+            //browser.setValue(selector, value);  // paste-overwrite\n+            // see: https://github.com/webdriverio/webdriverio/issues/3024#issuecomment-580302637\n           }\n \n           if (!opts.checkAndRetry) {\n@@ -3249,6 +3264,7 @@ function pagesFor(browser) {\n       },\n \n       save: function() {\n+        api.switchToEmbEditorIframeIfNeeded();\n         api.editor.clickSave();\n         api.waitUntilLoadingOverlayGone();\n       },\n@@ -3282,12 +3298,36 @@ function pagesFor(browser) {\n       waitForDraftTextToLoad: function(text: string) {\n         api.waitUntilValueIs('.editor-area textarea', text);\n       },\n+    },\n \n-      preview: {\n-        waitUntilPreviewHtmlMatches: function(text: string) {\n-          api.waitUntilHtmlMatches('#t_E_Preview', text);\n-        },\n-      }\n+\n+    preview: {\n+      __inPagePreviewSelector: '.s_P-Prvw ',\n+      __inEditorPreviewSelector: '#t_E_Preview ', // '#debiki-editor-controller .preview ';\n+\n+      waitForExist: (\n+            selector: string, opts: { where: 'InEditor' | 'InPage' }) => {\n+        if (opts.where === 'InEditor') {\n+          api.switchToEmbEditorIframeIfNeeded();\n+          api.waitForExist(api.preview.__inEditorPreviewSelector + selector);\n+        }\n+        else {\n+          api.switchToEmbCommentsIframeIfNeeded();\n+          api.waitForExist(api.preview.__inPagePreviewSelector + selector);\n+        }\n+      },\n+\n+      waitUntilPreviewHtmlMatches: (\n+            text: string, opts: { where: 'InEditor' | 'InPage' }) => {\n+        if (opts.where === 'InEditor') {\n+          api.switchToEmbEditorIframeIfNeeded();\n+          api.waitUntilHtmlMatches(api.preview.__inEditorPreviewSelector, text);\n+        }\n+        else {\n+          api.switchToEmbCommentsIframeIfNeeded();\n+          api.waitUntilHtmlMatches(api.preview.__inPagePreviewSelector, text);\n+        }\n+      },\n     },\n \n "
+    },
+    {
+      "sha": "0f5efab151c6c7d83b854a8cad5b1020b5189a8d",
+      "filename": "translations/en_US/i18n.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/en_US/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/en_US/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/en_US/i18n.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -100,6 +100,7 @@ var t_en_US: TalkyardTranslations = t = {\n   SavedDot: \"Saved.\",\n   Search: \"Search\",\n   SendMsg: \"Send Message\",\n+  ShowPreview: \"Show preview\",  // MISSING\n   SignUp: \"Sign Up\",\n   Solution: \"Solution\",\n   started: \"started\",\n@@ -575,6 +576,10 @@ var t_en_US: TalkyardTranslations = t = {\n     YourProgrNoteC: \"Your progress note:\",  // MISSING\n     aProgrNote: \"a progress note: \",  // MISSING\n \n+    ReplyingToC: \"Replying to:\",    // MISSING\n+    ScrollToPrevw_1: \"Scroll to \",  // MISSING\n+    ScrollToPrevw_2: \"preview\",     // MISSING\n+\n     UnfinEdits: \"Unfinished edits\",  // MISSING\n     ResumeEdting: \"Resume editing\",  // MISSING\n     DelDraft: \"Delete draft\",   // MISSING\n@@ -1165,6 +1170,7 @@ var t_en_US: TalkyardTranslations = t = {\n     ReplyTo: \"Reply to \",\n     ReplyTo_theOrigPost: \"the Original Post\",\n     ReplyTo_post: \"post \",\n+    AddCommentC: \"Add a comment:\",   // MISSING\n \n     PleaseSelectPosts: \"Please select one or more posts to reply to.\",\n "
+    },
+    {
+      "sha": "decbf36c0af555802fe097cb7d2bb05901a3e921",
+      "filename": "translations/he_IL/i18n.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/he_IL/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/he_IL/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/he_IL/i18n.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -102,6 +102,7 @@ var t_en_US: TalkyardTranslations = t = {\n   SavedDot: \"Saved.\",\n   Search: \"Search\",\n   SendMsg: \"Send Message\",\n+  ShowPreview: \"Show preview\",  // MISSING\n   SignUp: \"Sign Up\",\n   Solution: \"Solution\",\n   started: \"started\",\n@@ -577,6 +578,10 @@ var t_en_US: TalkyardTranslations = t = {\n     YourProgrNoteC: \"Your progress note:\",  // MISSING\n     aProgrNote: \"a progress note: \",  // MISSING\n \n+    ReplyingToC: \"Replying to:\",    // MISSING\n+    ScrollToPrevw_1: \"Scroll to \",  // MISSING\n+    ScrollToPrevw_2: \"preview\",     // MISSING\n+\n     UnfinEdits: \"Unfinished edits\",  // MISSING\n     ResumeEdting: \"Resume editing\",  // MISSING\n     DelDraft: \"Delete draft\",   // MISSING\n@@ -1166,6 +1171,7 @@ var t_en_US: TalkyardTranslations = t = {\n     ReplyTo: \"Reply to \",\n     ReplyTo_theOrigPost: \"the Original Post\",\n     ReplyTo_post: \"post \",\n+    AddCommentC: \"Add a comment:\",   // MISSING\n \n     PleaseSelectPosts: \"Please select one or more posts to reply to.\",\n "
+    },
+    {
+      "sha": "44f55abd82fd6abc889ee011326f4cf0a4e87cf6",
+      "filename": "translations/pt_BR/i18n.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/pt_BR/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/pt_BR/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/pt_BR/i18n.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -100,6 +100,7 @@ var t_pt_BR: TalkyardTranslations = t = {\n   SavedDot: \"Salvo.\",\n   Search: \"Search\",  // MISSING\n   SendMsg: \"Enviar Mensagem\",\n+  ShowPreview: \"Show preview\",  // MISSING\n   SignUp: \"Cadastrar-se\",\n   Solution: \"Solução\",\n   started: \"started\",  // MISSING\n@@ -575,6 +576,10 @@ var t_pt_BR: TalkyardTranslations = t = {\n     YourProgrNoteC: \"Your progress note:\",  // MISSING\n     aProgrNote: \"a progress note: \",  // MISSING\n \n+    ReplyingToC: \"Replying to:\",    // MISSING\n+    ScrollToPrevw_1: \"Scroll to \",  // MISSING\n+    ScrollToPrevw_2: \"preview\",     // MISSING\n+\n     UnfinEdits: \"Unfinished edits\",  // MISSING\n     ResumeEdting: \"Resume editing\",  // MISSING\n     DelDraft: \"Delete draft\",   // MISSING\n@@ -1165,6 +1170,7 @@ var t_pt_BR: TalkyardTranslations = t = {\n     ReplyTo: \"Responder ao \",\n     ReplyTo_theOrigPost: \"Post Original\",\n     ReplyTo_post: \"post \",\n+    AddCommentC: \"Add a comment:\",   // MISSING\n \n     PleaseSelectPosts: \"Por favor selecione um ou mais posts para responder.\",\n "
+    },
+    {
+      "sha": "46d0c60a15dbf7e34b08f5d2c98440db09ca633a",
+      "filename": "translations/ru_RU/i18n.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/ru_RU/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/ru_RU/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/ru_RU/i18n.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -100,6 +100,7 @@ var t_ru_RU: TalkyardTranslations = t = {\n   SavedDot: \"Сохраненный.\",\n   Search: \"Поиск\",\n   SendMsg: \"Отправить сообщение\",\n+  ShowPreview: \"Show preview\",  // MISSING\n   SignUp: \"Войти\",\n   Solution: \"Решение\",\n   started: \"началось\",\n@@ -575,6 +576,10 @@ var t_ru_RU: TalkyardTranslations = t = {\n     YourProgrNoteC: \"Your progress note:\",  // MISSING\n     aProgrNote: \"a progress note: \",  // MISSING\n \n+    ReplyingToC: \"Replying to:\",    // MISSING\n+    ScrollToPrevw_1: \"Scroll to \",  // MISSING\n+    ScrollToPrevw_2: \"preview\",     // MISSING\n+\n     UnfinEdits: \"Unfinished edits\",  // MISSING\n     ResumeEdting: \"Resume editing\",  // MISSING\n     DelDraft: \"Delete draft\",   // MISSING\n@@ -1164,6 +1169,7 @@ var t_ru_RU: TalkyardTranslations = t = {\n     ReplyTo: \"Ответить на \",\n     ReplyTo_theOrigPost: \"Оригинальный Пост\",\n     ReplyTo_post: \"пост \",\n+    AddCommentC: \"Add a comment:\",   // MISSING\n \n     PleaseSelectPosts: \"Пожалуйста, выберите одно или несколько сообщений для ответа.\",\n "
+    },
+    {
+      "sha": "8c48040ce467ce440dd8a9987687153bf1239466",
+      "filename": "translations/sv_SE/i18n.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/sv_SE/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6bd1128e4ea5030dbe6d29e9f53b416b365e5777/translations/sv_SE/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/sv_SE/i18n.ts?ref=6bd1128e4ea5030dbe6d29e9f53b416b365e5777",
+      "patch": "@@ -100,6 +100,7 @@ var t_sv_SE: TalkyardTranslations = t = {\n   SavedDot: \"Saved.\",\n   Search: \"Search\",\n   SendMsg: \"Send Message\",\n+  ShowPreview: \"Show preview\",  // MISSING\n   SignUp: \"Sign Up\",\n   Solution: \"Solution\",\n   started: \"started\",\n@@ -574,6 +575,10 @@ var t_sv_SE: TalkyardTranslations = t = {\n     YourProgrNoteC: \"Your progress note:\",  // MISSING\n     aProgrNote: \"a progress note: \",  // MISSING\n \n+    ReplyingToC: \"Replying to:\",    // MISSING\n+    ScrollToPrevw_1: \"Scroll to \",  // MISSING\n+    ScrollToPrevw_2: \"preview\",     // MISSING\n+\n     UnfinEdits: \"Unfinished edits\",  // MISSING\n     ResumeEdting: \"Resume editing\",  // MISSING\n     DelDraft: \"Delete draft\",   // MISSING\n@@ -1163,6 +1168,7 @@ var t_sv_SE: TalkyardTranslations = t = {\n     ReplyTo: \"Reply to \",\n     ReplyTo_theOrigPost: \"the Original Post\",\n     ReplyTo_post: \"post \",\n+    AddCommentC: \"Add a comment:\",   // MISSING\n \n     PleaseSelectPosts: \"Please select one or more posts to reply to.\",\n "
+    }
+  ]
+}
