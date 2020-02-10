@@ -1,0 +1,98 @@
+{
+  "sha": "3c894e1a8f7e91af5e3ba09b65553d70692641d8",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6M2M4OTRlMWE4ZjdlOTFhZjVlM2JhMDliNjU1NTNkNzA2OTI2NDFkOA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-09T23:05:11Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-09T23:06:43Z"
+    },
+    "message": "Add 'make clean' sudo.",
+    "tree": {
+      "sha": "e9f8d33a07d789fe180f5fbbab1cfe8a319c837c",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/e9f8d33a07d789fe180f5fbbab1cfe8a319c837c"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/3c894e1a8f7e91af5e3ba09b65553d70692641d8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/3c894e1a8f7e91af5e3ba09b65553d70692641d8",
+  "html_url": "https://github.com/debiki/talkyard/commit/3c894e1a8f7e91af5e3ba09b65553d70692641d8",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/3c894e1a8f7e91af5e3ba09b65553d70692641d8/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3cdc58090ac068fbc777dffaee744a37f51c9f4b",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/3cdc58090ac068fbc777dffaee744a37f51c9f4b",
+      "html_url": "https://github.com/debiki/talkyard/commit/3cdc58090ac068fbc777dffaee744a37f51c9f4b"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e58b3f4970422f7ac852e5f0d9cad74f9b1b8a3e",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/3c894e1a8f7e91af5e3ba09b65553d70692641d8/Makefile",
+      "raw_url": "https://github.com/debiki/talkyard/raw/3c894e1a8f7e91af5e3ba09b65553d70692641d8/Makefile",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/Makefile?ref=3c894e1a8f7e91af5e3ba09b65553d70692641d8",
+      "patch": "@@ -163,8 +163,10 @@ clean-bundles:\n \ts/d-gulp clean\n \n clean: clean-bundles\n+\t@# target/ sometimes includes files compilation-created and owned by root.\n \t@echo Delting Scala things and other things:\n-\trm -fr target/\n+\t@$(call ask_for_root_password)\n+\tsudo rm -fr target/\n \trm -fr project/target/\n \trm -fr project/project/\n \trm -f  tests/e2e-failures.txt"
+    }
+  ]
+}
