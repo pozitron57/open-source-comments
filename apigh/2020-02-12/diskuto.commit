@@ -1,0 +1,151 @@
+{
+  "sha": "72a9024aed773630e1cf34b21d2c09e9cb12c672",
+  "node_id": "MDY6Q29tbWl0ODQ4NzYyMTA6NzJhOTAyNGFlZDc3MzYzMGUxY2YzNGIyMWQyYzA5ZTljYjEyYzY3Mg==",
+  "commit": {
+    "author": {
+      "name": "Sönke Ludwig",
+      "email": "sludwig@rejectedsoftware.com",
+      "date": "2019-10-09T18:55:48Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2019-10-09T18:55:48Z"
+    },
+    "message": "Merge pull request #14 from rejectedsoftware/upgrade\n\nFix all compile errors and deprecation warnings on DMD 2.088.0.",
+    "tree": {
+      "sha": "23fc7534a9bf7ef9813e67b08a7faddac5f01d59",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/git/trees/23fc7534a9bf7ef9813e67b08a7faddac5f01d59"
+    },
+    "url": "https://api.github.com/repos/rejectedsoftware/diskuto/git/commits/72a9024aed773630e1cf34b21d2c09e9cb12c672",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdni00CRBK7hj4Ov3rIwAAdHIIADnxEYm0BP8UnS0yvpztf7lY\nN740Iq7e2qDXsr6oG/zpKtMQ+OR283Ky6mpMEMgY9D/68ahnBBD5anfB8T1Fd+B2\nMCVzcBIPvSZso4gNY+uxBu0loXxc+9qfIDclpH/wJZ0L8ZbCZTez5KPdmHA7wGP5\nMi5l/SMAgpOZUbPQVPn/VomH/w54vjE5S/7idisMZaJQLfYLxd0Odmo0utL+kkJU\noMHvx7+n+dnYvZTgyynTnJUGeo2PO/dASpBf9ry0Tq9SOLEx7jO1/1CE7crxhCi7\nvBEkZ+ycc7Ep8BsRcOs2N72Bmeg6mc+pSnApLp0H1IJ8+gpPomX+UoxPcMuzYKI=\n=R/7x\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 23fc7534a9bf7ef9813e67b08a7faddac5f01d59\nparent 00fef952b53664f65962d3ff03bba75ffad8fbe6\nparent dd15ab3c541fabe0330c175ea6395f2d5ce210e1\nauthor Sönke Ludwig <sludwig@rejectedsoftware.com> 1570647348 +0200\ncommitter GitHub <noreply@github.com> 1570647348 +0200\n\nMerge pull request #14 from rejectedsoftware/upgrade\n\nFix all compile errors and deprecation warnings on DMD 2.088.0."
+    }
+  },
+  "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/72a9024aed773630e1cf34b21d2c09e9cb12c672",
+  "html_url": "https://github.com/rejectedsoftware/diskuto/commit/72a9024aed773630e1cf34b21d2c09e9cb12c672",
+  "comments_url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/72a9024aed773630e1cf34b21d2c09e9cb12c672/comments",
+  "author": {
+    "login": "s-ludwig",
+    "id": 1645969,
+    "node_id": "MDQ6VXNlcjE2NDU5Njk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1645969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s-ludwig",
+    "html_url": "https://github.com/s-ludwig",
+    "followers_url": "https://api.github.com/users/s-ludwig/followers",
+    "following_url": "https://api.github.com/users/s-ludwig/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s-ludwig/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s-ludwig/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s-ludwig/subscriptions",
+    "organizations_url": "https://api.github.com/users/s-ludwig/orgs",
+    "repos_url": "https://api.github.com/users/s-ludwig/repos",
+    "events_url": "https://api.github.com/users/s-ludwig/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s-ludwig/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "00fef952b53664f65962d3ff03bba75ffad8fbe6",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/00fef952b53664f65962d3ff03bba75ffad8fbe6",
+      "html_url": "https://github.com/rejectedsoftware/diskuto/commit/00fef952b53664f65962d3ff03bba75ffad8fbe6"
+    },
+    {
+      "sha": "dd15ab3c541fabe0330c175ea6395f2d5ce210e1",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/dd15ab3c541fabe0330c175ea6395f2d5ce210e1",
+      "html_url": "https://github.com/rejectedsoftware/diskuto/commit/dd15ab3c541fabe0330c175ea6395f2d5ce210e1"
+    }
+  ],
+  "stats": {
+    "total": 74,
+    "additions": 41,
+    "deletions": 33
+  },
+  "files": [
+    {
+      "sha": "d335baf98c1f84d2dad2b0a0d2f0db2a9d799a49",
+      "filename": "examples/embed-diet/dub.selections.json",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 20,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-diet/dub.selections.json",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-diet/dub.selections.json",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/examples/embed-diet/dub.selections.json?ref=72a9024aed773630e1cf34b21d2c09e9cb12c672",
+      "patch": "@@ -1,19 +1,21 @@\n {\n \t\"fileVersion\": 1,\n \t\"versions\": {\n-\t\t\"antispam\": \"0.1.3\",\n-\t\t\"botan\": \"1.12.9\",\n+\t\t\"antispam\": \"0.1.4\",\n+\t\t\"botan\": \"1.12.10\",\n \t\t\"botan-math\": \"1.0.3\",\n-\t\t\"diet-ng\": \"1.4.3\",\n+\t\t\"diet-ng\": \"1.6.0\",\n \t\t\"diskuto\": {\"path\":\"../..\"},\n-\t\t\"eventcore\": \"0.8.27\",\n+\t\t\"eventcore\": \"0.8.47\",\n \t\t\"fuzzydate\": \"1.0.0\",\n-\t\t\"libasync\": \"0.8.3\",\n+\t\t\"libasync\": \"0.8.4\",\n \t\t\"libevent\": \"2.0.2+2.0.16\",\n-\t\t\"memutils\": \"0.4.9\",\n+\t\t\"memutils\": \"0.4.13\",\n+\t\t\"mir-linux-kernel\": \"1.0.1\",\n \t\t\"openssl\": \"1.1.6+1.0.1g\",\n-\t\t\"taggedalgebraic\": \"0.10.9+commit.1.g100714d\",\n-\t\t\"vibe-core\": \"1.3.0\",\n-\t\t\"vibe-d\": \"0.8.2\"\n+\t\t\"stdx-allocator\": \"2.77.5\",\n+\t\t\"taggedalgebraic\": \"0.11.4\",\n+\t\t\"vibe-core\": \"1.7.0\",\n+\t\t\"vibe-d\": \"0.8.6\"\n \t}\n }"
+    },
+    {
+      "sha": "d335baf98c1f84d2dad2b0a0d2f0db2a9d799a49",
+      "filename": "examples/embed-js/dub.selections.json",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 20,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-js/dub.selections.json",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-js/dub.selections.json",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/examples/embed-js/dub.selections.json?ref=72a9024aed773630e1cf34b21d2c09e9cb12c672",
+      "patch": "@@ -1,19 +1,21 @@\n {\n \t\"fileVersion\": 1,\n \t\"versions\": {\n-\t\t\"antispam\": \"0.1.3\",\n-\t\t\"botan\": \"1.12.9\",\n+\t\t\"antispam\": \"0.1.4\",\n+\t\t\"botan\": \"1.12.10\",\n \t\t\"botan-math\": \"1.0.3\",\n-\t\t\"diet-ng\": \"1.4.3\",\n+\t\t\"diet-ng\": \"1.6.0\",\n \t\t\"diskuto\": {\"path\":\"../..\"},\n-\t\t\"eventcore\": \"0.8.27\",\n+\t\t\"eventcore\": \"0.8.47\",\n \t\t\"fuzzydate\": \"1.0.0\",\n-\t\t\"libasync\": \"0.8.3\",\n+\t\t\"libasync\": \"0.8.4\",\n \t\t\"libevent\": \"2.0.2+2.0.16\",\n-\t\t\"memutils\": \"0.4.9\",\n+\t\t\"memutils\": \"0.4.13\",\n+\t\t\"mir-linux-kernel\": \"1.0.1\",\n \t\t\"openssl\": \"1.1.6+1.0.1g\",\n-\t\t\"taggedalgebraic\": \"0.10.9+commit.1.g100714d\",\n-\t\t\"vibe-core\": \"1.3.0\",\n-\t\t\"vibe-d\": \"0.8.2\"\n+\t\t\"stdx-allocator\": \"2.77.5\",\n+\t\t\"taggedalgebraic\": \"0.11.4\",\n+\t\t\"vibe-core\": \"1.7.0\",\n+\t\t\"vibe-d\": \"0.8.6\"\n \t}\n }"
+    },
+    {
+      "sha": "d335baf98c1f84d2dad2b0a0d2f0db2a9d799a49",
+      "filename": "examples/embed-raw/dub.selections.json",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 20,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-raw/dub.selections.json",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-raw/dub.selections.json",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/examples/embed-raw/dub.selections.json?ref=72a9024aed773630e1cf34b21d2c09e9cb12c672",
+      "patch": "@@ -1,19 +1,21 @@\n {\n \t\"fileVersion\": 1,\n \t\"versions\": {\n-\t\t\"antispam\": \"0.1.3\",\n-\t\t\"botan\": \"1.12.9\",\n+\t\t\"antispam\": \"0.1.4\",\n+\t\t\"botan\": \"1.12.10\",\n \t\t\"botan-math\": \"1.0.3\",\n-\t\t\"diet-ng\": \"1.4.3\",\n+\t\t\"diet-ng\": \"1.6.0\",\n \t\t\"diskuto\": {\"path\":\"../..\"},\n-\t\t\"eventcore\": \"0.8.27\",\n+\t\t\"eventcore\": \"0.8.47\",\n \t\t\"fuzzydate\": \"1.0.0\",\n-\t\t\"libasync\": \"0.8.3\",\n+\t\t\"libasync\": \"0.8.4\",\n \t\t\"libevent\": \"2.0.2+2.0.16\",\n-\t\t\"memutils\": \"0.4.9\",\n+\t\t\"memutils\": \"0.4.13\",\n+\t\t\"mir-linux-kernel\": \"1.0.1\",\n \t\t\"openssl\": \"1.1.6+1.0.1g\",\n-\t\t\"taggedalgebraic\": \"0.10.9+commit.1.g100714d\",\n-\t\t\"vibe-core\": \"1.3.0\",\n-\t\t\"vibe-d\": \"0.8.2\"\n+\t\t\"stdx-allocator\": \"2.77.5\",\n+\t\t\"taggedalgebraic\": \"0.11.4\",\n+\t\t\"vibe-core\": \"1.7.0\",\n+\t\t\"vibe-d\": \"0.8.6\"\n \t}\n }"
+    },
+    {
+      "sha": "014a9cc09b064fa43f4bc83dca28855bdfd93106",
+      "filename": "examples/embed-raw/source/app.d",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-raw/source/app.d",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/72a9024aed773630e1cf34b21d2c09e9cb12c672/examples/embed-raw/source/app.d",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/examples/embed-raw/source/app.d?ref=72a9024aed773630e1cf34b21d2c09e9cb12c672",
+      "patch": "@@ -26,13 +26,13 @@ final class WebFrontend {\n \n \tvoid get(HTTPServerRequest req, HTTPServerResponse res, string _error = null)\n \t{\n-\t\timport vibe.stream.wrapper : StreamOutputRange;\n+\t\timport vibe.stream.wrapper : streamOutputRange;\n \n \t\tm_diskuto.setupRequest();\n \n \t\tres.contentType = \"text/html; charset=UTF-8\";\n \n-\t\tauto dst = StreamOutputRange(res.bodyWriter);\n+\t\tauto dst = streamOutputRange(res.bodyWriter);\n \t\tdst.put(\"<html><head><title>Diskuto raw embedding example</title></head>\");\n \t\tdst.put(\"<body><p>The comment section is embedded below:</p>\");\n \t\tm_diskuto.generateInclude(dst, req, \"example\");"
+    },
+    {
+      "sha": "30ab57c66d67e2aa0ce411b97561316fd06b47c8",
+      "filename": "source/diskuto/web.d",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 10,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/72a9024aed773630e1cf34b21d2c09e9cb12c672/source/diskuto/web.d",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/72a9024aed773630e1cf34b21d2c09e9cb12c672/source/diskuto/web.d",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/source/diskuto/web.d?ref=72a9024aed773630e1cf34b21d2c09e9cb12c672",
+      "patch": "@@ -101,8 +101,9 @@ struct DiskutoWeb {\n \t}\n }\n \n+/// private\n @path(\"manage\")\n-private final class DiskutoWebManagementInterface {\n+final class DiskutoWebManagementInterface {\n \tprivate {\n \t\tDiskutoSettings m_settings;\n \t\tAntispamState m_antispam;\n@@ -168,7 +169,8 @@ private final class DiskutoWebManagementInterface {\n \t}\n }\n \n-private final class DiskutoWebInterface {\n+/// private\n+final class DiskutoWebInterface {\n \timport diskuto.internal.webutils : User;\n \n \tprivate {\n@@ -199,7 +201,7 @@ private final class DiskutoWebInterface {\n \t{\n \t\tauto topic = m_settings.commentStore.getComment(id).topic; // TODO: be more efficient here!\n \t\tauto usr = getUser(req, m_settings, topic);\n-\t\tm_settings.commentStore.vote(id, usr.id, 1);\n+\t\tm_settings.commentStore.vote(id, usr.id, VoteDirection.up);\n \t\tredirectBack(req);\n \t}\n \n@@ -208,7 +210,7 @@ private final class DiskutoWebInterface {\n \t{\n \t\tauto topic = m_settings.commentStore.getComment(id).topic; // TODO: be more efficient here!\n \t\tauto usr = getUser(req, m_settings, topic);\n-\t\tm_settings.commentStore.vote(id, usr.id, -1);\n+\t\tm_settings.commentStore.vote(id, usr.id, VoteDirection.down);\n \t\tredirectBack(req);\n \t}\n "
+    }
+  ]
+}
