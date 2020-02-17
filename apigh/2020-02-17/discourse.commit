@@ -1,0 +1,98 @@
+{
+  "sha": "0c94e7b0896b6c3f2e27780fdbcb75fd527270b1",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowYzk0ZTdiMDg5NmI2YzNmMmUyNzc4MGZkYmNiNzVmZDUyNzI3MGIx",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-02-17T16:51:26Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-02-17T16:51:26Z"
+    },
+    "message": "FIX: Some select-kit dropdowns were cut-off by hidden overflow in modals",
+    "tree": {
+      "sha": "946ad31658725af613aa0263a3be1167af35edaf",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/946ad31658725af613aa0263a3be1167af35edaf"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0c94e7b0896b6c3f2e27780fdbcb75fd527270b1",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0c94e7b0896b6c3f2e27780fdbcb75fd527270b1",
+  "html_url": "https://github.com/discourse/discourse/commit/0c94e7b0896b6c3f2e27780fdbcb75fd527270b1",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0c94e7b0896b6c3f2e27780fdbcb75fd527270b1/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "17aed8d84ba2a61a08acb4146fca7fa89a025771",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/17aed8d84ba2a61a08acb4146fca7fa89a025771",
+      "html_url": "https://github.com/discourse/discourse/commit/17aed8d84ba2a61a08acb4146fca7fa89a025771"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "22e29f11909fd2e378a15cdb3ba6c09bc567dfe1",
+      "filename": "app/assets/stylesheets/common/base/modal.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/0c94e7b0896b6c3f2e27780fdbcb75fd527270b1/app/assets/stylesheets/common/base/modal.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/0c94e7b0896b6c3f2e27780fdbcb75fd527270b1/app/assets/stylesheets/common/base/modal.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/modal.scss?ref=0c94e7b0896b6c3f2e27780fdbcb75fd527270b1",
+      "patch": "@@ -191,6 +191,7 @@\n   }\n \n   .modal-body {\n+    position: relative;\n     box-sizing: border-box;\n     width: 100%;\n     overflow-y: auto;"
+    }
+  ]
+}
