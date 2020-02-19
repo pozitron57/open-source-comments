@@ -1,0 +1,158 @@
+{
+  "sha": "86b65f817e2408265804f2f4ce0df879009ce66f",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTo4NmI2NWY4MTdlMjQwODI2NTgwNGYyZjRjZTBkZjg3OTAwOWNlNjZm",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2020-02-15T15:24:32Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-02-15T15:24:32Z"
+    },
+    "message": "html: Add markdown render flag option (#616)\n\nNew \"flags\" option in the [markdown] section to customize\r\nMisaka's Markdown HTML rendering.\r\n\r\nBy default, no flags are set.\r\n\r\n```\r\n[markup]\r\nflags = skip-html, escape, hard-wrap\r\n```\r\n\r\nUpdate CHANGES.rst and add the section to the sample\r\nisso.conf and isso-dev.conf",
+    "tree": {
+      "sha": "28bf707da62efa004434479b581951ead69edeb7",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/28bf707da62efa004434479b581951ead69edeb7"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/86b65f817e2408265804f2f4ce0df879009ce66f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeSA0wCRBK7hj4Ov3rIwAAdHIIAE3mTnv6HOu/YoE+Tn5gXRg3\noe7d1fv+d3UnuFgnBPb7WhU/w0Dt1nDCclVy3Va/ENNUrOp+DRo/pG91b4X+fsZv\nYZp/Ca8pf+TEYx5XP8pCglGMV4Rmytkc+pW86g/gdU1zfZdC76heMkBAiVn5YF+j\nqPGawYQorSq5/WVrKd974pUljXASf4yDchM0nhuTFLCtK6SxBlO5IF713O/ZJK6f\nQvt90zb1OldJ4Ja5FPLUhFAJBos7AbAuMWvPMkjr6gEnv8FK8BhPAgVr1fqk/p74\n9waVuHtQDtvfvNz8wgSI0m+O4fBC5m6k7+TzaHF8w6aXfCxz7elL+WUq3qKClcM=\n=cZn+\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 28bf707da62efa004434479b581951ead69edeb7\nparent 2a4e8c231e458d8c9d91d177e02a96a09e2adcd7\nauthor Jelmer Vernooĳ <jelmer@jelmer.uk> 1581780272 +0100\ncommitter GitHub <noreply@github.com> 1581780272 +0100\n\nhtml: Add markdown render flag option (#616)\n\nNew \"flags\" option in the [markdown] section to customize\r\nMisaka's Markdown HTML rendering.\r\n\r\nBy default, no flags are set.\r\n\r\n```\r\n[markup]\r\nflags = skip-html, escape, hard-wrap\r\n```\r\n\r\nUpdate CHANGES.rst and add the section to the sample\r\nisso.conf and isso-dev.conf\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/86b65f817e2408265804f2f4ce0df879009ce66f",
+  "html_url": "https://github.com/posativ/isso/commit/86b65f817e2408265804f2f4ce0df879009ce66f",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/86b65f817e2408265804f2f4ce0df879009ce66f/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2a4e8c231e458d8c9d91d177e02a96a09e2adcd7",
+      "url": "https://api.github.com/repos/posativ/isso/commits/2a4e8c231e458d8c9d91d177e02a96a09e2adcd7",
+      "html_url": "https://github.com/posativ/isso/commit/2a4e8c231e458d8c9d91d177e02a96a09e2adcd7"
+    }
+  ],
+  "stats": {
+    "total": 42,
+    "additions": 37,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "636b921030c360e92f684fd4dcb41f7b45e3301d",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/posativ/isso/blob/86b65f817e2408265804f2f4ce0df879009ce66f/CHANGES.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/86b65f817e2408265804f2f4ce0df879009ce66f/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/CHANGES.rst?ref=86b65f817e2408265804f2f4ce0df879009ce66f",
+      "patch": "@@ -4,6 +4,14 @@ Changelog for Isso\n 0.12.3 (UNRELEASED)\n -------------------\n \n+- New \"flags\" option in the [markdown] section to customize Misaka's Markdown\n+  HTML rendering. By default, no flags are set.\n+\n+      [markup]\n+      flags = skip-html, escape, hard-wrap\n+\n+  Check docs/configuration/server.rst for more details.\n+\n 0.12.2 (2019-01-21)\n -------------------\n "
+    },
+    {
+      "sha": "5013013ade1a9115903354fe69e164d03a3658cb",
+      "filename": "docs/docs/configuration/server.rst",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/posativ/isso/blob/86b65f817e2408265804f2f4ce0df879009ce66f/docs/docs/configuration/server.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/86b65f817e2408265804f2f4ce0df879009ce66f/docs/docs/configuration/server.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs/docs/configuration/server.rst?ref=86b65f817e2408265804f2f4ce0df879009ce66f",
+      "patch": "@@ -298,12 +298,20 @@ supported, but new languages are relatively easy to add.\n \n     [markup]\n     options = strikethrough, superscript, autolink\n+    flags = skip-html, escape, hard-wrap\n     allowed-elements =\n     allowed-attributes =\n \n options\n-    `Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, all\n-    flags starting with `EXT_` can be used there, separated by comma.\n+    `Misaka-specific Markdown extensions <https://misaka.61924.nl/#api>`_, all\n+    extension flags can be used there, separated by comma, either by their name\n+    or as `EXT_`_.\n+\n+flags\n+    `Misaka-specific HTML rendering flags\n+    <https://misaka.61924.nl/#html-render-flags>`_, all html rendering flags\n+    can be used here, separated by comma, either by their name or as `HTML_`_.\n+    Per Misaka's defaults, no flags are set.\n \n allowed-elements\n     Additional HTML tags to allow in the generated output, comma-separated. By"
+    },
+    {
+      "sha": "f7f497c39223e7705f5781c0b5fe0ceb076b8ff5",
+      "filename": "isso/tests/test_html.py",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/86b65f817e2408265804f2f4ce0df879009ce66f/isso/tests/test_html.py",
+      "raw_url": "https://github.com/posativ/isso/raw/86b65f817e2408265804f2f4ce0df879009ce66f/isso/tests/test_html.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/tests/test_html.py?ref=86b65f817e2408265804f2f4ce0df879009ce66f",
+      "patch": "@@ -89,6 +89,7 @@ def test_render(self):\n         conf = config.new({\n             \"markup\": {\n                 \"options\": \"autolink\",\n+                \"flags\": \"\",\n                 \"allowed-elements\": \"\",\n                 \"allowed-attributes\": \"\"\n             }"
+    },
+    {
+      "sha": "81cd9521bc197d0f4bfb17ce640f85d5c49f396c",
+      "filename": "isso/utils/html.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 3,
+      "changes": 15,
+      "blob_url": "https://github.com/posativ/isso/blob/86b65f817e2408265804f2f4ce0df879009ce66f/isso/utils/html.py",
+      "raw_url": "https://github.com/posativ/isso/raw/86b65f817e2408265804f2f4ce0df879009ce66f/isso/utils/html.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/utils/html.py?ref=86b65f817e2408265804f2f4ce0df879009ce66f",
+      "patch": "@@ -5,6 +5,11 @@\n import bleach\n import misaka\n \n+try:\n+    from backports.configparser import NoOptionError\n+except ImportError:\n+    from configparser import NoOptionError\n+\n \n class Sanitizer(object):\n \n@@ -49,9 +54,9 @@ def set_links(attrs, new=False):\n \n \n def Markdown(extensions=(\"strikethrough\", \"superscript\", \"autolink\",\n-                         \"fenced-code\")):\n+                         \"fenced-code\"), flags=[]):\n \n-    renderer = Unofficial()\n+    renderer = Unofficial(flags=flags)\n     md = misaka.Markdown(renderer, extensions=extensions)\n \n     def inner(text):\n@@ -80,7 +85,11 @@ class Markup(object):\n \n     def __init__(self, conf):\n \n-        parser = Markdown(conf.getlist(\"options\"))\n+        try:\n+            conf_flags = conf.getlist(\"flags\")\n+        except NoOptionError:\n+            conf_flags = []\n+        parser = Markdown(extensions=conf.getlist(\"options\"), flags=conf_flags)\n         sanitizer = Sanitizer(\n             conf.getlist(\"allowed-elements\"),\n             conf.getlist(\"allowed-attributes\"))"
+    },
+    {
+      "sha": "7e70c16c0da84ba4d8a2b545ae960f5cfe535fad",
+      "filename": "share/isso-dev.conf",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/86b65f817e2408265804f2f4ce0df879009ce66f/share/isso-dev.conf",
+      "raw_url": "https://github.com/posativ/isso/raw/86b65f817e2408265804f2f4ce0df879009ce66f/share/isso-dev.conf",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/share/isso-dev.conf?ref=86b65f817e2408265804f2f4ce0df879009ce66f",
+      "patch": "@@ -28,6 +28,7 @@ enabled = false\n \n [markup]\n options = strikethrough, autolink, fenced_code, no_intra_emphasis\n+flags =\n allowed-elements =\n allowed-attributes =\n "
+    },
+    {
+      "sha": "ed706c8e5bc48039db5048c00f4516343f54af34",
+      "filename": "share/isso.conf",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/posativ/isso/blob/86b65f817e2408265804f2f4ce0df879009ce66f/share/isso.conf",
+      "raw_url": "https://github.com/posativ/isso/raw/86b65f817e2408265804f2f4ce0df879009ce66f/share/isso.conf",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/share/isso.conf?ref=86b65f817e2408265804f2f4ce0df879009ce66f",
+      "patch": "@@ -185,6 +185,11 @@ require-email = false\n # there, separated by comma.\n options = strikethrough, autolink, fenced_code, no_intra_emphasis\n \n+# Misaka-specific HTML rendering flags, all html rendering flags can be used\n+# here, separated by comma, either by their name or as HTML_<flag>.\n+# Per Misaka's defaults, no flags are set.\n+flags =\n+\n # Additional HTML tags to allow in the generated output, comma-separated. By\n # default, only a, blockquote, br, code, del, em, h1, h2, h3, h4, h5, h6, hr,\n # ins, li, ol, p, pre, strong, table, tbody, td, th, thead and ul are allowed."
+    }
+  ]
+}
