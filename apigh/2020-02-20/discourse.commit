@@ -1,0 +1,98 @@
+{
+  "sha": "7a09e2cce22fe5e6af3e38c0be34f67499de3ff6",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3YTA5ZTJjY2UyMmZlNWU2YWYzZTM4YzBiZTM0ZjY3NDk5ZGUzZmY2",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-02-20T16:44:54Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-02-20T16:45:12Z"
+    },
+    "message": "DEV: Improve video onebox stripping spec\n\nFollowup to 70819080",
+    "tree": {
+      "sha": "8b8181024a9c032618e78d28c964c75cce23d463",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/8b8181024a9c032618e78d28c964c75cce23d463"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7a09e2cce22fe5e6af3e38c0be34f67499de3ff6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7a09e2cce22fe5e6af3e38c0be34f67499de3ff6",
+  "html_url": "https://github.com/discourse/discourse/commit/7a09e2cce22fe5e6af3e38c0be34f67499de3ff6",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7a09e2cce22fe5e6af3e38c0be34f67499de3ff6/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "19dcc6bb7b03f3f7d422b534f7997b0d91ddb0ce",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/19dcc6bb7b03f3f7d422b534f7997b0d91ddb0ce",
+      "html_url": "https://github.com/discourse/discourse/commit/19dcc6bb7b03f3f7d422b534f7997b0d91ddb0ce"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 7,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "784b607972a142fa8fa531da17970b6c1b87e934",
+      "filename": "spec/components/pretty_text_spec.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/7a09e2cce22fe5e6af3e38c0be34f67499de3ff6/spec/components/pretty_text_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7a09e2cce22fe5e6af3e38c0be34f67499de3ff6/spec/components/pretty_text_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/pretty_text_spec.rb?ref=7a09e2cce22fe5e6af3e38c0be34f67499de3ff6",
+      "patch": "@@ -796,10 +796,15 @@ def extract_urls(text)\n             <a href=\"http://videosource.com/running.mp4\">http://videosource.com/running.mp4</a>\n           </video>\n         </div>\n-        <p>Watch this, but not in the excerpt.</p>\n+        <p>Watch this, but do not include the video in the excerpt.</p>\n       HTML\n \n-      expect(PrettyText.excerpt(html, 100)).to eq(\"Watch this, but not in the excerpt.\")\n+      ellipsis = \"&hellip;\"\n+      excerpt_size = 40\n+      excerpt = PrettyText.excerpt(html, excerpt_size)\n+\n+      expect(excerpt.size).to eq(excerpt_size + ellipsis.size)\n+      expect(excerpt).to eq(\"Watch this, but do not include the video#{ellipsis}\")\n     end\n   end\n "
+    }
+  ]
+}
