@@ -1,0 +1,182 @@
+{
+  "sha": "a66e4dee429683634480eb45ed5b7fe6f40a698b",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6YTY2ZTRkZWU0Mjk2ODM2MzQ0ODBlYjQ1ZWQ1YjdmZTZmNDBhNjk4Yg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-20T06:34:38Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-02-20T07:42:20Z"
+    },
+    "message": "Fix slug length bug.",
+    "tree": {
+      "sha": "09d6ff1d3a8ef0ec7d6402ec3b689e2c2d6c8fe8",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/09d6ff1d3a8ef0ec7d6402ec3b689e2c2d6c8fe8"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/a66e4dee429683634480eb45ed5b7fe6f40a698b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/a66e4dee429683634480eb45ed5b7fe6f40a698b",
+  "html_url": "https://github.com/debiki/talkyard/commit/a66e4dee429683634480eb45ed5b7fe6f40a698b",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/a66e4dee429683634480eb45ed5b7fe6f40a698b/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "31cff42efa114796f8c5c5d066ebbb62485ff18c",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/31cff42efa114796f8c5c5d066ebbb62485ff18c",
+      "html_url": "https://github.com/debiki/talkyard/commit/31cff42efa114796f8c5c5d066ebbb62485ff18c"
+    }
+  ],
+  "stats": {
+    "total": 109,
+    "additions": 85,
+    "deletions": 24
+  },
+  "files": [
+    {
+      "sha": "dcbb129bd7b3c5689790c603a145bed832ba0199",
+      "filename": "app/controllers/PageTitleSettingsController.scala",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 4,
+      "changes": 11,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/app/controllers/PageTitleSettingsController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/app/controllers/PageTitleSettingsController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/controllers/PageTitleSettingsController.scala?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -101,10 +101,13 @@ class PageTitleSettingsController @Inject()(cc: ControllerComponents, edContext:\n     if (!request.theUser.isStaff && request.theUserId != oldMeta.authorId)\n       throwForbidden(\"TyECHOTRPGS\", \"You may not change other people's pages\")\n \n-    if (anyFolder.isDefined || hasManuallyEditedSlug || anyShowId.isDefined) {\n-      if (!request.theUser.isAdmin)\n-        throwForbidden(\"DwE5KEP8\", o\"\"\"Only admins may change the URL path\n-           and certain other stuff\"\"\")\n+    if (!request.theUser.isAdmin) {\n+      throwForbiddenIf(hasManuallyEditedSlug,\n+          \"TyENEWPATH001\", \"Only admins may change the page slug\")\n+      throwForbiddenIf(anyFolder.isDefined,\n+          \"TyENEWPATH002\", \"Only admins can specify url/path/folders/\")\n+      throwForbiddenIf(anyShowId.isDefined,\n+          \"TyENEWPATH003\", \"Only admins can hide or show page ids\")\n     }\n \n     if (anyNewRole.is(PageType.Forum) || (anyNewRole.isEmpty && oldMeta.pageType == PageType.Forum)) {"
+    },
+    {
+      "sha": "0425b6cd62cad5f2a372b38d07de4d5c4c864432",
+      "filename": "app/debiki/Nashorn.scala",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/app/debiki/Nashorn.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/app/debiki/Nashorn.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/Nashorn.scala?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -316,6 +316,10 @@ class Nashorn(\n   }\n \n \n+  /** Might return an empty slug (\"\") if the title contains only \"weird\" chars,\n+    * (currently only ASCII allowed [30BDAH256]) that's fine (gets converted\n+    * to and from '-' in Postgres [274RKNQ2])\n+    */\n   def slugifyTitle(title: String): String = {\n     if (isTestSoDisableScripts)\n       return \"scripts-disabled-EsM28WXP45\""
+    },
+    {
+      "sha": "96bea1c4ea50a9cd91e4bf79e65a9e917624f61b",
+      "filename": "app/talkyard/server/backup/SiteBackupDao.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/app/talkyard/server/backup/SiteBackupDao.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/app/talkyard/server/backup/SiteBackupDao.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/talkyard/server/backup/SiteBackupDao.scala?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -31,7 +31,7 @@ import scala.collection.mutable\n import scala.collection.mutable.ArrayBuffer\n \n \n-case class SiteBackupImporterExporter(globals: debiki.Globals) {  RENAME // to SiteDumpImporter ?\n+case class SiteBackupImporterExporter(globals: debiki.Globals) {  RENAME // to SiteDumpImporter? or SitePatcher?\n \n \n   def upsertIntoExistingSite(siteId: SiteId, siteData: SiteBackup, browserIdData: BrowserIdData)"
+    },
+    {
+      "sha": "9259f0a18e061df2ce1ecf6ee4cd537becaa5e2f",
+      "filename": "client/third-party/non-angular-slugify.js",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 3,
+      "changes": 30,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/client/third-party/non-angular-slugify.js",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/client/third-party/non-angular-slugify.js",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/third-party/non-angular-slugify.js?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -262,10 +262,34 @@ function debikiSlugify(s) {\n      }\n    }\n    s = ascii.join(\"\");\n-   s = s.toLowerCase();  // [kajmagnus]\n+\n+   // Tested here: [TyT692SKBDWJ74]\n+\n+   // URLs should not be mixed case; people would not remember the correct casing.\n+   s = s.trim().toLowerCase();  // [kajmagnus]\n+\n+   // For now, allow only ASCII [30BDAH256]  (and [ -] which we'll replace with '-' later).\n    s = s.replace(/[^a-z0-9 -]/g, '')  // [kajmagnus]\n-   s = s.replace(/[^\\w\\s-]/g, \"\").trim().toLowerCase();\n-   return s.replace(/[-\\s]+/g, \"-\");\n+\n+   // Don't think this is needed any longer?\n+   s = s.replace(/[^\\w\\s-]/g, \"\");\n+\n+   // Collapse-replace blanks with a single '-':\n+   s = s.replace(/[-\\s]+/g, \"-\");\n+\n+   // Remove start '-':  (would it make sense to keep any leading '-'? in case\n+   // a page title starts with a negative number? — I don't think so)\n+   s = s.replace(/^-+/, '');\n+\n+   // There server restricts the slug length.\n+   var MaxSlugLength = 100;  // sync with Scala [MXPGSLGLN]\n+   s = s.substr(0, MaxSlugLength);\n+\n+   // Remove trailing '-':  (do here after truncation)\n+   s = s.replace(/-+$/, '');\n+\n+   // Not impossible that the slug is now just '' (the empty string).\n+   return s;\n }\n \n window.debikiSlugify = debikiSlugify;  // [5FK2W08]"
+    },
+    {
+      "sha": "e9462a3bfb5a15ff0a07c0537169a6594e66d8f5",
+      "filename": "docs/e2e-tests-map.txt",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/docs/e2e-tests-map.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/docs/e2e-tests-map.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/docs/e2e-tests-map.txt?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -823,10 +823,15 @@ api:\n           - api-upsert-categories.2browsers.test.ts  TyT602RHK42JF\n   upsert categories:  (upscats)\n           - api-upsert-categories.2browsers.test.ts  TyT94DFKHQC24\n-  upsert pages,\n-  sanitize html:\n+  upsert pages:\n+    sanitize html:\n           - api-upsert-pages.2browsers.test.ts   TyT603PKRAEPGJ5\n+    slugifying long and weird titles:\n+          - api-upsert-pages.2browsers.test.ts   TyT692SKBDWJ74\n   upsert-edit pages:\n+    &,\n+    sanitize html,\n+    long titles:\n           - TESTS_MISSING  TyT650KWUDEPJ03g\n   with sso enabled:\n           - api-w-sso-upsert-pages.2browsers.test.ts  TyT60KRJXT4X3"
+    },
+    {
+      "sha": "f1c8a3492883b27fd6a0f1bf6ba365b0874b5b51",
+      "filename": "modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/RdbSiteTransaction.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/RdbSiteTransaction.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/RdbSiteTransaction.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ty-dao-rdb/src/main/scala/com/debiki/dao/rdb/RdbSiteTransaction.scala?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -1329,7 +1329,7 @@ class RdbSiteTransaction(var siteId: SiteId, val daoFactory: RdbDaoFactory, val\n         values (?, ?, ?, ?, ?, ?)\n         \"\"\",\n         List(siteId.asAnyRef, pagePath.folder, pagePath.pageId,\n-          showPageId, e2d(pagePath.pageSlug), canonical))(conn)\n+          showPageId, e2d(pagePath.pageSlug) /* [274RKNQ2] */, canonical))(conn)\n     }\n     catch {\n       case ex: js.SQLException if isUniqueConstrViolation(ex) =>"
+    },
+    {
+      "sha": "55c38ec88a4c33748c3cae98f2d44c53c5b4ba12",
+      "filename": "tests/e2e/specs/api-upsert-pages.2browsers.test.ts",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 12,
+      "changes": 39,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/tests/e2e/specs/api-upsert-pages.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/tests/e2e/specs/api-upsert-pages.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/api-upsert-pages.2browsers.test.ts?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -45,9 +45,12 @@ const pageOneToUpsert = {\n   categoryRef: 'extid:' + categoryExtId,\n   authorRef: 'username:owen_owner',\n   title: 'UpsPageOneTitle',\n+  // slug: generated by the server\n   body: 'UpsPageOneBody',\n };\n \n+const pageOneExpectedSlug = '/-1/upspageonetitle';\n+\n const evil_example_com = 'evil.example.com';\n const script_gets_removed = 'script_gets_removed';\n \n@@ -57,6 +60,7 @@ const pageTwoToUpsert = {\n   categoryRef: 'extid:' + categoryExtId,\n   authorRef: 'username:owen_owner',\n   title: 'UpsPageTwoTitle',\n+  //slug: 'page-two-custom-slug', — custom slugs not yet supported via the upsert api\n   body: `UpsPageTwoBody\n     <h1>h1_stays</h1>\n     <h4>h4_stays</h4>\n@@ -81,16 +85,20 @@ const pageTwoEditedToUpsert = {\n   pageType: c.TestPageRole.Question,\n };\n \n-const pageThreeToUpsert = {\n+const pageThreeToUpsert_longTitle = {\n   extId: 'UpsPageThreeExtId',\n   pageType: c.TestPageRole.Problem,\n   categoryRef: 'extid:' + categoryExtId,\n   authorRef: 'username:owen_owner',\n-  title: 'UpsPageThreeTitle',\n+  // Talkyard should generate a max 100 chars slug, and remove non-ASCII (for now),\n+  // and leading and trailing '-' and replace blanks and punctuation with '-'.\n+  // [TyT692SKBDWJ74]\n+  title: '---UpsPageThreeTtl - Ååå 中文 oh so many! chars?: 123456789 123456789 123456789 123456789 123456789 1234567-----.*!?#$+\",.%^&--89 1-----789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789',\n   body: 'UpsPageThreeBody',\n-  slug: 'ups-page-three-slug',\n };\n \n+const pageThreeExpectedSlug =\n+  'upspagethreettl-aaa-oh-so-many-chars-123456789-123456789-123456789-123456789-123456789-1234567-89-1';\n \n describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n \n@@ -173,7 +181,8 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n     assert.eq(upsertResponse.pages.length, 1);\n     firstUpsertedPage = upsertResponse.pages[0];\n \n-    assert.eq(firstUpsertedPage.urlPaths.canonical, '/-1/upspageonetitle');\n+    assert.eq(firstUpsertedPage.urlPaths.canonical, pageOneExpectedSlug);\n+    assert.eq(expectedUrlPath(firstUpsertedPage, pageOneToUpsert), pageOneExpectedSlug);\n \n     assert.eq(firstUpsertedPage.id, \"1\");\n     assert.eq(firstUpsertedPage.pageType, c.TestPageRole.Idea);\n@@ -216,6 +225,10 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n     owensBrowser.topic.waitForPostAssertTextMatches(c.BodyNr, pageOneToUpsert.body);\n   });\n \n+  it(\"... and url\", () => {\n+    assert.eq(owensBrowser.urlPath(), pageOneExpectedSlug);\n+  });\n+\n \n   it(\"Owen goes to the page URL path from the topic response\", () => {\n     owensBrowser.go2('/');\n@@ -237,7 +250,7 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n         apiRequesterId: c.SysbotUserId,\n         apiSecret: apiSecret.secretKey,\n         data: {\n-          pages: [pageTwoToUpsert, pageThreeToUpsert],\n+          pages: [pageTwoToUpsert, pageThreeToUpsert_longTitle],\n         }});\n   });\n \n@@ -247,13 +260,15 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n     assert.eq(upsertResponse.pages.length, 2);\n   });\n \n-  function expectedUrlPath(page, title: string): string {\n-    return `/-${page.id}/${title.toLowerCase()}`;\n-\n+  function expectedUrlPath(page, toUps: { title?: string, slug?: string }): string {\n+    // This isn't exactly how the server does it, but works for this e2e test.\n+    const slug = toUps.slug || toUps.title.toLowerCase().replace(/ /g, '-').substr(0, 100);\n+    return `/-${page.id}/${slug}`;\n   }\n+\n   it(\"... the first one looks correct\", () => {\n     const upsPage = upsertResponse.pages[0];\n-    assert.eq(upsPage.urlPaths.canonical, expectedUrlPath(upsPage, pageTwoToUpsert.title));\n+    assert.eq(upsPage.urlPaths.canonical, expectedUrlPath(upsPage, pageTwoToUpsert));\n     assert.eq(upsPage.pageType, c.TestPageRole.Question);\n     utils.checkNewPageFields(upsPage, {\n       categoryId: forum.categories.categoryA.id,\n@@ -263,7 +278,7 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n \n   it(\"... the 2nd, likewise\", () => {\n     const upsPage = upsertResponse.pages[1];\n-    assert.eq(upsPage.urlPaths.canonical, expectedUrlPath(upsPage, pageThreeToUpsert.title));\n+    assert.eq(upsPage.urlPaths.canonical, expectedUrlPath(upsPage, { slug: pageThreeExpectedSlug }));\n     assert.eq(upsPage.pageType, c.TestPageRole.Problem);\n     utils.checkNewPageFields(upsPage, {\n       categoryId: forum.categories.categoryA.id,\n@@ -278,7 +293,7 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n \n   it(\"... all topics have the epected titles\", () => {\n     owensBrowser.forumTopicList.assertTopicTitlesAreAndOrder([\n-        pageThreeToUpsert.title, // now topic no 3 is first, but below: TyT602FKUDLSV\n+        pageThreeToUpsert_longTitle.title, // now topic no 3 is first, but below: TyT602FKUDLSV\n         pageTwoToUpsert.title,\n         pageOneToUpsert.title,\n         forum.topics.byMichaelCategoryA.title,\n@@ -437,7 +452,7 @@ describe(\"api-upsert-pages   TyT603PKRAEPGJ5\", () => {\n     owensBrowser.forumTopicList.assertNumVisible(5, { wait: true });\n     owensBrowser.forumTopicList.assertTopicTitlesAreAndOrder([\n         PageTwoTitleManuallyEdited, // topic 2 first — got bumped  TyT602FKUDLSV\n-        pageThreeToUpsert.title,    // ... above topic 3\n+        pageThreeToUpsert_longTitle.title,    // ... above topic 3\n         pageOneToUpsert.title,\n         forum.topics.byMichaelCategoryA.title,\n         forum.topics.byMariaCategoryA.title]);"
+    },
+    {
+      "sha": "defd2065943d95d9c1ee68ba1dc9987a645bb842",
+      "filename": "tests/e2e/utils/ty-assert.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 1,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/a66e4dee429683634480eb45ed5b7fe6f40a698b/tests/e2e/utils/ty-assert.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/a66e4dee429683634480eb45ed5b7fe6f40a698b/tests/e2e/utils/ty-assert.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/ty-assert.ts?ref=a66e4dee429683634480eb45ed5b7fe6f40a698b",
+      "patch": "@@ -8,7 +8,17 @@ const tyAssert = {\n   // Could do that change later — but start with deepEq as a separate fn.\n   deepEq: assert.deepStrictEqual,\n \n-  eq: assert.strictEqual,\n+  eq: (actual, expected, message?) => {\n+    // Show the two values on two lines, aligned, so one sees at a glance\n+    // what's wrong.\n+    if (!message) {\n+      message =\n+          \"assert.eq: Actual value differs from expected value:\\n\" +\n+          `       ${actual}\\n` +\n+          `  !==  ${expected}\\n`;\n+    }\n+    assert.strictEqual(actual, expected, message);\n+  },\n \n   refEq: (actual, expected) => {\n     assert.ok(actual === expected,"
+    }
+  ]
+}
