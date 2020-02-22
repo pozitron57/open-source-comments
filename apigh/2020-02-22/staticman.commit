@@ -1,0 +1,218 @@
+{
+  "sha": "6f1f69480749339048c6f9e2664a9312022236cf",
+  "node_id": "MDY6Q29tbWl0Mzg4ODA1NTU6NmYxZjY5NDgwNzQ5MzM5MDQ4YzZmOWUyNjY0YTkzMTIwMjIyMzZjZg==",
+  "commit": {
+    "author": {
+      "name": "Alex Waibel",
+      "email": "alexwaibel@users.noreply.github.com",
+      "date": "2020-02-12T17:25:28Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-02-12T17:25:28Z"
+    },
+    "message": "Merge test fixes into master (#331)\n\nResolve all failing unit and acceptance tests. Modernize handlePR controller with newer JS features.",
+    "tree": {
+      "sha": "ef7f6fef9f64a51f993f3e0e5aab3277f4b1cc01",
+      "url": "https://api.github.com/repos/eduardoboucas/staticman/git/trees/ef7f6fef9f64a51f993f3e0e5aab3277f4b1cc01"
+    },
+    "url": "https://api.github.com/repos/eduardoboucas/staticman/git/commits/6f1f69480749339048c6f9e2664a9312022236cf",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeRDUICRBK7hj4Ov3rIwAAdHIIAIzf3pvTfw5U3WlXec/mHdWO\nHSJuBBZMazS8gkcClHriwQHHr8wSwKM/JQgov87NE9l79lpgQ6OLRfydUXS1Maf9\nWTXZmbyGor6ZCzGOpvHW7I/YcDjB6+WBxGxUB1fkB4hZi3DjXoz6pHik0h/FilEo\nxVStoy2JLvjw8K2MdhccMKjwNg6WdAaJll4onXPnpbV9MgJuaeXsi8IZguNXK5GG\nwzp2Ps75UGKjFQwTnMtOZVRXv/RXZOL7bTuH/kbNT67tdbRrUwQ1xbKgTOQI9CN7\nrgxY7FqUwfuZdDBIDQmy4I18sorR4b4ClUvulwNyuwi+iOVEbuS/1z+OKlgyK0o=\n=SA4K\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ef7f6fef9f64a51f993f3e0e5aab3277f4b1cc01\nparent c8e339f65c3e760518a849dbbfb1deb2c8e6410a\nauthor Alex Waibel <alexwaibel@users.noreply.github.com> 1581528328 -0500\ncommitter GitHub <noreply@github.com> 1581528328 -0500\n\nMerge test fixes into master (#331)\n\nResolve all failing unit and acceptance tests. Modernize handlePR controller with newer JS features."
+    }
+  },
+  "url": "https://api.github.com/repos/eduardoboucas/staticman/commits/6f1f69480749339048c6f9e2664a9312022236cf",
+  "html_url": "https://github.com/eduardoboucas/staticman/commit/6f1f69480749339048c6f9e2664a9312022236cf",
+  "comments_url": "https://api.github.com/repos/eduardoboucas/staticman/commits/6f1f69480749339048c6f9e2664a9312022236cf/comments",
+  "author": {
+    "login": "alexwaibel",
+    "id": 7026879,
+    "node_id": "MDQ6VXNlcjcwMjY4Nzk=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/7026879?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexwaibel",
+    "html_url": "https://github.com/alexwaibel",
+    "followers_url": "https://api.github.com/users/alexwaibel/followers",
+    "following_url": "https://api.github.com/users/alexwaibel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexwaibel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexwaibel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexwaibel/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexwaibel/orgs",
+    "repos_url": "https://api.github.com/users/alexwaibel/repos",
+    "events_url": "https://api.github.com/users/alexwaibel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexwaibel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c8e339f65c3e760518a849dbbfb1deb2c8e6410a",
+      "url": "https://api.github.com/repos/eduardoboucas/staticman/commits/c8e339f65c3e760518a849dbbfb1deb2c8e6410a",
+      "html_url": "https://github.com/eduardoboucas/staticman/commit/c8e339f65c3e760518a849dbbfb1deb2c8e6410a"
+    }
+  ],
+  "stats": {
+    "total": 436,
+    "additions": 213,
+    "deletions": 223
+  },
+  "files": [
+    {
+      "sha": "87aeacde599b787bb21555cb1e6378d082f5f03e",
+      "filename": "controllers/handlePR.js",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 11,
+      "changes": 19,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/controllers/handlePR.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/controllers/handlePR.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/controllers/handlePR.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -16,10 +16,11 @@ module.exports = async (repo, data) => {\n   const github = await new GitHub({\n     username: data.repository.owner.login,\n     repository: data.repository.name,\n-    token: config.get('githubToken')\n+    version: '1'\n   })\n \n-  return github.getReview(data.number).then(async (review) => {\n+  try {\n+    let review = await github.getReview(data.number)\n     if (review.sourceBranch.indexOf('staticman_')) {\n       return null\n     }\n@@ -38,27 +39,23 @@ module.exports = async (repo, data) => {\n \n           staticman.setConfigPath(parsedBody.configPath)\n           staticman.processMerge(parsedBody.fields, parsedBody.options)\n-            .catch(err => Promise.reject(err))\n         } catch (err) {\n           return Promise.reject(err)\n         }\n       }\n     }\n \n-    return github.deleteBranch(review.sourceBranch)\n-  }).then(response => {\n     if (ua) {\n       ua.event('Hooks', 'Delete branch').send()\n     }\n-\n-    return response\n-  }).catch(err => {\n-    console.log(err.stack || err)\n+    return github.deleteBranch(review.sourceBranch)\n+  } catch (e) {\n+    console.log(e.stack || e)\n \n     if (ua) {\n       ua.event('Hooks', 'Delete branch error').send()\n     }\n \n-    return Promise.reject(err)\n-  })\n+    return Promise.reject(e)\n+  }\n }"
+    },
+    {
+      "sha": "2089a7b2558dbb0ca49ca12557c9eb99cb0aec6e",
+      "filename": "index.js",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 11,
+      "changes": 20,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/index.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/index.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/index.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -1,12 +1,10 @@\n-(async () => {\n-  try {\n-    const StaticmanAPI = require('./server')\n-    const api = await new StaticmanAPI()\n+try {\n+  const StaticmanAPI = require('./server')\n+  const api = new StaticmanAPI()\n \n-    api.start(port => {\n-      console.log('Staticman API running on port', port)\n-    })\n-  } catch (e) {\n-    console.error(e)\n-  }\n-})()\n+  api.start(port => {\n+    console.log('Staticman API running on port', port)\n+  })\n+} catch (e) {\n+  console.error(e)\n+}"
+    },
+    {
+      "sha": "cfc454052490f7648176396830a8df3798a48130",
+      "filename": "lib/ErrorHandler.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/lib/ErrorHandler.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/lib/ErrorHandler.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/lib/ErrorHandler.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -27,7 +27,8 @@ const ErrorHandler = function () {\n     'RECAPTCHA_FAILED_DECRYPT': 'Could not decrypt reCAPTCHA secret',\n     'RECAPTCHA_CONFIG_MISMATCH': 'reCAPTCHA options do not match Staticman config',\n     'PARSING_ERROR': 'Error whilst parsing config file',\n-    'GITHUB_AUTH_TOKEN_MISSING': 'The site requires a valid GitHub authentication token to be supplied in the `options[github-token]` field'\n+    'GITHUB_AUTH_TOKEN_MISSING': 'The site requires a valid GitHub authentication token to be supplied in the `options[github-token]` field',\n+    'MISSING_CONFIG_BLOCK': 'Error whilst parsing Staticman config file'\n   }\n \n   this.ERROR_CODE_ALIASES = {"
+    },
+    {
+      "sha": "73dd1b3cd60b25e3f39437429c1e9cba609d3edc",
+      "filename": "lib/GitHub.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/lib/GitHub.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/lib/GitHub.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/lib/GitHub.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -161,10 +161,10 @@ class GitHub extends GitService {\n   }\n \n   getReview (reviewId) {\n-    return this.api.pullRequests.get({\n+    return this.api.pulls.get({\n       owner: this.username,\n       repo: this.repository,\n-      number: reviewId\n+      pull_number: reviewId\n     })\n       .then(normalizeResponse)\n       .then(({base, body, head, merged, state, title}) =>"
+    },
+    {
+      "sha": "003af118858c3acb0b92cb3d06505eed0fd6b434",
+      "filename": "server.js",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 23,
+      "changes": 42,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/server.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/server.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/server.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -7,30 +7,26 @@ const objectPath = require('object-path')\n \n class StaticmanAPI {\n   constructor () {\n-    return (async () => {\n-      this.controllers = {\n-        connect: require('./controllers/connect'),\n-        encrypt: require('./controllers/encrypt'),\n-        auth: require('./controllers/auth'),\n-        handlePR: require('./controllers/handlePR'),\n-        home: require('./controllers/home'),\n-        process: require('./controllers/process')\n-      }\n-\n-      this.server = express()\n-      this.server.use(bodyParser.json())\n-      this.server.use(bodyParser.urlencoded({\n-        extended: true\n-        // type: '*'\n-      }))\n-\n-      this.initialiseWebhookHandler()\n-      this.initialiseCORS()\n-      this.initialiseBruteforceProtection()\n-      this.initialiseRoutes()\n+    this.controllers = {\n+      connect: require('./controllers/connect'),\n+      encrypt: require('./controllers/encrypt'),\n+      auth: require('./controllers/auth'),\n+      handlePR: require('./controllers/handlePR'),\n+      home: require('./controllers/home'),\n+      process: require('./controllers/process')\n+    }\n \n-      return this\n-    })()\n+    this.server = express()\n+    this.server.use(bodyParser.json())\n+    this.server.use(bodyParser.urlencoded({\n+      extended: true\n+      // type: '*'\n+    }))\n+\n+    this.initialiseWebhookHandler()\n+    this.initialiseCORS()\n+    this.initialiseBruteforceProtection()\n+    this.initialiseRoutes()\n   }\n \n   initialiseBruteforceProtection () {"
+    },
+    {
+      "sha": "2e712ef8bbb6c52a953391d09f697ccc83021697",
+      "filename": "test/acceptance/api.test.js",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 10,
+      "changes": 22,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/test/acceptance/api.test.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/test/acceptance/api.test.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/test/acceptance/api.test.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -1,20 +1,22 @@\n-const config = require('./../../config')\n+const config = require('../../config')\n const githubToken = config.get('githubToken')\n-const helpers = require('./../helpers')\n+const helpers = require('../helpers')\n const nock = require('nock')\n const querystring = require('querystring')\n const request = helpers.wrappedRequest\n-const sampleData = require('./../helpers/sampleData')\n-const StaticmanAPI = require('./../../server')\n+const sampleData = require('../helpers/sampleData')\n+const StaticmanAPI = require('../../server')\n \n const btoa = contents => Buffer.from(contents).toString('base64')\n \n let server\n \n-beforeAll(async (done) => {\n-  server = await new StaticmanAPI()\n+beforeAll(done => {\n+  server = new StaticmanAPI()\n \n-  server.start(done)\n+  server.start(() => {})\n+\n+  done()\n })\n \n afterAll(done => {\n@@ -206,7 +208,7 @@ describe('Entry endpoint', () => {\n     })\n   })\n \n-  test('outputs a PARSING_ERROR error the site config is malformed', () => {\n+  test('outputs a MISSING_CONFIG_BLOCK error the site config is malformed', () => {\n     const data = Object.assign({}, helpers.getParameters(), {\n       path: 'staticman.yml'\n     })\n@@ -252,8 +254,8 @@ describe('Entry endpoint', () => {\n       const error = JSON.parse(response.error)\n \n       expect(error.success).toBe(false)\n-      expect(error.errorCode).toBe('PARSING_ERROR')\n-      expect(error.message).toBeDefined()\n+      expect(error.errorCode).toBe('MISSING_CONFIG_BLOCK')\n+      expect(error.message).toBe('Error whilst parsing Staticman config file')\n       expect(error.rawError).toBeDefined()\n     })\n   })"
+    },
+    {
+      "sha": "291696281e1f053e74ef20a990b6bae4d59e0dc7",
+      "filename": "test/helpers/index.js",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/test/helpers/index.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/test/helpers/index.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/test/helpers/index.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -10,11 +10,11 @@ const SiteConfig = require('./../../siteConfig')\n const yaml = require('js-yaml')\n \n // Disable console.log() for tests\n-// if (process.env.TEST_DEV !== 'true') {\n-//   console.debug = console.log\n-//   console.log = jest.fn()\n-//   console.warn = jest.fn()\n-// }\n+if (process.env.TEST_DEV !== 'true') {\n+  console.debug = console.log\n+  console.log = jest.fn()\n+  console.warn = jest.fn()\n+}\n \n const rsa = new NodeRSA()\n rsa.importKey(config.get('rsaPrivateKey'), 'private')"
+    },
+    {
+      "sha": "5c281552a8d31690cca066759b8f8b869e23d8c3",
+      "filename": "test/unit/controllers/auth.test.js",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 41,
+      "changes": 86,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/controllers/auth.test.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/controllers/auth.test.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/test/unit/controllers/auth.test.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -18,7 +18,7 @@ beforeEach(() => {\n \n describe('Auth controller', () => {\n   describe('GitHub', () => {\n-    test('authenticates to GitHub with the given code and returns the authenticated user', () => {\n+    test('authenticates to GitHub with the given code and returns the authenticated user', async () => {\n       const mockAccessToken = 'qwertyuiop'\n       const mockCode = '1q2w3e4r'\n       const mockUser = {\n@@ -41,11 +41,12 @@ describe('Auth controller', () => {\n           access_token: mockAccessToken\n         })\n \n-      nock(/github\\.com/)\n+      nock((/github\\.com/), {\n+        reqheaders: {\n+          authorization: `token ${mockAccessToken}`\n+        }\n+      })\n         .get('/user')\n-        .query({\n-          access_token: mockAccessToken\n-        })\n         .reply(200, mockUser)\n \n       const reqWithQuery = Object.assign({}, req, {\n@@ -54,15 +55,13 @@ describe('Auth controller', () => {\n         }\n       })\n \n-      return auth(reqWithQuery, res).then(result => {\n-        expect(res.send).toHaveBeenCalledTimes(1)\n-        expect(helpers.decrypt(res.send.mock.calls[0][0].accessToken)).toBe(mockAccessToken)\n-        expect(res.send.mock.calls[0][0].user)\n-          .toEqual(new User('github', mockUser.login, mockUser.email, mockUser.name))\n-      })\n+      await auth(reqWithQuery, res)\n+      expect(res.send).toHaveBeenCalledTimes(1)\n+      expect(helpers.decrypt(res.send.mock.calls[0][0].accessToken)).toBe(mockAccessToken)\n+      expect(res.send.mock.calls[0][0].user).toEqual(new User('github', mockUser.login, mockUser.email, mockUser.name))\n     })\n \n-    test('authenticates to GitHub with the given code and returns the original GitHub user when using v2 API', () => {\n+    test('authenticates to GitHub with the given code and returns the original GitHub user when using v2 API', async () => {\n       const mockAccessToken = 'qwertyuiop'\n       const mockCode = '1q2w3e4r'\n       const mockUser = {\n@@ -83,12 +82,13 @@ describe('Auth controller', () => {\n           access_token: mockAccessToken\n         })\n \n-      nock(/github\\.com/)\n-        .get('/user')\n-        .query({\n-          access_token: mockAccessToken\n+        nock((/github\\.com/), {\n+          reqheaders: {\n+            authorization: `token ${mockAccessToken}`\n+          }\n         })\n-        .reply(200, mockUser)\n+          .get('/user')\n+          .reply(200, mockUser)\n \n       const reqWithQuery = Object.assign({}, req, {\n         params: {\n@@ -100,14 +100,13 @@ describe('Auth controller', () => {\n         }\n       })\n \n-      return auth(reqWithQuery, res).then(result => {\n-        expect(res.send).toHaveBeenCalledTimes(1)\n-        expect(helpers.decrypt(res.send.mock.calls[0][0].accessToken)).toBe(mockAccessToken)\n-        expect(res.send.mock.calls[0][0].user).toEqual(mockUser)\n-      })\n+      await auth(reqWithQuery, res)\n+      expect(res.send).toHaveBeenCalledTimes(1)\n+      expect(helpers.decrypt(res.send.mock.calls[0][0].accessToken)).toBe(mockAccessToken)\n+      expect(res.send.mock.calls[0][0].user).toEqual(mockUser)\n     })\n \n-    test('returns a 401 response when unable to get an access token from GitHub', () => {\n+    test('returns a 401 response when unable to get an access token from GitHub', async () => {\n       const mockCode = '1q2w3e4r'\n       const siteConfig = helpers.getConfig()\n \n@@ -125,21 +124,21 @@ describe('Auth controller', () => {\n \n       const reqWithQuery = Object.assign({}, req, {\n         params: {\n-          service: 'github'\n+          service: 'github',\n+          version: '2'\n         },\n         query: {\n           code: mockCode\n         }\n       })\n \n-      return auth(reqWithQuery, res).then(result => {\n-        expect(res.status.mock.calls[0][0]).toBe(401)\n-        expect(res.send.mock.calls[0][0].statusCode).toBe(401)\n-        expect(res.send.mock.calls[0][0].message).toContain('invalid_code')\n-      })\n+      await auth(reqWithQuery, res)\n+      expect(res.status.mock.calls[0][0]).toBe(401)\n+      expect(res.send.mock.calls[0][0].statusCode).toBe(401)\n+      expect(res.send.mock.calls[0][0].message).toContain('invalid_code')\n     })\n \n-    test('returns a 401 response when an incorrect access token is used for the GitHub API', () => {\n+    test('returns a 401 response when an incorrect access token is used for the GitHub API', async () => {\n       const mockAccessToken = 'qwertyuiop'\n       const mockCode = '1q2w3e4r'\n \n@@ -157,25 +156,30 @@ describe('Auth controller', () => {\n           access_token: mockAccessToken\n         })\n \n-      nock(/github\\.com/).get('/user')\n-        .query({\n-          access_token: mockAccessToken\n-        })\n-        .reply(401, {\n-          message: 'Unauthorized'\n+        nock((/github\\.com/), {\n+          reqheaders: {\n+            authorization: `token ${mockAccessToken}`\n+          }\n         })\n+          .get('/user')\n+          .reply(401, {\n+            message: 'Unauthorized'\n+          })\n \n       const reqWithQuery = Object.assign({}, req, {\n+        params: {\n+          service: 'github',\n+          version: '2'\n+        },\n         query: {\n           code: mockCode\n         }\n       })\n \n-      return auth(reqWithQuery, res).then(result => {\n-        expect(res.status.mock.calls[0][0]).toBe(401)\n-        expect(res.send.mock.calls[0][0].statusCode).toBe(401)\n-        expect(res.send.mock.calls[0][0].message).toContain('Unauthorized')\n-      })\n+      await auth(reqWithQuery, res)\n+      expect(res.status.mock.calls[0][0]).toBe(401)\n+      expect(res.send.mock.calls[0][0].statusCode).toBe(401)\n+      expect(res.send.mock.calls[0][0].message).toContain('Unauthorized')\n     })\n   })\n "
+    },
+    {
+      "sha": "786525bcbb92038187335c581151512af1bd0392",
+      "filename": "test/unit/controllers/handlePR.test.js",
+      "status": "modified",
+      "additions": 80,
+      "deletions": 92,
+      "changes": 172,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/controllers/handlePR.test.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/controllers/handlePR.test.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/test/unit/controllers/handlePR.test.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -1,34 +1,33 @@\n const helpers = require('./../../helpers')\n const sampleData = require('./../../helpers/sampleData')\n+const Review = require('../../../lib/models/Review')\n \n-let mockAuthenticate\n let mockSetConfigPathFn\n let mockProcessMergeFn\n let req\n-let res\n \n // Mock Staticman module\n-jest.mock('./../../../lib/Staticman', () => {\n-  return jest.fn(parameters => ({\n-    authenticate: mockAuthenticate,\n-    setConfigPath: mockSetConfigPathFn,\n-    processMerge: mockProcessMergeFn\n-  }))\n+jest.mock('../../../lib/Staticman', () => {\n+  return jest.fn().mockImplementation(() => {\n+    return {\n+      setConfigPath: mockSetConfigPathFn,\n+      processMerge: mockProcessMergeFn\n+    }\n+  })\n })\n \n beforeEach(() => {\n-  mockAuthenticate = jest.fn()\n   mockSetConfigPathFn = jest.fn()\n-  mockProcessMergeFn = jest.fn(() => Promise.resolve(true))\n+  mockProcessMergeFn = jest.fn()\n   req = helpers.getMockRequest()\n   res = helpers.getMockResponse()\n \n+  jest.resetAllMocks()\n   jest.resetModules()\n-  jest.unmock('@octokit/rest')\n })\n \n describe('HandlePR controller', () => {\n-  test('ignores pull requests from branches not prefixed with `staticman_`', () => {\n+  test('ignores pull requests from branches not prefixed with `staticman_`', async () => {\n     const pr = {\n       number: 123,\n       title: 'Some random PR',\n@@ -48,32 +47,27 @@ describe('HandlePR controller', () => {\n       },\n       state: 'open'\n     }\n-    const mockPullRequestsGet = jest.fn(() => Promise.resolve({data: pr}))\n \n-    jest.mock('@octokit/rest', () =>\n-      _ => ({\n-        authenticate: jest.fn(),\n-        pullRequests: {\n-          get: mockPullRequestsGet\n+    const mockReview = new Review(pr.title, pr.body, 'false', pr.head.ref, pr.base.ref)\n+    const mockGetReview = jest.fn().mockResolvedValue(mockReview)\n+\n+    jest.mock('../../../lib/GitHub', () => {\n+      return jest.fn().mockImplementation(() => {\n+        return {\n+          getReview: mockGetReview\n         }\n       })\n-    )\n+    })\n \n     const handlePR = require('./../../../controllers/handlePR')\n \n-    return handlePR(req.params.repository, pr).then(response => {\n-      expect(mockPullRequestsGet).toHaveBeenCalledTimes(1)\n-      expect(mockPullRequestsGet.mock.calls[0][0]).toEqual({\n-        owner: req.params.username,\n-        repo: req.params.repository,\n-        number: pr.number\n-      })\n-      expect(response).toBe(null)\n-    })\n+    let response = await handlePR(req.params.repository, pr)\n+    expect(mockGetReview).toHaveBeenCalledTimes(1)\n+    expect(response).toBe(null)\n   })\n \n   describe('processes notifications if the pull request has been merged', () => {\n-    test('do nothing if PR body doesn\\'t match template', () => {\n+    test('do nothing if PR body doesn\\'t match template', async () => {\n       const pr = {\n         number: 123,\n         title: 'Add Staticman data',\n@@ -93,30 +87,28 @@ describe('HandlePR controller', () => {\n         },\n         state: 'open'\n       }\n-      const mockDeleteReference = jest.fn()\n-      const mockPullRequestsGet = jest.fn(() => Promise.resolve({data: pr}))\n-\n-      jest.mock('@octokit/rest', () =>\n-        _ => ({\n-          authenticate: jest.fn(),\n-          gitdata: {\n-            deleteReference: mockDeleteReference\n-          },\n-          pullRequests: {\n-            get: mockPullRequestsGet\n+      \n+      const mockReview = new Review(pr.title, pr.body, 'false', pr.head.ref, pr.base.ref)\n+      const mockGetReview = jest.fn().mockResolvedValue(mockReview)\n+      const mockDeleteBranch = jest.fn()\n+\n+      jest.mock('../../../lib/GitHub', () => {\n+        return jest.fn().mockImplementation(() => {\n+          return {\n+            getReview: mockGetReview,\n+            deleteBranch: mockDeleteBranch\n           }\n         })\n-      )\n+      })\n \n       const handlePR = require('./../../../controllers/handlePR')\n \n-      return handlePR(req.params.repository, pr).then(response => {\n-        expect(mockPullRequestsGet).toHaveBeenCalledTimes(1)\n-        expect(mockDeleteReference).not.toHaveBeenCalled()\n-      })\n+      await handlePR(req.params.repository, pr)\n+      expect(mockGetReview).toHaveBeenCalledTimes(1)\n+      expect(mockDeleteBranch).not.toHaveBeenCalled()\n     })\n \n-    test('abort and return an error if `processMerge` fails', () => {\n+    test('abort and return an error if `processMerge` fails', async () => {\n       const pr = {\n         number: 123,\n         title: 'Add Staticman data',\n@@ -136,35 +128,42 @@ describe('HandlePR controller', () => {\n         },\n         state: 'closed'\n       }\n-      const mockPullRequestsGet = jest.fn(() => Promise.resolve({\n-        data: pr\n-      }))\n-\n-      jest.mock('@octokit/rest', () =>\n-        _ => ({\n-          authenticate: jest.fn(),\n-          pullRequests: {\n-            get: mockPullRequestsGet\n+      \n+      const mockReview = new Review(pr.title, pr.body, 'merged', pr.head.ref, pr.base.ref)\n+      const mockGetReview = jest.fn().mockResolvedValue(mockReview)\n+      const mockDeleteBranch = jest.fn()\n+\n+      jest.mock('../../../lib/GitHub', () => {\n+        return jest.fn().mockImplementation(() => {\n+          return {\n+            getReview: mockGetReview,\n+            deleteBranch: mockDeleteBranch\n           }\n         })\n-      )\n+      })\n \n-      const handlePR = require('./../../../controllers/handlePR')\n       const errorMessage = 'some error'\n \n       mockProcessMergeFn = jest.fn(() => {\n         throw errorMessage\n       })\n \n-      return handlePR(req.params.repository, pr).catch(err => {\n-        expect(err).toBe(errorMessage)\n-        expect(mockPullRequestsGet).toHaveBeenCalledTimes(1)\n-        expect(mockSetConfigPathFn.mock.calls.length).toBe(1)\n-        expect(mockProcessMergeFn.mock.calls.length).toBe(1)\n-      })\n+      const handlePR = require('./../../../controllers/handlePR')\n+\n+      expect.assertions(4)\n+      try {\n+        await handlePR(req.params.repository, pr)\n+      } catch (e) {\n+        expect(e).toBe(errorMessage)\n+        expect(mockGetReview).toHaveBeenCalledTimes(1)\n+        // expect(mockSetConfigPathFn.mock.calls.length).toBe(1)\n+        // expect(mockProcessMergeFn.mock.calls.length).toBe(1)\n+        expect(mockSetConfigPathFn).toHaveBeenCalledTimes(1)\n+        expect(mockProcessMergeFn).toHaveBeenCalledTimes(1)\n+      }\n     })\n \n-    test('delete the branch if the pull request is closed', () => {\n+    test('delete the branch if the pull request is closed', async () => {\n       const pr = {\n         number: 123,\n         title: 'Add Staticman data',\n@@ -184,39 +183,28 @@ describe('HandlePR controller', () => {\n         },\n         state: 'closed'\n       }\n-      const mockDeleteReference = jest.fn()\n-      const mockPullRequestsGet = jest.fn(() => Promise.resolve({data: pr}))\n-\n-      jest.mock('@octokit/rest', () =>\n-        _ => ({\n-          authenticate: jest.fn(),\n-          gitdata: {\n-            deleteReference: mockDeleteReference\n-          },\n-          pullRequests: {\n-            get: mockPullRequestsGet\n+\n+      const mockReview = new Review(pr.title, pr.body, 'merged', pr.head.ref, pr.base.ref)\n+      const mockDeleteBranch = jest.fn()\n+      const mockGetReview = jest.fn().mockResolvedValue(mockReview)\n+\n+      jest.mock('../../../lib/GitHub', () => {\n+        return jest.fn().mockImplementation(() => {\n+          return {\n+            deleteBranch: mockDeleteBranch,\n+            getReview: mockGetReview\n           }\n         })\n-      )\n+      })\n \n       const handlePR = require('./../../../controllers/handlePR')\n \n-      return handlePR(req.params.repository, pr).then(response => {\n-        expect(mockPullRequestsGet).toHaveBeenCalledTimes(1)\n-        expect(mockPullRequestsGet.mock.calls[0][0]).toEqual({\n-          owner: req.params.username,\n-          repo: req.params.repository,\n-          number: pr.number\n-        })\n-        expect(mockDeleteReference).toHaveBeenCalledTimes(1)\n-        expect(mockDeleteReference.mock.calls[0][0]).toEqual({\n-          owner: req.params.username,\n-          repo: req.params.repository,\n-          ref: `heads/${pr.head.ref}`\n-        })\n-        expect(mockSetConfigPathFn.mock.calls.length).toBe(1)\n-        expect(mockProcessMergeFn.mock.calls.length).toBe(1)\n-      })\n+      await handlePR(req.params.repository, pr)\n+      expect(mockGetReview).toHaveBeenCalledTimes(1)\n+      expect(mockGetReview.mock.calls[0][0]).toEqual(123)\n+      expect(mockDeleteBranch).toHaveBeenCalledTimes(1)\n+      expect(mockSetConfigPathFn.mock.calls.length).toBe(1)\n+      expect(mockProcessMergeFn.mock.calls.length).toBe(1)\n     })\n   })\n })"
+    },
+    {
+      "sha": "f60f7c9a4fccfe5ef4869edf5ab1f1a3aca06de1",
+      "filename": "test/unit/lib/GitLab.test.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 10,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/lib/GitLab.test.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/lib/GitLab.test.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/test/unit/lib/GitLab.test.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -2,21 +2,23 @@ const mockHelpers = require('./../../helpers')\n const sampleData = require('./../../helpers/sampleData')\n const User = require('../../../lib/models/User')\n const yaml = require('js-yaml')\n+const GitLab = require('../../../lib/GitLab')\n+const config = require('../../../config')\n \n let req\n \n const btoa = contents => Buffer.from(contents).toString('base64')\n \n beforeEach(() => {\n   jest.resetModules()\n+  jest.restoreAllMocks()\n \n   req = mockHelpers.getMockRequest()\n   req.params.token = 'test-token'\n })\n \n describe('GitLab interface', () => {\n   test('initialises the GitLab API wrapper', () => {\n-    const GitLab = require('./../../../lib/GitLab')\n     const gitlab = new GitLab(req.params)\n \n     expect(gitlab.api).toBeDefined()\n@@ -33,13 +35,13 @@ describe('GitLab interface', () => {\n         }\n       }\n     })\n-\n+ \n     const GitLab = require('./../../../lib/GitLab')\n     const gitlab = new GitLab(req.params) // eslint-disable-line no-unused-vars\n \n     expect(mockConstructor.mock.calls[0][0]).toEqual({\n       url: 'https://gitlab.com',\n-      token: req.params.token\n+      token: 'r4e3w2q1'\n     })\n   })\n \n@@ -67,7 +69,7 @@ describe('GitLab interface', () => {\n   })\n \n   test('throws error if no personal access token or OAuth token is provided', () => {\n-    const GitLab = require('../../../lib/GitLab')\n+    jest.spyOn(config, 'get').mockImplementation(() => null)\n \n     expect(() => new GitLab({})).toThrowError('Require an `oauthToken` or `token` option')\n   })"
+    },
+    {
+      "sha": "a5915a4c59a58746bd3f7271f5ab50e38459d61c",
+      "filename": "test/unit/lib/Staticman.test.js",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 23,
+      "changes": 48,
+      "blob_url": "https://github.com/eduardoboucas/staticman/blob/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/lib/Staticman.test.js",
+      "raw_url": "https://github.com/eduardoboucas/staticman/raw/6f1f69480749339048c6f9e2664a9312022236cf/test/unit/lib/Staticman.test.js",
+      "contents_url": "https://api.github.com/repos/eduardoboucas/staticman/contents/test/unit/lib/Staticman.test.js?ref=6f1f69480749339048c6f9e2664a9312022236cf",
+      "patch": "@@ -527,11 +527,12 @@ describe('Staticman interface', () => {\n       staticman.fields = fields\n       staticman.options = options\n       staticman.siteConfig = mockConfig\n+      staticman.parameters.version = '3'\n \n-      return staticman._checkAuth().then((result) => {\n-        expect(mockConstructor.mock.calls[1][0]).toEqual({\n-          oauthToken: 'test-token'\n-        })\n+      await staticman._checkAuth()\n+      expect(mockConstructor.mock.calls[1][0]).toEqual({\n+        oauthToken: 'test-token',\n+        version: '3'\n       })\n     })\n \n@@ -559,11 +560,12 @@ describe('Staticman interface', () => {\n       staticman.fields = fields\n       staticman.options = options\n       staticman.siteConfig = mockConfig\n+      staticman.parameters.version = '3'\n \n-      return staticman._checkAuth().then((result) => {\n-        expect(mockConstructor.mock.calls[0][0]).toEqual({\n-          oauthToken: 'test-token'\n-        })\n+      await staticman._checkAuth()\n+      expect(mockConstructor.mock.calls[0][0]).toEqual({\n+        oauthToken: 'test-token',\n+        version: '3'\n       })\n     })\n \n@@ -589,14 +591,14 @@ describe('Staticman interface', () => {\n       staticman.fields = fields\n       staticman.options = options\n       staticman.siteConfig = mockConfig\n+      staticman.parameters.version = '3'\n \n       const mockUser = new User('github', 'johndoe', 'johndoe@test.com', 'John Doe')\n \n-      return staticman._checkAuth().then((result) => {\n-        expect(mockGetCurrentUser).toHaveBeenCalledTimes(1)\n-        expect(staticman.gitUser).toEqual(mockUser)\n-        expect(result).toBeTruthy()\n-      })\n+      let result = await staticman._checkAuth()\n+      expect(mockGetCurrentUser).toHaveBeenCalledTimes(1)\n+      expect(staticman.gitUser).toEqual(mockUser)\n+      expect(result).toBeTruthy()\n     })\n \n     test('sets the `gitUser` property to the authenticated User and returns true for GitLab authentication', async () => {\n@@ -622,14 +624,14 @@ describe('Staticman interface', () => {\n       staticman.fields = fields\n       staticman.options = options\n       staticman.siteConfig = mockConfig\n+      staticman.parameters.version = '3'\n \n       const mockUser = new User('github', 'johndoe', 'johndoe@test.com', 'John Doe')\n \n-      return staticman._checkAuth().then((result) => {\n-        expect(mockGetCurrentUser).toHaveBeenCalledTimes(1)\n-        expect(staticman.gitUser).toEqual(mockUser)\n-        expect(result).toBeTruthy()\n-      })\n+      let result = await staticman._checkAuth()\n+      expect(mockGetCurrentUser).toHaveBeenCalledTimes(1)\n+      expect(staticman.gitUser).toEqual(mockUser)\n+      expect(result).toBeTruthy()\n     })\n   })\n \n@@ -1464,16 +1466,16 @@ describe('Staticman interface', () => {\n       mockConfig.set('auth.required', true)\n \n       staticman.siteConfig = mockConfig\n+      staticman.parameters.version = '3'\n       staticman._checkForSpam = () => Promise.resolve(fields)\n       staticman.git.writeFile = jest.fn(() => Promise.resolve())\n \n       const spyCheckAuth = jest.spyOn(staticman, '_checkAuth')\n \n-      return staticman.processEntry(fields, options).then(_ => {\n-        expect(spyCheckAuth).toHaveBeenCalledTimes(1)\n-        expect(mockGetCurrentUser).toHaveBeenCalledTimes(1)\n-        expect(staticman.gitUser).toEqual(mockUser)\n-      })\n+      await staticman.processEntry(fields, options)\n+      expect(spyCheckAuth).toHaveBeenCalledTimes(1)\n+      expect(mockGetCurrentUser).toHaveBeenCalledTimes(1)\n+      expect(staticman.gitUser).toEqual(mockUser)\n     })\n \n     test('authenticates user before creating file, throwing an error if unable to authenticate', async () => {"
+    }
+  ]
+}
