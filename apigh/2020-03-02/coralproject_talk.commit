@@ -1,0 +1,98 @@
+{
+  "sha": "7d967fc93b7b4c446c43e11832f8dac29c11b265",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6N2Q5NjdmYzkzYjdiNGM0NDZjNDNlMTE4MzJmOGRhYzI5YzExYjI2NQ==",
+  "commit": {
+    "author": {
+      "name": "Nick Funk",
+      "email": "nick.funk@outlook.com",
+      "date": "2020-03-02T16:34:17Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-03-02T16:34:17Z"
+    },
+    "message": "[CORL-933] Add additional error handling around logQuery (#2868)\n\n* Add additional error handling around logQuery\r\n\r\nWe are seeing that sometimes the context has\r\nan undefined logger. We probably want to catch\r\nthis case and ensure we don't fail. If it happens\r\nagain, we will catch everything we need to know\r\nand that will help us resolve the issue in the\r\nfuture.\r\n\r\nCORL-933\r\n\r\n* Simplify logging objects for efficiency\r\n\r\nSome of the objects that we were going to log\r\nare too large to be dumped to the logging context.\r\nInstead, prefer simple boolean evaluation of their\r\nexistence.\r\n\r\nCORL-933",
+    "tree": {
+      "sha": "48bb43a34e20c1033664bad970803a99817889ba",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/48bb43a34e20c1033664bad970803a99817889ba"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/7d967fc93b7b4c446c43e11832f8dac29c11b265",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeXTWJCRBK7hj4Ov3rIwAAdHIIAIjX4mVszZX9A84obPGYyJAO\nAHVyl2PCVQHQT2o7RW0QvIPgmJAXGk0oJb5GQTTVGQHbm6VcIVLrQA3gCg7D85dF\nebYsLsVzDZYSfMKmEgtR3XxT2vo2aruGiA+uNSYYYL+FAVHS45qVfCFR9nVO4Cwb\nXjYm2YyseUSQaKBBFcLzR0gT+Q4i4XPDnp8G+5hFj9i1DcHei0iNVCYQJe2+L2Q7\nFfvFptOTt2cKu2mP9fmyuyfABtpg3iOE98MTThpPBOCJbxB8xrqAFCbgtWpVfPXh\nQaHfE8XrnHMX4YCGntBhecw9EifsLA3rRmGWLGt79M7MYElEzOpECUa/wACRCkI=\n=zp1l\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 48bb43a34e20c1033664bad970803a99817889ba\nparent ae7b0fbb372cd4810c856791bd362a57a6b78287\nauthor Nick Funk <nick.funk@outlook.com> 1583166857 -0700\ncommitter GitHub <noreply@github.com> 1583166857 +0000\n\n[CORL-933] Add additional error handling around logQuery (#2868)\n\n* Add additional error handling around logQuery\r\n\r\nWe are seeing that sometimes the context has\r\nan undefined logger. We probably want to catch\r\nthis case and ensure we don't fail. If it happens\r\nagain, we will catch everything we need to know\r\nand that will help us resolve the issue in the\r\nfuture.\r\n\r\nCORL-933\r\n\r\n* Simplify logging objects for efficiency\r\n\r\nSome of the objects that we were going to log\r\nare too large to be dumped to the logging context.\r\nInstead, prefer simple boolean evaluation of their\r\nexistence.\r\n\r\nCORL-933\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/7d967fc93b7b4c446c43e11832f8dac29c11b265",
+  "html_url": "https://github.com/coralproject/talk/commit/7d967fc93b7b4c446c43e11832f8dac29c11b265",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/7d967fc93b7b4c446c43e11832f8dac29c11b265/comments",
+  "author": {
+    "login": "nick-funk",
+    "id": 5751504,
+    "node_id": "MDQ6VXNlcjU3NTE1MDQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5751504?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nick-funk",
+    "html_url": "https://github.com/nick-funk",
+    "followers_url": "https://api.github.com/users/nick-funk/followers",
+    "following_url": "https://api.github.com/users/nick-funk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nick-funk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nick-funk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nick-funk/subscriptions",
+    "organizations_url": "https://api.github.com/users/nick-funk/orgs",
+    "repos_url": "https://api.github.com/users/nick-funk/repos",
+    "events_url": "https://api.github.com/users/nick-funk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nick-funk/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ae7b0fbb372cd4810c856791bd362a57a6b78287",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/ae7b0fbb372cd4810c856791bd362a57a6b78287",
+      "html_url": "https://github.com/coralproject/talk/commit/ae7b0fbb372cd4810c856791bd362a57a6b78287"
+    }
+  ],
+  "stats": {
+    "total": 48,
+    "additions": 43,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "b7f65db0aa132c196c47f1675ecdb8dfe7b52498",
+      "filename": "src/core/server/graph/extensions/LoggerExtension.ts",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 5,
+      "changes": 48,
+      "blob_url": "https://github.com/coralproject/talk/blob/7d967fc93b7b4c446c43e11832f8dac29c11b265/src/core/server/graph/extensions/LoggerExtension.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/7d967fc93b7b4c446c43e11832f8dac29c11b265/src/core/server/graph/extensions/LoggerExtension.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/extensions/LoggerExtension.ts?ref=7d967fc93b7b4c446c43e11832f8dac29c11b265",
+      "patch": "@@ -7,6 +7,7 @@ import {\n import now from \"performance-now\";\n \n import GraphContext from \"coral-server/graph/context\";\n+import logger from \"coral-server/logger\";\n \n import { getOperationMetadata, getPersistedQueryMetadata } from \"./helpers\";\n \n@@ -20,8 +21,13 @@ export function logQuery(\n   persisted = ctx.persisted,\n   responseTime?: number\n ) {\n-  ctx.logger.info(\n-    {\n+  // Try..catch introduced as we try and explore CORL-933.\n+  // We are seeing that the logger context was undefined\n+  // when trying to log the query. Putting a lot of safety\n+  // to keep this up and running, and if it fails for other\n+  // reasons, gather metrics on it.\n+  try {\n+    const queryMeta = {\n       responseTime,\n       // deprecated: use of the `authenticated` log field is deprecated in favour of the `userID` field\n       authenticated: ctx.user ? true : false,\n@@ -33,9 +39,41 @@ export function logQuery(\n         : // A persisted query was not provided, parse the operation metadata\n           // out from the document.\n           getOperationMetadata(document)),\n-    },\n-    \"graphql query\"\n-  );\n+    };\n+\n+    // CORL-933: We are checking we have a logger as sometimes\n+    // we are seeing no logger on the graph context. We're not\n+    // sure why this is the case, but we want to catch when this\n+    // is happening and not throw an error.\n+    if (!ctx || !ctx.logger) {\n+      // Catch the context and log it out, we need to know what is\n+      // going on here\n+      logger.warn(\n+        { ctx: Boolean(ctx) },\n+        \"unable to find logger on GraphContext\"\n+      );\n+\n+      // Continue to log the query.\n+      // We don't want to lose the precious metrics.\n+      logger.info(queryMeta, \"graphql query\");\n+    } else {\n+      // HAPPY STATE:\n+      // Carry on as normal, everything is as it should be!\n+      ctx.logger.info(queryMeta, \"graphql query\");\n+    }\n+  } catch (err) {\n+    // Since we introduced all these checks, we don't know\n+    // the state of the context or what other data may be\n+    // undefined.\n+    //\n+    // If while compositing this log data we fail for other\n+    // reasons, let's catch that to prevent other errors from\n+    // occurring and log everything we can.\n+    logger.error(\n+      { err, ctx: Boolean(ctx), document: Boolean(document) },\n+      \"unable to log GraphQL query\"\n+    );\n+  }\n }\n \n export class LoggerExtension implements GraphQLExtension<GraphContext> {"
+    }
+  ]
+}
