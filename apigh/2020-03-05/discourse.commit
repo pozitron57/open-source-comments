@@ -1,0 +1,134 @@
+{
+  "sha": "e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplMDFkNWUyYWRjYzQ2ZTAxNjFiMjk3ZDE5ZDUxNmUwNzIyYjdkMmZm",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-04T16:47:09Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-05T14:23:21Z"
+    },
+    "message": "SECURITY: Add more restrictions on invite emails\n\nThey could be filtered and returned in some circumstances where they\nshouldn't have been.",
+    "tree": {
+      "sha": "fc91a301ec2094aaf279bf89817b4dafe80b4dd6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fc91a301ec2094aaf279bf89817b4dafe80b4dd6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+  "html_url": "https://github.com/discourse/discourse/commit/e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "79ce7085c25ff661d4c29c71de9dae2374c2dfc2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/79ce7085c25ff661d4c29c71de9dae2374c2dfc2",
+      "html_url": "https://github.com/discourse/discourse/commit/79ce7085c25ff661d4c29c71de9dae2374c2dfc2"
+    }
+  ],
+  "stats": {
+    "total": 83,
+    "additions": 51,
+    "deletions": 32
+  },
+  "files": [
+    {
+      "sha": "e96a79c9532a1961f82fc9cef73b4b455bb4347b",
+      "filename": "app/controllers/users_controller.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/app/controllers/users_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/app/controllers/users_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/users_controller.rb?ref=e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+      "patch": "@@ -286,8 +286,13 @@ def invited\n       Invite.find_redeemed_invites_from(inviter, offset)\n     end\n \n-    invites = invites.filter_by(params[:search])\n-    render_json_dump invites: serialize_data(invites.to_a, InviteSerializer),\n+    show_emails = guardian.can_see_invite_emails?(inviter)\n+    if params[:search].present?\n+      filter_sql = '(LOWER(users.username) LIKE :filter)'\n+      filter_sql = '(LOWER(invites.email) LIKE :filter) or (LOWER(users.username) LIKE :filter)' if show_emails\n+      invites = invites.where(filter_sql, filter: \"%#{params[:search].downcase}%\")\n+    end\n+    render_json_dump invites: serialize_data(invites.to_a, InviteSerializer, show_emails: show_emails),\n                      can_see_invite_details: guardian.can_see_invite_details?(inviter)\n   end\n "
+    },
+    {
+      "sha": "9c03c813fb17c27a690cf0b0afc5e8024c842e6c",
+      "filename": "app/serializers/invite_serializer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/app/serializers/invite_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/app/serializers/invite_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/invite_serializer.rb?ref=e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+      "patch": "@@ -5,7 +5,7 @@ class InviteSerializer < ApplicationSerializer\n   attributes :email, :updated_at, :redeemed_at, :expired, :user\n \n   def include_email?\n-    !object.redeemed?\n+    options[:show_emails] && !object.redeemed?\n   end\n \n   def expired"
+    },
+    {
+      "sha": "fae144f2b69823d78f03f2eb3687c01f7ecdee10",
+      "filename": "lib/guardian.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/lib/guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/lib/guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian.rb?ref=e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+      "patch": "@@ -331,6 +331,10 @@ def can_see_invite_details?(user)\n     is_me?(user)\n   end\n \n+  def can_see_invite_emails?(user)\n+    is_staff? || is_me?(user)\n+  end\n+\n   def can_invite_to_forum?(groups = nil)\n     authenticated? &&\n     (SiteSetting.max_invites_per_day.to_i > 0 || is_staff?) &&"
+    },
+    {
+      "sha": "ed28cab6504f016898f2a2e5fd5ebe3a79e0ac39",
+      "filename": "spec/requests/users_controller_spec.rb",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 29,
+      "changes": 68,
+      "blob_url": "https://github.com/discourse/discourse/blob/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/spec/requests/users_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e01d5e2adcc46e0161b297d19d516e0722b7d2ff/spec/requests/users_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/users_controller_spec.rb?ref=e01d5e2adcc46e0161b297d19d516e0722b7d2ff",
+      "patch": "@@ -1466,55 +1466,65 @@ def post_user\n       expect(response.status).to eq(200)\n     end\n \n-    it 'filters by email' do\n+    it 'filters by all if viewing self' do\n       inviter = Fabricate(:user, trust_level: 2)\n       sign_in(inviter)\n \n       invitee = Fabricate(:user)\n-      Fabricate(\n-        :invite,\n-        email: 'billybob@example.com',\n-        invited_by: inviter,\n-        user: invitee\n-      )\n-      Fabricate(\n-        :invite,\n-        email: 'jimtom@example.com',\n-        invited_by: inviter,\n-        user: invitee\n-      )\n+      Fabricate(:invite, email: 'billybob@example.com', invited_by: inviter, user: invitee)\n+      Fabricate(:invite, email: 'jimtom@example.com', invited_by: inviter, user: invitee)\n \n       get \"/u/#{inviter.username}/invited.json\", params: { search: 'billybob' }\n       expect(response.status).to eq(200)\n \n       invites = JSON.parse(response.body)['invites']\n       expect(invites.size).to eq(1)\n       expect(invites.first).to include('email' => 'billybob@example.com')\n+\n+      get \"/u/#{inviter.username}/invited.json\", params: { search: invitee.username }\n+      expect(response.status).to eq(200)\n+\n+      invites = JSON.parse(response.body)['invites']\n+      expect(invites.size).to eq(2)\n+      expect(invites[0]['email']).to be_present\n     end\n \n-    it 'filters by username' do\n+    it \"doesn't filter by email if another regular user\" do\n       inviter = Fabricate(:user, trust_level: 2)\n-      sign_in(inviter)\n+      sign_in(Fabricate(:user, trust_level: 2))\n \n-      invitee = Fabricate(:user, username: 'billybob')\n-      _invite = Fabricate(\n-        :invite,\n-        invited_by: inviter,\n-        email: 'billybob@example.com',\n-        user: invitee\n-      )\n-      Fabricate(\n-        :invite,\n-        invited_by: inviter,\n-        user: Fabricate(:user, username: 'jimtom')\n-      )\n+      invitee = Fabricate(:user)\n+      Fabricate(:invite, email: 'billybob@example.com', invited_by: inviter, user: invitee)\n+      Fabricate(:invite, email: 'jimtom@example.com', invited_by: inviter, user: invitee)\n+\n+      get \"/u/#{inviter.username}/invited.json\", params: { search: 'billybob' }\n+      expect(response.status).to eq(200)\n+\n+      invites = JSON.parse(response.body)['invites']\n+      expect(invites.size).to eq(0)\n+\n+      get \"/u/#{inviter.username}/invited.json\", params: { search: invitee.username }\n+      expect(response.status).to eq(200)\n+\n+      invites = JSON.parse(response.body)['invites']\n+      expect(invites.size).to eq(2)\n+      expect(invites[0]['email']).to be_blank\n+    end\n+\n+    it \"filters by email if staff\" do\n+      inviter = Fabricate(:user, trust_level: 2)\n+      sign_in(Fabricate(:moderator))\n+\n+      invitee = Fabricate(:user)\n+      Fabricate(:invite, email: 'billybob@example.com', invited_by: inviter, user: invitee)\n+      Fabricate(:invite, email: 'jimtom@example.com', invited_by: inviter, user: invitee)\n \n       get \"/u/#{inviter.username}/invited.json\", params: { search: 'billybob' }\n       expect(response.status).to eq(200)\n \n       invites = JSON.parse(response.body)['invites']\n       expect(invites.size).to eq(1)\n-      expect(invites.first).to include('email' => 'billybob@example.com')\n+      expect(invites[0]['email']).to be_present\n     end\n \n     context 'with guest' do\n@@ -1581,7 +1591,7 @@ def post_user\n \n       context 'with redeemed invites' do\n         it 'returns invites' do\n-          sign_in(Fabricate(:user, trust_level: 2))\n+          sign_in(Fabricate(:moderator))\n           inviter = Fabricate(:user)\n           invitee = Fabricate(:user)\n           invite = Fabricate(:invite, invited_by: inviter, user: invitee)"
+    }
+  ]
+}
