@@ -1,0 +1,122 @@
+{
+  "sha": "ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplYzIxYTE1ZmE3MjM0YjgyNzRiNWIxMzdhZmRkNmRmZjc4Y2Y1MmE5",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-09T16:53:32Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-09T16:54:33Z"
+    },
+    "message": "FIX: Incorrect message when logging in via email\n\nIf `hide email address taken` was true, it would always display a\nsuccess message, rather than the non-comittal \"maybe we emailed that\nuser\" response.",
+    "tree": {
+      "sha": "79f1ba8ca04d08e015a0c9a339f00433bb48896c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/79f1ba8ca04d08e015a0c9a339f00433bb48896c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+  "html_url": "https://github.com/discourse/discourse/commit/ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3ad5cb0cbcda50ee42f97665d456061a400b03f0",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3ad5cb0cbcda50ee42f97665d456061a400b03f0",
+      "html_url": "https://github.com/discourse/discourse/commit/3ad5cb0cbcda50ee42f97665d456061a400b03f0"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 12,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "de39f7ec8a87916127062b8b689b789783b46fe9",
+      "filename": "app/assets/javascripts/discourse/controllers/login.js.es6",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/app/assets/javascripts/discourse/controllers/login.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/app/assets/javascripts/discourse/controllers/login.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/login.js.es6?ref=ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+      "patch": "@@ -296,8 +296,12 @@ export default Controller.extend(ModalFunctionality, {\n               \"error\"\n             );\n           } else {\n+            let postfix = data.hide_taken ? \"\" : \"_found\";\n             this.flash(\n-              I18n.t(`${key}_found`, { email: loginName, username: loginName })\n+              I18n.t(`${key}${postfix}`, {\n+                email: loginName,\n+                username: loginName\n+              })\n             );\n           }\n         })"
+    },
+    {
+      "sha": "9405620286f7bd455218414da9ab2648f05685e4",
+      "filename": "app/controllers/users_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/app/controllers/users_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/app/controllers/users_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/users_controller.rb?ref=ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+      "patch": "@@ -748,6 +748,7 @@ def email_login\n     end\n \n     json = success_json\n+    json[:hide_taken] = SiteSetting.hide_email_address_taken\n     json[:user_found] = user_presence unless SiteSetting.hide_email_address_taken\n     render json: json\n   rescue RateLimiter::LimitExceeded"
+    },
+    {
+      "sha": "38dfe21e960119cfe00dab9e77f9910fdf8dcc24",
+      "filename": "spec/requests/users_controller_spec.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/spec/requests/users_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ec21a15fa7234b8274b5b137afdd6dff78cf52a9/spec/requests/users_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/users_controller_spec.rb?ref=ec21a15fa7234b8274b5b137afdd6dff78cf52a9",
+      "patch": "@@ -3455,7 +3455,6 @@ def users_found\n \n       it 'should return the right response' do\n         post \"/u/email-login.json\", params: { login: user.email }\n-\n         expect(response.status).to eq(404)\n       end\n     end\n@@ -3465,7 +3464,9 @@ def users_found\n         post \"/u/email-login.json\", params: { login: '@random' }\n \n         expect(response.status).to eq(200)\n-        expect(JSON.parse(response.body)['user_found']).to eq(false)\n+        json = JSON.parse(response.body)\n+        expect(json['user_found']).to eq(false)\n+        expect(json['hide_taken']).to eq(false)\n         expect(Jobs::CriticalUserEmail.jobs).to eq([])\n       end\n     end\n@@ -3476,7 +3477,9 @@ def users_found\n         post \"/u/email-login.json\", params: { login: user.email }\n \n         expect(response.status).to eq(200)\n-        expect(JSON.parse(response.body).has_key?('user_found')).to eq(false)\n+        json = JSON.parse(response.body)\n+        expect(json.has_key?('user_found')).to eq(false)\n+        expect(json['hide_taken']).to eq(true)\n       end\n     end\n "
+    }
+  ]
+}
