@@ -1,0 +1,266 @@
+{
+  "sha": "45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6NDViNzc4YzUyMmQ4MDU0YjhhNGVjMWRiZTAzM2FjYThiZWJjNzRhNw==",
+  "commit": {
+    "author": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2020-03-10T16:05:44Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-03-10T16:05:44Z"
+    },
+    "message": "feat: expanded regexp generation, locale support, caching (#2869)\n\nCo-authored-by: Kim Gardner <kgardnr@gmail.com>",
+    "tree": {
+      "sha": "e59f6710e80f35cdb4041b26748f0d202c5f5d42",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/e59f6710e80f35cdb4041b26748f0d202c5f5d42"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeZ7rYCRBK7hj4Ov3rIwAAdHIIACjTFAczW7Kgi9x3x3iugY+g\ncKYxULu1EngqmOYCiZKIh/K54garZpECJ4/bNgGbS+hs5QSmAILu9+URIFUJVVTe\ncqKDTKa1WQ4ZX3YJd0+vmtCLhq/Cahb7hkml9IgH1nwawqOjuF+Y3FWYVNYfZa17\nqdIYMUy1RqFhhKR/faQo4Sh2KayjLAGMTyLwAiVcX1ehtLwQQALAWR8xLPmXl1K/\ngXp8447WslfXWPr61vTn7ot7oFBPvdqFf2TOzTpZyPOW9lsuHnqPMhGZrofYWAe6\ngJBz/QdBqJ/x4l22ut1nHZBotTgzfo4xEXbzNJRyy9bU0wv0Y+u6Q3+iD0ebMK0=\n=i6PN\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e59f6710e80f35cdb4041b26748f0d202c5f5d42\nparent 7d967fc93b7b4c446c43e11832f8dac29c11b265\nauthor Wyatt Johnson <wyattjoh@gmail.com> 1583856344 +0000\ncommitter GitHub <noreply@github.com> 1583856344 -0400\n\nfeat: expanded regexp generation, locale support, caching (#2869)\n\nCo-authored-by: Kim Gardner <kgardnr@gmail.com>"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+  "html_url": "https://github.com/coralproject/talk/commit/45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/comments",
+  "author": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7d967fc93b7b4c446c43e11832f8dac29c11b265",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/7d967fc93b7b4c446c43e11832f8dac29c11b265",
+      "html_url": "https://github.com/coralproject/talk/commit/7d967fc93b7b4c446c43e11832f8dac29c11b265"
+    }
+  ],
+  "stats": {
+    "total": 696,
+    "additions": 456,
+    "deletions": 240
+  },
+  "files": [
+    {
+      "sha": "f4dbb5d058b5cab47a456317534fc16dc47e4085",
+      "filename": "src/core/client/admin/components/ModerateCard/CommentContent.spec.tsx",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 4,
+      "changes": 18,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/CommentContent.spec.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/CommentContent.spec.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/CommentContent.spec.tsx?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -7,8 +7,13 @@ import CommentContent from \"./CommentContent\";\n \n it(\"renders correctly\", () => {\n   const props: PropTypesOf<typeof CommentContent> = {\n-    suspectWords: [\"worse\"],\n-    bannedWords: [\"bad\"],\n+    phrases: {\n+      locale: \"en-US\",\n+      wordList: {\n+        suspect: [\"worse\"],\n+        banned: [\"bad\"],\n+      },\n+    },\n     className: \"custom\",\n     children: \"Hello <b>Bob</b>, you bad guy\",\n   };\n@@ -19,8 +24,13 @@ it(\"renders correctly\", () => {\n \n it(\"renders empty words correctly\", () => {\n   const props: PropTypesOf<typeof CommentContent> = {\n-    suspectWords: [],\n-    bannedWords: [],\n+    phrases: {\n+      locale: \"en-US\",\n+      wordList: {\n+        suspect: [],\n+        banned: [],\n+      },\n+    },\n     className: \"custom\",\n     children: \"Hello <b>Bob</b>, you bad guy\",\n   };"
+    },
+    {
+      "sha": "a650124ff01351b29860773ca36178fa809f3ba9",
+      "filename": "src/core/client/admin/components/ModerateCard/CommentContent.tsx",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 63,
+      "changes": 83,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/CommentContent.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/CommentContent.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/CommentContent.tsx?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -1,7 +1,7 @@\n import cn from \"classnames\";\n-import { memoize } from \"lodash\";\n-import React, { FunctionComponent } from \"react\";\n+import React, { FunctionComponent, useMemo } from \"react\";\n \n+import { getPhrasesRegExp, GetPhrasesRegExpOptions } from \"coral-admin/helpers\";\n import { createPurify } from \"coral-common/utils/purify\";\n \n import styles from \"./CommentContent.css\";\n@@ -14,8 +14,7 @@ const purify = createPurify(window, false);\n interface Props {\n   className?: string;\n   children: string | React.ReactElement;\n-  suspectWords: ReadonlyArray<string>;\n-  bannedWords: ReadonlyArray<string>;\n+  phrases: GetPhrasesRegExpOptions;\n }\n \n function escapeHTML(unsafe: string) {\n@@ -27,50 +26,11 @@ function escapeHTML(unsafe: string) {\n     .replace(/'/g, \"&#039;\");\n }\n \n-function escapeRegExp(str: string) {\n-  return str.replace(/[.*+?^${}()|[\\]\\\\]/g, \"\\\\$&\"); // $& means the whole matched string\n-}\n-\n-// generate a regulare expression that catches the `phrases`.\n-function generateRegExp(phrases: ReadonlyArray<string>) {\n-  const inner = phrases\n-    .map(phrase =>\n-      phrase\n-        .split(/\\s+/)\n-        .map(word => escapeRegExp(word))\n-        .join('[\\\\s\"?!.]+')\n-    )\n-    .join(\"|\");\n-\n-  const pattern = `(^|[^\\\\w])(${inner})(?=[^\\\\w]|$)`;\n-  try {\n-    return new RegExp(pattern, \"iu\");\n-  } catch (_err) {\n-    // IE does not support unicode support, so we'll create one without.\n-    return new RegExp(pattern, \"i\");\n-  }\n-}\n-\n-// Generate a regular expression detecting `suspectWords` and `bannedWords` phrases.\n-function getPhrasesRegexp(\n-  suspectWords: ReadonlyArray<string>,\n-  bannedWords: ReadonlyArray<string>\n-) {\n-  return generateRegExp([...suspectWords, ...bannedWords]);\n-}\n-\n-// Memoized version as arguments rarely change.\n-const getPhrasesRegexpMemoized = memoize(getPhrasesRegexp);\n-\n-// markPhrasesHTML looks for `supsectWords` and `bannedWords` inside `text` and highlights them by returning\n-// a HTML string.\n-function markPhrasesHTML(\n-  text: string,\n-  suspectWords: ReadonlyArray<string>,\n-  bannedWords: ReadonlyArray<string>\n-) {\n-  const regexp = getPhrasesRegexpMemoized(suspectWords, bannedWords);\n-  const tokens = text.split(regexp);\n+// markPhrasesHTML looks for `supsect` and `banned` words inside `text` given\n+// the settings applied for the locale and highlights them by returning an HTML\n+// string.\n+function markPhrasesHTML(text: string, expression: RegExp) {\n+  const tokens = text.split(expression);\n   if (tokens.length === 1) {\n     return text;\n   }\n@@ -87,45 +47,42 @@ function markPhrasesHTML(\n \n // markHTMLNode manipulates the node by looking for #text nodes and adding markers\n // for `supsectWords` and `bannedWords`.\n-function markHTMLNode(\n-  parentNode: Node,\n-  suspectWords: ReadonlyArray<string>,\n-  bannedWords: ReadonlyArray<string>\n-) {\n+function markHTMLNode(parentNode: Node, expression: RegExp) {\n   parentNode.childNodes.forEach(node => {\n     if (node.nodeName === \"#text\") {\n-      const newContent = markPhrasesHTML(\n-        node.textContent!,\n-        suspectWords,\n-        bannedWords\n-      );\n+      const newContent = markPhrasesHTML(node.textContent!, expression);\n       if (newContent !== node.textContent) {\n         const newNode = document.createElement(\"span\");\n         newNode.innerHTML = newContent;\n         parentNode.replaceChild(newNode, node);\n       }\n     } else {\n-      markHTMLNode(node, suspectWords, bannedWords);\n+      markHTMLNode(node, expression);\n     }\n   });\n }\n \n const CommentContent: FunctionComponent<Props> = ({\n-  suspectWords,\n-  bannedWords,\n+  phrases,\n   className,\n   children,\n }) => {\n+  // Cache the expression used via memo. This will reduce duplicate renders of\n+  // this comment content when the children change but the phrase configuration\n+  // does not change. The regExp is already cached on a deeper level\n+  // automatically, this is just lessening that impact further.\n+  const expression = useMemo(() => getPhrasesRegExp(phrases), [phrases]);\n+\n   if (typeof children === \"string\") {\n     // We create a Shadow DOM Tree with the HTML body content and\n     // use it as a parser.\n     const node = document.createElement(\"div\");\n     node.innerHTML = purify.sanitize(children);\n \n-    if (suspectWords.length || bannedWords.length) {\n+    if (expression) {\n       // Then we traverse it recursively and manipulate it to highlight suspect words\n       // and banned words.\n-      markHTMLNode(node, suspectWords, bannedWords);\n+      markHTMLNode(node, expression);\n     }\n \n     // Finally we render the content of the Shadow DOM Tree"
+    },
+    {
+      "sha": "8ff66b463d940c7542fb2eddc961b195c36d53be",
+      "filename": "src/core/client/admin/components/ModerateCard/CommentRevisionContainer.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/CommentRevisionContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/CommentRevisionContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/CommentRevisionContainer.tsx?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -30,10 +30,7 @@ const CommentRevisionContainer: FunctionComponent<Props> = ({\n         .map(c => (\n           <div key={c.id}>\n             <Timestamp>{c.createdAt}</Timestamp>\n-            <CommentContent\n-              suspectWords={settings.wordList.suspect}\n-              bannedWords={settings.wordList.banned}\n-            >\n+            <CommentContent phrases={settings}>\n               {c.body ? c.body : \"\"}\n             </CommentContent>\n           </div>\n@@ -57,6 +54,7 @@ const enhanced = withFragmentContainer<Props>({\n   `,\n   settings: graphql`\n     fragment CommentRevisionContainer_settings on Settings {\n+      locale\n       wordList {\n         banned\n         suspect"
+    },
+    {
+      "sha": "881497c03fc3c158fd426df866920c09a6f37ac6",
+      "filename": "src/core/client/admin/components/ModerateCard/ModerateCard.spec.tsx",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/ModerateCard.spec.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/ModerateCard.spec.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/ModerateCard.spec.tsx?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -21,8 +21,13 @@ const baseProps: PropTypesOf<typeof ModerateCardN> = {\n   status: \"undecided\",\n   featured: false,\n   viewContextHref: \"http://localhost/comment\",\n-  suspectWords: [\"suspect\"],\n-  bannedWords: [\"banned\"],\n+  phrases: {\n+    locale: \"en-US\",\n+    wordList: {\n+      suspect: [\"suspect\"],\n+      banned: [\"banned\"],\n+    },\n+  },\n   siteName: null,\n   onApprove: noop,\n   onReject: noop,"
+    },
+    {
+      "sha": "252e7e567c974b3e736ef122f397dfe50c0cab2d",
+      "filename": "src/core/client/admin/components/ModerateCard/ModerateCard.tsx",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 9,
+      "changes": 13,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/ModerateCard.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/ModerateCard.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/ModerateCard.tsx?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -10,6 +10,7 @@ import React, {\n } from \"react\";\n \n import { HOTKEYS } from \"coral-admin/constants\";\n+import { GetPhrasesRegExpOptions } from \"coral-admin/helpers\";\n import { PropTypesOf } from \"coral-framework/types\";\n import {\n   BaseButton,\n@@ -48,8 +49,7 @@ interface Props {\n   featured: boolean;\n   moderatedBy: React.ReactNode | null;\n   viewContextHref: string;\n-  suspectWords: ReadonlyArray<string>;\n-  bannedWords: ReadonlyArray<string>;\n+  phrases: GetPhrasesRegExpOptions;\n   showStory: boolean;\n   storyTitle?: React.ReactNode;\n   storyHref?: string;\n@@ -87,8 +87,7 @@ const ModerateCard: FunctionComponent<Props> = ({\n   viewContextHref,\n   status,\n   featured,\n-  suspectWords,\n-  bannedWords,\n+  phrases,\n   onApprove,\n   onReject,\n   onFeature,\n@@ -219,11 +218,7 @@ const ModerateCard: FunctionComponent<Props> = ({\n             )}\n           </div>\n           <div className={styles.contentArea}>\n-            <CommentContent\n-              suspectWords={suspectWords}\n-              bannedWords={bannedWords}\n-              className={styles.content}\n-            >\n+            <CommentContent phrases={phrases} className={styles.content}>\n               {commentBody}\n             </CommentContent>\n             <div className={styles.viewContext}>"
+    },
+    {
+      "sha": "81637c994489ecb7ccded4d04707f8c84fd09f10",
+      "filename": "src/core/client/admin/components/ModerateCard/ModerateCardContainer.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/ModerateCardContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/ModerateCardContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/ModerateCardContainer.tsx?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -222,8 +222,7 @@ const ModerateCardContainer: FunctionComponent<Props> = ({\n           status={getStatus(comment)}\n           featured={isFeatured(comment)}\n           viewContextHref={comment.permalink}\n-          suspectWords={settings.wordList.suspect}\n-          bannedWords={settings.wordList.banned}\n+          phrases={settings}\n           onApprove={handleApprove}\n           onReject={handleReject}\n           onFeature={onFeature}\n@@ -319,6 +318,7 @@ const enhanced = withFragmentContainer<Props>({\n   `,\n   settings: graphql`\n     fragment ModerateCardContainer_settings on Settings {\n+      locale\n       wordList {\n         banned\n         suspect"
+    },
+    {
+      "sha": "d27c8d605949d22b8dcaab56c389ead01eb4ba1e",
+      "filename": "src/core/client/admin/components/ModerateCard/__snapshots__/ModerateCard.spec.tsx.snap",
+      "status": "modified",
+      "additions": 84,
+      "deletions": 63,
+      "changes": 147,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/__snapshots__/ModerateCard.spec.tsx.snap",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/components/ModerateCard/__snapshots__/ModerateCard.spec.tsx.snap",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/components/ModerateCard/__snapshots__/ModerateCard.spec.tsx.snap?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -47,16 +47,19 @@ exports[`renders approved correctly 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           content\n@@ -177,16 +180,19 @@ exports[`renders correctly 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           content\n@@ -307,16 +313,19 @@ exports[`renders dangling correctly 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           content\n@@ -437,16 +446,19 @@ exports[`renders rejected correctly 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           content\n@@ -576,16 +588,19 @@ exports[`renders reply correctly 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           content\n@@ -706,16 +721,19 @@ exports[`renders story info 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           content\n@@ -874,16 +892,19 @@ exports[`renders tombstoned when comment is deleted 1`] = `\n         className=\"ModerateCard-contentArea\"\n       >\n         <CommentContent\n-          bannedWords={\n-            Array [\n-              \"banned\",\n-            ]\n-          }\n           className=\"ModerateCard-content\"\n-          suspectWords={\n-            Array [\n-              \"suspect\",\n-            ]\n+          phrases={\n+            Object {\n+              \"locale\": \"en-US\",\n+              \"wordList\": Object {\n+                \"banned\": Array [\n+                  \"banned\",\n+                ],\n+                \"suspect\": Array [\n+                  \"suspect\",\n+                ],\n+              },\n+            }\n           }\n         >\n           <Localized"
+    },
+    {
+      "sha": "0d83e479cdce340c411cd099dbfabf41fb89b1a5",
+      "filename": "src/core/client/admin/helpers/getPhrasesRegExp.ts",
+      "status": "added",
+      "additions": 64,
+      "deletions": 0,
+      "changes": 64,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/helpers/getPhrasesRegExp.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/helpers/getPhrasesRegExp.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/helpers/getPhrasesRegExp.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -0,0 +1,64 @@\n+import { LanguageCode } from \"coral-common/helpers\";\n+import { createWordListRegExp } from \"coral-common/utils\";\n+\n+export interface GetPhrasesRegExpOptions {\n+  locale: string;\n+  wordList: {\n+    banned: ReadonlyArray<string>;\n+    suspect: ReadonlyArray<string>;\n+  };\n+}\n+\n+export function getPhrasesRegExp({\n+  locale,\n+  wordList: { banned, suspect },\n+}: GetPhrasesRegExpOptions) {\n+  if (banned.length === 0 && suspect.length === 0) {\n+    return null;\n+  }\n+\n+  return createWordListRegExp(locale as LanguageCode, [...banned, ...suspect]);\n+}\n+\n+// cache is used as a global validator to the cached RegExp used by the\n+// application. We expect that generally, there is only ever one word list used\n+// by the client at a time, so this ensures that we only re-create the word list\n+// if we must.\n+const cache = {\n+  keys: {\n+    locale: \"\",\n+    suspect: [] as ReadonlyArray<string>,\n+    banned: [] as ReadonlyArray<string>,\n+  },\n+  value: null as RegExp | null,\n+};\n+\n+export default function(options: GetPhrasesRegExpOptions) {\n+  // We assume that the cache is valid unless one of the below checks fails.\n+  let expired = false;\n+\n+  // Check the locale.\n+  if (cache.keys.locale !== options.locale) {\n+    cache.keys.locale = options.locale;\n+    expired = true;\n+  }\n+\n+  // Check the banned words list.\n+  if (cache.keys.banned !== options.wordList.banned) {\n+    cache.keys.banned = options.wordList.banned;\n+    expired = true;\n+  }\n+\n+  // Check the suspect words list.\n+  if (cache.keys.suspect !== options.wordList.suspect) {\n+    cache.keys.suspect = options.wordList.suspect;\n+    expired = true;\n+  }\n+\n+  // If the cache is expired, or the value doesn't exist, regenerate it.\n+  if (expired) {\n+    cache.value = getPhrasesRegExp(options);\n+  }\n+\n+  return cache.value;\n+}"
+    },
+    {
+      "sha": "553f32f381e4133daf83e3ad0bb597763ce145e7",
+      "filename": "src/core/client/admin/helpers/index.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/helpers/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/client/admin/helpers/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/admin/helpers/index.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -1 +1,5 @@\n export { default as getQueueConnection } from \"./getQueueConnection\";\n+export {\n+  default as getPhrasesRegExp,\n+  GetPhrasesRegExpOptions,\n+} from \"./getPhrasesRegExp\";"
+    },
+    {
+      "sha": "7ac755cb0b21bcce1d5b48bc427d23ef825e35b2",
+      "filename": "src/core/common/utils/createWordListRegExp.ts",
+      "status": "added",
+      "additions": 76,
+      "deletions": 0,
+      "changes": 76,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/common/utils/createWordListRegExp.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/common/utils/createWordListRegExp.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/common/utils/createWordListRegExp.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -0,0 +1,76 @@\n+import { defaults } from \"lodash\";\n+\n+import { LanguageCode } from \"coral-common/helpers\";\n+import { DeepPartial } from \"coral-common/types\";\n+\n+interface WordListRule {\n+  split: string;\n+  punctuation: string;\n+  whitespace: string;\n+}\n+\n+const DefaultWordListRule: WordListRule = {\n+  split: \"[^\\\\w]\",\n+  punctuation: '[\\\\s\"?!.]+',\n+  whitespace: \"\\\\s+\",\n+};\n+\n+const WordListRules: DeepPartial<Record<LanguageCode, WordListRule>> = {\n+  \"en-US\": DefaultWordListRule,\n+};\n+\n+/**\n+ * Escape string for special regular expression characters.\n+ *\n+ * @param str the string to escape from regex characters\n+ */\n+function escapeRegExp(str: string) {\n+  // $& means the whole matched string\n+  return str.replace(/[.*+?^${}()|[\\]\\\\]/g, \"\\\\$&\");\n+}\n+\n+/**\n+ * generateRegExp will generate the tester that can be used to test strings\n+ * for matches on phrases.\n+ *\n+ * @param lang the language to possibly swap word list rules\n+ * @param phrases the phrases to use for creating the expression\n+ */\n+export default function createWordListRegExp(\n+  lang: LanguageCode,\n+  phrases: string[]\n+) {\n+  // Get the rule list for this language, fallback to english if we haven't\n+  // provided any overrides.\n+  const rule: WordListRule = defaults(\n+    WordListRules[lang] || {},\n+    DefaultWordListRule\n+  );\n+\n+  const whitespace = new RegExp(rule.whitespace);\n+\n+  // Split up the words from the list into a regex escaped string.\n+  const words = phrases\n+    .map(phrase =>\n+      phrase\n+        // Split each phrase by whitespace.\n+        .split(whitespace)\n+        // Escape each phrase, we don't expect any of them to contain regex.\n+        .map(word => escapeRegExp(word))\n+        // Rejoin to ensure that any variation of the word separated by a\n+        // punctuation character should also be caught.\n+        .join(rule.punctuation)\n+    )\n+    // For each of these words, wrap a `|` or OR.\n+    .join(\"|\");\n+\n+  // Wrap the pattern in split rules.\n+  const pattern = `(^|${rule.split})(${words})($|${rule.split})`;\n+\n+  try {\n+    return new RegExp(pattern, \"iu\");\n+  } catch {\n+    // IE does not support unicode support, so we'll create one without.\n+    return new RegExp(pattern, \"i\");\n+  }\n+}"
+    },
+    {
+      "sha": "a296f06527efc127f4248d3509a081e7f16e207a",
+      "filename": "src/core/common/utils/index.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/common/utils/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/common/utils/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/common/utils/index.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -12,3 +12,4 @@ export { default as isPromiseLike } from \"./isPromiseLike\";\n export { default as isPromise } from \"./isPromise\";\n export { default as startsWith } from \"./startsWith\";\n export { default as getOrigin } from \"./getOrigin\";\n+export { default as createWordListRegExp } from \"./createWordListRegExp\";"
+    },
+    {
+      "sha": "38d9370b9854e904f8f964636943cd0ffb805f09",
+      "filename": "src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 7,
+      "changes": 20,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/wordList.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -1,18 +1,24 @@\n-import {\n-  GQLCOMMENT_FLAG_REASON,\n-  GQLCOMMENT_STATUS,\n-} from \"coral-server/graph/schema/__generated__/types\";\n import { ACTION_TYPE } from \"coral-server/models/action/comment\";\n import {\n   IntermediateModerationPhase,\n   IntermediatePhaseResult,\n } from \"coral-server/services/comments/pipeline\";\n-import { containsMatchingPhraseMemoized } from \"coral-server/services/comments/pipeline/wordList\";\n+\n+import {\n+  GQLCOMMENT_FLAG_REASON,\n+  GQLCOMMENT_STATUS,\n+} from \"coral-server/graph/schema/__generated__/types\";\n+\n+import { WordList } from \"../wordList\";\n+\n+// Create a new wordlist instance to use.\n+const list = new WordList();\n \n // This phase checks the comment against the wordList.\n export const wordList: IntermediateModerationPhase = ({\n   tenant,\n   comment,\n+  htmlStripped,\n }): IntermediatePhaseResult | void => {\n   // If there isn't a body, there can't be a bad word!\n   if (!comment.body) {\n@@ -23,7 +29,7 @@ export const wordList: IntermediateModerationPhase = ({\n   // has pre-mod enabled or not. If the comment was rejected based on the\n   // wordList, then reject it, otherwise if the moderation setting is\n   // premod, set it to `premod`.\n-  if (containsMatchingPhraseMemoized(tenant.wordList.banned, comment.body)) {\n+  if (list.test(tenant, \"banned\", htmlStripped)) {\n     // Add the flag related to Trust to the comment.\n     return {\n       status: GQLCOMMENT_STATUS.REJECTED,\n@@ -43,7 +49,7 @@ export const wordList: IntermediateModerationPhase = ({\n \n   // If the wordList has matched the suspect word filter and we haven't disabled\n   // auto-flagging suspect words, then we should flag the comment!\n-  if (containsMatchingPhraseMemoized(tenant.wordList.suspect, comment.body)) {\n+  if (list.test(tenant, \"suspect\", htmlStripped)) {\n     return {\n       actions: [\n         {"
+    },
+    {
+      "sha": "227c8240b627c8425f5fac6313cae39ff19cbbe2",
+      "filename": "src/core/server/services/comments/pipeline/wordList.spec.ts",
+      "status": "modified",
+      "additions": 69,
+      "deletions": 53,
+      "changes": 122,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/comments/pipeline/wordList.spec.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/comments/pipeline/wordList.spec.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/wordList.spec.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -1,66 +1,82 @@\n import {\n-  containsMatchingPhrase,\n-  containsMatchingPhraseMemoized,\n+  Options,\n+  WordList,\n } from \"coral-server/services/comments/pipeline/wordList\";\n \n-const phrases = [\n-  \"cookies\",\n-  \"how to do bad things\",\n-  \"how to do really bad things\",\n-  \"s h i t\",\n-  \"$hit\",\n-  \"p**ch\",\n-  \"p*ch\",\n-];\n+describe(\"en-US\", () => {\n+  const list = new WordList();\n+  const options: Options = {\n+    id: \"tenant_1\",\n+    locale: \"en-US\",\n+    wordList: {\n+      banned: [\n+        \"cookies\",\n+        \"how to do bad things\",\n+        \"how to do really bad things\",\n+        \"s h i t\",\n+        \"$hit\",\n+        \"p**ch\",\n+        \"p*ch\",\n+        \"banned\",\n+        \"ban\",\n+      ],\n+      suspect: [],\n+    },\n+  };\n \n-describe(\"containsMatchingPhrase\", () => {\n-  it(\"does match on a word in the list\", () => {\n-    [\n-      \"how to do really bad things\",\n-      \"what is cookies\",\n-      \"cookies\",\n-      \"COOKIES.\",\n-      \"how to do bad things\",\n-      \"How To do bad things!\",\n-      \"This stuff is $hit!\",\n-      \"That's a p**ch!\",\n-    ].forEach(word => {\n-      expect(containsMatchingPhrase(phrases, word)).toEqual(true);\n+  describe(\"containsMatchingPhrase\", () => {\n+    it(\"does match on a word in the list\", () => {\n+      [\n+        \"how to do really bad things\",\n+        \"what is cookies\",\n+        \"cookies\",\n+        \"COOKIES.\",\n+        \"how to do bad things\",\n+        \"How To do bad things!\",\n+        \"How.To.do.bad.things!\",\n+        \"This stuff is $hit!\",\n+        \"This is a test.\\nTo see if cookies are found, in the second line.\",\n+        \"That's a p**ch!\",\n+        \"Banned words should be detected\",\n+      ].forEach(word => {\n+        expect(list.test(options, \"banned\", word)).toEqual(true);\n+      });\n     });\n-  });\n \n-  it(\"does not match on a word not in the list\", () => {\n-    [\n-      \"how to\",\n-      \"cookie\",\n-      \"how to be a great person?\",\n-      \"how to not do really bad things?\",\n-      \"i have $100 dollars.\",\n-      \"I have bad $ hit lling\",\n-      \"That's a p***ch!\",\n-    ].forEach(word => {\n-      expect(containsMatchingPhrase(phrases, word)).toEqual(false);\n+    it(\"does not match on a word not in the list\", () => {\n+      [\n+        \"how to\",\n+        \"cookie\",\n+        \"how to be a great person?\",\n+        \"how to not do really bad things?\",\n+        \"i have $100 dollars.\",\n+        \"I have bad $ hit lling\",\n+        \"That's a p***ch!\",\n+        \"When bann is spelt wrong, it won't be caught.\",\n+      ].forEach(word => {\n+        expect(list.test(options, \"banned\", word)).toEqual(false);\n+      });\n     });\n-  });\n \n-  it(\"allows an empty list\", () => {\n-    expect(containsMatchingPhrase([], \"test\")).toEqual(false);\n+    it(\"allows an empty list\", () => {\n+      expect(list.test(options, \"banned\", \"test\")).toEqual(false);\n+    });\n   });\n-});\n \n-describe(\"containsMatchingPhraseMemoized\", () => {\n-  it(\"return true for all cases after memoizing the first result\", () => {\n-    [\n-      \"cookies 1\",\n-      \"cookies 2\",\n-      \"cookies 4\",\n-      \"cookies 5\",\n-      \"this is for cookies 6\",\n-      \"this is for cookies 7\",\n-      \"this is for cookies 8\",\n-      \"this is for cookies 9\",\n-    ].forEach(word => {\n-      expect(containsMatchingPhraseMemoized(phrases, word)).toEqual(true);\n+  describe(\"containsMatchingPhraseMemoized\", () => {\n+    it(\"return true for all cases after memoizing the first result\", () => {\n+      [\n+        \"cookies 1\",\n+        \"cookies 2\",\n+        \"cookies 4\",\n+        \"cookies 5\",\n+        \"this is for cookies 6\",\n+        \"this is for cookies 7\",\n+        \"this is for cookies 8\",\n+        \"this is for cookies 9\",\n+      ].forEach(word => {\n+        expect(list.test(options, \"banned\", word)).toEqual(true);\n+      });\n     });\n   });\n });"
+    },
+    {
+      "sha": "84393dd385eb0acf5c6bcd4abefc5b84e7442537",
+      "filename": "src/core/server/services/comments/pipeline/wordList.ts",
+      "status": "modified",
+      "additions": 93,
+      "deletions": 30,
+      "changes": 123,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/comments/pipeline/wordList.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/comments/pipeline/wordList.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/wordList.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -1,37 +1,100 @@\n-import { memoize } from \"lodash\";\n+import ms from \"ms\";\n+import now from \"performance-now\";\n \n-// Replace `memoize.Cache`.\n-memoize.Cache = WeakMap;\n+import { LanguageCode } from \"coral-common/helpers\";\n+import { createWordListRegExp } from \"coral-common/utils\";\n+import logger from \"coral-server/logger\";\n+import { Tenant } from \"coral-server/models/tenant\";\n \n-/**\n- * Escape string for special regular expression characters.\n- */\n-export function escapeRegExp(str: string) {\n-  return str.replace(/[.*+?^${}()|[\\]\\\\]/g, \"\\\\$&\"); // $& means the whole matched string\n+interface Lists {\n+  banned: RegExp | false;\n+  suspect: RegExp | false;\n }\n \n-/**\n- * Generate a regular expression that catches the `phrases`.\n- */\n-export function generateRegExp(phrases: string[]) {\n-  const inner = phrases\n-    .map(phrase =>\n-      phrase\n-        .split(/\\s+/)\n-        .map(word => escapeRegExp(word))\n-        .join('[\\\\s\"?!.]+')\n-    )\n-    .join(\"|\");\n-  return new RegExp(`(^|[^\\\\w])(${inner})(?=[^\\\\w]|$)`, \"miu\");\n-}\n+export type Options = Pick<Tenant, \"id\" | \"locale\" | \"wordList\">;\n+\n+export class WordList {\n+  private readonly cache = new WeakMap<Options, Lists>();\n+\n+  private generate(locale: LanguageCode, list: string[]) {\n+    // If a word list has no entries, then we can make a simple tester.\n+    if (list.length === 0) {\n+      return false;\n+    }\n+\n+    return createWordListRegExp(locale, list);\n+  }\n+\n+  /**\n+   * create will create the List's.\n+   *\n+   * @param options options used to generate Lists\n+   */\n+  private create(options: Options): Lists {\n+    return {\n+      banned: this.generate(options.locale, options.wordList.banned),\n+      suspect: this.generate(options.locale, options.wordList.suspect),\n+    };\n+  }\n \n-export const generateRegExpMemoized = memoize(generateRegExp);\n+  /**\n+   * lists will create/return a cached set of testers for the provided word\n+   * lists.\n+   *\n+   * @param options the options object that is also used as the cache key\n+   */\n+  private lists(options: Options, cache: boolean): Lists {\n+    // If the request isn't supposed to use the cache, then just return a new\n+    // one.\n+    if (!cache) {\n+      return this.create(options);\n+    }\n \n-export const containsMatchingPhrase = (phrases: string[], testString: string) =>\n-  phrases.length > 0 ? generateRegExp(phrases).test(testString) : false;\n+    // As this is supposed to be cached, try to get it from the cache, or create\n+    // it.\n+    let lists = this.cache.get(options);\n+    if (!lists) {\n+      const startedAt = now();\n+      lists = this.create(options);\n+      logger.info(\n+        { tenantID: options.id, took: ms(now() - startedAt) },\n+        \"regenerated word list cache\"\n+      );\n \n-export const containsMatchingPhraseMemoized = (\n-  phrases: string[],\n-  testString: string\n-) =>\n-  phrases.length > 0 ? generateRegExpMemoized(phrases).test(testString) : false;\n+      this.cache.set(options, lists);\n+    }\n+\n+    return lists;\n+  }\n+\n+  /**\n+   * test will test the string against the selected list. The generated lists\n+   * are cached and re-used on subsequent calls.\n+   *\n+   * @param options the options object that is also used as the cache key\n+   * @param listName the list to test against\n+   * @param testString the string to test to see if they match anything on the\n+   *                   list\n+   * @param cache when true, will re-use the cached testers based on the lists\n+   */\n+  public test(\n+    options: Options,\n+    listName: keyof Lists,\n+    testString: string,\n+    cache = true\n+  ): boolean {\n+    const list = this.lists(options, cache)[listName];\n+    if (!list) {\n+      return false;\n+    }\n+\n+    const startedAt = now();\n+    const result = list.test(testString);\n+    logger.debug(\n+      { tenantID: options.id, took: ms(now() - startedAt) },\n+      \"word list phrase test complete\"\n+    );\n+\n+    return result;\n+  }\n+}"
+    },
+    {
+      "sha": "47494ea78844cb69f15eb411439bda9e11201208",
+      "filename": "src/core/server/services/tenant/index.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/tenant/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/45b778c522d8054b8a4ec1dbe033aca8bebc74a7/src/core/server/services/tenant/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/tenant/index.ts?ref=45b778c522d8054b8a4ec1dbe033aca8bebc74a7",
+      "patch": "@@ -1,5 +1,5 @@\n import { Redis } from \"ioredis\";\n-import { isUndefined } from \"lodash\";\n+import { isUndefined, lowerCase, uniqBy } from \"lodash\";\n import { DateTime } from \"luxon\";\n import { Db } from \"mongodb\";\n import { URL } from \"url\";\n@@ -45,11 +45,11 @@ function cleanWordList(\n   list: GQLSettingsWordListInput\n ): GQLSettingsWordListInput {\n   if (list.banned) {\n-    list.banned = list.banned.filter(Boolean);\n+    list.banned = uniqBy(list.banned.filter(Boolean), lowerCase) as string[];\n   }\n \n   if (list.suspect) {\n-    list.suspect = list.suspect.filter(Boolean);\n+    list.suspect = uniqBy(list.suspect.filter(Boolean), lowerCase) as string[];\n   }\n \n   return list;"
+    }
+  ]
+}

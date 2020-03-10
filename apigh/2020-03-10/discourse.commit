@@ -1,0 +1,110 @@
+{
+  "sha": "3f2c0b42fecfa42dde620db22148757a1d7d4d7c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozZjJjMGI0MmZlY2ZhNDJkZGU2MjBkYjIyMTQ4NzU3YTFkN2Q0ZDdj",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2020-03-10T16:17:54Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-03-10T16:17:54Z"
+    },
+    "message": "FIX: throttles topic tracking shortcut and enforces topic id (#9159)",
+    "tree": {
+      "sha": "806722a11a569c4581c8cea37ca071529320141c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/806722a11a569c4581c8cea37ca071529320141c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/3f2c0b42fecfa42dde620db22148757a1d7d4d7c",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeZ72yCRBK7hj4Ov3rIwAAdHIIADtp2NfIn87erWXd6RP03UZI\nVWIc0HRclxhMnikz3E9kwOdE9qIp48d46I2HUHDAM896a62NyJqYB94EQgQ3WgYl\ncts2NWmNLVnuoSBQZAAUQrSH1jfkq1M+CbRmYtSTGeL0Fvv04ualMbkTffT5NDXE\nKBvhr6LaDQPLf8QmfftlKzycdvgSbcD4FiJJWzbQhdORKILCwbxV79THZhnehmuQ\nDsWGTxPgykWKcvu9qUisa2LBKAFGk1iSqmK63Wwk25EWloe/t8U2BbIHh0qDt+qx\nymWFAHJRtKR3yMEmdQlpMVMgpIbzYr+DSqhQDve6tigwnjluKEqDxVrkcTSpWO8=\n=rtgK\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 806722a11a569c4581c8cea37ca071529320141c\nparent d436b600fba4cea846a5e96c235c507441965e05\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1583857074 +0100\ncommitter GitHub <noreply@github.com> 1583857074 +0100\n\nFIX: throttles topic tracking shortcut and enforces topic id (#9159)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/3f2c0b42fecfa42dde620db22148757a1d7d4d7c",
+  "html_url": "https://github.com/discourse/discourse/commit/3f2c0b42fecfa42dde620db22148757a1d7d4d7c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/3f2c0b42fecfa42dde620db22148757a1d7d4d7c/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d436b600fba4cea846a5e96c235c507441965e05",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d436b600fba4cea846a5e96c235c507441965e05",
+      "html_url": "https://github.com/discourse/discourse/commit/d436b600fba4cea846a5e96c235c507441965e05"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 21,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "69f42cfee16382c2c7aac1b41dc225c01a772e0c",
+      "filename": "app/assets/javascripts/discourse/lib/keyboard-shortcuts.js.es6",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 17,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/3f2c0b42fecfa42dde620db22148757a1d7d4d7c/app/assets/javascripts/discourse/lib/keyboard-shortcuts.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/3f2c0b42fecfa42dde620db22148757a1d7d4d7c/app/assets/javascripts/discourse/lib/keyboard-shortcuts.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/keyboard-shortcuts.js.es6?ref=3f2c0b42fecfa42dde620db22148757a1d7d4d7c",
+      "patch": "@@ -3,6 +3,7 @@ import DiscourseURL from \"discourse/lib/url\";\n import Composer from \"discourse/models/composer\";\n import { minimumOffset } from \"discourse/lib/offset-calculator\";\n import { ajax } from \"discourse/lib/ajax\";\n+import { throttle } from \"@ember/runloop\";\n \n const bindings = {\n   \"!\": { postAction: \"showFlags\" },\n@@ -298,34 +299,26 @@ export default {\n   },\n \n   setTrackingToMuted(event) {\n-    this.appEvents.trigger(\"topic-notifications-button:changed\", {\n-      type: \"notification\",\n-      id: 0,\n-      event\n-    });\n+    throttle(this, \"_setTracking\", { id: 0, event }, 250, true);\n   },\n \n   setTrackingToRegular(event) {\n-    this.appEvents.trigger(\"topic-notifications-button:changed\", {\n-      type: \"notification\",\n-      id: 1,\n-      event\n-    });\n+    throttle(this, \"_setTracking\", { id: 1, event }, 250, true);\n   },\n \n   setTrackingToTracking(event) {\n-    this.appEvents.trigger(\"topic-notifications-button:changed\", {\n-      type: \"notification\",\n-      id: 2,\n-      event\n-    });\n+    throttle(this, \"_setTracking\", { id: 2, event }, 250, true);\n   },\n \n   setTrackingToWatching(event) {\n+    throttle(this, \"_setTracking\", { id: 3, event }, 250, true);\n+  },\n+\n+  _setTracking(params) {\n     this.appEvents.trigger(\"topic-notifications-button:changed\", {\n       type: \"notification\",\n-      id: 3,\n-      event\n+      id: params.id,\n+      event: params.event\n     });\n   },\n "
+    },
+    {
+      "sha": "747685c2aef8eaa6e1aedbb473e1cfd2f9820a55",
+      "filename": "app/assets/javascripts/select-kit/components/topic-notifications-button.js.es6",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/3f2c0b42fecfa42dde620db22148757a1d7d4d7c/app/assets/javascripts/select-kit/components/topic-notifications-button.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/3f2c0b42fecfa42dde620db22148757a1d7d4d7c/app/assets/javascripts/select-kit/components/topic-notifications-button.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/select-kit/components/topic-notifications-button.js.es6?ref=3f2c0b42fecfa42dde620db22148757a1d7d4d7c",
+      "patch": "@@ -28,6 +28,17 @@ export default Component.extend({\n   },\n \n   _changeTopicNotificationLevel(level) {\n+    // this change is coming from a keyboard event\n+    if (level.event) {\n+      const topicSectionNode = level.event.target.querySelector(\"#topic\");\n+      if (topicSectionNode && topicSectionNode.dataset.topicId) {\n+        const topicId = parseInt(topicSectionNode.dataset.topicId, 10);\n+        if (topicId && topicId !== this.topic.id) {\n+          return;\n+        }\n+      }\n+    }\n+\n     if (level.id !== this.notificationLevel) {\n       this.topic.details.updateNotifications(level.id);\n     }"
+    }
+  ]
+}
