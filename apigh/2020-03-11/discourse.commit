@@ -1,0 +1,98 @@
+{
+  "sha": "c9d1577087bcc26e77edbccd1dd8647750db555f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjOWQxNTc3MDg3YmNjMjZlNzdlZGJjY2QxZGQ4NjQ3NzUwZGI1NTVm",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-11T16:47:37Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-11T16:48:10Z"
+    },
+    "message": "Let's not log the username/password\n\nThis could easily be seen by someone who shouldn't.",
+    "tree": {
+      "sha": "9d4022ef1616ba51ee8c383ffd9747499f37f2c4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9d4022ef1616ba51ee8c383ffd9747499f37f2c4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c9d1577087bcc26e77edbccd1dd8647750db555f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c9d1577087bcc26e77edbccd1dd8647750db555f",
+  "html_url": "https://github.com/discourse/discourse/commit/c9d1577087bcc26e77edbccd1dd8647750db555f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c9d1577087bcc26e77edbccd1dd8647750db555f/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "40f1201b3966053bab0112cdcfaf8ecde515265a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/40f1201b3966053bab0112cdcfaf8ecde515265a",
+      "html_url": "https://github.com/discourse/discourse/commit/40f1201b3966053bab0112cdcfaf8ecde515265a"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "4180658e640caf6bd3e1e98d8078df3104dfddce",
+      "filename": "lib/tasks/emails.rake",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/c9d1577087bcc26e77edbccd1dd8647750db555f/lib/tasks/emails.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/c9d1577087bcc26e77edbccd1dd8647750db555f/lib/tasks/emails.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/emails.rake?ref=c9d1577087bcc26e77edbccd1dd8647750db555f",
+      "patch": "@@ -78,7 +78,7 @@ task 'emails:test', [:email] => [:environment] do |_, args|\n       STR\n     end\n \n-    puts \"Testing sending to #{email} using #{smtp[:user_name]}:#{smtp[:password]}@#{smtp[:address]}:#{smtp[:port]}.\"\n+    puts \"Testing sending to #{email} using #{smtp[:address]}:#{smtp[:port]}.\"\n \n     # We would like to do this, but Net::SMTP errors out using starttls\n     #Net::SMTP.start(smtp[:address], smtp[:port]) do |s|"
+    }
+  ]
+}
