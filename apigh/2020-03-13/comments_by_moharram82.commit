@@ -1,0 +1,98 @@
+{
+  "sha": "2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7",
+  "node_id": "MDY6Q29tbWl0MTAzODY3NDA4OjI0NzJlM2YxMzM5ZjIyZDkwNDVlMWRjYjZmYmRmMmI5MWQ4YzMzZjc=",
+  "commit": {
+    "author": {
+      "name": "Mohammed Moharram",
+      "email": "moharram82@hotmail.com",
+      "date": "2018-08-17T11:42:00Z"
+    },
+    "committer": {
+      "name": "Mohammed Moharram",
+      "email": "moharram82@hotmail.com",
+      "date": "2018-08-17T11:42:00Z"
+    },
+    "message": "Updated composer.json",
+    "tree": {
+      "sha": "cf140c3cd90dbfbb3a8b8376939c6663f50f7f1d",
+      "url": "https://api.github.com/repos/moharram82/comments/git/trees/cf140c3cd90dbfbb3a8b8376939c6663f50f7f1d"
+    },
+    "url": "https://api.github.com/repos/moharram82/comments/git/commits/2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/moharram82/comments/commits/2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7",
+  "html_url": "https://github.com/moharram82/comments/commit/2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7",
+  "comments_url": "https://api.github.com/repos/moharram82/comments/commits/2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7/comments",
+  "author": {
+    "login": "moharram82",
+    "id": 1148107,
+    "node_id": "MDQ6VXNlcjExNDgxMDc=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1148107?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/moharram82",
+    "html_url": "https://github.com/moharram82",
+    "followers_url": "https://api.github.com/users/moharram82/followers",
+    "following_url": "https://api.github.com/users/moharram82/following{/other_user}",
+    "gists_url": "https://api.github.com/users/moharram82/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/moharram82/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/moharram82/subscriptions",
+    "organizations_url": "https://api.github.com/users/moharram82/orgs",
+    "repos_url": "https://api.github.com/users/moharram82/repos",
+    "events_url": "https://api.github.com/users/moharram82/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/moharram82/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "moharram82",
+    "id": 1148107,
+    "node_id": "MDQ6VXNlcjExNDgxMDc=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1148107?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/moharram82",
+    "html_url": "https://github.com/moharram82",
+    "followers_url": "https://api.github.com/users/moharram82/followers",
+    "following_url": "https://api.github.com/users/moharram82/following{/other_user}",
+    "gists_url": "https://api.github.com/users/moharram82/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/moharram82/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/moharram82/subscriptions",
+    "organizations_url": "https://api.github.com/users/moharram82/orgs",
+    "repos_url": "https://api.github.com/users/moharram82/repos",
+    "events_url": "https://api.github.com/users/moharram82/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/moharram82/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a7eeac30ee7ca4478a1dc533de35468d0c0691dd",
+      "url": "https://api.github.com/repos/moharram82/comments/commits/a7eeac30ee7ca4478a1dc533de35468d0c0691dd",
+      "html_url": "https://github.com/moharram82/comments/commit/a7eeac30ee7ca4478a1dc533de35468d0c0691dd"
+    }
+  ],
+  "stats": {
+    "total": 55,
+    "additions": 30,
+    "deletions": 25
+  },
+  "files": [
+    {
+      "sha": "dd3614eda90c6226dec0fe1045671e776b1bce14",
+      "filename": "composer.json",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 25,
+      "changes": 55,
+      "blob_url": "https://github.com/moharram82/comments/blob/2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7/composer.json",
+      "raw_url": "https://github.com/moharram82/comments/raw/2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7/composer.json",
+      "contents_url": "https://api.github.com/repos/moharram82/comments/contents/composer.json?ref=2472e3f1339f22d9045e1dcb6fbdf2b91d8c33f7",
+      "patch": "@@ -1,28 +1,33 @@\n {\r\n-  \"name\": \"moharram82/comments\",\r\n-  \"description\": \"A PHP commenting library.\",\r\n-  \"type\": \"library\",\r\n-  \"keywords\": [\"moharram82\", \"comments\"],\r\n-  \"homepage\": \"https://github.com/moharram82/comments/\",\r\n-  \"license\": \"GPL-3.0\",\r\n-  \"authors\": [\r\n-    {\r\n-      \"name\": \"Mohammed Moharram\",\r\n-      \"homepage\": \"https://moharram82.github.io/\",\r\n-      \"email\": \"moharram82@hotmail.com\"\r\n+    \"name\": \"moharram82/comments\",\r\n+    \"description\": \"A PHP & MySQL commenting library.\",\r\n+    \"type\": \"library\",\r\n+    \"keywords\": [\"moharram82\", \"comments\"],\r\n+    \"homepage\": \"https://github.com/moharram82/comments/\",\r\n+    \"license\": \"GPL-3.0-or-later\",\r\n+    \"authors\": [\r\n+        {\r\n+            \"name\": \"Mohammed Moharram\",\r\n+            \"homepage\": \"https://moharram82.github.io/\",\r\n+            \"email\": \"moharram82@hotmail.com\"\r\n+        }\r\n+    ],\r\n+    \"require\": {\r\n+        \"php\": \"^7.0 || ^7.1\"\r\n+    },\r\n+    \"autoload\": {\r\n+        \"psr-4\": {\r\n+            \"Moharram82\\\\\": \"src\"\r\n+        }\r\n+    },\r\n+    \"autoload-dev\": {\r\n+        \"psr-4\": {\r\n+            \"Moharram82\\\\\": \"tests\"\r\n+        }\r\n+    },\r\n+    \"extra\": {\r\n+        \"branch-alias\": {\r\n+            \"dev-master\": \"1.0.1-dev\"\r\n+        }\r\n     }\r\n-  ],\r\n-  \"require\": {\r\n-    \"php\": \"^7.0 || ^7.1\"\r\n-  },\r\n-  \"autoload\": {\r\n-    \"psr-4\": {\r\n-      \"Moharram82\\\\\": \"src\"\r\n-    }\r\n-  },\r\n-  \"autoload-dev\": {\r\n-    \"psr-4\": {\r\n-      \"Moharram82\\\\\": \"tests\"\r\n-    }\r\n-  }\r\n }\r"
+    }
+  ]
+}
