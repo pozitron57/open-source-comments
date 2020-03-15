@@ -1,0 +1,110 @@
+{
+  "sha": "39a7b93c4a9ff5c2798d2fe619bdc8668811064f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozOWE3YjkzYzRhOWZmNWMyNzk4ZDJmZTYxOWJkYzg2Njg4MTEwNjRm",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-03-15T15:09:57Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-03-15T15:09:57Z"
+    },
+    "message": "UX: Remove \"Live Notifications\" user profile section on iOS",
+    "tree": {
+      "sha": "b872397950fcbb93514116b9f6e27a2907242634",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b872397950fcbb93514116b9f6e27a2907242634"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/39a7b93c4a9ff5c2798d2fe619bdc8668811064f",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/39a7b93c4a9ff5c2798d2fe619bdc8668811064f",
+  "html_url": "https://github.com/discourse/discourse/commit/39a7b93c4a9ff5c2798d2fe619bdc8668811064f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/39a7b93c4a9ff5c2798d2fe619bdc8668811064f/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "15ae3145ec1e077245b8f9ba46b16359c75482cc",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/15ae3145ec1e077245b8f9ba46b16359c75482cc",
+      "html_url": "https://github.com/discourse/discourse/commit/15ae3145ec1e077245b8f9ba46b16359c75482cc"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 11,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "5667a55fda9ae0001c502a61715906e90ad37fad",
+      "filename": "app/assets/javascripts/discourse/controllers/preferences/notifications.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/39a7b93c4a9ff5c2798d2fe619bdc8668811064f/app/assets/javascripts/discourse/controllers/preferences/notifications.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/39a7b93c4a9ff5c2798d2fe619bdc8668811064f/app/assets/javascripts/discourse/controllers/preferences/notifications.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/controllers/preferences/notifications.js?ref=39a7b93c4a9ff5c2798d2fe619bdc8668811064f",
+      "patch": "@@ -85,6 +85,9 @@ export default Controller.extend({\n       },\n       { name: I18n.t(\"user.new_topic_duration.last_here\"), value: -2 }\n     ];\n+\n+    const caps = Discourse.__container__.lookup(\"capabilities:main\");\n+    this.isIOS = caps.isIOS;\n   },\n \n   actions: {"
+    },
+    {
+      "sha": "f3c1b00f5272bd26c9d25c18bc0622f645934291",
+      "filename": "app/assets/javascripts/discourse/templates/preferences/notifications.hbs",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 6,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/39a7b93c4a9ff5c2798d2fe619bdc8668811064f/app/assets/javascripts/discourse/templates/preferences/notifications.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/39a7b93c4a9ff5c2798d2fe619bdc8668811064f/app/assets/javascripts/discourse/templates/preferences/notifications.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/preferences/notifications.hbs?ref=39a7b93c4a9ff5c2798d2fe619bdc8668811064f",
+      "patch": "@@ -43,12 +43,14 @@\n   </div>\n </div>\n \n-<div class=\"control-group desktop-notifications\">\n-  <label class=\"control-label\">{{i18n 'user.desktop_notifications.label'}}</label>\n-  {{desktop-notification-config}}\n-  <div class=\"instructions\">{{i18n 'user.desktop_notifications.each_browser_note'}}</div>\n-  {{plugin-outlet name=\"user-preferences-desktop-notifications\" args=(hash model=model save=(action \"save\"))}}\n-</div>\n+{{#unless isIOS}}\n+  <div class=\"control-group desktop-notifications\">\n+    <label class=\"control-label\">{{i18n 'user.desktop_notifications.label'}}</label>\n+    {{desktop-notification-config}}\n+    <div class=\"instructions\">{{i18n 'user.desktop_notifications.each_browser_note'}}</div>\n+    {{plugin-outlet name=\"user-preferences-desktop-notifications\" args=(hash model=model save=(action \"save\"))}}\n+  </div>\n+{{/unless}}\n \n {{#if siteSettings.enable_personal_messages}}\n   <div class=\"control-group private-messages\">"
+    }
+  ]
+}
