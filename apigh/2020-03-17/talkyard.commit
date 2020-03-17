@@ -1,0 +1,314 @@
+{
+  "sha": "e335bc4b647ad18fda9f8d137745c79c4089fabe",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZTMzNWJjNGI2NDdhZDE4ZmRhOWY4ZDEzNzc0NWM3OWM0MDg5ZmFiZQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-03-10T06:55:54Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-03-10T06:55:54Z"
+    },
+    "message": "Code review. Add talkyard.sameSiteLax conf val.",
+    "tree": {
+      "sha": "475e272cd86ef784931cc7448cda3b434853d435",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/475e272cd86ef784931cc7448cda3b434853d435"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/e335bc4b647ad18fda9f8d137745c79c4089fabe",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/e335bc4b647ad18fda9f8d137745c79c4089fabe",
+  "html_url": "https://github.com/debiki/talkyard/commit/e335bc4b647ad18fda9f8d137745c79c4089fabe",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/e335bc4b647ad18fda9f8d137745c79c4089fabe/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ed75778eca5550f900e2b5854a546f78dfc0d4eb",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/ed75778eca5550f900e2b5854a546f78dfc0d4eb",
+      "html_url": "https://github.com/debiki/talkyard/commit/ed75778eca5550f900e2b5854a546f78dfc0d4eb"
+    }
+  ],
+  "stats": {
+    "total": 312,
+    "additions": 214,
+    "deletions": 98
+  },
+  "files": [
+    {
+      "sha": "566e1bca24e89ccd76bf5b775080780a62514ead",
+      "filename": "app/debiki/Globals.scala",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/app/debiki/Globals.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/app/debiki/Globals.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/Globals.scala?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -1105,7 +1105,9 @@ class Config(conf: play.api.Configuration) {\n \n   val useServiceWorker: Boolean = getBoolOrDefault(\"talkyard.useServiceWorker\", default = true)\n \n+  // Remove these later — just for now, new feature switches.\n   val sameSiteNone: Boolean = getBoolOrDefault(\"talkyard.sameSiteNone\", default = true)\n+  val sameSiteLax: Boolean = getBoolOrDefault(\"talkyard.sameSiteLax\", default = false)\n \n   private val mayPatchSiteIds: String = \",\" + getStringOrEmpty(\"talkyard.mayPatchSiteIds\") + \",\"\n   def mayPatchSite(siteId: SiteId): Boolean ="
+    },
+    {
+      "sha": "3ac87e3516551ae5bb1f6b4860c92cf515a802fc",
+      "filename": "app/debiki/ReactJson.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/app/debiki/ReactJson.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/app/debiki/ReactJson.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/ReactJson.scala?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -347,7 +347,7 @@ class JsonMaker(dao: SiteDao) {\n       \"widthLayout\" -> renderParams.widthLayout.toInt,\n       \"isEmbedded\" -> renderParams.isEmbedded,\n       // For embedded comments pages, relative links don't work — then need to include\n-      // the Talkyard server origin in the links. [REMOTEORIGIN]\n+      // the Talkyard server origin in the links. [REMOTEORIGIN] [60MRKDJ56]\n       \"embeddedOriginOrEmpty\" -> renderParams.embeddedOriginOrEmpty,\n       \"anyCdnOrigin\" -> JsStringOrNull(renderParams.anyCdnOrigin),\n       \"appVersion\" -> globals.applicationVersion,"
+    },
+    {
+      "sha": "e4a372f645c6946b42b6d23c9a953fa117bf7692",
+      "filename": "app/ed/server/security/package.scala",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 27,
+      "changes": 53,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/app/ed/server/security/package.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/app/ed/server/security/package.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/ed/server/security/package.scala?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -534,14 +534,30 @@ class EdSecurity(globals: Globals) {\n       maxAge = maxAgeSeconds,\n       secure = globals.secure,\n       httpOnly = httpOnly,\n-      sameSite =  // [SAMESITE]\n-        if (globals.secure && globals.config.sameSiteNone) {\n-          Some(Cookie.SameSite.None)\n-        }\n-        else {\n-          None\n-        }\n-    )\n+      sameSite = anySameSiteCookieValue())\n+\n+  /**\n+    * Later, could change to Lax or even Strict, for session id cookie,\n+    * and, when embedded, always send session id via header instead?\n+    * Or now directly? There are SameSite: None incompatible browsers:\n+    * https://www.chromium.org/updates/same-site/incompatible-clients\n+    *   ??? copy-paste that Apache 2 to here ???\n+    * Ok explanation of Strict, Lax and None:\n+    *   https://web.dev/samesite-cookies-explained/\n+    */\n+  private def anySameSiteCookieValue(): Option[Cookie.SameSite] = {  // [SAMESITE]\n+    // SameSite.None only works with https.\n+    if (globals.secure && globals.config.sameSiteNone) {\n+      Some(Cookie.SameSite.None)\n+    }\n+    else if (globals.config.sameSiteLax) {\n+      Some(Cookie.SameSite.Lax)\n+    }\n+    else {\n+      None\n+    }\n+  }\n+\n \n   def DiscardingSecureCookie(name: String) =\n     DiscardingCookie(name, secure = globals.secure)\n@@ -564,32 +580,15 @@ class EdSecurity(globals: Globals) {\n   // javax.servlet.http.Cookie? Why? Not needed!, '%' is safe.\n   // So I've modified jquery-cookie.js to remove double quotes when\n   // reading cookie values.\n-  def urlEncodeCookie(name: String, value: String, maxAgeSecs: Option[Int] = None) =\n+  private def urlEncodeCookie(name: String, value: String, maxAgeSecs: Option[Int] = None) =\n     Cookie(\n       name = name,\n       value = urlEncode(convertEvil(value)),  // see comment above\n       maxAge = maxAgeSecs,\n       path = \"/\",\n       domain = None,\n       secure = globals.secure,\n-      sameSite =  // [SAMESITE]\n-        // Later, could change to Lax or even Strict, for session id cookie,\n-        // and, when embedded, always send session id via header instead?\n-        // Or now directly? There are SameSite: None incompatible browsers:\n-        // https://www.chromium.org/updates/same-site/incompatible-clients\n-        // Ok explanation of Strict, Lax and None:\n-        //   https://web.dev/samesite-cookies-explained/\n-        /* if (globals.skipSameSiteCookieAttr) {\n-          None\n-        }\n-        else */\n-        if (globals.secure && globals.config.sameSiteNone) {\n-          Some(Cookie.SameSite.None)\n-        }\n-        else {\n-          // SameSite.None only works with https.\n-          None\n-        },\n+      sameSite = anySameSiteCookieValue(),\n       httpOnly = false)\n \n "
+    },
+    {
+      "sha": "6341cd6e9e03074ecf79978c159e901787015d14",
+      "filename": "client/app-editor/editor/editor.editor.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 5,
+      "changes": 16,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-editor/editor/editor.editor.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-editor/editor/editor.editor.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-editor/editor/editor.editor.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -1018,18 +1018,24 @@ export const Editor = createFactory<any, EditorState>({\n     const locator: DraftLocator = { draftType: DraftType.Scratch };\n     const mainStore: Store = eds.isInEmbeddedEditor ? getMainWinStore() : state.store;\n \n-    // If we're in an iframe, the page might have gotten lazy-creted, then\n+    // If we're in an iframe, the page might have gotten lazy-created; then\n     // we need to use eds.embeddedPageId.\n     const editorsPageId = state.editorsPageId || eds.embeddedPageId;\n \n     let postType: PostType;\n \n     // @ifdef DEBUG\n     dieIf(!state.replyToPostNrs, '[TyE502KRDL35]');\n-    // Cannot edit sth, if page doesn't exist. And cannot create a new topic, in a forum\n-    // that doesn't exist (the editor's page id should be the forum page id).\n-    dieIf(!state.editorsPageId && (\n-          state.editingPostNr || state.newForumTopicCategoryId), '[TyE40JMABN42]');\n+    const pageExists = !!state.editorsPageId;\n+    // Cannot *edit* sth, if page doesn't exist.\n+    dieIf(!pageExists && state.editingPostNr, '[TyE40JMABN42]');\n+    // Cannot create forum topics, if the forum page itself doesn't exist.\n+    dieIf(!pageExists && state.newForumTopicCategoryId, '[TyE40JMABN43]');\n+    // Cannot post chat messages on non-existing pages.\n+    dieIf(!pageExists && state.isWritingChatMessage, '[TyE40JMABN44]');\n+    // But yes — can post new replies, if the page doesn't exist,\n+    // because PageRole.EmbeddedComments pages get created lazily.\n+    // Also direct message topics get created lazily (messageToUserIds).\n     // @endif\n \n     if (state.editingPostNr) {"
+    },
+    {
+      "sha": "f8dd5fedb1d1cd3f88088f99b509aae854d84916",
+      "filename": "client/app-more/login/login-dialog.more.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-more/login/login-dialog.more.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-more/login/login-dialog.more.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-more/login/login-dialog.more.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -444,8 +444,8 @@ const OpenAuthButton = createClassAndFactory({\n       const mainWin = getMainWin();\n       if (!win_canUseCookies(mainWin)) {\n         // (We can use cookies here in this login window — they're 1st party cookies.\n-        // But not in the main window, typically an embedded comments iframe, and that'd\n-        // be 3rd party cookies.)\n+        // But not in the main window — which should be an embedded comments iframe,\n+        // that is, 3rd party cookies, blocked.)\n         getSetCookie('TyCoAvoidCookies', 'Avoid');\n       }\n       window.location.assign(url);"
+    },
+    {
+      "sha": "c7052a4aff33d53e62357749ac583eb0d6aa3831",
+      "filename": "client/app-more/page-dialogs/about-user-dialog.more.ts",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 17,
+      "changes": 33,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-more/page-dialogs/about-user-dialog.more.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-more/page-dialogs/about-user-dialog.more.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-more/page-dialogs/about-user-dialog.more.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -257,17 +257,8 @@ const AboutUser = createComponent({\n     const extraInfoNewline =\n         this.props.extraInfo ? r.div({ className: 's_UD_ExtrInf' }, this.props.extraInfo) : null;\n \n-    const emailIfSelfAdmin = !me.isAdmin || !user.email ? null :\n-        r.div({ className: 's_UD_Em' },\n-          t.EmailC || (t.cud.EmailC + ' '),\n-          // Don't use an <a href=\"mailto:...\"> — it's better to encourage people\n-          // to use the built-in messaging system? And also annoying when some\n-          // email program starts, if clicking the email just to copy it.\n-          r.samp({}, user.email),\n-          OnlyAdminsSee);\n-\n     const groupList = GroupList(\n-        user, groupsMaySee, 's_UP_Ab_Stats_Stat_Groups_Group',\n+        user, groupsMaySee, 's_UP_Ab_Stats_Stat_Groups_Group',  // COULD rename css class\n         // `false`: Use r.a() not a Link() because we're not inside a React Router.\n         // UX COULD place all dialog roots inside the router elem, so Link() will work?\n         false);\n@@ -287,8 +278,8 @@ const AboutUser = createComponent({\n           r.span({ className: 's_UD_FN' }, user.fullName), r.br(),\n           isStaffInfo,\n           isGoneInfo),\n-        r.div({ className: 's_UD_BelwAv' },\n-          emailIfSelfAdmin,\n+        r.div({ className: 's_UD_BelwAv' },  // \"below avatar\"\n+          AnyUserEmail(user, me),\n           r.div({ className: 's_UP_Gs' },\n             t.GroupsC, groupList))\n         ));\n@@ -366,10 +357,6 @@ const AboutGuest = createComponent({\n         ? r.p({}, t.aud.EmAdrUnkn)\n         : null;\n \n-    const emailIfSelfAdmin = !me.isAdmin ? null :\n-        r.div({ className: 's_UD_Em' },\n-          \"Email: \", guest.email || \"(unknown)\");\n-\n     return (\n       r.div({ className: 'clearfix' },\n         blockModal,\n@@ -379,7 +366,7 @@ const AboutGuest = createComponent({\n         r.p({},\n           t.NameC + ' ' + guest.fullName, r.br(),\n           t.aud.ThisIsGuest,\n-          emailIfSelfAdmin),\n+          AnyUserEmail(guest, me)),\n         anyCannotBeContactedMessage,\n         blockedInfo));\n   }\n@@ -446,6 +433,18 @@ const BlockGuestDialog = createComponent({\n   }\n });\n \n+\n+function AnyUserEmail(user: { email?: string }, me: Myself) {\n+  return !me.isAdmin || !user.email ? null : (\n+      r.div({ className: 's_UD_Em' },\n+        t.EmailC || (t.cud.EmailC + ' '),\n+        // Don't use an <a href=\"mailto:...\"> — it's better to encourage people\n+        // to use the built-in messaging system? And also annoying when some\n+        // email program starts, if clicking the email just to copy it.\n+        r.samp({}, user.email),\n+        OnlyAdminsSee));\n+}\n+\n //------------------------------------------------------------------------------\n    }\n //------------------------------------------------------------------------------"
+    },
+    {
+      "sha": "7e561e04bcb7d366edaff1fe6398d78c0221869c",
+      "filename": "client/app-more/widgets.more.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-more/widgets.more.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-more/widgets.more.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-more/widgets.more.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -66,7 +66,7 @@ export const GroupList = function(member: UserDetailsStatsGroups, groupsMaySee:\n   groupsOnlyOneBuiltIn.unshift(maxTrustLevelGroup);\n \n   return groupsOnlyOneBuiltIn.map(groupId => {\n-    const group = _.find(groupsMaySee, g => g.id === groupId);\n+    const group = _.find(groupsMaySee, g => g.id === groupId);  // [On2]\n     if (!group)\n       return null;\n     const name = group.fullName || group.username;"
+    },
+    {
+      "sha": "fdcb2d2043359ae58e385312da13de8a9e9cafb8",
+      "filename": "client/app-slim/Server.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 5,
+      "changes": 9,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/Server.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/Server.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/Server.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -1732,11 +1732,11 @@ export function savePageIdsUrls(data: PageIdsUrls, onDone: () => void) {\n \n \n export function loadPageJson(path: string, success: (response) => void) {\n-  logD(`Loading page: ${path} [TyMLDPG]`);\n+  logM(`Loading page: ${path} [TyMLDPG]`);\n   get(path + '?json', response => {\n-    logD(`Done loading ${path}, updating store...`);\n+    logM(`Done loading ${path}, updating store...`);\n     success(response);\n-    logD(`Done updating store.`);\n+    logM(`Done updating store.`);\n   });\n }\n \n@@ -1912,8 +1912,7 @@ export function sendLongPollingRequest(userId: UserId, successFn: (response) =>\n   const reqNr = longPollingState.nextReqNr;\n   longPollingState.nextReqNr = reqNr + 1;\n \n-  logD(\n-      `Sending long polling request ${reqNr}, channel ${channelId} [TyMLPRSEND]`);\n+  logD(`Sending long polling request ${reqNr}, channel ${channelId} [TyMLPRSEND]`);\n \n \n   const options: GetOptions = {"
+    },
+    {
+      "sha": "a31022071f3f6b09ccad0dce96bfdf7cf461f6f5",
+      "filename": "client/app-slim/prelude.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/prelude.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/prelude.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/prelude.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -105,8 +105,8 @@ export function oneIfDef(x: any): number {\n /// though, the browser won't show those messages, by default.\n ///\n /// Otherwise, use normal log level — so if someone copy-pastes a real warning\n-/// or error from the console, those other log messages get included, making it\n-/// simpler to see what's happening.\n+/// or error from the console, the console.log() messages are visible and\n+/// get included, simplifying troubleshooting.\n ///\n export function logM(message, ex?) {\n   if (eds.isInIframe) {\n@@ -121,7 +121,7 @@ export function logM(message, ex?) {\n /// Wrapper for console.debug().\n ///\n /// So can change how logging works, from this one place, rather than updating\n-/// console.debug() \"everywhere\".\n+/// console.debug() everywhere.\n ///\n export function logD(message, ex?) {\n   console.debug(message, ex);\n@@ -224,8 +224,8 @@ export function getMainWin(): MainWin {\n         // OAuth provider, then eds.isInLoginPopup is false, but\n         // the window name will be 'TyLoginPopup' — then, we need to continue\n         // below to find the real main win (since we're in a popup).\n-        // (The window it keeps its name, also when going to the OAuth provider\n-        // and logging in there, and when going back again.)\n+        // (The window apparently keeps its name, also when going to the OAuth\n+        // provider and logging in there, and getting redirected back.)\n         window.name !== 'TyLoginPopup') {\n     return window as MainWin;\n   }"
+    },
+    {
+      "sha": "2a451067ed7aae8647d03616dfbf6b9047a58551",
+      "filename": "client/app-slim/slim-bundle.d.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/slim-bundle.d.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/slim-bundle.d.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/slim-bundle.d.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -113,8 +113,8 @@ declare namespace ed {\n \n declare namespace debiki2 {\n \n-  function logM(message, ex?);\n-  function logD(message, ex?);\n+  function logM(message: string, ex?);\n+  function logD(message: string, ex?);\n \n   function getMainWin(): MainWin;\n   function getMainWinStore(): Store;"
+    },
+    {
+      "sha": "eec2db1bdeeb6bfc82815eb6b0621261fcb94e06",
+      "filename": "client/app-slim/start-page.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/start-page.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/client/app-slim/start-page.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/start-page.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -46,7 +46,7 @@ debiki.serviceWorkerPromise = new Promise<ServiceWorker>(function (resolve, reje\n // because we've disabled service workers / they aren't supported.\n debiki.serviceWorkerPromise.catch(function(ex) {\n   if (ex !== 'ok')\n-    console.warn(\"Error subscribing to events via service worker [TyM5RM57]\", ex);\n+    console.warn(\"Error subscribing to events via service worker [TyE5RM57]\", ex);\n });\n \n let serviceWorkerIsSameVersion = false;"
+    },
+    {
+      "sha": "2771211df45679c97f35c2d39538fb94a3213a18",
+      "filename": "gulpfile.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/gulpfile.js",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/gulpfile.js",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/gulpfile.js?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -887,7 +887,7 @@ gulp.task('clean', () => {\n });\n \n \n-gulp.task('release', gulp.series(\n+gulp.task('release', gulp.series(  // [MKBUNDLS]\n     'clean',\n     'enable-prod-stuff',\n     'minifyScripts',"
+    },
+    {
+      "sha": "e7e7a8e6e53e6843b4fe0d3fd5cd75429303e2ed",
+      "filename": "tests/e2e/specs/embedded-comments-create-site-export-json.2browsers.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/specs/embedded-comments-create-site-export-json.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/specs/embedded-comments-create-site-export-json.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-create-site-export-json.2browsers.test.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -42,7 +42,7 @@ describe(\"embedded comments export json  TyT7FKDJF3\", () => {\n     everyonesBrowsers = _.assign(browser, pagesFor(browser));\n     owensBrowser = _.assign(browserA, pagesFor(browserA));\n     mariasBrowser = _.assign(browserB, pagesFor(browserB));\n-    michaelsBrowser = _.assign(browserB, pagesFor(browserB));\n+    michaelsBrowser = mariasBrowser;\n     strangersBrowser = mariasBrowser;\n     guestsBrowser = strangersBrowser;\n     owen = make.memberOwenOwner();"
+    },
+    {
+      "sha": "5a405a3b789a11eb11a15b676efc7e7a452129d8",
+      "filename": "tests/e2e/specs/embedded-comments-short-script-cache-time.test.ts",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 4,
+      "changes": 19,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/specs/embedded-comments-short-script-cache-time.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/specs/embedded-comments-short-script-cache-time.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/embedded-comments-short-script-cache-time.test.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -1,7 +1,7 @@\n /// <reference path=\"../test-types.ts\"/>\n \n import * as _ from 'lodash';\n-import assert = require('assert');\n+import assert = require('../utils/ty-assert');\n import pagesFor = require('../utils/pages-for');\n import settings = require('../utils/settings');\n const syncRequest = require('sync-request');\n@@ -25,7 +25,19 @@ describe(\"the embedded comments script is cached for a day only\", () => {\n \n   it(\"it contains javascript\", () => {\n     const source = everyonesBrowsers.getSource();\n-    assert(source.search('edCommentsServerUrl') > 0);\n+    // It can be annoyingly confusing to track down why this test fails\n+    // with a 404 Not Found, so let's explain.\n+    if (source.indexOf('TyE404NF') >= 0) {\n+      assert.fail(\n+        `Page not found. You need to build minified Javascript files, for\\n` +\n+        `this test to work — otherwise the file I want becomes 404 Not Found.\\n` +\n+        `\\n` +\n+        `Do this:\\n` +\n+        `\\n` +\n+        `    s/d gulp release\\n` +   // sync w gulpfile.js [MKBUNDLS]\n+        `\\n`);\n+    }\n+    assert.includes(source, 'edCommentsServerUrl');\n   });\n \n   it(\"the cache time is just one day\", () => {\n@@ -34,9 +46,8 @@ describe(\"the embedded comments script is cached for a day only\", () => {\n       const response = syncRequest('GET', theUrl);\n       const headers = response.headers;\n       if (headers['cache-control'] !== desiredCacheHeader) {  // [2WBKP46]\n-        console.log(\"Bad es-comments.min.js cache time, look at the cache header:\\n\" +\n+        assert.fail(\"Bad es-comments.min.js cache time, look at the cache header:\\n\" +\n             JSON.stringify(headers));\n-        assert(false);\n       }\n       if (i === 0) theUrl = scriptUrl2;\n       else theUrl = scriptUrl3;"
+    },
+    {
+      "sha": "395c1c6a8e84613becd96c5ff3cf2e4f47a92279",
+      "filename": "tests/e2e/specs/spam-basic-local.2browsers.test.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/specs/spam-basic-local.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/specs/spam-basic-local.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/spam-basic-local.2browsers.test.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -73,7 +73,7 @@ describe(\"spam test, no external services  TyT530KRM1R\", () => {\n     mallorysBrowser.disableRateLimits();\n   });\n \n-  // Use both http and smoe https links.\n+  // Use both http and https links.\n   const tooManyLinks = `<3 links <3 <3 <3\n         http://example.com/link-1\n         http://example.com/link-2\n@@ -109,6 +109,7 @@ describe(\"spam test, no external services  TyT530KRM1R\", () => {\n     mallorysBrowser.go2('/');\n     mallorysBrowser.forumButtons.clickCreateTopic();\n     mallorysBrowser.editor.editTitle(topicTitleTwo);\n+    // (Use both http and https links.)\n     mallorysBrowser.editor.editText(`Not many links :-(\n         http://www.example.com/link-1\n         https://www.example.com/link-2`);"
+    },
+    {
+      "sha": "28a3642a8f0c0d40aeb2205c24f87d4d039566e6",
+      "filename": "tests/e2e/test-types2.ts",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/test-types2.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/test-types2.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/test-types2.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -3,6 +3,23 @@\n \n type LogLevel = 'silent' | 'verbose' | 'command' | 'data' | 'result' | 'error';\n \n+\n+const enum IsWhere {\n+  Forum = 1,\n+  LoginPopup = 2,\n+\n+  EmbFirst = 3,\n+  EmbeddingPage = 3,\n+  EmbCommentsIframe = 4,\n+  EmbEditorIframe = 5,\n+  EmbLast = 5,\n+\n+  // Another server, e.g. Google's OAuth login page. But not an\n+  // embedding blog post page.\n+  External = 10,\n+};\n+\n+\n interface TestSettings {\n   debug: boolean;\n   parallel?: number;"
+    },
+    {
+      "sha": "ce3cdc7fe927f27f256f089f62464f8c86337789",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 96,
+      "deletions": 22,
+      "changes": 118,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -25,22 +25,6 @@ const PollExpBackoff = 1.33;\n const PollMaxMs = 5000;\n \n \n-const enum IsWhere {\n-  Forum = 1,\n-  LoginPopup = 2,\n-\n-  EmbFirst = 3,\n-  EmbeddingPage = 3,\n-  EmbCommentsIframe = 4,\n-  EmbEditorIframe = 5,\n-  EmbLast = 5,\n-\n-  // Another server, e.g. Google's OAuth login page. But not an\n-  // embedding blog post page.\n-  External = 10,\n-};\n-\n-\n type ElemRect = { x: number, y: number, width: number, height: number };\n \n // [E2EBUG] Stop using browser.waitUntil — it crashes, on any exception inside,\n@@ -227,7 +211,7 @@ function pagesFor(browser) {\n     },\n \n \n-    isWhere: () => isWhere,\n+    isWhere: (): IsWhere => isWhere,\n \n \n     updateIsWhere: () => {\n@@ -516,7 +500,7 @@ function pagesFor(browser) {\n     },\n \n \n-    switchToAnyParentFrame: () => {\n+    switchToAnyParentFrame: function() {  // arrow fn => `arguments` below won't work\n       if (api.isInIframe()) {\n         origFrameParent.apply(browser, arguments);\n         logMessage(\"Switched to parent frame.\");\n@@ -1678,9 +1662,7 @@ function pagesFor(browser) {\n         browser.pause(200); // [e2erace] otherwise it won't find the next input, in the\n                             // create-site-all-logins @facebook test\n         logMessage(`Typig forum title: \"${forumTitle}\" ...`);\n-        utils.tryManyTimes(\"Type forum name\", 3, () => {\n-          api.waitAndSetValue('input[type=\"text\"]', forumTitle, { timeoutMs: 2000 });\n-        });\n+        api.waitAndSetValue('input[type=\"text\"]', forumTitle, { checkAndRetry: true });\n         // Click Next, Next ... to accept all default choices.\n         /*  [NODEFCATS]\n         api.waitAndClick('.e_Next');\n@@ -1692,9 +1674,100 @@ function pagesFor(browser) {\n         */\n         logMessage(`Clicking Next ...`);\n         api.waitAndClick('.e_Next');\n-        browser.pause(200);\n+\n+        /*\n+        DB_CONFICT: A Postgres serialization error might happen here, sth like 1 in 12, or 0 in 22:\n+\n+2020-03-09 15:14:36.476 UTC session-5e665804.1eb tx-98022: DETAIL:  Reason code: Canceled on identification as a pivot, during write.\n+2020-03-09 15:14:36.476 UTC session-5e665804.1eb tx-98022: HINT:  The transaction might succeed if retried.\n+2020-03-09 15:14:36.476 UTC session-5e665804.1eb tx-98022: STATEMENT:  \n+              insert into pages3 (\n+                site_id,\n+                page_id,\n+\n+2020-03-09 15:20:11.012 UTC session-5e665804.1eb tx-98392: ERROR:  could not serialize access due to read/write dependencies among transactions\n+2020-03-09 15:20:11.012 UTC session-5e665804.1eb tx-98392: DETAIL:  Reason code: Canceled on identification as a pivot, during write.\n+2020-03-09 15:20:11.012 UTC session-5e665804.1eb tx-98392: HINT:  The transaction might succeed if retried.\n+2020-03-09 15:20:11.012 UTC session-5e665804.1eb tx-98392: STATEMENT:  \n+              update pages3 set\n+                version = $1,\n+                PAGE_ROLE = $2,\n+                category_id = $3,\n+                EMBEDDING_PAGE_URL = $4,\n+                author_id = $5,\n+                UPDATED_AT = greatest(created_at, $6),\n+\n+2020-03-09 15:20:58.349 UTC session-5e665804.1eb tx-98448: ERROR:  could not serialize access due to read/write dependencies among transactions\n+2020-03-09 15:20:58.349 UTC session-5e665804.1eb tx-98448: DETAIL:  Reason code: Canceled on identification as a pivot, during conflict out checking.\n+2020-03-09 15:20:58.349 UTC session-5e665804.1eb tx-98448: HINT:  The transaction might succeed if retried.\n+2020-03-09 15:20:58.349 UTC session-5e665804.1eb tx-98448: STATEMENT:  \n+              select unique_post_id, page_id, post_nr, type, created_at, created_by_id\n+              from post_actions3\n+              where site_id = $1 and page_id = $2 \n+\n+2020-03-09 15:33:00.317 UTC session-5e665efd.248 tx-98891: ERROR:  could not serialize access due to read/write dependencies among transactions\n+2020-03-09 15:33:00.317 UTC session-5e665efd.248 tx-98891: DETAIL:  Reason code: Canceled on identification as a pivot, during write.\n+2020-03-09 15:33:00.317 UTC session-5e665efd.248 tx-98891: HINT:  The transaction might succeed if retried.\n+2020-03-09 15:33:00.317 UTC session-5e665efd.248 tx-98891: STATEMENT:  \n+              update pages3 set\n+                version = $1,\n+                PAGE_ROLE = $2,\n+                category_id = $3,\n+\n+2020-03-09 15:54:49.506 UTC session-5e6665de.29d tx-100416: ERROR:  could not serialize access due to read/write dependencies among transactions\n+2020-03-09 15:54:49.506 UTC session-5e6665de.29d tx-100416: DETAIL:  Reason code: Canceled on identification as a pivot, during write.\n+2020-03-09 15:54:49.506 UTC session-5e6665de.29d tx-100416: HINT:  The transaction might succeed if retried.\n+2020-03-09 15:54:49.506 UTC session-5e6665de.29d tx-100416: STATEMENT:  \n+              insert into pages3 (\n+                site_id,\n+                page_id,\n+                ext_id,\n+                version,\n+\n+          org.postgresql.util.PSQLException: ERROR: could not serialize access due to read/write dependencies among transactions\n+            Detail: Reason code: Canceled on identification as a pivot, during write.\n+            Hint: The transaction might succeed if retried.\n+            at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)\n+            at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)\n+            at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)\n+            at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)\n+            at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)\n+            at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:150)\n+            at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:127)\n+            at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)\n+            at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)\n+            at com.debiki.dao.rdb.Rdb.execImpl(Rdb.scala:494)\n+            at com.debiki.dao.rdb.Rdb.update(Rdb.scala:454)\n+            at com.debiki.dao.rdb.RdbSiteTransaction._updatePageMeta(RdbSiteTransaction.scala:636)\n+            at com.debiki.dao.rdb.RdbSiteTransaction.$anonfun$updatePageMetaImpl$1(RdbSiteTransaction.scala:524)\n+            at com.debiki.dao.rdb.RdbSiteTransaction.$anonfun$updatePageMetaImpl$1$adapted(RdbSiteTransaction.scala:516)\n+            at com.debiki.dao.rdb.RdbSiteTransaction.$anonfun$transactionCheckQuota$1(RdbSiteTransaction.scala:140)\n+            at scala.Option.foreach(Option.scala:274)\n+            at com.debiki.dao.rdb.RdbSiteTransaction.transactionCheckQuota(RdbSiteTransaction.scala:138)\n+            at com.debiki.dao.rdb.RdbSiteTransaction.updatePageMetaImpl(RdbSiteTransaction.scala:516)\n+            at com.debiki.core.SiteTransaction.updatePageMeta(SiteTransaction.scala:269)\n+            at com.debiki.core.SiteTransaction.updatePageMeta$(SiteTransaction.scala:266)\n+            at com.debiki.dao.rdb.RdbSiteTransaction.updatePageMeta(RdbSiteTransaction.scala:38)\n+            at debiki.dao.PostsDao.insertReplyImpl(PostsDao.scala:256)\n+            at debiki.dao.PostsDao.insertReplyImpl$(PostsDao.scala:102)\n+            at debiki.dao.SiteDao.insertReplyImpl(SiteDao.scala:86)\n+            at debiki.dao.ForumDao.createForumCategories(ForumDao.scala:405)\n+            at debiki.dao.ForumDao.createDefaultCategoriesAndTopics(ForumDao.scala:208)\n+            at debiki.dao.ForumDao.$anonfun$createForum$1(ForumDao.scala:113)\n+            at debiki.dao.SiteDao.$anonfun$readWriteTransaction$2(SiteDao.scala:199)\n+            at com.debiki.core.DbDao2.readWriteSiteTransaction(DbDao2.scala:67)\n+            at debiki.dao.SiteDao.$anonfun$readWriteTransaction$1(SiteDao.scala:199)\n+            at debiki.dao.SiteDao$.synchronizeOnSiteId(SiteDao.scala:543)\n+            at debiki.dao.SiteDao.readWriteTransaction(SiteDao.scala:198)\n+            at debiki.dao.ForumDao.createForum(ForumDao.scala:68)\n+            at debiki.dao.ForumDao.createForum$(ForumDao.scala:64)\n+            at debiki.dao.SiteDao.createForum(SiteDao.scala:86)\n+            at controllers.ForumController.$anonfun$createForum$1(ForumController.scala:70)\n+            */\n+\n         logMessage(`Creating the forum ...`);\n         api.waitAndClick('#e2eDoCreateForum');\n+        logMessage(`Waiting for title ...`);\n         const actualTitle = api.waitAndGetVisibleText('h1.dw-p-ttl');\n         logMessage(`Done? The forum title is: \"${actualTitle}\"`);\n         assert.equal(actualTitle, forumTitle);\n@@ -4105,6 +4178,7 @@ function pagesFor(browser) {\n         api.switchToEmbCommentsIframeIfNeeded();\n         api.waitAndClick(buttonSelector, opts);\n         return;\n+        // DO_AFTER 2020-06-01: CLEAN_UP REMOVE the rest of this function.\n         let hasScrolled = false;\n         const isInIframe = api.isInIframe();\n "
+    },
+    {
+      "sha": "7f4262a5b14ff05a88d3c8a55ee0e28023026a72",
+      "filename": "tests/e2e/utils/ty-assert.ts",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/utils/ty-assert.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/tests/e2e/utils/ty-assert.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/ty-assert.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -39,8 +39,16 @@ const tyAssert = {\n   includes: (text: string, expectedSubstring: string, message?: string) => {\n     // Could make this work w regexs too.\n     const ix = text.indexOf(expectedSubstring);\n-    assert.ok(ix >= 0, message ||\n-      `This: \"${expectedSubstring}\" is missing from:\\n    \"${text}\"\\n`);\n+    const isOk = ix >= 0;\n+    if (!isOk) console.log(''); // nice with a blank line\n+    assert.ok(isOk, message ||\n+      `assert.includes:\\n` +\n+      `    This:  \"${expectedSubstring}\"\\n` +\n+      `    is missing from:  (between the ----)\\n` +\n+      `------------------------------------------------------------------------\\n` +\n+      `${text}\\n` +\n+      `------------------------------------------------------------------------\\n` +\n+      `\\n`);\n   },\n \n   excludes: (text: string, unexpectedSubstring: string, message?: string) => {"
+    },
+    {
+      "sha": "39aebfbfb0887f65076d6af7c5261c203cc753f5",
+      "filename": "translations/en_US/i18n.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e335bc4b647ad18fda9f8d137745c79c4089fabe/translations/en_US/i18n.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e335bc4b647ad18fda9f8d137745c79c4089fabe/translations/en_US/i18n.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/translations/en_US/i18n.ts?ref=e335bc4b647ad18fda9f8d137745c79c4089fabe",
+      "patch": "@@ -51,7 +51,7 @@ var t_en_US: TalkyardTranslations = t = {\n   done: \"done\",\n   EditV: \"Edit\",\n   Editing: \"Editing\",\n-  EmailC: \"Email: \",\n+  EmailC: \"Email: \",   // MISSING  copy t.cud.EmailC to here\n   EmailAddress: \"Email address\",\n   EmailAddresses: \"Email addresses\",\n   EmailSentD: \"Email sent.\","
+    }
+  ]
+}
