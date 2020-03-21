@@ -1,0 +1,110 @@
+{
+  "sha": "c97244ca115c6e8d287d9c4e6033bf3e1d084f70",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjOTcyNDRjYTExNWM2ZThkMjg3ZDljNGU2MDMzYmYzZTFkMDg0Zjcw",
+  "commit": {
+    "author": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-03-21T13:33:10Z"
+    },
+    "committer": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-03-21T13:43:11Z"
+    },
+    "message": "FIX: post edited webhook does not reflect updated topic title\n\nThis fix ensures that when a topic title is edited the new title shows\nup in the post webhook instead of the old title.\n\nRather than passing in the old topic object to the PostRevisor the\nPostRevisor initializer will load the updated topic object inside of the\ninitializer if you don't pass it in. This will allow the post_edited\nwebhook to have the correct topic values.\n\nOriginal bug reported at:\n\nhttps://meta.discourse.org/t/post-edited-webhook-does-not-reflect-updated-topic-title/144722",
+    "tree": {
+      "sha": "262c85eb83b420e7fa88bf21bada81019a4fd921",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/262c85eb83b420e7fa88bf21bada81019a4fd921"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c97244ca115c6e8d287d9c4e6033bf3e1d084f70",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c97244ca115c6e8d287d9c4e6033bf3e1d084f70",
+  "html_url": "https://github.com/discourse/discourse/commit/c97244ca115c6e8d287d9c4e6033bf3e1d084f70",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c97244ca115c6e8d287d9c4e6033bf3e1d084f70/comments",
+  "author": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dbfec4b268c5e70cea75254eb4c624df91739acd",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/dbfec4b268c5e70cea75254eb4c624df91739acd",
+      "html_url": "https://github.com/discourse/discourse/commit/dbfec4b268c5e70cea75254eb4c624df91739acd"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 11,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "99ff5fb6258b7901cb6cdd9d6b4aeefe8ba059fd",
+      "filename": "app/controllers/topics_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/c97244ca115c6e8d287d9c4e6033bf3e1d084f70/app/controllers/topics_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c97244ca115c6e8d287d9c4e6033bf3e1d084f70/app/controllers/topics_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/topics_controller.rb?ref=c97244ca115c6e8d287d9c4e6033bf3e1d084f70",
+      "patch": "@@ -366,7 +366,7 @@ def update\n \n     if changes.length > 0\n       first_post = topic.ordered_posts.first\n-      success = PostRevisor.new(first_post, topic).revise!(current_user, changes, validate_post: false)\n+      success = PostRevisor.new(first_post).revise!(current_user, changes, validate_post: false)\n     end\n \n     # this is used to return the title to the client as it may have been changed by \"TextCleaner\""
+    },
+    {
+      "sha": "947d244971be5d6291c8d635db340390b457bf6f",
+      "filename": "spec/requests/topics_controller_spec.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/c97244ca115c6e8d287d9c4e6033bf3e1d084f70/spec/requests/topics_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c97244ca115c6e8d287d9c4e6033bf3e1d084f70/spec/requests/topics_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/topics_controller_spec.rb?ref=c97244ca115c6e8d287d9c4e6033bf3e1d084f70",
+      "patch": "@@ -946,6 +946,9 @@ def topic_user_post_timings_count(user, topic)\n       end\n \n       describe 'with permission' do\n+        fab!(:post_hook) { Fabricate(:post_web_hook) }\n+        fab!(:topic_hook) { Fabricate(:topic_web_hook) }\n+\n         it 'succeeds' do\n           put \"/t/#{topic.slug}/#{topic.id}.json\"\n \n@@ -971,6 +974,13 @@ def topic_user_post_timings_count(user, topic)\n \n           topic.reload\n           expect(topic.title).to eq('This is a new title for the topic')\n+\n+          expect(Jobs::EmitWebHookEvent.jobs.length).to eq(2)\n+          job_args = Jobs::EmitWebHookEvent.jobs[0][\"args\"].first\n+\n+          expect(job_args[\"event_name\"]).to eq(\"post_edited\")\n+          payload = JSON.parse(job_args[\"payload\"])\n+          expect(payload[\"topic_title\"]).to eq('This is a new title for the topic')\n         end\n \n         it \"returns errors with invalid titles\" do"
+    }
+  ]
+}
