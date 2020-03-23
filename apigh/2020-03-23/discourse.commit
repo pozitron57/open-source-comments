@@ -1,0 +1,110 @@
+{
+  "sha": "48c1de4836ed6240a6ce57761c95f2b3d69f0c91",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0OGMxZGU0ODM2ZWQ2MjQwYTZjZTU3NzYxYzk1ZjJiM2Q2OWYwYzkx",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2020-03-23T15:58:40Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-03-23T15:58:40Z"
+    },
+    "message": "DEV: adds afterCreate/beforeUpdate hooks to rest models (#9253)\n\nWe already have beforeCreate and afterUpdate and it seems these hooks can be useful and it's also unexpected to not have parity on this.",
+    "tree": {
+      "sha": "59d8fa903072ddfc14003bbfd6be3dfe76ac003d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/59d8fa903072ddfc14003bbfd6be3dfe76ac003d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/48c1de4836ed6240a6ce57761c95f2b3d69f0c91",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeeNywCRBK7hj4Ov3rIwAAdHIIAI5+x8UyoSp1vQ3UNHy0qZCz\nviTjM5YKBVwK4x9ZgVcyQIQSXGJTK67pYfCDZxZEgR7/vhuq1s+WBiv6Kg71UHY5\n2Uk/sFUhBbLjyCvbUtvXLAuC5XvQQmENtozG9BfJBI03QjKSTGxnNXu8g6wG6aqx\nXW+eEOrBZkfC7ryzibEidJ+9Osym77SofwERL5ylS3C1K2zNnYJMMZlLG0i26qDv\nVW/LIvrLQF+CBDkwv36hQFZKDeE0tveJJEwxo/6Vplml8EjBMUe3J+Rx8Ud6nMI9\nIeMLW0E4rVxTwH2Pb1kGXCZy1MwZfRZuQg1L3n9x/K9NLl3gOY2RFBFaGs4QCHg=\n=QNOR\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 59d8fa903072ddfc14003bbfd6be3dfe76ac003d\nparent e58f0adfcc963305fb16d6c796f51ccfcbe58e00\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1584979120 +0100\ncommitter GitHub <noreply@github.com> 1584979120 +0100\n\nDEV: adds afterCreate/beforeUpdate hooks to rest models (#9253)\n\nWe already have beforeCreate and afterUpdate and it seems these hooks can be useful and it's also unexpected to not have parity on this.\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/48c1de4836ed6240a6ce57761c95f2b3d69f0c91",
+  "html_url": "https://github.com/discourse/discourse/commit/48c1de4836ed6240a6ce57761c95f2b3d69f0c91",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/48c1de4836ed6240a6ce57761c95f2b3d69f0c91/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e58f0adfcc963305fb16d6c796f51ccfcbe58e00",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e58f0adfcc963305fb16d6c796f51ccfcbe58e00",
+      "html_url": "https://github.com/discourse/discourse/commit/e58f0adfcc963305fb16d6c796f51ccfcbe58e00"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 14,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e0a697e827575ec72913bb7ae9468d01bf8864a3",
+      "filename": "app/assets/javascripts/discourse/models/rest.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/48c1de4836ed6240a6ce57761c95f2b3d69f0c91/app/assets/javascripts/discourse/models/rest.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/48c1de4836ed6240a6ce57761c95f2b3d69f0c91/app/assets/javascripts/discourse/models/rest.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/models/rest.js?ref=48c1de4836ed6240a6ce57761c95f2b3d69f0c91",
+      "patch": "@@ -9,6 +9,9 @@ const RestModel = EmberObject.extend({\n   isSaving: false,\n \n   beforeCreate() {},\n+  afterCreate() {},\n+\n+  beforeUpdate() {},\n   afterUpdate() {},\n \n   update(props) {\n@@ -18,6 +21,8 @@ const RestModel = EmberObject.extend({\n \n     props = props || this.updateProperties();\n \n+    this.beforeUpdate(props);\n+\n     this.set(\"isSaving\", true);\n     return this.store\n       .update(this.__type, this.id, props)\n@@ -65,6 +70,7 @@ const RestModel = EmberObject.extend({\n           this.set(\"__state\", \"created\");\n         }\n \n+        this.afterCreate(res);\n         res.target = this;\n         return res;\n       })"
+    },
+    {
+      "sha": "8213e96e8d65b3bdc7e6522a8a054fc4466ff350",
+      "filename": "test/javascripts/models/rest-model-test.js.es6",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/48c1de4836ed6240a6ce57761c95f2b3d69f0c91/test/javascripts/models/rest-model-test.js.es6",
+      "raw_url": "https://github.com/discourse/discourse/raw/48c1de4836ed6240a6ce57761c95f2b3d69f0c91/test/javascripts/models/rest-model-test.js.es6",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/models/rest-model-test.js.es6?ref=48c1de4836ed6240a6ce57761c95f2b3d69f0c91",
+      "patch": "@@ -24,10 +24,14 @@ QUnit.test(\"update\", async assert => {\n   assert.equal(widget.get(\"name\"), \"Trout Lure\");\n   assert.ok(!widget.get(\"isSaving\"), \"it is not saving\");\n \n+  const spyBeforeUpdate = sandbox.spy(widget, \"beforeUpdate\");\n+  const spyAfterUpdate = sandbox.spy(widget, \"afterUpdate\");\n   const promise = widget.update({ name: \"new name\" });\n   assert.ok(widget.get(\"isSaving\"), \"it is saving\");\n+  assert.ok(spyBeforeUpdate.calledOn(widget));\n \n   const result = await promise;\n+  assert.ok(spyAfterUpdate.calledOn(widget));\n   assert.ok(!widget.get(\"isSaving\"), \"it is no longer saving\");\n   assert.equal(widget.get(\"name\"), \"new name\");\n \n@@ -61,10 +65,14 @@ QUnit.test(\"save new\", async assert => {\n   assert.ok(!widget.get(\"isCreated\"), \"it is not created\");\n   assert.ok(!widget.get(\"isSaving\"), \"it is not saving\");\n \n+  const spyBeforeCreate = sandbox.spy(widget, \"beforeCreate\");\n+  const spyAfterCreate = sandbox.spy(widget, \"afterCreate\");\n   const promise = widget.save({ name: \"Evil Widget\" });\n   assert.ok(widget.get(\"isSaving\"), \"it is not saving\");\n+  assert.ok(spyBeforeCreate.calledOn(widget));\n \n   const result = await promise;\n+  assert.ok(spyAfterCreate.calledOn(widget));\n   assert.ok(!widget.get(\"isSaving\"), \"it is no longer saving\");\n   assert.ok(widget.get(\"id\"), \"it has an id\");\n   assert.ok(widget.get(\"name\"), \"Evil Widget\");"
+    }
+  ]
+}
