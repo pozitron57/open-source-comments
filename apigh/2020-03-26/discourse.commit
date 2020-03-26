@@ -1,0 +1,98 @@
+{
+  "sha": "358ddb9b954837befe37e2c0b16c524dd8ffe52f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozNThkZGI5Yjk1NDgzN2JlZmUzN2UyYzBiMTZjNTI0ZGQ4ZmZlNTJm",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-26T16:47:10Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-03-26T16:47:10Z"
+    },
+    "message": "FIX: `nil` != `false`",
+    "tree": {
+      "sha": "d518bf17c38cbc7a73420b3f123c903b9173a62e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/d518bf17c38cbc7a73420b3f123c903b9173a62e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/358ddb9b954837befe37e2c0b16c524dd8ffe52f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/358ddb9b954837befe37e2c0b16c524dd8ffe52f",
+  "html_url": "https://github.com/discourse/discourse/commit/358ddb9b954837befe37e2c0b16c524dd8ffe52f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/358ddb9b954837befe37e2c0b16c524dd8ffe52f/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6f2e3d61eec5a023ab898f4bb7b11021a3e821b1",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6f2e3d61eec5a023ab898f4bb7b11021a3e821b1",
+      "html_url": "https://github.com/discourse/discourse/commit/6f2e3d61eec5a023ab898f4bb7b11021a3e821b1"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "49fa3a7601dca406ec7a72baa0b15a3d440cf442",
+      "filename": "lib/discourse_js_processor.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/358ddb9b954837befe37e2c0b16c524dd8ffe52f/lib/discourse_js_processor.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/358ddb9b954837befe37e2c0b16c524dd8ffe52f/lib/discourse_js_processor.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/discourse_js_processor.rb?ref=358ddb9b954837befe37e2c0b16c524dd8ffe52f",
+      "patch": "@@ -56,8 +56,8 @@ def self.should_transpile?(filename)\n       embed-application\n     ).any? { |f| relative_path == \"#{js_root}/#{f}.js\" }\n \n-    relative_path =~ /^#{js_root}\\/[^\\/]+\\// ||\n-      relative_path =~ /^#{test_root}\\/[^\\/]+\\//\n+    !!(relative_path =~ /^#{js_root}\\/[^\\/]+\\// ||\n+      relative_path =~ /^#{test_root}\\/[^\\/]+\\//)\n   end\n \n   def self.skip_module?(data)"
+    }
+  ]
+}
