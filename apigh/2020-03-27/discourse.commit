@@ -1,0 +1,194 @@
+{
+  "sha": "7ff889574d85464b946b4cc140e637ab9ed62cff",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3ZmY4ODk1NzRkODU0NjRiOTQ2YjRjYzE0MGU2MzdhYjllZDYyY2Zm",
+  "commit": {
+    "author": {
+      "name": "Jarek Radosz",
+      "email": "jradosz@gmail.com",
+      "date": "2020-03-27T16:35:40Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-03-27T16:35:40Z"
+    },
+    "message": "DEV: Add rubocop-rspec (#9288)\n\nThis adds rubocop-rspec, and enables some cops that were either already passing or are passing now, after fixing them in this commit.\r\n\r\nSome new cops are disabled for now, with annotation: \"TODO\" or \"To be decided\". Those either need to be discussed first, or require manual changes, or the number of found and fixed offenses is too large to bundle them up in a single PR.\r\n\r\nIncludes:\r\n\r\n* DEV: Update rubocop's `TargetRubyVersion` to 2.6\r\n* DEV: Enable RSpec/VoidExpect\r\n* DEV: Enable RSpec/SharedContext\r\n* DEV: Enable RSpec/EmptyExampleGroup (Removed an obsolete empty spec file)\r\n* DEV: Enable RSpec/ItBehavesLike\r\n* DEV: Remove RSpec/ScatteredLet (It's too strict, as it doesn't recognize fab! as a let-like)\r\n* DEV: Remove RSpec/MultipleExpectations",
+    "tree": {
+      "sha": "9b5091e1afa59ff007070650de316d90621e6189",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9b5091e1afa59ff007070650de316d90621e6189"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7ff889574d85464b946b4cc140e637ab9ed62cff",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJefitcCRBK7hj4Ov3rIwAAdHIIAEpNVMrOxiqSzfoHI2P3zEsj\nwK1fVLVe+nrMFu3ruluhJGyh9mqlfexxT8KEORuinFBjq1uTvhMo0gBKZZA5jM5U\nEolItA5iwOo0rQdm/cBzAQ8JcW1CzyFBc0304yvv9cvpnr5uOLraLHiBsAIakudD\nPh6rQ44G3ZqsyV5ZTSJjJybGDc3Tpx32yaYGZ4imcxtGPECEHW2MBtqWF5heD5Iq\nhziU4TLlq4wA8oCik+D12e8PRofp1RxyWJr4jeOZBwFWno8YPBoxEffCxTTLCSdV\nODPowGpBmD47I0ldrEgkWGgXMzmGL5oGZZiHdKzlP/24iTpkt7O7hj4mxmpVWb0=\n=tyAK\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 9b5091e1afa59ff007070650de316d90621e6189\nparent b2b7afd31085aa0c15e6dfdf84f9ee994659b70d\nauthor Jarek Radosz <jradosz@gmail.com> 1585326940 +0100\ncommitter GitHub <noreply@github.com> 1585326940 +0100\n\nDEV: Add rubocop-rspec (#9288)\n\nThis adds rubocop-rspec, and enables some cops that were either already passing or are passing now, after fixing them in this commit.\r\n\r\nSome new cops are disabled for now, with annotation: \"TODO\" or \"To be decided\". Those either need to be discussed first, or require manual changes, or the number of found and fixed offenses is too large to bundle them up in a single PR.\r\n\r\nIncludes:\r\n\r\n* DEV: Update rubocop's `TargetRubyVersion` to 2.6\r\n* DEV: Enable RSpec/VoidExpect\r\n* DEV: Enable RSpec/SharedContext\r\n* DEV: Enable RSpec/EmptyExampleGroup (Removed an obsolete empty spec file)\r\n* DEV: Enable RSpec/ItBehavesLike\r\n* DEV: Remove RSpec/ScatteredLet (It's too strict, as it doesn't recognize fab! as a let-like)\r\n* DEV: Remove RSpec/MultipleExpectations"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7ff889574d85464b946b4cc140e637ab9ed62cff",
+  "html_url": "https://github.com/discourse/discourse/commit/7ff889574d85464b946b4cc140e637ab9ed62cff",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7ff889574d85464b946b4cc140e637ab9ed62cff/comments",
+  "author": {
+    "login": "CvX",
+    "id": 66961,
+    "node_id": "MDQ6VXNlcjY2OTYx",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/66961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/CvX",
+    "html_url": "https://github.com/CvX",
+    "followers_url": "https://api.github.com/users/CvX/followers",
+    "following_url": "https://api.github.com/users/CvX/following{/other_user}",
+    "gists_url": "https://api.github.com/users/CvX/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/CvX/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/CvX/subscriptions",
+    "organizations_url": "https://api.github.com/users/CvX/orgs",
+    "repos_url": "https://api.github.com/users/CvX/repos",
+    "events_url": "https://api.github.com/users/CvX/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/CvX/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b2b7afd31085aa0c15e6dfdf84f9ee994659b70d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b2b7afd31085aa0c15e6dfdf84f9ee994659b70d",
+      "html_url": "https://github.com/discourse/discourse/commit/b2b7afd31085aa0c15e6dfdf84f9ee994659b70d"
+    }
+  ],
+  "stats": {
+    "total": 241,
+    "additions": 224,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "f74aa303eed2aed3284907b63d3135f7192afd68",
+      "filename": ".rubocop.yml",
+      "status": "modified",
+      "additions": 211,
+      "deletions": 1,
+      "changes": 212,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/.rubocop.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/.rubocop.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/.rubocop.yml?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -1,8 +1,9 @@\n require:\n   - rubocop-discourse\n+  - rubocop-rspec\n \n AllCops:\n-  TargetRubyVersion: 2.4\n+  TargetRubyVersion: 2.6\n   DisabledByDefault: true\n   Exclude:\n     - \"db/schema.rb\"\n@@ -143,3 +144,212 @@ Style/GlobalVars:\n     - 'script/**/*'\n     - 'spec/**/*.rb'\n     - 'plugins/*/spec/**/*'\n+\n+# Specs\n+\n+RSpec/AnyInstance:\n+  Enabled: false # To be decided\n+\n+RSpec/AroundBlock:\n+  Enabled: true\n+\n+RSpec/BeforeAfterAll:\n+  Enabled: false # To be decided\n+\n+RSpec/ContextMethod:\n+  Enabled: false # TODO\n+\n+RSpec/ContextWording:\n+  Enabled: false # To be decided\n+\n+RSpec/DescribeClass:\n+  Enabled: false # To be decided\n+\n+RSpec/DescribeMethod:\n+  Enabled: true\n+\n+RSpec/DescribeSymbol:\n+  Enabled: false # To be decided\n+\n+RSpec/DescribedClass:\n+  Enabled: false # To be decided\n+\n+RSpec/DescribedClassModuleWrapping:\n+  Enabled: false # To be decided\n+\n+RSpec/EmptyExampleGroup:\n+  Enabled: true\n+\n+RSpec/EmptyLineAfterExample:\n+  Enabled: false # TODO\n+\n+RSpec/EmptyLineAfterExampleGroup:\n+  Enabled: false # TODO\n+\n+RSpec/EmptyLineAfterFinalLet:\n+  Enabled: false # TODO\n+\n+RSpec/EmptyLineAfterHook:\n+  Enabled: false # TODO\n+\n+RSpec/EmptyLineAfterSubject:\n+  Enabled: false # TODO\n+\n+RSpec/ExampleLength:\n+  Enabled: false # To be decided\n+\n+RSpec/ExampleWithoutDescription:\n+  Enabled: true\n+\n+RSpec/ExampleWording:\n+  Enabled: false # TODO\n+\n+RSpec/ExpectActual:\n+  Enabled: true\n+\n+RSpec/ExpectChange:\n+  Enabled: false # To be decided\n+\n+RSpec/ExpectInHook:\n+  Enabled: false # To be decided\n+\n+RSpec/ExpectOutput:\n+  Enabled: true\n+\n+RSpec/FilePath:\n+  Enabled: false # To be decided\n+\n+RSpec/Focus:\n+  Enabled: true\n+\n+RSpec/HookArgument:\n+  Enabled: false # TODO\n+\n+RSpec/HooksBeforeExamples:\n+  Enabled: false # TODO\n+\n+RSpec/ImplicitBlockExpectation:\n+  Enabled: true\n+\n+RSpec/ImplicitExpect:\n+  Enabled: false # To be decided\n+\n+RSpec/ImplicitSubject:\n+  Enabled: false # To be decided\n+\n+RSpec/InstanceSpy:\n+  Enabled: true\n+\n+RSpec/InstanceVariable:\n+  Enabled: false # TODO\n+\n+RSpec/InvalidPredicateMatcher:\n+  Enabled: true\n+\n+RSpec/ItBehavesLike:\n+  Enabled: true\n+\n+RSpec/IteratedExpectation:\n+  Enabled: false # To be decided\n+\n+RSpec/LeadingSubject:\n+  Enabled: false # TODO\n+\n+RSpec/LeakyConstantDeclaration:\n+  Enabled: false # To be decided\n+\n+RSpec/LetBeforeExamples:\n+  Enabled: false # TODO\n+\n+RSpec/LetSetup:\n+  Enabled: false # TODO\n+\n+RSpec/MessageChain:\n+  Enabled: true\n+\n+RSpec/MessageSpies:\n+  Enabled: true\n+\n+RSpec/MissingExampleGroupArgument:\n+  Enabled: true\n+\n+RSpec/MultipleDescribes:\n+  Enabled: false # TODO\n+\n+RSpec/MultipleSubjects:\n+  Enabled: true\n+\n+RSpec/NamedSubject:\n+  Enabled: false # To be decided\n+\n+RSpec/NestedGroups:\n+  Enabled: false # To be decided\n+\n+RSpec/OverwritingSetup:\n+  Enabled: true\n+\n+RSpec/ReceiveCounts:\n+  Enabled: true\n+\n+RSpec/ReceiveNever:\n+  Enabled: true\n+\n+RSpec/RepeatedDescription:\n+  Enabled: false # TODO\n+\n+RSpec/RepeatedExample:\n+  Enabled: false # TODO\n+\n+RSpec/RepeatedExampleGroupBody:\n+  Enabled: false # TODO\n+\n+RSpec/RepeatedExampleGroupDescription:\n+  Enabled: false # TODO\n+\n+RSpec/ReturnFromStub:\n+  Enabled: true\n+\n+RSpec/ScatteredSetup:\n+  Enabled: false # TODO\n+\n+RSpec/SharedContext:\n+  Enabled: true\n+\n+RSpec/SharedExamples:\n+  Enabled: true\n+\n+RSpec/SingleArgumentMessageChain:\n+  Enabled: true\n+\n+RSpec/SubjectStub:\n+  Enabled: true\n+\n+RSpec/UnspecifiedException:\n+  Enabled: true\n+\n+RSpec/VerifiedDoubles:\n+  Enabled: true\n+\n+RSpec/VoidExpect:\n+  Enabled: true\n+\n+RSpec/Yield:\n+  Enabled: true\n+\n+Capybara/CurrentPathExpectation:\n+  Enabled: true\n+\n+Capybara/FeatureMethods:\n+  Enabled: true\n+\n+FactoryBot/AttributeDefinedStatically:\n+  Enabled: true\n+\n+FactoryBot/CreateList:\n+  Enabled: true\n+\n+FactoryBot/FactoryClassName:\n+  Enabled: true\n+\n+Rails/HttpStatus:\n+  Enabled: true"
+    },
+    {
+      "sha": "9e4b7cb7bfe70f5bb4a50b4e6e4d5c13a526f2e5",
+      "filename": "Gemfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/Gemfile",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/Gemfile",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -180,6 +180,7 @@ group :test, :development do\n   gem 'byebug', require: ENV['RM_INFO'].nil?, platform: :mri\n   gem 'rubocop', require: false\n   gem \"rubocop-discourse\", require: false\n+  gem \"rubocop-rspec\", require: false\n   gem 'parallel_tests'\n end\n "
+    },
+    {
+      "sha": "71e97943f9fb15b9b48446a9f9bb9a8af3848266",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/Gemfile.lock",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/Gemfile.lock?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -350,6 +350,8 @@ GEM\n       unicode-display_width (>= 1.4.0, < 1.7)\n     rubocop-discourse (2.0.1)\n       rubocop (>= 0.69.0)\n+    rubocop-rspec (1.38.1)\n+      rubocop (>= 0.68.1)\n     ruby-prof (1.3.1)\n     ruby-progressbar (1.10.1)\n     ruby-readability (0.7.0)\n@@ -527,6 +529,7 @@ DEPENDENCIES\n   rtlit\n   rubocop\n   rubocop-discourse\n+  rubocop-rspec\n   ruby-prof\n   ruby-readability\n   rubyzip"
+    },
+    {
+      "sha": "47dea3e32d8a4825fa37f806776800d91e761f48",
+      "filename": "spec/lib/backup_restore/restorer_spec.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 7,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/b2b7afd31085aa0c15e6dfdf84f9ee994659b70d/spec/lib/backup_restore/restorer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b2b7afd31085aa0c15e6dfdf84f9ee994659b70d/spec/lib/backup_restore/restorer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/lib/backup_restore/restorer_spec.rb?ref=b2b7afd31085aa0c15e6dfdf84f9ee994659b70d",
+      "patch": "@@ -1,7 +0,0 @@\n-# frozen_string_literal: true\n-\n-require 'rails_helper'\n-\n-describe BackupRestore::Restorer do\n-\n-end"
+    },
+    {
+      "sha": "e848c5ef389b9983f4d50ecdad4468a276bf18d4",
+      "filename": "spec/lib/seed_data/categories_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/lib/seed_data/categories_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/lib/seed_data/categories_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/lib/seed_data/categories_spec.rb?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -33,7 +33,7 @@ def permissions(group, type)\n       expect(category.user_id).to eq(Discourse::SYSTEM_USER_ID)\n       expect(category.category_groups.count).to eq(1)\n       expect(category.category_groups.first).to have_attributes(permissions(:staff, :full))\n-      expect(Topic.exists?(category.topic_id))\n+      expect(Topic.exists?(category.topic_id)).to eq(true)\n       expect(description_post(category).raw).to eq(I18n.t(\"staff_category_description\"))\n       expect(SiteSetting.staff_category_id).to eq(category.id)\n     end"
+    },
+    {
+      "sha": "5947ceecabf843bdaaa8a72787f1a8750bad5a49",
+      "filename": "spec/lib/topic_upload_security_manager_spec.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/lib/topic_upload_security_manager_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/lib/topic_upload_security_manager_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/lib/topic_upload_security_manager_spec.rb?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -120,7 +120,7 @@\n         end\n \n         it \"changes the upload secure status to true and changes the ACL and rebakes the post and sets the access control post\" do\n-          expect(Post.any_instance.expects(:rebake!).once)\n+          Post.any_instance.expects(:rebake!).once\n           subject.run\n           expect(upload3.reload.secure?).to eq(true)\n           expect(upload3.reload.access_control_post).to eq(post4)\n@@ -146,7 +146,7 @@\n         end\n \n         it \"does not change the upload secure status and does not set the access control post\" do\n-          expect(Post.any_instance.expects(:rebake!).never)\n+          Post.any_instance.expects(:rebake!).never\n           subject.run\n           expect(upload3.reload.secure?).to eq(false)\n           expect(upload3.reload.access_control_post).to eq(nil)\n@@ -174,14 +174,14 @@ def enable_secure_media\n   end\n \n   def expect_upload_status_not_to_change\n-    expect(Post.any_instance.expects(:rebake!).never)\n+    Post.any_instance.expects(:rebake!).never\n     subject.run\n     expect(upload.reload.secure?).to eq(true)\n     expect(upload2.reload.secure?).to eq(true)\n   end\n \n   def expect_upload_status_to_change_and_rebake\n-    expect(Post.any_instance.expects(:rebake!).twice)\n+    Post.any_instance.expects(:rebake!).twice\n     subject.run\n     expect(upload.reload.secure?).to eq(false)\n     expect(upload2.reload.secure?).to eq(false)"
+    },
+    {
+      "sha": "90f6535cb1bb2ac993865c0f0795cb2f97eb36b2",
+      "filename": "spec/mailers/user_notifications_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/mailers/user_notifications_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/mailers/user_notifications_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/mailers/user_notifications_spec.rb?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -968,7 +968,7 @@ def expects_build_with(condition)\n   end\n \n   # notification emails derived from templates are translated into the user's locale\n-  shared_examples \"notification derived from template\" do\n+  shared_context \"notification derived from template\" do\n     let(:user) { Fabricate(:user, locale: locale) }\n     let(:mail_type) { mail_type }\n     let(:notification) { Fabricate(:notification, user: user) }"
+    },
+    {
+      "sha": "fc1854154515506334c46138e61254166a64fbef",
+      "filename": "spec/models/site_setting_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/models/site_setting_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/models/site_setting_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/site_setting_spec.rb?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -178,7 +178,7 @@\n         end.to change { @fake_logger.warnings.count }.by(2)\n \n         expect do\n-          expect(SiteSetting.use_https(warn: false))\n+          SiteSetting.use_https(warn: false)\n         end.to_not change { @fake_logger.warnings }\n \n         SiteSetting.use_https = false"
+    },
+    {
+      "sha": "d2661162f750b292023959e8fe738e7e80b0edc7",
+      "filename": "spec/models/topic_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/models/topic_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7ff889574d85464b946b4cc140e637ab9ed62cff/spec/models/topic_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/topic_spec.rb?ref=7ff889574d85464b946b4cc140e637ab9ed62cff",
+      "patch": "@@ -1122,7 +1122,7 @@ def set_state!(group, user, state)\n \n     context 'closed' do\n       let(:status) { 'closed' }\n-      it_should_behave_like 'a status that closes a topic'\n+      it_behaves_like 'a status that closes a topic'\n \n       it 'should archive group message' do\n         group = Fabricate(:group)\n@@ -1135,7 +1135,7 @@ def set_state!(group, user, state)\n \n     context 'autoclosed' do\n       let(:status) { 'autoclosed' }\n-      it_should_behave_like 'a status that closes a topic'\n+      it_behaves_like 'a status that closes a topic'\n \n       context 'topic was set to close when it was created' do\n         it 'includes the autoclose duration in the moderator post' do"
+    }
+  ]
+}
