@@ -1,0 +1,110 @@
+{
+  "sha": "7a32a995953db70c778f69a9f69a6e5c7f96463e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3YTMyYTk5NTk1M2RiNzBjNzc4ZjY5YTlmNjlhNmU1YzdmOTY0NjNl",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2020-03-28T16:54:43Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2020-03-28T16:54:43Z"
+    },
+    "message": "FIX: Quoting a nested quote should preserve original post info.",
+    "tree": {
+      "sha": "f92898f51631a2a07a78c20b6d2f6ce667da5a74",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f92898f51631a2a07a78c20b6d2f6ce667da5a74"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7a32a995953db70c778f69a9f69a6e5c7f96463e",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7a32a995953db70c778f69a9f69a6e5c7f96463e",
+  "html_url": "https://github.com/discourse/discourse/commit/7a32a995953db70c778f69a9f69a6e5c7f96463e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7a32a995953db70c778f69a9f69a6e5c7f96463e/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a3d47f1aad104402383f1559edeac0e73ce3f59e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a3d47f1aad104402383f1559edeac0e73ce3f59e",
+      "html_url": "https://github.com/discourse/discourse/commit/a3d47f1aad104402383f1559edeac0e73ce3f59e"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3a9ec42fe0c89b8edea0d2e391dbee9763b3f210",
+      "filename": "app/assets/javascripts/discourse/components/quote-button.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/7a32a995953db70c778f69a9f69a6e5c7f96463e/app/assets/javascripts/discourse/components/quote-button.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/7a32a995953db70c778f69a9f69a6e5c7f96463e/app/assets/javascripts/discourse/components/quote-button.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/components/quote-button.js?ref=7a32a995953db70c778f69a9f69a6e5c7f96463e",
+      "patch": "@@ -65,6 +65,7 @@ export default Component.extend({\n         opts.username = element.dataset.username || getQuoteTitle(element);\n         opts.post = element.dataset.post;\n         opts.topic = element.dataset.topic;\n+        break;\n       }\n     }\n "
+    },
+    {
+      "sha": "87aeb9a821c6cada55a154a453be15454a489b09",
+      "filename": "app/assets/javascripts/discourse/lib/utilities.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7a32a995953db70c778f69a9f69a6e5c7f96463e/app/assets/javascripts/discourse/lib/utilities.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/7a32a995953db70c778f69a9f69a6e5c7f96463e/app/assets/javascripts/discourse/lib/utilities.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/utilities.js?ref=7a32a995953db70c778f69a9f69a6e5c7f96463e",
+      "patch": "@@ -149,7 +149,7 @@ export function selectedText() {\n export function selectedElement() {\n   const selection = window.getSelection();\n   if (selection.rangeCount > 0) {\n-    return selection.getRangeAt(0).startContainer.parentElement;\n+    return selection.getRangeAt(0).commonAncestorContainer.parentElement;\n   }\n }\n "
+    }
+  ]
+}
