@@ -1,0 +1,134 @@
+{
+  "sha": "7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6N2MzYzUxMGJiYzJhNzk5ZTBkYWRiY2MxY2NkMTI3Mzg1NTA0NTFjZQ==",
+  "commit": {
+    "author": {
+      "name": "Cristian Dean",
+      "email": "cristian.dean@corp.globo.com",
+      "date": "2020-04-02T21:39:58Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-04-02T21:39:58Z"
+    },
+    "message": "Add tenantDomain to StoryCreatedEventPayload (#2899)\n\n* Add tenantID and siteID to StoryCreatedEventPayload\r\n\r\n* fix: added tenantID to payload\r\n\r\n* Remove tenantID from StoryCreatedCoralEvent\r\n\r\n* Add tenantDomain to webhook schema\r\n\r\n* fix: small comment fixes\r\n\r\nCo-authored-by: Wyatt Johnson <me@wyattjoh.ca>",
+    "tree": {
+      "sha": "480957dfe8ede3903e1d993c0395929dcbdf00dd",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/480957dfe8ede3903e1d993c0395929dcbdf00dd"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJehluuCRBK7hj4Ov3rIwAAdHIIAHUxoIjNOUOqcK6E/I66Jp0p\n9Rf914GYL2aDJmvEGqU5RwHlGcHjpRMZhB7sPr8DEL/4q/BPq+tHyYn5a90CtgHN\n1AKO1/Txcn3dxKzTOlovzURswsL3l2SYq1MkgAXJRF8sQlK4FaLsQosWqLQD9yeI\n8VcQ3bDCMn/H9v9E0Z7rAReolH6W6YVYrnNZntv0RQMYnaJLXZ4NMegvhg0JIe+F\nkx143EBaDs5DAUbY3sP3JcJCvWqVfmg7LeE9K/mtTbC7Ce0BJHebSWNUoPGQ+vKq\nKDCFMOYXQr57qa2NzqWCijkEOYcNtk1NYG8BfUoBXRhO9bkZfwW5SqP0EU9RF5U=\n=Pi2f\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 480957dfe8ede3903e1d993c0395929dcbdf00dd\nparent 94ece10284b3a8bfea24c6c409437f5848352eaf\nauthor Cristian Dean <cristian.dean@corp.globo.com> 1585863598 -0300\ncommitter GitHub <noreply@github.com> 1585863598 +0000\n\nAdd tenantDomain to StoryCreatedEventPayload (#2899)\n\n* Add tenantID and siteID to StoryCreatedEventPayload\r\n\r\n* fix: added tenantID to payload\r\n\r\n* Remove tenantID from StoryCreatedCoralEvent\r\n\r\n* Add tenantDomain to webhook schema\r\n\r\n* fix: small comment fixes\r\n\r\nCo-authored-by: Wyatt Johnson <me@wyattjoh.ca>"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+  "html_url": "https://github.com/coralproject/talk/commit/7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/comments",
+  "author": {
+    "login": "cristiandean",
+    "id": 25023177,
+    "node_id": "MDQ6VXNlcjI1MDIzMTc3",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/25023177?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cristiandean",
+    "html_url": "https://github.com/cristiandean",
+    "followers_url": "https://api.github.com/users/cristiandean/followers",
+    "following_url": "https://api.github.com/users/cristiandean/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cristiandean/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cristiandean/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cristiandean/subscriptions",
+    "organizations_url": "https://api.github.com/users/cristiandean/orgs",
+    "repos_url": "https://api.github.com/users/cristiandean/repos",
+    "events_url": "https://api.github.com/users/cristiandean/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cristiandean/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "94ece10284b3a8bfea24c6c409437f5848352eaf",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/94ece10284b3a8bfea24c6c409437f5848352eaf",
+      "html_url": "https://github.com/coralproject/talk/commit/94ece10284b3a8bfea24c6c409437f5848352eaf"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 36,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "364c552c3e80febba92a608e9faa802a56f50363",
+      "filename": "WEBHOOKS.md",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/coralproject/talk/blob/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/WEBHOOKS.md",
+      "raw_url": "https://github.com/coralproject/talk/raw/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/WEBHOOKS.md",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/WEBHOOKS.md?ref=7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+      "patch": "@@ -174,6 +174,16 @@ function when comparing signatures.\n    * date when this event was created.\n    */\n   createdAt: string;\n+\n+  /**\n+   * tenantID is the ID of the Tenant that this event originated at.\n+   */\n+  tenantID: string;\n+\n+  /**\n+   * tenantDomain is the domain that is associated with this Tenant that this event originated at.\n+   */\n+  tenantDomain: string;\n }\n ```\n \n@@ -199,6 +209,11 @@ function when comparing signatures.\n      * storyURL is the URL of the newly created Story.\n      */\n     storyURL: string;\n+\n+    /**\n+     * siteID is the Site that the newly created Story was created on.\n+     */\n+    siteID: string;\n   }\n   createdAt: string;\n }"
+    },
+    {
+      "sha": "d7dbf7514d327624b134b8c1656f8b567f744ddc",
+      "filename": "src/core/server/events/events.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/src/core/server/events/events.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/src/core/server/events/events.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/events/events.ts?ref=7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+      "patch": "@@ -79,6 +79,7 @@ export type StoryCreatedCoralEventPayload = CoralEventPayload<\n   {\n     storyID: string;\n     storyURL: string;\n+    siteID: string;\n   }\n >;\n "
+    },
+    {
+      "sha": "4dff5028741094a0bc9c54c9b428aa5a1024effa",
+      "filename": "src/core/server/queue/tasks/webhook/processor.ts",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 2,
+      "changes": 20,
+      "blob_url": "https://github.com/coralproject/talk/blob/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/src/core/server/queue/tasks/webhook/processor.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/src/core/server/queue/tasks/webhook/processor.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/queue/tasks/webhook/processor.ts?ref=7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+      "patch": "@@ -82,9 +82,21 @@ export function generateSignatures(\n     .join(\",\");\n }\n \n+type CoralWebhookEventPayload = CoralEventPayload & {\n+  /**\n+   * tenantID is the ID of the Tenant that this event originated at.\n+   */\n+  readonly tenantID: string;\n+\n+  /**\n+   * tenantDomain is the domain that is associated with this Tenant that this event originated at.\n+   */\n+  readonly tenantDomain: string;\n+};\n+\n export function generateFetchOptions(\n   endpoint: Pick<Endpoint, \"signingSecrets\">,\n-  data: CoralEventPayload,\n+  data: CoralWebhookEventPayload,\n   now: Date\n ): FetchOptions {\n   // Serialize the body and signature to include in the request.\n@@ -151,7 +163,11 @@ export function createJobProcessor({\n     const now = new Date();\n \n     // Get the fetch options.\n-    const options = generateFetchOptions(endpoint, event, now);\n+    const options = generateFetchOptions(\n+      endpoint,\n+      { ...event, tenantID, tenantDomain: tenant.domain },\n+      now\n+    );\n \n     // Send the request.\n     const startedSendingAt = getNow();"
+    },
+    {
+      "sha": "7b2a4b9e402993633ca64d1729c259413b559666",
+      "filename": "src/core/server/services/stories/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/src/core/server/services/stories/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/7c3c510bbc2a799e0dadbcc1ccd12738550451ce/src/core/server/services/stories/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/stories/index.ts?ref=7c3c510bbc2a799e0dadbcc1ccd12738550451ce",
+      "patch": "@@ -94,6 +94,7 @@ export async function findOrCreate(\n     StoryCreatedCoralEvent.publish(broker, {\n       storyID: story.id,\n       storyURL: story.url,\n+      siteID: story.siteID,\n     });\n   }\n \n@@ -222,6 +223,7 @@ export async function create(\n   StoryCreatedCoralEvent.publish(broker, {\n     storyID: story.id,\n     storyURL: story.url,\n+    siteID: site.id,\n   });\n \n   return story;"
+    }
+  ]
+}

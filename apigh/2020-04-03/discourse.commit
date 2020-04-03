@@ -1,0 +1,98 @@
+{
+  "sha": "ad6709772a7838f4d1ed07c08b87616f9db248a4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphZDY3MDk3NzJhNzgzOGY0ZDFlZDA3YzA4Yjg3NjE2ZjlkYjI0OGE0",
+  "commit": {
+    "author": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2020-04-03T16:13:34Z"
+    },
+    "committer": {
+      "name": "Gerhard Schlager",
+      "email": "mail@gerhard-schlager.at",
+      "date": "2020-04-03T16:13:34Z"
+    },
+    "message": "PERF: Backup with lots of uploads stored on S3 was slow\n\nCreating the backup needs a lot more disk space after this change, but it is a lot faster.",
+    "tree": {
+      "sha": "16a0974cc197ec5f315350763afd2a235898d64a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/16a0974cc197ec5f315350763afd2a235898d64a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ad6709772a7838f4d1ed07c08b87616f9db248a4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ad6709772a7838f4d1ed07c08b87616f9db248a4",
+  "html_url": "https://github.com/discourse/discourse/commit/ad6709772a7838f4d1ed07c08b87616f9db248a4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ad6709772a7838f4d1ed07c08b87616f9db248a4/comments",
+  "author": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gschlager",
+    "id": 473736,
+    "node_id": "MDQ6VXNlcjQ3MzczNg==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/473736?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gschlager",
+    "html_url": "https://github.com/gschlager",
+    "followers_url": "https://api.github.com/users/gschlager/followers",
+    "following_url": "https://api.github.com/users/gschlager/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gschlager/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gschlager/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gschlager/subscriptions",
+    "organizations_url": "https://api.github.com/users/gschlager/orgs",
+    "repos_url": "https://api.github.com/users/gschlager/repos",
+    "events_url": "https://api.github.com/users/gschlager/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gschlager/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2b2584912a380813b2ab6b2601a57317cfa43203",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/2b2584912a380813b2ab6b2601a57317cfa43203",
+      "html_url": "https://github.com/discourse/discourse/commit/2b2584912a380813b2ab6b2601a57317cfa43203"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 7,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "80e45da59ca8a48551f6881bbe092909a05ccdb4",
+      "filename": "lib/backup_restore/backuper.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 10,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/ad6709772a7838f4d1ed07c08b87616f9db248a4/lib/backup_restore/backuper.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ad6709772a7838f4d1ed07c08b87616f9db248a4/lib/backup_restore/backuper.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/backup_restore/backuper.rb?ref=ad6709772a7838f4d1ed07c08b87616f9db248a4",
+      "patch": "@@ -291,20 +291,17 @@ def add_remote_uploads_to_archive(tar_filename)\n           log \"Failed to download file with upload ID #{upload.id} from S3\", ex\n         end\n \n-        if File.exists?(filename)\n-          Discourse::Utils.execute_command(\n-            'tar', '--append', '--file', tar_filename, upload_directory,\n-            failure_message: \"Failed to add #{upload.original_filename} to archive.\", success_status_codes: [0, 1],\n-            chdir: @tmp_directory\n-          )\n-\n-          File.delete(filename)\n-        end\n-\n         count += 1\n         log \"#{count} files have already been downloaded. Still downloading...\" if count % 500 == 0\n       end\n \n+      log \"Appending uploads to archive...\"\n+      Discourse::Utils.execute_command(\n+        'tar', '--append', '--file', tar_filename, upload_directory,\n+        failure_message: \"Failed to append uploads to archive.\", success_status_codes: [0, 1],\n+        chdir: @tmp_directory\n+      )\n+\n       log \"No uploads found on S3. Skipping archiving of uploads stored on S3...\" if count == 0\n     end\n "
+    }
+  ]
+}
