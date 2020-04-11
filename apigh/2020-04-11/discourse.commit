@@ -1,0 +1,110 @@
+{
+  "sha": "600cb2130da405718c69c38effe39a64979f3023",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2MDBjYjIxMzBkYTQwNTcxOGM2OWMzOGVmZmUzOWE2NDk3OWYzMDIz",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2020-04-11T01:04:13Z"
+    },
+    "committer": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2020-04-11T01:04:13Z"
+    },
+    "message": "FIX: show today's date on /users page period chooser",
+    "tree": {
+      "sha": "67e90fe3711b8c8f6c3836e642181c7036ee281d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/67e90fe3711b8c8f6c3836e642181c7036ee281d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/600cb2130da405718c69c38effe39a64979f3023",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/600cb2130da405718c69c38effe39a64979f3023",
+  "html_url": "https://github.com/discourse/discourse/commit/600cb2130da405718c69c38effe39a64979f3023",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/600cb2130da405718c69c38effe39a64979f3023/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d984848aa94971c8fcab10b43bd596107fdbe9c5",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d984848aa94971c8fcab10b43bd596107fdbe9c5",
+      "html_url": "https://github.com/discourse/discourse/commit/d984848aa94971c8fcab10b43bd596107fdbe9c5"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "a24f11861957a32895af7fdc2d825124b9963f2c",
+      "filename": "app/assets/javascripts/discourse/templates/mobile/users.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/600cb2130da405718c69c38effe39a64979f3023/app/assets/javascripts/discourse/templates/mobile/users.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/600cb2130da405718c69c38effe39a64979f3023/app/assets/javascripts/discourse/templates/mobile/users.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/mobile/users.hbs?ref=600cb2130da405718c69c38effe39a64979f3023",
+      "patch": "@@ -4,7 +4,7 @@\n       {{plugin-outlet name=\"users-top\" connectorTagName='div' args=(hash model=model)}}\n \n       <div class='directory-controls'>\n-        {{period-chooser period=period onChange=(action (mut period))}}\n+        {{period-chooser period=period onChange=(action (mut period)) fullDay=false}}\n         {{#if lastUpdatedAt}}\n           <div class='directory-last-updated'>\n             {{i18n \"directory.last_updated\"}}"
+    },
+    {
+      "sha": "35e1f5d19bdd152dddcbe93ac3540eaaf1d7cc48",
+      "filename": "app/assets/javascripts/discourse/templates/users.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/600cb2130da405718c69c38effe39a64979f3023/app/assets/javascripts/discourse/templates/users.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/600cb2130da405718c69c38effe39a64979f3023/app/assets/javascripts/discourse/templates/users.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/templates/users.hbs?ref=600cb2130da405718c69c38effe39a64979f3023",
+      "patch": "@@ -5,7 +5,7 @@\n         {{plugin-outlet name=\"users-top\" connectorTagName='div' args=(hash model=model)}}\n         <div class='directory-controls'>\n           <div class='period-controls'>\n-            {{period-chooser period=period onChange=(action (mut period))}}\n+            {{period-chooser period=period onChange=(action (mut period)) fullDay=false}}\n             {{#if lastUpdatedAt}}\n               <div class='directory-last-updated'>\n                 {{i18n \"directory.last_updated\"}}"
+    }
+  ]
+}
