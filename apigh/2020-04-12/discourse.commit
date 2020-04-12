@@ -1,0 +1,110 @@
+{
+  "sha": "0cef409d498f3aa3f714f3f05924f933b4a610e5",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowY2VmNDA5ZDQ5OGYzYWEzZjcxNGYzZjA1OTI0ZjkzM2I0YTYxMGU1",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2020-04-12T15:35:23Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "vinothkannan@vinkas.com",
+      "date": "2020-04-12T15:35:23Z"
+    },
+    "message": "UX: strip base64 image URLs when converting HTML to markdown.",
+    "tree": {
+      "sha": "fb3b96a36bd98b2bddd985ea2360dd10ab08b644",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fb3b96a36bd98b2bddd985ea2360dd10ab08b644"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0cef409d498f3aa3f714f3f05924f933b4a610e5",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0cef409d498f3aa3f714f3f05924f933b4a610e5",
+  "html_url": "https://github.com/discourse/discourse/commit/0cef409d498f3aa3f714f3f05924f933b4a610e5",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0cef409d498f3aa3f714f3f05924f933b4a610e5/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "600cb2130da405718c69c38effe39a64979f3023",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/600cb2130da405718c69c38effe39a64979f3023",
+      "html_url": "https://github.com/discourse/discourse/commit/600cb2130da405718c69c38effe39a64979f3023"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 10,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "25e49bfc85ff88148a68b74c354e4d6979e132ac",
+      "filename": "app/assets/javascripts/discourse/lib/to-markdown.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/0cef409d498f3aa3f714f3f05924f933b4a610e5/app/assets/javascripts/discourse/lib/to-markdown.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/0cef409d498f3aa3f714f3f05924f933b4a610e5/app/assets/javascripts/discourse/lib/to-markdown.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/lib/to-markdown.js?ref=0cef409d498f3aa3f714f3f05924f933b4a610e5",
+      "patch": "@@ -291,6 +291,10 @@ export class Tag {\n         }\n \n         if (src) {\n+          if (src.match(/^data:image\\/([a-zA-Z]*);base64,([^\\\"]*)$/)) {\n+            return \"[image]\";\n+          }\n+\n           let alt = attr.alt || pAttr.alt || \"\";\n           const width = attr.width || pAttr.width;\n           const height = attr.height || pAttr.height;"
+    },
+    {
+      "sha": "3ae081d0fb365b49fe37fa4843eb95978854fb47",
+      "filename": "test/javascripts/lib/to-markdown-test.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/0cef409d498f3aa3f714f3f05924f933b4a610e5/test/javascripts/lib/to-markdown-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/0cef409d498f3aa3f714f3f05924f933b4a610e5/test/javascripts/lib/to-markdown-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/lib/to-markdown-test.js?ref=0cef409d498f3aa3f714f3f05924f933b4a610e5",
+      "patch": "@@ -413,3 +413,9 @@ there is a quote above\n \n   assert.equal(toMarkdown(html), markdown.trim());\n });\n+\n+QUnit.test(\"strips base64 image URLs\", assert => {\n+  const html =\n+    '<img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4AJkFkb2JlAGTAAAAAAQMAFQQDBgoNAAABywAAAgsAAAJpAAACyf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8IAEQgAEAAQAwERAAIRAQMRAf/EAJQAAQEBAAAAAAAAAAAAAAAAAAMFBwEAAwEAAAAAAAAAAAAAAAAAAAEDAhAAAQUBAQAAAAAAAAAAAAAAAgABAwQFESARAAIBAwIHAAAAAAAAAAAAAAERAgAhMRIDQWGRocEiIxIBAAAAAAAAAAAAAAAAAAAAIBMBAAMAAQQDAQAAAAAAAAAAAQARITHwQVGBYXGR4f/aAAwDAQACEQMRAAAB0UlMciEJn//aAAgBAQABBQK5bGtFn6pWi2K12wWTRkjb/9oACAECAAEFAvH/2gAIAQMAAQUCIuIJOqRndRiv/9oACAECAgY/Ah//2gAIAQMCBj8CH//aAAgBAQEGPwLWQzwHepfNbcUNfM4tUIbA9QL4AvnxTlAxacpWJReOlf/aAAgBAQMBPyHZDveuCyu4B4lz2lDKto2ca5uclPK0aoq32x8xgTSLeSgbyzT65n//2gAIAQIDAT8hlQjP/9oACAEDAwE/IaE9GcZFJ//aAAwDAQACEQMRAAAQ5F//2gAIAQEDAT8Q1oowKccI3KTdAWkPLw2ssIrwKYUzuJoUJsIHOCoG23ISlja+rU9QvCx//9oACAECAwE/EAuNIiKf/9oACAEDAwE/ECujJzHf7iwHOv5NhK+8efH50z//2Q==\" />';\n+  assert.equal(toMarkdown(html), \"[image]\");\n+});"
+    }
+  ]
+}
