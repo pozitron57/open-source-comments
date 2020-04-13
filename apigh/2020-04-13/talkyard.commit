@@ -1,0 +1,98 @@
+{
+  "sha": "b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6Yjg5YjhkZWQ0MGM3ZjVhNmQyYzZiZGRiOWY3MjQyNDAxYjIyZWNiMA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-04-13T13:29:41Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-04-13T13:29:41Z"
+    },
+    "message": "Fix close login popup e2e tests.",
+    "tree": {
+      "sha": "acd7ba732fd6648e3488c46d47018082081ccffa",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/acd7ba732fd6648e3488c46d47018082081ccffa"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0",
+  "html_url": "https://github.com/debiki/talkyard/commit/b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f52026b641609600561dbfc8fe17b47a47e70dae",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/f52026b641609600561dbfc8fe17b47a47e70dae",
+      "html_url": "https://github.com/debiki/talkyard/commit/f52026b641609600561dbfc8fe17b47a47e70dae"
+    }
+  ],
+  "stats": {
+    "total": 66,
+    "additions": 40,
+    "deletions": 26
+  },
+  "files": [
+    {
+      "sha": "36eb1ebe6f19d901657bf04a0a7e0a9e0d2a189b",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 26,
+      "changes": 66,
+      "blob_url": "https://github.com/debiki/talkyard/blob/b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=b89b8ded40c7f5a6d2c6bddb9f7242401b22ecb0",
+      "patch": "@@ -660,36 +660,50 @@ function pagesFor(browser: WdioV4BackwCompatBrower) {\n \n \n     switchBackToFirstTabOrWindow: () => {\n-      // If no id specified, will switch to the first tab.\n-\n-      // [E2EBUG] In this test: embedded-comments-navigation-as-guest.test.ts\n-      // then this:\n-      //api.pause(500);    ...  makes the next command block forever\n-      let ids = browser.getTabIds();   // ... this'd block\n-      if (ids.length > 1) {\n-        // I've tested \"everything else\", nothing works.\n-        logMessage(\"Waiting for any OAuth loging popup to auto close, to prevent weird \" +\n-            \"invalid window ID errors\");\n-        // api.pause(2000);  ??\n-      }\n-      ids = browser.getTabIds();\n-      if (ids.length > 1) {\n-        // So far all other tabs have been closed when we run this function. So > 1 tab = not tested,\n-        // so warn about that:\n-        logMessage(\"Which tab is the first one? Switching to [0]. All tab ids: \" + JSON.stringify(ids));\n-      }\n+      // There should be no other windows, except for maybe a login popup.\n+      // Wait until it closes. However if a developer has opened more tabs and\n+      // does some experiments, so there're many open windows — then, continue anyway.\n+      let numWindows;\n+      api.waitUntil(() => {\n+        const ids = browser.getWindowHandles();\n+        numWindows = ids.length;\n+        return numWindows <= 1;\n+      }, {\n+        message:`Waiting for any loging popup to auto close, to avoid ` +\n+              `invalid window ID errors. Num windows open: ${numWindows}`,\n+        timeoutMs: 3000,\n+        timeoutIsFine: true,\n+      });\n+\n+      const winIds = browser.getWindowHandles();\n+      logWarningIf(winIds.length >= 2,\n+          `Still many windows open, window ids: ${JSON.stringify(winIds)}`);\n+\n       try {\n-        logMessage(\"Now switching to tab ids[0] = \" + ids[0]);\n-        browser.switchTab(ids[0]);\n+        let switchToId;\n+        // The very first window that got opened is probably where we should continue.\n+        if (winIds.indexOf(firstWindowHandle) >= 0) {\n+          logMessage(`Switching to firstWindowHandle = ${firstWindowHandle}`);\n+          switchToId = firstWindowHandle;\n+        }\n+        else {\n+          // (Warning logged above, if >= 2 windows.)\n+          logMessage(`Switching to winIds[0] = ${winIds[0]}`);\n+          switchToId = winIds[0];\n+        }\n+        browser.switchTab(switchToId);\n       }\n-      catch (dummy) {\n-        // Probably a tab just got closed? Google and Facebook auto closes login popup tabs, [3GRQU5]\n-        // if one is logged in already at their websites. Try again.\n-        logMessage(`Error switching to tab [0]: ${dummy.toString()}.\\nTrying again... [EdM1WKY5F]`);\n-        //browser.pause(2500);\n-        const idsAgain = browser.getTabIds();\n+      catch (ex) {\n+        // A race? The window just closed itself? Google and Facebook auto closes\n+        // login popup tabs, [3GRQU5] if one is logged in already at their\n+        // websites. Try again.\n+        logError(`Error switching window [TyEE2ESWWIN]`, ex);\n+        const idsAgain = browser.getWindowHandles();\n+        logMessage(`Trying again, switching to idsAgain[0]: ${idsAgain[0]} ...`);\n         browser.switchTab(idsAgain[0]);\n+        // Don't catch.\n       }\n+\n       api.__updateIsWhere();\n     },\n "
+    }
+  ]
+}
