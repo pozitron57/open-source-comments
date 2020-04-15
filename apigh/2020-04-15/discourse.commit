@@ -1,0 +1,98 @@
+{
+  "sha": "8b2e7483b29164802da8fa394eef4cde848f96db",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4YjJlNzQ4M2IyOTE2NDgwMmRhOGZhMzk0ZWVmNGNkZTg0OGY5NmRi",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-04-15T15:21:21Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-04-15T15:21:21Z"
+    },
+    "message": "DEV: Only warn about invalid email setting in production\n\nIn development and test mode you don't care about email domains. Now\nthat `rake db:migrate` outputs a lot less this felt like an error when\nit's really a warning.",
+    "tree": {
+      "sha": "9f6b95434a4e85cf118cbcfdb9d66cac589dd05f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9f6b95434a4e85cf118cbcfdb9d66cac589dd05f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/8b2e7483b29164802da8fa394eef4cde848f96db",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/8b2e7483b29164802da8fa394eef4cde848f96db",
+  "html_url": "https://github.com/discourse/discourse/commit/8b2e7483b29164802da8fa394eef4cde848f96db",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/8b2e7483b29164802da8fa394eef4cde848f96db/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "338eaf9167ca7c8979d3ffc1fe1d85e02345064e",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/338eaf9167ca7c8979d3ffc1fe1d85e02345064e",
+      "html_url": "https://github.com/discourse/discourse/commit/338eaf9167ca7c8979d3ffc1fe1d85e02345064e"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 3,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "6f21e588131d32d7b2465474d990ecc36e900511",
+      "filename": "db/fixtures/990_settings.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/8b2e7483b29164802da8fa394eef4cde848f96db/db/fixtures/990_settings.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8b2e7483b29164802da8fa394eef4cde848f96db/db/fixtures/990_settings.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/fixtures/990_settings.rb?ref=8b2e7483b29164802da8fa394eef4cde848f96db",
+      "patch": "@@ -5,6 +5,8 @@\n   begin\n     SiteSetting.notification_email = \"noreply@#{Discourse.current_hostname}\"\n   rescue Discourse::InvalidParameters\n-    STDERR.puts \"Discourse hostname: #{Discourse.current_hostname} is not a valid domain for emails!\"\n+    if Rails.env.production?\n+      STDERR.puts \"WARNING: Discourse hostname: #{Discourse.current_hostname} is not a valid domain for emails!\"\n+    end\n   end\n end"
+    }
+  ]
+}
