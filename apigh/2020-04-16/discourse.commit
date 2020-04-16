@@ -1,0 +1,134 @@
+{
+  "sha": "074509fd957ebc63c2afe9cc06b7609632217638",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowNzQ1MDlmZDk1N2ViYzYzYzJhZmU5Y2MwNmI3NjA5NjMyMjE3NjM4",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2020-04-16T16:28:16Z"
+    },
+    "committer": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2020-04-16T16:28:16Z"
+    },
+    "message": "FIX: don't demote users to TL2 when default trust level is 3\n\nWithin 24 hours of signing up, new users were losing their\ndefault trust level of 3. With this fix, demotions from\ntrust level 3 won't happen when the \"default trust level\"\nsetting is 3 or 4.",
+    "tree": {
+      "sha": "5a88b979f2111e52c79292470c6a15b89e301cba",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5a88b979f2111e52c79292470c6a15b89e301cba"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/074509fd957ebc63c2afe9cc06b7609632217638",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE7pP3nfYuRKW7cx8l/4ccqQN9CpEFAl6YiCwACgkQ/4ccqQN9\nCpH/Kg//RIBd7YUFUHWmVATdc8VuoMKewCxf7CU029e/wJhU2FB7mS/lk325T2/o\nhdz+38aI5km/2tZH+Lxxn8i8ycLL6Wc+6CBmESWcXhr50l1RjiwtbT+eYvUNY8gD\nJlraXZILVHM5qSno1gdPztRtjcZb3WdYf1JFn8WrOwViz6ZsEXJ8dMDALoDxJYQI\nJGiHAXfgMQgKKcS7VEc9ntXHtjAwVFlOOSwEo8FMu8eG25u/Y1SVlYqQeqQmGLbS\nnCOdfYUPwz/FgU5f7KxELrQ6BACzxXFlNXvY9jhAAz2i+Ry1Ul9PGRbccW8hXNor\nJIbFXdXbSF3YJIM5uL2waHm+459T2lwDuQJdmP5f4mYT3ZW6j71+sVO3m2Hh8wgS\nLPd2ty70yTiddaQEPg/vYM61Af8dQBGdjsyY15UxkoOQw1kNYne0QfSnRlXOjMaw\nFqriQgUrn1BFIrYiJajaYa4Tt3uMJLZWmlIHmfLIgB6IYRtZc2qxni9wM1YjjX8h\nwr5PUyI66MMTEL+VooG0YM7omRZGMArAiHWHPAN1SEq/6Wc88bEtolXaQ3MFJetH\nCpgUq9UODDzzF8Q+CGw97GvVqrThBdVfZrlU6nFCffbRMU/Eo+mh2YIQicYTgbKb\nO2bwCD9ldyje50REpIQY0IHEwS5ZzUqcwcXOC/pHaVwRC5Sq6X4=\n=vS85\n-----END PGP SIGNATURE-----",
+      "payload": "tree 5a88b979f2111e52c79292470c6a15b89e301cba\nparent 1168d5c70ab9edbef6a7008a10c61291b2772a7f\nauthor Neil Lalonde <neillalonde@gmail.com> 1587054496 -0400\ncommitter Neil Lalonde <neillalonde@gmail.com> 1587054496 -0400\n\nFIX: don't demote users to TL2 when default trust level is 3\n\nWithin 24 hours of signing up, new users were losing their\ndefault trust level of 3. With this fix, demotions from\ntrust level 3 won't happen when the \"default trust level\"\nsetting is 3 or 4.\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/074509fd957ebc63c2afe9cc06b7609632217638",
+  "html_url": "https://github.com/discourse/discourse/commit/074509fd957ebc63c2afe9cc06b7609632217638",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/074509fd957ebc63c2afe9cc06b7609632217638/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1168d5c70ab9edbef6a7008a10c61291b2772a7f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/1168d5c70ab9edbef6a7008a10c61291b2772a7f",
+      "html_url": "https://github.com/discourse/discourse/commit/1168d5c70ab9edbef6a7008a10c61291b2772a7f"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 35,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "7dcce77a05ef6de10f371dd87188e989d036bcbc",
+      "filename": "app/jobs/scheduled/tl3_promotions.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 15,
+      "changes": 32,
+      "blob_url": "https://github.com/discourse/discourse/blob/074509fd957ebc63c2afe9cc06b7609632217638/app/jobs/scheduled/tl3_promotions.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/074509fd957ebc63c2afe9cc06b7609632217638/app/jobs/scheduled/tl3_promotions.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/scheduled/tl3_promotions.rb?ref=074509fd957ebc63c2afe9cc06b7609632217638",
+      "patch": "@@ -6,22 +6,24 @@ class Tl3Promotions < ::Jobs::Scheduled\n     daily at: 4.hours\n \n     def execute(args)\n-      # Demotions\n-      demoted_user_ids = []\n-      User.real\n-        .joins(\"LEFT JOIN (SELECT gu.user_id, MAX(g.grant_trust_level) AS group_granted_trust_level FROM groups g, group_users gu WHERE g.id = gu.group_id GROUP BY gu.user_id) tl ON users.id = tl.user_id\")\n-        .where(\n-          trust_level: TrustLevel[3],\n-          manual_locked_trust_level: nil\n-        )\n-        .where(\"group_granted_trust_level IS NULL OR group_granted_trust_level < ?\", TrustLevel[3])\n-        .find_each do |u|\n-        # Don't demote too soon after being promoted\n-        next if u.on_tl3_grace_period?\n+      if SiteSetting.default_trust_level < 3\n+        # Demotions\n+        demoted_user_ids = []\n+        User.real\n+          .joins(\"LEFT JOIN (SELECT gu.user_id, MAX(g.grant_trust_level) AS group_granted_trust_level FROM groups g, group_users gu WHERE g.id = gu.group_id GROUP BY gu.user_id) tl ON users.id = tl.user_id\")\n+          .where(\n+            trust_level: TrustLevel[3],\n+            manual_locked_trust_level: nil\n+          )\n+          .where(\"group_granted_trust_level IS NULL OR group_granted_trust_level < ?\", TrustLevel[3])\n+          .find_each do |u|\n+          # Don't demote too soon after being promoted\n+          next if u.on_tl3_grace_period?\n \n-        if Promotion.tl3_lost?(u)\n-          demoted_user_ids << u.id\n-          Promotion.new(u).change_trust_level!(TrustLevel[2])\n+          if Promotion.tl3_lost?(u)\n+            demoted_user_ids << u.id\n+            Promotion.new(u).change_trust_level!(TrustLevel[2])\n+          end\n         end\n       end\n "
+    },
+    {
+      "sha": "bf511a06476de3d7cbd52a54019be8a9fe93763a",
+      "filename": "app/models/trust_level3_requirements.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/074509fd957ebc63c2afe9cc06b7609632217638/app/models/trust_level3_requirements.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/074509fd957ebc63c2afe9cc06b7609632217638/app/models/trust_level3_requirements.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/trust_level3_requirements.rb?ref=074509fd957ebc63c2afe9cc06b7609632217638",
+      "patch": "@@ -67,6 +67,7 @@ def requirements_met?\n \n   def requirements_lost?\n     return false if trust_level_locked\n+    return false if SiteSetting.default_trust_level > 2\n \n     @user.suspended? ||\n       @user.silenced? ||"
+    },
+    {
+      "sha": "f76007df55c361134a73ec42d9d2daf262eee518",
+      "filename": "spec/jobs/tl3_promotions_spec.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/074509fd957ebc63c2afe9cc06b7609632217638/spec/jobs/tl3_promotions_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/074509fd957ebc63c2afe9cc06b7609632217638/spec/jobs/tl3_promotions_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/tl3_promotions_spec.rb?ref=074509fd957ebc63c2afe9cc06b7609632217638",
+      "patch": "@@ -135,5 +135,14 @@ def create_leader_user\n       run_job\n       expect(user.reload.trust_level).to eq(TrustLevel[3])\n     end\n+\n+    it \"doesn't demote if default trust level for all users is 3\" do\n+      SiteSetting.default_trust_level = 3\n+      user = Fabricate(:user, trust_level: TrustLevel[3], created_at: 1.year.ago)\n+      expect(user).to_not be_on_tl3_grace_period\n+      TrustLevel3Requirements.any_instance.stubs(:requirements_met?).returns(false)\n+      run_job\n+      expect(user.reload.trust_level).to eq(TrustLevel[3])\n+    end\n   end\n end"
+    },
+    {
+      "sha": "a28f54debbcb4fe3e9a8c6be281887645eb8ec77",
+      "filename": "spec/models/trust_level3_requirements_spec.rb",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/074509fd957ebc63c2afe9cc06b7609632217638/spec/models/trust_level3_requirements_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/074509fd957ebc63c2afe9cc06b7609632217638/spec/models/trust_level3_requirements_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/trust_level3_requirements_spec.rb?ref=074509fd957ebc63c2afe9cc06b7609632217638",
+      "patch": "@@ -586,6 +586,14 @@ def like_at(created_by, post, created_at)\n       user.silenced_till = 4.weeks.from_now\n       expect(tl3_requirements.requirements_lost?).to eq(true)\n     end\n+\n+    [3, 4].each do |default_tl|\n+      it \"is not lost if default_trust_level is #{default_tl}\" do\n+        SiteSetting.default_trust_level = default_tl\n+        tl3_requirements.stubs(:days_visited).returns(1)\n+        expect(tl3_requirements.requirements_lost?).to eq(false)\n+      end\n+    end\n   end\n \n end"
+    }
+  ]
+}
