@@ -1,0 +1,98 @@
+{
+  "sha": "5a3350cd768f54bf81ab23c70f4d74e588610e66",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1YTMzNTBjZDc2OGY1NGJmODFhYjIzYzcwZjRkNzRlNTg4NjEwZTY2",
+  "commit": {
+    "author": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-04-24T14:14:41Z"
+    },
+    "committer": {
+      "name": "Penar Musaraj",
+      "email": "pmusaraj@gmail.com",
+      "date": "2020-04-24T14:16:05Z"
+    },
+    "message": "FIX: Do not override all title elements with page title\n\nThis is redudant too, setting document.title is sufficient.",
+    "tree": {
+      "sha": "9a8d9007e161f9c04362f404d753f9acfbb2ecf3",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9a8d9007e161f9c04362f404d753f9acfbb2ecf3"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/5a3350cd768f54bf81ab23c70f4d74e588610e66",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/5a3350cd768f54bf81ab23c70f4d74e588610e66",
+  "html_url": "https://github.com/discourse/discourse/commit/5a3350cd768f54bf81ab23c70f4d74e588610e66",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/5a3350cd768f54bf81ab23c70f4d74e588610e66/comments",
+  "author": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pmusaraj",
+    "id": 368961,
+    "node_id": "MDQ6VXNlcjM2ODk2MQ==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/368961?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pmusaraj",
+    "html_url": "https://github.com/pmusaraj",
+    "followers_url": "https://api.github.com/users/pmusaraj/followers",
+    "following_url": "https://api.github.com/users/pmusaraj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pmusaraj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pmusaraj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pmusaraj/subscriptions",
+    "organizations_url": "https://api.github.com/users/pmusaraj/orgs",
+    "repos_url": "https://api.github.com/users/pmusaraj/repos",
+    "events_url": "https://api.github.com/users/pmusaraj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pmusaraj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b45142ef79b84d821f7f78cbcbfd282228c1dcc2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b45142ef79b84d821f7f78cbcbfd282228c1dcc2",
+      "html_url": "https://github.com/discourse/discourse/commit/b45142ef79b84d821f7f78cbcbfd282228c1dcc2"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 0,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "9de7c405380e634f315fab7960bc296d51670e1c",
+      "filename": "app/assets/javascripts/discourse.js",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 6,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/5a3350cd768f54bf81ab23c70f4d74e588610e66/app/assets/javascripts/discourse.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/5a3350cd768f54bf81ab23c70f4d74e588610e66/app/assets/javascripts/discourse.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse.js?ref=5a3350cd768f54bf81ab23c70f4d74e588610e66",
+      "patch": "@@ -56,12 +56,6 @@ const Discourse = Application.extend(FocusEvent, {\n   _titleChanged() {\n     let title = this._docTitle || Discourse.SiteSettings.title;\n \n-    // if we change this we can trigger changes on document.title\n-    // only set if changed.\n-    if ($(\"title\").text() !== title) {\n-      $(\"title\").text(title);\n-    }\n-\n     let displayCount = this.displayCount;\n     let dynamicFavicon = this.currentUser && this.currentUser.dynamic_favicon;\n     if (displayCount > 0 && !dynamicFavicon) {"
+    }
+  ]
+}
