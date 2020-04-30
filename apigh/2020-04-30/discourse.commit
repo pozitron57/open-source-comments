@@ -1,0 +1,254 @@
+{
+  "sha": "03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowMzgxNWY5Nzk1Y2JiNjJjMTgzNmFhMGI1NjVmODViZjIzZGYyYzFi",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-04-30T15:36:33Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-04-30T15:36:55Z"
+    },
+    "message": "DEV: Remove `Handlebars.Utils.escapeExpression` usage",
+    "tree": {
+      "sha": "ad79910ee697f6ec0ad7bbb7a95d6eb99cb559a6",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ad79910ee697f6ec0ad7bbb7a95d6eb99cb559a6"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+  "html_url": "https://github.com/discourse/discourse/commit/03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/03815f9795cbb62c1836aa0b565f85bf23df2c1b/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1b2db44678c20817a229b814f10b82fcf6634ca4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/1b2db44678c20817a229b814f10b82fcf6634ca4",
+      "html_url": "https://github.com/discourse/discourse/commit/1b2db44678c20817a229b814f10b82fcf6634ca4"
+    }
+  ],
+  "stats": {
+    "total": 72,
+    "additions": 35,
+    "deletions": 37
+  },
+  "files": [
+    {
+      "sha": "c5baa8eb9a8db452ed3ca253cd08c1c016ebe6c0",
+      "filename": "app/assets/javascripts/admin/controllers/modals/admin-badge-preview.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/admin/controllers/modals/admin-badge-preview.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/admin/controllers/modals/admin-badge-preview.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/controllers/modals/admin-badge-preview.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -42,7 +42,7 @@ export default Controller.extend({\n     if (grant.post_id) {\n       i18nKey += \"_post\";\n       i18nParams.link = `<a href=\"/p/${grant.post_id}\" data-auto-route=\"true\">\n-        ${Handlebars.Utils.escapeExpression(grant.title)}\n+        ${escapeExpression(grant.title)}\n       </a>`;\n     }\n "
+    },
+    {
+      "sha": "8ebdb1c51f114b0aff86b71ff9a32ff79c82efa9",
+      "filename": "app/assets/javascripts/discourse/app/helpers/application.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/helpers/application.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/helpers/application.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/helpers/application.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -5,6 +5,7 @@ import {\n   number\n } from \"discourse/lib/formatter\";\n import { htmlSafe } from \"@ember/template\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n registerUnbound(\"raw-date\", dt => htmlSafe(longDate(new Date(dt))));\n \n@@ -37,10 +38,10 @@ registerUnbound(\"number\", (orig, params) => {\n   // Round off the thousands to one decimal place\n   const n = number(orig);\n   if (n.toString() !== title.toString() && addTitle) {\n-    result += \" title='\" + Handlebars.Utils.escapeExpression(title) + \"'\";\n+    result += \" title='\" + escapeExpression(title) + \"'\";\n   }\n   if (params.ariaLabel) {\n-    const ariaLabel = Handlebars.Utils.escapeExpression(params.ariaLabel);\n+    const ariaLabel = escapeExpression(params.ariaLabel);\n     result += ` aria-label='${ariaLabel}'`;\n   }\n "
+    },
+    {
+      "sha": "d2141122e5ed82b7f829d4f3b398b7a36cdd2384",
+      "filename": "app/assets/javascripts/discourse/app/helpers/category-link.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/helpers/category-link.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/helpers/category-link.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/helpers/category-link.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -4,8 +4,8 @@ import { isRTL } from \"discourse/lib/text-direction\";\n import { iconHTML } from \"discourse-common/lib/icon-library\";\n import Category from \"discourse/models/category\";\n import Site from \"discourse/models/site\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n-let escapeExpression = Handlebars.Utils.escapeExpression;\n let _renderer = defaultCategoryLinkRenderer;\n \n export function replaceCategoryLinkRenderer(fn) {"
+    },
+    {
+      "sha": "3d9dcd4a498f93a3b67dfcc574e378654573183f",
+      "filename": "app/assets/javascripts/discourse/app/lib/plugin-api.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/lib/plugin-api.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/lib/plugin-api.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/plugin-api.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -972,7 +972,7 @@ class PluginApi {\n    * Example:\n    *\n    * function testTagRenderer(tag, params) {\n-   *   const visibleName = Handlebars.Utils.escapeExpression(tag);\n+   *   const visibleName = escapeExpression(tag);\n    *   return `testing: ${visibleName}`;\n    * }\n    * api.replaceTagRenderer(testTagRenderer);"
+    },
+    {
+      "sha": "f1882a386eb32f61802758c4af15fd6a4f812777",
+      "filename": "app/assets/javascripts/discourse/app/lib/render-tag.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/lib/render-tag.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/lib/render-tag.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/render-tag.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -1,4 +1,5 @@\n import User from \"discourse/models/user\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n let _renderer = defaultRenderTag;\n \n@@ -8,7 +9,7 @@ export function replaceTagRenderer(fn) {\n \n export function defaultRenderTag(tag, params) {\n   params = params || {};\n-  const visibleName = Handlebars.Utils.escapeExpression(tag);\n+  const visibleName = escapeExpression(tag);\n   tag = visibleName.toLowerCase();\n   const classes = [\"discourse-tag\"];\n   const tagName = params.tagName || \"a\";"
+    },
+    {
+      "sha": "f057425bc5154811e5a19bef0c9de9fb8ddb3030",
+      "filename": "app/assets/javascripts/discourse/app/lib/search.js",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 10,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/lib/search.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/lib/search.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/search.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -10,6 +10,7 @@ import { emojiUnescape } from \"discourse/lib/text\";\n import User from \"discourse/models/user\";\n import Post from \"discourse/models/post\";\n import Topic from \"discourse/models/topic\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export function translateResults(results, opts) {\n   opts = opts || {};\n@@ -50,17 +51,13 @@ export function translateResults(results, opts) {\n \n   results.groups = results.groups\n     .map(group => {\n-      const name = Handlebars.Utils.escapeExpression(group.name);\n-      const fullName = Handlebars.Utils.escapeExpression(\n-        group.full_name || group.display_name\n-      );\n+      const name = escapeExpression(group.name);\n+      const fullName = escapeExpression(group.full_name || group.display_name);\n       const flairUrl = isEmpty(group.flair_url)\n         ? null\n-        : Handlebars.Utils.escapeExpression(group.flair_url);\n-      const flairColor = Handlebars.Utils.escapeExpression(group.flair_color);\n-      const flairBgColor = Handlebars.Utils.escapeExpression(\n-        group.flair_bg_color\n-      );\n+        : escapeExpression(group.flair_url);\n+      const flairColor = escapeExpression(group.flair_color);\n+      const flairBgColor = escapeExpression(group.flair_bg_color);\n \n       return {\n         id: group.id,\n@@ -76,7 +73,7 @@ export function translateResults(results, opts) {\n \n   results.tags = results.tags\n     .map(function(tag) {\n-      const tagName = Handlebars.Utils.escapeExpression(tag.name);\n+      const tagName = escapeExpression(tag.name);\n       return EmberObject.create({\n         id: tagName,\n         url: Discourse.getURL(\"/tag/\" + tagName)"
+    },
+    {
+      "sha": "59464e1d61293c18c5ab8ad9e03cae2c988b52ad",
+      "filename": "app/assets/javascripts/discourse/app/mixins/card-contents-base.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/mixins/card-contents-base.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/mixins/card-contents-base.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/mixins/card-contents-base.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -4,6 +4,7 @@ import { wantsNewWindow } from \"discourse/lib/intercept-click\";\n import afterTransition from \"discourse/lib/after-transition\";\n import DiscourseURL from \"discourse/lib/url\";\n import Mixin from \"@ember/object/mixin\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export default Mixin.create({\n   elementId: null, //click detection added for data-{elementId}\n@@ -27,7 +28,7 @@ export default Mixin.create({\n       return false;\n     }\n \n-    username = Ember.Handlebars.Utils.escapeExpression(username.toString());\n+    username = escapeExpression(username.toString());\n \n     // Don't show if nested\n     if ($target.parents(\".card-content\").length) {"
+    },
+    {
+      "sha": "ddf1c831495dcde29ec6575eed61407ac0810351",
+      "filename": "app/assets/javascripts/discourse/app/models/user-drafts-stream.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/models/user-drafts-stream.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/models/user-drafts-stream.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/user-drafts-stream.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -10,6 +10,7 @@ import {\n   NEW_TOPIC_KEY,\n   NEW_PRIVATE_MESSAGE_KEY\n } from \"discourse/models/composer\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export default RestModel.extend({\n   loaded: false,\n@@ -81,9 +82,7 @@ export default RestModel.extend({\n             ) {\n               draft.title = draftData.title;\n             }\n-            draft.title = emojiUnescape(\n-              Handlebars.Utils.escapeExpression(draft.title)\n-            );\n+            draft.title = emojiUnescape(escapeExpression(draft.title));\n             if (draft.category_id) {\n               draft.category =\n                 this.site.categories.findBy(\"id\", draft.category_id) || null;"
+    },
+    {
+      "sha": "0b64eae8dbe7c7e6651f6e131bf5e39a59ac113a",
+      "filename": "app/assets/javascripts/discourse/app/models/user-stream.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/models/user-stream.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/models/user-stream.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/user-stream.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -6,6 +6,7 @@ import UserAction from \"discourse/models/user-action\";\n import { emojiUnescape } from \"discourse/lib/text\";\n import { Promise } from \"rsvp\";\n import discourseComputed, { on } from \"discourse-common/utils/decorators\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export default RestModel.extend({\n   loaded: false,\n@@ -107,9 +108,7 @@ export default RestModel.extend({\n         if (result && result.user_actions) {\n           const copy = A();\n           result.user_actions.forEach(action => {\n-            action.title = emojiUnescape(\n-              Handlebars.Utils.escapeExpression(action.title)\n-            );\n+            action.title = emojiUnescape(escapeExpression(action.title));\n             copy.pushObject(UserAction.create(action));\n           });\n "
+    },
+    {
+      "sha": "bebf2d3dcb7e8da20b2a6cf452a57693f42ef91a",
+      "filename": "app/assets/javascripts/discourse/app/models/user.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/models/user.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/models/user.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/user.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -26,6 +26,7 @@ import { Promise } from \"rsvp\";\n import deprecated from \"discourse-common/lib/deprecated\";\n import Site from \"discourse/models/site\";\n import { NotificationLevels } from \"discourse/lib/notification-levels\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export const SECOND_FACTOR_METHODS = {\n   TOTP: 1,\n@@ -483,7 +484,7 @@ const User = RestModel.extend({\n           return;\n         if (!this.get(\"stream.filter\") && !this.inAllStream(ua)) return;\n \n-        ua.title = emojiUnescape(Handlebars.Utils.escapeExpression(ua.title));\n+        ua.title = emojiUnescape(escapeExpression(ua.title));\n         const action = UserAction.collapseStream([UserAction.create(ua)]);\n         stream.set(\"itemsLoaded\", stream.get(\"itemsLoaded\") + 1);\n         stream.get(\"content\").insertAt(0, action[0]);\n@@ -810,7 +811,7 @@ const User = RestModel.extend({\n       .sort()\n       .map(title => {\n         return {\n-          name: Ember.Handlebars.Utils.escapeExpression(title),\n+          name: escapeExpression(title),\n           id: title\n         };\n       });"
+    },
+    {
+      "sha": "eb6936537fb56a4581a07ef1f8ec5fcc65859041",
+      "filename": "app/assets/javascripts/discourse/app/routes/build-admin-user-posts-route.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/routes/build-admin-user-posts-route.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/routes/build-admin-user-posts-route.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/routes/build-admin-user-posts-route.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -1,5 +1,6 @@\n import DiscourseRoute from \"discourse/routes/discourse\";\n import { emojiUnescape } from \"discourse/lib/text\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export default function(filter) {\n   return DiscourseRoute.extend({\n@@ -25,10 +26,7 @@ export default function(filter) {\n \n       model.get(\"content\").forEach(item => {\n         if (item.get(\"title\")) {\n-          item.set(\n-            \"title\",\n-            emojiUnescape(Handlebars.Utils.escapeExpression(item.title))\n-          );\n+          item.set(\"title\", emojiUnescape(escapeExpression(item.title)));\n         }\n       });\n "
+    },
+    {
+      "sha": "f598e4fe24d3899e3dd0a3959b4a585a01630f45",
+      "filename": "app/assets/javascripts/discourse/app/routes/tags-show.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/routes/tags-show.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/routes/tags-show.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/routes/tags-show.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -9,6 +9,7 @@ import { queryParams } from \"discourse/controllers/discovery-sortable\";\n import PermissionType from \"discourse/models/permission-type\";\n import Category from \"discourse/models/category\";\n import FilterModeMixin from \"discourse/mixins/filter-mode\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export default DiscourseRoute.extend(FilterModeMixin, {\n   navMode: \"latest\",\n@@ -22,14 +23,14 @@ export default DiscourseRoute.extend(FilterModeMixin, {\n \n   model(params) {\n     const tag = this.store.createRecord(\"tag\", {\n-      id: Handlebars.Utils.escapeExpression(params.tag_id)\n+      id: escapeExpression(params.tag_id)\n     });\n     if (params.additional_tags) {\n       this.set(\n         \"additionalTags\",\n         params.additional_tags.split(\"/\").map(t => {\n           return this.store.createRecord(\"tag\", {\n-            id: Handlebars.Utils.escapeExpression(t)\n+            id: escapeExpression(t)\n           }).id;\n         })\n       );"
+    },
+    {
+      "sha": "0da095de00d26e4f6cf8f823c37b8daa0a619ab4",
+      "filename": "app/assets/javascripts/discourse/app/widgets/avatar-flair.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 5,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/widgets/avatar-flair.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/widgets/avatar-flair.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/widgets/avatar-flair.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -1,5 +1,6 @@\n import { createWidget } from \"discourse/widgets/widget\";\n import { iconNode, convertIconClass } from \"discourse-common/lib/icon-library\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n createWidget(\"avatar-flair\", {\n   tagName: \"div.avatar-flair\",\n@@ -32,20 +33,18 @@ createWidget(\"avatar-flair\", {\n     if (!this.isIcon(attrs)) {\n       style +=\n         \"background-image: url(\" +\n-        Handlebars.Utils.escapeExpression(attrs.primary_group_flair_url) +\n+        escapeExpression(attrs.primary_group_flair_url) +\n         \"); \";\n     }\n     if (attrs.primary_group_flair_bg_color) {\n       style +=\n         \"background-color: #\" +\n-        Handlebars.Utils.escapeExpression(attrs.primary_group_flair_bg_color) +\n+        escapeExpression(attrs.primary_group_flair_bg_color) +\n         \"; \";\n     }\n     if (attrs.primary_group_flair_color) {\n       style +=\n-        \"color: #\" +\n-        Handlebars.Utils.escapeExpression(attrs.primary_group_flair_color) +\n-        \"; \";\n+        \"color: #\" + escapeExpression(attrs.primary_group_flair_color) + \"; \";\n     }\n     return { style: style };\n   },"
+    },
+    {
+      "sha": "2fe63226c00c2e24236eea6f56520b76c75da1d6",
+      "filename": "app/assets/javascripts/discourse/app/widgets/emoji.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/widgets/emoji.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/03815f9795cbb62c1836aa0b565f85bf23df2c1b/app/assets/javascripts/discourse/app/widgets/emoji.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/widgets/emoji.js?ref=03815f9795cbb62c1836aa0b565f85bf23df2c1b",
+      "patch": "@@ -1,9 +1,10 @@\n import { createWidget } from \"discourse/widgets/widget\";\n import { emojiUrlFor, emojiUnescape } from \"discourse/lib/text\";\n import RawHtml from \"discourse/widgets/raw-html\";\n+import { escapeExpression } from \"discourse/lib/utilities\";\n \n export function replaceEmoji(str) {\n-  const escaped = emojiUnescape(Handlebars.Utils.escapeExpression(str));\n+  const escaped = emojiUnescape(escapeExpression(str));\n   return [new RawHtml({ html: `<span>${escaped}</span>` })];\n }\n "
+    }
+  ]
+}
