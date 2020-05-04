@@ -2,20 +2,12 @@
 #coding=utf8
 
 '''
-Github limits the API usage. Don't run the script 
-frequently or your IP will be banned for a some time.
-The quota is 60 requests per hour for unauthenticated 
-requests and 5000 requests per hour for authenticated 
-requests.
-
-A single run of this script makes more than 60 requests
-(number of commenting servers times two).
 You need to set your github credentials.
-Use
-    curl -i https://api.github.com
-or
-    curl -i https://api.github.com -u username:password
-to check how many requests are left.
+See details: https://developer.github.com/changes/2020-02-14-deprecating-password-auth/
+
+Use a personal access token: 
+    curl -H 'Authorization: token my_access_token' https://api.github.com/user/repos
+
 '''
 
 import re
@@ -78,23 +70,27 @@ if not os.path.isdir(p):
     #github_password = input('Type your github password: (will be visible!) ')
 
     ## If run with script, read your credentials from the file outside of 
-    # the repo (probably it's a bad idea, use for a fast automated solution)
-    with open('/home/slisakov/gh_credentials', 'r') as f:
+    # the repo (it's a bad idea to store your password in a text file, use ONLY for a fast solution)
+    with open('/home/slisakov/yadisk/sites/gh_credentials', 'r') as f:
         for line in f:
             github_username = line.split()[0]
             github_password = line.split()[1]
+            github_token    = line.split()[2]
 
     for url, cs in zip(github_urls, comment_systems):
-        os.system("curl {} -u '{}:{}' -o {}".format(url,github_username,github_password,p+cs))
+        #os.system("curl {} -u '{}:{}' -o {}".format(url,github_username,github_password,p+cs))
+        print(cs)
+        os.system("curl -H 'Authorization: token {}' {} > {}".format(github_token,url,p+cs))
 
     # Save info on the last commit to apigh/YYYY-MM-DD/<comment_system.commit>
     # (created, license, open_issues)
     for url, cs in zip(github_commit_urls, comment_systems):
-        os.system("curl {} -u '{}:{}' -o {}".format(url,github_username,github_password,p+cs+'.commit'))
+        #os.system("curl {} -u '{}:{}' -o {}".format(url,github_username,github_password,p+cs+'.commit'))
+        print(cs)
+        os.system("curl -H 'Authorization: token {}' {} > {}".format(github_token,url,p+cs+'.commit'))
 
 
-
-# Calc Github stars change in the last N days
+# Calculate Github stars change in the last N days
 N=14
 date_N_days_ago = date.today() - timedelta(days=N)
 #print (date.today(), date_N_days_ago)
@@ -161,7 +157,6 @@ for cs in os.listdir(p):
                     print ( '{:<27}{:<6}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created.strftime('%Y‑%m‑%d')) )
 
         else:
-
             with open(p+cs, 'r') as f:
                 #api_commit_data = yaml.load(f)
                 api_commit_data = json.load(f)
@@ -169,7 +164,6 @@ for cs in os.listdir(p):
                 # Update the value
                 data[re.sub('.commit','',cs)]['last_committed'] = last_committed.strftime('%Y‑%m‑%d')
                 
-
 # Update data.yaml file with fresh values.
 # data.yaml is re-written, no backup.
 with open('data.yaml', 'w') as f:

@@ -1,0 +1,134 @@
+{
+  "sha": "a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphNTFiOGQ5YzY2MDRmYTBhMWZmNGJmMDdhYWJiYjFiZGNlN2M0YjUx",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2020-05-01T16:51:11Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2020-05-04T08:43:06Z"
+    },
+    "message": "FIX: Do not use cached settings during theme compilation\n\nWe compile within a database transaction, so using a cached value from redis can cause unwanted side effects",
+    "tree": {
+      "sha": "1d397acd403ab086e63a17e07d682a5f5bc4e59c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1d397acd403ab086e63a17e07d682a5f5bc4e59c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEHsYLdRGl7BC5CQY1RpBMGLHT9DQFAl6v1ZoACgkQRpBMGLHT\n9DRf/BAAky0v+3OK8hty7Ia4Igjhs245ff7Zik8lXECQsnhF1NHNr46NXL+oH/Mw\nehkV8FSSvW1ZDzh+e8zbc5zZ8THJS3oqwG/LAvdUCwzphZsvtFPJ4Rs9HKxF+4bB\nHhdPxQUeIY454J7pJQlw8bO5ONNPh2uCXiebYmbftU2tKdyUDzUdLcjBmnE+26ex\nP4gu+miUh6PAwocM4Z7l9qxbi6eRKMoQPlOJPm673VxNmcPynz7viJCufmViMYuz\nbzExGvC8y5K2S+FweeN01p8anuERjonRfupCfmVhjEYUYEHSZ7hfSNCU8nP4cO8W\nLFKEQ54LcsQxiXSHRkO41l4wdS7ND581Zn6p4Acc2ZIczg6RhNUzNEqPwCT+xV0C\nSp1v0jmMjkFTzKJg6kPIFF4itD85fHtBP440LBaoQ/iSuBM8MjqbyAQxoRyivUIs\npy1GEVrNsGTuU4AyjP8mu6Pc6tnc3G4ykalmLLO1onNZFKAQiOp0g4obGkdv7QGA\nlEQWrXHI2m6/ea2j4CI1+zMDRzyR0CdT2gOVWyFQWxS89jl8nm4O/49jUzZaQgBH\nH221uuygRkaHkXtNKNuYck2IOmnBX+OkDXLJYFv1NOqLd/S9I5xbcedd2YxiIZ5j\nWPhWSfJXBxFlAglFh/XG3jFeJWVW9mN6Oc2nMAR1p69OEdvwi7c=\n=4IF9\n-----END PGP SIGNATURE-----",
+      "payload": "tree 1d397acd403ab086e63a17e07d682a5f5bc4e59c\nparent 4f885d7da2b6e1cdfb006a653e3dbf0029dd051f\nauthor David Taylor <david@taylorhq.com> 1588351871 +0100\ncommitter David Taylor <david@taylorhq.com> 1588581786 +0100\n\nFIX: Do not use cached settings during theme compilation\n\nWe compile within a database transaction, so using a cached value from redis can cause unwanted side effects\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+  "html_url": "https://github.com/discourse/discourse/commit/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4f885d7da2b6e1cdfb006a653e3dbf0029dd051f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/4f885d7da2b6e1cdfb006a653e3dbf0029dd051f",
+      "html_url": "https://github.com/discourse/discourse/commit/4f885d7da2b6e1cdfb006a653e3dbf0029dd051f"
+    }
+  ],
+  "stats": {
+    "total": 40,
+    "additions": 22,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "d51b2439791c0a6a12dac306287f9ddc34772c8c",
+      "filename": "app/controllers/admin/themes_controller.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/controllers/admin/themes_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/controllers/admin/themes_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/themes_controller.rb?ref=a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+      "patch": "@@ -270,13 +270,13 @@ def update_single_setting\n     setting_name = params[:name].to_sym\n     new_value = params[:value] || nil\n \n-    previous_value = @theme.included_settings[setting_name]\n+    previous_value = @theme.cached_settings[setting_name]\n     @theme.update_setting(setting_name, new_value)\n     @theme.save\n \n     log_theme_setting_change(setting_name, previous_value, new_value)\n \n-    updated_setting = @theme.included_settings.select { |key, val| key == setting_name }\n+    updated_setting = @theme.cached_settings.select { |key, val| key == setting_name }\n     render json: updated_setting, status: :ok\n   end\n "
+    },
+    {
+      "sha": "4f54f9a51803be02f16fd3cd2e258b56a9c66bb6",
+      "filename": "app/models/theme.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 14,
+      "changes": 31,
+      "blob_url": "https://github.com/discourse/discourse/blob/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/models/theme.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/models/theme.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/theme.rb?ref=a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+      "patch": "@@ -22,6 +22,7 @@ class Theme < ActiveRecord::Base\n   has_one :settings_field, -> { where(target_id: Theme.targets[:settings], name: \"yaml\") }, class_name: 'ThemeField'\n   has_one :javascript_cache, dependent: :destroy\n   has_many :locale_fields, -> { filter_locale_fields(I18n.fallbacks[I18n.locale]) }, class_name: 'ThemeField'\n+  has_many :upload_fields, -> { where(type_id: ThemeField.types[:theme_upload_var]).preload(:upload) }, class_name: 'ThemeField'\n \n   validate :component_validations\n \n@@ -88,7 +89,8 @@ def update_javascript_cache!\n     if all_extra_js.present?\n       js_compiler = ThemeJavascriptCompiler.new(id, name)\n       js_compiler.append_raw_script(all_extra_js)\n-      js_compiler.prepend_settings(cached_settings) if cached_settings.present?\n+      settings_hash = build_settings_hash\n+      js_compiler.prepend_settings(settings_hash) if settings_hash.present?\n       javascript_cache || build_javascript_cache\n       javascript_cache.update!(content: js_compiler.content)\n     else\n@@ -459,22 +461,23 @@ def settings\n \n   def cached_settings\n     Discourse.cache.fetch(\"settings_for_theme_#{self.id}\", expires_in: 30.minutes) do\n-      hash = {}\n-      self.settings.each do |setting|\n-        hash[setting.name] = setting.value\n-      end\n-\n-      theme_uploads = {}\n-      theme_fields\n-        .joins(:upload)\n-        .where(type_id: ThemeField.types[:theme_upload_var]).each do |field|\n+      build_settings_hash\n+    end\n+  end\n \n-        theme_uploads[field.name] = field.upload.url\n-      end\n-      hash['theme_uploads'] = theme_uploads if theme_uploads.present?\n+  def build_settings_hash\n+    hash = {}\n+    self.settings.each do |setting|\n+      hash[setting.name] = setting.value\n+    end\n \n-      hash\n+    theme_uploads = {}\n+    upload_fields.each do |field|\n+      theme_uploads[field.name] = field.upload.url\n     end\n+    hash['theme_uploads'] = theme_uploads if theme_uploads.present?\n+\n+    hash\n   end\n \n   def clear_cached_settings!"
+    },
+    {
+      "sha": "351c7b90f1a1083545e44b1e6dfc83449b35133f",
+      "filename": "app/models/theme_field.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/models/theme_field.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/models/theme_field.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/theme_field.rb?ref=a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+      "patch": "@@ -119,7 +119,8 @@ def process_html(html)\n       js_compiler.append_js_error(error)\n     end\n \n-    js_compiler.prepend_settings(theme.cached_settings) if js_compiler.content.present? && theme.cached_settings.present?\n+    settings_hash = theme.build_settings_hash\n+    js_compiler.prepend_settings(settings_hash) if js_compiler.content.present? && settings_hash.present?\n     javascript_cache.content = js_compiler.content\n     javascript_cache.save!\n "
+    },
+    {
+      "sha": "6802be346229fa1cc64cc95b5ce816924f2c2371",
+      "filename": "app/services/staff_action_logger.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/services/staff_action_logger.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51/app/services/staff_action_logger.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/staff_action_logger.rb?ref=a51b8d9c6604fa0a1ff4bf07aabbb1bdce7c4b51",
+      "patch": "@@ -222,7 +222,7 @@ def log_theme_component_enabled(component)\n \n   def log_theme_setting_change(setting_name, previous_value, new_value, theme, opts = {})\n     raise Discourse::InvalidParameters.new(:theme) unless theme\n-    raise Discourse::InvalidParameters.new(:setting_name) unless theme.included_settings.has_key?(setting_name)\n+    raise Discourse::InvalidParameters.new(:setting_name) unless theme.cached_settings.has_key?(setting_name)\n \n     UserHistory.create!(params(opts).merge(\n       action: UserHistory.actions[:change_theme_setting],"
+    }
+  ]
+}
