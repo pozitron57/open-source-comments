@@ -1,0 +1,98 @@
+{
+  "sha": "2edee747187a5218f405f92ac2c955e725145198",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyZWRlZTc0NzE4N2E1MjE4ZjQwNWY5MmFjMmM5NTVlNzI1MTQ1MTk4",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-05-05T17:45:14Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-05-05T17:45:14Z"
+    },
+    "message": "FIX: Flaky tests. Due to CSS transitions opacity might not be 0 yet.",
+    "tree": {
+      "sha": "bfa7ce8a7ce48b60cd063f02fbfdb95464d62ab1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/bfa7ce8a7ce48b60cd063f02fbfdb95464d62ab1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/2edee747187a5218f405f92ac2c955e725145198",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/2edee747187a5218f405f92ac2c955e725145198",
+  "html_url": "https://github.com/discourse/discourse/commit/2edee747187a5218f405f92ac2c955e725145198",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/2edee747187a5218f405f92ac2c955e725145198/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bae813fac60e0b85935bb532a5ac99fd0d54f6d6",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/bae813fac60e0b85935bb532a5ac99fd0d54f6d6",
+      "html_url": "https://github.com/discourse/discourse/commit/bae813fac60e0b85935bb532a5ac99fd0d54f6d6"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "241357251b8871cb38d92c65ebd32de95fd35073",
+      "filename": "test/javascripts/helpers/assertions.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/2edee747187a5218f405f92ac2c955e725145198/test/javascripts/helpers/assertions.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/2edee747187a5218f405f92ac2c955e725145198/test/javascripts/helpers/assertions.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/helpers/assertions.js?ref=2edee747187a5218f405f92ac2c955e725145198",
+      "patch": "@@ -15,7 +15,7 @@ function invisible(selector) {\n   const $items = find(selector + \":visible\");\n   return (\n     $items.length === 0 ||\n-    $items.css(\"opacity\") === \"0\" ||\n+    $items.css(\"opacity\") !== \"1\" ||\n     $items.css(\"visibility\") === \"hidden\"\n   );\n }"
+    }
+  ]
+}
