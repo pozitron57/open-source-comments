@@ -140,4 +140,4 @@ plt.grid(ls=':')
 
 plt.savefig('../stars-v-date.png', dpi=300, bbox_inches='tight')
 
-plt.show()
+#plt.show()

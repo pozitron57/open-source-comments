@@ -23,9 +23,8 @@ yaml = ruamel.yaml.YAML()
 yaml.indent(mapping=4, sequence=4, offset=2)
 yaml.preserve_quotes = True
 
-# Get project names and github urls 
-# Entry name is used instead of 'name' field
-# since doesn't contain spaces etc.
+# Get project names and github urls  Entry name is used instead of 
+#'name' field since doesn't contain spaces etc.
 with open('data.yaml', 'r') as f:
     data = yaml.load(f)
 
@@ -128,7 +127,7 @@ for filename in os.listdir(p):
                 if api_data.get('stargazers_count'):
                     stars = api_data['stargazers_count']
                 else:
-                    stars = 'undefined'
+                    stars = ''
 
                 if api_data.get('created_at'):
                     created = dateutil.parser.parse(api_data['created_at']).strftime('%Y‑%m‑%d')
@@ -162,11 +161,11 @@ for filename in os.listdir(p):
                     if stars_N_days_ago != 'undefined':
                         ds = int(data[cs]['stars']) - stars_N_days_ago
                         data[cs]['stars_dif'] = ds
-                        print ('{:<27}{:<16}{:<5}{:<5}{}'.format(cs, stars, ds,  open_issues, created))
+                        #print ('{:<27}{:<16}{:<5}{:<5}{}'.format(cs, stars, ds,  open_issues, created))
 
                     else:
                         data[cs]['stars_dif'] = '?'
-                        print ('{:<27}{:<16}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created))
+                        #print ('{:<27}{:<16}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created))
 
 # Loop through *.commit files
 for filename in os.listdir(p):
@@ -178,19 +177,20 @@ for filename in os.listdir(p):
                 api_commit_data = json.load(f)
                 if api_commit_data.get('commit') and data.get(cs):
                     last_commit = dateutil.parser.parse(api_commit_data['commit']['committer']['date']).strftime('%Y‑%m‑%d')
-                    data[cs]['last_commit'] = last_commit
+                    #data[cs]['last_commit'] = last_commit
                     dtr [cs]['last_commit'] = last_commit
 
 with open(fdate, 'a', encoding='utf-8') as f:
     json.dump(dtr, f, ensure_ascii=False, indent=4, sort_keys = True)
 
-## Update data.yaml file with fresh values.
-## data.yaml is rewritten, NO BACKUP
-#with open('data.yaml', 'w') as f:
-    #yaml.dump(data, stream=f)
-#
-## Update index.html date
-#for line in fileinput.input('index.html', inplace=True):
-    #if 'Last updated:' in line:
-        #line = re.sub('Last updated:.*','Last updated: {} <br>'.format(date.today()), line)
-    #print ( line, end='' )
+
+# Update data.yaml file with fresh values.
+# data.yaml is rewritten, NO BACKUP
+with open('data.yaml', 'w') as f:
+    yaml.dump(data, stream=f)
+
+# Update index.html date
+for line in fileinput.input('index.html', inplace=True):
+    if 'Last updated:' in line:
+        line = re.sub('Last updated:.*','Last updated: {} <br>'.format(date.today()), line)
+    print ( line, end='' )
