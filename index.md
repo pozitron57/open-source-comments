@@ -32,7 +32,7 @@ services (e.g., Github issues, such as
 [[4]](https://github.com/utterance/utterances)).
 
 ## Stars vs. time
-The figure shows some of the top competitors except for Discourse (as it's not
+The figure below shows some of the top competitors except for Discourse (as it's not
 just a light commenting server like others). The figure is useful to
 indirectly estimate how active the project is.
 
