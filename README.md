@@ -56,11 +56,11 @@ It will update the `data.js` file.
   https://api.github.com/users/posativ/isso has `open_issues_count` and
   `open_issues`, both equal to 131, whereas there are 110 issues and 21 PR.
 
-- `apigh/<date>` folders store a lot of information which is never used.
-  Need to extract only needed info from the files and remove the rest.
+- ~~`apigh/<date>` folders store a lot of information which is never used.
+  Need to extract only needed info from the files and remove the rest.~~
   
-- Plot stars vs. time for ~10 top commenting systems. Update the plot daily
-  automatically.
+- ~~Plot stars vs. time for ~10 top commenting systems. Update the plot daily
+  automatically.~~
 
 - Get rid of yaml, convert data.yaml to data.json
 
