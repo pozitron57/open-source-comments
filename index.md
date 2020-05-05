@@ -35,6 +35,7 @@ services (e.g., Github issues, such as
 The figure shows some of the top competitors except for Discourse (as it's not
 just a light commenting server like others). The figure is useful to
 indirectly estimate how active the project is.
+
 <a href="stars-v-date.png">
 <img src="stars-v-date.png" alt="Plot stars vs. time" width="800px" />
 </a>

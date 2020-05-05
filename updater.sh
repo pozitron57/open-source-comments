@@ -7,6 +7,10 @@ nice -n5 git pull
 echo 'python3 get_data.py'
 nice -n5 python3 'get_data.py'
 
+# Update date in index.html
+echo 'python3 md_to_html.py'
+nice -n5 python3 md_to_html.py
+
 # generate data.js (read by index.html)
 echo 'python3 yaml_2_js.py'
 nice -n5 python3 yaml_2_js.py
