@@ -32,7 +32,7 @@ services (e.g., Github issues, such as
 [[4]](https://github.com/utterance/utterances)).
 
 ## Stars vs. time
-![Plot stars vs. time](stars-v-date.png)
+<img src="/images/ki.png" alt="Plot stars vs. time" width="800px" />
 
 ## Choose columns to show
 
