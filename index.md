@@ -31,6 +31,9 @@ services (e.g., Github issues, such as
 [[3]](https://github.com/Blankj/awesome-comment),
 [[4]](https://github.com/utterance/utterances)).
 
+## Stars vs. time
+![Plot stars vs. time](stars-v-date.png)
+
 ## Choose columns to show
 
 ## Share your experience

@@ -4,8 +4,8 @@ echo 'git pull'
 nice -n5 git pull
 
 # Update the data on gh stars, last commit etc
-echo 'python3 get_gh_data.py'
-nice -n5 python3 'get_gh_data (2).py'
+echo 'python3 get_data.py'
+nice -n5 python3 'get_data.py'
 
 # generate data.js (read by index.html)
 echo 'python3 yaml_2_js.py'
