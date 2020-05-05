@@ -61,7 +61,7 @@ discourse_dates = np.array([])
 for mydate in mydates:
     if os.path.isfile(mydate):
         if re.match('file_\d\d\d\d-\d\d-\d\d', mydate):
-            print(mydate)
+
             with open(mydate, 'r') as f:
                 data = json.load(f)
 
