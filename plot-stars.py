@@ -2,131 +2,142 @@
 #coding=utf8
 
 '''
-Plot stars vs time. Except Discourse.
+Plot stars vs time for top competitors except Discourse.
 '''
 
-import re
 import os
+import re
+import json
 import numpy as np
 
-import matplotlib
+import matplotlib.dates as mdates
 from matplotlib import rc, rcParams
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-from matplotlib.ticker import AutoMinorLocator, MultipleLocator, FuncFormatter
-
-import matplotlib.dates as mdates
+from matplotlib.ticker import AutoMinorLocator, MultipleLocator, FuncFormatter, FixedLocator
 
 import datetime
 
-
-#import yaml
-import json
-from ruamel.yaml import YAML
-yaml = YAML()
-
-# Plot parameters {{{
-rcParams['font.size'] = 13.
-font = {'family': 'normal', 'size': 13}
-rc('axes', linewidth=1.1)
-rc("text", usetex=True)
-rc('font', family='serif')
-rc('font', serif='Times')
-rc('legend', fontsize=12)
-rc('xtick.major', size=5, width=1.1)
-rc('ytick.major', size=5, width=1.1)
-rc('xtick.minor', size=3, width=1)
-rc('ytick.minor', size=3, width=1)
-fig = plt.figure('figure')#, figsize=(8,6))
-fig.subplots_adjust(left=.15, bottom=.10, right=.95, top=.90)
+fs=15
+rc('axes', linewidth=2)
+rc('text', usetex=True)
+rc('legend', fontsize=fs)
+rc('font',  size=fs)
+rc('font',  family='sans-serif')
+rc('xtick.major', size=8, width=1.8)
+rc('ytick.major', size=8, width=1.8)
+rc('xtick.minor', size=5, width=1.3)
+rc('ytick.minor', size=5, width=1.3)
+fig = plt.figure('figure', figsize=(10,6))
 ax = plt.subplot(111)
-#}}}
-# Smooth setup {{{
-def gaussian_convol(sig,x,y) :
 
-    x0 = int(min(x))+1
-    x1 = int(max(x))-1
-    nx = (x1-x0) / 2
-    xi = np.linspace(x0,x1,nx)
-    f = interpolate.interp1d(x,y)
-    yi = f(xi)
+mydates = sorted(os.listdir('apigh'))
+os.chdir('apigh')
 
-    dx = (max(x) - min(x)) / float(nx)
+isso_stars = np.array([])
+isso_dates = np.array([])
 
-    ng_on2 = int(6.0 * (sig / dx)) + 1
-    ng = 2*ng_on2+1
-    gau = np.zeros(ng)
-    gau[ng_on2] = 1.0
-    for i in range(ng_on2-1) :
-        gau[ng_on2-i-1] = np.exp( -0.5 * (float(i+1)*dx/sig)**2  )
-        gau[ng_on2+i+1] = gau[ng_on2-i-1]
+remark_stars = np.array([])
+remark_dates = np.array([])
 
-    norm = np.zeros(nx)
-    yn   = np.zeros(nx)
-    for i in range(nx) :
-        for ig in range(ng) :
-            j = i + (ig-ng_on2)
-            if (j >= 0) and (j<=nx-1) :
-                yn[i] = yn[i] + gau[ig]*yi[j]
-                norm[i] = norm[i] + gau[ig]
+commento_stars = np.array([])
+commento_dates = np.array([])
 
-    yn = yn / norm
+schnak_stars = np.array([])
+schnak_dates = np.array([])
 
-    return (xi,yn)
-    # }}}
+staticman_stars = np.array([])
+staticman_dates = np.array([])
 
-path = '/home/slisakov/open-source-comments/apigh/'
+juvia_stars = np.array([])
+juvia_dates = np.array([])
 
-# Create array with all dates
-dates=[]
-for date in os.listdir(path):
-    y=int(date[0:4])
-    m=date[5:7]
-    if re.search('^0', m):
-        m=int(m[1])
-    else:
-        m=int(m)
-    d=int(date[8:10])
-    dates.append(datetime.date(y,m,d))
+valine_stars = np.array([])
+valine_dates = np.array([])
 
-selected_cs = ['discourse', 'isso', 'commento', 'schnak', 'staticman', 'juvia']
+discourse_stars = np.array([])
+discourse_dates = np.array([])
 
-d={}
-for date in dates:
-    print (date)
-    for cs in os.listdir(path+str(date)):
-        #if not '.swp' in cs and not 'pelican_static' in cs: # if opened in vim
-        if not '.swp' in cs and not 'pelican_static' in cs and cs in selected_cs: # if opened in vim
-            if not '.commit' in cs:
-                with open(path+str(date)+'/'+cs, 'r') as f:
-                    api_data = json.load(f)
-                    if "stargazers_count" in api_data:
-                        stars = api_data["stargazers_count"]
-                    else:
-                        stars = 'undefined'
-                    print ("{0:>26s}".format(cs), 
-                           "{0:<11s}".format(str(date)), 
-                           "{0:<5}".format(stars))
-                    # Write to arrays [cs,date,stars]
+for mydate in mydates:
+    if os.path.isfile(mydate):
+        if re.match('file_\d\d\d\d-\d\d-\d\d', mydate):
+            print(mydate)
+            with open(mydate, 'r') as f:
+                data = json.load(f)
 
-    print('End of the date')
+            if str(data['isso']['stars']).isdigit(): # remove undefined
+                isso_stars  = np.append(isso_stars, data['isso']['stars'])
+                isso_dates  = np.append(isso_dates, re.sub('file_', '', mydate))
+
+            if str(data['commento']['stars']).isdigit(): # remove undefined
+                commento_stars  = np.append(commento_stars, data['commento']['stars'])
+                commento_dates  = np.append(commento_dates, re.sub('file_', '', mydate))
+
+            if str(data['juvia']['stars']).isdigit(): # remove undefined
+                juvia_stars  = np.append(juvia_stars, data['juvia']['stars'])
+                juvia_dates  = np.append(juvia_dates, re.sub('file_', '', mydate))
+
+            if str(data['staticman']['stars']).isdigit(): # remove undefined
+                staticman_stars  = np.append(staticman_stars, data['staticman']['stars'])
+                staticman_dates  = np.append(staticman_dates, re.sub('file_', '', mydate))
+
+            if str(data['schnak']['stars']).isdigit(): # remove undefined
+                schnak_stars  = np.append(schnak_stars, data['schnak']['stars'])
+                schnak_dates  = np.append(schnak_dates, re.sub('file_', '', mydate))
+
+            if str(data['remark']['stars']).isdigit(): # remove undefined
+                remark_stars  = np.append(remark_stars, data['remark']['stars'])
+                remark_dates  = np.append(remark_dates, re.sub('file_', '', mydate))
+
+            if str(data['valine']['stars']).isdigit(): # remove undefined
+                valine_stars  = np.append(valine_stars, data['valine']['stars'])
+                valine_dates  = np.append(valine_dates, re.sub('file_', '', mydate))
+
+lw=2.85
 
 
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in isso_dates]
+plt.plot_date(x, isso_stars, label='Isso', lw=lw, ls='-', marker=None)
 
-#d = { 'discourse' : [['2019-03-22', '2019-03-23', '2019-03-24'], [20,30,102]],
-      #'isso'      : [['2019-03-22', '2019-03-23', '2019-03-24'], [2,3,10]],
-    #}
-#for cs in d.keys():
-    #ax.plot (d[cs][0], d[cs][1])
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in commento_dates]
+plt.plot_date(x, commento_stars, label='Commento', lw=lw, ls='-', marker=None)
+
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in juvia_dates]
+plt.plot_date(x, juvia_stars, label='Juvia', lw=lw, ls=':', marker=None)
+
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in staticman_dates]
+plt.plot_date(x, staticman_stars, label='Staticman', lw=lw, ls='--', marker=None)
+
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in schnak_dates]
+plt.plot_date(x, schnak_stars, label='Schnak', lw=lw, ls='-', marker=None, color='tab:gray')
+
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in remark_dates]
+plt.plot_date(x, remark_stars, label='Remark42', lw=lw, ls='-', marker=None, color='tab:pink')
+
+x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in valine_dates]
+plt.plot_date(x, valine_stars, label='Valine', lw=lw, ls='-.', marker=None)
 
 
-#dates = matplotlib.dates.date2num(dates)
-#ax.plot(dates, [7,8])
+years = mdates.YearLocator()    # every year
+months = mdates.MonthLocator()  # every month
+yearsFmt = mdates.DateFormatter('%Y')
+ax.xaxis.set_major_locator(years)
+ax.xaxis.set_major_formatter(yearsFmt)
+ax.xaxis.set_minor_locator(months)
 
-#matplotlib.pyplot.plot_date(dates, [7,8,9,10], '-')
-#matplotlib.pyplot.plot_date(dates, [8,9,10,12], '-')
-#myFmt = mdates.DateFormatter('%d-%B-%Y')
-#plt.gca().xaxis.set_major_formatter(myFmt)
+#plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/%Y'))
 #plt.gcf().autofmt_xdate()
 
-#plt.show()
+#ax.set_xticks(['2018-08-01', '2019-01-01', '2019-07-01', '2020-01-01'])
+#ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
+#plt.xticks(rotation=-40)
+#fig.autofmt_xdate(bottom=0.2, rotation=30, ha='right')
+
+ax.set_xlabel('Date')
+ax.set_ylabel('Github stars')
+plt.legend(ncol=3) #loc='center', bbox_to_anchor=(0.5, 1.05),
+plt.grid(ls=':')
+
+plt.savefig('../stars-v-date.png', dpi=300, bbox_inches='tight')
+
+plt.show()

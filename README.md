@@ -57,11 +57,12 @@ It will update the `data.js` file.
   `open_issues`, both equal to 131, whereas there are 110 issues and 21 PR.
 
 - `apigh/<date>` folders store a lot of information which is never used.
-  Need to write a python script to extract only needed info from the files
-  and delete the rest.
+  Need to extract only needed info from the files and remove the rest.
   
 - Plot stars vs. time for ~10 top commenting systems. Update the plot daily
   automatically.
+
+- Get rid of yaml, convert data.yaml to data.json
 
 ## Contribution
 
