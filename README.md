@@ -59,7 +59,7 @@ It will update the `data.js` file.
 - ~~`apigh/<date>` folders store a lot of information which is never used.
   Need to extract only needed info from the files and remove the rest.~~
   
-- ~~Plot stars vs. time for ~10 top commenting systems. Update the plot daily
+- ~~Plot stars vs. time for several top commenting systems. Update the plot daily
   automatically.~~
 
 - Get rid of yaml, convert data.yaml to data.json
