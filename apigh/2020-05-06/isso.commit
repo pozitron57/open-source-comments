@@ -1,0 +1,98 @@
+{
+  "sha": "2ba721790056b252f0752d535e174bd3ab607df2",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOToyYmE3MjE3OTAwNTZiMjUyZjA3NTJkNTM1ZTE3NGJkM2FiNjA3ZGYy",
+  "commit": {
+    "author": {
+      "name": "frenchvandal",
+      "email": "42499534+frenchvandal@users.noreply.github.com",
+      "date": "2020-04-25T16:51:49Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-04-25T16:51:49Z"
+    },
+    "message": "Dockerfile update (#644)\n\n- Updated images with newer versions, except for Node: the js stuff will not compile with a version > 10\r\n- Removed python3-dev and sqlite3 in step 2, they are not needed\r\n- Added flask to pip, cf. issue #621\r\n- Some small improvements here and there like a good practice for gunicorn use in Docker cf. https://pythonspeed.com/articles/gunicorn-in-docker/",
+    "tree": {
+      "sha": "2d0c49f0e44002ceb2653f1581c46ca58c389be2",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/2d0c49f0e44002ceb2653f1581c46ca58c389be2"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/2ba721790056b252f0752d535e174bd3ab607df2",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJepGqlCRBK7hj4Ov3rIwAAdHIIACothjfdbR14UNE2vFiE2YkD\nQinYS9WjhzNw00rMS7L50kPUjNydO/XH/Z5LaOMwa/dLkSvS3HpLl89gU2on1Fo0\nnsRTLz9O2SSCwPaqgYbqkdaFOF2+pslsvr5NQQAebdrWZDObU02k/gBB7qQH0cL+\nTSg/mskEGDgNGXPI3aZQD43B/PKuZbmPyGu0US1hNPQ2s29e8ROL+KFIsWzrf2Dv\nYYlCkm5cTldqBIjvH0IEHRA8X3v3EOMNoNnUIO4LWxew5q79iZmQTIiHzDAi1CmR\n/qXhpAlgNyFtIoxspXJYMbsQGUJ4NLzp/NLpTVYlgsK82SuNdQKPVg3/U7YuUE4=\n=TK/8\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 2d0c49f0e44002ceb2653f1581c46ca58c389be2\nparent bdaa5240d12dc8ff2b09389a21686589e6ffd01b\nauthor frenchvandal <42499534+frenchvandal@users.noreply.github.com> 1587833509 +0200\ncommitter GitHub <noreply@github.com> 1587833509 +0000\n\nDockerfile update (#644)\n\n- Updated images with newer versions, except for Node: the js stuff will not compile with a version > 10\r\n- Removed python3-dev and sqlite3 in step 2, they are not needed\r\n- Added flask to pip, cf. issue #621\r\n- Some small improvements here and there like a good practice for gunicorn use in Docker cf. https://pythonspeed.com/articles/gunicorn-in-docker/"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/2ba721790056b252f0752d535e174bd3ab607df2",
+  "html_url": "https://github.com/posativ/isso/commit/2ba721790056b252f0752d535e174bd3ab607df2",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/2ba721790056b252f0752d535e174bd3ab607df2/comments",
+  "author": {
+    "login": "frenchvandal",
+    "id": 42499534,
+    "node_id": "MDQ6VXNlcjQyNDk5NTM0",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/42499534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frenchvandal",
+    "html_url": "https://github.com/frenchvandal",
+    "followers_url": "https://api.github.com/users/frenchvandal/followers",
+    "following_url": "https://api.github.com/users/frenchvandal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frenchvandal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frenchvandal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frenchvandal/subscriptions",
+    "organizations_url": "https://api.github.com/users/frenchvandal/orgs",
+    "repos_url": "https://api.github.com/users/frenchvandal/repos",
+    "events_url": "https://api.github.com/users/frenchvandal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frenchvandal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bdaa5240d12dc8ff2b09389a21686589e6ffd01b",
+      "url": "https://api.github.com/repos/posativ/isso/commits/bdaa5240d12dc8ff2b09389a21686589e6ffd01b",
+      "html_url": "https://github.com/posativ/isso/commit/bdaa5240d12dc8ff2b09389a21686589e6ffd01b"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 10,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "63567042adf472abd5968d1acd5527d7e6f1acb0",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 9,
+      "changes": 19,
+      "blob_url": "https://github.com/posativ/isso/blob/2ba721790056b252f0752d535e174bd3ab607df2/Dockerfile",
+      "raw_url": "https://github.com/posativ/isso/raw/2ba721790056b252f0752d535e174bd3ab607df2/Dockerfile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Dockerfile?ref=2ba721790056b252f0752d535e174bd3ab607df2",
+      "patch": "@@ -1,30 +1,31 @@\n # First, compile JS stuff\n-FROM node\n+FROM node:dubnium-buster\n WORKDIR /src/\n COPY . .\n-RUN npm install -g requirejs uglify-js jade bower\n-RUN make init js\n+RUN npm install -g requirejs uglify-js jade bower \\\n+ && make init js\n \n # Second, create virtualenv\n-FROM python:3-stretch\n+FROM python:3.8-buster\n WORKDIR /src/\n COPY --from=0 /src .\n-RUN apt-get -qqy update && apt-get -qqy install python3-dev sqlite3\n RUN python3 -m venv /isso \\\n  && . /isso/bin/activate \\\n- && pip install gunicorn cffi \\\n- && python setup.py install\n+ && pip3 install --no-cache-dir --upgrade pip \\\n+ && pip3 install --no-cache-dir gunicorn cffi flask \\\n+ && python setup.py install \\\n+ && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\n \n # Third, create final repository\n-FROM python:3-slim-stretch\n+FROM python:3.8-slim-buster\n WORKDIR /isso/\n COPY --from=1 /isso .\n \n # Configuration\n VOLUME /db /config\n EXPOSE 8080\n ENV ISSO_SETTINGS /config/isso.cfg\n-CMD [\"/isso/bin/gunicorn\", \"-b\", \"0.0.0.0:8080\", \"-w\", \"4\", \"--preload\", \"isso.run\"]\n+CMD [\"/isso/bin/gunicorn\", \"-b\", \"0.0.0.0:8080\", \"-w\", \"4\", \"--preload\", \"isso.run\", \"--worker-tmp-dir\", \"/dev/shm\"]\n \n # Example of use:\n #"
+    }
+  ]
+}
