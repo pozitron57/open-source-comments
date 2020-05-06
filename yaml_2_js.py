@@ -182,3 +182,5 @@ with open("data.js", 'w') as out:
     for fi in fields:
         print ('{title: "' + fields_dic[fi] + '"}, ', file=out)
     print(']', file=out)
+
+print('data.js has been updated')

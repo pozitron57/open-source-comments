@@ -5,7 +5,7 @@ nice -n5 git pull
 
 # Update the data on gh stars, last commit etc
 echo 'python3 get_data.py'
-nice -n5 python3 'get_data.py'
+nice -n5 python3 get_data.py
 
 # Update date in index.html
 echo 'python3 md_to_html.py'

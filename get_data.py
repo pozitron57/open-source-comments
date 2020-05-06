@@ -141,15 +141,16 @@ for filename in os.listdir(p):
 
                 if api_data.get('license'):
                     if 'spdx_id' in api_data['license']:
-                        license = api_data['license']['spdx_id'] # 'MIT'
                         if data.get(cs):
-                            data[cs]['license'] = license
+                            data[cs]['license'] = api_data['license']['spdx_id']  # MIT
                     elif 'name' in api_data['license']:
-                        license = api_data['license']['name']    # 'MIT License'
                         if data.get(cs):
-                            data[cs]['license'] = license
+                            data[cs]['license'] = api_data['license']['name'] # MIT License
+                else:
+                    data[cs]['license'] = 'undefined'
+
                 dtr[cs] = {"stars" : stars, "created" : created, "open_issues" : open_issues, 
-                         "license" : license}
+                         "license" : data[cs]['license']}
 
                 # Update the values
                 if created != 'undefined' and data.get(cs):
@@ -179,6 +180,8 @@ for filename in os.listdir(p):
                     last_commit = dateutil.parser.parse(api_commit_data['commit']['committer']['date']).strftime('%Y‑%m‑%d')
                     #data[cs]['last_commit'] = last_commit
                     dtr [cs]['last_commit'] = last_commit
+
+print(dtr['site_point_nested_comments'])
 
 with open(fdate, 'a', encoding='utf-8') as f:
     json.dump(dtr, f, ensure_ascii=False, indent=4, sort_keys = True)

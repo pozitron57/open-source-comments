@@ -43,3 +43,5 @@ with open('index.html', 'r+') as f:
     f.seek(0)
     f.write(text)
     f.truncate()
+
+print('index.html has been updated')

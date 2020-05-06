@@ -21,7 +21,7 @@ from datetime import date
 
 fs=15
 rc('axes', linewidth=2)
-rc('text', usetex=True)
+rc('text', usetex=False)
 rc('legend', fontsize=fs)
 rc('font',  size=fs)
 rc('font',  family='sans-serif')
