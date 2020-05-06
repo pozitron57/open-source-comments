@@ -17,6 +17,7 @@ import matplotlib.ticker as ticker
 from matplotlib.ticker import AutoMinorLocator, MultipleLocator, FuncFormatter, FixedLocator
 
 import datetime
+from datetime import date
 
 fs=15
 rc('axes', linewidth=2)
@@ -117,7 +118,6 @@ plt.plot_date(x, remark_stars, label='Remark42', lw=lw, ls='-', marker=None, col
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in valine_dates]
 plt.plot_date(x, valine_stars, label='Valine', lw=lw, ls='-.', marker=None)
 
-
 years = mdates.YearLocator()    # every year
 months = mdates.MonthLocator()  # every month
 yearsFmt = mdates.DateFormatter('%Y')
@@ -125,19 +125,15 @@ ax.xaxis.set_major_locator(years)
 ax.xaxis.set_major_formatter(yearsFmt)
 ax.xaxis.set_minor_locator(months)
 
-#plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/%Y'))
-#plt.gcf().autofmt_xdate()
-
-#ax.set_xticks(['2018-08-01', '2019-01-01', '2019-07-01', '2020-01-01'])
-#ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
-#plt.xticks(rotation=-40)
-#fig.autofmt_xdate(bottom=0.2, rotation=30, ha='right')
-
 ax.set_xlabel('Date')
 ax.set_ylabel('Github stars')
-plt.legend(ncol=3) #loc='center', bbox_to_anchor=(0.5, 1.05),
+plt.legend(ncol=3, loc='center') #loc='center', bbox_to_anchor=(0.5, 1.05),
 plt.grid(ls=':')
 
+today = date.today()
+plt.axvline(x=today, ls=':', color='tab:gray', lw=0.7)
+
 plt.savefig('../stars-v-date.png', dpi=300, bbox_inches='tight')
+print('stars-v-date.png is updated')
 
 #plt.show()
