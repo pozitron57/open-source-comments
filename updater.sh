@@ -1,5 +1,6 @@
 #!/bin/bash
-cd /home/slisakov/yadisk/sites/open-source-comments
+#cd /home/slisakov/yadisk/sites/open-source-comments
+cd /home/slisakov/open-source-comments
 echo 'git pull'
 nice -n5 git pull
 
