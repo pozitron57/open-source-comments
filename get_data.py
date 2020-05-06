@@ -83,7 +83,7 @@ if not os.path.isdir(p):
     ## Read your credentials from the file outside of the repo.
     #It's a bad idea to store your token in a text file, 
     # use only for testing
-    with open('/home/slisakov/yadisk/sites/gh_credentials', 'r') as f:
+    with open('/home/slisakov/gh_credentials', 'r') as f:
         for line in f:
             github_username = line.split()[0]
             github_token    = line.split()[1]
@@ -180,8 +180,6 @@ for filename in os.listdir(p):
                     last_commit = dateutil.parser.parse(api_commit_data['commit']['committer']['date']).strftime('%Y‑%m‑%d')
                     #data[cs]['last_commit'] = last_commit
                     dtr [cs]['last_commit'] = last_commit
-
-print(dtr['site_point_nested_comments'])
 
 with open(fdate, 'a', encoding='utf-8') as f:
     json.dump(dtr, f, ensure_ascii=False, indent=4, sort_keys = True)
