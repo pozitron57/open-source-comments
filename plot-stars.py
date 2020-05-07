@@ -24,11 +24,14 @@ rc('axes', linewidth=2)
 rc('text', usetex=False)
 rc('legend', fontsize=fs)
 rc('font',  size=fs)
-rc('font',  family='sans-serif')
-rc('xtick.major', size=8, width=1.8)
-rc('ytick.major', size=8, width=1.8)
+rc('xtick.major', size=10, width=2)
+rc('ytick.major', size=10, width=2)
 rc('xtick.minor', size=5, width=1.3)
 rc('ytick.minor', size=5, width=1.3)
+rcParams['font.family'] = 'sans-serif'
+rcParams['font.sans-serif'] = ['Lucida Grande']
+
+
 fig = plt.figure('figure', figsize=(10,6))
 ax = plt.subplot(111)
 
@@ -96,42 +99,51 @@ for mydate in mydates:
 
 lw=2.85
 
-
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in isso_dates]
-plt.plot_date(x, isso_stars, label='Isso', lw=lw, ls='-', marker=None)
+ax.plot_date(x, isso_stars, label='Isso', lw=lw, ls='-', marker=None, color='tab:blue')
 
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in commento_dates]
-plt.plot_date(x, commento_stars, label='Commento', lw=lw, ls='-', marker=None)
+ax.plot_date(x, commento_stars, label='Commento', lw=lw, ls='-', marker=None, color='tab:orange')
 
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in juvia_dates]
-plt.plot_date(x, juvia_stars, label='Juvia', lw=lw, ls=':', marker=None)
+ax.plot_date(x, juvia_stars, label='Juvia', lw=lw, ls=':', marker=None, color='tab:green')
 
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in staticman_dates]
-plt.plot_date(x, staticman_stars, label='Staticman', lw=lw, ls='--', marker=None)
+ax.plot_date(x, staticman_stars, label='Staticman', lw=lw, ls='--', marker=None, color='tab:red')
 
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in schnak_dates]
-plt.plot_date(x, schnak_stars, label='Schnak', lw=lw, ls='-', marker=None, color='tab:gray')
+ax.plot_date(x, schnak_stars, label='Schnak', lw=lw, ls='-', marker=None, color='tab:gray')
 
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in remark_dates]
-plt.plot_date(x, remark_stars, label='Remark42', lw=lw, ls='-', marker=None, color='tab:pink')
+ax.plot_date(x, remark_stars, label='Remark42', lw=lw, ls='-', marker=None, color='tab:pink')
 
 x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in valine_dates]
-plt.plot_date(x, valine_stars, label='Valine', lw=lw, ls='-.', marker=None)
+ax.plot_date(x, valine_stars, label='Valine', lw=lw, ls='-.', marker=None, color='tab:purple')
 
+ax2 = ax.twiny()
 years = mdates.YearLocator()    # every year
 months = mdates.MonthLocator()  # every month
 yearsFmt = mdates.DateFormatter('%Y')
+dateFmt = mdates.DateFormatter('%d %B, %Y')
+
+ax2.xaxis.set_major_locator(years)
+ax2.xaxis.set_major_formatter(dateFmt)
+ax2.xaxis.set_minor_locator(months)
+
 ax.xaxis.set_major_locator(years)
 ax.xaxis.set_major_formatter(yearsFmt)
 ax.xaxis.set_minor_locator(months)
 
 ax.set_xlabel('Date')
 ax.set_ylabel('Github stars')
-plt.legend(ncol=3, loc='center') #loc='center', bbox_to_anchor=(0.5, 1.05),
-plt.grid(ls=':')
+ax.legend(ncol=3, loc='center') # bbox_to_anchor=(0.5, 1.05)
+ax.grid(ls=':', lw=1)
 
-today = date.today()
-plt.axvline(x=today, ls=':', color='tab:gray', lw=0.7)
+#today = date.today()
+last  = np.amax(x)
+ax.axvline(x=last,  ls=':', color='tab:gray', lw=1)
+ax2.set_xlim(ax.get_xlim())
+ax2.set_xticks([last])
 
 plt.savefig('../stars-v-date.png', dpi=300, bbox_inches='tight')
 print('stars-v-date.png is updated')
