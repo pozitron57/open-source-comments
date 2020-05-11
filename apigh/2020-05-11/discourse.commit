@@ -1,0 +1,98 @@
+{
+  "sha": "77f5bb1419b79c9537db24c8965ad698434b7dad",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3N2Y1YmIxNDE5Yjc5Yzk1MzdkYjI0Yzg5NjVhZDY5ODQzNGI3ZGFk",
+  "commit": {
+    "author": {
+      "name": "Sam Saffron",
+      "email": "sam.saffron@gmail.com",
+      "date": "2020-05-11T09:05:32Z"
+    },
+    "committer": {
+      "name": "Sam Saffron",
+      "email": "sam.saffron@gmail.com",
+      "date": "2020-05-11T09:07:32Z"
+    },
+    "message": "FIX: stop clearing title by mistake\n\nb180e6e737900b caused a short lived regression.\n\nThis code is very deliberate about ensuring originalTitle is\nset correctly",
+    "tree": {
+      "sha": "499a9880f623cf802a592177249e73c061f9c858",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/499a9880f623cf802a592177249e73c061f9c858"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/77f5bb1419b79c9537db24c8965ad698434b7dad",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEOSsR4Zg5f63AmUE+uWBhaNL/2fUFAl65FdQACgkQuWBhaNL/\n2fWC6xAAp4ef/jCRLJrTOIc5nt0s0ifnKN7+iaHMy37NG08KYP0nMqafzPV7AF49\njdz1+urQObWltKx7Z7HneNxU3E6qu33gzQYxqJVhiEK2PvFjC1MC+lr32BwLrsMK\ndHKt/ZMtkQa55cRJMAZlX3A9wxPd4cE7ZmIqI6Vpb1ZniOsS5qoV2JMQoL+FU1bl\nP8++bbHDsqRrz/BEfhMz9XiO/xyIpuPobM5yDd3aT/sxFEylo68rIlWj2SwLjEXW\nLjHmK1bjIGcvh/82DvubNk5/wiBanymxihIw0wLaeRxoeoASoIIKzqwYhQ4ZjX3S\nF4qFjKl70EWAUX9N8YpGtrKi7jq6cVcHMRHav/EcB4e6WIVMeXnVIre+0ZYyen1O\n2Gp5s4vRpkiumNGTFEDuSOcmWKYz+VP+0qG7a8H4thd5/SFBQEj7iaR2P6J00U1L\n13L8j+VzCpxzei9uP0QQHM0mZbhN8k593pBZbIUl60DReAnpnAUZQIbVKaYRGrvl\njZp8Fj5xmM5GoIHiyq5i00h3pB+hksYeQkKDmueyZ8Ra7I2KMVNMrelmGy9u7d1U\nvnHnJR102fbtc+bzUBrfbt6WE6utCd7G1NtVnItTAPGaDw51/yjqew4TlLI4I5e4\n1wMOrY2CmfqcVCFQ9RRyQXUA7HVcy0Ct80jraSQmaQcA3Z19sY8=\n=hkIJ\n-----END PGP SIGNATURE-----",
+      "payload": "tree 499a9880f623cf802a592177249e73c061f9c858\nparent f293b28198c84064f9720ea403c113dbc2428737\nauthor Sam Saffron <sam.saffron@gmail.com> 1589187932 +1000\ncommitter Sam Saffron <sam.saffron@gmail.com> 1589188052 +1000\n\nFIX: stop clearing title by mistake\n\nb180e6e737900b caused a short lived regression.\n\nThis code is very deliberate about ensuring originalTitle is\nset correctly\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/77f5bb1419b79c9537db24c8965ad698434b7dad",
+  "html_url": "https://github.com/discourse/discourse/commit/77f5bb1419b79c9537db24c8965ad698434b7dad",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/77f5bb1419b79c9537db24c8965ad698434b7dad/comments",
+  "author": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f293b28198c84064f9720ea403c113dbc2428737",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f293b28198c84064f9720ea403c113dbc2428737",
+      "html_url": "https://github.com/discourse/discourse/commit/f293b28198c84064f9720ea403c113dbc2428737"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 4,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "0f88c24218f1cbb059af904cfb80249bb15943e3",
+      "filename": "app/assets/javascripts/discourse/app/models/composer.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 6,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/77f5bb1419b79c9537db24c8965ad698434b7dad/app/assets/javascripts/discourse/app/models/composer.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/77f5bb1419b79c9537db24c8965ad698434b7dad/app/assets/javascripts/discourse/app/models/composer.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/composer.js?ref=77f5bb1419b79c9537db24c8965ad698434b7dad",
+      "patch": "@@ -785,18 +785,16 @@ const Composer = RestModel.extend({\n       });\n     }\n \n-    if (this.get(\"canEditTitle\")) {\n-      this.set(\"originalTitle\", \"\");\n-      this.set(\"title\", \"\");\n-    }\n-\n     if (opts.title) {\n       this.set(\"title\", opts.title);\n     }\n \n     this.set(\"originalText\", opts.draft ? \"\" : this.reply);\n \n-    if (this.editingFirstPost) {\n+    if (this.canEditTitle) {\n+      if (isEmpty(this.title) && this.title !== \"\") {\n+        this.set(\"title\", \"\");\n+      }\n       this.set(\"originalTitle\", this.title);\n     }\n "
+    }
+  ]
+}
