@@ -1,0 +1,79 @@
+{
+  "sha": "3c3cf08656111ef3599f9a028b19022ee96750f9",
+  "node_id": "MDY6Q29tbWl0ODkyNzY4NzY6M2MzY2YwODY1NjExMWVmMzU5OWY5YTAyOGIxOTAyMmVlOTY3NTBmOQ==",
+  "commit": {
+    "author": {
+      "name": "Wouter Groeneveld",
+      "email": "wouter.groeneveld@gmail.com",
+      "date": "2020-05-09T23:53:42Z"
+    },
+    "committer": {
+      "name": "Adhityaa Chandrasekar",
+      "email": "gitlab@adtac.in",
+      "date": "2020-05-09T23:53:42Z"
+    },
+    "message": "utils.js: use global.origin in cookieSet()",
+    "tree": {
+      "sha": "eb7b0ef449fae293094841b4dd44ba3c098b4310",
+      "url": "https://api.github.com/repos/adtac/commento/git/trees/eb7b0ef449fae293094841b4dd44ba3c098b4310"
+    },
+    "url": "https://api.github.com/repos/adtac/commento/git/commits/3c3cf08656111ef3599f9a028b19022ee96750f9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/adtac/commento/commits/3c3cf08656111ef3599f9a028b19022ee96750f9",
+  "html_url": "https://github.com/adtac/commento/commit/3c3cf08656111ef3599f9a028b19022ee96750f9",
+  "comments_url": "https://api.github.com/repos/adtac/commento/commits/3c3cf08656111ef3599f9a028b19022ee96750f9/comments",
+  "author": {
+    "login": "wgroeneveld",
+    "id": 304593,
+    "node_id": "MDQ6VXNlcjMwNDU5Mw==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/304593?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wgroeneveld",
+    "html_url": "https://github.com/wgroeneveld",
+    "followers_url": "https://api.github.com/users/wgroeneveld/followers",
+    "following_url": "https://api.github.com/users/wgroeneveld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wgroeneveld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wgroeneveld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wgroeneveld/subscriptions",
+    "organizations_url": "https://api.github.com/users/wgroeneveld/orgs",
+    "repos_url": "https://api.github.com/users/wgroeneveld/repos",
+    "events_url": "https://api.github.com/users/wgroeneveld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wgroeneveld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "e44ae1ce9d48e82a8efea346c8cb485660eecef9",
+      "url": "https://api.github.com/repos/adtac/commento/commits/e44ae1ce9d48e82a8efea346c8cb485660eecef9",
+      "html_url": "https://github.com/adtac/commento/commit/e44ae1ce9d48e82a8efea346c8cb485660eecef9"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "305baa1e373744fa85779472af2abd3d6a32b9e4",
+      "filename": "frontend/js/utils.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/adtac/commento/blob/3c3cf08656111ef3599f9a028b19022ee96750f9/frontend/js/utils.js",
+      "raw_url": "https://github.com/adtac/commento/raw/3c3cf08656111ef3599f9a028b19022ee96750f9/frontend/js/utils.js",
+      "contents_url": "https://api.github.com/repos/adtac/commento/contents/frontend/js/utils.js?ref=3c3cf08656111ef3599f9a028b19022ee96750f9",
+      "patch": "@@ -75,7 +75,7 @@\n     expires = \"; expires=\" + date.toUTCString();\n \n     var cookieString = name + \"=\" + value + expires + \"; path=/\";\n-    if (/^https:\\/\\//i.test(origin)) {\n+    if (/^https:\\/\\//i.test(global.origin)) {\n       cookieString += \"; secure\";\n     }\n "
+    }
+  ]
+}
