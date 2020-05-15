@@ -1,0 +1,98 @@
+{
+  "sha": "d8ce444df01b693f7389e773f9feb3978c5775ed",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmQ4Y2U0NDRkZjAxYjY5M2Y3Mzg5ZTc3M2Y5ZmViMzk3OGM1Nzc1ZWQ=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-05-13T04:15:06Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-05-13T04:15:06Z"
+    },
+    "message": "move logging for protected routes to INFO level",
+    "tree": {
+      "sha": "3dc04dcf5e26595b45d8b00cada9e624caf0d1e6",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/3dc04dcf5e26595b45d8b00cada9e624caf0d1e6"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d8ce444df01b693f7389e773f9feb3978c5775ed",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d8ce444df01b693f7389e773f9feb3978c5775ed",
+  "html_url": "https://github.com/umputun/remark42/commit/d8ce444df01b693f7389e773f9feb3978c5775ed",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d8ce444df01b693f7389e773f9feb3978c5775ed/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7edf8e0b23853b9af42d39743bd3ed45d00624bc",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/7edf8e0b23853b9af42d39743bd3ed45d00624bc",
+      "html_url": "https://github.com/umputun/remark42/commit/7edf8e0b23853b9af42d39743bd3ed45d00624bc"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 1,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "b00317ad83d648b5186a606d12473c1eaee16a88",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/d8ce444df01b693f7389e773f9feb3978c5775ed/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/d8ce444df01b693f7389e773f9feb3978c5775ed/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/rest/api/rest.go?ref=d8ce444df01b693f7389e773f9feb3978c5775ed",
+      "patch": "@@ -306,8 +306,7 @@ func (s *Rest) routes() chi.Router {\n \t\t\trauth.Use(middleware.Timeout(10 * time.Second))\n \t\t\trauth.Use(tollbooth_chi.LimitHandler(tollbooth.NewLimiter(s.updateLimiter(), nil)))\n \t\t\trauth.Use(authMiddleware.Auth, matchSiteID)\n-\t\t\trauth.Use(middleware.NoCache)\n-\t\t\trauth.Use(logger.New(logger.Log(log.Default()), logger.WithBody, logger.Prefix(\"[DEBUG]\"), logger.IPfn(ipFn)).Handler)\n+\t\t\trauth.Use(middleware.NoCache, logInfoWithBody)\n \n \t\t\trauth.Put(\"/comment/{id}\", s.privRest.updateCommentCtrl)\n \t\t\trauth.Post(\"/comment\", s.privRest.createCommentCtrl)"
+    }
+  ]
+}
