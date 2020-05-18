@@ -1,0 +1,98 @@
+{
+  "sha": "f968155288b7450056b50680cc2d2dd8f7d8bee9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmOTY4MTU1Mjg4Yjc0NTAwNTZiNTA2ODBjYzJkMmRkOGY3ZDhiZWU5",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2020-05-18T11:04:29Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2020-05-18T11:04:29Z"
+    },
+    "message": "FIX: Ensure no image downloads during topic thumbnail serialization\n\nIf image uploads are missing a width/height, we re-download them to update the width/height in the database. However, this takes significant resources so we don't want to run this logic during topic serialization.",
+    "tree": {
+      "sha": "130f387f452a55a12e73d1d49f304761c687dd42",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/130f387f452a55a12e73d1d49f304761c687dd42"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f968155288b7450056b50680cc2d2dd8f7d8bee9",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEHsYLdRGl7BC5CQY1RpBMGLHT9DQFAl7Ca8MACgkQRpBMGLHT\n9DT1JA//fCsVNj36DT9n2lM49UbqJTmLzVQ1dahjKROO7pu8tY81D2Y26llCr7Qi\nuB1GjC8FqU5WTq2Ycyrf841ApHWeKjlcR6fAFfeetQz2BOU5U+SugtajQb88WdXP\nIk57+QxCbocQj40mKq0m0g3O+Vc5SvTQnrv0bHuWI/DHf4FHBl6vQH53g8zy8Ct1\nhX3L5eZdVcUbXlQFg8UKU+pYRrC5/MueYu4tkAOAdEjEKGPmAqGfUZ6NkWyAjp20\npEJw4vDWy8OHisiDb9qJ3lXKswvL72hV9ax2lLerhD7e7+tzRrGKTE8QBC18rOqr\nIb5L42ZnPhgXW2jaUoJgryv0xtDiBO4osPMPf85GNSZGJbwYqsMDFNwy72mIYECk\n3+5QZTj/pK1RtRDD/YNf7tEIn1J0JnCW5vZ7hXcayQt/d6zuDVLxqkGOpEFRBY1Y\n2zVECaUyoMNVvAlyAy9Eme8pB7vVyZA9A4+mrZGy39yA1e9m+XjReRTigvs1+IMQ\njJSMOs9qPp0XK3QIcGDT1VWmhZWQlf8IAnIvEOcAwS1PJjmL93Wb3TGvg7962tDR\n7vUW9CWmeS7NRR9MMTtSOxZVV8x/3nCqbM8BqlQjxL8t4r6nnPzm09jg+jjWTVKt\nLAS+g8s5YQqbUeWUcJP4YEYK+CYBGhWwP9OuxNNuEvBto5e5LTE=\n=eOGa\n-----END PGP SIGNATURE-----",
+      "payload": "tree 130f387f452a55a12e73d1d49f304761c687dd42\nparent 918bd75909d73cd5361f285d59f9b2e0db97e4ac\nauthor David Taylor <david@taylorhq.com> 1589799869 +0100\ncommitter David Taylor <david@taylorhq.com> 1589799869 +0100\n\nFIX: Ensure no image downloads during topic thumbnail serialization\n\nIf image uploads are missing a width/height, we re-download them to update the width/height in the database. However, this takes significant resources so we don't want to run this logic during topic serialization.\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f968155288b7450056b50680cc2d2dd8f7d8bee9",
+  "html_url": "https://github.com/discourse/discourse/commit/f968155288b7450056b50680cc2d2dd8f7d8bee9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f968155288b7450056b50680cc2d2dd8f7d8bee9/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "918bd75909d73cd5361f285d59f9b2e0db97e4ac",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/918bd75909d73cd5361f285d59f9b2e0db97e4ac",
+      "html_url": "https://github.com/discourse/discourse/commit/918bd75909d73cd5361f285d59f9b2e0db97e4ac"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "d331a308060d60f4787495a444e4c83ad5802b6c",
+      "filename": "app/models/topic.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/f968155288b7450056b50680cc2d2dd8f7d8bee9/app/models/topic.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f968155288b7450056b50680cc2d2dd8f7d8bee9/app/models/topic.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic.rb?ref=f968155288b7450056b50680cc2d2dd8f7d8bee9",
+      "patch": "@@ -42,15 +42,15 @@ def thumbnail_job_redis_key(extra_sizes)\n \n   def filtered_topic_thumbnails(extra_sizes: [])\n     return nil unless original = image_upload\n-    return nil unless original.width && original.height\n+    return nil unless original.read_attribute(:width) && original.read_attribute(:height)\n \n     thumbnail_sizes = Topic.thumbnail_sizes + extra_sizes\n     topic_thumbnails.filter { |record| thumbnail_sizes.include?([record.max_width, record.max_height]) }\n   end\n \n   def thumbnail_info(enqueue_if_missing: false, extra_sizes: [])\n     return nil unless original = image_upload\n-    return nil unless original.width && original.height\n+    return nil unless original.read_attribute(:width) && original.read_attribute(:height)\n \n     infos = []\n     infos << { # Always add original"
+    }
+  ]
+}
