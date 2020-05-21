@@ -66,34 +66,35 @@ for mydate in mydates:
     if os.path.isfile(mydate):
         if re.match('file_\d\d\d\d-\d\d-\d\d', mydate):
 
+            print (mydate)
             with open(mydate, 'r') as f:
                 data = json.load(f)
 
-            if str(data['isso']['stars']).isdigit(): # remove undefined
+            if data.get('isso') and str(data['isso']['stars']).isdigit(): # remove undefined
                 isso_stars  = np.append(isso_stars, data['isso']['stars'])
                 isso_dates  = np.append(isso_dates, re.sub('file_', '', mydate))
 
-            if str(data['commento']['stars']).isdigit(): # remove undefined
+            if data.get('commento') and str(data['commento']['stars']).isdigit(): # remove undefined
                 commento_stars  = np.append(commento_stars, data['commento']['stars'])
                 commento_dates  = np.append(commento_dates, re.sub('file_', '', mydate))
 
-            if str(data['juvia']['stars']).isdigit(): # remove undefined
+            if data.get('juvia') and str(data['juvia']['stars']).isdigit(): # remove undefined
                 juvia_stars  = np.append(juvia_stars, data['juvia']['stars'])
                 juvia_dates  = np.append(juvia_dates, re.sub('file_', '', mydate))
 
-            if str(data['staticman']['stars']).isdigit(): # remove undefined
+            if data.get('staticman') and str(data['staticman']['stars']).isdigit(): # remove undefined
                 staticman_stars  = np.append(staticman_stars, data['staticman']['stars'])
                 staticman_dates  = np.append(staticman_dates, re.sub('file_', '', mydate))
 
-            if str(data['schnak']['stars']).isdigit(): # remove undefined
+            if data.get('schnak') and str(data['schnak']['stars']).isdigit(): # remove undefined
                 schnak_stars  = np.append(schnak_stars, data['schnak']['stars'])
                 schnak_dates  = np.append(schnak_dates, re.sub('file_', '', mydate))
 
-            if str(data['remark']['stars']).isdigit(): # remove undefined
+            if data.get('remark') and str(data['remark']['stars']).isdigit(): # remove undefined
                 remark_stars  = np.append(remark_stars, data['remark']['stars'])
                 remark_dates  = np.append(remark_dates, re.sub('file_', '', mydate))
 
-            if str(data['valine']['stars']).isdigit(): # remove undefined
+            if data.get('valine') and str(data['valine']['stars']).isdigit(): # remove undefined
                 valine_stars  = np.append(valine_stars, data['valine']['stars'])
                 valine_dates  = np.append(valine_dates, re.sub('file_', '', mydate))
 
