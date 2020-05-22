@@ -1,0 +1,110 @@
+{
+  "sha": "20403d758e7928b44b2886baa815e7465259d39b",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6MjA0MDNkNzU4ZTc5MjhiNDRiMjg4NmJhYTgxNWU3NDY1MjU5ZDM5Yg==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-05-16T16:32:01Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-05-16T16:32:01Z"
+    },
+    "message": "Temp hide .s_NoInetM until WS reconn impl.",
+    "tree": {
+      "sha": "e77250328d33bc4df407ac9034a1a9e64e8ac8d0",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/e77250328d33bc4df407ac9034a1a9e64e8ac8d0"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/20403d758e7928b44b2886baa815e7465259d39b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/20403d758e7928b44b2886baa815e7465259d39b",
+  "html_url": "https://github.com/debiki/talkyard/commit/20403d758e7928b44b2886baa815e7465259d39b",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/20403d758e7928b44b2886baa815e7465259d39b/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1572b2dc17c3a852fb272e81103e4c64925b8754",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/1572b2dc17c3a852fb272e81103e4c64925b8754",
+      "html_url": "https://github.com/debiki/talkyard/commit/1572b2dc17c3a852fb272e81103e4c64925b8754"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "839ec8f989deb48a250576a4edcb12251c6a3eee",
+      "filename": "client/app-slim/disconnected.styl",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/20403d758e7928b44b2886baa815e7465259d39b/client/app-slim/disconnected.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/20403d758e7928b44b2886baa815e7465259d39b/client/app-slim/disconnected.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/disconnected.styl?ref=20403d758e7928b44b2886baa815e7465259d39b",
+      "patch": "@@ -14,3 +14,7 @@\n .s_MaintWorkM,\n html.s_NoInet .s_NoInetM\n   display: inline-block;\n+\n+// For now, until has made WebSocket reconnect work, see: tryReonnectWebSocket() [WSRECONN].\n+.s_NoInetM\n+  display: none !important; // [NOINETMSG]\n\\ No newline at end of file"
+    },
+    {
+      "sha": "6a14c8f986c6f285be3613a7bcc7e1d50f6b8f1b",
+      "filename": "client/serviceworker/service-worker.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/20403d758e7928b44b2886baa815e7465259d39b/client/serviceworker/service-worker.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/20403d758e7928b44b2886baa815e7465259d39b/client/serviceworker/service-worker.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/serviceworker/service-worker.ts?ref=20403d758e7928b44b2886baa815e7465259d39b",
+      "patch": "@@ -387,7 +387,7 @@ function connectWebSocket(browserUserId: UserId, xsrfToken: string) {\n \n \n \n-function tryReonnectWebSocket() {\n+function tryReonnectWebSocket() {  // [WSRECONN]\n   // See (OLDRECON) below.\n   console.debug(`SW: Should reconnect WebSocekt, but not impl. [TyMSWNORECON]`);\n   // Use lastWsUserId ?"
+    }
+  ]
+}
