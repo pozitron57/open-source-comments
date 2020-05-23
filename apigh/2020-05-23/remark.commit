@@ -1,0 +1,170 @@
+{
+  "sha": "2f20b64c0f7804c32907227d526678e66a38368e",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjJmMjBiNjRjMGY3ODA0YzMyOTA3MjI3ZDUyNjY3OGU2NmEzODM2OGU=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-05-22T19:18:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-05-22T19:18:34Z"
+    },
+    "message": "switch lcw to stable version",
+    "tree": {
+      "sha": "1c77a59f510dac6479db3df7441a918f37e5f6c5",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/1c77a59f510dac6479db3df7441a918f37e5f6c5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/2f20b64c0f7804c32907227d526678e66a38368e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/2f20b64c0f7804c32907227d526678e66a38368e",
+  "html_url": "https://github.com/umputun/remark42/commit/2f20b64c0f7804c32907227d526678e66a38368e",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/2f20b64c0f7804c32907227d526678e66a38368e/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "87b44fa74c3e65a6b2fddd3db7f18521e36911da",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/87b44fa74c3e65a6b2fddd3db7f18521e36911da",
+      "html_url": "https://github.com/umputun/remark42/commit/87b44fa74c3e65a6b2fddd3db7f18521e36911da"
+    }
+  ],
+  "stats": {
+    "total": 67,
+    "additions": 38,
+    "deletions": 29
+  },
+  "files": [
+    {
+      "sha": "7a361874b002edfe07a5a72638650b9a58c103b9",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/go.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/go.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/go.mod?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -14,7 +14,7 @@ require (\n \tgithub.com/go-chi/render v1.0.1\n \tgithub.com/go-pkgz/auth v0.10.1\n \tgithub.com/go-pkgz/jrpc v0.1.0\n-\tgithub.com/go-pkgz/lcw v0.5.1-0.20200509170726-dc283cfc28cf\n+\tgithub.com/go-pkgz/lcw v0.6.0\n \tgithub.com/go-pkgz/lgr v0.7.0\n \tgithub.com/go-pkgz/repeater v1.1.3\n \tgithub.com/go-pkgz/rest v1.5.0"
+    },
+    {
+      "sha": "b3f2b6f0280d794a3166cea08141c7fbb93b240f",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/go.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/go.sum?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -65,8 +65,8 @@ github.com/go-pkgz/auth v0.10.1 h1:GYf64js5n/oVEPXhRShyDDiR/oahdZOMLbxmnnGX2IU=\n github.com/go-pkgz/auth v0.10.1/go.mod h1:wxyQqc0UUP1jT4l6zk1r6XPcVdcgIzW2OiQ8hBEHd64=\n github.com/go-pkgz/jrpc v0.1.0 h1:hNg/IyfEqJcSWOKkuHw0ZwcuGc9TDp7QZREsD2ycmiM=\n github.com/go-pkgz/jrpc v0.1.0/go.mod h1:JxZsvoBklA50DNhELVJnJ567Rt+KrMH9rR3u515wvE8=\n-github.com/go-pkgz/lcw v0.5.1-0.20200509170726-dc283cfc28cf h1:lUztZWD77zDSILb3DHCpIpHxLILUmAf15aYNAEbWtIM=\n-github.com/go-pkgz/lcw v0.5.1-0.20200509170726-dc283cfc28cf/go.mod h1:vovP88gZLeuIWn5cm0NlgPYFyGGkv3m2OcKMOOaHhj0=\n+github.com/go-pkgz/lcw v0.6.0 h1:BVEZDhVMM2W719tRED3j14lGRqNmGIlnVKVeJkPRVKs=\n+github.com/go-pkgz/lcw v0.6.0/go.mod h1:vovP88gZLeuIWn5cm0NlgPYFyGGkv3m2OcKMOOaHhj0=\n github.com/go-pkgz/lgr v0.7.0 h1:S/AAPwt/RE9a5mNJskA7dGVp+Dq6SMIW6LYjG3ITxY8=\n github.com/go-pkgz/lgr v0.7.0/go.mod h1:yMgxU+GobMRJgIEbSzDKy/67W18S7qmGx/7BVL5AB8Q=\n github.com/go-pkgz/repeater v1.1.3 h1:q6+JQF14ESSy28Dd7F+wRelY4F+41HJ0LEy/szNnMiE="
+    },
+    {
+      "sha": "4f862efd8581fa2091ea6010ba4f270269aab148",
+      "filename": "backend/vendor/github.com/go-pkgz/lcw/expirable_cache.go",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 8,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/expirable_cache.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/expirable_cache.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/github.com/go-pkgz/lcw/expirable_cache.go?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -68,17 +68,20 @@ func (c *ExpirableCache) Get(key string, fn func() (Value, error)) (data Value,\n \t}\n \tatomic.AddInt64(&c.Misses, 1)\n \n-\tif c.allowed(key, data) {\n-\t\tif s, ok := data.(Sizer); ok {\n-\t\t\tif c.maxCacheSize > 0 && atomic.LoadInt64(&c.currentSize)+int64(s.Size()) >= c.maxCacheSize {\n-\t\t\t\tc.backend.DeleteExpired()\n-\t\t\t\treturn data, nil\n-\t\t\t}\n-\t\t\tatomic.AddInt64(&c.currentSize, int64(s.Size()))\n+\tif !c.allowed(key, data) {\n+\t\treturn data, nil\n+\t}\n+\n+\tif s, ok := data.(Sizer); ok {\n+\t\tif c.maxCacheSize > 0 && atomic.LoadInt64(&c.currentSize)+int64(s.Size()) >= c.maxCacheSize {\n+\t\t\tc.backend.DeleteExpired()\n+\t\t\treturn data, nil\n \t\t}\n-\t\tc.backend.Set(key, data)\n+\t\tatomic.AddInt64(&c.currentSize, int64(s.Size()))\n \t}\n \n+\tc.backend.Set(key, data)\n+\n \treturn data, nil\n }\n "
+    },
+    {
+      "sha": "3824c4e6972479c4aa09bd374120891ebd9597b1",
+      "filename": "backend/vendor/github.com/go-pkgz/lcw/internal/cache/cache.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/internal/cache/cache.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/internal/cache/cache.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/github.com/go-pkgz/lcw/internal/cache/cache.go?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -237,6 +237,6 @@ func (c *LoadingCache) purge(maxKeys int64) {\n }\n \n type cacheItem struct {\n-\texpiresAt  time.Time\n-\tdata       interface{}\n+\texpiresAt time.Time\n+\tdata      interface{}\n }"
+    },
+    {
+      "sha": "fee675d705cd10ebf3150dfebc0eca6172557bff",
+      "filename": "backend/vendor/github.com/go-pkgz/lcw/lru_cache.go",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 9,
+      "changes": 21,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/lru_cache.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/lru_cache.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/github.com/go-pkgz/lcw/lru_cache.go?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -62,18 +62,21 @@ func (c *LruCache) Get(key string, fn func() (Value, error)) (data Value, err er\n \n \tatomic.AddInt64(&c.Misses, 1)\n \n-\tif c.allowed(key, data) {\n-\t\tc.backend.Add(key, data)\n-\n-\t\tif s, ok := data.(Sizer); ok {\n-\t\t\tatomic.AddInt64(&c.currentSize, int64(s.Size()))\n-\t\t\tif c.maxCacheSize > 0 && atomic.LoadInt64(&c.currentSize) > c.maxCacheSize {\n-\t\t\t\tfor atomic.LoadInt64(&c.currentSize) > c.maxCacheSize {\n-\t\t\t\t\tc.backend.RemoveOldest()\n-\t\t\t\t}\n+\tif !c.allowed(key, data) {\n+\t\treturn data, nil\n+\t}\n+\n+\tc.backend.Add(key, data)\n+\n+\tif s, ok := data.(Sizer); ok {\n+\t\tatomic.AddInt64(&c.currentSize, int64(s.Size()))\n+\t\tif c.maxCacheSize > 0 && atomic.LoadInt64(&c.currentSize) > c.maxCacheSize {\n+\t\t\tfor atomic.LoadInt64(&c.currentSize) > c.maxCacheSize {\n+\t\t\t\tc.backend.RemoveOldest()\n \t\t\t}\n \t\t}\n \t}\n+\n \treturn data, nil\n }\n "
+    },
+    {
+      "sha": "e2deb98561e06e90f1f294fe644213f6b161b251",
+      "filename": "backend/vendor/github.com/go-pkgz/lcw/redis_cache.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 6,
+      "changes": 15,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/redis_cache.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/github.com/go-pkgz/lcw/redis_cache.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/github.com/go-pkgz/lcw/redis_cache.go?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -61,13 +61,16 @@ func (c *RedisCache) Get(key string, fn func() (Value, error)) (data Value, err\n \t}\n \tatomic.AddInt64(&c.Misses, 1)\n \n-\tif c.allowed(key, data) {\n-\t\t_, setErr := c.backend.Set(key, data, c.ttl).Result()\n-\t\tif setErr != nil {\n-\t\t\tatomic.AddInt64(&c.Errors, 1)\n-\t\t\treturn data, setErr\n-\t\t}\n+\tif !c.allowed(key, data) {\n+\t\treturn data, nil\n+\t}\n+\n+\t_, setErr := c.backend.Set(key, data, c.ttl).Result()\n+\tif setErr != nil {\n+\t\tatomic.AddInt64(&c.Errors, 1)\n+\t\treturn data, setErr\n \t}\n+\n \treturn data, nil\n }\n "
+    },
+    {
+      "sha": "775309eb6580f87bdd82e3458888e87c1201764f",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/modules.txt",
+      "raw_url": "https://github.com/umputun/remark42/raw/2f20b64c0f7804c32907227d526678e66a38368e/backend/vendor/modules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/modules.txt?ref=2f20b64c0f7804c32907227d526678e66a38368e",
+      "patch": "@@ -84,7 +84,7 @@ github.com/go-pkgz/auth/token\n # github.com/go-pkgz/jrpc v0.1.0\n ## explicit\n github.com/go-pkgz/jrpc\n-# github.com/go-pkgz/lcw v0.5.1-0.20200509170726-dc283cfc28cf\n+# github.com/go-pkgz/lcw v0.6.0\n ## explicit\n github.com/go-pkgz/lcw\n github.com/go-pkgz/lcw/internal/cache"
+    }
+  ]
+}
