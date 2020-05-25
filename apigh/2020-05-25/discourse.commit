@@ -1,0 +1,98 @@
+{
+  "sha": "48fb354bce974513808198e50154913eebe8431b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0OGZiMzU0YmNlOTc0NTEzODA4MTk4ZTUwMTU0OTEzZWViZTg0MzFi",
+  "commit": {
+    "author": {
+      "name": "Sam Saffron",
+      "email": "sam.saffron@gmail.com",
+      "date": "2020-05-25T08:19:47Z"
+    },
+    "committer": {
+      "name": "Sam Saffron",
+      "email": "sam.saffron@gmail.com",
+      "date": "2020-05-25T08:19:59Z"
+    },
+    "message": "PERF: avoid traversing DOM in loadScript\n\nOnce a script is loaded operation should be very fast.\n\nThis optimisation avoids a DOM traverse and call to getURL on\nevery invocation.",
+    "tree": {
+      "sha": "ce0d5dcd0e2b302d405dc04fd4e5c3ba15e285d1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/ce0d5dcd0e2b302d405dc04fd4e5c3ba15e285d1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/48fb354bce974513808198e50154913eebe8431b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEOSsR4Zg5f63AmUE+uWBhaNL/2fUFAl7Lf68ACgkQuWBhaNL/\n2fXFPBAAt5PCr6ChUA/MON7Od1CKZF1fClLczhIGcrfwOnMoGEeKLzWTP5yswbWU\nNw+fpFpRjChqgZWUFUrq6t/+QU3NKUjKROJNImw/qt7TF5ex0a7eNoIWYgghxUqZ\nmrtJuR1wAwa+ClovQ3rCPCzjB/IU8yD0D55eLMcoFtOagz3IcyDJu+ZJuBDfNNDb\nCve0rVXgpKjoXby6syFQqvQ9DnGHeWHO352PqpFHQ2nA8cfe3oGKI1G/vblTbbcj\nU/54wn3+8j2L87ssFBrM88StjE4qXpm6hRM0gpUJzJSTjtdlJ7DSpKVDWTUzgI+j\n9eQldEeRzslET/1AwYmJWknGCtijQvLLYcPaIvD6Gzr6udD6BQDWI5YLCmvX/Nht\nvCBpRsaAdCgMfIVfT/9t8WVNRq0jWQ6xUtmTWVM+viZQ5X1iN9C5i6gtcjNccavX\nTtoUu7noFj+s4ia1/wG9ip4bzoruKOejOXyOI5UGu/8gyw5lmBaOQ/lzN/yHYLx9\nXi4X0uxRe1dNME35Bu5Lg5xTeNq7azYzE2ILF+BiDRWbagUaM2gjW7KfPhDiyqj7\nRL8DkrdAZsG7tGqCxsTftMKhAS3p8av/A71xNkhlZVDSKww30bpCKQsrGJVWPwAJ\nvVNM2KrmOEKScP0VyuM7cqRos4GNzoy4RokKuA32+6wb2KKvM4o=\n=+9q6\n-----END PGP SIGNATURE-----",
+      "payload": "tree ce0d5dcd0e2b302d405dc04fd4e5c3ba15e285d1\nparent 505122bb456beaca5bf511de95f3df62077409ec\nauthor Sam Saffron <sam.saffron@gmail.com> 1590394787 +1000\ncommitter Sam Saffron <sam.saffron@gmail.com> 1590394799 +1000\n\nPERF: avoid traversing DOM in loadScript\n\nOnce a script is loaded operation should be very fast.\n\nThis optimisation avoids a DOM traverse and call to getURL on\nevery invocation.\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/48fb354bce974513808198e50154913eebe8431b",
+  "html_url": "https://github.com/discourse/discourse/commit/48fb354bce974513808198e50154913eebe8431b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/48fb354bce974513808198e50154913eebe8431b/comments",
+  "author": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "SamSaffron",
+    "id": 5213,
+    "node_id": "MDQ6VXNlcjUyMTM=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5213?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamSaffron",
+    "html_url": "https://github.com/SamSaffron",
+    "followers_url": "https://api.github.com/users/SamSaffron/followers",
+    "following_url": "https://api.github.com/users/SamSaffron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamSaffron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamSaffron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamSaffron/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamSaffron/orgs",
+    "repos_url": "https://api.github.com/users/SamSaffron/repos",
+    "events_url": "https://api.github.com/users/SamSaffron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamSaffron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "505122bb456beaca5bf511de95f3df62077409ec",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/505122bb456beaca5bf511de95f3df62077409ec",
+      "html_url": "https://github.com/discourse/discourse/commit/505122bb456beaca5bf511de95f3df62077409ec"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 17,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "7c8dfd851f37461db71b9d4e9764e67a3c625a76",
+      "filename": "app/assets/javascripts/discourse/app/lib/load-script.js",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 10,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/48fb354bce974513808198e50154913eebe8431b/app/assets/javascripts/discourse/app/lib/load-script.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/48fb354bce974513808198e50154913eebe8431b/app/assets/javascripts/discourse/app/lib/load-script.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/load-script.js?ref=48fb354bce974513808198e50154913eebe8431b",
+      "patch": "@@ -45,34 +45,40 @@ export default function loadScript(url, opts) {\n \n   opts = opts || {};\n \n+  if (_loaded[url]) {\n+    return Promise.resolve();\n+  }\n+\n   // Scripts should always load from CDN\n   // CSS is type text, to accept it from a CDN we would need to handle CORS\n-  url = opts.css ? Discourse.getURL(url) : Discourse.getURLWithCDN(url);\n+  const fullUrl = opts.css\n+    ? Discourse.getURL(url)\n+    : Discourse.getURLWithCDN(url);\n \n   $(\"script\").each((i, tag) => {\n     const src = tag.getAttribute(\"src\");\n \n-    if (src && src !== url && !_loading[src]) {\n+    if (src && src !== fullUrl && !_loading[src]) {\n       _loaded[src] = true;\n     }\n   });\n \n   return new Promise(function(resolve) {\n     // If we already loaded this url\n-    if (_loaded[url]) {\n+    if (_loaded[fullUrl]) {\n       return resolve();\n     }\n-    if (_loading[url]) {\n-      return _loading[url].then(resolve);\n+    if (_loading[fullUrl]) {\n+      return _loading[fullUrl].then(resolve);\n     }\n \n     let done;\n-    _loading[url] = new Promise(function(_done) {\n+    _loading[fullUrl] = new Promise(function(_done) {\n       done = _done;\n     });\n \n-    _loading[url].then(function() {\n-      delete _loading[url];\n+    _loading[fullUrl].then(function() {\n+      delete _loading[fullUrl];\n     });\n \n     const cb = function(data) {\n@@ -82,17 +88,18 @@ export default function loadScript(url, opts) {\n       done();\n       resolve();\n       _loaded[url] = true;\n+      _loaded[fullUrl] = true;\n     };\n \n     if (opts.css) {\n       ajax({\n-        url: url,\n+        url: fullUrl,\n         dataType: \"text\",\n         cache: true\n       }).then(cb);\n     } else {\n       // Always load JavaScript with script tag to avoid Content Security Policy inline violations\n-      loadWithTag(url, cb);\n+      loadWithTag(fullUrl, cb);\n     }\n   });\n }"
+    }
+  ]
+}
