@@ -1,0 +1,98 @@
+{
+  "sha": "248db310d3a220a1bb6c297eddfb63fab60d7902",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyNDhkYjMxMGQzYTIyMGExYmI2YzI5N2VkZGZiNjNmYWI2MGQ3OTAy",
+  "commit": {
+    "author": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2020-06-04T09:24:41Z"
+    },
+    "committer": {
+      "name": "Guo Xiang Tan",
+      "email": "tgx_world@hotmail.com",
+      "date": "2020-06-04T09:25:00Z"
+    },
+    "message": "DEV: Fix lint.",
+    "tree": {
+      "sha": "3b614eab5bc4c157a7dfc788d504b368d98793cd",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3b614eab5bc4c157a7dfc788d504b368d98793cd"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/248db310d3a220a1bb6c297eddfb63fab60d7902",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/248db310d3a220a1bb6c297eddfb63fab60d7902",
+  "html_url": "https://github.com/discourse/discourse/commit/248db310d3a220a1bb6c297eddfb63fab60d7902",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/248db310d3a220a1bb6c297eddfb63fab60d7902/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "aaece34e8b1e5ad66ba91ce68af09a1cd146052b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/aaece34e8b1e5ad66ba91ce68af09a1cd146052b",
+      "html_url": "https://github.com/discourse/discourse/commit/aaece34e8b1e5ad66ba91ce68af09a1cd146052b"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "431fef373c6aac1bf8ddd6fbac3f142344a0598d",
+      "filename": "lib/freedom_patches/middleware_stack.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/248db310d3a220a1bb6c297eddfb63fab60d7902/lib/freedom_patches/middleware_stack.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/248db310d3a220a1bb6c297eddfb63fab60d7902/lib/freedom_patches/middleware_stack.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/freedom_patches/middleware_stack.rb?ref=248db310d3a220a1bb6c297eddfb63fab60d7902",
+      "patch": "@@ -1,3 +1,5 @@\n+# frozen_string_literal: true\n+\n # TODO: Remove once we upgrade to Rails 6.1\n # Copied implementation from https://github.com/rails/rails/pull/38169\n module ActionDispatch"
+    }
+  ]
+}
