@@ -8,6 +8,7 @@ Plot stars vs time for top competitors except Discourse.
 import os
 import re
 import json
+from json.decoder import JSONDecodeError
 import numpy as np
 
 import matplotlib.dates as mdates
@@ -68,7 +69,10 @@ for mydate in mydates:
 
             print (mydate)
             with open(mydate, 'r') as f:
-                data = json.load(f)
+                try:
+                    data = json.load(f)
+                except JSONDecodeError:
+                    pass
 
             if data.get('isso') and str(data['isso']['stars']).isdigit(): # remove undefined
                 isso_stars  = np.append(isso_stars, data['isso']['stars'])
