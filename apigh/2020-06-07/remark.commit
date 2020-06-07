@@ -1,0 +1,98 @@
+{
+  "sha": "dc7bb5810fa93e4356965714aa1227c80a86317f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmRjN2JiNTgxMGZhOTNlNDM1Njk2NTcxNGFhMTIyN2M4MGE4NjMxN2Y=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-06-05T08:49:41Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-06-05T08:49:49Z"
+    },
+    "message": "typo in from_address param",
+    "tree": {
+      "sha": "630940667345dcd2520211cf1108fecd3f86b270",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/630940667345dcd2520211cf1108fecd3f86b270"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/dc7bb5810fa93e4356965714aa1227c80a86317f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/dc7bb5810fa93e4356965714aa1227c80a86317f",
+  "html_url": "https://github.com/umputun/remark42/commit/dc7bb5810fa93e4356965714aa1227c80a86317f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/dc7bb5810fa93e4356965714aa1227c80a86317f/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "80f4862c9c2905475f3484f20ca41f7bdf103de9",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/80f4862c9c2905475f3484f20ca41f7bdf103de9",
+      "html_url": "https://github.com/umputun/remark42/commit/80f4862c9c2905475f3484f20ca41f7bdf103de9"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "961f2fe94f3dbd46cb9ae6481ca774f12246bf2b",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/dc7bb5810fa93e4356965714aa1227c80a86317f/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dc7bb5810fa93e4356965714aa1227c80a86317f/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=dc7bb5810fa93e4356965714aa1227c80a86317f",
+      "patch": "@@ -198,7 +198,7 @@ type NotifyGroup struct {\n \t\tAPI     string        `long:\"api\" env:\"API\" default:\"https://api.telegram.org/bot\" description:\"telegram api prefix\"`\n \t} `group:\"telegram\" namespace:\"telegram\" env-namespace:\"TELEGRAM\"`\n \tEmail struct {\n-\t\tFrom                string `long:\"fromAddress\" env:\"FROM\" description:\"from email address\"`\n+\t\tFrom                string `long:\"from_address\" env:\"FROM\" description:\"from email address\"`\n \t\tVerificationSubject string `long:\"verification_subj\" env:\"VERIFICATION_SUBJ\" description:\"verification message subject\"`\n \t\tAdminNotifications  bool   `long:\"notify_admin\" env:\"ADMIN\" description:\"notify admin on new comments via ADMIN_SHARED_EMAIL\"`\n \t} `group:\"email\" namespace:\"email\" env-namespace:\"EMAIL\"`"
+    }
+  ]
+}
