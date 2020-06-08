@@ -1,0 +1,110 @@
+{
+  "sha": "833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4MzNiNWQ4OWUwMDdmMWU2MWRjYjg3NmRjYjFiMWZhNjcyZmUxZmMy",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2020-06-08T09:42:59Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-06-08T09:42:59Z"
+    },
+    "message": "PERF: Cache PrettyText instance for rendering composer preview (#9987)\n\nPreviously we were building pretty-text from scratch on every keypress",
+    "tree": {
+      "sha": "688acfb988680ec268cd71357a2d5ecca78e4a69",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/688acfb988680ec268cd71357a2d5ecca78e4a69"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe3ggjCRBK7hj4Ov3rIwAAdHIIACD+L4qvI+ZRw2yVJhWnpmp7\nJ/LsMqwRgQ7KMdWbkHIqKmjaGVXsoa6LgRa/o97hZtB6E6jVZnWRr20086/Xxzbv\n2DGR0Tcx7CniMod1M5GLMuJftoOnYeo2sySEfv9ymgU0w16kKVSwqi+7LH6m+boZ\ntebHNDOsU+zqqC294/lUrBaUm9GEBnN5HJXuHT6kAuQxMXv1KuPD/PZkgYzcZU19\nAeWoZ5e/MAtx5A6fyPPQBZxz0NMAcGtRXP/+jIcsO7UXNQjXs7n3c0xb3JF6UO4E\ni/fQoQxC4YgmghAsx8emieB/Xncjblpt2qnn/Xb70uuOgxA+u8kVUKXrFtN71NE=\n=ZX9m\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 688acfb988680ec268cd71357a2d5ecca78e4a69\nparent 4ce618e55b9d3ad90f071de1e265bed3bdd0618b\nauthor David Taylor <david@taylorhq.com> 1591609379 +0100\ncommitter GitHub <noreply@github.com> 1591609379 +0100\n\nPERF: Cache PrettyText instance for rendering composer preview (#9987)\n\nPreviously we were building pretty-text from scratch on every keypress"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2",
+  "html_url": "https://github.com/discourse/discourse/commit/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4ce618e55b9d3ad90f071de1e265bed3bdd0618b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/4ce618e55b9d3ad90f071de1e265bed3bdd0618b",
+      "html_url": "https://github.com/discourse/discourse/commit/4ce618e55b9d3ad90f071de1e265bed3bdd0618b"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 23,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "b8fda2c5b8e6af238fa92fe385171f4c50603685",
+      "filename": "app/assets/javascripts/discourse/app/components/d-editor.js",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 3,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2/app/assets/javascripts/discourse/app/components/d-editor.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2/app/assets/javascripts/discourse/app/components/d-editor.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/components/d-editor.js?ref=833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2",
+      "patch": "@@ -9,7 +9,7 @@ import discourseComputed, {\n } from \"discourse-common/utils/decorators\";\n import { categoryHashtagTriggerRule } from \"discourse/lib/category-hashtags\";\n import { search as searchCategoryTag } from \"discourse/lib/category-tag-search\";\n-import { cookAsync } from \"discourse/lib/text\";\n+import { generateCookFunction } from \"discourse/lib/text\";\n import { getRegister } from \"discourse-common/lib/get-owner\";\n import { findRawTemplate } from \"discourse-common/lib/raw-templates\";\n import { siteDir } from \"discourse/lib/text-direction\";\n@@ -344,15 +344,26 @@ export default Component.extend({\n     return toolbar;\n   },\n \n+  cachedCookAsync(text) {\n+    if (this._cachedCookFunction) {\n+      return Promise.resolve(this._cachedCookFunction(text));\n+    }\n+\n+    const markdownOptions = this.markdownOptions || {};\n+    return generateCookFunction(markdownOptions).then(cook => {\n+      this._cachedCookFunction = cook;\n+      return cook(text);\n+    });\n+  },\n+\n   _updatePreview() {\n     if (this._state !== \"inDOM\") {\n       return;\n     }\n \n     const value = this.value;\n-    const markdownOptions = this.markdownOptions || {};\n \n-    cookAsync(value, markdownOptions).then(cooked => {\n+    this.cachedCookAsync(value).then(cooked => {\n       if (this.isDestroyed) {\n         return;\n       }"
+    },
+    {
+      "sha": "a6d5bf21efa2daabeeb2ef6cc7081c4287fe0001",
+      "filename": "app/assets/javascripts/discourse/app/lib/text.js",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2/app/assets/javascripts/discourse/app/lib/text.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2/app/assets/javascripts/discourse/app/lib/text.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/text.js?ref=833b5d89e007f1e61dcb876dcb1b1fa672fe1fc2",
+      "patch": "@@ -38,6 +38,15 @@ export function cookAsync(text, options) {\n   return loadMarkdownIt().then(() => cook(text, options));\n }\n \n+// Warm up pretty text with a set of options and return a function\n+// which can be used to cook without rebuilding prettytext every time\n+export function generateCookFunction(options) {\n+  return loadMarkdownIt().then(() => {\n+    const prettyText = createPrettyText(options);\n+    return text => prettyText.cook(text);\n+  });\n+}\n+\n export function sanitize(text, options) {\n   return textSanitize(text, new WhiteLister(options));\n }"
+    }
+  ]
+}
