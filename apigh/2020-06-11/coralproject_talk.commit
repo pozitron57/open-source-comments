@@ -1,0 +1,110 @@
+{
+  "sha": "2f03b788a40060873849ba3fe8e3dbdfb1378dbd",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MmYwM2I3ODhhNDAwNjA4NzM4NDliYTNmZThlM2RiZGZiMTM3OGRiZA==",
+  "commit": {
+    "author": {
+      "name": "Nick Funk",
+      "email": "nick.funk@outlook.com",
+      "date": "2020-06-10T23:36:56Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-06-10T23:36:56Z"
+    },
+    "message": "[CORL-1121] Remove username validation when updated by admin (#2986)\n\n* Use SSO validation for updateUserUsername\r\n\r\nCORL-1121\r\n\r\n* Remove validation on admin-only user rename\r\n\r\nWe don't need to validate the user-name as\r\nonly admin's will be using this mutator. If\r\nthey're updating things incorrectly, that's\r\nup to them to manage with this flow.\r\n\r\nCORL-1121",
+    "tree": {
+      "sha": "6602e8578ce222e60df516d220e9ee0d693e7222",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/6602e8578ce222e60df516d220e9ee0d693e7222"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/2f03b788a40060873849ba3fe8e3dbdfb1378dbd",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe4W6YCRBK7hj4Ov3rIwAAdHIIAHSbEcVbf/04sKDkgG168LQ4\nSu0OpdmIf4sLfQviZq7TjEf096kxtO19Xi9trieXsX9Hxe4iTVxMWOmSTZEf+TEF\nUOoDthVSV/B+0sv+LlJ4TdVDXMN53tUYgKtAdQwL9DORATcMV5I5ZxEe0TxnheLi\n4njhHAZKbxg0QRGrlFJ2ImP/HtWu7z1JukKnpiI/UkIJxP3wejfc1McXR6zOUi+A\nPNTd3yMQ1/e3GbNiBVERtrtbKRtb2BaVkHQB09Z1U4Av1OsRJCcnlFJb28lbtdoT\nqECP+8Mykyc7n2jJHtBuULJue5a1cW0DjjSUL9qnO0lGzin9dECQTXT0EW+e9wU=\n=b9gu\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 6602e8578ce222e60df516d220e9ee0d693e7222\nparent c19f4a35ca2ecd8b3cca9b92b432be66fd36bd28\nauthor Nick Funk <nick.funk@outlook.com> 1591832216 -0600\ncommitter GitHub <noreply@github.com> 1591832216 -0400\n\n[CORL-1121] Remove username validation when updated by admin (#2986)\n\n* Use SSO validation for updateUserUsername\r\n\r\nCORL-1121\r\n\r\n* Remove validation on admin-only user rename\r\n\r\nWe don't need to validate the user-name as\r\nonly admin's will be using this mutator. If\r\nthey're updating things incorrectly, that's\r\nup to them to manage with this flow.\r\n\r\nCORL-1121"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/2f03b788a40060873849ba3fe8e3dbdfb1378dbd",
+  "html_url": "https://github.com/coralproject/talk/commit/2f03b788a40060873849ba3fe8e3dbdfb1378dbd",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/2f03b788a40060873849ba3fe8e3dbdfb1378dbd/comments",
+  "author": {
+    "login": "nick-funk",
+    "id": 5751504,
+    "node_id": "MDQ6VXNlcjU3NTE1MDQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5751504?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nick-funk",
+    "html_url": "https://github.com/nick-funk",
+    "followers_url": "https://api.github.com/users/nick-funk/followers",
+    "following_url": "https://api.github.com/users/nick-funk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nick-funk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nick-funk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nick-funk/subscriptions",
+    "organizations_url": "https://api.github.com/users/nick-funk/orgs",
+    "repos_url": "https://api.github.com/users/nick-funk/repos",
+    "events_url": "https://api.github.com/users/nick-funk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nick-funk/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c19f4a35ca2ecd8b3cca9b92b432be66fd36bd28",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/c19f4a35ca2ecd8b3cca9b92b432be66fd36bd28",
+      "html_url": "https://github.com/coralproject/talk/commit/c19f4a35ca2ecd8b3cca9b92b432be66fd36bd28"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 0,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "c65d07a2d1fd6e283b81bf6902c56ee9fdf9932b",
+      "filename": "src/core/server/services/users/helpers.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/2f03b788a40060873849ba3fe8e3dbdfb1378dbd/src/core/server/services/users/helpers.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/2f03b788a40060873849ba3fe8e3dbdfb1378dbd/src/core/server/services/users/helpers.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/users/helpers.ts?ref=2f03b788a40060873849ba3fe8e3dbdfb1378dbd",
+      "patch": "@@ -5,7 +5,6 @@ import {\n   USERNAME_MIN_LENGTH,\n   USERNAME_REGEX,\n } from \"coral-common/helpers/validate\";\n-\n import {\n   EmailExceedsMaxLengthError,\n   EmailInvalidFormatError,"
+    },
+    {
+      "sha": "85e09545988dba55b9582b7a3af99502378a264d",
+      "filename": "src/core/server/services/users/users.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/coralproject/talk/blob/2f03b788a40060873849ba3fe8e3dbdfb1378dbd/src/core/server/services/users/users.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/2f03b788a40060873849ba3fe8e3dbdfb1378dbd/src/core/server/services/users/users.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/users/users.ts?ref=2f03b788a40060873849ba3fe8e3dbdfb1378dbd",
+      "patch": "@@ -630,9 +630,6 @@ export async function updateUsernameByID(\n   username: string,\n   createdBy: User\n ) {\n-  // Validate the username.\n-  validateUsername(username);\n-\n   return updateUserUsername(mongo, tenant.id, userID, username, createdBy.id);\n }\n "
+    }
+  ]
+}
