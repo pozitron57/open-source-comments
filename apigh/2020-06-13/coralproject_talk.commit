@@ -1,0 +1,146 @@
+{
+  "sha": "feaf4858df407469292fcbe3c82613ad8b7e689b",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZmVhZjQ4NThkZjQwNzQ2OTI5MmZjYmUzYzgyNjEzYWQ4YjdlNjg5Yg==",
+  "commit": {
+    "author": {
+      "name": "Nick Funk",
+      "email": "nick.funk@outlook.com",
+      "date": "2020-06-12T18:09:37Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-06-12T18:09:37Z"
+    },
+    "message": "[CORL-1126] Run regex in a sandbox so it can time out (#2988)\n\n* Run regex in a sandbox so it can time out\r\n\r\nIf it times out, we flag it and system withhold\r\nit for future analysis.\r\n\r\nCORL-1126\r\n\r\n* Pass regex and test string into wordList sandbox\r\n\r\nAllows us to use the pre-cached regex instead of\r\nregenerating it via an in-line script copy.\r\n\r\nCORL-1126\r\n\r\n* feat: improve script reuse\r\n\r\n* fix: renamed some functions\r\n\r\n* fix: improve script performance\r\n\r\n* feat: added testString to log output if it times out\r\n\r\n* fix: fixed issue with form alert not showing\r\n\r\n* fix: use a timeout from config\r\n\r\nCo-authored-by: Wyatt Johnson <me@wyattjoh.ca>\r\nCo-authored-by: Wyatt Johnson <wyattjoh@gmail.com>",
+    "tree": {
+      "sha": "47c6d93d3e7f6f1e6823cac8aa290e0322a97194",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/47c6d93d3e7f6f1e6823cac8aa290e0322a97194"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/feaf4858df407469292fcbe3c82613ad8b7e689b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe48ThCRBK7hj4Ov3rIwAAdHIIABQRF48CJc55lnGCztLRRwta\nf++rLMrt4uwSnuAoSLqPzYRDYy5Vm/1aW+Zwo3aUB0krHeyMxJUqJ0HMb8qbqlzK\n4qv/HNdYTCLlHHFi95cjz5XNzOWyurxkSEf7y7Jaz/1GnZNh8O6t0LYenVPC5Ipr\ndViB7EwyXZpAYL2BAN3vEXcZlYw2vDAF/nR7ZpdCpymw+V7++2Tg67Woxky2RpKQ\n5rpZdePvciYOXKf+/voumL/UPvqP0aO8W7t/LUv04ZgIg2cMHXwfmkaNWFc7XmqP\n1gj2pZnHg6a1aD1RdFPIibzVffeJIP/9M2DiugTlYWK3hTG/gULKmMoem2fIf2U=\n=ngJn\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 47c6d93d3e7f6f1e6823cac8aa290e0322a97194\nparent ebe77312227a5dc2be478d8b63ddf241a7133d85\nauthor Nick Funk <nick.funk@outlook.com> 1591985377 -0600\ncommitter GitHub <noreply@github.com> 1591985377 +0000\n\n[CORL-1126] Run regex in a sandbox so it can time out (#2988)\n\n* Run regex in a sandbox so it can time out\r\n\r\nIf it times out, we flag it and system withhold\r\nit for future analysis.\r\n\r\nCORL-1126\r\n\r\n* Pass regex and test string into wordList sandbox\r\n\r\nAllows us to use the pre-cached regex instead of\r\nregenerating it via an in-line script copy.\r\n\r\nCORL-1126\r\n\r\n* feat: improve script reuse\r\n\r\n* fix: renamed some functions\r\n\r\n* fix: improve script performance\r\n\r\n* feat: added testString to log output if it times out\r\n\r\n* fix: fixed issue with form alert not showing\r\n\r\n* fix: use a timeout from config\r\n\r\nCo-authored-by: Wyatt Johnson <me@wyattjoh.ca>\r\nCo-authored-by: Wyatt Johnson <wyattjoh@gmail.com>"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/feaf4858df407469292fcbe3c82613ad8b7e689b",
+  "html_url": "https://github.com/coralproject/talk/commit/feaf4858df407469292fcbe3c82613ad8b7e689b",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/feaf4858df407469292fcbe3c82613ad8b7e689b/comments",
+  "author": {
+    "login": "nick-funk",
+    "id": 5751504,
+    "node_id": "MDQ6VXNlcjU3NTE1MDQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5751504?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nick-funk",
+    "html_url": "https://github.com/nick-funk",
+    "followers_url": "https://api.github.com/users/nick-funk/followers",
+    "following_url": "https://api.github.com/users/nick-funk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nick-funk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nick-funk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nick-funk/subscriptions",
+    "organizations_url": "https://api.github.com/users/nick-funk/orgs",
+    "repos_url": "https://api.github.com/users/nick-funk/repos",
+    "events_url": "https://api.github.com/users/nick-funk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nick-funk/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ebe77312227a5dc2be478d8b63ddf241a7133d85",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/ebe77312227a5dc2be478d8b63ddf241a7133d85",
+      "html_url": "https://github.com/coralproject/talk/commit/ebe77312227a5dc2be478d8b63ddf241a7133d85"
+    }
+  ],
+  "stats": {
+    "total": 172,
+    "additions": 140,
+    "deletions": 32
+  },
+  "files": [
+    {
+      "sha": "5ae9c96225a481f03ff46931c9df220fad801bef",
+      "filename": "src/core/client/stream/tabs/Comments/Stream/PostCommentForm/PostCommentFormContainer.tsx",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/client/stream/tabs/Comments/Stream/PostCommentForm/PostCommentFormContainer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/client/stream/tabs/Comments/Stream/PostCommentForm/PostCommentFormContainer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/stream/tabs/Comments/Stream/PostCommentForm/PostCommentFormContainer.tsx?ref=feaf4858df407469292fcbe3c82613ad8b7e689b",
+      "patch": "@@ -163,7 +163,14 @@ export class PostCommentFormContainer extends Component<Props, State> {\n     state,\n     form\n   ) => {\n-    if (this.state.submitStatus && state.dirty) {\n+    if (\n+      this.state.submitStatus &&\n+      state.dirty &&\n+      // This is required because the body is somehow being \"dirtied\" once the\n+      // form has been reinitialized.\n+      // FIXME: (wyattjoh) discover why when a comment is submitted, it eventually sets this as the body afterwards\n+      state.values.body !== \"<div><br></div>\"\n+    ) {\n       this.setState({ submitStatus: null });\n     }\n     if (state.values.body) {"
+    },
+    {
+      "sha": "5151c380fff390f27808d4eca273c836591372b0",
+      "filename": "src/core/server/config.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/coralproject/talk/blob/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/config.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/config.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/config.ts?ref=feaf4858df407469292fcbe3c82613ad8b7e689b",
+      "patch": "@@ -259,6 +259,13 @@ const config = convict({\n     default: false,\n     env: \"DISABLE_JOB_PROCESSORS\",\n   },\n+  word_list_timeout: {\n+    doc:\n+      \"The word list timeout (in ms) that should be used to limit the amount of time the process is frozen processing a word list comparison\",\n+    format: \"ms\",\n+    default: \"100\",\n+    env: \"WORD_LIST_TIMEOUT\",\n+  },\n   analytics_frontend_key: {\n     doc: \"Analytics write key from RudderStack for the Javascript client.\",\n     format: String,"
+    },
+    {
+      "sha": "1998050aef246c35fd0595a6744320ac4cbc56b2",
+      "filename": "src/core/server/helpers/createTesterWithTimeout.ts",
+      "status": "added",
+      "additions": 53,
+      "deletions": 0,
+      "changes": 53,
+      "blob_url": "https://github.com/coralproject/talk/blob/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/helpers/createTesterWithTimeout.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/helpers/createTesterWithTimeout.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/helpers/createTesterWithTimeout.ts?ref=feaf4858df407469292fcbe3c82613ad8b7e689b",
+      "patch": "@@ -0,0 +1,53 @@\n+import vm from \"vm\";\n+\n+import logger from \"coral-server/logger\";\n+\n+export type TestWithTimeout = (testString: string) => boolean | null;\n+\n+/**\n+ * createTesterWithTimeout will create a tester that after the timeout, will\n+ * return null instead of a boolean.\n+ *\n+ * @param regexp the regular expression to wrap\n+ * @param timeout the timeout to use\n+ */\n+export default function createTesterWithTimeout(\n+  regexp: RegExp,\n+  timeout: number\n+): TestWithTimeout {\n+  // Create the script we're executing as a part of this regex test operation.\n+  const script = new vm.Script(\"regexp.test(testString)\");\n+\n+  // Create a null context object to isolate it with primitives.\n+  const sandbox = Object.create(null);\n+  sandbox.regexp = regexp;\n+  sandbox.testString = \"\";\n+\n+  // Turn the sandbox into a context.\n+  const ctx = vm.createContext(sandbox);\n+\n+  return (testString: string) => {\n+    let result: boolean;\n+\n+    try {\n+      // Set the testString to the one we're evaluating for this context.\n+      sandbox.testString = testString;\n+\n+      // Run the operation in this context.\n+      result = script.runInContext(ctx, { timeout });\n+    } catch (err) {\n+      if (err.code === \"ERR_SCRIPT_EXECUTION_TIMEOUT\") {\n+        return null;\n+      }\n+\n+      logger.error(\n+        { err },\n+        \"an error occurred evaluating the regular expression\"\n+      );\n+\n+      return null;\n+    }\n+\n+    return result;\n+  };\n+}"
+    },
+    {
+      "sha": "71eab688039b47634015836e31fa41cb47cb7702",
+      "filename": "src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 13,
+      "changes": 43,
+      "blob_url": "https://github.com/coralproject/talk/blob/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/wordList.ts?ref=feaf4858df407469292fcbe3c82613ad8b7e689b",
+      "patch": "@@ -16,6 +16,7 @@ const list = new WordList();\n \n // This phase checks the comment against the wordList.\n export const wordList: IntermediateModerationPhase = ({\n+  config,\n   tenant,\n   comment,\n   bodyText,\n@@ -25,12 +26,12 @@ export const wordList: IntermediateModerationPhase = ({\n     return;\n   }\n \n-  // Decide the status based on whether or not the current story/settings\n-  // has pre-mod enabled or not. If the comment was rejected based on the\n-  // wordList, then reject it, otherwise if the moderation setting is\n-  // premod, set it to `premod`.\n-  if (list.test(tenant, \"banned\", bodyText)) {\n-    // Add the flag related to Trust to the comment.\n+  // Get the timeout to use.\n+  const timeout = (config.get(\"word_list_timeout\") as unknown) as number;\n+\n+  // Test the comment for banned words.\n+  const banned = list.test(tenant, \"banned\", timeout, bodyText);\n+  if (banned) {\n     return {\n       status: GQLCOMMENT_STATUS.REJECTED,\n       actions: [\n@@ -40,16 +41,32 @@ export const wordList: IntermediateModerationPhase = ({\n         },\n       ],\n     };\n+  } else if (banned === null) {\n+    return {\n+      status: GQLCOMMENT_STATUS.SYSTEM_WITHHELD,\n+      actions: [\n+        {\n+          actionType: ACTION_TYPE.FLAG,\n+          reason: GQLCOMMENT_FLAG_REASON.COMMENT_DETECTED_BANNED_WORD,\n+        },\n+      ],\n+    };\n   }\n \n-  // If the comment has a suspect word or a link, we need to add a\n-  // flag to it to indicate that it needs to be looked at.\n-  // Otherwise just return the new comment.\n-\n-  // If the wordList has matched the suspect word filter and we haven't disabled\n-  // auto-flagging suspect words, then we should flag the comment!\n-  if (list.test(tenant, \"suspect\", bodyText)) {\n+  // Test the comment for suspect words.\n+  const suspect = list.test(tenant, \"suspect\", timeout, bodyText);\n+  if (suspect) {\n+    return {\n+      actions: [\n+        {\n+          actionType: ACTION_TYPE.FLAG,\n+          reason: GQLCOMMENT_FLAG_REASON.COMMENT_DETECTED_SUSPECT_WORD,\n+        },\n+      ],\n+    };\n+  } else if (suspect === null) {\n     return {\n+      status: GQLCOMMENT_STATUS.SYSTEM_WITHHELD,\n       actions: [\n         {\n           actionType: ACTION_TYPE.FLAG,"
+    },
+    {
+      "sha": "8a355a16aa687ac9de0a47217905a2cca2131a21",
+      "filename": "src/core/server/services/comments/pipeline/wordList.ts",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 18,
+      "changes": 60,
+      "blob_url": "https://github.com/coralproject/talk/blob/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/services/comments/pipeline/wordList.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/feaf4858df407469292fcbe3c82613ad8b7e689b/src/core/server/services/comments/pipeline/wordList.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/wordList.ts?ref=feaf4858df407469292fcbe3c82613ad8b7e689b",
+      "patch": "@@ -1,37 +1,51 @@\n import { LanguageCode } from \"coral-common/helpers\";\n import createWordListRegExp from \"coral-common/utils/createWordListRegExp\";\n import { createTimer } from \"coral-server/helpers\";\n+import createTesterWithTimeout, {\n+  TestWithTimeout,\n+} from \"coral-server/helpers/createTesterWithTimeout\";\n import logger from \"coral-server/logger\";\n import { Tenant } from \"coral-server/models/tenant\";\n \n interface Lists {\n-  banned: RegExp | false;\n-  suspect: RegExp | false;\n+  banned: TestWithTimeout | false;\n+  suspect: TestWithTimeout | false;\n }\n \n export type Options = Pick<Tenant, \"id\" | \"locale\" | \"wordList\">;\n \n export class WordList {\n+  /**\n+   * cache is a weak map of word list options to word lists. It's a weak map\n+   * so when the tenant document is updated and the old tenant is discarded, the\n+   * list will also be discarded without explicit syncing by the garbage\n+   * collection system.\n+   */\n   private readonly cache = new WeakMap<Options, Lists>();\n \n-  private generate(locale: LanguageCode, list: string[]) {\n+  private generate(locale: LanguageCode, list: string[], timeout: number) {\n     // If a word list has no entries, then we can make a simple tester.\n     if (list.length === 0) {\n       return false;\n     }\n \n-    return createWordListRegExp(locale, list);\n+    // Generate the regular expression for this list.\n+    const regexp = createWordListRegExp(locale, list);\n+\n+    // Create a managed regular expression from the provided regular expression\n+    // so we can time it out if it takes too long!\n+    return createTesterWithTimeout(regexp, timeout);\n   }\n \n   /**\n    * create will create the List's.\n    *\n    * @param options options used to generate Lists\n    */\n-  private create(options: Options): Lists {\n+  private create(options: Options, timeout: number): Lists {\n     return {\n-      banned: this.generate(options.locale, options.wordList.banned),\n-      suspect: this.generate(options.locale, options.wordList.suspect),\n+      banned: this.generate(options.locale, options.wordList.banned, timeout),\n+      suspect: this.generate(options.locale, options.wordList.suspect, timeout),\n     };\n   }\n \n@@ -41,19 +55,19 @@ export class WordList {\n    *\n    * @param options the options object that is also used as the cache key\n    */\n-  private lists(options: Options, cache: boolean): Lists {\n+  private lists(options: Options, cache: boolean, timeout: number): Lists {\n     // If the request isn't supposed to use the cache, then just return a new\n     // one.\n     if (!cache) {\n-      return this.create(options);\n+      return this.create(options, timeout);\n     }\n \n     // As this is supposed to be cached, try to get it from the cache, or create\n     // it.\n     let lists = this.cache.get(options);\n     if (!lists) {\n       const timer = createTimer();\n-      lists = this.create(options);\n+      lists = this.create(options, timeout);\n       logger.info(\n         { tenantID: options.id, took: timer() },\n         \"regenerated word list cache\"\n@@ -78,20 +92,30 @@ export class WordList {\n   public test(\n     options: Options,\n     listName: keyof Lists,\n+    timeout: number,\n     testString: string,\n     cache = true\n-  ): boolean {\n-    const list = this.lists(options, cache)[listName];\n-    if (!list) {\n+  ): boolean | null {\n+    const test = this.lists(options, cache, timeout)[listName];\n+    if (!test) {\n       return false;\n     }\n \n     const timer = createTimer();\n-    const result = list.test(testString);\n-    logger.info(\n-      { tenantID: options.id, listName, took: timer() },\n-      \"word list phrase test complete\"\n-    );\n+\n+    // Test the string against the list and timeout if it takes too long.\n+    const result = test(testString);\n+    if (result === null) {\n+      logger.info(\n+        { tenantID: options.id, listName, took: timer(), testString },\n+        \"word list phrase test timed out\"\n+      );\n+    } else {\n+      logger.info(\n+        { tenantID: options.id, listName, took: timer() },\n+        \"word list phrase test complete\"\n+      );\n+    }\n \n     return result;\n   }"
+    }
+  ]
+}
