@@ -1,0 +1,170 @@
+{
+  "sha": "f5313d24a50866590dbc19ae6ad752a0b8740700",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZjUzMTNkMjRhNTA4NjY1OTBkYmMxOWFlNmFkNzUyYTBiODc0MDcwMA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-06-06T10:56:00Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-06-06T17:31:03Z"
+    },
+    "message": "Fix tests\n\nDon't search for 'can', hits wrong page.",
+    "tree": {
+      "sha": "70e494fd896a7e4f11f8f85c25f3cf524ed79b20",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/70e494fd896a7e4f11f8f85c25f3cf524ed79b20"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/f5313d24a50866590dbc19ae6ad752a0b8740700",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/f5313d24a50866590dbc19ae6ad752a0b8740700",
+  "html_url": "https://github.com/debiki/talkyard/commit/f5313d24a50866590dbc19ae6ad752a0b8740700",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/f5313d24a50866590dbc19ae6ad752a0b8740700/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "25bf634e27f40ccb5959a84f2dfee4d4befffe5d",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/25bf634e27f40ccb5959a84f2dfee4d4befffe5d",
+      "html_url": "https://github.com/debiki/talkyard/commit/25bf634e27f40ccb5959a84f2dfee4d4befffe5d"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 28,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "8ac48764a523b9b36fe64eea60f63d6c30707067",
+      "filename": "tests/app/talkyard/server/sitepatch/TwoPeopleChatSpecTrait.scala",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/app/talkyard/server/sitepatch/TwoPeopleChatSpecTrait.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/app/talkyard/server/sitepatch/TwoPeopleChatSpecTrait.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/talkyard/server/sitepatch/TwoPeopleChatSpecTrait.scala?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -50,7 +50,8 @@ trait TwoPeopleChatSpecTrait {\n       authorRef = alice.extId.map(\"extid:\" + _),\n       pageMemberRefs = Vector(alice.extIdAsRef.get, bob.extIdAsRef.get),\n       title = \"Chat Page Title\",\n-      bodySource = \"Chat between Alice and Bob\")\n+      bodySource = \"Chat between Alice and Bob\",\n+      bodyMarkupLang = Some(MarkupLang.Html))\n \n     lazy val chatPagePatch2 = chatPagePatch.copy(\n       extId = \"chatPage2ExtId\",\n@@ -68,7 +69,8 @@ trait TwoPeopleChatSpecTrait {\n         pageRef = ParsedRef.ExternalId(pagePatch.extId),\n         parentNr = None,\n         authorRef = author.extIdAsRef.get,\n-        bodySource = text)\n+        bodySource = text,\n+        bodyMarkupLang = Some(MarkupLang.Html))\n \n \n     \"Create anew site with a chat topic\" in {"
+    },
+    {
+      "sha": "20d703860c0c91713f0210201bfc5c2a913dc8c4",
+      "filename": "tests/e2e/specs/api-upsert-posts.2browsers.test.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/api-upsert-posts.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/api-upsert-posts.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/api-upsert-posts.2browsers.test.ts?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -349,10 +349,11 @@ describe(\"api-upsert-posts   TyT60RKNJF24C\", () => {\n   let replyNotfLink: string;\n \n   it(\"Maja finds a page link in the notf email about Michael's reply\", () => {\n+    assert.eq(majasUiTopicId, c.SecondPageId);\n     replyNotfLink = utils.findFirstLinkToUrlIn(\n         // Currently the link uses the page id, not url slug.\n         // So, not:  + firstUpsertedPage.urlPaths.canonical\n-        // Instead,  /-1:\n+        // Instead,  /-N:\n         'https?://.*/-' + majasUiTopicId, majasUiTopicNotfEmail.bodyHtmlText);\n   });\n \n@@ -393,7 +394,7 @@ describe(\"api-upsert-posts   TyT60RKNJF24C\", () => {\n     replyNotfLink = utils.findFirstLinkToUrlIn(\n         // Currently the link uses the page id, not url slug.\n         // So, not:  + firstUpsertedPage.urlPaths.canonical\n-        // Instead,  /-1:\n+        // Instead,  /-N:\n         'https?://.*/-' + majasApiTopic.id, michaelsReplyNotfEmail.bodyHtmlText);\n   });\n "
+    },
+    {
+      "sha": "f9cc18c97e5f48715e2dca5eebc4e3dabce7cd70",
+      "filename": "tests/e2e/specs/chat-create-from-profile-pages.2browsers.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/chat-create-from-profile-pages.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/chat-create-from-profile-pages.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/chat-create-from-profile-pages.2browsers.test.ts?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -76,7 +76,7 @@ describe(\"chat-create-from-profile-pages.2browsers.test.ts  TyT306RAKN2\", () =>\n     const replyNotfLink = utils.findFirstLinkToUrlIn(\n         // Currently the link uses the page id, not url slug.\n         // So, not:  + firstUpsertedPage.urlPaths.canonical\n-        // Instead,  /-1:\n+        // Instead,  /-N:\n         `https?://.*/-[0-9]+`, email.bodyHtmlText);\n     mariasBrowser.go2(replyNotfLink);\n   });"
+    },
+    {
+      "sha": "1edb266f5d9d1716dcc8d5721fa905d20f3a4047",
+      "filename": "tests/e2e/specs/direct-messages-delete.2browsers.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/direct-messages-delete.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/direct-messages-delete.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/direct-messages-delete.2browsers.test.ts?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -95,7 +95,7 @@ describe(\"direct-messages-delete.2browsers.test.ts  TyT5033FKSNS57\", () => {\n     const replyNotfLink = utils.findFirstLinkToUrlIn(\n         // Currently the link uses the page id, not url slug.\n         // So, not:  + firstUpsertedPage.urlPaths.canonical\n-        // Instead,  /-1:\n+        // Instead,  /-N:\n         `https?://.*/-${mariasMessagePageId}`, emailToMichael.bodyHtmlText);\n     michaelsBrowser.go2(replyNotfLink);\n   });"
+    },
+    {
+      "sha": "3bae8c33c78ce09f917437243ff0a4993f4941eb",
+      "filename": "tests/e2e/specs/direct-messages-notfs.3browsers.test.ts",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 10,
+      "changes": 22,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/direct-messages-notfs.3browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/direct-messages-notfs.3browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/direct-messages-notfs.3browsers.test.ts?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -33,6 +33,8 @@ let mariasQuestion = \"Can I ask questions?\";\n let owensQuestionAnswer = \"Yes if the number of questions is a prime number. 2, 3, 5, 7, 11 you know.\";\n let mariasOwnOpReply = \"Hmm, myself, let me think\";\n \n+const mariasQuestionSearchQuery = \"ask questions\";\n+\n let siteId;\n \n \n@@ -205,8 +207,8 @@ describe(\"private chat direct message notfs  TyT602RKDL42\", () => {\n   });\n \n   it(\"... and the stranger won't find it when searching\", () => {\n-    stranger.topbar.searchFor(mariasQuestion);\n-    stranger.searchResultsPage.assertPhraseNotFound(mariasQuestion);\n+    stranger.topbar.searchFor(mariasQuestionSearchQuery);\n+    stranger.searchResultsPage.assertPhraseNotFound(mariasQuestionSearchQuery);\n   });\n \n   it(\"... and cannot accesss it via a direct link\", () => {\n@@ -250,8 +252,8 @@ describe(\"private chat direct message notfs  TyT602RKDL42\", () => {\n   });\n \n   it(\"... and won't find it when searching\", () => {\n-    michael.topbar.searchFor(mariasQuestion);\n-    michael.searchResultsPage.assertPhraseNotFound(mariasQuestion);\n+    michael.topbar.searchFor(mariasQuestionSearchQuery);\n+    michael.searchResultsPage.assertPhraseNotFound(mariasQuestionSearchQuery);\n   });\n \n \n@@ -290,8 +292,8 @@ describe(\"private chat direct message notfs  TyT602RKDL42\", () => {\n   });\n \n   it(\"... and search for it and find it\", () => {\n-    maria.topbar.searchFor(mariasQuestion);\n-    maria.searchResultsPage.waitForAssertNumPagesFound(mariasQuestion, 1);\n+    maria.topbar.searchFor(mariasQuestionSearchQuery);\n+    maria.searchResultsPage.waitForAssertNumPagesFound(mariasQuestionSearchQuery, 1);\n   });\n \n \n@@ -329,8 +331,8 @@ describe(\"private chat direct message notfs  TyT602RKDL42\", () => {\n   });\n \n   it(\"not when searching\", () => {\n-    maria.topbar.searchFor(mariasQuestion);\n-    maria.searchResultsPage.assertPhraseNotFound(mariasQuestion);\n+    maria.topbar.searchFor(mariasQuestionSearchQuery);\n+    maria.searchResultsPage.assertPhraseNotFound(mariasQuestionSearchQuery);\n   });\n \n \n@@ -343,8 +345,8 @@ describe(\"private chat direct message notfs  TyT602RKDL42\", () => {\n   });\n \n   it(\"... finds the topic when searching\", () => {\n-    alicesBrowser.topbar.searchFor(mariasQuestion);\n-    alicesBrowser.searchResultsPage.waitForAssertNumPagesFound(mariasQuestion, 1);\n+    alicesBrowser.topbar.searchFor(mariasQuestionSearchQuery);\n+    alicesBrowser.searchResultsPage.waitForAssertNumPagesFound(mariasQuestionSearchQuery, 1);\n   });\n \n   it(\"... can click link and see it\", () => {"
+    },
+    {
+      "sha": "987cff3384707eb9ba17787d50d3b7e255b992d0",
+      "filename": "tests/e2e/specs/login-required-oauth-signup-login.test.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/login-required-oauth-signup-login.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/specs/login-required-oauth-signup-login.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/login-required-oauth-signup-login.test.ts?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -13,7 +13,7 @@ import c = require('../test-constants');\n let idAddress: IdAddress;\n let browser: TyE2eTestBrowser;\n \n-const googleUSersTopic =\n+const googleUsersTopic =\n     { title: \"I am the Goog of Email\", body: \"Faster than snails I send mails\" };\n \n const testName = 'login-required-oauth-signup-login.test.ts';\n@@ -58,12 +58,12 @@ describe(`${testName}  TyT406MRTJW2`, () => {\n   });\n \n   it(\"The Gmail user can create a topic  @gmail @google\", () => {\n-    browser.complex.createAndSaveTopic(googleUSersTopic);\n+    browser.complex.createAndSaveTopic(googleUsersTopic);\n   });\n \n   it(\"Logs out\", () => {\n     browser.rememberCurrentUrl();\n-    assert.equal(browser.urlPath(), '/-1/i-am-the-goog-of-email');\n+    assert.equal(browser.urlPath(), `/-${c.SecondPageId}/i-am-the-goog-of-email`);\n     browser.topbar.clickLogout({ waitForLoginButton: false });\n   });\n \n@@ -97,18 +97,18 @@ describe(`${testName}  TyT406MRTJW2`, () => {\n \n \n   it(\"Sees the topic in the topic list\", () => {\n-    browser.forumTopicList.waitForTopicVisible(googleUSersTopic.title);\n+    browser.forumTopicList.waitForTopicVisible(googleUsersTopic.title);\n     browser.forumTopicList.assertNumVisible(1);\n   });\n \n \n   it(\"... opens it\", () => {\n-    browser.forumTopicList.goToTopic(googleUSersTopic.title);\n+    browser.forumTopicList.goToTopic(googleUsersTopic.title);\n   });\n \n \n   it(\"The topic is visible @gmail @google\", () => {\n-    browser.topic.waitForPostAssertTextMatches(c.BodyNr, googleUSersTopic.body);\n+    browser.topic.waitForPostAssertTextMatches(c.BodyNr, googleUsersTopic.body);\n   });\n \n });"
+    },
+    {
+      "sha": "b533a159971d057209d2f399543b7e97b16cf54f",
+      "filename": "tests/e2e/test-constants.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/test-constants.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/f5313d24a50866590dbc19ae6ad752a0b8740700/tests/e2e/test-constants.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/test-constants.ts?ref=f5313d24a50866590dbc19ae6ad752a0b8740700",
+      "patch": "@@ -129,6 +129,7 @@ export = {\n   javascript: 'javascript',\n \n   FirstPageId: '1',\n+  SecondPageId: '2',\n \n   FiftyPrimes: [\n     2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,"
+    }
+  ]
+}
