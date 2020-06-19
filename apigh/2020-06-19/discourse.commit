@@ -1,0 +1,110 @@
+{
+  "sha": "9cf77372a2ebe830f91f143e0858f0a82e3aef37",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5Y2Y3NzM3MmEyZWJlODMwZjkxZjE0M2UwODU4ZjBhODJlM2FlZjM3",
+  "commit": {
+    "author": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2020-06-19T09:04:05Z"
+    },
+    "committer": {
+      "name": "Daniel Waterworth",
+      "email": "me@danielwaterworth.com",
+      "date": "2020-06-19T09:35:52Z"
+    },
+    "message": "FIX: Guardian#can_remove_allowed_users? shouldn't break for ownerless topics\n\nA topic can outlive its original author. TopicGuardian should still work\nin this situation.",
+    "tree": {
+      "sha": "489d3a4340ef03284ff1038978cff8d6fb9bbe84",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/489d3a4340ef03284ff1038978cff8d6fb9bbe84"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/9cf77372a2ebe830f91f143e0858f0a82e3aef37",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/9cf77372a2ebe830f91f143e0858f0a82e3aef37",
+  "html_url": "https://github.com/discourse/discourse/commit/9cf77372a2ebe830f91f143e0858f0a82e3aef37",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/9cf77372a2ebe830f91f143e0858f0a82e3aef37/comments",
+  "author": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "danielwaterworth",
+    "id": 663767,
+    "node_id": "MDQ6VXNlcjY2Mzc2Nw==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/663767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielwaterworth",
+    "html_url": "https://github.com/danielwaterworth",
+    "followers_url": "https://api.github.com/users/danielwaterworth/followers",
+    "following_url": "https://api.github.com/users/danielwaterworth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielwaterworth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielwaterworth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielwaterworth/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielwaterworth/orgs",
+    "repos_url": "https://api.github.com/users/danielwaterworth/repos",
+    "events_url": "https://api.github.com/users/danielwaterworth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielwaterworth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3e161e372a82e5b8557f919c681170d4e1c81896",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3e161e372a82e5b8557f919c681170d4e1c81896",
+      "html_url": "https://github.com/discourse/discourse/commit/3e161e372a82e5b8557f919c681170d4e1c81896"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 16,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "842f44c0cf09fa54b9690f8ecb81040a1d699ee7",
+      "filename": "lib/guardian/topic_guardian.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/9cf77372a2ebe830f91f143e0858f0a82e3aef37/lib/guardian/topic_guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/9cf77372a2ebe830f91f143e0858f0a82e3aef37/lib/guardian/topic_guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian/topic_guardian.rb?ref=9cf77372a2ebe830f91f143e0858f0a82e3aef37",
+      "patch": "@@ -5,7 +5,7 @@ module TopicGuardian\n \n   def can_remove_allowed_users?(topic, target_user = nil)\n     is_staff? ||\n-    (topic.user == user && user.has_trust_level?(TrustLevel[2])) ||\n+    (topic.user == @user && @user.has_trust_level?(TrustLevel[2])) ||\n     (\n       topic.allowed_users.count > 1 &&\n       topic.user != target_user &&"
+    },
+    {
+      "sha": "6c4ddd161f922d62f309b07fb96221ed2d10d685",
+      "filename": "spec/components/guardian_spec.rb",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/9cf77372a2ebe830f91f143e0858f0a82e3aef37/spec/components/guardian_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/9cf77372a2ebe830f91f143e0858f0a82e3aef37/spec/components/guardian_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/guardian_spec.rb?ref=9cf77372a2ebe830f91f143e0858f0a82e3aef37",
+      "patch": "@@ -3503,6 +3503,21 @@\n         end\n       end\n     end\n+\n+    context \"anonymous users\" do\n+      fab!(:topic) { Fabricate(:topic) }\n+\n+      it 'should be false' do\n+        expect(Guardian.new.can_remove_allowed_users?(topic)).to eq(false)\n+      end\n+\n+      it 'should be false when the topic does not have a user (for example because the user was removed)' do\n+        DB.exec(\"UPDATE topics SET user_id=NULL WHERE id=#{topic.id}\")\n+        topic.reload\n+\n+        expect(Guardian.new.can_remove_allowed_users?(topic)).to eq(false)\n+      end\n+    end\n   end\n \n   describe '#auth_token' do"
+    }
+  ]
+}
