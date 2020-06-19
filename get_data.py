@@ -191,7 +191,7 @@ for filename in os.listdir(p):
                 #if api_commit_data.get('commit') and data.get(cs):
                 if api_commit_data.get('commit') and dtr.get(cs):
                     last_commit = dateutil.parser.parse(api_commit_data['commit']['committer']['date']).strftime('%Y‑%m‑%d')
-                    #data[cs]['last_commit'] = last_commit
+                    data[cs]['last_committed'] = last_commit
                     dtr [cs]['last_commit'] = last_commit
 
 with open(fdate, 'a', encoding='utf-8') as f:
