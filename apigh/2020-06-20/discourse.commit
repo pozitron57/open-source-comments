@@ -1,0 +1,98 @@
+{
+  "sha": "02d3bf304abe55b2e0465d61ef0e735417ba242f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowMmQzYmYzMDRhYmU1NWIyZTA0NjVkNjFlZjBlNzM1NDE3YmEyNDJm",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-06-19T20:49:56Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-06-19T20:49:56Z"
+    },
+    "message": "remove inaccurate comment, follow up to c028936",
+    "tree": {
+      "sha": "4a98e620075089c308718d34813bd15ececbfc6a",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4a98e620075089c308718d34813bd15ececbfc6a"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/02d3bf304abe55b2e0465d61ef0e735417ba242f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/02d3bf304abe55b2e0465d61ef0e735417ba242f",
+  "html_url": "https://github.com/discourse/discourse/commit/02d3bf304abe55b2e0465d61ef0e735417ba242f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/02d3bf304abe55b2e0465d61ef0e735417ba242f/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c0289362f76c99455c5adf76048263ce58d26c12",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/c0289362f76c99455c5adf76048263ce58d26c12",
+      "html_url": "https://github.com/discourse/discourse/commit/c0289362f76c99455c5adf76048263ce58d26c12"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "30e978ae642acc8c4f85ad199ae2207fcaac2a47",
+      "filename": "app/assets/stylesheets/common/select-kit/dropdown-select-box.scss",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/02d3bf304abe55b2e0465d61ef0e735417ba242f/app/assets/stylesheets/common/select-kit/dropdown-select-box.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/02d3bf304abe55b2e0465d61ef0e735417ba242f/app/assets/stylesheets/common/select-kit/dropdown-select-box.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/select-kit/dropdown-select-box.scss?ref=02d3bf304abe55b2e0465d61ef0e735417ba242f",
+      "patch": "@@ -27,7 +27,7 @@\n \n         .d-icon {\n           flex: 0 0 100%;\n-          overflow: hidden; // Safari\n+          overflow: hidden;\n           font-size: $font-up-2;\n           align-self: center;\n           margin-right: 0;"
+    }
+  ]
+}
