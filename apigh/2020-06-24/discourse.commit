@@ -1,0 +1,158 @@
+{
+  "sha": "7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3MTA5ZDk0ZWU3N2E5YTFiYTkwOGZhODExNWIxYmQ5YWNmMjYzMWNh",
+  "commit": {
+    "author": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2020-06-24T09:54:54Z"
+    },
+    "committer": {
+      "name": "Régis Hanol",
+      "email": "regis@hanol.fr",
+      "date": "2020-06-24T09:54:54Z"
+    },
+    "message": "FIX: properly invalidate inline oneboxes when rebaking\n\nWhen rebaking a post we were invalidating _regular_ oneboxes but not inline oneboxes.\n\nDEV: also renamed 'InlineOneboxer.purge' to 'InlineOneboxer.invalidate' to keep\nthe API consistent with 'Oneboxer.invalidate'",
+    "tree": {
+      "sha": "a5739c064e834d85ce09b5f6e9839cfb9a542ed9",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a5739c064e834d85ce09b5f6e9839cfb9a542ed9"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+  "html_url": "https://github.com/discourse/discourse/commit/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/comments",
+  "author": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ZogStriP",
+    "id": 362783,
+    "node_id": "MDQ6VXNlcjM2Mjc4Mw==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/362783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZogStriP",
+    "html_url": "https://github.com/ZogStriP",
+    "followers_url": "https://api.github.com/users/ZogStriP/followers",
+    "following_url": "https://api.github.com/users/ZogStriP/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZogStriP/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZogStriP/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZogStriP/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZogStriP/orgs",
+    "repos_url": "https://api.github.com/users/ZogStriP/repos",
+    "events_url": "https://api.github.com/users/ZogStriP/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZogStriP/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "df1f8044007b9a4e6c06ac85761bd01f0955da94",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/df1f8044007b9a4e6c06ac85761bd01f0955da94",
+      "html_url": "https://github.com/discourse/discourse/commit/df1f8044007b9a4e6c06ac85761bd01f0955da94"
+    }
+  ],
+  "stats": {
+    "total": 40,
+    "additions": 18,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "a9880a8d26df0db0864b4efe2870fe78397fee6f",
+      "filename": "app/models/post.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 7,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/app/models/post.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/app/models/post.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post.rb?ref=7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+      "patch": "@@ -752,18 +752,16 @@ def save_reply_relationships\n   # Enqueue post processing for this post\n   def trigger_post_process(bypass_bump: false, priority: :normal, new_post: false, skip_pull_hotlinked_images: false)\n     args = {\n-      post_id: id,\n       bypass_bump: bypass_bump,\n+      cooking_options: self.cooking_options,\n       new_post: new_post,\n+      post_id: id,\n       skip_pull_hotlinked_images: skip_pull_hotlinked_images,\n     }\n-    args[:image_sizes] = image_sizes if image_sizes.present?\n-    args[:invalidate_oneboxes] = true if invalidate_oneboxes.present?\n-    args[:cooking_options] = self.cooking_options\n \n-    if priority && priority != :normal\n-      args[:queue] = priority.to_s\n-    end\n+    args[:image_sizes] = image_sizes if self.image_sizes.present?\n+    args[:invalidate_oneboxes] = true if self.invalidate_oneboxes.present?\n+    args[:queue] = priority.to_s if priority && priority != :normal\n \n     Jobs.enqueue(:process_post, args)\n     DiscourseEvent.trigger(:after_trigger_post_process, self)"
+    },
+    {
+      "sha": "c06d9d5f532155e3f46c91f7076602b161a87651",
+      "filename": "app/models/post_analyzer.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/app/models/post_analyzer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/app/models/post_analyzer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post_analyzer.rb?ref=7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+      "patch": "@@ -33,7 +33,10 @@ def cook(raw, opts = {})\n \n     result = Oneboxer.apply(cooked) do |url|\n       @onebox_urls << url\n-      Oneboxer.invalidate(url) if opts[:invalidate_oneboxes]\n+      if opts[:invalidate_oneboxes]\n+        Oneboxer.invalidate(url)\n+        InlineOneboxer.invalidate(url)\n+      end\n       onebox = Oneboxer.cached_onebox(url)\n       @found_oneboxes = true if onebox.present?\n       onebox"
+    },
+    {
+      "sha": "26f3ecc9ba67c8f79165e8f0842ec4cc6cbe53fa",
+      "filename": "lib/inline_oneboxer.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 9,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/lib/inline_oneboxer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/lib/inline_oneboxer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/inline_oneboxer.rb?ref=7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+      "patch": "@@ -13,7 +13,7 @@ def process\n     @urls.map { |url| InlineOneboxer.lookup(url, @opts) }.compact\n   end\n \n-  def self.purge(url)\n+  def self.invalidate(url)\n     Discourse.cache.delete(cache_key(url))\n   end\n \n@@ -65,14 +65,8 @@ def self.lookup(url, opts = nil)\n   private\n \n   def self.onebox_for(url, title, opts)\n-    onebox = {\n-      url: url,\n-      title: title && Emoji.gsub_emoji_to_unicode(title)\n-    }\n-    unless opts[:skip_cache]\n-      Discourse.cache.write(cache_key(url), onebox, expires_in: 1.day)\n-    end\n-\n+    onebox = { url: url, title: title && Emoji.gsub_emoji_to_unicode(title) }\n+    Discourse.cache.write(cache_key(url), onebox, expires_in: 1.day) if !opts[:skip_cache]\n     onebox\n   end\n "
+    },
+    {
+      "sha": "fef1e06aa3cfde8cda1909cf58f8aaba0d3763aa",
+      "filename": "spec/components/cooked_post_processor_spec.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/spec/components/cooked_post_processor_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/spec/components/cooked_post_processor_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/cooked_post_processor_spec.rb?ref=7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+      "patch": "@@ -86,7 +86,7 @@ def s3_setup\n       end\n \n       after do\n-        InlineOneboxer.purge(url)\n+        InlineOneboxer.invalidate(url)\n         Oneboxer.invalidate(url)\n       end\n \n@@ -210,7 +210,7 @@ def s3_setup\n         end\n \n         after do\n-          urls.each { |url| InlineOneboxer.purge(url) }\n+          urls.each { |url| InlineOneboxer.invalidate(url) }\n         end\n \n         it 'should convert the right links to inline oneboxes' do"
+    },
+    {
+      "sha": "47c5abd6bb5e21d5a38a10c5fa242b533bd8fffd",
+      "filename": "spec/components/inline_oneboxer_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/spec/components/inline_oneboxer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/spec/components/inline_oneboxer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/inline_oneboxer_spec.rb?ref=7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+      "patch": "@@ -26,15 +26,15 @@\n     fab!(:topic) { Fabricate(:topic) }\n \n     before do\n-      InlineOneboxer.purge(topic.url)\n+      InlineOneboxer.invalidate(topic.url)\n     end\n \n     it \"puts an entry in the cache\" do\n       SiteSetting.enable_inline_onebox_on_all_domains = true\n       url = \"https://example.com/random-url\"\n       stub_request(:get, url).to_return(status: 200, body: \"<html><head><title>a blog</title></head></html>\")\n \n-      InlineOneboxer.purge(url)\n+      InlineOneboxer.invalidate(url)\n       expect(InlineOneboxer.cache_lookup(url)).to be_blank\n \n       result = InlineOneboxer.lookup(url)\n@@ -49,7 +49,7 @@\n       SiteSetting.enable_inline_onebox_on_all_domains = true\n       url = \"https://example.com/random-url\"\n \n-      InlineOneboxer.purge(url)\n+      InlineOneboxer.invalidate(url)\n       expect(InlineOneboxer.cache_lookup(url)).to be_blank\n \n       result = InlineOneboxer.lookup(url)"
+    },
+    {
+      "sha": "70addd30cd27e3d09a216ce8f1d469ed679fa246",
+      "filename": "spec/models/post_analyzer_spec.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/spec/models/post_analyzer_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7109d94ee77a9a1ba908fa8115b1bd9acf2631ca/spec/models/post_analyzer_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/post_analyzer_spec.rb?ref=7109d94ee77a9a1ba908fa8115b1bd9acf2631ca",
+      "patch": "@@ -31,6 +31,7 @@\n \n       it 'invalidates the oneboxes for urls in the post' do\n         Oneboxer.expects(:invalidate).with url\n+        InlineOneboxer.expects(:invalidate).with url\n         post_analyzer.cook(raw, options)\n       end\n     end"
+    }
+  ]
+}
