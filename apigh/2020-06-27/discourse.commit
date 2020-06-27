@@ -1,0 +1,98 @@
+{
+  "sha": "69803599a96887c278522f5c98f69aea9520bc9f",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2OTgwMzU5OWE5Njg4N2MyNzg1MjJmNWM5OGY2OWFlYTk1MjBiYzlm",
+  "commit": {
+    "author": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-06-26T20:35:21Z"
+    },
+    "committer": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-06-26T20:36:50Z"
+    },
+    "message": "DEV: Refactor seed data filter\n\nAdded a small helper class to for seed data because we need to add the\nsame filter to multisite:migrate as we have in db:migrate. Having this\nfilter in both places means we can get rid of the SKIP_SEED flag.",
+    "tree": {
+      "sha": "5a28a5642cb1a3c05e206bb0651c570c724194b5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5a28a5642cb1a3c05e206bb0651c570c724194b5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/69803599a96887c278522f5c98f69aea9520bc9f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/69803599a96887c278522f5c98f69aea9520bc9f",
+  "html_url": "https://github.com/discourse/discourse/commit/69803599a96887c278522f5c98f69aea9520bc9f",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/69803599a96887c278522f5c98f69aea9520bc9f/comments",
+  "author": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4efc126635ecca3f29b3d06983118af0ea0ad0d0",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/4efc126635ecca3f29b3d06983118af0ea0ad0d0",
+      "html_url": "https://github.com/discourse/discourse/commit/4efc126635ecca3f29b3d06983118af0ea0ad0d0"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 17,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "df929b1221f6331be11c1dd301fcc865e5bd8221",
+      "filename": "lib/tasks/db.rake",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 12,
+      "changes": 29,
+      "blob_url": "https://github.com/discourse/discourse/blob/69803599a96887c278522f5c98f69aea9520bc9f/lib/tasks/db.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/69803599a96887c278522f5c98f69aea9520bc9f/lib/tasks/db.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/db.rake?ref=69803599a96887c278522f5c98f69aea9520bc9f",
+      "patch": "@@ -97,6 +97,18 @@ class StdOutDemux\n   end\n end\n \n+class SeedHelper\n+  def self.paths\n+    DiscoursePluginRegistry.seed_paths\n+  end\n+\n+  def self.filter\n+    # Allows a plugin to exclude any specified seed data files from running\n+    DiscoursePluginRegistry.seedfu_filter.any? ?\n+      /^(?!.*(#{DiscoursePluginRegistry.seedfu_filter.to_a.join(\"|\")})).*$/ : nil\n+  end\n+end\n+\n task 'multisite:migrate' => ['db:load_config', 'environment', 'set_locale'] do |_, args|\n   if ENV[\"RAILS_ENV\"] != \"production\"\n     raise \"Multisite migrate is only supported in production\"\n@@ -153,14 +165,12 @@ task 'multisite:migrate' => ['db:load_config', 'environment', 'set_locale'] do |\n     ActiveRecord::Tasks::DatabaseTasks.migrate\n   end\n \n-  seed_paths = DiscoursePluginRegistry.seed_paths\n-  SeedFu.seed(seed_paths, /001_refresh/)\n+  SeedFu.seed(SeedHelper.paths, /001_refresh/)\n \n   execute_concurently(concurrency, exceptions) do |db|\n-    if ENV['SKIP_SEED'] != '1'\n-      puts \"Seeding #{db}\"\n-      SeedFu.seed(seed_paths)\n-    end\n+\n+    puts \"Seeding #{db}\"\n+    SeedFu.seed(SeedHelper.paths, SeedHelper.filter)\n \n     if !Discourse.skip_post_deployment_migrations? && ENV['SKIP_OPTIMIZE_ICONS'] != '1'\n       SiteIconManager.ensure_optimized!\n@@ -203,12 +213,7 @@ task 'db:migrate' => ['load_config', 'environment', 'set_locale'] do |_, args|\n   end\n \n   SeedFu.quiet = true\n-\n-  # Allows a plugin to exclude any specified seed data files from running\n-  filter = DiscoursePluginRegistry.seedfu_filter.any? ?\n-    /^(?!.*(#{DiscoursePluginRegistry.seedfu_filter.to_a.join(\"|\")})).*$/ : nil\n-\n-  SeedFu.seed(DiscoursePluginRegistry.seed_paths, filter)\n+  SeedFu.seed(SeedHelper.paths, SeedHelper.filter)\n \n   if !Discourse.skip_post_deployment_migrations? && ENV['SKIP_OPTIMIZE_ICONS'] != '1'\n     SiteIconManager.ensure_optimized!"
+    }
+  ]
+}
