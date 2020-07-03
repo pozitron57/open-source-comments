@@ -1,0 +1,122 @@
+{
+  "sha": "9510962e2521ba77d4391190116c546c83f08db3",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjk1MTA5NjJlMjUyMWJhNzdkNDM5MTE5MDExNmM1NDZjODNmMDhkYjM=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2020-06-25T22:58:38Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-06-26T04:14:50Z"
+    },
+    "message": "add redis PubSub web cache as an option",
+    "tree": {
+      "sha": "904f14f3e7a86538369d1bb04717b0147b543200",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/904f14f3e7a86538369d1bb04717b0147b543200"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/9510962e2521ba77d4391190116c546c83f08db3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/9510962e2521ba77d4391190116c546c83f08db3",
+  "html_url": "https://github.com/umputun/remark42/commit/9510962e2521ba77d4391190116c546c83f08db3",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/9510962e2521ba77d4391190116c546c83f08db3/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ebf379f4d679f4975819b55437d79320ff7316e9",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/ebf379f4d679f4975819b55437d79320ff7316e9",
+      "html_url": "https://github.com/umputun/remark42/commit/ebf379f4d679f4975819b55437d79320ff7316e9"
+    }
+  ],
+  "stats": {
+    "total": 32,
+    "additions": 30,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "514d7775b68f3bf4ca800de0013ffa3498fae1bb",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/9510962e2521ba77d4391190116c546c83f08db3/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/9510962e2521ba77d4391190116c546c83f08db3/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=9510962e2521ba77d4391190116c546c83f08db3",
+      "patch": "@@ -113,6 +113,8 @@ _this is the recommended way to run remark42_\n | admin.shared.email      | ADMIN_SHARED_EMAIL      | `admin@${REMARK_URL}`    | admin email                                     |\n | backup                  | BACKUP_PATH             | `./var/backup`           | backups location                                |\n | max-back                | MAX_BACKUP_FILES        | `10`                     | max backup files to keep                        |\n+| cache.type              | CACHE_TYPE              | `mem`                    | type of cache, `redis_pub_sub` or `mem` or `none`       |\n+| cache.redis_addr        | CACHE_REDIS_ADDR        | `127.0.0.1:6379`         | address of redis PubSub instance, turn `redis_pub_sub` cache on for distributed cache |\n | cache.max.items         | CACHE_MAX_ITEMS         | `1000`                   | max number of cached items, `0` - unlimited     |\n | cache.max.value         | CACHE_MAX_VALUE         | `65536`                  | max size of cached value, `0` - unlimited       |\n | cache.max.size          | CACHE_MAX_SIZE          | `50000000`               | max size of all cached values, `0` - unlimited  |"
+    },
+    {
+      "sha": "be1090427b9a54e166d0cc5f938ac66b2a4b31c2",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 2,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/9510962e2521ba77d4391190116c546c83f08db3/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/9510962e2521ba77d4391190116c546c83f08db3/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=9510962e2521ba77d4391190116c546c83f08db3",
+      "patch": "@@ -16,6 +16,7 @@ import (\n \n \t\"github.com/dgrijalva/jwt-go\"\n \t\"github.com/go-pkgz/jrpc\"\n+\t\"github.com/go-pkgz/lcw/eventbus\"\n \tlog \"github.com/go-pkgz/lgr\"\n \t\"github.com/kyokomi/emoji\"\n \t\"github.com/pkg/errors\"\n@@ -160,8 +161,9 @@ type AvatarGroup struct {\n \n // CacheGroup defines options group for cache params\n type CacheGroup struct {\n-\tType string `long:\"type\" env:\"TYPE\" description:\"type of cache\" choice:\"mem\" choice:\"none\" default:\"mem\"` // nolint\n-\tMax  struct {\n+\tType      string `long:\"type\" env:\"TYPE\" description:\"type of cache\" choice:\"redis_pub_sub\" choice:\"mem\" choice:\"none\" default:\"mem\"` // nolint\n+\tRedisAddr string `long:\"redis_addr\" env:\"REDIS_ADDR\" default:\"127.0.0.1:6379\" description:\"address of redis cache, turn redis cache on for distributed cache\"`\n+\tMax       struct {\n \t\tItems int   `long:\"items\" env:\"ITEMS\" default:\"1000\" description:\"max cached items\"`\n \t\tValue int   `long:\"value\" env:\"VALUE\" default:\"65536\" description:\"max size of cached value\"`\n \t\tSize  int64 `long:\"size\" env:\"SIZE\" default:\"50000000\" description:\"max size of total cache\"`\n@@ -670,6 +672,17 @@ func (s *ServerCommand) makeAdminStore() (admin.Store, error) {\n func (s *ServerCommand) makeCache() (LoadingCache, error) {\n \tlog.Printf(\"[INFO] make cache, type=%s\", s.Cache.Type)\n \tswitch s.Cache.Type {\n+\tcase \"redis_pub_sub\":\n+\t\tredisPubSub, err := eventbus.NewRedisPubSub(s.Cache.RedisAddr, \"remark42-cache\")\n+\t\tif err != nil {\n+\t\t\treturn nil, errors.Wrap(err, \"cache backend initialization, redis PubSub initialisation\")\n+\t\t}\n+\t\tbackend, err := cache.NewLruCache(cache.MaxCacheSize(s.Cache.Max.Size), cache.MaxValSize(s.Cache.Max.Value),\n+\t\t\tcache.MaxKeys(s.Cache.Max.Items), cache.EventBus(redisPubSub))\n+\t\tif err != nil {\n+\t\t\treturn nil, errors.Wrap(err, \"cache backend initialization\")\n+\t\t}\n+\t\treturn cache.NewScache(backend), nil\n \tcase \"mem\":\n \t\tbackend, err := cache.NewLruCache(cache.MaxCacheSize(s.Cache.Max.Size), cache.MaxValSize(s.Cache.Max.Value),\n \t\t\tcache.MaxKeys(s.Cache.Max.Items))"
+    },
+    {
+      "sha": "644ce9f40371615cc0fe8104969aa4885ad7f652",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark42/blob/9510962e2521ba77d4391190116c546c83f08db3/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/9510962e2521ba77d4391190116c546c83f08db3/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server_test.go?ref=9510962e2521ba77d4391190116c546c83f08db3",
+      "patch": "@@ -329,6 +329,19 @@ func TestServerApp_Failed(t *testing.T) {\n \t_, err = opts.newServerApp()\n \tassert.EqualError(t, err, \"failed to make data store engine: unsupported store type blah\")\n \tt.Log(err)\n+\n+\t// wrong redis location\n+\topts = ServerCommand{}\n+\topts.SetCommon(CommonOpts{RemarkURL: \"https://demo.remark42.com\", SharedSecret: \"123456\"})\n+\tp = flags.NewParser(&opts, flags.Default)\n+\t_, err = p.ParseArgs([]string{\"--store.bolt.path=/tmp\", \"--cache.type=redis_pub_sub\", \"--cache.redis_addr=wrong_address\"})\n+\tassert.NoError(t, err)\n+\t_, err = opts.newServerApp()\n+\tassert.EqualError(t, err,\n+\t\t\"failed to make cache: cache backend initialization, redis PubSub initialisation: \"+\n+\t\t\t\"problem subscribing to channel remark42-cache on address wrong_address: \"+\n+\t\t\t\"dial tcp: address wrong_address: missing port in address\")\n+\tt.Log(err)\n }\n \n func TestServerApp_Shutdown(t *testing.T) {"
+    }
+  ]
+}

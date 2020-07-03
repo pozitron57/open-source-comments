@@ -1,0 +1,98 @@
+{
+  "sha": "6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2YjRjZWJlZDNlNzEwMDcyYzExNTFkMDRiYjdlNDliZGNjN2ZkMDVh",
+  "commit": {
+    "author": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2020-07-03T19:21:06Z"
+    },
+    "committer": {
+      "name": "romanrizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2020-07-03T19:21:06Z"
+    },
+    "message": "DEV: Instance#replace_flags block should be optional",
+    "tree": {
+      "sha": "9d9f2949b880a4a24142cdd7a9283a4e22affa8d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9d9f2949b880a4a24142cdd7a9283a4e22affa8d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+  "html_url": "https://github.com/discourse/discourse/commit/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "48b4ed41f5b70e7f068931c071d1d4aae72a4d64",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/48b4ed41f5b70e7f068931c071d1d4aae72a4d64",
+      "html_url": "https://github.com/discourse/discourse/commit/48b4ed41f5b70e7f068931c071d1d4aae72a4d64"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "01ac03032847be82169f0a7e74494d8b51742536",
+      "filename": "lib/plugin/instance.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a/lib/plugin/instance.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a/lib/plugin/instance.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/plugin/instance.rb?ref=6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+      "patch": "@@ -151,7 +151,7 @@ def add_report(name, &block)\n   def replace_flags(settings: ::FlagSettings.new, score_type_names: [])\n     next_flag_id = ReviewableScore.types.values.max + 1\n \n-    yield(settings, next_flag_id)\n+    yield(settings, next_flag_id) if block_given?\n \n     reloadable_patch do |plugin|\n       ::PostActionType.replace_flag_settings(settings)"
+    }
+  ]
+}
