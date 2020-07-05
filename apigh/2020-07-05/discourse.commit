@@ -1,0 +1,110 @@
+{
+  "sha": "06d426bd87d5bf87e36dd543efd298aaef94156e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowNmQ0MjZiZDg3ZDViZjg3ZTM2ZGQ1NDNlZmQyOThhYWVmOTQxNTZl",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2020-07-05T08:34:31Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2020-07-05T08:34:31Z"
+    },
+    "message": "FIX: skip hidden posts while generating canonical url.\n\nPreviously, while generating the topic page's canoncial url we used the current post number. It will create invalid canonical path if the topic has whsiper posts. Now we only taking the visible posts for current page index calculation.",
+    "tree": {
+      "sha": "0b574d3b3d47e7fdb44553793329cf8d0d7c9fa5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0b574d3b3d47e7fdb44553793329cf8d0d7c9fa5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/06d426bd87d5bf87e36dd543efd298aaef94156e",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/06d426bd87d5bf87e36dd543efd298aaef94156e",
+  "html_url": "https://github.com/discourse/discourse/commit/06d426bd87d5bf87e36dd543efd298aaef94156e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/06d426bd87d5bf87e36dd543efd298aaef94156e/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a",
+      "html_url": "https://github.com/discourse/discourse/commit/6b4cebed3e710072c1151d04bb7e49bdcc7fd05a"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 15,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "17e1d8988e3667defb09b91400e0e384390f2f82",
+      "filename": "lib/topic_view.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/06d426bd87d5bf87e36dd543efd298aaef94156e/lib/topic_view.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/06d426bd87d5bf87e36dd543efd298aaef94156e/lib/topic_view.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/topic_view.rb?ref=06d426bd87d5bf87e36dd543efd298aaef94156e",
+      "patch": "@@ -122,7 +122,8 @@ def canonical_path\n       if @page > 1\n         \"?page=#{@page}\"\n       else\n-        page = ((@post_number - 1) / @limit) + 1\n+        posts_count = unfiltered_posts.where(\"post_number <= ?\", @post_number).count\n+        page = ((posts_count - 1) / @limit) + 1\n         page > 1 ? \"?page=#{page}\" : \"\"\n       end\n "
+    },
+    {
+      "sha": "8bd814604193bc1bd5a32ab6f48aeb9a62b97916",
+      "filename": "spec/components/topic_view_spec.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 2,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/06d426bd87d5bf87e36dd543efd298aaef94156e/spec/components/topic_view_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/06d426bd87d5bf87e36dd543efd298aaef94156e/spec/components/topic_view_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/topic_view_spec.rb?ref=06d426bd87d5bf87e36dd543efd298aaef94156e",
+      "patch": "@@ -244,8 +244,19 @@\n       end\n \n       it \"generates a canonical correctly for paged results\" do\n-        expect(TopicView.new(1234, user, post_number: 10 * TopicView.chunk_size)\n-          .canonical_path).to eql(\"/1234?page=10\")\n+        5.times { |i| Fabricate(:post, post_number: i + 1, topic: topic) }\n+\n+        expect(TopicView.new(1234, user, post_number: 5, limit: 2)\n+          .canonical_path).to eql(\"/1234?page=3\")\n+      end\n+\n+      it \"generates canonical path correctly by skipping whisper posts\" do\n+        2.times { |i| Fabricate(:post, post_number: i + 1, topic: topic) }\n+        2.times { |i| Fabricate(:whisper, post_number: i + 3, topic: topic) }\n+        Fabricate(:post, post_number: 5, topic: topic)\n+\n+        expect(TopicView.new(1234, user, post_number: 5, limit: 2)\n+          .canonical_path).to eql(\"/1234?page=2\")\n       end\n     end\n "
+    }
+  ]
+}
