@@ -1,0 +1,98 @@
+{
+  "sha": "f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmM2YzMGVkZjNmOGZkYmE2Y2E5ZDYxYWJiMzBlYzhmYTk5MDI1NDRh",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2020-07-07T06:50:31Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2020-07-07T06:50:31Z"
+    },
+    "message": "SPEC: use post number to create canoncial path in mega topics.\n\n6d177659247370f6be4c4e83f12d944f3d75bf92",
+    "tree": {
+      "sha": "8d3b93a9d19dc88ec0d5a3f0e795aae479cbb09d",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/8d3b93a9d19dc88ec0d5a3f0e795aae479cbb09d"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a",
+  "html_url": "https://github.com/discourse/discourse/commit/f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "72861f4e1c741791acab3e56c67cb25b93065d87",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/72861f4e1c741791acab3e56c67cb25b93065d87",
+      "html_url": "https://github.com/discourse/discourse/commit/72861f4e1c741791acab3e56c67cb25b93065d87"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 9,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "31dcd75481caf99ce37340f6f35d93932b98c82b",
+      "filename": "spec/components/topic_view_spec.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a/spec/components/topic_view_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a/spec/components/topic_view_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/topic_view_spec.rb?ref=f3f30edf3f8fdba6ca9d61abb30ec8fa9902544a",
+      "patch": "@@ -258,6 +258,15 @@\n         expect(TopicView.new(1234, user, post_number: 5, limit: 2)\n           .canonical_path).to eql(\"/1234?page=2\")\n       end\n+\n+      it \"generates canonical path correctly for mega topics\" do\n+        2.times { |i| Fabricate(:post, post_number: i + 1, topic: topic) }\n+        2.times { |i| Fabricate(:whisper, post_number: i + 3, topic: topic) }\n+        Fabricate(:post, post_number: 5, topic: topic)\n+\n+        expect(TopicView.new(1234, user, post_number: 5, limit: 2, is_mega_topic: true)\n+          .canonical_path).to eql(\"/1234?page=3\")\n+      end\n     end\n \n     describe \"#next_page\" do"
+    }
+  ]
+}
