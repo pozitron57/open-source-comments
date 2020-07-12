@@ -1,0 +1,98 @@
+{
+  "sha": "544a9865c6e5890f37e762292cbe5558db843dcf",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1NDRhOTg2NWM2ZTU4OTBmMzdlNzYyMjkyY2JlNTU1OGRiODQzZGNm",
+  "commit": {
+    "author": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-07-10T18:06:25Z"
+    },
+    "committer": {
+      "name": "Blake Erickson",
+      "email": "o.blakeerickson@gmail.com",
+      "date": "2020-07-10T18:08:09Z"
+    },
+    "message": "DEV: Add more API Doc specs for topic endpoints\n\nAdded some more specs that will be used to auto generate the api docs.\n\nAdded timed topic and update timestamp endpoints.",
+    "tree": {
+      "sha": "7cb4506aff5997a0c96333bf295270c7612a8da5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7cb4506aff5997a0c96333bf295270c7612a8da5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/544a9865c6e5890f37e762292cbe5558db843dcf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/544a9865c6e5890f37e762292cbe5558db843dcf",
+  "html_url": "https://github.com/discourse/discourse/commit/544a9865c6e5890f37e762292cbe5558db843dcf",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/544a9865c6e5890f37e762292cbe5558db843dcf/comments",
+  "author": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "oblakeerickson",
+    "id": 1490496,
+    "node_id": "MDQ6VXNlcjE0OTA0OTY=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/1490496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oblakeerickson",
+    "html_url": "https://github.com/oblakeerickson",
+    "followers_url": "https://api.github.com/users/oblakeerickson/followers",
+    "following_url": "https://api.github.com/users/oblakeerickson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oblakeerickson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oblakeerickson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oblakeerickson/subscriptions",
+    "organizations_url": "https://api.github.com/users/oblakeerickson/orgs",
+    "repos_url": "https://api.github.com/users/oblakeerickson/repos",
+    "events_url": "https://api.github.com/users/oblakeerickson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oblakeerickson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fbf29443bdb84e0a07a34a82d7893ab967854bd9",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fbf29443bdb84e0a07a34a82d7893ab967854bd9",
+      "html_url": "https://github.com/discourse/discourse/commit/fbf29443bdb84e0a07a34a82d7893ab967854bd9"
+    }
+  ],
+  "stats": {
+    "total": 80,
+    "additions": 80,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "a5bcf14d66cb522535c035dea5cc135b5c69abfc",
+      "filename": "spec/requests/api/topics_spec.rb",
+      "status": "modified",
+      "additions": 80,
+      "deletions": 0,
+      "changes": 80,
+      "blob_url": "https://github.com/discourse/discourse/blob/544a9865c6e5890f37e762292cbe5558db843dcf/spec/requests/api/topics_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/544a9865c6e5890f37e762292cbe5558db843dcf/spec/requests/api/topics_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/api/topics_spec.rb?ref=544a9865c6e5890f37e762292cbe5558db843dcf",
+      "patch": "@@ -884,4 +884,84 @@\n     end\n   end\n \n+  path '/t/{id}/change-timestamp.json' do\n+    put 'Update topic timestamp' do\n+      tags 'Topics'\n+      consumes 'application/json'\n+      parameter name: 'Api-Key', in: :header, type: :string, required: true\n+      parameter name: 'Api-Username', in: :header, type: :string, required: true\n+      parameter name: :id, in: :path, schema: { type: :string }\n+\n+      parameter name: :request_body, in: :body, schema: {\n+        type: :object,\n+        properties: {\n+          timestamp: {\n+            type: :string,\n+            example: '1594291380'\n+          }\n+        }, required: [ 'timestamp' ]\n+      }\n+\n+      produces 'application/json'\n+      response '200', 'topic updated' do\n+        schema type: :object, properties: {\n+          success: { type: :string },\n+        }\n+\n+        let(:request_body) { { timestamp: '1594291380' } }\n+        let!(:post) { Fabricate(:post) }\n+        let(:id) { post.topic.id }\n+\n+        run_test!\n+      end\n+    end\n+  end\n+\n+  path '/t/{id}/timer.json' do\n+    post 'Create topic timer' do\n+      tags 'Topics'\n+      consumes 'application/json'\n+      parameter name: 'Api-Key', in: :header, type: :string, required: true\n+      parameter name: 'Api-Username', in: :header, type: :string, required: true\n+      parameter name: :id, in: :path, schema: { type: :string }\n+\n+      parameter name: :request_body, in: :body, schema: {\n+        type: :object,\n+        properties: {\n+          time: {\n+            type: :string,\n+            example: ''\n+          },\n+          status_type: {\n+            type: :string,\n+          },\n+          based_on_last_post: {\n+            type: :boolean,\n+          },\n+          category_id: {\n+            type: :integer\n+          }\n+        }\n+      }\n+\n+      produces 'application/json'\n+      response '200', 'topic updated' do\n+        schema type: :object, properties: {\n+          success: { type: :string },\n+          execute_at: { type: :string },\n+          duration: { type: :string, nullable: true },\n+          based_on_last_post: { type: :boolean },\n+          closed: { type: :boolean },\n+          category_id: { type: :string, nullable: true },\n+        }\n+\n+        let(:request_body) { { time: '2020-07-11+18:00-06:00', status_type: 'close' } }\n+        let!(:topic_post) { Fabricate(:post) }\n+        let(:id) { topic_post.topic.id }\n+\n+        run_test!\n+      end\n+    end\n+  end\n+\n end"
+    }
+  ]
+}

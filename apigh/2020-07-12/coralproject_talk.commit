@@ -1,0 +1,266 @@
+{
+  "sha": "00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6MDBlMDc0ZDQ5ZGMwODc2ZWY3ZmRlN2M0ZjVjOTkzODM0NjYyN2Y4YQ==",
+  "commit": {
+    "author": {
+      "name": "Wyatt Johnson",
+      "email": "wyattjoh@gmail.com",
+      "date": "2020-07-09T22:02:01Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-07-09T22:02:01Z"
+    },
+    "message": "fix: increased body size limit, added config option (#3011)",
+    "tree": {
+      "sha": "e586696c0ec4fba3bea57e588bf0caf0c1793843",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/e586696c0ec4fba3bea57e588bf0caf0c1793843"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfB5PZCRBK7hj4Ov3rIwAAdHIIAJQXCOtx8AVzSthBtlqvkSpx\n6IRBNYqMhfop/M/uisMw+UEFKmgbndxncE5sHU5yGkILGYbHno7JFw6HSwxGK6rF\nKysDcT4bKSHxJ7tFWRLpjk9clb857yzPd6oXVFkViKVBFUh4AbMGlYuNH77mjKLi\nOA4rtvakMHgI62ylQ4wHgUTXNS1ZmjFNTwNBWdelg8J6mUUaz+EYjaLjKfmJRWZW\naTAN70YpUMV0R5hy9/FyKwAPKSW0NtCNNLkcV4KXXDi83XpcpFR1lpy22lzDE+Iz\nwLUWswCMBimtI7QiZYSEuyaF7yJzPf1m5e8aicQ9jz4E3kwwi8o4akQjpYTNmTs=\n=sFwM\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e586696c0ec4fba3bea57e588bf0caf0c1793843\nparent d848fc193ea4b9d006c5e1d9761aa7c96356acfc\nauthor Wyatt Johnson <wyattjoh@gmail.com> 1594332121 -0600\ncommitter GitHub <noreply@github.com> 1594332121 +0000\n\nfix: increased body size limit, added config option (#3011)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+  "html_url": "https://github.com/coralproject/talk/commit/00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/00e074d49dc0876ef7fde7c4f5c9938346627f8a/comments",
+  "author": {
+    "login": "wyattjoh",
+    "id": 633002,
+    "node_id": "MDQ6VXNlcjYzMzAwMg==",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/633002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyattjoh",
+    "html_url": "https://github.com/wyattjoh",
+    "followers_url": "https://api.github.com/users/wyattjoh/followers",
+    "following_url": "https://api.github.com/users/wyattjoh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyattjoh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyattjoh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyattjoh/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyattjoh/orgs",
+    "repos_url": "https://api.github.com/users/wyattjoh/repos",
+    "events_url": "https://api.github.com/users/wyattjoh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyattjoh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d848fc193ea4b9d006c5e1d9761aa7c96356acfc",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/d848fc193ea4b9d006c5e1d9761aa7c96356acfc",
+      "html_url": "https://github.com/coralproject/talk/commit/d848fc193ea4b9d006c5e1d9761aa7c96356acfc"
+    }
+  ],
+  "stats": {
+    "total": 221,
+    "additions": 152,
+    "deletions": 69
+  },
+  "files": [
+    {
+      "sha": "3d2ba761784492a73e571047c0aa536e4f0c0635",
+      "filename": "package-lock.json",
+      "status": "modified",
+      "additions": 83,
+      "deletions": 24,
+      "changes": 107,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/package-lock.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/package-lock.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/package-lock.json?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -861,7 +861,8 @@\n         },\n         \"lodash\": {\n           \"version\": \"4.17.11\",\n-          \"resolved\": \"\",\n+          \"resolved\": \"https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz\",\n+          \"integrity\": \"sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==\",\n           \"dev\": true\n         },\n         \"supports-color\": {\n@@ -3092,7 +3093,8 @@\n         },\n         \"lodash\": {\n           \"version\": \"4.17.11\",\n-          \"resolved\": \"\",\n+          \"resolved\": \"https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz\",\n+          \"integrity\": \"sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==\",\n           \"dev\": true\n         },\n         \"supports-color\": {\n@@ -8062,6 +8064,12 @@\n         \"@types/node\": \"*\"\n       }\n     },\n+    \"@types/bytes\": {\n+      \"version\": \"3.1.0\",\n+      \"resolved\": \"https://registry.npmjs.org/@types/bytes/-/bytes-3.1.0.tgz\",\n+      \"integrity\": \"sha512-5YG1AiIC8HPPXRvYAIa7ehK3YMAwd0DWiPCtpuL9sgKceWLyWsVtLRA+lT4NkoanDNF9slwQ66lPizWDpgRlWA==\",\n+      \"dev\": true\n+    },\n     \"@types/case-sensitive-paths-webpack-plugin\": {\n       \"version\": \"2.1.4\",\n       \"resolved\": \"https://registry.npmjs.org/@types/case-sensitive-paths-webpack-plugin/-/case-sensitive-paths-webpack-plugin-2.1.4.tgz\",\n@@ -8156,10 +8164,13 @@\n       \"integrity\": \"sha512-P1bffQfhD3O4LW0ioENXUhZ9OIa0Zn+P7M+pWgkCKaT53wVLSq0mrKksCID/FGHpFhRSxRGhgrQmfhRuzwtKdg==\"\n     },\n     \"@types/convict\": {\n-      \"version\": \"4.2.1\",\n-      \"resolved\": \"https://registry.npmjs.org/@types/convict/-/convict-4.2.1.tgz\",\n-      \"integrity\": \"sha512-2cd51m3i0yeY1i3dKxcqJKeS5Q4jZnjP37OseoNeIX1OM0AhmGPuuYmwJ9OqtsU35YrREQxdb2VeX5sM3cwGMQ==\",\n-      \"dev\": true\n+      \"version\": \"5.2.1\",\n+      \"resolved\": \"https://registry.npmjs.org/@types/convict/-/convict-5.2.1.tgz\",\n+      \"integrity\": \"sha512-SbtKO7CzkSaBZ/yMo9+qDPG2q59BN2ONry2Qra+boPXoXfjW4gVX/ohcmRsKpZZGGNszkLCl2Wi8coIDp/qPQg==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"@types/node\": \"*\"\n+      }\n     },\n     \"@types/cookie\": {\n       \"version\": \"0.3.3\",\n@@ -13360,9 +13371,9 @@\n       }\n     },\n     \"bytes\": {\n-      \"version\": \"3.0.0\",\n-      \"resolved\": \"https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz\",\n-      \"integrity\": \"sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=\"\n+      \"version\": \"3.1.0\",\n+      \"resolved\": \"https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz\",\n+      \"integrity\": \"sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==\"\n     },\n     \"cacache\": {\n       \"version\": \"13.0.1\",\n@@ -14594,6 +14605,12 @@\n         \"vary\": \"~1.1.2\"\n       },\n       \"dependencies\": {\n+        \"bytes\": {\n+          \"version\": \"3.0.0\",\n+          \"resolved\": \"https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz\",\n+          \"integrity\": \"sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=\",\n+          \"dev\": true\n+        },\n         \"safe-buffer\": {\n           \"version\": \"5.1.2\",\n           \"resolved\": \"https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz\",\n@@ -21648,7 +21665,7 @@\n       \"integrity\": \"sha1-ETOUSrJHeINHOZVZaIPg05z4hc8=\",\n       \"dev\": true,\n       \"requires\": {\n-        \"intl-pluralrules\": \"github:projectfluent/IntlPluralRules#94cb0fa1c23ad943bc5aafef43cea132fa51d68b\"\n+        \"intl-pluralrules\": \"github:projectfluent/IntlPluralRules#module\"\n       },\n       \"dependencies\": {\n         \"intl-pluralrules\": {\n@@ -28412,7 +28429,8 @@\n               \"version\": \"2.1.1\",\n               \"resolved\": false,\n               \"integrity\": \"sha1-w7M6te42DYbg5ijwRorn7yfWVN8=\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"aproba\": {\n               \"version\": \"1.2.0\",\n@@ -28444,6 +28462,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"balanced-match\": \"^1.0.0\",\n                 \"concat-map\": \"0.0.1\"\n@@ -28460,7 +28479,8 @@\n               \"version\": \"1.1.0\",\n               \"resolved\": false,\n               \"integrity\": \"sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"concat-map\": {\n               \"version\": \"0.0.1\",\n@@ -28473,7 +28493,8 @@\n               \"version\": \"1.1.0\",\n               \"resolved\": false,\n               \"integrity\": \"sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"core-util-is\": {\n               \"version\": \"1.0.2\",\n@@ -28604,7 +28625,8 @@\n               \"version\": \"2.0.3\",\n               \"resolved\": false,\n               \"integrity\": \"sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"ini\": {\n               \"version\": \"1.3.5\",\n@@ -28618,6 +28640,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha1-754xOG8DGn8NZDr4L95QxFfvAMs=\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"number-is-nan\": \"^1.0.0\"\n               }\n@@ -28634,6 +28657,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"brace-expansion\": \"^1.1.7\"\n               }\n@@ -28648,6 +28672,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha512-Gi1W4k059gyRbyVUZQ4mEqLm0YIUiGYfvxhF6SIlk3ui1WVxMTGfGdQ2SInh3PDrRTVvPKgULkpJtT4RH10+VA==\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"safe-buffer\": \"^5.1.2\",\n                 \"yallist\": \"^3.0.0\"\n@@ -28665,7 +28690,22 @@\n             },\n             \"mkdirp\": {\n               \"version\": \"0.5.5\",\n-              \"dev\": true\n+              \"resolved\": \"https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz\",\n+              \"integrity\": \"sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==\",\n+              \"dev\": true,\n+              \"optional\": true,\n+              \"requires\": {\n+                \"minimist\": \"^1.2.5\"\n+              },\n+              \"dependencies\": {\n+                \"minimist\": {\n+                  \"version\": \"1.2.5\",\n+                  \"resolved\": \"https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz\",\n+                  \"integrity\": \"sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==\",\n+                  \"dev\": true,\n+                  \"optional\": true\n+                }\n+              }\n             },\n             \"ms\": {\n               \"version\": \"2.1.1\",\n@@ -28751,7 +28791,8 @@\n               \"version\": \"1.0.1\",\n               \"resolved\": false,\n               \"integrity\": \"sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"object-assign\": {\n               \"version\": \"4.1.1\",\n@@ -28765,6 +28806,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha1-WDsap3WWHUsROsF9nFC6753Xa9E=\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"wrappy\": \"1\"\n               }\n@@ -28823,7 +28865,8 @@\n               \"dependencies\": {\n                 \"minimist\": {\n                   \"version\": \"1.2.0\",\n-                  \"resolved\": \"\",\n+                  \"resolved\": false,\n+                  \"integrity\": \"sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=\",\n                   \"dev\": true,\n                   \"optional\": true\n                 }\n@@ -28859,7 +28902,8 @@\n               \"version\": \"5.1.2\",\n               \"resolved\": false,\n               \"integrity\": \"sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"safer-buffer\": {\n               \"version\": \"2.1.2\",\n@@ -28901,6 +28945,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M=\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"code-point-at\": \"^1.0.0\",\n                 \"is-fullwidth-code-point\": \"^1.0.0\",\n@@ -28922,6 +28967,7 @@\n               \"resolved\": false,\n               \"integrity\": \"sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=\",\n               \"dev\": true,\n+              \"optional\": true,\n               \"requires\": {\n                 \"ansi-regex\": \"^2.0.0\"\n               }\n@@ -28935,7 +28981,8 @@\n             },\n             \"tar\": {\n               \"version\": \"4.4.8\",\n-              \"resolved\": \"\",\n+              \"resolved\": false,\n+              \"integrity\": \"sha512-LzHF64s5chPQQS0IYBn9IN5h3i98c12bo4NCO7e0sGM2llXQ3p2FGC5sdENN4cTW48O915Sh+x+EXx7XW96xYQ==\",\n               \"dev\": true,\n               \"optional\": true,\n               \"requires\": {\n@@ -28969,13 +29016,15 @@\n               \"version\": \"1.0.2\",\n               \"resolved\": false,\n               \"integrity\": \"sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             },\n             \"yallist\": {\n               \"version\": \"3.0.3\",\n               \"resolved\": false,\n               \"integrity\": \"sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==\",\n-              \"dev\": true\n+              \"dev\": true,\n+              \"optional\": true\n             }\n           }\n         },\n@@ -45053,6 +45102,11 @@\n         \"unpipe\": \"1.0.0\"\n       },\n       \"dependencies\": {\n+        \"bytes\": {\n+          \"version\": \"3.0.0\",\n+          \"resolved\": \"https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz\",\n+          \"integrity\": \"sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=\"\n+        },\n         \"depd\": {\n           \"version\": \"1.1.1\",\n           \"resolved\": \"https://registry.npmjs.org/depd/-/depd-1.1.1.tgz\",\n@@ -50782,6 +50836,7 @@\n           \"resolved\": \"https://registry.npmjs.org/minipass/-/minipass-2.9.0.tgz\",\n           \"integrity\": \"sha512-wxfUjg9WebH+CUDX/CdbRlh5SmfZiy/hpkxaRI16Y9W56Pa75sWgd/rvFilSgrauD9NyFymP/+JFV3KwzIsJeg==\",\n           \"dev\": true,\n+          \"optional\": true,\n           \"requires\": {\n             \"safe-buffer\": \"^5.1.2\",\n             \"yallist\": \"^3.0.0\"\n@@ -50791,13 +50846,15 @@\n           \"version\": \"5.2.1\",\n           \"resolved\": \"https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz\",\n           \"integrity\": \"sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==\",\n-          \"dev\": true\n+          \"dev\": true,\n+          \"optional\": true\n         },\n         \"yallist\": {\n           \"version\": \"3.1.1\",\n           \"resolved\": \"https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz\",\n           \"integrity\": \"sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==\",\n-          \"dev\": true\n+          \"dev\": true,\n+          \"optional\": true\n         }\n       }\n     },\n@@ -53819,6 +53876,7 @@\n           \"resolved\": \"https://registry.npmjs.org/is-glob/-/is-glob-4.0.1.tgz\",\n           \"integrity\": \"sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==\",\n           \"dev\": true,\n+          \"optional\": true,\n           \"requires\": {\n             \"is-extglob\": \"^2.1.1\"\n           }\n@@ -53834,7 +53892,8 @@\n           \"version\": \"3.0.0\",\n           \"resolved\": \"https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz\",\n           \"integrity\": \"sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==\",\n-          \"dev\": true\n+          \"dev\": true,\n+          \"optional\": true\n         },\n         \"readdirp\": {\n           \"version\": \"3.4.0\","
+    },
+    {
+      "sha": "2c7a403c1db48b2b3aa314c39b0e836b5285dd01",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/package.json",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/package.json",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/package.json?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -76,6 +76,7 @@\n     \"bcryptjs\": \"^2.4.3\",\n     \"bull\": \"^3.13.0\",\n     \"bunyan\": \"^1.8.12\",\n+    \"bytes\": \"^3.1.0\",\n     \"cheerio\": \"^1.0.0-rc.3\",\n     \"consolidate\": \"0.14.0\",\n     \"content-security-policy-builder\": \"^2.1.0\",\n@@ -162,13 +163,14 @@\n     \"@types/bcryptjs\": \"^2.4.2\",\n     \"@types/bull\": \"^3.12.1\",\n     \"@types/bunyan\": \"^1.8.6\",\n+    \"@types/bytes\": \"^3.1.0\",\n     \"@types/case-sensitive-paths-webpack-plugin\": \"^2.1.4\",\n     \"@types/cheerio\": \"^0.22.17\",\n     \"@types/classnames\": \"^2.2.10\",\n     \"@types/common-tags\": \"^1.8.0\",\n     \"@types/compression-webpack-plugin\": \"^2.0.1\",\n     \"@types/consolidate\": \"0.14.0\",\n-    \"@types/convict\": \"^4.2.1\",\n+    \"@types/convict\": \"^5.2.1\",\n     \"@types/cookie\": \"^0.3.3\",\n     \"@types/cookie-parser\": \"^1.4.2\",\n     \"@types/cors\": \"^2.8.6\","
+    },
+    {
+      "sha": "af76a01122cb9cd19932bbfc6076e00f8009dd55",
+      "filename": "src/core/server/app/middleware/json.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/middleware/json.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/middleware/json.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/app/middleware/json.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -1,3 +1,8 @@\n-import express from \"express\";\n+import bodyParser from \"body-parser\";\n \n-export const jsonMiddleware = express.json({});\n+/**\n+ * jsonMiddleware is middleware that will parse the incoming JSON payloads.\n+ *\n+ * @param limit the amount of bytes to allow for POST requests\n+ */\n+export const jsonMiddleware = (limit: number) => bodyParser.json({ limit });"
+    },
+    {
+      "sha": "7e290dc9d31162a4daa1b7e52dfe0909a772d0e6",
+      "filename": "src/core/server/app/router/api/account.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/account.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/account.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/app/router/api/account.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -1,4 +1,5 @@\n import bodyParser from \"body-parser\";\n+import bytes from \"bytes\";\n \n import { AppOptions } from \"coral-server/app\";\n import {\n@@ -18,6 +19,9 @@ import { RouterOptions } from \"coral-server/app/router/types\";\n \n import { createAPIRouter } from \"./helpers\";\n \n+// REQUEST_MAX is the maximum request size for routes on this router.\n+const REQUEST_MAX = bytes(\"100kb\");\n+\n export function createNewAccountRouter(\n   app: AppOptions,\n   { passport }: Pick<RouterOptions, \"passport\">\n@@ -26,15 +30,15 @@ export function createNewAccountRouter(\n \n   router.post(\n     \"/confirm\",\n-    jsonMiddleware,\n+    jsonMiddleware(REQUEST_MAX),\n     authenticate(passport),\n     confirmRequestHandler(app)\n   );\n   router.get(\"/confirm\", confirmCheckHandler(app));\n   router.put(\"/confirm\", confirmHandler(app));\n \n   router.get(\"/invite\", inviteCheckHandler(app));\n-  router.put(\"/invite\", jsonMiddleware, inviteHandler(app));\n+  router.put(\"/invite\", jsonMiddleware(REQUEST_MAX), inviteHandler(app));\n \n   router.get(\"/notifications/unsubscribe\", unsubscribeCheckHandler(app));\n   router.delete(\"/notifications/unsubscribe\", unsubscribeHandler(app));"
+    },
+    {
+      "sha": "797027eef51eaea03d3513b9c57512a31fe3479f",
+      "filename": "src/core/server/app/router/api/auth.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 5,
+      "changes": 18,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/auth.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/auth.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/app/router/api/auth.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -1,3 +1,4 @@\n+import bytes from \"bytes\";\n import express from \"express\";\n \n import { AppOptions } from \"coral-server/app\";\n@@ -21,6 +22,9 @@ import { RouterOptions } from \"coral-server/app/router/types\";\n \n import { createAPIRouter } from \"./helpers\";\n \n+// REQUEST_MAX is the maximum request size for routes on this router.\n+const REQUEST_MAX = bytes(\"100kb\");\n+\n function wrapPath(\n   app: AppOptions,\n   { passport }: Pick<RouterOptions, \"passport\">,\n@@ -43,21 +47,25 @@ export function createNewAuthRouter(\n   // Mount the Local Authentication handlers.\n   router.post(\n     \"/local\",\n-    jsonMiddleware,\n+    jsonMiddleware(REQUEST_MAX),\n     wrapAuthn(passport, app.signingConfig, \"local\")\n   );\n \n-  router.post(\"/local/signup\", jsonMiddleware, signupHandler(app));\n+  router.post(\"/local/signup\", jsonMiddleware(REQUEST_MAX), signupHandler(app));\n   router.get(\"/local/forgot\", forgotCheckHandler(app));\n-  router.put(\"/local/forgot\", jsonMiddleware, forgotResetHandler(app));\n-  router.post(\"/local/forgot\", jsonMiddleware, forgotHandler(app));\n+  router.put(\n+    \"/local/forgot\",\n+    jsonMiddleware(REQUEST_MAX),\n+    forgotResetHandler(app)\n+  );\n+  router.post(\"/local/forgot\", jsonMiddleware(REQUEST_MAX), forgotHandler(app));\n \n   // Mount the link handler.\n   router.post(\n     \"/link\",\n     authenticate(passport),\n     loggedInMiddleware,\n-    jsonMiddleware,\n+    jsonMiddleware(REQUEST_MAX),\n     linkHandler(app)\n   );\n "
+    },
+    {
+      "sha": "a8e2de4e2d3e2aafec37f62790ca740e176e77ea",
+      "filename": "src/core/server/app/router/api/index.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/index.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/index.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/app/router/api/index.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -55,7 +55,7 @@ export function createAPIRouter(app: AppOptions, options: RouterOptions) {\n   router.use(\n     \"/graphql\",\n     authenticate(options.passport),\n-    jsonMiddleware,\n+    jsonMiddleware(app.config.get(\"max_request_size\")),\n     persistedQueryMiddleware(app),\n     graphQLHandler(app)\n   );"
+    },
+    {
+      "sha": "ee09b6f98ed37f20971aa361b70242e8712085c3",
+      "filename": "src/core/server/app/router/api/install.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/install.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/app/router/api/install.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/app/router/api/install.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -1,3 +1,4 @@\n+import bytes from \"bytes\";\n import { Router } from \"express\";\n \n import { AppOptions } from \"coral-server/app\";\n@@ -7,6 +8,9 @@ import { tenantMiddleware } from \"coral-server/app/middleware/tenant\";\n \n import { createAPIRouter } from \"./helpers\";\n \n+// REQUEST_MAX is the maximum request size for routes on this router.\n+const REQUEST_MAX = bytes(\"100kb\");\n+\n export function createNewInstallRouter(app: AppOptions): Router {\n   // Create a router.\n   const router = createAPIRouter();\n@@ -18,7 +22,7 @@ export function createNewInstallRouter(app: AppOptions): Router {\n   );\n   router.post(\n     \"/\",\n-    jsonMiddleware,\n+    jsonMiddleware(REQUEST_MAX),\n     tenantMiddleware({ cache: app.tenantCache, passNoTenant: true }),\n     installHandler(app)\n   );"
+    },
+    {
+      "sha": "4fc5739ef7fa9bf5de96d603c2be59a66dd21063",
+      "filename": "src/core/server/config.ts",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 8,
+      "changes": 32,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/config.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/config.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/config.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -1,4 +1,5 @@\n import Joi from \"@hapi/joi\";\n+import bytes from \"bytes\";\n import convict from \"convict\";\n import { parseConnectionString } from \"mongodb-core\";\n import ms from \"ms\";\n@@ -55,6 +56,16 @@ convict.addFormat({\n   coerce: (val: string): number => ms(val),\n });\n \n+// Add a custom format that is a number of bytes parsed with `bytes`. This\n+// allows more compact representations of values (10mb instead of 10e6).\n+convict.addFormat({\n+  name: \"bytes\",\n+  validate: (val: number) => {\n+    Joi.assert(val, Joi.number().positive().integer().required());\n+  },\n+  coerce: (val: string): number => bytes(val),\n+});\n+\n const algorithms = [\n   \"HS256\",\n   \"HS384\",\n@@ -188,7 +199,7 @@ const config = convict({\n     doc:\n       \"The keepalive timeout (in ms) that should be used to send keep alive messages through the websocket to keep the socket alive\",\n     format: \"ms\",\n-    default: \"30 seconds\",\n+    default: ms(\"30 seconds\"),\n     env: \"WEBSOCKET_KEEP_ALIVE_TIMEOUT\",\n   },\n   disable_tenant_caching: {\n@@ -209,7 +220,7 @@ const config = convict({\n     doc:\n       \"Disables subscriptions for the comment stream for all stories across all tenants where a comment has not been left within the timeout\",\n     format: \"ms\",\n-    default: \"2 weeks\",\n+    default: ms(\"2 weeks\"),\n     env: \"DISABLE_LIVE_UPDATES_TIMEOUT\",\n   },\n   disable_client_routes: {\n@@ -228,22 +239,27 @@ const config = convict({\n   },\n   scrape_max_response_size: {\n     doc: \"The maximum size (in bytes) to allow for scraping responses.\",\n-    format: Number,\n-    default: 10e6,\n+    format: \"bytes\",\n+    default: bytes(\"10mb\"),\n     env: \"SCRAPE_MAX_RESPONSE_SIZE\",\n-    arg: \"scrapeMaxResponseSize\",\n+  },\n+  max_request_size: {\n+    doc: \"The maximum size (in bytes) to allow for post bodies to accept.\",\n+    format: \"bytes\",\n+    default: bytes(\"500kb\"),\n+    env: \"MAX_REQUEST_SIZE\",\n   },\n   scrape_timeout: {\n     doc: \"The request timeout (in ms) for scraping operations.\",\n     format: \"ms\",\n-    default: \"10 seconds\",\n+    default: ms(\"10 seconds\"),\n     env: \"SCRAPE_TIMEOUT\",\n   },\n   perspective_timeout: {\n     doc:\n       \"The request timeout (in ms) for perspective comment checking operations.\",\n     format: \"ms\",\n-    default: \"800 milliseconds\",\n+    default: ms(\"800 milliseconds\"),\n     env: \"PERSPECTIVE_TIMEOUT\",\n   },\n   force_ssl: {\n@@ -263,7 +279,7 @@ const config = convict({\n     doc:\n       \"The word list timeout (in ms) that should be used to limit the amount of time the process is frozen processing a word list comparison\",\n     format: \"ms\",\n-    default: \"100\",\n+    default: ms(\"100ms\"),\n     env: \"WORD_LIST_TIMEOUT\",\n   },\n   analytics_frontend_key: {"
+    },
+    {
+      "sha": "d988470bec56d807cea813dcdb92599ac4716215",
+      "filename": "src/core/server/events/listeners/perspective.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 5,
+      "changes": 7,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/events/listeners/perspective.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/events/listeners/perspective.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/events/listeners/perspective.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -80,11 +80,8 @@ export class PerspectiveCoralEventListener\n       // Reconstruct the Tenant URL.\n       const tenantURL = reconstructTenantURL(ctx.config, ctx.tenant);\n \n-      // This typecast is needed because the custom `ms` format does not return the\n-      // desired `number` type even though that's the only type it can output.\n-      const timeout = (ctx.config.get(\n-        \"perspective_timeout\"\n-      ) as unknown) as number;\n+      // Get the timeout value.\n+      const timeout = ctx.config.get(\"perspective_timeout\");\n \n       // Get the response from perspective.\n       const result = await sendToPerspective("
+    },
+    {
+      "sha": "6e93e6c474ccc91e210222ce9b01a9d6b55e585d",
+      "filename": "src/core/server/graph/loaders/Stories.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 4,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/graph/loaders/Stories.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/graph/loaders/Stories.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/loaders/Stories.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -210,12 +210,9 @@ export default (ctx: GraphContext) => ({\n     }).then(primeStoriesFromConnection(ctx)),\n   debugScrapeMetadata: new DataLoader(\n     createManyBatchLoadFn((url: string) =>\n-      // This typecast is needed because the custom `ms` format does not return\n-      // the desired `number` type even though that's the only type it can\n-      // output.\n       scraper.scrape({\n         url,\n-        timeout: (ctx.config.get(\"scrape_timeout\") as unknown) as number,\n+        timeout: ctx.config.get(\"scrape_timeout\"),\n         size: ctx.config.get(\"scrape_max_response_size\"),\n         customUserAgent: ctx.tenant.stories.scraping.customUserAgent,\n         proxyURL: ctx.tenant.stories.scraping.proxyURL,"
+    },
+    {
+      "sha": "2c7f7625e27c5094d4d0d2cd6a836ae2e4327b5a",
+      "filename": "src/core/server/graph/resolvers/LiveConfiguration.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/graph/resolvers/LiveConfiguration.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/graph/resolvers/LiveConfiguration.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/resolvers/LiveConfiguration.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -18,11 +18,9 @@ export const LiveConfiguration: GQLLiveConfigurationTypeResolver<LiveConfigurati\n       return false;\n     }\n \n-    // This typecast is needed because the custom `ms` format does not return the\n-    // desired `number` type even though that's the only type it can output.\n-    const disableLiveUpdatesTimeout = (ctx.config.get(\n+    const disableLiveUpdatesTimeout = ctx.config.get(\n       \"disable_live_updates_timeout\"\n-    ) as unknown) as number;\n+    );\n     if (disableLiveUpdatesTimeout > 0) {\n       // If one of these is available, use it to determine the time since the\n       // last comment."
+    },
+    {
+      "sha": "a2265a2767a00a408f4c6af2719d523a577e8bcc",
+      "filename": "src/core/server/graph/subscriptions/server.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 5,
+      "changes": 6,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/graph/subscriptions/server.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/graph/subscriptions/server.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/graph/subscriptions/server.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -259,11 +259,7 @@ export function createSubscriptionServer(\n   schema: GraphQLSchema,\n   options: Options\n ) {\n-  // This typecast is needed because the custom `ms` format does not return the\n-  // desired `number` type even though that's the only type it can output.\n-  const keepAlive = (options.config.get(\n-    \"websocket_keep_alive_timeout\"\n-  ) as unknown) as number;\n+  const keepAlive = options.config.get(\"websocket_keep_alive_timeout\");\n \n   return SubscriptionServer.create(\n     {"
+    },
+    {
+      "sha": "370c162670eced6719496a4b7330313243e14352",
+      "filename": "src/core/server/services/comments/pipeline/phases/toxic.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/services/comments/pipeline/phases/toxic.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/services/comments/pipeline/phases/toxic.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/toxic.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -73,9 +73,8 @@ export const toxic: IntermediateModerationPhase = async ({\n     );\n   }\n \n-  // This typecast is needed because the custom `ms` format does not return the\n-  // desired `number` type even though that's the only type it can output.\n-  const timeout = (config.get(\"perspective_timeout\") as unknown) as number;\n+  // Get the timeout value.\n+  const timeout = config.get(\"perspective_timeout\");\n \n   try {\n     // FEATURE_FLAG:DISABLE_WARN_USER_OF_TOXIC_COMMENT"
+    },
+    {
+      "sha": "0e6c162b05e7514d668b2ad116d14700c54128a2",
+      "filename": "src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/services/comments/pipeline/phases/wordList.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/comments/pipeline/phases/wordList.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -27,7 +27,7 @@ export const wordList: IntermediateModerationPhase = ({\n   }\n \n   // Get the timeout to use.\n-  const timeout = (config.get(\"word_list_timeout\") as unknown) as number;\n+  const timeout = config.get(\"word_list_timeout\");\n \n   // Test the comment for banned words.\n   const banned = list.test(tenant, \"banned\", timeout, bodyText);"
+    },
+    {
+      "sha": "3cadc2aedde873bee4e6b9c81738ab25118ba354",
+      "filename": "src/core/server/services/stories/scraper/scraper.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/coralproject/talk/blob/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/services/stories/scraper/scraper.ts",
+      "raw_url": "https://github.com/coralproject/talk/raw/00e074d49dc0876ef7fde7c4f5c9938346627f8a/src/core/server/services/stories/scraper/scraper.ts",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/server/services/stories/scraper/scraper.ts?ref=00e074d49dc0876ef7fde7c4f5c9938346627f8a",
+      "patch": "@@ -189,9 +189,7 @@ export async function scrape(\n     storyURL = retrievedStory.url;\n   }\n \n-  // This typecast is needed because the custom `ms` format does not return the\n-  // desired `number` type even though that's the only type it can output.\n-  const timeout = (config.get(\"scrape_timeout\") as unknown) as number;\n+  const timeout = config.get(\"scrape_timeout\");\n   const size = config.get(\"scrape_max_response_size\");\n \n   // Get the metadata from the scraped html."
+    }
+  ]
+}
