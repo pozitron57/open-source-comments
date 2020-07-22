@@ -1,0 +1,134 @@
+{
+  "sha": "fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+  "node_id": "MDY6Q29tbWl0NzI0NTQyNDI6ZmUxOWZmZDdlMTFjN2ZkOTE1Y2Y3MjBhYjdiOGI0MDJlMDcxYWEzOA==",
+  "commit": {
+    "author": {
+      "name": "Nick Funk",
+      "email": "nick.funk@outlook.com",
+      "date": "2020-07-22T00:02:27Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-07-22T00:02:27Z"
+    },
+    "message": "Show nice error message on network time out (#3036)\n\nShows \"Network error. Please refresh your page\nand try again.\" when the retry middleware times\nout from too many attempts on failed/timed out\nrequests.\n\nCORL-1199\n\nCo-authored-by: kodiakhq[bot] <49736102+kodiakhq[bot]@users.noreply.github.com>",
+    "tree": {
+      "sha": "729c7ca1f889678f70d643fde920e6cef909c0af",
+      "url": "https://api.github.com/repos/coralproject/talk/git/trees/729c7ca1f889678f70d643fde920e6cef909c0af"
+    },
+    "url": "https://api.github.com/repos/coralproject/talk/git/commits/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfF4ITCRBK7hj4Ov3rIwAAdHIIAKToEbeGcpDSBYcBJIoOiEQy\npDyfhrdbCoGrQZv3EEPQGIxROGL/iSRUjbJ8luep8KJC5z0GIdF1xaT3mYwIL0iC\nhu1whw3nttaGr9HWSMlceKZOT5uw061WnnA6c1hBbxeEk4MorQqza3l03GJHzyt7\nDSlNwNKn2VAjTLoeSOsguy7idulMhEZZeDft6s8ofOIVT06elG6MJW/ISZW/Td42\nQlDFg8ZuscKjg8HOJ7Lm6/5hc6BpVX85tB06j+GWQ0qi1okE+bt0Sb9i+NyYVpjt\nuhslkwxrHQskEKGSWQtil5wzujHtGJ4Mi2G7M+KhrNplvgMc2xZXOpikNLthn9Y=\n=rvwO\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 729c7ca1f889678f70d643fde920e6cef909c0af\nparent 7f98f139901d6eeb9caf3159ed0dc5230fb13e93\nauthor Nick Funk <nick.funk@outlook.com> 1595376147 -0600\ncommitter GitHub <noreply@github.com> 1595376147 +0000\n\nShow nice error message on network time out (#3036)\n\nShows \"Network error. Please refresh your page\nand try again.\" when the retry middleware times\nout from too many attempts on failed/timed out\nrequests.\n\nCORL-1199\n\nCo-authored-by: kodiakhq[bot] <49736102+kodiakhq[bot]@users.noreply.github.com>"
+    }
+  },
+  "url": "https://api.github.com/repos/coralproject/talk/commits/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+  "html_url": "https://github.com/coralproject/talk/commit/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+  "comments_url": "https://api.github.com/repos/coralproject/talk/commits/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/comments",
+  "author": {
+    "login": "nick-funk",
+    "id": 5751504,
+    "node_id": "MDQ6VXNlcjU3NTE1MDQ=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5751504?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nick-funk",
+    "html_url": "https://github.com/nick-funk",
+    "followers_url": "https://api.github.com/users/nick-funk/followers",
+    "following_url": "https://api.github.com/users/nick-funk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nick-funk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nick-funk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nick-funk/subscriptions",
+    "organizations_url": "https://api.github.com/users/nick-funk/orgs",
+    "repos_url": "https://api.github.com/users/nick-funk/repos",
+    "events_url": "https://api.github.com/users/nick-funk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nick-funk/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7f98f139901d6eeb9caf3159ed0dc5230fb13e93",
+      "url": "https://api.github.com/repos/coralproject/talk/commits/7f98f139901d6eeb9caf3159ed0dc5230fb13e93",
+      "html_url": "https://github.com/coralproject/talk/commit/7f98f139901d6eeb9caf3159ed0dc5230fb13e93"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 45,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e4c87aea544ebf05046435f8b88c3d9170ac0942",
+      "filename": "src/core/client/framework/components/NetworkError.css",
+      "status": "added",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/coralproject/talk/blob/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/core/client/framework/components/NetworkError.css",
+      "raw_url": "https://github.com/coralproject/talk/raw/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/core/client/framework/components/NetworkError.css",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/framework/components/NetworkError.css?ref=fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+      "patch": "@@ -0,0 +1,13 @@\n+.root {\n+  background-color: var(--palette-error-300);\n+\n+  font-family: var(--font-family-primary);\n+  font-weight: var(--font-weight-primary-semi-bold);\n+  font-size: var(--font-size-3);\n+  line-height: var(--line-height-3);\n+  color: var(--palette-text-500);\n+\n+  border-radius: var(--round-corners);\n+\n+  padding: var(--spacing-3);\n+}"
+    },
+    {
+      "sha": "e81cd3be5b3946685ae6e0af448338ffcb9fe1ca",
+      "filename": "src/core/client/framework/components/NetworkError.tsx",
+      "status": "added",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/coralproject/talk/blob/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/core/client/framework/components/NetworkError.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/core/client/framework/components/NetworkError.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/framework/components/NetworkError.tsx?ref=fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+      "patch": "@@ -0,0 +1,16 @@\n+import { Localized } from \"@fluent/react/compat\";\n+import React, { FunctionComponent } from \"react\";\n+\n+import styles from \"./NetworkError.css\";\n+\n+const NetworkError: FunctionComponent = () => {\n+  return (\n+    <div className={styles.root}>\n+      <Localized id=\"common-networkError\">\n+        <div>Network error. Please refresh your page and try again.</div>\n+      </Localized>\n+    </div>\n+  );\n+};\n+\n+export default NetworkError;"
+    },
+    {
+      "sha": "df3042a3e7dcfed41f5dc36231579db318f944a0",
+      "filename": "src/core/client/framework/lib/relay/QueryRenderer.tsx",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 1,
+      "changes": 16,
+      "blob_url": "https://github.com/coralproject/talk/blob/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/core/client/framework/lib/relay/QueryRenderer.tsx",
+      "raw_url": "https://github.com/coralproject/talk/raw/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/core/client/framework/lib/relay/QueryRenderer.tsx",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/core/client/framework/lib/relay/QueryRenderer.tsx?ref=fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+      "patch": "@@ -2,6 +2,7 @@ import React, { Component } from \"react\";\n import { QueryRenderer } from \"react-relay\";\n import { OperationType } from \"relay-runtime\";\n \n+import NetworkError from \"coral-framework/components/NetworkError\";\n import { PropTypesOf } from \"coral-framework/types\";\n \n import { CoralContextConsumer } from \"../bootstrap/CoralContext\";\n@@ -33,7 +34,20 @@ class CoralQueryRenderer<\n     return (\n       <CoralContextConsumer>\n         {({ relayEnvironment }) => (\n-          <QueryRenderer environment={relayEnvironment} {...this.props} />\n+          <QueryRenderer\n+            environment={relayEnvironment}\n+            {...this.props}\n+            render={(args) => {\n+              if (\n+                args.error &&\n+                args.error.name === \"RRNLRetryMiddlewareError\"\n+              ) {\n+                return <NetworkError />;\n+              }\n+\n+              return this.props.render(args);\n+            }}\n+          />\n         )}\n       </CoralContextConsumer>\n     );"
+    },
+    {
+      "sha": "1742f7cf43edf1165f1be71f4cf4ce4cf7dbfcf6",
+      "filename": "src/locales/en-US/common.ftl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/coralproject/talk/blob/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/locales/en-US/common.ftl",
+      "raw_url": "https://github.com/coralproject/talk/raw/fe19ffd7e11c7fd915cf720ab7b8b402e071aa38/src/locales/en-US/common.ftl",
+      "contents_url": "https://api.github.com/repos/coralproject/talk/contents/src/locales/en-US/common.ftl?ref=fe19ffd7e11c7fd915cf720ab7b8b402e071aa38",
+      "patch": "@@ -7,3 +7,4 @@ common-banEmailTemplate =\n   Someone with access to your account has violated our community guidelines. As a result, your account has been banned. You will no longer be able to comment, react or report comments.\n \n common-embedNotFound = Requested media could not be found. May have been deleted.\n+common-networkError = Network error. Please refresh your page and try again."
+    }
+  ]
+}
