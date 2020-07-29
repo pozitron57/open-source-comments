@@ -1,0 +1,146 @@
+{
+  "sha": "e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6ZTgyZWQzMWZkN2I4MTM2MTE3NjQ4MmRlZjAwYmY2ZDVlYjJiNWM4ZA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-07-26T16:14:02Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-07-26T16:14:02Z"
+    },
+    "message": "Fix e2e tests.",
+    "tree": {
+      "sha": "f75d0be96319e53304486916c4736af5fd7ba0f1",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/f75d0be96319e53304486916c4736af5fd7ba0f1"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+  "html_url": "https://github.com/debiki/talkyard/commit/e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1b858bf241019455c10e446934d4590c0870b2ef",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/1b858bf241019455c10e446934d4590c0870b2ef",
+      "html_url": "https://github.com/debiki/talkyard/commit/1b858bf241019455c10e446934d4590c0870b2ef"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 9,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "c07a1e48451002fa037683e2020fd66e51afa012",
+      "filename": "client/app-more/users/users-page.styl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/client/app-more/users/users-page.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/client/app-more/users/users-page.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-more/users/users-page.styl?ref=e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+      "patch": "@@ -1,5 +1,5 @@\n \n-.s_AllGroupsL\n+.s_Tb_Ln-Grps\n   font-size: 120%;\n \n .esProfile_isYou"
+    },
+    {
+      "sha": "9c68ca191024dfe0e47632992b027a4f3efaa2db",
+      "filename": "client/app-slim/topbar/topbar.styl",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/client/app-slim/topbar/topbar.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/client/app-slim/topbar/topbar.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/topbar/topbar.styl?ref=e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+      "patch": "@@ -230,7 +230,7 @@ html.es-watchbar-open\n   letter-spacing: 0.2px;\n   word-spacing: 0.4px;\n \n-.esTopbar_custom_backToSite\n+.s_Tb_Ln\n   vertical-align: bottom;\n   margin-left: 15px;\n   position: relative;"
+    },
+    {
+      "sha": "afc336b2b9eda681f36318349e14480603f174de",
+      "filename": "client/app-slim/topbar/topbar.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/client/app-slim/topbar/topbar.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/client/app-slim/topbar/topbar.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/topbar/topbar.ts?ref=e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+      "patch": "@@ -321,7 +321,7 @@ export const TopBar = createComponent({\n \n     const backToGroups = autoPageType !== AutoPageType.GroupProfilePage ? null :\n             LinkUnstyled({ to: GroupsRoot,\n-                className: 'esTopbar_custom_backToSite btn icon-reply s_AllGroupsL' },\n+                className: 's_Tb_Ln s_Tb_Ln-Grps btn icon-reply' },\n               t.mm.ViewGroups);\n \n     if (autoPageType_isProfile(autoPageType)) {\n@@ -354,7 +354,7 @@ export const TopBar = createComponent({\n     // @endif\n \n     if (this.props.showBackToSite || backToSiteButton) {\n-      backToSiteButton = LinkUnstyled({ className: 'esTopbar_custom_backToSite btn icon-reply',\n+      backToSiteButton = LinkUnstyled({ className: 's_Tb_Ln s_Tb_Ln-Bck btn icon-reply',\n           href: linkBackToSite() }, backToSiteButton || t.tb.BackFromAdm);\n       extraMargin = true;\n     }"
+    },
+    {
+      "sha": "917024e935bd045c3878e73e1cccd191a90accb4",
+      "filename": "tests/e2e/specs/invite-to-groups.2browsers.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/tests/e2e/specs/invite-to-groups.2browsers.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/tests/e2e/specs/invite-to-groups.2browsers.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/invite-to-groups.2browsers.test.ts?ref=e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+      "patch": "@@ -82,7 +82,7 @@ describe(\"invite-to-groups  TyT7WKTJ40ZT22\", () => {\n   });\n \n   it(\"... and a Teachers group\", () => {\n-    owensBrowser.waitAndClick('.esTopbar_custom_title a');\n+    owensBrowser.waitAndClick('.s_Tb_Ln-Grps');\n     owensBrowser.groupListPage.createGroup(\n         { username: GroupTeachersUsername, fullName: GroupTeachersFullName });\n   });"
+    },
+    {
+      "sha": "bacdb6fa2ca4c8291aff7c73f67523887ddfe5f8",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/debiki/talkyard/blob/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/e82ed31fd7b81361176482def00bf6d5eb2b5c8d/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=e82ed31fd7b81361176482def00bf6d5eb2b5c8d",
+      "patch": "@@ -2397,7 +2397,7 @@ export class TyE2eTestBrowser {\n \n       clickBack: () => {\n         this.repeatUntilAtNewUrl(() => {\n-          this.waitAndClick('.esTopbar_custom_backToSite');\n+          this.waitAndClick('.s_Tb_Ln-Bck');\n         });\n       },\n \n@@ -2840,7 +2840,7 @@ export class TyE2eTestBrowser {\n         assert(!this.isVisible('.dw-p'));\n         assert(!this.isVisible('.dw-p-ttl'));\n         // Admin area not shown.\n-        assert(!this.isVisible('.esTopbar_custom_backToSite'));\n+        assert(!this.isVisible('.s_Tb_Ln'));\n         assert(!this.isVisible('#dw-react-admin-app'));\n         // User profile not shown.\n         assert(!this.isVisible(this.userProfilePage.avatarAboutButtonsSelector));\n@@ -5433,7 +5433,7 @@ export class TyE2eTestBrowser {\n \n       _navigateBackToUsersOrGroupsList: (isGroup: boolean) => {\n         this.repeatUntilAtNewUrl(() => {\n-          this.waitAndClick('.esTopbar_custom_title a');\n+          this.waitAndClick('.s_Tb_Ln-Grps');\n         });\n         if (this.urlPath().startsWith(c.GroupsUrlPrefix)) {\n           assert(isGroup);\n@@ -5984,7 +5984,7 @@ export class TyE2eTestBrowser {\n \n       clickLeaveAdminArea: () => {\n         this.repeatUntilAtNewUrl(() => {\n-          this.waitAndClick('.esTopbar_custom_backToSite');\n+          this.waitAndClick('.s_Tb_Ln-Bck');\n         });\n       },\n "
+    }
+  ]
+}
