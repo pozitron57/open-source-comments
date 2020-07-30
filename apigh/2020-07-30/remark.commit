@@ -1,0 +1,122 @@
+{
+  "sha": "729b6d2d0876f9c835e83f09b164827ad66e0136",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjcyOWI2ZDJkMDg3NmY5YzgzNWU4M2YwOWIxNjQ4MjdhZDY2ZTAxMzY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-07-27T21:58:47Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-07-27T21:58:47Z"
+    },
+    "message": "add `--proxy-cors` $PROXY_CORS disabling internal cors middleware #749",
+    "tree": {
+      "sha": "60aa9b9b249d19e08e9acdf88b748523ee9df5e0",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/60aa9b9b249d19e08e9acdf88b748523ee9df5e0"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/729b6d2d0876f9c835e83f09b164827ad66e0136",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/729b6d2d0876f9c835e83f09b164827ad66e0136",
+  "html_url": "https://github.com/umputun/remark42/commit/729b6d2d0876f9c835e83f09b164827ad66e0136",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/729b6d2d0876f9c835e83f09b164827ad66e0136/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0f9c41cfc696af02e7e5fa44eb56a8b642258c1d",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/0f9c41cfc696af02e7e5fa44eb56a8b642258c1d",
+      "html_url": "https://github.com/umputun/remark42/commit/0f9c41cfc696af02e7e5fa44eb56a8b642258c1d"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 17,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "a1208adbe65b7a5d0669783203e85229ebd9161f",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/729b6d2d0876f9c835e83f09b164827ad66e0136/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/729b6d2d0876f9c835e83f09b164827ad66e0136/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=729b6d2d0876f9c835e83f09b164827ad66e0136",
+      "patch": "@@ -187,6 +187,7 @@ _this is the recommended way to run remark42_\n | image-proxy.cache-external | IMAGE_PROXY_CACHE_EXTERNAL | `false`            | enable caching external images to current image storage |\n | emoji                   | EMOJI                   | `false`                  | enable emoji support                            |\n | simple-view             | SIMPLE_VIEW             | `false`                  | minimized UI with basic info only               |\n+| proxy-cors              | PROXY_CORS              | `false`                  | disable internal CORS and delegate it to proxy  |\n | port                    | REMARK_PORT             | `8080`                   | web server port                                 |\n | web-root                | REMARK_WEB_ROOT         | `./web`                  | web server root directory                       |\n | update-limit            | UPDATE_LIMIT            | `0.5`                    | updates/sec limit                               |"
+    },
+    {
+      "sha": "3c291716483777a5429eaf7912adf50e5bb9af91",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/729b6d2d0876f9c835e83f09b164827ad66e0136/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/729b6d2d0876f9c835e83f09b164827ad66e0136/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=729b6d2d0876f9c835e83f09b164827ad66e0136",
+      "patch": "@@ -75,6 +75,7 @@ type ServerCommand struct {\n \tRestrictedWords  []string      `long:\"restricted-words\" env:\"RESTRICTED_WORDS\" description:\"words prohibited to use in comments\" env-delim:\",\"`\n \tEnableEmoji      bool          `long:\"emoji\" env:\"EMOJI\" description:\"enable emoji\"`\n \tSimpleView       bool          `long:\"simpler-view\" env:\"SIMPLE_VIEW\" description:\"minimal comment editor mode\"`\n+\tProxyCORS        bool          `long:\"proxy-cors\" env:\"PROXY_CORS\" description:\"disable internal CORS and delegate it to proxy\"`\n \n \tAuth struct {\n \t\tTTL struct {\n@@ -453,6 +454,7 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \t\tEmojiEnabled:       s.EnableEmoji,\n \t\tAnonVote:           s.AnonymousVote && s.RestrictVoteIP,\n \t\tSimpleView:         s.SimpleView,\n+\t\tProxyCORS:          s.ProxyCORS,\n \t}\n \n \t// enable admin notifications only if admin email is set"
+    },
+    {
+      "sha": "f79404fb0a6aed9116554b484991df29151a7440",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 9,
+      "changes": 23,
+      "blob_url": "https://github.com/umputun/remark42/blob/729b6d2d0876f9c835e83f09b164827ad66e0136/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/729b6d2d0876f9c835e83f09b164827ad66e0136/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/rest/api/rest.go?ref=729b6d2d0876f9c835e83f09b164827ad66e0136",
+      "patch": "@@ -62,6 +62,7 @@ type Rest struct {\n \tEmailNotifications bool\n \tEmojiEnabled       bool\n \tSimpleView         bool\n+\tProxyCORS          bool\n \n \tSSLConfig   SSLConfig\n \thttpsServer *http.Server\n@@ -187,15 +188,19 @@ func (s *Rest) routes() chi.Router {\n \n \ts.pubRest, s.privRest, s.adminRest, s.rssRest = s.controllerGroups() // assign controllers for groups\n \n-\tcorsMiddleware := cors.New(cors.Options{\n-\t\tAllowedOrigins:   []string{\"*\"},\n-\t\tAllowedMethods:   []string{\"GET\", \"POST\", \"PUT\", \"DELETE\", \"OPTIONS\"},\n-\t\tAllowedHeaders:   []string{\"Accept\", \"Authorization\", \"Content-Type\", \"X-XSRF-Token\", \"X-JWT\"},\n-\t\tExposedHeaders:   []string{\"Authorization\"},\n-\t\tAllowCredentials: true,\n-\t\tMaxAge:           300,\n-\t})\n-\trouter.Use(corsMiddleware.Handler)\n+\tif s.ProxyCORS {\n+\t\tlog.Printf(\"[WARN] internal CORS disabled\")\n+\t} else {\n+\t\tcorsMiddleware := cors.New(cors.Options{\n+\t\t\tAllowedOrigins:   []string{\"*\"},\n+\t\t\tAllowedMethods:   []string{\"GET\", \"POST\", \"PUT\", \"DELETE\", \"OPTIONS\"},\n+\t\t\tAllowedHeaders:   []string{\"Accept\", \"Authorization\", \"Content-Type\", \"X-XSRF-Token\", \"X-JWT\"},\n+\t\t\tExposedHeaders:   []string{\"Authorization\"},\n+\t\t\tAllowCredentials: true,\n+\t\t\tMaxAge:           300,\n+\t\t})\n+\t\trouter.Use(corsMiddleware.Handler)\n+\t}\n \n \tipFn := func(ip string) string { return store.HashValue(ip, s.SharedSecret)[:12] } // logger uses it for anonymization\n \tlogInfoWithBody := logger.New(logger.Log(log.Default()), logger.WithBody, logger.IPfn(ipFn), logger.Prefix(\"[INFO]\")).Handler"
+    }
+  ]
+}
