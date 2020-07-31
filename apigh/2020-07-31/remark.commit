@@ -1,0 +1,98 @@
+{
+  "sha": "d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmQxMjY4YmJlOGM2Zjk0NTViMDdiNGNmZTdkMTVjZmUwMWU1NjRkMDE=",
+  "commit": {
+    "author": {
+      "name": "Pacharapol Withayasakpunt",
+      "email": "polv@polv.cc",
+      "date": "2020-06-14T12:51:51Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-07-30T17:24:48Z"
+    },
+    "message": "update README according to #737",
+    "tree": {
+      "sha": "e6b884be3b84e205fcba46af18c9871aa575b3bc",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/e6b884be3b84e205fcba46af18c9871aa575b3bc"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+  "html_url": "https://github.com/umputun/remark42/commit/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01/comments",
+  "author": {
+    "login": "patarapolw",
+    "id": 21255931,
+    "node_id": "MDQ6VXNlcjIxMjU1OTMx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/21255931?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/patarapolw",
+    "html_url": "https://github.com/patarapolw",
+    "followers_url": "https://api.github.com/users/patarapolw/followers",
+    "following_url": "https://api.github.com/users/patarapolw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/patarapolw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/patarapolw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/patarapolw/subscriptions",
+    "organizations_url": "https://api.github.com/users/patarapolw/orgs",
+    "repos_url": "https://api.github.com/users/patarapolw/repos",
+    "events_url": "https://api.github.com/users/patarapolw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/patarapolw/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "424016e9942ea7b50ab1cc6e07771e6df234701a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/424016e9942ea7b50ab1cc6e07771e6df234701a",
+      "html_url": "https://github.com/umputun/remark42/commit/424016e9942ea7b50ab1cc6e07771e6df234701a"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 7,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "7550e90dcbdc8922bebf9a8dc4e61769ac8bcc14",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 4,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+      "patch": "@@ -580,11 +580,14 @@ To bring it up run:\n \n ```bash\n # if you mainly work on backend\n-docker-compose -f compose-dev-backend.yml build\n-docker-compose -f compose-dev-backend.yml up\n+cp compose-dev-backend.yml compose-private.yml\n # if you mainly work on frontend\n-docker-compose -f compose-dev-frontend.yml build\n-docker-compose -f compose-dev-frontend.yml up\n+cp compose-dev-frontend.yml compose-private.yml\n+# now, edit / debug `compose-private.yml` to your heart's content.\n+\n+# build and run\n+docker-compose -f compose-private.yml build\n+docker-compose -f compose-private.yml up\n ```\n \n It starts Remark42 on `127.0.0.1:8080` and adds local OAuth2 provider “Dev”."
+    }
+  ]
+}
