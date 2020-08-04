@@ -1,0 +1,122 @@
+{
+  "sha": "8a0478b97d9799239cf5baaad2e61ae0520a935c",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4YTA0NzhiOTdkOTc5OTIzOWNmNWJhYWFkMmU2MWFlMDUyMGE5MzVj",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2020-08-04T09:57:33Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-08-04T09:57:33Z"
+    },
+    "message": "DEV: adds plugin api to add custom recipients of a post revision (#10367)\n\n* DEV: adds plugin api to add custom recipients of a post revision\r\n\r\nUsage:\r\n\r\n```\r\nadd_post_revision_notifier_recipients do |post_revision|\r\n  [78]\r\nend\r\n```",
+    "tree": {
+      "sha": "40abc7e9f1ecbc9e7300ae447ef4d012d31476bc",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/40abc7e9f1ecbc9e7300ae447ef4d012d31476bc"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/8a0478b97d9799239cf5baaad2e61ae0520a935c",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfKTENCRBK7hj4Ov3rIwAAdHIIAFlI+vbflhGqnKpNwhiXpUyS\neQpcPNmnDWeAPrLCDyns8aHvnryJvLgTAMk8+CWO9yjzsPK7eY2i8K9TGnsvWmfx\nmy+o8Py+Wb+PSGRPTrxVIf4Z8koiXjDW82hh3e//Gf3uSbvfOYmAvFLmTxnsqrih\njU/heWMljVyCSwae+UqpzJg7UNK32lyKU77GVav8RQbQIYDHQ+ykgLbaD7Zp+RjB\noCdkgJd1kyPHD12KLI2xWdTJm0l+1QQ2dHszzi5z0Zfd6PfznMzYJ4TREXl4g+Un\n2CoXUbHO/iYFQcbqZr/hCcxcvaeeX1Y1WOOcoiRwgW4FWPSMk3WY5WaQQ61B8u4=\n=5iyj\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 40abc7e9f1ecbc9e7300ae447ef4d012d31476bc\nparent 712ab33ff84087b2e23c5040a0c0472ca8533b82\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1596535053 +0200\ncommitter GitHub <noreply@github.com> 1596535053 +0200\n\nDEV: adds plugin api to add custom recipients of a post revision (#10367)\n\n* DEV: adds plugin api to add custom recipients of a post revision\r\n\r\nUsage:\r\n\r\n```\r\nadd_post_revision_notifier_recipients do |post_revision|\r\n  [78]\r\nend\r\n```"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/8a0478b97d9799239cf5baaad2e61ae0520a935c",
+  "html_url": "https://github.com/discourse/discourse/commit/8a0478b97d9799239cf5baaad2e61ae0520a935c",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/8a0478b97d9799239cf5baaad2e61ae0520a935c/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "712ab33ff84087b2e23c5040a0c0472ca8533b82",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/712ab33ff84087b2e23c5040a0c0472ca8533b82",
+      "html_url": "https://github.com/discourse/discourse/commit/712ab33ff84087b2e23c5040a0c0472ca8533b82"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 43,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "909e26321bf7a3012f47025ecee79f9719970504",
+      "filename": "app/services/post_action_notifier.rb",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/8a0478b97d9799239cf5baaad2e61ae0520a935c/app/services/post_action_notifier.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8a0478b97d9799239cf5baaad2e61ae0520a935c/app/services/post_action_notifier.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/post_action_notifier.rb?ref=8a0478b97d9799239cf5baaad2e61ae0520a935c",
+      "patch": "@@ -114,6 +114,10 @@ def self.after_create_post_revision(post_revision)\n       )\n     end\n \n+    custom_post_revision_notifier_recipients.each do |block|\n+      user_ids.concat(block.call(post_revision))\n+    end\n+\n     if user_ids.present?\n       DB.after_commit do\n         Jobs.enqueue(:notify_post_revision,\n@@ -137,4 +141,12 @@ def self.after_post_unhide(post, flaggers)\n       )\n     end\n   end\n+\n+  def self.custom_post_revision_notifier_recipients\n+    @custom_post_revision_notifier_recipients ||= Set.new\n+  end\n+\n+  def self.add_post_revision_notifier_recipients(&block)\n+    custom_post_revision_notifier_recipients << block\n+  end\n end"
+    },
+    {
+      "sha": "f1de573cc8f0271c5a03934e8b2e58513281dc25",
+      "filename": "lib/plugin/instance.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/8a0478b97d9799239cf5baaad2e61ae0520a935c/lib/plugin/instance.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8a0478b97d9799239cf5baaad2e61ae0520a935c/lib/plugin/instance.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/plugin/instance.rb?ref=8a0478b97d9799239cf5baaad2e61ae0520a935c",
+      "patch": "@@ -280,6 +280,15 @@ def topic_view_post_custom_fields_allowlister(&block)\n     end\n   end\n \n+  # Allows to add additional user_ids to the list of people notified when doing a post revision\n+  def add_post_revision_notifier_recipients(&block)\n+    reloadable_patch do |plugin|\n+      ::PostActionNotifier.add_post_revision_notifier_recipients do |post_revision|\n+        plugin.enabled? ? block.call(post_revision) : []\n+      end\n+    end\n+  end\n+\n   # Applies to all sites in a multisite environment. Ignores plugin.enabled?\n   def add_preloaded_group_custom_field(field)\n     reloadable_patch do |plugin|"
+    },
+    {
+      "sha": "dda4413463452041b43c4084e13896e60a15b6a8",
+      "filename": "spec/services/post_action_notifier_spec.rb",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "blob_url": "https://github.com/discourse/discourse/blob/8a0478b97d9799239cf5baaad2e61ae0520a935c/spec/services/post_action_notifier_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8a0478b97d9799239cf5baaad2e61ae0520a935c/spec/services/post_action_notifier_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/post_action_notifier_spec.rb?ref=8a0478b97d9799239cf5baaad2e61ae0520a935c",
+      "patch": "@@ -98,6 +98,28 @@\n \n     end\n \n+    context 'when using plugin API to add custom recipients' do\n+      let(:lurker) { Fabricate(:user) }\n+\n+      before do\n+        plugin = Plugin::Instance.new\n+        plugin.add_post_revision_notifier_recipients do |post_revision|\n+          [lurker.id]\n+        end\n+      end\n+\n+      after do\n+        DiscoursePluginRegistry.reset!\n+      end\n+\n+      it 'notifies the specified user of the revision' do\n+        expect {\n+          post.revise(evil_trout, raw: \"world is the new body of the message\")\n+        }.to change {\n+          lurker.notifications.count\n+        }.by(1)\n+      end\n+    end\n   end\n \n   context 'private message' do"
+    }
+  ]
+}
