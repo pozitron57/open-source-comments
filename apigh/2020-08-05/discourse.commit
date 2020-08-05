@@ -1,0 +1,98 @@
+{
+  "sha": "aee3c2c34d5536bf7a6d1673815e50efbfedfd44",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphZWUzYzJjMzRkNTUzNmJmN2E2ZDE2NzM4MTVlNTBlZmJmZWRmZDQ0",
+  "commit": {
+    "author": {
+      "name": "Andrew Schleifer",
+      "email": "me@andrewschleifer.name",
+      "date": "2020-08-04T03:08:37Z"
+    },
+    "committer": {
+      "name": "Andrew Schleifer",
+      "email": "me@andrewschleifer.name",
+      "date": "2020-08-05T09:49:42Z"
+    },
+    "message": "FIX: attempt to output a useful error message\n\ncurrently AWS problems will just dump a stack trace",
+    "tree": {
+      "sha": "7ea869bcabe52bbc031632cdc4ff90aff6868528",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7ea869bcabe52bbc031632cdc4ff90aff6868528"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/aee3c2c34d5536bf7a6d1673815e50efbfedfd44",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/aee3c2c34d5536bf7a6d1673815e50efbfedfd44",
+  "html_url": "https://github.com/discourse/discourse/commit/aee3c2c34d5536bf7a6d1673815e50efbfedfd44",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/aee3c2c34d5536bf7a6d1673815e50efbfedfd44/comments",
+  "author": {
+    "login": "andrewschleifer",
+    "id": 141361,
+    "node_id": "MDQ6VXNlcjE0MTM2MQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/141361?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andrewschleifer",
+    "html_url": "https://github.com/andrewschleifer",
+    "followers_url": "https://api.github.com/users/andrewschleifer/followers",
+    "following_url": "https://api.github.com/users/andrewschleifer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andrewschleifer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andrewschleifer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andrewschleifer/subscriptions",
+    "organizations_url": "https://api.github.com/users/andrewschleifer/orgs",
+    "repos_url": "https://api.github.com/users/andrewschleifer/repos",
+    "events_url": "https://api.github.com/users/andrewschleifer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andrewschleifer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "andrewschleifer",
+    "id": 141361,
+    "node_id": "MDQ6VXNlcjE0MTM2MQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/141361?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andrewschleifer",
+    "html_url": "https://github.com/andrewschleifer",
+    "followers_url": "https://api.github.com/users/andrewschleifer/followers",
+    "following_url": "https://api.github.com/users/andrewschleifer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andrewschleifer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andrewschleifer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andrewschleifer/subscriptions",
+    "organizations_url": "https://api.github.com/users/andrewschleifer/orgs",
+    "repos_url": "https://api.github.com/users/andrewschleifer/repos",
+    "events_url": "https://api.github.com/users/andrewschleifer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andrewschleifer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f4502d7739afd05b6996691ef489f0b62a89171d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/f4502d7739afd05b6996691ef489f0b62a89171d",
+      "html_url": "https://github.com/discourse/discourse/commit/f4502d7739afd05b6996691ef489f0b62a89171d"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "817f00c0326a043430938913eddac3a2ca8566ad",
+      "filename": "lib/s3_helper.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/aee3c2c34d5536bf7a6d1673815e50efbfedfd44/lib/s3_helper.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/aee3c2c34d5536bf7a6d1673815e50efbfedfd44/lib/s3_helper.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/s3_helper.rb?ref=aee3c2c34d5536bf7a6d1673815e50efbfedfd44",
+      "patch": "@@ -228,9 +228,9 @@ def self.s3_options(obj)\n   end\n \n   def download_file(filename, destination_path, failure_message = nil)\n-    unless object(filename).download_file(destination_path)\n-      raise failure_message&.to_s || \"Failed to download file\"\n-    end\n+    object(filename).download_file(destination_path)\n+  rescue => err\n+    raise failure_message&.to_s || \"Failed to download #{filename} because #{err.message}\"\n   end\n \n   def s3_client"
+    }
+  ]
+}
