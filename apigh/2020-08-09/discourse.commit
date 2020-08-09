@@ -1,0 +1,110 @@
+{
+  "sha": "232d277833c5e89aef1569b2167436b53f5747bb",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoyMzJkMjc3ODMzYzVlODlhZWYxNTY5YjIxNjc0MzZiNTNmNTc0N2Ji",
+  "commit": {
+    "author": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-08-07T20:38:41Z"
+    },
+    "committer": {
+      "name": "Robin Ward",
+      "email": "robin.ward@gmail.com",
+      "date": "2020-08-07T20:41:41Z"
+    },
+    "message": "REVERT: Resetting the filters is causing double transitions",
+    "tree": {
+      "sha": "be17ca25663660864d76f2a9a9739a309cbcce03",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/be17ca25663660864d76f2a9a9739a309cbcce03"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/232d277833c5e89aef1569b2167436b53f5747bb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/232d277833c5e89aef1569b2167436b53f5747bb",
+  "html_url": "https://github.com/discourse/discourse/commit/232d277833c5e89aef1569b2167436b53f5747bb",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/232d277833c5e89aef1569b2167436b53f5747bb/comments",
+  "author": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "eviltrout",
+    "id": 17538,
+    "node_id": "MDQ6VXNlcjE3NTM4",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17538?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eviltrout",
+    "html_url": "https://github.com/eviltrout",
+    "followers_url": "https://api.github.com/users/eviltrout/followers",
+    "following_url": "https://api.github.com/users/eviltrout/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eviltrout/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eviltrout/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eviltrout/subscriptions",
+    "organizations_url": "https://api.github.com/users/eviltrout/orgs",
+    "repos_url": "https://api.github.com/users/eviltrout/repos",
+    "events_url": "https://api.github.com/users/eviltrout/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eviltrout/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "33982c0c9eab29f01f36a1ae75e9594bfeaeda0a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/33982c0c9eab29f01f36a1ae75e9594bfeaeda0a",
+      "html_url": "https://github.com/discourse/discourse/commit/33982c0c9eab29f01f36a1ae75e9594bfeaeda0a"
+    }
+  ],
+  "stats": {
+    "total": 48,
+    "additions": 0,
+    "deletions": 48
+  },
+  "files": [
+    {
+      "sha": "78c08dd216305ce37a7d34ce84636b0b3a61a445",
+      "filename": "app/assets/javascripts/discourse/app/routes/build-category-route.js",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 24,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/232d277833c5e89aef1569b2167436b53f5747bb/app/assets/javascripts/discourse/app/routes/build-category-route.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/232d277833c5e89aef1569b2167436b53f5747bb/app/assets/javascripts/discourse/app/routes/build-category-route.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/routes/build-category-route.js?ref=232d277833c5e89aef1569b2167436b53f5747bb",
+      "patch": "@@ -10,7 +10,6 @@ import PermissionType from \"discourse/models/permission-type\";\n import CategoryList from \"discourse/models/category-list\";\n import Category from \"discourse/models/category\";\n import { Promise, all } from \"rsvp\";\n-import { action } from \"@ember/object\";\n \n // A helper function to create a category route with parameters\n export default (filterArg, params) => {\n@@ -230,29 +229,6 @@ export default (filterArg, params) => {\n       });\n     },\n \n-    resetParams(controller) {\n-      controller.setProperties({\n-        order: \"default\",\n-        ascending: false,\n-        max_posts: null\n-      });\n-    },\n-\n-    @action\n-    willTransition() {\n-      this._super(...arguments);\n-\n-      if (this.controller) {\n-        this.resetParams(this.controller);\n-      }\n-    },\n-\n-    resetController(controller, isExiting) {\n-      if (isExiting) {\n-        this.resetParams(controller);\n-      }\n-    },\n-\n     deactivate() {\n       this._super(...arguments);\n       this.searchService.set(\"searchContext\", null);"
+    },
+    {
+      "sha": "6b6b8dadc28cc60c3d47fa5d2c434eb943500e43",
+      "filename": "app/assets/javascripts/discourse/app/routes/build-topic-route.js",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 24,
+      "changes": 24,
+      "blob_url": "https://github.com/discourse/discourse/blob/232d277833c5e89aef1569b2167436b53f5747bb/app/assets/javascripts/discourse/app/routes/build-topic-route.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/232d277833c5e89aef1569b2167436b53f5747bb/app/assets/javascripts/discourse/app/routes/build-topic-route.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/routes/build-topic-route.js?ref=232d277833c5e89aef1569b2167436b53f5747bb",
+      "patch": "@@ -6,7 +6,6 @@ import { defaultHomepage } from \"discourse/lib/utilities\";\n import Session from \"discourse/models/session\";\n import { Promise } from \"rsvp\";\n import Site from \"discourse/models/site\";\n-import { action } from \"@ember/object\";\n \n // A helper to build a topic route for a filter\n function filterQueryParams(params, defaultParams) {\n@@ -148,29 +147,6 @@ export default function(filter, extras) {\n         );\n       },\n \n-      resetParams(controller) {\n-        controller.setProperties({\n-          order: \"default\",\n-          ascending: false,\n-          max_posts: null\n-        });\n-      },\n-\n-      @action\n-      willTransition() {\n-        this._super(...arguments);\n-\n-        if (this.controller) {\n-          this.resetParams(this.controller);\n-        }\n-      },\n-\n-      resetController(controller, isExiting) {\n-        if (isExiting) {\n-          this.resetParams(controller);\n-        }\n-      },\n-\n       renderTemplate() {\n         this.render(\"navigation/default\", { outlet: \"navigation-bar\" });\n         this.render(\"discovery/topics\", {"
+    }
+  ]
+}
