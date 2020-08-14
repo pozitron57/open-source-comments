@@ -1,0 +1,182 @@
+{
+  "sha": "4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0NjcwYjYyOTY5YjVlZWQyY2NmOTcyZDE0Y2YyMGYxMGFhYmZmMmI5",
+  "commit": {
+    "author": {
+      "name": "Martin Brennan",
+      "email": "mjrbrennan@gmail.com",
+      "date": "2020-08-14T02:01:31Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-08-14T02:01:31Z"
+    },
+    "message": "DEV: IMAP log to database (#10435)\n\nConvert all IMAP logging to write to a database table for easier inspection. These logs are cleaned up daily if they are > 5 days old.\r\n\r\nLogs can easily be watched in dev by setting DISCOURSE_DEV_LOG_LEVEL=\\\"debug\\\" and running tail -f development.log | grep IMAP",
+    "tree": {
+      "sha": "f15a8af3d22b3dc2eb336af54e063a70b860dad0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/f15a8af3d22b3dc2eb336af54e063a70b860dad0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfNfB8CRBK7hj4Ov3rIwAAdHIIAIb8iIJbq2GLJ4miJM3ATKif\n2rhFCf8Y41cMtmTu3zuujV1x1RapuRGDgqkn2RO+SkujKPi9CVZmsJI4hjF6vnx0\nXR3bA+jbd2Pe5c1iE0VYoIGToEDD7oddQRXq3xTfSVv387wFhQirlqaBZVwKdjfB\nqNaAcJL3wspVHcm+s5rpF4zVmKtZsZOaFsBqJG6L/Hifz4THEspI9/XF42puYbvI\nQsb/vaPq6lfaHLMyy3L4j1ShOMQzddXIyTEgtEX+lHaUiV4IaiczpbfzRj7VDz78\noOup5oynvPTFMOTmGj5TRw4ibcrJzzeF0hV5xnpi/8JlT2wQlqRC9c19W8Ckfhc=\n=NjPL\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree f15a8af3d22b3dc2eb336af54e063a70b860dad0\nparent eae8b0465c77850342804f89e74db9f3cce75ee8\nauthor Martin Brennan <mjrbrennan@gmail.com> 1597370491 +1000\ncommitter GitHub <noreply@github.com> 1597370491 +1000\n\nDEV: IMAP log to database (#10435)\n\nConvert all IMAP logging to write to a database table for easier inspection. These logs are cleaned up daily if they are > 5 days old.\r\n\r\nLogs can easily be watched in dev by setting DISCOURSE_DEV_LOG_LEVEL=\\\"debug\\\" and running tail -f development.log | grep IMAP"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+  "html_url": "https://github.com/discourse/discourse/commit/4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4670b62969b5eed2ccf972d14cf20f10aabff2b9/comments",
+  "author": {
+    "login": "martin-brennan",
+    "id": 920448,
+    "node_id": "MDQ6VXNlcjkyMDQ0OA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/920448?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/martin-brennan",
+    "html_url": "https://github.com/martin-brennan",
+    "followers_url": "https://api.github.com/users/martin-brennan/followers",
+    "following_url": "https://api.github.com/users/martin-brennan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/martin-brennan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/martin-brennan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/martin-brennan/subscriptions",
+    "organizations_url": "https://api.github.com/users/martin-brennan/orgs",
+    "repos_url": "https://api.github.com/users/martin-brennan/repos",
+    "events_url": "https://api.github.com/users/martin-brennan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/martin-brennan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eae8b0465c77850342804f89e74db9f3cce75ee8",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/eae8b0465c77850342804f89e74db9f3cce75ee8",
+      "html_url": "https://github.com/discourse/discourse/commit/eae8b0465c77850342804f89e74db9f3cce75ee8"
+    }
+  ],
+  "stats": {
+    "total": 228,
+    "additions": 166,
+    "deletions": 62
+  },
+  "files": [
+    {
+      "sha": "ac17cdd325f0bff878a15a64105fd97a66b3eee3",
+      "filename": "app/jobs/scheduled/cleanup_imap_sync_log.rb",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/app/jobs/scheduled/cleanup_imap_sync_log.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/app/jobs/scheduled/cleanup_imap_sync_log.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/scheduled/cleanup_imap_sync_log.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -0,0 +1,11 @@\n+# frozen_string_literal: true\n+\n+module Jobs\n+  class CleanupImapSyncLog < ::Jobs::Scheduled\n+    every 1.day\n+\n+    def execute(args)\n+      ImapSyncLog.where(\"created_at < ?\", ImapSyncLog::RETAIN_LOGS_DAYS.days.ago).delete_all\n+    end\n+  end\n+end"
+    },
+    {
+      "sha": "358b089cc53f34a73812a584580f75c302bf6d72",
+      "filename": "app/models/group.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/app/models/group.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/app/models/group.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/group.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -111,6 +111,8 @@ def self.visibility_levels\n   validates :mentionable_level, inclusion: { in: ALIAS_LEVELS.values }\n   validates :messageable_level, inclusion: { in: ALIAS_LEVELS.values }\n \n+  scope :with_imap_configured, -> { where.not(imap_mailbox_name: '') }\n+\n   scope :visible_groups, Proc.new { |user, order, opts|\n     groups = self.order(order || \"name ASC\")\n "
+    },
+    {
+      "sha": "7abf098647d22e22addfd585fce29244c5f1ef67",
+      "filename": "app/models/imap_sync_log.rb",
+      "status": "added",
+      "additions": 60,
+      "deletions": 0,
+      "changes": 60,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/app/models/imap_sync_log.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/app/models/imap_sync_log.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/imap_sync_log.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -0,0 +1,60 @@\n+# frozen_string_literal: true\n+\n+class ImapSyncLog < ActiveRecord::Base\n+  RETAIN_LOGS_DAYS = 5\n+\n+  belongs_to :group\n+\n+  def self.levels\n+    @levels ||= Enum.new(\n+      debug: 1,\n+      info: 2,\n+      warn: 3,\n+      error: 4\n+    )\n+  end\n+\n+  def self.log(message, level, group_id = nil)\n+    now = Time.now.strftime(\"%Y-%m-%d %H:%M:%S.%L\")\n+    new_log = create(message: message, level: ImapSyncLog.levels[level], group_id: group_id)\n+    Rails.logger.send(level, \"#{level[0].upcase}, [#{now}] [IMAP] (group_id #{group_id}) #{message}\")\n+    new_log\n+  end\n+\n+  def self.debug(message, group_or_id)\n+    group_id = group_or_id.is_a?(Integer) ? group_or_id : group_or_id.id\n+    log(message, :debug, group_id)\n+  end\n+\n+  def self.info(message, group_or_id)\n+    group_id = group_or_id.is_a?(Integer) ? group_or_id : group_or_id.id\n+    log(message, :info, group_id)\n+  end\n+\n+  def self.warn(message, group_or_id)\n+    group_id = group_or_id.is_a?(Integer) ? group_or_id : group_or_id.id\n+    log(message, :warn, group_id)\n+  end\n+\n+  def self.error(message, group_or_id)\n+    group_id = group_or_id.is_a?(Integer) ? group_or_id : group_or_id.id\n+    log(message, :error, group_id)\n+  end\n+end\n+\n+# == Schema Information\n+#\n+# Table name: imap_sync_logs\n+#\n+#  id         :bigint           not null, primary key\n+#  level      :integer\n+#  message    :string\n+#  group_id   :bigint\n+#  created_at :datetime         not null\n+#  updated_at :datetime         not null\n+#\n+# Indexes\n+#\n+#  index_imap_sync_logs_on_group_id  (group_id)\n+#  index_imap_sync_logs_on_level     (level)\n+#"
+    },
+    {
+      "sha": "96d786947cdaf53d6aaafdc16e1f757a47749d60",
+      "filename": "db/migrate/20200813044955_create_imap_sync_log.rb",
+      "status": "added",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/db/migrate/20200813044955_create_imap_sync_log.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/db/migrate/20200813044955_create_imap_sync_log.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20200813044955_create_imap_sync_log.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -0,0 +1,16 @@\n+# frozen_string_literal: true\n+\n+class CreateImapSyncLog < ActiveRecord::Migration[6.0]\n+  def change\n+    create_table :imap_sync_logs do |t|\n+      t.integer :level\n+      t.string :message\n+      t.bigint :group_id, null: true\n+\n+      t.timestamps\n+    end\n+\n+    add_index :imap_sync_logs, :group_id\n+    add_index :imap_sync_logs, :level\n+  end\n+end"
+    },
+    {
+      "sha": "f548e98765326c5d8f947c44b4a6d493efb7fbc7",
+      "filename": "lib/demon/email_sync.rb",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 36,
+      "changes": 74,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/lib/demon/email_sync.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/lib/demon/email_sync.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/demon/email_sync.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -23,28 +23,28 @@ def suppress_stderr\n   def start_thread(db, group)\n     Thread.new do\n       RailsMultisite::ConnectionManagement.with_connection(db) do\n-        puts \"[EmailSync] Thread started for group #{group.name} (id = #{group.id}) in db #{db}\"\n+        ImapSyncLog.debug(\"Thread started for group #{group.name} in db #{db}\", group)\n         begin\n-          obj = Imap::Sync.new(group)\n+          syncer = Imap::Sync.new(group)\n         rescue Net::IMAP::NoResponseError => e\n           group.update(imap_last_error: e.message)\n           Thread.exit\n         end\n \n-        @sync_lock.synchronize { @sync_data[db][group.id][:obj] = obj }\n+        @sync_lock.synchronize { @sync_data[db][group.id][:syncer] = syncer }\n \n         status = nil\n         idle = false\n \n         while @running && group.reload.imap_mailbox_name.present? do\n-          puts \"[EmailSync] Processing IMAP mailbox for group #{group.name} (id = #{group.id}) in db #{db}\"\n-          status = obj.process(\n-            idle: obj.can_idle? && status && status[:remaining] == 0,\n+          ImapSyncLog.debug(\"Processing mailbox for group #{group.name} in db #{db}\", group)\n+          status = syncer.process(\n+            idle: syncer.can_idle? && status && status[:remaining] == 0,\n             old_emails_limit: status && status[:remaining] > 0 ? 0 : nil,\n           )\n \n-          if !obj.can_idle? && status[:remaining] == 0\n-            puts \"[EmailSync] Going to sleep for group #{group.name} (id = #{group.id}) in db #{db} to wait for new emails.\"\n+          if !syncer.can_idle? && status[:remaining] == 0\n+            ImapSyncLog.debug(\"Going to sleep for group #{group.name} in db #{db} to wait for new emails\", group)\n \n             # Thread goes into sleep for a bit so it is better to return any\n             # connection back to the pool.\n@@ -54,7 +54,7 @@ def start_thread(db, group)\n           end\n         end\n \n-        obj.disconnect!\n+        syncer.disconnect!\n       end\n     end\n   end\n@@ -70,7 +70,7 @@ def kill_threads\n       sync_data.each do |_, data|\n         data[:thread].kill\n         data[:thread].join\n-        data[:obj]&.disconnect! rescue nil\n+        data[:syncer]&.disconnect! rescue nil\n       end\n     end\n \n@@ -106,44 +106,46 @@ def after_fork\n         sync_data.each do |_, data|\n           data[:thread].kill\n           data[:thread].join\n-          data[:obj]&.disconnect!\n+          data[:syncer]&.disconnect!\n         end\n \n         false\n       end\n \n       RailsMultisite::ConnectionManagement.each_connection do |db|\n-        if SiteSetting.enable_imap\n-          groups = Group.where.not(imap_mailbox_name: '').map { |group| [group.id, group] }.to_h\n+        next if !SiteSetting.enable_imap\n \n-          @sync_lock.synchronize do\n-            @sync_data[db] ||= {}\n+        groups = Group.with_imap_configured.map { |group| [group.id, group] }.to_h\n \n-            # Kill threads for group's mailbox that are no longer synchronized.\n-            @sync_data[db].filter! do |group_id, data|\n-              next true if groups[group_id] && data[:thread]&.alive? && !data[:obj]&.disconnected?\n+        @sync_lock.synchronize do\n+          @sync_data[db] ||= {}\n \n-              if !groups[group_id]\n-                puts(\"[EmailSync] Killing thread for group (id = #{group_id}) because mailbox is no longer synced\")\n-              else\n-                puts(\"[EmailSync] Thread for group #{groups[group_id].name} (id = #{group_id}) is dead\")\n-              end\n+          # Kill threads for group's mailbox that are no longer synchronized.\n+          @sync_data[db].filter! do |group_id, data|\n+            next true if groups[group_id] && data[:thread]&.alive? && !data[:syncer]&.disconnected?\n \n-              data[:thread].kill\n-              data[:thread].join\n-              data[:obj]&.disconnect!\n-\n-              false\n+            if !groups[group_id]\n+              ImapSyncLog.warn(\"Killing thread for group because mailbox is no longer synced\", group_id)\n+            else\n+              ImapSyncLog.warn(\"Thread for group is dead\", group_id)\n             end\n \n-            # Spawn new threads for groups that are now synchronized.\n-            groups.each do |group_id, group|\n-              if !@sync_data[db][group_id]\n-                puts(\"[EmailSync] Starting thread for group #{group.name} (id = #{group.id}) and mailbox #{group.imap_mailbox_name}\")\n-                @sync_data[db][group_id] = {\n-                  thread: start_thread(db, group), obj: nil\n-                }\n-              end\n+            data[:thread].kill\n+            data[:thread].join\n+            data[:syncer]&.disconnect!\n+\n+            false\n+          end\n+\n+          # Spawn new threads for groups that are now synchronized.\n+          groups.each do |group_id, group|\n+            if !@sync_data[db][group_id]\n+              ImapSyncLog.debug(\"Starting thread for group #{group.name} mailbox #{group.imap_mailbox_name}\", group)\n+\n+              @sync_data[db][group_id] = {\n+                thread: start_thread(db, group),\n+                syncer: nil\n+              }\n             end\n           end\n         end"
+    },
+    {
+      "sha": "8400cc5396096ab6a341283dcbc8377c2cb4af4e",
+      "filename": "lib/imap/providers/gmail.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/lib/imap/providers/gmail.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/lib/imap/providers/gmail.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/imap/providers/gmail.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -77,7 +77,7 @@ def archive(uid)\n           new_labels = labels.reject { |l| l == \"\\\\Inbox\" }\n           store(email[\"UID\"], \"LABELS\", labels, new_labels)\n         end\n-        Imap::Sync::Logger.log(\"[IMAP] Thread ID #{thread_id} (UID #{uid}) archived in Gmail mailbox for #{@username}\")\n+        ImapSyncLog.log(\"Thread ID #{thread_id} (UID #{uid}) archived in Gmail mailbox for #{@username}\", :debug)\n       end\n \n       # Though Gmail considers the email thread unarchived if the first email\n@@ -94,7 +94,7 @@ def unarchive(uid)\n           end\n           store(email[\"UID\"], \"LABELS\", labels, new_labels)\n         end\n-        Imap::Sync::Logger.log(\"[IMAP] Thread ID #{thread_id} (UID #{uid}) unarchived in Gmail mailbox for #{@username}\")\n+        ImapSyncLog.log(\"Thread ID #{thread_id} (UID #{uid}) unarchived in Gmail mailbox for #{@username}\", :debug)\n       end\n \n       def thread_id_from_uid(uid)\n@@ -116,7 +116,7 @@ def trash_move(uid)\n         email_uids_to_trash = emails_in_thread(thread_id).map { |e| e['UID'] }\n \n         imap.uid_move(email_uids_to_trash, trash_mailbox)\n-        Imap::Sync::Logger.log(\"[IMAP] Thread ID #{thread_id} (UID #{uid}) trashed in Gmail mailbox for #{@username}\")\n+        ImapSyncLog.log(\"Thread ID #{thread_id} (UID #{uid}) trashed in Gmail mailbox for #{@username}\", :debug)\n         { trash_uid_validity: open_trash_mailbox, email_uids_to_trash: email_uids_to_trash }\n       end\n "
+    },
+    {
+      "sha": "99ae2b995c0f307fa7f3a83c2b782a63dc3093e9",
+      "filename": "lib/imap/sync.rb",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 23,
+      "changes": 39,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/lib/imap/sync.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/lib/imap/sync.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/imap/sync.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -4,16 +4,6 @@\n \n module Imap\n   class Sync\n-    class Logger\n-      def self.log(msg, level = :debug)\n-        if ENV['DISCOURSE_EMAIL_SYNC_LOG_OVERRIDE'] == 'warn'\n-          Rails.logger.warn(msg)\n-        else\n-          Rails.logger.send(level, msg)\n-        end\n-      end\n-    end\n-\n     def initialize(group, opts = {})\n       @group = group\n       @provider = Imap::Providers::Detector.init_with_detected_provider(@group.imap_config)\n@@ -53,12 +43,12 @@ def process(idle: false, import_limit: nil, old_emails_limit: nil, new_emails_li\n         # If UID validity changes, the whole mailbox must be synchronized (all\n         # emails are considered new and will be associated to existent topics\n         # in Email::Reciever by matching Message-Ids).\n-        Logger.log(\"[IMAP] (#{@group.name}) UIDVALIDITY = #{@status[:uid_validity]} does not match expected #{@group.imap_uid_validity}, invalidating IMAP cache and resyncing emails for group #{@group.name} and mailbox #{@group.imap_mailbox_name}\", :warn)\n+        ImapSyncLog.warn(\"UIDVALIDITY = #{@status[:uid_validity]} does not match expected #{@group.imap_uid_validity}, invalidating IMAP cache and resyncing emails for mailbox #{@group.imap_mailbox_name}\", @group)\n         @group.imap_last_uid = 0\n       end\n \n       if idle && !can_idle?\n-        Logger.log(\"[IMAP] (#{@group.name}) IMAP server for group cannot IDLE\", :warn)\n+        ImapSyncLog.warn(\"IMAP server for group cannot IDLE or imap idle site setting is disabled\", @group)\n         idle = false\n       end\n \n@@ -70,7 +60,7 @@ def process(idle: false, import_limit: nil, old_emails_limit: nil, new_emails_li\n         ActiveRecord::Base.connection_handler.clear_active_connections!\n \n         idle_polling_mins = SiteSetting.imap_polling_period_mins.minutes.to_i\n-        Logger.log(\"[IMAP] (#{@group.name}) Going IDLE for #{idle_polling_mins} seconds to wait for more work\")\n+        ImapSyncLog.debug(\"Going IDLE for #{idle_polling_mins} seconds to wait for more work\", @group)\n \n         @provider.imap.idle(idle_polling_mins) do |resp|\n           if resp.kind_of?(Net::IMAP::UntaggedResponse) && resp.name == 'EXISTS'\n@@ -92,7 +82,7 @@ def process(idle: false, import_limit: nil, old_emails_limit: nil, new_emails_li\n       # Sometimes, new_uids contains elements from old_uids.\n       new_uids = new_uids - old_uids\n \n-      Logger.log(\"[IMAP] (#{@group.name}) Remote email server has #{old_uids.size} old emails and #{new_uids.size} new emails\")\n+      ImapSyncLog.debug(\"Remote email server has #{old_uids.size} old emails and #{new_uids.size} new emails\", @group)\n \n       all_old_uids_size = old_uids.size\n       all_new_uids_size = new_uids.size\n@@ -134,7 +124,7 @@ def update_topic(email, incoming_email, opts = {})\n     private\n \n     def process_old_uids(old_uids)\n-      Logger.log(\"[IMAP] (#{@group.name}) Syncing #{old_uids.size} randomly-selected old emails\")\n+      ImapSyncLog.debug(\"Syncing #{old_uids.size} randomly-selected old emails\", @group)\n       emails = old_uids.empty? ? [] : @provider.emails(old_uids, ['UID', 'FLAGS', 'LABELS', 'ENVELOPE'])\n       emails.each do |email|\n         incoming_email = IncomingEmail.find_by(\n@@ -161,7 +151,7 @@ def process_old_uids(old_uids)\n             )\n             update_topic(email, incoming_email, mailbox_name: @group.imap_mailbox_name)\n           else\n-            Logger.log(\"[IMAP] (#{@group.name}) Could not find old email (UIDVALIDITY = #{@status[:uid_validity]}, UID = #{email['UID']})\", :warn)\n+            ImapSyncLog.warn(\"Could not find old email (UIDVALIDITY = #{@status[:uid_validity]}, UID = #{email['UID']})\", @group)\n           end\n         end\n       end\n@@ -204,18 +194,18 @@ def handle_missing_uids(old_uids)\n         # not exist, and this sync is just updating the old UIDs to the new ones\n         # in the trash, and we don't need to re-destroy the post\n         if incoming.post\n-          Logger.log(\"[IMAP] (#{@group.name}) Deleting post ID #{incoming.post_id}; it has been deleted on the IMAP server.\")\n+          ImapSyncLog.debug(\"Deleting post ID #{incoming.post_id}, topic id #{incoming.topic_id}; email has been deleted on the IMAP server.\", @group)\n           PostDestroyer.new(Discourse.system_user, incoming.post).destroy\n         end\n \n         # the email has moved mailboxes, we don't want to try trashing again next time\n-        Logger.log(\"[IMAP] (#{@group.name}) Updating incoming ID #{incoming.id} uid data FROM [UID #{incoming.imap_uid} | UIDVALIDITY #{incoming.imap_uid_validity}] TO [UID #{matching_trashed.uid} | UIDVALIDITY #{response.trash_uid_validity}] (TRASHED)\")\n+        ImapSyncLog.debug(\"Updating incoming ID #{incoming.id} uid data FROM [UID #{incoming.imap_uid} | UIDVALIDITY #{incoming.imap_uid_validity}] TO [UID #{matching_trashed.uid} | UIDVALIDITY #{response.trash_uid_validity}] (TRASHED)\", @group)\n         incoming.update(imap_uid_validity: response.trash_uid_validity, imap_uid: matching_trashed.uid)\n       end\n     end\n \n     def process_new_uids(new_uids, import_mode, all_old_uids_size, all_new_uids_size)\n-      Logger.log(\"[IMAP] (#{@group.name}) Syncing #{new_uids.size} new emails (oldest first)\")\n+      ImapSyncLog.debug(\"Syncing #{new_uids.size} new emails (oldest first)\", @group)\n \n       emails = @provider.emails(new_uids, ['UID', 'FLAGS', 'LABELS', 'RFC822'])\n       processed = 0\n@@ -242,7 +232,7 @@ def process_new_uids(new_uids, import_mode, all_old_uids_size, all_new_uids_size\n \n           update_topic(email, receiver.incoming_email, mailbox_name: @group.imap_mailbox_name)\n         rescue Email::Receiver::ProcessingError => e\n-          Logger.log(\"[IMAP] (#{@group.name}) Could not process (UIDVALIDITY = #{@status[:uid_validity]}, UID = #{email['UID']}): #{e.message}\", :warn)\n+          ImapSyncLog.warn(\"Could not process (UIDVALIDITY = #{@status[:uid_validity]}, UID = #{email['UID']}): #{e.message}\", @group)\n         end\n \n         processed += 1\n@@ -262,7 +252,7 @@ def sync_to_server\n       if to_sync.size > 0\n         @provider.open_mailbox(@group.imap_mailbox_name, write: true)\n         to_sync.each do |incoming_email|\n-          Logger.log(\"[IMAP] (#{@group.name}) Updating email and incoming email ID = #{incoming_email.id}\")\n+          ImapSyncLog.debug(\"Updating email on IMAP server for incoming email ID = #{incoming_email.id}, UID = #{incoming_email.imap_uid}\", @group)\n           update_email(incoming_email)\n           incoming_email.update(imap_sync: false)\n         end\n@@ -276,8 +266,10 @@ def update_topic_archived_state(email, incoming_email, opts = {})\n       email_is_archived = !email['LABELS'].include?('\\\\Inbox') && !email['LABELS'].include?('INBOX')\n \n       if topic_is_archived && !email_is_archived\n+        ImapSyncLog.debug(\"Unarchiving topic ID #{topic.id}, email was unarchived\", @group)\n         GroupArchivedMessage.move_to_inbox!(@group.id, topic, skip_imap_sync: true)\n       elsif !topic_is_archived && email_is_archived\n+        ImapSyncLog.debug(\"Archiving topic ID #{topic.id}, email was archived\", @group)\n         GroupArchivedMessage.archive!(@group.id, topic, skip_imap_sync: true)\n       end\n     end\n@@ -346,6 +338,7 @@ def update_email(incoming_email)\n       if !topic\n         # no need to do anything further here, we will recognize the UIDs in the\n         # mail server email thread have been trashed on next sync\n+        ImapSyncLog.debug(\"Trashing UID #{incoming_email.imap_uid} (incoming ID #{incoming_email.id})\", @group)\n         return @provider.trash(incoming_email.imap_uid)\n       end\n \n@@ -358,12 +351,12 @@ def update_email(incoming_email)\n         # at the same time.\n         new_labels << \"\\\\Inbox\"\n \n-        Logger.log(\"[IMAP] (#{@group.name}) Unarchiving UID #{incoming_email.imap_uid}\")\n+        ImapSyncLog.debug(\"Unarchiving UID #{incoming_email.imap_uid} (incoming ID #{incoming_email.id})\", @group)\n \n         # some providers need special handling for unarchiving too\n         @provider.unarchive(incoming_email.imap_uid)\n       else\n-        Logger.log(\"[IMAP] (#{@group.name}) Archiving UID #{incoming_email.imap_uid}\")\n+        ImapSyncLog.debug(\"Archiving UID #{incoming_email.imap_uid} (incoming ID #{incoming_email.id})\", @group)\n \n         # some providers need special handling for archiving. this way we preserve\n         # any new tag-labels, and archive, even though it may cause extra requests"
+    },
+    {
+      "sha": "e2a8091b795f63ad0129612f7d2bc42057941618",
+      "filename": "spec/jobs/cleanup_imap_sync_log_spec.rb",
+      "status": "added",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/4670b62969b5eed2ccf972d14cf20f10aabff2b9/spec/jobs/cleanup_imap_sync_log_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4670b62969b5eed2ccf972d14cf20f10aabff2b9/spec/jobs/cleanup_imap_sync_log_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/cleanup_imap_sync_log_spec.rb?ref=4670b62969b5eed2ccf972d14cf20f10aabff2b9",
+      "patch": "@@ -0,0 +1,20 @@\n+# frozen_string_literal: true\n+\n+require 'rails_helper'\n+\n+describe Jobs::CleanupImapSyncLog do\n+  let(:job_class) { Jobs::CleanupImapSyncLog.new }\n+\n+  it \"deletes logs older than RETAIN_LOGS_DAYS\" do\n+    log1 = ImapSyncLog.log(\"Test log 1\", :debug)\n+    log2 = ImapSyncLog.log(\"Test log 2\", :debug)\n+    log3 = ImapSyncLog.log(\"Test log 3\", :debug)\n+\n+    log2.update(created_at: Time.now - 6.days)\n+    log3.update(created_at: Time.now - 7.days)\n+\n+    job_class.execute({})\n+\n+    expect(ImapSyncLog.count).to eq(1)\n+  end\n+end"
+    }
+  ]
+}
