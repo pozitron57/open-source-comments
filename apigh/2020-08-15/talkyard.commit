@@ -1,0 +1,98 @@
+{
+  "sha": "aa16f5cf8f335dcf9258ad23e6184da94f05d9ae",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6YWExNmY1Y2Y4ZjMzNWRjZjkyNThhZDIzZTYxODRkYTk0ZjA1ZDlhZQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-08-09T14:07:22Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-08-09T14:07:22Z"
+    },
+    "message": "Make e2e tests more stable.",
+    "tree": {
+      "sha": "75b9bd7f533b2eb161f42c689993de0612e6defd",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/75b9bd7f533b2eb161f42c689993de0612e6defd"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/aa16f5cf8f335dcf9258ad23e6184da94f05d9ae",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/aa16f5cf8f335dcf9258ad23e6184da94f05d9ae",
+  "html_url": "https://github.com/debiki/talkyard/commit/aa16f5cf8f335dcf9258ad23e6184da94f05d9ae",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/aa16f5cf8f335dcf9258ad23e6184da94f05d9ae/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eb8408082b7ee0f4fe5b2209cdd2814c3dc6a46c",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/eb8408082b7ee0f4fe5b2209cdd2814c3dc6a46c",
+      "html_url": "https://github.com/debiki/talkyard/commit/eb8408082b7ee0f4fe5b2209cdd2814c3dc6a46c"
+    }
+  ],
+  "stats": {
+    "total": 33,
+    "additions": 23,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "142c5ad9b8d77370e88cae44efec33ae032b1811",
+      "filename": "tests/e2e/utils/pages-for.ts",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 10,
+      "changes": 33,
+      "blob_url": "https://github.com/debiki/talkyard/blob/aa16f5cf8f335dcf9258ad23e6184da94f05d9ae/tests/e2e/utils/pages-for.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/aa16f5cf8f335dcf9258ad23e6184da94f05d9ae/tests/e2e/utils/pages-for.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/utils/pages-for.ts?ref=aa16f5cf8f335dcf9258ad23e6184da94f05d9ae",
+      "patch": "@@ -917,19 +917,20 @@ export class TyE2eTestBrowser {\n     }\n \n \n-    getBoundingClientRect(selector: string): ElemRect {\n+    getBoundingClientRect(selector: string, opts: { mustExist?: boolean } = {}): ElemRect | U {\n       // Something like this might work too:\n       //   const elemId: string = this.#br.findElement('css selector', selector);\n       //   this.#br.getElementRect(elemId);  — how get the id?\n       // But this already works:\n       const result = this.#br.execute(function(selector) {\n         var elem = document.querySelector(selector);\n-        if (!elem) return null;\n+        if (!elem) return undefined;\n         var rect = elem.getBoundingClientRect();\n         return { x: rect.x, y: rect.y, width: rect.width, height: rect.height };\n       }, selector);\n \n-      dieIf(!result, `Cannot find selector:  ${selector}  [TyE046WKSTH24]`);\n+      dieIf(!result && opts.mustExist !== false,\n+            `Cannot find selector:  ${selector}  [TyE046WKSTH24]`);\n       return result;\n     }\n \n@@ -1094,14 +1095,26 @@ export class TyE2eTestBrowser {\n     // Can be used to wait until a fade-&-scroll-in dialog is done scrolling in, for example.\n     //\n     waitUntilDoesNotMove(buttonSelector: string, pollInterval?: number) {\n-      for (let attemptNr = 1; attemptNr <= 30; ++attemptNr) {\n-        const location = this.getBoundingClientRect(buttonSelector);\n+      let problem;\n+      this.waitUntil(() => {\n+        const location = this.getBoundingClientRect(buttonSelector, { mustExist: false });\n+        if (!location) {\n+          problem = `waitUntilDoesNotMove(..): Elem does not yet exist:  ${buttonSelector}`\n+          return false;\n+        }\n+\n         this.#br.pause(pollInterval || 50);\n-        const locationLater = this.getBoundingClientRect(buttonSelector);\n-        if (location.y === locationLater.y && location.x === locationLater.x)\n-          return;\n-      }\n-      die(`Never stops moving: '${buttonSelector}' [EdE7KFYU0]`);\n+\n+        const locationLater = this.getBoundingClientRect(buttonSelector, { mustExist: true });\n+        if (location.y !== locationLater.y || location.x !== locationLater.x) {\n+          problem = `Keeps moving and moving: '${buttonSelector}' [EdE7KFYU0]`;\n+          return false;\n+        }\n+\n+        return true;\n+      }, {\n+        message: problem,\n+      });\n     }\n \n "
+    }
+  ]
+}

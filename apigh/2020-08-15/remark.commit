@@ -1,0 +1,170 @@
+{
+  "sha": "5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjVkNjcyOWRkZDU5ZTFiMmY3Y2M1Y2NlOTlkMTk4MmZmMzkwM2FiODA=",
+  "commit": {
+    "author": {
+      "name": "Pacharapol Withayasakpunt",
+      "email": "polv@polv.cc",
+      "date": "2020-07-31T17:21:00Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-07-31T17:21:00Z"
+    },
+    "message": "Fix to work without errors in Nuxt Universal (#723)\n\nby @patarapolw \r\n\r\n* allow manual init and destroy for use with Nuxt\r\n\r\n* fix onDestroy-related methods\r\n\r\n* avoid global scope, and use function scope instead\r\n\r\n* add createInstance function to window.REMARK42\r\n\r\n* 1. allow DOMNode to be put in remark_config 2. check remark_config before try to attach node\r\n\r\n* move createInstance function outside\r\n\r\n* update embed.ts\r\n\r\n* avoid ?.\r\n\r\n* 📚 Docs: doc on how to make it work with SPAs\r\n\r\n* 📚 Docs: fix spa.md to be more flexible\r\n\r\n* ✨ Feat: add REMARK42::ready event\r\n\r\n* remove nuxt-specific terminologies\r\n\r\n* tell MutationObserver to disconnect on destroy\r\n\r\n* update docs/spa.md",
+    "tree": {
+      "sha": "e9f3ab584ceb4346d59529dd52f6ee8ed642b337",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/e9f3ab584ceb4346d59529dd52f6ee8ed642b337"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfJFL8CRBK7hj4Ov3rIwAAdHIIAAT64++Vn9o6enkZ1/z35nvS\nDZTO34kQrl0ogL5tIWggX8xf9OHOuKAQyq3q5i5r7kO8TydSLtB/lacyxePnFCM/\nzRLo7iUZbgWYw1SYjjoIEHUkQ0N5NSuvQqzcYPXz7oOav0w44TzA2lW/BWCNAJIN\neKUYDhins0/XRAkPLrF1Wpm6g1tfUpAni+0g/AiDwjxFlIHLJNmnAkCmm3x6imyf\nx9bx83WXKZUnK9SpKeCtjvsYtZGi7DxQhsmz1hH43ivCKlqj6KK2l0ZffiLGZ2Yw\nz1KJepyB3DtB2pZuZzxcNYsk6S3CE0P9G+kxLFLMas+dWp/acj49ojq0PaDy4bM=\n=Frzs\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e9f3ab584ceb4346d59529dd52f6ee8ed642b337\nparent d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01\nauthor Pacharapol Withayasakpunt <polv@polv.cc> 1596216060 +0700\ncommitter GitHub <noreply@github.com> 1596216060 -0500\n\nFix to work without errors in Nuxt Universal (#723)\n\nby @patarapolw \r\n\r\n* allow manual init and destroy for use with Nuxt\r\n\r\n* fix onDestroy-related methods\r\n\r\n* avoid global scope, and use function scope instead\r\n\r\n* add createInstance function to window.REMARK42\r\n\r\n* 1. allow DOMNode to be put in remark_config 2. check remark_config before try to attach node\r\n\r\n* move createInstance function outside\r\n\r\n* update embed.ts\r\n\r\n* avoid ?.\r\n\r\n* 📚 Docs: doc on how to make it work with SPAs\r\n\r\n* 📚 Docs: fix spa.md to be more flexible\r\n\r\n* ✨ Feat: add REMARK42::ready event\r\n\r\n* remove nuxt-specific terminologies\r\n\r\n* tell MutationObserver to disconnect on destroy\r\n\r\n* update docs/spa.md"
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+  "html_url": "https://github.com/umputun/remark42/commit/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/comments",
+  "author": {
+    "login": "patarapolw",
+    "id": 21255931,
+    "node_id": "MDQ6VXNlcjIxMjU1OTMx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/21255931?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/patarapolw",
+    "html_url": "https://github.com/patarapolw",
+    "followers_url": "https://api.github.com/users/patarapolw/followers",
+    "following_url": "https://api.github.com/users/patarapolw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/patarapolw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/patarapolw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/patarapolw/subscriptions",
+    "organizations_url": "https://api.github.com/users/patarapolw/orgs",
+    "repos_url": "https://api.github.com/users/patarapolw/repos",
+    "events_url": "https://api.github.com/users/patarapolw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/patarapolw/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01",
+      "html_url": "https://github.com/umputun/remark42/commit/d1268bbe8c6f9455b07b4cfe7d15cfe01e564d01"
+    }
+  ],
+  "stats": {
+    "total": 256,
+    "additions": 188,
+    "deletions": 68
+  },
+  "files": [
+    {
+      "sha": "c8c4e946bbb4a46f91ce9a7ad3bfaef851b03c4c",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -476,6 +476,8 @@ And then add this node in the place where you want to see Remark42 widget:\n \n After that widget will be rendered inside this node.\n \n+If you want to set this up on a Single Page App, see [/docs/spa.md](/docs/spa.md).\n+\n ##### Themes\n \n Right now Remark has two themes: light and dark."
+    },
+    {
+      "sha": "99f8059cec2b68bed89d74eba2e6ec0551b23d98",
+      "filename": "docs/README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/docs/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/docs/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/docs/README.md?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -2,6 +2,7 @@\n \n - [How to configure remark42 with nginx reverse proxy](nginx-proxy.md)\n - [How to configure remark42 without a subdomain](subdomain.md) with Nginx or Caddy\n+- [How to configure remark42 for Single Page Apps (SPA)](spa.md)\n - [Telegram notifications](telegram.md)\n - [Setup email authentication and\\or email notifications](email.md)\n - [How to add new translation to remark42](translation.md)"
+    },
+    {
+      "sha": "d2fc8e4a06d5dffc30289f0521a5c22671f9d679",
+      "filename": "docs/spa.md",
+      "status": "added",
+      "additions": 68,
+      "deletions": 0,
+      "changes": 68,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/docs/spa.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/docs/spa.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/docs/spa.md?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -0,0 +1,68 @@\n+## How to configure remark42 for Single Page Apps (SPA)\n+\n+Originally tested on [Nuxt.js](https://nuxtjs.org/), but it should be applicable to all SPAs.\n+\n+- Add the following JavaScript to your `index.html`, which in this case, it is identical to `<script defer src=\"$HOST/web/embed.js\"></script>`\n+\n+```js\n+;(function () {\n+  var host = // Your remark42 host\n+  var components = ['embed'] // Your choice of remark42 components\n+\n+  ;(function(c) {\n+    for (let i = 0; i < c.length; i++) {\n+      const d = document\n+      const s = d.createElement('script')\n+      s.src = remark_config.host + '/web/' + c[i] + '.js'\n+      s.defer = true\n+      ;(d.head || d.body).appendChild(s)\n+    }\n+  })(components)\n+})\n+```\n+\n+- Created `remark42Instance` when the `div` containing remark42 has appear, usually at `mounted` or `componentDidMount` of the SPA lifecycle. Destroy the previous instance first, if neccessary.\n+\n+```ts\n+  initRemark42() {\n+    if (window.REMARK42) {\n+      if (this.remark42Instance) {\n+        this.remark42Instance.destroy()\n+      }\n+\n+      this.remark42Instance = window.REMARK42.createInstance({\n+        node: this.$refs.remark42 as HTMLElement,\n+        ...remark42_config  // See <https://github.com/patarapolw/remark42#setup-on-your-website>\n+      })\n+    }\n+  }\n+\n+  mounted() {\n+    if (window.REMARK42) {\n+      this.initRemark42()\n+    } else {\n+      window.addEventListener('REMARK42::ready', () => {\n+        this.initRemark42()\n+      })\n+    }\n+  }\n+```\n+\n+- Ensure that this is called every time route changes\n+\n+```ts\n+  @Watch('$route.path')\n+  onRouteChange() {\n+    this.initRemark42()\n+  }\n+```\n+\n+- And, destroyed before routeLeave\n+\n+```ts\n+  beforeRouteLeave() {\n+    if (this.remark42Instance) {\n+      this.remark42Instance.destroy()\n+    }\n+  }\n+```"
+    },
+    {
+      "sha": "b9339f9e393037c4ac29829a2f46405bc0b06a3b",
+      "filename": "frontend/.size-limit.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/.size-limit.js",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/.size-limit.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/.size-limit.js?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -1,7 +1,7 @@\n module.exports = [\n   {\n     path: 'public/embed.js',\n-    limit: '2.55 KB',\n+    limit: '2.7 KB',\n   },\n   {\n     limit: '86 KB',"
+    },
+    {
+      "sha": "0e417ea5f441c95475b68eb429d21125a0c75647",
+      "filename": "frontend/app/@types/global.d.ts",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/app/@types/global.d.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/app/@types/global.d.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/@types/global.d.ts?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -5,7 +5,16 @@ declare global {\n   interface Window {\n     remark_config: CommentsConfig;\n     REMARK42: {\n-      changeTheme(theme: Theme): void;\n+      changeTheme?: (theme: Theme) => void;\n+      destroy?: () => void;\n+      createInstance: (\n+        remark_config: CommentsConfig\n+      ) =>\n+        | {\n+            changeTheme(theme: Theme): void;\n+            destroy(): void;\n+          }\n+        | undefined;\n     };\n   }\n "
+    },
+    {
+      "sha": "5a48c825d2a7b267a05ec5828d4448a6894c94bb",
+      "filename": "frontend/app/common/config-types.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/app/common/config-types.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/app/common/config-types.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/common/config-types.ts?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -15,7 +15,7 @@ export interface CommentsConfig {\n   max_shown_comments?: number;\n   theme?: Theme;\n   page_title?: string;\n-  node?: string;\n+  node?: string | HTMLElement;\n   locale?: string;\n   // eslint-disable-next-line @typescript-eslint/no-explicit-any\n   __colors__?: any;"
+    },
+    {
+      "sha": "b6a5e0b05b98478f6682076b6655cf1523c493af",
+      "filename": "frontend/app/embed.ts",
+      "status": "modified",
+      "additions": 105,
+      "deletions": 65,
+      "changes": 170,
+      "blob_url": "https://github.com/umputun/remark42/blob/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/app/embed.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80/frontend/app/embed.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/embed.ts?ref=5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "patch": "@@ -1,6 +1,7 @@\n /* eslint-disable no-console */\n import { BASE_URL, NODE_ID, COMMENT_NODE_CLASSNAME_PREFIX } from '@app/common/constants.config';\n import { UserInfo, Theme } from '@app/common/types';\n+import { CommentsConfig } from './common/config-types';\n \n if (document.readyState === 'loading') {\n   document.addEventListener('DOMContentLoaded', init);\n@@ -47,41 +48,50 @@ function createFrame({\n }\n \n function init() {\n-  const node = document.getElementById(window.remark_config.node || NODE_ID);\n+  window.REMARK42 = window.REMARK42 || {};\n+  window.REMARK42.createInstance = createInstance;\n \n-  if (!node) {\n-    console.error(\"Remark42: Can't find root node.\");\n-    return;\n+  if (window.remark_config) {\n+    createInstance(window.remark_config);\n   }\n \n+  window.dispatchEvent(new Event('REMARK42::ready'));\n+}\n+\n+function createInstance(config: CommentsConfig) {\n+  let initDataAnimationTimeout: number | null = null;\n+  let titleObserver: MutationObserver | null = null;\n+\n   try {\n-    window.remark_config = window.remark_config || {};\n+    config = config || {};\n   } catch (e) {\n     console.error('Remark42: Config object is undefined.');\n     return;\n   }\n \n-  if (!window.remark_config.site_id) {\n+  if (!config.site_id) {\n     console.error('Remark42: Site ID is undefined.');\n     return;\n   }\n \n-  window.remark_config.url = (window.remark_config.url || window.location.origin + window.location.pathname).split(\n-    '#'\n-  )[0];\n+  config.url = (config.url || window.location.origin + window.location.pathname).split('#')[0];\n \n-  window.REMARK42 = window.REMARK42 || {};\n-  window.REMARK42.changeTheme = changeTheme;\n+  const node = config.node instanceof HTMLElement ? config.node : document.getElementById(config.node || NODE_ID);\n \n-  const query = Object.keys(window.remark_config)\n+  if (!node) {\n+    console.error(\"Remark42: Can't find root node.\");\n+    return;\n+  }\n+\n+  const query = Object.keys(config)\n     .filter(key => key !== '__colors__')\n     .map(key => {\n-      return `${encodeURIComponent(key)}=${encodeURIComponent(\n-        window.remark_config[key as keyof typeof window.remark_config]\n-      )}`;\n+      return `${encodeURIComponent(key)}=${encodeURIComponent(config[key as keyof typeof config])}`;\n     })\n     .join('&');\n-  const iframe = createFrame({ host: BASE_URL, query, __colors__: window.remark_config.__colors__ });\n+  const iframe =\n+    (document.querySelector('iframe[title=Remark42]') as HTMLIFrameElement) ||\n+    createFrame({ host: BASE_URL, query, __colors__: config.__colors__ });\n \n   node.appendChild(iframe);\n \n@@ -91,7 +101,8 @@ function init() {\n \n   const titleElement = document.querySelector('title');\n   if (titleElement) {\n-    new MutationObserver(mutations => postTitleToIframe(mutations[0].target.textContent!)).observe(titleElement, {\n+    titleObserver = new MutationObserver(mutations => postTitleToIframe(mutations[0].target.textContent!));\n+    titleObserver.observe(titleElement, {\n       subtree: true,\n       characterData: true,\n       childList: true,\n@@ -126,54 +137,54 @@ function init() {\n         this.style.setAttribute('rel', 'stylesheet');\n         this.style.setAttribute('type', 'text/css');\n         this.style.innerHTML = `\n-          #${remarkRootId}-node {\n-            position: fixed;\n-            top: 0;\n-            right: 0;\n-            bottom: 0;\n-            width: 400px;\n-            transition: transform 0.4s ease-out;\n-            max-width: 100%;\n-            transform: translate(400px, 0);\n-          }\n-          #${remarkRootId}-node[data-animation] {\n-            transform: translate(0, 0);\n-          }\n-          #${remarkRootId}-back {\n-            position: fixed;\n-            top: 0;\n-            left: 0;\n-            right: 0;\n-            bottom: 0;\n-            background: rgba(0,0,0,0.7);\n-            opacity: 0;\n-            transition: opacity 0.4s ease-out;\n-          }\n-          #${remarkRootId}-back[data-animation] {\n-            opacity: 1;\n-          }\n+        #${remarkRootId}-node {\n+          position: fixed;\n+          top: 0;\n+          right: 0;\n+          bottom: 0;\n+          width: 400px;\n+          transition: transform 0.4s ease-out;\n+          max-width: 100%;\n+          transform: translate(400px, 0);\n+        }\n+        #${remarkRootId}-node[data-animation] {\n+          transform: translate(0, 0);\n+        }\n+        #${remarkRootId}-back {\n+          position: fixed;\n+          top: 0;\n+          left: 0;\n+          right: 0;\n+          bottom: 0;\n+          background: rgba(0,0,0,0.7);\n+          opacity: 0;\n+          transition: opacity 0.4s ease-out;\n+        }\n+        #${remarkRootId}-back[data-animation] {\n+          opacity: 1;\n+        }\n+        #${remarkRootId}-close {\n+          top: 0px;\n+          right: 400px;\n+          position: absolute;\n+          text-align: center;\n+          font-size: 25px;\n+          cursor: pointer;\n+          color: white;\n+          border-color: transparent;\n+          border-width: 0;\n+          padding: 0;\n+          margin-right: 4px;\n+          background-color: transparent;\n+        }\n+        @media all and (max-width: 430px) {\n           #${remarkRootId}-close {\n-            top: 0px;\n-            right: 400px;\n-            position: absolute;\n-            text-align: center;\n-            font-size: 25px;\n-            cursor: pointer;\n-            color: white;\n-            border-color: transparent;\n-            border-width: 0;\n-            padding: 0;\n-            margin-right: 4px;\n-            background-color: transparent;\n-          }\n-          @media all and (max-width: 430px) {\n-            #${remarkRootId}-close {\n-              right: 0px;\n-              font-size: 20px;\n-              color: black;\n-            }\n+            right: 0px;\n+            font-size: 20px;\n+            color: black;\n           }\n-        `;\n+        }\n+      `;\n       }\n       if (!this.node) {\n         this.node = document.createElement('div');\n@@ -202,10 +213,10 @@ function init() {\n       document.body.appendChild(this.back);\n       document.body.appendChild(this.node);\n       document.addEventListener('keydown', this.onKeyDown);\n-      setTimeout(() => {\n+      initDataAnimationTimeout = window.setTimeout(() => {\n         this.back!.setAttribute('data-animation', '');\n         this.node!.setAttribute('data-animation', '');\n-        this.iframe!.focus();\n+        iframe.focus();\n       }, 400);\n     },\n     close() {\n@@ -306,4 +317,33 @@ function init() {\n   function changeTheme(theme: Theme) {\n     iframe.contentWindow!.postMessage(JSON.stringify({ theme }), '*');\n   }\n+\n+  function destroy() {\n+    if (initDataAnimationTimeout) {\n+      clearTimeout(initDataAnimationTimeout);\n+    }\n+\n+    window.removeEventListener('message', receiveMessages);\n+    window.removeEventListener('hashchange', postHashToIframe);\n+    document.removeEventListener('click', postClickOutsideToIframe);\n+\n+    if (titleObserver) {\n+      titleObserver.disconnect();\n+    }\n+\n+    iframe.remove();\n+  }\n+\n+  // TODO: These do not appear in Chrome DevTools\n+  window.REMARK42.changeTheme = changeTheme;\n+  window.REMARK42.destroy = () => {\n+    destroy();\n+    delete window.REMARK42.changeTheme;\n+    delete window.REMARK42.destroy;\n+  };\n+\n+  return {\n+    changeTheme,\n+    destroy,\n+  };\n }"
+    }
+  ]
+}
