@@ -1,0 +1,98 @@
+{
+  "sha": "630ec7b49cd98358736c5445302c509c62c68653",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2MzBlYzdiNDljZDk4MzU4NzM2YzU0NDUzMDJjNTA5YzYyYzY4NjUz",
+  "commit": {
+    "author": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-08-16T00:31:22Z"
+    },
+    "committer": {
+      "name": "Kris",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-08-16T00:31:22Z"
+    },
+    "message": "Enable hamburger menu scrolling on mobile, follow-up to 1972364",
+    "tree": {
+      "sha": "0ed97391d6711f9b0b453c4964e2b02aead0a1f4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/0ed97391d6711f9b0b453c4964e2b02aead0a1f4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/630ec7b49cd98358736c5445302c509c62c68653",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/630ec7b49cd98358736c5445302c509c62c68653",
+  "html_url": "https://github.com/discourse/discourse/commit/630ec7b49cd98358736c5445302c509c62c68653",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/630ec7b49cd98358736c5445302c509c62c68653/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "58ee947b352fa7605ef8cc8560873b9abad541d4",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/58ee947b352fa7605ef8cc8560873b9abad541d4",
+      "html_url": "https://github.com/discourse/discourse/commit/58ee947b352fa7605ef8cc8560873b9abad541d4"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "258dd88483c492e61e292e4f217846f96639ec83",
+      "filename": "app/assets/stylesheets/mobile/menu-panel.scss",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/630ec7b49cd98358736c5445302c509c62c68653/app/assets/stylesheets/mobile/menu-panel.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/630ec7b49cd98358736c5445302c509c62c68653/app/assets/stylesheets/mobile/menu-panel.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/mobile/menu-panel.scss?ref=630ec7b49cd98358736c5445302c509c62c68653",
+      "patch": "@@ -1,5 +1,11 @@\n .hamburger-panel .menu-panel.slide-in {\n   left: 0;\n+  .panel-body {\n+    display: block;\n+  }\n+  .panel-body-contents {\n+    max-height: unset;\n+  }\n }\n .header-cloak {\n   height: 100vh;"
+    }
+  ]
+}
