@@ -1,0 +1,110 @@
+{
+  "sha": "af179bfe734f3bd75a9107c9dbde423fdaad7dc9",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6YWYxNzliZmU3MzRmM2JkNzVhOTEwN2M5ZGJkZTQyM2ZkYWFkN2RjOQ==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-08-17T14:08:12Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2020-08-18T06:31:17Z"
+    },
+    "message": "Change topbar wrap width (later, conf val).",
+    "tree": {
+      "sha": "c50a7603f804cfbeb191faf3459fa046e678e8a6",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/c50a7603f804cfbeb191faf3459fa046e678e8a6"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/af179bfe734f3bd75a9107c9dbde423fdaad7dc9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/af179bfe734f3bd75a9107c9dbde423fdaad7dc9",
+  "html_url": "https://github.com/debiki/talkyard/commit/af179bfe734f3bd75a9107c9dbde423fdaad7dc9",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/af179bfe734f3bd75a9107c9dbde423fdaad7dc9/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9b86104b5d163073d6818c32558d6af97cac4e75",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/9b86104b5d163073d6818c32558d6af97cac4e75",
+      "html_url": "https://github.com/debiki/talkyard/commit/9b86104b5d163073d6818c32558d6af97cac4e75"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "f11b421ec1a22183023ce2885ac6e5f9f89df7a1",
+      "filename": "client/app-slim/topbar/topbar.styl",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/af179bfe734f3bd75a9107c9dbde423fdaad7dc9/client/app-slim/topbar/topbar.styl",
+      "raw_url": "https://github.com/debiki/talkyard/raw/af179bfe734f3bd75a9107c9dbde423fdaad7dc9/client/app-slim/topbar/topbar.styl",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/topbar/topbar.styl?ref=af179bfe734f3bd75a9107c9dbde423fdaad7dc9",
+      "patch": "@@ -129,7 +129,7 @@ html:not(.js)\n // on the 2nd topbar row *if any*.\n //\n // 1450 needs to be configurable! depends on the custom nav menu contents. [cust_nav_menu]\n-@media (max-width: 1450px - 1px)  // [wide_topbar_min_px]\n+@media (max-width: 1310px - 1px)  // [wide_topbar_min_px]\n   // If two rows, then, login and signup buttons, and MyMenu, are on row 2.\n   // Hide those on row 1.\n   .s_Tb-2Rows\n@@ -156,7 +156,7 @@ html:not(.js)\n \n // On wider screens, use just the first topbar row.\n //\n-@media (min-width: 1450px)   // [wide_topbar_min_px]\n+@media (min-width: 1310px)   // [wide_topbar_min_px]\n   .s_Tb_Row2\n     display: none;\n "
+    },
+    {
+      "sha": "65ff36b55683acd061b8178bf381a3e00db6fe89",
+      "filename": "client/app-slim/topbar/topbar.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/af179bfe734f3bd75a9107c9dbde423fdaad7dc9/client/app-slim/topbar/topbar.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/af179bfe734f3bd75a9107c9dbde423fdaad7dc9/client/app-slim/topbar/topbar.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/topbar/topbar.ts?ref=af179bfe734f3bd75a9107c9dbde423fdaad7dc9",
+      "patch": "@@ -99,7 +99,7 @@ export const TopBar = createComponent({\n   },\n \n   isPageWide: function(store: Store) {\n-    return store_getApproxPageWidth(store) >= 1450;  // [wide_topbar_min_px]\n+    return store_getApproxPageWidth(store) >= 1310;  // [wide_topbar_min_px]\n   },\n \n   getThisRect: function() {"
+    }
+  ]
+}

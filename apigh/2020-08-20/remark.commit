@@ -1,0 +1,122 @@
+{
+  "sha": "1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjFlZWRjYzBlYjNmNjI4NDkxMDQ3ZGM3ZGQxZmRiYjM1NzMxMjQxMDY=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-08-17T02:12:42Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-08-17T02:12:42Z"
+    },
+    "message": "don't allow anon with space prefix or suffix",
+    "tree": {
+      "sha": "05799cbb57da290e51484f2030c3898fef4f4378",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/05799cbb57da290e51484f2030c3898fef4f4378"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+  "html_url": "https://github.com/umputun/remark42/commit/1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/1eedcc0eb3f628491047dc7dd1fdbb3573124106/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80",
+      "html_url": "https://github.com/umputun/remark42/commit/5d6729ddd59e1b2f7cc5cce99d1982ff3903ab80"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 24,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "34943696656edc74341c9dee3ab63add1cb5a65d",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 1,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/1eedcc0eb3f628491047dc7dd1fdbb3573124106/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/1eedcc0eb3f628491047dc7dd1fdbb3573124106/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+      "patch": "@@ -756,6 +756,13 @@ func (s *ServerCommand) addAuthProviders(authenticator *auth.Service) error {\n \t\tlog.Print(\"[INFO] anonymous access enabled\")\n \t\tvar isValidAnonName = regexp.MustCompile(`^[\\p{L}\\d_ ]+$`).MatchString\n \t\tauthenticator.AddDirectProvider(\"anonymous\", provider.CredCheckerFunc(func(user, _ string) (ok bool, err error) {\n+\n+\t\t\t// don't allow anon with space prefix or suffix\n+\t\t\tif strings.HasPrefix(user, \" \") || strings.HasSuffix(user, \" \") {\n+\t\t\t\tlog.Printf(\"[WARN] name %q has space as a suffix or prefix\", user)\n+\t\t\t\treturn false, nil\n+\t\t\t}\n+\n \t\t\tuser = strings.TrimSpace(user)\n \t\t\tif len(user) < 3 {\n \t\t\t\tlog.Printf(\"[WARN] name %q is too short, should be at least 3 characters\", user)\n@@ -924,8 +931,9 @@ func (s *ServerCommand) makeAuthenticator(ds *service.DataStore, avas avatar.Sto\n \t\t\t\t\tlog.Printf(\"[WARN] can't get admins for %s, %v\", c.Audience, err)\n \t\t\t\t}\n \t\t\t\tfor _, a := range admins {\n-\t\t\t\t\tif strings.EqualFold(c.User.Name, a) {\n+\t\t\t\t\tif strings.EqualFold(strings.TrimSpace(c.User.Name), a) {\n \t\t\t\t\t\tc.User.SetBoolAttr(\"blocked\", true)\n+\t\t\t\t\t\tlog.Printf(\"[INFO] blocked %+v, attempt to impersonate admin\", c.User)\n \t\t\t\t\t\tbreak\n \t\t\t\t\t}\n \t\t\t\t}"
+    },
+    {
+      "sha": "98a636dae33ec57c3183b330ee02f2aa0c708ea9",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 16,
+      "blob_url": "https://github.com/umputun/remark42/blob/1eedcc0eb3f628491047dc7dd1fdbb3573124106/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/1eedcc0eb3f628491047dc7dd1fdbb3573124106/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server_test.go?ref=1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+      "patch": "@@ -147,7 +147,19 @@ func TestServerApp_AnonMode(t *testing.T) {\n \tassert.Equal(t, http.StatusForbidden, resp.StatusCode)\n \n \t// try to login with short name\n-\tresp, err = http.Get(fmt.Sprintf(\"http://localhost:%d/auth/anonymous/login?user=bl%20%20&aud=remark\", port))\n+\tresp, err = http.Get(fmt.Sprintf(\"http://localhost:%d/auth/anonymous/login?user=bl%%20%%20&aud=remark\", port))\n+\trequire.NoError(t, err)\n+\tdefer resp.Body.Close()\n+\tassert.Equal(t, http.StatusForbidden, resp.StatusCode)\n+\n+\t// try to login with name what have space in prefix\n+\tresp, err = http.Get(fmt.Sprintf(\"http://localhost:%d/auth/anonymous/login?user=%%20somebody&aud=remark\", port))\n+\trequire.NoError(t, err)\n+\tdefer resp.Body.Close()\n+\tassert.Equal(t, http.StatusForbidden, resp.StatusCode)\n+\n+\t// try to login with name what have space in suffix\n+\tresp, err = http.Get(fmt.Sprintf(\"http://localhost:%d/auth/anonymous/login?user=somebody%%20&aud=remark\", port))\n \trequire.NoError(t, err)\n \tdefer resp.Body.Close()\n \tassert.Equal(t, http.StatusForbidden, resp.StatusCode)\n@@ -160,7 +172,7 @@ func TestServerApp_AnonMode(t *testing.T) {\n \tassert.Equal(t, http.StatusForbidden, resp.StatusCode)\n \n \t// try to login with admin name\n-\tresp, err = http.Get(fmt.Sprintf(\"http://localhost:%d/auth/anonymous/login?user=umputun&aud=remark\", port))\n+\tresp, err = http.Get(fmt.Sprintf(\"http://localhost:%d/auth/anonymous/login?user=umpUtun&aud=remark\", port))\n \trequire.NoError(t, err)\n \tdefer resp.Body.Close()\n \tassert.Equal(t, http.StatusOK, resp.StatusCode)"
+    },
+    {
+      "sha": "d34a46e821773a5cea46ea811238a69c94974ead",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/1eedcc0eb3f628491047dc7dd1fdbb3573124106/backend/app/rest/api/rest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/1eedcc0eb3f628491047dc7dd1fdbb3573124106/backend/app/rest/api/rest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/rest/api/rest.go?ref=1eedcc0eb3f628491047dc7dd1fdbb3573124106",
+      "patch": "@@ -209,7 +209,7 @@ func (s *Rest) routes() chi.Router {\n \n \trouter.Group(func(r chi.Router) {\n \t\tr.Use(middleware.Timeout(5 * time.Second))\n-\t\tr.Use(logInfoWithBody, tollbooth_chi.LimitHandler(tollbooth.NewLimiter(5, nil)), middleware.NoCache)\n+\t\tr.Use(logInfoWithBody, tollbooth_chi.LimitHandler(tollbooth.NewLimiter(10, nil)), middleware.NoCache)\n \t\tr.Mount(\"/auth\", authHandler)\n \t})\n "
+    }
+  ]
+}
