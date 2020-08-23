@@ -1,0 +1,110 @@
+{
+  "sha": "66976baefa52fe503c7fa2c396b15568464619ef",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2Njk3NmJhZWZhNTJmZTUwM2M3ZmEyYzM5NmIxNTU2ODQ2NDYxOWVm",
+  "commit": {
+    "author": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2020-08-22T08:08:37Z"
+    },
+    "committer": {
+      "name": "Vinoth Kannan",
+      "email": "svkn.87@gmail.com",
+      "date": "2020-08-22T08:08:37Z"
+    },
+    "message": "DEV: skip using `br` tag in header widget rendering.\n\n562180dd9a2f1b3251463791b608339d7b23bccd",
+    "tree": {
+      "sha": "17d7c9f2f81f87366755326fa00e0d837d75d5bb",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/17d7c9f2f81f87366755326fa00e0d837d75d5bb"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/66976baefa52fe503c7fa2c396b15568464619ef",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/66976baefa52fe503c7fa2c396b15568464619ef",
+  "html_url": "https://github.com/discourse/discourse/commit/66976baefa52fe503c7fa2c396b15568464619ef",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/66976baefa52fe503c7fa2c396b15568464619ef/comments",
+  "author": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "vinothkannans",
+    "id": 9372109,
+    "node_id": "MDQ6VXNlcjkzNzIxMDk=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/9372109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vinothkannans",
+    "html_url": "https://github.com/vinothkannans",
+    "followers_url": "https://api.github.com/users/vinothkannans/followers",
+    "following_url": "https://api.github.com/users/vinothkannans/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vinothkannans/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vinothkannans/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vinothkannans/subscriptions",
+    "organizations_url": "https://api.github.com/users/vinothkannans/orgs",
+    "repos_url": "https://api.github.com/users/vinothkannans/repos",
+    "events_url": "https://api.github.com/users/vinothkannans/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vinothkannans/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0b58fee42459eb7277dbc01745cb45ea45d0083c",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/0b58fee42459eb7277dbc01745cb45ea45d0083c",
+      "html_url": "https://github.com/discourse/discourse/commit/0b58fee42459eb7277dbc01745cb45ea45d0083c"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 5,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "68f56272d0e31c753df593a63dfdb71430c9ee87",
+      "filename": "app/assets/javascripts/discourse/app/widgets/header.js",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/66976baefa52fe503c7fa2c396b15568464619ef/app/assets/javascripts/discourse/app/widgets/header.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/66976baefa52fe503c7fa2c396b15568464619ef/app/assets/javascripts/discourse/app/widgets/header.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/widgets/header.js?ref=66976baefa52fe503c7fa2c396b15568464619ef",
+      "patch": "@@ -94,8 +94,6 @@ createWidget(\"header-notifications\", {\n               {},\n               h(\"h1.ring-first-notification\", {}, [\n                 h(\"span\", {}, I18n.t(\"user.first_notification\")),\n-                h(\"br\"),\n-                h(\"br\"),\n                 h(\"span\", {}, [\n                   I18n.t(\"user.skip_new_user_tips.not_first_time\"),\n                   \" \","
+    },
+    {
+      "sha": "b2face0010856a24154bcd308a898e57d9bf3931",
+      "filename": "app/assets/stylesheets/common/base/discourse.scss",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/66976baefa52fe503c7fa2c396b15568464619ef/app/assets/stylesheets/common/base/discourse.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/66976baefa52fe503c7fa2c396b15568464619ef/app/assets/stylesheets/common/base/discourse.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/base/discourse.scss?ref=66976baefa52fe503c7fa2c396b15568464619ef",
+      "patch": "@@ -444,6 +444,11 @@ table {\n   width: 230px;\n   line-height: $line-height-medium;\n \n+  > span:first-child {\n+    display: inline-block;\n+    margin-bottom: 36px;\n+  }\n+\n   .skip-new-user-tips {\n     font-size: $font-down-1;\n     color: var(--secondary);"
+    }
+  ]
+}
