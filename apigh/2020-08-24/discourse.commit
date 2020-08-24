@@ -1,0 +1,110 @@
+{
+  "sha": "e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplOGE4NDJhYjhjYmJhYmU5MmZlMzNjZmM0YmJlNWY4MzlkNDU0M2U5",
+  "commit": {
+    "author": {
+      "name": "Martin Brennan",
+      "email": "mjrbrennan@gmail.com",
+      "date": "2020-08-24T07:12:28Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-08-24T07:12:28Z"
+    },
+    "message": "FIX: Stop category logo + background being marked secure (#10513)\n\nMeta topic: https://meta.discourse.org/t/secure-media-uploads-breaks-category-logos/161693\r\n\r\nCategory backgrounds and logos are public uploads and should not be marked as secure.\r\n\r\nI also discovered that a lot of the UploadSecurity specs for public types were returning false positives; this has been fixed.",
+    "tree": {
+      "sha": "3f9b55334aeedd5d2259075a564523f2667716e5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3f9b55334aeedd5d2259075a564523f2667716e5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfQ2hcCRBK7hj4Ov3rIwAAdHIIAGZSOjiKk4TYynnXGM4Owye+\ntDJhORuKQVuhR0SHFduJY++w5yK68WhADSEw9/0RFkZWx10vKTsfx3izTJ+T9MF9\nHmVRdGZ3FhYoX9BhtlFDLTYLg0OQfJvek4F/jOwgsdf6sbIl20g22nu9WQT/mjvN\nMIsgRo1YO7BdcRr5NoMyutmMKQn/sFT1d9nkRtMmaI1pzLgoIMUD0adPB6RNE2CS\nECZRcmMyEWAgb6WarIQ29whMcSFKVAAdbjNt6HmRoHMaWV7ubAYgfA4o85+tGqXd\nX82w2GDhZbtlYPSIFiHLNYGOI9iI1ymF0iX2qjvuERF8I5In5gAhJCFYWrcizR0=\n=bImn\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 3f9b55334aeedd5d2259075a564523f2667716e5\nparent 05174df5c0143bbc31019f7807c5b091fb873ec2\nauthor Martin Brennan <mjrbrennan@gmail.com> 1598253148 +1000\ncommitter GitHub <noreply@github.com> 1598253148 +1000\n\nFIX: Stop category logo + background being marked secure (#10513)\n\nMeta topic: https://meta.discourse.org/t/secure-media-uploads-breaks-category-logos/161693\r\n\r\nCategory backgrounds and logos are public uploads and should not be marked as secure.\r\n\r\nI also discovered that a lot of the UploadSecurity specs for public types were returning false positives; this has been fixed."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9",
+  "html_url": "https://github.com/discourse/discourse/commit/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9/comments",
+  "author": {
+    "login": "martin-brennan",
+    "id": 920448,
+    "node_id": "MDQ6VXNlcjkyMDQ0OA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/920448?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/martin-brennan",
+    "html_url": "https://github.com/martin-brennan",
+    "followers_url": "https://api.github.com/users/martin-brennan/followers",
+    "following_url": "https://api.github.com/users/martin-brennan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/martin-brennan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/martin-brennan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/martin-brennan/subscriptions",
+    "organizations_url": "https://api.github.com/users/martin-brennan/orgs",
+    "repos_url": "https://api.github.com/users/martin-brennan/repos",
+    "events_url": "https://api.github.com/users/martin-brennan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/martin-brennan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "05174df5c0143bbc31019f7807c5b091fb873ec2",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/05174df5c0143bbc31019f7807c5b091fb873ec2",
+      "html_url": "https://github.com/discourse/discourse/commit/05174df5c0143bbc31019f7807c5b091fb873ec2"
+    }
+  ],
+  "stats": {
+    "total": 159,
+    "additions": 89,
+    "deletions": 70
+  },
+  "files": [
+    {
+      "sha": "52da01b712aafb4bb85f17e3cb7526691c00be76",
+      "filename": "lib/upload_security.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9/lib/upload_security.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9/lib/upload_security.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/upload_security.rb?ref=e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9",
+      "patch": "@@ -14,7 +14,10 @@\n # on the current secure? status, otherwise there would be a lot of additional\n # complex queries and joins to perform.\n class UploadSecurity\n-  PUBLIC_TYPES = %w[avatar custom_emoji profile_background card_background]\n+  PUBLIC_TYPES = %w[\n+    avatar custom_emoji profile_background card_background category_logo category_background\n+  ]\n+\n   def initialize(upload, opts = {})\n     @upload = upload\n     @opts = opts\n@@ -30,7 +33,12 @@ def should_be_secure?\n   private\n \n   def uploading_in_public_context?\n-    @upload.for_theme || @upload.for_site_setting || @upload.for_gravatar || public_type? || used_for_custom_emoji? || based_on_regular_emoji?\n+    @upload.for_theme ||\n+      @upload.for_site_setting ||\n+      @upload.for_gravatar ||\n+      public_type? ||\n+      used_for_custom_emoji? ||\n+      based_on_regular_emoji?\n   end\n \n   def uploading_in_secure_context?"
+    },
+    {
+      "sha": "faba025d0c87ba72b35877f4eefe876d3b7ea17b",
+      "filename": "spec/lib/upload_security_spec.rb",
+      "status": "modified",
+      "additions": 79,
+      "deletions": 68,
+      "changes": 147,
+      "blob_url": "https://github.com/discourse/discourse/blob/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9/spec/lib/upload_security_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9/spec/lib/upload_security_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/lib/upload_security_spec.rb?ref=e8a842ab8cbbabe92fe33cfc4bbe5f839d4543e9",
+      "patch": "@@ -10,73 +10,6 @@\n   let(:opts) { { type: type } }\n   subject { described_class.new(upload, opts) }\n \n-  context \"when uploading in public context\" do\n-    describe \"for a public type avatar\" do\n-      let(:type) { 'avatar' }\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-    describe \"for a public type custom_emoji\" do\n-      let(:type) { 'custom_emoji' }\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-    describe \"for a public type profile_background\" do\n-      let(:type) { 'profile_background' }\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-    describe \"for a public type avatar\" do\n-      let(:type) { 'avatar' }\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-\n-    describe \"for_theme\" do\n-      before do\n-        upload.stubs(:for_theme).returns(true)\n-      end\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-    describe \"for_site_setting\" do\n-      before do\n-        upload.stubs(:for_site_setting).returns(true)\n-      end\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-    describe \"for_gravatar\" do\n-      before do\n-        upload.stubs(:for_gravatar).returns(true)\n-      end\n-      it \"returns false\" do\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-\n-    describe \"when the upload is used for a custom emoji\" do\n-      it \"returns false\" do\n-        CustomEmoji.create(name: 'meme', upload: upload)\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-\n-    describe \"when it is based on a regular emoji\" do\n-      it \"returns false\" do\n-        falafel = Emoji.all.find { |e| e.url == '/images/emoji/twitter/falafel.png?v=9' }\n-        upload.update!(origin: \"http://localhost:3000#{falafel.url}\")\n-        expect(subject.should_be_secure?).to eq(false)\n-      end\n-    end\n-  end\n-\n   context \"when secure media is enabled\" do\n     before do\n       SiteSetting.enable_s3_uploads = true\n@@ -86,13 +19,91 @@\n       SiteSetting.secure_media = true\n     end\n \n-    context \"when login_required\" do\n+    context \"when login_required (everything should be secure except public context items)\" do\n       before do\n         SiteSetting.login_required = true\n       end\n       it \"returns true\" do\n         expect(subject.should_be_secure?).to eq(true)\n       end\n+\n+      context \"when uploading in public context\" do\n+        describe \"for a public type avatar\" do\n+          let(:type) { 'avatar' }\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for a public type custom_emoji\" do\n+          let(:type) { 'custom_emoji' }\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for a public type profile_background\" do\n+          let(:type) { 'profile_background' }\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for a public type avatar\" do\n+          let(:type) { 'avatar' }\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for a public type category_logo\" do\n+          let(:type) { 'category_logo' }\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for a public type category_background\" do\n+          let(:type) { 'category_background' }\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for_theme\" do\n+          before do\n+            upload.stubs(:for_theme).returns(true)\n+          end\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for_site_setting\" do\n+          before do\n+            upload.stubs(:for_site_setting).returns(true)\n+          end\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+        describe \"for_gravatar\" do\n+          before do\n+            upload.stubs(:for_gravatar).returns(true)\n+          end\n+          it \"returns false\" do\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+\n+        describe \"when the upload is used for a custom emoji\" do\n+          it \"returns false\" do\n+            CustomEmoji.create(name: 'meme', upload: upload)\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+\n+        describe \"when it is based on a regular emoji\" do\n+          it \"returns false\" do\n+            falafel = Emoji.all.find { |e| e.url == '/images/emoji/twitter/falafel.png?v=9' }\n+            upload.update!(origin: \"http://localhost:3000#{falafel.url}\")\n+            expect(subject.should_be_secure?).to eq(false)\n+          end\n+        end\n+      end\n     end\n \n     context \"when the access control post has_secure_media?\" do"
+    }
+  ]
+}
