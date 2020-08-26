@@ -1,0 +1,110 @@
+{
+  "sha": "f5eccdd0b837bae3ed9a7906ed2ead1a01755cac",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmNWVjY2RkMGI4MzdiYWUzZWQ5YTc5MDZlZDJlYWQxYTAxNzU1Y2Fj",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2020-08-26T17:01:08Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-08-26T17:01:08Z"
+    },
+    "message": "FIX: ensures period-chooser is not losing query params (#10534)\n\neg repro before:\r\n- visit http://pr-discourse.test/top/weekly?f=foo\r\n- select another period in the period chooser\r\n- f=foo was gone\r\n\r\nAfter this commit it should still be present",
+    "tree": {
+      "sha": "b8d80313db6918725ae3c747f80fffa28ac076e8",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/b8d80313db6918725ae3c747f80fffa28ac076e8"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfRpVUCRBK7hj4Ov3rIwAAdHIIAE84SlxerLg+8a1ozB2zosZo\nm1m9+4RAiNg9c11rx6UMCPLzTLWDitCnt7HljTzmCsQ/mlBrhW2RqleTODzX6qoC\nPyqVPSIysyfwU/J/0tTVmBxt7z3cAtHUpErlXu/vZS8gaX3R5hglOYrs/I4Z7k6B\nhKUu0aKEd8HWAyvnkTJSI1mFH9H8K+lRh+iKFulPlBLqVaz19biva765Wu8GaUe5\nmvMkRFUSSagBxWQIy1FA9ceuZqTxKuHSXraiqYbz+GO1TqfwHRkwZxUQZ13K6uZS\nk+CMGlOdXV/qDmPli90Kdr7tCuRqex0eSscJxWDYicGuyjB6YowY6pTKH4wEa+Y=\n=Ewap\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree b8d80313db6918725ae3c747f80fffa28ac076e8\nparent ff4de97dfdfa04205bde106b12811d730440f861\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1598461268 +0200\ncommitter GitHub <noreply@github.com> 1598461268 +0200\n\nFIX: ensures period-chooser is not losing query params (#10534)\n\neg repro before:\r\n- visit http://pr-discourse.test/top/weekly?f=foo\r\n- select another period in the period chooser\r\n- f=foo was gone\r\n\r\nAfter this commit it should still be present"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac",
+  "html_url": "https://github.com/discourse/discourse/commit/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ff4de97dfdfa04205bde106b12811d730440f861",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ff4de97dfdfa04205bde106b12811d730440f861",
+      "html_url": "https://github.com/discourse/discourse/commit/ff4de97dfdfa04205bde106b12811d730440f861"
+    }
+  ],
+  "stats": {
+    "total": 33,
+    "additions": 33,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "83ff55212e4b10a0ffa2868ad82263878af14f70",
+      "filename": "app/assets/javascripts/discourse/app/controllers/discovery.js",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac/app/assets/javascripts/discourse/app/controllers/discovery.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac/app/assets/javascripts/discourse/app/controllers/discovery.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/controllers/discovery.js?ref=f5eccdd0b837bae3ed9a7906ed2ead1a01755cac",
+      "patch": "@@ -3,11 +3,13 @@ import Controller, { inject as controller } from \"@ember/controller\";\n import DiscourseURL from \"discourse/lib/url\";\n import Category from \"discourse/models/category\";\n import { observes } from \"discourse-common/utils/decorators\";\n+import { inject as service } from \"@ember/service\";\n \n export default Controller.extend({\n   discoveryTopics: controller(\"discovery/topics\"),\n   navigationCategory: controller(\"navigation/category\"),\n   application: controller(),\n+  router: service(),\n \n   loading: false,\n \n@@ -32,6 +34,16 @@ export default Controller.extend({\n     }\n \n     url += \"/top/\" + period;\n+\n+    const queryParams = this.router.currentRoute.queryParams;\n+    if (Object.keys(queryParams).length) {\n+      url =\n+        `${url}?` +\n+        Object.keys(queryParams)\n+          .map(key => `${key}=${queryParams[key]}`)\n+          .join(\"&\");\n+    }\n+\n     return url;\n   },\n "
+    },
+    {
+      "sha": "75b9a86f6bce0b1f0aa45614d429a6dc149d9e9f",
+      "filename": "test/javascripts/acceptance/topic-discovery-test.js",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac/test/javascripts/acceptance/topic-discovery-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5eccdd0b837bae3ed9a7906ed2ead1a01755cac/test/javascripts/acceptance/topic-discovery-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/test/javascripts/acceptance/topic-discovery-test.js?ref=f5eccdd0b837bae3ed9a7906ed2ead1a01755cac",
+      "patch": "@@ -1,3 +1,5 @@\n+import DiscourseURL from \"discourse/lib/url\";\n+import selectKit from \"helpers/select-kit-helper\";\n import { acceptance } from \"helpers/qunit-helpers\";\n import MessageBus from \"message-bus-client\";\n \n@@ -107,3 +109,22 @@ QUnit.test(\"Live update unread state\", async assert => {\n     \"shows the topic read\"\n   );\n });\n+\n+QUnit.test(\n+  \"Using period chooser when query params are present\",\n+  async assert => {\n+    await visit(\"/top?f=foo&d=bar\");\n+\n+    sandbox.stub(DiscourseURL, \"routeTo\");\n+\n+    const periodChooser = selectKit(\".period-chooser\");\n+\n+    await periodChooser.expand();\n+    await periodChooser.selectRowByValue(\"yearly\");\n+\n+    assert.ok(\n+      DiscourseURL.routeTo.calledWith(\"/top/yearly?f=foo&d=bar\"),\n+      \"it keeps the query params\"\n+    );\n+  }\n+);"
+    }
+  ]
+}
