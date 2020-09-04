@@ -1,0 +1,98 @@
+{
+  "sha": "e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplNGViYzMwM2JiOGNmYWE1ZTM5YzIyZjQ5Y2Q0NDE5ZDNlZTNmMzNl",
+  "commit": {
+    "author": {
+      "name": "awesomerobot",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-09-04T02:58:58Z"
+    },
+    "committer": {
+      "name": "awesomerobot",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-09-04T02:58:58Z"
+    },
+    "message": "FEATURE: Add below-static plugin outlet",
+    "tree": {
+      "sha": "fa06cb1a594b680f732f37c5357bc9795e75bca5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/fa06cb1a594b680f732f37c5357bc9795e75bca5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e",
+  "html_url": "https://github.com/discourse/discourse/commit/e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ea423b471a03fcbee6c4d105ed0eb7b615684057",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/ea423b471a03fcbee6c4d105ed0eb7b615684057",
+      "html_url": "https://github.com/discourse/discourse/commit/ea423b471a03fcbee6c4d105ed0eb7b615684057"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "dbfe466381e01ad5aaea3add66c514875f3be36d",
+      "filename": "app/assets/javascripts/discourse/app/templates/static.hbs",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e/app/assets/javascripts/discourse/app/templates/static.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e/app/assets/javascripts/discourse/app/templates/static.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/templates/static.hbs?ref=e4ebc303bb8cfaa5e39c22f49cd4419d3ee3f33e",
+      "patch": "@@ -1,9 +1,13 @@\n {{#d-section bodyClass=bodyClass class=\"container\"}}\n   {{#watch-read action=(action \"markFaqRead\") path=model.path}}\n     <div class=\"contents clearfix body-page\">\n+\n       {{plugin-outlet name=\"above-static\"}}\n+\n       {{html-safe model.html}}\n \n+      {{plugin-outlet name=\"below-static\" tagName=\"\"}}\n+\n       {{#if showSignupButton}}\n         {{d-button action=(route-action \"showCreateAccount\") class=\"btn-primary sign-up-button\" label=\"sign_up\"}}\n       {{/if}}"
+    }
+  ]
+}
