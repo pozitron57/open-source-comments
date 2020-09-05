@@ -1,0 +1,134 @@
+{
+  "sha": "13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxM2M5ZDdlNzA0MzFjOTFkMDNlMjA2ZTJmMDQxMjFiYzhjYjY5ZGI3",
+  "commit": {
+    "author": {
+      "name": "awesomerobot",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-09-05T02:18:29Z"
+    },
+    "committer": {
+      "name": "awesomerobot",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-09-05T02:18:29Z"
+    },
+    "message": "UX: Add missing labels to mobile composer buttons",
+    "tree": {
+      "sha": "75518ecb3a616f872bdc1f781d2893166fe8dab7",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/75518ecb3a616f872bdc1f781d2893166fe8dab7"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+    "comment_count": 1,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+  "html_url": "https://github.com/discourse/discourse/commit/13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/13c9d7e70431c91d03e206e2f04121bc8cb69db7/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a14c9078d37dfce866374906e3b86203b543d991",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/a14c9078d37dfce866374906e3b86203b543d991",
+      "html_url": "https://github.com/discourse/discourse/commit/a14c9078d37dfce866374906e3b86203b543d991"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 12,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "16b1773bb1546f6c84a19afd8cc69d7694381e7d",
+      "filename": "app/assets/javascripts/discourse/app/components/composer-toggles.js",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/13c9d7e70431c91d03e206e2f04121bc8cb69db7/app/assets/javascripts/discourse/app/components/composer-toggles.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/13c9d7e70431c91d03e206e2f04121bc8cb69db7/app/assets/javascripts/discourse/app/components/composer-toggles.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/components/composer-toggles.js?ref=13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+      "patch": "@@ -11,6 +11,11 @@ export default Component.extend({\n       : \"composer.collapse\";\n   },\n \n+  @discourseComputed(\"showToolbar\")\n+  toggleToolbarTitle(showToolbar) {\n+    return showToolbar ? \"composer.hide_toolbar\" : \"composer.show_toolbar\";\n+  },\n+\n   @discourseComputed(\"composeState\")\n   fullscreenTitle(composeState) {\n     return composeState === \"draft\""
+    },
+    {
+      "sha": "cd4bac7c5cfb80c29288683623fb09bf25b3ddf4",
+      "filename": "app/assets/javascripts/discourse/app/templates/components/composer-toggles.hbs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/13c9d7e70431c91d03e206e2f04121bc8cb69db7/app/assets/javascripts/discourse/app/templates/components/composer-toggles.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/13c9d7e70431c91d03e206e2f04121bc8cb69db7/app/assets/javascripts/discourse/app/templates/components/composer-toggles.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/templates/components/composer-toggles.hbs?ref=13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+      "patch": "@@ -5,7 +5,8 @@\n     {{flat-button\n       class=\"toggle-toolbar\"\n       icon=\"bars\"\n-      action=toggleToolbar}}\n+      action=toggleToolbar\n+      title=toggleToolbarTitle}}\n   {{/if}}\n \n   {{flat-button"
+    },
+    {
+      "sha": "ded30ce02a841b4977849ee9c05337352edcd9ad",
+      "filename": "app/assets/javascripts/discourse/app/templates/composer.hbs",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/13c9d7e70431c91d03e206e2f04121bc8cb69db7/app/assets/javascripts/discourse/app/templates/composer.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/13c9d7e70431c91d03e206e2f04121bc8cb69db7/app/assets/javascripts/discourse/app/templates/composer.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/templates/composer.hbs?ref=13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+      "patch": "@@ -43,7 +43,7 @@\n                 {{/if}}\n               </div>\n             {{/unless}}\n-            {{composer-toggles composeState=model.composeState\n+            {{composer-toggles composeState=model.composeState showToolbar=showToolbar\n                       toggleComposer=(action \"toggle\")\n                       toggleToolbar=(action \"toggleToolbar\")\n                       toggleFullscreen=(action \"fullscreenComposer\")}}\n@@ -190,12 +190,12 @@\n \n           {{#if site.mobileView}}\n             {{#if allowUpload}}\n-              <a class=\"btn btn-default no-text mobile-file-upload {{if isUploading \"hidden\"}}\">\n+              <a class=\"btn btn-default no-text mobile-file-upload {{if isUploading \"hidden\"}}\"  aria-label={{i18n \"composer.upload_title\"}}>\n                 {{d-icon uploadIcon}}\n               </a>\n             {{/if}}\n \n-            <a href class=\"btn btn-default no-text mobile-preview\" title={{i18n \"composer.show_preview\"}} {{action \"togglePreview\"}}>\n+            <a href class=\"btn btn-default no-text mobile-preview\" title={{i18n \"composer.show_preview\"}} {{action \"togglePreview\"}} aria-label={{i18n \"preview\"}}>\n               {{d-icon \"desktop\"}}\n             </a>\n "
+    },
+    {
+      "sha": "f0cec47959d1309639592dd915a128f2b6390767",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/13c9d7e70431c91d03e206e2f04121bc8cb69db7/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/13c9d7e70431c91d03e206e2f04121bc8cb69db7/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=13c9d7e70431c91d03e206e2f04121bc8cb69db7",
+      "patch": "@@ -1758,7 +1758,6 @@ en:\n       lora: \"Lora\"\n       mukta: \"Mukta\"\n \n-\n     shortcut_modifier_key:\n       shift: \"Shift\"\n       ctrl: \"Ctrl\"\n@@ -1919,6 +1918,8 @@ en:\n       abandon: \"close composer and discard draft\"\n       enter_fullscreen: \"enter fullscreen composer\"\n       exit_fullscreen: \"exit fullscreen composer\"\n+      show_toolbar: \"show composer toolbar\"\n+      hide_toolbar: \"hide composer toolbar\"\n       modal_ok: \"OK\"\n       modal_cancel: \"Cancel\"\n       cant_send_pm: \"Sorry, you can't send a message to %{username}.\""
+    }
+  ]
+}
