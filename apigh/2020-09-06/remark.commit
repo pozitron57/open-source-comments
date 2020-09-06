@@ -1,0 +1,98 @@
+{
+  "sha": "1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjFjYjcyNGEyNjRhNmUyOGFlYjhjMzdmZWRkODFjMjNmYjYwNzUzZWE=",
+  "commit": {
+    "author": {
+      "name": "Pavel Pustovalov",
+      "email": "pustovalov.pavel@gmail.com",
+      "date": "2020-09-05T10:05:41Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-09-05T17:22:02Z"
+    },
+    "message": "Set node version for each job",
+    "tree": {
+      "sha": "9295ac7bfbfcf9f3d4a9e0f58e3ee091c2f13e0f",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/9295ac7bfbfcf9f3d4a9e0f58e3ee091c2f13e0f"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+  "html_url": "https://github.com/umputun/remark42/commit/1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/1cb724a264a6e28aeb8c37fedd81c23fb60753ea/comments",
+  "author": {
+    "login": "pustovalov",
+    "id": 1568885,
+    "node_id": "MDQ6VXNlcjE1Njg4ODU=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1568885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pustovalov",
+    "html_url": "https://github.com/pustovalov",
+    "followers_url": "https://api.github.com/users/pustovalov/followers",
+    "following_url": "https://api.github.com/users/pustovalov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pustovalov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pustovalov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pustovalov/subscriptions",
+    "organizations_url": "https://api.github.com/users/pustovalov/orgs",
+    "repos_url": "https://api.github.com/users/pustovalov/repos",
+    "events_url": "https://api.github.com/users/pustovalov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pustovalov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "82de2a1d8f3bd3a22fafaf94136401565da3403a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/82de2a1d8f3bd3a22fafaf94136401565da3403a",
+      "html_url": "https://github.com/umputun/remark42/commit/82de2a1d8f3bd3a22fafaf94136401565da3403a"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 14,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "36a1bc1de32e2d18b5fe7c59635aa123e998d023",
+      "filename": ".github/workflows/ci-test-frontend.yml",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 4,
+      "changes": 18,
+      "blob_url": "https://github.com/umputun/remark42/blob/1cb724a264a6e28aeb8c37fedd81c23fb60753ea/.github/workflows/ci-test-frontend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/1cb724a264a6e28aeb8c37fedd81c23fb60753ea/.github/workflows/ci-test-frontend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github/workflows/ci-test-frontend.yml?ref=1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+      "patch": "@@ -15,13 +15,15 @@ on:\n jobs:\n   frontend-check:\n     runs-on: ubuntu-latest\n+    strategy:\n+      matrix:\n+        node: [12.16]\n \n     steps:\n       - uses: actions/checkout@v2\n-\n       - uses: actions/setup-node@v1\n         with:\n-          node-version: '12.16'\n+          node-version: ${{ matrix.node }}\n \n       - run: npm ci --loglevel warn\n         working-directory: ./frontend\n@@ -38,11 +40,15 @@ jobs:\n \n   frontend-lint:\n     runs-on: ubuntu-latest\n+    strategy:\n+      matrix:\n+        node: [12.16]\n \n     steps:\n       - uses: actions/checkout@v2\n-\n       - uses: actions/setup-node@v1\n+        with:\n+          node-version: ${{ matrix.node }}\n \n       - run: npm ci --loglevel warn\n         working-directory: ./frontend\n@@ -52,11 +58,15 @@ jobs:\n \n   frontend-test:\n     runs-on: ubuntu-latest\n+    strategy:\n+      matrix:\n+        node: [12.16]\n \n     steps:\n       - uses: actions/checkout@v2\n-\n       - uses: actions/setup-node@v1\n+        with:\n+          node-version: ${{ matrix.node }}\n \n       - run: npm ci --loglevel warn\n         working-directory: ./frontend"
+    }
+  ]
+}
