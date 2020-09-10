@@ -1,0 +1,218 @@
+{
+  "sha": "dede942007df2df25b2640cff1e6a738be183fef",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkZWRlOTQyMDA3ZGYyZGYyNWIyNjQwY2ZmMWU2YTczOGJlMTgzZmVm",
+  "commit": {
+    "author": {
+      "name": "Martin Brennan",
+      "email": "mjrbrennan@gmail.com",
+      "date": "2020-09-09T23:50:16Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2020-09-09T23:50:16Z"
+    },
+    "message": "FEATURE: Allow email image embed with secure media (#10563)\n\nThis PR introduces a few important changes to secure media redaction in emails. First of all, two new site settings have been introduced:\r\n\r\n* `secure_media_allow_embed_images_in_emails`: If enabled we will embed secure images in emails instead of redacting them.\r\n* `secure_media_max_email_embed_image_size_kb`: The cap to the size of the secure image we will embed, defaulting to 1mb, so the email does not become too big. Max is 10mb. Works in tandem with `email_total_attachment_size_limit_kb`.\r\n\r\n`Email::Sender` will now attach images to the email based on these settings. The sender will also call `inline_secure_images` in `Email::Styles` after secure media is redacted and attachments are added to replace redaction messages with attached images. I went with attachment and `cid` URLs because base64 image support is _still_ flaky in email clients.\r\n\r\nAll redaction of secure media is now handled in `Email::Styles` and calls out to `PrettyText.strip_secure_media` to do the actual stripping and replacing with placeholders. `app/mailers/group_smtp_mailer.rb` and `app/mailers/user_notifications.rb` no longer do any stripping because they are earlier in the pipeline than `Email::Styles`.\r\n\r\nFinally the redaction notice has been restyled and includes a link to the media that the user can click, which will show it to them if they have the necessary permissions.\r\n\r\n![image](https://user-images.githubusercontent.com/920448/92341012-b9a2c380-f0ff-11ea-860e-b376b4528357.png)",
+    "tree": {
+      "sha": "5c09c76cef57fb6a0b2cdd383c79007119b4ead5",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5c09c76cef57fb6a0b2cdd383c79007119b4ead5"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/dede942007df2df25b2640cff1e6a738be183fef",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfWWo4CRBK7hj4Ov3rIwAAdHIIAFbdEUc1/8hkC2ph5vwPn3h6\ngyns7DLdo7rq6enSmC+0/7EVVUXWyPYNXwEnZSf336LnyK8v/PZVojaKd6Pw8BnY\nlwyor46BSeq4+GEBt9kNQu/Revsed4tQl/N0DwcD7/gwJDblmwD4fScgMYWhuRWX\na9U2+0jIFaosGR8lOzN/uNfBoZ4xEF3trWQ8Sv+PQW8oUhAtkYtKnwAfUgJXBTjO\nBF+jSX/uc7DpcJZuVScsmCz/IyJP1zFBj66XYSVlLY02zVOy7Ws89GsdJ2gxmZBg\nFnW3adEzZo/+szHiKF47bKMujOuLb4lX6qgQkqgqOjHu+DVgcp/+/35rI74tRiE=\n=42X/\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5c09c76cef57fb6a0b2cdd383c79007119b4ead5\nparent d260e42c8a0060ae9c7a476a27d8b109b2902510\nauthor Martin Brennan <mjrbrennan@gmail.com> 1599695416 +1000\ncommitter GitHub <noreply@github.com> 1599695416 +1000\n\nFEATURE: Allow email image embed with secure media (#10563)\n\nThis PR introduces a few important changes to secure media redaction in emails. First of all, two new site settings have been introduced:\r\n\r\n* `secure_media_allow_embed_images_in_emails`: If enabled we will embed secure images in emails instead of redacting them.\r\n* `secure_media_max_email_embed_image_size_kb`: The cap to the size of the secure image we will embed, defaulting to 1mb, so the email does not become too big. Max is 10mb. Works in tandem with `email_total_attachment_size_limit_kb`.\r\n\r\n`Email::Sender` will now attach images to the email based on these settings. The sender will also call `inline_secure_images` in `Email::Styles` after secure media is redacted and attachments are added to replace redaction messages with attached images. I went with attachment and `cid` URLs because base64 image support is _still_ flaky in email clients.\r\n\r\nAll redaction of secure media is now handled in `Email::Styles` and calls out to `PrettyText.strip_secure_media` to do the actual stripping and replacing with placeholders. `app/mailers/group_smtp_mailer.rb` and `app/mailers/user_notifications.rb` no longer do any stripping because they are earlier in the pipeline than `Email::Styles`.\r\n\r\nFinally the redaction notice has been restyled and includes a link to the media that the user can click, which will show it to them if they have the necessary permissions.\r\n\r\n![image](https://user-images.githubusercontent.com/920448/92341012-b9a2c380-f0ff-11ea-860e-b376b4528357.png)\r\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/dede942007df2df25b2640cff1e6a738be183fef",
+  "html_url": "https://github.com/discourse/discourse/commit/dede942007df2df25b2640cff1e6a738be183fef",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/dede942007df2df25b2640cff1e6a738be183fef/comments",
+  "author": {
+    "login": "martin-brennan",
+    "id": 920448,
+    "node_id": "MDQ6VXNlcjkyMDQ0OA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/920448?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/martin-brennan",
+    "html_url": "https://github.com/martin-brennan",
+    "followers_url": "https://api.github.com/users/martin-brennan/followers",
+    "following_url": "https://api.github.com/users/martin-brennan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/martin-brennan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/martin-brennan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/martin-brennan/subscriptions",
+    "organizations_url": "https://api.github.com/users/martin-brennan/orgs",
+    "repos_url": "https://api.github.com/users/martin-brennan/repos",
+    "events_url": "https://api.github.com/users/martin-brennan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/martin-brennan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d260e42c8a0060ae9c7a476a27d8b109b2902510",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/d260e42c8a0060ae9c7a476a27d8b109b2902510",
+      "html_url": "https://github.com/discourse/discourse/commit/d260e42c8a0060ae9c7a476a27d8b109b2902510"
+    }
+  ],
+  "stats": {
+    "total": 346,
+    "additions": 248,
+    "deletions": 98
+  },
+  "files": [
+    {
+      "sha": "ac203661bbcfd8dc2bcccdda386e06f6ebc8eff2",
+      "filename": "app/mailers/group_smtp_mailer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 14,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/app/mailers/group_smtp_mailer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/app/mailers/group_smtp_mailer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/mailers/group_smtp_mailer.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -79,26 +79,13 @@ def context(context_posts)\n   end\n \n   def email_post_markdown(post, add_posted_by = false)\n-    result = +\"#{post.with_secure_media? ? strip_secure_urls(post.raw) : post.raw}\\n\\n\"\n+    result = +\"#{post.raw}\\n\\n\"\n     if add_posted_by\n       result << \"#{I18n.t('user_notifications.posted_by', username: post.username, post_date: post.created_at.strftime(\"%m/%d/%Y\"))}\\n\\n\"\n     end\n     result\n   end\n \n-  def strip_secure_urls(raw)\n-    urls = Set.new\n-    raw.scan(Discourse::Utils::URI_REGEXP) { urls << $& }\n-\n-    urls.each do |url|\n-      if (url.start_with?(Discourse.store.s3_upload_host) && FileHelper.is_supported_media?(url))\n-        raw = raw.sub(url, \"<p class='secure-media-notice'>#{I18n.t(\"emails.secure_media_placeholder\")}</p>\")\n-      end\n-    end\n-\n-    raw\n-  end\n-\n   def html_override(post, context_posts: nil)\n     UserNotificationRenderer.render(\n       template: 'email/notification',"
+    },
+    {
+      "sha": "6e8b69aa3de91f1a81b3ce7cefca17ded893bd4a",
+      "filename": "app/mailers/user_notifications.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 14,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/app/mailers/user_notifications.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/app/mailers/user_notifications.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/mailers/user_notifications.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -356,26 +356,13 @@ def user_locale(user)\n   end\n \n   def email_post_markdown(post, add_posted_by = false)\n-    result = +\"#{post.with_secure_media? ? strip_secure_urls(post.raw) : post.raw}\\n\\n\"\n+    result = +\"#{post.raw}\\n\\n\"\n     if add_posted_by\n       result << \"#{I18n.t('user_notifications.posted_by', username: post.username, post_date: post.created_at.strftime(\"%m/%d/%Y\"))}\\n\\n\"\n     end\n     result\n   end\n \n-  def strip_secure_urls(raw)\n-    urls = Set.new\n-    raw.scan(Discourse::Utils::URI_REGEXP) { urls << $& }\n-\n-    urls.each do |url|\n-      if (url.start_with?(Discourse.store.s3_upload_host) && FileHelper.is_supported_media?(url))\n-        raw = raw.sub(url, \"<p class='secure-media-notice'>#{I18n.t(\"emails.secure_media_placeholder\")}</p>\")\n-      end\n-    end\n-\n-    raw\n-  end\n-\n   def self.get_context_posts(post, topic_user, user)\n     if (user.user_option.email_previous_replies == UserOption.previous_replies_type[:never]) ||\n        SiteSetting.private_email?"
+    },
+    {
+      "sha": "9402b508a119ef7f6415994837844bd06c80a208",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -125,7 +125,8 @@ en:\n         unsubscribe_not_allowed: \"Happens when unsubscribing via email is not allowed for this user.\"\n         email_not_allowed: \"Happens when the email address is not on the allowlist or is on the blocklist.\"\n       unrecognized_error: \"Unrecognized Error\"\n-    secure_media_placeholder: \"Redacted: this site has secure media enabled, visit the topic to see the attached image/audio/video.\"\n+    secure_media_placeholder: \"Redacted: This site has secure media enabled, visit the topic or click View Media to see the attached media.\"\n+    view_redacted_media: \"View Media\"\n \n   errors: &errors\n     format: ! \"%{attribute} %{message}\"\n@@ -2116,6 +2117,8 @@ en:\n \n     prevent_anons_from_downloading_files: \"Prevent anonymous users from downloading attachments. WARNING: this will prevent any non-image site assets posted as attachments from working.\"\n     secure_media: 'Limits access to ALL uploads (images, video, audio, text, pdfs, zips, and others). If “login required” is enabled, only logged-in users can access uploads. Otherwise, access will be limited only for media uploads in private messages and private categories. WARNING: This setting is complex and requires deep administrative understanding. See <a target=\"_blank\" href=\"https://meta.discourse.org/t/secure-media-uploads/140017\">the secure media topic on Meta</a> for details.'\n+    secure_media_allow_embed_images_in_emails: \"Allows embedding secure images that would normally be redacted in emails, if their size is smaller than the 'secure media max email embed image size kb' setting.\"\n+    secure_media_max_email_embed_image_size_kb: \"The size cutoff for secure images that will be embedded in emails if the 'secure media allow embed in emails' setting is enabled. Without that setting enabled, this setting has no effect.\"\n     slug_generation_method: \"Choose a slug generation method. 'encoded' will generate percent encoding string. 'none' will disable slug at all.\"\n \n     enable_emoji: \"Enable emoji\""
+    },
+    {
+      "sha": "931d32eb00ed81119db862eda8a5f4171eb6c8dc",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -1234,6 +1234,12 @@ files:\n   secure_media:\n     default: false\n     client: true\n+  secure_media_allow_embed_images_in_emails:\n+    default: false\n+  secure_media_max_email_embed_image_size_kb:\n+    default: 1024\n+    min: 1\n+    max: 10240\n   enable_s3_uploads:\n     default: false\n     client: true"
+    },
+    {
+      "sha": "f5b3c4bb7068eca14f9cc2f962b5fcc0a00867b0",
+      "filename": "lib/email/sender.rb",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 3,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/lib/email/sender.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/lib/email/sender.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/email/sender.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -199,14 +199,25 @@ def send\n         merge_json_x_header('X-MSYS-API', metadata: { message_id: @message.message_id })\n       end\n \n+      # Parse the HTML again so we can make any final changes before\n+      # sending\n+      style = Email::Styles.new(@message.html_part.body.to_s)\n+\n       # Suppress images from short emails\n       if SiteSetting.strip_images_from_short_emails &&\n         @message.html_part.body.to_s.bytesize <= SiteSetting.short_email_length &&\n         @message.html_part.body =~ /<img[^>]+>/\n-        style = Email::Styles.new(@message.html_part.body.to_s)\n-        @message.html_part.body = style.strip_avatars_and_emojis\n+        style.strip_avatars_and_emojis\n+      end\n+\n+      # Embeds any of the secure images that have been attached inline,\n+      # removing the redaction notice.\n+      if SiteSetting.secure_media_allow_embed_images_in_emails\n+        style.inline_secure_images(@message.attachments)\n       end\n \n+      @message.html_part.body = style.to_s\n+\n       email_log.message_id = @message.message_id\n \n       DiscourseEvent.trigger(:before_email_send, @message, @email_type)\n@@ -249,7 +260,11 @@ def add_attachments(post)\n \n       email_size = 0\n       post.uploads.each do |upload|\n-        next if FileHelper.is_supported_image?(upload.original_filename)\n+        if FileHelper.is_supported_image?(upload.original_filename) &&\n+            !should_attach_image?(upload)\n+          next\n+        end\n+\n         next if email_size + upload.filesize > max_email_size\n \n         begin\n@@ -277,6 +292,12 @@ def add_attachments(post)\n       fix_parts_after_attachments!\n     end\n \n+    def should_attach_image?(upload)\n+      return if !SiteSetting.secure_media_allow_embed_images_in_emails || !upload.secure?\n+      return if upload.filesize > SiteSetting.secure_media_max_email_embed_image_size_kb.kilobytes\n+      true\n+    end\n+\n     #\n     # Two behaviors in the mail gem collide:\n     #"
+    },
+    {
+      "sha": "4b5a01b3b33e2390b8690fd470da2785221a93bd",
+      "filename": "lib/email/styles.rb",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 16,
+      "changes": 56,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/lib/email/styles.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/lib/email/styles.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/email/styles.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -198,7 +198,6 @@ def format_html\n       style('code', 'background-color: #f1f1ff; padding: 2px 5px;')\n       style('pre code', 'display: block; background-color: #f1f1ff; padding: 5px;')\n       style('.featured-topic a', \"text-decoration: none; font-weight: bold; color: #{SiteSetting.email_link_color}; line-height:1.5em;\")\n-      style('.secure-image-notice', 'font-style: italic; background-color: #f1f1ff; padding: 5px;')\n       style('.summary-email', \"-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;box-sizing:border-box;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.3;margin:0;min-width:100%;padding:0;width:100%\")\n \n       style('.previous-discussion', 'font-size: 17px; color: #444; margin-bottom:10px;')\n@@ -237,10 +236,40 @@ def plugin_styles\n       @@plugin_callbacks.each { |block| block.call(@fragment, @opts) }\n     end\n \n+    def inline_secure_images(attachments)\n+      stripped_media = @fragment.css('[data-stripped-secure-media]')\n+      upload_shas = {}\n+      stripped_media.each do |div|\n+        url = div['data-stripped-secure-media']\n+        filename = File.basename(url)\n+        sha1 = filename.gsub(File.extname(filename), \"\")\n+        upload_shas[url] = sha1\n+      end\n+      uploads = Upload.select(:original_filename, :sha1).where(sha1: upload_shas.values)\n+\n+      stripped_media.each do |div|\n+        upload = uploads.find { |upl| upl.sha1 == upload_shas[div['data-stripped-secure-media']] }\n+        next if !upload\n+\n+        original_filename = upload.original_filename\n+\n+        if attachments[original_filename]\n+          url = attachments[original_filename].url\n+\n+          div.add_next_sibling(\n+            \"<img src=\\\"#{url}\\\" data-embedded-secure-image=\\\"true\\\" style=\\\"max-width: 50%; max-height: 400px;\\\" />\"\n+          )\n+          div.remove\n+        end\n+      end\n+    end\n+\n     def to_html\n+      # needs to be before class + id strip because we need to style redacted\n+      # media and also not double-redact already redacted from lower levels\n+      replace_secure_media_urls\n       strip_classes_and_ids\n       replace_relative_urls\n-      replace_secure_media_urls\n \n       if SiteSetting.preserve_email_structure_when_styling\n         @fragment.to_html\n@@ -249,6 +278,10 @@ def to_html\n       end\n     end\n \n+    def to_s\n+      @fragment.to_s\n+    end\n+\n     def include_body?\n       @html =~ /<body>/i\n     end\n@@ -267,8 +300,6 @@ def strip_avatars_and_emojis\n           img.remove\n         end\n       end\n-\n-      @fragment.to_s\n     end\n \n     def make_all_links_absolute\n@@ -298,19 +329,12 @@ def replace_relative_urls\n     end\n \n     def replace_secure_media_urls\n-      @fragment.css('[href]').each do |a|\n-        if Upload.secure_media_url?(a['href'])\n-          a.add_next_sibling \"<p class='secure-media-notice'>#{I18n.t(\"emails.secure_media_placeholder\")}</p>\"\n-          a.remove\n-        end\n-      end\n+      # strip again, this can be done at a lower level like in the user\n+      # notification template but that may not catch everything\n+      PrettyText.strip_secure_media(@fragment)\n \n-      @fragment.search('img[src]').each do |img|\n-        if Upload.secure_media_url?(img['src'])\n-          img.add_next_sibling \"<p class='secure-media-notice'>#{I18n.t(\"emails.secure_media_placeholder\")}</p>\"\n-          img.remove\n-        end\n-      end\n+      style('div.secure-media-notice', 'border: 5px solid #e9e9e9; padding: 5px; display: inline-block;')\n+      style('div.secure-media-notice a', \"color: #{SiteSetting.email_link_color}\")\n     end\n \n     def correct_first_body_margin"
+    },
+    {
+      "sha": "743b28d351c6f16fd05089ead33f483c04318ff5",
+      "filename": "lib/pretty_text.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 1,
+      "changes": 18,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/lib/pretty_text.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/lib/pretty_text.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/pretty_text.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -408,9 +408,25 @@ def self.strip_secure_media(doc)\n     doc.css(\"a[href]\").each do |a|\n       if Upload.secure_media_url?(a[\"href\"])\n         target = %w(video audio).include?(a&.parent&.name) ? a.parent : a\n-        target.replace \"<p class='secure-media-notice'>#{I18n.t(\"emails.secure_media_placeholder\")}</p>\"\n+        next if target.to_s.include?(\"stripped-secure-view-media\")\n+        target.add_next_sibling secure_media_placeholder(doc, a['href'])\n+        target.remove\n       end\n     end\n+    doc.css('img[src]').each do |img|\n+      if Upload.secure_media_url?(img['src'])\n+        img.add_next_sibling secure_media_placeholder(doc, img['src'])\n+        img.remove\n+      end\n+    end\n+  end\n+\n+  def self.secure_media_placeholder(doc, url)\n+    <<~HTML\n+    <div class=\"secure-media-notice\" data-stripped-secure-media=\"#{url}\">\n+      #{I18n.t('emails.secure_media_placeholder')} <a class='stripped-secure-view-media' href=\"#{url}\">#{I18n.t(\"emails.view_redacted_media\")}</a>.\n+    </div>\n+    HTML\n   end\n \n   def self.format_for_email(html, post = nil)"
+    },
+    {
+      "sha": "7525171eb1bca854b9b542eff757a16385ab1581",
+      "filename": "spec/components/email/sender_spec.rb",
+      "status": "modified",
+      "additions": 81,
+      "deletions": 0,
+      "changes": 81,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/spec/components/email/sender_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/spec/components/email/sender_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/email/sender_spec.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -404,6 +404,87 @@\n         .to contain_exactly(*[small_pdf, large_pdf, csv_file].map(&:original_filename))\n     end\n \n+    context \"when secure media enabled\" do\n+      def enable_s3_uploads\n+        SiteSetting.enable_s3_uploads = true\n+        SiteSetting.s3_upload_bucket = \"s3-upload-bucket\"\n+        SiteSetting.s3_access_key_id = \"some key\"\n+        SiteSetting.s3_secret_access_key = \"some secrets3_region key\"\n+        stub_request(:head, \"https://#{SiteSetting.s3_upload_bucket}.s3.amazonaws.com/\")\n+        stub_request(\n+          :put,\n+          \"https://#{SiteSetting.s3_upload_bucket}.s3.amazonaws.com/original/1X/#{image.sha1}.#{image.extension}?acl\"\n+        )\n+        store = FileStore::S3Store.new\n+        s3_helper = store.instance_variable_get(:@s3_helper)\n+        client = Aws::S3::Client.new(stub_responses: true)\n+        s3_helper.stubs(:s3_client).returns(client)\n+        Discourse.stubs(:store).returns(store)\n+      end\n+\n+      before do\n+        enable_s3_uploads\n+        SiteSetting.secure_media = true\n+        SiteSetting.login_required = true\n+        SiteSetting.email_total_attachment_size_limit_kb = 14_000\n+        SiteSetting.secure_media_max_email_embed_image_size_kb = 5_000\n+\n+        Jobs.run_immediately!\n+        Jobs::PullHotlinkedImages.any_instance.expects(:execute)\n+        FileStore::S3Store.any_instance.expects(:has_been_uploaded?).returns(true).at_least_once\n+        CookedPostProcessor.any_instance.stubs(:get_size).returns([244, 66])\n+\n+        @secure_image = UploadCreator.new(file_from_fixtures(\"logo.png\", \"images\"), \"logo.png\")\n+          .create_for(Discourse.system_user.id)\n+        @secure_image.update_secure_status(secure_override_value: true)\n+        @secure_image.update(access_control_post_id: reply.id)\n+        reply.update(raw: reply.raw + \"\\n\" + \"#{UploadMarkdown.new(@secure_image).image_markdown}\")\n+        reply.rebake!\n+      end\n+\n+      it \"does not attach images when embedding them is not allowed\" do\n+        Email::Sender.new(message, :valid_type).send\n+        expect(message.attachments.length).to eq(3)\n+      end\n+\n+      context \"when embedding secure images in email is allowed\" do\n+        before do\n+          SiteSetting.secure_media_allow_embed_images_in_emails = true\n+        end\n+\n+        it \"does not attach images that are not marked as secure\" do\n+          Email::Sender.new(message, :valid_type).send\n+          expect(message.attachments.length).to eq(4)\n+        end\n+\n+        it \"does not embed images that are too big\" do\n+          SiteSetting.secure_media_max_email_embed_image_size_kb = 1\n+          Email::Sender.new(message, :valid_type).send\n+          expect(message.attachments.length).to eq(3)\n+        end\n+\n+        it \"uses the email styles to inline secure images and attaches the secure image upload to the email\" do\n+          Email::Sender.new(message, :valid_type).send\n+          expect(message.attachments.length).to eq(4)\n+          expect(message.attachments.map(&:filename))\n+            .to contain_exactly(*[small_pdf, large_pdf, csv_file, @secure_image].map(&:original_filename))\n+          expect(message.html_part.body).to include(\"cid:\")\n+          expect(message.html_part.body).to include(\"embedded-secure-image\")\n+          expect(message.attachments.length).to eq(4)\n+        end\n+      end\n+    end\n+\n+    it \"adds only non-image uploads as attachments to the email and leaves the image intact with original source\" do\n+      SiteSetting.email_total_attachment_size_limit_kb = 10_000\n+      Email::Sender.new(message, :valid_type).send\n+\n+      expect(message.attachments.length).to eq(3)\n+      expect(message.attachments.map(&:filename))\n+        .to contain_exactly(*[small_pdf, large_pdf, csv_file].map(&:original_filename))\n+      expect(message.html_part.body).to include(\"<img src=\\\"#{Discourse.base_url}#{image.url}\\\"\")\n+    end\n+\n     it \"respects the size limit and attaches only files that fit into the max email size\" do\n       SiteSetting.email_total_attachment_size_limit_kb = 40\n       Email::Sender.new(message, :valid_type).send"
+    },
+    {
+      "sha": "e42a44db78f815caac88fc9a81d633aa6f803d28",
+      "filename": "spec/components/email/styles_spec.rb",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 5,
+      "changes": 45,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/spec/components/email/styles_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/spec/components/email/styles_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/email/styles_spec.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -4,6 +4,7 @@\n require 'email'\n \n describe Email::Styles do\n+  let(:attachments) { {} }\n \n   def basic_fragment(html)\n     styler = Email::Styles.new(html)\n@@ -186,23 +187,57 @@ def html_fragment(html)\n     end\n   end\n \n-  context \"replace_relative_urls\" do\n+  context \"replace_secure_media_urls\" do\n+    let(:attachments) { { 'testimage.png' => stub(url: 'email/test.png') } }\n     it \"replaces secure media within a link with a placeholder\" do\n       frag = html_fragment(\"<a href=\\\"#{Discourse.base_url}\\/secure-media-uploads/original/1X/testimage.png\\\"><img src=\\\"/secure-media-uploads/original/1X/testimage.png\\\"></a>\")\n-      expect(frag.at('p.secure-media-notice')).to be_present\n       expect(frag.at('img')).not_to be_present\n-      expect(frag.at('a')).not_to be_present\n+      expect(frag.to_s).to include(\"Redacted\")\n     end\n \n     it \"replaces secure images with a placeholder\" do\n       frag = html_fragment(\"<img src=\\\"/secure-media-uploads/original/1X/testimage.png\\\">\")\n-      expect(frag.at('p.secure-media-notice')).to be_present\n       expect(frag.at('img')).not_to be_present\n+      expect(frag.to_s).to include(\"Redacted\")\n     end\n \n     it \"does not replace topic links with secure-media-uploads in the name\" do\n       frag = html_fragment(\"<a href=\\\"#{Discourse.base_url}\\/t/secure-media-uploads/235723\\\">Visit Topic</a>\")\n-      expect(frag.at('p.secure-media-notice')).not_to be_present\n+      expect(frag.to_s).not_to include(\"Redacted\")\n+    end\n+  end\n+\n+  context \"inline_secure_images\" do\n+    let(:attachments) { { 'testimage.png' => stub(url: 'cid:email/test.png') } }\n+    fab!(:upload) { Fabricate(:upload, original_filename: 'testimage.png', secure: true, sha1: '123456') }\n+\n+    def strip_and_inline\n+      html = \"<a href=\\\"#{Discourse.base_url}\\/secure-media-uploads/original/1X/123456.png\\\"><img src=\\\"/secure-media-uploads/original/1X/123456.png\\\"></a>\"\n+\n+      # strip out the secure media\n+      styler = Email::Styles.new(html)\n+      styler.format_basic\n+      styler.format_html\n+      html = styler.to_html\n+\n+      # pass in the attachments to match uploads based on sha + original filename\n+      styler = Email::Styles.new(html)\n+      styler.inline_secure_images(attachments)\n+      @frag = Nokogiri::HTML5.fragment(styler.to_s)\n+    end\n+\n+    it \"inlines attachments where stripped-secure-media data attr is present\" do\n+      strip_and_inline\n+      expect(@frag.to_s).to include(\"cid:email/test.png\")\n+      expect(@frag.css('[data-stripped-secure-media]')).not_to be_present\n+    end\n+\n+    it \"does not inline anything if the upload cannot be found\" do\n+      upload.update(sha1: 'blah12')\n+      strip_and_inline\n+\n+      expect(@frag.to_s).not_to include(\"cid:email/test.png\")\n+      expect(@frag.css('[data-stripped-secure-media]')).to be_present\n     end\n   end\n end"
+    },
+    {
+      "sha": "72e22124730a2b2bb5bea72e7b292b91c5b3cc0d",
+      "filename": "spec/components/pretty_text_spec.rb",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 0,
+      "changes": 34,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/spec/components/pretty_text_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/spec/components/pretty_text_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/pretty_text_spec.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -928,6 +928,40 @@ def strip_image_wrapping(html)\n         expect(md.to_s).to match(I18n.t(\"emails.secure_media_placeholder\"))\n         expect(md.to_s).not_to match(SiteSetting.Upload.s3_cdn_url)\n       end\n+\n+      it \"replaces secure media within a link with a placeholder, keeping the url in an attribute\" do\n+        url = \"#{Discourse.base_url}\\/secure-media-uploads/original/1X/testimage.png\"\n+        html = <<~HTML\n+        <a href=\\\"#{url}\\\"><img src=\\\"/secure-media-uploads/original/1X/testimage.png\\\"></a>\n+        HTML\n+        md = PrettyText.format_for_email(html, post)\n+        expect(md).not_to include('<img')\n+        expect(md).to include(\"Redacted\")\n+        expect(md).to include(\"data-stripped-secure-media=\\\"#{url}\\\"\")\n+      end\n+\n+      it \"does not create nested redactions from double processing because of the view media link\" do\n+        url = \"#{Discourse.base_url}\\/secure-media-uploads/original/1X/testimage.png\"\n+        html = <<~HTML\n+        <a href=\\\"#{url}\\\"><img src=\\\"/secure-media-uploads/original/1X/testimage.png\\\"></a>\n+        HTML\n+        md = PrettyText.format_for_email(html, post)\n+        md = PrettyText.format_for_email(md, post)\n+\n+        expect(md.scan(/stripped-secure-view-media/).length).to eq(1)\n+        expect(md.scan(/Redacted/).length).to eq(1)\n+      end\n+\n+      it \"replaces secure images with a placeholder, keeping the url in an attribute\" do\n+        url = \"/secure-media-uploads/original/1X/testimage.png\"\n+        html = <<~HTML\n+        <img src=\\\"#{url}\\\">\n+        HTML\n+        md = PrettyText.format_for_email(html, post)\n+        expect(md).not_to include('<img')\n+        expect(md).to include(\"Redacted\")\n+        expect(md).to include(\"data-stripped-secure-media=\\\"#{url}\\\"\")\n+      end\n     end\n   end\n "
+    },
+    {
+      "sha": "eefdbfa9ebdf3c64cb89b4d2bd68fc0c8dc857f8",
+      "filename": "spec/mailers/user_notifications_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 44,
+      "changes": 44,
+      "blob_url": "https://github.com/discourse/discourse/blob/dede942007df2df25b2640cff1e6a738be183fef/spec/mailers/user_notifications_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/dede942007df2df25b2640cff1e6a738be183fef/spec/mailers/user_notifications_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/mailers/user_notifications_spec.rb?ref=dede942007df2df25b2640cff1e6a738be183fef",
+      "patch": "@@ -699,50 +699,6 @@\n     expect(mail.body.to_s).to match(I18n.t(\"user_notifications.reached_limit\", count: 2))\n   end\n \n-  describe \"secure media\" do\n-    let(:video_upload) { Fabricate(:upload, extension: \"mov\") }\n-    let(:user) { Fabricate(:user) }\n-    let(:post) { Fabricate(:post) }\n-\n-    before do\n-      SiteSetting.s3_upload_bucket = \"some-bucket-on-s3\"\n-      SiteSetting.s3_access_key_id = \"s3-access-key-id\"\n-      SiteSetting.s3_secret_access_key = \"s3-secret-access-key\"\n-      SiteSetting.s3_cdn_url = \"https://s3.cdn.com\"\n-      SiteSetting.enable_s3_uploads = true\n-      SiteSetting.secure_media = true\n-      SiteSetting.login_required = true\n-\n-      video_upload.update!(url: \"#{SiteSetting.s3_cdn_url}/#{Discourse.store.get_path_for_upload(video_upload)}\")\n-      user.email_logs.create!(\n-        email_type: 'blah',\n-        to_address: user.email,\n-        user_id: user.id\n-      )\n-    end\n-\n-    it \"replaces secure audio/video with placeholder\" do\n-      reply = Fabricate(:post, topic_id: post.topic_id, raw: \"Video: #{video_upload.url}\")\n-\n-      notification = Fabricate(\n-        :notification,\n-        topic_id: post.topic_id,\n-        post_number: reply.post_number,\n-        user: post.user,\n-        data: { original_username: 'bob' }.to_json\n-      )\n-\n-      mail = UserNotifications.user_replied(\n-        user,\n-        post: reply,\n-        notification_type: notification.notification_type,\n-        notification_data_hash: notification.data_hash\n-      )\n-\n-      expect(mail.body.to_s).to match(I18n.t(\"emails.secure_media_placeholder\"))\n-    end\n-  end\n-\n   def expects_build_with(condition)\n     UserNotifications.any_instance.expects(:build_email).with(user.email, condition)\n     mailer = UserNotifications.public_send("
+    }
+  ]
+}
