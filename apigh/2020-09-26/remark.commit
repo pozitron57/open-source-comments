@@ -1,0 +1,158 @@
+{
+  "sha": "c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmMwMjU5MDY2NWYzYTVkOWQzZDU5OGJiNzAxNjhlZGUyOTBkNGE5ZmY=",
+  "commit": {
+    "author": {
+      "name": "Pavel Pustovalov",
+      "email": "pustovalov.pavel@gmail.com",
+      "date": "2020-09-06T15:01:15Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2020-09-06T19:15:56Z"
+    },
+    "message": "Setup coverage for FE",
+    "tree": {
+      "sha": "f9d377e75dec6cd1ef47ae2f7ae26253c25e574f",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/f9d377e75dec6cd1ef47ae2f7ae26253c25e574f"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+  "html_url": "https://github.com/umputun/remark42/commit/c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/c02590665f3a5d9d3d598bb70168ede290d4a9ff/comments",
+  "author": {
+    "login": "pustovalov",
+    "id": 1568885,
+    "node_id": "MDQ6VXNlcjE1Njg4ODU=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1568885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pustovalov",
+    "html_url": "https://github.com/pustovalov",
+    "followers_url": "https://api.github.com/users/pustovalov/followers",
+    "following_url": "https://api.github.com/users/pustovalov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pustovalov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pustovalov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pustovalov/subscriptions",
+    "organizations_url": "https://api.github.com/users/pustovalov/orgs",
+    "repos_url": "https://api.github.com/users/pustovalov/repos",
+    "events_url": "https://api.github.com/users/pustovalov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pustovalov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/1cb724a264a6e28aeb8c37fedd81c23fb60753ea",
+      "html_url": "https://github.com/umputun/remark42/commit/1cb724a264a6e28aeb8c37fedd81c23fb60753ea"
+    }
+  ],
+  "stats": {
+    "total": 115,
+    "additions": 112,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "4b650202e18508dfb8e71a3f71f167fe52abad6b",
+      "filename": ".github/workflows/ci-test-frontend.yml",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark42/blob/c02590665f3a5d9d3d598bb70168ede290d4a9ff/.github/workflows/ci-test-frontend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/c02590665f3a5d9d3d598bb70168ede290d4a9ff/.github/workflows/ci-test-frontend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github/workflows/ci-test-frontend.yml?ref=c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+      "patch": "@@ -71,5 +71,10 @@ jobs:\n       - run: npm ci --loglevel warn\n         working-directory: ./frontend\n \n-      - run: npm run test\n+      - run: npm run test:coverage\n         working-directory: ./frontend\n+\n+      - name: submit coverage\n+        run: node ${{ github.workspace }}/frontend/node_modules/.bin/codecov\n+        env:\n+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}"
+    },
+    {
+      "sha": "7da08ac72d89dd7589afaa7abfb67efdb04c42e4",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/c02590665f3a5d9d3d598bb70168ede290d4a9ff/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/c02590665f3a5d9d3d598bb70168ede290d4a9ff/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+      "patch": "@@ -1,4 +1,5 @@\n-# remark42 [![Build Status](https://github.com/umputun/remark42/workflows/build/badge.svg)](https://github.com/umputun/remark42/actions) [![Go Report Card](https://goreportcard.com/badge/github.com/umputun/remark42)](https://goreportcard.com/report/github.com/umputun/remark42) [![Coverage Status](https://coveralls.io/repos/github/umputun/remark42/badge.svg?branch=master)](https://coveralls.io/github/umputun/remark42?branch=master)\n+# remark42 [![Build Status](https://github.com/umputun/remark42/workflows/build/badge.svg)](https://github.com/umputun/remark42/actions) [![Go Report Card](https://goreportcard.com/badge/github.com/umputun/remark42)](https://goreportcard.com/report/github.com/umputun/remark42) [![Coverage Status](https://coveralls.io/repos/github/umputun/remark42/badge.svg?branch=master)](https://coveralls.io/github/umputun/remark42?branch=master) [![codecov](https://codecov.io/gh/umputun/remark42/branch/master/graph/badge.svg)](https://codecov.io/gh/umputun/remark42)\n+\n \n \n "
+    },
+    {
+      "sha": "92a4a996a7b94c9e45e4e8b1f9ef7daff3abbab6",
+      "filename": "frontend/codecov.yml",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/codecov.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/codecov.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/codecov.yml?ref=c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+      "patch": "@@ -0,0 +1,5 @@\n+codecov:\n+  notify:\n+    require_ci_to_pass: false\n+\n+comment: false"
+    },
+    {
+      "sha": "d45a66e4c6222464725b837a348ef1a573ee61fe",
+      "filename": "frontend/jest.config.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/jest.config.js",
+      "raw_url": "https://github.com/umputun/remark42/raw/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/jest.config.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/jest.config.js?ref=c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+      "patch": "@@ -17,4 +17,5 @@ module.exports = {\n   },\n   setupFilesAfterEnv: ['<rootDir>/app/testUtils/index.ts', 'jest-localstorage-mock'],\n   transformIgnorePatterns: ['/node_modules/(?!intl-messageformat|intl-messageformat-parser).+\\\\.js$'],\n+  collectCoverageFrom: ['!app/testUtils/**', '!app/locales/**'],\n };"
+    },
+    {
+      "sha": "cec2a8870a31883b9b146d1801e32ab22ad854ba",
+      "filename": "frontend/package-lock.json",
+      "status": "modified",
+      "additions": 97,
+      "deletions": 1,
+      "changes": 98,
+      "blob_url": "https://github.com/umputun/remark42/blob/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/package-lock.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/package-lock.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package-lock.json?ref=c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+      "patch": "@@ -4436,6 +4436,12 @@\n         \"unist-util-find-all-after\": \"^3.0.1\"\n       }\n     },\n+    \"@tootallnate/once\": {\n+      \"version\": \"1.1.2\",\n+      \"resolved\": \"https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz\",\n+      \"integrity\": \"sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==\",\n+      \"dev\": true\n+    },\n     \"@types/anymatch\": {\n       \"version\": \"1.3.1\",\n       \"resolved\": \"https://registry.npmjs.org/@types/anymatch/-/anymatch-1.3.1.tgz\",\n@@ -5140,6 +5146,15 @@\n       \"integrity\": \"sha512-OPdCF6GsMIP+Az+aWfAAOEt2/+iVDKE7oy6lJ098aoe59oAmK76qV6Gw60SbZ8jHuG2wH058GF4pLFbYamYrVA==\",\n       \"dev\": true\n     },\n+    \"agent-base\": {\n+      \"version\": \"6.0.1\",\n+      \"resolved\": \"https://registry.npmjs.org/agent-base/-/agent-base-6.0.1.tgz\",\n+      \"integrity\": \"sha512-01q25QQDwLSsyfhrKbn8yuur+JNw0H+0Y4JiGIKd3z9aYk/w/2kxD/Upc+t2ZBBSUNff50VjPsSW2YxM8QYKVg==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"debug\": \"4\"\n+      }\n+    },\n     \"aggregate-error\": {\n       \"version\": \"3.0.1\",\n       \"resolved\": \"https://registry.npmjs.org/aggregate-error/-/aggregate-error-3.0.1.tgz\",\n@@ -5255,6 +5270,12 @@\n         \"sprintf-js\": \"~1.0.2\"\n       }\n     },\n+    \"argv\": {\n+      \"version\": \"0.0.2\",\n+      \"resolved\": \"https://registry.npmjs.org/argv/-/argv-0.0.2.tgz\",\n+      \"integrity\": \"sha1-7L0W+JSbFXGDcRsb2jNPN4QBhas=\",\n+      \"dev\": true\n+    },\n     \"aria-query\": {\n       \"version\": \"3.0.0\",\n       \"resolved\": \"https://registry.npmjs.org/aria-query/-/aria-query-3.0.0.tgz\",\n@@ -7315,6 +7336,19 @@\n       \"resolved\": \"https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz\",\n       \"integrity\": \"sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=\"\n     },\n+    \"codecov\": {\n+      \"version\": \"3.7.2\",\n+      \"resolved\": \"https://registry.npmjs.org/codecov/-/codecov-3.7.2.tgz\",\n+      \"integrity\": \"sha512-fmCjAkTese29DUX3GMIi4EaKGflHa4K51EoMc29g8fBHawdk/+KEq5CWOeXLdd9+AT7o1wO4DIpp/Z1KCqCz1g==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"argv\": \"0.0.2\",\n+        \"ignore-walk\": \"3.0.3\",\n+        \"js-yaml\": \"3.13.1\",\n+        \"teeny-request\": \"6.0.1\",\n+        \"urlgrey\": \"0.4.4\"\n+      }\n+    },\n     \"collapse-white-space\": {\n       \"version\": \"1.0.6\",\n       \"resolved\": \"https://registry.npmjs.org/collapse-white-space/-/collapse-white-space-1.0.6.tgz\",\n@@ -11233,6 +11267,17 @@\n         \"requires-port\": \"^1.0.0\"\n       }\n     },\n+    \"http-proxy-agent\": {\n+      \"version\": \"4.0.1\",\n+      \"resolved\": \"https://registry.npmjs.org/http-proxy-agent/-/http-proxy-agent-4.0.1.tgz\",\n+      \"integrity\": \"sha512-k0zdNgqWTGA6aeIRVpvfVob4fL52dTfaehylg0Y4UvSySvOq/Y+BOyPrgpUrA7HylqvU8vIZGsRuXmspskV0Tg==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"@tootallnate/once\": \"1\",\n+        \"agent-base\": \"6\",\n+        \"debug\": \"4\"\n+      }\n+    },\n     \"http-proxy-middleware\": {\n       \"version\": \"0.19.1\",\n       \"resolved\": \"https://registry.npmjs.org/http-proxy-middleware/-/http-proxy-middleware-0.19.1.tgz\",\n@@ -11262,6 +11307,24 @@\n       \"integrity\": \"sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=\",\n       \"dev\": true\n     },\n+    \"https-proxy-agent\": {\n+      \"version\": \"4.0.0\",\n+      \"resolved\": \"https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz\",\n+      \"integrity\": \"sha512-zoDhWrkR3of1l9QAL8/scJZyLu8j/gBkcwcaQOZh7Gyh/+uJQzGVETdgT30akuwkpL8HTRfssqI3BZuV18teDg==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"agent-base\": \"5\",\n+        \"debug\": \"4\"\n+      },\n+      \"dependencies\": {\n+        \"agent-base\": {\n+          \"version\": \"5.1.1\",\n+          \"resolved\": \"https://registry.npmjs.org/agent-base/-/agent-base-5.1.1.tgz\",\n+          \"integrity\": \"sha512-TMeqbNl2fMW0nMjTEPOwe3J/PRFP4vqeoNuQMG0HlMrtm5QxKqdvAkZ1pRBQ/ulIyDD5Yq0nJ7YbdD8ey0TO3g==\",\n+          \"dev\": true\n+        }\n+      }\n+    },\n     \"human-signals\": {\n       \"version\": \"1.1.1\",\n       \"resolved\": \"https://registry.npmjs.org/human-signals/-/human-signals-1.1.1.tgz\",\n@@ -11431,7 +11494,6 @@\n       \"resolved\": false,\n       \"integrity\": \"sha512-m7o6xuOaT1aqheYHKf8W6J5pYH85ZI9w077erOzLje3JsB1gkafkAhHHY19dqjulgIZHFm32Cp5uNZgcQqdJKw==\",\n       \"dev\": true,\n-      \"optional\": true,\n       \"requires\": {\n         \"minimatch\": \"^3.0.4\"\n       }\n@@ -21234,6 +21296,15 @@\n         \"stream-shift\": \"^1.0.0\"\n       }\n     },\n+    \"stream-events\": {\n+      \"version\": \"1.0.5\",\n+      \"resolved\": \"https://registry.npmjs.org/stream-events/-/stream-events-1.0.5.tgz\",\n+      \"integrity\": \"sha512-E1GUzBSgvct8Jsb3v2X15pjzN1tYebtbLaMg+eBOUOAxgbLoSbT2NS91ckc5lJD1KfLjId+jXJRgo0qnV5Nerg==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"stubs\": \"^3.0.0\"\n+      }\n+    },\n     \"stream-http\": {\n       \"version\": \"2.8.3\",\n       \"resolved\": \"https://registry.npmjs.org/stream-http/-/stream-http-2.8.3.tgz\",\n@@ -21821,6 +21892,12 @@\n       \"integrity\": \"sha512-e6/d0eBu7gHtdCqFt0xJr642LdToM5/cN4Qb9DbHjVx1CP5RyeM+zH7pbecEmDv/lBqb0QH+6Uqq75rxFPkM0w==\",\n       \"dev\": true\n     },\n+    \"stubs\": {\n+      \"version\": \"3.0.0\",\n+      \"resolved\": \"https://registry.npmjs.org/stubs/-/stubs-3.0.0.tgz\",\n+      \"integrity\": \"sha1-6NK6H6nJBXAwPAMLaQD31fiavls=\",\n+      \"dev\": true\n+    },\n     \"style-loader\": {\n       \"version\": \"1.1.3\",\n       \"resolved\": \"https://registry.npmjs.org/style-loader/-/style-loader-1.1.3.tgz\",\n@@ -22560,6 +22637,19 @@\n         }\n       }\n     },\n+    \"teeny-request\": {\n+      \"version\": \"6.0.1\",\n+      \"resolved\": \"https://registry.npmjs.org/teeny-request/-/teeny-request-6.0.1.tgz\",\n+      \"integrity\": \"sha512-TAK0c9a00ELOqLrZ49cFxvPVogMUFaWY8dUsQc/0CuQPGF+BOxOQzXfE413BAk2kLomwNplvdtMpeaeGWmoc2g==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"http-proxy-agent\": \"^4.0.0\",\n+        \"https-proxy-agent\": \"^4.0.0\",\n+        \"node-fetch\": \"^2.2.0\",\n+        \"stream-events\": \"^1.0.5\",\n+        \"uuid\": \"^3.3.2\"\n+      }\n+    },\n     \"terminal-link\": {\n       \"version\": \"2.1.1\",\n       \"resolved\": \"https://registry.npmjs.org/terminal-link/-/terminal-link-2.1.1.tgz\",\n@@ -23451,6 +23541,12 @@\n         }\n       }\n     },\n+    \"urlgrey\": {\n+      \"version\": \"0.4.4\",\n+      \"resolved\": \"https://registry.npmjs.org/urlgrey/-/urlgrey-0.4.4.tgz\",\n+      \"integrity\": \"sha1-iS/pWWCAXoVRnxzUOJ8stMu3ZS8=\",\n+      \"dev\": true\n+    },\n     \"use\": {\n       \"version\": \"3.1.1\",\n       \"resolved\": \"https://registry.npmjs.org/use/-/use-3.1.1.tgz\","
+    },
+    {
+      "sha": "8523544a0d8e67571f2ae55e1ded7785c0dc97f4",
+      "filename": "frontend/package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/package.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/c02590665f3a5d9d3d598bb70168ede290d4a9ff/frontend/package.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package.json?ref=c02590665f3a5d9d3d598bb70168ede290d4a9ff",
+      "patch": "@@ -73,6 +73,7 @@\n     \"babel-loader\": \"^8.1.0\",\n     \"caniuse-lite\": \"^1.0.30001118\",\n     \"clean-webpack-plugin\": \"^3.0.0\",\n+    \"codecov\": \"^3.7.2\",\n     \"copy-webpack-plugin\": \"^6.0.3\",\n     \"cross-env\": \"^7.0.2\",\n     \"css-loader\": \"^3.5.2\","
+    }
+  ]
+}

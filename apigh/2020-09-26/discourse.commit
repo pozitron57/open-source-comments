@@ -1,0 +1,98 @@
+{
+  "sha": "6acd2ab7d481da3e9e9ab17ae2958e6c12011913",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2YWNkMmFiN2Q0ODFkYTNlOWU5YWIxN2FlMjk1OGU2YzEyMDExOTEz",
+  "commit": {
+    "author": {
+      "name": "awesomerobot",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-09-26T01:06:17Z"
+    },
+    "committer": {
+      "name": "awesomerobot",
+      "email": "kris.aubuchon@discourse.org",
+      "date": "2020-09-26T01:06:17Z"
+    },
+    "message": "UX: Allow horizontal scroll on mobile post buttons",
+    "tree": {
+      "sha": "669bbc59a810f021bf88a54f120cf1c657a4f0f9",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/669bbc59a810f021bf88a54f120cf1c657a4f0f9"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/6acd2ab7d481da3e9e9ab17ae2958e6c12011913",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/6acd2ab7d481da3e9e9ab17ae2958e6c12011913",
+  "html_url": "https://github.com/discourse/discourse/commit/6acd2ab7d481da3e9e9ab17ae2958e6c12011913",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/6acd2ab7d481da3e9e9ab17ae2958e6c12011913/comments",
+  "author": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "awesomerobot",
+    "id": 1681963,
+    "node_id": "MDQ6VXNlcjE2ODE5NjM=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1681963?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/awesomerobot",
+    "html_url": "https://github.com/awesomerobot",
+    "followers_url": "https://api.github.com/users/awesomerobot/followers",
+    "following_url": "https://api.github.com/users/awesomerobot/following{/other_user}",
+    "gists_url": "https://api.github.com/users/awesomerobot/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/awesomerobot/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/awesomerobot/subscriptions",
+    "organizations_url": "https://api.github.com/users/awesomerobot/orgs",
+    "repos_url": "https://api.github.com/users/awesomerobot/repos",
+    "events_url": "https://api.github.com/users/awesomerobot/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/awesomerobot/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7c206b321f41e18702bb419b3e3b4fb9e08dcc8f",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/7c206b321f41e18702bb419b3e3b4fb9e08dcc8f",
+      "html_url": "https://github.com/discourse/discourse/commit/7c206b321f41e18702bb419b3e3b4fb9e08dcc8f"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "2b8a34217ec38699dbd389b76bfe278047369e99",
+      "filename": "app/assets/stylesheets/mobile/topic-post.scss",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/6acd2ab7d481da3e9e9ab17ae2958e6c12011913/app/assets/stylesheets/mobile/topic-post.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/6acd2ab7d481da3e9e9ab17ae2958e6c12011913/app/assets/stylesheets/mobile/topic-post.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/mobile/topic-post.scss?ref=6acd2ab7d481da3e9e9ab17ae2958e6c12011913",
+      "patch": "@@ -29,6 +29,10 @@ span.badge-posts {\n .topic-post {\n   nav.post-controls {\n     color: var(--primary-low-mid-or-secondary-high);\n+    &.expanded {\n+      // on small devices with many buttons this can overflow\n+      overflow-x: scroll;\n+    }\n     .actions {\n       display: flex;\n "
+    }
+  ]
+}
