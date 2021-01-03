@@ -20,8 +20,8 @@ import dateutil.parser
 from datetime import date, timedelta
 from json.decoder import JSONDecodeError
 
-#gh_credentials_path = '/home/slisakov/gh_credentials'
-gh_credentials_path = '/Users/slisakov/Yandex.Disk.localized/gh_credentials'
+gh_credentials_path = '/home/slisakov/gh_credentials'
+#gh_credentials_path = '/Users/slisakov/Yandex.Disk.localized/gh_credentials'
 
 # Setup yaml parser
 yaml = ruamel.yaml.YAML()
