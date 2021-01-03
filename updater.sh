@@ -1,9 +1,12 @@
 #!/bin/bash
+
 ## Local
 #cd /home/slisakov/yadisk/sites/open-source-comments
 cd /Users/slisakov/Yandex.Disk.localized/sites/open-source-comments
+
 ## Remote
 #cd /home/slisakov/open-source-comments
+
 echo 'git pull'
 nice -n5 git pull
 
