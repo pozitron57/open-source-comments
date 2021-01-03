@@ -1129,12 +1129,10 @@ discourse:
     source: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
-    demo: "See [[1]](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963),\
-        \ [[2]](https://meta.discourse.org/t/new-plugin-build-discourse-2-way-api-comment-system/91271),\
-        \ [[3]](https://meta.discourse.org/t/docuss-an-experiment-on-how-to-embed-discussions-in-web-pages/89790)"
+    demo: "https://blog.codinghorror.com/building-a-pc-part-ix-downsizing/"
     docker: "yes"
-    js_kB: "4.19 (for embedding)"
-    css_kB: "36.34 (for embedding)"
+    js_kB: "4.2 (for embedding)"
+    css_kB: "36.3 (for embedding)"
     language: "Ruby"
     db: "PostgreSQL, Redis"
     moderation: "yes"
