@@ -1,6 +1,7 @@
 #!/bin/bash
 ## Local
-cd /home/slisakov/yadisk/sites/open-source-comments
+#cd /home/slisakov/yadisk/sites/open-source-comments
+cd /Users/slisakov/Yandex.Disk.localized/sites/open-source-comments
 ## Remote
 #cd /home/slisakov/open-source-comments
 echo 'git pull'
@@ -36,7 +37,7 @@ nice -n5 rsync -auvx --delete --numeric-ids js/                                 
 #nice -n5 rsync -auvx --delete --numeric-ids css/                                /var/www/lisakov.com/projects/open-source-comments/css/
 #nice -n5 rsync -auvx --delete --numeric-ids js/                                 /var/www/lisakov.com/projects/open-source-comments/js/
 
-# update github repo  https://github.com/pozitron57/open-source-comments
+# update github repository https://github.com/pozitron57/open-source-comments
 echo 'git add *'
 nice -n5 git add *
 echo 'git commit -m 'automatic update''

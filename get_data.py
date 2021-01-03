@@ -11,6 +11,7 @@ Get rid of yaml
 '''
 
 import os
+#import os.path
 import re
 import json
 import ruamel.yaml
@@ -18,6 +19,9 @@ import fileinput
 import dateutil.parser
 from datetime import date, timedelta
 from json.decoder import JSONDecodeError
+
+#gh_credentials_path = '/home/slisakov/gh_credentials'
+gh_credentials_path = '/Users/slisakov/Yandex.Disk.localized/gh_credentials'
 
 # Setup yaml parser
 yaml = ruamel.yaml.YAML()
@@ -86,7 +90,7 @@ if not os.path.isdir(p):
     ## Read your credentials from the file outside of the repo.
     #It's a bad idea to store your token in a text file, 
     # use only for testing
-    with open('/home/slisakov/gh_credentials', 'r') as f:
+    with open(gh_credentials_path, 'r') as f:
         for line in f:
             github_username = line.split()[0]
             github_token    = line.split()[1]
@@ -100,6 +104,8 @@ if not os.path.isdir(p):
     for url, cs in zip(github_commit_urls, comment_systems):
         print(cs,)
         os.system("curl -H 'Authorization: token {}' {} > {}".format(github_token,url,p+cs+'.commit'))
+else:
+    print(p, 'already exists. Stopping.')
 
 # Calculate Github stars change in the last N days
 N=14
@@ -111,9 +117,12 @@ for d in sorted(os.listdir('apigh')):
 
 stars_N_days_ago = {}
 file_N_days_ago = 'apigh/file_' + str(date_N_days_ago)
-print ('File to read N days ago', file_N_days_ago)
-with open(file_N_days_ago, 'r') as f:
-    data_N_days_ago = json.load(f)
+if os.path.isfile(file_N_days_ago):
+    print ('File to read N days ago', file_N_days_ago)
+    with open(file_N_days_ago, 'r') as f:
+        data_N_days_ago = json.load(f)
+else:
+    print ('File N days ago DOES NOT EXIST')
 
 
 # Read info from ./apigh/YYYY-MM-DD/<comment_system>
@@ -169,7 +178,10 @@ for filename in os.listdir(p):
                         data[cs]['stars']   = 0
                     data[cs]['open_issues'] = open_issues
                     data[cs]['created']     = created
-                    stars_N_days_ago = data_N_days_ago[cs]['stars']
+                    if os.path.isfile(file_N_days_ago):
+                        stars_N_days_ago = data_N_days_ago[cs]['stars']
+                    else:
+                        stars_N_days_ago = 'undefined'
                     #if in stars_N_days_ago and cs in data and isinstance(data[cs]['stars'],int) and isinstance(stars_N_days_ago[cs],int):
                     if stars_N_days_ago != 'undefined' and len(str(stars)) > 0 and stars != 'undefined' and stars != 0:
                         ds = int(data[cs]['stars']) - stars_N_days_ago
