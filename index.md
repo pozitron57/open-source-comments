@@ -31,9 +31,23 @@ services (e.g., Github issues, such as
 [[3]](https://github.com/Blankj/awesome-comment),
 [[4]](https://github.com/utterance/utterances)).
 
+There are also [dokieli](https://github.com/linkeddata/dokieli) and
+[hypothesis](https://web.hypothes.is/), that provide annotation-like
+functinality.
+
+Also, there is an
+[echo-chamber](https://github.com/tessalt/echo-chamber-js).
+
+>When a user submits a comment, echochamber.js will save the comment to the
+>user's LocalStorage, so when they return to the page, they can be
+>confident that their voice is being heard, and feel engaged with your very
+>engaging content. It does not make any HTTP requests. Since LocalStorage
+>is only local, you and your database need not be burdened with other
+>people's opinions.
+
 ## Stars vs. time
-The figure below shows some of the top competitors except for Discourse (as it's not
-just a light commenting server like others). The figure is useful to
+The figure below shows some of the top competitors except for Discourse (as
+it's not just a light commenting server like others). The figure is useful to
 indirectly estimate how active the project is.
 
 <a href="stars-v-date.png">
