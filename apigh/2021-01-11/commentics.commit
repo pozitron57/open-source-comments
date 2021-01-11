@@ -1,0 +1,108 @@
+{
+  "sha": "433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+  "node_id": "MDY6Q29tbWl0NzI5MjU0Nzc6NDMzMzg2ZWEzODJjOTJkNDlhYzQyZTk3MWY1ZWJjMmQ0Y2UzZGNjYg==",
+  "commit": {
+    "author": {
+      "name": "Steven",
+      "email": "support@commentics.org",
+      "date": "2020-10-24T10:57:17Z"
+    },
+    "committer": {
+      "name": "Steven",
+      "email": "support@commentics.org",
+      "date": "2020-10-24T10:57:17Z"
+    },
+    "message": "Updating version",
+    "tree": {
+      "sha": "82f21bb40c4af4df76153f505e8a289e43478e91",
+      "url": "https://api.github.com/repos/commentics/commentics/git/trees/82f21bb40c4af4df76153f505e8a289e43478e91"
+    },
+    "url": "https://api.github.com/repos/commentics/commentics/git/commits/433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/commentics/commentics/commits/433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+  "html_url": "https://github.com/commentics/commentics/commit/433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+  "comments_url": "https://api.github.com/repos/commentics/commentics/commits/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "06deb4b53c11f147ea7eb5fe2ae83e1dd78a2a88",
+      "url": "https://api.github.com/repos/commentics/commentics/commits/06deb4b53c11f147ea7eb5fe2ae83e1dd78a2a88",
+      "html_url": "https://github.com/commentics/commentics/commit/06deb4b53c11f147ea7eb5fe2ae83e1dd78a2a88"
+    }
+  ],
+  "stats": {
+    "total": 71,
+    "additions": 67,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "ea21d1ddede820324a39323c9a2fbb700024588b",
+      "filename": "README.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/commentics/commentics/blob/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/README.txt",
+      "raw_url": "https://github.com/commentics/commentics/raw/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/README.txt",
+      "contents_url": "https://api.github.com/repos/commentics/commentics/contents/README.txt?ref=433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+      "patch": "@@ -2,7 +2,7 @@ Project:      Commentics\n \n Website:      https://www.commentics.org\n \n-Version:      v4.0 (25th January 2020)\n+Version:      v4.1 (24th October 2020)\n \n Description:  Integrates into your website to allow visitors to submit comments\n "
+    },
+    {
+      "sha": "9cb6160326a99364a2a484f2d729b5b2f63f1652",
+      "filename": "docs/changelog.txt",
+      "status": "modified",
+      "additions": 63,
+      "deletions": 0,
+      "changes": 63,
+      "blob_url": "https://github.com/commentics/commentics/blob/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/docs/changelog.txt",
+      "raw_url": "https://github.com/commentics/commentics/raw/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/docs/changelog.txt",
+      "contents_url": "https://api.github.com/repos/commentics/commentics/contents/docs/changelog.txt?ref=433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+      "patch": "@@ -1,3 +1,66 @@\n+Version: 4.1\n+Date: 24th October 2020\n+\n+[Feature] Adds headline field\n+[Feature] Adds setting to change comment wording\n+[Feature] Clear cache tool\n+[Improvement] PHP 7.4 compatibility\n+[Improvement] Comment preview shows image upload\n+[Improvement] Comment preview gravatar links to gravatar site\n+[Improvement] Allows direct upgrade from v2.5 and above\n+[Improvement] iFrame cookies samesite none and secure\n+[Improvement] Layout settings combined to one page\n+[Improvement] Dashboard checks system settings\n+[Improvement] Dashboard detects if BitNinja installed\n+[Improvement] Displays version on dashboard\n+[Improvement] Adds setting to disable guest rating\n+[Improvement] Adds extra admin page messages\n+[Improvement] Styling of iFrame loading spinner\n+[Improvement] One click upgrade deletes install folder\n+[Improvement] Download the version check report\n+[Improvement] Allows config file to override settings\n+[Improvement] Loads countries using ajax\n+[Improvement] Removes the ability to rate when replying\n+[Improvement] Translatable dashboard admin tips\n+[Improvement] Translatable dashboard quick links\n+[Improvement] Clear template cache when changing theme\n+[Improvement] Clear all cache after upgrade\n+[Improvement] Adds admin detection info modal\n+[Improvement] Show overall result in permissions report\n+[Improvement] Show real folder in permissions report\n+[Improvement] iFrame ignores empty integration values\n+[Improvement] Simplifies comment management\n+[Improvement] Adds FAQ link to no site found error\n+[Improvement] Improvements to template engine\n+[Improvement] Improvements to fixCase() method\n+[Improvement] Improvements to default styling\n+[Improvement] Moves repeat language strings to general file\n+[Improvement] jQuery '$' changed to 'jQuery'\n+[Improvement] Improvements to theme preview\n+[Improvement] Add custom outer comment text\n+[Improvement] Upgrades jQuery script\n+[Improvement] Upgrades Summernote script\n+[Improvement] Upgrades iFrame Resizer script\n+[Bug Fix] Removes ambiguous captcha characters\n+[Bug Fix] Fix for importing emails\n+[Bug Fix] Clearing cache of replies\n+[Bug Fix] No captcha questions after switching language\n+[Bug Fix] Position of comment messages\n+[Bug Fix] Ajax not working after first comment\n+[Bug Fix] Fix for getimagesizefromstring() not available\n+[Bug Fix] Fix admin restrictions briefly showing\n+[Bug Fix] Fix for no states when editing comment\n+[Bug Fix] Fix page count on manage sites page\n+[Bug Fix] Fix plural wording for dashboard stats\n+[Bug Fix] Fix auto detect if optimize setting disabled\n+[Bug Fix] Fix for having to click into filled fields\n+[Other] Removes check for 'admin' folder\n+[Other] Removes styling from backend templates\n+[Other] Changes default prefilled field to hide\n+[Other] Increases default flooding to 10 per hour\n+\n+*************************************************************************\n+\n Version: 4.0\n Date: 25th January 2020\n "
+    },
+    {
+      "sha": "bda722542b8aeea9ded154f382315b49395f6cdb",
+      "filename": "upload/backend/index.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/commentics/commentics/blob/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/upload/backend/index.php",
+      "raw_url": "https://github.com/commentics/commentics/raw/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/upload/backend/index.php",
+      "contents_url": "https://api.github.com/repos/commentics/commentics/contents/upload/backend/index.php?ref=433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+      "patch": "@@ -1,7 +1,7 @@\n <?php\n define('CMTX_BACKEND', true);\n \n-define('CMTX_VERSION', '4.0');\n+define('CMTX_VERSION', '4.1');\n \n header('Content-Type: text/html; charset=utf-8');\n "
+    },
+    {
+      "sha": "8c0399017a86a7c82bc68b7a473c22c726277c9d",
+      "filename": "upload/frontend/index.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/commentics/commentics/blob/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/upload/frontend/index.php",
+      "raw_url": "https://github.com/commentics/commentics/raw/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/upload/frontend/index.php",
+      "contents_url": "https://api.github.com/repos/commentics/commentics/contents/upload/frontend/index.php?ref=433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+      "patch": "@@ -1,7 +1,7 @@\n <?php\n define('CMTX_FRONTEND', true);\n \n-define('CMTX_VERSION', '4.0');\n+define('CMTX_VERSION', '4.1');\n \n if (!session_id()) {\n     // Default session parameters"
+    },
+    {
+      "sha": "51519575a8c56dd8e8f943edc9c888749a65dccb",
+      "filename": "upload/install/index.php",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/commentics/commentics/blob/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/upload/install/index.php",
+      "raw_url": "https://github.com/commentics/commentics/raw/433386ea382c92d49ac42e971f5ebc2d4ce3dccb/upload/install/index.php",
+      "contents_url": "https://api.github.com/repos/commentics/commentics/contents/upload/install/index.php?ref=433386ea382c92d49ac42e971f5ebc2d4ce3dccb",
+      "patch": "@@ -6,7 +6,7 @@\n \n define('CMTX_INSTALL', true);\n \n-define('CMTX_VERSION', '4.0');\n+define('CMTX_VERSION', '4.1');\n \n header('Content-Type: text/html; charset=utf-8');\n "
+    }
+  ]
+}
