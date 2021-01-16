@@ -1,0 +1,79 @@
+{
+  "sha": "5390c6f81c671dec64854c11b8f8a835b5dc4711",
+  "node_id": "MDY6Q29tbWl0ODkyNzY4NzY6NTM5MGM2ZjgxYzY3MWRlYzY0ODU0YzExYjhmOGE4MzViNWRjNDcxMQ==",
+  "commit": {
+    "author": {
+      "name": "Souradip Mookerjee",
+      "email": "souramoo@gmx.com",
+      "date": "2021-01-16T00:26:17Z"
+    },
+    "committer": {
+      "name": "Adhityaa Chandrasekar",
+      "email": "gitlab@adtac.in",
+      "date": "2021-01-16T00:26:17Z"
+    },
+    "message": "Fix twitter profile photo import bug",
+    "tree": {
+      "sha": "60834ae05fb46775d7b76e5c22b68992bddf697d",
+      "url": "https://api.github.com/repos/adtac/commento/git/trees/60834ae05fb46775d7b76e5c22b68992bddf697d"
+    },
+    "url": "https://api.github.com/repos/adtac/commento/git/commits/5390c6f81c671dec64854c11b8f8a835b5dc4711",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/adtac/commento/commits/5390c6f81c671dec64854c11b8f8a835b5dc4711",
+  "html_url": "https://github.com/adtac/commento/commit/5390c6f81c671dec64854c11b8f8a835b5dc4711",
+  "comments_url": "https://api.github.com/repos/adtac/commento/commits/5390c6f81c671dec64854c11b8f8a835b5dc4711/comments",
+  "author": {
+    "login": "souramoo",
+    "id": 11202149,
+    "node_id": "MDQ6VXNlcjExMjAyMTQ5",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/11202149?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/souramoo",
+    "html_url": "https://github.com/souramoo",
+    "followers_url": "https://api.github.com/users/souramoo/followers",
+    "following_url": "https://api.github.com/users/souramoo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/souramoo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/souramoo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/souramoo/subscriptions",
+    "organizations_url": "https://api.github.com/users/souramoo/orgs",
+    "repos_url": "https://api.github.com/users/souramoo/repos",
+    "events_url": "https://api.github.com/users/souramoo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/souramoo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "326601394acd8fface90990fae63236ffa880bc4",
+      "url": "https://api.github.com/repos/adtac/commento/commits/326601394acd8fface90990fae63236ffa880bc4",
+      "html_url": "https://github.com/adtac/commento/commit/326601394acd8fface90990fae63236ffa880bc4"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 0,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "54350dff5b7c93c07ef569e7edda90e9bdf07134",
+      "filename": "api/commenter_photo.go",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/adtac/commento/blob/5390c6f81c671dec64854c11b8f8a835b5dc4711/api/commenter_photo.go",
+      "raw_url": "https://github.com/adtac/commento/raw/5390c6f81c671dec64854c11b8f8a835b5dc4711/api/commenter_photo.go",
+      "contents_url": "https://api.github.com/repos/adtac/commento/contents/api/commenter_photo.go?ref=5390c6f81c671dec64854c11b8f8a835b5dc4711",
+      "patch": "@@ -26,8 +26,6 @@ func commenterPhotoHandler(w http.ResponseWriter, r *http.Request) {\n \t\t}\n \t} else if c.Provider == \"github\" {\n \t\turl += \"&s=38\"\n-\t} else if c.Provider == \"twitter\" {\n-\t\turl += \"?size=normal\"\n \t} else if c.Provider == \"gitlab\" {\n \t\turl += \"?width=38\"\n \t}"
+    }
+  ]
+}
