@@ -1,0 +1,110 @@
+{
+  "sha": "ad25f8395449c9a1eda27916e330f96ae8177d6f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmFkMjVmODM5NTQ0OWM5YTFlZGEyNzkxNmUzMzBmOTZhZTgxNzdkNmY=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-01-16T00:35:10Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-01-16T01:53:51Z"
+    },
+    "message": "Add size-limit to CI",
+    "tree": {
+      "sha": "e460cffbf65c062c2d40bebb173c79d178d2c021",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/e460cffbf65c062c2d40bebb173c79d178d2c021"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/ad25f8395449c9a1eda27916e330f96ae8177d6f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/ad25f8395449c9a1eda27916e330f96ae8177d6f",
+  "html_url": "https://github.com/umputun/remark42/commit/ad25f8395449c9a1eda27916e330f96ae8177d6f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/ad25f8395449c9a1eda27916e330f96ae8177d6f/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d525e48208d4526147928e1d27e7d7b3804500a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/6d525e48208d4526147928e1d27e7d7b3804500a",
+      "html_url": "https://github.com/umputun/remark42/commit/6d525e48208d4526147928e1d27e7d7b3804500a"
+    }
+  ],
+  "stats": {
+    "total": 22,
+    "additions": 20,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "db3dade72dbaa9fad16a3a6b768fe2a0efe182bf",
+      "filename": ".github/workflows/ci-check-size-limit.yml",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark42/blob/ad25f8395449c9a1eda27916e330f96ae8177d6f/.github/workflows/ci-check-size-limit.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/ad25f8395449c9a1eda27916e330f96ae8177d6f/.github/workflows/ci-check-size-limit.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github/workflows/ci-check-size-limit.yml?ref=ad25f8395449c9a1eda27916e330f96ae8177d6f",
+      "patch": "@@ -0,0 +1,19 @@\n+name: \"check js/css bundles file limit\"\n+on:\n+  pull_request:\n+    branches:\n+      - master\n+    paths:\n+      - '.github/workflows/ci-test-frontend.yml'\n+      - 'frontend/**/*.{ts,tsx,css}'\n+jobs:\n+  size:\n+    runs-on: ubuntu-latest\n+    env:\n+      CI_JOB_NUMBER: 1\n+    steps:\n+      - uses: actions/checkout@v1\n+      - uses: andresz1/size-limit-action@v1\n+        with:\n+          github_token: ${{ secrets.GITHUB_TOKEN }}\n+          directory: frontend/\n\\ No newline at end of file"
+    },
+    {
+      "sha": "6353eb6350aaf3ff2336df00817ae92f0b47fc79",
+      "filename": "frontend/package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/ad25f8395449c9a1eda27916e330f96ae8177d6f/frontend/package.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/ad25f8395449c9a1eda27916e330f96ae8177d6f/frontend/package.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package.json?ref=ad25f8395449c9a1eda27916e330f96ae8177d6f",
+      "patch": "@@ -13,10 +13,9 @@\n     \"check\": \"cross-env NODE_ENV=production run-s build && run-p check:*\",\n     \"check:types\": \"tsc -p tsconfig.json --noEmit\",\n     \"check:translation\": \"run-s translation:extract translation:check\",\n-    \"check:size\": \"size-limit\",\n     \"lint:eslint\": \"eslint --max-warnings=0 '**/*.{ts?(x),js}'\",\n     \"lint:stylelint\": \"stylelint 'app/**/*.css' 'templates/**'\",\n-    \"size\": \"cross-env NODE_ENV=production run-s build check:size\",\n+    \"size\": \"cross-env NODE_ENV=production npm run build && size-limit\",\n     \"prettier\": \"prettier --write './**/*.{js,ts,tsx,css,html}'\",\n     \"translation:extract\": \"formatjs extract --out-file=./extracted-messages/messages.json '**/!(*.d).ts?(x)'\",\n     \"translation:generate\": \"node ./tasks/generateDictionary.js\","
+    }
+  ]
+}
