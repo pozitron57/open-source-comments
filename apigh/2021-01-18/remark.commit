@@ -1,0 +1,110 @@
+{
+  "sha": "89a4677391a76bef302fcb701313c425df0afdd3",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjg5YTQ2NzczOTFhNzZiZWYzMDJmY2I3MDEzMTNjNDI1ZGYwYWZkZDM=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-01-17T22:26:48Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-01-17T22:32:26Z"
+    },
+    "message": "enforce loading=lazy att to rendered images html",
+    "tree": {
+      "sha": "96bb0876d40c022aebf33708fd43908131ea1387",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/96bb0876d40c022aebf33708fd43908131ea1387"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/89a4677391a76bef302fcb701313c425df0afdd3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/89a4677391a76bef302fcb701313c425df0afdd3",
+  "html_url": "https://github.com/umputun/remark42/commit/89a4677391a76bef302fcb701313c425df0afdd3",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/89a4677391a76bef302fcb701313c425df0afdd3/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "849c133082b0a27f6736c0da7e11531c42dd62e1",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/849c133082b0a27f6736c0da7e11531c42dd62e1",
+      "html_url": "https://github.com/umputun/remark42/commit/849c133082b0a27f6736c0da7e11531c42dd62e1"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 44,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "0522eef913b3641d21d3a2a72afed874d67b51c6",
+      "filename": "backend/app/store/formatter.go",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/89a4677391a76bef302fcb701313c425df0afdd3/backend/app/store/formatter.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/89a4677391a76bef302fcb701313c425df0afdd3/backend/app/store/formatter.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/store/formatter.go?ref=89a4677391a76bef302fcb701313c425df0afdd3",
+      "patch": "@@ -59,6 +59,7 @@ func (f *CommentFormatter) FormatText(txt string) (res string) {\n \t\tres = conv.Convert(res)\n \t}\n \tres = f.shortenAutoLinks(res, shortURLLen)\n+\tres = f.lazyImage(res)\n \treturn res\n }\n \n@@ -108,3 +109,19 @@ func (f *CommentFormatter) unEscape(txt string) (res string) {\n \t}\n \treturn res\n }\n+\n+// lazyImage adds loading=“lazy” attribute to all images\n+func (f *CommentFormatter) lazyImage(commentHTML string) (resHTML string) {\n+\tdoc, err := goquery.NewDocumentFromReader(strings.NewReader(commentHTML))\n+\tif err != nil {\n+\t\treturn commentHTML\n+\t}\n+\tdoc.Find(\"img\").Each(func(i int, s *goquery.Selection) {\n+\t\ts.SetAttr(\"loading\", \"lazy\")\n+\t})\n+\tresHTML, err = doc.Find(\"body\").Html()\n+\tif err != nil {\n+\t\treturn commentHTML\n+\t}\n+\treturn resHTML\n+}"
+    },
+    {
+      "sha": "29af022406fc09bede49f628d987e841a859ead1",
+      "filename": "backend/app/store/formatter_test.go",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "blob_url": "https://github.com/umputun/remark42/blob/89a4677391a76bef302fcb701313c425df0afdd3/backend/app/store/formatter_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/89a4677391a76bef302fcb701313c425df0afdd3/backend/app/store/formatter_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/store/formatter_test.go?ref=89a4677391a76bef302fcb701313c425df0afdd3",
+      "patch": "@@ -1,6 +1,7 @@\n package store\n \n import (\n+\t\"strconv\"\n \t\"testing\"\n \t\"time\"\n \n@@ -24,6 +25,11 @@ func TestFormatter_FormatText(t *testing.T) {\n \t\t\t\"<p><a href=\\\"http://127.0.0.1/some-long-link/12345/678901234567890\\\">http://127.0.0.\" +\n \t\t\t\t\"1/some-long-link/12345/6789012...</a></p>\\n!converted\", \"links\",\n \t\t},\n+\t\t{\n+\t\t\t\"something <img src=\\\"some.png\\\"/>  _aaa_\",\n+\t\t\t\"<p>something <img src=\\\"some.png\\\" loading=\\\"lazy\\\"/>  <em>aaa</em></p>\\n!converted\",\n+\t\t\t\"lazy image\",\n+\t\t},\n \t\t{\"&mdash; not translated #354\", \"<p>— not translated #354</p>\\n!converted\", \"mdash\"},\n \t\t{\"smth\\n```go\\nfunc main(aa string) int {return 0}\\n```\", `<p>smth</p>\n <pre class=\"chroma\"><span class=\"kd\">func</span> <span class=\"nf\">main</span><span class=\"p\">(</span><span class=\"nx\">aa</span> <span class=\"kt\">string</span><span class=\"p\">)</span> <span class=\"kt\">int</span> <span class=\"p\">{</span><span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">}</span>\n@@ -114,3 +120,24 @@ func TestFormatter_ShortenAutoLinks(t *testing.T) {\n \t\tassert.Equalf(t, tt.out, got, \"check #%d\", n)\n \t}\n }\n+\n+func TestCommentFormatter_lazyImage(t *testing.T) {\n+\n+\ttbl := []struct {\n+\t\tinp, out string\n+\t}{\n+\t\t{\"\", \"\"},\n+\t\t{`blah <img src=\"some.png\" />`, `blah <img src=\"some.png\" loading=\"lazy\"/>`},\n+\t\t{`blah <img src=\"some.png\" loading=\"lazy\"/>`, `blah <img src=\"some.png\" loading=\"lazy\"/>`},\n+\t\t{`blah <img src=\"some.png\"/> ххх <img src=http://example.com/pp2.jpg>`, `blah <img src=\"some.png\" loading=\"lazy\"/> ххх <img src=\"http://example.com/pp2.jpg\" loading=\"lazy\"/>`},\n+\t}\n+\n+\tf := NewCommentFormatter(nil)\n+\tfor i, tt := range tbl {\n+\t\ttt := tt\n+\t\tt.Run(strconv.Itoa(i), func(t *testing.T) {\n+\t\t\tassert.Equal(t, tt.out, f.lazyImage(tt.inp))\n+\t\t})\n+\t}\n+\n+}"
+    }
+  ]
+}

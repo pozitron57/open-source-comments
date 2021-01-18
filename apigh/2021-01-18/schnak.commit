@@ -1,0 +1,122 @@
+{
+  "sha": "fcbe0fa0115c6cb69056b223742c7746923f2371",
+  "node_id": "MDY6Q29tbWl0MTA1Nzg5MzY1OmZjYmUwZmEwMTE1YzZjYjY5MDU2YjIyMzc0MmM3NzQ2OTIzZjIzNzE=",
+  "commit": {
+    "author": {
+      "name": "Gregor Aisch",
+      "email": "gka@users.noreply.github.com",
+      "date": "2021-01-16T13:49:14Z"
+    },
+    "committer": {
+      "name": "Gregor Aisch",
+      "email": "gka@users.noreply.github.com",
+      "date": "2021-01-16T13:57:25Z"
+    },
+    "message": "1.2.0",
+    "tree": {
+      "sha": "212029a276dea700c849238bd35127d2f3b57780",
+      "url": "https://api.github.com/repos/schn4ck/schnack/git/trees/212029a276dea700c849238bd35127d2f3b57780"
+    },
+    "url": "https://api.github.com/repos/schn4ck/schnack/git/commits/fcbe0fa0115c6cb69056b223742c7746923f2371",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/schn4ck/schnack/commits/fcbe0fa0115c6cb69056b223742c7746923f2371",
+  "html_url": "https://github.com/schn4ck/schnack/commit/fcbe0fa0115c6cb69056b223742c7746923f2371",
+  "comments_url": "https://api.github.com/repos/schn4ck/schnack/commits/fcbe0fa0115c6cb69056b223742c7746923f2371/comments",
+  "author": {
+    "login": "gka",
+    "id": 617518,
+    "node_id": "MDQ6VXNlcjYxNzUxOA==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/617518?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gka",
+    "html_url": "https://github.com/gka",
+    "followers_url": "https://api.github.com/users/gka/followers",
+    "following_url": "https://api.github.com/users/gka/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gka/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gka/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gka/subscriptions",
+    "organizations_url": "https://api.github.com/users/gka/orgs",
+    "repos_url": "https://api.github.com/users/gka/repos",
+    "events_url": "https://api.github.com/users/gka/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gka/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "gka",
+    "id": 617518,
+    "node_id": "MDQ6VXNlcjYxNzUxOA==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/617518?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gka",
+    "html_url": "https://github.com/gka",
+    "followers_url": "https://api.github.com/users/gka/followers",
+    "following_url": "https://api.github.com/users/gka/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gka/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gka/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gka/subscriptions",
+    "organizations_url": "https://api.github.com/users/gka/orgs",
+    "repos_url": "https://api.github.com/users/gka/repos",
+    "events_url": "https://api.github.com/users/gka/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gka/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "af3331ddfbc72cf2bd8d452a31b9043a8b637421",
+      "url": "https://api.github.com/repos/schn4ck/schnack/commits/af3331ddfbc72cf2bd8d452a31b9043a8b637421",
+      "html_url": "https://github.com/schn4ck/schnack/commit/af3331ddfbc72cf2bd8d452a31b9043a8b637421"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 14,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "90d968a6b7197935128701054e71241d7182bf6b",
+      "filename": "CHANGELOG.md",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 2,
+      "changes": 14,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/fcbe0fa0115c6cb69056b223742c7746923f2371/CHANGELOG.md",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/fcbe0fa0115c6cb69056b223742c7746923f2371/CHANGELOG.md",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/CHANGELOG.md?ref=fcbe0fa0115c6cb69056b223742c7746923f2371",
+      "patch": "@@ -1,9 +1,19 @@\n+## [1.2.0](https://github.com/gka/schnack/compare/v1.1.0...v1.2.0) (2021-01-16)\n+\n+### Features\n+\n+* simplified local development with `npm run dev` ([c0414f5](https://github.com/gka/schnack/commit/c0414f59aac1145fd3ebaa0a6df5e83077c30d10))\n+\n ## [1.1.0](https://github.com/gka/schnack/compare/v0.2.3...v1.1.0) (2021-01-16)\n \n-### [0.2.3](https://github.com/gka/schnack/compare/v0.2.2...v0.2.3) (2020-05-24)\n+* add https support for testing on localhost (thx @danmenzies-jerram) ([9d90030](https://github.com/gka/schnack/commit/9d90030))\n+* simple plugin system for schnack (#99) ([9c31858](https://github.com/gka/schnack/commit/9c31858)), closes [#99](https://github.com/gka/schnack/issues/99)\n+\n+## [0.2.3](https://github.com/gka/schnack/compare/v0.2.2...v0.2.3) (2020-05-24)\n \n-### [0.2.2](https://github.com/gka/schnack/compare/v0.1.4...v0.2.2) (2019-03-05)\n+* deprecated google api replacement ([6eb2eca](https://github.com/gka/schnack/commit/6eb2eca))\n \n+## [0.2.2](https://github.com/gka/schnack/compare/v0.1.4...v0.2.2) (2019-03-05)\n \n ### Features\n "
+    },
+    {
+      "sha": "f023ca7eddfd69c1d810c51f1091541cb5ce8a0b",
+      "filename": "package-lock.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/fcbe0fa0115c6cb69056b223742c7746923f2371/package-lock.json",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/fcbe0fa0115c6cb69056b223742c7746923f2371/package-lock.json",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/package-lock.json?ref=fcbe0fa0115c6cb69056b223742c7746923f2371",
+      "patch": "@@ -1,6 +1,6 @@\n {\n   \"name\": \"schnack\",\n-  \"version\": \"1.1.0\",\n+  \"version\": \"1.2.0\",\n   \"lockfileVersion\": 1,\n   \"requires\": true,\n   \"dependencies\": {"
+    },
+    {
+      "sha": "050d8787803a9189044fb0b6689f4977a3eed160",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/schn4ck/schnack/blob/fcbe0fa0115c6cb69056b223742c7746923f2371/package.json",
+      "raw_url": "https://github.com/schn4ck/schnack/raw/fcbe0fa0115c6cb69056b223742c7746923f2371/package.json",
+      "contents_url": "https://api.github.com/repos/schn4ck/schnack/contents/package.json?ref=fcbe0fa0115c6cb69056b223742c7746923f2371",
+      "patch": "@@ -1,6 +1,6 @@\n {\n     \"name\": \"schnack\",\n-    \"version\": \"1.1.0\",\n+    \"version\": \"1.2.0\",\n     \"description\": \"a simple node app for disqus-like drop-in commenting on static websites\",\n     \"license\": \"LicenseRef-LICENSE\",\n     \"author\": \"Gregor Aisch\","
+    }
+  ]
+}
