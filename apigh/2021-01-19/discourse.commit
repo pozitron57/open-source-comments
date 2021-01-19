@@ -1,0 +1,122 @@
+{
+  "sha": "1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxZjJmODRhNmRmYzc2ODZkZDdkYzA5MTAwYzk4MzVjOWRiNzExNDVk",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2021-01-19T09:35:46Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-01-19T09:35:46Z"
+    },
+    "message": "FIX: Add Retry-Header to rate limited responses (#11736)\n\nIt returned a 429 error code with a 'Retry-After' header if a\r\nRateLimiter::LimitExceeded was raised and unhandled, but the header was\r\nmissing if the request was limited in the 'RequestTracker' middleware.",
+    "tree": {
+      "sha": "7144fdb7e8e34fd9fbf0f942d29f977577ebe557",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/7144fdb7e8e34fd9fbf0f942d29f977577ebe557"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgBqfyCRBK7hj4Ov3rIwAAdHIIADAyvLUShEAASGNCXJtbsN3Q\n8SjdXcVv3F/aUs+SeYK1JKQyAzbcX6T6okjB/gDlNII2YUMxRs18Ca05xt2sBrIE\nsYUVbaRiJY/HNkWVIdMvuqk51Y/Jdo/FgQYbY4F6USLSxCwSHYNrNRlpuJiN/0Rx\nslmxBMHSR2bgFfH90LgtCCnM9k3JBa26mXf7QGjUYK7QBHpDvS5hNC/P44QhxAKE\nbUsUzZFDVVQjmqUksEI1Tl0vIzFuXCve/gIfFVoNrAIIxQvQPVEd0iu4d4U876wP\nflNpNu9mTLUl2FVFzqTTtoMij1c0AvmIWc7Mzradj5Gmmw0HHG1/xbSgA4dn0q4=\n=WwEp\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 7144fdb7e8e34fd9fbf0f942d29f977577ebe557\nparent 0034cbda8ae833962a63e0a77b7f5c84e2d8212d\nauthor Dan Ungureanu <dan@ungureanu.me> 1611048946 +0200\ncommitter GitHub <noreply@github.com> 1611048946 +0200\n\nFIX: Add Retry-Header to rate limited responses (#11736)\n\nIt returned a 429 error code with a 'Retry-After' header if a\r\nRateLimiter::LimitExceeded was raised and unhandled, but the header was\r\nmissing if the request was limited in the 'RequestTracker' middleware."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+  "html_url": "https://github.com/discourse/discourse/commit/1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0034cbda8ae833962a63e0a77b7f5c84e2d8212d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/0034cbda8ae833962a63e0a77b7f5c84e2d8212d",
+      "html_url": "https://github.com/discourse/discourse/commit/0034cbda8ae833962a63e0a77b7f5c84e2d8212d"
+    }
+  ],
+  "stats": {
+    "total": 64,
+    "additions": 39,
+    "deletions": 25
+  },
+  "files": [
+    {
+      "sha": "6cd2984e825c28166ca05f5a389ba944d0686507",
+      "filename": "lib/middleware/request_tracker.rb",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 17,
+      "changes": 44,
+      "blob_url": "https://github.com/discourse/discourse/blob/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/lib/middleware/request_tracker.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/lib/middleware/request_tracker.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/middleware/request_tracker.rb?ref=1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+      "patch": "@@ -20,8 +20,7 @@ def self.register_detailed_request_logger(callback)\n   end\n \n   def self.unregister_detailed_request_logger(callback)\n-    @@detailed_request_loggers.delete callback\n-\n+    @@detailed_request_loggers.delete(callback)\n     if @@detailed_request_loggers.length == 0\n       @detailed_request_loggers = nil\n     end\n@@ -78,10 +77,9 @@ def self.log_request(data)\n       ApplicationRequest.increment!(:http_4xx)\n     elsif status >= 300\n       ApplicationRequest.increment!(:http_3xx)\n-    elsif status >= 200 && status < 300\n+    elsif status >= 200\n       ApplicationRequest.increment!(:http_2xx)\n     end\n-\n   end\n \n   def self.get_data(env, result, timing)\n@@ -120,11 +118,11 @@ def self.get_data(env, result, timing)\n     if cache = headers[\"X-Discourse-Cached\"]\n       h[:cache] = cache\n     end\n+\n     h\n   end\n \n   def log_request_info(env, result, info)\n-\n     # we got to skip this on error ... its just logging\n     data = self.class.get_data(env, result, info) rescue nil\n \n@@ -139,7 +137,6 @@ def log_request_info(env, result, info)\n \n       log_later(data)\n     end\n-\n   end\n \n   def self.populate_request_queue_seconds!(env)\n@@ -166,15 +163,20 @@ def call(env)\n \n     request = Rack::Request.new(env)\n \n-    if rate_limit(request)\n-      result = [429, {}, [\"Slow down, too many requests from this IP address\"]]\n-      return result\n+    if available_in = rate_limit(request)\n+      return [\n+        429,\n+        { \"Retry-After\" => available_in },\n+        [\"Slow down, too many requests from this IP address\"]\n+      ]\n     end\n \n     env[\"discourse.request_tracker\"] = self\n+\n     MethodProfiler.start\n     result = @app.call(env)\n     info = MethodProfiler.stop\n+\n     # possibly transferred?\n     if info && (headers = result[1])\n       headers[\"X-Runtime\"] = \"%0.6f\" % info[:total_duration]\n@@ -221,7 +223,6 @@ def is_private_ip?(ip)\n   end\n \n   def rate_limit(request)\n-\n     if (\n       GlobalSetting.max_reqs_per_ip_mode == \"block\" ||\n       GlobalSetting.max_reqs_per_ip_mode == \"warn\" ||\n@@ -265,29 +266,38 @@ def rate_limit(request)\n       request.env['DISCOURSE_RATE_LIMITERS'] = [limiter10, limiter60]\n       request.env['DISCOURSE_ASSET_RATE_LIMITERS'] = [limiter_assets10]\n \n-      warn = GlobalSetting.max_reqs_per_ip_mode == \"warn\" ||\n-        GlobalSetting.max_reqs_per_ip_mode == \"warn+block\"\n+      warn = GlobalSetting.max_reqs_per_ip_mode == \"warn\" || GlobalSetting.max_reqs_per_ip_mode == \"warn+block\"\n \n       if !limiter_assets10.can_perform?\n         if warn\n           Discourse.warn(\"Global asset IP rate limit exceeded for #{ip}: 10 second rate limit\", uri: request.env[\"REQUEST_URI\"])\n         end\n \n-        return !(GlobalSetting.max_reqs_per_ip_mode == \"warn\")\n+        if GlobalSetting.max_reqs_per_ip_mode != \"warn\"\n+          return limiter_assets10.seconds_to_wait(Time.now.to_i)\n+        else\n+          return false\n+        end\n       end\n \n-      type = 10\n       begin\n+        type = 10\n         limiter10.performed!\n+\n         type = 60\n         limiter60.performed!\n+\n         false\n-      rescue RateLimiter::LimitExceeded\n+      rescue RateLimiter::LimitExceeded => e\n         if warn\n           Discourse.warn(\"Global IP rate limit exceeded for #{ip}: #{type} second rate limit\", uri: request.env[\"REQUEST_URI\"])\n-          !(GlobalSetting.max_reqs_per_ip_mode == \"warn\")\n+          if GlobalSetting.max_reqs_per_ip_mode != \"warn\"\n+            e.available_in\n+          else\n+            false\n+          end\n         else\n-          true\n+          e.available_in\n         end\n       end\n     end"
+    },
+    {
+      "sha": "bea535b7facb04b3318953ec7e4bc9a32d4ed0f8",
+      "filename": "lib/rate_limiter.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/lib/rate_limiter.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/lib/rate_limiter.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/rate_limiter.rb?ref=1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+      "patch": "@@ -55,6 +55,10 @@ def can_perform?\n     rate_unlimited? || is_under_limit?\n   end\n \n+  def seconds_to_wait(now)\n+    @secs - age_of_oldest(now)\n+  end\n+\n   # reloader friendly\n   unless defined? PERFORM_LUA\n     PERFORM_LUA = <<~LUA\n@@ -173,10 +177,6 @@ def redis\n     Discourse.redis.without_namespace\n   end\n \n-  def seconds_to_wait(now)\n-    @secs - age_of_oldest(now)\n-  end\n-\n   def age_of_oldest(now)\n     # age of oldest event in buffer, in seconds\n     now - redis.lrange(prefixed_key, -1, -1).first.to_i"
+    },
+    {
+      "sha": "4284042a1a7c193e3ddd4b95a95034d22fb964d8",
+      "filename": "spec/components/middleware/request_tracker_spec.rb",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/spec/components/middleware/request_tracker_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/1f2f84a6dfc7686dd7dc09100c9835c9db71145d/spec/components/middleware/request_tracker_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/middleware/request_tracker_spec.rb?ref=1f2f84a6dfc7686dd7dc09100c9835c9db71145d",
+      "patch": "@@ -237,10 +237,11 @@ def warn(*args)\n       global_setting :max_reqs_per_ip_mode, 'warn+block'\n \n       status, _ = middleware.call(env)\n-      status, _ = middleware.call(env)\n+      status, headers = middleware.call(env)\n \n       expect(Rails.logger.warnings).to eq(1)\n       expect(status).to eq(429)\n+      expect(headers[\"Retry-After\"]).to eq(10)\n     end\n \n     it \"does warn if rate limiter is enabled\" do\n@@ -267,13 +268,15 @@ def warn(*args)\n       expect(status).to eq(200)\n       status, _ = middleware.call(env1)\n       expect(status).to eq(200)\n-      status, _ = middleware.call(env1)\n+      status, headers = middleware.call(env1)\n       expect(status).to eq(429)\n+      expect(headers[\"Retry-After\"]).to eq(10)\n \n       env2 = env(\"REMOTE_ADDR\" => \"1.1.1.1\")\n \n-      status, _ = middleware.call(env2)\n+      status, headers = middleware.call(env2)\n       expect(status).to eq(429)\n+      expect(headers[\"Retry-After\"]).to eq(10)\n     end\n \n     it \"does block if rate limiter is enabled\" do\n@@ -286,8 +289,9 @@ def warn(*args)\n       status, _ = middleware.call(env1)\n       expect(status).to eq(200)\n \n-      status, _ = middleware.call(env1)\n+      status, headers = middleware.call(env1)\n       expect(status).to eq(429)\n+      expect(headers[\"Retry-After\"]).to eq(10)\n \n       status, _ = middleware.call(env2)\n       expect(status).to eq(200)"
+    }
+  ]
+}
