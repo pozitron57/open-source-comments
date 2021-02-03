@@ -1,0 +1,211 @@
+{
+  "sha": "5fbaaf26b84554852528b2d86d2ecae6abac6220",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTo1ZmJhYWYyNmI4NDU1NDg1MjUyOGIyZDg2ZDJlY2FlNmFiYWM2MjIw",
+  "commit": {
+    "author": {
+      "name": "Benoit Latinier",
+      "email": "benoit@latinier.fr",
+      "date": "2021-02-01T19:57:23Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-01T19:57:23Z"
+    },
+    "message": "Merge pull request #695 from stefangehn/js-use-npm\n\nOnly use npm for managing JS frontend build dependencies",
+    "tree": {
+      "sha": "5af38f94a02ebea7bb5b61742195884893fbf14a",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/5af38f94a02ebea7bb5b61742195884893fbf14a"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/5fbaaf26b84554852528b2d86d2ecae6abac6220",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgGF0jCRBK7hj4Ov3rIwAAdHIIAFD5MQohk/FDVuDfHtkTFNkp\n8ne1gNQ2v/REy0/xyZwfcNTNX10iDkYAnckpezT/G729OI8N4dK+9P6CVv/eB4l3\nKm+21WRseVDCL7orEZJN77wX7irx2rB1vXFdU5WshgQiEXCeheA+2pf303vBafoM\niuiba/gKijfbpj1qQpbs7JPFIv6qbAbZ9UCtztxGowhlUQWvVMQsNGvhbSiBFqn0\nGZ0UrC7RGqukEApupp/npEN+dSNDFfSnWiUhKeyAahVBszxzRte3jWf7/5UJdO6S\nHym3ajEM4TKTXRwfMDwp86y1Fyv5Jx6T9bcPcTsmIF4D8VFuhNVuQnHhjZXv3Ag=\n=FHCa\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5af38f94a02ebea7bb5b61742195884893fbf14a\nparent 2735cbb1180b17c8d1b8d68c326dbd27a58d91fc\nparent 484d884bc2a819135bf0ef1fa987672713d9561d\nauthor Benoit Latinier <benoit@latinier.fr> 1612209443 +0100\ncommitter GitHub <noreply@github.com> 1612209443 +0100\n\nMerge pull request #695 from stefangehn/js-use-npm\n\nOnly use npm for managing JS frontend build dependencies"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/5fbaaf26b84554852528b2d86d2ecae6abac6220",
+  "html_url": "https://github.com/posativ/isso/commit/5fbaaf26b84554852528b2d86d2ecae6abac6220",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/5fbaaf26b84554852528b2d86d2ecae6abac6220/comments",
+  "author": {
+    "login": "blatinier",
+    "id": 1086629,
+    "node_id": "MDQ6VXNlcjEwODY2Mjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1086629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blatinier",
+    "html_url": "https://github.com/blatinier",
+    "followers_url": "https://api.github.com/users/blatinier/followers",
+    "following_url": "https://api.github.com/users/blatinier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blatinier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blatinier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blatinier/subscriptions",
+    "organizations_url": "https://api.github.com/users/blatinier/orgs",
+    "repos_url": "https://api.github.com/users/blatinier/repos",
+    "events_url": "https://api.github.com/users/blatinier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blatinier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2735cbb1180b17c8d1b8d68c326dbd27a58d91fc",
+      "url": "https://api.github.com/repos/posativ/isso/commits/2735cbb1180b17c8d1b8d68c326dbd27a58d91fc",
+      "html_url": "https://github.com/posativ/isso/commit/2735cbb1180b17c8d1b8d68c326dbd27a58d91fc"
+    },
+    {
+      "sha": "484d884bc2a819135bf0ef1fa987672713d9561d",
+      "url": "https://api.github.com/repos/posativ/isso/commits/484d884bc2a819135bf0ef1fa987672713d9561d",
+      "html_url": "https://github.com/posativ/isso/commit/484d884bc2a819135bf0ef1fa987672713d9561d"
+    }
+  ],
+  "stats": {
+    "total": 48,
+    "additions": 27,
+    "deletions": 21
+  },
+  "files": [
+    {
+      "sha": "cc284ff8f061dd9527b6affbf1206a49941e26a3",
+      "filename": ".gitignore",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/.gitignore",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/.gitignore",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.gitignore?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -26,6 +26,8 @@\n /docs/_build\n /docs/_static/css/site.css\n \n+node_modules/\n+\n /pip-selfcheck.json\n \n # github/gitignore"
+    },
+    {
+      "sha": "34b4f86563f227f61dc1dfd76e2413bc62c5d16f",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/Dockerfile",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/Dockerfile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Dockerfile?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -2,8 +2,7 @@\n FROM node:dubnium-buster AS jsBuilder\n WORKDIR /src/\n COPY . .\n-RUN npm install -g requirejs uglify-js jade bower \\\n- && make init js\n+RUN make init js\n \n # Second, create virtualenv\n FROM python:3.8-buster AS venvBuilder"
+    },
+    {
+      "sha": "05742f6c2dc4f756ed684626efc86a76576ad2fa",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/Makefile",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/Makefile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Makefile?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -27,14 +27,14 @@ DOCS_MAN_DST := man/man1/isso.1 man/man5/isso.conf.5\n \n DOCS_HTML_DST := docs/_build/html\n \n-RJS = r.js\n+RJS = npx --no-install r.js\n \n SASS = node-sass\n \n all: man js site\n \n init:\n-\t(cd isso/js; bower --allow-root install almond requirejs requirejs-text jade)\n+\tnpm install\n \n flakes:\n \tflake8 . --count --max-line-length=127 --show-source --statistics"
+    },
+    {
+      "sha": "54ffcee30be3bb68c664200d73fac157c95e79d4",
+      "filename": "docs/docs/install.rst",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 10,
+      "changes": 12,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/docs/docs/install.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/docs/docs/install.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs/docs/install.rst?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -168,7 +168,7 @@ way to set up Isso. It requires a lot more dependencies and effort:\n - Virtualenv\n - SQLite 3.3.8 or later\n - a working C compiler\n-- Node.js, `NPM <https://npmjs.org/>`__ and `Bower <http://bower.io/>`__\n+- Node.js, `NPM <https://npmjs.org/>`__\n \n Get a fresh copy of Isso:\n \n@@ -197,18 +197,10 @@ Install JavaScript modules:\n \n     ~> make init\n \n-Integration without optimization:\n-\n-.. code-block:: html\n-\n-    <script src=\"/js/config.js\"></script>\n-    <script data-main=\"/js/embed\" src=\"/js/components/requirejs/require.js\"></script>\n-\n-Optimization:\n+Build JavaScript frontend code:\n \n .. code-block:: sh\n \n-    ~> npm install -g requirejs uglify-js jade\n     ~> make js\n \n .. _init-scripts:"
+    },
+    {
+      "sha": "5250f39db6505b1874132b7c299c6615ddca0355",
+      "filename": "isso/js/.bowerrc",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/2735cbb1180b17c8d1b8d68c326dbd27a58d91fc/isso/js/.bowerrc",
+      "raw_url": "https://github.com/posativ/isso/raw/2735cbb1180b17c8d1b8d68c326dbd27a58d91fc/isso/js/.bowerrc",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/js/.bowerrc?ref=2735cbb1180b17c8d1b8d68c326dbd27a58d91fc",
+      "patch": "@@ -1 +0,0 @@\n-{\"directory\": \"components/\"}"
+    },
+    {
+      "sha": "cca58908269f0b502f4bbd271c1087ceaae797af",
+      "filename": "isso/js/build.count.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/isso/js/build.count.js",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/isso/js/build.count.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/js/build.count.js?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -6,7 +6,7 @@\n         \"app/text/css\": \"app/text/dummy\"\n     },\n \n-    name: \"components/almond/almond\",\n+    name: \"../../node_modules/almond/almond\",\n     include: ['count'],\n     out: \"count.min.js\",\n     wrap: true"
+    },
+    {
+      "sha": "314f11971345d603e28b9a09f487e7ffabd26466",
+      "filename": "isso/js/build.embed.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/isso/js/build.embed.js",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/isso/js/build.embed.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/js/build.embed.js?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -3,7 +3,7 @@\n     mainConfigFile: 'config.js',\n     stubModules: ['text', 'jade'],\n \n-    name: \"components/almond/almond\",\n+    name: \"../../node_modules/almond/almond\",\n     include: ['embed'],\n     out: \"embed.min.js\",\n "
+    },
+    {
+      "sha": "04204cff4e55d454c8514023597bcb619cec2e1b",
+      "filename": "isso/js/config.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/isso/js/config.js",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/isso/js/config.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/js/config.js?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -1,9 +1,9 @@\n var requirejs = {\n     paths: {\n-        \"text\": \"components/text/text\",\n+        \"text\": \"../../node_modules/requirejs-text/text\",\n         \"jade\": \"lib/requirejs-jade/jade\",\n-        \"libjs-jade\": \"components/jade/jade\",\n-        \"libjs-jade-runtime\": \"components/jade/runtime\"\n+        \"libjs-jade\": \"../../node_modules/jade/jade\",\n+        \"libjs-jade-runtime\": \"../../node_modules/jade/runtime\"\n     },\n \n     config: {"
+    },
+    {
+      "sha": "94a3642f4370ea0437756e882547845d7d90868c",
+      "filename": "package.json",
+      "status": "added",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/package.json",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/package.json",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/package.json?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -0,0 +1,14 @@\n+{\n+  \"name\": \"isso\",\n+  \"author\": \"Martin Zimmermann\",\n+  \"description\": \"lightweight Disquis alternative\",\n+  \"license\": \"MIT\",\n+  \"repository\": \"github:posativ/isso\",\n+  \"dependencies\": {},\n+  \"devDependencies\": {\n+    \"almond\": \"^0.3.3\",\n+    \"jade\": \"^1.5.0\",\n+    \"requirejs-text\": \"^2.0.15\",\n+    \"requirejs\": \"^2.3.6\"\n+  }\n+}"
+    },
+    {
+      "sha": "c8075d97ecc931e6cf9f3d6f4f7abfc47c71cdb9",
+      "filename": "setup.cfg",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/5fbaaf26b84554852528b2d86d2ecae6abac6220/setup.cfg",
+      "raw_url": "https://github.com/posativ/isso/raw/5fbaaf26b84554852528b2d86d2ecae6abac6220/setup.cfg",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/setup.cfg?ref=5fbaaf26b84554852528b2d86d2ecae6abac6220",
+      "patch": "@@ -6,4 +6,4 @@ universal=1\n \n [flake8]\n ignore = E501, E402\n-exclude = docs/conf.py,.tox,.eggs\n+exclude = docs/conf.py,node_modules,.tox,.eggs"
+    }
+  ]
+}
