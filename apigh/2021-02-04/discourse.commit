@@ -1,0 +1,110 @@
+{
+  "sha": "06225abe9351a6a389f3e0afe1b0c6d00063d9e8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowNjIyNWFiZTkzNTFhNmEzODlmM2UwYWZlMWIwYzZkMDAwNjNkOWU4",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2021-02-04T10:06:08Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-04T10:06:08Z"
+    },
+    "message": "FIX: process new invites when existing users are already group members (#11971)\n\nIf a list of email addresses is pasted into a group’s Add Members form\r\nthat has one or more email addresses of users who already belong to the\r\ngroup and all other email addresses are for users who do not yet exist\r\non the forum then no invites were being sent. This commit ensures that\r\nwe send invites to new users.",
+    "tree": {
+      "sha": "c0d77f82f978a118dcd88dd44141739e9b5ab308",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c0d77f82f978a118dcd88dd44141739e9b5ab308"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/06225abe9351a6a389f3e0afe1b0c6d00063d9e8",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgG8cQCRBK7hj4Ov3rIwAAdHIIAKpj3kfArb8JqygnyRLB8KQL\n4vgfMNJ6yFhRMRhRl5uimGMt0OS5K8D/GjasXsWp8oEtUqnNRNXFXg3lJ1l9GcPj\nOE2xaBry5PGNkmPpGnAvOASVMDeVQd6b5aD/ZHVUOfUcHmuZtgxIlDuyHp/mmhPn\n9zyJ3R4dAy1af/2DJ4SzuIteWCuPM2gOr7rvQ6A9whEqU79HCGzMdFglOsQqDDWD\nQMtvL6+MnzsEZHg37UOu4YvSQMpqDpWKypvC7M0gnxY7M+yIr0PSKs6cIOl6Sccg\nFDmbnrNb6MlV76fb3RBswjklh6+Vc6Ekymf06c4t9iauLW5PGaAsllYF7o+RKvg=\n=f7JW\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c0d77f82f978a118dcd88dd44141739e9b5ab308\nparent 3da2e85855f5fd1379a20ae3f437fad50f7344cb\nauthor Arpit Jalan <arpit@techapj.com> 1612433168 +0530\ncommitter GitHub <noreply@github.com> 1612433168 +0530\n\nFIX: process new invites when existing users are already group members (#11971)\n\nIf a list of email addresses is pasted into a group’s Add Members form\r\nthat has one or more email addresses of users who already belong to the\r\ngroup and all other email addresses are for users who do not yet exist\r\non the forum then no invites were being sent. This commit ensures that\r\nwe send invites to new users."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/06225abe9351a6a389f3e0afe1b0c6d00063d9e8",
+  "html_url": "https://github.com/discourse/discourse/commit/06225abe9351a6a389f3e0afe1b0c6d00063d9e8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/06225abe9351a6a389f3e0afe1b0c6d00063d9e8/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3da2e85855f5fd1379a20ae3f437fad50f7344cb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3da2e85855f5fd1379a20ae3f437fad50f7344cb",
+      "html_url": "https://github.com/discourse/discourse/commit/3da2e85855f5fd1379a20ae3f437fad50f7344cb"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 20,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "5a5dac37738be5df557668c9322ccad6c60d0a74",
+      "filename": "app/controllers/groups_controller.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/06225abe9351a6a389f3e0afe1b0c6d00063d9e8/app/controllers/groups_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/06225abe9351a6a389f3e0afe1b0c6d00063d9e8/app/controllers/groups_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/groups_controller.rb?ref=06225abe9351a6a389f3e0afe1b0c6d00063d9e8",
+      "patch": "@@ -351,7 +351,9 @@ def add_members\n     end\n \n     usernames_already_in_group = group.users.where(id: users.map(&:id)).pluck(:username)\n-    if usernames_already_in_group.present? && usernames_already_in_group.length == users.length\n+    if usernames_already_in_group.present? &&\n+      usernames_already_in_group.length == users.length &&\n+      emails.blank?\n       render_json_error(I18n.t(\n         \"groups.errors.member_already_exist\",\n         username: usernames_already_in_group.sort.join(\", \"),"
+    },
+    {
+      "sha": "8205c189e72d90d119843a56a521d103ce9d8e52",
+      "filename": "spec/requests/groups_controller_spec.rb",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/06225abe9351a6a389f3e0afe1b0c6d00063d9e8/spec/requests/groups_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/06225abe9351a6a389f3e0afe1b0c6d00063d9e8/spec/requests/groups_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/groups_controller_spec.rb?ref=06225abe9351a6a389f3e0afe1b0c6d00063d9e8",
+      "patch": "@@ -1246,6 +1246,23 @@ def expect_type_to_return_right_groups(type, expected_group_ids)\n           expect(response.status).to eq(200)\n         end\n \n+        it 'sends invites to new users and ignores existing users' do\n+          user1.update!(username: 'john')\n+          user2.update!(username: 'alice')\n+          [user1, user2].each { |user| group.add(user) }\n+          emails = [\"something@gmail.com\", \"anotherone@yahoo.com\"]\n+          put \"/groups/#{group.id}/members.json\",\n+            params: { user_emails: [user1.email, user2.email].join(\",\"), emails: emails.join(\",\") }\n+\n+          expect(response.status).to eq(200)\n+          expect(response.parsed_body[\"emails\"]).to eq(emails)\n+\n+          emails.each do |email|\n+            invite = Invite.find_by(email: email)\n+            expect(invite.groups).to eq([group])\n+          end\n+        end\n+\n         it 'displays warning when all members already exists' do\n           user1.update!(username: 'john')\n           user2.update!(username: 'alice')"
+    }
+  ]
+}
