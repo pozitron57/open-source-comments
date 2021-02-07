@@ -1,0 +1,98 @@
+{
+  "sha": "6e2a83fb92c7cb25fd4601af056247d90d8eda87",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6NmUyYTgzZmI5MmM3Y2IyNWZkNDYwMWFmMDU2MjQ3ZDkwZDhlZGE4Nw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2021-01-29T23:08:43Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2021-02-01T04:22:45Z"
+    },
+    "message": "Add the Additional Use Grant.",
+    "tree": {
+      "sha": "782b8db7dc8798f71b5190c6a9915c7fdae0d30d",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/782b8db7dc8798f71b5190c6a9915c7fdae0d30d"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/6e2a83fb92c7cb25fd4601af056247d90d8eda87",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/6e2a83fb92c7cb25fd4601af056247d90d8eda87",
+  "html_url": "https://github.com/debiki/talkyard/commit/6e2a83fb92c7cb25fd4601af056247d90d8eda87",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/6e2a83fb92c7cb25fd4601af056247d90d8eda87/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1b5bfeaf120defa564c4be6da7cb049a3749c123",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/1b5bfeaf120defa564c4be6da7cb049a3749c123",
+      "html_url": "https://github.com/debiki/talkyard/commit/1b5bfeaf120defa564c4be6da7cb049a3749c123"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "6b1ed3af24f444fd2d02611ff1de17c22137662c",
+      "filename": "LICENSE-BUSLv11.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/6e2a83fb92c7cb25fd4601af056247d90d8eda87/LICENSE-BUSLv11.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/6e2a83fb92c7cb25fd4601af056247d90d8eda87/LICENSE-BUSLv11.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/LICENSE-BUSLv11.txt?ref=6e2a83fb92c7cb25fd4601af056247d90d8eda87",
+      "patch": "@@ -4,7 +4,7 @@ Terms\n \n Change Date: 2026-01-01\n Change License: GNU General Public License v2.0 or later\n-Additional Use Grant: None. (Later, will be a use in production grant for up to 3? months after installation date.)\n+Additional Use Grant: You can use the Licensed Work, that is, Talkyard, in production for up to 4 months (123 days) after the day when your organization first installed Talkyard. (Installed — not when you upgraded to some later version.)\n \n The Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.\n "
+    }
+  ]
+}
