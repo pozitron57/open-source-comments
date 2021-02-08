@@ -1,0 +1,110 @@
+{
+  "sha": "7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3ZTZjYjFmZjJlNTZhYjE5NjQ1MzYzZGJiOGE3MjliYTNkMmY5MmU0",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2021-02-08T10:59:43Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-08T10:59:43Z"
+    },
+    "message": "FIX: Correct server error for starting SSO login, and add spec (#12010)\n\nFollowup to 821bb1e8cb72bee56cf5c2a878043112cc7ea2fd",
+    "tree": {
+      "sha": "536a572dfdb7ea1e70109c9e2475053a82e93b58",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/536a572dfdb7ea1e70109c9e2475053a82e93b58"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgIRmfCRBK7hj4Ov3rIwAAdHIIAFVHZwI9iVJokq82/SQM+mtR\nI2lXrjOKwnqKDsORXARep/FFdTeW8ZD3swtQG7IuyLVKjrmUNW6iRlOpTCrxsivJ\n2sSBX3Qqjx2IJ8eqBAU2jM00Hu4bjEWYnuilkZldZqr4PejwSDlDm3Twr1W1wkgV\nOQ/ipy78ePpUSx2OrSEtoIC6g7cflb+FWAoJ6Fxa7CtATRvl8Pl858JftA5wx8Fx\nVGsyYNt+MwmelaxF8MSfz4QdK97heqGngkB2zwHihfoRbY2TiyREX8yrUh9drAhI\nz0jIqa8P3s9X2Mre6yugR5jvhTJ4VRtaLlMEjCl9zlAgkdZbYOcO+bpShPV0wmI=\n=0gwE\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 536a572dfdb7ea1e70109c9e2475053a82e93b58\nparent 6d31ead0506ddff834dafd4b86d298e97719fa80\nauthor David Taylor <david@taylorhq.com> 1612781983 +0000\ncommitter GitHub <noreply@github.com> 1612781983 +0000\n\nFIX: Correct server error for starting SSO login, and add spec (#12010)\n\nFollowup to 821bb1e8cb72bee56cf5c2a878043112cc7ea2fd"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4",
+  "html_url": "https://github.com/discourse/discourse/commit/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d31ead0506ddff834dafd4b86d298e97719fa80",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6d31ead0506ddff834dafd4b86d298e97719fa80",
+      "html_url": "https://github.com/discourse/discourse/commit/6d31ead0506ddff834dafd4b86d298e97719fa80"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 15,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0c190147747ea7ee9a9d5387e081f255de96c9ab",
+      "filename": "app/controllers/session_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4/app/controllers/session_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4/app/controllers/session_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/session_controller.rb?ref=7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4",
+      "patch": "@@ -29,7 +29,7 @@ def sso\n       if SiteSetting.verbose_discourse_connect_logging\n         Rails.logger.warn(\"Verbose SSO log: Started SSO process\\n\\n#{sso.diagnostics}\")\n       end\n-      redirect_to discourse_connect_url(sso)\n+      redirect_to sso_url(sso)\n     else\n       render body: nil, status: 404\n     end"
+    },
+    {
+      "sha": "84420d9d01134303056aef9d7d7033f04b7c8089",
+      "filename": "spec/requests/session_controller_spec.rb",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4/spec/requests/session_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4/spec/requests/session_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/session_controller_spec.rb?ref=7e6cb1ff2e56ab19645363dbb8a729ba3d2f92e4",
+      "patch": "@@ -503,6 +503,20 @@\n     end\n   end\n \n+  describe '#sso' do\n+    before do\n+      SiteSetting.discourse_connect_url = \"http://example.com/discourse_sso\"\n+      SiteSetting.enable_discourse_connect = true\n+      SiteSetting.discourse_connect_secret = \"shjkfdhsfkjh\"\n+    end\n+\n+    it \"redirects correctly\" do\n+      get \"/session/sso\"\n+      expect(response.status).to eq(302)\n+      expect(response.location).to start_with(SiteSetting.discourse_connect_url)\n+    end\n+  end\n+\n   describe '#sso_login' do\n     before do\n       @sso_url = \"http://example.com/discourse_sso\""
+    }
+  ]
+}

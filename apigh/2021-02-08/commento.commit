@@ -1,0 +1,79 @@
+{
+  "sha": "84bfd64e32971bc2bdf597138b230ed1e79f62d1",
+  "node_id": "MDY6Q29tbWl0ODkyNzY4NzY6ODRiZmQ2NGUzMjk3MWJjMmJkZjU5NzEzOGIyMzBlZDFlNzlmNjJkMQ==",
+  "commit": {
+    "author": {
+      "name": "Drew Foehn",
+      "email": "drew.foehn@publicissapient.com",
+      "date": "2020-07-19T00:23:28Z"
+    },
+    "committer": {
+      "name": "Adhityaa Chandrasekar",
+      "email": "adtac@adtac.in",
+      "date": "2021-02-02T06:00:16Z"
+    },
+    "message": "Dockerfile: Added build arg, RELEASE.\n\nThis allows you to build a debug version of commento and deploy to docker. Useful when debugging a containered version of commento.",
+    "tree": {
+      "sha": "baee0b8aec8ca34f286e9b76cb101305c1df2d6e",
+      "url": "https://api.github.com/repos/adtac/commento/git/trees/baee0b8aec8ca34f286e9b76cb101305c1df2d6e"
+    },
+    "url": "https://api.github.com/repos/adtac/commento/git/commits/84bfd64e32971bc2bdf597138b230ed1e79f62d1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/adtac/commento/commits/84bfd64e32971bc2bdf597138b230ed1e79f62d1",
+  "html_url": "https://github.com/adtac/commento/commit/84bfd64e32971bc2bdf597138b230ed1e79f62d1",
+  "comments_url": "https://api.github.com/repos/adtac/commento/commits/84bfd64e32971bc2bdf597138b230ed1e79f62d1/comments",
+  "author": null,
+  "committer": {
+    "login": "adtac",
+    "id": 7521600,
+    "node_id": "MDQ6VXNlcjc1MjE2MDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7521600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adtac",
+    "html_url": "https://github.com/adtac",
+    "followers_url": "https://api.github.com/users/adtac/followers",
+    "following_url": "https://api.github.com/users/adtac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adtac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adtac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adtac/subscriptions",
+    "organizations_url": "https://api.github.com/users/adtac/orgs",
+    "repos_url": "https://api.github.com/users/adtac/repos",
+    "events_url": "https://api.github.com/users/adtac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adtac/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "800902640b1088c8c63ba5ee43975605b4e8f4c4",
+      "url": "https://api.github.com/repos/adtac/commento/commits/800902640b1088c8c63ba5ee43975605b4e8f4c4",
+      "html_url": "https://github.com/adtac/commento/commit/800902640b1088c8c63ba5ee43975605b4e8f4c4"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 17,
+    "deletions": 12
+  },
+  "files": [
+    {
+      "sha": "c616034d72fe558676abb133e2aacff965fb4cc9",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 12,
+      "changes": 29,
+      "blob_url": "https://github.com/adtac/commento/blob/84bfd64e32971bc2bdf597138b230ed1e79f62d1/Dockerfile",
+      "raw_url": "https://github.com/adtac/commento/raw/84bfd64e32971bc2bdf597138b230ed1e79f62d1/Dockerfile",
+      "contents_url": "https://api.github.com/repos/adtac/commento/contents/Dockerfile?ref=84bfd64e32971bc2bdf597138b230ed1e79f62d1",
+      "patch": "@@ -2,45 +2,50 @@\n FROM golang:1.15-alpine AS api-build\n RUN apk add --no-cache --update bash dep make git curl g++\n \n+ARG RELEASE=prod\n COPY ./api /go/src/commento/api/\n WORKDIR /go/src/commento/api\n-RUN make prod -j$(($(nproc) + 1))\n+RUN make ${RELEASE} -j$(($(nproc) + 1))\n \n \n # frontend build (html, js, css, images)\n FROM node:12-alpine AS frontend-build\n RUN apk add --no-cache --update bash make python2 g++\n \n+ARG RELEASE=prod\n COPY ./frontend /commento/frontend\n WORKDIR /commento/frontend/\n-RUN make prod -j$(($(nproc) + 1))\n+RUN make ${RELEASE} -j$(($(nproc) + 1))\n \n \n # templates and db build\n FROM alpine:3.13 AS templates-db-build\n RUN apk add --no-cache --update bash make\n \n+ARG RELEASE=prod\n COPY ./templates /commento/templates\n WORKDIR /commento/templates\n-RUN make prod -j$(($(nproc) + 1))\n+RUN make ${RELEASE} -j$(($(nproc) + 1))\n \n COPY ./db /commento/db\n WORKDIR /commento/db\n-RUN make prod -j$(($(nproc) + 1))\n+RUN make ${RELEASE} -j$(($(nproc) + 1))\n \n \n # final image\n FROM alpine:3.13\n RUN apk add --no-cache --update ca-certificates\n \n-COPY --from=api-build /go/src/commento/api/build/prod/commento /commento/commento\n-COPY --from=frontend-build /commento/frontend/build/prod/js /commento/js\n-COPY --from=frontend-build /commento/frontend/build/prod/css /commento/css\n-COPY --from=frontend-build /commento/frontend/build/prod/images /commento/images\n-COPY --from=frontend-build /commento/frontend/build/prod/fonts /commento/fonts\n-COPY --from=frontend-build /commento/frontend/build/prod/*.html /commento/\n-COPY --from=templates-db-build /commento/templates/build/prod/templates /commento/templates/\n-COPY --from=templates-db-build /commento/db/build/prod/db /commento/db/\n+ARG RELEASE=prod\n+\n+COPY --from=api-build /go/src/commento/api/build/${RELEASE}/commento /commento/commento\n+COPY --from=frontend-build /commento/frontend/build/${RELEASE}/js /commento/js\n+COPY --from=frontend-build /commento/frontend/build/${RELEASE}/css /commento/css\n+COPY --from=frontend-build /commento/frontend/build/${RELEASE}/images /commento/images\n+COPY --from=frontend-build /commento/frontend/build/${RELEASE}/fonts /commento/fonts\n+COPY --from=frontend-build /commento/frontend/build/${RELEASE}/*.html /commento/\n+COPY --from=templates-db-build /commento/templates/build/${RELEASE}/templates /commento/templates/\n+COPY --from=templates-db-build /commento/db/build/${RELEASE}/db /commento/db/\n \n EXPOSE 8080\n WORKDIR /commento/"
+    }
+  ]
+}
