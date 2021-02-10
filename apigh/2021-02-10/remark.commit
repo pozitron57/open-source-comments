@@ -1,0 +1,98 @@
+{
+  "sha": "008788ad8956577ba7e4b32362c69a5f02487c39",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjAwODc4OGFkODk1NjU3N2JhN2U0YjMyMzYyYzY5YTVmMDI0ODdjMzk=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-02-10T07:35:53Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-02-10T07:59:36Z"
+    },
+    "message": "rollback readme till release",
+    "tree": {
+      "sha": "aef02362e20577f37ff8911df28c532b2581b92a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/aef02362e20577f37ff8911df28c532b2581b92a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/008788ad8956577ba7e4b32362c69a5f02487c39",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/008788ad8956577ba7e4b32362c69a5f02487c39",
+  "html_url": "https://github.com/umputun/remark42/commit/008788ad8956577ba7e4b32362c69a5f02487c39",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/008788ad8956577ba7e4b32362c69a5f02487c39/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3628467367277be356fd56d4590ca1740a121cd7",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/3628467367277be356fd56d4590ca1740a121cd7",
+      "html_url": "https://github.com/umputun/remark42/commit/3628467367277be356fd56d4590ca1740a121cd7"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 10,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "81f00136eabc935eb90723579fb4e30558d1a561",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/008788ad8956577ba7e4b32362c69a5f02487c39/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/008788ad8956577ba7e4b32362c69a5f02487c39/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=008788ad8956577ba7e4b32362c69a5f02487c39",
+      "patch": "@@ -466,7 +466,16 @@ Add this snippet to the bottom of web page:\n                                    // but your users won't have interface for subscription\n   };\n </script>\n-<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement(\"script\"),c=\".js\",d=n.head||n.body;\"noModule\"in r?(r.type=\"module\",c=\".mjs\"):r.async=!0,r.defer=!0,r.src=remark_config.host+\"/web/\"+e[o]+c,d.appendChild(r)}}(remark_config.components||[\"embed\"],document);</script>\n+<script>\n+  (function(c) {\n+    for(var i = 0; i < c.length; i++){\n+      var d = document, s = d.createElement('script');\n+      s.src = remark_config.host + '/web/' +c[i] +'.js';\n+      s.defer = true;\n+      (d.head || d.body).appendChild(s);\n+    }\n+  })(remark_config.components || ['embed']);\n+</script>\n ```\n \n And then add this node in the place where you want to see Remark42 widget:"
+    }
+  ]
+}
