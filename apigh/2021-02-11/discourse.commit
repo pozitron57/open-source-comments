@@ -1,0 +1,242 @@
+{
+  "sha": "f5b18e2a311abf503b21d996031d38286e71f74a",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmNWIxOGUyYTMxMWFiZjUwM2IyMWQ5OTYwMzFkMzgyODZlNzFmNzRh",
+  "commit": {
+    "author": {
+      "name": "Krzysztof Kotlarek",
+      "email": "kotlarek.krzysztof@gmail.com",
+      "date": "2021-02-11T02:35:09Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-11T02:35:09Z"
+    },
+    "message": "FEATURE: Ability to dismiss all new topics (#12018)\n\nFollow up https://github.com/discourse/discourse/pull/11968\r\n\r\nDismiss all new topics using the same DismissTopicService. In addition, MessageBus receives exact topic ids which should be marked as `seen`.",
+    "tree": {
+      "sha": "8d0bdf5b57bd506b32c295f34eae8f71f2dc0a7c",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/8d0bdf5b57bd506b32c295f34eae8f71f2dc0a7c"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f5b18e2a311abf503b21d996031d38286e71f74a",
+    "comment_count": 1,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgJJfeCRBK7hj4Ov3rIwAAdHIIAHlbFg2hFF/67eka0SSgRHQZ\nsWaNNVpRSq64GFLG1Uhn06UT4WNswlTB3v8LTsfPR2obi26NQOFGpOYHpaxA24E3\nC5porjNUh0rmTP2ZNJR8EeVB8uuYn/lU9aMXgt+13dHa/ETKveGEaRy77lPdl+Mm\n8eiqYx21mo7QPZ63DgAL8ZN5t3Jj36SPmhWQ1w5NMb4aLbhpR9xD3vaCrZ2Cy/1y\nJD1QdPPvD4r6ry7wzEK1J4VoT3ubWDK/DNEKsFeAlWJr3LoOkD3kU5VYhEXf8oh5\nGlMlYZ266CfnSkZU0vwP1OwWfbxsioubdjiDDcZ6u/9oLFDU7A8tKXudTx1eUQw=\n=eK+1\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 8d0bdf5b57bd506b32c295f34eae8f71f2dc0a7c\nparent 47574e5985664d7c5807a770ba5bb961e1ec85dc\nauthor Krzysztof Kotlarek <kotlarek.krzysztof@gmail.com> 1613010909 +1100\ncommitter GitHub <noreply@github.com> 1613010909 +1100\n\nFEATURE: Ability to dismiss all new topics (#12018)\n\nFollow up https://github.com/discourse/discourse/pull/11968\r\n\r\nDismiss all new topics using the same DismissTopicService. In addition, MessageBus receives exact topic ids which should be marked as `seen`."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f5b18e2a311abf503b21d996031d38286e71f74a",
+  "html_url": "https://github.com/discourse/discourse/commit/f5b18e2a311abf503b21d996031d38286e71f74a",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f5b18e2a311abf503b21d996031d38286e71f74a/comments",
+  "author": {
+    "login": "lis2",
+    "id": 72780,
+    "node_id": "MDQ6VXNlcjcyNzgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72780?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lis2",
+    "html_url": "https://github.com/lis2",
+    "followers_url": "https://api.github.com/users/lis2/followers",
+    "following_url": "https://api.github.com/users/lis2/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lis2/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lis2/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lis2/subscriptions",
+    "organizations_url": "https://api.github.com/users/lis2/orgs",
+    "repos_url": "https://api.github.com/users/lis2/repos",
+    "events_url": "https://api.github.com/users/lis2/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lis2/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "47574e5985664d7c5807a770ba5bb961e1ec85dc",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/47574e5985664d7c5807a770ba5bb961e1ec85dc",
+      "html_url": "https://github.com/discourse/discourse/commit/47574e5985664d7c5807a770ba5bb961e1ec85dc"
+    }
+  ],
+  "stats": {
+    "total": 184,
+    "additions": 91,
+    "deletions": 93
+  },
+  "files": [
+    {
+      "sha": "b00e8427ba6951640b89562eacd37db6bfaa144b",
+      "filename": "app/assets/javascripts/discourse/app/models/topic-tracking-state.js",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 11,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/assets/javascripts/discourse/app/models/topic-tracking-state.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/assets/javascripts/discourse/app/models/topic-tracking-state.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/topic-tracking-state.js?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -182,17 +182,11 @@ const TopicTrackingState = EmberObject.extend({\n   },\n \n   dismissNewTopic(data) {\n-    Object.keys(this.states).forEach((k) => {\n-      const topic = this.states[k];\n-      if (\n-        (!data.payload.category_id ||\n-          topic.category_id === parseInt(data.payload.category_id, 10)) &&\n-        (!data.payload.tag_id || topic.tags.includes(data.payload.tag_id))\n-      ) {\n-        this.states[k] = Object.assign({}, topic, {\n-          is_seen: true,\n-        });\n-      }\n+    data.payload.topic_ids.forEach((k) => {\n+      const topic = this.states[`t${k}`];\n+      this.states[`t${k}`] = Object.assign({}, topic, {\n+        is_seen: true,\n+      });\n     });\n     this.notifyPropertyChange(\"states\");\n     this.incrementMessageCount();"
+    },
+    {
+      "sha": "56542dfb959faf9eb5e2e99c3c392f24d119aad4",
+      "filename": "app/assets/javascripts/discourse/tests/unit/models/topic-tracking-state-test.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 30,
+      "changes": 31,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/assets/javascripts/discourse/tests/unit/models/topic-tracking-state-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/assets/javascripts/discourse/tests/unit/models/topic-tracking-state-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/unit/models/topic-tracking-state-test.js?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -346,36 +346,7 @@ module(\"Unit | Model | topic-tracking-state\", function (hooks) {\n \n     state.dismissNewTopic({\n       message_type: \"dismiss_new\",\n-      topic_id: 112,\n-      payload: { category_id: 2 },\n-    });\n-    assert.equal(state.states[\"t112\"].is_seen, false);\n-    state.dismissNewTopic({\n-      message_type: \"dismiss_new\",\n-      topic_id: 112,\n-      payload: { category_id: 1 },\n-    });\n-    assert.equal(state.states[\"t112\"].is_seen, true);\n-\n-    state.states[\"t112\"].is_seen = false;\n-    state.dismissNewTopic({\n-      message_type: \"dismiss_new\",\n-      topic_id: 112,\n-      payload: { tag_id: \"bar\" },\n-    });\n-    assert.equal(state.states[\"t112\"].is_seen, false);\n-    state.dismissNewTopic({\n-      message_type: \"dismiss_new\",\n-      topic_id: 112,\n-      payload: { tag_id: \"foo\" },\n-    });\n-    assert.equal(state.states[\"t112\"].is_seen, true);\n-\n-    state.states[\"t112\"].is_seen = false;\n-    state.dismissNewTopic({\n-      message_type: \"dismiss_new\",\n-      topic_id: 112,\n-      payload: {},\n+      payload: { topic_ids: [112] },\n     });\n     assert.equal(state.states[\"t112\"].is_seen, true);\n   });"
+    },
+    {
+      "sha": "29ed6cf7563a0c4190c5bf6b4e3ff37e0384c605",
+      "filename": "app/controllers/topics_controller.rb",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 26,
+      "changes": 46,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/controllers/topics_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/controllers/topics_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/topics_controller.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -910,36 +910,30 @@ def bulk\n   end\n \n   def reset_new\n-    if params[:category_id].present?\n-      category_ids = [params[:category_id]]\n-      if params[:include_subcategories] == 'true'\n-        category_ids = category_ids.concat(Category.where(parent_category_id: params[:category_id]).pluck(:id))\n-      end\n-\n-      topic_scope =\n-        if params[:tag_id]\n-          Topic.where(category_id: category_ids).joins(:tags).where(tags: { name: params[:tag_id] })\n-        else\n-          Topic.where(category_id: category_ids)\n+    topic_scope =\n+      if params[:category_id].present?\n+        category_ids = [params[:category_id]]\n+        if params[:include_subcategories] == 'true'\n+          category_ids = category_ids.concat(Category.where(parent_category_id: params[:category_id]).pluck(:id))\n         end\n \n-      DismissTopics.new(current_user, topic_scope).perform!\n-      category_ids.each do |category_id|\n-        TopicTrackingState.publish_dismiss_new(current_user.id, category_id: category_id, tag_id: params[:tag_id])\n-      end\n-    elsif params[:tag_id].present?\n-      DismissTopics.new(current_user, Topic.joins(:tags).where(tags: { name: params[:tag_id] })).perform!\n-      TopicTrackingState.publish_dismiss_new(current_user.id, tag_id: params[:tag_id])\n-    else\n-      if params[:tracked].to_s == \"true\"\n-        topics = TopicQuery.tracked_filter(TopicQuery.new(current_user).new_results, current_user.id)\n-        topic_users = topics.map { |topic| { topic_id: topic.id, user_id: current_user.id, last_read_post_number: 0 } }\n-        TopicUser.insert_all(topic_users) if !topic_users.empty?\n+        scope = Topic.where(category_id: category_ids)\n+        scope = scope.joins(:tags).where(tags: { name: params[:tag_id] }) if params[:tag_id]\n+        scope\n+      elsif params[:tag_id].present?\n+        Topic.joins(:tags).where(tags: { name: params[:tag_id] })\n       else\n-        current_user.user_stat.update_column(:new_since, Time.zone.now)\n-        TopicTrackingState.publish_dismiss_new(current_user.id)\n+        if params[:tracked].to_s == \"true\"\n+          TopicQuery.tracked_filter(TopicQuery.new(current_user).new_results, current_user.id)\n+        else\n+          current_user.user_stat.update_column(:new_since, Time.zone.now)\n+          Topic\n+        end\n       end\n-    end\n+\n+    dismissed_topic_ids = DismissTopics.new(current_user, topic_scope).perform!\n+    TopicTrackingState.publish_dismiss_new(current_user.id, topic_ids: dismissed_topic_ids)\n+\n     render body: nil\n   end\n "
+    },
+    {
+      "sha": "72109ffbfcc11bcdbc461a731da10c4fc7610081",
+      "filename": "app/jobs/scheduled/clean_dismissed_topic_users.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/jobs/scheduled/clean_dismissed_topic_users.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/jobs/scheduled/clean_dismissed_topic_users.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/scheduled/clean_dismissed_topic_users.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -24,7 +24,7 @@ def delete_overdue_dismissals!\n                     WHEN COALESCE(user_options.new_topic_duration_minutes, :default_duration) = :always THEN users.created_at\n                     WHEN COALESCE(user_options.new_topic_duration_minutes, :default_duration) = :last_visit THEN COALESCE(users.previous_visit_at,users.created_at)\n                     ELSE (:now::timestamp - INTERVAL '1 MINUTE' * COALESCE(user_options.new_topic_duration_minutes, :default_duration))\n-                 END, user_stats.new_since, :min_date)\n+                 END, users.created_at, :min_date)\n         AND dtu1.id = dtu2.id\n       SQL\n       sql = DB.sql_fragment(sql,"
+    },
+    {
+      "sha": "045ad34cece82f1ef7516245769631f9187c8b49",
+      "filename": "app/models/topic_tracking_state.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 6,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/models/topic_tracking_state.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/models/topic_tracking_state.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic_tracking_state.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -215,13 +215,12 @@ def self.publish_read(topic_id, last_read_post_number, user_id, notification_lev\n     MessageBus.publish(self.unread_channel_key(user_id), message.as_json, user_ids: [user_id])\n   end\n \n-  def self.publish_dismiss_new(user_id, category_id: nil, tag_id: nil)\n-    payload = {}\n-    payload[:category_id] = category_id if category_id\n-    payload[:tag_id] = tag_id if tag_id\n+  def self.publish_dismiss_new(user_id, topic_ids: [])\n     message = {\n       message_type: \"dismiss_new\",\n-      payload: payload\n+      payload: {\n+        topic_ids: topic_ids\n+      }\n     }\n     MessageBus.publish(self.unread_channel_key(user_id), message.as_json, user_ids: [user_id])\n   end\n@@ -231,7 +230,7 @@ def self.treat_as_new_topic_clause\n                   WHEN COALESCE(uo.new_topic_duration_minutes, :default_duration) = :always THEN u.created_at\n                   WHEN COALESCE(uo.new_topic_duration_minutes, :default_duration) = :last_visit THEN COALESCE(u.previous_visit_at,u.created_at)\n                   ELSE (:now::timestamp - INTERVAL '1 MINUTE' * COALESCE(uo.new_topic_duration_minutes, :default_duration))\n-               END, us.new_since, :min_date)\",\n+               END, u.created_at, :min_date)\",\n                 now: DateTime.now,\n                 last_visit: User::NewTopicDuration::LAST_VISIT,\n                 always: User::NewTopicDuration::ALWAYS,"
+    },
+    {
+      "sha": "8ba26acf9d6dd3b7f048d5158eef3afd479a51f5",
+      "filename": "app/models/user_option.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/models/user_option.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/models/user_option.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/user_option.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -149,7 +149,7 @@ def treat_as_new_topic_start_date\n       else\n         duration.minutes.ago\n       end,\n-      user.user_stat.new_since,\n+      user.created_at,\n       Time.at(SiteSetting.min_new_topics_time).to_datetime\n     ]\n "
+    },
+    {
+      "sha": "fc722f878dae62e0ff194a0003f5acd1307db8db",
+      "filename": "app/services/dismiss_topics.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/services/dismiss_topics.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/services/dismiss_topics.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/dismiss_topics.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -8,6 +8,7 @@ def initialize(user, topics_scope)\n \n   def perform!\n     DismissedTopicUser.insert_all(rows) if rows.present?\n+    @rows.map { |row| row[:topic_id] }\n   end\n \n   private\n@@ -17,6 +18,7 @@ def rows\n       .joins(\"LEFT JOIN topic_users ON topic_users.topic_id = topics.id AND topic_users.user_id = #{@user.id}\")\n       .where(\"topics.created_at >= ?\", since_date)\n       .where(\"topic_users.id IS NULL\")\n+      .where(\"topics.archetype <> ?\", Archetype.private_message)\n       .order(\"topics.created_at DESC\")\n       .limit(SiteSetting.max_new_topics).map do |topic|\n       {\n@@ -38,6 +40,6 @@ def since_date\n       else\n         new_topic_duration_minutes.minutes.ago\n       end\n-    [setting_date, @user.user_stat.new_since, Time.at(SiteSetting.min_new_topics_time).to_datetime].max\n+    [setting_date, @user.created_at, Time.at(SiteSetting.min_new_topics_time).to_datetime].max\n   end\n end"
+    },
+    {
+      "sha": "c0a6b6b826ba65d482016afc92744fc82c6230c4",
+      "filename": "app/services/user_merger.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/app/services/user_merger.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/app/services/user_merger.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/user_merger.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -266,6 +266,8 @@ def update_user_ids\n     update_user_id(:draft_sequences, conditions: \"x.draft_key = y.draft_key\")\n     update_user_id(:drafts, conditions: \"x.draft_key = y.draft_key\")\n \n+    update_user_id(:dismissed_topic_users, conditions: \"x.topic_id = y.topic_id\")\n+\n     EmailLog.where(user_id: @source_user.id).update_all(user_id: @target_user.id)\n \n     GroupHistory.where(acting_user_id: @source_user.id).update_all(acting_user_id: @target_user.id)"
+    },
+    {
+      "sha": "6b975e464fae7fa815d85b542fd3f89e60ff78af",
+      "filename": "db/migrate/20210208022738_move_new_since_to_new_table.rb",
+      "status": "added",
+      "additions": 39,
+      "deletions": 0,
+      "changes": 39,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/db/migrate/20210208022738_move_new_since_to_new_table.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/db/migrate/20210208022738_move_new_since_to_new_table.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20210208022738_move_new_since_to_new_table.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -0,0 +1,39 @@\n+# frozen_string_literal: true\n+\n+class MoveNewSinceToNewTable < ActiveRecord::Migration[6.0]\n+  def up\n+    sql = <<~SQL\n+      INSERT INTO dismissed_topic_users (user_id, topic_id, created_at)\n+      SELECT users.id, topics.id, user_stats.new_since\n+      FROM user_stats\n+      JOIN users ON users.id = user_stats.user_id\n+      JOIN user_options ON user_options.user_id = users.id\n+      LEFT JOIN topics ON topics.created_at <= user_stats.new_since\n+      LEFT JOIN topic_users ON topics.id = topic_users.topic_id AND users.id = topic_users.user_id\n+      LEFT JOIN dismissed_topic_users ON dismissed_topic_users.topic_id = topics.id AND users.id = dismissed_topic_users.user_id\n+      WHERE user_stats.new_since IS NOT NULL\n+      AND topic_users.id IS NULL\n+      AND dismissed_topic_users.id IS NULL\n+      AND topics.archetype <> :private_message\n+      AND topics.created_at >= GREATEST(CASE\n+                  WHEN COALESCE(user_options.new_topic_duration_minutes, :default_duration) = :always THEN users.created_at\n+                  WHEN COALESCE(user_options.new_topic_duration_minutes, :default_duration) = :last_visit THEN COALESCE(users.previous_visit_at,users.created_at)\n+                  ELSE (:now::timestamp - INTERVAL '1 MINUTE' * COALESCE(user_options.new_topic_duration_minutes, :default_duration))\n+               END, :min_date)\n+      ORDER BY topics.created_at DESC\n+      LIMIT :max_new_topics\n+    SQL\n+    DB.exec(sql,\n+            now: DateTime.now,\n+            last_visit: User::NewTopicDuration::LAST_VISIT,\n+            always: User::NewTopicDuration::ALWAYS,\n+            default_duration: SiteSetting.default_other_new_topic_duration_minutes,\n+            min_date: Time.at(SiteSetting.min_new_topics_time).to_datetime,\n+            private_message: Archetype.private_message,\n+            max_new_topics: SiteSetting.max_new_topics)\n+  end\n+\n+  def down\n+    raise ActiveRecord::IrreversibleMigration\n+  end\n+end"
+    },
+    {
+      "sha": "d17041f7b9ac2db99eebf0b0f3c0051d51b86a85",
+      "filename": "spec/jobs/clean_dismissed_topic_users_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 6,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/spec/jobs/clean_dismissed_topic_users_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/spec/jobs/clean_dismissed_topic_users_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/clean_dismissed_topic_users_spec.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -7,10 +7,6 @@\n   fab!(:topic) { Fabricate(:topic, created_at: 5.hours.ago) }\n   fab!(:dismissed_topic_user) { Fabricate(:dismissed_topic_user, user: user, topic: topic) }\n \n-  before do\n-    user.user_stat.update!(new_since: 1.days.ago)\n-  end\n-\n   context '#delete_overdue_dismissals!' do\n     it 'does not delete when new_topic_duration_minutes is set to always' do\n       user.user_option.update(new_topic_duration_minutes: User::NewTopicDuration::ALWAYS)\n@@ -45,8 +41,6 @@\n     before do\n       user.user_option.update(new_topic_duration_minutes: User::NewTopicDuration::ALWAYS)\n       user2.user_option.update(new_topic_duration_minutes: User::NewTopicDuration::ALWAYS)\n-      user.user_stat.update!(new_since: 1.days.ago)\n-      user2.user_stat.update!(new_since: 1.days.ago)\n     end\n \n     it 'deletes over the limit dismissals' do"
+    },
+    {
+      "sha": "996c0c2c6de9374399fc244ead71a8275b557494",
+      "filename": "spec/jobs/export_user_archive_spec.rb",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/spec/jobs/export_user_archive_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/spec/jobs/export_user_archive_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/export_user_archive_spec.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -317,7 +317,6 @@ def make_component_json\n           .where(category_id: category_id)\n           .first_or_initialize\n           .update!(last_seen_at: reset_at)\n-        #TopicTrackingState.publish_dismiss_new(user.id, category_id)\n       end\n \n       # Set Watching First Post on announcements, Tracking on subcategory, Muted on deleted, nothing on subsubcategory"
+    },
+    {
+      "sha": "dbeb2dc91b2c80abe743df4306e6631b72b8d443",
+      "filename": "spec/requests/topics_controller_spec.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/spec/requests/topics_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/spec/requests/topics_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/topics_controller_spec.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -2832,8 +2832,9 @@ def extract_post_stream\n \n       old_date = 2.years.ago\n       user.user_stat.update_column(:new_since, old_date)\n+      user.update_column(:created_at, old_date)\n \n-      TopicTrackingState.expects(:publish_dismiss_new).with(user.id)\n+      TopicTrackingState.expects(:publish_dismiss_new).with(user.id, topic_ids: [topic.id])\n \n       put \"/topics/reset-new.json\"\n       expect(response.status).to eq(200)\n@@ -2866,7 +2867,7 @@ def extract_post_stream\n         tracked_topic.update!(category_id: tracked_category.id)\n \n         create_post # This is a new post, but is not tracked so a record will not be created for it\n-        expect { put \"/topics/reset-new.json?tracked=true\" }.to change { TopicUser.where(user_id: user.id, last_read_post_number: 0).count }.by(1)\n+        expect { put \"/topics/reset-new.json?tracked=true\" }.to change { DismissedTopicUser.where(user_id: user.id).count }.by(1)\n       end\n     end\n \n@@ -2879,7 +2880,7 @@ def extract_post_stream\n       it 'dismisses topics for main category' do\n         sign_in(user)\n \n-        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, category_id: category.id.to_s, tag_id: nil)\n+        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, topic_ids: [category_topic.id])\n \n         put \"/topics/reset-new.json?category_id=#{category.id}\"\n \n@@ -2888,6 +2889,9 @@ def extract_post_stream\n \n       it 'dismisses topics for main category and subcategories' do\n         sign_in(user)\n+\n+        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, topic_ids: [subcategory_topic.id, category_topic.id])\n+\n         put \"/topics/reset-new.json?category_id=#{category.id}&include_subcategories=true\"\n \n         expect(DismissedTopicUser.where(user_id: user.id).pluck(:topic_id).sort).to eq([category_topic.id, subcategory_topic.id].sort)\n@@ -2902,7 +2906,7 @@ def extract_post_stream\n \n       it 'dismisses topics for tag' do\n         sign_in(user)\n-        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, tag_id: tag.name)\n+        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, topic_ids: [tag_topic.id])\n         put \"/topics/reset-new.json?tag_id=#{tag.name}\"\n         expect(DismissedTopicUser.where(user_id: user.id).pluck(:topic_id)).to eq([tag_topic.id])\n       end\n@@ -2918,7 +2922,7 @@ def extract_post_stream\n \n       it 'dismisses topics for tag' do\n         sign_in(user)\n-        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, tag_id: tag.name, category_id: category.id.to_s)\n+        TopicTrackingState.expects(:publish_dismiss_new).with(user.id, topic_ids: [tag_and_category_topic.id])\n         put \"/topics/reset-new.json?tag_id=#{tag.name}&category_id=#{category.id}\"\n         expect(DismissedTopicUser.where(user_id: user.id).pluck(:topic_id)).to eq([tag_and_category_topic.id])\n       end"
+    },
+    {
+      "sha": "b61db8a2933c12f18874583db2dbe833b8bc674b",
+      "filename": "spec/services/dismiss_topics_spec.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/f5b18e2a311abf503b21d996031d38286e71f74a/spec/services/dismiss_topics_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f5b18e2a311abf503b21d996031d38286e71f74a/spec/services/dismiss_topics_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/dismiss_topics_spec.rb?ref=f5b18e2a311abf503b21d996031d38286e71f74a",
+      "patch": "@@ -3,20 +3,20 @@\n require 'rails_helper'\n \n describe DismissTopics do\n-  fab!(:user) { Fabricate(:user) }\n+  fab!(:user) { Fabricate(:user, created_at: 1.days.ago) }\n   fab!(:category) { Fabricate(:category) }\n   fab!(:topic1) { Fabricate(:topic, category: category, created_at: 60.minutes.ago) }\n   fab!(:topic2) { Fabricate(:topic, category: category, created_at: 120.minutes.ago) }\n \n-  before do\n-    user.user_stat.update!(new_since: 1.days.ago)\n-  end\n-\n   describe '#perform!' do\n     it 'dismisses two topics' do\n       expect { described_class.new(user, Topic.all).perform! }.to change { DismissedTopicUser.count }.by(2)\n     end\n \n+    it 'returns dismissed topic ids' do\n+      expect(described_class.new(user, Topic.all).perform!.sort).to eq([topic1.id, topic2.id])\n+    end\n+\n     it 'respects max_new_topics limit' do\n       SiteSetting.max_new_topics = 1\n       expect { described_class.new(user, Topic.all).perform! }.to change { DismissedTopicUser.count }.by(1)"
+    }
+  ]
+}
