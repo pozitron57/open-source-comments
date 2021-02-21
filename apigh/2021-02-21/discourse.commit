@@ -1,0 +1,110 @@
+{
+  "sha": "4e716e9ce58597b164d2198e706d4cac334878ef",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo0ZTcxNmU5Y2U1ODU5N2IxNjRkMjE5OGU3MDZkNGNhYzMzNDg3OGVm",
+  "commit": {
+    "author": {
+      "name": "Roman Rizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2021-02-20T11:25:32Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-20T11:25:32Z"
+    },
+    "message": "FIX: Reduce the time_read threshold to one minute. (#12159)\n\n* FIX: Reduce the time_read threshold to one minute.\r\n\r\nFive minutes is too much and could fill the queue with false positives.\r\n\r\n* Update spec/jobs/enqueue_suspect_users_spec.rb\r\n\r\nCo-authored-by: Arpit Jalan <arpit@techapj.com>\r\n\r\nCo-authored-by: Arpit Jalan <arpit@techapj.com>",
+    "tree": {
+      "sha": "a0f5ce9a3a4367c4e16dd1642e3ae73a7be76eb1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/a0f5ce9a3a4367c4e16dd1642e3ae73a7be76eb1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/4e716e9ce58597b164d2198e706d4cac334878ef",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgMPGsCRBK7hj4Ov3rIwAAdHIIAKz1XJ2gae1PwKsCHPLPKJa2\nZMmC0ChOA8L/MtNF1ixVq0IdXSCzrJgt/+tWxtQaaYzu63ad0GlGeyY7ybabfCSC\nHfy58EePh+2huu9uH70y5x47G97tWtEOsZEqpN4iLyfOdAp8iWpPfhcDL6WS42/k\n08Jo+1NZJzMlZCGI36Paahg/d3Ls70YWb+up/210ANDvS5i6DA+Hqxx2ok7QQx6m\n4nTSkZg27DIkA/Tq61AJTcu2yvjJ6k3GJXGVgastnwC3Gh0x0gyucTLma5CG5je+\njqAtEGE7k3TtRGESiYwMUF5+5D+FmwfxvjnqJQXUDOhtqsWMtIl0sjkCVQuOBwU=\n=vPGq\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree a0f5ce9a3a4367c4e16dd1642e3ae73a7be76eb1\nparent dbcda617b332423a6fa04395b151dc0143720244\nauthor Roman Rizzi <rizziromanalejandro@gmail.com> 1613820332 -0300\ncommitter GitHub <noreply@github.com> 1613820332 -0300\n\nFIX: Reduce the time_read threshold to one minute. (#12159)\n\n* FIX: Reduce the time_read threshold to one minute.\r\n\r\nFive minutes is too much and could fill the queue with false positives.\r\n\r\n* Update spec/jobs/enqueue_suspect_users_spec.rb\r\n\r\nCo-authored-by: Arpit Jalan <arpit@techapj.com>\r\n\r\nCo-authored-by: Arpit Jalan <arpit@techapj.com>"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/4e716e9ce58597b164d2198e706d4cac334878ef",
+  "html_url": "https://github.com/discourse/discourse/commit/4e716e9ce58597b164d2198e706d4cac334878ef",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/4e716e9ce58597b164d2198e706d4cac334878ef/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dbcda617b332423a6fa04395b151dc0143720244",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/dbcda617b332423a6fa04395b151dc0143720244",
+      "html_url": "https://github.com/discourse/discourse/commit/dbcda617b332423a6fa04395b151dc0143720244"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "d6f568335c791436f5ccb7dfeb8001d2ab4fdba0",
+      "filename": "app/jobs/scheduled/enqueue_suspect_users.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e716e9ce58597b164d2198e706d4cac334878ef/app/jobs/scheduled/enqueue_suspect_users.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e716e9ce58597b164d2198e706d4cac334878ef/app/jobs/scheduled/enqueue_suspect_users.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/scheduled/enqueue_suspect_users.rb?ref=4e716e9ce58597b164d2198e706d4cac334878ef",
+      "patch": "@@ -16,7 +16,7 @@ def execute(_args)\n         .joins(:user_profile, :user_stat)\n         .where(\"users.created_at <= ? AND users.created_at >= ?\", 1.day.ago, 6.months.ago)\n         .where(\"LENGTH(COALESCE(user_profiles.bio_raw, user_profiles.website, '')) > 0\")\n-        .where(\"user_stats.posts_read_count <= 1 OR user_stats.topics_entered <= 1 OR user_stats.time_read < ?\", 5.minutes.to_i)\n+        .where(\"user_stats.posts_read_count <= 1 OR user_stats.topics_entered <= 1 OR user_stats.time_read < ?\", 1.minute.to_i)\n         .joins(\"LEFT OUTER JOIN reviewables r ON r.target_id = users.id AND r.target_type = 'User'\")\n         .where('r.id IS NULL')\n         .joins("
+    },
+    {
+      "sha": "146d7837d5bc8f8fba0838c84491c188aba87afc",
+      "filename": "spec/jobs/enqueue_suspect_users_spec.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/4e716e9ce58597b164d2198e706d4cac334878ef/spec/jobs/enqueue_suspect_users_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/4e716e9ce58597b164d2198e706d4cac334878ef/spec/jobs/enqueue_suspect_users_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/enqueue_suspect_users_spec.rb?ref=4e716e9ce58597b164d2198e706d4cac334878ef",
+      "patch": "@@ -90,15 +90,15 @@\n     end\n \n     it 'enqueues a suspect user with not enough time read' do\n-      suspect_user.user_stat.update!(posts_read_count: 2, topics_entered: 2, time_read: 1.minute.to_i)\n+      suspect_user.user_stat.update!(posts_read_count: 2, topics_entered: 2, time_read: 30.seconds.to_i)\n \n       subject.execute({})\n \n       expect(ReviewableUser.count).to eq(1)\n     end\n \n-    it 'ignores users if their time read is higher than five minutes' do\n-      suspect_user.user_stat.update!(posts_read_count: 2, topics_entered: 2, time_read: 10.minutes.to_i)\n+    it 'ignores users if their time read is higher than one minute' do\n+      suspect_user.user_stat.update!(posts_read_count: 2, topics_entered: 2, time_read: 2.minutes.to_i)\n \n       subject.execute({})\n "
+    }
+  ]
+}
