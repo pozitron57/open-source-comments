@@ -1,0 +1,122 @@
+{
+  "sha": "ef19431e44126f6ff936141b24aa0b791fb95e95",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplZjE5NDMxZTQ0MTI2ZjZmZjkzNjE0MWIyNGFhMGI3OTFmYjk1ZTk1",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2021-02-22T11:42:37Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-22T11:42:37Z"
+    },
+    "message": "DEV: Improve User#email= behavior (#11338)\n\n- Only apply the change after `save` is called on the record\r\n- Automatically remove matching secondary emails",
+    "tree": {
+      "sha": "24ce7c4ba4f24b1b0c392c0519cfc380ced04c03",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/24ce7c4ba4f24b1b0c392c0519cfc380ced04c03"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/ef19431e44126f6ff936141b24aa0b791fb95e95",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgM5itCRBK7hj4Ov3rIwAAdHIIAAHQwT/IFHHay6C4zlGjEJnY\nv8yaNH7GeVZIPfofAzgSHZfvBv4w6hd/zUwA59CT5bq40PiZhXTfYct2TGUW2gpa\n8tjR0NW7qUG4D9ZjSpb59uX6aFaUa8Q5fMp2wLDJ4cn1rTcLHttJCEBiL+PNZ13C\nrWXA7WcSkRgPxYs0LtFwdSyxV5rFKLwRghWLz3U0QGQYwUQlxqoVdVOMAXiXaOfA\nSjzURCOKHykaXWMx+nPUC1K6vSTUPsVZXyNFQQi65VaqxbtgxVIk4VOzMe5lM1Uv\nYNIM9qxjpuswzHqHlxt70bhNlV6mYcS0FMv5chVgpJTJnFG1Sj8rfIX0qIHDACs=\n=TqeH\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 24ce7c4ba4f24b1b0c392c0519cfc380ced04c03\nparent 74d83abcc702400f709dc9f11e803fae6cec6469\nauthor David Taylor <david@taylorhq.com> 1613994157 +0000\ncommitter GitHub <noreply@github.com> 1613994157 +0000\n\nDEV: Improve User#email= behavior (#11338)\n\n- Only apply the change after `save` is called on the record\r\n- Automatically remove matching secondary emails"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/ef19431e44126f6ff936141b24aa0b791fb95e95",
+  "html_url": "https://github.com/discourse/discourse/commit/ef19431e44126f6ff936141b24aa0b791fb95e95",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/ef19431e44126f6ff936141b24aa0b791fb95e95/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "74d83abcc702400f709dc9f11e803fae6cec6469",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/74d83abcc702400f709dc9f11e803fae6cec6469",
+      "html_url": "https://github.com/discourse/discourse/commit/74d83abcc702400f709dc9f11e803fae6cec6469"
+    }
+  ],
+  "stats": {
+    "total": 56,
+    "additions": 50,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "5722ae61f4465c78f5ad1be00d450d740584bfcc",
+      "filename": "app/models/user.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 4,
+      "changes": 17,
+      "blob_url": "https://github.com/discourse/discourse/blob/ef19431e44126f6ff936141b24aa0b791fb95e95/app/models/user.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ef19431e44126f6ff936141b24aa0b791fb95e95/app/models/user.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/user.rb?ref=ef19431e44126f6ff936141b24aa0b791fb95e95",
+      "patch": "@@ -23,7 +23,7 @@ class User < ActiveRecord::Base\n   has_many :email_tokens, dependent: :destroy\n   has_many :topic_links, dependent: :destroy\n   has_many :user_uploads, dependent: :destroy\n-  has_many :user_emails, dependent: :destroy\n+  has_many :user_emails, dependent: :destroy, autosave: true\n   has_many :user_associated_accounts, dependent: :destroy\n   has_many :oauth2_user_infos, dependent: :destroy\n   has_many :user_second_factors, dependent: :destroy\n@@ -40,7 +40,7 @@ class User < ActiveRecord::Base\n \n   has_one :user_option, dependent: :destroy\n   has_one :user_avatar, dependent: :destroy\n-  has_one :primary_email, -> { where(primary: true)  }, class_name: 'UserEmail', dependent: :destroy\n+  has_one :primary_email, -> { where(primary: true)  }, class_name: 'UserEmail', dependent: :destroy, autosave: true\n   has_one :user_stat, dependent: :destroy\n   has_one :user_profile, dependent: :destroy, inverse_of: :user\n   has_one :single_sign_on_record, dependent: :destroy\n@@ -1263,12 +1263,21 @@ def email\n     primary_email&.email\n   end\n \n+  # Shortcut to set the primary email of the user.\n+  # Automatically removes any identical secondary emails.\n   def email=(new_email)\n     if primary_email\n-      new_record? ? primary_email.email = new_email : primary_email.update(email: new_email)\n+      primary_email.email = new_email\n     else\n-      self.primary_email = UserEmail.new(email: new_email, user: self, primary: true, skip_validate_email: !should_validate_email_address?)\n+      build_primary_email email: new_email, skip_validate_email: !should_validate_email_address?\n     end\n+\n+    if secondary_match = user_emails.detect { |ue| !ue.primary && Email.downcase(ue.email) == Email.downcase(new_email) }\n+      secondary_match.mark_for_destruction\n+      primary_email.skip_validate_unique_email = true\n+    end\n+\n+    new_email\n   end\n \n   def emails"
+    },
+    {
+      "sha": "6ab955c95a7e077e1c2c7292d88d4dcfc9b5e314",
+      "filename": "app/models/user_email.rb",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 2,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/ef19431e44126f6ff936141b24aa0b791fb95e95/app/models/user_email.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ef19431e44126f6ff936141b24aa0b791fb95e95/app/models/user_email.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/user_email.rb?ref=ef19431e44126f6ff936141b24aa0b791fb95e95",
+      "patch": "@@ -4,6 +4,7 @@ class UserEmail < ActiveRecord::Base\n   belongs_to :user\n \n   attr_accessor :skip_validate_email\n+  attr_accessor :skip_validate_unique_email\n \n   before_validation :strip_downcase_email\n \n@@ -12,7 +13,7 @@ class UserEmail < ActiveRecord::Base\n \n   validates :primary, uniqueness: { scope: [:user_id] }, if: [:user_id, :primary]\n   validate :user_id_not_changed, if: :primary\n-  validate :unique_email\n+  validate :unique_email, if: :validate_unique_email?\n \n   scope :secondary, -> { where(primary: false) }\n \n@@ -30,8 +31,13 @@ def validate_email?\n     email_changed?\n   end\n \n+  def validate_unique_email?\n+    return false if self.skip_validate_unique_email\n+    will_save_change_to_email?\n+  end\n+\n   def unique_email\n-    if self.will_save_change_to_email? && self.class.where(\"lower(email) = ?\", email).exists?\n+    if self.class.where(\"lower(email) = ?\", email).exists?\n       self.errors.add(:email, :taken)\n     end\n   end"
+    },
+    {
+      "sha": "d93ff315862f913fbcd86410af2294e3cda374f2",
+      "filename": "spec/models/user_spec.rb",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 0,
+      "changes": 29,
+      "blob_url": "https://github.com/discourse/discourse/blob/ef19431e44126f6ff936141b24aa0b791fb95e95/spec/models/user_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/ef19431e44126f6ff936141b24aa0b791fb95e95/spec/models/user_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/user_spec.rb?ref=ef19431e44126f6ff936141b24aa0b791fb95e95",
+      "patch": "@@ -2069,6 +2069,35 @@ def filter_by(method)\n     end\n   end\n \n+  describe \"#email=\" do\n+    let(:new_email) { \"newprimary@example.com\" }\n+    it 'sets the primary email' do\n+      user.update!(email: new_email)\n+      expect(User.find(user.id).email).to eq(new_email)\n+    end\n+\n+    it 'only saves when save called' do\n+      old_email = user.email\n+      user.email = new_email\n+      expect(User.find(user.id).email).to eq(old_email)\n+      user.save!\n+      expect(User.find(user.id).email).to eq(new_email)\n+    end\n+\n+    it 'will automatically remove matching secondary emails' do\n+      secondary_email_record = Fabricate(:secondary_email, user: user)\n+      user.reload\n+      expect(user.secondary_emails.count).to eq(1)\n+      user.email = secondary_email_record.email\n+      puts \"done setting\"\n+      user.save!\n+\n+      expect(User.find(user.id).email).to eq(secondary_email_record.email)\n+      expect(user.secondary_emails.count).to eq(0)\n+    end\n+\n+  end\n+\n   describe \"set_random_avatar\" do\n     it \"sets a random avatar when selectable avatars is enabled\" do\n       avatar1 = Fabricate(:upload)"
+    }
+  ]
+}
