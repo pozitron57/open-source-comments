@@ -1,0 +1,122 @@
+{
+  "sha": "bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiYjNkNWU5NzU4YzFlNjQ5ZjlkOTA4OTFkNzFhMTMxM2ZlYzZlYjY5",
+  "commit": {
+    "author": {
+      "name": "Roman Rizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2021-02-26T10:56:14Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-02-26T10:56:14Z"
+    },
+    "message": "FEATURE: Filter reviewables by id. (#12213)\n\nThe API now accepts an array called \"ids\" to select specific items. This parameter is not present on the UI.\r\n\r\nExample usage: \"yoursite.com/review.json?ids[]=1&ids[]=2\"",
+    "tree": {
+      "sha": "3993c2b7ce46332ed8e6517cec2e5fa00215d588",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3993c2b7ce46332ed8e6517cec2e5fa00215d588"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgONPOCRBK7hj4Ov3rIwAAdHIIAFDJ0v/jJKZexwS81aLjAwIp\nSAjzjInh18eSKUbaxb8oJUMwVBjMg1naXHeIUG3ucoy8dP9JZSYv5pDr7i0RqOl1\n2d0be6ibS4a/dRPSUBv6OQhuvCjEEUeGcFnsb5r9LcQLrNT31zylX1TMfu256LFU\nlOaST66TacM3gPWcBW6uM9u68c38jhYY5h0GUF86Ja7oLkRYCezXvoaNAEfw8sx6\njoerX6sNFPFqLtpfiU8dKMloNSDMkJbGwHGKHBieGX+I6f7xxIs92pJOGeN0Hp4g\n+hIhYRDS0MPKR74YQUUoobU09XPWDK2e1pFh6WDurD7S7SzFxWe4MB6tmt68nH0=\n=IZuS\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 3993c2b7ce46332ed8e6517cec2e5fa00215d588\nparent 3f21d41b096a9605e54ec66d2c29c1ab692d7584\nauthor Roman Rizzi <rizziromanalejandro@gmail.com> 1614336974 -0300\ncommitter GitHub <noreply@github.com> 1614336974 -0300\n\nFEATURE: Filter reviewables by id. (#12213)\n\nThe API now accepts an array called \"ids\" to select specific items. This parameter is not present on the UI.\r\n\r\nExample usage: \"yoursite.com/review.json?ids[]=1&ids[]=2\""
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+  "html_url": "https://github.com/discourse/discourse/commit/bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3f21d41b096a9605e54ec66d2c29c1ab692d7584",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3f21d41b096a9605e54ec66d2c29c1ab692d7584",
+      "html_url": "https://github.com/discourse/discourse/commit/3f21d41b096a9605e54ec66d2c29c1ab692d7584"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 15,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c2b2d43ed3a018d5fbcd78b243f4fd4361f4c868",
+      "filename": "app/controllers/reviewables_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/app/controllers/reviewables_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/app/controllers/reviewables_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/reviewables_controller.rb?ref=bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+      "patch": "@@ -24,6 +24,7 @@ def index\n     custom_keys = Reviewable.custom_filters.map(&:first)\n     additional_filters = JSON.parse(params.fetch(:additional_filters, {}), symbolize_names: true).slice(*custom_keys)\n     filters = {\n+      ids: params[:ids],\n       status: status,\n       category_id: category_id,\n       topic_id: topic_id,"
+    },
+    {
+      "sha": "438fb51524b0d93070a8a7a2706a7b266d12fc0b",
+      "filename": "app/models/reviewable.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/app/models/reviewable.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/app/models/reviewable.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/reviewable.rb?ref=bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+      "patch": "@@ -429,6 +429,7 @@ def self.pending_count(user)\n \n   def self.list_for(\n     user,\n+    ids: nil,\n     status: :pending,\n     category_id: nil,\n     topic_id: nil,\n@@ -465,6 +466,7 @@ def self.list_for(\n     result = viewable_by(user, order: order)\n \n     result = by_status(result, status)\n+    result = result.where(id: ids) if ids\n     result = result.where('reviewables.type = ?', type) if type\n     result = result.where('reviewables.category_id = ?', category_id) if category_id\n     result = result.where('reviewables.topic_id = ?', topic_id) if topic_id"
+    },
+    {
+      "sha": "2504a7c2a5405647ba140730805c15450a4ddf91",
+      "filename": "spec/requests/reviewables_controller_spec.rb",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/spec/requests/reviewables_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/bb3d5e9758c1e649f9d90891d71a1313fec6eb69/spec/requests/reviewables_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/reviewables_controller_spec.rb?ref=bb3d5e9758c1e649f9d90891d71a1313fec6eb69",
+      "patch": "@@ -223,6 +223,18 @@\n           expect(json['users'].any? { |u| u['id'] == reviewable.target_created_by_id && u['custom_fields']['private_field'] == 'private' }).to eq(false)\n         end\n       end\n+\n+      it 'supports filtering by id' do\n+        reviewable_a = Fabricate(:reviewable)\n+        reviewable_b = Fabricate(:reviewable)\n+\n+        get \"/review.json?ids[]=#{reviewable_a.id}\"\n+\n+        expect(response.code).to eq(\"200\")\n+        json = response.parsed_body\n+        expect(json['reviewables']).to be_present\n+        expect(json['reviewables'].size).to eq(1)\n+      end\n     end\n \n     context \"#show\" do"
+    }
+  ]
+}
