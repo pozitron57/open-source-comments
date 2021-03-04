@@ -1,0 +1,98 @@
+{
+  "sha": "d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26",
+  "node_id": "MDY6Q29tbWl0NjI2ODQxOTpkN2I1NjY2NTZkMWU3YTZkOGRjNTY2N2IxNWIwYWEyYWQ1MmViZjI2",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2021-03-03T13:40:29Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2021-03-03T13:40:29Z"
+    },
+    "message": "Fix news file path.",
+    "tree": {
+      "sha": "455e0bf5f1ff1566103c232025e1350ac268df52",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/455e0bf5f1ff1566103c232025e1350ac268df52"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26",
+  "html_url": "https://github.com/posativ/isso/commit/d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5ad5a08a7369e11363fb779360eba81b9f25c892",
+      "url": "https://api.github.com/repos/posativ/isso/commits/5ad5a08a7369e11363fb779360eba81b9f25c892",
+      "html_url": "https://github.com/posativ/isso/commit/5ad5a08a7369e11363fb779360eba81b9f25c892"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 1,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "a4401a33bf8a57efcfaa7f9e4605d5bed4a66659",
+      "filename": "releaser.conf",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/posativ/isso/blob/d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26/releaser.conf",
+      "raw_url": "https://github.com/posativ/isso/raw/d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26/releaser.conf",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/releaser.conf?ref=d7b566656d1e7a6d8dc5667b15b0aa2ad52ebf26",
+      "patch": "@@ -1,7 +1,6 @@\n-name: \"isso\"\n-news_file: \"NEWS\"\n timeout_days: 5\n tag_name: \"$VERSION\"\n+news_file: \"CHANGES.rst\"\n pre_dist_command: \"make init all\"\n verify_command: \"python3 setup.py nosetests\"\n update_version {"
+    }
+  ]
+}
