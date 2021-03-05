@@ -1,0 +1,122 @@
+{
+  "sha": "345ee8833377d4124cb375f33625dee54877e010",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjM0NWVlODgzMzM3N2Q0MTI0Y2IzNzVmMzM2MjVkZWU1NDg3N2UwMTA=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-03-03T22:26:41Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-03-04T18:02:46Z"
+    },
+    "message": "add testing-library/jest-dom, fix waitfor",
+    "tree": {
+      "sha": "c0606a599926457ebccb55ddf30f40af61d42555",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/c0606a599926457ebccb55ddf30f40af61d42555"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/345ee8833377d4124cb375f33625dee54877e010",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/345ee8833377d4124cb375f33625dee54877e010",
+  "html_url": "https://github.com/umputun/remark42/commit/345ee8833377d4124cb375f33625dee54877e010",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/345ee8833377d4124cb375f33625dee54877e010/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4bea9f1d37ef5e051f42b03a3a9e6ce68bb81919",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/4bea9f1d37ef5e051f42b03a3a9e6ce68bb81919",
+      "html_url": "https://github.com/umputun/remark42/commit/4bea9f1d37ef5e051f42b03a3a9e6ce68bb81919"
+    }
+  ],
+  "stats": {
+    "total": 144,
+    "additions": 104,
+    "deletions": 40
+  },
+  "files": [
+    {
+      "sha": "d8e8051db1c9a67abba1cec82ac321b736d9b490",
+      "filename": "frontend/app/components/auth/auth.spec.tsx",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 40,
+      "changes": 77,
+      "blob_url": "https://github.com/umputun/remark42/blob/345ee8833377d4124cb375f33625dee54877e010/frontend/app/components/auth/auth.spec.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/345ee8833377d4124cb375f33625dee54877e010/frontend/app/components/auth/auth.spec.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/auth/auth.spec.tsx?ref=345ee8833377d4124cb375f33625dee54877e010",
+      "patch": "@@ -1,7 +1,7 @@\n+import '@testing-library/jest-dom';\n import { h } from 'preact';\n import { fireEvent, render, waitFor } from '@testing-library/preact';\n \n-import { sleep } from 'utils/sleep';\n import { Provider, User } from 'common/types';\n import { StaticStore } from 'common/static-store';\n \n@@ -27,46 +27,43 @@ describe('<Auth/>', () => {\n     it('should render auth with hidden dropdown', () => {\n       const { container } = render(<Auth />);\n \n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument();\n     });\n \n     it('should close dropdown by click on button', () => {\n       const { container } = render(<Auth />);\n \n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument();\n \n       fireEvent.click(container.querySelector('.auth-button')!);\n-      expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n+      expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n \n       fireEvent.click(container.querySelector('.auth-button')!);\n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument();\n     });\n \n     it('should close dropdown by click outside of it', () => {\n       const { container } = render(<Auth />);\n \n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument();\n \n       fireEvent.click(container.querySelector('.auth-button')!);\n-      expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n+      expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n \n       fireEvent.click(document);\n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument();\n     });\n \n     it('should close dropdown by message from parent', async () => {\n       const { container } = render(<Auth />);\n \n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument();\n \n       fireEvent.click(container.querySelector('.auth-button')!);\n-      expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n+      expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n \n       window.postMessage('{\"clickOutside\": true}', '*');\n-      // TODO: Find out how to wait for postMessage recive without `sleep`\n-      await sleep(10);\n-\n-      expect(container.querySelector('.auth-dropdown')).toBeFalsy();\n+      await waitFor(() => expect(container.querySelector('.auth-dropdown')).not.toBeInTheDocument());\n     });\n   });\n \n@@ -85,10 +82,10 @@ describe('<Auth/>', () => {\n     expect(container.querySelector('.auth-dropdown')).toBeNull();\n \n     fireEvent.click(container.querySelector('.auth-button')!);\n-    expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n+    expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n     expect(container.querySelectorAll('.oauth-button')).toHaveLength(providers.length);\n-    expect(container.querySelector('[name=\"username\"]')).toBeFalsy();\n-    expect(container.querySelector('.auth-submit')).toBeFalsy();\n+    expect(container.querySelector('[name=\"username\"]')).not.toBeInTheDocument();\n+    expect(container.querySelector('.auth-submit')).not.toBeInTheDocument();\n   });\n \n   it('should render email provider', () => {\n@@ -97,11 +94,11 @@ describe('<Auth/>', () => {\n     const { container } = render(<Auth />);\n \n     fireEvent.click(container.querySelector('.auth-button')!);\n-    expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n+    expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n     expect(container.querySelector('.auth-form-title')?.innerHTML).toContain('email');\n-    expect(container.querySelector('[name=\"username\"]')).toBeTruthy();\n-    expect(container.querySelector('[name=\"email\"]')).toBeTruthy();\n-    expect(container.querySelector('.auth-submit')).toBeTruthy();\n+    expect(container.querySelector('[name=\"username\"]')).toBeInTheDocument();\n+    expect(container.querySelector('[name=\"email\"]')).toBeInTheDocument();\n+    expect(container.querySelector('.auth-submit')).toBeInTheDocument();\n   });\n \n   it('should render anonymous provider', () => {\n@@ -110,10 +107,10 @@ describe('<Auth/>', () => {\n     const { container } = render(<Auth />);\n \n     fireEvent.click(container.querySelector('.auth-button')!);\n-    expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n+    expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n     expect(container.querySelector('.auth-form-title')?.innerHTML).toContain('anonymous');\n-    expect(container.querySelector('[name=\"username\"]')).toBeTruthy();\n-    expect(container.querySelector('.auth-submit')).toBeTruthy();\n+    expect(container.querySelector('[name=\"username\"]')).toBeInTheDocument();\n+    expect(container.querySelector('.auth-submit')).toBeInTheDocument();\n   });\n \n   it('should render tabs with two form providers', () => {\n@@ -122,16 +119,16 @@ describe('<Auth/>', () => {\n     const { container } = render(<Auth />);\n \n     fireEvent.click(container.querySelector('.auth-button')!);\n-    expect(container.querySelector('.auth-dropdown')).toBeTruthy();\n-    expect(container.querySelector('[for=\"form-provider-anonymous\"]')).toBeTruthy();\n-    expect(container.querySelector('[for=\"form-provider-email\"]')).toBeTruthy();\n-    expect(container.querySelector('[name=\"username\"]')).toBeTruthy();\n-    expect(container.querySelector('.auth-submit')).toBeTruthy();\n+    expect(container.querySelector('.auth-dropdown')).toBeInTheDocument();\n+    expect(container.querySelector('[for=\"form-provider-anonymous\"]')).toBeInTheDocument();\n+    expect(container.querySelector('[for=\"form-provider-email\"]')).toBeInTheDocument();\n+    expect(container.querySelector('[name=\"username\"]')).toBeInTheDocument();\n+    expect(container.querySelector('.auth-submit')).toBeInTheDocument();\n \n     fireEvent.click(container.querySelector('[for=\"form-provider-email\"]')!);\n-    expect(container.querySelector('[name=\"username\"]')).toBeTruthy();\n-    expect(container.querySelector('[name=\"email\"]')).toBeTruthy();\n-    expect(container.querySelector('.auth-submit')).toBeTruthy();\n+    expect(container.querySelector('[name=\"username\"]')).toBeInTheDocument();\n+    expect(container.querySelector('[name=\"email\"]')).toBeInTheDocument();\n+    expect(container.querySelector('.auth-submit')).toBeInTheDocument();\n   });\n \n   it('should send email and then verify forms', async () => {\n@@ -149,12 +146,12 @@ describe('<Auth/>', () => {\n     });\n     fireEvent.click(container.querySelector('.auth-submit')!);\n \n-    expect(container.querySelector('.spinner')).toBeTruthy();\n+    expect(container.querySelector('.spinner')).toBeInTheDocument();\n     await waitFor(() => expect(api.emailSignin).toBeCalled());\n \n-    expect(container.querySelector('.auth-back-button')).toBeTruthy();\n-    expect(container.querySelector('.auth-close-button')).toBeTruthy();\n-    expect(container.querySelector('[name=\"token\"]')).toBeTruthy();\n+    expect(container.querySelector('.auth-back-button')).toBeInTheDocument();\n+    expect(container.querySelector('.auth-close-button')).toBeInTheDocument();\n+    expect(container.querySelector('[name=\"token\"]')).toBeInTheDocument();\n \n     fireEvent.change(container.querySelector('[name=\"token\"]')!, {\n       target: { value: 'token' },\n@@ -180,9 +177,9 @@ describe('<Auth/>', () => {\n     fireEvent.click(container.querySelector('.auth-submit')!);\n     await waitFor(() => expect(api.emailSignin).toBeCalled());\n \n-    expect(container.querySelector('.auth-back-button')).toBeTruthy();\n-    expect(container.querySelector('.auth-close-button')).toBeTruthy();\n-    expect(container.querySelector('[name=\"token\"]')).toBeTruthy();\n+    expect(container.querySelector('.auth-back-button')).toBeInTheDocument();\n+    expect(container.querySelector('.auth-close-button')).toBeInTheDocument();\n+    expect(container.querySelector('[name=\"token\"]')).toBeInTheDocument();\n \n     fireEvent.change(container.querySelector('[name=\"token\"]')!, {\n       target: { value: 'token' },\n@@ -202,7 +199,7 @@ describe('<Auth/>', () => {\n     fireEvent.click(container.querySelector('.auth-button')!);\n     fireEvent.change(container.querySelector('[name=\"username\"]')!, { target: { value: 'username' } });\n     fireEvent.click(container.querySelector('.auth-submit')!);\n-    expect(container.querySelector('.spinner')).toBeTruthy();\n+    expect(container.querySelector('.spinner')).toBeInTheDocument();\n     await waitFor(() => expect(api.anonymousSignin).toBeCalled());\n   });\n });"
+    },
+    {
+      "sha": "99fbb183891fbb0b2a89ea158ca99269234234bc",
+      "filename": "frontend/package-lock.json",
+      "status": "modified",
+      "additions": 66,
+      "deletions": 0,
+      "changes": 66,
+      "blob_url": "https://github.com/umputun/remark42/blob/345ee8833377d4124cb375f33625dee54877e010/frontend/package-lock.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/345ee8833377d4124cb375f33625dee54877e010/frontend/package-lock.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package-lock.json?ref=345ee8833377d4124cb375f33625dee54877e010",
+      "patch": "@@ -1814,6 +1814,34 @@\n         \"pretty-format\": \"^26.6.2\"\n       }\n     },\n+    \"@testing-library/jest-dom\": {\n+      \"version\": \"5.11.9\",\n+      \"resolved\": \"https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-5.11.9.tgz\",\n+      \"integrity\": \"sha512-Mn2gnA9d1wStlAIT2NU8J15LNob0YFBVjs2aEQ3j8rsfRQo+lAs7/ui1i2TGaJjapLmuNPLTsrm+nPjmZDwpcQ==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"@babel/runtime\": \"^7.9.2\",\n+        \"@types/testing-library__jest-dom\": \"^5.9.1\",\n+        \"aria-query\": \"^4.2.2\",\n+        \"chalk\": \"^3.0.0\",\n+        \"css\": \"^3.0.0\",\n+        \"css.escape\": \"^1.5.1\",\n+        \"lodash\": \"^4.17.15\",\n+        \"redent\": \"^3.0.0\"\n+      },\n+      \"dependencies\": {\n+        \"chalk\": {\n+          \"version\": \"3.0.0\",\n+          \"resolved\": \"https://registry.npmjs.org/chalk/-/chalk-3.0.0.tgz\",\n+          \"integrity\": \"sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==\",\n+          \"dev\": true,\n+          \"requires\": {\n+            \"ansi-styles\": \"^4.1.0\",\n+            \"supports-color\": \"^7.1.0\"\n+          }\n+        }\n+      }\n+    },\n     \"@testing-library/preact\": {\n       \"version\": \"2.0.1\",\n       \"resolved\": \"https://registry.npmjs.org/@testing-library/preact/-/preact-2.0.1.tgz\",\n@@ -2147,6 +2175,15 @@\n       \"integrity\": \"sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA==\",\n       \"dev\": true\n     },\n+    \"@types/testing-library__jest-dom\": {\n+      \"version\": \"5.9.5\",\n+      \"resolved\": \"https://registry.npmjs.org/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.5.tgz\",\n+      \"integrity\": \"sha512-ggn3ws+yRbOHog9GxnXiEZ/35Mow6YtPZpd7Z5mKDeZS/o7zx3yAle0ov/wjhVB5QT4N2Dt+GNoGCdqkBGCajQ==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"@types/jest\": \"*\"\n+      }\n+    },\n     \"@types/uglify-js\": {\n       \"version\": \"3.11.1\",\n       \"resolved\": \"https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.11.1.tgz\",\n@@ -4211,6 +4248,29 @@\n         \"which\": \"^2.0.1\"\n       }\n     },\n+    \"css\": {\n+      \"version\": \"3.0.0\",\n+      \"resolved\": \"https://registry.npmjs.org/css/-/css-3.0.0.tgz\",\n+      \"integrity\": \"sha512-DG9pFfwOrzc+hawpmqX/dHYHJG+Bsdb0klhyi1sDneOgGOXy9wQIC8hzyVp1e4NRYDBdxcylvywPkkXCHAzTyQ==\",\n+      \"dev\": true,\n+      \"requires\": {\n+        \"inherits\": \"^2.0.4\",\n+        \"source-map\": \"^0.6.1\",\n+        \"source-map-resolve\": \"^0.6.0\"\n+      },\n+      \"dependencies\": {\n+        \"source-map-resolve\": {\n+          \"version\": \"0.6.0\",\n+          \"resolved\": \"https://registry.npmjs.org/source-map-resolve/-/source-map-resolve-0.6.0.tgz\",\n+          \"integrity\": \"sha512-KXBr9d/fO/bWo97NXsPIAW1bFSBOuCnjbNTBMO7N59hsv5i9yzRDfcYwwt0l04+VqnKC+EwzvJZIP/qkuMgR/w==\",\n+          \"dev\": true,\n+          \"requires\": {\n+            \"atob\": \"^2.1.2\",\n+            \"decode-uri-component\": \"^0.2.0\"\n+          }\n+        }\n+      }\n+    },\n     \"css-blank-pseudo\": {\n       \"version\": \"0.1.4\",\n       \"resolved\": \"https://registry.npmjs.org/css-blank-pseudo/-/css-blank-pseudo-0.1.4.tgz\",\n@@ -4514,6 +4574,12 @@\n       \"integrity\": \"sha512-teijzG7kwYfNVsUh2H/YN62xW3KK9YhXEgSlbxMlcyjPNvdKJqFx5lrwlJgoFP1ZHlB89iGDlo/JyshKeRhv5A==\",\n       \"dev\": true\n     },\n+    \"css.escape\": {\n+      \"version\": \"1.5.1\",\n+      \"resolved\": \"https://registry.npmjs.org/css.escape/-/css.escape-1.5.1.tgz\",\n+      \"integrity\": \"sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=\",\n+      \"dev\": true\n+    },\n     \"cssdb\": {\n       \"version\": \"4.4.0\",\n       \"resolved\": \"https://registry.npmjs.org/cssdb/-/cssdb-4.4.0.tgz\","
+    },
+    {
+      "sha": "20c17021d715ca4277eb077f4f4520df0b7f6340",
+      "filename": "frontend/package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/345ee8833377d4124cb375f33625dee54877e010/frontend/package.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/345ee8833377d4124cb375f33625dee54877e010/frontend/package.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package.json?ref=345ee8833377d4124cb375f33625dee54877e010",
+      "patch": "@@ -49,6 +49,7 @@\n     \"@prefresh/babel-plugin\": \"^0.4.0\",\n     \"@prefresh/webpack\": \"^3.0.1\",\n     \"@size-limit/file\": \"^4.9.2\",\n+    \"@testing-library/jest-dom\": \"^5.11.9\",\n     \"@testing-library/preact\": \"^2.0.1\",\n     \"@types/classnames\": \"^2.2.11\",\n     \"@types/enzyme\": \"^3.10.8\","
+    }
+  ]
+}
