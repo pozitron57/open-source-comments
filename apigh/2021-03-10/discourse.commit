@@ -1,0 +1,98 @@
+{
+  "sha": "a1df45c6bc4477efcd68cc47272015a9c8e86e34",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphMWRmNDVjNmJjNDQ3N2VmY2Q2OGNjNDcyNzIwMTVhOWM4ZTg2ZTM0",
+  "commit": {
+    "author": {
+      "name": "Alan Guo Xiang Tan",
+      "email": "gxtan1990@gmail.com",
+      "date": "2021-03-10T07:46:11Z"
+    },
+    "committer": {
+      "name": "Alan Guo Xiang Tan",
+      "email": "gxtan1990@gmail.com",
+      "date": "2021-03-10T07:53:22Z"
+    },
+    "message": "UX: Fix broken styling on login modal when local login is disabled.",
+    "tree": {
+      "sha": "3347af1ed123d7279be0c9314eb9d12631ca5e01",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3347af1ed123d7279be0c9314eb9d12631ca5e01"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a1df45c6bc4477efcd68cc47272015a9c8e86e34",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a1df45c6bc4477efcd68cc47272015a9c8e86e34",
+  "html_url": "https://github.com/discourse/discourse/commit/a1df45c6bc4477efcd68cc47272015a9c8e86e34",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a1df45c6bc4477efcd68cc47272015a9c8e86e34/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "10001e4e8d2063cb23936de42c9202f841185719",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/10001e4e8d2063cb23936de42c9202f841185719",
+      "html_url": "https://github.com/discourse/discourse/commit/10001e4e8d2063cb23936de42c9202f841185719"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 6,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "4940173d7d67d6385dc09043a4c73f5270dfd280",
+      "filename": "app/assets/javascripts/discourse/app/templates/modal/login.hbs",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/a1df45c6bc4477efcd68cc47272015a9c8e86e34/app/assets/javascripts/discourse/app/templates/modal/login.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/a1df45c6bc4477efcd68cc47272015a9c8e86e34/app/assets/javascripts/discourse/app/templates/modal/login.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/templates/modal/login.hbs?ref=a1df45c6bc4477efcd68cc47272015a9c8e86e34",
+      "patch": "@@ -73,13 +73,16 @@\n       </div>\n     {{/if}}\n     {{#if showLoginButtons}}\n-      <div class=\"login-right-side\">\n-        {{#if noLoginLocal}}\n+      {{#if noLoginLocal}}\n+        <div class=\"login-left-side\">\n           <div class=\"login-welcome-header\">\n             <h1 class=\"login-title\">{{i18n \"login.header_title\"}}</h1> <img src={{wavingHandURL}} alt=\"\" class=\"waving-hand\">\n             <p class=\"login-subheader\">{{i18n \"login.subheader_title\"}}</p>\n           </div>\n-        {{/if}}\n+        </div>\n+      {{/if}}\n+\n+      <div class=\"login-right-side\">\n         {{login-buttons externalLogin=(action \"externalLogin\")}}\n       </div>\n     {{/if}}"
+    }
+  ]
+}
