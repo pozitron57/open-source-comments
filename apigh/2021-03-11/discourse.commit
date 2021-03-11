@@ -1,0 +1,206 @@
+{
+  "sha": "8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4ZmNhZDczYjM2M2Q0ZWE1ZTQyNDQyYTM4YTIzMWZkNDBiZjE2N2Q3",
+  "commit": {
+    "author": {
+      "name": "Roman Rizzi",
+      "email": "rizziromanalejandro@gmail.com",
+      "date": "2021-03-11T11:21:24Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-03-11T11:21:24Z"
+    },
+    "message": "FEATURE: Admins can flag posts so they can review them later. (#12311)\n\nStaff can send a post to the review queue by clicking the \"Flag Post\" button next to \"Take Action...\". Clicking it flags the post using the \"Notify moderators\" score type and hides it. A custom message will be sent to the user.",
+    "tree": {
+      "sha": "c43c917da9ed8024b77df7baca265643a7fcbe8e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/c43c917da9ed8024b77df7baca265643a7fcbe8e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgSf00CRBK7hj4Ov3rIwAAdHIIAD10GKpuaBsRtHTzl8BKtO0H\n+t4SksCrMbjStEuliEmaOdwxsQxi/+9WuD1irI+wZy6R0w/todHon0cQG1xYnxNW\nrWrpav0fgnbeTRvSVoT282ne8s3MITXyAL0ZJIKviEL72UYBE27HOGTOgE2n3Fcq\nzwj0flCJGqVHGq8UR4fKRViC3kvx+QjzNBrhp5YcDsCFI74z+H0m04L+RRy6cq5l\nBdSd1O8kBk5Rt2tLLy9qOjPWbPhKixVJ6XLReFvycK+qAjZzHa1t5i4gJOVbmSXB\n7se7V2RqvrO74Dq+chmksuTNLfwKAS3AeHGCmCmaDECui+hxSqfiS8Ny0IWJg2c=\n=LSQZ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c43c917da9ed8024b77df7baca265643a7fcbe8e\nparent 0902e56162e200c4d3f2928274b2e2979c53d0c1\nauthor Roman Rizzi <rizziromanalejandro@gmail.com> 1615461684 -0300\ncommitter GitHub <noreply@github.com> 1615461684 -0300\n\nFEATURE: Admins can flag posts so they can review them later. (#12311)\n\nStaff can send a post to the review queue by clicking the \"Flag Post\" button next to \"Take Action...\". Clicking it flags the post using the \"Notify moderators\" score type and hides it. A custom message will be sent to the user."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+  "html_url": "https://github.com/discourse/discourse/commit/8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/8fcad73b363d4ea5e42442a38a231fd40bf167d7/comments",
+  "author": {
+    "login": "romanrizzi",
+    "id": 5025816,
+    "node_id": "MDQ6VXNlcjUwMjU4MTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5025816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romanrizzi",
+    "html_url": "https://github.com/romanrizzi",
+    "followers_url": "https://api.github.com/users/romanrizzi/followers",
+    "following_url": "https://api.github.com/users/romanrizzi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romanrizzi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romanrizzi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romanrizzi/subscriptions",
+    "organizations_url": "https://api.github.com/users/romanrizzi/orgs",
+    "repos_url": "https://api.github.com/users/romanrizzi/repos",
+    "events_url": "https://api.github.com/users/romanrizzi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romanrizzi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0902e56162e200c4d3f2928274b2e2979c53d0c1",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/0902e56162e200c4d3f2928274b2e2979c53d0c1",
+      "html_url": "https://github.com/discourse/discourse/commit/0902e56162e200c4d3f2928274b2e2979c53d0c1"
+    }
+  ],
+  "stats": {
+    "total": 116,
+    "additions": 110,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "1c43f4b0059bdd6fb2a318600dbbae2b8af9ce1f",
+      "filename": "app/assets/javascripts/discourse/app/components/flag-selection.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/components/flag-selection.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/components/flag-selection.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/components/flag-selection.js?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -12,7 +12,10 @@ export default Component.extend({\n       return;\n     }\n \n-    this.element.querySelector(\"#radio_\" + nameKey).checked = \"true\";\n+    const selector = this.element.querySelector(\"#radio_\" + nameKey);\n+    if (selector) {\n+      selector.checked = \"true\";\n+    }\n   },\n \n   @observes(\"nameKey\")"
+    },
+    {
+      "sha": "4872698dc65be1680620a588d18f7a5ca8ca8e6b",
+      "filename": "app/assets/javascripts/discourse/app/controllers/flag.js",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/controllers/flag.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/controllers/flag.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/controllers/flag.js?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -266,6 +266,17 @@ export default Controller.extend(ModalFunctionality, {\n       this.set(\"model.hidden\", true);\n     },\n \n+    flagForReview() {\n+      const notifyModeratorsID = 7;\n+      const notifyModerators = this.flagsAvailable.find(\n+        (f) => f.id === notifyModeratorsID\n+      );\n+      this.set(\"selected\", notifyModerators);\n+\n+      this.send(\"createFlag\", { queue_for_review: true });\n+      this.set(\"model.hidden\", true);\n+    },\n+\n     changePostActionType(action) {\n       this.set(\"selected\", action);\n     },"
+    },
+    {
+      "sha": "6c76700a06e3411f262fab90b24fb5e401a66a90",
+      "filename": "app/assets/javascripts/discourse/app/models/action-summary.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/models/action-summary.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/models/action-summary.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/action-summary.js?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -53,6 +53,7 @@ export default RestModel.extend({\n         message: opts.message,\n         is_warning: opts.isWarning,\n         take_action: opts.takeAction,\n+        queue_for_review: opts.queue_for_review,\n         flag_topic: this.flagTopic ? true : false,\n       },\n       returnXHR: true,"
+    },
+    {
+      "sha": "0cea23d91f0527f04c7794b1547add83495e4606",
+      "filename": "app/assets/javascripts/discourse/app/templates/modal/flag.hbs",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/templates/modal/flag.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/assets/javascripts/discourse/app/templates/modal/flag.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/templates/modal/flag.hbs?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -40,6 +40,13 @@\n         performAction=(action \"takeAction\")\n         reviewableUpdating=submitDisabled\n     }}\n+\n+    {{d-button\n+      class=\"btn-danger\"\n+      action=(action \"flagForReview\")\n+      icon=\"exclamation-triangle\"\n+      label=\"flagging.flag_for_review\"\n+    }}\n   {{/if}}\n \n   {{#if showDeleteSpammer}}"
+    },
+    {
+      "sha": "9e757970446d2edd483fbb12eb0f5d6de7c460ac",
+      "filename": "app/controllers/post_actions_controller.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/controllers/post_actions_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/controllers/post_actions_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/post_actions_controller.rb?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -16,7 +16,8 @@ def create\n       is_warning: params[:is_warning],\n       message: params[:message],\n       take_action: params[:take_action] == 'true',\n-      flag_topic: params[:flag_topic] == 'true'\n+      flag_topic: params[:flag_topic] == 'true',\n+      queue_for_review: params[:queue_for_review] == 'true'\n     )\n     result = creator.perform\n "
+    },
+    {
+      "sha": "5afec60316f1b2da9eaa243514c875108e341d3f",
+      "filename": "app/models/post.rb",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/models/post.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/app/models/post.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post.rb?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -522,7 +522,7 @@ def with_secure_media?\n       (topic.present? && (topic.private_message? || topic.category&.read_restricted))\n   end\n \n-  def hide!(post_action_type_id, reason = nil)\n+  def hide!(post_action_type_id, reason = nil, custom_message: nil)\n     return if hidden?\n \n     reason ||= hidden_at ?\n@@ -554,11 +554,16 @@ def hide!(post_action_type_id, reason = nil)\n         )\n       }\n \n+      message = custom_message\n+      if message.nil?\n+        message = hiding_again ? :post_hidden_again : :post_hidden\n+      end\n+\n       Jobs.enqueue_in(\n         5.seconds,\n         :send_system_message,\n         user_id: user.id,\n-        message_type: hiding_again ? :post_hidden_again : :post_hidden,\n+        message_type: message,\n         message_options: options\n       )\n     end"
+    },
+    {
+      "sha": "f317a7a2a91682c74f16bb10a4b68b7a1cfbbb59",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -3246,6 +3246,7 @@ en:\n       notify_action: \"Message\"\n       official_warning: \"Official Warning\"\n       delete_spammer: \"Delete Spammer\"\n+      flag_for_review: \"Flag Post\"\n \n       # keys ending with _MF use message format, see https://meta.discourse.org/t/message-format-support-for-localization/7035 for details\n       delete_confirm_MF: \"You are about to delete {POSTS, plural, one {<b>#</b> post} other {<b>#</b> posts}} and {TOPICS, plural, one {<b>#</b> topic} other {<b>#</b> topics}} from this user, remove their account, block signups from their IP address <b>{ip_address}</b>, and add their email address <b>{email}</b> to a permanent block list. Are you sure this user is really a spammer?\""
+    },
+    {
+      "sha": "ada1d6e72782861ad1b31a66cb370c8bb9130946",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -2820,6 +2820,20 @@ en:\n         The community flagged this post and now it is hidden. **Because this post has been hidden more than once, your post will now remain hidden until it is handled by a staff member.**\n \n         For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).\n+    \n+    queued_by_staff:\n+      title: \"Post Needs Approval\"\n+      subject_template: \"Post hidden by staff, awaiting approval\"\n+      text_body_template: |\n+        Hello,\n+\n+        This is an automated message from %{site_name} to let you know that your post was hidden.\n+        \n+        <%{base_url}%{url}>\n+\n+        Your post will remain hidden until a staff member reviews it.\n+\n+        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).\n \n     flags_disagreed:\n       title: \"Flagged post restored by staff\"\n@@ -4907,6 +4921,7 @@ en:\n       email_spam: \"This email was flagged as spam by the header defined in `email_in_spam_header`.\"\n       suspect_user: \"This new user entered profile information without reading any topics or posts, which strongly suggests they may be a spammer. See `approve_suspect_users`.\"\n       contains_media: \"This post includes embedded media. See `review_media_unless_trust_level`.\"\n+      queued_by_staff: \"A staff member thinks this post needs review. It'll remain hidden until then.\"\n \n     actions:\n       agree:"
+    },
+    {
+      "sha": "fc7b229718103eb55069958909e6c2186faaba24",
+      "filename": "lib/post_action_creator.rb",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/lib/post_action_creator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/lib/post_action_creator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/post_action_creator.rb?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -39,6 +39,7 @@ def initialize(\n     take_action: false,\n     flag_topic: false,\n     created_at: nil,\n+    queue_for_review: false,\n     reason: nil\n   )\n     @created_by = created_by\n@@ -54,7 +55,13 @@ def initialize(\n     @message = message\n     @flag_topic = flag_topic\n     @meta_post = nil\n+\n     @reason = reason\n+    @queue_for_review = queue_for_review\n+\n+    if reason.nil? && @queue_for_review\n+      @reason = 'queued_by_staff'\n+    end\n   end\n \n   def post_can_act?\n@@ -71,7 +78,7 @@ def post_can_act?\n   def perform\n     result = CreateResult.new\n \n-    unless post_can_act?\n+    if !post_can_act? || (@queue_for_review && !guardian.is_staff?)\n       result.forbidden = true\n       result.add_error(I18n.t(\"invalid_access\"))\n       return result\n@@ -186,7 +193,20 @@ def auto_close_if_threshold_reached\n   def auto_hide_if_needed\n     return if @post.hidden?\n     return if !@created_by.staff? && @post.user&.staff?\n-    return unless PostActionType.auto_action_flag_types.include?(@post_action_name)\n+\n+    not_auto_action_flag_type = !PostActionType.auto_action_flag_types.include?(@post_action_name)\n+    return if not_auto_action_flag_type && !@queue_for_review\n+\n+    if @queue_for_review\n+      @post.topic.update_status('visible', false, @created_by) if @post.is_first_post?\n+\n+      @post.hide!(\n+        @post_action_type_id,\n+        Post.hidden_reasons[:flag_threshold_reached],\n+        custom_message: :queued_by_staff\n+      )\n+      return\n+    end\n \n     if trusted_spam_flagger?\n       @post.hide!(@post_action_type_id, Post.hidden_reasons[:flagged_by_tl3_user])\n@@ -312,6 +332,7 @@ def create_reviewable(result)\n         targets_topic: @targets_topic\n       }\n     )\n+\n     result.reviewable_score = result.reviewable.add_score(\n       @created_by,\n       @post_action_type_id,"
+    },
+    {
+      "sha": "63e5117537a66d28456d809f40ebc451062ead3e",
+      "filename": "spec/components/post_action_creator_spec.rb",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 0,
+      "changes": 39,
+      "blob_url": "https://github.com/discourse/discourse/blob/8fcad73b363d4ea5e42442a38a231fd40bf167d7/spec/components/post_action_creator_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/8fcad73b363d4ea5e42442a38a231fd40bf167d7/spec/components/post_action_creator_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/post_action_creator_spec.rb?ref=8fcad73b363d4ea5e42442a38a231fd40bf167d7",
+      "patch": "@@ -219,4 +219,43 @@\n       expect(reviewable.reload).to be_approved\n     end\n   end\n+\n+  context \"queue_for_review\" do\n+    fab!(:admin) { Fabricate(:admin) }\n+\n+    it 'fails if the user is not a staff member' do\n+      creator = PostActionCreator.new(\n+        user, post,\n+        PostActionType.types[:notify_moderators], queue_for_review: true\n+      )\n+      result = creator.perform\n+\n+      expect(result.success?).to eq(false)\n+    end\n+\n+    it 'creates a new reviewable and hides the post' do\n+      result = build_creator.perform\n+\n+      expect(result.success?).to eq(true)\n+\n+      score = result.reviewable.reviewable_scores.last\n+      expect(score.reason).to eq('queued_by_staff')\n+      expect(post.reload.hidden?).to eq(true)\n+    end\n+\n+    it 'hides the topic even if it has replies' do\n+      Fabricate(:post, topic: post.topic)\n+\n+      result = build_creator.perform\n+\n+      expect(post.topic.reload.visible?).to eq(false)\n+    end\n+\n+    def build_creator\n+      PostActionCreator.new(\n+        admin, post,\n+        PostActionType.types[:notify_moderators], queue_for_review: true\n+      )\n+    end\n+  end\n end"
+    }
+  ]
+}
