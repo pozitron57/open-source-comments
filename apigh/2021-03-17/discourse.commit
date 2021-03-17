@@ -1,0 +1,338 @@
+{
+  "sha": "a23d0f996132746b29c17644a58b3bd00c7144ae",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODphMjNkMGY5OTYxMzI3NDZiMjljMTc2NDRhNThiM2JkMDBjNzE0NGFl",
+  "commit": {
+    "author": {
+      "name": "Osama Sayegh",
+      "email": "asooomaasoooma90@gmail.com",
+      "date": "2021-03-17T05:55:23Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-03-17T05:55:23Z"
+    },
+    "message": "UX: Add image uploader widget for uploading badge images (#12377)\n\nCurrently the process of adding a custom image to badge is quite clunky; you have to upload your image to a topic, and then copy the image URL and pasting it in a text field. Besides being clucky, if the topic or post that contains the image is deleted, the image will be garbage-collected in a few days and the badge will lose the image because the application is not that the image is referenced by a badge.\r\n\r\nThis commit improves that by adding a proper image uploader widget for badge images.",
+    "tree": {
+      "sha": "6bd8b95a4dc42de8ac13a4d3c924648f3338b85f",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/6bd8b95a4dc42de8ac13a4d3c924648f3338b85f"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/a23d0f996132746b29c17644a58b3bd00c7144ae",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgUZnLCRBK7hj4Ov3rIwAAdHIIAGuPqW57nwjmaOtxWLy1EDgu\n45kQ7hkplwhI0Q2aXjZYiu7RRyJFybGIkktIDth/8PA8H5HAbGpHO0qRmFL3DoOL\nlwZHk2L8KOreIYNlzcl+6estq5Nn6Z9xtvbOackLM9j/LhopRDNJ+RH6bCAS42mR\nCsbZ7eEcTJOtwG50IkZ1UZmZNBELkHwfbn48b21Uo3p0wa42D8XSxtNamjxEMr0i\ntfucI0gep05p8keen+tmLo2x9cuXCkkju0JQtGcZ44n297AqaBwh89rlNksrpbek\nUnXc2WfGjuO8nDE8KTaJt+r51yeEIlOMY1htnPiL+sXPilQvFtnKBMAFptI2bKs=\n=qYCL\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 6bd8b95a4dc42de8ac13a4d3c924648f3338b85f\nparent 26bfb5d6b9ba80543958c757816d62f12de004d9\nauthor Osama Sayegh <asooomaasoooma90@gmail.com> 1615960523 +0300\ncommitter GitHub <noreply@github.com> 1615960523 +0300\n\nUX: Add image uploader widget for uploading badge images (#12377)\n\nCurrently the process of adding a custom image to badge is quite clunky; you have to upload your image to a topic, and then copy the image URL and pasting it in a text field. Besides being clucky, if the topic or post that contains the image is deleted, the image will be garbage-collected in a few days and the badge will lose the image because the application is not that the image is referenced by a badge.\r\n\r\nThis commit improves that by adding a proper image uploader widget for badge images."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/a23d0f996132746b29c17644a58b3bd00c7144ae",
+  "html_url": "https://github.com/discourse/discourse/commit/a23d0f996132746b29c17644a58b3bd00c7144ae",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/a23d0f996132746b29c17644a58b3bd00c7144ae/comments",
+  "author": {
+    "login": "OsamaSayegh",
+    "id": 17474474,
+    "node_id": "MDQ6VXNlcjE3NDc0NDc0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17474474?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OsamaSayegh",
+    "html_url": "https://github.com/OsamaSayegh",
+    "followers_url": "https://api.github.com/users/OsamaSayegh/followers",
+    "following_url": "https://api.github.com/users/OsamaSayegh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OsamaSayegh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OsamaSayegh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OsamaSayegh/subscriptions",
+    "organizations_url": "https://api.github.com/users/OsamaSayegh/orgs",
+    "repos_url": "https://api.github.com/users/OsamaSayegh/repos",
+    "events_url": "https://api.github.com/users/OsamaSayegh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OsamaSayegh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "26bfb5d6b9ba80543958c757816d62f12de004d9",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/26bfb5d6b9ba80543958c757816d62f12de004d9",
+      "html_url": "https://github.com/discourse/discourse/commit/26bfb5d6b9ba80543958c757816d62f12de004d9"
+    }
+  ],
+  "stats": {
+    "total": 485,
+    "additions": 457,
+    "deletions": 28
+  },
+  "files": [
+    {
+      "sha": "5e1ed5bb21a6e8945bae38f6d84e8f95727c62e1",
+      "filename": "app/assets/javascripts/admin/addon/controllers/admin-badges-show.js",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 2,
+      "changes": 47,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/admin/addon/controllers/admin-badges-show.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/admin/addon/controllers/admin-badges-show.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/controllers/admin-badges-show.js?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -5,19 +5,27 @@ import bootbox from \"bootbox\";\n import { bufferedProperty } from \"discourse/mixins/buffered-content\";\n import { popupAjaxError } from \"discourse/lib/ajax-error\";\n import { propertyNotEqual } from \"discourse/lib/computed\";\n-import { reads } from \"@ember/object/computed\";\n+import { equal, reads } from \"@ember/object/computed\";\n import { run } from \"@ember/runloop\";\n+import { action } from \"@ember/object\";\n+import getURL from \"discourse-common/lib/get-url\";\n+\n+const IMAGE = \"image\";\n+const ICON = \"icon\";\n \n export default Controller.extend(bufferedProperty(\"model\"), {\n   adminBadges: controller(),\n   saving: false,\n   savingStatus: \"\",\n+  selectedGraphicType: null,\n   badgeTypes: reads(\"adminBadges.badgeTypes\"),\n   badgeGroupings: reads(\"adminBadges.badgeGroupings\"),\n   badgeTriggers: reads(\"adminBadges.badgeTriggers\"),\n   protectedSystemFields: reads(\"adminBadges.protectedSystemFields\"),\n   readOnly: reads(\"buffered.system\"),\n   showDisplayName: propertyNotEqual(\"name\", \"displayName\"),\n+  iconSelectorSelected: equal(\"selectedGraphicType\", ICON),\n+  imageUploaderSelected: equal(\"selectedGraphicType\", IMAGE),\n \n   init() {\n     this._super(...arguments);\n@@ -67,6 +75,41 @@ export default Controller.extend(bufferedProperty(\"model\"), {\n     this.set(\"savingStatus\", \"\");\n   },\n \n+  showIconSelector() {\n+    this.set(\"selectedGraphicType\", ICON);\n+  },\n+\n+  showImageUploader() {\n+    this.set(\"selectedGraphicType\", IMAGE);\n+  },\n+\n+  @action\n+  changeGraphicType(newType) {\n+    if (newType === IMAGE) {\n+      this.showImageUploader();\n+    } else if (newType === ICON) {\n+      this.showIconSelector();\n+    } else {\n+      throw new Error(`Unknown badge graphic type \"${newType}\"`);\n+    }\n+  },\n+\n+  @action\n+  setImage(upload) {\n+    this.buffered.setProperties({\n+      image_upload_id: upload.id,\n+      image_url: getURL(upload.url),\n+    });\n+  },\n+\n+  @action\n+  removeImage() {\n+    this.buffered.setProperties({\n+      image_upload_id: null,\n+      image_url: null,\n+    });\n+  },\n+\n   actions: {\n     save() {\n       if (!this.saving) {\n@@ -82,7 +125,7 @@ export default Controller.extend(bufferedProperty(\"model\"), {\n           \"description\",\n           \"long_description\",\n           \"icon\",\n-          \"image\",\n+          \"image_upload_id\",\n           \"query\",\n           \"badge_grouping_id\",\n           \"trigger\","
+    },
+    {
+      "sha": "7053be216f4ab71c2e0613ed09b36107dc8d7ade",
+      "filename": "app/assets/javascripts/admin/addon/routes/admin-badges-show.js",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/admin/addon/routes/admin-badges-show.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/admin/addon/routes/admin-badges-show.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/routes/admin-badges-show.js?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -23,6 +23,15 @@ export default Route.extend({\n     );\n   },\n \n+  setupController(controller, model) {\n+    this._super(...arguments);\n+    if (model.image_url) {\n+      controller.showImageUploader();\n+    } else if (model.icon) {\n+      controller.showIconSelector();\n+    }\n+  },\n+\n   actions: {\n     saveError(e) {\n       let msg = I18n.t(\"generic_error\");"
+    },
+    {
+      "sha": "e71ed63bb32838c0d77cce0d20f1f9f52296cebf",
+      "filename": "app/assets/javascripts/admin/addon/templates/badges-show.hbs",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 17,
+      "changes": 59,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/admin/addon/templates/badges-show.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/admin/addon/templates/badges-show.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/templates/badges-show.hbs?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -15,23 +15,48 @@\n     </div>\n \n     <div>\n-      <label for=\"icon\">{{i18n \"admin.badges.icon\"}}</label>\n-      {{icon-picker\n-        name=\"icon\"\n-        value=buffered.icon\n-        options=(hash\n-          maximum=1\n-        )\n-        onChange=(action (mut buffered.icon))\n-      }}\n-\n-      <p class=\"help\">{{i18n \"admin.badges.icon_help\"}}</p>\n-    </div>\n-\n-    <div>\n-      <label for=\"image\">{{i18n \"admin.badges.image\"}}</label>\n-      {{input type=\"text\" name=\"image\" value=buffered.image}}\n-      <p class=\"help\">{{i18n \"admin.badges.image_help\"}}</p>\n+      <label for=\"graphic\">{{i18n \"admin.badges.graphic\"}}</label>\n+      <div class=\"radios\">\n+        <label class=\"radio-label\" for=\"badge-icon\">\n+          {{radio-button\n+            name=\"badge-icon\"\n+            id=\"badge-icon\"\n+            value=\"icon\"\n+            selection=selectedGraphicType\n+            onChange=(action \"changeGraphicType\")\n+          }}\n+          <span>{{i18n \"admin.badges.select_an_icon\"}}</span>\n+        </label>\n+\n+        <label class=\"radio-label\" for=\"badge-image\">\n+          {{radio-button\n+            name=\"badge-image\"\n+            id=\"badge-image\"\n+            value=\"image\"\n+            selection=selectedGraphicType\n+            onChange=(action \"changeGraphicType\")\n+          }}\n+          <span>{{i18n \"admin.badges.upload_an_image\"}}</span>\n+        </label>\n+      </div>\n+      {{#if imageUploaderSelected}}\n+        {{image-uploader\n+          imageUrl=buffered.image_url\n+          onUploadDone=(action \"setImage\")\n+          onUploadDeleted=(action \"removeImage\")\n+          type=\"badge_image\"\n+          class=\"no-repeat contain-image\"}}\n+        <div class=\"control-instructions\">\n+          <p class=\"help\">{{i18n \"admin.badges.image_help\"}}</p>\n+        </div>\n+      {{else if iconSelectorSelected}}\n+        {{icon-picker\n+          name=\"icon\"\n+          value=buffered.icon\n+          options=(hash maximum=1)\n+          onChange=(action (mut buffered.icon))\n+        }}\n+      {{/if}}\n     </div>\n \n     <div>"
+    },
+    {
+      "sha": "f9493129a5aab03579cd8cb9c7fa3aa9517749b9",
+      "filename": "app/assets/javascripts/discourse/app/models/badge.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/discourse/app/models/badge.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/discourse/app/models/badge.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/models/badge.js?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -5,10 +5,11 @@ import RestModel from \"discourse/models/rest\";\n import { ajax } from \"discourse/lib/ajax\";\n import discourseComputed from \"discourse-common/utils/decorators\";\n import getURL from \"discourse-common/lib/get-url\";\n-import { none } from \"@ember/object/computed\";\n+import { alias, none } from \"@ember/object/computed\";\n \n const Badge = RestModel.extend({\n   newBadge: none(\"id\"),\n+  image: alias(\"image_url\"),\n \n   @discourseComputed\n   url() {"
+    },
+    {
+      "sha": "3da3a7a4806342daf63bcd8b89225205cfe73c2b",
+      "filename": "app/assets/javascripts/discourse/tests/acceptance/admin-badges-show-test.js",
+      "status": "added",
+      "additions": 101,
+      "deletions": 0,
+      "changes": 101,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/discourse/tests/acceptance/admin-badges-show-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/discourse/tests/acceptance/admin-badges-show-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/acceptance/admin-badges-show-test.js?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -0,0 +1,101 @@\n+import {\n+  acceptance,\n+  exists,\n+  query,\n+} from \"discourse/tests/helpers/qunit-helpers\";\n+import { click, visit } from \"@ember/test-helpers\";\n+import { test } from \"qunit\";\n+\n+acceptance(\"Admin - Badges - Show\", function (needs) {\n+  needs.user();\n+  test(\"new badge page\", async function (assert) {\n+    await visit(\"/admin/badges/new\");\n+    assert.ok(\n+      !query(\"input#badge-icon\").checked,\n+      \"radio button for selecting an icon is off initially\"\n+    );\n+    assert.ok(\n+      !query(\"input#badge-image\").checked,\n+      \"radio button for uploading an image is off initially\"\n+    );\n+    assert.ok(!exists(\".icon-picker\"), \"icon picker is not visible\");\n+    assert.ok(!exists(\".image-uploader\"), \"image uploader is not visible\");\n+\n+    await click(\"input#badge-icon\");\n+    assert.ok(\n+      exists(\".icon-picker\"),\n+      \"icon picker is visible after clicking the select icon radio button\"\n+    );\n+    assert.ok(!exists(\".image-uploader\"), \"image uploader remains hidden\");\n+\n+    await click(\"input#badge-image\");\n+    assert.ok(\n+      !exists(\".icon-picker\"),\n+      \"icon picker is hidden after clicking the upload image radio button\"\n+    );\n+    assert.ok(\n+      exists(\".image-uploader\"),\n+      \"image uploader becomes visible after clicking the upload image radio button\"\n+    );\n+  });\n+\n+  test(\"existing badge that has an icon\", async function (assert) {\n+    await visit(\"/admin/badges/1\");\n+    assert.ok(\n+      query(\"input#badge-icon\").checked,\n+      \"radio button for selecting an icon is on\"\n+    );\n+    assert.ok(\n+      !query(\"input#badge-image\").checked,\n+      \"radio button for uploading an image is off\"\n+    );\n+    assert.ok(exists(\".icon-picker\"), \"icon picker is visible\");\n+    assert.ok(!exists(\".image-uploader\"), \"image uploader is not visible\");\n+    assert.equal(query(\".icon-picker\").textContent.trim(), \"fa-rocket\");\n+  });\n+\n+  test(\"existing badge that has an image URL\", async function (assert) {\n+    await visit(\"/admin/badges/2\");\n+    assert.ok(\n+      !query(\"input#badge-icon\").checked,\n+      \"radio button for selecting an icon is off\"\n+    );\n+    assert.ok(\n+      query(\"input#badge-image\").checked,\n+      \"radio button for uploading an image is on\"\n+    );\n+    assert.ok(!exists(\".icon-picker\"), \"icon picker is not visible\");\n+    assert.ok(exists(\".image-uploader\"), \"image uploader is visible\");\n+    assert.ok(\n+      query(\".image-uploader a.lightbox\").href.endsWith(\n+        \"/assets/some-image.png\"\n+      ),\n+      \"image uploader shows the right image\"\n+    );\n+  });\n+\n+  test(\"existing badge that has both an icon and image URL\", async function (assert) {\n+    await visit(\"/admin/badges/3\");\n+    assert.ok(\n+      !query(\"input#badge-icon\").checked,\n+      \"radio button for selecting an icon is off because image overrides icon\"\n+    );\n+    assert.ok(\n+      query(\"input#badge-image\").checked,\n+      \"radio button for uploading an image is on because image overrides icon\"\n+    );\n+    assert.ok(!exists(\".icon-picker\"), \"icon picker is not visible\");\n+    assert.ok(exists(\".image-uploader\"), \"image uploader is visible\");\n+    assert.ok(\n+      query(\".image-uploader a.lightbox\").href.endsWith(\n+        \"/assets/some-image.png\"\n+      ),\n+      \"image uploader shows the right image\"\n+    );\n+\n+    await click(\"input#badge-icon\");\n+    assert.ok(exists(\".icon-picker\"), \"icon picker is becomes visible\");\n+    assert.ok(!exists(\".image-uploader\"), \"image uploader bcomes hidden\");\n+    assert.equal(query(\".icon-picker\").textContent.trim(), \"fa-rocket\");\n+  });\n+});"
+    },
+    {
+      "sha": "ee4ce84b425987643954a70acf72a05c361409e1",
+      "filename": "app/assets/javascripts/discourse/tests/fixtures/badges-fixture.js",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/discourse/tests/fixtures/badges-fixture.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/javascripts/discourse/tests/fixtures/badges-fixture.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/fixtures/badges-fixture.js?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -1703,5 +1703,30 @@ export default {\n         granted_by_id: -1\n       }\n     ]\n+  },\n+\n+  \"/admin/badges.json\": {\n+    admin_badges: {\n+      triggers: []\n+    },\n+    badge_groupings: [],\n+    badges: [\n+      {\n+        id: 1,\n+        name: \"Only icon\",\n+        icon: \"fa-rocket\",\n+      },\n+      {\n+        id: 2,\n+        name: \"Only image\",\n+        image_url: \"/assets/some-image.png\",\n+      },\n+      {\n+        id: 3,\n+        name: \"Both image and icon\",\n+        icon: \"fa-rocket\",\n+        image_url: \"/assets/some-image.png\",\n+      },\n+    ]\n   }\n };"
+    },
+    {
+      "sha": "d573295cfddd293f81ddf249719434bc66b274d2",
+      "filename": "app/assets/stylesheets/common/admin/badges.scss",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/stylesheets/common/admin/badges.scss",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/assets/stylesheets/common/admin/badges.scss",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/stylesheets/common/admin/badges.scss?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -81,6 +81,14 @@\n     }\n   }\n   .form-horizontal {\n+    .radios {\n+      display: flex;\n+\n+      .radio-label {\n+        margin-right: 1.5em;\n+      }\n+    }\n+\n     .ace-wrapper {\n       position: relative;\n       height: 270px;"
+    },
+    {
+      "sha": "d02069998930cd476638264a2ab19cf6e53b6d5a",
+      "filename": "app/controllers/admin/badges_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/controllers/admin/badges_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/controllers/admin/badges_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/admin/badges_controller.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -9,7 +9,7 @@ def index\n       badge_types: BadgeType.all.order(:id).to_a,\n       badge_groupings: BadgeGrouping.all.order(:position).to_a,\n       badges: Badge.includes(:badge_grouping)\n-        .includes(:badge_type)\n+        .includes(:badge_type, :image_upload)\n         .references(:badge_grouping)\n         .order('badge_groupings.position, badge_type_id, badges.name').to_a,\n       protected_system_fields: Badge.protected_system_fields,"
+    },
+    {
+      "sha": "3b90fce090a3749f3319e38709826faa0cf126fe",
+      "filename": "app/controllers/badges_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/controllers/badges_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/controllers/badges_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/badges_controller.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -17,7 +17,7 @@ def index\n     if (params[:only_listable] == \"true\") || !request.xhr?\n       # NOTE: this is sorted client side if needed\n       badges = badges.includes(:badge_grouping)\n-        .includes(:badge_type)\n+        .includes(:badge_type, :image_upload)\n         .where(enabled: true, listable: true)\n     end\n "
+    },
+    {
+      "sha": "05d0a693011d21e3d6b4b8f6bbddff8daab3d93a",
+      "filename": "app/controllers/user_badges_controller.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/controllers/user_badges_controller.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/controllers/user_badges_controller.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/controllers/user_badges_controller.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -41,7 +41,7 @@ def username\n         .select(UserBadge.attribute_names.map { |x| \"MAX(#{x}) AS #{x}\" }, 'COUNT(*) AS \"count\"')\n     end\n \n-    user_badges = user_badges.includes(badge: [:badge_grouping, :badge_type])\n+    user_badges = user_badges.includes(badge: [:badge_grouping, :badge_type, :image_upload])\n       .includes(post: :topic)\n       .includes(:granted_by)\n "
+    },
+    {
+      "sha": "5585a508c2f2f10907cfbfd7c76cbc129b1b1fe3",
+      "filename": "app/jobs/onceoff/migrate_badge_image_to_uploads.rb",
+      "status": "added",
+      "additions": 91,
+      "deletions": 0,
+      "changes": 91,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/jobs/onceoff/migrate_badge_image_to_uploads.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/jobs/onceoff/migrate_badge_image_to_uploads.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/onceoff/migrate_badge_image_to_uploads.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -0,0 +1,91 @@\n+# frozen_string_literal: true\n+require 'uri'\n+\n+module Jobs\n+  class MigrateBadgeImageToUploads < ::Jobs::Onceoff\n+    def execute_onceoff(args)\n+      column_exists = DB.exec(<<~SQL) == 1\n+        SELECT 1\n+        FROM INFORMATION_SCHEMA.COLUMNS\n+        WHERE\n+          table_schema = 'public' AND\n+          table_name = 'badges' AND\n+          column_name = 'image_upload_id'\n+      SQL\n+      return unless column_exists\n+\n+      Badge.where.not(image: nil).select(:id, :image_upload_id, :image).each do |badge|\n+        if badge.image_upload.present?\n+          DB.exec(\"UPDATE badges SET image = NULL WHERE id = ?\", badge.id)\n+          next\n+        end\n+\n+        image_url = badge[:image]\n+        next if image_url.blank? || image_url !~ URI.regexp\n+\n+        count = 0\n+        file = nil\n+        sleep_interval = 5\n+\n+        loop do\n+          url = UrlHelper.absolute_without_cdn(image_url)\n+\n+          begin\n+            file = FileHelper.download(\n+              url,\n+              max_file_size: [\n+                SiteSetting.max_image_size_kb.kilobytes,\n+                20.megabytes\n+              ].max,\n+              tmp_file_name: 'tmp_badge_image_upload',\n+              skip_rate_limit: true,\n+              follow_redirect: true\n+            )\n+          rescue OpenURI::HTTPError,\n+                 OpenSSL::SSL::SSLError,\n+                 Net::OpenTimeout,\n+                 Net::ReadTimeout,\n+                 Errno::ECONNREFUSED,\n+                 EOFError,\n+                 SocketError,\n+                 Discourse::InvalidParameters => e\n+\n+            logger.error(\n+              \"Error encountered when trying to download from URL '#{image_url}' \" +\n+              \"for badge '#{badge[:id]}'.\\n#{e.class}: #{e.message}\\n#{e.backtrace.join(\"\\n\")}\"\n+            )\n+          end\n+\n+          count += 1\n+          break if file\n+\n+          logger.warn(\n+            \"Failed to download image from #{url} for badge '#{badge[:id]}'. Retrying (#{count}/3)...\"\n+          )\n+          break if count >= 3\n+          sleep(count * sleep_interval)\n+        end\n+\n+        next if file.blank?\n+\n+        upload = UploadCreator.new(\n+          file,\n+          \"image_for_badge_#{badge[:id]}\",\n+          origin: UrlHelper.absolute(image_url)\n+        ).create_for(Discourse.system_user.id)\n+\n+        if upload.errors.count > 0 || upload&.id.blank?\n+          logger.error(\"Failed to create an upload for the image of badge '#{badge[:id]}'. Error: #{upload.errors.full_messages}\")\n+        else\n+          DB.exec(\"UPDATE badges SET image = NULL, image_upload_id = ? WHERE id = ?\", upload.id, badge[:id])\n+        end\n+      end\n+    end\n+\n+    private\n+\n+    def logger\n+      Rails.logger\n+    end\n+  end\n+end"
+    },
+    {
+      "sha": "7b3ee54f075a1d5bfc9c7b3a877202c65b7a28cc",
+      "filename": "app/jobs/scheduled/clean_up_uploads.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/jobs/scheduled/clean_up_uploads.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/jobs/scheduled/clean_up_uploads.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/scheduled/clean_up_uploads.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -43,6 +43,7 @@ def execute(args)\n         .joins(\"LEFT JOIN theme_fields tf ON tf.upload_id = uploads.id\")\n         .joins(\"LEFT JOIN user_exports ue ON ue.upload_id = uploads.id\")\n         .joins(\"LEFT JOIN groups g ON g.flair_upload_id = uploads.id\")\n+        .joins(\"LEFT JOIN badges b ON b.image_upload_id = uploads.id\")\n         .where(\"pu.upload_id IS NULL\")\n         .where(\"u.uploaded_avatar_id IS NULL\")\n         .where(\"ua.gravatar_upload_id IS NULL AND ua.custom_upload_id IS NULL\")\n@@ -52,6 +53,7 @@ def execute(args)\n         .where(\"tf.upload_id IS NULL\")\n         .where(\"ue.upload_id IS NULL\")\n         .where(\"g.flair_upload_id IS NULL\")\n+        .where(\"b.image_upload_id IS NULL\")\n         .where(\"ss.value IS NULL\")\n \n       if SiteSetting.selectable_avatars.present?"
+    },
+    {
+      "sha": "606ecb02d2df43b91bdb187a20b893c5f9f98031",
+      "filename": "app/models/badge.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 1,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/models/badge.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/models/badge.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/badge.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -1,6 +1,11 @@\n # frozen_string_literal: true\n \n class Badge < ActiveRecord::Base\n+  # TODO: Drop in July 2021\n+  self.ignored_columns = %w{image}\n+\n+  include GlobalPath\n+\n   # NOTE: These badge ids are not in order! They are grouped logically.\n   #       When picking an id, *search* for it.\n \n@@ -100,6 +105,7 @@ def self.uses_post_ids?(trigger)\n \n   belongs_to :badge_type\n   belongs_to :badge_grouping\n+  belongs_to :image_upload, class_name: 'Upload'\n \n   has_many :user_badges, dependent: :destroy\n \n@@ -236,7 +242,7 @@ def single_grant?\n   end\n \n   def default_icon=(val)\n-    unless self.image\n+    if self.image_upload_id.blank?\n       self.icon ||= val\n       self.icon = val if self.icon == \"fa-certificate\"\n     end\n@@ -293,6 +299,12 @@ def i18n_name\n     @i18n_name ||= self.class.i18n_name(name)\n   end\n \n+  def image_url\n+    if image_upload_id.present?\n+      upload_cdn_path(image_upload.url)\n+    end\n+  end\n+\n   protected\n \n   def ensure_not_system"
+    },
+    {
+      "sha": "cd837ac1cd91112a0c16ce5007a0d3f78c24a56b",
+      "filename": "app/serializers/badge_serializer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/serializers/badge_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/serializers/badge_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/badge_serializer.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -2,7 +2,7 @@\n \n class BadgeSerializer < ApplicationSerializer\n   attributes :id, :name, :description, :grant_count, :allow_title,\n-             :multiple_grant, :icon, :image, :listable, :enabled, :badge_grouping_id,\n+             :multiple_grant, :icon, :image_url, :listable, :enabled, :badge_grouping_id,\n              :system, :long_description, :slug, :has_badge, :manually_grantable?\n \n   has_one :badge_type"
+    },
+    {
+      "sha": "772de24bb68bb03171430962749a9bf83324560e",
+      "filename": "app/services/staff_action_logger.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/app/services/staff_action_logger.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/app/services/staff_action_logger.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/staff_action_logger.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -323,7 +323,7 @@ def log_user_merge(user, source_username, source_email, opts = {})\n     ))\n   end\n \n-  BADGE_FIELDS ||= %i{id name description long_description icon image badge_type_id\n+  BADGE_FIELDS ||= %i{id name description long_description icon image_upload_id badge_type_id\n     badge_grouping_id query allow_title multiple_grant listable target_posts\n     enabled auto_revoke show_posts system}\n "
+    },
+    {
+      "sha": "dc23536138c839c3319a745098bfd00a9ee40268",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -5094,8 +5094,11 @@ en:\n         enabled: Enable badge\n         icon: Icon\n         image: Image\n+        graphic: Graphic\n         icon_help: \"Enter a Font Awesome icon name (use prefix 'far-' for regular icons and 'fab-' for brand icons)\"\n-        image_help: \"Enter the URL of the image (overrides icon field if both are set)\"\n+        image_help: \"Uploading an image overrides icon field if both are set.\"\n+        select_an_icon: \"Select an Icon\"\n+        upload_an_image: \"Upload an Image\"\n         read_only_setting_help: \"Customize text\"\n         query: Badge Query (SQL)\n         target_posts: Query targets posts"
+    },
+    {
+      "sha": "ed0379bc67102ef751ed91b04072913cb6d62854",
+      "filename": "db/migrate/20210311070755_add_image_upload_id_to_badges.rb",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/db/migrate/20210311070755_add_image_upload_id_to_badges.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/db/migrate/20210311070755_add_image_upload_id_to_badges.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/migrate/20210311070755_add_image_upload_id_to_badges.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -0,0 +1,19 @@\n+# frozen_string_literal: true\n+\n+class AddImageUploadIdToBadges < ActiveRecord::Migration[6.0]\n+  def change\n+    add_column :badges, :image_upload_id, :integer\n+    reversible do |dir|\n+      dir.up do\n+        DB.exec <<~SQL\n+          UPDATE badges b1\n+          SET image_upload_id = u.id\n+          FROM badges b2\n+          INNER JOIN uploads u\n+          ON b2.image ~ CONCAT('/', u.sha1, '\\\\.\\\\w')\n+          WHERE b1.id = b2.id\n+        SQL\n+      end\n+    end\n+  end\n+end"
+    },
+    {
+      "sha": "26275cac180a995692869425449bc6bde48f7514",
+      "filename": "spec/jobs/clean_up_uploads_spec.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/jobs/clean_up_uploads_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/jobs/clean_up_uploads_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/clean_up_uploads_spec.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -295,4 +295,14 @@ def fabricate_upload(attributes = {})\n     expect(Upload.exists?(id: expired_upload.id)).to eq(false)\n     expect(Upload.exists?(id: theme_upload.id)).to eq(true)\n   end\n+\n+  it \"does not delete badges uploads\" do\n+    badge_image = fabricate_upload\n+    badge = Fabricate(:badge, image_upload_id: badge_image.id)\n+\n+    Jobs::CleanUpUploads.new.execute(nil)\n+\n+    expect(Upload.exists?(id: expired_upload.id)).to eq(false)\n+    expect(Upload.exists?(id: badge_image.id)).to eq(true)\n+  end\n end"
+    },
+    {
+      "sha": "702821f3a498adfdce6abf77c2f5c6dedf9e3fe1",
+      "filename": "spec/jobs/migrate_badge_image_to_uploads_spec.rb",
+      "status": "added",
+      "additions": 65,
+      "deletions": 0,
+      "changes": 65,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/jobs/migrate_badge_image_to_uploads_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/jobs/migrate_badge_image_to_uploads_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/migrate_badge_image_to_uploads_spec.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -0,0 +1,65 @@\n+# frozen_string_literal: true\n+\n+require 'rails_helper'\n+\n+RSpec.describe Jobs::MigrateBadgeImageToUploads do\n+  let(:image_url) { \"https://omg.aws.somestack/test.png\" }\n+  let(:badge) { Fabricate(:badge) }\n+\n+  before do\n+    @orig_logger = Rails.logger\n+    Rails.logger = @fake_logger = FakeLogger.new\n+  end\n+\n+  after do\n+    Rails.logger = @orig_logger\n+  end\n+\n+  it 'should migrate to the new badge `image_upload_id` column correctly' do\n+    stub_request(:get, image_url).to_return(\n+      status: 200, body: file_from_fixtures(\"smallest.png\").read\n+    )\n+    DB.exec(<<~SQL, flair_url: image_url, id: badge.id)\n+      UPDATE badges SET image = :flair_url WHERE id = :id\n+    SQL\n+\n+    expect do\n+      described_class.new.execute_onceoff({})\n+    end.to change { Upload.count }.by(1)\n+\n+    badge.reload\n+    upload = Upload.last\n+    expect(badge.image_upload).to eq(upload)\n+    expect(badge.image_url).to eq(upload.url)\n+    expect(badge[:image]).to eq(nil)\n+  end\n+\n+  it 'should skip badges with invalid flair URLs' do\n+    DB.exec(\"UPDATE badges SET image = 'abc' WHERE id = ?\", badge.id)\n+    described_class.new.execute_onceoff({})\n+    expect(Rails.logger.warnings.count).to eq(0)\n+    expect(Rails.logger.errors.count).to eq(0)\n+  end\n+\n+  # this case has a couple of hacks that are needed to test this behavior, so if it\n+  # starts failing randomly in the future, I'd just delete it and not bother with it\n+  it 'should not keep retrying forever if download fails' do\n+    stub_request(:get, image_url).to_return(status: 403)\n+    instance = described_class.new\n+    instance.expects(:sleep).times(2)\n+\n+    DB.exec(<<~SQL, flair_url: image_url, id: badge.id)\n+      UPDATE badges SET image = :flair_url WHERE id = :id\n+    SQL\n+\n+    expect do\n+      instance.execute_onceoff({})\n+    end.not_to change { Upload.count }\n+\n+    badge.reload\n+    expect(badge.image_upload).to eq(nil)\n+    expect(badge.image_url).to eq(nil)\n+    expect(Badge.where(id: badge.id).select(:image).first[:image]).to eq(image_url)\n+    expect(Rails.logger.warnings.count).to eq(3)\n+  end\n+end"
+    },
+    {
+      "sha": "f20a5b82a66359daf56956acea69948665021b81",
+      "filename": "spec/models/badge_spec.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/models/badge_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/models/badge_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/badge_spec.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -71,6 +71,16 @@\n     end\n   end\n \n+  describe '#image_url' do\n+    it 'has CDN url' do\n+      SiteSetting.enable_s3_uploads = true\n+      SiteSetting.s3_cdn_url = \"https://some-s3-cdn.amzn.com\"\n+      upload = Fabricate(:upload_s3)\n+      badge = Fabricate(:badge, image_upload_id: upload.id)\n+      expect(badge.image_url).to start_with(\"https://some-s3-cdn.amzn.com\")\n+    end\n+  end\n+\n   describe '.i18n_name' do\n     it 'transforms to lower case letters, and replaces spaces with underscores' do\n       expect(Badge.i18n_name('Basic User')).to eq('basic_user')"
+    },
+    {
+      "sha": "b6d26dc3b2133a2951a59caae1e9c7e52ee53468",
+      "filename": "spec/requests/admin/badges_controller_spec.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/discourse/discourse/blob/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/requests/admin/badges_controller_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/a23d0f996132746b29c17644a58b3bd00c7144ae/spec/requests/admin/badges_controller_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/requests/admin/badges_controller_spec.rb?ref=a23d0f996132746b29c17644a58b3bd00c7144ae",
+      "patch": "@@ -138,20 +138,25 @@\n       it 'updates the badge' do\n         SiteSetting.enable_badge_sql = true\n         sql = \"select id user_id, created_at granted_at from users\"\n+        image = Fabricate(:upload)\n \n         put \"/admin/badges/#{badge.id}.json\", params: {\n           name: \"123456\",\n           query: sql,\n           badge_type_id: badge.badge_type_id,\n           allow_title: false,\n           multiple_grant: false,\n-          enabled: true\n+          enabled: true,\n+          image_upload_id: image.id,\n+          icon: \"fa-rocket\",\n         }\n \n         expect(response.status).to eq(200)\n         badge.reload\n         expect(badge.name).to eq('123456')\n         expect(badge.query).to eq(sql)\n+        expect(badge.image_upload.id).to eq(image.id)\n+        expect(badge.icon).to eq(\"fa-rocket\")\n       end\n \n       context 'when there is a user with a title granted using the badge' do"
+    }
+  ]
+}
