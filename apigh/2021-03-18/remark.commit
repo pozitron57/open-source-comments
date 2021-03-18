@@ -1,0 +1,98 @@
+{
+  "sha": "4254169636d64bbd5c097bcd5c7864c7076bb24f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjQyNTQxNjk2MzZkNjRiYmQ1YzA5N2JjZDVjNzg2NGM3MDc2YmIyNGY=",
+  "commit": {
+    "author": {
+      "name": "Michael Picht",
+      "email": "mipi@fsfe.org",
+      "date": "2021-03-16T09:54:39Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-03-18T05:47:49Z"
+    },
+    "message": "corrected path in docker command to import comments from disqus\n\nSigned-off-by: Michael Picht <mipi@fsfe.org>",
+    "tree": {
+      "sha": "5e1d45503d50d4b01c59c283033e716bc553bca0",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/5e1d45503d50d4b01c59c283033e716bc553bca0"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/4254169636d64bbd5c097bcd5c7864c7076bb24f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/4254169636d64bbd5c097bcd5c7864c7076bb24f",
+  "html_url": "https://github.com/umputun/remark42/commit/4254169636d64bbd5c097bcd5c7864c7076bb24f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/4254169636d64bbd5c097bcd5c7864c7076bb24f/comments",
+  "author": {
+    "login": "mipimipi",
+    "id": 29515387,
+    "node_id": "MDQ6VXNlcjI5NTE1Mzg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29515387?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mipimipi",
+    "html_url": "https://github.com/mipimipi",
+    "followers_url": "https://api.github.com/users/mipimipi/followers",
+    "following_url": "https://api.github.com/users/mipimipi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mipimipi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mipimipi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mipimipi/subscriptions",
+    "organizations_url": "https://api.github.com/users/mipimipi/orgs",
+    "repos_url": "https://api.github.com/users/mipimipi/repos",
+    "events_url": "https://api.github.com/users/mipimipi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mipimipi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "682758a58ec50642858edb2c92e52d7410aa3718",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/682758a58ec50642858edb2c92e52d7410aa3718",
+      "html_url": "https://github.com/umputun/remark42/commit/682758a58ec50642858edb2c92e52d7410aa3718"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "a0fed28f0ffce0d62f68bb54aac02962017c9845",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/4254169636d64bbd5c097bcd5c7864c7076bb24f/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/4254169636d64bbd5c097bcd5c7864c7076bb24f/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=4254169636d64bbd5c097bcd5c7864c7076bb24f",
+      "patch": "@@ -339,7 +339,7 @@ All imported comments has `Imported` field set to `true`.\n \n 1.  Disqus provides an export of all comments on your site in a g-zipped file. This is found in your Moderation panel at Disqus Admin > Setup > Export. The export will be sent into a queue and then emailed to the address associated with your account once it's ready. Direct link to export will be something like `https://<siteud>.disqus.com/admin/discussions/export/`. See [importing-exporting](https://help.disqus.com/customer/portal/articles/1104797-importing-exporting) for more details.\n 2.  Move this file to your remark42 host within `./var` and unzip, i.e. `gunzip <disqus-export-name>.xml.gz`.\n-3.  Run import command - `docker exec -it remark42 import -p disqus -f {disqus-export-name}.xml -s {your site id}`\n+3.  Run import command - `docker exec -it remark42 import -p disqus -f /srv/var/{disqus-export-name}.xml -s {your site id}`\n \n #### Initial import from WordPress\n "
+    }
+  ]
+}
