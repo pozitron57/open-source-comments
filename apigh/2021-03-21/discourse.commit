@@ -1,0 +1,110 @@
+{
+  "sha": "56a573ab4bfc953e711de40d5984ceea68c1d58b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo1NmE1NzNhYjRiZmM5NTNlNzExZGU0MGQ1OTg0Y2VlYTY4YzFkNThi",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2021-03-19T19:55:44Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-03-19T19:55:44Z"
+    },
+    "message": "DEV: Remove String#match? and Regexp.match? polyfills (#12454)\n\nThis was added in Ruby 2.4. Discourse will no longer run on ruby versions older than that, so we can drop this polyfill",
+    "tree": {
+      "sha": "1d2dd0f3be6b4adcbb3cce830b025bea85e85e86",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/1d2dd0f3be6b4adcbb3cce830b025bea85e85e86"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/56a573ab4bfc953e711de40d5984ceea68c1d58b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgVQHBCRBK7hj4Ov3rIwAAdHIIAJ9PczRmX429au6Cn0WOHn88\nb+R5ZOnj+sPA5wUPDm+WwN44dKr6GnSAFbbl2ffZRhhqgC+SzkOmFY2q7otpQVjo\nFsG8xblNS2lxV3+4kUduZ8voia3rRCHVUxadxjkQDJPBEEkiDIRTOc6AqorBYdQi\nYM6sSoR6jf45Y24heYB0sXpZxhRVkmWE7bBFCZglp/usgvOccgawmovfTVONTu7f\niIhA1g0XBiBY7xzzNzybQank57IjYH2LnG++RWb4HAE/yNoLqNf5M5Vl5r3+Sjit\nmY+557Nq3RPR9QnmYvH2TclBxVyVvj8D5zDN3o3Ni/udB7MT70GDp7M0XObqSlo=\n=2QHY\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1d2dd0f3be6b4adcbb3cce830b025bea85e85e86\nparent 374ab82dd6767056b34a48270f587b20f482bb33\nauthor David Taylor <david@taylorhq.com> 1616183744 +0000\ncommitter GitHub <noreply@github.com> 1616183744 +0000\n\nDEV: Remove String#match? and Regexp.match? polyfills (#12454)\n\nThis was added in Ruby 2.4. Discourse will no longer run on ruby versions older than that, so we can drop this polyfill"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/56a573ab4bfc953e711de40d5984ceea68c1d58b",
+  "html_url": "https://github.com/discourse/discourse/commit/56a573ab4bfc953e711de40d5984ceea68c1d58b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/56a573ab4bfc953e711de40d5984ceea68c1d58b/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "374ab82dd6767056b34a48270f587b20f482bb33",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/374ab82dd6767056b34a48270f587b20f482bb33",
+      "html_url": "https://github.com/discourse/discourse/commit/374ab82dd6767056b34a48270f587b20f482bb33"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 0,
+    "deletions": 21
+  },
+  "files": [
+    {
+      "sha": "4190aec352504d0d8e5fb737329a41b8b5ab103b",
+      "filename": "lib/freedom_patches/match.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 10,
+      "changes": 10,
+      "blob_url": "https://github.com/discourse/discourse/blob/374ab82dd6767056b34a48270f587b20f482bb33/lib/freedom_patches/match.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/374ab82dd6767056b34a48270f587b20f482bb33/lib/freedom_patches/match.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/freedom_patches/match.rb?ref=374ab82dd6767056b34a48270f587b20f482bb33",
+      "patch": "@@ -1,10 +0,0 @@\n-# frozen_string_literal: true\n-\n-class String\n-  # new to Ruby 2.4, fastest way of matching a string to a regex\n-  unless method_defined? :match?\n-    def match?(regex)\n-      !!(self =~ regex)\n-    end\n-  end\n-end"
+    },
+    {
+      "sha": "4dd6f7a55d11260535b9bc1aa52c93a29b6e189c",
+      "filename": "lib/freedom_patches/regexp.rb",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 11,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/374ab82dd6767056b34a48270f587b20f482bb33/lib/freedom_patches/regexp.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/374ab82dd6767056b34a48270f587b20f482bb33/lib/freedom_patches/regexp.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/freedom_patches/regexp.rb?ref=374ab82dd6767056b34a48270f587b20f482bb33",
+      "patch": "@@ -1,11 +0,0 @@\n-# frozen_string_literal: true\n-\n-unless ::Regexp.instance_methods.include?(:match?)\n-  class ::Regexp\n-    # this is the fast way of checking a regex (zero string allocs) added in Ruby 2.4\n-    # backfill it for now\n-    def match?(string)\n-      !!(string =~ self)\n-    end\n-  end\n-end"
+    }
+  ]
+}
