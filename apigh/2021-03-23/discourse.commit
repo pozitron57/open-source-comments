@@ -1,0 +1,110 @@
+{
+  "sha": "d7bd62d9cf8810e6bd01d79e29a4d0a7847db294",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkN2JkNjJkOWNmODgxMGU2YmQwMWQ3OWUyOWE0ZDBhNzg0N2RiMjk0",
+  "commit": {
+    "author": {
+      "name": "Bianca Nenciu",
+      "email": "nbianca@users.noreply.github.com",
+      "date": "2021-03-23T11:09:24Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-03-23T11:09:24Z"
+    },
+    "message": "FIX: Replace censored watched word consistently (#12486)\n\nApplying oneboxes and replacing censored watched words does not happen\r\nin a strict order which often lead to inconsistencies. This commit\r\nfixes the behavior and will never censor oneboxes.\r\n\r\nTo make it always censor oneboxes implies significant changes to the\r\nPrettyText pipeline.",
+    "tree": {
+      "sha": "48903876cb1e9d1b8621f9a29a6dcc07e303a66b",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/48903876cb1e9d1b8621f9a29a6dcc07e303a66b"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgWcxkCRBK7hj4Ov3rIwAAdHIIAFCFLM+VwZrgqPv17ZKnf2tv\nx4zef3lk9AyQkMlh7dn7Okv34hKqyvjv/Ra7ePhuqO7pG+A+/rTSH9rSj3+opygN\nkeUmhMgiBvj15LAcLG7QzTQuvIWeTvJccExJnq3Ig+cwln75Sg9/ww8IPSA6pZhP\nKp4TJV7M95KkORQsIU2oJCp0BYF9cXYsrCx0zt1MNFgCK8jr7KP27J/OcEml//Dv\nR3x9wbuBzSQJxUdYMu80Vxqar7veQOoTWGCnzv7n5WH6KuZuVSJbjEi23ZaQt77L\nmpFcFh5l7EBImaDtFo3f99prHErSxeYU15+LiixHX6OMDEAJ0RPAdsHPEwTDmRE=\n=o9a0\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 48903876cb1e9d1b8621f9a29a6dcc07e303a66b\nparent deb9e3cd22ca540c3b9a581e7f7e9c2539e4b7bb\nauthor Bianca Nenciu <nbianca@users.noreply.github.com> 1616497764 +0200\ncommitter GitHub <noreply@github.com> 1616497764 +0200\n\nFIX: Replace censored watched word consistently (#12486)\n\nApplying oneboxes and replacing censored watched words does not happen\r\nin a strict order which often lead to inconsistencies. This commit\r\nfixes the behavior and will never censor oneboxes.\r\n\r\nTo make it always censor oneboxes implies significant changes to the\r\nPrettyText pipeline."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294",
+  "html_url": "https://github.com/discourse/discourse/commit/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294/comments",
+  "author": {
+    "login": "nbianca",
+    "id": 23153890,
+    "node_id": "MDQ6VXNlcjIzMTUzODkw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23153890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nbianca",
+    "html_url": "https://github.com/nbianca",
+    "followers_url": "https://api.github.com/users/nbianca/followers",
+    "following_url": "https://api.github.com/users/nbianca/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nbianca/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nbianca/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nbianca/subscriptions",
+    "organizations_url": "https://api.github.com/users/nbianca/orgs",
+    "repos_url": "https://api.github.com/users/nbianca/repos",
+    "events_url": "https://api.github.com/users/nbianca/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nbianca/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "deb9e3cd22ca540c3b9a581e7f7e9c2539e4b7bb",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/deb9e3cd22ca540c3b9a581e7f7e9c2539e4b7bb",
+      "html_url": "https://github.com/discourse/discourse/commit/deb9e3cd22ca540c3b9a581e7f7e9c2539e4b7bb"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "0280d5d411f640f90281b39dcc7e00124b79a1ca",
+      "filename": "app/assets/javascripts/pretty-text/engines/discourse-markdown/censored.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294/app/assets/javascripts/pretty-text/engines/discourse-markdown/censored.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294/app/assets/javascripts/pretty-text/engines/discourse-markdown/censored.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/engines/discourse-markdown/censored.js?ref=d7bd62d9cf8810e6bd01d79e29a4d0a7847db294",
+      "patch": "@@ -3,6 +3,10 @@ import { censorFn } from \"pretty-text/censored-words\";\n function recurse(tokens, apply) {\n   let i;\n   for (i = 0; i < tokens.length; i++) {\n+    if (tokens[i].type === \"html_raw\" && tokens[i].onebox) {\n+      continue;\n+    }\n+\n     apply(tokens[i]);\n     if (tokens[i].children) {\n       recurse(tokens[i].children, apply);"
+    },
+    {
+      "sha": "173964f17c4929a424803f8e5bfd87e1155c7387",
+      "filename": "app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294/app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/d7bd62d9cf8810e6bd01d79e29a4d0a7847db294/app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/pretty-text/engines/discourse-markdown/onebox.js?ref=d7bd62d9cf8810e6bd01d79e29a4d0a7847db294",
+      "patch": "@@ -81,6 +81,7 @@ function applyOnebox(state, silent) {\n               child.type = \"html_raw\";\n               child.content = cached;\n               child.inline = true;\n+              child.onebox = true;\n \n               text.type = \"html_raw\";\n               text.content = \"\";"
+    }
+  ]
+}
