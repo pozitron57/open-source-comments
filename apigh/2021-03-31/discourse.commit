@@ -1,0 +1,110 @@
+{
+  "sha": "e8c576cca9ac1d8c7b09a8eb943a3e55134c7535",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODplOGM1NzZjY2E5YWMxZDhjN2IwOWE4ZWI5NDNhM2U1NTEzNGM3NTM1",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2021-03-31T10:42:53Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-03-31T10:42:53Z"
+    },
+    "message": "FIX: User fields are case insensitive in bulk CSV (#12559)\n\nThe CSV column title had to be case sensitive match with the name of\r\nthe user field which was unnecessary complex.",
+    "tree": {
+      "sha": "e553b7cb86e6498015cb0cf1f33b5b1bec07dc20",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e553b7cb86e6498015cb0cf1f33b5b1bec07dc20"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgZFItCRBK7hj4Ov3rIwAAdHIIAB2vq1TxBMBbqEgseu2Imdcb\noD+AB4Fju/XBVtxk6sH5blFGn5aTnl41M2r2gxPF13235vCoS3Llptr9robpYAb2\nDGraQtIQn/I+4MN+DiMDV/HgcaI4VEEvm41ESUxBIa1p3OLzQ8kiqRC11EQRiVR8\nTVP7qHGtvvkWnGgJZGn2z2aaJiZYGpg6Fkorq4ZNcwbSNfhc4/C23yvj58yCq+Jo\nnVhQhaOwXF5Omap1y3q+Rfx9U5VSvBH8l0JF9E9JXI78hUTtOppRIkpQQg+CZf37\n5v7mk/XWoWH4NCnEUIa80NKqXz9U6XdvezDt+wfPIIw6BFQH0dO6Zmk08HCUyYA=\n=qZef\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e553b7cb86e6498015cb0cf1f33b5b1bec07dc20\nparent dce48d8aa7eea516c451b9ac114ec0efd664b783\nauthor Dan Ungureanu <dan@ungureanu.me> 1617187373 +0300\ncommitter GitHub <noreply@github.com> 1617187373 +0300\n\nFIX: User fields are case insensitive in bulk CSV (#12559)\n\nThe CSV column title had to be case sensitive match with the name of\r\nthe user field which was unnecessary complex."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535",
+  "html_url": "https://github.com/discourse/discourse/commit/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dce48d8aa7eea516c451b9ac114ec0efd664b783",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/dce48d8aa7eea516c451b9ac114ec0efd664b783",
+      "html_url": "https://github.com/discourse/discourse/commit/dce48d8aa7eea516c451b9ac114ec0efd664b783"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "5a4d848d9348127f47050ce7de27d82b6ebc9844",
+      "filename": "app/jobs/regular/bulk_invite.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535/app/jobs/regular/bulk_invite.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535/app/jobs/regular/bulk_invite.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/regular/bulk_invite.rb?ref=e8c576cca9ac1d8c7b09a8eb943a3e55134c7535",
+      "patch": "@@ -93,7 +93,7 @@ def get_user_fields(fields)\n       user_fields = {}\n \n       fields.each do |key, value|\n-        @user_fields[key] ||= UserField.find_by(name: key)&.id || :nil\n+        @user_fields[key] ||= UserField.where('name ILIKE ?', key).pluck_first(:id) || :nil\n         user_fields[@user_fields[key]] = value if @user_fields[key] != :nil\n       end\n "
+    },
+    {
+      "sha": "f229dbd026f3d150049a98ead363084edb1ffa17",
+      "filename": "spec/jobs/bulk_invite_spec.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535/spec/jobs/bulk_invite_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/e8c576cca9ac1d8c7b09a8eb943a3e55134c7535/spec/jobs/bulk_invite_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/bulk_invite_spec.rb?ref=e8c576cca9ac1d8c7b09a8eb943a3e55134c7535",
+      "patch": "@@ -82,14 +82,14 @@\n     end\n \n     it 'can create staged users and prepulate user fields' do\n-      user_field = Fabricate(:user_field)\n+      user_field = Fabricate(:user_field, name: \"Location\")\n       described_class.new.execute(\n         current_user_id: admin.id,\n         invites: [\n           { email: 'test@discourse.org' }, # new user without user fields\n-          { email: user.email, user_field.name => 'value 1' }, # existing user with user fields\n-          { email: staged_user.email, user_field.name => 'value 2' }, # existing staged user with user fields\n-          { email: 'test2@discourse.org', user_field.name => 'value 3' } # new staged user with user fields\n+          { email: user.email, location: 'value 1' }, # existing user with user fields\n+          { email: staged_user.email, location: 'value 2' }, # existing staged user with user fields\n+          { email: 'test2@discourse.org', location: 'value 3' } # new staged user with user fields\n         ]\n       )\n "
+    }
+  ]
+}
