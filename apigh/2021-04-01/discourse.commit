@@ -1,0 +1,110 @@
+{
+  "sha": "3db08c073b457db68a33d48bbd3c3e4e774fded4",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODozZGIwOGMwNzNiNDU3ZGI2OGEzM2Q0OGJiZDNjM2U0ZTc3NGZkZWQ0",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2021-04-01T11:09:28Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-04-01T11:09:28Z"
+    },
+    "message": "FIX: \"confirm new email\" emails were failing for EmailChangeRequest records with blank requested_by_user_id field (#12579)",
+    "tree": {
+      "sha": "637b31ce824864b37cd15dd6a08e074ca6624cf4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/637b31ce824864b37cd15dd6a08e074ca6624cf4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/3db08c073b457db68a33d48bbd3c3e4e774fded4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgZanoCRBK7hj4Ov3rIwAAdHIIAJEmTdTQFxiy4iYZtSTTvyHw\nAaoy5Fw0+6QaoNWMPux/W4n4yaAfCkbJ+va9VbCgVUCao+OxmOB03ryUZVdAGD43\nMYOUzx8YynjSziEI3Op1isgpoI36V9wu3GcihlDMv5ITZg2foGNC+1tc9Ytbim4E\nB0Q/e/SRI72cF4xDh13toNyC5qIVHQkp37vrU0nJICQEksusbRYkS//eNpHoMRiX\nXL2RsZoSD2vXKk6/fOBDShe8JmsDUHrSH2pP3Of7YtQOQyQgIhtjs8V0DdEkX1gv\njdKPxkB/x29pASOwF9agHDbbWtjyx6wjSO+jndCd3J8yoC245Rmw+eGqGSEikcQ=\n=4J1d\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 637b31ce824864b37cd15dd6a08e074ca6624cf4\nparent 61860098d979933348dd95e144d1b9ccec1fcdd8\nauthor Arpit Jalan <arpit@techapj.com> 1617275368 +0530\ncommitter GitHub <noreply@github.com> 1617275368 +0530\n\nFIX: \"confirm new email\" emails were failing for EmailChangeRequest records with blank requested_by_user_id field (#12579)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/3db08c073b457db68a33d48bbd3c3e4e774fded4",
+  "html_url": "https://github.com/discourse/discourse/commit/3db08c073b457db68a33d48bbd3c3e4e774fded4",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/3db08c073b457db68a33d48bbd3c3e4e774fded4/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "61860098d979933348dd95e144d1b9ccec1fcdd8",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/61860098d979933348dd95e144d1b9ccec1fcdd8",
+      "html_url": "https://github.com/discourse/discourse/commit/61860098d979933348dd95e144d1b9ccec1fcdd8"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 10,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "60b0d04183dfaac3a0e2003192283e2fa778743d",
+      "filename": "app/models/email_change_request.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/3db08c073b457db68a33d48bbd3c3e4e774fded4/app/models/email_change_request.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3db08c073b457db68a33d48bbd3c3e4e774fded4/app/models/email_change_request.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/email_change_request.rb?ref=3db08c073b457db68a33d48bbd3c3e4e774fded4",
+      "patch": "@@ -13,7 +13,7 @@ def self.states\n   end\n \n   def requested_by_admin?\n-    self.requested_by.admin? && !self.requested_by_self?\n+    self.requested_by&.admin? && !self.requested_by_self?\n   end\n \n   def requested_by_self?"
+    },
+    {
+      "sha": "c91ed8e6d02f11bab0ffede0109371918a30d22e",
+      "filename": "spec/jobs/user_email_spec.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/3db08c073b457db68a33d48bbd3c3e4e774fded4/spec/jobs/user_email_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/3db08c073b457db68a33d48bbd3c3e4e774fded4/spec/jobs/user_email_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/user_email_spec.rb?ref=3db08c073b457db68a33d48bbd3c3e4e774fded4",
+      "patch": "@@ -321,6 +321,15 @@\n           expect(mail.body).not_to include(\"This email change was requested by a site admin.\")\n         end\n       end\n+\n+      context \"when requested_by record is not present\" do\n+        let(:requested_by) { nil }\n+        it \"passes along false for the requested_by_admin param which changes the wording in the email\" do\n+          Jobs::UserEmail.new.execute(type: :confirm_new_email, user_id: user.id, email_token: email_token.token)\n+          mail = ActionMailer::Base.deliveries.first\n+          expect(mail.body).not_to include(\"This email change was requested by a site admin.\")\n+        end\n+      end\n     end\n \n     context \"post\" do"
+    }
+  ]
+}
