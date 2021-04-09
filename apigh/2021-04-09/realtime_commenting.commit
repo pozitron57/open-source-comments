@@ -1,0 +1,98 @@
+{
+  "sha": "9926833c3a33bd194bd69df34bc48d96e4da40b1",
+  "node_id": "MDY6Q29tbWl0MzUzMTI5Mzo5OTI2ODMzYzNhMzNiZDE5NGJkNjlkZjM0YmM0OGQ5NmU0ZGE0MGIx",
+  "commit": {
+    "author": {
+      "name": "zimbatm",
+      "email": "zimbatm@zimbatm.com",
+      "date": "2016-04-22T10:38:35Z"
+    },
+    "committer": {
+      "name": "zimbatm",
+      "email": "zimbatm@zimbatm.com",
+      "date": "2016-04-22T10:39:42Z"
+    },
+    "message": "Avoids potential duplicates\n\nThis could theoritically happen if the page is loaded and the pusher\nevent happens at the same time.",
+    "tree": {
+      "sha": "44c71a9808f02dec3de5fe5863b165b57a043750",
+      "url": "https://api.github.com/repos/pusher-community/realtime-commenting/git/trees/44c71a9808f02dec3de5fe5863b165b57a043750"
+    },
+    "url": "https://api.github.com/repos/pusher-community/realtime-commenting/git/commits/9926833c3a33bd194bd69df34bc48d96e4da40b1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/pusher-community/realtime-commenting/commits/9926833c3a33bd194bd69df34bc48d96e4da40b1",
+  "html_url": "https://github.com/pusher-community/realtime-commenting/commit/9926833c3a33bd194bd69df34bc48d96e4da40b1",
+  "comments_url": "https://api.github.com/repos/pusher-community/realtime-commenting/commits/9926833c3a33bd194bd69df34bc48d96e4da40b1/comments",
+  "author": {
+    "login": "zimbatm",
+    "id": 3248,
+    "node_id": "MDQ6VXNlcjMyNDg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3248?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zimbatm",
+    "html_url": "https://github.com/zimbatm",
+    "followers_url": "https://api.github.com/users/zimbatm/followers",
+    "following_url": "https://api.github.com/users/zimbatm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zimbatm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zimbatm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zimbatm/subscriptions",
+    "organizations_url": "https://api.github.com/users/zimbatm/orgs",
+    "repos_url": "https://api.github.com/users/zimbatm/repos",
+    "events_url": "https://api.github.com/users/zimbatm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zimbatm/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zimbatm",
+    "id": 3248,
+    "node_id": "MDQ6VXNlcjMyNDg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3248?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zimbatm",
+    "html_url": "https://github.com/zimbatm",
+    "followers_url": "https://api.github.com/users/zimbatm/followers",
+    "following_url": "https://api.github.com/users/zimbatm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zimbatm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zimbatm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zimbatm/subscriptions",
+    "organizations_url": "https://api.github.com/users/zimbatm/orgs",
+    "repos_url": "https://api.github.com/users/zimbatm/repos",
+    "events_url": "https://api.github.com/users/zimbatm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zimbatm/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0c5447fa2554e09f18a74bc5b57c5b8998eb682f",
+      "url": "https://api.github.com/repos/pusher-community/realtime-commenting/commits/0c5447fa2554e09f18a74bc5b57c5b8998eb682f",
+      "html_url": "https://github.com/pusher-community/realtime-commenting/commit/0c5447fa2554e09f18a74bc5b57c5b8998eb682f"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "64d74f6b91b491b66ef507d2cb4cdd568589b7af",
+      "filename": "js/app.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/pusher-community/realtime-commenting/blob/9926833c3a33bd194bd69df34bc48d96e4da40b1/js/app.js",
+      "raw_url": "https://github.com/pusher-community/realtime-commenting/raw/9926833c3a33bd194bd69df34bc48d96e4da40b1/js/app.js",
+      "contents_url": "https://api.github.com/repos/pusher-community/realtime-commenting/contents/js/app.js?ref=9926833c3a33bd194bd69df34bc48d96e4da40b1",
+      "patch": "@@ -44,6 +44,10 @@ function postError(jqXHR, textStatus, errorThrown) {\n }\n \n function displayComment(data) {\n+  if ($(\"#\" + data.id).length > 0) {\n+    // Ignore comment as it already exists\n+    return\n+  }\n   var commentHtml = createComment(data);\n   var commentEl = $(commentHtml);\n   commentEl.hide();"
+    }
+  ]
+}
