@@ -1,0 +1,98 @@
+{
+  "sha": "191fac5c7c8f6f5299a5056ca99eee1b88410f04",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxOTFmYWM1YzdjOGY2ZjUyOTlhNTA1NmNhOTllZWUxYjg4NDEwZjA0",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2021-04-19T09:40:23Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-04-19T09:40:23Z"
+    },
+    "message": "DEV: makes transformComplete async (#12752)\n\nThis is used to apply multiple transformations following user input.",
+    "tree": {
+      "sha": "350bb4223d7f8f66beb9afca2f0e2b8b3c236bb4",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/350bb4223d7f8f66beb9afca2f0e2b8b3c236bb4"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/191fac5c7c8f6f5299a5056ca99eee1b88410f04",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgfVAHCRBK7hj4Ov3rIwAAB1YIAIZJdWGMgfITzwTrloAuTFQ9\n7IevHWkpsd9fLhyQPtqXoU1g4MkkFhZRr9/epZXin/ePxBa263ZiZL4HlhfH6c0K\nZjbTltXf0fLj5/CtkVzJqsbN8uWRvpHtH0nJQMaaGO3NoLJKriGIflRnTk3BUiE2\nMUeRFgCw0NkCDzXaL5rzutp5nxFbjuOIW3vbZhlB1/t0W6L8cy6TWohQyBA9pPpc\njYNY5vC5X2194yr+6pbbymT3rt19hxRPswoobmfqiA7fK0QE1Y3L0m0ZBZX0R2H0\nWOJ1DRXXbHOJyrDHF+zUqHUyb6eD5wx8VBErUGV8MYZvdBzqbKgzgIENjrfpLu4=\n=HMIQ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 350bb4223d7f8f66beb9afca2f0e2b8b3c236bb4\nparent 99aae959a67e0e180303554af1c6d958a02afd37\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1618825223 +0200\ncommitter GitHub <noreply@github.com> 1618825223 +0200\n\nDEV: makes transformComplete async (#12752)\n\nThis is used to apply multiple transformations following user input."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/191fac5c7c8f6f5299a5056ca99eee1b88410f04",
+  "html_url": "https://github.com/discourse/discourse/commit/191fac5c7c8f6f5299a5056ca99eee1b88410f04",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/191fac5c7c8f6f5299a5056ca99eee1b88410f04/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "99aae959a67e0e180303554af1c6d958a02afd37",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/99aae959a67e0e180303554af1c6d958a02afd37",
+      "html_url": "https://github.com/discourse/discourse/commit/99aae959a67e0e180303554af1c6d958a02afd37"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "d95cc46e527a6e775b19c81505e42219f3b968ed",
+      "filename": "app/assets/javascripts/discourse/app/lib/autocomplete.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/191fac5c7c8f6f5299a5056ca99eee1b88410f04/app/assets/javascripts/discourse/app/lib/autocomplete.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/191fac5c7c8f6f5299a5056ca99eee1b88410f04/app/assets/javascripts/discourse/app/lib/autocomplete.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/autocomplete.js?ref=191fac5c7c8f6f5299a5056ca99eee1b88410f04",
+      "patch": "@@ -186,7 +186,7 @@ export default function (options) {\n       });\n   }\n \n-  let completeTerm = function (term) {\n+  let completeTerm = async function (term) {\n     if (term) {\n       if (isInput) {\n         me.val(\"\");\n@@ -196,7 +196,7 @@ export default function (options) {\n         addInputSelectedItem(term, true);\n       } else {\n         if (options.transformComplete) {\n-          term = options.transformComplete(term);\n+          term = await options.transformComplete(term);\n         }\n \n         if (term) {"
+    }
+  ]
+}
