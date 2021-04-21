@@ -1,0 +1,98 @@
+{
+  "sha": "c9841b81e485a58608abfc7159e52da2232539d9",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmM5ODQxYjgxZTQ4NWE1ODYwOGFiZmM3MTU5ZTUyZGEyMjMyNTM5ZDk=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-04-18T22:15:43Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-04-18T22:18:34Z"
+    },
+    "message": "move back css for last comments",
+    "tree": {
+      "sha": "8640df52b03d67522cc276e18229cb80a0525007",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/8640df52b03d67522cc276e18229cb80a0525007"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/c9841b81e485a58608abfc7159e52da2232539d9",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/c9841b81e485a58608abfc7159e52da2232539d9",
+  "html_url": "https://github.com/umputun/remark42/commit/c9841b81e485a58608abfc7159e52da2232539d9",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/c9841b81e485a58608abfc7159e52da2232539d9/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dfed7e16bac1d02304b8a8c4d0e55b4fa5e771f4",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/dfed7e16bac1d02304b8a8c4d0e55b4fa5e771f4",
+      "html_url": "https://github.com/umputun/remark42/commit/dfed7e16bac1d02304b8a8c4d0e55b4fa5e771f4"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "1a428dde7aeb3c21a585339250019c4a2e474b30",
+      "filename": "frontend/app/last-comments.tsx",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/c9841b81e485a58608abfc7159e52da2232539d9/frontend/app/last-comments.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/c9841b81e485a58608abfc7159e52da2232539d9/frontend/app/last-comments.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/last-comments.tsx?ref=c9841b81e485a58608abfc7159e52da2232539d9",
+      "patch": "@@ -35,6 +35,11 @@ async function init(): Promise<void> {\n     throw new Error('Remark42: Site ID is undefined.');\n   }\n \n+  const styles = document.createElement('link');\n+  styles.href = `${BASE_URL}/web/last-comments.css`;\n+  styles.rel = 'stylesheet';\n+  (document.head || document.body).appendChild(styles);\n+\n   (Array.from(nodes) as HTMLElement[]).forEach((node) => {\n     const max = (node.dataset.max && parseInt(node.dataset.max, 10)) || max_last_comments || DEFAULT_LAST_COMMENTS_MAX;\n     const locale = getLocale(window.remark_config);"
+    }
+  ]
+}
