@@ -1,0 +1,122 @@
+{
+  "sha": "befb0792076ea58dba23e34524e58af80c648bfe",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmJlZmIwNzkyMDc2ZWE1OGRiYTIzZTM0NTI0ZTU4YWY4MGM2NDhiZmU=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-04-28T19:05:10Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-04-28T19:13:02Z"
+    },
+    "message": "fix default avatar\n\n- fix import of default avatar\n- optimaze ghost svg\n- add tests\n- refactor avatar-icon",
+    "tree": {
+      "sha": "82d5d05e68dfd002f67d9d963bcc4d7c57ed0503",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/82d5d05e68dfd002f67d9d963bcc4d7c57ed0503"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/befb0792076ea58dba23e34524e58af80c648bfe",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/befb0792076ea58dba23e34524e58af80c648bfe",
+  "html_url": "https://github.com/umputun/remark42/commit/befb0792076ea58dba23e34524e58af80c648bfe",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/befb0792076ea58dba23e34524e58af80c648bfe/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "627ae58ecc149fe358ec1378ab7cd15dfc1d880e",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/627ae58ecc149fe358ec1378ab7cd15dfc1d880e",
+      "html_url": "https://github.com/umputun/remark42/commit/627ae58ecc149fe358ec1378ab7cd15dfc1d880e"
+    }
+  ],
+  "stats": {
+    "total": 42,
+    "additions": 21,
+    "deletions": 21
+  },
+  "files": [
+    {
+      "sha": "af4f526fd95444c2dc19b6ff02425e6e19b5be9e",
+      "filename": "frontend/app/components/avatar-icon/avatar-icon.spec.tsx",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark42/blob/befb0792076ea58dba23e34524e58af80c648bfe/frontend/app/components/avatar-icon/avatar-icon.spec.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/befb0792076ea58dba23e34524e58af80c648bfe/frontend/app/components/avatar-icon/avatar-icon.spec.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/avatar-icon/avatar-icon.spec.tsx?ref=befb0792076ea58dba23e34524e58af80c648bfe",
+      "patch": "@@ -0,0 +1,12 @@\n+import '@testing-library/jest-dom';\n+import { h } from 'preact';\n+import { render } from '@testing-library/preact';\n+import { AvatarIcon } from './avatar-icon';\n+\n+describe('<AvatarIcon/>', () => {\n+  it('should get', () => {\n+    const { getByAltText } = render(<AvatarIcon alt=\"avatar\" />);\n+\n+    expect(getByAltText('avatar')).toHaveAttribute('src', 'https://url-to-svg-image');\n+  });\n+});"
+    },
+    {
+      "sha": "6004f60d1af9d136ec95de35a74183bad1128d13",
+      "filename": "frontend/app/components/avatar-icon/avatar-icon.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 16,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark42/blob/befb0792076ea58dba23e34524e58af80c648bfe/frontend/app/components/avatar-icon/avatar-icon.svg",
+      "raw_url": "https://github.com/umputun/remark42/raw/befb0792076ea58dba23e34524e58af80c648bfe/frontend/app/components/avatar-icon/avatar-icon.svg",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/avatar-icon/avatar-icon.svg?ref=befb0792076ea58dba23e34524e58af80c648bfe",
+      "patch": "@@ -1,18 +1,5 @@\n <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n-  <style>\n-    .st6{fill:#8ED0CF}\n-  </style>\n-  <g>\n-    <path d=\"M4.6 20.5s0 .1 0 0c.9 0 .9-.7 1.9-.7.9 0 .9.8 1.9.8.9 0 .9-.8 1.9-.8s.9.8 1.9.8c.9 0 .9-.8 1.9-.8.9 0 .9.8 1.9.8.9 0 .9-.8 1.9-.8.9 0 .9.8 1.8.8l-.7-3.5c-.2-1.3-.3-2.7-.3-4V9.5c0-3.6-2.9-6.9-6.5-7-3.8-.1-6.9 2.9-6.9 6.7v3.9c0 1.3-.1 2.7-.3 4l-.4 3.4z\" fill=\"#f5f4f4\"/>\n-    <path d=\"M8 17.1c.1-1.3.2-2.7.2-4V9.2c0-3.6 1.6-6.5 3.7-6.7-3.6.1-6.5 3-6.5 6.7v3.9c0 1.3-.1 2.7-.3 4l-.5 3.5c.9 0 .9-.8 1.9-.8.7 0 .9.4 1.3.6l.2-3.3z\" opacity=\".5\" fill=\"#fff\"/>\n-    <g>\n-      <path class=\"st6\" d=\"M19.3 17c-.2-1.3-.3-2.6-.3-3.9V9.4c0-3.8-2.9-7-6.6-7.3-1.9-.1-3.8.6-5.2 1.9-1.4 1.4-2.3 3.2-2.3 5.2v3.9c0 1.3-.1 2.6-.3 3.9l-.5 3.5c0 .1 0 .2.1.3.1.1.2.2.3.2.6 0 .9-.3 1.2-.5.2-.2.4-.3.7-.3.3 0 .5.1.7.3.3.2.6.5 1.2.5s.9-.3 1.2-.5c.2-.2.4-.3.7-.3s.5.1.7.3c.3.2.6.5 1.2.5s.9-.3 1.2-.5c.2-.2.4-.3.7-.3s.5.1.7.3c.3.2.6.5 1.2.5s.9-.3 1.2-.5c.2-.2.4-.3.7-.3.3 0 .5.1.7.3.3.2.6.5 1.2.5.1 0 .2 0 .3-.1.1-.1.1-.2.1-.3l-.8-3.6zm-.5 2.9c-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5c.2 0 .1.1 0 .1l.4-2.9c.2-1.3.3-2.7.3-4V9.2c0-1.8.7-3.4 2-4.6 1.3-1.2 2.9-1.8 4.7-1.7 3.3.2 5.9 3.1 5.9 6.5V13c0 1.3.1 2.7.3 4l.4 3c-.1 0-.2-.1-.2-.1z\"/>\n-      <path class=\"st6\" d=\"M9.7 7.6c-.6 0-.8.8-.8 1.6s.2 1.6.8 1.6.8-.8.8-1.6-.3-1.6-.8-1.6z\"/>\n-      <path class=\"st6\" d=\"M14.4 7.6c-.6 0-.8.8-.8 1.6s.2 1.6.8 1.6.8-.8.8-1.6-.3-1.6-.8-1.6z\"/>\n-    </g>\n-    <linearGradient gradientUnits=\"userSpaceOnUse\" x1=\"4.1669\" y1=\"14.7127\" x2=\"21.3949\" y2=\"6.6792\" gradientTransform=\"matrix(1 0 0 -1 0 24)\">\n-      <stop offset=\"0\" stop-color=\"#fff\" stop-opacity=\".2\"/>\n-      <stop offset=\"1\" stop-color=\"#fff\" stop-opacity=\"0\"/>\n-    </linearGradient>\n-  </g>\n+  <path fill=\"#f5f4f4\" d=\"M4.6 20.5s0 .1 0 0c.9 0 .9-.7 1.9-.7.9 0 .9.8 1.9.8.9 0 .9-.8 1.9-.8s.9.8 1.9.8c.9 0 .9-.8 1.9-.8.9 0 .9.8 1.9.8.9 0 .9-.8 1.9-.8.9 0 .9.8 1.8.8l-.7-3.5a27 27 0 01-.3-4V9.5c0-3.6-2.9-6.9-6.5-7a6.7 6.7 0 00-6.9 6.7v3.9a27 27 0 01-.3 4l-.4 3.4z\"/>\n+  <path fill=\"#fff\" d=\"M8 17.1l.2-4V9.2c0-3.6 1.6-6.5 3.7-6.7-3.6.1-6.5 3-6.5 6.7v3.9a27 27 0 01-.3 4l-.5 3.5c.9 0 .9-.8 1.9-.8.7 0 .9.4 1.3.6l.2-3.3z\" opacity=\".5\"/>\n+  <path fill=\"#8ED0CF\" d=\"M19.3 17l-.3-3.9V9.4c0-3.8-2.9-7-6.6-7.3a7.2 7.2 0 00-7.5 7.1v3.9L4.6 17l-.5 3.5.1.3.3.2c.6 0 .9-.3 1.2-.5.2-.2.4-.3.7-.3.3 0 .5.1.7.3.3.2.6.5 1.2.5s.9-.3 1.2-.5c.2-.2.4-.3.7-.3s.5.1.7.3c.3.2.6.5 1.2.5s.9-.3 1.2-.5c.2-.2.4-.3.7-.3s.5.1.7.3c.3.2.6.5 1.2.5s.9-.3 1.2-.5c.2-.2.4-.3.7-.3.3 0 .5.1.7.3.3.2.6.5 1.2.5l.3-.1.1-.3-.8-3.6zm-.5 2.9c-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5a1 1 0 01-.7.3 1 1 0 01-.7-.3c-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5a1 1 0 01-.7.3 1 1 0 01-.7-.3c-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5a1 1 0 01-.7.3 1 1 0 01-.7-.3c-.3-.2-.6-.5-1.2-.5s-.9.3-1.2.5c.2 0 .1.1 0 .1l.4-2.9c.2-1.3.3-2.7.3-4V9.2c0-1.8.7-3.4 2-4.6a6.2 6.2 0 014.7-1.7c3.3.2 5.9 3.1 5.9 6.5V13c0 1.3.1 2.7.3 4l.4 3-.2-.1zM9.7 7.6c-.6 0-.8.8-.8 1.6s.2 1.6.8 1.6.8-.8.8-1.6-.3-1.6-.8-1.6zm4.7 0c-.6 0-.8.8-.8 1.6s.2 1.6.8 1.6.8-.8.8-1.6-.3-1.6-.8-1.6z\"/>\n </svg>"
+    },
+    {
+      "sha": "0cca7df89a5e8658cf7feea922de341745d53c20",
+      "filename": "frontend/app/components/avatar-icon/avatar-icon.tsx",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 5,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/befb0792076ea58dba23e34524e58af80c648bfe/frontend/app/components/avatar-icon/avatar-icon.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/befb0792076ea58dba23e34524e58af80c648bfe/frontend/app/components/avatar-icon/avatar-icon.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/avatar-icon/avatar-icon.tsx?ref=befb0792076ea58dba23e34524e58af80c648bfe",
+      "patch": "@@ -2,18 +2,19 @@ import { h, JSX } from 'preact';\n import b from 'bem-react-helper';\n import { Theme } from 'common/types';\n \n-interface Props {\n+type Props = JSX.HTMLAttributes<HTMLImageElement> & {\n   picture?: string;\n   mix?: string;\n   theme?: Theme;\n-}\n+};\n \n-export function AvatarIcon(props: Props & JSX.HTMLAttributes) {\n+export function AvatarIcon({ mix, theme, picture, ...props }: Props) {\n   return (\n     <img\n-      className={b('avatar-icon', { mix: props.mix }, { theme: props.theme, default: !props.picture })}\n-      src={props.picture || require('./avatar-icon.svg')}\n+      className={b('avatar-icon', { mix }, { theme, default: !picture })}\n+      src={picture || require('./avatar-icon.svg').default}\n       alt=\"\"\n+      {...props}\n     />\n   );\n }"
+    }
+  ]
+}
