@@ -1,0 +1,206 @@
+{
+  "sha": "75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo3NWUxNTlmMGVkNmRmNGRiMjcxYzUyOGVkNDkwOThlYTRhMGYyNWMz",
+  "commit": {
+    "author": {
+      "name": "Jeff Wong",
+      "email": "awole20@gmail.com",
+      "date": "2021-05-01T00:08:38Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-05-01T00:08:38Z"
+    },
+    "message": "FEATURE: add support for like webhooks (#12917)\n\n* FEATURE: add support for like webhooks\r\n\r\nAdd support for like webhooks. Webhook events only send on user membership\r\nin the defined webhook group filters.\r\n\r\nThis also fixes group webhook events, as before this was never used, and\r\nthe logic was not correct.",
+    "tree": {
+      "sha": "6fca04f631208a56b6ffcb8ba8cbea2f646236ac",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/6fca04f631208a56b6ffcb8ba8cbea2f646236ac"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgjJwGCRBK7hj4Ov3rIwAARAEIAHVKevuO8avfsQQXzsVCAgVr\nkmjY/T23VXOlXK563/E1pdDURbrDTnyYwJy6Pk+WN20kQ/cHhNwX84kBLPFnexpp\njRrKkL3f8ACQnzC9PLsbXDeEA7qrpa/jWxZ3zq0cYVFuh7JCjA7ji9Io3xb8ZQHN\n/5jA9PmyeFMv4Q/01DlKDZC8wMId5mmSakaIC5nhEUdnbgZq5BXusIUfAKn8U4NN\nIQ05L2d6U0FN1/7YxsAsxpIyOHzH2ze5AouDqY9htT9/dE3G8yi0V0+wLpp/nd5E\nBqPW1W8TcMV9s7judYUX89U3w7z3Won1upiAAJ9mx7AK+2peqmmllvEZXd/oXeM=\n=WCKs\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 6fca04f631208a56b6ffcb8ba8cbea2f646236ac\nparent 656b0ae39e0069bc23785e7522045937641bd3ff\nauthor Jeff Wong <awole20@gmail.com> 1619827718 -1000\ncommitter GitHub <noreply@github.com> 1619827718 -0700\n\nFEATURE: add support for like webhooks (#12917)\n\n* FEATURE: add support for like webhooks\r\n\r\nAdd support for like webhooks. Webhook events only send on user membership\r\nin the defined webhook group filters.\r\n\r\nThis also fixes group webhook events, as before this was never used, and\r\nthe logic was not correct."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+  "html_url": "https://github.com/discourse/discourse/commit/75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/75e159f0ed6df4db271c528ed49098ea4a0f25c3/comments",
+  "author": {
+    "login": "featheredtoast",
+    "id": 1322534,
+    "node_id": "MDQ6VXNlcjEzMjI1MzQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1322534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/featheredtoast",
+    "html_url": "https://github.com/featheredtoast",
+    "followers_url": "https://api.github.com/users/featheredtoast/followers",
+    "following_url": "https://api.github.com/users/featheredtoast/following{/other_user}",
+    "gists_url": "https://api.github.com/users/featheredtoast/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/featheredtoast/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/featheredtoast/subscriptions",
+    "organizations_url": "https://api.github.com/users/featheredtoast/orgs",
+    "repos_url": "https://api.github.com/users/featheredtoast/repos",
+    "events_url": "https://api.github.com/users/featheredtoast/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/featheredtoast/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "656b0ae39e0069bc23785e7522045937641bd3ff",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/656b0ae39e0069bc23785e7522045937641bd3ff",
+      "html_url": "https://github.com/discourse/discourse/commit/656b0ae39e0069bc23785e7522045937641bd3ff"
+    }
+  ],
+  "stats": {
+    "total": 97,
+    "additions": 91,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "7b22f0398b9ee9dd949eff38e911981236aede78",
+      "filename": "app/jobs/regular/emit_web_hook_event.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/jobs/regular/emit_web_hook_event.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/jobs/regular/emit_web_hook_event.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/jobs/regular/emit_web_hook_event.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -115,8 +115,8 @@ def webhook_inactive?\n     end\n \n     def group_webhook_invalid?\n-      @web_hook.group_ids.present? && (@arguments[:group_id].present? ||\n-        !@web_hook.group_ids.include?(@arguments[:group_id]))\n+      @web_hook.group_ids.present? && (@arguments[:group_ids].blank? ||\n+        (@web_hook.group_ids & @arguments[:group_ids]).blank?)\n     end\n \n     def category_webhook_invalid?"
+    },
+    {
+      "sha": "ac8dadeb2cd390229407df6d719ba4155857e140",
+      "filename": "app/models/web_hook.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/models/web_hook.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/models/web_hook.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/web_hook.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -57,13 +57,14 @@ def self.enqueue_hooks(type, event, opts = {})\n     end\n   end\n \n-  def self.enqueue_object_hooks(type, object, event, serializer = nil)\n+  def self.enqueue_object_hooks(type, object, event, serializer = nil, opts = {})\n     if active_web_hooks(type).exists?\n       payload = WebHook.generate_payload(type, object, serializer)\n \n-      WebHook.enqueue_hooks(type, event,\n-        id: object.id,\n-        payload: payload\n+      WebHook.enqueue_hooks(type, event, opts.merge(\n+                              id: object.id,\n+                              payload: payload\n+                            )\n       )\n     end\n   end"
+    },
+    {
+      "sha": "70f2144f8a4910cd28b23c018e6421a1606850ba",
+      "filename": "app/models/web_hook_event_type.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/models/web_hook_event_type.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/models/web_hook_event_type.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/web_hook_event_type.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -13,6 +13,7 @@ class WebHookEventType < ActiveRecord::Base\n   ASSIGN = 12\n   USER_BADGE = 13\n   GROUP_USER = 14\n+  LIKE = 15\n \n   has_and_belongs_to_many :web_hooks\n "
+    },
+    {
+      "sha": "0a3e74fb0807cb9c27ef492614e9a5d8dba0d8dc",
+      "filename": "app/serializers/web_hook_like_serializer.rb",
+      "status": "added",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/serializers/web_hook_like_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/app/serializers/web_hook_like_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/web_hook_like_serializer.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -0,0 +1,5 @@\n+# frozen_string_literal: true\n+class WebHookLikeSerializer < ApplicationSerializer\n+  has_one :post, serializer: WebHookPostSerializer, embed: :objects\n+  has_one :user, serializer: BasicUserSerializer, embed: :objects\n+end"
+    },
+    {
+      "sha": "942260c85ce0650a9d24cb9f140c35cd9c85b6e5",
+      "filename": "config/initializers/012-web_hook_events.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/config/initializers/012-web_hook_events.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/config/initializers/012-web_hook_events.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/initializers/012-web_hook_events.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -106,3 +106,9 @@\n   group_user = GroupUser.find_by(user: user, group: group)\n   WebHook.enqueue_object_hooks(:group_user, group_user, :user_added_to_group, WebHookGroupUserSerializer)\n end\n+\n+DiscourseEvent.on(:like_created) do |post_action|\n+  user = post_action.user\n+  group_ids = user.groups.map(&:id)\n+  WebHook.enqueue_object_hooks(:like, post_action, :post_liked, WebHookLikeSerializer, group_ids: group_ids)\n+end"
+    },
+    {
+      "sha": "30febe1340e1141622cded0b1bf0200c9cbf4c71",
+      "filename": "config/locales/client.en.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/config/locales/client.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/config/locales/client.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/client.en.yml?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -4040,6 +4040,9 @@ en:\n         group_user_event:\n           name: \"Group User Event\"\n           details: \"When a user is added or removed in a group.\"\n+        like_event:\n+          name: \"Like Event\"\n+          details: \"When a user likes a post.\"\n         delivery_status:\n           title: \"Delivery Status\"\n           inactive: \"Inactive\""
+    },
+    {
+      "sha": "42ed0e861b58de5a0d6b4d9b3b10799f9ad78158",
+      "filename": "db/fixtures/007_web_hook_event_types.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/db/fixtures/007_web_hook_event_types.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/db/fixtures/007_web_hook_event_types.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/fixtures/007_web_hook_event_types.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -59,3 +59,8 @@\n   b.id = WebHookEventType::GROUP_USER\n   b.name = \"group_user\"\n end\n+\n+WebHookEventType.seed do |b|\n+  b.id = WebHookEventType::LIKE\n+  b.name = \"like\"\n+end"
+    },
+    {
+      "sha": "554e162fd1c1fa1e80972150d0214961f05782ec",
+      "filename": "spec/fabricators/web_hook_fabricator.rb",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/spec/fabricators/web_hook_fabricator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/spec/fabricators/web_hook_fabricator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/fabricators/web_hook_fabricator.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -102,3 +102,11 @@\n     web_hook.web_hook_event_types = [transients[:group_user_hook]]\n   end\n end\n+\n+Fabricator(:like_web_hook, from: :web_hook) do\n+  transient like_hook: WebHookEventType.find_by(name: 'like')\n+\n+  after_build do |web_hook, transients|\n+    web_hook.web_hook_event_types = [transients[:like_hook]]\n+  end\n+end"
+    },
+    {
+      "sha": "9db61d2f3cfce4a092c1efa7f0b7b98de54c7b0c",
+      "filename": "spec/jobs/emit_web_hook_event_spec.rb",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 0,
+      "changes": 36,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/spec/jobs/emit_web_hook_event_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/spec/jobs/emit_web_hook_event_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/jobs/emit_web_hook_event_spec.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -234,6 +234,42 @@\n     end\n   end\n \n+  context 'with group filters' do\n+    fab!(:group) { Fabricate(:group) }\n+    fab!(:user) { Fabricate(:user, groups: [group]) }\n+    fab!(:like_hook) { Fabricate(:like_web_hook, groups: [group]) }\n+\n+    it \"doesn't emit when event is not included any groups\" do\n+      subject.execute(\n+        web_hook_id: like_hook.id,\n+        event_type: 'like',\n+        payload: { test: \"some payload\" }.to_json\n+      )\n+    end\n+\n+    it \"doesn't emit when event is not related with defined groups\" do\n+      subject.execute(\n+        web_hook_id: like_hook.id,\n+        event_type: 'like',\n+        group_ids: [Fabricate(:group).id],\n+        payload: { test: \"some payload\" }.to_json\n+      )\n+    end\n+\n+    it 'emit when event is related with defined groups' do\n+      stub_request(:post, like_hook.payload_url)\n+        .with(body: \"{\\\"like\\\":{\\\"test\\\":\\\"some payload\\\"}}\")\n+        .to_return(body: 'OK', status: 200)\n+\n+      subject.execute(\n+        web_hook_id: like_hook.id,\n+        event_type: 'like',\n+        group_ids: user.groups.pluck(:id),\n+        payload: { test: \"some payload\" }.to_json\n+      )\n+    end\n+  end\n+\n   describe '#send_webhook!' do\n     it 'creates delivery event record' do\n       stub_request(:post, post_hook.payload_url)"
+    },
+    {
+      "sha": "492cb83a7d8a45e267df4223d64f445f246e7a50",
+      "filename": "spec/models/web_hook_spec.rb",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/75e159f0ed6df4db271c528ed49098ea4a0f25c3/spec/models/web_hook_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/75e159f0ed6df4db271c528ed49098ea4a0f25c3/spec/models/web_hook_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/web_hook_spec.rb?ref=75e159f0ed6df4db271c528ed49098ea4a0f25c3",
+      "patch": "@@ -572,5 +572,25 @@\n       expect(payload[\"group_id\"]).to eq(group.id)\n       expect(payload[\"user_id\"]).to eq(user.id)\n     end\n+\n+    it 'should enqueue hooks for user likes in a group' do\n+      group = Fabricate(:group)\n+      Fabricate(:like_web_hook, groups: [group])\n+      group_user = Fabricate(:group_user, group: group, user: user)\n+      poster = Fabricate(:user)\n+      post = Fabricate(:post, user: poster)\n+      like = Fabricate(:post_action, post: post, user: user, post_action_type_id: PostActionType.types[:like])\n+      now = Time.now\n+      freeze_time now\n+\n+      DiscourseEvent.trigger(:like_created, like)\n+\n+      job_args = Jobs::EmitWebHookEvent.jobs.last[\"args\"].first\n+      expect(job_args[\"event_name\"]).to eq(\"post_liked\")\n+      expect(job_args[\"group_ids\"]).to eq([group.id])\n+      payload = JSON.parse(job_args[\"payload\"])\n+      expect(payload[\"post\"][\"id\"]).to eq(post.id)\n+      expect(payload[\"user\"][\"id\"]).to eq(user.id)\n+    end\n   end\n end"
+    }
+  ]
+}
