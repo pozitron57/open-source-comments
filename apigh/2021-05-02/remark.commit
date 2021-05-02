@@ -1,0 +1,98 @@
+{
+  "sha": "a4f2542924e43a47d8d427510257d93d1fa3912d",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmE0ZjI1NDI5MjRlNDNhNDdkOGQ0Mjc1MTAyNTdkOTNkMWZhMzkxMmQ=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-04-30T17:00:24Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-04-30T17:00:24Z"
+    },
+    "message": "allow admin email login with restricted names #964",
+    "tree": {
+      "sha": "19637b213892a7b07838dc3ed32c60df2a22e0bd",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/19637b213892a7b07838dc3ed32c60df2a22e0bd"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/a4f2542924e43a47d8d427510257d93d1fa3912d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/a4f2542924e43a47d8d427510257d93d1fa3912d",
+  "html_url": "https://github.com/umputun/remark42/commit/a4f2542924e43a47d8d427510257d93d1fa3912d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/a4f2542924e43a47d8d427510257d93d1fa3912d/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "befb0792076ea58dba23e34524e58af80c648bfe",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/befb0792076ea58dba23e34524e58af80c648bfe",
+      "html_url": "https://github.com/umputun/remark42/commit/befb0792076ea58dba23e34524e58af80c648bfe"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "ba1c2f070c036c8f3dff3458bd18790fd4d9be06",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/a4f2542924e43a47d8d427510257d93d1fa3912d/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/a4f2542924e43a47d8d427510257d93d1fa3912d/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=a4f2542924e43a47d8d427510257d93d1fa3912d",
+      "patch": "@@ -932,8 +932,9 @@ func (s *ServerCommand) makeAuthenticator(ds *service.DataStore, avas avatar.Sto\n \t\t\t\tlog.Printf(\"[WARN] can't read email for %s, %v\", c.User.ID, err)\n \t\t\t}\n \n-\t\t\t// don't allow anonymous and email with admin's name\n-\t\t\tif strings.HasPrefix(c.User.ID, \"anonymous_\") || strings.HasPrefix(c.User.ID, \"email_\") {\n+\t\t\t// don't allow anonymous and email with admins names\n+\t\t\t// exclude admin from impersonation detection over email, it prevents a valid admin to login with RestrictedNames\n+\t\t\tif strings.HasPrefix(c.User.ID, \"anonymous_\") || (strings.HasPrefix(c.User.ID, \"email_\") && !c.User.IsAdmin()) {\n \t\t\t\tfor _, a := range s.RestrictedNames {\n \t\t\t\t\tif strings.EqualFold(strings.TrimSpace(c.User.Name), a) {\n \t\t\t\t\t\tc.User.SetBoolAttr(\"blocked\", true)"
+    }
+  ]
+}
