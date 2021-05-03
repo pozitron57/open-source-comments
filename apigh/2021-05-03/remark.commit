@@ -1,0 +1,110 @@
+{
+  "sha": "b748771feda3ec2dac415fa5120ce0361cb7844a",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmI3NDg3NzFmZWRhM2VjMmRhYzQxNWZhNTEyMGNlMDM2MWNiNzg0NGE=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-04-28T18:37:23Z"
+    },
+    "committer": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-05-02T15:55:07Z"
+    },
+    "message": "allow spaces in username with trim",
+    "tree": {
+      "sha": "294107635f6f7960a698dba7d66302ba40caaa8a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/294107635f6f7960a698dba7d66302ba40caaa8a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/b748771feda3ec2dac415fa5120ce0361cb7844a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/b748771feda3ec2dac415fa5120ce0361cb7844a",
+  "html_url": "https://github.com/umputun/remark42/commit/b748771feda3ec2dac415fa5120ce0361cb7844a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/b748771feda3ec2dac415fa5120ce0361cb7844a/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a4f2542924e43a47d8d427510257d93d1fa3912d",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/a4f2542924e43a47d8d427510257d93d1fa3912d",
+      "html_url": "https://github.com/umputun/remark42/commit/a4f2542924e43a47d8d427510257d93d1fa3912d"
+    }
+  ],
+  "stats": {
+    "total": 44,
+    "additions": 43,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f5db67b808ce1f27b8429606e5f67d527afdf8df",
+      "filename": "frontend/app/components/auth/auth.spec.tsx",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 0,
+      "changes": 38,
+      "blob_url": "https://github.com/umputun/remark42/blob/b748771feda3ec2dac415fa5120ce0361cb7844a/frontend/app/components/auth/auth.spec.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/b748771feda3ec2dac415fa5120ce0361cb7844a/frontend/app/components/auth/auth.spec.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/auth/auth.spec.tsx?ref=b748771feda3ec2dac415fa5120ce0361cb7844a",
+      "patch": "@@ -211,4 +211,42 @@ describe('<Auth/>', () => {\n     expect(getByRole('presentation')).toHaveAttribute('aria-label', 'Loading...');\n     await waitFor(() => expect(api.anonymousSignin).toBeCalled());\n   });\n+\n+  it.each`\n+    value           | expected\n+    ${'username '}  | ${'username'}\n+    ${' username'}  | ${'username'}\n+    ${' username '} | ${'username'}\n+  `('should remove spaces in the first/last postion in username', async ({ value, expected }) => {\n+    StaticStore.config.auth_providers = ['email'];\n+\n+    const { getByText, getByPlaceholderText } = render(<Auth />);\n+    fireEvent.click(getByText('Sign In'));\n+\n+    const input = getByPlaceholderText('Username');\n+\n+    fireEvent.change(input, { target: { value } });\n+    fireEvent.blur(input);\n+\n+    expect(input).toHaveValue(expected);\n+  });\n+\n+  it.each`\n+    value            | expected\n+    ${'user name '}  | ${'user name'}\n+    ${' user name'}  | ${'user name'}\n+    ${' user name '} | ${'user name'}\n+  `('should leave spaces in the middle of username', ({ value, expected }) => {\n+    StaticStore.config.auth_providers = ['email'];\n+\n+    const { getByText, getByPlaceholderText } = render(<Auth />);\n+    fireEvent.click(getByText('Sign In'));\n+\n+    const input = getByPlaceholderText('Username');\n+\n+    fireEvent.change(input, { target: { value } });\n+    fireEvent.blur(input);\n+\n+    expect(input).toHaveValue(expected);\n+  });\n });"
+    },
+    {
+      "sha": "94f5ef738dcef64c76d7f68f59649539a0c9f1ce",
+      "filename": "frontend/app/components/auth/auth.tsx",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/b748771feda3ec2dac415fa5120ce0361cb7844a/frontend/app/components/auth/auth.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/b748771feda3ec2dac415fa5120ce0361cb7844a/frontend/app/components/auth/auth.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/auth/auth.tsx?ref=b748771feda3ec2dac415fa5120ce0361cb7844a",
+      "patch": "@@ -233,10 +233,14 @@ export default function Auth() {\n                         required\n                         name=\"username\"\n                         minLength={3}\n-                        pattern=\"^[\\p{L}\\d_]+$\"\n+                        pattern=\"[\\p{L}\\d\\s_]+\"\n                         title={intl.formatMessage(messages.usernameRestriction)}\n                         placeholder={intl.formatMessage(messages.username)}\n                         disabled={isLoading}\n+                        onBlur={(evt) => {\n+                          const element = evt.target as HTMLInputElement;\n+                          element.value = element.value.trim();\n+                        }}\n                       />\n                     </div>\n                     {view === 'email' && ("
+    }
+  ]
+}
