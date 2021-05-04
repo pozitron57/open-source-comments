@@ -1,0 +1,170 @@
+{
+  "sha": "61ad959212afaeeb44b7bf4227611a5216a20313",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo2MWFkOTU5MjEyYWZhZWViNDRiN2JmNDIyNzYxMWE1MjE2YTIwMzEz",
+  "commit": {
+    "author": {
+      "name": "Grayden",
+      "email": "38144548+graydenshand@users.noreply.github.com",
+      "date": "2021-05-04T11:56:10Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-05-04T11:56:10Z"
+    },
+    "message": "UX: Allow saving with cmd+s/ctrl+s with Ace editor (#12674)\n\nWhen editing the files for a theme in the admin dashboard, typing \"cmd+s\" (a common key-binding to save in most text editors) used to engage the browser's default \"save page\" dialogue.\r\n\r\nThis commit adds a key-binding to the ace editor that saves the file.\r\n\r\nNow, the \"cmd+s\" (and \"ctrl+s\" for windows) key-binding does the same action as the save button.",
+    "tree": {
+      "sha": "e7fd95022cfec7afc0b6b2f328a5f4e4a77e3f65",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/e7fd95022cfec7afc0b6b2f328a5f4e4a77e3f65"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/61ad959212afaeeb44b7bf4227611a5216a20313",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgkTZaCRBK7hj4Ov3rIwAAfEkIAEyRXOstBMCOQcCR6KLOkZO8\nrM75khoqR4GHrHwwANwpandsDYTEw9CBJS0M0QCWd1q4NxnKMZq1rxjdimIbTGIo\n0WTy1cfKRyAIqTzxzr4FT++J3cWpux1qsehGhxIqCi+VoEnPSw23FP56SeSX/D7l\nipVQSHcSDbhpA+juxmjXb6UYw87OCRMYl290DHcApg4d2P5jmtNqoxvqj1zTUnNG\n3adCwPmxxiCa79iqjgmajTYNfRBHzjAeYbILS5ZDoIwOK6AAVYtKgaH2tq0ml77M\n1e9WwrLUNYYSJRSZH7r7YGClAENNeaqPtfo4KrPVg+u5uIjWZB48/S356GifNM4=\n=H6QH\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e7fd95022cfec7afc0b6b2f328a5f4e4a77e3f65\nparent 338740c3855fc9c8e597956bbeb058edb8caa09a\nauthor Grayden <38144548+graydenshand@users.noreply.github.com> 1620129370 -0400\ncommitter GitHub <noreply@github.com> 1620129370 +0100\n\nUX: Allow saving with cmd+s/ctrl+s with Ace editor (#12674)\n\nWhen editing the files for a theme in the admin dashboard, typing \"cmd+s\" (a common key-binding to save in most text editors) used to engage the browser's default \"save page\" dialogue.\r\n\r\nThis commit adds a key-binding to the ace editor that saves the file.\r\n\r\nNow, the \"cmd+s\" (and \"ctrl+s\" for windows) key-binding does the same action as the save button."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/61ad959212afaeeb44b7bf4227611a5216a20313",
+  "html_url": "https://github.com/discourse/discourse/commit/61ad959212afaeeb44b7bf4227611a5216a20313",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/61ad959212afaeeb44b7bf4227611a5216a20313/comments",
+  "author": {
+    "login": "graydenshand",
+    "id": 38144548,
+    "node_id": "MDQ6VXNlcjM4MTQ0NTQ4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38144548?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/graydenshand",
+    "html_url": "https://github.com/graydenshand",
+    "followers_url": "https://api.github.com/users/graydenshand/followers",
+    "following_url": "https://api.github.com/users/graydenshand/following{/other_user}",
+    "gists_url": "https://api.github.com/users/graydenshand/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/graydenshand/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/graydenshand/subscriptions",
+    "organizations_url": "https://api.github.com/users/graydenshand/orgs",
+    "repos_url": "https://api.github.com/users/graydenshand/repos",
+    "events_url": "https://api.github.com/users/graydenshand/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/graydenshand/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "338740c3855fc9c8e597956bbeb058edb8caa09a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/338740c3855fc9c8e597956bbeb058edb8caa09a",
+      "html_url": "https://github.com/discourse/discourse/commit/338740c3855fc9c8e597956bbeb058edb8caa09a"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 20,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "89f092a8ed96a4540c4a4c20aedec6194bb15eaf",
+      "filename": "app/assets/javascripts/admin/addon/components/ace-editor.js",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/components/ace-editor.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/components/ace-editor.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/components/ace-editor.js?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -105,6 +105,15 @@ export default Component.extend({\n           this.set(\"content\", editor.getSession().getValue());\n           this._skipContentChangeEvent = false;\n         });\n+        if (this.attrs.save) {\n+          editor.commands.addCommand({\n+            name: \"save\",\n+            exec: () => {\n+              this.attrs.save();\n+            },\n+            bindKey: { mac: \"cmd-s\", win: \"ctrl-s\" },\n+          });\n+        }\n         editor.$blockScrolling = Infinity;\n         editor.renderer.setScrollMargin(10, 10);\n "
+    },
+    {
+      "sha": "9d2b0b70c94442d78f234ee41cdd264ecb72bd20",
+      "filename": "app/assets/javascripts/admin/addon/components/admin-theme-editor.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/components/admin-theme-editor.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/components/admin-theme-editor.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/components/admin-theme-editor.js?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -120,5 +120,9 @@ export default Component.extend({\n     onlyOverriddenChanged(value) {\n       this.onlyOverriddenChanged(value);\n     },\n+\n+    save() {\n+      this.attrs.save();\n+    },\n   },\n });"
+    },
+    {
+      "sha": "e3e980e6329bb6d659d4f4d15330175015e22073",
+      "filename": "app/assets/javascripts/admin/addon/components/email-styles-editor.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/components/email-styles-editor.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/components/email-styles-editor.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/components/email-styles-editor.js?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -50,5 +50,8 @@ export default Component.extend({\n         }\n       );\n     },\n+    save() {\n+      this.attrs.save();\n+    },\n   },\n });"
+    },
+    {
+      "sha": "5efbb71db1460b8edfd33c017cac89a656d60c2c",
+      "filename": "app/assets/javascripts/admin/addon/templates/components/admin-theme-editor.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/components/admin-theme-editor.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/components/admin-theme-editor.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/templates/components/admin-theme-editor.hbs?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -87,4 +87,4 @@\n   <pre class=\"field-error\">{{error}}</pre>\n {{/if}}\n \n-{{ace-editor content=activeSection editorId=editorId mode=activeSectionMode autofocus=\"true\" placeholder=placeholder htmlPlaceholder=true}}\n+{{ace-editor content=activeSection editorId=editorId mode=activeSectionMode autofocus=\"true\" placeholder=placeholder htmlPlaceholder=true save=(action \"save\")}}"
+    },
+    {
+      "sha": "cc510651d03e6156ad69ebdb118fb1fbed71f497",
+      "filename": "app/assets/javascripts/admin/addon/templates/components/email-styles-editor.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/components/email-styles-editor.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/components/email-styles-editor.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/templates/components/email-styles-editor.hbs?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -9,7 +9,7 @@\n   </div>\n </div>\n \n-{{ace-editor content=editorContents mode=currentEditorMode editorId=editorId}}\n+{{ace-editor content=editorContents mode=currentEditorMode editorId=editorId save=(action \"save\")}}\n \n <div class=\"admin-footer\">\n   <div class=\"buttons\">"
+    },
+    {
+      "sha": "6acb4ed37b8a55500fa9c961c1352f02f9d6dc9a",
+      "filename": "app/assets/javascripts/admin/addon/templates/customize-email-style-edit.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/customize-email-style-edit.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/customize-email-style-edit.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/templates/customize-email-style-edit.hbs?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -1,4 +1,4 @@\n-{{email-styles-editor styles=model fieldName=fieldName}}\n+{{email-styles-editor styles=model fieldName=fieldName save=(action \"save\")}}\n \n <div class=\"admin-footer\">\n   <div class=\"buttons\">"
+    },
+    {
+      "sha": "b4e845e41695c6c56672261d5fbb76f174f2f0ff",
+      "filename": "app/assets/javascripts/admin/addon/templates/customize-themes-edit.hbs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/customize-themes-edit.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/61ad959212afaeeb44b7bf4227611a5216a20313/app/assets/javascripts/admin/addon/templates/customize-themes-edit.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/templates/customize-themes-edit.hbs?ref=61ad959212afaeeb44b7bf4227611a5216a20313",
+      "patch": "@@ -25,6 +25,7 @@\n       fieldAdded=(action \"fieldAdded\")\n       maximized=maximized\n       onlyOverriddenChanged=(action \"onlyOverriddenChanged\")\n+      save=(action \"save\")\n     }}\n \n     <div class=\"admin-footer\">"
+    }
+  ]
+}
