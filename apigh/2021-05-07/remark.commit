@@ -1,0 +1,98 @@
+{
+  "sha": "eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmViN2IzNGI2YjJkNmMyZDg2ZDQ3MGQ2MjhkNDRmYWMxZmJkY2QyZGI=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-05-07T00:27:55Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-05-07T00:27:55Z"
+    },
+    "message": "add related projects section",
+    "tree": {
+      "sha": "308edf4b1bb3842d2c3a31316e9998bb156c6be9",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/308edf4b1bb3842d2c3a31316e9998bb156c6be9"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db",
+  "html_url": "https://github.com/umputun/remark42/commit/eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5bdd1a5c72b6933aaac1188a9d3f2e02a4dd1fad",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/5bdd1a5c72b6933aaac1188a9d3f2e02a4dd1fad",
+      "html_url": "https://github.com/umputun/remark42/commit/5bdd1a5c72b6933aaac1188a9d3f2e02a4dd1fad"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "b69cc6f6b4f4a6ca68c55574d26df6831db4468d",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=eb7b34b6b2d6c2d86d470d628d44fac1fbdcd2db",
+      "patch": "@@ -896,3 +896,8 @@ _all admin calls require auth and admin privilege_\n * Images can be proxied (`IMAGE_PROXY_HTTP2HTTPS=true`) to prevent mixed http/https.\n * All images can be proxied and saved (`IMAGE_PROXY_CACHE_EXTERNAL=true`) instead of serving from original location. Beware, images which are posted with this parameter enabled will be served from proxy even after it will be disabled.\n * Docker build uses [publicly available](https://github.com/umputun/baseimage) base images.\n+\n+## Related projects\n+\n+- [A Helm chart for Remark42 on Kubernetes](https://github.com/groundhog2k/helm-charts/tree/master/charts/remark42)\n+- [django-remark42](https://github.com/andrewp-as-is/django-remark42.py)"
+    }
+  ]
+}
