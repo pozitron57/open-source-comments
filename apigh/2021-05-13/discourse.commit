@@ -1,0 +1,98 @@
+{
+  "sha": "f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpmMDVmNWZkZTBmZmE3MWUzOWVjNzViNDYxOWZhZDc3YzhlZDhmOGVh",
+  "commit": {
+    "author": {
+      "name": "Alan Guo Xiang Tan",
+      "email": "gxtan1990@gmail.com",
+      "date": "2021-05-13T06:16:01Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-05-13T06:16:01Z"
+    },
+    "message": "PERF: Preload `JsLocaleHelper.load_translations` for default locale. (#13041)\n\nIn production, each Unicorn child process will currently hold the\r\ndefault locale in memory on first load. Instead, we should preload it in\r\nthe Unicorn master process so that the memory is immediately shared when\r\nforking.\r\n\r\nAlso, the translations are only memoized on first load now and is\r\nadding considerable overhead to the first few requests after a fresh\r\nboot.",
+    "tree": {
+      "sha": "8a710acf8cf3e67ae93e93c9e69a938164dbe3a0",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/8a710acf8cf3e67ae93e93c9e69a938164dbe3a0"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgnMQhCRBK7hj4Ov3rIwAAE6cIADxPVTNgBZyY2RSI8dSi0sE+\nU8V1X7GK0nYYowivJAD4DMNPAgBRCK3dgFs9JKMbYdTA6bG7kL5BoDaEVDHbcvsR\nLkQZPY1k+FxZUj9V7DJa+2bq5d7Z/BbwBwH9fDV8AMRx2A4byZIAJg1wZUIGv4FS\n87D2fEfTcW8F3hg5aPq00Ipjz92PXeAY3lXQJcDoGZQgYDq5K9wxSH7rbxCKHK9z\n2en5v0AfxVFy8XDJZeDDSb15halz1ZHNqtnCfIIGuMfwmyKI894V8zX2iGsDC+eO\nA3Glvgi/AiZEJwHMDSHRxYLHw0xqxmsIrhj2/P9i/6u2dmRPGQdvaDhssb611I8=\n=35Hq\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 8a710acf8cf3e67ae93e93c9e69a938164dbe3a0\nparent 034a0493e3b295f349438a79a359fce58a234080\nauthor Alan Guo Xiang Tan <gxtan1990@gmail.com> 1620886561 +0800\ncommitter GitHub <noreply@github.com> 1620886561 +1000\n\nPERF: Preload `JsLocaleHelper.load_translations` for default locale. (#13041)\n\nIn production, each Unicorn child process will currently hold the\r\ndefault locale in memory on first load. Instead, we should preload it in\r\nthe Unicorn master process so that the memory is immediately shared when\r\nforking.\r\n\r\nAlso, the translations are only memoized on first load now and is\r\nadding considerable overhead to the first few requests after a fresh\r\nboot."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea",
+  "html_url": "https://github.com/discourse/discourse/commit/f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea/comments",
+  "author": {
+    "login": "tgxworld",
+    "id": 4335742,
+    "node_id": "MDQ6VXNlcjQzMzU3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4335742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgxworld",
+    "html_url": "https://github.com/tgxworld",
+    "followers_url": "https://api.github.com/users/tgxworld/followers",
+    "following_url": "https://api.github.com/users/tgxworld/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgxworld/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgxworld/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgxworld/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgxworld/orgs",
+    "repos_url": "https://api.github.com/users/tgxworld/repos",
+    "events_url": "https://api.github.com/users/tgxworld/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgxworld/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "034a0493e3b295f349438a79a359fce58a234080",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/034a0493e3b295f349438a79a359fce58a234080",
+      "html_url": "https://github.com/discourse/discourse/commit/034a0493e3b295f349438a79a359fce58a234080"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "ea2a3cbafdaa75c7d8b5312de18b102f8a856f18",
+      "filename": "lib/discourse.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea/lib/discourse.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea/lib/discourse.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/discourse.rb?ref=f05f5fde0ffa71e39ec75b4619fad77c8ed8f8ea",
+      "patch": "@@ -933,6 +933,8 @@ def self.preload_rails!\n       # this will force Cppjieba to preload if any site has it\n       # enabled allowing it to be reused between all child processes\n       Search.prepare_data(\"test\")\n+\n+      JsLocaleHelper.load_translations(SiteSetting.default_locale)\n     end\n \n     ["
+    }
+  ]
+}
