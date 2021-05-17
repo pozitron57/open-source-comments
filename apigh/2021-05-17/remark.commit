@@ -1,0 +1,98 @@
+{
+  "sha": "f9eb39db039ddf9039fe76112431cd39fb43c04f",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmY5ZWIzOWRiMDM5ZGRmOTAzOWZlNzYxMTI0MzFjZDM5ZmI0M2MwNGY=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-05-17T00:03:19Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-05-17T06:55:05Z"
+    },
+    "message": "make commitTTL equal to EditDuration\n\nSo that image is committed to permanent\nstorage after comment can no longer be edited.\n\nAlso, move cleanupTTL to Cleanup function,\nas it's not used elsewhere in the code.",
+    "tree": {
+      "sha": "58f0429dd6d45c4212b298f58f27f287df7470a9",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/58f0429dd6d45c4212b298f58f27f287df7470a9"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/f9eb39db039ddf9039fe76112431cd39fb43c04f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/f9eb39db039ddf9039fe76112431cd39fb43c04f",
+  "html_url": "https://github.com/umputun/remark42/commit/f9eb39db039ddf9039fe76112431cd39fb43c04f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/f9eb39db039ddf9039fe76112431cd39fb43c04f/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "df547cc815b65a7aeeeacfe87d62be15c2bc3b2a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/df547cc815b65a7aeeeacfe87d62be15c2bc3b2a",
+      "html_url": "https://github.com/umputun/remark42/commit/df547cc815b65a7aeeeacfe87d62be15c2bc3b2a"
+    }
+  ],
+  "stats": {
+    "total": 28,
+    "additions": 9,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "7b7ed23c9b8b9f4d507b7a1b1d6af13e431b1a4c",
+      "filename": "backend/app/store/image/image.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 19,
+      "changes": 28,
+      "blob_url": "https://github.com/umputun/remark42/blob/f9eb39db039ddf9039fe76112431cd39fb43c04f/backend/app/store/image/image.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/f9eb39db039ddf9039fe76112431cd39fb43c04f/backend/app/store/image/image.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/store/image/image.go?ref=f9eb39db039ddf9039fe76112431cd39fb43c04f",
+      "patch": "@@ -12,7 +12,6 @@ import (\n \t\"encoding/base64\"\n \t\"fmt\"\n \t\"image\"\n-\n \t// support gif and jpeg images decoding\n \t_ \"image/gif\"\n \t_ \"image/jpeg\"\n@@ -36,8 +35,8 @@ import (\n )\n \n // Service wraps Store with common functions needed for any store implementation\n-// It also provides async Submit with func param retrieving all submitting ids.\n-// Submitted ids committed (i.e. moved from staging to final) on commitTTL expiration.\n+// It also provides async Submit with func param retrieving all submitting IDs.\n+// Submitted IDs committed (i.e. moved from staging to final) on ServiceParams.EditDuration expiration.\n type Service struct {\n \tServiceParams\n \n@@ -57,12 +56,6 @@ type ServiceParams struct {\n \tMaxSize      int\n \tMaxHeight    int\n \tMaxWidth     int\n-\n-\t// duration of time after which images are checked and committed if still\n-\t// present in the submitted comment after it's EditDuration is expired\n-\tcommitTTL time.Duration\n-\t// duration of time after which images are deleted from staging\n-\tcleanupTTL time.Duration\n }\n \n // StoreInfo contains image store meta information\n@@ -95,10 +88,6 @@ type submitReq struct {\n \n // NewService returns new Service instance\n func NewService(s Store, p ServiceParams) *Service {\n-\tp.commitTTL = p.EditDuration * 15 / 10  // Commit call on every 1.5 * EditDuration\n-\tp.cleanupTTL = p.EditDuration * 25 / 10 // Cleanup call on every 2.5 * EditDuration\n-\t// In case Cleanup and Submit start at the same time (case of stale staging images check\n-\t// on the program start) these TTL values guarantee that Commit will happen before Cleanup.\n \treturn &Service{ServiceParams: p, store: s}\n }\n \n@@ -127,8 +116,8 @@ func (s *Service) Submit(idsFn func() []string) {\n \t\tgo func() {\n \t\t\tdefer s.wg.Done()\n \t\t\tfor req := range s.submitCh {\n-\t\t\t\t// wait for commitTTL expiration with emergency pass on term\n-\t\t\t\tfor atomic.LoadInt32(&s.term) == 0 && time.Since(req.TS) <= s.commitTTL {\n+\t\t\t\t// wait for EditDuration expiration with emergency pass on term\n+\t\t\t\tfor atomic.LoadInt32(&s.term) == 0 && time.Since(req.TS) <= s.EditDuration {\n \t\t\t\t\ttime.Sleep(time.Millisecond * 10) // small sleep to relive busy wait but keep reactive for term (close)\n \t\t\t\t}\n \t\t\t\terr := s.SubmitAndCommit(req.idsFn)\n@@ -186,17 +175,18 @@ func (s *Service) ExtractPictures(commentHTML string) (ids []string, err error)\n \treturn ids, nil\n }\n \n-// Cleanup runs periodic cleanup with cleanupTTL. Blocking loop, should be called inside of goroutine by consumer\n+// Cleanup runs periodic cleanup with 2.5*ServiceParams.EditDuration. Blocking loop, should be called inside of goroutine by consumer\n func (s *Service) Cleanup(ctx context.Context) {\n-\tlog.Printf(\"[INFO] start pictures cleanup, staging ttl=%v\", s.cleanupTTL)\n+\tcleanupTTL := s.EditDuration * 25 / 10 // cleanup images older than 2.5 * EditDuration\n+\tlog.Printf(\"[INFO] start pictures cleanup, staging ttl=%v\", cleanupTTL)\n \n \tfor {\n \t\tselect {\n \t\tcase <-ctx.Done():\n \t\t\tlog.Printf(\"[INFO] cleanup terminated, %v\", ctx.Err())\n \t\t\treturn\n-\t\tcase <-time.After(s.cleanupTTL):\n-\t\t\tif err := s.store.Cleanup(ctx, s.cleanupTTL); err != nil {\n+\t\tcase <-time.After(cleanupTTL):\n+\t\t\tif err := s.store.Cleanup(ctx, cleanupTTL); err != nil {\n \t\t\t\tlog.Printf(\"[WARN] failed to cleanup, %v\", err)\n \t\t\t}\n \t\t}"
+    }
+  ]
+}
