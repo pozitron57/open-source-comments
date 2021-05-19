@@ -1,0 +1,98 @@
+{
+  "sha": "9e4288a4ab8c7b176271c1c99b149b472c23854d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5ZTQyODhhNGFiOGM3YjE3NjI3MWMxYzk5YjE0OWI0NzJjMjM4NTRk",
+  "commit": {
+    "author": {
+      "name": "Andrei Prigorshnev",
+      "email": "a.prigorshnev@gmail.com",
+      "date": "2021-05-19T10:26:15Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-05-19T10:26:15Z"
+    },
+    "message": "FEATURE: constrain post_excerpt_maxlength (#13064)\n\nToo long excerpts don't make sense. They would make UI wonky. We already have a constraint for the `topic_excerpt_maxlength` setting. This adds the same constraint to `post_excerpt_maxlength`.\r\n\r\nIt also changes the max value of `topic_excerpt_maxlength` from 999 to 1000.",
+    "tree": {
+      "sha": "3fc4984ce7804f3f226952a62e415ee566bdafda",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/3fc4984ce7804f3f226952a62e415ee566bdafda"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/9e4288a4ab8c7b176271c1c99b149b472c23854d",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgpOfHCRBK7hj4Ov3rIwAANW8IAKucZvQDM9SiwVvps2p+yLfG\n5NnnDu/aTm4Rv1e+ye6qX0nBtJzkZjO1q7DAPBt2gxRMGZE2GubOOYQeD/1QvzSe\nqS5hB811Lc0mcwHOjVyfq/OnmMa11nzHpcCtmgnHsRR4eDlK9/XaMXQK2211ukuo\nGC3dYbsk2PEh8Y6ahHzb7kQL6OI29rNSkYD7oD0ZepLL+Tp10SbXJ9wxYBh403Br\nh8RzVD/yS4wJtEiK5hBSgkflrKCONHrz+PfiDjAbh2a+C5a+4PvFKKR13XchFixr\nYd0CeKpueEvhYQxU9EX4XCof1aZUBDyN1nDXu4QpMVVTgD2hdHgdwdZ2avce1RM=\n=KJ+n\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 3fc4984ce7804f3f226952a62e415ee566bdafda\nparent 6d3c97551942a0dae58e021d157aed1e3949717d\nauthor Andrei Prigorshnev <a.prigorshnev@gmail.com> 1621419975 +0400\ncommitter GitHub <noreply@github.com> 1621419975 +0400\n\nFEATURE: constrain post_excerpt_maxlength (#13064)\n\nToo long excerpts don't make sense. They would make UI wonky. We already have a constraint for the `topic_excerpt_maxlength` setting. This adds the same constraint to `post_excerpt_maxlength`.\r\n\r\nIt also changes the max value of `topic_excerpt_maxlength` from 999 to 1000."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/9e4288a4ab8c7b176271c1c99b149b472c23854d",
+  "html_url": "https://github.com/discourse/discourse/commit/9e4288a4ab8c7b176271c1c99b149b472c23854d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/9e4288a4ab8c7b176271c1c99b149b472c23854d/comments",
+  "author": {
+    "login": "AndrewPrigorshnev",
+    "id": 1274517,
+    "node_id": "MDQ6VXNlcjEyNzQ1MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1274517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewPrigorshnev",
+    "html_url": "https://github.com/AndrewPrigorshnev",
+    "followers_url": "https://api.github.com/users/AndrewPrigorshnev/followers",
+    "following_url": "https://api.github.com/users/AndrewPrigorshnev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewPrigorshnev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewPrigorshnev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewPrigorshnev/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewPrigorshnev/orgs",
+    "repos_url": "https://api.github.com/users/AndrewPrigorshnev/repos",
+    "events_url": "https://api.github.com/users/AndrewPrigorshnev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewPrigorshnev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6d3c97551942a0dae58e021d157aed1e3949717d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/6d3c97551942a0dae58e021d157aed1e3949717d",
+      "html_url": "https://github.com/discourse/discourse/commit/6d3c97551942a0dae58e021d157aed1e3949717d"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "b79b92470ec8e6ff02a5516c8ab33316b6d53ab5",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/9e4288a4ab8c7b176271c1c99b149b472c23854d/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/9e4288a4ab8c7b176271c1c99b149b472c23854d/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=9e4288a4ab8c7b176271c1c99b149b472c23854d",
+      "patch": "@@ -863,13 +863,14 @@ posting:\n     default: 0\n   post_excerpt_maxlength:\n     default: 300\n+    max: 1000\n     locale_default:\n       ja: 120\n       zh_CN: 120\n       zh_TW: 120\n   topic_excerpt_maxlength:\n     default: 220\n-    max: 999\n+    max: 1000\n     locale_default:\n       ja: 120\n       zh_CN: 120"
+    }
+  ]
+}
