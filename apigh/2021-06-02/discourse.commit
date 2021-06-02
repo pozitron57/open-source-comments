@@ -1,0 +1,122 @@
+{
+  "sha": "932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5MzJhMmZlNDE5NzNiNTc1MTk2MzBmMWJlNWEyY2E4ZDVkMDhlZWEy",
+  "commit": {
+    "author": {
+      "name": "Andrei Prigorshnev",
+      "email": "a.prigorshnev@gmail.com",
+      "date": "2021-06-02T11:27:04Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-06-02T11:27:04Z"
+    },
+    "message": "FIX: PG::StringDataRightTruncation when linking posts (#13134)\n\nUsers who use encoded slugs on their sites sometimes run into 500 error when pasting a link to another topic in a post. The problem happens when generating a backward \"reflection\" link that would appear in a linked topic. Link URL restricted on the database level to 500 chars in length. At first glance, it should work since we have a restriction on topic title length.\r\n\r\nBut it doesn't work when a site uses encoded slugs, like here (take a look at the URL). The link to a topic, in this case, can be much longer than 500 characters.\r\n\r\nBy the way, an error happens only when generating a \"reflection\" link and doesn't happen with a direct link, we truncate that link. It works because, in this case, the original long link is still present in the post body and can be used for navigation. But we can't do the same for backward \"reflection\" links (without rewriting their implementation), the whole link must be saved to the database.\r\n\r\nThe simplest and cleanest solution will be just to remove the restriction on the database level. Abuse is impossible here since we are already protected by the restriction on topic title length. There aren’t performance benefits in using length-constrained columns in Postgres, in fact, length-constrained columns need a few extra CPU cycles to check the length when storing data.",
+    "tree": {
+      "sha": "5f11de7c765305a961ae1946b0a70a269a2b4780",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/5f11de7c765305a961ae1946b0a70a269a2b4780"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgt2sICRBK7hj4Ov3rIwAAHuEIACfIMg7Stq4bxIw3WwZYvr9P\nku9IMlHcQ/UZJU65Y0RPoc/nFgFhfqD/m+wB1jWweXNpJ29KIqfcRjGOy4u0EInU\nJqbeuJeNLqIxDndPT5kOD3AKGIN+SVJWZndf2X6vED0pnxJ/Ofpeto5AcXpSHQ5h\nFrNaa/vYNvgRtFgg3UCsT1dNrgNM16WKduxfHQ1AtUicUl0fNpJDexWliYAobzEN\n7jf2TY0oa01av9JHNWB4uu0NI5+JclzBVhD8ZxgNvq68LGgLQRE9UC59bxLAZX2h\n0rmBntnM8n2SYiKXIpwE9PHm20PcE+YDcUQ/b02TbR+sXtPckACA0djfrRBjTTY=\n=EdK2\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5f11de7c765305a961ae1946b0a70a269a2b4780\nparent b7b8f5e6f318037ba1d0821fafd70f454851520a\nauthor Andrei Prigorshnev <a.prigorshnev@gmail.com> 1622633224 +0400\ncommitter GitHub <noreply@github.com> 1622633224 +0400\n\nFIX: PG::StringDataRightTruncation when linking posts (#13134)\n\nUsers who use encoded slugs on their sites sometimes run into 500 error when pasting a link to another topic in a post. The problem happens when generating a backward \"reflection\" link that would appear in a linked topic. Link URL restricted on the database level to 500 chars in length. At first glance, it should work since we have a restriction on topic title length.\r\n\r\nBut it doesn't work when a site uses encoded slugs, like here (take a look at the URL). The link to a topic, in this case, can be much longer than 500 characters.\r\n\r\nBy the way, an error happens only when generating a \"reflection\" link and doesn't happen with a direct link, we truncate that link. It works because, in this case, the original long link is still present in the post body and can be used for navigation. But we can't do the same for backward \"reflection\" links (without rewriting their implementation), the whole link must be saved to the database.\r\n\r\nThe simplest and cleanest solution will be just to remove the restriction on the database level. Abuse is impossible here since we are already protected by the restriction on topic title length. There aren’t performance benefits in using length-constrained columns in Postgres, in fact, length-constrained columns need a few extra CPU cycles to check the length when storing data."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+  "html_url": "https://github.com/discourse/discourse/commit/932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/932a2fe41973b57519630f1be5a2ca8d5d08eea2/comments",
+  "author": {
+    "login": "AndrewPrigorshnev",
+    "id": 1274517,
+    "node_id": "MDQ6VXNlcjEyNzQ1MTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1274517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewPrigorshnev",
+    "html_url": "https://github.com/AndrewPrigorshnev",
+    "followers_url": "https://api.github.com/users/AndrewPrigorshnev/followers",
+    "following_url": "https://api.github.com/users/AndrewPrigorshnev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewPrigorshnev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewPrigorshnev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewPrigorshnev/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewPrigorshnev/orgs",
+    "repos_url": "https://api.github.com/users/AndrewPrigorshnev/repos",
+    "events_url": "https://api.github.com/users/AndrewPrigorshnev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewPrigorshnev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b7b8f5e6f318037ba1d0821fafd70f454851520a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b7b8f5e6f318037ba1d0821fafd70f454851520a",
+      "html_url": "https://github.com/discourse/discourse/commit/b7b8f5e6f318037ba1d0821fafd70f454851520a"
+    }
+  ],
+  "stats": {
+    "total": 49,
+    "additions": 48,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "6758689c712cd5cc63a1a566cf9b8d7647294d10",
+      "filename": "app/models/topic_link.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/932a2fe41973b57519630f1be5a2ca8d5d08eea2/app/models/topic_link.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/932a2fe41973b57519630f1be5a2ca8d5d08eea2/app/models/topic_link.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic_link.rb?ref=932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+      "patch": "@@ -386,7 +386,7 @@ def self.cleanup_entries(post, current_urls, current_reflected_ids)\n #  topic_id      :integer          not null\n #  post_id       :integer\n #  user_id       :integer          not null\n-#  url           :string(500)      not null\n+#  url           :string           not null\n #  domain        :string(100)      not null\n #  internal      :boolean          default(FALSE), not null\n #  link_topic_id :integer"
+    },
+    {
+      "sha": "f7d9c606f20d6a32c9fdb560ea68591c584cc408",
+      "filename": "db/post_migrate/20210525112226_remove_length_constrain_from_topic_link_url.rb",
+      "status": "added",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/discourse/discourse/blob/932a2fe41973b57519630f1be5a2ca8d5d08eea2/db/post_migrate/20210525112226_remove_length_constrain_from_topic_link_url.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/932a2fe41973b57519630f1be5a2ca8d5d08eea2/db/post_migrate/20210525112226_remove_length_constrain_from_topic_link_url.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/db/post_migrate/20210525112226_remove_length_constrain_from_topic_link_url.rb?ref=932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+      "patch": "@@ -0,0 +1,11 @@\n+# frozen_string_literal: true\n+\n+class RemoveLengthConstrainFromTopicLinkUrl < ActiveRecord::Migration[6.1]\n+  def up\n+    change_column :topic_links, :url, :string, null: false\n+  end\n+\n+  def down\n+    raise ActiveRecord::IrreversibleMigration\n+  end\n+end"
+    },
+    {
+      "sha": "6e52b74c2312da515bad5c0a3344404992a58dea",
+      "filename": "spec/models/topic_link_spec.rb",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 0,
+      "changes": 36,
+      "blob_url": "https://github.com/discourse/discourse/blob/932a2fe41973b57519630f1be5a2ca8d5d08eea2/spec/models/topic_link_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/932a2fe41973b57519630f1be5a2ca8d5d08eea2/spec/models/topic_link_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/topic_link_spec.rb?ref=932a2fe41973b57519630f1be5a2ca8d5d08eea2",
+      "patch": "@@ -201,6 +201,42 @@ def test_uri\n         expect(other_topic.reload.topic_links.where(link_post_id: linked_post.id)).to be_blank\n \n       end\n+\n+      it 'truncates long links' do\n+        SiteSetting.slug_generation_method = 'encoded'\n+        long_title = \"Καλημερα σε ολους και ολες\" * 9 # 234 chars, but the encoded slug will be 1224 chars in length\n+        other_topic = Fabricate(:topic, user: user, title: long_title)\n+        expect(other_topic.slug.length).to be > TopicLink.max_url_length\n+        other_topic.posts.create(user: user, raw: 'initial post')\n+        other_topic_url = \"http://#{test_uri.host}/t/#{other_topic.slug}/#{other_topic.id}\"\n+\n+        post_with_link = topic.posts.create(user: user, raw: \"Link to another topic: #{other_topic_url}\")\n+        TopicLink.extract_from(post_with_link)\n+        topic.reload\n+        link = topic.topic_links.first\n+\n+        expect(link.url.length).to eq(TopicLink.max_url_length)\n+      end\n+\n+      it 'does not truncate reflection links' do\n+        SiteSetting.slug_generation_method = 'encoded'\n+        long_title = \"Καλημερα σε ολους και ολες\" * 9 # 234 chars, but the encoded slug will be 1224 chars in length\n+        topic = Fabricate(:topic, user: user, title: long_title)\n+        expect(topic.slug.length).to be > TopicLink.max_url_length\n+        topic_url = \"http://#{test_uri.host}/t/#{topic.slug}/#{topic.id}\"\n+\n+        other_topic = Fabricate(:topic, user: user)\n+        other_topic.posts.create(user: user, raw: 'initial post')\n+        other_topic_url = \"http://#{test_uri.host}/t/#{other_topic.slug}/#{other_topic.id}\"\n+\n+        post_with_link = topic.posts.create(user: user, raw: \"Link to another topic: #{other_topic_url}\")\n+        expect { TopicLink.extract_from(post_with_link) }.to_not raise_error\n+\n+        other_topic.reload\n+        reflection_link = other_topic.topic_links.first\n+        expect(reflection_link.url.length).to be > (TopicLink.max_url_length)\n+        expect(reflection_link.url).to eq(topic_url)\n+      end\n     end\n \n     context \"link to a user on discourse\" do"
+    }
+  ]
+}
