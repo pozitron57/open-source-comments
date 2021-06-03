@@ -1,0 +1,242 @@
+{
+  "sha": "3068dfe63755d21c35c99cf3826dd8ca89f73136",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjMwNjhkZmU2Mzc1NWQyMWMzNWM5OWNmMzgyNmRkOGNhODlmNzMxMzY=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-05-19T17:48:19Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-06-03T05:56:16Z"
+    },
+    "message": "post messages from iframe\n\n- fix user info opening\n- remove iframe height checks by interval\n- update height by mutation observer events\n- rename events",
+    "tree": {
+      "sha": "4407bdf9910ed4771d648e8b44ee115540c6be0d",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/4407bdf9910ed4771d648e8b44ee115540c6be0d"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/3068dfe63755d21c35c99cf3826dd8ca89f73136",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/3068dfe63755d21c35c99cf3826dd8ca89f73136",
+  "html_url": "https://github.com/umputun/remark42/commit/3068dfe63755d21c35c99cf3826dd8ca89f73136",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/3068dfe63755d21c35c99cf3826dd8ca89f73136/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c0b392ad4cc47405c0389c06815ba127f39c31e1",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/c0b392ad4cc47405c0389c06815ba127f39c31e1",
+      "html_url": "https://github.com/umputun/remark42/commit/c0b392ad4cc47405c0389c06815ba127f39c31e1"
+    }
+  ],
+  "stats": {
+    "total": 303,
+    "additions": 139,
+    "deletions": 164
+  },
+  "files": [
+    {
+      "sha": "357a881057cfdff1e55d585422b42f29f78d415f",
+      "filename": "frontend/app/common/user-info-settings.ts",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 9,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark42/blob/c0b392ad4cc47405c0389c06815ba127f39c31e1/frontend/app/common/user-info-settings.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/c0b392ad4cc47405c0389c06815ba127f39c31e1/frontend/app/common/user-info-settings.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/common/user-info-settings.ts?ref=c0b392ad4cc47405c0389c06815ba127f39c31e1",
+      "patch": "@@ -1,9 +0,0 @@\n-import { parseQuery } from 'utils/parseQuery';\n-\n-import type { UserInfo } from './types';\n-\n-export const userInfo: UserInfo = parseQuery();\n-\n-export const id = userInfo.id;\n-export const name = userInfo.name;\n-export const picture = userInfo.picture;"
+    },
+    {
+      "sha": "2a558045ddb0e4c49b013864547a9097d00f0646",
+      "filename": "frontend/app/components/auth-panel/auth-panel.tsx",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/auth-panel/auth-panel.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/auth-panel/auth-panel.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/auth-panel/auth-panel.tsx?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -6,7 +6,7 @@ import b from 'bem-react-helper';\n import { User, Sorting, Theme, PostInfo } from 'common/types';\n import { IS_STORAGE_AVAILABLE, IS_THIRD_PARTY } from 'common/constants';\n import { requestDeletion } from 'utils/email';\n-import { postMessage } from 'utils/postMessage';\n+import { postMessageToParent } from 'utils/postMessage';\n import { getHandleClickProps } from 'common/accessibility';\n import { StoreState } from 'store';\n import { Dropdown, DropdownItem } from 'components/dropdown';\n@@ -75,11 +75,11 @@ class AuthPanelComponent extends Component<Props, State> {\n   toggleUserInfoVisibility = () => {\n     const { user } = this.props;\n \n-    if (user === null) {\n+    if (!user) {\n       return;\n     }\n \n-    postMessage({ isUserInfoShown: true, user });\n+    postMessageToParent({ profile: user });\n   };\n \n   renderAuthorized = (user: User) => {"
+    },
+    {
+      "sha": "38fb8042fb56f721b2f06d8de9b8a32a27e699b6",
+      "filename": "frontend/app/components/auth/auth.hooks.ts",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 21,
+      "changes": 35,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/auth/auth.hooks.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/auth/auth.hooks.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/auth/auth.hooks.ts?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -1,14 +1,11 @@\n import { useEffect, useRef, useState } from 'preact/hooks';\n+import { parseMessage, postMessageToParent } from 'utils/postMessage';\n \n function handleChangeIframeSize(element: HTMLElement) {\n   const { top } = element.getBoundingClientRect();\n-  const height = window.scrollY + Math.abs(top) + element.scrollHeight + 20;\n+  const height = Math.max(window.scrollY + Math.abs(top) + element.scrollHeight + 20, document.body.offsetHeight);\n \n-  if (window.innerHeight > height) {\n-    return;\n-  }\n-\n-  document.body.style.setProperty('min-height', `${height}px`);\n+  postMessageToParent({ height });\n }\n \n export function useDropdown(disableClosing?: boolean) {\n@@ -19,28 +16,20 @@ export function useDropdown(disableClosing?: boolean) {\n   };\n \n   useEffect(() => {\n-    if (!showDropdown) {\n-      return;\n-    }\n-\n     const dropdownElement = rootRef.current;\n \n-    handleChangeIframeSize(dropdownElement);\n+    if (!showDropdown || !dropdownElement) {\n+      return;\n+    }\n \n     function handleMessageFromParent(evt: MessageEvent) {\n-      if (typeof evt.data !== 'string' || disableClosing) {\n+      const data = parseMessage(evt);\n+\n+      if (disableClosing && data.clickOutside) {\n         return;\n       }\n \n-      try {\n-        const data = JSON.parse(evt.data);\n-\n-        if (!data.clickOutside) {\n-          return;\n-        }\n-\n-        setShowDropdown(false);\n-      } catch (e) {}\n+      setShowDropdown(false);\n     }\n \n     function handleClickOutside(evt: MouseEvent) {\n@@ -64,9 +53,13 @@ export function useDropdown(disableClosing?: boolean) {\n     const dropdownElement = rootRef.current;\n \n     if (!dropdownElement || !showDropdown) {\n+      handleChangeIframeSize(document.body);\n+\n       return;\n     }\n \n+    handleChangeIframeSize(dropdownElement);\n+\n     const observer = new MutationObserver(() => {\n       handleChangeIframeSize(dropdownElement);\n     });"
+    },
+    {
+      "sha": "44746c890cc08cf14b52bb4882570fdecec69fd0",
+      "filename": "frontend/app/components/comment/comment.tsx",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 20,
+      "changes": 35,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/comment/comment.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/comment/comment.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/comment/comment.tsx?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -16,7 +16,7 @@ import { Avatar } from 'components/avatar';\n import { Button } from 'components/button';\n import { Countdown } from 'components/countdown';\n import { getPreview, uploadImage } from 'common/api';\n-import { postMessage } from 'utils/postMessage';\n+import { postMessageToParent } from 'utils/postMessage';\n import { FormattedMessage, IntlShape, defineMessages } from 'react-intl';\n import { getVoteMessage, VoteMessagesTypes } from './getVoteMessage';\n import { getBlockingDurations } from './getBlockingDurations';\n@@ -211,14 +211,7 @@ export class Comment extends Component<CommentProps, State> {\n   };\n \n   toggleUserInfoVisibility = () => {\n-    if (!window.parent) {\n-      return;\n-    }\n-\n-    const { user } = this.props.data;\n-    const data = JSON.stringify({ isUserInfoShown: true, user });\n-\n-    window.parent.postMessage(data, '*');\n+    postMessageToParent({ profile: this.props.data.user });\n   };\n \n   togglePin = () => {\n@@ -357,21 +350,23 @@ export class Comment extends Component<CommentProps, State> {\n     this.props.setReplyEditState!({ id: this.props.data.id, state: CommentMode.None });\n   };\n \n-  scrollToParent = (e: Event) => {\n-    const {\n-      data: { pid },\n-    } = this.props;\n+  scrollToParent = (evt: Event) => {\n+    const { pid } = this.props.data;\n+    const parentCommentNode = document.getElementById(`${COMMENT_NODE_CLASSNAME_PREFIX}${pid}`);\n \n-    e.preventDefault();\n+    evt.preventDefault();\n \n-    const parentCommentNode = document.getElementById(`${COMMENT_NODE_CLASSNAME_PREFIX}${pid}`);\n+    if (!parentCommentNode) {\n+      return;\n+    }\n \n-    if (parentCommentNode) {\n-      const top = parentCommentNode.getBoundingClientRect().top;\n-      if (!postMessage({ scrollTo: top })) {\n-        parentCommentNode.scrollIntoView();\n-      }\n+    const top = parentCommentNode.getBoundingClientRect().top;\n+\n+    if (postMessageToParent({ scrollTo: top })) {\n+      return;\n     }\n+\n+    parentCommentNode.scrollIntoView();\n   };\n \n   copyComment = () => {"
+    },
+    {
+      "sha": "aa3b90b6a40923f8002326276d09abfe619ae83e",
+      "filename": "frontend/app/components/dropdown/dropdown.tsx",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 19,
+      "changes": 34,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/dropdown/dropdown.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/dropdown/dropdown.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/dropdown/dropdown.tsx?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -134,25 +134,23 @@ export class Dropdown extends Component<Props, State> {\n     });\n   }\n \n-  receiveMessage(event: MessageEvent<{ clickOutside?: boolean }>) {\n-    try {\n-      const data = parseMessage(event);\n+  receiveMessage(evt: MessageEvent) {\n+    const data = parseMessage(evt);\n \n-      if (!data || !data.clickOutside || !this.state.isActive) {\n-        return;\n-      }\n+    if (!data.clickOutside || !this.state.isActive) {\n+      return;\n+    }\n \n-      this.setState(\n-        {\n-          contentTranslateX: 0,\n-          isActive: false,\n-        },\n-        () => {\n-          this.__onClose();\n-          this.props.onClose && this.props.onClose(this.rootNode.current!);\n-        }\n-      );\n-    } catch (e) {}\n+    this.setState(\n+      {\n+        contentTranslateX: 0,\n+        isActive: false,\n+      },\n+      () => {\n+        this.__onClose();\n+        this.props.onClose?.(this.rootNode.current!);\n+      }\n+    );\n   }\n \n   onOutsideClick(e: MouseEvent) {\n@@ -171,13 +169,11 @@ export class Dropdown extends Component<Props, State> {\n \n   componentDidMount() {\n     document.addEventListener('click', this.onOutsideClick);\n-\n     window.addEventListener('message', this.receiveMessage);\n   }\n \n   componentWillUnmount() {\n     document.removeEventListener('click', this.onOutsideClick);\n-\n     window.removeEventListener('message', this.receiveMessage);\n   }\n "
+    },
+    {
+      "sha": "d2c9dbed51035799c155585e42cb18b7b13c3b85",
+      "filename": "frontend/app/components/root/root.tsx",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 11,
+      "changes": 22,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/root/root.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/root/root.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/root/root.tsx?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -4,7 +4,7 @@ import b from 'bem-react-helper';\n import { IntlShape, useIntl, FormattedMessage, defineMessages } from 'react-intl';\n import clsx from 'clsx';\n \n-import type { Sorting, Theme } from 'common/types';\n+import type { Sorting } from 'common/types';\n import type { StoreState } from 'store';\n import {\n   COMMENT_NODE_CLASSNAME_PREFIX,\n@@ -39,7 +39,7 @@ import { ConnectedComment as Comment } from 'components/comment/connected-commen\n import { uploadImage, getPreview } from 'common/api';\n import { isUserAnonymous } from 'utils/isUserAnonymous';\n import { bindActions } from 'utils/actionBinder';\n-import { postMessage, parseMessage } from 'utils/postMessage';\n+import { postMessageToParent, parseMessage } from 'utils/postMessage';\n import { useActions } from 'hooks/useAction';\n import { setCollapse } from 'store/thread/actions';\n import { logout } from 'components/auth/auth.api';\n@@ -122,7 +122,7 @@ export class Root extends Component<Props, State> {\n     const userloading = this.props.fetchUser().finally(() => this.setState({ isUserLoading: false }));\n \n     Promise.all([userloading, this.props.fetchComments()]).finally(() => {\n-      postMessage({ remarkIframeHeight: document.body.offsetHeight });\n+      postMessageToParent({ height: document.body.offsetHeight });\n       setTimeout(this.checkUrlHash);\n       window.addEventListener('hashchange', this.checkUrlHash);\n     });\n@@ -169,22 +169,22 @@ export class Root extends Component<Props, State> {\n   toMessage = (hash: string) => {\n     const comment = document.querySelector(hash);\n     if (comment) {\n-      postMessage({ scrollTo: comment.getBoundingClientRect().top });\n+      postMessageToParent({ scrollTo: comment.getBoundingClientRect().top });\n       comment.classList.add('comment_highlighting');\n       setTimeout(() => {\n         comment.classList.remove('comment_highlighting');\n       }, 5e3);\n     }\n   };\n \n-  onMessage(event: MessageEvent<{ theme?: Theme }>) {\n-    try {\n-      const data = parseMessage(event);\n+  onMessage(event: MessageEvent) {\n+    const data = parseMessage(event);\n \n-      if (data.theme && THEMES.includes(data.theme)) {\n-        this.props.setTheme(data.theme);\n-      }\n-    } catch (e) {}\n+    if (!data.theme || !THEMES.includes(data.theme)) {\n+      return;\n+    }\n+\n+    this.props.setTheme(data.theme);\n   }\n \n   onBlockedUsersShow = async () => {"
+    },
+    {
+      "sha": "7dd3f62bfc921b14154775691a6571855f23c24e",
+      "filename": "frontend/app/components/user-info/user-info.tsx",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 6,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/user-info/user-info.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/components/user-info/user-info.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/user-info/user-info.tsx?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -6,9 +6,9 @@ import { useIntl, defineMessages, FormattedMessage, IntlShape } from 'react-intl\n import { StoreState } from 'store';\n import { Comment } from 'common/types';\n import { fetchInfo } from 'store/user-info/actions';\n-import { userInfo } from 'common/user-info-settings';\n-import { postMessage } from 'utils/postMessage';\n+import { parseQuery } from 'utils/parseQuery';\n import { bindActions } from 'utils/actionBinder';\n+import { postMessageToParent } from 'utils/postMessage';\n import { useActions } from 'hooks/useAction';\n import { Avatar } from 'components/avatar';\n \n@@ -23,6 +23,8 @@ const messages = defineMessages({\n   },\n });\n \n+const user = parseQuery();\n+\n type Props = {\n   comments: Comment[] | null;\n } & typeof boundActions & { intl: IntlShape };\n@@ -38,7 +40,7 @@ class UserInfo extends Component<Props, State> {\n   componentWillMount(): void {\n     if (!this.props.comments && this.state.isLoading) {\n       this.props\n-        .fetchInfo()\n+        .fetchInfo(user.id)\n         .then(() => {\n           this.setState({ isLoading: false });\n         })\n@@ -55,7 +57,6 @@ class UserInfo extends Component<Props, State> {\n   }\n \n   render(): JSX.Element | null {\n-    const user = userInfo;\n     const { comments = [] } = this.props;\n     const { isLoading } = this.state;\n \n@@ -87,12 +88,12 @@ class UserInfo extends Component<Props, State> {\n   static onKeyDown(e: KeyboardEvent): void {\n     // ESCAPE key pressed\n     if (e.keyCode === 27) {\n-      postMessage({ isUserInfoShown: false });\n+      postMessageToParent({ profile: null });\n     }\n   }\n }\n \n-const commentsSelector = (state: StoreState) => state.userComments[userInfo.id];\n+const commentsSelector = (state: StoreState) => state.userComments[user.id];\n \n export const ConnectedUserInfo: FunctionComponent = () => {\n   const comments = useSelector(commentsSelector);"
+    },
+    {
+      "sha": "1ea47532b8412ce341b7acd2072c132e6ad192d0",
+      "filename": "frontend/app/embed.ts",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 36,
+      "changes": 68,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/embed.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/embed.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/embed.ts?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -1,6 +1,6 @@\n import type { UserInfo, Theme } from 'common/types';\n import { BASE_URL, NODE_ID, COMMENT_NODE_CLASSNAME_PREFIX } from 'common/constants.config';\n-import { parseMessage, ParentMessage } from 'utils/postMessage';\n+import { parseMessage, postMessageToIframe } from 'utils/postMessage';\n \n if (document.readyState === 'loading') {\n   document.addEventListener('DOMContentLoaded', init);\n@@ -264,59 +264,55 @@ function createInstance(config: typeof window.remark_config) {\n     },\n   };\n \n-  function receiveMessages(event: MessageEvent<ParentMessage>): void {\n-    try {\n-      const data = parseMessage(event);\n+  function receiveMessages(event: MessageEvent): void {\n+    const data = parseMessage(event);\n \n-      if (data.remarkIframeHeight) {\n-        iframe.style.height = `${data.remarkIframeHeight}px`;\n-      }\n+    if (data.height) {\n+      iframe.style.height = `${data.height}px`;\n+    }\n \n-      if (data.scrollTo) {\n-        window.scrollTo(window.pageXOffset, data.scrollTo + iframe.getBoundingClientRect().top + window.pageYOffset);\n-      }\n+    if (data.scrollTo) {\n+      window.scrollTo(window.pageXOffset, data.scrollTo + iframe.getBoundingClientRect().top + window.pageYOffset);\n+    }\n \n-      if (Object.prototype.hasOwnProperty.call(data, 'isUserInfoShown')) {\n-        if (data.isUserInfoShown) {\n-          userInfo.init(data.user);\n-        } else {\n-          userInfo.close();\n-        }\n+    if (typeof data.profile === 'object') {\n+      if (data.profile === null) {\n+        userInfo.close();\n+      } else {\n+        userInfo.init(data.profile);\n       }\n+    }\n \n-      if (data.inited) {\n-        postHashToIframe();\n-        postTitleToIframe(document.title);\n-      }\n-    } catch (e) {}\n+    if (data.inited) {\n+      postHashToIframe();\n+      postTitleToIframe(document.title);\n+    }\n   }\n \n-  function postHashToIframe(e?: Event & { newURL: string }) {\n-    const hash = e ? `#${e.newURL.split('#')[1]}` : window.location.hash;\n-\n-    if (hash.indexOf(`#${COMMENT_NODE_CLASSNAME_PREFIX}`) === 0) {\n-      if (e) e.preventDefault();\n+  function postHashToIframe(evt?: Event & { newURL: string }) {\n+    const hash = evt ? `#${evt.newURL.split('#')[1]}` : window.location.hash;\n \n-      iframe.contentWindow!.postMessage({ hash }, '*');\n+    if (!hash.startsWith(`#${COMMENT_NODE_CLASSNAME_PREFIX}`)) {\n+      return;\n     }\n+\n+    evt?.preventDefault();\n+    postMessageToIframe(iframe, { hash });\n   }\n \n   function postTitleToIframe(title: string) {\n-    if (iframe.contentWindow) {\n-      iframe.contentWindow.postMessage({ title }, '*');\n-    }\n+    postMessageToIframe(iframe, { title });\n   }\n \n-  function postClickOutsideToIframe(e: MouseEvent) {\n-    if (iframe.contentWindow && !iframe.contains(e.target as Node)) {\n-      iframe.contentWindow.postMessage({ clickOutside: true }, '*');\n+  function postClickOutsideToIframe(evt: MouseEvent) {\n+    if (iframe.contains(evt.target as Node)) {\n+      return;\n     }\n+    postMessageToIframe(iframe, { clickOutside: true });\n   }\n \n   function changeTheme(theme: Theme) {\n-    if (iframe.contentWindow) {\n-      iframe.contentWindow.postMessage({ theme }, '*');\n-    }\n+    postMessageToIframe(iframe, { theme });\n   }\n \n   function destroy() {"
+    },
+    {
+      "sha": "b7b77838841e9975cc1dcdf4cff56cc6ab143631",
+      "filename": "frontend/app/remark.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/remark.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/remark.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/remark.tsx?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -31,7 +31,7 @@ async function init(): Promise<void> {\n     throw new Error(\"Remark42: Can't find root node.\");\n   }\n \n-  const params = parseQuery<{ page?: string; locale?: string; simple_view?: boolean }>();\n+  const params = parseQuery();\n   const locale = getLocale(params);\n   const messages = await loadLocale(locale).catch(() => ({}));\n   const boundActions = bindActionCreators({ fetchHiddenUsers, restoreCollapsedThreads }, store.dispatch);"
+    },
+    {
+      "sha": "77c35640e30016e064455c953ecd626ee0c19679",
+      "filename": "frontend/app/store/user-info/actions.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 7,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/store/user-info/actions.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/store/user-info/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/user-info/actions.ts?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -1,19 +1,16 @@\n import { getUserComments } from 'common/api';\n import { Comment } from 'common/types';\n-import { userInfo } from 'common/user-info-settings';\n \n import { StoreAction } from '../index';\n import { USER_INFO_SET } from './types';\n \n-export const fetchInfo = (): StoreAction<Promise<Comment[] | null>> => async (dispatch) => {\n-  if (!userInfo.id) {\n-    return null;\n-  }\n+export const fetchInfo = (id: string): StoreAction<Promise<Comment[] | null>> => async (dispatch) => {\n   // TODO: limit\n-  const info = await getUserComments(userInfo.id, 10);\n+  const info = await getUserComments(id, 10);\n+\n   dispatch({\n     type: USER_INFO_SET,\n-    id: userInfo.id,\n+    id,\n     comments: info.comments,\n   });\n   return info.comments;"
+    },
+    {
+      "sha": "7be355a70e23070df059e315b024d366ec2e8db4",
+      "filename": "frontend/app/utils/parseQuery.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/utils/parseQuery.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/utils/parseQuery.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/utils/parseQuery.ts?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -1,6 +1,6 @@\n /** converts window.location.search into object */\n \n-export function parseQuery<T extends {}>(search: string = window.location.search): T {\n+export function parseQuery<T extends Record<string, string>>(search: string = window.location.search): T {\n   const params: { [key: string]: string } = {};\n   new URLSearchParams(search).forEach((value: string, key: string) => {\n     params[key] = value;"
+    },
+    {
+      "sha": "776b487c5c952a5bf7d7c09a9fef33c888b74f78",
+      "filename": "frontend/app/utils/postMessage.ts",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 15,
+      "changes": 49,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/utils/postMessage.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/app/utils/postMessage.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/utils/postMessage.ts?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -1,42 +1,61 @@\n import type { Theme, UserInfo } from 'common/types';\n \n-export type ParentMessage = {\n+type ParentMessage = {\n   inited?: true;\n   scrollTo?: number;\n-  remarkIframeHeight?: number;\n-} & (\n-  | { isUserInfoShown: true; user: UserInfo }\n-  | { isUserInfoShown: false; user?: never }\n-  | { isUserInfoShown?: never; user?: never }\n-);\n-\n-export type ChildMessage = {\n+  height?: number;\n+  profile?: UserInfo | null;\n+};\n+\n+type ChildMessage = {\n+  clickOutside?: true;\n+  hash?: string;\n+  title?: string;\n   theme?: Theme;\n };\n \n-type AllMessages = ParentMessage & ChildMessage;\n+type AllMessages = ChildMessage & ParentMessage;\n \n /**\n  * Sends message to parent window\n  *\n  * @returns request success of fail\n  */\n-export function postMessage(data: AllMessages): boolean {\n-  if (!window.parent || window.parent === window) return false;\n+export function postMessageToParent(data: ParentMessage): boolean {\n+  if (!window.parent || window.parent === window) {\n+    return false;\n+  }\n+\n   window.parent.postMessage(data, '*');\n   return true;\n }\n \n+/**\n+ * Sends message to target iframe\n+ *\n+ * @param target iframe to send data\n+ * @param data that will be send to iframe\n+ * @returns request success of fail\n+ */\n+export function postMessageToIframe(target: HTMLIFrameElement, data: ChildMessage): boolean {\n+  if (!target?.contentWindow) {\n+    return false;\n+  }\n+\n+  target.contentWindow.postMessage(data, '*');\n+  return true;\n+}\n+\n /**\n  * Parses data from post message that was received in iframe\n  *\n  * @param evt post message event\n  * @returns\n  */\n-export function parseMessage<T>({ data }: MessageEvent<T>): T {\n+export function parseMessage({ data }: MessageEvent): AllMessages {\n   if (typeof data !== 'object' || data === null || Array.isArray(data)) {\n-    return {} as T;\n+    return {} as AllMessages;\n   }\n \n-  return data as T;\n+  return data as AllMessages;\n }"
+    },
+    {
+      "sha": "84df30082ce3e2559f7fa401e968585781f33108",
+      "filename": "frontend/templates/iframe.ejs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 15,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/templates/iframe.ejs",
+      "raw_url": "https://github.com/umputun/remark42/raw/3068dfe63755d21c35c99cf3826dd8ca89f73136/frontend/templates/iframe.ejs",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/templates/iframe.ejs?ref=3068dfe63755d21c35c99cf3826dd8ca89f73136",
+      "patch": "@@ -127,20 +127,7 @@\n     </script>\n     <% } %>\n     <script>\n-      // TODO: we must stop using `setInterval` for resize iframe\n-      // TODO: we must use more efficient way to change iframe height\n-      // TODO: we must open comments widget and user-info widget on different pages (now iframe.html opens both of widgets)\n-      var lastHeight = 0;\n-      setInterval(function () {\n-        if (document.body.offsetHeight !== lastHeight && document.body.offsetHeight > 22) {\n-          lastHeight = document.body.offsetHeight;\n-          window.parent.postMessage({ remarkIframeHeight: lastHeight }, '*');\n-        }\n-      }, 200);\n-\n-      window.addEventListener('message', receiveMessages);\n-\n-      function receiveMessages(event) {\n+      window.addEventListener('message', function receiveMessages(event) {\n         try {\n           const data = event.data;\n           const isObj = typeof data === 'object' && data !== null && !Array.isArray(data);\n@@ -155,7 +142,7 @@\n             document.title = data.title;\n           }\n         } catch (e) {}\n-      }\n+      });\n \n       var remark_config =\n         window.location.search.length < 2"
+    }
+  ]
+}
