@@ -1,0 +1,98 @@
+{
+  "sha": "b73ddf6e34887e9ad1c562c0efda0d3d21965668",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6YjczZGRmNmUzNDg4N2U5YWQxYzU2MmMwZWZkYTBkM2QyMTk2NTY2OA==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2021-06-07T16:48:33Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2021-06-07T17:04:37Z"
+    },
+    "message": "Upd bug announcement link.",
+    "tree": {
+      "sha": "590531446a76f9255031b8d1024b5f294c3c6959",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/590531446a76f9255031b8d1024b5f294c3c6959"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/b73ddf6e34887e9ad1c562c0efda0d3d21965668",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/b73ddf6e34887e9ad1c562c0efda0d3d21965668",
+  "html_url": "https://github.com/debiki/talkyard/commit/b73ddf6e34887e9ad1c562c0efda0d3d21965668",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/b73ddf6e34887e9ad1c562c0efda0d3d21965668/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2fc9fd8dd5720a80b97d20b9e21df29b9bafab0c",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/2fc9fd8dd5720a80b97d20b9e21df29b9bafab0c",
+      "html_url": "https://github.com/debiki/talkyard/commit/2fc9fd8dd5720a80b97d20b9e21df29b9bafab0c"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e7a8817101d45e668c155ac4c71fe695f3e93840",
+      "filename": "client/app-slim/help/serverAnnouncements.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/debiki/talkyard/blob/b73ddf6e34887e9ad1c562c0efda0d3d21965668/client/app-slim/help/serverAnnouncements.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/b73ddf6e34887e9ad1c562c0efda0d3d21965668/client/app-slim/help/serverAnnouncements.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/client/app-slim/help/serverAnnouncements.ts?ref=b73ddf6e34887e9ad1c562c0efda0d3d21965668",
+      "patch": "@@ -47,7 +47,7 @@ export function getServerAnnouncements(store: Store): RElm | Nl {\n   // \"Code review: Auto https ...\", Mars 20, 2021, in talkyard-prod-one.\n   const autoLuaCertFromMs = 1616112000 * 1000 // 2021-03-19 00:00:00Z\n   const maybeCertBug =\n-      /*isSelfHosted() &&*/ me.siteCreatedAtMs && autoLuaCertFromMs < me.siteCreatedAtMs;\n+      isSelfHosted() && me.siteCreatedAtMs && autoLuaCertFromMs < me.siteCreatedAtMs;\n   let certBugAnn: RElm | Nl = !maybeCertBug ? null :\n       help.HelpMessageBox({ message: {\n           // SAn = Server Announcement, RnCt = Renew HTTPS Certificate tips nr 1.\n@@ -56,7 +56,8 @@ export function getServerAnnouncements(store: Store): RElm | Nl {\n             r.p({},\n               r.b({}, \"Action required:\"), \" For HTTPS cert to get renewed, \" +\n               \"clear the Redis cache — read more at \",\n-              ExtVerbLink('https://www.talkyard.io/-123/something'),  // !\n+              ExtVerbLink(\n+                  'https://www.talkyard.io/-565/self-hosted-bug-auto-cert-renewal'),\n               \" (this is because of a Talkyard bug).\"),\n             ThisShownToAdminsOnly()),\n       } });"
+    }
+  ]
+}
