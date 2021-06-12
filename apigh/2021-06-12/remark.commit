@@ -1,0 +1,98 @@
+{
+  "sha": "4f0002abdbcdb5beea291616ef28b879c3f7ced0",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjRmMDAwMmFiZGJjZGI1YmVlYTI5MTYxNmVmMjhiODc5YzNmN2NlZDA=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-06-09T18:02:38Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-06-09T18:09:57Z"
+    },
+    "message": "chage iframe size if any element is changed",
+    "tree": {
+      "sha": "ebe67d5516391a4768f225da7433d97080a30c79",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/ebe67d5516391a4768f225da7433d97080a30c79"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/4f0002abdbcdb5beea291616ef28b879c3f7ced0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/4f0002abdbcdb5beea291616ef28b879c3f7ced0",
+  "html_url": "https://github.com/umputun/remark42/commit/4f0002abdbcdb5beea291616ef28b879c3f7ced0",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/4f0002abdbcdb5beea291616ef28b879c3f7ced0/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "be60c7a48190856723a0d3acc70fb87028630f71",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/be60c7a48190856723a0d3acc70fb87028630f71",
+      "html_url": "https://github.com/umputun/remark42/commit/be60c7a48190856723a0d3acc70fb87028630f71"
+    }
+  ],
+  "stats": {
+    "total": 17,
+    "additions": 15,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "1a017fdb71a375c48371f58b98c12ad199457c1c",
+      "filename": "frontend/app/components/root/root.tsx",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 2,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/4f0002abdbcdb5beea291616ef28b879c3f7ced0/frontend/app/components/root/root.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/4f0002abdbcdb5beea291616ef28b879c3f7ced0/frontend/app/components/root/root.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/root/root.tsx?ref=4f0002abdbcdb5beea291616ef28b879c3f7ced0",
+      "patch": "@@ -1,4 +1,5 @@\n import { h, Component, FunctionComponent, Fragment } from 'preact';\n+import { useEffect, useRef } from 'preact/hooks';\n import { useSelector } from 'react-redux';\n import b from 'bem-react-helper';\n import { IntlShape, useIntl, FormattedMessage, defineMessages } from 'react-intl';\n@@ -118,7 +119,7 @@ export class Root extends Component<Props, State> {\n     isSettingsVisible: false,\n   };\n \n-  componentWillMount() {\n+  componentDidMount() {\n     const userloading = this.props.fetchUser().finally(() => this.setState({ isUserLoading: false }));\n \n     Promise.all([userloading, this.props.fetchComments()]).finally(() => {\n@@ -334,9 +335,21 @@ export const ConnectedRoot: FunctionComponent = () => {\n   const props = useSelector(mapStateToProps);\n   const actions = useActions(boundActions);\n   const intl = useIntl();\n+  const rootRef = useRef<HTMLDivElement>(null);\n+\n+  useEffect(() => {\n+    // TODO: throttle updates\n+    const observer = new MutationObserver(() => {\n+      postMessageToParent({ height: document.body.offsetHeight });\n+    });\n+\n+    observer.observe(rootRef.current, { attributes: true, childList: true, subtree: true });\n+\n+    return () => observer.disconnect();\n+  }, []);\n \n   return (\n-    <div className={clsx(b('root', {}, { theme: props.theme }), props.theme)}>\n+    <div className={clsx(b('root', {}, { theme: props.theme }), props.theme)} ref={rootRef}>\n       <Root {...props} {...actions} intl={intl} />\n       <p className=\"root__copyright\" role=\"contentinfo\">\n         <FormattedMessage"
+    }
+  ]
+}
