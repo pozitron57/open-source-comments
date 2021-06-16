@@ -1,0 +1,110 @@
+{
+  "sha": "0f9d31a85e8ec645909afd6e237cfde5f5dd8df8",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODowZjlkMzFhODVlOGVjNjQ1OTA5YWZkNmUyMzdjZmRlNWY1ZGQ4ZGY4",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2021-06-16T10:22:11Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-06-16T10:22:11Z"
+    },
+    "message": "FIX: Make avatar-flair component fail gracefully group info missing (#13398)\n\nThis can happen when an avatar-flair component is rendered to an anonymous user on a login_required site (e.g. when they are redeeming an invite). The lack of group information was causing an error to be raised. With this commit, it now simple skips rendering the flair.",
+    "tree": {
+      "sha": "60406bb4bd7738b7873c5c62c7bcc3033fd7dfc1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/60406bb4bd7738b7873c5c62c7bcc3033fd7dfc1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgydDTCRBK7hj4Ov3rIwAAwn4IAEQ1QI6wDstKKG/IIAEPsBxo\n37nCZaZC9q/MMWt+3z9/l1jxK6qQ0JPTAkkfaXXymF4d9KQH+WYnTfY6WolVU5Dq\nNkcV4Q+2SM9tcfoNuK9BL8u6ED6pV3nZnWoqyqw3/Qp8liBS9wXuRxdM2qHVs1XM\nDWfik/Ht3g/DrPv8gA/nO++j1wsxmZDlOENaOzgNNWa9NjwZWoFtAoRyyDiCcbQC\n20XiD3g2L31H6yTiQkfthDu/7XxW3n31aGueX+Z8EJ/C0F97AfUati0UWh+z6aoF\nTth3OCaPxa5i8YYmd/W1bVAyTQ1e6OMO4aIqyw5FwBLCufh6952OrgsHqp7ob+4=\n=Dg8d\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 60406bb4bd7738b7873c5c62c7bcc3033fd7dfc1\nparent b0416cb1c11ba762da63ebdb297dbd95da334df9\nauthor David Taylor <david@taylorhq.com> 1623838931 +0100\ncommitter GitHub <noreply@github.com> 1623838931 +0100\n\nFIX: Make avatar-flair component fail gracefully group info missing (#13398)\n\nThis can happen when an avatar-flair component is rendered to an anonymous user on a login_required site (e.g. when they are redeeming an invite). The lack of group information was causing an error to be raised. With this commit, it now simple skips rendering the flair."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8",
+  "html_url": "https://github.com/discourse/discourse/commit/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b0416cb1c11ba762da63ebdb297dbd95da334df9",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/b0416cb1c11ba762da63ebdb297dbd95da334df9",
+      "html_url": "https://github.com/discourse/discourse/commit/b0416cb1c11ba762da63ebdb297dbd95da334df9"
+    }
+  ],
+  "stats": {
+    "total": 22,
+    "additions": 21,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "3a8bb1f495d5ece9785367447859a7315daf8262",
+      "filename": "app/assets/javascripts/discourse/app/lib/avatar-flair.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8/app/assets/javascripts/discourse/app/lib/avatar-flair.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8/app/assets/javascripts/discourse/app/lib/avatar-flair.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/lib/avatar-flair.js?ref=0f9d31a85e8ec645909afd6e237cfde5f5dd8df8",
+      "patch": "@@ -52,7 +52,7 @@ function initializeAutoGroupFlair(site) {\n     \"trust_level_3\",\n     \"trust_level_4\",\n   ].forEach((groupName) => {\n-    const group = site.groups.findBy(\"name\", groupName);\n+    const group = site.groups?.findBy(\"name\", groupName);\n     if (group && group.flair_url) {\n       _noAutoFlair = false;\n       _autoGroupFlair[groupName] = {"
+    },
+    {
+      "sha": "bc457a57d061d7f078b78fc422eca6dabe0b010f",
+      "filename": "app/assets/javascripts/discourse/tests/integration/components/user-avatar-flair-test.js",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/discourse/discourse/blob/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8/app/assets/javascripts/discourse/tests/integration/components/user-avatar-flair-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/0f9d31a85e8ec645909afd6e237cfde5f5dd8df8/app/assets/javascripts/discourse/tests/integration/components/user-avatar-flair-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/integration/components/user-avatar-flair-test.js?ref=0f9d31a85e8ec645909afd6e237cfde5f5dd8df8",
+      "patch": "@@ -147,6 +147,26 @@ discourseModule(\n       },\n     });\n \n+    componentTest(\"avatar flair for login-required site, before login\", {\n+      template: hbs`{{user-avatar-flair user=args}}`,\n+      beforeEach() {\n+        resetFlair();\n+        this.set(\"args\", {\n+          admin: false,\n+          moderator: false,\n+          trust_level: 3,\n+        });\n+        // Groups not serialized for anon on login_required\n+        this.site.groups = undefined;\n+      },\n+      afterEach() {\n+        resetFlair();\n+      },\n+      test(assert) {\n+        assert.ok(!exists(\".avatar-flair\"), \"it does not render a flair\");\n+      },\n+    });\n+\n     componentTest(\"avatar flair for primary group flair\", {\n       template: hbs`{{user-avatar-flair user=args}}`,\n       beforeEach() {"
+    }
+  ]
+}
