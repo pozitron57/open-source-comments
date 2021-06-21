@@ -1,0 +1,98 @@
+{
+  "sha": "c69b58e22e692678ef3885e652fbee41f50bec81",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpjNjliNThlMjJlNjkyNjc4ZWYzODg1ZTY1MmZiZWU0MWY1MGJlYzgx",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2021-06-21T11:13:24Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-06-21T11:13:24Z"
+    },
+    "message": "FIX: Downsize image last when saving uploads (#13458)\n\nThe other processing operations, such as fixing orientation or cropping,\r\ncan in rare cases increase the size of the uploaded image. Running the\r\ndownsize step after all these operations should create the best image\r\npossible.",
+    "tree": {
+      "sha": "dfc59f60c4f352e771e3653a05fe7a618816468e",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/dfc59f60c4f352e771e3653a05fe7a618816468e"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/c69b58e22e692678ef3885e652fbee41f50bec81",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg0HRUCRBK7hj4Ov3rIwAAsCEIACT+20aIES9osFvOyIpNOyKr\nl/hefajNVmBM8hOxIT2rGmdrVuZh5ra5CtLmlsFXkdoT35JV9uoWR3znfw9ZXKvW\nbHON4GccMTiHqhvbQc2c4I8IzeHPhjPhnC14N+LZAuaqwS8mW9Qx+T0gR47y95k2\nth4woTvG8jRE0s2SEUFBpzvX1S7hVHOVpmCpt+HespNvrhtDBxUKkxiFzb7c96dv\nAIFUT6vQIFxdTZX8qT0p8XbOYi3uSahkBat+XSaKQZ07NrsTlbrMMxsLRv8cyqYy\nAoDUEqUUEiAXiNW0X0lYhFBCb64FagbRK3fGdTbPe7KrYimiuELnllJSuMGwWK8=\n=6D8z\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree dfc59f60c4f352e771e3653a05fe7a618816468e\nparent e64f9c87fb4bdc7505c81fc3b388d6b2841c5566\nauthor Dan Ungureanu <dan@ungureanu.me> 1624274004 +0300\ncommitter GitHub <noreply@github.com> 1624274004 +0300\n\nFIX: Downsize image last when saving uploads (#13458)\n\nThe other processing operations, such as fixing orientation or cropping,\r\ncan in rare cases increase the size of the uploaded image. Running the\r\ndownsize step after all these operations should create the best image\r\npossible."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/c69b58e22e692678ef3885e652fbee41f50bec81",
+  "html_url": "https://github.com/discourse/discourse/commit/c69b58e22e692678ef3885e652fbee41f50bec81",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/c69b58e22e692678ef3885e652fbee41f50bec81/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e64f9c87fb4bdc7505c81fc3b388d6b2841c5566",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e64f9c87fb4bdc7505c81fc3b388d6b2841c5566",
+      "html_url": "https://github.com/discourse/discourse/commit/e64f9c87fb4bdc7505c81fc3b388d6b2841c5566"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 2,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "e5c43dc0240d18bf3c03a1ca4cd79ba8f908ddb4",
+      "filename": "lib/upload_creator.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/discourse/discourse/blob/c69b58e22e692678ef3885e652fbee41f50bec81/lib/upload_creator.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/c69b58e22e692678ef3885e652fbee41f50bec81/lib/upload_creator.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/upload_creator.rb?ref=c69b58e22e692678ef3885e652fbee41f50bec81",
+      "patch": "@@ -59,13 +59,11 @@ def create_for(user_id)\n           clean_svg!\n         elsif !Rails.env.test? || @opts[:force_optimize]\n           convert_to_jpeg! if convert_png_to_jpeg? || should_alter_quality?\n-          downsize!        if should_downsize?\n-\n-          return @upload   if is_still_too_big?\n-\n           fix_orientation! if should_fix_orientation?\n           crop!            if should_crop?\n           optimize!        if should_optimize?\n+          downsize!        if should_downsize?\n+          return @upload   if is_still_too_big?\n         end\n \n         # conversion may have switched the type"
+    }
+  ]
+}
