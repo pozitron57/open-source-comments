@@ -1,0 +1,98 @@
+{
+  "sha": "1a6759a5d9e0bd49a99df31bb77c72310d84545b",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODoxYTY3NTlhNWQ5ZTBiZDQ5YTk5ZGYzMWJiNzdjNzIzMTBkODQ1NDVi",
+  "commit": {
+    "author": {
+      "name": "Joffrey JAFFEUX",
+      "email": "j.jaffeux@gmail.com",
+      "date": "2021-06-22T10:26:52Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-06-22T10:26:52Z"
+    },
+    "message": "FIX: ensures average is applied on last incomplete segment (#13472)",
+    "tree": {
+      "sha": "018289254a964517fe453cd6982b8597ed153c15",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/018289254a964517fe453cd6982b8597ed153c15"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/1a6759a5d9e0bd49a99df31bb77c72310d84545b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg0brsCRBK7hj4Ov3rIwAAt7kIAKeniV1rioJ3LWs5RMw3/GK3\nROLNt7K5UnmGC+o+AEIrJIvOAfuRWcQCAiKpOuRfpbjFHF6/+n2kXz3jcGeO6s1+\nJLyqUCmuy4QdMgKqjmxANKkjAVu4e1xsktECVBDillCJEVFIFEjlxZqbCu6zO40A\n9ZIoNGB7NJFdcHVeAH524LrkITiniswseYEJCGbljIVzn9pfuw79YHnBq6kqZtyB\n78+w6kttDWxaaQpIpDMa4xceVqcT2WzusW3p47nnzsAvXTgUBa6zyAaHJbJ1eO/v\nUXNvasqxzKmYstwtXHy+M9xKbj/5SWJbJllQGbxDi0HyZPDJ4osAQptLJnqKZcA=\n=bcdy\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 018289254a964517fe453cd6982b8597ed153c15\nparent fa470cf6fe45f50a7d41e672a02d11983c40800b\nauthor Joffrey JAFFEUX <j.jaffeux@gmail.com> 1624357612 +0200\ncommitter GitHub <noreply@github.com> 1624357612 +0200\n\nFIX: ensures average is applied on last incomplete segment (#13472)\n\n"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/1a6759a5d9e0bd49a99df31bb77c72310d84545b",
+  "html_url": "https://github.com/discourse/discourse/commit/1a6759a5d9e0bd49a99df31bb77c72310d84545b",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/1a6759a5d9e0bd49a99df31bb77c72310d84545b/comments",
+  "author": {
+    "login": "jjaffeux",
+    "id": 339945,
+    "node_id": "MDQ6VXNlcjMzOTk0NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/339945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jjaffeux",
+    "html_url": "https://github.com/jjaffeux",
+    "followers_url": "https://api.github.com/users/jjaffeux/followers",
+    "following_url": "https://api.github.com/users/jjaffeux/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jjaffeux/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jjaffeux/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jjaffeux/subscriptions",
+    "organizations_url": "https://api.github.com/users/jjaffeux/orgs",
+    "repos_url": "https://api.github.com/users/jjaffeux/repos",
+    "events_url": "https://api.github.com/users/jjaffeux/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jjaffeux/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fa470cf6fe45f50a7d41e672a02d11983c40800b",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/fa470cf6fe45f50a7d41e672a02d11983c40800b",
+      "html_url": "https://github.com/discourse/discourse/commit/fa470cf6fe45f50a7d41e672a02d11983c40800b"
+    }
+  ],
+  "stats": {
+    "total": 25,
+    "additions": 22,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "57d9bb69a5a0504b35364fe12372ef76c67fb866",
+      "filename": "app/assets/javascripts/admin/addon/models/report.js",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 3,
+      "changes": 25,
+      "blob_url": "https://github.com/discourse/discourse/blob/1a6759a5d9e0bd49a99df31bb77c72310d84545b/app/assets/javascripts/admin/addon/models/report.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/1a6759a5d9e0bd49a99df31bb77c72310d84545b/app/assets/javascripts/admin/addon/models/report.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/admin/addon/models/report.js?ref=1a6759a5d9e0bd49a99df31bb77c72310d84545b",
+      "patch": "@@ -506,6 +506,11 @@ const Report = EmberObject.extend({\n export const WEEKLY_LIMIT_DAYS = 365;\n export const DAILY_LIMIT_DAYS = 34;\n \n+function applyAverage(value, start, end) {\n+  const count = end.diff(start, \"day\") + 1; // 1 to include start\n+  return parseFloat((value / count).toFixed(2));\n+}\n+\n Report.reopenClass({\n   groupingForDatapoints(count) {\n     if (count < DAILY_LIMIT_DAYS) {\n@@ -562,6 +567,7 @@ Report.reopenClass({\n         },\n       ];\n \n+      let appliedAverage = false;\n       data.forEach((d) => {\n         const date = moment(d.x, \"YYYY-MM-DD\");\n \n@@ -570,15 +576,20 @@ Report.reopenClass({\n           !date.isBetween(currentStart, currentEnd)\n         ) {\n           if (model.average) {\n-            const days = currentEnd.diff(currentStart, \"day\") + 1; // 1 to include start\n-            transformedData[currentIndex].y = parseFloat(\n-              (transformedData[currentIndex].y / days).toFixed(2)\n+            transformedData[currentIndex].y = applyAverage(\n+              transformedData[currentIndex].y,\n+              currentStart,\n+              currentEnd\n             );\n+\n+            appliedAverage = true;\n           }\n \n           currentIndex += 1;\n           currentStart = currentStart.add(1, kind).startOf(isoKind);\n           currentEnd = currentEnd.add(1, kind).endOf(isoKind);\n+        } else {\n+          appliedAverage = false;\n         }\n \n         if (transformedData[currentIndex]) {\n@@ -591,6 +602,14 @@ Report.reopenClass({\n         }\n       });\n \n+      if (model.average && !appliedAverage) {\n+        transformedData[currentIndex].y = applyAverage(\n+          transformedData[currentIndex].y,\n+          currentStart,\n+          moment(model.end_date).subtract(1, \"day\") // remove 1 day as model end date is at 00:00 of next day\n+        );\n+      }\n+\n       return transformedData;\n     }\n "
+    }
+  ]
+}
