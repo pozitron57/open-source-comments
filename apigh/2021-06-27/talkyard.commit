@@ -1,0 +1,235 @@
+{
+  "sha": "95292d527e53501e775dddcf702985257e85999c",
+  "node_id": "MDY6Q29tbWl0MTA1NjMzMjI6OTUyOTJkNTI3ZTUzNTAxZTc3NWRkZGNmNzAyOTg1MjU3ZTg1OTk5Yw==",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2021-06-20T12:34:16Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2021-06-20T12:34:16Z"
+    },
+    "message": "Merge v0.2021.19 into 'release'.",
+    "tree": {
+      "sha": "40b7bb5feeda590ad1618cceaa69b4ddb94806c6",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/40b7bb5feeda590ad1618cceaa69b4ddb94806c6"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/95292d527e53501e775dddcf702985257e85999c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/95292d527e53501e775dddcf702985257e85999c",
+  "html_url": "https://github.com/debiki/talkyard/commit/95292d527e53501e775dddcf702985257e85999c",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/95292d527e53501e775dddcf702985257e85999c/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "79c41121de9fdf10dfeea0043e5e7032cfbf89d5",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/79c41121de9fdf10dfeea0043e5e7032cfbf89d5",
+      "html_url": "https://github.com/debiki/talkyard/commit/79c41121de9fdf10dfeea0043e5e7032cfbf89d5"
+    },
+    {
+      "sha": "239ead6476b46d687e1988ce64fdff31d546e2cd",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/239ead6476b46d687e1988ce64fdff31d546e2cd",
+      "html_url": "https://github.com/debiki/talkyard/commit/239ead6476b46d687e1988ce64fdff31d546e2cd"
+    }
+  ],
+  "stats": {
+    "total": 127,
+    "additions": 91,
+    "deletions": 36
+  },
+  "files": [
+    {
+      "sha": "60b04173ee076701235206b9fdd99ea2f29f1961",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/Makefile",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/Makefile",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/Makefile?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -652,6 +652,7 @@ push-tag-to-git:\n \t@echo \"Look, the dev channel, now afterwards:\"\n \t@cd relchans/$(DEV_RELEASE_CHANNEL)/  ;\\\n \t  set -x  ;\\\n+\t  pwd  ;\\\n \t  git log --oneline -n5  ;\\\n \t  tail -n5 version-tags.log\n "
+    },
+    {
+      "sha": "b23eb1bc9e077b11b7af7a0e9035d863fbfb70dc",
+      "filename": "app/debiki/dao/CategoriesDao.scala",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 16,
+      "changes": 48,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/app/debiki/dao/CategoriesDao.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/app/debiki/dao/CategoriesDao.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/dao/CategoriesDao.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -119,7 +119,7 @@ case class CategoryToSave(\n   def makeAboutTopicBody(textAndHtmlMaker: TextAndHtmlMaker): TextAndHtml =\n     textAndHtmlMaker.forBodyOrComment(description) // COULD follow links? Only staff can create categories [WHENFOLLOW]\n \n-  def makeCategory(id: CategoryId, createdAt: ju.Date) = Category(\n+  def makeCategory(id: CatId, createdAt: ju.Date): Cat = Cat(\n     id = id,\n     extImpId = extId,\n     sectionPageId = sectionPageId,\n@@ -171,6 +171,13 @@ case class CreateCategoryResult(\n   permissionsWithIds: immutable.Seq[PermsOnPages])\n \n \n+\n+case class SavePermsResult(\n+  permsWithIds: immutable.Seq[PermsOnPages],\n+  wasChangesMade: Bo)\n+\n+\n+\n /** Loads and saves categories.\n   */\n trait CategoriesDao {\n@@ -651,9 +658,12 @@ trait CategoriesDao {\n \n       AUDIT_LOG // fix later\n \n-      val permissionsChanged =\n-            addRemovePermsOnCategory(catId, permissions)(tx, limits)._2\n-      (catBef, catAft, permissionsChanged)\n+      val savePermsResult =\n+            __savePermsOnCat(catId, permissions)(tx, limits) getOrIfBad { err =>\n+              throwForbidden(\"TyEEDCATPRM\", err)\n+            }\n+\n+      (catBef, catAft, savePermsResult.wasChangesMade)\n     }\n \n     val nameChanged = catBef.name != catAft.name\n@@ -757,8 +767,11 @@ trait CategoriesDao {\n \n     val effPerms = permissions.filter(_.hasSomeEffect)\n     val permsWithCatId = effPerms.map(_.copy(onCategoryId = Some(categoryId)))\n-    val permsWithId =\n-          addRemovePermsOnCategory(categoryId, permsWithCatId)(tx, limits)._1\n+    val savePermsResult =\n+          __savePermsOnCat(categoryId, permsWithCatId)(tx, limits)\n+              .getOrIfBad { err =>\n+                throwForbidden(\"TyECATPERMS\", err)\n+              }\n \n     if (byWho.isSystem) {\n       // Then this category is being auto generated as part of creating\n@@ -778,7 +791,7 @@ trait CategoriesDao {\n       throwForbidden(\"TyEBADCATS01\", s\"$siteId: Categories problem: ${p.message}\")\n     }\n \n-    CreateCategoryResult(category, aboutPagePath, permsWithId)\n+    CreateCategoryResult(category, aboutPagePath, savePermsResult.permsWithIds)\n   }\n \n \n@@ -866,9 +879,10 @@ trait CategoriesDao {\n   }\n \n \n-  private def addRemovePermsOnCategory(categoryId: CategoryId,\n-        permissions: immutable.Seq[PermsOnPages])(tx: SiteTransaction, lims: MaxLimits)\n-        : (immutable.Seq[PermsOnPages], Boolean) = {\n+  private def __savePermsOnCat(categoryId: CatId,\n+        permissions: immutable.Seq[PermsOnPages])(tx: SiteTx, lims: MaxLimits)\n+        : SavePermsResult Or ErrMsg = {\n+\n     dieIf(permissions.exists(_.onCategoryId.isNot(categoryId)), \"EdE2FK0YU5\")\n \n     val permsWithIds = ArrayBuffer[PermsOnPages]()\n@@ -911,14 +925,16 @@ trait CategoriesDao {\n     wasChangesMade ||= oldPermissionsById.nonEmpty\n \n     // Too many permission settings, afterwards?\n-    // (COULD add a check in the request handlers that throws client-error directly.)\n     val permsAfter = tx.loadPermsOnPages()\n     val maxPerms = lims.maxPermsPerSite\n-    dieIf(permsAfter.length > maxPerms,\n-      \"TyEMNYPERMS\", s\"Cannot save ${permissions.length} permissions, \" +\n-        s\"would result in ${permsAfter.length} permissions in total, but $maxPerms is max\")\n-\n-    (permsWithIds.toVector, wasChangesMade)\n+    if (permsAfter.length > maxPerms)\n+      return Bad(o\"\"\"Cannot save ${permissions.length} permissions\n+            would result in ${permsAfter.length} permissions in total, but\n+            $maxPerms is max [TyEMNYPERMS]\"\"\")\n+\n+    Good(SavePermsResult(\n+          permsWithIds = permsWithIds.toVector,\n+          wasChangesMade = wasChangesMade))\n   }\n \n "
+    },
+    {
+      "sha": "3f15af47d82262d49e52ca787e4eea6ca55f18e0",
+      "filename": "app/debiki/dao/SystemDao.scala",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/app/debiki/dao/SystemDao.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/app/debiki/dao/SystemDao.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/debiki/dao/SystemDao.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -369,6 +369,10 @@ class SystemDao(\n       throwForbidden(\"EsE7UZF2_\", s\"Bad site name: '$name', problem: $problem\")\n     }\n \n+    throwForbiddenIf(!pubId.isAzLowerOrNum,  // [503MSIEJ36]\n+          \"TyESITEPUBID\", o\"\"\"Only a-z and 0-9 allowed in site pub ids,\n+          but this pub id includes other chars: '$pubId'\"\"\")\n+\n     dieIf(hostname.exists(_ contains \":\"), \"DwE3KWFE7\")\n \n     val config = globals.config"
+    },
+    {
+      "sha": "f056f2ba2de886564e22349fb476b3ca2f7a8f65",
+      "filename": "app/ed/server/notf/NotfHtmlRenderer.scala",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 12,
+      "changes": 32,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/app/ed/server/notf/NotfHtmlRenderer.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/app/ed/server/notf/NotfHtmlRenderer.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/ed/server/notf/NotfHtmlRenderer.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -21,6 +21,7 @@ import com.debiki.core.Prelude._\n import com.debiki.core._\n import debiki.dao.SiteDao\n import scala.xml.{NodeSeq, Text}\n+import NotfHtmlRenderer._\n \n \n case class RenderNotfsResult(\n@@ -264,19 +265,8 @@ case class NotfHtmlRenderer(siteDao: SiteDao, anyOrigin: Option[String]) {\n           s\"$itIsShownOrHidden. It was posted by\", \"e_NfEm_ModTsk\")\n     }\n \n-    UX; COULD // sync reply btn color w CSS; see $uiHue in variables.styl [site_prim_col].\n-    val replyBtnStyles = o\"\"\"\n-          display: inline-block;\n-          padding: 8px 20px;\n-          background: hsl(207 100% 54%);\n-          color: white;\n-          font-weight: bold;\n-          font-size: 17px;\n-          letter-spacing: 0.3px;\n-          text-decoration: none;\n-          \"\"\"\n \n-    // Email clients add  target=\"_blank\" rel=\"noopener\"  themselves if needed?\n+    // Email clients apparently add  target=\"_blank\" (rel=\"noopener\")  themselves.\n \n     <p class={cssE2eTestClass}>\n       { whatHappened }, <a href={url}>here</a>, on page \"<i>{pageTitle}</i>\"{dotOrComma}\n@@ -310,3 +300,21 @@ case class NotfHtmlRenderer(siteDao: SiteDao, anyOrigin: Option[String]) {\n   }*/\n \n }\n+\n+object NotfHtmlRenderer {\n+\n+  UX; COULD // sync reply btn color w CSS; see $uiHue in variables.styl [site_prim_col].\n+  val replyBtnStyles = o\"\"\"\n+        display: inline-block !important;\n+        padding: 4px 18px !important;\n+        margin: 0.3em 0 1.4em !important;\n+        background: hsl(207 100% 56%) !important;\n+        box-shadow: 3px 3px 7px rgb(0 0 0 / 55%) !important;\n+        color: white !important;\n+        font-weight: bold !important;\n+        font-size: 16px !important;\n+        letter-spacing: 0.3px !important;\n+        text-decoration: none !important;\n+        cursor: pointer !important;\n+        \"\"\"\n+}"
+    },
+    {
+      "sha": "05b0fdceb1d02d367e371e303b73cf256abf3e52",
+      "filename": "app/talkyard/server/emails/in/EmailsInController.scala",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/app/talkyard/server/emails/in/EmailsInController.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/app/talkyard/server/emails/in/EmailsInController.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/app/talkyard/server/emails/in/EmailsInController.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -81,7 +81,7 @@ class EmailsInController @Inject()(cc: ControllerComponents, edContext: EdContex\n           case None =>\n             logAndDebug(s\"No hash, don't know what this incoming email replies to\")\n           case Some(hash: St) =>\n-            val parts: Array[St] = hash.split(\".\")\n+            val parts: Array[St] = hash.split('-')  // [em_in_hash]\n             if (parts.length != 2) {\n               logAndDebug(s\"Bad site and email id hash, ${parts.length} parts: '$hash'\")\n             }"
+    },
+    {
+      "sha": "1fd3f7e319d20774e1f1ec9f577ccd1976906f73",
+      "filename": "modules/ed-core/src/main/scala/com/debiki/core/Prelude.scala",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 2,
+      "changes": 19,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/modules/ed-core/src/main/scala/com/debiki/core/Prelude.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/modules/ed-core/src/main/scala/com/debiki/core/Prelude.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/src/main/scala/com/debiki/core/Prelude.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -823,6 +823,12 @@ object Prelude {   CLEAN_UP; RENAME // to BugDie and re-export the interesting\n     def isAlNum: Bo =\n       underlying.forall(charIsAzOrNum)\n \n+    def isAzLowerOrNum: Bo =\n+      underlying.forall(charIsAzLowerOrNum)\n+\n+    def isAzLowerNumUn: Bo =\n+      underlying.forall(charIsAzLowerNumUn)\n+\n     def isAlNumWithAl: Bo =\n       AlNumWithAl.pattern.matcher(underlying).matches\n \n@@ -834,15 +840,24 @@ object Prelude {   CLEAN_UP; RENAME // to BugDie and re-export the interesting\n   def charIsAzNumOrUnderscore(c: Char): Boolean =\n     charIsAzOrNum(c) || c == '_'\n \n-  def charIsAz(c: Char): Boolean =\n-    (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')\n+  def charIsAzLower(c: Char): Bo =\n+    c >= 'a' && c <= 'z'\n+\n+  def charIsAz(c: Char): Bo =\n+    charIsAzLower(c) || (c >= 'A' && c <= 'Z')\n \n   def charIsAzUnderscore(c: Char): Boolean =\n     charIsAz(c) || c == '_'\n \n   def charIsAzOrNum(c: Char): Boolean =\n     charIsAz(c) || charIsNum(c)\n \n+  def charIsAzLowerOrNum(c: Char): Bo =\n+    charIsAzLower(c) || charIsNum(c)\n+\n+  def charIsAzLowerNumUn(c: Char): Bo =\n+    charIsAzLower(c) || charIsNum(c) || c == '_'\n+\n   def charIsNumOrDotDash(c: Char): Boolean = charIsNum(c) || c == '.' || c == '-'\n \n   def charIsNum(c: Char): Boolean = c >= '0' && c <= '9'"
+    },
+    {
+      "sha": "1b2a59791e33dc425f735a2af6918415ccd160b5",
+      "filename": "modules/ed-core/src/main/scala/com/debiki/core/package.scala",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/modules/ed-core/src/main/scala/com/debiki/core/package.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/modules/ed-core/src/main/scala/com/debiki/core/package.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/modules/ed-core/src/main/scala/com/debiki/core/package.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -135,9 +135,12 @@ package object core {\n   type CategoryId = Int   // too long!\n   type CatId = CategoryId // better\n   type Cat = Category     // better\n+  val Cat = Category\n   val NoCategoryId = 0\n \n-  type PubSiteId = String\n+  // Only [a-z0-9] so works in domain names, and so won't be any surprising chars\n+  // if splitting on a (site pub id) and (some other id) separator. [em_in_hash]\n+  type PubSiteId = String  // [Scala_3] opaque type  parse check here [503MSIEJ36]\n \n   type SiteId = Int\n   val NoSiteId = 0"
+    },
+    {
+      "sha": "0aa23de4a5dc9cc70a55a5aa2b274f06d21d4794",
+      "filename": "relchans/tyse-v0-dev",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": null,
+      "raw_url": null,
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/relchans/tyse-v0-dev?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -1 +1 @@\n-Subproject commit da8da29bca68d3b4f1b6e1f7c48bf0e3da409867\n+Subproject commit 0aa23de4a5dc9cc70a55a5aa2b274f06d21d4794"
+    },
+    {
+      "sha": "5fe16679fc5fea3c28206229fce0653b16e7121a",
+      "filename": "tests/app/debiki/dao/CreateSiteDaoAppSpec.scala",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/tests/app/debiki/dao/CreateSiteDaoAppSpec.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/tests/app/debiki/dao/CreateSiteDaoAppSpec.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/debiki/dao/CreateSiteDaoAppSpec.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -32,12 +32,13 @@ class CreateSiteDaoAppSpec extends DaoAppSuite(maxSitesTotal = Some(75)) {\n     require(prefix % 20 == 0) // else prefix + number just below won't be a nice looking number\n     val theFingerprint = if (browserFingerprint == -1) prefix + number else browserFingerprint\n     val thePrefix = s\"e2e-test-crst-$prefix-$number\"\n+    val thePubId = pubId getOrElse s\"e2epubid${thePrefix.replaceAllLiterally(\"-\", \"\")}\"\n     val theLocalHostname = localHostname getOrElse thePrefix\n     val theHostname = hostname getOrElse s\"$theLocalHostname.example.com\"\n     val theIdCookie = if (browserIdCookie eq null) s\"$thePrefix-cookie\" else browserIdCookie\n     val theIp = if (ip eq null) s\"$prefix.0.0.$number\" else ip\n     globals.systemDao.createAdditionalSite(\n-      anySiteId = None, pubId = pubId getOrElse s\"createsitepubid-$thePrefix\",\n+      anySiteId = None, pubId = thePubId,\n       name = name getOrElse theLocalHostname, status = SiteStatus.Active,\n       hostname = Some(theHostname),\n       embeddingSiteUrl = None, organizationName = s\"Org Name $thePrefix\", creatorId = user.id,"
+    },
+    {
+      "sha": "17ee4af7e1fdab97b84980c1df8da1c95cb2fc0f",
+      "filename": "tests/app/debiki/dao/DaoAppSuite.scala",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/tests/app/debiki/dao/DaoAppSuite.scala",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/tests/app/debiki/dao/DaoAppSuite.scala",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/app/debiki/dao/DaoAppSuite.scala?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -152,9 +152,10 @@ class DaoAppSuite(\n   def createSite(hostname: String, settings: SettingsToSave = SettingsToSave())\n         : (Site, SiteDao) = {\n     val siteName = \"site-\" + hostname.replaceAllLiterally(\".\", \"\")\n+    val pubId = s\"e2epubid${siteName.replaceAllLiterally(\"-\", \"\")}\"\n     val site = globals.systemDao.createAdditionalSite(\n       anySiteId = None,\n-      pubId = s\"pubid-$siteName\", name = siteName, status = SiteStatus.Active, hostname = Some(hostname),\n+      pubId = pubId, name = siteName, status = SiteStatus.Active, hostname = Some(hostname),\n       embeddingSiteUrl = None, organizationName = s\"Site $hostname Organization Name\",\n       creatorId = UnknownUserId, browserIdData,\n       isTestSiteOkayToDelete = true, skipMaxSitesCheck = true,"
+    },
+    {
+      "sha": "364de08d7f91fc0cd97b2a03e9e7939d7007ab53",
+      "filename": "tests/e2e/specs/hide-unhide-tips.2br.test.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/tests/e2e/specs/hide-unhide-tips.2br.test.ts",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/tests/e2e/specs/hide-unhide-tips.2br.test.ts",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/tests/e2e/specs/hide-unhide-tips.2br.test.ts?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -29,6 +29,12 @@ let forum: TwoCatsTestForum;\n \n describe(`hide-unhide-tips.2br  TyTE2EHIDETPS329`, () => {\n \n+  if (settings.prod) {\n+    console.log(`Prod mode: Skipping this spec — the server\n+            wouldn't show the e2e test announcement.`);\n+    return;\n+  }\n+\n   it(`construct site`, () => {\n     const builder = buildSite();\n     forum = builder.addTwoCatsForum({"
+    },
+    {
+      "sha": "90da42da019f891b4d74ace11912de8731aa94ef",
+      "filename": "version.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/95292d527e53501e775dddcf702985257e85999c/version.txt",
+      "raw_url": "https://github.com/debiki/talkyard/raw/95292d527e53501e775dddcf702985257e85999c/version.txt",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/version.txt?ref=95292d527e53501e775dddcf702985257e85999c",
+      "patch": "@@ -1 +1 @@\n-v0.2021.18\n+v0.2021.19"
+    }
+  ]
+}
