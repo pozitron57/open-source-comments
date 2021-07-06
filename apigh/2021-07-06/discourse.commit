@@ -1,0 +1,110 @@
+{
+  "sha": "da03a3f5d61a4bc62475d25ee8730eb9d00d9023",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpkYTAzYTNmNWQ2MWE0YmM2MjQ3NWQyNWVlODczMGViOWQwMGQ5MDIz",
+  "commit": {
+    "author": {
+      "name": "Dan Ungureanu",
+      "email": "dan@ungureanu.me",
+      "date": "2021-07-06T10:33:56Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-07-06T10:33:56Z"
+    },
+    "message": "FIX: Maintain order when updating notifications (#13643)\n\nA more complex algorithm was used to achieve consensus between server\r\nand client lists of notifications. This commit uses a different and\r\nmore simple approach that ignores order, but updates read status of\r\nexisting notifications and removes stale notifications.",
+    "tree": {
+      "sha": "41522cd061951ec9cb6f683d66651468a971cbf1",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/41522cd061951ec9cb6f683d66651468a971cbf1"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/da03a3f5d61a4bc62475d25ee8730eb9d00d9023",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg5DGUCRBK7hj4Ov3rIwAAWPAIAFdbQU4YWlL2w8afttUcEC1V\nxXBAjqPOARvAqrQWHUt6HxmtZl5E9lONLI8C7kKAwYyYO6/hcinQpMmuykLjJWNI\nsRpyrK0DBRW6ksNex36xnjzvFRBA5SHAY5asddY1LB4ac8ZbcLHB4Bbgihcy6krK\nlXpJPsHF6nzTkAUDV6k0sv/I7jjnASpG3inoXNhFuX/cazePn+98oJAdc5M96tN8\n3wnahGoknqF2P66dLgp4e4GasCE673dOjvB/3Pu1pqlgd7tIhXe0kW+kOvCGAIi8\nuBpImh6dreiZSYCjPMOiMdxJ93lwi+CoR/8fwwVNzEcsi4mcf0dqbZRvLC9e04k=\n=TKBJ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 41522cd061951ec9cb6f683d66651468a971cbf1\nparent 33eae4cbd8f14fa29f513b0882e3ee0b20938075\nauthor Dan Ungureanu <dan@ungureanu.me> 1625567636 +0300\ncommitter GitHub <noreply@github.com> 1625567636 +0300\n\nFIX: Maintain order when updating notifications (#13643)\n\nA more complex algorithm was used to achieve consensus between server\r\nand client lists of notifications. This commit uses a different and\r\nmore simple approach that ignores order, but updates read status of\r\nexisting notifications and removes stale notifications."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/da03a3f5d61a4bc62475d25ee8730eb9d00d9023",
+  "html_url": "https://github.com/discourse/discourse/commit/da03a3f5d61a4bc62475d25ee8730eb9d00d9023",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/da03a3f5d61a4bc62475d25ee8730eb9d00d9023/comments",
+  "author": {
+    "login": "udan11",
+    "id": 4147664,
+    "node_id": "MDQ6VXNlcjQxNDc2NjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4147664?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/udan11",
+    "html_url": "https://github.com/udan11",
+    "followers_url": "https://api.github.com/users/udan11/followers",
+    "following_url": "https://api.github.com/users/udan11/following{/other_user}",
+    "gists_url": "https://api.github.com/users/udan11/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/udan11/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/udan11/subscriptions",
+    "organizations_url": "https://api.github.com/users/udan11/orgs",
+    "repos_url": "https://api.github.com/users/udan11/repos",
+    "events_url": "https://api.github.com/users/udan11/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/udan11/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "33eae4cbd8f14fa29f513b0882e3ee0b20938075",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/33eae4cbd8f14fa29f513b0882e3ee0b20938075",
+      "html_url": "https://github.com/discourse/discourse/commit/33eae4cbd8f14fa29f513b0882e3ee0b20938075"
+    }
+  ],
+  "stats": {
+    "total": 87,
+    "additions": 70,
+    "deletions": 17
+  },
+  "files": [
+    {
+      "sha": "2381e0886e0089e4d6502a85917895530c4dfbe0",
+      "filename": "app/assets/javascripts/discourse/app/initializers/subscribe-user-notifications.js",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 17,
+      "changes": 27,
+      "blob_url": "https://github.com/discourse/discourse/blob/da03a3f5d61a4bc62475d25ee8730eb9d00d9023/app/assets/javascripts/discourse/app/initializers/subscribe-user-notifications.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/da03a3f5d61a4bc62475d25ee8730eb9d00d9023/app/assets/javascripts/discourse/app/initializers/subscribe-user-notifications.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/initializers/subscribe-user-notifications.js?ref=da03a3f5d61a4bc62475d25ee8730eb9d00d9023",
+      "patch": "@@ -92,24 +92,17 @@ export default {\n               );\n             }\n \n-            for (let idx = 0; idx < data.recent.length; idx++) {\n-              let old;\n-              while ((old = oldNotifications[idx])) {\n-                const info = data.recent[idx];\n-\n-                if (old.get(\"id\") !== info[0]) {\n-                  oldNotifications.removeAt(idx);\n-                } else {\n-                  if (old.get(\"read\") !== info[1]) {\n-                    old.set(\"read\", info[1]);\n-                  }\n-                  break;\n+            // remove stale notifications and update existing ones\n+            const read = Object.fromEntries(data.recent);\n+            const newNotifications = oldNotifications\n+              .map((notification) => {\n+                if (read[notification.id] !== undefined) {\n+                  notification.set(\"read\", read[notification.id]);\n+                  return notification;\n                 }\n-              }\n-              if (!old) {\n-                break;\n-              }\n-            }\n+              })\n+              .filter(Boolean);\n+            stale.results.set(\"content\", newNotifications);\n           }\n         },\n         user.notification_channel_position"
+    },
+    {
+      "sha": "674f5327e92cb3a08dc47804c6f28167448bfe34",
+      "filename": "app/assets/javascripts/discourse/tests/acceptance/notifications-test.js",
+      "status": "modified",
+      "additions": 60,
+      "deletions": 0,
+      "changes": 60,
+      "blob_url": "https://github.com/discourse/discourse/blob/da03a3f5d61a4bc62475d25ee8730eb9d00d9023/app/assets/javascripts/discourse/tests/acceptance/notifications-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/da03a3f5d61a4bc62475d25ee8730eb9d00d9023/app/assets/javascripts/discourse/tests/acceptance/notifications-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/acceptance/notifications-test.js?ref=da03a3f5d61a4bc62475d25ee8730eb9d00d9023",
+      "patch": "@@ -136,5 +136,65 @@ acceptance(\"User Notifications\", function (needs) {\n         .innerText,\n       \"Second notification\"\n     );\n+\n+    // updates existing notifications\n+\n+    publishToMessageBus(\"/notification/19\", {\n+      unread_notifications: 8,\n+      unread_private_messages: 0,\n+      unread_high_priority_notifications: 1,\n+      read_first_notification: false,\n+      last_notification: {\n+        notification: {\n+          id: 44,\n+          user_id: 1,\n+          notification_type: 5,\n+          high_priority: true,\n+          read: true,\n+          high_priority: false,\n+          created_at: \"2021-01-01 12:00:00 UTC\",\n+          post_number: 1,\n+          topic_id: 42,\n+          fancy_title: \"Third notification\",\n+          slug: \"topic\",\n+          data: {\n+            topic_title: \"Third notification\",\n+            original_post_id: 42,\n+            original_post_type: 1,\n+            original_username: \"foo\",\n+            revision_number: null,\n+            display_username: \"foo\",\n+          },\n+        },\n+      },\n+      recent: [\n+        [5678, false],\n+        [1234, false],\n+        [789, false],\n+        [456, true],\n+        [123, true],\n+        [44, false],\n+        [43, false],\n+        [42, true],\n+      ],\n+      seen_notification_id: null,\n+    });\n+\n+    await visit(\"/\"); // wait for re-render\n+    assert.equal(count(\"#quick-access-notifications li\"), 8);\n+    const texts = [];\n+    queryAll(\"#quick-access-notifications li\").each((_, el) =>\n+      texts.push(el.innerText.trim())\n+    );\n+    assert.deepEqual(texts, [\n+      \"foo First notification\",\n+      \"foo Third notification\",\n+      \"foo Second notification\",\n+      \"velesin some title\",\n+      \"aquaman liked 5 of your posts\",\n+      \"5 messages in your test inbox\",\n+      \"test1 accepted your invitation\",\n+      \"Membership accepted in 'test'\",\n+    ]);\n   });\n });"
+    }
+  ]
+}
