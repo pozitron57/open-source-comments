@@ -1,0 +1,98 @@
+{
+  "sha": "935aadbfddc6ece3742163e9d878a75617292e64",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo5MzVhYWRiZmRkYzZlY2UzNzQyMTYzZTlkODc4YTc1NjE3MjkyZTY0",
+  "commit": {
+    "author": {
+      "name": "Arpit Jalan",
+      "email": "arpit@techapj.com",
+      "date": "2021-07-07T11:27:24Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-07-07T11:27:24Z"
+    },
+    "message": "FIX: do not stop `fix_missing_s3` task if saving an upload failed (#13658)\n\nThis commit logs an error and moves to next upload when saving a single\r\nupload record fails when running `uploads:fix_missing_s3` task.",
+    "tree": {
+      "sha": "94d01257300ef293614245446d9781cb87a58200",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/94d01257300ef293614245446d9781cb87a58200"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/935aadbfddc6ece3742163e9d878a75617292e64",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg5Y+cCRBK7hj4Ov3rIwAA2tMIACYep0sngjt0mLkLMgNIk+yi\na8d59J4GH8wuR8IWs8cSEtMmPiEb/ERw0YEwlcaMwzcYbu1zmsea91JsxtaMiMeP\nZvQ9eUG7VGMIEXtRn9PO+zfN/PGpTbRC+8ZVymTcbqnzxdhM7JsOcKTpRt4e5WYH\nShSAzNGex1kRueKW3f+QGxVGWqJJykn5OwjlqRwq59oEtZTehVny0t0+8+ukYQlC\n7//X2hEUrLZEwH/fog7/9FKsbyugZ8ZPo7KUgWRlOCWjN0yyVkUuMEfGPgApNlf/\niAILk4NHxmYyfKx9aHOD5wVOWZvs3DoO29mMrW8vLZs1TWEICnJfEJsYYIfcODc=\n=XjxQ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 94d01257300ef293614245446d9781cb87a58200\nparent 2a1abe9ff027fcfa6533c51d5c31c4678da42f5a\nauthor Arpit Jalan <arpit@techapj.com> 1625657244 +0530\ncommitter GitHub <noreply@github.com> 1625657244 +0530\n\nFIX: do not stop `fix_missing_s3` task if saving an upload failed (#13658)\n\nThis commit logs an error and moves to next upload when saving a single\r\nupload record fails when running `uploads:fix_missing_s3` task."
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/935aadbfddc6ece3742163e9d878a75617292e64",
+  "html_url": "https://github.com/discourse/discourse/commit/935aadbfddc6ece3742163e9d878a75617292e64",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/935aadbfddc6ece3742163e9d878a75617292e64/comments",
+  "author": {
+    "login": "techAPJ",
+    "id": 5732281,
+    "node_id": "MDQ6VXNlcjU3MzIyODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5732281?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/techAPJ",
+    "html_url": "https://github.com/techAPJ",
+    "followers_url": "https://api.github.com/users/techAPJ/followers",
+    "following_url": "https://api.github.com/users/techAPJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/techAPJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/techAPJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/techAPJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/techAPJ/orgs",
+    "repos_url": "https://api.github.com/users/techAPJ/repos",
+    "events_url": "https://api.github.com/users/techAPJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/techAPJ/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2a1abe9ff027fcfa6533c51d5c31c4678da42f5a",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/2a1abe9ff027fcfa6533c51d5c31c4678da42f5a",
+      "html_url": "https://github.com/discourse/discourse/commit/2a1abe9ff027fcfa6533c51d5c31c4678da42f5a"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 11,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "4ae945cc9d52f295767bc7946f79ea7e69ea303f",
+      "filename": "lib/tasks/uploads.rake",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 7,
+      "changes": 18,
+      "blob_url": "https://github.com/discourse/discourse/blob/935aadbfddc6ece3742163e9d878a75617292e64/lib/tasks/uploads.rake",
+      "raw_url": "https://github.com/discourse/discourse/raw/935aadbfddc6ece3742163e9d878a75617292e64/lib/tasks/uploads.rake",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/tasks/uploads.rake?ref=935aadbfddc6ece3742163e9d878a75617292e64",
+      "patch": "@@ -1038,16 +1038,20 @@ def fix_missing_s3\n         # we do not fix sha, it may be wrong for arbitrary reasons, if we correct it\n         # we may end up breaking posts\n         upload.assign_attributes(etag: fixed_upload.etag, url: fixed_upload.url, verification_status: Upload.verification_statuses[:unchecked])\n-        upload.save!(validate: false)\n+        saved = upload.save(validate: false)\n \n-        OptimizedImage.where(upload_id: upload.id).destroy_all\n-        rebake_ids = PostUpload.where(upload_id: upload.id).pluck(:post_id)\n+        if saved\n+          OptimizedImage.where(upload_id: upload.id).destroy_all\n+          rebake_ids = PostUpload.where(upload_id: upload.id).pluck(:post_id)\n \n-        if rebake_ids.present?\n-          Post.where(id: rebake_ids).each do |post|\n-            puts \"rebake post #{post.id}\"\n-            post.rebake!\n+          if rebake_ids.present?\n+            Post.where(id: rebake_ids).each do |post|\n+              puts \"rebake post #{post.id}\"\n+              post.rebake!\n+            end\n           end\n+        else\n+          puts \"Failed to save upload #{saved.errors.full_messages}\"\n         end\n       end\n     end"
+    }
+  ]
+}
