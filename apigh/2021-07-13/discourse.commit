@@ -1,0 +1,122 @@
+{
+  "sha": "800c6e1a6853784bd11f1561812c97d91ccc01d3",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4MDBjNmUxYTY4NTM3ODRiZDExZjE1NjE4MTJjOTdkOTFjY2MwMWQz",
+  "commit": {
+    "author": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2021-07-09T19:50:24Z"
+    },
+    "committer": {
+      "name": "David Taylor",
+      "email": "david@taylorhq.com",
+      "date": "2021-07-13T11:30:38Z"
+    },
+    "message": "PERF: Improve topic_user.liked update performance when moving posts\n\nPreviously we would re-calculate topic_user.liked for all users who have ever viewed the source or destination topic. This can be very expensive on large sites. Instead, we can use the array of moved post ids to find which users are actually affected by the move, and restrict the update query to only check/update their records.\n\nOn an example site this reduced the `update_post_action_cache` time from ~27s to 300ms",
+    "tree": {
+      "sha": "4450e0753ad4108205eed48cdea3744a29acf213",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/4450e0753ad4108205eed48cdea3744a29acf213"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/800c6e1a6853784bd11f1561812c97d91ccc01d3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/800c6e1a6853784bd11f1561812c97d91ccc01d3",
+  "html_url": "https://github.com/discourse/discourse/commit/800c6e1a6853784bd11f1561812c97d91ccc01d3",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/800c6e1a6853784bd11f1561812c97d91ccc01d3/comments",
+  "author": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "davidtaylorhq",
+    "id": 6270921,
+    "node_id": "MDQ6VXNlcjYyNzA5MjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6270921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidtaylorhq",
+    "html_url": "https://github.com/davidtaylorhq",
+    "followers_url": "https://api.github.com/users/davidtaylorhq/followers",
+    "following_url": "https://api.github.com/users/davidtaylorhq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidtaylorhq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidtaylorhq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidtaylorhq/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidtaylorhq/orgs",
+    "repos_url": "https://api.github.com/users/davidtaylorhq/repos",
+    "events_url": "https://api.github.com/users/davidtaylorhq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidtaylorhq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3d049245af80e27b437dff5060a1f58dde20ff5d",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/3d049245af80e27b437dff5060a1f58dde20ff5d",
+      "html_url": "https://github.com/discourse/discourse/commit/3d049245af80e27b437dff5060a1f58dde20ff5d"
+    }
+  ],
+  "stats": {
+    "total": 68,
+    "additions": 45,
+    "deletions": 23
+  },
+  "files": [
+    {
+      "sha": "7762f149f011965fdc25e462014592bbcb5659b4",
+      "filename": "app/models/post_mover.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/discourse/discourse/blob/800c6e1a6853784bd11f1561812c97d91ccc01d3/app/models/post_mover.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/800c6e1a6853784bd11f1561812c97d91ccc01d3/app/models/post_mover.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/post_mover.rb?ref=800c6e1a6853784bd11f1561812c97d91ccc01d3",
+      "patch": "@@ -418,8 +418,7 @@ def copy_topic_users\n   def update_statistics\n     destination_topic.update_statistics\n     original_topic.update_statistics\n-    TopicUser.update_post_action_cache(topic_id: original_topic.id)\n-    TopicUser.update_post_action_cache(topic_id: destination_topic.id)\n+    TopicUser.update_post_action_cache(topic_id: [original_topic.id, destination_topic.id], post_id: @post_ids)\n   end\n \n   def update_user_actions"
+    },
+    {
+      "sha": "5eaecd27163fc5d9f62c36a30d957702c3320477",
+      "filename": "app/models/topic_user.rb",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 21,
+      "changes": 52,
+      "blob_url": "https://github.com/discourse/discourse/blob/800c6e1a6853784bd11f1561812c97d91ccc01d3/app/models/topic_user.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/800c6e1a6853784bd11f1561812c97d91ccc01d3/app/models/topic_user.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/models/topic_user.rb?ref=800c6e1a6853784bd11f1561812c97d91ccc01d3",
+      "patch": "@@ -372,20 +372,26 @@ def update_last_read(user, topic_id, post_number, new_posts_read, msecs, opts =\n \n   end\n \n-  def self.update_post_action_cache(opts = {})\n-    user_id = opts[:user_id]\n-    post_id = opts[:post_id]\n-    topic_id = opts[:topic_id]\n-    action_type = opts[:post_action_type]\n-\n-    action_type_name = \"liked\" if action_type == :like\n-\n-    raise ArgumentError, \"action_type\" if action_type && !action_type_name\n-\n-    unless action_type_name\n-      update_post_action_cache(opts.merge(post_action_type: :like))\n-      return\n-    end\n+  # Update the cached topic_user.liked column based on data\n+  # from the post_actions table. This is useful when posts\n+  # have moved around, or to ensure integrity of the data.\n+  #\n+  # By default this will update data for all topics and all users.\n+  # The parameters can be used to shrink the scope, and make it faster.\n+  # user_id, post_id and topic_id can optionally be arrays of ids.\n+  #\n+  # Providing post_id will automatically scope to the relavent user_id and topic_id.\n+  # A provided `topic_id` value will always take presedence, which is\n+  # useful when a post has been moved between topics.\n+  def self.update_post_action_cache(\n+    user_id: nil,\n+    post_id: nil,\n+    topic_id: nil,\n+    post_action_type: :like\n+  )\n+    raise ArgumentError, \"post_action_type must equal :like\" if post_action_type != :like\n+    raise ArgumentError, \"post_id and user_id cannot be supplied together\" if user_id && post_id\n+    action_type_name = \"liked\"\n \n     builder = DB.build <<~SQL\n       UPDATE topic_users tu\n@@ -411,21 +417,25 @@ def self.update_post_action_cache(opts = {})\n     SQL\n \n     if user_id\n-      builder.where(\"tu2.user_id = :user_id\", user_id: user_id)\n+      builder.where(\"tu2.user_id IN (:user_id)\", user_id: user_id)\n     end\n \n     if topic_id\n-      builder.where(\"tu2.topic_id = :topic_id\", topic_id: topic_id)\n+      builder.where(\"tu2.topic_id IN (:topic_id)\", topic_id: topic_id)\n     end\n \n     if post_id\n-      builder.where(\"tu2.topic_id IN (SELECT topic_id FROM posts WHERE id = :post_id)\", post_id: post_id)\n-      builder.where(\"tu2.user_id IN (SELECT user_id FROM post_actions\n-                                     WHERE post_id = :post_id AND\n-                                           post_action_type_id = :action_type_id)\")\n+      builder.where(\"tu2.topic_id IN (SELECT topic_id FROM posts WHERE id IN (:post_id))\", post_id: post_id) if !topic_id\n+      builder.where(<<~SQL, post_id: post_id)\n+        tu2.user_id IN (\n+          SELECT user_id FROM post_actions\n+          WHERE post_id IN (:post_id)\n+          AND post_action_type_id = :action_type_id\n+        )\n+      SQL\n     end\n \n-    builder.exec(action_type_id: PostActionType.types[action_type])\n+    builder.exec(action_type_id: PostActionType.types[post_action_type])\n   end\n \n   # cap number of unread topics at count, bumping up last_read if needed"
+    },
+    {
+      "sha": "3df580a71fd3b65a6ce4d8c4d1e6a6a47d1e908f",
+      "filename": "spec/models/post_mover_spec.rb",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/discourse/discourse/blob/800c6e1a6853784bd11f1561812c97d91ccc01d3/spec/models/post_mover_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/800c6e1a6853784bd11f1561812c97d91ccc01d3/spec/models/post_mover_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/models/post_mover_spec.rb?ref=800c6e1a6853784bd11f1561812c97d91ccc01d3",
+      "patch": "@@ -769,6 +769,19 @@ def create_topic_user(user, opts = {})\n             end\n           end\n \n+          it \"updates topic_user.liked values for both source and destination topics\" do\n+            expect(TopicUser.find_by(topic: topic, user: user).liked).to eq(false)\n+\n+            like = Fabricate(:post_action, post: p3, user: user, post_action_type_id: PostActionType.types[:like])\n+            expect(TopicUser.find_by(topic: topic, user: user).liked).to eq(true)\n+\n+            expect(TopicUser.find_by(topic: destination_topic, user: user)).to eq(nil)\n+            topic.move_posts(user, [p3.id], destination_topic_id: destination_topic.id)\n+\n+            expect(TopicUser.find_by(topic: topic, user: user).liked).to eq(false)\n+            expect(TopicUser.find_by(topic: destination_topic, user: user).liked).to eq(true)\n+          end\n+\n           context \"read state and other stats per user\" do\n             def create_topic_user(user, topic, opts = {})\n               notification_level = opts.delete(:notification_level) || :regular"
+    }
+  ]
+}
