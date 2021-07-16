@@ -1,0 +1,98 @@
+{
+  "sha": "810892139b2d27fb87a823180bb092db6bdfad8d",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODo4MTA4OTIxMzliMmQyN2ZiODdhODIzMTgwYmIwOTJkYjZiZGZhZDhk",
+  "commit": {
+    "author": {
+      "name": "Osama Sayegh",
+      "email": "asooomaasoooma90@gmail.com",
+      "date": "2021-07-16T08:02:24Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-07-16T08:02:24Z"
+    },
+    "message": "FIX: Ascending/descending sorting in the group membership requests page\n\nThe `GroupsController#members` endpoint accepts a `desc` parameter to determine how members are sorted, but it's been deprecated in favor of a boolean `asc` parameter. However, in the frontend, specifically the group membership requests page was not updated entirely to use the `asc` param and it still passes a `desc` param when changing how group requests are sorted.\r\n\r\nThis commit updates the `group-requests` Ember controller so it passes a boolean `asc` param and removes all references of `desc`. The controller view/template has already been updated to use `asc`:\r\n\r\nhttps://github.com/discourse/discourse/blob/207c3085fc377e5f08c1002c9913eed3c4debdd6/app/assets/javascripts/discourse/app/templates/group-requests.hbs#L15-L16",
+    "tree": {
+      "sha": "20516c241241555cd7784ed0953feb490eedc6e9",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/20516c241241555cd7784ed0953feb490eedc6e9"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/810892139b2d27fb87a823180bb092db6bdfad8d",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8T0QCRBK7hj4Ov3rIwAA+5kIADJ8QEmjQuV8S8AShlRiqwzo\nJmExtFtPfAmQIpAJ3BDGymCQb3lbznLJsfRzU6e9c25/cbgz2caEBUWPqiqejXG3\n23qLwncDDs+yVD3xI6r3PYdevihJhaXa2WhMkmGD19ipcdsXErwUXrPS0Mt9h7Hi\ndQLLUqbQoUzbkoxQrLrwIfFPXCVaKvI5plac7SnS/EGJRMg6TNKMBbqqpWE2frqM\nnqhDR/YoZctcNhUC0HzdDnMfqTqPTIKNQfmnP1k6ctdp2aPz6mukpfBhLMIukxmx\nLpOj/qF2wHBI6xG7lrB6ZRKMff4uU+uHjVHwNaIFPDcfa2pzPOzpH4mvYUvDNsg=\n=MUw2\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 20516c241241555cd7784ed0953feb490eedc6e9\nparent c4d7545f356582d280ffeba2637b15392ad21fa0\nauthor Osama Sayegh <asooomaasoooma90@gmail.com> 1626422544 +0300\ncommitter GitHub <noreply@github.com> 1626422544 +0300\n\nFIX: Ascending/descending sorting in the group membership requests page\n\nThe `GroupsController#members` endpoint accepts a `desc` parameter to determine how members are sorted, but it's been deprecated in favor of a boolean `asc` parameter. However, in the frontend, specifically the group membership requests page was not updated entirely to use the `asc` param and it still passes a `desc` param when changing how group requests are sorted.\r\n\r\nThis commit updates the `group-requests` Ember controller so it passes a boolean `asc` param and removes all references of `desc`. The controller view/template has already been updated to use `asc`:\r\n\r\nhttps://github.com/discourse/discourse/blob/207c3085fc377e5f08c1002c9913eed3c4debdd6/app/assets/javascripts/discourse/app/templates/group-requests.hbs#L15-L16"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/810892139b2d27fb87a823180bb092db6bdfad8d",
+  "html_url": "https://github.com/discourse/discourse/commit/810892139b2d27fb87a823180bb092db6bdfad8d",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/810892139b2d27fb87a823180bb092db6bdfad8d/comments",
+  "author": {
+    "login": "OsamaSayegh",
+    "id": 17474474,
+    "node_id": "MDQ6VXNlcjE3NDc0NDc0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17474474?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OsamaSayegh",
+    "html_url": "https://github.com/OsamaSayegh",
+    "followers_url": "https://api.github.com/users/OsamaSayegh/followers",
+    "following_url": "https://api.github.com/users/OsamaSayegh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OsamaSayegh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OsamaSayegh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OsamaSayegh/subscriptions",
+    "organizations_url": "https://api.github.com/users/OsamaSayegh/orgs",
+    "repos_url": "https://api.github.com/users/OsamaSayegh/repos",
+    "events_url": "https://api.github.com/users/OsamaSayegh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OsamaSayegh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c4d7545f356582d280ffeba2637b15392ad21fa0",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/c4d7545f356582d280ffeba2637b15392ad21fa0",
+      "html_url": "https://github.com/discourse/discourse/commit/c4d7545f356582d280ffeba2637b15392ad21fa0"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 6,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "9cb4dcf3a68f96c622a2be820beb4305ee364c5f",
+      "filename": "app/assets/javascripts/discourse/app/controllers/group-requests.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/discourse/discourse/blob/810892139b2d27fb87a823180bb092db6bdfad8d/app/assets/javascripts/discourse/app/controllers/group-requests.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/810892139b2d27fb87a823180bb092db6bdfad8d/app/assets/javascripts/discourse/app/controllers/group-requests.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/controllers/group-requests.js?ref=810892139b2d27fb87a823180bb092db6bdfad8d",
+      "patch": "@@ -7,10 +7,10 @@ import { popupAjaxError } from \"discourse/lib/ajax-error\";\n export default Controller.extend({\n   application: controller(),\n \n-  queryParams: [\"order\", \"desc\", \"filter\"],\n+  queryParams: [\"order\", \"asc\", \"filter\"],\n \n   order: \"\",\n-  desc: null,\n+  asc: null,\n   filter: null,\n   filterInput: null,\n \n@@ -27,7 +27,7 @@ export default Controller.extend({\n     );\n   },\n \n-  @observes(\"order\", \"desc\", \"filter\")\n+  @observes(\"order\", \"asc\", \"filter\")\n   _filtersChanged() {\n     this.findRequesters(true);\n   },\n@@ -57,9 +57,9 @@ export default Controller.extend({\n     });\n   },\n \n-  @discourseComputed(\"order\", \"desc\", \"filter\")\n-  memberParams(order, desc, filter) {\n-    return { order, desc, filter };\n+  @discourseComputed(\"order\", \"asc\", \"filter\")\n+  memberParams(order, asc, filter) {\n+    return { order, asc, filter };\n   },\n \n   @discourseComputed(\"model.requesters.[]\")"
+    }
+  ]
+}
