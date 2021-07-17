@@ -1,0 +1,230 @@
+{
+  "sha": "b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+  "node_id": "MDY6Q29tbWl0NzU2OTU3ODpiMGYwNmI4ZWQwOWU0OWE1MTIxOTQ4ZjJkOTFjN2Q5ZmY1ZDVmNzcz",
+  "commit": {
+    "author": {
+      "name": "Neil Lalonde",
+      "email": "neillalonde@gmail.com",
+      "date": "2021-07-16T18:50:40Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2021-07-16T18:50:40Z"
+    },
+    "message": "FIX: don't allow category and tag tracking settings on staged users (#13688)\n\nConfiguring staged users to watch categories and tags is a way to sign\r\nthem up to get many emails. These emails may be unwanted and get marked\r\nas spam, hurting the site's email deliverability.\r\nUsers can opt-in to email notifications by logging on to their\r\naccount and configuring their own preferences.\r\n\r\nIf staff need to be able to configure these preferences on behalf of\r\nstaged users, the \"allow changing staged user tracking\" site setting\r\ncan be enabled. Default is to not allow it.\r\n\r\nCo-authored-by: Alan Guo Xiang Tan <gxtan1990@gmail.com>",
+    "tree": {
+      "sha": "9f2cdf1d599b8b91f2a7e1d562163e7c64bb8992",
+      "url": "https://api.github.com/repos/discourse/discourse/git/trees/9f2cdf1d599b8b91f2a7e1d562163e7c64bb8992"
+    },
+    "url": "https://api.github.com/repos/discourse/discourse/git/commits/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8dUACRBK7hj4Ov3rIwAAgTkIAHin73g6nVedMULKxNeS5bf4\nluCNL9+hf1piYb2RYC9N6iyO3xX/ldhRtDuwJrXTWi7LK0hwyNH/wm1xzPH53wNt\n68PJEdhZ/+thV+yvSavNIihA0xMsJc+1mAwOLv3t7jc9lC/DNoMo5uc4nCuW6m8i\nn0uK+SAqt8AunXT5/EIFecS6iVmqlUPKPMjtvEf/10ksHyrJpfGRYXUxrg6ZBZso\niXFx2j6BE+q7ulvlBEJyKZyOPYAGEsxqo5WkASrKnEWhJRlUiUaTraUDFc8rhnJc\nWwArr+7ibpOIvpIvFxGmywsdO4aF8pp0e+6KfDRRLl/GbypnnbtadRlIEIU09AM=\n=g5Y/\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 9f2cdf1d599b8b91f2a7e1d562163e7c64bb8992\nparent e12b00eab74674443d09ecf1292be8c9a921a618\nauthor Neil Lalonde <neillalonde@gmail.com> 1626461440 -0400\ncommitter GitHub <noreply@github.com> 1626461440 -0400\n\nFIX: don't allow category and tag tracking settings on staged users (#13688)\n\nConfiguring staged users to watch categories and tags is a way to sign\r\nthem up to get many emails. These emails may be unwanted and get marked\r\nas spam, hurting the site's email deliverability.\r\nUsers can opt-in to email notifications by logging on to their\r\naccount and configuring their own preferences.\r\n\r\nIf staff need to be able to configure these preferences on behalf of\r\nstaged users, the \"allow changing staged user tracking\" site setting\r\ncan be enabled. Default is to not allow it.\r\n\r\nCo-authored-by: Alan Guo Xiang Tan <gxtan1990@gmail.com>"
+    }
+  },
+  "url": "https://api.github.com/repos/discourse/discourse/commits/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+  "html_url": "https://github.com/discourse/discourse/commit/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+  "comments_url": "https://api.github.com/repos/discourse/discourse/commits/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/comments",
+  "author": {
+    "login": "nlalonde",
+    "id": 151885,
+    "node_id": "MDQ6VXNlcjE1MTg4NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/151885?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nlalonde",
+    "html_url": "https://github.com/nlalonde",
+    "followers_url": "https://api.github.com/users/nlalonde/followers",
+    "following_url": "https://api.github.com/users/nlalonde/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nlalonde/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nlalonde/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nlalonde/subscriptions",
+    "organizations_url": "https://api.github.com/users/nlalonde/orgs",
+    "repos_url": "https://api.github.com/users/nlalonde/repos",
+    "events_url": "https://api.github.com/users/nlalonde/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nlalonde/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e12b00eab74674443d09ecf1292be8c9a921a618",
+      "url": "https://api.github.com/repos/discourse/discourse/commits/e12b00eab74674443d09ecf1292be8c9a921a618",
+      "html_url": "https://github.com/discourse/discourse/commit/e12b00eab74674443d09ecf1292be8c9a921a618"
+    }
+  ],
+  "stats": {
+    "total": 276,
+    "additions": 262,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "fa4ba1ee7d22e130cc1c5fa8ffa072fbbd0bea51",
+      "filename": "app/assets/javascripts/discourse/app/controllers/preferences.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/app/controllers/preferences.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/app/controllers/preferences.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/controllers/preferences.js?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -1,2 +1,3 @@\n import Controller from \"@ember/controller\";\n+\n export default Controller.extend({});"
+    },
+    {
+      "sha": "19f90739ebe363830eb7dfb3b977daaacc449efe",
+      "filename": "app/assets/javascripts/discourse/app/templates/preferences.hbs",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 6,
+      "changes": 14,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/app/templates/preferences.hbs",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/app/templates/preferences.hbs",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/app/templates/preferences.hbs?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -25,17 +25,19 @@\n         {{i18n \"user.preferences_nav.notifications\"}}\n       {{/link-to}}\n     </li>\n-    <li class=\"indent nav-categories\">\n-      {{#link-to \"preferences.categories\"}}\n-        {{i18n \"user.preferences_nav.categories\"}}\n-      {{/link-to}}\n-    </li>\n+    {{#if model.can_change_tracking_preferences}}\n+      <li class=\"indent nav-categories\">\n+        {{#link-to \"preferences.categories\"}}\n+          {{i18n \"user.preferences_nav.categories\"}}\n+        {{/link-to}}\n+      </li>\n+    {{/if}}\n     <li class=\"indent nav-users\">\n       {{#link-to \"preferences.users\"}}\n         {{i18n \"user.preferences_nav.users\"}}\n       {{/link-to}}\n     </li>\n-    {{#if siteSettings.tagging_enabled}}\n+    {{#if (and model.can_change_tracking_preferences siteSettings.tagging_enabled)}}\n       <li class=\"indent nav-tags\">\n         {{#link-to \"preferences.tags\"}}\n           {{i18n \"user.preferences_nav.tags\"}}"
+    },
+    {
+      "sha": "0d5f64bcda70eee12dadc7b824893d679dff1d6b",
+      "filename": "app/assets/javascripts/discourse/tests/acceptance/preferences-test.js",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 0,
+      "changes": 33,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/tests/acceptance/preferences-test.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/tests/acceptance/preferences-test.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/acceptance/preferences-test.js?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -524,3 +524,36 @@ acceptance(\"Security\", function (needs) {\n     );\n   });\n });\n+\n+acceptance(\n+  \"User Preferences for staged user and don't allow tracking prefs\",\n+  function (needs) {\n+    needs.settings({\n+      allow_changing_staged_user_tracking: false,\n+      tagging_enabled: true,\n+    });\n+    needs.pretender(preferencesPretender);\n+\n+    test(\"staged user doesn't show category and tag preferences\", async function (assert) {\n+      await visit(\"/u/staged/preferences\");\n+\n+      assert.ok($(\"body.user-preferences-page\").length, \"has the body class\");\n+      assert.equal(\n+        currentURL(),\n+        \"/u/staged/preferences/account\",\n+        \"defaults to account tab\"\n+      );\n+      assert.ok(exists(\".user-preferences\"), \"it shows the preferences\");\n+\n+      assert.ok(\n+        !exists(\".preferences-nav .nav-categories a\"),\n+        \"categories tab isn't there for staged users\"\n+      );\n+\n+      assert.ok(\n+        !exists(\".preferences-nav .nav-tags a\"),\n+        \"tags tab isn't there for staged users\"\n+      );\n+    });\n+  }\n+);"
+    },
+    {
+      "sha": "7c23b4631fdeda4a1a31b4f3a6d77aae4657e659",
+      "filename": "app/assets/javascripts/discourse/tests/fixtures/user-fixtures.js",
+      "status": "modified",
+      "additions": 125,
+      "deletions": 0,
+      "changes": 125,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/tests/fixtures/user-fixtures.js",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/assets/javascripts/discourse/tests/fixtures/user-fixtures.js",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/assets/javascripts/discourse/tests/fixtures/user-fixtures.js?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -190,6 +190,7 @@ export default {\n       card_image_badge_id: 120,\n       muted_usernames: [],\n       can_change_location: true,\n+      can_change_tracking_preferences: true,\n       ignored_usernames: [],\n       invited_by: {\n         id: 1,\n@@ -2534,6 +2535,7 @@ export default {\n       ignored_usernames: [],\n       mailing_list_posts_per_day: 0,\n       can_change_bio: true,\n+      can_change_tracking_preferences: true,\n       user_api_keys: null,\n       user_auth_tokens: [],\n       invited_by: null,\n@@ -3322,4 +3324,127 @@ export default {\n       timezone: \"Australia/Brisbane\",\n     },\n   },\n+  \"/u/staged.json\": {\n+    user_badges: [],\n+    badges: [],\n+    badge_types: [\n+      { id: 1, name: \"Gold\", sort_order: 9 },\n+      { id: 2, name: \"Silver\", sort_order: 8 },\n+      { id: 3, name: \"Bronze\", sort_order: 7 },\n+    ],\n+    users: [\n+      {\n+        id: 20,\n+        username: \"staged\",\n+        uploaded_avatar_id: null,\n+        avatar_template:\n+          \"/letter_avatar/staged/{size}/3_f9720745f5ce6dfc2b5641fca999d934.png\",\n+      },\n+      {\n+        id: -1,\n+        username: \"system\",\n+        uploaded_avatar_id: null,\n+        avatar_template:\n+          \"/letter_avatar/system/{size}/3_f9720745f5ce6dfc2b5641fca999d934.png\",\n+      },\n+    ],\n+    topics: [],\n+    user: {\n+      user_option: {\n+        text_size_seq: 1,\n+      },\n+      id: 20,\n+      username: \"staged\",\n+      staged: true,\n+      uploaded_avatar_id: null,\n+      avatar_template:\n+        \"/letter_avatar/staged/{size}/3_f9720745f5ce6dfc2b5641fca999d934.png\",\n+      name: \"Staged\",\n+      email: \"staged.user@example.com\",\n+      associated_accounts: [],\n+      last_posted_at: \"2015-05-07T15:23:35.074Z\",\n+      last_seen_at: \"2015-05-13T14:34:23.188Z\",\n+      bio_raw: \"\",\n+      bio_cooked: \"\",\n+      created_at: \"2013-02-03T15:19:22.704Z\",\n+      website: \"\",\n+      location: \"\",\n+      can_edit: true,\n+      can_edit_username: true,\n+      can_edit_email: true,\n+      can_edit_name: true,\n+      stats: [],\n+      can_send_private_messages: true,\n+      can_send_private_message_to_user: true,\n+      bio_excerpt: \"\",\n+      trust_level: 0,\n+      moderator: false,\n+      admin: false,\n+      title: null,\n+      badge_count: 0,\n+      notification_count: 0,\n+      has_title_badges: false,\n+      custom_fields: {},\n+      user_fields: {},\n+      pending_count: 0,\n+      post_count: 0,\n+      can_be_deleted: true,\n+      can_delete_all_posts: true,\n+      locale: \"\",\n+      email_digests: false,\n+      email_messages_level: 0,\n+      email_level: 1,\n+      digest_after_minutes: 10080,\n+      mailing_list_mode: false,\n+      auto_track_topics_after_msecs: 60000,\n+      new_topic_duration_minutes: 1440,\n+      external_links_in_new_tab: false,\n+      dynamic_favicon: true,\n+      skip_new_user_tips: false,\n+      enable_quoting: true,\n+      muted_category_ids: [],\n+      regular_category_ids: [],\n+      tracked_category_ids: [],\n+      watched_category_ids: [],\n+      watched_first_post_category_ids: [],\n+      private_messages_stats: {},\n+      gravatar_avatar_upload_id: 5275,\n+      custom_avatar_upload_id: 1573,\n+      card_image_badge: \"/images/avatar.png\",\n+      card_image_badge_id: 120,\n+      muted_usernames: [],\n+      can_change_location: true,\n+      can_change_tracking_preferences: false,\n+      ignored_usernames: [],\n+      invited_by: {\n+        id: 1,\n+        username: \"sam\",\n+        uploaded_avatar_id: null,\n+        avatar_template:\n+          \"/letter_avatar/sam/{size}/3_f9720745f5ce6dfc2b5641fca999d934.png\",\n+      },\n+      custom_groups: [],\n+      featured_user_badge_ids: [],\n+      card_badge: null,\n+      user_auth_tokens: [],\n+      user_notification_schedule: {\n+        enabled: false,\n+        day_0_start_time: 480,\n+        day_0_end_time: 1020,\n+        day_1_start_time: 480,\n+        day_1_end_time: 1020,\n+        day_2_start_time: 480,\n+        day_2_end_time: 1020,\n+        day_3_start_time: 480,\n+        day_3_end_time: 1020,\n+        day_4_start_time: 480,\n+        day_4_end_time: 1020,\n+        day_5_start_time: 480,\n+        day_5_end_time: 1020,\n+        day_6_start_time: 480,\n+        day_6_end_time: 1020,\n+      },\n+      timezone: \"Australia/Brisbane\",\n+    },\n+  },\n };"
+    },
+    {
+      "sha": "01df2bddfe1a416febbd2a73ad4f9af2f8684f26",
+      "filename": "app/serializers/user_serializer.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/serializers/user_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/serializers/user_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/user_serializer.rb?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -57,6 +57,7 @@ def include_user_option?\n                      :can_change_bio,\n                      :can_change_location,\n                      :can_change_website,\n+                     :can_change_tracking_preferences,\n                      :user_api_keys,\n                      :user_auth_tokens,\n                      :user_notification_schedule,\n@@ -132,6 +133,10 @@ def can_change_website\n     !(SiteSetting.enable_discourse_connect && SiteSetting.discourse_connect_overrides_website)\n   end\n \n+  def can_change_tracking_preferences\n+    scope.can_change_tracking_preferences?(object)\n+  end\n+\n   def user_api_keys\n     keys = object.user_api_keys.where(revoked_at: nil).map do |k|\n       {"
+    },
+    {
+      "sha": "16f32b6d4c78e8af213a10f666dcc06906ded1b4",
+      "filename": "app/serializers/web_hook_user_serializer.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/serializers/web_hook_user_serializer.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/serializers/web_hook_user_serializer.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/serializers/web_hook_user_serializer.rb?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -30,6 +30,7 @@ def staff_attributes(*attrs)\n     can_change_bio\n     can_change_location\n     can_change_website\n+    can_change_tracking_preferences\n     user_api_keys\n     group_users\n     user_auth_tokens"
+    },
+    {
+      "sha": "1192419727de392681307ebf469a2b3698642b81",
+      "filename": "app/services/user_updater.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 7,
+      "changes": 16,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/services/user_updater.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/app/services/user_updater.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/app/services/user_updater.rb?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -129,15 +129,17 @@ def update(attributes = {})\n       user.flair_group_id = attributes[:flair_group_id]\n     end\n \n-    CATEGORY_IDS.each do |attribute, level|\n-      if ids = attributes[attribute]\n-        CategoryUser.batch_set(user, level, ids)\n+    if @guardian.can_change_tracking_preferences?(user)\n+      CATEGORY_IDS.each do |attribute, level|\n+        if ids = attributes[attribute]\n+          CategoryUser.batch_set(user, level, ids)\n+        end\n       end\n-    end\n \n-    TAG_NAMES.each do |attribute, level|\n-      if attributes.has_key?(attribute)\n-        TagUser.batch_set(user, level, attributes[attribute]&.split(',') || [])\n+      TAG_NAMES.each do |attribute, level|\n+        if attributes.has_key?(attribute)\n+          TagUser.batch_set(user, level, attributes[attribute]&.split(',') || [])\n+        end\n       end\n     end\n "
+    },
+    {
+      "sha": "d376a5e09ec38140e1e4b5f5fa8c9c26888c70f3",
+      "filename": "config/locales/server.en.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/config/locales/server.en.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/config/locales/server.en.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/locales/server.en.yml?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -2326,6 +2326,8 @@ en:\n \n     create_revision_on_bulk_topic_moves: \"Create revision for first posts when topics are moved into a new category in bulk.\"\n \n+    allow_changing_staged_user_tracking: \"Allow a staged user's category and tag notification preferences to be changed by an admin user.\"\n+\n     errors:\n       invalid_email: \"Invalid email address.\"\n       invalid_username: \"There's no user with that username.\""
+    },
+    {
+      "sha": "b01c9fc42687ad15f21e887617d15fc22649600c",
+      "filename": "config/site_settings.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/config/site_settings.yml",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/config/site_settings.yml",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/config/site_settings.yml?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -2309,6 +2309,8 @@ uncategorized:\n   create_revision_on_bulk_topic_moves:\n     default: true\n \n+  allow_changing_staged_user_tracking: false\n+\n user_preferences:\n   default_email_digest_frequency:\n     enum: \"DigestEmailSiteSetting\""
+    },
+    {
+      "sha": "cd9dda0921e0ca7e2b248411c53f4bf077724ced",
+      "filename": "lib/guardian/user_guardian.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/lib/guardian/user_guardian.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/lib/guardian/user_guardian.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/lib/guardian/user_guardian.rb?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -179,4 +179,8 @@ def can_upload_user_card_background?(user)\n   def can_delete_sso_record?(user)\n     SiteSetting.enable_discourse_connect && user && is_admin?\n   end\n+\n+  def can_change_tracking_preferences?(user)\n+    (SiteSetting.allow_changing_staged_user_tracking || !user.staged) && can_edit_user?(user)\n+  end\n end"
+    },
+    {
+      "sha": "63f8b3a5e77fef5c7646d5ddcc29ee4d4db739d3",
+      "filename": "spec/components/guardian/user_guardian_spec.rb",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 0,
+      "changes": 37,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/spec/components/guardian/user_guardian_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/spec/components/guardian/user_guardian_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/components/guardian/user_guardian_spec.rb?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -455,4 +455,41 @@\n       expect(guardian.can_upload_user_card_background?(trust_level_1)).to eq(false)\n     end\n   end\n+\n+  describe \"#can_change_tracking_preferences?\" do\n+    let(:staged_user) { Fabricate(:staged) }\n+    let(:admin_user) { Fabricate(:admin) }\n+\n+    it \"is true for normal TL0 user\" do\n+      expect(Guardian.new(user).can_change_tracking_preferences?(user)).to eq(true)\n+    end\n+\n+    it \"is true for admin user\" do\n+      expect(Guardian.new(admin_user).can_change_tracking_preferences?(admin_user)).to eq(true)\n+    end\n+\n+    context \"allow_changing_staged_user_tracking is false\" do\n+      before { SiteSetting.allow_changing_staged_user_tracking = false }\n+\n+      it \"is false to staged user\" do\n+        expect(Guardian.new(staged_user).can_change_tracking_preferences?(staged_user)).to eq(false)\n+      end\n+\n+      it \"is false for staged user as admin user\" do\n+        expect(Guardian.new(admin_user).can_change_tracking_preferences?(staged_user)).to eq(false)\n+      end\n+    end\n+\n+    context \"allow_changing_staged_user_tracking is true\" do\n+      before { SiteSetting.allow_changing_staged_user_tracking = true }\n+\n+      it \"is true to staged user\" do\n+        expect(Guardian.new(staged_user).can_change_tracking_preferences?(staged_user)).to eq(true)\n+      end\n+\n+      it \"is true for staged user as admin user\" do\n+        expect(Guardian.new(admin_user).can_change_tracking_preferences?(staged_user)).to eq(true)\n+      end\n+    end\n+  end\n end"
+    },
+    {
+      "sha": "4f9545d803d15b493cc80ae3765a6c76361ba9a2",
+      "filename": "spec/services/user_updater_spec.rb",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 1,
+      "changes": 36,
+      "blob_url": "https://github.com/discourse/discourse/blob/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/spec/services/user_updater_spec.rb",
+      "raw_url": "https://github.com/discourse/discourse/raw/b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773/spec/services/user_updater_spec.rb",
+      "contents_url": "https://api.github.com/repos/discourse/discourse/contents/spec/services/user_updater_spec.rb?ref=b0f06b8ed09e49a5121948f2d91c7d9ff5d5f773",
+      "patch": "@@ -52,7 +52,7 @@\n \n     it 'can update categories and tags' do\n       user = Fabricate(:user)\n-      updater = UserUpdater.new(acting_user, user)\n+      updater = UserUpdater.new(user, user)\n       updater.update(watched_tags: \"#{tag.name},#{tag2.name}\", muted_category_ids: [category.id])\n \n       expect(TagUser.where(\n@@ -72,7 +72,41 @@\n         category_id: category.id,\n         notification_level: CategoryUser.notification_levels[:muted]\n       ).count).to eq(1)\n+    end\n+\n+    context \"staged user\" do\n+      let(:staged_user) { Fabricate(:staged) }\n+\n+      context \"allow_changing_staged_user_tracking is false\" do\n+        before { SiteSetting.allow_changing_staged_user_tracking = false }\n \n+        it \"doesn't update muted categories and watched tags\" do\n+          updater = UserUpdater.new(Fabricate(:admin), staged_user)\n+          updater.update(watched_tags: \"#{tag.name}\", muted_category_ids: [category.id])\n+          expect(TagUser.exists?(user_id: staged_user.id)).to eq(false)\n+          expect(CategoryUser.exists?(user_id: staged_user.id)).to eq(false)\n+        end\n+      end\n+\n+      context \"allow_changing_staged_user_tracking is true\" do\n+        before { SiteSetting.allow_changing_staged_user_tracking = true }\n+\n+        it \"updates muted categories and watched tags\" do\n+          updater = UserUpdater.new(Fabricate(:admin), staged_user)\n+          updater.update(watched_tags: \"#{tag.name}\", muted_category_ids: [category.id])\n+          expect(TagUser.exists?(\n+            user_id: staged_user.id,\n+            tag_id: tag.id,\n+            notification_level: TagUser.notification_levels[:watching]\n+          )).to eq(true)\n+\n+          expect(CategoryUser.exists?(\n+            user_id: staged_user.id,\n+            category_id: category.id,\n+            notification_level: CategoryUser.notification_levels[:muted]\n+          )).to eq(true)\n+        end\n+      end\n     end\n \n     it \"doesn't remove notification prefs when updating something else\" do"
+    }
+  ]
+}
