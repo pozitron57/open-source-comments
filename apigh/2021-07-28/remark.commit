@@ -1,0 +1,110 @@
+{
+  "sha": "0efc04e5cd1ce7952d80a66c9d21ad28e387d090",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjBlZmMwNGU1Y2QxY2U3OTUyZDgwYTY2YzlkMjFhZDI4ZTM4N2QwOTA=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-07-27T09:32:25Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-07-27T16:45:42Z"
+    },
+    "message": "fix deprecated flag, improve tests",
+    "tree": {
+      "sha": "ee44807ad06bd83a8c000e87499cb0dd86446452",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/ee44807ad06bd83a8c000e87499cb0dd86446452"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/0efc04e5cd1ce7952d80a66c9d21ad28e387d090",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/0efc04e5cd1ce7952d80a66c9d21ad28e387d090",
+  "html_url": "https://github.com/umputun/remark42/commit/0efc04e5cd1ce7952d80a66c9d21ad28e387d090",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/0efc04e5cd1ce7952d80a66c9d21ad28e387d090/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4c2f2aa097956e233575aaab32e1ecd56d8ed6a5",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/4c2f2aa097956e233575aaab32e1ecd56d8ed6a5",
+      "html_url": "https://github.com/umputun/remark42/commit/4c2f2aa097956e233575aaab32e1ecd56d8ed6a5"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 5,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "5dc95c275b095487c34f87e2a9cbd43504358fb6",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/0efc04e5cd1ce7952d80a66c9d21ad28e387d090/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0efc04e5cd1ce7952d80a66c9d21ad28e387d090/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=0efc04e5cd1ce7952d80a66c9d21ad28e387d090",
+      "patch": "@@ -359,7 +359,7 @@ func (s *ServerCommand) HandleDeprecatedFlags() (result []DeprecatedFlag) {\n \t}\n \tconst telegramDefaultDuration = time.Second * 5\n \tif s.Notify.Telegram.Timeout != telegramDefaultDuration && s.Telegram.Timeout == telegramDefaultDuration {\n-\t\ts.Telegram.Token = s.Notify.Telegram.Token\n+\t\ts.Telegram.Timeout = s.Notify.Telegram.Timeout\n \t\tresult = append(result, DeprecatedFlag{Old: \"notify.telegram.timeout\", New: \"telegram.timeout\", Version: \"1.9\"})\n \t}\n \tif s.Notify.Telegram.API != \"https://api.telegram.org/bot\" {"
+    },
+    {
+      "sha": "34644d1d5f18412023791c1129d4bcefdfdcfc04",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/0efc04e5cd1ce7952d80a66c9d21ad28e387d090/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0efc04e5cd1ce7952d80a66c9d21ad28e387d090/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server_test.go?ref=0efc04e5cd1ce7952d80a66c9d21ad28e387d090",
+      "patch": "@@ -417,6 +417,8 @@ func TestServerApp_DeprecatedArgs(t *testing.T) {\n \t\t\"--auth.email.passwd=test_password\",\n \t\t\"--auth.email.timeout=15s\",\n \t\t\"--auth.email.template=file.tmpl\",\n+\t\t\"--notify.telegram.token=abcd\",\n+\t\t\"--notify.telegram.timeout=3m\",\n \t}\n \tassert.Empty(t, s.SMTP.Host)\n \tassert.Empty(t, s.SMTP.Port)\n@@ -437,6 +439,8 @@ func TestServerApp_DeprecatedArgs(t *testing.T) {\n \t\t\t{Old: \"auth.email.timeout\", New: \"smtp.timeout\", Version: \"1.5\"},\n \t\t\t{Old: \"auth.email.template\", Version: \"1.5\"},\n \t\t\t{Old: \"notify.type\", New: \"notify.(users|admins)\", Version: \"1.9\"},\n+\t\t\t{Old: \"notify.telegram.token\", New: \"telegram.token\", Version: \"1.9\"},\n+\t\t\t{Old: \"notify.telegram.timeout\", New: \"telegram.timeout\", Version: \"1.9\"},\n \t\t},\n \t\tdeprecatedFlags)\n \tassert.Equal(t, \"smtp.example.org\", s.SMTP.Host)"
+    }
+  ]
+}
