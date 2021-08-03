@@ -1,0 +1,98 @@
+{
+  "sha": "8d33265487efb8a2bed8f0b6b22c6596eeee9fc3",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjhkMzMyNjU0ODdlZmI4YTJiZWQ4ZjBiNmIyMmM2NTk2ZWVlZTlmYzM=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-08-03T08:44:14Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-03T08:51:22Z"
+    },
+    "message": "remove quote style because it isn't supported",
+    "tree": {
+      "sha": "1b901cdd7509a061b2e94e1f5117ee283f71a413",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/1b901cdd7509a061b2e94e1f5117ee283f71a413"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/8d33265487efb8a2bed8f0b6b22c6596eeee9fc3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/8d33265487efb8a2bed8f0b6b22c6596eeee9fc3",
+  "html_url": "https://github.com/umputun/remark42/commit/8d33265487efb8a2bed8f0b6b22c6596eeee9fc3",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/8d33265487efb8a2bed8f0b6b22c6596eeee9fc3/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "36840ed240c2be8f31f361f3a078bdc7bbb884ff",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/36840ed240c2be8f31f361f3a078bdc7bbb884ff",
+      "html_url": "https://github.com/umputun/remark42/commit/36840ed240c2be8f31f361f3a078bdc7bbb884ff"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 0,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "5284a7486d2caf313b3445c01595be2e034da8db",
+      "filename": ".editorconfig",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/8d33265487efb8a2bed8f0b6b22c6596eeee9fc3/.editorconfig",
+      "raw_url": "https://github.com/umputun/remark42/raw/8d33265487efb8a2bed8f0b6b22c6596eeee9fc3/.editorconfig",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.editorconfig?ref=8d33265487efb8a2bed8f0b6b22c6596eeee9fc3",
+      "patch": "@@ -7,7 +7,5 @@ indent_style = space\n trim_trailing_whitespace = false\n \n [*.yml]\n-quote_type= double\n indent_size = 2\n indent_style = space\n-"
+    }
+  ]
+}
