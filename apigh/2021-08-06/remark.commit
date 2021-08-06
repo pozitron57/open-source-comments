@@ -1,0 +1,110 @@
+{
+  "sha": "7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjdiMjhjYjlmYTljZGY3NzE1MGM0OTlmMzZlYWFkMmU2ZjMxMzc0Nzc=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-08-05T22:13:11Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-05T23:14:50Z"
+    },
+    "message": "fix typo in oauth",
+    "tree": {
+      "sha": "50322043c7a040235e47e09280391c40d444e3af",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/50322043c7a040235e47e09280391c40d444e3af"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+  "html_url": "https://github.com/umputun/remark42/commit/7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/7b28cb9fa9cdf77150c499f36eaad2e6f3137477/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a45c1d19946081e61990649c5d08513a45368566",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/a45c1d19946081e61990649c5d08513a45368566",
+      "html_url": "https://github.com/umputun/remark42/commit/a45c1d19946081e61990649c5d08513a45368566"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "fd32ef7e762eab69782b86a6882aaff68e53cc48",
+      "filename": "compose-dev-backend.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/7b28cb9fa9cdf77150c499f36eaad2e6f3137477/compose-dev-backend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/7b28cb9fa9cdf77150c499f36eaad2e6f3137477/compose-dev-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/compose-dev-backend.yml?ref=7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+      "patch": "@@ -40,7 +40,7 @@ services:\n       - DEBUG=true\n       - ADMIN_PASSWD=password\n       - AUTH_DEV=true # activate local oauth \"dev\"\n-      - ADMIN_SHARED_ID=dev_user # set admin flag for default user on local ouath2\n+      - ADMIN_SHARED_ID=dev_user # set admin flag for default user on local oauth2\n       - NOTIFY_USERS\n       - NOTIFY_ADMINS\n       - TELEGRAM_TOKEN"
+    },
+    {
+      "sha": "7fc5bcd1adf18ff903f363938987cc283ccec268",
+      "filename": "compose-dev-frontend.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/7b28cb9fa9cdf77150c499f36eaad2e6f3137477/compose-dev-frontend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/7b28cb9fa9cdf77150c499f36eaad2e6f3137477/compose-dev-frontend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/compose-dev-frontend.yml?ref=7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+      "patch": "@@ -37,7 +37,7 @@ services:\n       - DEBUG=true\n       - ADMIN_PASSWD=password\n       - AUTH_DEV=true # activate local oauth \"dev\"\n-      - ADMIN_SHARED_ID=dev_user # set admin flag for default user on local ouath2\n+      - ADMIN_SHARED_ID=dev_user # set admin flag for default user on local oauth2\n       - POSITIVE_SCORE=false # restricts comment's score to be only positive\n       - EDIT_TIME=5m # edit window\n       - AUTH_ANON=true"
+    }
+  ]
+}
