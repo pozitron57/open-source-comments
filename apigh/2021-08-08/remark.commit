@@ -1,0 +1,110 @@
+{
+  "sha": "9df8de511a97d7d7eb24782d913f537e6b42e56d",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjlkZjhkZTUxMWE5N2Q3ZDdlYjI0NzgyZDkxM2Y1MzdlNmI0MmU1NmQ=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-08-06T21:28:31Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-06T21:56:07Z"
+    },
+    "message": "Run telegram auth goroutine\n\nFix for https://github.com/go-pkgz/auth/issues/90",
+    "tree": {
+      "sha": "252defa3647c42bcd3c522f2b4c9410dc0ed6aaf",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/252defa3647c42bcd3c522f2b4c9410dc0ed6aaf"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/9df8de511a97d7d7eb24782d913f537e6b42e56d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/9df8de511a97d7d7eb24782d913f537e6b42e56d",
+  "html_url": "https://github.com/umputun/remark42/commit/9df8de511a97d7d7eb24782d913f537e6b42e56d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/9df8de511a97d7d7eb24782d913f537e6b42e56d/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/7b28cb9fa9cdf77150c499f36eaad2e6f3137477",
+      "html_url": "https://github.com/umputun/remark42/commit/7b28cb9fa9cdf77150c499f36eaad2e6f3137477"
+    }
+  ],
+  "stats": {
+    "total": 56,
+    "additions": 32,
+    "deletions": 24
+  },
+  "files": [
+    {
+      "sha": "8c0d4e31398a1cf899a016a06ed975ee80709c5e",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 16,
+      "changes": 40,
+      "blob_url": "https://github.com/umputun/remark42/blob/9df8de511a97d7d7eb24782d913f537e6b42e56d/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/9df8de511a97d7d7eb24782d913f537e6b42e56d/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=9df8de511a97d7d7eb24782d913f537e6b42e56d",
+      "patch": "@@ -299,7 +299,7 @@ func (s *ServerCommand) Execute(_ []string) error {\n \t\tcancel()\n \t}()\n \n-\tapp, err := s.newServerApp()\n+\tapp, err := s.newServerApp(ctx)\n \tif err != nil {\n \t\tlog.Printf(\"[PANIC] failed to setup application, %+v\", err)\n \t\treturn err\n@@ -390,7 +390,7 @@ func contains(s string, a []string) bool {\n \n // newServerApp prepares application and return it with all active parts\n // doesn't start anything\n-func (s *ServerCommand) newServerApp() (*serverApp, error) {\n+func (s *ServerCommand) newServerApp(ctx context.Context) (*serverApp, error) {\n \n \tif err := makeDirs(s.BackupLocation); err != nil {\n \t\treturn nil, errors.Wrap(err, \"failed to create backup store\")\n@@ -444,7 +444,7 @@ func (s *ServerCommand) newServerApp() (*serverApp, error) {\n \t\treturn nil, errors.Wrap(err, \"failed to make avatar store\")\n \t}\n \tauthRefreshCache := newAuthRefreshCache()\n-\tauthenticator, err := s.makeAuthenticator(dataService, avatarStore, adminStore, authRefreshCache)\n+\tauthenticator, err := s.makeAuthenticator(ctx, dataService, avatarStore, adminStore, authRefreshCache)\n \tif err != nil {\n \t\t_ = dataService.Close()\n \t\treturn nil, errors.Wrap(err, \"failed to make authenticator\")\n@@ -765,7 +765,7 @@ func (s *ServerCommand) makeCache() (LoadingCache, error) {\n \treturn nil, errors.Errorf(\"unsupported cache type %s\", s.Cache.Type)\n }\n \n-func (s *ServerCommand) addAuthProviders(authenticator *auth.Service) error {\n+func (s *ServerCommand) addAuthProviders(ctx context.Context, authenticator *auth.Service) error {\n \n \tproviders := 0\n \tif s.Auth.Google.CID != \"\" && s.Auth.Google.CSEC != \"\" {\n@@ -793,16 +793,24 @@ func (s *ServerCommand) addAuthProviders(authenticator *auth.Service) error {\n \t\tproviders++\n \t}\n \tif s.Auth.Telegram {\n-\t\tauthenticator.AddCustomHandler(\n-\t\t\t&provider.TelegramHandler{\n-\t\t\t\tProviderName: \"telegram\",\n-\t\t\t\tErrorMsg:     \"❌ Invalid auth request. Please try clicking link again.\",\n-\t\t\t\tSuccessMsg:   \"✅ You have successfully authenticated!\",\n-\t\t\t\tTelegram:     provider.NewTelegramAPI(s.Telegram.Token, &http.Client{Timeout: s.Telegram.Timeout}),\n-\t\t\t\tL:            log.Default(),\n-\t\t\t\tTokenService: authenticator.TokenService(),\n-\t\t\t\tAvatarSaver:  authenticator.AvatarProxy(),\n-\t\t\t})\n+\t\ttelegram := &provider.TelegramHandler{\n+\t\t\tProviderName: \"telegram\",\n+\t\t\tErrorMsg:     \"❌ Invalid auth request. Please try clicking link again.\",\n+\t\t\tSuccessMsg:   \"✅ You have successfully authenticated!\",\n+\t\t\tTelegram:     provider.NewTelegramAPI(s.Telegram.Token, &http.Client{Timeout: s.Telegram.Timeout}),\n+\t\t\tL:            log.Default(),\n+\t\t\tTokenService: authenticator.TokenService(),\n+\t\t\tAvatarSaver:  authenticator.AvatarProxy(),\n+\t\t}\n+\t\t// Run Telegram provider in the background\n+\t\tgo func() {\n+\t\t\terr := telegram.Run(ctx)\n+\t\t\tif err != nil {\n+\t\t\t\tlog.Printf(\"[ERROR] telegram auth error %+v\", err)\n+\t\t\t}\n+\t\t}()\n+\t\tauthenticator.AddCustomHandler(telegram)\n+\n \t\tproviders++\n \t}\n \n@@ -1004,7 +1012,7 @@ func (s *ServerCommand) makeSSLConfig() (config api.SSLConfig, err error) {\n \treturn config, err\n }\n \n-func (s *ServerCommand) makeAuthenticator(ds *service.DataStore, avas avatar.Store, admns admin.Store, authRefreshCache *authRefreshCache) (*auth.Service, error) {\n+func (s *ServerCommand) makeAuthenticator(ctx context.Context, ds *service.DataStore, avas avatar.Store, admns admin.Store, authRefreshCache *authRefreshCache) (*auth.Service, error) {\n \tauthenticator := auth.NewService(auth.Opts{\n \t\tURL:            strings.TrimSuffix(s.RemarkURL, \"/\"),\n \t\tIssuer:         \"remark42\",\n@@ -1061,7 +1069,7 @@ func (s *ServerCommand) makeAuthenticator(ds *service.DataStore, avas avatar.Sto\n \t\tUseGravatar:       true,\n \t})\n \n-\tif err := s.addAuthProviders(authenticator); err != nil {\n+\tif err := s.addAuthProviders(ctx, authenticator); err != nil {\n \t\treturn nil, err\n \t}\n "
+    },
+    {
+      "sha": "bb31ebb529321a40096c0582a9652352689dd7cf",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 8,
+      "changes": 16,
+      "blob_url": "https://github.com/umputun/remark42/blob/9df8de511a97d7d7eb24782d913f537e6b42e56d/backend/app/cmd/server_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/9df8de511a97d7d7eb24782d913f537e6b42e56d/backend/app/cmd/server_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server_test.go?ref=9df8de511a97d7d7eb24782d913f537e6b42e56d",
+      "patch": "@@ -228,7 +228,7 @@ func TestServerApp_WithSSL(t *testing.T) {\n \trequire.NoError(t, err)\n \n \t// create app\n-\tapp, err := opts.newServerApp()\n+\tapp, err := opts.newServerApp(context.Background())\n \trequire.NoError(t, err)\n \n \tctx, cancel := context.WithCancel(context.Background())\n@@ -283,7 +283,7 @@ func TestServerApp_WithRemote(t *testing.T) {\n \topts.BackupLocation, opts.Image.FS.Path = \"/tmp\", \"/tmp\"\n \n \t// create app\n-\tapp, err := opts.newServerApp()\n+\tapp, err := opts.newServerApp(context.Background())\n \trequire.NoError(t, err)\n \n \tctx, cancel := context.WithCancel(context.Background())\n@@ -312,7 +312,7 @@ func TestServerApp_Failed(t *testing.T) {\n \t// RO bolt location\n \t_, err := p.ParseArgs([]string{\"--backup=/tmp\", \"--store.bolt.path=/dev/null\", \"--image.fs.path=/tmp\"})\n \tassert.NoError(t, err)\n-\t_, err = opts.newServerApp()\n+\t_, err = opts.newServerApp(context.Background())\n \tassert.EqualError(t, err, \"failed to make data store engine: failed to create bolt store: can't make directory /dev/null: mkdir /dev/null: not a directory\")\n \tt.Log(err)\n \n@@ -322,7 +322,7 @@ func TestServerApp_Failed(t *testing.T) {\n \n \t_, err = p.ParseArgs([]string{\"--store.bolt.path=/tmp\", \"--backup=/dev/null/not-writable\"})\n \tassert.NoError(t, err)\n-\t_, err = opts.newServerApp()\n+\t_, err = opts.newServerApp(context.Background())\n \tassert.EqualError(t, err, \"failed to create backup store: can't make directory /dev/null/not-writable: mkdir /dev/null: not a directory\")\n \tt.Log(err)\n \n@@ -332,7 +332,7 @@ func TestServerApp_Failed(t *testing.T) {\n \n \t_, err = p.ParseArgs([]string{\"--backup=/tmp\", \"----store.bolt.path=/tmp\"})\n \tassert.NoError(t, err)\n-\t_, err = opts.newServerApp()\n+\t_, err = opts.newServerApp(context.Background())\n \tassert.EqualError(t, err, \"invalid remark42 url demo.remark42.com\")\n \tt.Log(err)\n \n@@ -343,7 +343,7 @@ func TestServerApp_Failed(t *testing.T) {\n \tassert.Error(t, err, \"blah is invalid type\")\n \n \topts.Store.Type = \"blah\"\n-\t_, err = opts.newServerApp()\n+\t_, err = opts.newServerApp(context.Background())\n \tassert.EqualError(t, err, \"failed to make data store engine: unsupported store type blah\")\n \tt.Log(err)\n \n@@ -353,7 +353,7 @@ func TestServerApp_Failed(t *testing.T) {\n \tp = flags.NewParser(&opts, flags.Default)\n \t_, err = p.ParseArgs([]string{\"--store.bolt.path=/tmp\", \"--cache.type=redis_pub_sub\", \"--cache.redis_addr=wrong_address\"})\n \tassert.NoError(t, err)\n-\t_, err = opts.newServerApp()\n+\t_, err = opts.newServerApp(context.Background())\n \tassert.EqualError(t, err,\n \t\t\"failed to make cache: cache backend initialization, redis PubSub initialisation: \"+\n \t\t\t\"problem subscribing to channel remark42-cache on address wrong_address: \"+\n@@ -699,7 +699,7 @@ func prepServerApp(t *testing.T, fn func(o ServerCommand) ServerCommand) (*serve\n }\n \n func createAppFromCmd(t *testing.T, cmd ServerCommand) (*serverApp, context.Context, context.CancelFunc) {\n-\tapp, err := cmd.newServerApp()\n+\tapp, err := cmd.newServerApp(context.Background())\n \trequire.NoError(t, err)\n \n \tctx, cancel := context.WithCancel(context.Background())"
+    }
+  ]
+}
