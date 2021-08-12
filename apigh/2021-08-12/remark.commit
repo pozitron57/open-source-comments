@@ -1,0 +1,98 @@
+{
+  "sha": "193b107590974f1d5ed2c79ad136ae47a4de0a27",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjE5M2IxMDc1OTA5NzRmMWQ1ZWQyYzc5YWQxMzZhZTQ3YTRkZTBhMjc=",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-11T06:45:39Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-11T06:45:39Z"
+    },
+    "message": "add remote site deployment from master",
+    "tree": {
+      "sha": "91756a5e16282e3e9d92c8bd027f4a79aaca115a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/91756a5e16282e3e9d92c8bd027f4a79aaca115a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/193b107590974f1d5ed2c79ad136ae47a4de0a27",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/193b107590974f1d5ed2c79ad136ae47a4de0a27",
+  "html_url": "https://github.com/umputun/remark42/commit/193b107590974f1d5ed2c79ad136ae47a4de0a27",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/193b107590974f1d5ed2c79ad136ae47a4de0a27/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "059d6f0455ef809a30013a1a156487580b4d518d",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/059d6f0455ef809a30013a1a156487580b4d518d",
+      "html_url": "https://github.com/umputun/remark42/commit/059d6f0455ef809a30013a1a156487580b4d518d"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 6,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "4731930b8f4e4f1906ed4db00b13094aae295823",
+      "filename": ".github/workflows/ci-site.yml",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/193b107590974f1d5ed2c79ad136ae47a4de0a27/.github/workflows/ci-site.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/193b107590974f1d5ed2c79ad136ae47a4de0a27/.github/workflows/ci-site.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github/workflows/ci-site.yml?ref=193b107590974f1d5ed2c79ad136ae47a4de0a27",
+      "patch": "@@ -60,3 +60,9 @@ jobs:\n           echo ${GITHUB_PACKAGE_TOKEN} | docker login ghcr.io -u ${USERNAME} --password-stdin\n           docker buildx build --push --no-cache --platform linux/amd64,linux/arm/v7,linux/arm64 \\\n             -t ghcr.io/${USERNAME}/remark24-site:${ref} -t ghcr.io/${USERNAME}/remark24-site:latest\n+\n+      - name: remote site deployment from master\n+        if: ${{ github.ref == 'refs/heads/master' }}\n+        env:\n+          UPDATER_KEY: ${{ secrets.UPDATER_KEY }}\n+        run: curl https://jess.umputun.com/update/remark42-site/${UPDATER_KEY}"
+    }
+  ]
+}
