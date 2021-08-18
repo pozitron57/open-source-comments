@@ -1,0 +1,158 @@
+{
+  "sha": "fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOmZkNWRmMzlmZTJiNTIzYjRjMDUxN2Y5ODU4YWQ0YjRhNTkyZjMwZmI=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-08-17T21:17:18Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-17T21:33:53Z"
+    },
+    "message": "bump backend auth module to fix telegram auth",
+    "tree": {
+      "sha": "56d60dcbeb91c05c088315a44dbfd2be6f9c7328",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/56d60dcbeb91c05c088315a44dbfd2be6f9c7328"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+  "html_url": "https://github.com/umputun/remark42/commit/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f0ae4b6de88c5652f9162a7c0b2f0b2293e60f6b",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/f0ae4b6de88c5652f9162a7c0b2f0b2293e60f6b",
+      "html_url": "https://github.com/umputun/remark42/commit/f0ae4b6de88c5652f9162a7c0b2f0b2293e60f6b"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 20,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "d7456638f74b065d4c57a97d2fce5f17e796d1cd",
+      "filename": "backend/_example/memory_store/go.sum",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/_example/memory_store/go.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/_example/memory_store/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/_example/memory_store/go.sum?ref=fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "patch": "@@ -94,7 +94,7 @@ github.com/go-chi/render v1.0.1/go.mod h1:pq4Rr7HbnsdaeHagklXub+p6Wd16Af5l9koip1\n github.com/go-gl/glfw v0.0.0-20190409004039-e6da0acd62b1/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=\n github.com/go-gl/glfw/v3.3/glfw v0.0.0-20191125211704-12ad95a8df72/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=\n github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=\n-github.com/go-pkgz/auth v1.17.0/go.mod h1:KhMsOKhNU8fJbWKUYPhfGaYGgnZuSOIs52ojELWxOUk=\n+github.com/go-pkgz/auth v1.17.1-0.20210817211320-fed26c31c35c/go.mod h1:KhMsOKhNU8fJbWKUYPhfGaYGgnZuSOIs52ojELWxOUk=\n github.com/go-pkgz/expirable-cache v0.0.3 h1:rTh6qNPp78z0bQE6HDhXBHUwqnV9i09Vm6dksJLXQDc=\n github.com/go-pkgz/expirable-cache v0.0.3/go.mod h1:+IauqN00R2FqNRLCLA+X5YljQJrwB179PfiAoMPlTlQ=\n github.com/go-pkgz/jrpc v0.2.0 h1:CLy/eZyekjraVrxZV18N2R1mYLMJ/nWrgdfyIOGPY/E="
+    },
+    {
+      "sha": "35e2861fc33b43dfcffd7442bb6f0414a0e7d31a",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/go.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/go.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/go.mod?ref=fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "patch": "@@ -11,7 +11,7 @@ require (\n \tgithub.com/go-chi/chi/v5 v5.0.2\n \tgithub.com/go-chi/cors v1.2.0\n \tgithub.com/go-chi/render v1.0.1\n-\tgithub.com/go-pkgz/auth v1.17.0\n+\tgithub.com/go-pkgz/auth v1.17.1-0.20210817211320-fed26c31c35c\n \tgithub.com/go-pkgz/jrpc v0.2.0\n \tgithub.com/go-pkgz/lcw v0.8.1\n \tgithub.com/go-pkgz/lgr v0.10.4"
+    },
+    {
+      "sha": "1bde64866d15adb28c51898a5abb82e0e6cd0cec",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/go.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/go.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/go.sum?ref=fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "patch": "@@ -107,6 +107,8 @@ github.com/go-gl/glfw/v3.3/glfw v0.0.0-20191125211704-12ad95a8df72/go.mod h1:tQ2\n github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=\n github.com/go-pkgz/auth v1.17.0 h1:m6seF+WbIUlLM96RNZvdq0kKDzZ8ynMOQpANJ1YDviQ=\n github.com/go-pkgz/auth v1.17.0/go.mod h1:KhMsOKhNU8fJbWKUYPhfGaYGgnZuSOIs52ojELWxOUk=\n+github.com/go-pkgz/auth v1.17.1-0.20210817211320-fed26c31c35c h1:khIhLaxSlY6vxbAFYrxcePBJ7uuZTezKxZkiQ417cng=\n+github.com/go-pkgz/auth v1.17.1-0.20210817211320-fed26c31c35c/go.mod h1:KhMsOKhNU8fJbWKUYPhfGaYGgnZuSOIs52ojELWxOUk=\n github.com/go-pkgz/expirable-cache v0.0.3 h1:rTh6qNPp78z0bQE6HDhXBHUwqnV9i09Vm6dksJLXQDc=\n github.com/go-pkgz/expirable-cache v0.0.3/go.mod h1:+IauqN00R2FqNRLCLA+X5YljQJrwB179PfiAoMPlTlQ=\n github.com/go-pkgz/jrpc v0.2.0 h1:CLy/eZyekjraVrxZV18N2R1mYLMJ/nWrgdfyIOGPY/E="
+    },
+    {
+      "sha": "a9640563a32004b997952de0278cb396bee2b2ec",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/provider/apple.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/vendor/github.com/go-pkgz/auth/provider/apple.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/vendor/github.com/go-pkgz/auth/provider/apple.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/github.com/go-pkgz/auth/provider/apple.go?ref=fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "patch": "@@ -217,7 +217,7 @@ func (ah *AppleHandler) initPrivateKey() error {\n \treturn nil\n }\n \n-// tokenKeyFunc use for verify JWT sign, it receive the parsed token and should return the key for validating.\n+// tokenKeyFunc use for verify JWT sign, it receives the parsed token and should return the key for validating.\n func (ah *AppleHandler) tokenKeyFunc(jwtToken *jwt.Token) (interface{}, error) {\n \tif jwtToken == nil {\n \t\treturn nil, errors.New(\"failed to call token keyFunc, because token is nil\")"
+    },
+    {
+      "sha": "45c647dda553b3a0b0327e5698d759c119b26999",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/provider/telegram.go",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 5,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark42/blob/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/vendor/github.com/go-pkgz/auth/provider/telegram.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/vendor/github.com/go-pkgz/auth/provider/telegram.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/github.com/go-pkgz/auth/provider/telegram.go?ref=fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "patch": "@@ -192,9 +192,15 @@ func (th *TelegramHandler) LoginHandler(w http.ResponseWriter, r *http.Request)\n \t\ttoken, err := randToken()\n \t\tif err != nil {\n \t\t\trest.SendErrorJSON(w, r, th.L, http.StatusInternalServerError, err, \"failed to generate code\")\n+\t\t\treturn\n \t\t}\n \n \t\tth.requests.Lock()\n+\t\tif th.requests.data == nil {\n+\t\t\tth.requests.Unlock()\n+\t\t\trest.SendErrorJSON(w, r, th.L, http.StatusInternalServerError, errors.New(\"run goroutine is not running\"), \"failed to process login request\")\n+\t\t\treturn\n+\t\t}\n \t\tth.requests.data[token] = tgAuthRequest{\n \t\t\texpires: time.Now().Add(tgAuthRequestLifetime),\n \t\t}\n@@ -236,8 +242,11 @@ func (th *TelegramHandler) LoginHandler(w http.ResponseWriter, r *http.Request)\n \tclaims := authtoken.Claims{\n \t\tUser: &u,\n \t\tStandardClaims: jwt.StandardClaims{\n-\t\t\tId:     queryToken,\n-\t\t\tIssuer: th.ProviderName,\n+\t\t\tAudience:  r.URL.Query().Get(\"site\"),\n+\t\t\tId:        queryToken,\n+\t\t\tIssuer:    th.ProviderName,\n+\t\t\tExpiresAt: time.Now().Add(30 * time.Minute).Unix(),\n+\t\t\tNotBefore: time.Now().Add(-1 * time.Minute).Unix(),\n \t\t},\n \t\tSessionOnly: false, // TODO\n \t}\n@@ -255,11 +264,11 @@ func (th *TelegramHandler) LoginHandler(w http.ResponseWriter, r *http.Request)\n \tdelete(th.requests.data, queryToken)\n }\n \n-// AuthHandler does nothing since we're don't have any callbacks\n-func (th *TelegramHandler) AuthHandler(w http.ResponseWriter, r *http.Request) {}\n+// AuthHandler does nothing since we don't have any callbacks\n+func (th *TelegramHandler) AuthHandler(_ http.ResponseWriter, _ *http.Request) {}\n \n // LogoutHandler - GET /logout\n-func (th *TelegramHandler) LogoutHandler(w http.ResponseWriter, r *http.Request) {\n+func (th *TelegramHandler) LogoutHandler(w http.ResponseWriter, _ *http.Request) {\n \tth.TokenService.Reset(w)\n }\n "
+    },
+    {
+      "sha": "8b04058fd9e1a242288f4f644867e58840aa4821",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/vendor/modules.txt",
+      "raw_url": "https://github.com/umputun/remark42/raw/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb/backend/vendor/modules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/vendor/modules.txt?ref=fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "patch": "@@ -93,7 +93,7 @@ github.com/go-chi/cors\n # github.com/go-chi/render v1.0.1\n ## explicit\n github.com/go-chi/render\n-# github.com/go-pkgz/auth v1.17.0\n+# github.com/go-pkgz/auth v1.17.1-0.20210817211320-fed26c31c35c\n ## explicit\n github.com/go-pkgz/auth\n github.com/go-pkgz/auth/avatar"
+    }
+  ]
+}
