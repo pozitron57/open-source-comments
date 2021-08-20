@@ -1,0 +1,122 @@
+{
+  "sha": "5718a699cf969a06a21649024d95a5bf124ae628",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjU3MThhNjk5Y2Y5NjlhMDZhMjE2NDkwMjRkOTVhNWJmMTI0YWU2Mjg=",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2021-08-09T14:12:32Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-08-19T17:55:56Z"
+    },
+    "message": "remove unused const, move single used var to chunk",
+    "tree": {
+      "sha": "ec0c8366abb028510576b1d55622a0b749611cc6",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/ec0c8366abb028510576b1d55622a0b749611cc6"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/5718a699cf969a06a21649024d95a5bf124ae628",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/5718a699cf969a06a21649024d95a5bf124ae628",
+  "html_url": "https://github.com/umputun/remark42/commit/5718a699cf969a06a21649024d95a5bf124ae628",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/5718a699cf969a06a21649024d95a5bf124ae628/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb",
+      "html_url": "https://github.com/umputun/remark42/commit/fd5df39fe2b523b4c0517f9858ad4b4a592f30fb"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 2,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "8f5fb504bee2c780e9924df17bc6da75cf26c3ee",
+      "filename": "frontend/app/common/constants.config.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/5718a699cf969a06a21649024d95a5bf124ae628/frontend/app/common/constants.config.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/5718a699cf969a06a21649024d95a5bf124ae628/frontend/app/common/constants.config.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/common/constants.config.ts?ref=5718a699cf969a06a21649024d95a5bf124ae628",
+      "patch": "@@ -2,4 +2,3 @@ export const BASE_URL = window.remark_config.host || process.env.REMARK_URL!;\n export const NODE_ID = process.env.REMARK_NODE!;\n export const API_BASE = '/api/v1';\n export const COMMENT_NODE_CLASSNAME_PREFIX = 'remark42__comment-';\n-export const COUNTER_NODE_CLASSNAME = 'remark42__counter';"
+    },
+    {
+      "sha": "c4de4645151057d3feff044c67e648babd03e348",
+      "filename": "frontend/app/common/constants.ts",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/5718a699cf969a06a21649024d95a5bf124ae628/frontend/app/common/constants.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/5718a699cf969a06a21649024d95a5bf124ae628/frontend/app/common/constants.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/common/constants.ts?ref=5718a699cf969a06a21649024d95a5bf124ae628",
+      "patch": "@@ -1,7 +1,6 @@\n import { Sorting, Theme } from './types';\n \n export { BASE_URL, API_BASE, NODE_ID, COMMENT_NODE_CLASSNAME_PREFIX } from './constants.config';\n-export const LAST_COMMENTS_NODE_CLASSNAME = 'remark42__last-comments';\n export const MAX_SHOWN_ROOT_COMMENTS = 10;\n \n export const DEFAULT_SORT: Sorting = '-active';"
+    },
+    {
+      "sha": "5b318eb836d642e1eb0eb1b02272ff4694717d18",
+      "filename": "frontend/app/counter.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/5718a699cf969a06a21649024d95a5bf124ae628/frontend/app/counter.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/5718a699cf969a06a21649024d95a5bf124ae628/frontend/app/counter.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/counter.ts?ref=5718a699cf969a06a21649024d95a5bf124ae628",
+      "patch": "@@ -1,4 +1,4 @@\n-import { COUNTER_NODE_CLASSNAME, BASE_URL, API_BASE } from 'common/constants.config';\n+import { BASE_URL, API_BASE } from 'common/constants.config';\n \n if (document.readyState === 'loading') {\n   document.addEventListener('DOMContentLoaded', init);\n@@ -7,6 +7,7 @@ if (document.readyState === 'loading') {\n }\n \n function init(): void {\n+  const COUNTER_NODE_CLASSNAME = 'remark42__counter';\n   const nodes = Array.from(document.getElementsByClassName(COUNTER_NODE_CLASSNAME)) as HTMLElement[];\n \n   if (!nodes) {"
+    }
+  ]
+}
