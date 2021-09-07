@@ -1,0 +1,98 @@
+{
+  "sha": "2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826",
+  "node_id": "MDY6Q29tbWl0MTE0ODI5NTAzOjI0NDNiOWQwYTI1M2EwYzliNWQxY2MwMDliZGQ1OWRkMjVhMGI4MjY=",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-09-04T20:15:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-09-04T20:22:02Z"
+    },
+    "message": "prevent data race within TestService_UserReplies",
+    "tree": {
+      "sha": "6b468db9b282b15e0666c6b194138d00b89ebc0b",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/6b468db9b282b15e0666c6b194138d00b89ebc0b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826",
+  "html_url": "https://github.com/umputun/remark42/commit/2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fa6c0e0d5e60c0750aca5d8b04cf8ade314d5208",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/fa6c0e0d5e60c0750aca5d8b04cf8ade314d5208",
+      "html_url": "https://github.com/umputun/remark42/commit/fa6c0e0d5e60c0750aca5d8b04cf8ade314d5208"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 10,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "c51d7c981a3c91c49acfba5165f58b9cca481f41",
+      "filename": "backend/app/store/service/service_test.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 4,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark42/blob/2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826/backend/app/store/service/service_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826/backend/app/store/service/service_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/store/service/service_test.go?ref=2443b9d0a253a0c9b5d1cc009bdd59dd25a0b826",
+      "patch": "@@ -1057,13 +1057,19 @@ func TestService_UserReplies(t *testing.T) {\n \trequire.Equal(t, 3, len(cc), \"3 replies to u1\")\n \tassert.Equal(t, \"developer one u1\", u)\n \n+\t// mutex to prevent multiple b.UserReplies calls resulting in data race\n+\tl := sync.Mutex{}\n \tassert.Eventually(t, func() bool {\n-\t\tcc, u, err = b.UserReplies(\"radio-t\", \"u1\", 10, time.Millisecond*199)\n+\t\tl.Lock()\n+\t\tdefer l.Unlock()\n+\t\tcc, u, err = b.UserReplies(\"radio-t\", \"u1\", 10, time.Millisecond*299)\n+\t\trequire.NoError(t, err)\n+\t\trequire.Equal(t, \"developer one u1\", u)\n \t\treturn len(cc) == 1\n-\t}, 300*time.Millisecond, 30*time.Millisecond, \"1 reply to u1 in the last 200ms\")\n-\trequire.NoError(t, err)\n-\trequire.Equal(t, \"developer one u1\", u)\n+\t}, 300*time.Millisecond, 30*time.Millisecond, \"1 reply to u1 in the last 300ms\")\n \n+\tl.Lock()\n+\tdefer l.Unlock()\n \tcc, u, err = b.UserReplies(\"radio-t\", \"u2\", 10, time.Hour)\n \tassert.NoError(t, err)\n \tassert.Equal(t, 0, len(cc), \"0 replies to u2\")"
+    }
+  ]
+}
