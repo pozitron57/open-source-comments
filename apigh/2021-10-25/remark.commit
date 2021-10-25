@@ -1,0 +1,110 @@
+{
+  "sha": "498073c50949c3e839f22e941de8f73e02001c1a",
+  "node_id": "C_kwDOBtgov9oAKDQ5ODA3M2M1MDk0OWMzZTgzOWYyMmU5NDFkZThmNzNlMDIwMDFjMWE",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-10-16T15:40:05Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-10-24T19:05:06Z"
+    },
+    "message": "send telegram messages in HTML mode\n\nThat resolves problem with inability\nto properly render message text in the\nresulting telegram message due to markdown\nescaping trickiness.",
+    "tree": {
+      "sha": "b9ddca4a0b17dee66e46feda028ece08b7dfa58e",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/b9ddca4a0b17dee66e46feda028ece08b7dfa58e"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/498073c50949c3e839f22e941de8f73e02001c1a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/498073c50949c3e839f22e941de8f73e02001c1a",
+  "html_url": "https://github.com/umputun/remark42/commit/498073c50949c3e839f22e941de8f73e02001c1a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/498073c50949c3e839f22e941de8f73e02001c1a/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f817fd38ed2de6c248688e8c5d2635ea32282058",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/f817fd38ed2de6c248688e8c5d2635ea32282058",
+      "html_url": "https://github.com/umputun/remark42/commit/f817fd38ed2de6c248688e8c5d2635ea32282058"
+    }
+  ],
+  "stats": {
+    "total": 94,
+    "additions": 42,
+    "deletions": 52
+  },
+  "files": [
+    {
+      "sha": "6ae627b2f79996d7e49f950cb7ee530775475a39",
+      "filename": "backend/app/notify/telegram.go",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 27,
+      "changes": 57,
+      "blob_url": "https://github.com/umputun/remark42/blob/498073c50949c3e839f22e941de8f73e02001c1a/backend/app/notify/telegram.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/498073c50949c3e839f22e941de8f73e02001c1a/backend/app/notify/telegram.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/notify/telegram.go?ref=498073c50949c3e839f22e941de8f73e02001c1a",
+      "patch": "@@ -5,13 +5,13 @@ import (\n \t\"context\"\n \t\"encoding/json\"\n \t\"fmt\"\n-\t\"html\"\n \t\"net/http\"\n \t\"strconv\"\n \t\"strings\"\n \t\"time\"\n \n \t\"github.com/hashicorp/go-multierror\"\n+\t\"github.com/microcosm-cc/bluemonday\"\n \n \tlog \"github.com/go-pkgz/lgr\"\n \t\"github.com/go-pkgz/repeater\"\n@@ -110,7 +110,7 @@ func (t *Telegram) Send(ctx context.Context, req Request) error {\n \tlog.Printf(\"[DEBUG] send telegram notification for comment ID %s\", req.Comment.ID)\n \tresult := new(multierror.Error)\n \n-\tmsg, err := buildTelegramMessage(req)\n+\tmsg, err := buildMessage(req)\n \tif err != nil {\n \t\treturn errors.Wrapf(err, \"failed to make telegram message body for comment ID %s\", req.Comment.ID)\n \t}\n@@ -178,49 +178,52 @@ func (t *Telegram) sendMessage(ctx context.Context, b []byte, chatID string) err\n \treturn nil\n }\n \n-func buildTelegramMessage(req Request) ([]byte, error) {\n+// buildMessage generates message for generic notification about new comment\n+func buildMessage(req Request) ([]byte, error) {\n \tcommentURLPrefix := req.Comment.Locator.URL + uiNav\n \n-\tmsg := fmt.Sprintf(\"[%s](%s)\", escapeText(req.Comment.User.Name), commentURLPrefix+req.Comment.ID)\n+\tmsg := fmt.Sprintf(`<a href=\"%s\">%s</a>`, commentURLPrefix+req.Comment.ID, escapeTelegramText(req.Comment.User.Name))\n \n \tif req.Comment.ParentID != \"\" {\n-\t\tmsg += fmt.Sprintf(\" -> [%s](%s)\", escapeText(req.parent.User.Name), commentURLPrefix+req.parent.ID)\n+\t\tmsg += fmt.Sprintf(\" -> <a href=\\\"%s\\\">%s</a>\", commentURLPrefix+req.parent.ID, escapeTelegramText(req.parent.User.Name))\n \t}\n \n-\tmsg += fmt.Sprintf(\"\\n\\n%s\", escapeText(req.Comment.Orig))\n+\tmsg += fmt.Sprintf(\"\\n\\n%s\", telegramSupportedHTML(req.Comment.Text))\n \n \tif req.Comment.ParentID != \"\" {\n-\t\tmsg += fmt.Sprintf(\"\\n\\n> \\\"_%s_\\\"\", escapeText(req.parent.Orig))\n+\t\tmsg += fmt.Sprintf(\"\\n\\n \\\"_%s_\\\"\", telegramSupportedHTML(req.parent.Text))\n \t}\n \n \tif req.Comment.PostTitle != \"\" {\n-\t\tmsg += fmt.Sprintf(\"\\n\\n↦  [%s](%s)\", escapeText(req.Comment.PostTitle), req.Comment.Locator.URL)\n+\t\tmsg += fmt.Sprintf(\"\\n\\n↦  <a href=\\\"%s\\\">%s</a>\", req.Comment.Locator.URL, escapeTelegramText(req.Comment.PostTitle))\n \t}\n \n-\tbody := telegramMsg{Text: msg, ParseMode: \"MarkdownV2\"}\n+\tbody := telegramMsg{Text: msg, ParseMode: \"HTML\"}\n \tb, err := json.Marshal(body)\n \tif err != nil {\n \t\treturn nil, err\n \t}\n \treturn b, nil\n }\n \n-func escapeText(text string) string {\n-\tescSymbols := []string{\"_\", \"*\", \"[\", \"]\", \"(\", \")\", \"~\", \"`\", \">\", \"#\", \"+\", \"-\", \"=\", \"|\", \"{\", \"}\", \".\", \"!\"}\n-\tres := html.UnescapeString(text)\n-\tfor _, esc := range escSymbols {\n-\t\tres = strings.Replace(res, esc, \"\\\\\"+esc, -1)\n-\t}\n-\treturn res\n+// returns HTML with only tags allowed in Telegram HTML message payload\n+// https://core.telegram.org/bots/api#html-style\n+func telegramSupportedHTML(htmlText string) string {\n+\tp := bluemonday.NewPolicy()\n+\tp.AllowElements(\"b\", \"strong\", \"i\", \"em\", \"u\", \"ins\", \"s\", \"strike\", \"del\", \"a\", \"code\", \"pre\")\n+\tp.AllowAttrs(\"href\").OnElements(\"a\")\n+\tp.AllowAttrs(\"class\").OnElements(\"code\")\n+\treturn p.Sanitize(htmlText)\n }\n \n-func escapeCode(text string) string {\n-\tescSymbols := []string{\"`\", `\\`}\n-\tres := text\n-\tfor _, esc := range escSymbols {\n-\t\tres = strings.Replace(res, esc, \"\\\\\"+esc, -1)\n-\t}\n-\treturn res\n+// returns text sanitized of symbols not allowed inside other HTML tags in Telegram HTML message payload\n+// https://core.telegram.org/bots/api#html-style\n+func escapeTelegramText(text string) string {\n+\t// order is important\n+\ttext = strings.ReplaceAll(text, \"&\", \"&amp;\")\n+\ttext = strings.ReplaceAll(text, \"<\", \"&lt;\")\n+\ttext = strings.ReplaceAll(text, \">\", \"&gt;\")\n+\treturn text\n }\n \n // SendVerification sends user verification message to the specified user\n@@ -246,11 +249,11 @@ func (t *Telegram) SendVerification(ctx context.Context, req VerificationRequest\n \n // buildVerificationMessage generates verification telegram message based on given input\n func (t *Telegram) buildVerificationMessage(user, token, site string) ([]byte, error) {\n-\tresult := fmt.Sprintf(\"Confirmation for *%s* on site %s\\n\"+\n+\tresult := fmt.Sprintf(\"Confirmation for <i>%s</i> on site %s\\n\"+\n \t\t\"Please copy and paste this text into “token” field on comments page to confirm subscription:\\n\\n\\n\"+\n-\t\t\"```%s```\",\n-\t\tescapeText(user), escapeText(site), escapeCode(token))\n-\tbody := telegramMsg{Text: result, ParseMode: \"MarkdownV2\"}\n+\t\t\"<pre>%s</pre>\",\n+\t\tescapeTelegramText(user), escapeTelegramText(site), escapeTelegramText(token))\n+\tbody := telegramMsg{Text: result, ParseMode: \"HTML\"}\n \tb, err := json.Marshal(body)\n \tif err != nil {\n \t\treturn nil, err"
+    },
+    {
+      "sha": "115942b40718ffa8534e5585733708e344285d39",
+      "filename": "backend/app/notify/telegram_test.go",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 25,
+      "changes": 37,
+      "blob_url": "https://github.com/umputun/remark42/blob/498073c50949c3e839f22e941de8f73e02001c1a/backend/app/notify/telegram_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/498073c50949c3e839f22e941de8f73e02001c1a/backend/app/notify/telegram_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/notify/telegram_test.go?ref=498073c50949c3e839f22e941de8f73e02001c1a",
+      "patch": "@@ -4,7 +4,6 @@ import (\n \t\"context\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n-\t\"strconv\"\n \t\"testing\"\n \t\"time\"\n \n@@ -102,9 +101,9 @@ func TestTelegram_Send(t *testing.T) {\n \t})\n \tassert.NoError(t, err)\n \tassert.NotNil(t, tb)\n-\tc := store.Comment{Text: \"some text\", ParentID: \"1\", ID: \"999\"}\n+\tc := store.Comment{Text: \"some text\", ParentID: \"1\", ID: \"999\", Locator: store.Locator{URL: \"http://example.org/\"}}\n \tc.User.Name = \"from\"\n-\tcp := store.Comment{Text: \"some parent text\"}\n+\tcp := store.Comment{Text: `<p>some parent text with a <a href=\"http://example.org\">link</a> and special text:<br>& < > &</p>`}\n \tcp.User.Name = \"to\"\n \n \terr = tb.Send(context.TODO(), Request{Comment: c, parent: cp, Telegrams: []string{\"test_user_channel\"}})\n@@ -136,6 +135,15 @@ func TestTelegram_Send(t *testing.T) {\n \ttb.apiPrefix = \"http://non-existent\"\n \terr = tb.Send(context.TODO(), Request{Comment: c, parent: cp, Telegrams: []string{\"test_user_channel\"}})\n \tassert.Error(t, err)\n+\n+\t// test buildMessage separately for message text\n+\tres, err := buildMessage(Request{Comment: c, parent: cp})\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, `{\"text\":\"\\u003ca href=\\\"http://example.org/#remark42__comment-999\\\"\\u003efrom\\u003c/a\\u003e -\\u003e \\u003ca href=\\\"http://example.org/#remark42__comment-\\\"\\u003eto\\u003c/a\\u003e\\n\\n`+\n+\t\t`some text\\n\\n`+\n+\t\t` \\\"_some parent text with a \\u003ca href=\\\"http://example.org\\\"\\u003elink\\u003c/a\\u003e and special text:\\u0026amp; \\u0026lt; \\u0026gt; \\u0026amp;_\\\"\\n\\n`+\n+\t\t`↦  \\u003ca href=\\\"http://example.org/\\\"\\u003e[test title]\\u003c/a\\u003e\",\"parse_mode\":\"HTML\"}`,\n+\t\tstring(res))\n }\n \n func TestTelegram_SendVerification(t *testing.T) {\n@@ -170,7 +178,7 @@ func TestTelegram_SendVerification(t *testing.T) {\n \t// test buildVerificationMessage separately for message text\n \tres, err := tb.buildVerificationMessage(req.User, req.Token, req.SiteID)\n \tassert.NoError(t, err)\n-\tassert.Contains(t, string(res), `Confirmation for *test\\\\_username* on site remark`)\n+\tassert.Contains(t, string(res), `Confirmation for \\u003ci\\u003etest_username\\u003c/i\\u003e on site remark`)\n \tassert.Contains(t, string(res), `secret_`)\n }\n \n@@ -216,24 +224,3 @@ func mockTelegramServer() *httptest.Server {\n \n \treturn httptest.NewServer(router)\n }\n-\n-func Test_escapeTitle(t *testing.T) {\n-\ttbl := []struct {\n-\t\tinp string\n-\t\tout string\n-\t}{\n-\t\t{\"\", \"\"},\n-\t\t{\"something 123\", \"something 123\"},\n-\t\t{\"something [123]\", \"something \\\\[123\\\\]\"},\n-\t\t{\"something (123)\", \"something \\\\(123\\\\)\"},\n-\t\t{\"something (123) [aaa]\", \"something \\\\(123\\\\) \\\\[aaa\\\\]\"},\n-\t}\n-\n-\tfor i, tt := range tbl {\n-\t\ttt := tt\n-\t\tt.Run(strconv.Itoa(i), func(t *testing.T) {\n-\t\t\tassert.Equal(t, tt.out, escapeText(tt.inp))\n-\t\t})\n-\t}\n-\n-}"
+    }
+  ]
+}
