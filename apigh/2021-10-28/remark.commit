@@ -1,0 +1,98 @@
+{
+  "sha": "4d03c20be662915b15b75b7bed3f9045793f6362",
+  "node_id": "C_kwDOBtgov9oAKDRkMDNjMjBiZTY2MjkxNWIxNWI3NWI3YmVkM2Y5MDQ1NzkzZjYzNjI",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-10-25T22:27:03Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-10-25T22:29:55Z"
+    },
+    "message": "fix non-HTTPS site link on the privacy page",
+    "tree": {
+      "sha": "34a265daceb6de6f0fd3806fad0b4a7601972fad",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/34a265daceb6de6f0fd3806fad0b4a7601972fad"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/4d03c20be662915b15b75b7bed3f9045793f6362",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/4d03c20be662915b15b75b7bed3f9045793f6362",
+  "html_url": "https://github.com/umputun/remark42/commit/4d03c20be662915b15b75b7bed3f9045793f6362",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/4d03c20be662915b15b75b7bed3f9045793f6362/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b3d28f97ae4f07809211439553bf76b44df1c39a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/b3d28f97ae4f07809211439553bf76b44df1c39a",
+      "html_url": "https://github.com/umputun/remark42/commit/b3d28f97ae4f07809211439553bf76b44df1c39a"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "869ab80d822dd2d647185a2cde44ee0f2b9f6ac9",
+      "filename": "site/src/pages/privacy.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/4d03c20be662915b15b75b7bed3f9045793f6362/site/src/pages/privacy.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/4d03c20be662915b15b75b7bed3f9045793f6362/site/src/pages/privacy.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/pages/privacy.md?ref=4d03c20be662915b15b75b7bed3f9045793f6362",
+      "patch": "@@ -4,10 +4,10 @@ permalink: privacy/index.html\n title: Privacy Policy\n ---\n \n-Umputun operates the website remark42.com, which provides the SERVICE. This page is used to inform website visitors regarding\n+Umputun operates the website [remark42.com](https://remark42.com), which provides the SERVICE. This page is used to inform website visitors regarding\n our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service. If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.\n \n-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://remark42.com, unless otherwise defined in this Privacy Policy.\n+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at [https://remark42.com](https://remark42.com), unless otherwise defined in this Privacy Policy.\n \n ### Information Collection and Use\n "
+    }
+  ]
+}
