@@ -1,0 +1,98 @@
+{
+  "sha": "8818faf1892407023fc00647e483132aa282424d",
+  "node_id": "C_kwDOBtgov9oAKDg4MThmYWYxODkyNDA3MDIzZmMwMDY0N2U0ODMxMzJhYTI4MjQyNGQ",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-10-29T04:30:45Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-10-29T04:30:45Z"
+    },
+    "message": "add darwin arm64 bin release",
+    "tree": {
+      "sha": "25d98e6757179708650ce93f2457cb63c174f463",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/25d98e6757179708650ce93f2457cb63c174f463"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/8818faf1892407023fc00647e483132aa282424d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/8818faf1892407023fc00647e483132aa282424d",
+  "html_url": "https://github.com/umputun/remark42/commit/8818faf1892407023fc00647e483132aa282424d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/8818faf1892407023fc00647e483132aa282424d/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4d03c20be662915b15b75b7bed3f9045793f6362",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/4d03c20be662915b15b75b7bed3f9045793f6362",
+      "html_url": "https://github.com/umputun/remark42/commit/4d03c20be662915b15b75b7bed3f9045793f6362"
+    }
+  ],
+  "stats": {
+    "total": 22,
+    "additions": 2,
+    "deletions": 20
+  },
+  "files": [
+    {
+      "sha": "13ae0bd512c322ef5964f39b112777ef2c15f02a",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 20,
+      "changes": 22,
+      "blob_url": "https://github.com/umputun/remark42/blob/8818faf1892407023fc00647e483132aa282424d/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark42/raw/8818faf1892407023fc00647e483132aa282424d/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile.artifacts?ref=8818faf1892407023fc00647e483132aa282424d",
+      "patch": "@@ -62,6 +62,7 @@ RUN \\\n     GOOS=linux GOARCH=arm64 go build -o remark42.linux-arm64 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n     GOOS=windows GOARCH=amd64 go build -o remark42.windows-amd64.exe -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n     GOOS=darwin GOARCH=amd64 go build -o remark42.darwin-amd64 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n+    GOOS=darwin GOARCH=arm64 go build -o remark42.darwin-arm64 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n     GOOS=freebsd GOARCH=amd64 go build -o remark42.freebsd-amd64 -ldflags \"-X main.revision=${version} -s -w\" ./app\n \n RUN \\\n@@ -75,29 +76,10 @@ RUN \\\n     tar cvzf remark42${tag}.linux-arm.tar.gz remark42.linux-arm LICENSE README.md && \\\n     tar cvzf remark42${tag}.linux-arm64.tar.gz remark42.linux-arm64 LICENSE README.md && \\\n     tar cvzf remark42${tag}.darwin-amd64.tar.gz remark42.darwin-amd64 LICENSE README.md && \\\n+    tar cvzf remark42${tag}.darwin-arm64.tar.gz remark42.darwin-arm64 LICENSE README.md && \\\n     tar cvzf remark42${tag}.freebsd-amd64.tar.gz remark42.freebsd-amd64 LICENSE README.md && \\\n     zip remark42${tag}.windows-amd64.zip remark42.windows-amd64.exe LICENSE README.md\n \n-# upload to github\n-#RUN \\\n-#    if [ -z \"$DRONE_TAG\" ] ; then \\\n-#    echo \"skip upload to github\" ; \\\n-#    else \\\n-#    curl -H \"Authorization: token $GITHUB_TOKEN\" -H \"Accept: application/vnd.github.manifold-preview\" \\\n-#    -H \"Content-Type: application/gzip\" --data-binary @remark42_${DRONE_TAG}.linux-amd64.tar.gz \\\n-#    \"https://uploads.github.com/repos/umputun/remark/releases/${DRONE_TAG}/assets?name=remark_${DRONE_TAG}.linux-amd64.tar.gz\" && \\\n-#    curl -H \"Authorization: token $GITHUB_TOKEN\" -H \"Accept: application/vnd.github.manifold-preview\" \\\n-#    -H \"Content-Type: application/gzip\" --data-binary @remark42_${DRONE_TAG}.linux-386.tar.gz \\\n-#    \"https://uploads.github.com/repos/umputun/remark/releases/${DRONE_TAG}/assets?name=remark_${DRONE_TAG}.linux-386.tar.gz\" && \\\n-#    curl -H \"Authorization: token $GITHUB_TOKEN\" -H \"Accept: application/vnd.github.manifold-preview\" \\\n-#    -H \"Content-Type: application/gzip\" --data-binary @remark42_${DRONE_TAG}.linux-arm64.tar.gz \\\n-#    \"https://uploads.github.com/repos/umputun/remark/releases/${DRONE_TAG}/assets?name=remark_${DRONE_TAG}.linux-arm64.tar.gz\" && \\\n-#    curl -H \"Authorization: token $GITHUB_TOKEN\" -H \"Accept: application/vnd.github.manifold-preview\" \\\n-#    -H \"Content-Type: application/gzip\" --data-binary @remark42_${DRONE_TAG}.darwin-amd64.tar.gz \\\n-#    \"https://uploads.github.com/repos/umputun/remark/releases/${DRONE_TAG}/assets?name=remark_${DRONE_TAG}.darwin-amd64.tar.gz\" && \\\n-#    curl -H \"Authorization: token $GITHUB_TOKEN\" -H \"Accept: application/vnd.github.manifold-preview\" \\\n-#    -H \"Content-Type: application/zip\" --data-binary @remark42_${DRONE_TAG}.windows-amd64.zip \\\n-#    \"https://uploads.github.com/repos/umputun/remark/releases/${DRONE_TAG}/assets?name=remark_${DRONE_TAG}.windows-amd64.zip\"; fi\n \n FROM alpine\n COPY --from=build-backend /build/backend/remark42.* /artifacts/"
+    }
+  ]
+}
