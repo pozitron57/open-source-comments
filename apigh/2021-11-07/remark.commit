@@ -1,0 +1,98 @@
+{
+  "sha": "e1a2374a2d996a0a7f90414fa358751b1572e7bd",
+  "node_id": "C_kwDOBtgov9oAKGUxYTIzNzRhMmQ5OTZhMGE3ZjkwNDE0ZmEzNTg3NTFiMTU3MmU3YmQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-11-04T20:36:40Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-11-04T20:42:04Z"
+    },
+    "message": "clarify telegram notification flow",
+    "tree": {
+      "sha": "f2d03ed35e004debc836da04f659496aef977758",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/f2d03ed35e004debc836da04f659496aef977758"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/e1a2374a2d996a0a7f90414fa358751b1572e7bd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/e1a2374a2d996a0a7f90414fa358751b1572e7bd",
+  "html_url": "https://github.com/umputun/remark42/commit/e1a2374a2d996a0a7f90414fa358751b1572e7bd",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/e1a2374a2d996a0a7f90414fa358751b1572e7bd/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6449b7d92b53d0ef5f39b15020c06193b67684c8",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/6449b7d92b53d0ef5f39b15020c06193b67684c8",
+      "html_url": "https://github.com/umputun/remark42/commit/6449b7d92b53d0ef5f39b15020c06193b67684c8"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 7,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "db6cb31fd3be9164fb116eaea7733ad1e632ea2d",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 8,
+      "changes": 15,
+      "blob_url": "https://github.com/umputun/remark42/blob/e1a2374a2d996a0a7f90414fa358751b1572e7bd/backend/app/cmd/server.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e1a2374a2d996a0a7f90414fa358751b1572e7bd/backend/app/cmd/server.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/cmd/server.go?ref=e1a2374a2d996a0a7f90414fa358751b1572e7bd",
+      "patch": "@@ -472,28 +472,27 @@ func (s *ServerCommand) newServerApp(ctx context.Context) (*serverApp, error) {\n \t\tKeyStore:          adminStore,\n \t}\n \n-\tvar telegramService *notify.Telegram\n-\tvar telegramBotUsername string\n \tnotifyDestinations, err := s.makeNotifyDestinations(authenticator)\n \tif err != nil {\n \t\tlog.Printf(\"[WARN] failed to prepare notify destinations, %s\", err)\n \t}\n \n+\tvar telegramService *notify.Telegram\n \tif contains(\"telegram\", s.Notify.Users) || contains(\"telegram\", s.Notify.Admins) {\n \t\ttelegramService, err = s.makeTelegramNotify()\n \t\tif err != nil {\n \t\t\tlog.Printf(\"[WARN] failed to make telegram notify service, %s\", err)\n-\t\t} else {\n-\t\t\tnotifyDestinations = append(notifyDestinations, telegramService)\n \t\t}\n \t}\n \n-\tnotifyService := s.makeNotifyService(dataService, notifyDestinations)\n-\n+\tvar telegramBotUsername string\n \tif telegramService != nil {\n+\t\tnotifyDestinations = append(notifyDestinations, telegramService)\n \t\ttelegramBotUsername = telegramService.GetBotUsername()\n \t}\n \n+\tnotifyService := s.makeNotifyService(dataService, notifyDestinations)\n+\n \timgProxy := &proxy.Image{\n \t\tHTTP2HTTPS:    s.ImageProxy.HTTP2HTTPS,\n \t\tCacheExternal: s.ImageProxy.CacheExternal,\n@@ -813,8 +812,8 @@ func (s *ServerCommand) addAuthProviders(ctx context.Context, authenticator *aut\n \tif s.Auth.Telegram {\n \t\ttelegram := &provider.TelegramHandler{\n \t\t\tProviderName: \"telegram\",\n-\t\t\tErrorMsg:     \"❌ Invalid auth request. Please try clicking link again.\",\n-\t\t\tSuccessMsg:   \"✅ You have successfully authenticated!\",\n+\t\t\tErrorMsg:     \"❌ Invalid auth request. Please try requesting the link again.\",\n+\t\t\tSuccessMsg:   \"✅ You have successfully authenticated, check the web!\",\n \t\t\tTelegram:     provider.NewTelegramAPI(s.Telegram.Token, &http.Client{Timeout: s.Telegram.Timeout}),\n \t\t\tL:            log.Default(),\n \t\t\tTokenService: authenticator.TokenService(),"
+    }
+  ]
+}
