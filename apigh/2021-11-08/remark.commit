@@ -1,0 +1,134 @@
+{
+  "sha": "90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+  "node_id": "C_kwDOBtgov9oAKDkwZWMyZmY5MDcxYjQ1ODI0ZmNmMTJlNWJjODU4NmQzZTc0NjI5NTk",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2021-11-07T11:38:54Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-11-07T17:58:08Z"
+    },
+    "message": "move more parts of Readme to the docs site",
+    "tree": {
+      "sha": "35da19d31b788b2e60ef18c7de0b6d1e1e8980ad",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/35da19d31b788b2e60ef18c7de0b6d1e1e8980ad"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+  "html_url": "https://github.com/umputun/remark42/commit/90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/90ec2ff9071b45824fcf12e5bc8586d3e7462959/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "19a4eada25fce21e73ac2bf310361c352f4f0683",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/19a4eada25fce21e73ac2bf310361c352f4f0683",
+      "html_url": "https://github.com/umputun/remark42/commit/19a4eada25fce21e73ac2bf310361c352f4f0683"
+    }
+  ],
+  "stats": {
+    "total": 126,
+    "additions": 57,
+    "deletions": 69
+  },
+  "files": [
+    {
+      "sha": "222c3e9529e5e89a18bee783c7596c2730ce933f",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 67,
+      "changes": 67,
+      "blob_url": "https://github.com/umputun/remark42/blob/90ec2ff9071b45824fcf12e5bc8586d3e7462959/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/90ec2ff9071b45824fcf12e5bc8586d3e7462959/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+      "patch": "@@ -37,73 +37,6 @@ For admin screenshots see [Admin UI wiki](https://github.com/umputun/remark42/wi\n \n All remark42 documentation is available [by the link](https://remark42.com/docs/).\n \n-#\n-\n-  - [Install](#install)\n-      - [Quick installation test](#quick-installation-test)\n-      - [Backup format](#backup-format)\n-      - [Admin users](#admin-users)\n-      - [Docker parameters](#docker-parameters)\n-  - [Build from the source](#build-from-the-source)\n-\n-## Install\n-\n-#### Quick installation test\n-\n-To verify if Remark42 has been properly installed, check a demo page at `${REMARK_URL}/web` URL. Make sure to include `remark` site ID to `${SITE}` list.\n-\n-#### Backup format\n-\n-The backup file is a text file with all exported comments separated by EOL. Each backup record is a valid JSON with all key/value unmarshaled from `Comment` struct (see below).\n-\n-#### Admin users\n-\n-Admins/moderators should be defined in `docker-compose.yml` as a list of user IDs or passed in the command line.\n-\n-```yaml\n-environment:\n-  - ADMIN_SHARED_ID=github_ef0f706a79cc24b17bbbb374cd234a691a034128,github_dae9983158e9e5e127ef2b87a411ef13c891e9e5\n-```\n-\n-To get a user ID just log in and click on your username or any other user you want to promote to admins. It will expand login info and show the full user ID.\n-\n-#### Docker parameters\n-\n-Two parameters allow customizing Docker container on the system level:\n-\n-* `APP_UID` - sets UID to run Remark42 application in container (default=1001)\n-* `TIME_ZONE` - sets time zone of Remark42 container (default=America/Chicago)\n-\n-_see [umputun/baseimage](https://github.com/umputun/baseimage) for more details_\n-\n-Example of `docker-compose.yml`:\n-\n-```yaml\n-version: '2'\n-\n-services:\n-  remark42:\n-    image: umputun/remark42:latest\n-    restart: always\n-    container_name: \"remark42\"\n-    environment:\n-      - APP_UID=2000                          # runs Remark42 app with non-default UID\n-      - TIME_ZONE=GTC                         # sets container time to UTC\n-      - REMARK_URL=https://demo.remark42.com  # URL pointing to your Remark42 server\n-      - SITE=YOUR_SITE_ID                     # site ID, same as used for `site_id`, see \"Setup on your website\"\n-      - SECRET=abcd-123456-xyz-$%^&           # secret key\n-      - AUTH_GITHUB_CID=12345667890           # OAuth2 client ID\n-      - AUTH_GITHUB_CSEC=abcdefg12345678      # OAuth2 client secret\n-    volumes:\n-      - ./var:/srv/var                        # persistent volume to store all Remark42 data\n-```\n-\n-## Build from the source\n-\n-* to build Docker container - `make docker`. This command will produce container `umputun/remark42`\n-* to build a single binary for direct execution - `make OS=<linux|windows|darwin> ARCH=<amd64|386>`. This step will produce executable\n-  `remark42` file with everything embedded\n-\n ## Related projects\n \n * [A Helm chart for Remark42 on Kubernetes](https://github.com/groundhog2k/helm-charts/tree/master/charts/remark42)"
+    },
+    {
+      "sha": "f3938e3f71bfa4d7b8bcbf1445694ca3a41053f8",
+      "filename": "site/src/docs/backup/index.md",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/90ec2ff9071b45824fcf12e5bc8586d3e7462959/site/src/docs/backup/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/90ec2ff9071b45824fcf12e5bc8586d3e7462959/site/src/docs/backup/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/backup/index.md?ref=90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+      "patch": "@@ -1,4 +1,8 @@\n ---\n-layout: redirect.njk\n-destination: /docs/backup/automatic/\n+title: Backup\n ---\n+\n+\n+### Backup format\n+\n+The backup file is a text file with all exported comments separated by EOL. Each backup record is a valid JSON with all key/value unmarshaled from `Comment` struct (see below)."
+    },
+    {
+      "sha": "a4a16c11d209f90edfb4a2abeff58d10025b0f93",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 0,
+      "changes": 42,
+      "blob_url": "https://github.com/umputun/remark42/blob/90ec2ff9071b45824fcf12e5bc8586d3e7462959/site/src/docs/configuration/parameters/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/90ec2ff9071b45824fcf12e5bc8586d3e7462959/site/src/docs/configuration/parameters/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/configuration/parameters/index.md?ref=90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+      "patch": "@@ -167,3 +167,45 @@ The following list of command-line options is deprecated and might be removed in\n | notify.telegram.timeout | telegram.timeout | NOTIFY_TELEGRAM_TIMEOUT | TELEGRAM_TIMEOUT | | Telegram timeout | 1.9.0     |\n \n </details>\n+\n+### Admin users\n+\n+Admins/moderators should be defined in `docker-compose.yml` as a list of user IDs or passed in the command line.\n+\n+```yaml\n+environment:\n+  - ADMIN_SHARED_ID=github_ef0f706a79cc24b17bbbb374cd234a691a034128,github_dae9983158e9e5e127ef2b87a411ef13c891e9e5\n+```\n+\n+To get a user ID just log in and click on your username or any other user you want to promote to admins. It will expand login info and show the full user ID.\n+\n+### Docker parameters\n+\n+Two parameters allow customizing Docker container on the system level:\n+\n+* `APP_UID` - sets UID to run Remark42 application in container (default=1001)\n+* `TIME_ZONE` - sets time zone of Remark42 container (default=America/Chicago)\n+\n+_see [umputun/baseimage](https://github.com/umputun/baseimage) for more details_\n+\n+Example of `docker-compose.yml`:\n+\n+```yaml\n+version: '2'\n+\n+services:\n+  remark42:\n+    image: umputun/remark42:latest\n+    restart: always\n+    container_name: \"remark42\"\n+    environment:\n+      - APP_UID=2000                          # runs Remark42 app with non-default UID\n+      - TIME_ZONE=GTC                         # sets container time to UTC\n+      - REMARK_URL=https://demo.remark42.com  # URL pointing to your Remark42 server\n+      - SITE=YOUR_SITE_ID                     # site ID, same as used for `site_id`, see \"Setup on your website\"\n+      - SECRET=abcd-123456-xyz-$%^&           # secret key\n+      - AUTH_GITHUB_CID=12345667890           # OAuth2 client ID\n+      - AUTH_GITHUB_CSEC=abcdefg12345678      # OAuth2 client secret\n+    volumes:\n+      - ./var:/srv/var                        # persistent volume to store all Remark42 data\n+```"
+    },
+    {
+      "sha": "70e12664d7ef33d5cd293895d0d810ade51d72d3",
+      "filename": "site/src/docs/getting-started/installation/index.md",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark42/blob/90ec2ff9071b45824fcf12e5bc8586d3e7462959/site/src/docs/getting-started/installation/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/90ec2ff9071b45824fcf12e5bc8586d3e7462959/site/src/docs/getting-started/installation/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/getting-started/installation/index.md?ref=90ec2ff9071b45824fcf12e5bc8586d3e7462959",
+      "patch": "@@ -68,3 +68,12 @@ Put the next code snippet on a page of your site where you want to have comments\n After that widget will be rendered inside this node.\n \n If you want to set this up on a Single Page App, see [appropriate doc page](https://remark42.com/docs/configuration/frontend/).\n+\n+#### Quick installation test\n+\n+To verify if Remark42 has been properly installed, check a demo page at `${REMARK_URL}/web` URL. Make sure to include `remark` site ID to `${SITE}` list.\n+\n+### Build from the source\n+\n+* to build Docker container - `make docker`. This command will produce container `umputun/remark42`\n+* to build a single binary for direct execution - `make OS=<linux|windows|darwin> ARCH=<amd64|386>`. This step will produce executable `remark42` file with everything embedded"
+    }
+  ]
+}
