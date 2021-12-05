@@ -1,0 +1,98 @@
+{
+  "sha": "c8361a3844aa4c195bd021688cf9d881b37ef033",
+  "node_id": "C_kwDOBtgov9oAKGM4MzYxYTM4NDRhYTRjMTk1YmQwMjE2ODhjZjlkODgxYjM3ZWYwMzM",
+  "commit": {
+    "author": {
+      "name": "Bal Krishna Jha",
+      "email": "adjnct@gmail.com",
+      "date": "2021-12-04T10:22:42Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-12-04T19:33:24Z"
+    },
+    "message": "Add link of docker-compose file",
+    "tree": {
+      "sha": "40ff204af2f4ccdbe993ea0ed0202f7ec7eb6c9d",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/40ff204af2f4ccdbe993ea0ed0202f7ec7eb6c9d"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/c8361a3844aa4c195bd021688cf9d881b37ef033",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/c8361a3844aa4c195bd021688cf9d881b37ef033",
+  "html_url": "https://github.com/umputun/remark42/commit/c8361a3844aa4c195bd021688cf9d881b37ef033",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/c8361a3844aa4c195bd021688cf9d881b37ef033/comments",
+  "author": {
+    "login": "chrishna1",
+    "id": 26048398,
+    "node_id": "MDQ6VXNlcjI2MDQ4Mzk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26048398?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chrishna1",
+    "html_url": "https://github.com/chrishna1",
+    "followers_url": "https://api.github.com/users/chrishna1/followers",
+    "following_url": "https://api.github.com/users/chrishna1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chrishna1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chrishna1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chrishna1/subscriptions",
+    "organizations_url": "https://api.github.com/users/chrishna1/orgs",
+    "repos_url": "https://api.github.com/users/chrishna1/repos",
+    "events_url": "https://api.github.com/users/chrishna1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chrishna1/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a1050472c4edaa6f31d9817d015f2f60a64cdf5d",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/a1050472c4edaa6f31d9817d015f2f60a64cdf5d",
+      "html_url": "https://github.com/umputun/remark42/commit/a1050472c4edaa6f31d9817d015f2f60a64cdf5d"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "a686b95bef4bc9b3d6cf98ca29b70d4f36b43f43",
+      "filename": "site/src/docs/getting-started/installation/index.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/c8361a3844aa4c195bd021688cf9d881b37ef033/site/src/docs/getting-started/installation/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/c8361a3844aa4c195bd021688cf9d881b37ef033/site/src/docs/getting-started/installation/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/getting-started/installation/index.md?ref=c8361a3844aa4c195bd021688cf9d881b37ef033",
+      "patch": "@@ -8,7 +8,7 @@ title: Installation\n \n _This is the recommended way to run Remark42_\n \n-- copy provided `docker-compose.yml` and customize for your needs\n+- copy provided [`docker-compose.yml`](https://github.com/umputun/remark42/blob/master/docker-compose.yml) and customize for your needs\n - make sure you **don't keep** `ADMIN_PASSWD=something...` for any non-development deployments\n - pull prepared images from the Docker Hub and start - `docker-compose pull && docker-compose up -d`\n - alternatively compile from the sources - `docker-compose build && docker-compose up -d`"
+    }
+  ]
+}
