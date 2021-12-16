@@ -1,0 +1,98 @@
+{
+  "sha": "27888eb331aae2a9f9dbd942ee543d16e9c3a36a",
+  "node_id": "C_kwDOBtgov9oAKDI3ODg4ZWIzMzFhYWUyYTlmOWRiZDk0MmVlNTQzZDE2ZTljM2EzNmE",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-12-12T23:31:21Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2021-12-12T23:31:21Z"
+    },
+    "message": "switch base images to v1.8.0",
+    "tree": {
+      "sha": "3b9030b9f7741c8eef9ddb271bc9fba306c337f7",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/3b9030b9f7741c8eef9ddb271bc9fba306c337f7"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/27888eb331aae2a9f9dbd942ee543d16e9c3a36a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/27888eb331aae2a9f9dbd942ee543d16e9c3a36a",
+  "html_url": "https://github.com/umputun/remark42/commit/27888eb331aae2a9f9dbd942ee543d16e9c3a36a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/27888eb331aae2a9f9dbd942ee543d16e9c3a36a/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fcb13e20160aadae40fb5c8f93d18b26c73062e6",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/fcb13e20160aadae40fb5c8f93d18b26c73062e6",
+      "html_url": "https://github.com/umputun/remark42/commit/fcb13e20160aadae40fb5c8f93d18b26c73062e6"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "29e38604b300726403bc83e899425ce077b5d901",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/27888eb331aae2a9f9dbd942ee543d16e9c3a36a/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/27888eb331aae2a9f9dbd942ee543d16e9c3a36a/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=27888eb331aae2a9f9dbd942ee543d16e9c3a36a",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM umputun/baseimage:buildgo-v1.7.0 as build-backend\n+FROM umputun/baseimage:buildgo-v1.8.0 as build-backend\n \n ARG CI\n ARG DRONE\n@@ -58,7 +58,7 @@ RUN cd /srv/frontend && \\\n     else echo \"skip frontend tests and lint\" ; npm run build ; fi && \\\n     rm -rf ./node_modules\n \n-FROM umputun/baseimage:app-v1.7.0\n+FROM umputun/baseimage:app-v1.8.0\n \n WORKDIR /srv\n "
+    }
+  ]
+}
