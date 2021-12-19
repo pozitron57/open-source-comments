@@ -179,7 +179,10 @@ for filename in os.listdir(p):
                     data[cs]['open_issues'] = open_issues
                     data[cs]['created']     = created
                     if os.path.isfile(file_N_days_ago):
-                        stars_N_days_ago = data_N_days_ago[cs]['stars']
+                        if cs in data_N_days_ago:
+                            stars_N_days_ago = data_N_days_ago[cs]['stars']
+                        else:
+                            stars_N_days_ago = 'undefined'
                     else:
                         stars_N_days_ago = 'undefined'
                     #if in stars_N_days_ago and cs in data and isinstance(data[cs]['stars'],int) and isinstance(stars_N_days_ago[cs],int):
