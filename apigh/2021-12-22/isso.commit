@@ -1,0 +1,98 @@
+{
+  "sha": "57aa12699a1338820c9ec34ebbae01d687d69c9f",
+  "node_id": "C_kwDOAF-mA9oAKDU3YWExMjY5OWExMzM4ODIwYzllYzM0ZWJiYWUwMWQ2ODdkNjljOWY",
+  "commit": {
+    "author": {
+      "name": "Benoit Latinier",
+      "email": "benoit@latinier.fr",
+      "date": "2021-12-22T08:46:10Z"
+    },
+    "committer": {
+      "name": "Benoit Latinier",
+      "email": "benoit@latinier.fr",
+      "date": "2021-12-22T08:46:10Z"
+    },
+    "message": "fix: travis not used anymore",
+    "tree": {
+      "sha": "ae9b3e443e798ca963a0d3b01a6be5b65bdaa9c7",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/ae9b3e443e798ca963a0d3b01a6be5b65bdaa9c7"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/57aa12699a1338820c9ec34ebbae01d687d69c9f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/57aa12699a1338820c9ec34ebbae01d687d69c9f",
+  "html_url": "https://github.com/posativ/isso/commit/57aa12699a1338820c9ec34ebbae01d687d69c9f",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/57aa12699a1338820c9ec34ebbae01d687d69c9f/comments",
+  "author": {
+    "login": "blatinier",
+    "id": 1086629,
+    "node_id": "MDQ6VXNlcjEwODY2Mjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1086629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blatinier",
+    "html_url": "https://github.com/blatinier",
+    "followers_url": "https://api.github.com/users/blatinier/followers",
+    "following_url": "https://api.github.com/users/blatinier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blatinier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blatinier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blatinier/subscriptions",
+    "organizations_url": "https://api.github.com/users/blatinier/orgs",
+    "repos_url": "https://api.github.com/users/blatinier/repos",
+    "events_url": "https://api.github.com/users/blatinier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blatinier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "blatinier",
+    "id": 1086629,
+    "node_id": "MDQ6VXNlcjEwODY2Mjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1086629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blatinier",
+    "html_url": "https://github.com/blatinier",
+    "followers_url": "https://api.github.com/users/blatinier/followers",
+    "following_url": "https://api.github.com/users/blatinier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blatinier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blatinier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blatinier/subscriptions",
+    "organizations_url": "https://api.github.com/users/blatinier/orgs",
+    "repos_url": "https://api.github.com/users/blatinier/repos",
+    "events_url": "https://api.github.com/users/blatinier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blatinier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9e9196498e1cb3a30612b044d10db5f91c729869",
+      "url": "https://api.github.com/repos/posativ/isso/commits/9e9196498e1cb3a30612b044d10db5f91c729869",
+      "html_url": "https://github.com/posativ/isso/commit/9e9196498e1cb3a30612b044d10db5f91c729869"
+    }
+  ],
+  "stats": {
+    "total": 25,
+    "additions": 0,
+    "deletions": 25
+  },
+  "files": [
+    {
+      "sha": "4e1087475589a9aa236c722fe0f7d28af0548508",
+      "filename": ".travis.yml",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 25,
+      "changes": 25,
+      "blob_url": "https://github.com/posativ/isso/blob/9e9196498e1cb3a30612b044d10db5f91c729869/.travis.yml",
+      "raw_url": "https://github.com/posativ/isso/raw/9e9196498e1cb3a30612b044d10db5f91c729869/.travis.yml",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.travis.yml?ref=9e9196498e1cb3a30612b044d10db5f91c729869",
+      "patch": "@@ -1,25 +0,0 @@\n-language: python\n-matrix:\n-  include:\n-    - python: 3.5\n-      env: TOX_ENV=py35\n-    - python: 3.6\n-      env: TOX_ENV=py36\n-    - python: 3.7\n-      dist: xenial\n-      env: TOX_ENV=py37\n-    - python: 3.8\n-      dist: xenial\n-      env: TOX_ENV=py38\n-install:\n-  - pip install -U pip\n-  - pip install flake8 tox\n-script:\n-  - tox -e $TOX_ENV\n-  - make flakes\n-notifications:\n-  irc:\n-    channels:\n-      - \"irc.libera.chat#isso\"\n-    on_success: change\n-    on_failure: always"
+    }
+  ]
+}
