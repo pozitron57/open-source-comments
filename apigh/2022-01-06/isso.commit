@@ -1,0 +1,110 @@
+{
+  "sha": "86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+  "node_id": "C_kwDOAF-mA9oAKDg2ZmJmMzdmM2NmOGM2YzE5YjA4Njk3NmFmYTM1Y2E2NWMwOTJhMjk",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-01-05T20:17:37Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-01-05T20:17:37Z"
+    },
+    "message": "utils: html: Normalize misaka extensions (#686)\n\nAs of version 0.12.2, Isso uses misaka 2.0 to render\r\nmarkdown. Misaka 2.0 uses `dashed-case` instead of\r\n`snake_case` for options.\r\n\r\nNormalize passed extensions to dashed-case to avoid\r\nmistakes.\r\n\r\nNote: Flags have only been around in Isso with misaka 2.0,\r\nso I hope users did not use dashed case with them.",
+    "tree": {
+      "sha": "bb49df183e432e68bed38cfcc79c081a73ae124a",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/bb49df183e432e68bed38cfcc79c081a73ae124a"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh1fziCRBK7hj4Ov3rIwAANeEIAI3d0/BsWH3DCNHE81FaXVQw\nrS+XMS9Q0grr6NorACvAuiwcJpkqxbgN+BfFqSKsER4277mBhmf7FlqRWsGYrdOG\nCbb6FRSE6BxJrWhlEyysR99y73qdoE2AeURD0ItraNb3ZSRVV0FEL7XotBSBCU4V\n/De1x/ze8ro5uyMIgJ+wotyE/wSWMOdjk6uF3v0OAhhJrxWPG4Qxfpd6LrJ5+YUS\n5b0hl3IxU37yD6pvzc72a9b7iCMjh2zAkKl9Tp+CWA2tKZ76QKouMgTx9DhOVj3x\nCVbQkuh50LRnKnpoHHWKKKzTHZHY/oaxNwz49+1Qrh9F/88HHu8MAhBtUfs+d2w=\n=5n2b\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree bb49df183e432e68bed38cfcc79c081a73ae124a\nparent bbad14e8e1384d49cd274f573cfe8ea121fef532\nauthor ix5 <ix5@users.noreply.github.com> 1641413857 +0100\ncommitter GitHub <noreply@github.com> 1641413857 +0100\n\nutils: html: Normalize misaka extensions (#686)\n\nAs of version 0.12.2, Isso uses misaka 2.0 to render\r\nmarkdown. Misaka 2.0 uses `dashed-case` instead of\r\n`snake_case` for options.\r\n\r\nNormalize passed extensions to dashed-case to avoid\r\nmistakes.\r\n\r\nNote: Flags have only been around in Isso with misaka 2.0,\r\nso I hope users did not use dashed case with them."
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+  "html_url": "https://github.com/posativ/isso/commit/86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/86fbf37f3cf8c6c19b086976afa35ca65c092a29/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bbad14e8e1384d49cd274f573cfe8ea121fef532",
+      "url": "https://api.github.com/repos/posativ/isso/commits/bbad14e8e1384d49cd274f573cfe8ea121fef532",
+      "html_url": "https://github.com/posativ/isso/commit/bbad14e8e1384d49cd274f573cfe8ea121fef532"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 21,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "25ce77a9db91d6a79daa22f26fa9ba02bb61ab77",
+      "filename": "isso/tests/test_html.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 0,
+      "changes": 17,
+      "blob_url": "https://github.com/posativ/isso/blob/86fbf37f3cf8c6c19b086976afa35ca65c092a29/isso/tests/test_html.py",
+      "raw_url": "https://github.com/posativ/isso/raw/86fbf37f3cf8c6c19b086976afa35ca65c092a29/isso/tests/test_html.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/tests/test_html.py?ref=86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+      "patch": "@@ -99,6 +99,23 @@ def test_render(self):\n                       ['<p><a href=\"http://example.org/\" rel=\"nofollow noopener\">http://example.org/</a> and sms:+1234567890</p>',\n                        '<p><a rel=\"nofollow noopener\" href=\"http://example.org/\">http://example.org/</a> and sms:+1234567890</p>'])\n \n+    def test_sanitized_render_extensions(self):\n+        \"\"\"Options should be normalized from both dashed-case or snake_case (legacy)\"\"\"\n+        conf = config.new({\n+            \"markup\": {\n+                \"options\": \"no_intra_emphasis\",  # Deliberately snake_case\n+                \"flags\": \"\",\n+                \"allowed-elements\": \"\",\n+                \"allowed-attributes\": \"\"\n+            }\n+        })\n+        renderer = html.Markup(conf.section(\"markup\")).render\n+        self.assertEqual(renderer(\"foo_bar_baz\"), '<p>foo_bar_baz</p>')\n+\n+        conf.set(\"markup\", \"options\", \"no-intra-emphasis\")  # dashed-case\n+        renderer = html.Markup(conf.section(\"markup\")).render\n+        self.assertEqual(renderer(\"foo_bar_baz\"), '<p>foo_bar_baz</p>')\n+\n     def test_code_blocks(self):\n         convert = html.Markdown(extensions=('fenced-code',))\n         examples = ["
+    },
+    {
+      "sha": "a013ac18771890a19225df9b5c7df325bd4fed38",
+      "filename": "isso/utils/html.py",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/86fbf37f3cf8c6c19b086976afa35ca65c092a29/isso/utils/html.py",
+      "raw_url": "https://github.com/posativ/isso/raw/86fbf37f3cf8c6c19b086976afa35ca65c092a29/isso/utils/html.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/utils/html.py?ref=86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+      "patch": "@@ -54,6 +54,10 @@ def set_links(attrs, new=False):\n def Markdown(extensions=(\"strikethrough\", \"superscript\", \"autolink\",\n                          \"fenced-code\"), flags=[]):\n \n+    # Normalize render extensions for misaka 2.0, which uses `dashed-case`\n+    # instead of `snake_case` (misaka 1.x) for options.\n+    extensions = [x.replace(\"_\", \"-\") for x in extensions]\n+\n     renderer = Unofficial(flags=flags)\n     md = misaka.Markdown(renderer, extensions=extensions)\n "
+    }
+  ]
+}
