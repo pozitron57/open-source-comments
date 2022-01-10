@@ -1,6 +1,7 @@
 Check lists at
   https://news.ycombinator.com/item?id=24676152
-  https://medevel.com/17-commenting-systems-open-source/
+
+Vssue (github, bitbucket etc. login required)
 
 https://iwantsourcecodes.com/open-source-comment-system/ PHP
 https://github.com/tessalt/echo-chamber-js 3766★
