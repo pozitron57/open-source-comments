@@ -1,0 +1,98 @@
+{
+  "sha": "1ba12bf789e0dc26649e183467163739ad1c7c67",
+  "node_id": "C_kwDOAF-mA9oAKDFiYTEyYmY3ODllMGRjMjY2NDllMTgzNDY3MTYzNzM5YWQxYzdjNjc",
+  "commit": {
+    "author": {
+      "name": "Alexandru Nedelcu",
+      "email": "alexandru@users.noreply.github.com",
+      "date": "2022-01-15T16:40:17Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-01-15T16:40:17Z"
+    },
+    "message": "Dockerfile: Avoid rebuilding js in python step (#760)\n\nSet `TOX_ENV` to avoid re-running the javascript\r\ngeneration step that has already been handled by\r\nthe nodejs `jsBuilder` step.\r\n\r\nThis causes the `NpmBuildCommand` inside\r\n`setup.py` to abort early.\r\n\r\nThis fixes the Docker build as previously it would\r\nfail to compile javascript in a pure-python docker\r\ncontainer.\r\n\r\nFix #759",
+    "tree": {
+      "sha": "603d4e89ab0ed38f08d87eb12f8a1c0f6c056c42",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/603d4e89ab0ed38f08d87eb12f8a1c0f6c056c42"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/1ba12bf789e0dc26649e183467163739ad1c7c67",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh4vjxCRBK7hj4Ov3rIwAAzPIIAHFBorfctAcF4aQIJv/WKIWs\n2XgJYWS4wLcnVWWKuaSua1gsYEFNITZ/EPXbqYV7ZP+llxRe6zObzRsp48j17+lp\nODfj0UvTpeZznVf5duGSdF2FvK3a9KGrxbw+UhgO8gH45aT9vw7t/EZVCxeREaQ0\nbgtOovLwPIOEqXGSM2DNBag3ArY79tIGC9f0pPpr8WcHpqbeovny1UGN6Yfrf2Hk\nnsaitFVF2EupfB6I8d3Dl201RRdTLUEPBNjcN4lNtU7TdmMGdPSJS5YbPnzcpJgJ\ncAtUlHogMjSNCYNWZNQcEDYXOEkWTI6xFtGcIDBqmEImU6o8sZBgF2UgNxiN/Jk=\n=yFXF\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 603d4e89ab0ed38f08d87eb12f8a1c0f6c056c42\nparent 86fbf37f3cf8c6c19b086976afa35ca65c092a29\nauthor Alexandru Nedelcu <alexandru@users.noreply.github.com> 1642264817 +0200\ncommitter GitHub <noreply@github.com> 1642264817 +0100\n\nDockerfile: Avoid rebuilding js in python step (#760)\n\nSet `TOX_ENV` to avoid re-running the javascript\r\ngeneration step that has already been handled by\r\nthe nodejs `jsBuilder` step.\r\n\r\nThis causes the `NpmBuildCommand` inside\r\n`setup.py` to abort early.\r\n\r\nThis fixes the Docker build as previously it would\r\nfail to compile javascript in a pure-python docker\r\ncontainer.\r\n\r\nFix #759"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/1ba12bf789e0dc26649e183467163739ad1c7c67",
+  "html_url": "https://github.com/posativ/isso/commit/1ba12bf789e0dc26649e183467163739ad1c7c67",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/1ba12bf789e0dc26649e183467163739ad1c7c67/comments",
+  "author": {
+    "login": "alexandru",
+    "id": 11753,
+    "node_id": "MDQ6VXNlcjExNzUz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11753?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexandru",
+    "html_url": "https://github.com/alexandru",
+    "followers_url": "https://api.github.com/users/alexandru/followers",
+    "following_url": "https://api.github.com/users/alexandru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexandru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexandru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexandru/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexandru/orgs",
+    "repos_url": "https://api.github.com/users/alexandru/repos",
+    "events_url": "https://api.github.com/users/alexandru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexandru/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+      "url": "https://api.github.com/repos/posativ/isso/commits/86fbf37f3cf8c6c19b086976afa35ca65c092a29",
+      "html_url": "https://github.com/posativ/isso/commit/86fbf37f3cf8c6c19b086976afa35ca65c092a29"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c81d1d8246b532abf206747f576e3915986d8660",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/1ba12bf789e0dc26649e183467163739ad1c7c67/Dockerfile",
+      "raw_url": "https://github.com/posativ/isso/raw/1ba12bf789e0dc26649e183467163739ad1c7c67/Dockerfile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Dockerfile?ref=1ba12bf789e0dc26649e183467163739ad1c7c67",
+      "patch": "@@ -7,6 +7,7 @@ RUN make init js\n # Second, create virtualenv\n FROM python:3.8-buster AS venvBuilder\n WORKDIR /src/\n+ENV TOX_ENV=1\n COPY --from=jsBuilder /src .\n RUN python3 -m venv /isso \\\n  && . /isso/bin/activate \\"
+    }
+  ]
+}
