@@ -46,15 +46,15 @@ isso:
     static: "no"
     description: "Lightweight, allows anonymous comments, maintains identity"
     license: "MIT"
-    open_issues: 130
-    last_committed: 2022‑01‑15
+    open_issues: 128
+    last_committed: 2022‑01‑17
     docker: "https://hub.docker.com/r/sheogorath/isso-docker/"
-    stars_dif: 12
+    stars_dif: 11
     paging: "no"
 
 
 commento:
-    stars: 3585
+    stars: 3584
     name: "Commento"
     demo: "https://demo.commento.io"
     source:
@@ -90,7 +90,7 @@ commento:
     license: "MIT"
     open_issues: 1
     last_committed: 2021‑02‑28
-    stars_dif: 1
+    stars_dif: -1
 
 schnak:
     stars: 1740
@@ -196,7 +196,7 @@ site_point_nested_comments:
 
     license: undefined
 remark:
-    stars: 3474
+    stars: 3488
     source: "https://github.com/umputun/remark42"
     homepage: "https://remark42.com"
     name: "Remark42"
@@ -238,9 +238,9 @@ remark:
     static: "no"
     description: "Lightweight and privacy-focused"
     license: "MIT"
-    open_issues: 91
-    last_committed: 2022‑01‑15
-    stars_dif: 80
+    open_issues: 88
+    last_committed: 2022‑01‑18
+    stars_dif: 90
 
 valine:
     name: "Valine"
@@ -283,7 +283,7 @@ valine:
     license: "GPL-2.0"
     open_issues: 36
     last_committed: 2021‑10‑20
-    stars_dif: 5
+    stars_dif: 6
 
 mouthful:
     stars: 702
@@ -748,7 +748,7 @@ comments_app:
     license: "Apache-2.0"
     open_issues: 3
     last_committed: 2019‑01‑20
-    stars_dif: 1
+    stars_dif: 0
 
 master:
     stars: 49
@@ -1031,7 +1031,7 @@ staticman:
     stars_dif: 8
 
 comment_with_reply_view:
-    stars: 383
+    stars: 384
     #source: "https://github.com/Moosphan/CommentWithReplyView-master"
     source: "https://github.com/Moosphan/CommentReplyComponent"
     homepage: "?"
@@ -1075,7 +1075,7 @@ comment_with_reply_view:
     license: "MIT"
     open_issues: 1
     last_committed: 2018‑05‑29
-    stars_dif: 0
+    stars_dif: 1
 
 talkyard:
     stars: 1381
@@ -1120,12 +1120,12 @@ talkyard:
     description: "Previously named Debiki, then Effective discussions. Can be used\
         \ as a forum. React.js client side. High hardware requirements"
     license: "NOASSERTION"
-    open_issues: 43
-    last_committed: 2021‑12‑15
-    stars_dif: 16
+    open_issues: 47
+    last_committed: 2022‑01‑17
+    stars_dif: 15
 
 discourse:
-    stars: 34810
+    stars: 34823
     source: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
@@ -1169,12 +1169,12 @@ discourse:
     description: "Isn’t designed as a comments engine, but can be used so. High hardware\
         \ requirements"
     license: "NOASSERTION"
-    open_issues: 40
+    open_issues: 48
     last_committed: 2021‑07‑19
-    stars_dif: 119
+    stars_dif: 123
 
 webpage_webmentions:
-    stars: 62
+    stars: 63
     source: "https://github.com/voxpelli/webpage-webmentions"
     homepage: "https://webmention.herokuapp.com/"
     name: "webpage-webmentions"
@@ -1217,7 +1217,7 @@ webpage_webmentions:
     license: "MIT"
     open_issues: 76
     last_committed: 2021‑01‑18
-    stars_dif: 0
+    stars_dif: 1
 
 chatter:
     stars: 8
@@ -2310,7 +2310,7 @@ jekyll_webmention_io:
     license: "MIT"
     open_issues: 18
     created: 2014‑11‑17
-    stars_dif: 2
+    stars_dif: 1
     last_committed: 2019‑03‑11
 
 just_comments:
@@ -2545,7 +2545,7 @@ Aloud:
     stars_dif: '?'
 
 Waline:
-    stars: 608
+    stars: 609
     source: "https://github.com/walinejs/waline"
     homepage: "https://waline.js.org/en"
     name: "Waline"
@@ -2554,7 +2554,8 @@ Waline:
     js_kB: "54"
     css_kB: ""
     language: "Node.js & Vue"
-    db: "LeanCloud / MongoDB / MySQL / SQLite / PostgreSQL / CloudBase / GitHub / Deta Base / InspireCloud"
+    db: "LeanCloud / MongoDB / MySQL / SQLite / PostgreSQL / CloudBase / GitHub /\
+        \ Deta Base / InspireCloud"
     moderation: "yes"
     mail_notification: "yes"
     dependency: ""

@@ -1,0 +1,253 @@
+{
+  "sha": "dd065005737491821a21ca742004789611b11070",
+  "node_id": "C_kwDOBtgov9oAKGRkMDY1MDA1NzM3NDkxODIxYTIxY2E3NDIwMDQ3ODk2MTFiMTEwNzA",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2022-01-18T06:47:27Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-01-18T07:38:30Z"
+    },
+    "message": "bump frontend deps",
+    "tree": {
+      "sha": "58f03dee143246b348b40d994948ef5b71e1e4a5",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/58f03dee143246b348b40d994948ef5b71e1e4a5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/dd065005737491821a21ca742004789611b11070",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/dd065005737491821a21ca742004789611b11070",
+  "html_url": "https://github.com/umputun/remark42/commit/dd065005737491821a21ca742004789611b11070",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/dd065005737491821a21ca742004789611b11070/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "249dd5d2b24b6fd7d5edec87d3831592299741bc",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/249dd5d2b24b6fd7d5edec87d3831592299741bc",
+      "html_url": "https://github.com/umputun/remark42/commit/249dd5d2b24b6fd7d5edec87d3831592299741bc"
+    }
+  ],
+  "stats": {
+    "total": 5279,
+    "additions": 1430,
+    "deletions": 3849
+  },
+  "files": [
+    {
+      "sha": "06aaacdbeceb0df158183bcec538d9e218a5c5e7",
+      "filename": "frontend/app/__stubs__/jwt.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/__stubs__/jwt.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/__stubs__/jwt.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/__stubs__/jwt.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -1,2 +1,4 @@\n-export const validToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZW1hcmsiLCJleHAiOjE1Nzk5ODY5ODIsImlzcyI6InJlbWFyazQyIiwibmJmIjoxNTc5OTg1MTIyLCJoYW5kc2hha2UiOnsiaWQiOiJkZXZfdXNlcjo6YXNkQHgxMDEucHcifX0.SLXLOE0Z8HQb2JwAvLS9fdrghwf8ndpuEjDsZvVE9O4' as const;\n-export const invalidToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZW1hcmsiLCJleHAiOjE1Nzk5ODY5ODIsImlzcyI6InJlbWFyazQyIiwibmJmIjoxNTc5OTg1MTIyLCJoYW5kc2hha2UiOnsiaWQiOiJkZXZfdXNlcjo6YXNkQHgxM' as const;\n+export const validToken =\n+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZW1hcmsiLCJleHAiOjE1Nzk5ODY5ODIsImlzcyI6InJlbWFyazQyIiwibmJmIjoxNTc5OTg1MTIyLCJoYW5kc2hha2UiOnsiaWQiOiJkZXZfdXNlcjo6YXNkQHgxMDEucHcifX0.SLXLOE0Z8HQb2JwAvLS9fdrghwf8ndpuEjDsZvVE9O4' as const;\n+export const invalidToken =\n+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZW1hcmsiLCJleHAiOjE1Nzk5ODY5ODIsImlzcyI6InJlbWFyazQyIiwibmJmIjoxNTc5OTg1MTIyLCJoYW5kc2hha2UiOnsiaWQiOiJkZXZfdXNlcjo6YXNkQHgxM' as const;"
+    },
+    {
+      "sha": "851c83ee41f0c644117751f5c754fef334a385b6",
+      "filename": "frontend/app/common/settings.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/common/settings.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/common/settings.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/common/settings.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -18,7 +18,7 @@ export const querySettings: Partial<QuerySettingsType> = parseQuery();\n \n if (querySettings.max_shown_comments) {\n   // eslint-disable-next-line @typescript-eslint/no-explicit-any\n-  querySettings.max_shown_comments = parseInt((querySettings.max_shown_comments as any) as string, 10);\n+  querySettings.max_shown_comments = parseInt(querySettings.max_shown_comments as any as string, 10);\n } else {\n   querySettings.max_shown_comments = MAX_SHOWN_ROOT_COMMENTS;\n }"
+    },
+    {
+      "sha": "1077db91d5a2570353481eeed5eb4ae70887bf14",
+      "filename": "frontend/app/components/comment-form/__subscribe-by-email/comment-form__subscribe-by-email.test.tsx",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/components/comment-form/__subscribe-by-email/comment-form__subscribe-by-email.test.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/components/comment-form/__subscribe-by-email/comment-form__subscribe-by-email.test.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/comment-form/__subscribe-by-email/comment-form__subscribe-by-email.test.tsx?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -20,13 +20,13 @@ import { LS_EMAIL_KEY } from 'common/constants';\n \n import { SubscribeByEmail, SubscribeByEmailForm } from '.';\n \n-const emailVerificationForSubscribeMock = (emailVerificationForSubscribe as unknown) as jest.Mock<\n+const emailVerificationForSubscribeMock = emailVerificationForSubscribe as unknown as jest.Mock<\n   ReturnType<typeof emailVerificationForSubscribe>\n >;\n-const emailConfirmationForSubscribeMock = (emailConfirmationForSubscribe as unknown) as jest.Mock<\n+const emailConfirmationForSubscribeMock = emailConfirmationForSubscribe as unknown as jest.Mock<\n   ReturnType<typeof emailConfirmationForSubscribe>\n >;\n-const unsubscribeFromEmailUpdatesMock = (unsubscribeFromEmailUpdates as unknown) as jest.Mock<\n+const unsubscribeFromEmailUpdatesMock = unsubscribeFromEmailUpdates as unknown as jest.Mock<\n   ReturnType<typeof unsubscribeFromEmailUpdates>\n >;\n "
+    },
+    {
+      "sha": "a39e56f38751a1e56635aa2418e8762b7f85a74c",
+      "filename": "frontend/app/components/profile/components/counter/counter.module.css",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/components/profile/components/counter/counter.module.css",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/components/profile/components/counter/counter.module.css",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/components/profile/components/counter/counter.module.css?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -9,5 +9,5 @@\n }\n \n :global(.dark) .container {\n-  background-color: rgba(var(--white-color), .12);\n+  background-color: rgba(var(--white-color), 0.12);\n }"
+    },
+    {
+      "sha": "099e2cc6fe14703b39ee7e964bdc7fb8fe8e47a9",
+      "filename": "frontend/app/store/comments/actions.ts",
+      "status": "modified",
+      "additions": 76,
+      "deletions": 65,
+      "changes": 141,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/comments/actions.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/comments/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/comments/actions.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -18,87 +18,98 @@ import { setItem } from 'common/local-storage';\n import { LS_SORT_KEY } from 'common/constants';\n \n /** sets comments, and put pinned comments in cache */\n-export const setComments = (comments: Node[]): StoreAction<void> => (dispatch) => {\n-  dispatch({\n-    type: COMMENTS_SET,\n-    comments,\n-  });\n-};\n+export const setComments =\n+  (comments: Node[]): StoreAction<void> =>\n+  (dispatch) => {\n+    dispatch({\n+      type: COMMENTS_SET,\n+      comments,\n+    });\n+  };\n \n /** appends comment to tree */\n-export const addComment = (text: string, title: string, pid?: Comment['id']): StoreAction<Promise<void>> => async (\n-  dispatch\n-) => {\n-  const comment = await api.addComment({ text, title, pid });\n-  dispatch({ type: COMMENTS_APPEND, pid: pid || null, comment });\n-};\n+export const addComment =\n+  (text: string, title: string, pid?: Comment['id']): StoreAction<Promise<void>> =>\n+  async (dispatch) => {\n+    const comment = await api.addComment({ text, title, pid });\n+    dispatch({ type: COMMENTS_APPEND, pid: pid || null, comment });\n+  };\n \n /** edits comment in tree */\n-export const updateComment = (id: Comment['id'], text: string): StoreAction<Promise<void>> => async (dispatch) => {\n-  const comment = await api.updateComment({ id, text });\n-  dispatch({ type: COMMENTS_EDIT, comment });\n-};\n+export const updateComment =\n+  (id: Comment['id'], text: string): StoreAction<Promise<void>> =>\n+  async (dispatch) => {\n+    const comment = await api.updateComment({ id, text });\n+    dispatch({ type: COMMENTS_EDIT, comment });\n+  };\n \n /** edits comment in tree */\n-export const putVote = (id: Comment['id'], value: number): StoreAction<Promise<void>> => async (dispatch) => {\n-  await api.putCommentVote({ id, value });\n-  const comment = await api.getComment(id);\n-  dispatch({ type: COMMENTS_EDIT, comment });\n-};\n+export const putVote =\n+  (id: Comment['id'], value: number): StoreAction<Promise<void>> =>\n+  async (dispatch) => {\n+    await api.putCommentVote({ id, value });\n+    const comment = await api.getComment(id);\n+    dispatch({ type: COMMENTS_EDIT, comment });\n+  };\n \n /** edits comment in tree */\n-export const setPinState = (id: Comment['id'], value: boolean): StoreAction<Promise<void>> => async (\n-  dispatch,\n-  getState\n-) => {\n-  if (value) {\n-    await api.pinComment(id);\n-  } else {\n-    await api.unpinComment(id);\n-  }\n-  let comment = getState().comments.allComments[id];\n-  comment = { ...comment, pin: value, edit: { summary: '', time: new Date().toISOString() } };\n-  dispatch({ type: COMMENTS_EDIT, comment });\n-};\n+export const setPinState =\n+  (id: Comment['id'], value: boolean): StoreAction<Promise<void>> =>\n+  async (dispatch, getState) => {\n+    if (value) {\n+      await api.pinComment(id);\n+    } else {\n+      await api.unpinComment(id);\n+    }\n+    let comment = getState().comments.allComments[id];\n+    comment = { ...comment, pin: value, edit: { summary: '', time: new Date().toISOString() } };\n+    dispatch({ type: COMMENTS_EDIT, comment });\n+  };\n \n /** edits comment in tree */\n-export const removeComment = (id: Comment['id']): StoreAction<Promise<void>> => async (dispatch, getState) => {\n-  const user = getState().user;\n-  if (!user) return;\n-  if (user.admin) {\n-    await api.removeComment(id);\n-  } else {\n-    await api.removeMyComment(id);\n-  }\n-  let comment = getState().comments.allComments[id];\n-  comment = { ...comment, delete: true, edit: { summary: '', time: new Date().toISOString() } };\n-  dispatch({ type: COMMENTS_EDIT, comment });\n-};\n+export const removeComment =\n+  (id: Comment['id']): StoreAction<Promise<void>> =>\n+  async (dispatch, getState) => {\n+    const user = getState().user;\n+    if (!user) return;\n+    if (user.admin) {\n+      await api.removeComment(id);\n+    } else {\n+      await api.removeMyComment(id);\n+    }\n+    let comment = getState().comments.allComments[id];\n+    comment = { ...comment, delete: true, edit: { summary: '', time: new Date().toISOString() } };\n+    dispatch({ type: COMMENTS_EDIT, comment });\n+  };\n \n /** fetches comments from server */\n-export const fetchComments = (sort?: Sorting): StoreAction<Promise<Tree>> => async (dispatch, getState) => {\n-  const { hiddenUsers, comments } = getState();\n-  const hiddenUsersIds = Object.keys(hiddenUsers);\n-  dispatch({ type: COMMENTS_REQUEST_FETCHING });\n-  const data = await api.getPostComments(sort || comments.sort);\n-  dispatch({ type: COMMENTS_REQUEST_SUCCESS });\n-  if (hiddenUsersIds.length > 0) {\n-    data.comments = filterTree(data.comments, (node) => hiddenUsersIds.indexOf(node.comment.user.id) === -1);\n-  }\n+export const fetchComments =\n+  (sort?: Sorting): StoreAction<Promise<Tree>> =>\n+  async (dispatch, getState) => {\n+    const { hiddenUsers, comments } = getState();\n+    const hiddenUsersIds = Object.keys(hiddenUsers);\n+    dispatch({ type: COMMENTS_REQUEST_FETCHING });\n+    const data = await api.getPostComments(sort || comments.sort);\n+    dispatch({ type: COMMENTS_REQUEST_SUCCESS });\n+    if (hiddenUsersIds.length > 0) {\n+      data.comments = filterTree(data.comments, (node) => hiddenUsersIds.indexOf(node.comment.user.id) === -1);\n+    }\n \n-  dispatch(setComments(data.comments));\n-  dispatch(setPostInfo(data.info));\n+    dispatch(setComments(data.comments));\n+    dispatch(setPostInfo(data.info));\n \n-  return data;\n-};\n+    return data;\n+  };\n \n /** sets mode for comment, either reply or edit */\n-export const setCommentMode = (mode: StoreState['comments']['activeComment']): StoreAction<void> => (dispatch) => {\n-  if (mode !== null && mode.state === CommentMode.None) {\n-    mode = null;\n-  }\n-  dispatch(unsetCommentMode(mode));\n-};\n+export const setCommentMode =\n+  (mode: StoreState['comments']['activeComment']): StoreAction<void> =>\n+  (dispatch) => {\n+    if (mode !== null && mode.state === CommentMode.None) {\n+      mode = null;\n+    }\n+    dispatch(unsetCommentMode(mode));\n+  };\n \n /** unsets comment mode */\n export function unsetCommentMode(mode: StoreState['comments']['activeComment'] = null) {"
+    },
+    {
+      "sha": "0ee079cd05bf5b7be400a856a22876bccfbb5fc1",
+      "filename": "frontend/app/store/comments/getters.ts",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 6,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/comments/getters.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/comments/getters.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/comments/getters.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -1,10 +1,12 @@\n import { Comment, CommentMode } from 'common/types';\n import { StoreState } from '../index';\n \n-export const getCommentMode = (id: Comment['id']) => (state: StoreState): CommentMode => {\n-  if (state.comments.activeComment === null || state.comments.activeComment.id !== id) {\n-    return CommentMode.None;\n-  }\n+export const getCommentMode =\n+  (id: Comment['id']) =>\n+  (state: StoreState): CommentMode => {\n+    if (state.comments.activeComment === null || state.comments.activeComment.id !== id) {\n+      return CommentMode.None;\n+    }\n \n-  return state.comments.activeComment.state;\n-};\n+    return state.comments.activeComment.state;\n+  };"
+    },
+    {
+      "sha": "fd01ff842ea4757debea330d89341e5742209d56",
+      "filename": "frontend/app/store/theme/actions.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 5,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/theme/actions.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/theme/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/theme/actions.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -3,8 +3,10 @@ import { Theme } from 'common/types';\n import { StoreAction } from '../';\n import { THEME_SET } from './types';\n \n-export const setTheme = (theme: Theme): StoreAction<void> => (dispatch) =>\n-  dispatch({\n-    type: THEME_SET,\n-    theme,\n-  });\n+export const setTheme =\n+  (theme: Theme): StoreAction<void> =>\n+  (dispatch) =>\n+    dispatch({\n+      type: THEME_SET,\n+      theme,\n+    });"
+    },
+    {
+      "sha": "4b8344dcddee4da8f036b83eb9ed19f47ad64806",
+      "filename": "frontend/app/store/thread/actions.ts",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 17,
+      "changes": 36,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/thread/actions.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/thread/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/thread/actions.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -10,20 +10,22 @@ export const restoreCollapsedThreads = (): THREAD_RESTORE_COLLAPSE_ACTION => ({\n   ids: getCollapsedComments(),\n });\n \n-export const setCollapse = (id: Comment['id'], value: boolean): StoreAction<void> => (dispatch, getState) => {\n-  dispatch({\n-    type: THREAD_SET_COLLAPSE,\n-    id,\n-    collapsed: value,\n-  });\n-  saveCollapsedComments(\n-    siteId!,\n-    url!,\n-    Object.entries(getState().collapsedThreads).reduce((acc: string[], [key, value]) => {\n-      if (value) {\n-        acc.push(key);\n-      }\n-      return acc;\n-    }, [])\n-  );\n-};\n+export const setCollapse =\n+  (id: Comment['id'], value: boolean): StoreAction<void> =>\n+  (dispatch, getState) => {\n+    dispatch({\n+      type: THREAD_SET_COLLAPSE,\n+      id,\n+      collapsed: value,\n+    });\n+    saveCollapsedComments(\n+      siteId!,\n+      url!,\n+      Object.entries(getState().collapsedThreads).reduce((acc: string[], [key, value]) => {\n+        if (value) {\n+          acc.push(key);\n+        }\n+        return acc;\n+      }, [])\n+    );\n+  };"
+    },
+    {
+      "sha": "bb759c2487b8771848efb41776a281bfc92d39bb",
+      "filename": "frontend/app/store/thread/getters.ts",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 18,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/thread/getters.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/thread/getters.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/thread/getters.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -3,14 +3,16 @@ import { StaticStore } from 'common/static-store';\n \n import { StoreState } from '../index';\n \n-export const getThreadIsCollapsed = (comment: Comment) => (state: StoreState): boolean => {\n-  const collapsed = state.collapsedThreads[comment.id];\n+export const getThreadIsCollapsed =\n+  (comment: Comment) =>\n+  (state: StoreState): boolean => {\n+    const collapsed = state.collapsedThreads[comment.id];\n \n-  if (collapsed !== null && collapsed !== undefined) {\n-    return collapsed;\n-  }\n+    if (collapsed !== null && collapsed !== undefined) {\n+      return collapsed;\n+    }\n \n-  const score = comment.score || 0;\n+    const score = comment.score || 0;\n \n-  return score <= StaticStore.config.critical_score;\n-};\n+    return score <= StaticStore.config.critical_score;\n+  };"
+    },
+    {
+      "sha": "73780ad3bf59e53d1e7e4ef6193fec7f342fc16f",
+      "filename": "frontend/app/store/user/actions.ts",
+      "status": "modified",
+      "additions": 79,
+      "deletions": 72,
+      "changes": 151,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/user/actions.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/user/actions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/user/actions.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -46,10 +46,12 @@ export const fetchUser = (): StoreAction<Promise<User | null>> => async (dispatc\n   return user;\n };\n \n-export const signin = (user: User): StoreAction<Promise<void>> => async (dispatch) => {\n-  dispatch(setUser(user));\n-  dispatch(fetchComments());\n-};\n+export const signin =\n+  (user: User): StoreAction<Promise<void>> =>\n+  async (dispatch) => {\n+    dispatch(setUser(user));\n+    dispatch(fetchComments());\n+  };\n \n export const fetchBlockedUsers = (): StoreAction<Promise<BlockedUser[]>> => async (dispatch) => {\n   const list = (await api.getBlocked()) || [];\n@@ -59,90 +61,95 @@ export const fetchBlockedUsers = (): StoreAction<Promise<BlockedUser[]>> => asyn\n   return list;\n };\n \n-export const blockUser = (id: User['id'], name: string, ttl: BlockTTL): StoreAction<Promise<void>> => async (\n-  dispatch\n-) => {\n-  await api.blockUser(id, ttl);\n-  dispatch({\n-    type: USER_BAN,\n-    user: {\n-      id,\n-      name,\n-      time: ttlToTime(ttl),\n-    },\n-  });\n-};\n-\n-export const unblockUser = (id: User['id']): StoreAction<Promise<void>> => async (dispatch, getState) => {\n-  await api.unblockUser(id);\n-  dispatch({ type: USER_UNBAN, id });\n-  const comments = Object.values(getState().comments.allComments);\n-  const userComments = comments.filter((comment) => comment.user.id === id);\n-\n-  if (!userComments.length) return;\n-  const user = comments[0].user;\n+export const blockUser =\n+  (id: User['id'], name: string, ttl: BlockTTL): StoreAction<Promise<void>> =>\n+  async (dispatch) => {\n+    await api.blockUser(id, ttl);\n+    dispatch({\n+      type: USER_BAN,\n+      user: {\n+        id,\n+        name,\n+        time: ttlToTime(ttl),\n+      },\n+    });\n+  };\n \n-  dispatch({\n-    type: COMMENTS_PATCH,\n-    ids: userComments.map((c) => c.id),\n-    patch: { user: { ...user, block: false } },\n-  });\n-};\n+export const unblockUser =\n+  (id: User['id']): StoreAction<Promise<void>> =>\n+  async (dispatch, getState) => {\n+    await api.unblockUser(id);\n+    dispatch({ type: USER_UNBAN, id });\n+    const comments = Object.values(getState().comments.allComments);\n+    const userComments = comments.filter((comment) => comment.user.id === id);\n+\n+    if (!userComments.length) return;\n+    const user = comments[0].user;\n+\n+    dispatch({\n+      type: COMMENTS_PATCH,\n+      ids: userComments.map((c) => c.id),\n+      patch: { user: { ...user, block: false } },\n+    });\n+  };\n \n export const fetchHiddenUsers = (): StoreAction<void> => (dispatch) => {\n   const hiddenUsers = getHiddenUsers();\n \n   dispatch({ type: USER_HIDELIST_SET, payload: hiddenUsers });\n };\n \n-export const hideUser = (user: User): StoreAction<void> => (dispatch, getState) => {\n-  const hiddenUsers = getHiddenUsers();\n+export const hideUser =\n+  (user: User): StoreAction<void> =>\n+  (dispatch, getState) => {\n+    const hiddenUsers = getHiddenUsers();\n \n-  hiddenUsers[user.id] = user;\n-  setItem(LS_HIDDEN_USERS_KEY, JSON.stringify(hiddenUsers));\n+    hiddenUsers[user.id] = user;\n+    setItem(LS_HIDDEN_USERS_KEY, JSON.stringify(hiddenUsers));\n \n-  const ids = Object.values(getState().comments.allComments)\n-    .filter((c) => c.user.id === user.id)\n-    .map((c) => c.id);\n+    const ids = Object.values(getState().comments.allComments)\n+      .filter((c) => c.user.id === user.id)\n+      .map((c) => c.id);\n \n-  dispatch({ type: USER_HIDE, user });\n-  dispatch({ type: COMMENTS_PATCH, ids, patch: { hidden: true } });\n-};\n+    dispatch({ type: USER_HIDE, user });\n+    dispatch({ type: COMMENTS_PATCH, ids, patch: { hidden: true } });\n+  };\n \n-export const unhideUser = (userId: string): StoreAction<void> => (dispatch, _getState) => {\n-  const hiddenUsers = getHiddenUsers();\n+export const unhideUser =\n+  (userId: string): StoreAction<void> =>\n+  (dispatch, _getState) => {\n+    const hiddenUsers = getHiddenUsers();\n \n-  if (Object.prototype.hasOwnProperty.call(hiddenUsers, userId)) {\n-    delete hiddenUsers[userId];\n-  }\n+    if (Object.prototype.hasOwnProperty.call(hiddenUsers, userId)) {\n+      delete hiddenUsers[userId];\n+    }\n \n-  setItem(LS_HIDDEN_USERS_KEY, JSON.stringify(hiddenUsers));\n-  dispatch({ type: USER_UNHIDE, id: userId });\n+    setItem(LS_HIDDEN_USERS_KEY, JSON.stringify(hiddenUsers));\n+    dispatch({ type: USER_UNHIDE, id: userId });\n \n-  // no need for comments patch as comments will be refetched after action\n-};\n+    // no need for comments patch as comments will be refetched after action\n+  };\n \n-export const setVerifiedStatus = (id: User['id'], status: boolean): StoreAction<Promise<void>> => async (\n-  dispatch,\n-  getState\n-) => {\n-  if (status) {\n-    await api.setVerifiedStatus(id);\n-  } else {\n-    await api.removeVerifiedStatus(id);\n-  }\n-  const comments = Object.values(getState().comments.allComments);\n-  const userComments = comments.filter((c) => c.user.id === id);\n-\n-  if (!userComments.length) return;\n-  const user = userComments[0].user;\n-\n-  dispatch({\n-    type: COMMENTS_PATCH,\n-    ids: userComments.map((c) => c.id),\n-    patch: { user: { ...user, verified: status } },\n-  });\n-};\n+export const setVerifiedStatus =\n+  (id: User['id'], status: boolean): StoreAction<Promise<void>> =>\n+  async (dispatch, getState) => {\n+    if (status) {\n+      await api.setVerifiedStatus(id);\n+    } else {\n+      await api.removeVerifiedStatus(id);\n+    }\n+    const comments = Object.values(getState().comments.allComments);\n+    const userComments = comments.filter((c) => c.user.id === id);\n+\n+    if (!userComments.length) return;\n+    const user = userComments[0].user;\n+\n+    dispatch({\n+      type: COMMENTS_PATCH,\n+      ids: userComments.map((c) => c.id),\n+      patch: { user: { ...user, verified: status } },\n+    });\n+  };\n \n export const setUserSubscribed = (isSubscribed: boolean) => ({\n   type: USER_SUBSCRIPTION_SET,"
+    },
+    {
+      "sha": "68d100470f9e881fef01deb927a1d804bdfd9a35",
+      "filename": "frontend/app/store/user/reducers.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/store/user/reducers.test.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/store/user/reducers.test.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/store/user/reducers.test.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -7,7 +7,7 @@ import { USER_ACTIONS, USER_SET } from './types';\n \n jest.mock('common/api');\n \n-const getUserMock = (getUser as unknown) as jest.Mock<ReturnType<typeof getUser>>;\n+const getUserMock = getUser as unknown as jest.Mock<ReturnType<typeof getUser>>;\n \n afterEach(() => {\n   jest.resetModules();"
+    },
+    {
+      "sha": "411869371034cde6d46cf422a5e17e62fe31585a",
+      "filename": "frontend/app/typings/global.d.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/app/typings/global.d.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/app/typings/global.d.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/app/typings/global.d.ts?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -21,9 +21,7 @@ declare global {\n     REMARK42: {\n       changeTheme?: (theme: Theme) => void;\n       destroy?: () => void;\n-      createInstance: (\n-        remark_config: RemarkConfig\n-      ) =>\n+      createInstance: (remark_config: RemarkConfig) =>\n         | {\n             changeTheme(theme: Theme): void;\n             destroy(): void;"
+    },
+    {
+      "sha": "fc5f369ed1ba23734d0e1141ab0425dc4794fd58",
+      "filename": "frontend/package-lock.json",
+      "status": "modified",
+      "additions": 1215,
+      "deletions": 3660,
+      "changes": 4875,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/package-lock.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/package-lock.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package-lock.json?ref=dd065005737491821a21ca742004789611b11070"
+    },
+    {
+      "sha": "e25e4ca6e12dc64238a72f66b7fdb5d86ef38f63",
+      "filename": "frontend/package.json",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/dd065005737491821a21ca742004789611b11070/frontend/package.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/dd065005737491821a21ca742004789611b11070/frontend/package.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend/package.json?ref=dd065005737491821a21ca742004789611b11070",
+      "patch": "@@ -96,12 +96,12 @@\n     \"lint-staged\": \"^10.5.4\",\n     \"mini-css-extract-plugin\": \"^2.2.0\",\n     \"npm-run-all\": \"^4.1.5\",\n-    \"postcss\": \"^8.3.6\",\n-    \"postcss-loader\": \"^6.1.1\",\n-    \"postcss-preset-env\": \"^6.7.0\",\n-    \"prettier\": \"^2.2.1\",\n+    \"postcss\": \"^8.4.5\",\n+    \"postcss-loader\": \"^6.2.1\",\n+    \"postcss-preset-env\": \"^7.2.3\",\n+    \"prettier\": \"^2.5.1\",\n     \"redux-mock-store\": \"^1.5.4\",\n-    \"size-limit\": \"^4.10.2\",\n+    \"size-limit\": \"^7.0.5\",\n     \"style-loader\": \"^2.0.0\",\n     \"stylelint\": \"^13.13.1\",\n     \"stylelint-config-prettier\": \"^8.0.2\","
+    }
+  ]
+}
