@@ -1,0 +1,110 @@
+{
+  "sha": "6af938051ad94a35062dff1d3acb449f1785c6a8",
+  "node_id": "C_kwDOBtgov9oAKDZhZjkzODA1MWFkOTRhMzUwNjJkZmYxZDNhY2I0NDlmMTc4NWM2YTg",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-01-23T22:25:24Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-01-23T22:25:24Z"
+    },
+    "message": "drop drone legacy magic from artifact build",
+    "tree": {
+      "sha": "73346014a4caa3b81de47e795f6af73f3ae83a6a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/73346014a4caa3b81de47e795f6af73f3ae83a6a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/6af938051ad94a35062dff1d3acb449f1785c6a8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/6af938051ad94a35062dff1d3acb449f1785c6a8",
+  "html_url": "https://github.com/umputun/remark42/commit/6af938051ad94a35062dff1d3acb449f1785c6a8",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/6af938051ad94a35062dff1d3acb449f1785c6a8/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "33b96a4263de90219582ed1721ca14a7d35cb5b2",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/33b96a4263de90219582ed1721ca14a7d35cb5b2",
+      "html_url": "https://github.com/umputun/remark42/commit/33b96a4263de90219582ed1721ca14a7d35cb5b2"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 9,
+    "deletions": 21
+  },
+  "files": [
+    {
+      "sha": "f7f1aa881a42d6ce46ca36f2654010fb76d91d9c",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/6af938051ad94a35062dff1d3acb449f1785c6a8/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/6af938051ad94a35062dff1d3acb449f1785c6a8/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=6af938051ad94a35062dff1d3acb449f1785c6a8",
+      "patch": "@@ -25,7 +25,6 @@ RUN \\\n         golangci-lint run --config ../.golangci.yml ./... ; \\\n     else echo \"skip backend tests and linter\" ; fi\n \n-# if DRONE presented use DRONE_* git env to make version\n RUN \\\n     version=\"$(/script/version.sh)\" && \\\n     echo \"version=$version\" && \\"
+    },
+    {
+      "sha": "281f0592c55acfd07665033e9e2083c8e331c18f",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 20,
+      "changes": 29,
+      "blob_url": "https://github.com/umputun/remark42/blob/6af938051ad94a35062dff1d3acb449f1785c6a8/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark42/raw/6af938051ad94a35062dff1d3acb449f1785c6a8/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile.artifacts?ref=6af938051ad94a35062dff1d3acb449f1785c6a8",
+      "patch": "@@ -1,10 +1,6 @@\n FROM node:12.16-alpine as build-frontend-deps\n \n ARG CI\n-ARG DRONE\n-ARG DRONE_TAG\n-ARG DRONE_COMMIT\n-ARG DRONE_BRANCH\n \n ENV SKIP_FRONTEND_TEST=true\n \n@@ -49,12 +45,8 @@ RUN \\\n     ls -la /build/backend/app/rest/api/statik.go && \\\n     ls -la /build/backend/web/\n \n-# if DRONE presented use DRONE_* git env to make version\n RUN \\\n-    if [ -z \"$DRONE\" ] ; then \\\n-    echo \"runs outside of drone\" && version=$(\"/script/version.sh\"); \\\n-    else version=${DRONE_TAG}${DRONE_BRANCH}${DRONE_PULL_REQUEST}-${DRONE_COMMIT:0:7}-$(date +%Y%m%d-%H:%M:%S); fi && \\\n-    echo \"version=$version\" && \\\n+\tversion=$(\"/script/version.sh\") && echo \"version=${version}\" && \\\n     export GOFLAGS=\"-mod=vendor\" && \\\n     GOOS=linux GOARCH=amd64 go build -o remark42.linux-amd64 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n     GOOS=linux GOARCH=386 go build -o remark42.linux-386 -ldflags \"-X main.revision=${version} -s -w\" ./app && \\\n@@ -66,19 +58,16 @@ RUN \\\n     GOOS=freebsd GOARCH=amd64 go build -o remark42.freebsd-amd64 -ldflags \"-X main.revision=${version} -s -w\" ./app\n \n RUN \\\n-    if [ -z \"$DRONE_TAG\" ] ; then \\\n-    echo \"runs outside of drone\" && tag=\"\"; \\\n-    else tag=_${DRONE_TAG}; fi && \\\n     apk add --no-cache --update zip && \\\n     cp ../LICENSE ./LICENSE && cp ../README.md ./README.md && \\\n-    tar cvzf remark42${tag}.linux-amd64.tar.gz remark42.linux-amd64 LICENSE README.md && \\\n-    tar cvzf remark42${tag}.linux-386.tar.gz remark42.linux-386 LICENSE README.md && \\\n-    tar cvzf remark42${tag}.linux-arm.tar.gz remark42.linux-arm LICENSE README.md && \\\n-    tar cvzf remark42${tag}.linux-arm64.tar.gz remark42.linux-arm64 LICENSE README.md && \\\n-    tar cvzf remark42${tag}.darwin-amd64.tar.gz remark42.darwin-amd64 LICENSE README.md && \\\n-    tar cvzf remark42${tag}.darwin-arm64.tar.gz remark42.darwin-arm64 LICENSE README.md && \\\n-    tar cvzf remark42${tag}.freebsd-amd64.tar.gz remark42.freebsd-amd64 LICENSE README.md && \\\n-    zip remark42${tag}.windows-amd64.zip remark42.windows-amd64.exe LICENSE README.md\n+    tar cvzf remark42.linux-amd64.tar.gz remark42.linux-amd64 LICENSE README.md && \\\n+    tar cvzf remark42.linux-386.tar.gz remark42.linux-386 LICENSE README.md && \\\n+    tar cvzf remark42.linux-arm.tar.gz remark42.linux-arm LICENSE README.md && \\\n+    tar cvzf remark42.linux-arm64.tar.gz remark42.linux-arm64 LICENSE README.md && \\\n+    tar cvzf remark42.darwin-amd64.tar.gz remark42.darwin-amd64 LICENSE README.md && \\\n+    tar cvzf remark42.darwin-arm64.tar.gz remark42.darwin-arm64 LICENSE README.md && \\\n+    tar cvzf remark42.freebsd-amd64.tar.gz remark42.freebsd-amd64 LICENSE README.md && \\\n+    zip remark42.windows-amd64.zip remark42.windows-amd64.exe LICENSE README.md\n \n \n FROM alpine"
+    }
+  ]
+}
