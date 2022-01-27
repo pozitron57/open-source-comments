@@ -1,0 +1,98 @@
+{
+  "sha": "abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9",
+  "node_id": "C_kwDOAF-mA9oAKGFiZTBhOWE1MTFjMDVjYTZkM2ZhM2VmMWM0OTlmZDk4MDg1ZjMwZTk",
+  "commit": {
+    "author": {
+      "name": "Ziad El Khoury Hanna",
+      "email": "zaygraveyard@users.noreply.github.com",
+      "date": "2022-01-17T15:01:11Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-01-17T15:01:11Z"
+    },
+    "message": "embed.js: Make check for isso-root more robust (#757)\n\nIf the DOM doesn't contain the #isso-root when `fetchComments()` is run,\r\n`$(...).length == 0` throws a TypeError because `$(...)` returns `null` when\r\nthe selector matches no element, and thus `$(...).length == 0` should not be\r\nused to check for the existence of elements matching a selector.\r\n\r\nThis fixes TypeError when #isso-root is not in the DOM\r\n\r\nFixes #306",
+    "tree": {
+      "sha": "7ddbb6cd8d783433b80c3fc33c1a5b53393524b6",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/7ddbb6cd8d783433b80c3fc33c1a5b53393524b6"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh5YS3CRBK7hj4Ov3rIwAA2ckIADVqf1Tyl7Rp3JB0EveFLPXy\nH0MDKrnqE3qw93ipUXQ396K8EZILpsgnTufJpcDZOE8lvZyzPgCOkITY16XKpoOm\nyujMff/mM4swVkyemorjAZiTZarGs6tJ5nwWtk+JQSyEbVj3fCX/JoqsGIuRR7WI\n6SGwigLLfqrhz2+KBBCQYs5LS3cjmrNx6u/vMP594hBnc7iy4uoCAvo8caxShZIP\nmfA5w4RGmth+vzkewO45ehiWFuxYbwlWrPwtQx2GqjnS9rjhX+yMdfa+MY4J6ITC\n3cHSAYzObgGBKw9d+5KjzxwuUsGIEO3O+IHvkW4hPU0DRJE/7PdJlydvP2RUhpM=\n=GVlx\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 7ddbb6cd8d783433b80c3fc33c1a5b53393524b6\nparent 1ba12bf789e0dc26649e183467163739ad1c7c67\nauthor Ziad El Khoury Hanna <zaygraveyard@users.noreply.github.com> 1642431671 +0100\ncommitter GitHub <noreply@github.com> 1642431671 +0100\n\nembed.js: Make check for isso-root more robust (#757)\n\nIf the DOM doesn't contain the #isso-root when `fetchComments()` is run,\r\n`$(...).length == 0` throws a TypeError because `$(...)` returns `null` when\r\nthe selector matches no element, and thus `$(...).length == 0` should not be\r\nused to check for the existence of elements matching a selector.\r\n\r\nThis fixes TypeError when #isso-root is not in the DOM\r\n\r\nFixes #306"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9",
+  "html_url": "https://github.com/posativ/isso/commit/abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9/comments",
+  "author": {
+    "login": "zaygraveyard",
+    "id": 603764,
+    "node_id": "MDQ6VXNlcjYwMzc2NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/603764?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zaygraveyard",
+    "html_url": "https://github.com/zaygraveyard",
+    "followers_url": "https://api.github.com/users/zaygraveyard/followers",
+    "following_url": "https://api.github.com/users/zaygraveyard/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zaygraveyard/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zaygraveyard/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zaygraveyard/subscriptions",
+    "organizations_url": "https://api.github.com/users/zaygraveyard/orgs",
+    "repos_url": "https://api.github.com/users/zaygraveyard/repos",
+    "events_url": "https://api.github.com/users/zaygraveyard/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zaygraveyard/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1ba12bf789e0dc26649e183467163739ad1c7c67",
+      "url": "https://api.github.com/repos/posativ/isso/commits/1ba12bf789e0dc26649e183467163739ad1c7c67",
+      "html_url": "https://github.com/posativ/isso/commit/1ba12bf789e0dc26649e183467163739ad1c7c67"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "46af6e0cb0a3141772a765455f28c527d0cc3296",
+      "filename": "isso/js/embed.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9/isso/js/embed.js",
+      "raw_url": "https://github.com/posativ/isso/raw/abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9/isso/js/embed.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/js/embed.js?ref=abe0a9a511c05ca6d3fa3ef1c499fd98085f30e9",
+      "patch": "@@ -48,7 +48,7 @@ require([\"app/lib/ready\", \"app/config\", \"app/i18n\", \"app/api\", \"app/isso\", \"app/\n \n     function fetchComments() {\n \n-        if ($('#isso-root').length == 0) {\n+        if (!$('#isso-root')) {\n             return;\n         }\n "
+    }
+  ]
+}
