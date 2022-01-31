@@ -1,0 +1,122 @@
+{
+  "sha": "3a9806a368a3bdde1532556337fed2b211f2dc38",
+  "node_id": "C_kwDOBtgov9oAKDNhOTgwNmEzNjhhM2JkZGUxNTMyNTU2MzM3ZmVkMmIyMTFmMmRjMzg",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-01-30T23:23:12Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-01-31T01:05:57Z"
+    },
+    "message": "improve doc on backend run without docker",
+    "tree": {
+      "sha": "e5f2e946be413de655a20d137ed67879e415456b",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/e5f2e946be413de655a20d137ed67879e415456b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/3a9806a368a3bdde1532556337fed2b211f2dc38",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/3a9806a368a3bdde1532556337fed2b211f2dc38",
+  "html_url": "https://github.com/umputun/remark42/commit/3a9806a368a3bdde1532556337fed2b211f2dc38",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/3a9806a368a3bdde1532556337fed2b211f2dc38/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "31af19e456c96ace21c16382368ff6140011b989",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/31af19e456c96ace21c16382368ff6140011b989",
+      "html_url": "https://github.com/umputun/remark42/commit/31af19e456c96ace21c16382368ff6140011b989"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 18,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "78dc4bfbde6183b6a70be421b516dd711d522f60",
+      "filename": ".gitignore",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/3a9806a368a3bdde1532556337fed2b211f2dc38/.gitignore",
+      "raw_url": "https://github.com/umputun/remark42/raw/3a9806a368a3bdde1532556337fed2b211f2dc38/.gitignore",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.gitignore?ref=3a9806a368a3bdde1532556337fed2b211f2dc38",
+      "patch": "@@ -19,6 +19,7 @@ remark42\n /backend/var/\n /backend/app/var/\n /backend/web/\n+/backend/*.html.tmpl\n compose-private-backend.yml\n compose-private-frontend.yml\n compose-private.yml"
+    },
+    {
+      "sha": "cdb2d7da4ad3121dbe6354f883b2e270ba445e25",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark42/blob/3a9806a368a3bdde1532556337fed2b211f2dc38/site/src/docs/configuration/parameters/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/3a9806a368a3bdde1532556337fed2b211f2dc38/site/src/docs/configuration/parameters/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/configuration/parameters/index.md?ref=3a9806a368a3bdde1532556337fed2b211f2dc38",
+      "patch": "@@ -87,7 +87,6 @@ services:\n | auth.email.from         | AUTH_EMAIL_FROM         |                          | email from                                      |\n | auth.email.subj         | AUTH_EMAIL_SUBJ         | `remark42 confirmation`  | email subject                                   |\n | auth.email.content-type | AUTH_EMAIL_CONTENT_TYPE | `text/html`              | email content type                              |\n-| auth.email.template     | AUTH_EMAIL_TEMPLATE     | none (predefined)        | custom email message template file              |\n | notify.users            | NOTIFY_USERS            | none                     | type of user notifications (Telegram, email)    |\n | notify.admins           | NOTIFY_ADMINS           | none                     | type of admin notifications (Telegram, Slack, webhook and/or email) |\n | notify.queue            | NOTIFY_QUEUE            | `100`                    | size of notification queue                      |\n@@ -152,14 +151,15 @@ The following list of command-line options is deprecated and might be removed in\n <details>\n <summary>Deprecated options</summary>\n \n-| Command line       | Replacement   | Environment        | Replacement   | Default | Description    | Deprecation version |\n-| ------------------ | ------------- | ------------------ | ------------- | ------- | -------------- | ------------------- |\n-| auth.email.host    | smtp.host     | AUTH_EMAIL_HOST    | SMTP_HOST     |         | smtp host      | 1.5.0               |\n-| auth.email.port    | smtp.port     | AUTH_EMAIL_PORT    | SMTP_PORT     |         | smtp port      | 1.5.0               |\n+| Command line       | Replacement  | Environment         | Replacement   | Default | Description    | Deprecation version |\n+| ------------------ | ------------ | ------------------- | ------------- | ------- | -------------- | ------------------- |\n+| auth.email.template| none         | AUTH_EMAIL_TEMPLATE | none          | `email_confirmation_login.html.tmpl` | custom email message template file | 1.5.0 |\n+| auth.email.host    | smtp.host    | AUTH_EMAIL_HOST     | SMTP_HOST     |         | smtp host      | 1.5.0               |\n+| auth.email.port    | smtp.port    | AUTH_EMAIL_PORT     | SMTP_PORT     |         | smtp port      | 1.5.0               |\n | auth.email.user    | smtp.username | AUTH_EMAIL_USER    | SMTP_USERNAME |         | smtp user name | 1.5.0               |\n | auth.email.passwd  | smtp.password | AUTH_EMAIL_PASSWD  | SMTP_PASSWORD |         | smtp password  | 1.5.0               |\n-| auth.email.tls     | smtp.tls      | AUTH_EMAIL_TLS     | SMTP_TLS      | `false` | enable TLS     | 1.5.0               |\n-| auth.email.timeout | smtp.timeout  | AUTH_EMAIL_TIMEOUT | SMTP_TIMEOUT  | `10s`   | smtp timeout   | 1.5.0               |\n+| auth.email.tls     | smtp.tls     | AUTH_EMAIL_TLS      | SMTP_TLS      | `false` | enable TLS     | 1.5.0               |\n+| auth.email.timeout | smtp.timeout | AUTH_EMAIL_TIMEOUT  | SMTP_TIMEOUT  | `10s`   | smtp timeout   | 1.5.0               |\n | img-proxy          | image-proxy.http2https | IMG_PROXY | IMAGE_PROXY_HTTP2HTTPS | `false` | enable HTTP->HTTPS proxy for images | 1.5.0 |\n | notify.type        | notify.admins, notify.users | NOTIFY_TYPE | NOTIFY_ADMINS, NOTIFY_USERS | |   | 1.9.0               |\n | notify.email.notify_admin | notify.admins=email | NOTIFY_EMAIL_ADMIN | NOTIFY_ADMINS=email | |     | 1.9.0               |"
+    },
+    {
+      "sha": "9d053448da315fbfe69ab04868c2574ad4651cf1",
+      "filename": "site/src/docs/contributing/development/backend/index.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark42/blob/3a9806a368a3bdde1532556337fed2b211f2dc38/site/src/docs/contributing/development/backend/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/3a9806a368a3bdde1532556337fed2b211f2dc38/site/src/docs/contributing/development/backend/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/contributing/development/backend/index.md?ref=3a9806a368a3bdde1532556337fed2b211f2dc38",
+      "patch": "@@ -29,17 +29,25 @@ Backend Docker Compose config (`compose-dev-backend.yml`) by default skips runni\n \n Run tests in your IDE, and re-run `make rundev` each time you want to see how your code changes behave to test them at <http://127.0.0.1:8080/web/>.\n \n-#### Without docker\n+#### Without Docker\n \n You have to [install](https://golang.org/doc/install) the latest stable `go` toolchain to run the backend locally.\n \n-In order to have working Remark42 installation you need once to copy frontend static files to `./backend/web` directory from `master` docker image:\n+In order to have working Remark42 installation you need once to copy frontend static files to `./backend/web` directory from `master` docker image, and also copy files from `./templates` to the `./backend` as they are expected to be where application starts:\n \n ```shell\n+# frontend files\n docker pull umputun/remark42:master\n docker create -ti --name remark42files umputun/remark42:master sh\n docker cp remark42files:/srv/web/ ./backend/\n docker rm -f remark42files\n+# template files\n+cp ./backend/templates/* ./backend\n+# fix frontend files to point to the right URL\n+## Mac version\n+find -E ./backend/web -regex '.*\\.(html|js|mjs)$' -print -exec sed -i '' \"s|{% REMARK_URL %}|http://127.0.0.1:8080|g\" {} \\;\n+## Linux version\n+find ./backend/web -regex '.*\\.\\(html\\|js\\|mjs\\)$' -print -exec sed -i \"s|{% REMARK_URL %}|http://127.0.0.1:8080|g\" {} \\;\n ```\n \n To run backend - `cd backend; go run app/main.go server --dbg --secret=12345 --url=http://127.0.0.1:8080 --admin-passwd=password --site=remark`. It stars backend service with embedded bolt store on port `8080` with basic auth, allowing to authenticate and run requests directly, like this:"
+    }
+  ]
+}
