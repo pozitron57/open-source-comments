@@ -1,0 +1,110 @@
+{
+  "sha": "7b47bd2f054f778e6ff621272396a095a194b31a",
+  "node_id": "C_kwDOBtgov9oAKDdiNDdiZDJmMDU0Zjc3OGU2ZmY2MjEyNzIzOTZhMDk1YTE5NGIzMWE",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-02-08T15:47:29Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-02-10T21:31:09Z"
+    },
+    "message": "return 200 and empty list on user comments if nothing #1265",
+    "tree": {
+      "sha": "3aad382d71583309d9ea5cefedf6f3ace01eb99e",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/3aad382d71583309d9ea5cefedf6f3ace01eb99e"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/7b47bd2f054f778e6ff621272396a095a194b31a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/7b47bd2f054f778e6ff621272396a095a194b31a",
+  "html_url": "https://github.com/umputun/remark42/commit/7b47bd2f054f778e6ff621272396a095a194b31a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/7b47bd2f054f778e6ff621272396a095a194b31a/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "74b47d3a8ad71d6da2fd6e5b32ff94c1d6e5c926",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/74b47d3a8ad71d6da2fd6e5b32ff94c1d6e5c926",
+      "html_url": "https://github.com/umputun/remark42/commit/74b47d3a8ad71d6da2fd6e5b32ff94c1d6e5c926"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 9,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "eb173edf80598c2a231c30f7831db76bad2fddf8",
+      "filename": "backend/app/rest/api/rest_public.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark42/blob/7b47bd2f054f778e6ff621272396a095a194b31a/backend/app/rest/api/rest_public.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/7b47bd2f054f778e6ff621272396a095a194b31a/backend/app/rest/api/rest_public.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/rest/api/rest_public.go?ref=7b47bd2f054f778e6ff621272396a095a194b31a",
+      "patch": "@@ -210,8 +210,8 @@ func (s *public) findUserCommentsCtrl(w http.ResponseWriter, r *http.Request) {\n \tlimit, skip := getNumWithDef(\"limit\"), getNumWithDef(\"skip\")\n \n \tresp := struct {\n-\t\tComments []store.Comment `json:\"comments,omitempty\"`\n-\t\tCount    int             `json:\"count,omitempty\"`\n+\t\tComments []store.Comment `json:\"comments\"`\n+\t\tCount    int             `json:\"count\"`\n \t}{}\n \n \tlog.Printf(\"[DEBUG] get comments for userID %s, %s\", userID, siteID)\n@@ -220,6 +220,10 @@ func (s *public) findUserCommentsCtrl(w http.ResponseWriter, r *http.Request) {\n \tdata, err := s.cache.Get(key, func() ([]byte, error) {\n \t\tcomments, e := s.dataService.User(siteID, userID, limit, skip, rest.GetUserOrEmpty(r))\n \t\tif e != nil {\n+\t\t\tif strings.Contains(e.Error(), \"no comments for user\") { // store returns this error when no comments found\n+\t\t\t\tresp.Comments, resp.Count = []store.Comment{}, 0\n+\t\t\t\treturn encodeJSONWithHTML(resp)\n+\t\t\t}\n \t\t\treturn nil, e\n \t\t}\n \t\tcomments = filterComments(comments, func(c store.Comment) bool { return !c.Deleted })\n@@ -235,7 +239,6 @@ func (s *public) findUserCommentsCtrl(w http.ResponseWriter, r *http.Request) {\n \t\trest.SendErrorJSON(w, r, http.StatusBadRequest, err, \"can't get comment by user id\", rest.ErrCommentNotFound)\n \t\treturn\n \t}\n-\n \tif err = R.RenderJSONFromBytes(w, r, data); err != nil {\n \t\tlog.Printf(\"[WARN] can't render found comments for user %s\", userID)\n \t}"
+    },
+    {
+      "sha": "4071934de9f72111004e87b807d359da5c6df3a8",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/7b47bd2f054f778e6ff621272396a095a194b31a/backend/app/rest/api/rest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/7b47bd2f054f778e6ff621272396a095a194b31a/backend/app/rest/api/rest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend/app/rest/api/rest_public_test.go?ref=7b47bd2f054f778e6ff621272396a095a194b31a",
+      "patch": "@@ -413,9 +413,9 @@ func TestRest_FindUserComments(t *testing.T) {\n \terr := srv.DataService.Delete(c2.Locator, id, store.SoftDelete)\n \tassert.NoError(t, err)\n \n-\t_, code := get(t, ts.URL+\"/api/v1/comments?site=remark42&user=blah\")\n-\tassert.Equal(t, 400, code, \"noting for user blah\")\n-\n+\tcomments, code := get(t, ts.URL+\"/api/v1/comments?site=remark42&user=blah\")\n+\tassert.Equal(t, 200, code, \"noting for user blah\")\n+\tassert.Equal(t, `{\"comments\":[],\"count\":0}`+\"\\n\", comments)\n \t{\n \t\tres, code := get(t, ts.URL+\"/api/v1/comments?site=remark42&user=dev\")\n \t\tassert.Equal(t, 200, code)"
+    }
+  ]
+}
