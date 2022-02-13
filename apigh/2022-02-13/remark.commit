@@ -1,0 +1,98 @@
+{
+  "sha": "b5f34b877716b7966531dbc82833e8ba3274c346",
+  "node_id": "C_kwDOBtgov9oAKGI1ZjM0Yjg3NzcxNmI3OTY2NTMxZGJjODI4MzNlOGJhMzI3NGMzNDY",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-02-09T22:11:31Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-02-12T09:52:16Z"
+    },
+    "message": "remove notice about user notifications in telegram",
+    "tree": {
+      "sha": "7b40f9e7da5a3603791730323f9a08fd0dd25219",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/7b40f9e7da5a3603791730323f9a08fd0dd25219"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/b5f34b877716b7966531dbc82833e8ba3274c346",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/b5f34b877716b7966531dbc82833e8ba3274c346",
+  "html_url": "https://github.com/umputun/remark42/commit/b5f34b877716b7966531dbc82833e8ba3274c346",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/b5f34b877716b7966531dbc82833e8ba3274c346/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9d8985e616fd265ef49823f1437eb28b2fba26ad",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/9d8985e616fd265ef49823f1437eb28b2fba26ad",
+      "html_url": "https://github.com/umputun/remark42/commit/9d8985e616fd265ef49823f1437eb28b2fba26ad"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 0,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "8ec9f270d792821f4923d48e1ed272780dfbabc7",
+      "filename": "site/src/docs/configuration/telegram/index.md",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/b5f34b877716b7966531dbc82833e8ba3274c346/site/src/docs/configuration/telegram/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/b5f34b877716b7966531dbc82833e8ba3274c346/site/src/docs/configuration/telegram/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/configuration/telegram/index.md?ref=b5f34b877716b7966531dbc82833e8ba3274c346",
+      "patch": "@@ -39,8 +39,6 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/\n \n ## Authentication\n \n-**IMPORTANT: It doesn't work as of 30.01.2022, will be working after [this](https://github.com/umputun/remark42/issues/707) issue resolution** (waits for frontend support).\n-\n To enable Telegram authentication for the users, set variable `AUTH_TELEGRAM=true`.\n \n ## Notifications"
+    }
+  ]
+}
