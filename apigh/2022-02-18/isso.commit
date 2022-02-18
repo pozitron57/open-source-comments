@@ -1,0 +1,98 @@
+{
+  "sha": "6890d8686be35750ac294be1273f3a44183bcc34",
+  "node_id": "C_kwDOAF-mA9oAKDY4OTBkODY4NmJlMzU3NTBhYzI5NGJlMTI3M2YzYTQ0MTgzYmNjMzQ",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-02-17T11:37:28Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-02-17T11:37:28Z"
+    },
+    "message": "Revert \"Build JavaScript files during python package build\" (#798)\n\nThis reverts commit bbad14e8e1384d49cd274f573cfe8ea121fef532.\r\n\r\nReason for revert:\r\nThe change broke `sdist` (source distribution) installs\r\n(which will attempt to run `make` even when *installing*,\r\nbut neither `Makefile` nor `package.json` are inlcuded in\r\nthe tarball (see `MANIFEST.in`), so the command will fail.",
+    "tree": {
+      "sha": "8ea67233f6c5869d060f2b9528ad78d13d3b6f92",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/8ea67233f6c5869d060f2b9528ad78d13d3b6f92"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/6890d8686be35750ac294be1273f3a44183bcc34",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiDjN4CRBK7hj4Ov3rIwAAuKcIALLQL7WLZBj9JjOuRP/5qhzK\nvFOHKLS1EcPLsJl3uhT9E6wRktQ0zd6EwPOD76AGZ+HP9mGMasXlTrp1pImrhHuF\nGzyYWTlz72vuyo0BFxkJ1P1iX2a77T4RNtpEExWbD4gmSD7GLKN85tsUAR/kFG1T\nW489C5jfZl/yDdIXP6JALJXyGx1yld1WAmsw1IBvXIrJfOnQVd6RvLmAuW4hS277\nJpky//SA6yw4Vv+5vWos1IkPmvUpOKnHHHY6Sp449ykwf4W7IJyXjFoZIdB1FIim\noMaav5+85U1GaMeW3Cgr2+iKGxylRujalRQGzOr/Oimt1yUxyy+9SfD+dvTVtzM=\n=NOPl\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 8ea67233f6c5869d060f2b9528ad78d13d3b6f92\nparent 24a36ffc849ab9808ce263e6ea6b5b3ca0a66c7f\nauthor ix5 <ix5@users.noreply.github.com> 1645097848 +0100\ncommitter GitHub <noreply@github.com> 1645097848 +0100\n\nRevert \"Build JavaScript files during python package build\" (#798)\n\nThis reverts commit bbad14e8e1384d49cd274f573cfe8ea121fef532.\r\n\r\nReason for revert:\r\nThe change broke `sdist` (source distribution) installs\r\n(which will attempt to run `make` even when *installing*,\r\nbut neither `Makefile` nor `package.json` are inlcuded in\r\nthe tarball (see `MANIFEST.in`), so the command will fail."
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/6890d8686be35750ac294be1273f3a44183bcc34",
+  "html_url": "https://github.com/posativ/isso/commit/6890d8686be35750ac294be1273f3a44183bcc34",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/6890d8686be35750ac294be1273f3a44183bcc34/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "24a36ffc849ab9808ce263e6ea6b5b3ca0a66c7f",
+      "url": "https://api.github.com/repos/posativ/isso/commits/24a36ffc849ab9808ce263e6ea6b5b3ca0a66c7f",
+      "html_url": "https://github.com/posativ/isso/commit/24a36ffc849ab9808ce263e6ea6b5b3ca0a66c7f"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 0,
+    "deletions": 18
+  },
+  "files": [
+    {
+      "sha": "963554735b97fe355d32d949d7226dcd7ee76af3",
+      "filename": "setup.py",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 18,
+      "changes": 18,
+      "blob_url": "https://github.com/posativ/isso/blob/6890d8686be35750ac294be1273f3a44183bcc34/setup.py",
+      "raw_url": "https://github.com/posativ/isso/raw/6890d8686be35750ac294be1273f3a44183bcc34/setup.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/setup.py?ref=6890d8686be35750ac294be1273f3a44183bcc34",
+      "patch": "@@ -1,27 +1,12 @@\n #!/usr/bin/env python3\n # -*- encoding: utf-8 -*-\n \n-import os\n-import setuptools.command.build_py\n-import subprocess\n-\n from setuptools import setup, find_packages\n \n requires = ['itsdangerous', 'Jinja2', 'misaka>=2.0,<3.0', 'html5lib',\n             'werkzeug>=1.0', 'bleach', 'Flask-Caching>=1.9', 'Flask']\n tests_require = ['pytest', 'pytest-cov']\n \n-\n-class NpmBuildCommand(setuptools.command.build_py.build_py):\n-    \"\"\"Prefix Python build with node-based asset build\"\"\"\n-\n-    def run(self):\n-        # https://tox.wiki/en/latest/config.html#injected-environment-variables\n-        if 'TOX_ENV_NAME' not in os.environ:\n-            subprocess.check_call(['make', 'init', 'js'])\n-        setuptools.command.build_py.build_py.run(self)\n-\n-\n setup(\n     name='isso',\n     version='0.12.5',\n@@ -52,7 +37,4 @@ def run(self):\n         'console_scripts':\n             ['isso = isso:main'],\n     },\n-    cmdclass={\n-        'build_py': NpmBuildCommand,\n-    },\n )"
+    }
+  ]
+}
