@@ -1,0 +1,98 @@
+{
+  "sha": "d4481d145fd996a06d4c9cb522306083973a5e10",
+  "node_id": "C_kwDOBtgov9oAKGQ0NDgxZDE0NWZkOTk2YTA2ZDRjOWNiNTIyMzA2MDgzOTczYTVlMTA",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-02-22T22:58:36Z"
+    },
+    "committer": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-02-23T08:12:21Z"
+    },
+    "message": "fix remark_config reference in the installation documentation",
+    "tree": {
+      "sha": "2abea438d4fe781ca49d387df31ab29fd1d1a5e1",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/2abea438d4fe781ca49d387df31ab29fd1d1a5e1"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d4481d145fd996a06d4c9cb522306083973a5e10",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d4481d145fd996a06d4c9cb522306083973a5e10",
+  "html_url": "https://github.com/umputun/remark42/commit/d4481d145fd996a06d4c9cb522306083973a5e10",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d4481d145fd996a06d4c9cb522306083973a5e10/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2ef1cfe1ea58c48d17fff1a78ea5e509107e92ae",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/2ef1cfe1ea58c48d17fff1a78ea5e509107e92ae",
+      "html_url": "https://github.com/umputun/remark42/commit/2ef1cfe1ea58c48d17fff1a78ea5e509107e92ae"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "f2759fd05923451d1a2f68c3a77f154b60a382d6",
+      "filename": "site/src/docs/getting-started/installation/index.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/d4481d145fd996a06d4c9cb522306083973a5e10/site/src/docs/getting-started/installation/index.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/d4481d145fd996a06d4c9cb522306083973a5e10/site/src/docs/getting-started/installation/index.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site/src/docs/getting-started/installation/index.md?ref=d4481d145fd996a06d4c9cb522306083973a5e10",
+      "patch": "@@ -26,7 +26,7 @@ Add config for Remark on a page of your site:\n \n ```html\n <script>\n-  const remark_config = {\n+  var remark_config = {\n     host: 'REMARK_URL',\n     site_id: 'YOUR_SITE_ID',\n   }\n@@ -40,7 +40,7 @@ For example:\n \n ```html\n <script>\n-  const remark_config = {\n+  var remark_config = {\n     host: 'https://demo.remark42.com',\n     site_id: 'remark',\n   }"
+    }
+  ]
+}
