@@ -1,0 +1,127 @@
+{
+  "sha": "74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+  "node_id": "C_kwDOAF-mA9oAKDc0MzI2ZmJlNmFiNmVhNGQ5MWFiOWQ5ZDZhYTQ3ZGUxMTk4ODNkMjU",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-02-24T19:51:11Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-02-24T19:51:11Z"
+    },
+    "message": "Merge pull request #803 from ix5/revert-cors-origin\n\nRemove ISSO_CORS_ORIGIN and references",
+    "tree": {
+      "sha": "ac82dcafd93dce1cf5855259cc14964055f01714",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/ac82dcafd93dce1cf5855259cc14964055f01714"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiF+GvCRBK7hj4Ov3rIwAA4loIAJcLR7w1Ay9HOEjRm1wHjwQM\nx1v7WTYjo8xe2BTpkM7IZXk1yYDlmpp8riGrnALxmfx5u4zsOu6IS5HXV8fLm0Ul\npXfKMFT0/VEjH7672buzSMSXZpHIaX2NjPcxUAPqJVe2aFUFIFoPA6/jlTmqLlk8\nycrskD4xVSanyQiJZMxhPa0R4MFOGJFwIsVHEfMn986O74UhWpY0LwUeBQWMQxom\n3oeIcjcSQ/vm/YCtQ55KuwWrCL/1luAAJOzDkGgIrlxq3ei2FIyvyQquafIpQTbH\nz5koY6goeH9Y9Bh8AN5EfsTQ1ifTwAUVl6k7wdIsRJRa+8qSWWm6ORTlRqyGlkQ=\n=/r/d\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ac82dcafd93dce1cf5855259cc14964055f01714\nparent 568debf6737d2f3462bdd9baa5ace45031b8ed95\nparent 4e6fedfe03a77c32f2079f25e96b4cd8be320f67\nauthor ix5 <ix5@users.noreply.github.com> 1645732271 +0100\ncommitter GitHub <noreply@github.com> 1645732271 +0100\n\nMerge pull request #803 from ix5/revert-cors-origin\n\nRemove ISSO_CORS_ORIGIN and references"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+  "html_url": "https://github.com/posativ/isso/commit/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "568debf6737d2f3462bdd9baa5ace45031b8ed95",
+      "url": "https://api.github.com/repos/posativ/isso/commits/568debf6737d2f3462bdd9baa5ace45031b8ed95",
+      "html_url": "https://github.com/posativ/isso/commit/568debf6737d2f3462bdd9baa5ace45031b8ed95"
+    },
+    {
+      "sha": "4e6fedfe03a77c32f2079f25e96b4cd8be320f67",
+      "url": "https://api.github.com/repos/posativ/isso/commits/4e6fedfe03a77c32f2079f25e96b4cd8be320f67",
+      "html_url": "https://github.com/posativ/isso/commit/4e6fedfe03a77c32f2079f25e96b4cd8be320f67"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 9,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "de92344d9339c50a050a02a86efd714389e028c1",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "blob_url": "https://github.com/posativ/isso/blob/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/CHANGES.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/CHANGES.rst?ref=74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+      "patch": "@@ -9,7 +9,7 @@ Changelog for Isso\n - Don't ignore missing configuration files.\n   (Jelmer Vernooĳ)\n \n-- Serve isso.css separately to avoid `style-src: unsafe-inline` CSP and allow\n+- Serve isso.css separately to avoid ``style-src: unsafe-inline`` CSP and allow\n   clients to override fetch location (#704, ix5):\n     data-isso-css-url=\"https://comments.example.org/css/isso.css\"\n \n@@ -18,6 +18,7 @@ Changelog for Isso\n \n - Fallback for SameSite header depending on whether host is served over https\n   or http (#700, ix5)\n+\n - Have client read out shared settings from server. (#311, pellenilsson)\n   This affects these settings for which ``data-isso-*`` values will be ignored:\n \n@@ -30,13 +31,16 @@ Changelog for Isso\n     require-email\n \n - Improved detection of browser-supplied language preferences (#521)\n-  Isso will now honor the newer `navigator.languages` global property\n-  as well as `navigator.language` and `navigator.userLanguage`.\n-  There is a new configuration property `data-isso-default-lang`\n+  Isso will now honor the newer ``navigator.languages`` global property\n+  as well as ``navigator.language`` and ``navigator.userLanguage``.\n+  There is a new configuration property ``data-isso-default-lang``\n   that specifies the language to use (instead of English) when none\n-  of these is available.  (The existing `data-isso-lang` *overrides*\n+  of these is available.  (The existing ``data-isso-lang`` *overrides*\n   browser-supplied language preferences.)\n \n+- Remove ``ISSO_CORS_ORIGIN`` environ variable, which never worked at all\n+  (#803, ix5)\n+\n 0.12.4 (2021-02-03)\n -------------------\n "
+    },
+    {
+      "sha": "16f2fd340dc20278a03605d6046c7d656e1cb898",
+      "filename": "docs/docs/configuration/server.rst",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 15,
+      "changes": 15,
+      "blob_url": "https://github.com/posativ/isso/blob/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/docs/docs/configuration/server.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/docs/docs/configuration/server.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs/docs/configuration/server.rst?ref=74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+      "patch": "@@ -426,18 +426,3 @@ Timedelta\n \n     You can add different types: `1m30s` equals to 90 seconds, `3h45m12s`\n     equals to 3 hours, 45 minutes and 12 seconds (12512 seconds).\n-\n-Environment variables\n----------------------\n-\n-.. _environment-variables:\n-\n-Isso also support configuration through some environment variables:\n-\n-ISSO_CORS_ORIGIN\n-    By default, `isso` will use the `Host` or else the `Referrer` HTTP header\n-    of the request to defines a CORS `Access-Control-Allow-Origin` HTTP header\n-    in the response.\n-    This environent variable allows you to define a broader fixed value,\n-    in order for example to share a single Isso instance among serveral of your\n-    subdomains : `ISSO_CORS_ORIGIN=*.example.test`"
+    },
+    {
+      "sha": "6a6db0274deabbd7726b475dd4f23c44c17c2fd2",
+      "filename": "isso/wsgi.py",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 2,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/isso/wsgi.py",
+      "raw_url": "https://github.com/posativ/isso/raw/74326fbe6ab6ea4d91ab9d9d6aa47de119883d25/isso/wsgi.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/wsgi.py?ref=74326fbe6ab6ea4d91ab9d9d6aa47de119883d25",
+      "patch": "@@ -72,8 +72,6 @@ def origin(hosts):\n     hosts = [urlsplit(h) for h in hosts]\n \n     def func(environ):\n-        if 'ISSO_CORS_ORIGIN' in environ:\n-            return environ['ISSO_CORS_ORIGIN']\n \n         if not hosts:\n             return \"http://invalid.local\""
+    }
+  ]
+}
