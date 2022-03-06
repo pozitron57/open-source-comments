@@ -1,0 +1,127 @@
+{
+  "sha": "8bf84595492002acad3622cb8ed8c161430cb605",
+  "node_id": "C_kwDOAF-mA9oAKDhiZjg0NTk1NDkyMDAyYWNhZDM2MjJjYjhlZDhjMTYxNDMwY2I2MDU",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-03-05T18:11:46Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-03-05T18:11:46Z"
+    },
+    "message": "Merge pull request #805 from fliiiix/moderating-add-testing\n\nviews: moderation: Add unit tests, proper response instead of \"Yo\", apiDoc clarifications",
+    "tree": {
+      "sha": "7b54bb0dc0f10affff7774259b33d3a3dd1948b1",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/7b54bb0dc0f10affff7774259b33d3a3dd1948b1"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/8bf84595492002acad3622cb8ed8c161430cb605",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiI6fiCRBK7hj4Ov3rIwAAckwIAGGHPgYf11DNzcdRe9+mV3lN\nfIPJRQL+9RpDfOqJ8SGqpVr3peItfSdu0W44vm2P0E3tE0VtxXWmTX7ta8WAow7/\nwIETHuDO2wnuCAz7s08lFyw3Clha3ATL0BWF+wDXrpg7keqQf+IyDwdizEIKbnxR\npdJBXPvdz6dkiKwo8+wf7s4EXAMmHpYrz0RmvU+DC8s7B2nUkdYBa5TY3h46bfLV\nk/n6UnxRfIq8qITdMEj1XWPHBJU9yLldHSQeeEVpAvOe12341TB1RoYD5cYGJhHJ\n1noh4XDFAHYVWrTvDzZ7znF1VcUbgigTDCaiz2YA1+pftpFtZ3YgKPl6UYkiFS4=\n=V5dj\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 7b54bb0dc0f10affff7774259b33d3a3dd1948b1\nparent ae6dc847d9bc460fa6edc97159db8adc57590eea\nparent d98401214bd80cb961edf7cab404eb30e3e317f3\nauthor ix5 <ix5@users.noreply.github.com> 1646503906 +0100\ncommitter GitHub <noreply@github.com> 1646503906 +0100\n\nMerge pull request #805 from fliiiix/moderating-add-testing\n\nviews: moderation: Add unit tests, proper response instead of \"Yo\", apiDoc clarifications"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/8bf84595492002acad3622cb8ed8c161430cb605",
+  "html_url": "https://github.com/posativ/isso/commit/8bf84595492002acad3622cb8ed8c161430cb605",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/8bf84595492002acad3622cb8ed8c161430cb605/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ae6dc847d9bc460fa6edc97159db8adc57590eea",
+      "url": "https://api.github.com/repos/posativ/isso/commits/ae6dc847d9bc460fa6edc97159db8adc57590eea",
+      "html_url": "https://github.com/posativ/isso/commit/ae6dc847d9bc460fa6edc97159db8adc57590eea"
+    },
+    {
+      "sha": "d98401214bd80cb961edf7cab404eb30e3e317f3",
+      "url": "https://api.github.com/repos/posativ/isso/commits/d98401214bd80cb961edf7cab404eb30e3e317f3",
+      "html_url": "https://github.com/posativ/isso/commit/d98401214bd80cb961edf7cab404eb30e3e317f3"
+    }
+  ],
+  "stats": {
+    "total": 137,
+    "additions": 121,
+    "deletions": 16
+  },
+  "files": [
+    {
+      "sha": "de8abf411b201828a1e0d9885ea5801c7c13f309",
+      "filename": "CONTRIBUTORS.txt",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/posativ/isso/blob/8bf84595492002acad3622cb8ed8c161430cb605/CONTRIBUTORS.txt",
+      "raw_url": "https://github.com/posativ/isso/raw/8bf84595492002acad3622cb8ed8c161430cb605/CONTRIBUTORS.txt",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/CONTRIBUTORS.txt?ref=8bf84595492002acad3622cb8ed8c161430cb605",
+      "patch": "@@ -117,5 +117,11 @@ In chronological order:\n   * Update Polish translation\n   * Redirect to comment after moderation\n \n+* fliiiix <l33t.name>\n+  * Import disqus posts without Email\n+  * Import disqus post without IP\n+  * Fixing minor code inconsistencies\n+  * Testing for moderation and unsubscribe\n+\n * [Your name or handle] <[email or website]>\n   * [Brief summary of your changes]"
+    },
+    {
+      "sha": "ba9e71aba29fa62b5942ac7b71e65f5d35012b31",
+      "filename": "isso/tests/test_comments.py",
+      "status": "modified",
+      "additions": 102,
+      "deletions": 0,
+      "changes": 102,
+      "blob_url": "https://github.com/posativ/isso/blob/8bf84595492002acad3622cb8ed8c161430cb605/isso/tests/test_comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/8bf84595492002acad3622cb8ed8c161430cb605/isso/tests/test_comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/tests/test_comments.py?ref=8bf84595492002acad3622cb8ed8c161430cb605",
+      "patch": "@@ -604,6 +604,108 @@ def testAddComment(self):\n         self.app.db.comments.activate(1)\n         self.assertEqual(self.client.get('/?uri=test').status_code, 200)\n \n+    def testModerateComment(self):\n+\n+        id_ = 1\n+        signed = self.app.sign(id_)\n+\n+        # Create new comment, should have mode=2 (pending moderation)\n+        rv = self.client.post(\n+            '/new?uri=/moderated', data=json.dumps({\"text\": \"...\"}))\n+        self.assertEqual(rv.status_code, 202)\n+        self.assertEqual(self.client.get('/id/1').status_code, 200)\n+        self.assertEqual(self.app.db.comments.get(id_)[\"mode\"], 2)\n+        self.assertEqual(self.app.db.comments.get(id_)[\"text\"], \"...\")\n+\n+        # GET should return some html form\n+        action = \"activate\"\n+        rv_activate_get = self.client.get('/id/%d/%s/%s' % (id_, action, signed))\n+        self.assertEqual(rv_activate_get.status_code, 200)\n+        self.assertIn(b\"Activate: Are you sure?\", rv_activate_get.data)\n+        self.assertIn(b\"http://invalid.local/moderated#isso-1\", rv_activate_get.data)\n+\n+        # Activate comment\n+        action = \"activate\"\n+        rv_activated = self.client.post('/id/%d/%s/%s' % (id_, action, signed))\n+        self.assertEqual(rv_activated.status_code, 200)\n+        self.assertEqual(rv_activated.data, b\"Comment has been activated\")\n+\n+        # Activating should be idempotent\n+        rv_activated = self.client.post('/id/%d/%s/%s' % (id_, action, signed))\n+        self.assertEqual(rv_activated.status_code, 200)\n+        self.assertEqual(rv_activated.data, b\"Already activated\")\n+\n+        # Comment should have mode=1 (activated)\n+        self.assertEqual(self.app.db.comments.get(id_)[\"mode\"], 1)\n+\n+        # Edit comment\n+        action = \"edit\"\n+        rv_edit = self.client.post('/id/%d/%s/%s' % (id_, action, signed), data=json.dumps({\"text\": \"new text\"}))\n+        self.assertEqual(rv_edit.status_code, 200)\n+        self.assertEqual(json.loads(rv_edit.data)[\"id\"], id_)\n+        self.assertEqual(self.app.db.comments.get(id_)[\"text\"], \"new text\")\n+\n+        # Wrong action on comment is handled by the routing\n+        action = \"foo\"\n+        rv_wrong_action = self.client.post('/id/%d/%s/%s' % (id_, action, signed))\n+        self.assertEqual(rv_wrong_action.status_code, 404)\n+\n+        # Delete comment\n+        action = \"delete\"\n+        rv_deleted = self.client.post('/id/%d/%s/%s' % (id_, action, signed))\n+        self.assertEqual(rv_deleted.status_code, 200)\n+        self.assertEqual(rv_deleted.data, b\"Comment has been deleted\")\n+\n+        # Comment should no longer exist\n+        self.assertEqual(self.app.db.comments.get(id_), None)\n+\n+\n+class TestUnsubscribe(unittest.TestCase):\n+\n+    def setUp(self):\n+        fd, self.path = tempfile.mkstemp()\n+        conf = config.load(\n+            pkg_resources.resource_filename('isso', 'defaults.ini'))\n+        conf.set(\"general\", \"dbpath\", self.path)\n+        conf.set(\"moderation\", \"enabled\", \"true\")\n+        conf.set(\"guard\", \"enabled\", \"off\")\n+        conf.set(\"hash\", \"algorithm\", \"none\")\n+\n+        class App(Isso, core.Mixin):\n+            pass\n+\n+        self.app = App(conf)\n+        self.app.wsgi_app = FakeIP(self.app.wsgi_app, \"192.168.1.1\")\n+        self.client = JSONClient(self.app, Response)\n+\n+        # add default comment\n+        rv = self.client.post(\n+            '/new?uri=test', data=json.dumps({\"text\": \"...\"}))\n+        self.assertEqual(rv.status_code, 202)\n+\n+    def tearDown(self):\n+        os.unlink(self.path)\n+\n+    def testUnsubscribe(self):\n+        id_ = 1\n+        email = \"test@test.example\"\n+        key = self.app.sign(('unsubscribe', email))\n+\n+        # GET should return some html form\n+        rv_unsubscribe_get = self.client.get('/id/%d/unsubscribe/%s/%s' % (id_, email, key))\n+        self.assertEqual(rv_unsubscribe_get.status_code, 200)\n+        self.assertIn(b\"Successfully unsubscribed\", rv_unsubscribe_get.data)\n+\n+        # Incomplete key should fail\n+        key = self.app.sign(['unsubscribe'])\n+        rv_incomplete_key = self.client.get('/id/%d/unsubscribe/%s/%s' % (id_, email, key))\n+        self.assertEqual(rv_incomplete_key.status_code, 403)\n+\n+        # Wrong key type should fail\n+        key = self.app.sign(1)\n+        rv_wrong_key_type = self.client.get('/id/%d/unsubscribe/%s/%s' % (id_, email, key))\n+        self.assertEqual(rv_wrong_key_type.status_code, 403)\n+\n \n class TestPurgeComments(unittest.TestCase):\n "
+    },
+    {
+      "sha": "120d5c9b0513c09a9191d747ce812b86b2b29dfa",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 16,
+      "changes": 29,
+      "blob_url": "https://github.com/posativ/isso/blob/8bf84595492002acad3622cb8ed8c161430cb605/isso/views/comments.py",
+      "raw_url": "https://github.com/posativ/isso/raw/8bf84595492002acad3622cb8ed8c161430cb605/isso/views/comments.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso/views/comments.py?ref=8bf84595492002acad3622cb8ed8c161430cb605",
+      "patch": "@@ -551,7 +551,7 @@ def delete(self, environ, request, id, key=None):\n         return resp\n \n     \"\"\"\n-    @api {get} /id/:id/:email/key unsubscribe\n+    @api {get} /id/:id/unsubscribe/:email/key unsubscribe\n     @apiGroup Comment\n     @apiDescription\n         Opt out from getting any further email notifications about replies to a particular comment. In order to use this endpoint, the requestor needs a `key` that is usually obtained from an email sent out by isso.\n@@ -569,17 +569,11 @@ def delete(self, environ, request, id, key=None):\n     @apiSuccessExample {html} Using GET:\n         &lt;!DOCTYPE html&gt;\n         &lt;html&gt;\n-            &lt;head&gt;\n-                &lt;script&gt;\n-                    if (confirm('Delete: Are you sure?')) {\n-                        xhr = new XMLHttpRequest;\n-                        xhr.open('POST', window.location.href);\n-                        xhr.send(null);\n-                    }\n-                &lt;/script&gt;\n-\n-    @apiSuccessExample Using POST:\n-        Yo\n+            &lt;head&gtSuccessfully unsubscribed&lt;/head&gt;\n+            &lt;body&gt;\n+              &lt;p&gt;You have been unsubscribed from replies in the given conversation.&lt;/p&gt;\n+            &lt;/body&gt;\n+        &lt;/html&gt;\n     \"\"\"\n \n     def unsubscribe(self, environ, request, id, email, key):\n@@ -590,6 +584,9 @@ def unsubscribe(self, environ, request, id, email, key):\n         except (BadSignature, SignatureExpired):\n             raise Forbidden\n \n+        if not isinstance(rv, list) or len(rv) != 2:\n+            raise Forbidden\n+\n         if rv[0] != 'unsubscribe' or rv[1] != email:\n             raise Forbidden\n \n@@ -624,7 +621,7 @@ def unsubscribe(self, environ, request, id, email, key):\n \n     @apiParam {number} id\n         The id of the comment to moderate.\n-    @apiParam {string=activate,delete} action\n+    @apiParam {string=activate,edit,delete} action\n         `activate` to publish the comment (change its mode to `1`).\n         `delete` to delete the comment\n     @apiParam {string} key\n@@ -649,7 +646,7 @@ def unsubscribe(self, environ, request, id, email, key):\n                 &lt;/script&gt;\n \n     @apiSuccessExample Using POST:\n-        Yo\n+        Comment has been deleted\n     \"\"\"\n \n     def moderate(self, environ, request, id, action, key):\n@@ -689,7 +686,7 @@ def moderate(self, environ, request, id, action, key):\n             with self.isso.lock:\n                 self.comments.activate(id)\n             self.signal(\"comments.activate\", thread, item)\n-            return Response(\"Yo\", 200)\n+            return Response(\"Comment has been activated\", 200)\n         elif action == \"edit\":\n             data = request.get_json()\n             with self.isso.lock:\n@@ -704,7 +701,7 @@ def moderate(self, environ, request, id, action, key):\n             self.cache.delete(\n                 'hash', (item['email'] or item['remote_addr']).encode('utf-8'))\n             self.signal(\"comments.delete\", id)\n-            return Response(\"Yo\", 200)\n+            return Response(\"Comment has been deleted\", 200)\n \n         \"\"\"\n         @api {get} / get comments"
+    }
+  ]
+}
