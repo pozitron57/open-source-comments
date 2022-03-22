@@ -1,0 +1,98 @@
+{
+  "sha": "c8fb79361341db791d5c9e0aa2bcf4e367485186",
+  "node_id": "C_kwDOAF-mA9oAKGM4ZmI3OTM2MTM0MWRiNzkxZDVjOWUwYWEyYmNmNGUzNjc0ODUxODY",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-03-22T09:29:30Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-03-22T09:33:33Z"
+    },
+    "message": ".github: js-client: Specify paths instead of ls output",
+    "tree": {
+      "sha": "5dfa6d9d347804ad24accd79cf35c20180bae379",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/5dfa6d9d347804ad24accd79cf35c20180bae379"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/c8fb79361341db791d5c9e0aa2bcf4e367485186",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/c8fb79361341db791d5c9e0aa2bcf4e367485186",
+  "html_url": "https://github.com/posativ/isso/commit/c8fb79361341db791d5c9e0aa2bcf4e367485186",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/c8fb79361341db791d5c9e0aa2bcf4e367485186/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "67a1c73f26264fe53692dfa8b312bb9731aa2369",
+      "url": "https://api.github.com/repos/posativ/isso/commits/67a1c73f26264fe53692dfa8b312bb9731aa2369",
+      "html_url": "https://github.com/posativ/isso/commit/67a1c73f26264fe53692dfa8b312bb9731aa2369"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 8,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "0ee7896c00aad7e89de4475ec70758537bdd4a00",
+      "filename": ".github/workflows/javascript-client.yml",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 13,
+      "changes": 21,
+      "blob_url": "https://github.com/posativ/isso/blob/c8fb79361341db791d5c9e0aa2bcf4e367485186/.github/workflows/javascript-client.yml",
+      "raw_url": "https://github.com/posativ/isso/raw/c8fb79361341db791d5c9e0aa2bcf4e367485186/.github/workflows/javascript-client.yml",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.github/workflows/javascript-client.yml?ref=c8fb79361341db791d5c9e0aa2bcf4e367485186",
+      "patch": "@@ -65,20 +65,15 @@ jobs:\n       run: npm install\n \n     - name: Create Javascript client files\n-      id: generate-client-files\n-      run: |\n-        make js\n-        echo \"::set-output name=client_min_files::$(ls isso/js/*.min.js)\"\n-        echo \"::set-output name=client_dev_files::$(ls isso/js/*.dev.js{,.map})\"\n+      run: make js\n \n     - name: Archive and upload generated minified client files\n       uses: actions/upload-artifact@v3\n       with:\n-        name: client-minified\n-        path: ${{ steps.generate-client-files.outputs.client_min_files }}\n-\n-    - name: Archive and upload generated development client files\n-      uses: actions/upload-artifact@v3\n-      with:\n-        name: client-dev\n-        path: ${{ steps.generate-client-files.outputs.client_dev_files }}\n+        name: client-js-files\n+        path: |\n+          isso/js/embed.*.js\n+          isso/js/count.*.js\n+          isso/js/embed.dev.js.map\n+          isso/js/count.dev.js.map\n+        if-no-files-found: error"
+    }
+  ]
+}
