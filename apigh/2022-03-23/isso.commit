@@ -1,0 +1,98 @@
+{
+  "sha": "7ef6e054ae6b971770d67daaa8d08ee25911ef4d",
+  "node_id": "C_kwDOAF-mA9oAKDdlZjZlMDU0YWU2Yjk3MTc3MGQ2N2RhYWE4ZDA4ZWUyNTkxMWVmNGQ",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-03-23T10:09:15Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-03-23T10:10:27Z"
+    },
+    "message": ".github: python-pkg: Skip run on docs changes",
+    "tree": {
+      "sha": "70a2c9a9d1a5f58354e45f7c626a5c6a978e2a4f",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/70a2c9a9d1a5f58354e45f7c626a5c6a978e2a4f"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/7ef6e054ae6b971770d67daaa8d08ee25911ef4d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/7ef6e054ae6b971770d67daaa8d08ee25911ef4d",
+  "html_url": "https://github.com/posativ/isso/commit/7ef6e054ae6b971770d67daaa8d08ee25911ef4d",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/7ef6e054ae6b971770d67daaa8d08ee25911ef4d/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c8fb79361341db791d5c9e0aa2bcf4e367485186",
+      "url": "https://api.github.com/repos/posativ/isso/commits/c8fb79361341db791d5c9e0aa2bcf4e367485186",
+      "html_url": "https://github.com/posativ/isso/commit/c8fb79361341db791d5c9e0aa2bcf4e367485186"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 5,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "3dbf893abe531c9931c8df76cc21b10e334dcaba",
+      "filename": ".github/workflows/python-package.yml",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/posativ/isso/blob/7ef6e054ae6b971770d67daaa8d08ee25911ef4d/.github/workflows/python-package.yml",
+      "raw_url": "https://github.com/posativ/isso/raw/7ef6e054ae6b971770d67daaa8d08ee25911ef4d/.github/workflows/python-package.yml",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.github/workflows/python-package.yml?ref=7ef6e054ae6b971770d67daaa8d08ee25911ef4d",
+      "patch": "@@ -1,14 +1,16 @@\n name: Python package\n \n on:\n-  # Always build installable package\n+  # Always build installable package, except for docs changes\n   push:\n     paths:\n-      - \"**\"\n+      - \"./**\"\n+      - \"!docs/\"\n       - \".github/workflows/python-package.yml\"\n   pull_request:\n     paths:\n-      - \"**\"\n+      - \"./**\"\n+      - \"!docs/\"\n       - \".github/workflows/python-package.yml\"\n \n jobs:"
+    }
+  ]
+}
