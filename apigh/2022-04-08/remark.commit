@@ -1,0 +1,98 @@
+{
+  "sha": "0eac76ce6c4ee165082341de12ef87ead72e3a5d",
+  "node_id": "C_kwDOBtgov9oAKDBlYWM3NmNlNmM0ZWUxNjUwODIzNDFkZTEyZWY4N2VhZDcyZTNhNWQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-04-07T22:25:11Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-04-07T23:27:39Z"
+    },
+    "message": "improve notifications description in parameters doc",
+    "tree": {
+      "sha": "66db52ce2e6dc8d8e405b2888089f25949fe09fe",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/66db52ce2e6dc8d8e405b2888089f25949fe09fe"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/0eac76ce6c4ee165082341de12ef87ead72e3a5d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/0eac76ce6c4ee165082341de12ef87ead72e3a5d",
+  "html_url": "https://github.com/umputun/remark42/commit/0eac76ce6c4ee165082341de12ef87ead72e3a5d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/0eac76ce6c4ee165082341de12ef87ead72e3a5d/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "977e5f018b2e7773fa70774dc5f723cc71775250",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/977e5f018b2e7773fa70774dc5f723cc71775250",
+      "html_url": "https://github.com/umputun/remark42/commit/977e5f018b2e7773fa70774dc5f723cc71775250"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "31bb11f367462b9d24a771c66f499fd955624854",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/0eac76ce6c4ee165082341de12ef87ead72e3a5d/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/0eac76ce6c4ee165082341de12ef87ead72e3a5d/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md?ref=0eac76ce6c4ee165082341de12ef87ead72e3a5d",
+      "patch": "@@ -87,8 +87,8 @@ services:\n | auth.email.from                | AUTH_EMAIL_FROM                |                          | email from                                                |\n | auth.email.subj                | AUTH_EMAIL_SUBJ                | `remark42 confirmation`  | email subject                                             |\n | auth.email.content-type        | AUTH_EMAIL_CONTENT_TYPE        | `text/html`              | email content type                                        |\n-| notify.users                   | NOTIFY_USERS                   | none                     | type of user notifications (Telegram, email)              |\n-| notify.admins                  | NOTIFY_ADMINS                  | none                     | type of admin notifications (Telegram, Slack, webhook and/or email) |\n+| notify.users                   | NOTIFY_USERS                   | none                     | type of user notifications (`telegram`, `email`), _multi_ |\n+| notify.admins                  | NOTIFY_ADMINS                  | none                     | type of admin notifications (`telegram`, `slack`, `webhook` and/or `email`), _multi_ |\n | notify.queue                   | NOTIFY_QUEUE                   | `100`                    | size of notification queue                                |\n | notify.telegram.chan           | NOTIFY_TELEGRAM_CHAN           |                          | the ID of telegram channel for admin notifications        |\n | notify.slack.token             | NOTIFY_SLACK_TOKEN             |                          | Slack token                                               |"
+    }
+  ]
+}
