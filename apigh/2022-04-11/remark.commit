@@ -1,0 +1,79 @@
+{
+  "sha": "5de95443370a04fe9b94122c6963e7fd3f2fc566",
+  "node_id": "C_kwDOBtgov9oAKDVkZTk1NDQzMzcwYTA0ZmU5Yjk0MTIyYzY5NjNlN2ZkM2YyZmM1NjY",
+  "commit": {
+    "author": {
+      "name": "Paul Mineev",
+      "email": "paul@mineev.me",
+      "date": "2022-04-10T00:27:36Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-04-10T20:35:31Z"
+    },
+    "message": "update max size limit for counter.js",
+    "tree": {
+      "sha": "bc95f98d221f0abbc55f2efca982b1decdcdb05a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/bc95f98d221f0abbc55f2efca982b1decdcdb05a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/5de95443370a04fe9b94122c6963e7fd3f2fc566",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/5de95443370a04fe9b94122c6963e7fd3f2fc566",
+  "html_url": "https://github.com/umputun/remark42/commit/5de95443370a04fe9b94122c6963e7fd3f2fc566",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/5de95443370a04fe9b94122c6963e7fd3f2fc566/comments",
+  "author": null,
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a320ae03aeb99412d12eebb9ba1355bf2c4fc4a5",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/a320ae03aeb99412d12eebb9ba1355bf2c4fc4a5",
+      "html_url": "https://github.com/umputun/remark42/commit/a320ae03aeb99412d12eebb9ba1355bf2c4fc4a5"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "367d0ba64726f83259c0c4b948ab7885ee074e51",
+      "filename": "frontend/.size-limit.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/5de95443370a04fe9b94122c6963e7fd3f2fc566/frontend%2F.size-limit.js",
+      "raw_url": "https://github.com/umputun/remark42/raw/5de95443370a04fe9b94122c6963e7fd3f2fc566/frontend%2F.size-limit.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2F.size-limit.js?ref=5de95443370a04fe9b94122c6963e7fd3f2fc566",
+      "patch": "@@ -21,6 +21,6 @@ module.exports = [\n   },\n   {\n     path: 'public/counter.mjs',\n-    limit: '0.7 KB',\n+    limit: '0.8 KB',\n   },\n ];"
+    }
+  ]
+}
