@@ -32,8 +32,8 @@ rc('ytick.minor', size=5, width=1.3)
 rcParams['font.family'] = 'sans-serif'
 rcParams['font.sans-serif'] = ['Lucida Grande']
 
-
-fig = plt.figure('figure', figsize=(10,6))
+fig = plt.figure('figure', figsize=(10,8))
+fig.subplots_adjust(top=.80)
 ax = plt.subplot(111)
 
 mydates = sorted(os.listdir('apigh'))
@@ -141,7 +141,7 @@ ax.xaxis.set_minor_locator(months)
 
 ax.set_xlabel('Date')
 ax.set_ylabel('Github stars')
-ax.legend(ncol=3, loc='center') # bbox_to_anchor=(0.5, 1.05)
+ax.legend(ncol=3, loc='center', bbox_to_anchor=(0.4, 1.15))
 ax.grid(ls=':', lw=1)
 
 #today = date.today()
