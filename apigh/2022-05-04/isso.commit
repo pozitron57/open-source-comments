@@ -1,0 +1,98 @@
+{
+  "sha": "ec30b468dfb6810c466b356b9547d76e8c585b18",
+  "node_id": "C_kwDOAF-mA9oAKGVjMzBiNDY4ZGZiNjgxMGM0NjZiMzU2Yjk1NDdkNzZlOGM1ODViMTg",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-01T12:40:06Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-01T12:40:06Z"
+    },
+    "message": "[nit] docs: faq: Bold quote",
+    "tree": {
+      "sha": "f3127cb2287393ce8a30a391d69c046cdd4186ab",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/f3127cb2287393ce8a30a391d69c046cdd4186ab"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/ec30b468dfb6810c466b356b9547d76e8c585b18",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/ec30b468dfb6810c466b356b9547d76e8c585b18",
+  "html_url": "https://github.com/posativ/isso/commit/ec30b468dfb6810c466b356b9547d76e8c585b18",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/ec30b468dfb6810c466b356b9547d76e8c585b18/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ad830a1885a814c0403059d3d8b1b87b81c8355b",
+      "url": "https://api.github.com/repos/posativ/isso/commits/ad830a1885a814c0403059d3d8b1b87b81c8355b",
+      "html_url": "https://github.com/posativ/isso/commit/ad830a1885a814c0403059d3d8b1b87b81c8355b"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "52f313fa0f3adda64c37305e8b63c90f69ad7b10",
+      "filename": "docs/docs/guides/faq.rst",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/ec30b468dfb6810c466b356b9547d76e8c585b18/docs%2Fdocs%2Fguides%2Ffaq.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/ec30b468dfb6810c466b356b9547d76e8c585b18/docs%2Fdocs%2Fguides%2Ffaq.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs%2Fdocs%2Fguides%2Ffaq.rst?ref=ec30b468dfb6810c466b356b9547d76e8c585b18",
+      "patch": "@@ -9,7 +9,7 @@ you manage massive amounts of comments, Isso is a really bad choice. Isso is\n designed to be simple and easy to setup, it is not optimized for high-traffic\n websites.\n \n-    Comments are not big data.\n+    **Comments are not big data.**\n \n For example, if you have 209 threads and 778 comments in total this only needs 620 kilobytes\n of memory. This is an excellent use case for SQLite."
+    }
+  ]
+}
