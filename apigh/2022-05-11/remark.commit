@@ -1,0 +1,103 @@
+{
+  "sha": "18cc34535ff2f0a4125882441cdd67a746b69f6f",
+  "node_id": "C_kwDOBtgov9oAKDE4Y2MzNDUzNWZmMmYwYTQxMjU4ODI0NDFjZGQ2N2E3NDZiNjlmNmY",
+  "commit": {
+    "author": {
+      "name": "Paul Mineev",
+      "email": "paul@mineev.me",
+      "date": "2022-05-10T19:31:11Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-05-10T19:47:34Z"
+    },
+    "message": "fix lint and test",
+    "tree": {
+      "sha": "80f3cdae72bab50314592ef1e5c883644e861f2d",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/80f3cdae72bab50314592ef1e5c883644e861f2d"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/18cc34535ff2f0a4125882441cdd67a746b69f6f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/18cc34535ff2f0a4125882441cdd67a746b69f6f",
+  "html_url": "https://github.com/umputun/remark42/commit/18cc34535ff2f0a4125882441cdd67a746b69f6f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/18cc34535ff2f0a4125882441cdd67a746b69f6f/comments",
+  "author": null,
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9053668cfef2567b7ac651eb03b8b11fb6624795",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/9053668cfef2567b7ac651eb03b8b11fb6624795",
+      "html_url": "https://github.com/umputun/remark42/commit/9053668cfef2567b7ac651eb03b8b11fb6624795"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 43,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "48b1e5c5c5f52f2e423d8da02c566d7729938550",
+      "filename": "frontend/app/components/comment/comment-actions.spec.tsx",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/18cc34535ff2f0a4125882441cdd67a746b69f6f/frontend%2Fapp%2Fcomponents%2Fcomment%2Fcomment-actions.spec.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/18cc34535ff2f0a4125882441cdd67a746b69f6f/frontend%2Fapp%2Fcomponents%2Fcomment%2Fcomment-actions.spec.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fcomment%2Fcomment-actions.spec.tsx?ref=18cc34535ff2f0a4125882441cdd67a746b69f6f",
+      "patch": "@@ -35,7 +35,7 @@ describe('<CommentActions/>', () => {\n   });\n   afterEach(() => {\n     jest.resetAllMocks();\n-  })\n+  });\n \n   it('should render \"Reply\"', () => {\n     render(<CommentActions {...props} />);\n@@ -145,11 +145,11 @@ describe('<CommentActions/>', () => {\n     });\n \n     it('calls `onToggleEditing` when edit button is pressed', () => {\n+      props.editable = true;\n+      props.editDeadline = Date.now() + 300 * 1000;\n       render(<CommentActions {...props} />);\n       fireEvent(screen.getByText('Edit'), new MouseEvent('click', { bubbles: true }));\n       expect(props.onToggleEditing).toHaveBeenCalledTimes(1);\n-      fireEvent(screen.getByText('Cancel'), new MouseEvent('click', { bubbles: true }));\n-      expect(props.onToggleEditing).toHaveBeenCalledTimes(2);\n-    })\n+    });\n   });\n });"
+    },
+    {
+      "sha": "3e52f4713e70c90485eeb49505bddaa03fce7986",
+      "filename": "frontend/app/components/comment/comment.test.tsx",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 2,
+      "changes": 29,
+      "blob_url": "https://github.com/umputun/remark42/blob/18cc34535ff2f0a4125882441cdd67a746b69f6f/frontend%2Fapp%2Fcomponents%2Fcomment%2Fcomment.test.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/18cc34535ff2f0a4125882441cdd67a746b69f6f/frontend%2Fapp%2Fcomponents%2Fcomment%2Fcomment.test.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fcomment%2Fcomment.test.tsx?ref=18cc34535ff2f0a4125882441cdd67a746b69f6f",
+      "patch": "@@ -1,15 +1,18 @@\n import { h } from 'preact';\n import '@testing-library/jest-dom';\n-import { screen } from '@testing-library/preact';\n+import { fireEvent, screen, waitFor } from '@testing-library/preact';\n import { useIntl, IntlShape } from 'react-intl';\n \n import { render } from 'tests/utils';\n import { StaticStore } from 'common/static-store';\n \n import { Comment, CommentProps } from './comment';\n+import { CommentMode } from 'common/types';\n \n function CommentWithIntl(props: CommentProps) {\n-  return <Comment {...props} intl={useIntl()} />;\n+  const intl = useIntl();\n+\n+  return <Comment {...props} intl={intl} />;\n }\n \n function getProps(): CommentProps {\n@@ -230,4 +233,26 @@ describe('<Comment />', () => {\n     render(<CommentWithIntl {...props} />);\n     expect(screen.queryByRole('timer')).not.toBeInTheDocument();\n   });\n+\n+  it('toggles edit mode', async () => {\n+    props = getProps();\n+    props.repliesCount = 0;\n+    props.data.user = props.user!;\n+    props.data.time = new Date().toString();\n+    props.setReplyEditState = jest.fn().mockImplementation(() => {\n+      props.editMode = props.editMode === undefined ? CommentMode.Edit : CommentMode.None;\n+    });\n+    StaticStore.config.edit_duration = 300;\n+    const { rerender } = render(<CommentWithIntl {...props} />);\n+    fireEvent(screen.getByText('Edit'), new MouseEvent('click', { bubbles: true }));\n+    rerender(<CommentWithIntl {...props} />);\n+    await waitFor(() => {\n+      expect(screen.getByText('Cancel')).toBeVisible();\n+    });\n+    fireEvent(screen.getByText('Cancel'), new MouseEvent('click', { bubbles: true }));\n+    rerender(<CommentWithIntl {...props} />);\n+    await waitFor(() => {\n+      expect(screen.getByText('Edit')).toBeVisible();\n+    });\n+  });\n });"
+    },
+    {
+      "sha": "415aacaca9e52b9f6feaf7ac42c3762018eff98a",
+      "filename": "frontend/app/tests/utils.tsx",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 1,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark42/blob/18cc34535ff2f0a4125882441cdd67a746b69f6f/frontend%2Fapp%2Ftests%2Futils.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/18cc34535ff2f0a4125882441cdd67a746b69f6f/frontend%2Fapp%2Ftests%2Futils.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Ftests%2Futils.tsx?ref=18cc34535ff2f0a4125882441cdd67a746b69f6f",
+      "patch": "@@ -8,9 +8,20 @@ import { mockStore } from '__stubs__/store';\n import { StoreState } from 'store';\n \n export function render(children: ComponentChild, s: Partial<StoreState> = {}) {\n-  return originalRender(\n+  const props = originalRender(\n     <IntlProvider locale=\"en\" messages={en}>\n       <Provider store={mockStore(s)}>{children}</Provider>\n     </IntlProvider>\n   );\n+\n+  return {\n+    ...props,\n+    rerender(children: ComponentChild) {\n+      props.rerender(\n+        <IntlProvider locale=\"en\" messages={en}>\n+          <Provider store={mockStore(s)}>{children}</Provider>\n+        </IntlProvider>\n+      );\n+    },\n+  };\n }"
+    }
+  ]
+}
