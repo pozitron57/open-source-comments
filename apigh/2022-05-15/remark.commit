@@ -1,0 +1,110 @@
+{
+  "sha": "adb77d9a11019dcc0ae919907d4120f44a5c243d",
+  "node_id": "C_kwDOBtgov9oAKGFkYjc3ZDlhMTEwMTlkY2MwYWU5MTk5MDdkNDEyMGY0NGE1YzI0M2Q",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-05-11T17:35:45Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-05-12T16:41:52Z"
+    },
+    "message": "sync server parameters with their description",
+    "tree": {
+      "sha": "0ca8e24e221822d4f6076087ac91c2fa9c5ceb57",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/0ca8e24e221822d4f6076087ac91c2fa9c5ceb57"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/adb77d9a11019dcc0ae919907d4120f44a5c243d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/adb77d9a11019dcc0ae919907d4120f44a5c243d",
+  "html_url": "https://github.com/umputun/remark42/commit/adb77d9a11019dcc0ae919907d4120f44a5c243d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/adb77d9a11019dcc0ae919907d4120f44a5c243d/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "18cc34535ff2f0a4125882441cdd67a746b69f6f",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/18cc34535ff2f0a4125882441cdd67a746b69f6f",
+      "html_url": "https://github.com/umputun/remark42/commit/18cc34535ff2f0a4125882441cdd67a746b69f6f"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "additions": 21,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "9dab9ef1b69f681590a1b7a914668bc646430ecb",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/adb77d9a11019dcc0ae919907d4120f44a5c243d/backend%2Fapp%2Fcmd%2Fserver.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/adb77d9a11019dcc0ae919907d4120f44a5c243d/backend%2Fapp%2Fcmd%2Fserver.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fserver.go?ref=adb77d9a11019dcc0ae919907d4120f44a5c243d",
+      "patch": "@@ -77,7 +77,7 @@ type ServerCommand struct {\n \tRestrictedWords  []string      `long:\"restricted-words\" env:\"RESTRICTED_WORDS\" description:\"words prohibited to use in comments\" env-delim:\",\"`\n \tRestrictedNames  []string      `long:\"restricted-names\" env:\"RESTRICTED_NAMES\" description:\"names prohibited to use by user\" env-delim:\",\"`\n \tEnableEmoji      bool          `long:\"emoji\" env:\"EMOJI\" description:\"enable emoji\"`\n-\tSimpleView       bool          `long:\"simpler-view\" env:\"SIMPLE_VIEW\" description:\"minimal comment editor mode\"`\n+\tSimpleView       bool          `long:\"simple-view\" env:\"SIMPLE_VIEW\" description:\"minimal comment editor mode\"`\n \tProxyCORS        bool          `long:\"proxy-cors\" env:\"PROXY_CORS\" description:\"disable internal CORS and delegate it to proxy\"`\n \tAllowedHosts     []string      `long:\"allowed-hosts\" env:\"ALLOWED_HOSTS\" description:\"limit hosts/sources allowed to embed comments\"`\n \tSubscribersOnly  bool          `long:\"subscribers-only\" env:\"SUBSCRIBERS_ONLY\" description:\"enable commenting only for Patreon subscribers\"`\n@@ -155,7 +155,7 @@ type ImageGroup struct {\n \t} `group:\"fs\" namespace:\"fs\" env-namespace:\"FS\"`\n \tBolt struct {\n \t\tFile string `long:\"file\" env:\"FILE\" default:\"./var/pictures.db\" description:\"images bolt file location\"`\n-\t} `group:\"bolt\" namespace:\"bolt\" env-namespace:\"bolt\"`\n+\t} `group:\"bolt\" namespace:\"bolt\" env-namespace:\"BOLT\"`\n \tMaxSize      int      `long:\"max-size\" env:\"MAX_SIZE\" default:\"5000000\" description:\"max size of image file\"`\n \tResizeWidth  int      `long:\"resize-width\" env:\"RESIZE_WIDTH\" default:\"2400\" description:\"width of a resized image\"`\n \tResizeHeight int      `long:\"resize-height\" env:\"RESIZE_HEIGHT\" default:\"900\" description:\"height of a resized image\"`\n@@ -170,7 +170,7 @@ type AvatarGroup struct {\n \t} `group:\"fs\" namespace:\"fs\" env-namespace:\"FS\"`\n \tBolt struct {\n \t\tFile string `long:\"file\" env:\"FILE\" default:\"./var/avatars.db\" description:\"avatars bolt file location\"`\n-\t} `group:\"bolt\" namespace:\"bolt\" env-namespace:\"bolt\"`\n+\t} `group:\"bolt\" namespace:\"bolt\" env-namespace:\"BOLT\"`\n \tURI    string `long:\"uri\" env:\"URI\" default:\"./var/avatars\" description:\"avatars store URI\"`\n \tRszLmt int    `long:\"rsz-lmt\" env:\"RESIZE\" default:\"0\" description:\"max image size for resizing avatars on save\"`\n }\n@@ -237,7 +237,7 @@ type NotifyGroup struct {\n \tWebhook struct {\n \t\tURL      string        `long:\"url\" env:\"URL\" description:\"webhook URL for admin notifications\"`\n \t\tTemplate string        `long:\"template\" env:\"TEMPLATE\" description:\"webhook authentication template\" default:\"{\\\"text\\\": \\\"{{.Text}}\\\"}\"`\n-\t\tHeaders  []string      `long:\"headers\" description:\"webhook authentication headers in format --notify.webhook.headers=Header1:Value1,Value2,...\"` // env NOTIFY_WEBHOOK_HEADERS split in code bellow to allow , inside \"\"\n+\t\tHeaders  []string      `long:\"headers\" description:\"webhook authentication headers in format --notify.webhook.headers=Header1:Value1,Value2,... [$NOTIFY_WEBHOOK_HEADERS]\"` // env NOTIFY_WEBHOOK_HEADERS split in code bellow to allow , inside \"\"\n \t\tTimeout  time.Duration `long:\"timeout\" env:\"TIMEOUT\" description:\"webhook timeout\" default:\"5s\"`\n \t} `group:\"webhook\" namespace:\"webhook\" env-namespace:\"WEBHOOK\"`\n }"
+    },
+    {
+      "sha": "c9bf6f5c759b8bf9f3236b1e0b5f22563cdecb89",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 4,
+      "changes": 21,
+      "blob_url": "https://github.com/umputun/remark42/blob/adb77d9a11019dcc0ae919907d4120f44a5c243d/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/adb77d9a11019dcc0ae919907d4120f44a5c243d/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md?ref=adb77d9a11019dcc0ae919907d4120f44a5c243d",
+      "patch": "@@ -40,6 +40,15 @@ services:\n | store.type                     | STORE_TYPE                     | `bolt`                   | type of storage, `bolt` or `rpc`                          |\n | store.bolt.path                | STORE_BOLT_PATH                | `./var`                  | parent directory for the bolt files                       |\n | store.bolt.timeout             | STORE_BOLT_TIMEOUT             | `30s`                    | boltdb access timeout                                     |\n+| store.rpc.api                  | STORE_RPC_API                  |                          | rpc extension api url                                     |\n+| store.rpc.timeout              | STORE_RPC_TIMEOUT              |                          | http timeout (default: 5s)                                |\n+| store.rpc.auth_user            | STORE_RPC_AUTH_USER            |                          | basic auth user name                                      |\n+| store.rpc.auth_passwd          | STORE_RPC_AUTH_PASSWD          |                          | basic auth user password                                  |\n+| admin.type                     | ADMIN_TYPE                     | `shared`                 | type of admin store, `shared` or `rpc`                    |\n+| admin.rpc.api                  | ADMIN_RPC_API                  |                          | rpc extension api url                                     |\n+| admin.rpc.timeout              | ADMIN_RPC_TIMEOUT              |                          | http timeout (default: 5s)                                |\n+| admin.rpc.auth_user            | ADMIN_RPC_AUTH_USER            |                          | basic auth user name                                      |\n+| admin.rpc.auth_passwd          | ADMIN_RPC_AUTH_PASSWD          |                          | basic auth user password                                  |\n | admin.shared.id                | ADMIN_SHARED_ID                |                          | admin IDs (list of user IDs), _multi_                     |\n | admin.shared.email             | ADMIN_SHARED_EMAIL             | `admin@${REMARK_URL}`    | admin emails, _multi_                                     |\n | backup                         | BACKUP_PATH                    | `./var/backup`           | backups location                                          |\n@@ -53,13 +62,17 @@ services:\n | avatar.fs.path                 | AVATAR_FS_PATH                 | `./var/avatars`          | avatars location for `fs` store                           |\n | avatar.bolt.file               | AVATAR_BOLT_FILE               | `./var/avatars.db`       | avatars `bolt` file location                              |\n | avatar.uri                     | AVATAR_URI                     | `./var/avatars`          | avatars store URI                                         |\n-| avatar.rsz-lmt                 | AVATAR_RSZ_LMT                 | `0` (disabled)           | max image size for resizing avatars on save               |\n+| avatar.rsz-lmt                 | AVATAR_RESIZE                  | `0` (disabled)           | max image size for resizing avatars on save               |\n | image.type                     | IMAGE_TYPE                     | `fs`                     | type of image storage, `fs`, `bolt`                       |\n-| image.max-size                 | IMAGE_MAX_SIZE                 | `5000000`                | max size of image file                                    |\n | image.fs.path                  | IMAGE_FS_PATH                  | `./var/pictures`         | permanent location of images                              |\n | image.fs.staging               | IMAGE_FS_STAGING               | `./var/pictures.staging` | staging location of images                                |\n | image.fs.partitions            | IMAGE_FS_PARTITIONS            | `100`                    | number of image partitions                                |\n | image.bolt.file                | IMAGE_BOLT_FILE                | `/var/pictures.db`       | images bolt file location                                 |\n+| image.rpc.api                  | IMAGE_RPC_API                  |                          | rpc extension api url                                     |\n+| image.rpc.timeout              | IMAGE_RPC_TIMEOUT              |                          | http timeout (default: 5s)                                |\n+| image.rpc.auth_user            | IMAGE_RPC_AUTH_USER            |                          | basic auth user name                                      |\n+| image.rpc.auth_passwd          | IMAGE_RPC_AUTH_PASSWD          |                          | basic auth user password                                  |\n+| image.max-size                 | IMAGE_MAX_SIZE                 | `5000000`                | max size of image file                                    |\n | image.resize-width             | IMAGE_RESIZE_WIDTH             | `2400`                   | width of a resized image                                  |\n | image.resize-height            | IMAGE_RESIZE_HEIGHT            | `900`                    | height of a resized image                                 |\n | auth.ttl.jwt                   | AUTH_TTL_JWT                   | `5m`                     | JWT TTL                                                   |\n@@ -97,7 +110,7 @@ services:\n | notify.webhook.template        | NOTIFY_WEBHOOK_TEMPLATE        | `{\"text\": \"{{.Text}}\"}`  | Webhook payload template                                  |\n | notify.webhook.headers         | NOTIFY_WEBHOOK_HEADERS         |                          | HTTP header in format Header1:Value1,Header2:Value2,...   |\n | notify.webhook.timeout         | NOTIFY_WEBHOOK_TIMEOUT         | `5s`                     | Webhook connection timeout                                |\n-| notify.email.fromAddress       | NOTIFY_EMAIL_FROM              |                          | from email address                                        |\n+| notify.email.from_address      | NOTIFY_EMAIL_FROM              |                          | from email address                                        |\n | notify.email.verification_subj | NOTIFY_EMAIL_VERIFICATION_SUBJ | `Email verification`     | verification message subject                              |\n | telegram.token                 | TELEGRAM_TOKEN                 |                          | Telegram token (used for auth and Telegram notifications) |\n | telegram.timeout               | TELEGRAM_TIMEOUT               | `5s`                     | Telegram connection timeout                               |\n@@ -106,7 +119,7 @@ services:\n | smtp.username                  | SMTP_USERNAME                  |                          | SMTP user name                                            |\n | smtp.password                  | SMTP_PASSWORD                  |                          | SMTP password                                             |\n | smtp.tls                       | SMTP_TLS                       | `false`                  | enable TLS for SMTP                                       |\n-| smtp.starttls                  | SMTP_STARTTLS                  | `false`                  | enable StartTLS for SMTP                                                                           |\n+| smtp.starttls                  | SMTP_STARTTLS                  | `false`                  | enable StartTLS for SMTP                                  |\n | smtp.timeout                   | SMTP_TIMEOUT                   | `10s`                    | SMTP TCP connection timeout                               |\n | ssl.type                       | SSL_TYPE                       | none                     | `none`-HTTP, `static`-HTTPS, `auto`-HTTPS + le            |\n | ssl.port                       | SSL_PORT                       | `8443`                   | port for HTTPS server                                     |"
+    }
+  ]
+}
