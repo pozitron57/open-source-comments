@@ -1,0 +1,98 @@
+{
+  "sha": "9049d7a6166af04da3903fa1f63f9398bde8f298",
+  "node_id": "C_kwDOBtgov9oAKDkwNDlkN2E2MTY2YWYwNGRhMzkwM2ZhMWY2M2Y5Mzk4YmRlOGYyOTg",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-05-15T20:54:35Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-05-15T20:56:53Z"
+    },
+    "message": "add missing RPC type of image storage to the documentation",
+    "tree": {
+      "sha": "e479e0a13549cb7397dcbec09750884d2c2674db",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/e479e0a13549cb7397dcbec09750884d2c2674db"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/9049d7a6166af04da3903fa1f63f9398bde8f298",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/9049d7a6166af04da3903fa1f63f9398bde8f298",
+  "html_url": "https://github.com/umputun/remark42/commit/9049d7a6166af04da3903fa1f63f9398bde8f298",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/9049d7a6166af04da3903fa1f63f9398bde8f298/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "adb77d9a11019dcc0ae919907d4120f44a5c243d",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/adb77d9a11019dcc0ae919907d4120f44a5c243d",
+      "html_url": "https://github.com/umputun/remark42/commit/adb77d9a11019dcc0ae919907d4120f44a5c243d"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "6a6a34aeefb1e83b810aaf123ad50336a67623dc",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/9049d7a6166af04da3903fa1f63f9398bde8f298/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/9049d7a6166af04da3903fa1f63f9398bde8f298/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md?ref=9049d7a6166af04da3903fa1f63f9398bde8f298",
+      "patch": "@@ -63,7 +63,7 @@ services:\n | avatar.bolt.file               | AVATAR_BOLT_FILE               | `./var/avatars.db`       | avatars `bolt` file location                              |\n | avatar.uri                     | AVATAR_URI                     | `./var/avatars`          | avatars store URI                                         |\n | avatar.rsz-lmt                 | AVATAR_RESIZE                  | `0` (disabled)           | max image size for resizing avatars on save               |\n-| image.type                     | IMAGE_TYPE                     | `fs`                     | type of image storage, `fs`, `bolt`                       |\n+| image.type                     | IMAGE_TYPE                     | `fs`                     | type of image storage, `fs`, `bolt` or `rpc`              |\n | image.fs.path                  | IMAGE_FS_PATH                  | `./var/pictures`         | permanent location of images                              |\n | image.fs.staging               | IMAGE_FS_STAGING               | `./var/pictures.staging` | staging location of images                                |\n | image.fs.partitions            | IMAGE_FS_PARTITIONS            | `100`                    | number of image partitions                                |"
+    }
+  ]
+}
