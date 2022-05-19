@@ -1,0 +1,98 @@
+{
+  "sha": "54ded9e38dea68706b153f596d799271989e157c",
+  "node_id": "C_kwDOAF-mA9oAKDU0ZGVkOWUzOGRlYTY4NzA2YjE1M2Y1OTZkNzk5MjcxOTg5ZTE1N2M",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-17T23:16:20Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-17T23:16:20Z"
+    },
+    "message": ".gitignore: Ignore comments.db",
+    "tree": {
+      "sha": "98da9fa65fc4a020cc67101b7ec78966f4f54f29",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/98da9fa65fc4a020cc67101b7ec78966f4f54f29"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/54ded9e38dea68706b153f596d799271989e157c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/54ded9e38dea68706b153f596d799271989e157c",
+  "html_url": "https://github.com/posativ/isso/commit/54ded9e38dea68706b153f596d799271989e157c",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/54ded9e38dea68706b153f596d799271989e157c/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "93a96687041993ccdbe03de82928dd1b578d002e",
+      "url": "https://api.github.com/repos/posativ/isso/commits/93a96687041993ccdbe03de82928dd1b578d002e",
+      "html_url": "https://github.com/posativ/isso/commit/93a96687041993ccdbe03de82928dd1b578d002e"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 4,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c4d79f8efcfad014c450fc834ae7423fa425fe2e",
+      "filename": ".gitignore",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/54ded9e38dea68706b153f596d799271989e157c/.gitignore",
+      "raw_url": "https://github.com/posativ/isso/raw/54ded9e38dea68706b153f596d799271989e157c/.gitignore",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.gitignore?ref=54ded9e38dea68706b153f596d799271989e157c",
+      "patch": "@@ -16,8 +16,12 @@\n # apiDoc generated output\n apidoc/_output/\n \n+# Javascript ecosystem\n node_modules/\n \n+# Database\n+comments.db\n+\n # github/gitignore\n # Byte-compiled / optimized / DLL files\n __pycache__/"
+    }
+  ]
+}
