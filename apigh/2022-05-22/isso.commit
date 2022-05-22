@@ -1,0 +1,98 @@
+{
+  "sha": "e5db515ce4d1ed92c64e658f65c212827341bf09",
+  "node_id": "C_kwDOAF-mA9oAKGU1ZGI1MTVjZTRkMWVkOTJjNjRlNjU4ZjY1YzIxMjgyNzM0MWJmMDk",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-20T22:52:33Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-20T22:52:33Z"
+    },
+    "message": ".github: Fix docker-compose workflow paths",
+    "tree": {
+      "sha": "73439709ff44768e42464452709c8802c771a605",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/73439709ff44768e42464452709c8802c771a605"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/e5db515ce4d1ed92c64e658f65c212827341bf09",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/e5db515ce4d1ed92c64e658f65c212827341bf09",
+  "html_url": "https://github.com/posativ/isso/commit/e5db515ce4d1ed92c64e658f65c212827341bf09",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/e5db515ce4d1ed92c64e658f65c212827341bf09/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1015aaa073607b4210a8ad8b35ebd83806578dfd",
+      "url": "https://api.github.com/repos/posativ/isso/commits/1015aaa073607b4210a8ad8b35ebd83806578dfd",
+      "html_url": "https://github.com/posativ/isso/commit/1015aaa073607b4210a8ad8b35ebd83806578dfd"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 5,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "69d0be3cccf1b2ba433cb3fad3c80b9274ace71f",
+      "filename": ".github/workflows/docker-compose.yml",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 9,
+      "blob_url": "https://github.com/posativ/isso/blob/e5db515ce4d1ed92c64e658f65c212827341bf09/.github%2Fworkflows%2Fdocker-compose.yml",
+      "raw_url": "https://github.com/posativ/isso/raw/e5db515ce4d1ed92c64e658f65c212827341bf09/.github%2Fworkflows%2Fdocker-compose.yml",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.github%2Fworkflows%2Fdocker-compose.yml?ref=e5db515ce4d1ed92c64e658f65c212827341bf09",
+      "patch": "@@ -1,11 +1,12 @@\n-name: E2e tests with docker\n+name: E2E tests with docker\n \n on:\n   push:\n     paths:\n-      - \"./**\"\n-      - \"!docs/**\"\n-      - \"!.github/**\"\n+      - \"isso/**\"\n+      - \"package.json\"\n+      - \"docker/**\"\n+      - \"Dockerfile\"\n       - \".github/workflows/docker-compose.yml\"\n \n jobs:"
+    }
+  ]
+}
