@@ -1,0 +1,362 @@
+{
+  "sha": "3b5f44da46b61606e2ab219cd086ae393563a827",
+  "node_id": "C_kwDOBtgov9oAKDNiNWY0NGRhNDZiNjE2MDZlMmFiMjE5Y2QwODZhZTM5MzU2M2E4Mjc",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-05-20T20:29:16Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-05-20T21:00:30Z"
+    },
+    "message": "bump go modules, fix StartTLS email notifications\n\nIn #1359, we discovered that StartTLS was not working\\\ndue to the wrong host passed. This bumps the library for the fix.\n\nAlso, after a switch to go-pkgz/notify MailGun email sending\nbroke due to the difference in the destination email parsing,\nthe fix is also applied after this commit.",
+    "tree": {
+      "sha": "cba030ade11cb0ae98107a8c8b15679e6828d35b",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/cba030ade11cb0ae98107a8c8b15679e6828d35b"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/3b5f44da46b61606e2ab219cd086ae393563a827",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/3b5f44da46b61606e2ab219cd086ae393563a827",
+  "html_url": "https://github.com/umputun/remark42/commit/3b5f44da46b61606e2ab219cd086ae393563a827",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/3b5f44da46b61606e2ab219cd086ae393563a827/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9049d7a6166af04da3903fa1f63f9398bde8f298",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/9049d7a6166af04da3903fa1f63f9398bde8f298",
+      "html_url": "https://github.com/umputun/remark42/commit/9049d7a6166af04da3903fa1f63f9398bde8f298"
+    }
+  ],
+  "stats": {
+    "total": 495,
+    "additions": 348,
+    "deletions": 147
+  },
+  "files": [
+    {
+      "sha": "a3c14e73fe6c959c16a30f09cdbba3765a2917e1",
+      "filename": "backend/_example/memory_store/go.mod",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.mod?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -18,12 +18,12 @@ require (\n \tgithub.com/aymerick/douceur v0.2.0 // indirect\n \tgithub.com/davecgh/go-spew v1.1.1 // indirect\n \tgithub.com/didip/tollbooth/v6 v6.1.2 // indirect\n-\tgithub.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21 // indirect\n+\tgithub.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b // indirect\n \tgithub.com/dlclark/regexp2 v1.4.0 // indirect\n \tgithub.com/go-chi/chi v4.1.1+incompatible // indirect\n \tgithub.com/go-chi/render v1.0.1 // indirect\n \tgithub.com/go-pkgz/expirable-cache v0.0.3 // indirect\n-\tgithub.com/go-pkgz/rest v1.14.0 // indirect\n+\tgithub.com/go-pkgz/rest v1.15.0 // indirect\n \tgithub.com/gorilla/css v1.0.0 // indirect\n \tgithub.com/hashicorp/errwrap v1.1.0 // indirect\n \tgithub.com/hashicorp/go-multierror v1.1.1 // indirect\n@@ -35,7 +35,7 @@ require (\n \tgithub.com/stretchr/objx v0.3.0 // indirect\n \tgo.etcd.io/bbolt v1.3.6 // indirect\n \tgolang.org/x/image v0.0.0-20220413100746-70e8d0d3baa9 // indirect\n-\tgolang.org/x/net v0.0.0-20220425223048-2871e0cb64e4 // indirect\n+\tgolang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2 // indirect\n \tgolang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect\n \tgolang.org/x/time v0.0.0-20220411224347-583f2d630306 // indirect\n \tgopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect"
+    },
+    {
+      "sha": "a2a6b2acc80f4d5e21fc73fa30e853404c79c8b0",
+      "filename": "backend/_example/memory_store/go.sum",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2F_example%2Fmemory_store%2Fgo.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2F_example%2Fmemory_store%2Fgo.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.sum?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -22,8 +22,8 @@ github.com/didip/tollbooth/v6 v6.0.1/go.mod h1:j2pKs+JQ5PvU/K4jFnrnwntrmfUbYLJE5\n github.com/didip/tollbooth/v6 v6.1.2 h1:Kdqxmqw9YTv0uKajBUiWQg+GURL/k4vy9gmLCL01PjQ=\n github.com/didip/tollbooth/v6 v6.1.2/go.mod h1:xjcse6CTHCLuOkzsWrEgdy9WPJFv+p/x6v+MyfP+O9s=\n github.com/didip/tollbooth_chi v0.0.0-20200524181329-8b84cd7183d9/go.mod h1:YWyIfq3y4ArRfWZ9XksmuusP+7Mad+T0iFZ0kv0XG/M=\n-github.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21 h1:x7YpwKSBIBcKe9I3aTNOqgSyJ6QKDdtOxnEkxBTsi9w=\n-github.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21/go.mod h1:0ZVa6kSzS011nfTC1rELyxK4tjVf6vqBnOv7oY2KlsA=\n+github.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b h1:elkngQhLBcyDIXwL9Z7AfXXbBszUEsLxqNw6WPF8Mtc=\n+github.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b/go.mod h1:0ZVa6kSzS011nfTC1rELyxK4tjVf6vqBnOv7oY2KlsA=\n github.com/dlclark/regexp2 v1.2.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=\n github.com/dlclark/regexp2 v1.4.0 h1:F1rxgk7p4uKjwIQxBs9oAXe5CqrXlCduYEJvrF4u93E=\n github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=\n@@ -38,8 +38,8 @@ github.com/go-pkgz/jrpc v0.2.0/go.mod h1:wd8vtQ4CgtCnuqua6x2b1SKIgv0VSOh5Dn0uUIT\n github.com/go-pkgz/lgr v0.10.4 h1:l7qyFjqEZgwRgaQQSEp6tve4A3OU80VrfzpvtEX8ngw=\n github.com/go-pkgz/lgr v0.10.4/go.mod h1:CD0s1z6EFpIUplV067gitF77tn25JItzwHNKAPqeCF0=\n github.com/go-pkgz/rest v1.5.0/go.mod h1:nQaM3RhSTUAmbBZWY4hfe4buyeC9VckvhoCktiQXJxI=\n-github.com/go-pkgz/rest v1.14.0 h1:brDLCzIGoe0IiUZqRFpsiCVM9m3L88A7z62qS0V9Yfk=\n-github.com/go-pkgz/rest v1.14.0/go.mod h1:KUWAqbDteYGS/CiXftomQsKjtEOifXsJ36Ka0skYbmk=\n+github.com/go-pkgz/rest v1.15.0 h1:v/BDqJF9robo85GME85GWJ7O/NjtAO0x7LvO4EqWNRE=\n+github.com/go-pkgz/rest v1.15.0/go.mod h1:KUWAqbDteYGS/CiXftomQsKjtEOifXsJ36Ka0skYbmk=\n github.com/gorilla/css v1.0.0 h1:BQqNyPTi50JCFMTw/b67hByjMVXZRwGha6wxVGkeihY=\n github.com/gorilla/css v1.0.0/go.mod h1:Dn721qIggHpt4+EFCcTLTU/vk5ySda2ReITrtgBl60c=\n github.com/hashicorp/errwrap v1.0.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=\n@@ -88,8 +88,8 @@ golang.org/x/image v0.0.0-20220413100746-70e8d0d3baa9/go.mod h1:023OzeP/+EPmXeap\n golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2/go.mod h1:qpuaurCH72eLCgpAm/N6yyVIVM9cpaDIP3A8BGJEC5A=\n golang.org/x/net v0.0.0-20210614182718-04defd469f4e/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=\n golang.org/x/net v0.0.0-20210916014120-12bc252f5db8/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=\n-golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4 h1:HVyaeDAYux4pnY+D/SiwmLOR36ewZ4iGQIIrtnuCjFA=\n-golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n+golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2 h1:NWy5+hlRbC7HK+PmcXVUmW1IMyFce7to56IUvhUFm7Y=\n+golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=\n golang.org/x/sys v0.0.0-20200116001909-b77594299b42/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=\n golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs="
+    },
+    {
+      "sha": "659a529fcaa4d58a151d4ecc1904f81e939289ca",
+      "filename": "backend/app/notify/email_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fapp%2Fnotify%2Femail_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fapp%2Fnotify%2Femail_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fnotify%2Femail_test.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -46,7 +46,7 @@ func TestEmailNew(t *testing.T) {\n \tassert.Equal(t, smtpParams.Port, email.Port, \"emailParams.Port unchanged after creation\")\n \tassert.Equal(t, smtpParams.TLS, email.TLS, \"emailParams.TLS unchanged after creation\")\n \tassert.Equal(t, smtpParams.StartTLS, email.StartTLS, \"emailParams.TLS unchanged after creation\")\n-\tassert.Equal(t, \"email: with username 'test@username' at server test@host:1000 with TLS\", email.String())\n+\tassert.Equal(t, \"email: with username 'test@username' at server test@host:1000 with TLS with StartTLS\", email.String())\n }\n \n func Test_initTemplatesErr(t *testing.T) {"
+    },
+    {
+      "sha": "a3340d28f76d3451f072fc4e55044853c5e010c6",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 9,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.mod?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -7,17 +7,17 @@ require (\n \tgithub.com/PuerkitoBio/goquery v1.8.0\n \tgithub.com/alecthomas/chroma v0.10.0\n \tgithub.com/didip/tollbooth/v6 v6.1.2\n-\tgithub.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21\n+\tgithub.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b\n \tgithub.com/go-chi/chi/v5 v5.0.7\n-\tgithub.com/go-chi/cors v1.2.0\n+\tgithub.com/go-chi/cors v1.2.1\n \tgithub.com/go-chi/render v1.0.1\n \tgithub.com/go-pkgz/auth v1.19.0\n \tgithub.com/go-pkgz/jrpc v0.2.0\n \tgithub.com/go-pkgz/lcw v0.8.1\n \tgithub.com/go-pkgz/lgr v0.10.4\n-\tgithub.com/go-pkgz/notify v0.0.0-20220429105545-bc5c80a54199\n+\tgithub.com/go-pkgz/notify v0.1.1\n \tgithub.com/go-pkgz/repeater v1.1.3\n-\tgithub.com/go-pkgz/rest v1.14.0\n+\tgithub.com/go-pkgz/rest v1.15.0\n \tgithub.com/go-pkgz/syncs v1.2.0\n \tgithub.com/golang-jwt/jwt v3.2.2+incompatible\n \tgithub.com/google/uuid v1.3.0\n@@ -33,9 +33,9 @@ require (\n \tgithub.com/stretchr/testify v1.7.1\n \tgo.etcd.io/bbolt v1.3.6\n \tgo.uber.org/goleak v1.1.12\n-\tgolang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4\n+\tgolang.org/x/crypto v0.0.0-20220518034528-6f7dac969898\n \tgolang.org/x/image v0.0.0-20220413100746-70e8d0d3baa9\n-\tgolang.org/x/net v0.0.0-20220425223048-2871e0cb64e4\n+\tgolang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2\n )\n \n require (\n@@ -47,7 +47,7 @@ require (\n \tgithub.com/dlclark/regexp2 v1.4.0 // indirect\n \tgithub.com/go-chi/chi v4.1.1+incompatible // indirect\n \tgithub.com/go-oauth2/oauth2/v4 v4.4.3 // indirect\n-\tgithub.com/go-pkgz/email v0.2.1-0.20220428155644-a7e5d837d02f // indirect\n+\tgithub.com/go-pkgz/email v0.3.0 // indirect\n \tgithub.com/go-pkgz/expirable-cache v0.0.3 // indirect\n \tgithub.com/go-redis/redis/v7 v7.4.1 // indirect\n \tgithub.com/go-stack/stack v1.8.1 // indirect\n@@ -63,12 +63,11 @@ require (\n \tgithub.com/pmezard/go-difflib v1.0.0 // indirect\n \tgithub.com/slack-go/slack v0.10.3 // indirect\n \tgithub.com/stretchr/objx v0.3.0 // indirect\n-\tgithub.com/valyala/fasthttp v1.35.0 // indirect\n \tgithub.com/xdg-go/pbkdf2 v1.0.0 // indirect\n \tgithub.com/xdg-go/scram v1.1.1 // indirect\n \tgithub.com/xdg-go/stringprep v1.0.3 // indirect\n \tgithub.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a // indirect\n-\tgo.mongodb.org/mongo-driver v1.9.0 // indirect\n+\tgo.mongodb.org/mongo-driver v1.9.1 // indirect\n \tgolang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5 // indirect\n \tgolang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect\n \tgolang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect"
+    },
+    {
+      "sha": "94cfb308c04d1cbbf72729954fe6dc2adbe30f7a",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 23,
+      "changes": 41,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fgo.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fgo.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.sum?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -73,9 +73,8 @@ github.com/alicebob/gopher-json v0.0.0-20180125190556-5a6b3ba71ee6 h1:45bxf7AZMw\n github.com/alicebob/gopher-json v0.0.0-20180125190556-5a6b3ba71ee6/go.mod h1:SGnFV6hVsYE877CKEZ6tDNTjaSXYUk6QqoIK6PrAtcc=\n github.com/alicebob/miniredis/v2 v2.11.4 h1:GsuyeunTx7EllZBU3/6Ji3dhMQZDpC9rLf1luJ+6M5M=\n github.com/alicebob/miniredis/v2 v2.11.4/go.mod h1:VL3UDEfAH59bSa7MuHMuFToxkqyHh69s/WUbYlOAuyg=\n+github.com/andybalholm/brotli v1.0.0 h1:7UCwP93aiSfvWpapti8g88vVVGp2qqtGyePsSuDafo4=\n github.com/andybalholm/brotli v1.0.0/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu3qAvBg8x/Y=\n-github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY3JY=\n-github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=\n github.com/andybalholm/cascadia v1.3.1 h1:nhxRkql1kdYCc8Snf7D5/D3spOX+dBgjA6u8x004T2c=\n github.com/andybalholm/cascadia v1.3.1/go.mod h1:R4bJ1UQfqADjvDa4P6HZHLh/3OxWWEqc0Sk8XGwHqvA=\n github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=\n@@ -106,8 +105,8 @@ github.com/didip/tollbooth/v6 v6.0.1/go.mod h1:j2pKs+JQ5PvU/K4jFnrnwntrmfUbYLJE5\n github.com/didip/tollbooth/v6 v6.1.2 h1:Kdqxmqw9YTv0uKajBUiWQg+GURL/k4vy9gmLCL01PjQ=\n github.com/didip/tollbooth/v6 v6.1.2/go.mod h1:xjcse6CTHCLuOkzsWrEgdy9WPJFv+p/x6v+MyfP+O9s=\n github.com/didip/tollbooth_chi v0.0.0-20200524181329-8b84cd7183d9/go.mod h1:YWyIfq3y4ArRfWZ9XksmuusP+7Mad+T0iFZ0kv0XG/M=\n-github.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21 h1:x7YpwKSBIBcKe9I3aTNOqgSyJ6QKDdtOxnEkxBTsi9w=\n-github.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21/go.mod h1:0ZVa6kSzS011nfTC1rELyxK4tjVf6vqBnOv7oY2KlsA=\n+github.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b h1:elkngQhLBcyDIXwL9Z7AfXXbBszUEsLxqNw6WPF8Mtc=\n+github.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b/go.mod h1:0ZVa6kSzS011nfTC1rELyxK4tjVf6vqBnOv7oY2KlsA=\n github.com/dlclark/regexp2 v1.2.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=\n github.com/dlclark/regexp2 v1.4.0 h1:F1rxgk7p4uKjwIQxBs9oAXe5CqrXlCduYEJvrF4u93E=\n github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=\n@@ -133,8 +132,8 @@ github.com/go-chi/chi v4.1.1+incompatible h1:MmTgB0R8Bt/jccxp+t6S/1VGIKdJw5J74CK\n github.com/go-chi/chi v4.1.1+incompatible/go.mod h1:eB3wogJHnLi3x/kFX2A+IbTBlXxmMeXJVKy9tTv1XzQ=\n github.com/go-chi/chi/v5 v5.0.7 h1:rDTPXLDHGATaeHvVlLcR4Qe0zftYethFucbjVQ1PxU8=\n github.com/go-chi/chi/v5 v5.0.7/go.mod h1:DslCQbL2OYiznFReuXYUmQ2hGd1aDpCnlMNITLSKoi8=\n-github.com/go-chi/cors v1.2.0 h1:tV1g1XENQ8ku4Bq3K9ub2AtgG+p16SmzeMSGTwrOKdE=\n-github.com/go-chi/cors v1.2.0/go.mod h1:sSbTewc+6wYHBBCW7ytsFSn836hqM7JxpglAy2Vzc58=\n+github.com/go-chi/cors v1.2.1 h1:xEC8UT3Rlp2QuWNEr4Fs/c2EAGVKBwy/1vHx3bppil4=\n+github.com/go-chi/cors v1.2.1/go.mod h1:sSbTewc+6wYHBBCW7ytsFSn836hqM7JxpglAy2Vzc58=\n github.com/go-chi/render v1.0.1 h1:4/5tis2cKaNdnv9zFLfXzcquC9HbeZgCnxGnKrltBS8=\n github.com/go-chi/render v1.0.1/go.mod h1:pq4Rr7HbnsdaeHagklXub+p6Wd16Af5l9koip1OvJns=\n github.com/go-gl/glfw v0.0.0-20190409004039-e6da0acd62b1/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=\n@@ -144,8 +143,8 @@ github.com/go-oauth2/oauth2/v4 v4.4.3 h1:IiU3iAK5NEeZ4mUf5HV9tN7iNlx4AGUkIJ5M1C4\n github.com/go-oauth2/oauth2/v4 v4.4.3/go.mod h1:NR9Hugz5/Qe2OGxoPBhsTRNjnm/amC+z9+XTwt63rhs=\n github.com/go-pkgz/auth v1.19.0 h1:TTfbQvlqsuEhRpYAiY/uF5UGP+HWMc5CN2RAhN06ik0=\n github.com/go-pkgz/auth v1.19.0/go.mod h1:1pu95rx7tFfeIFq0pjQPwCeL6qGYH4+UxHJudhK0T7M=\n-github.com/go-pkgz/email v0.2.1-0.20220428155644-a7e5d837d02f h1:beMw0mHR3m7yh0tl2CwRTAg2Pa9z2LGFzHNDiD93i2Y=\n-github.com/go-pkgz/email v0.2.1-0.20220428155644-a7e5d837d02f/go.mod h1:TpnmSLkQW3FyICit2hn7WIhCUDrhCX6btzz5wS3wHRI=\n+github.com/go-pkgz/email v0.3.0 h1:89FbVF6trHkdn2VVoXlBfZHkdYQ1vLmQ54OhdosaFtc=\n+github.com/go-pkgz/email v0.3.0/go.mod h1:TpnmSLkQW3FyICit2hn7WIhCUDrhCX6btzz5wS3wHRI=\n github.com/go-pkgz/expirable-cache v0.0.3 h1:rTh6qNPp78z0bQE6HDhXBHUwqnV9i09Vm6dksJLXQDc=\n github.com/go-pkgz/expirable-cache v0.0.3/go.mod h1:+IauqN00R2FqNRLCLA+X5YljQJrwB179PfiAoMPlTlQ=\n github.com/go-pkgz/jrpc v0.2.0 h1:CLy/eZyekjraVrxZV18N2R1mYLMJ/nWrgdfyIOGPY/E=\n@@ -154,14 +153,14 @@ github.com/go-pkgz/lcw v0.8.1 h1:Bpt2yYTE1J8hIhz8tjdm1WPOgH13eo5iTNsXyop7cMQ=\n github.com/go-pkgz/lcw v0.8.1/go.mod h1:Xw0/ZfApATgbjVPYRZO4XHdWyxAjErDWDWJ7TLlw1Vc=\n github.com/go-pkgz/lgr v0.10.4 h1:l7qyFjqEZgwRgaQQSEp6tve4A3OU80VrfzpvtEX8ngw=\n github.com/go-pkgz/lgr v0.10.4/go.mod h1:CD0s1z6EFpIUplV067gitF77tn25JItzwHNKAPqeCF0=\n-github.com/go-pkgz/notify v0.0.0-20220429105545-bc5c80a54199 h1:1PE3B3RboNvAVL3V6b+GXNFHaTiIcTohsqh+HbUkpIg=\n-github.com/go-pkgz/notify v0.0.0-20220429105545-bc5c80a54199/go.mod h1:mSHXWImQev182O0gte/r6pT7NEzlTZozcOhOykjnVqk=\n+github.com/go-pkgz/notify v0.1.1 h1:0EaPnBD/IX8EBVAmKnEHNesyH3rD1v6w0MBLRCwrTUI=\n+github.com/go-pkgz/notify v0.1.1/go.mod h1:XTzsXgwXXsXbl8iz6qTsCq6gLkaOkimL8mJfLrk3bCk=\n github.com/go-pkgz/repeater v1.1.3 h1:q6+JQF14ESSy28Dd7F+wRelY4F+41HJ0LEy/szNnMiE=\n github.com/go-pkgz/repeater v1.1.3/go.mod h1:hVTavuO5x3Gxnu8zW7d6sQBfAneKV8X2FjU48kGfpKw=\n github.com/go-pkgz/rest v1.5.0/go.mod h1:nQaM3RhSTUAmbBZWY4hfe4buyeC9VckvhoCktiQXJxI=\n github.com/go-pkgz/rest v1.12.2/go.mod h1:KUWAqbDteYGS/CiXftomQsKjtEOifXsJ36Ka0skYbmk=\n-github.com/go-pkgz/rest v1.14.0 h1:brDLCzIGoe0IiUZqRFpsiCVM9m3L88A7z62qS0V9Yfk=\n-github.com/go-pkgz/rest v1.14.0/go.mod h1:KUWAqbDteYGS/CiXftomQsKjtEOifXsJ36Ka0skYbmk=\n+github.com/go-pkgz/rest v1.15.0 h1:v/BDqJF9robo85GME85GWJ7O/NjtAO0x7LvO4EqWNRE=\n+github.com/go-pkgz/rest v1.15.0/go.mod h1:KUWAqbDteYGS/CiXftomQsKjtEOifXsJ36Ka0skYbmk=\n github.com/go-pkgz/syncs v1.2.0 h1:aiizQFILlMZ4KtRNaYLcDffRbUQZH9fclsgr5KybWyY=\n github.com/go-pkgz/syncs v1.2.0/go.mod h1:fjThZdM2FkC/oSeiqBTOZOtHpbrCh4HuHbipB5qZJJM=\n github.com/go-redis/redis/v7 v7.4.0/go.mod h1:JDNMw23GTyLNC4GZu9njt15ctBQVn7xjRfnwdHj/Dcg=\n@@ -294,7 +293,6 @@ github.com/klauspost/compress v1.10.4/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdYs\n github.com/klauspost/compress v1.10.10/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdYsUV+/s2qKfXs=\n github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=\n github.com/klauspost/compress v1.14.2/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=\n-github.com/klauspost/compress v1.15.0/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=\n github.com/klauspost/compress v1.15.1 h1:y9FcTHGyrebwfP0ZZqFiaxTaiDnUrGkJkI+f583BL1A=\n github.com/klauspost/compress v1.15.1/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=\n github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=\n@@ -384,11 +382,9 @@ github.com/tidwall/tinyqueue v0.0.0-20180302190814-1e39f5511563 h1:Otn9S136ELckZ\n github.com/tidwall/tinyqueue v0.0.0-20180302190814-1e39f5511563/go.mod h1:mLqSmt7Dv/CNneF2wfcChfN1rvapyQr01LGKnKex0DQ=\n github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=\n github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=\n+github.com/valyala/fasthttp v1.14.0 h1:67bfuW9azCMwW/Jlq/C+VeihNpAuJMWkYPBig1gdi3A=\n github.com/valyala/fasthttp v1.14.0/go.mod h1:ol1PCaL0dX20wC0htZ7sYCsvCYmrouYra0zHzaclZhE=\n-github.com/valyala/fasthttp v1.35.0 h1:wwkR8mZn2NbigFsaw2Zj5r+xkmzjbrA/lyTmiSlal/Y=\n-github.com/valyala/fasthttp v1.35.0/go.mod h1:t/G+3rLek+CyY9bnIE+YlMRddxVAAGjhxndDB4i4C0I=\n github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a/go.mod h1:v3UYOV9WzVtRmSR+PDvWpU/qWl4Wa5LApYYX4ZtKbio=\n-github.com/valyala/tcplisten v1.0.0/go.mod h1:T0xQ8SeCZGxckz9qRXTfG43PvQ/mcWh7FwZEA7Ioqkc=\n github.com/xdg-go/pbkdf2 v1.0.0 h1:Su7DPu48wXMwC3bs7MCNG+z4FhcyEuz5dlvchbq0B0c=\n github.com/xdg-go/pbkdf2 v1.0.0/go.mod h1:jrpuAogTd400dnrH08LKmI/xc1MbPOebTwRqcT5RDeI=\n github.com/xdg-go/scram v1.0.2/go.mod h1:1WAq6h33pAW+iRreB34OORO2Nf7qel3VV3fjBj+hCSs=\n@@ -424,8 +420,8 @@ github.com/yuin/gopher-lua v0.0.0-20191220021717-ab39c6098bdb/go.mod h1:gqRgreBU\n go.etcd.io/bbolt v1.3.6 h1:/ecaJf0sk1l4l6V4awd65v2C3ILy7MSj+s/x1ADCIMU=\n go.etcd.io/bbolt v1.3.6/go.mod h1:qXsaaIqmgQH0T+OPdb99Bf+PKfBBQVAdyD6TY9G8XM4=\n go.mongodb.org/mongo-driver v1.8.3/go.mod h1:0sQWfOeY63QTntERDJJ/0SuKK0T1uVSgKCuAROlKEPY=\n-go.mongodb.org/mongo-driver v1.9.0 h1:WISF656tVHlYe/kd+istlX++s+UbjL5X8f8qKCwl/Ms=\n-go.mongodb.org/mongo-driver v1.9.0/go.mod h1:0sQWfOeY63QTntERDJJ/0SuKK0T1uVSgKCuAROlKEPY=\n+go.mongodb.org/mongo-driver v1.9.1 h1:m078y9v7sBItkt1aaoe2YlvWEXcD263e1a4E1fBrJ1c=\n+go.mongodb.org/mongo-driver v1.9.1/go.mod h1:0sQWfOeY63QTntERDJJ/0SuKK0T1uVSgKCuAROlKEPY=\n go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=\n go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=\n go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=\n@@ -444,9 +440,8 @@ golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073/go.mod h1:LzIPMQfyMNhhGPh\n golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=\n golang.org/x/crypto v0.0.0-20201216223049-8b5274cf687f/go.mod h1:jdWPYTVW3xRLrWPugEBEK3UY2ZEsg3UU495nc5E+M+I=\n golang.org/x/crypto v0.0.0-20220208050332-20e1d8d225ab/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=\n-golang.org/x/crypto v0.0.0-20220214200702-86341886e292/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=\n-golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 h1:kUhD7nTDoI3fVd9G4ORWrbV5NY0liEs/Jg2pv5f+bBA=\n-golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=\n+golang.org/x/crypto v0.0.0-20220518034528-6f7dac969898 h1:SLP7Q4Di66FONjDJbCYrCRrh97focO6sLogHO7/g8F0=\n+golang.org/x/crypto v0.0.0-20220518034528-6f7dac969898/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=\n golang.org/x/exp v0.0.0-20190121172915-509febef88a4/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=\n golang.org/x/exp v0.0.0-20190306152737-a1d7652674e8/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=\n golang.org/x/exp v0.0.0-20190510132918-efd6b22b2522/go.mod h1:ZjyILWgesfNpC6sMxTJOJm9Kp84zZh5NQWvqDGG3Qr8=\n@@ -530,8 +525,8 @@ golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2/go.mod h1:9nx3DQGgdP8bBQD5qx\n golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n golang.org/x/net v0.0.0-20220225172249-27dd8689420f/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n golang.org/x/net v0.0.0-20220325170049-de3da57026de/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n-golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4 h1:HVyaeDAYux4pnY+D/SiwmLOR36ewZ4iGQIIrtnuCjFA=\n-golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n+golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2 h1:NWy5+hlRbC7HK+PmcXVUmW1IMyFce7to56IUvhUFm7Y=\n+golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=\n golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be/go.mod h1:N/0e6XlmueqKjAGxoOufVs8QHGRruUQn6yWY3a++T0U=\n golang.org/x/oauth2 v0.0.0-20190226205417-e64efc72b421/go.mod h1:gOpvHmFTYa4IltrdGE7lF6nIHvwfUNPOp7c8zoXwtLw=\n golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45/go.mod h1:gOpvHmFTYa4IltrdGE7lF6nIHvwfUNPOp7c8zoXwtLw="
+    },
+    {
+      "sha": "7d37e7f2e4c1c0a6749b55938b97356c4d6a5a59",
+      "filename": "backend/vendor/github.com/didip/tollbooth_chi/tollbooth_chi.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fdidip%2Ftollbooth_chi%2Ftollbooth_chi.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fdidip%2Ftollbooth_chi%2Ftollbooth_chi.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fdidip%2Ftollbooth_chi%2Ftollbooth_chi.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -32,6 +32,7 @@ func (l *limiterWrapper) ServeHTTP(w http.ResponseWriter, r *http.Request) {\n \tdefault:\n \t\thttpError := tollbooth.LimitByRequest(l.lmt, w, r)\n \t\tif httpError != nil {\n+\t\t\tl.lmt.ExecOnLimitReached(w, r)\n \t\t\tw.Header().Add(\"Content-Type\", l.lmt.GetMessageContentType())\n \t\t\tw.WriteHeader(httpError.StatusCode)\n \t\t\tw.Write([]byte(httpError.Message))"
+    },
+    {
+      "sha": "3fe5a5aeeb625501170f896e7f11d76dbb27d55d",
+      "filename": "backend/vendor/github.com/go-chi/cors/utils.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-chi%2Fcors%2Futils.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-chi%2Fcors%2Futils.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-chi%2Fcors%2Futils.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -51,7 +51,7 @@ func parseHeaderList(headerList string) []string {\n \t\t\t} else {\n \t\t\t\th = append(h, b)\n \t\t\t}\n-\t\t} else if b == '-' || (b >= '0' && b <= '9') {\n+\t\t} else if b == '-' || b == '_' || b == '.' || (b >= '0' && b <= '9') {\n \t\t\th = append(h, b)\n \t\t}\n "
+    },
+    {
+      "sha": "b3393ce326ef2122f6dad968948be2be06e76b80",
+      "filename": "backend/vendor/github.com/go-pkgz/email/email.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Femail%2Femail.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Femail%2Femail.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Femail%2Femail.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -190,7 +190,7 @@ func (em *Sender) client() (c *smtp.Client, err error) {\n \t\treturn nil, fmt.Errorf(\"timeout connecting to %s: %w\", srvAddress, err)\n \t}\n \n-\tc, err = smtp.NewClient(conn, srvAddress)\n+\tc, err = smtp.NewClient(conn, em.host)\n \tif err != nil {\n \t\treturn nil, fmt.Errorf(\"failed to dial: %w\", err)\n \t}"
+    },
+    {
+      "sha": "e648cb7324ef4bc24c0931f3678180e6a29bf247",
+      "filename": "backend/vendor/github.com/go-pkgz/notify/email.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fnotify%2Femail.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fnotify%2Femail.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fnotify%2Femail.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -5,6 +5,7 @@ import (\n \t\"fmt\"\n \t\"net/mail\"\n \t\"net/url\"\n+\t\"strings\"\n \t\"time\"\n \n \t\"github.com/go-pkgz/email\"\n@@ -99,6 +100,9 @@ func (e *Email) String() string {\n \tif e.TLS {\n \t\tstr += \" with TLS\"\n \t}\n+\tif e.StartTLS {\n+\t\tstr += \" with StartTLS\"\n+\t}\n \treturn str\n }\n \n@@ -120,7 +124,12 @@ func (e *Email) parseDestination(destination string) (email.Params, error) {\n \t}\n \tdestinations := []string{}\n \tfor _, addr := range addresses {\n-\t\tdestinations = append(destinations, addr.String())\n+\t\tstringAddr := addr.String()\n+\t\t// in case of mailgun, correct RFC5322 address with <> yield 501 error, so we need to remove brackets\n+\t\tif strings.HasPrefix(stringAddr, \"<\") && strings.HasSuffix(stringAddr, \">\") {\n+\t\t\tstringAddr = stringAddr[1 : len(stringAddr)-1]\n+\t\t}\n+\t\tdestinations = append(destinations, stringAddr)\n \t}\n \n \treturn email.Params{"
+    },
+    {
+      "sha": "40da9fd157084ec3607259687a1e44664fdd1ec3",
+      "filename": "backend/vendor/github.com/go-pkgz/notify/telegram.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fnotify%2Ftelegram.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fnotify%2Ftelegram.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fnotify%2Ftelegram.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -449,6 +449,7 @@ func (t *Telegram) Request(ctx context.Context, method string, b []byte, data in\n \t\t}\n \n \t\tclient := http.Client{Timeout: t.Timeout}\n+\t\tdefer client.CloseIdleConnections()\n \t\tresp, err := client.Do(req)\n \t\tif err != nil {\n \t\t\treturn fmt.Errorf(\"failed to send request: %w\", err)"
+    },
+    {
+      "sha": "391dafc2dc8bc419ad3173a7f72a9199d4103359",
+      "filename": "backend/vendor/github.com/go-pkgz/rest/README.md",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Frest%2FREADME.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Frest%2FREADME.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Frest%2FREADME.md?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -119,6 +119,12 @@ Maybe middleware will allow you to change the flow of the middleware stack execu\n value of maybeFn(request). This is useful for example if you'd like to skip a middleware handler if\n a request does not satisfy the maybeFn logic.\n \n+### Benchmarks middleware\n+\n+Benchmarks middleware allows to measure the time of request handling, number of request per second and report aggregated metrics. This middleware keeps track of the request in the memory and keep up to 900 points (15 minutes, data-point per second).\n+\n+In order to retrieve the data user should call `Stats(d duration)` method. duration is the time window for which the benchmark data should be returned. It can be any duration from 1s to 15m.\n+\n ## Helpers\n \n - `rest.Wrap` - converts a list of middlewares to nested handlers calls (in reverse order)"
+    },
+    {
+      "sha": "acccb208b3a90d8cc398da881d7a497a1f99fba4",
+      "filename": "backend/vendor/github.com/go-pkgz/rest/benchmarks.go",
+      "status": "added",
+      "additions": 146,
+      "deletions": 0,
+      "changes": 146,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Frest%2Fbenchmarks.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Frest%2Fbenchmarks.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Frest%2Fbenchmarks.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -0,0 +1,146 @@\n+package rest\n+\n+import (\n+\t\"container/list\"\n+\t\"net/http\"\n+\t\"sync\"\n+\t\"time\"\n+)\n+\n+var maxTimeRange = time.Duration(15) * time.Minute\n+\n+// Benchmarks is a basic benchmarking middleware collecting and reporting performance metrics\n+// It keeps track of the requests speeds and counts in 1s benchData buckets ,limiting the number of buckets\n+// to maxTimeRange. User can request the benchmark for any time duration. This is intended to be used\n+// for retrieving the benchmark data for the last minute, 5 minutes and up to maxTimeRange.\n+type Benchmarks struct {\n+\tst   time.Time\n+\tdata *list.List\n+\tlock sync.RWMutex\n+\n+\tnowFn func() time.Time // for testing only\n+}\n+\n+type benchData struct {\n+\t// 1s aggregates\n+\trequests    int\n+\trespTime    time.Duration\n+\tminRespTime time.Duration\n+\tmaxRespTime time.Duration\n+\tts          time.Time\n+}\n+\n+// BenchmarkStats holds the stats for a given interval\n+type BenchmarkStats struct {\n+\tRequests        int     `json:\"total_requests\"`\n+\tRequestsSec     float64 `json:\"total_requests_sec\"`\n+\tAverageRespTime float64 `json:\"average_resp_time\"`\n+\tMinRespTime     float64 `json:\"min_resp_time\"`\n+\tMaxRespTime     float64 `json:\"max_resp_time\"`\n+}\n+\n+// NewBenchmarks creates a new benchmark middleware\n+func NewBenchmarks() *Benchmarks {\n+\tres := &Benchmarks{\n+\t\tst:    time.Now(),\n+\t\tdata:  list.New(),\n+\t\tnowFn: time.Now,\n+\t}\n+\treturn res\n+}\n+\n+// Handler calculates 1/5/10m request per second and allows to access those values\n+func (b *Benchmarks) Handler(next http.Handler) http.Handler {\n+\n+\tfn := func(w http.ResponseWriter, r *http.Request) {\n+\t\tst := b.nowFn()\n+\t\tdefer func() {\n+\t\t\tb.update(time.Since(st))\n+\t\t}()\n+\t\tnext.ServeHTTP(w, r)\n+\t}\n+\treturn http.HandlerFunc(fn)\n+}\n+\n+func (b *Benchmarks) update(reqDuration time.Duration) {\n+\tnow := b.nowFn().Truncate(time.Second)\n+\n+\tb.lock.Lock()\n+\tdefer b.lock.Unlock()\n+\n+\t// keep maxTimeRange in the list, drop the rest\n+\tfor e := b.data.Front(); e != nil; e = e.Next() {\n+\t\tif b.data.Front().Value.(benchData).ts.After(b.nowFn().Add(-maxTimeRange)) {\n+\t\t\tbreak\n+\t\t}\n+\t\tb.data.Remove(b.data.Front())\n+\t}\n+\n+\tlast := b.data.Back()\n+\tif last == nil || last.Value.(benchData).ts.Before(now) {\n+\t\tb.data.PushBack(benchData{requests: 1, respTime: reqDuration, ts: now,\n+\t\t\tminRespTime: reqDuration, maxRespTime: reqDuration})\n+\t\treturn\n+\t}\n+\n+\tbd := last.Value.(benchData)\n+\tbd.requests++\n+\tbd.respTime += reqDuration\n+\n+\tif bd.minRespTime == 0 || reqDuration < bd.minRespTime {\n+\t\tbd.minRespTime = reqDuration\n+\t}\n+\tif bd.maxRespTime == 0 || reqDuration > bd.maxRespTime {\n+\t\tbd.maxRespTime = reqDuration\n+\t}\n+\n+\tlast.Value = bd\n+}\n+\n+// Stats returns the current benchmark stats for the given duration\n+func (b *Benchmarks) Stats(interval time.Duration) BenchmarkStats {\n+\tif interval < time.Second { // minimum interval is 1s due to the bucket size\n+\t\treturn BenchmarkStats{}\n+\t}\n+\n+\tb.lock.RLock()\n+\tdefer b.lock.RUnlock()\n+\n+\tvar (\n+\t\trequests int\n+\t\trespTime time.Duration\n+\t)\n+\n+\tstInterval, fnInterval := time.Time{}, time.Time{}\n+\tvar minRespTime, maxRespTime time.Duration\n+\tfor e := b.data.Back(); e != nil; e = e.Prev() { // reverse order\n+\t\tbd := e.Value.(benchData)\n+\t\tif bd.ts.Before(b.nowFn().Add(-interval)) {\n+\t\t\tbreak\n+\t\t}\n+\t\tif minRespTime == 0 || bd.minRespTime < minRespTime {\n+\t\t\tminRespTime = bd.minRespTime\n+\t\t}\n+\t\tif maxRespTime == 0 || bd.maxRespTime > maxRespTime {\n+\t\t\tmaxRespTime = bd.maxRespTime\n+\t\t}\n+\t\trequests += bd.requests\n+\t\trespTime += bd.respTime\n+\t\tif fnInterval.IsZero() {\n+\t\t\tfnInterval = bd.ts.Add(time.Second)\n+\t\t}\n+\t\tstInterval = bd.ts\n+\t}\n+\n+\tif requests == 0 {\n+\t\treturn BenchmarkStats{}\n+\t}\n+\n+\treturn BenchmarkStats{\n+\t\tRequests:        requests,\n+\t\tRequestsSec:     float64(requests) / (fnInterval.Sub(stInterval).Seconds()),\n+\t\tAverageRespTime: respTime.Seconds() / float64(requests),\n+\t\tMinRespTime:     minRespTime.Seconds(),\n+\t\tMaxRespTime:     maxRespTime.Seconds(),\n+\t}\n+}"
+    },
+    {
+      "sha": "e748ced6a5f64af9de140db8b2850cfcdc0942da",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/mongo/bulk_write.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fmongo%2Fbulk_write.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fmongo%2Fbulk_write.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fmongo%2Fbulk_write.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -114,7 +114,7 @@ func (bw *bulkWrite) runBatch(ctx context.Context, batch bulkWriteBatch) (BulkWr\n \t\t\tbatchErr.Labels = writeErr.Labels\n \t\t\tbatchErr.WriteConcernError = convertDriverWriteConcernError(writeErr.WriteConcernError)\n \t\t}\n-\t\tbatchRes.InsertedCount = int64(res.N)\n+\t\tbatchRes.InsertedCount = res.N\n \tcase *DeleteOneModel, *DeleteManyModel:\n \t\tres, err := bw.runDelete(ctx, batch)\n \t\tif err != nil {\n@@ -126,7 +126,7 @@ func (bw *bulkWrite) runBatch(ctx context.Context, batch bulkWriteBatch) (BulkWr\n \t\t\tbatchErr.Labels = writeErr.Labels\n \t\t\tbatchErr.WriteConcernError = convertDriverWriteConcernError(writeErr.WriteConcernError)\n \t\t}\n-\t\tbatchRes.DeletedCount = int64(res.N)\n+\t\tbatchRes.DeletedCount = res.N\n \tcase *ReplaceOneModel, *UpdateOneModel, *UpdateManyModel:\n \t\tres, err := bw.runUpdate(ctx, batch)\n \t\tif err != nil {\n@@ -138,8 +138,8 @@ func (bw *bulkWrite) runBatch(ctx context.Context, batch bulkWriteBatch) (BulkWr\n \t\t\tbatchErr.Labels = writeErr.Labels\n \t\t\tbatchErr.WriteConcernError = convertDriverWriteConcernError(writeErr.WriteConcernError)\n \t\t}\n-\t\tbatchRes.MatchedCount = int64(res.N)\n-\t\tbatchRes.ModifiedCount = int64(res.NModified)\n+\t\tbatchRes.MatchedCount = res.N\n+\t\tbatchRes.ModifiedCount = res.NModified\n \t\tbatchRes.UpsertedCount = int64(len(res.Upserted))\n \t\tfor _, upsert := range res.Upserted {\n \t\t\tbatchRes.UpsertedIDs[int64(batch.indexes[upsert.Index])] = upsert.ID"
+    },
+    {
+      "sha": "590d928045c67198f082bba4e26033bedba81918",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/mongo/collection.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fmongo%2Fcollection.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fmongo%2Fcollection.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fmongo%2Fcollection.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -473,7 +473,7 @@ func (coll *Collection) delete(ctx context.Context, filter interface{}, deleteOn\n \tif rr&expectedRr == 0 {\n \t\treturn nil, err\n \t}\n-\treturn &DeleteResult{DeletedCount: int64(op.Result().N)}, err\n+\treturn &DeleteResult{DeletedCount: op.Result().N}, err\n }\n \n // DeleteOne executes a delete command to delete at most one document from the collection.\n@@ -582,8 +582,8 @@ func (coll *Collection) updateOrReplace(ctx context.Context, filter bsoncore.Doc\n \n \topRes := op.Result()\n \tres := &UpdateResult{\n-\t\tMatchedCount:  int64(opRes.N),\n-\t\tModifiedCount: int64(opRes.NModified),\n+\t\tMatchedCount:  opRes.N,\n+\t\tModifiedCount: opRes.NModified,\n \t\tUpsertedCount: int64(len(opRes.Upserted)),\n \t}\n \tif len(opRes.Upserted) > 0 {"
+    },
+    {
+      "sha": "3adbbb664b429cedc4d75c891cfbef1d1ac08d76",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/version/version.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fversion%2Fversion.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fversion%2Fversion.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fversion%2Fversion.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -7,4 +7,4 @@\n package version // import \"go.mongodb.org/mongo-driver/version\"\n \n // Driver is the current version of the driver.\n-var Driver = \"v1.9.0\"\n+var Driver = \"v1.9.1\""
+    },
+    {
+      "sha": "ed625706b7915b9c5d888a3d5e9c89dec720b14e",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/ocsp/ocsp.go",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 66,
+      "changes": 100,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Focsp%2Focsp.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Focsp%2Focsp.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Focsp%2Focsp.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -18,7 +18,6 @@ import (\n \t\"io/ioutil\"\n \t\"math/big\"\n \t\"net/http\"\n-\t\"net/url\"\n \t\"time\"\n \n \t\"golang.org/x/crypto/ocsp\"\n@@ -28,9 +27,6 @@ import (\n var (\n \ttlsFeatureExtensionOID = asn1.ObjectIdentifier{1, 3, 6, 1, 5, 5, 7, 1, 24}\n \tmustStapleFeatureValue = big.NewInt(5)\n-\n-\tdefaultRequestTimeout = 5 * time.Second\n-\terrGotOCSPResponse    = errors.New(\"done\")\n )\n \n // Error represents an OCSP verification error\n@@ -126,10 +122,7 @@ func getParsedResponse(ctx context.Context, cfg config, connState tls.Connection\n \tif cfg.disableEndpointChecking {\n \t\treturn nil, nil\n \t}\n-\texternalResponse, err := contactResponders(ctx, cfg)\n-\tif err != nil {\n-\t\treturn nil, err\n-\t}\n+\texternalResponse := contactResponders(ctx, cfg)\n \tif externalResponse == nil {\n \t\t// None of the responders were available.\n \t\treturn nil, nil\n@@ -210,40 +203,33 @@ func isMustStapleCertificate(cert *x509.Certificate) (bool, error) {\n \treturn false, nil\n }\n \n-// contactResponders will send a request to the OCSP responders reported by cfg.serverCert. The first response that\n-// conclusively identifies cfg.serverCert as good or revoked will be returned. If all responders are unavailable or no\n-// responder returns a conclusive status, (nil, nil) will be returned.\n-func contactResponders(ctx context.Context, cfg config) (*ResponseDetails, error) {\n+// contactResponders will send a request to all OCSP responders reported by cfg.serverCert. The\n+// first response that conclusively identifies cfg.serverCert as good or revoked will be returned.\n+// If all responders are unavailable or no responder returns a conclusive status, it returns nil.\n+// contactResponders will wait for up to 5 seconds to get a certificate status response.\n+func contactResponders(ctx context.Context, cfg config) *ResponseDetails {\n \tif len(cfg.serverCert.OCSPServer) == 0 {\n-\t\treturn nil, nil\n+\t\treturn nil\n \t}\n \n-\trequestCtx := ctx // Either ctx or a new context derived from ctx with a five second timeout.\n-\tuserContextUsed := true\n-\tvar cancelFn context.CancelFunc\n-\n-\t// Use a context with defaultRequestTimeout if ctx does not have a deadline set or the current deadline is further\n-\t// out than defaultRequestTimeout. If the current deadline is less than less than defaultRequestTimeout out, respect\n-\t// it. Calling context.WithTimeout would do this for us, but we need to know which context we're using.\n-\twantDeadline := time.Now().Add(defaultRequestTimeout)\n-\tif deadline, ok := ctx.Deadline(); !ok || deadline.After(wantDeadline) {\n-\t\tuserContextUsed = false\n-\t\trequestCtx, cancelFn = context.WithDeadline(ctx, wantDeadline)\n-\t}\n-\tdefer func() {\n-\t\tif cancelFn != nil {\n-\t\t\tcancelFn()\n-\t\t}\n-\t}()\n+\t// Limit all OCSP responder calls to a maximum of 5 seconds or when the passed-in context expires,\n+\t// whichever happens first.\n+\tctx, cancel := context.WithTimeout(ctx, 5*time.Second)\n+\tdefer cancel()\n \n-\tgroup, groupCtx := errgroup.WithContext(requestCtx)\n+\tgroup, ctx := errgroup.WithContext(ctx)\n \tocspResponses := make(chan *ocsp.Response, len(cfg.serverCert.OCSPServer))\n \tdefer close(ocspResponses)\n \n \tfor _, endpoint := range cfg.serverCert.OCSPServer {\n \t\t// Re-assign endpoint so it gets re-scoped rather than using the iteration variable in the goroutine. See\n \t\t// https://golang.org/doc/faq#closures_and_goroutines.\n \t\tendpoint := endpoint\n+\n+\t\t// Start a group of goroutines that each attempt to request the certificate status from one\n+\t\t// of the OCSP endpoints listed in the server certificate. We want to \"soft fail\" on all\n+\t\t// errors, so this function never returns actual errors. Only a \"done\" error is returned\n+\t\t// when a response is received so the errgroup cancels any other in-progress requests.\n \t\tgroup.Go(func() error {\n \t\t\t// Use bytes.NewReader instead of bytes.NewBuffer because a bytes.Buffer is an owning representation and the\n \t\t\t// docs recommend not using the underlying []byte after creating the buffer, so a new copy of the request\n@@ -252,35 +238,16 @@ func contactResponders(ctx context.Context, cfg config) (*ResponseDetails, error\n \t\t\tif err != nil {\n \t\t\t\treturn nil\n \t\t\t}\n-\t\t\trequest = request.WithContext(groupCtx)\n-\n-\t\t\t// Execute the request and handle errors as follows:\n-\t\t\t//\n-\t\t\t// 1. If the original context expired or was cancelled, propagate the error up so the caller will abort the\n-\t\t\t// verification and return control to the user.\n-\t\t\t//\n-\t\t\t// 2. If any other errors occurred, including the defaultRequestTimeout expiring, or the response has a\n-\t\t\t// non-200 status code, suppress the error because we want to ignore this responder and wait for a different\n-\t\t\t// one to respond.\n+\t\t\trequest = request.WithContext(ctx)\n+\n \t\t\thttpResponse, err := http.DefaultClient.Do(request)\n \t\t\tif err != nil {\n-\t\t\t\turlErr, ok := err.(*url.Error)\n-\t\t\t\tif !ok {\n-\t\t\t\t\treturn nil\n-\t\t\t\t}\n-\n-\t\t\t\ttimeout := urlErr.Timeout()\n-\t\t\t\tcancelled := urlErr.Err == context.Canceled // Timeout() does not return true for context.Cancelled.\n-\t\t\t\tif cancelled || (userContextUsed && timeout) {\n-\t\t\t\t\t// Handle the original context expiring or being cancelled. The url.Error type supports Unwrap, so\n-\t\t\t\t\t// users can use errors.Is to check for context errors.\n-\t\t\t\t\treturn err\n-\t\t\t\t}\n-\t\t\t\treturn nil // Ignore all other errors.\n+\t\t\t\treturn nil\n \t\t\t}\n \t\t\tdefer func() {\n \t\t\t\t_ = httpResponse.Body.Close()\n \t\t\t}()\n+\n \t\t\tif httpResponse.StatusCode != 200 {\n \t\t\t\treturn nil\n \t\t\t}\n@@ -292,26 +259,27 @@ func contactResponders(ctx context.Context, cfg config) (*ResponseDetails, error\n \n \t\t\tocspResponse, err := ocsp.ParseResponseForCert(httpBytes, cfg.serverCert, cfg.issuer)\n \t\t\tif err != nil || verifyResponse(cfg, ocspResponse) != nil || ocspResponse.Status == ocsp.Unknown {\n-\t\t\t\t// If there was an error parsing/validating the response or the response was inconclusive, suppress\n-\t\t\t\t// the error because we want to ignore this responder.\n+\t\t\t\t// If there was an error parsing/validating the response or the response was\n+\t\t\t\t// inconclusive, suppress the error because we want to ignore this responder.\n \t\t\t\treturn nil\n \t\t\t}\n \n-\t\t\t// Store the response and return a sentinel error so the error group will exit and any in-flight requests\n-\t\t\t// will be cancelled.\n+\t\t\t// Send the conclusive response on the response channel and return a \"done\" error that\n+\t\t\t// will cause the errgroup to cancel all other in-progress requests.\n \t\t\tocspResponses <- ocspResponse\n-\t\t\treturn errGotOCSPResponse\n+\t\t\treturn errors.New(\"done\")\n \t\t})\n \t}\n \n-\tif err := group.Wait(); err != nil && err != errGotOCSPResponse {\n-\t\treturn nil, err\n-\t}\n-\tif len(ocspResponses) == 0 {\n-\t\t// None of the responders gave a conclusive response.\n-\t\treturn nil, nil\n+\t_ = group.Wait()\n+\tselect {\n+\tcase res := <-ocspResponses:\n+\t\treturn extractResponseDetails(res)\n+\tdefault:\n+\t\t// If there is no OCSP response on the response channel, all OCSP calls either failed or\n+\t\t// were inconclusive. Return nil.\n+\t\treturn nil\n \t}\n-\treturn extractResponseDetails(<-ocspResponses), nil\n }\n \n // verifyResponse checks that the provided OCSP response is valid."
+    },
+    {
+      "sha": "beb893c71783b8bcc7e5a3dc7d43f27ee0b91578",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/operation/delete.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Fdelete.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Fdelete.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Fdelete.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -42,7 +42,7 @@ type Delete struct {\n // DeleteResult represents a delete result returned by the server.\n type DeleteResult struct {\n \t// Number of documents successfully deleted.\n-\tN int32\n+\tN int64\n }\n \n func buildDeleteResult(response bsoncore.Document) (DeleteResult, error) {\n@@ -55,9 +55,9 @@ func buildDeleteResult(response bsoncore.Document) (DeleteResult, error) {\n \t\tswitch element.Key() {\n \t\tcase \"n\":\n \t\t\tvar ok bool\n-\t\t\tdr.N, ok = element.Value().AsInt32OK()\n+\t\t\tdr.N, ok = element.Value().AsInt64OK()\n \t\t\tif !ok {\n-\t\t\t\treturn dr, fmt.Errorf(\"response field 'n' is type int32, but received BSON type %s\", element.Value().Type)\n+\t\t\t\treturn dr, fmt.Errorf(\"response field 'n' is type int32 or int64, but received BSON type %s\", element.Value().Type)\n \t\t\t}\n \t\t}\n \t}"
+    },
+    {
+      "sha": "993eac1013783d05f08e1d15079444d28a9acd4f",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/operation/insert.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Finsert.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Finsert.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Finsert.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -41,7 +41,7 @@ type Insert struct {\n // InsertResult represents an insert result returned by the server.\n type InsertResult struct {\n \t// Number of documents successfully inserted.\n-\tN int32\n+\tN int64\n }\n \n func buildInsertResult(response bsoncore.Document) (InsertResult, error) {\n@@ -54,9 +54,9 @@ func buildInsertResult(response bsoncore.Document) (InsertResult, error) {\n \t\tswitch element.Key() {\n \t\tcase \"n\":\n \t\t\tvar ok bool\n-\t\t\tir.N, ok = element.Value().AsInt32OK()\n+\t\t\tir.N, ok = element.Value().AsInt64OK()\n \t\t\tif !ok {\n-\t\t\t\treturn ir, fmt.Errorf(\"response field 'n' is type int32, but received BSON type %s\", element.Value().Type)\n+\t\t\t\treturn ir, fmt.Errorf(\"response field 'n' is type int32 or int64, but received BSON type %s\", element.Value().Type)\n \t\t\t}\n \t\t}\n \t}"
+    },
+    {
+      "sha": "3cd11848d8c22ca7f3bf2e84fe8fe0b280b2d84d",
+      "filename": "backend/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/operation/update.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Fupdate.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Fupdate.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgo.mongodb.org%2Fmongo-driver%2Fx%2Fmongo%2Fdriver%2Foperation%2Fupdate.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -51,9 +51,9 @@ type Upsert struct {\n // UpdateResult contains information for the result of an Update operation.\n type UpdateResult struct {\n \t// Number of documents matched.\n-\tN int32\n+\tN int64\n \t// Number of documents modified.\n-\tNModified int32\n+\tNModified int64\n \t// Information about upserted documents.\n \tUpserted []Upsert\n }\n@@ -68,15 +68,15 @@ func buildUpdateResult(response bsoncore.Document) (UpdateResult, error) {\n \t\tswitch element.Key() {\n \t\tcase \"nModified\":\n \t\t\tvar ok bool\n-\t\t\tur.NModified, ok = element.Value().Int32OK()\n+\t\t\tur.NModified, ok = element.Value().AsInt64OK()\n \t\t\tif !ok {\n-\t\t\t\treturn ur, fmt.Errorf(\"response field 'nModified' is type int32, but received BSON type %s\", element.Value().Type)\n+\t\t\t\treturn ur, fmt.Errorf(\"response field 'nModified' is type int32 or int64, but received BSON type %s\", element.Value().Type)\n \t\t\t}\n \t\tcase \"n\":\n \t\t\tvar ok bool\n-\t\t\tur.N, ok = element.Value().Int32OK()\n+\t\t\tur.N, ok = element.Value().AsInt64OK()\n \t\t\tif !ok {\n-\t\t\t\treturn ur, fmt.Errorf(\"response field 'n' is type int32, but received BSON type %s\", element.Value().Type)\n+\t\t\t\treturn ur, fmt.Errorf(\"response field 'n' is type int32 or int64, but received BSON type %s\", element.Value().Type)\n \t\t\t}\n \t\tcase \"upserted\":\n \t\t\tarr, ok := element.Value().ArrayOK()"
+    },
+    {
+      "sha": "df574308d308e80d65e107cc23807582c4bc95da",
+      "filename": "backend/vendor/golang.org/x/crypto/acme/acme.go",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Facme.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Facme.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Facme.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -306,6 +306,20 @@ func (c *Client) UpdateReg(ctx context.Context, acct *Account) (*Account, error)\n \treturn c.updateRegRFC(ctx, acct)\n }\n \n+// AccountKeyRollover attempts to transition a client's account key to a new key.\n+// On success client's Key is updated which is not concurrency safe.\n+// On failure an error will be returned.\n+// The new key is already registered with the ACME provider if the following is true:\n+//  - error is of type acme.Error\n+//  - StatusCode should be 409 (Conflict)\n+//  - Location header will have the KID of the associated account\n+//\n+// More about account key rollover can be found at\n+// https://tools.ietf.org/html/rfc8555#section-7.3.5.\n+func (c *Client) AccountKeyRollover(ctx context.Context, newKey crypto.Signer) error {\n+\treturn c.accountKeyRollover(ctx, newKey)\n+}\n+\n // Authorize performs the initial step in the pre-authorization flow,\n // as opposed to order-based flow.\n // The caller will then need to choose from and perform a set of returned"
+    },
+    {
+      "sha": "b38828d85935c300c796ddb5c4bfb23a709f6178",
+      "filename": "backend/vendor/golang.org/x/crypto/acme/jws.go",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 6,
+      "changes": 37,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Fjws.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Fjws.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Fjws.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -33,6 +33,10 @@ const noKeyID = KeyID(\"\")\n // See https://tools.ietf.org/html/rfc8555#section-6.3 for more details.\n const noPayload = \"\"\n \n+// noNonce indicates that the nonce should be omitted from the protected header.\n+// See jwsEncodeJSON for details.\n+const noNonce = \"\"\n+\n // jsonWebSignature can be easily serialized into a JWS following\n // https://tools.ietf.org/html/rfc7515#section-3.2.\n type jsonWebSignature struct {\n@@ -45,10 +49,15 @@ type jsonWebSignature struct {\n // The result is serialized in JSON format containing either kid or jwk\n // fields based on the provided KeyID value.\n //\n-// If kid is non-empty, its quoted value is inserted in the protected head\n+// The claimset is marshalled using json.Marshal unless it is a string.\n+// In which case it is inserted directly into the message.\n+//\n+// If kid is non-empty, its quoted value is inserted in the protected header\n // as \"kid\" field value. Otherwise, JWK is computed using jwkEncode and inserted\n // as \"jwk\" field value. The \"jwk\" and \"kid\" fields are mutually exclusive.\n //\n+// If nonce is non-empty, its quoted value is inserted in the protected header.\n+//\n // See https://tools.ietf.org/html/rfc7515#section-7.\n func jwsEncodeJSON(claimset interface{}, key crypto.Signer, kid KeyID, nonce, url string) ([]byte, error) {\n \tif key == nil {\n@@ -58,20 +67,36 @@ func jwsEncodeJSON(claimset interface{}, key crypto.Signer, kid KeyID, nonce, ur\n \tif alg == \"\" || !sha.Available() {\n \t\treturn nil, ErrUnsupportedKey\n \t}\n-\tvar phead string\n+\theaders := struct {\n+\t\tAlg   string          `json:\"alg\"`\n+\t\tKID   string          `json:\"kid,omitempty\"`\n+\t\tJWK   json.RawMessage `json:\"jwk,omitempty\"`\n+\t\tNonce string          `json:\"nonce,omitempty\"`\n+\t\tURL   string          `json:\"url\"`\n+\t}{\n+\t\tAlg:   alg,\n+\t\tNonce: nonce,\n+\t\tURL:   url,\n+\t}\n \tswitch kid {\n \tcase noKeyID:\n \t\tjwk, err := jwkEncode(key.Public())\n \t\tif err != nil {\n \t\t\treturn nil, err\n \t\t}\n-\t\tphead = fmt.Sprintf(`{\"alg\":%q,\"jwk\":%s,\"nonce\":%q,\"url\":%q}`, alg, jwk, nonce, url)\n+\t\theaders.JWK = json.RawMessage(jwk)\n \tdefault:\n-\t\tphead = fmt.Sprintf(`{\"alg\":%q,\"kid\":%q,\"nonce\":%q,\"url\":%q}`, alg, kid, nonce, url)\n+\t\theaders.KID = string(kid)\n+\t}\n+\tphJSON, err := json.Marshal(headers)\n+\tif err != nil {\n+\t\treturn nil, err\n \t}\n-\tphead = base64.RawURLEncoding.EncodeToString([]byte(phead))\n+\tphead := base64.RawURLEncoding.EncodeToString([]byte(phJSON))\n \tvar payload string\n-\tif claimset != noPayload {\n+\tif val, ok := claimset.(string); ok {\n+\t\tpayload = val\n+\t} else {\n \t\tcs, err := json.Marshal(claimset)\n \t\tif err != nil {\n \t\t\treturn nil, err"
+    },
+    {
+      "sha": "940e70b8559c7b07b06cfe6159371af1277715fe",
+      "filename": "backend/vendor/golang.org/x/crypto/acme/rfc8555.go",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 0,
+      "changes": 39,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Frfc8555.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Frfc8555.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgolang.org%2Fx%2Fcrypto%2Facme%2Frfc8555.go?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -24,6 +24,9 @@ import (\n //\n // It only works with CAs implementing RFC 8555.\n func (c *Client) DeactivateReg(ctx context.Context) error {\n+\tif _, err := c.Discover(ctx); err != nil { // required by c.accountKID\n+\t\treturn err\n+\t}\n \turl := string(c.accountKID(ctx))\n \tif url == \"\" {\n \t\treturn ErrNoAccount\n@@ -148,6 +151,42 @@ func responseAccount(res *http.Response) (*Account, error) {\n \t}, nil\n }\n \n+// accountKeyRollover attempts to perform account key rollover.\n+// On success it will change client.Key to the new key.\n+func (c *Client) accountKeyRollover(ctx context.Context, newKey crypto.Signer) error {\n+\tdir, err := c.Discover(ctx) // Also required by c.accountKID\n+\tif err != nil {\n+\t\treturn err\n+\t}\n+\tkid := c.accountKID(ctx)\n+\tif kid == noKeyID {\n+\t\treturn ErrNoAccount\n+\t}\n+\toldKey, err := jwkEncode(c.Key.Public())\n+\tif err != nil {\n+\t\treturn err\n+\t}\n+\tpayload := struct {\n+\t\tAccount string          `json:\"account\"`\n+\t\tOldKey  json.RawMessage `json:\"oldKey\"`\n+\t}{\n+\t\tAccount: string(kid),\n+\t\tOldKey:  json.RawMessage(oldKey),\n+\t}\n+\tinner, err := jwsEncodeJSON(payload, newKey, noKeyID, noNonce, dir.KeyChangeURL)\n+\tif err != nil {\n+\t\treturn err\n+\t}\n+\n+\tres, err := c.post(ctx, nil, dir.KeyChangeURL, base64.RawURLEncoding.EncodeToString(inner), wantStatus(http.StatusOK))\n+\tif err != nil {\n+\t\treturn err\n+\t}\n+\tdefer res.Body.Close()\n+\tc.Key = newKey\n+\treturn nil\n+}\n+\n // AuthorizeOrder initiates the order-based application for certificate issuance,\n // as opposed to pre-authorization in Authorize.\n // It is only supported by CAs implementing RFC 8555."
+    },
+    {
+      "sha": "2e57b5ff7943f01f81de4858a7b563a7212a2424",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 10,
+      "changes": 18,
+      "blob_url": "https://github.com/umputun/remark42/blob/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fmodules.txt",
+      "raw_url": "https://github.com/umputun/remark42/raw/3b5f44da46b61606e2ab219cd086ae393563a827/backend%2Fvendor%2Fmodules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fmodules.txt?ref=3b5f44da46b61606e2ab219cd086ae393563a827",
+      "patch": "@@ -60,7 +60,7 @@ github.com/didip/tollbooth/v6\n github.com/didip/tollbooth/v6/errors\n github.com/didip/tollbooth/v6/libstring\n github.com/didip/tollbooth/v6/limiter\n-# github.com/didip/tollbooth_chi v0.0.0-20200828173446-a7173453ea21\n+# github.com/didip/tollbooth_chi v0.0.0-20220429013743-da966f2f674b\n ## explicit; go 1.14\n github.com/didip/tollbooth_chi\n # github.com/dlclark/regexp2 v1.4.0\n@@ -75,7 +75,7 @@ github.com/go-chi/chi/middleware\n ## explicit; go 1.14\n github.com/go-chi/chi/v5\n github.com/go-chi/chi/v5/middleware\n-# github.com/go-chi/cors v1.2.0\n+# github.com/go-chi/cors v1.2.1\n ## explicit; go 1.14\n github.com/go-chi/cors\n # github.com/go-chi/render v1.0.1\n@@ -95,7 +95,7 @@ github.com/go-pkgz/auth/middleware\n github.com/go-pkgz/auth/provider\n github.com/go-pkgz/auth/provider/sender\n github.com/go-pkgz/auth/token\n-# github.com/go-pkgz/email v0.2.1-0.20220428155644-a7e5d837d02f\n+# github.com/go-pkgz/email v0.3.0\n ## explicit; go 1.17\n github.com/go-pkgz/email\n # github.com/go-pkgz/expirable-cache v0.0.3\n@@ -112,14 +112,14 @@ github.com/go-pkgz/lcw/internal/cache\n # github.com/go-pkgz/lgr v0.10.4\n ## explicit; go 1.15\n github.com/go-pkgz/lgr\n-# github.com/go-pkgz/notify v0.0.0-20220429105545-bc5c80a54199\n+# github.com/go-pkgz/notify v0.1.1\n ## explicit; go 1.17\n github.com/go-pkgz/notify\n # github.com/go-pkgz/repeater v1.1.3\n ## explicit; go 1.12\n github.com/go-pkgz/repeater\n github.com/go-pkgz/repeater/strategy\n-# github.com/go-pkgz/rest v1.14.0\n+# github.com/go-pkgz/rest v1.15.0\n ## explicit; go 1.16\n github.com/go-pkgz/rest\n github.com/go-pkgz/rest/logger\n@@ -227,8 +227,6 @@ github.com/stretchr/objx\n github.com/stretchr/testify/assert\n github.com/stretchr/testify/mock\n github.com/stretchr/testify/require\n-# github.com/valyala/fasthttp v1.35.0\n-## explicit; go 1.15\n # github.com/xdg-go/pbkdf2 v1.0.0\n ## explicit; go 1.9\n github.com/xdg-go/pbkdf2\n@@ -244,7 +242,7 @@ github.com/youmark/pkcs8\n # go.etcd.io/bbolt v1.3.6\n ## explicit; go 1.12\n go.etcd.io/bbolt\n-# go.mongodb.org/mongo-driver v1.9.0\n+# go.mongodb.org/mongo-driver v1.9.1\n ## explicit; go 1.10\n go.mongodb.org/mongo-driver/bson\n go.mongodb.org/mongo-driver/bson/bsoncodec\n@@ -285,7 +283,7 @@ go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage\n ## explicit; go 1.13\n go.uber.org/goleak\n go.uber.org/goleak/internal/stack\n-# golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4\n+# golang.org/x/crypto v0.0.0-20220518034528-6f7dac969898\n ## explicit; go 1.17\n golang.org/x/crypto/acme\n golang.org/x/crypto/acme/autocert\n@@ -296,7 +294,7 @@ golang.org/x/crypto/scrypt\n ## explicit; go 1.12\n golang.org/x/image/draw\n golang.org/x/image/math/f64\n-# golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4\n+# golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2\n ## explicit; go 1.17\n golang.org/x/net/context\n golang.org/x/net/context/ctxhttp"
+    }
+  ]
+}

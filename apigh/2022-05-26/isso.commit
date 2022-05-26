@@ -1,0 +1,98 @@
+{
+  "sha": "46c141c9517665620929192b05d2f41275bbaefd",
+  "node_id": "C_kwDOAF-mA9oAKDQ2YzE0MWM5NTE3NjY1NjIwOTI5MTkyYjA1ZDJmNDEyNzViYmFlZmQ",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-25T12:30:16Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-25T14:07:20Z"
+    },
+    "message": "views: __init__: Document /info endpoint",
+    "tree": {
+      "sha": "afc8a78c4d61ced4ba58531fadc08259a18193ab",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/afc8a78c4d61ced4ba58531fadc08259a18193ab"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/46c141c9517665620929192b05d2f41275bbaefd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/46c141c9517665620929192b05d2f41275bbaefd",
+  "html_url": "https://github.com/posativ/isso/commit/46c141c9517665620929192b05d2f41275bbaefd",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/46c141c9517665620929192b05d2f41275bbaefd/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f95de8ceb04cb208c0d8b3b915e33f8cd15507e9",
+      "url": "https://api.github.com/repos/posativ/isso/commits/f95de8ceb04cb208c0d8b3b915e33f8cd15507e9",
+      "html_url": "https://github.com/posativ/isso/commit/f95de8ceb04cb208c0d8b3b915e33f8cd15507e9"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 27,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "795d637a6c7fbbd6e70a4ed8c86e45299f815474",
+      "filename": "isso/views/__init__.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "blob_url": "https://github.com/posativ/isso/blob/46c141c9517665620929192b05d2f41275bbaefd/isso%2Fviews%2F__init__.py",
+      "raw_url": "https://github.com/posativ/isso/raw/46c141c9517665620929192b05d2f41275bbaefd/isso%2Fviews%2F__init__.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fviews%2F__init__.py?ref=46c141c9517665620929192b05d2f41275bbaefd",
+      "patch": "@@ -51,6 +51,33 @@ def __init__(self, isso):\n         self.moderation = isso.conf.getboolean(\"moderation\", \"enabled\")\n         isso.urls.add(Rule('/info', endpoint=self.show))\n \n+    \"\"\"\n+    @api {get} /info Server info\n+    @apiGroup Info\n+    @apiName info\n+    @apiVersion 0.12.6\n+    @apiDescription\n+        Reports basic information about the server setup.\n+\n+    @apiSuccess {String} version\n+        Isso version.\n+    @apiSuccess {String} host\n+        URL that Isso runs on.\n+    @apiSuccess {String} origin\n+        URL that Isso expects threads to be under.\n+    @apiSuccess {Boolean} moderation\n+        Whether comment moderation is enabled, i.e. comments have to be manually approved by site admin.\n+\n+    @apiExample {curl} Get server info:\n+        curl 'https://comments.example.com/info'\n+    @apiSuccessExample {json} Server info:\n+        {\n+          \"version\": \"0.12.6\",\n+          \"host\": \"https://comments.example.com\",\n+          \"origin\": \"https://example.com\",\n+          \"moderation\": true\n+        }\n+    \"\"\"\n     def show(self, environ, request):\n \n         rv = {"
+    }
+  ]
+}
