@@ -1,0 +1,98 @@
+{
+  "sha": "b2a1c611461b73f3b67c892e04377536b9a2ce4c",
+  "node_id": "C_kwDOAF-mA9oAKGIyYTFjNjExNDYxYjczZjNiNjdjODkyZTA0Mzc3NTM2YjlhMmNlNGM",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-04-30T13:18:30Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-29T19:05:31Z"
+    },
+    "message": ".github: upload-docs: Generate and copy API docs",
+    "tree": {
+      "sha": "f7293fed65dbb30f99b15e065581bbf5fee62209",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/f7293fed65dbb30f99b15e065581bbf5fee62209"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/b2a1c611461b73f3b67c892e04377536b9a2ce4c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/b2a1c611461b73f3b67c892e04377536b9a2ce4c",
+  "html_url": "https://github.com/posativ/isso/commit/b2a1c611461b73f3b67c892e04377536b9a2ce4c",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/b2a1c611461b73f3b67c892e04377536b9a2ce4c/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "60f73b1f2c3f7d66303b5de6a5f59ccc9779c644",
+      "url": "https://api.github.com/repos/posativ/isso/commits/60f73b1f2c3f7d66303b5de6a5f59ccc9779c644",
+      "html_url": "https://github.com/posativ/isso/commit/60f73b1f2c3f7d66303b5de6a5f59ccc9779c644"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 11,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "10153b96aeb979f319fd130183404f32222c5951",
+      "filename": ".github/workflows/upload-docs.yml",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/posativ/isso/blob/b2a1c611461b73f3b67c892e04377536b9a2ce4c/.github%2Fworkflows%2Fupload-docs.yml",
+      "raw_url": "https://github.com/posativ/isso/raw/b2a1c611461b73f3b67c892e04377536b9a2ce4c/.github%2Fworkflows%2Fupload-docs.yml",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/.github%2Fworkflows%2Fupload-docs.yml?ref=b2a1c611461b73f3b67c892e04377536b9a2ce4c",
+      "patch": "@@ -42,6 +42,17 @@ jobs:\n       - name: Build docs\n         run: make site\n \n+      - name: Set up NodeJS\n+        uses: actions/setup-node@v2\n+        with:\n+          node-version: 16\n+\n+      - name: Generate API docs\n+        run: make apidoc-init apidoc\n+\n+      - name: Copy API docs to docs/ dir\n+        run: cp -r apidoc/_output/ docs/_build/html/docs/api\n+\n       - name: Deploy\n         uses: peaceiris/actions-gh-pages@v3\n         with:"
+    }
+  ]
+}
