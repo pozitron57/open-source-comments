@@ -1,0 +1,98 @@
+{
+  "sha": "1bf5828fb04b00f01c975a9828f6526ed475ff82",
+  "node_id": "C_kwDOAF-mA9oAKDFiZjU4MjhmYjA0YjAwZjAxYzk3NWE5ODI4ZjY1MjZlZDQ3NWZmODI",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-31T16:33:17Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-05-31T16:33:17Z"
+    },
+    "message": "docs: community: Link to Bussator webmentions",
+    "tree": {
+      "sha": "658aaa9143083791b209fbe422f106bb33e45174",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/658aaa9143083791b209fbe422f106bb33e45174"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/1bf5828fb04b00f01c975a9828f6526ed475ff82",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/1bf5828fb04b00f01c975a9828f6526ed475ff82",
+  "html_url": "https://github.com/posativ/isso/commit/1bf5828fb04b00f01c975a9828f6526ed475ff82",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/1bf5828fb04b00f01c975a9828f6526ed475ff82/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "10e5a90df94d8f1b710f5b1d9a22172fb84e8978",
+      "url": "https://api.github.com/repos/posativ/isso/commits/10e5a90df94d8f1b710f5b1d9a22172fb84e8978",
+      "html_url": "https://github.com/posativ/isso/commit/10e5a90df94d8f1b710f5b1d9a22172fb84e8978"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "fcdcf15211b6827f879d0f798545cef3fac79d95",
+      "filename": "docs/community.rst",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/1bf5828fb04b00f01c975a9828f6526ed475ff82/docs%2Fcommunity.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/1bf5828fb04b00f01c975a9828f6526ed475ff82/docs%2Fcommunity.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/docs%2Fcommunity.rst?ref=1bf5828fb04b00f01c975a9828f6526ed475ff82",
+      "patch": "@@ -85,13 +85,15 @@ like Hugo, Ghost or Pelican.*\n Isso-adjacent Projects\n ----------------------\n \n+* A Webmention receiver and publisher, has a plugin to integrate with Isso: `Bussator`_\n * A plugin for `Grav CMS`_ to integrate isso comments: `grav-plugin-jscomments`_\n * A `Pelican theme supporting isso comments <https://github.com/Lucas-C/pelican-mg>`_\n * A `Sphinx extension to integrate isso comments <https://github.com/sphinx-notes/isso>`_\n * `mihokookayami/isso Docker image <https://hub.docker.com/r/mihokookayami/isso>`_\n \n .. _Grav cms: https://en.wikipedia.org/wiki/Grav_(CMS)\n .. _grav-plugin-jscomments: https://github.com/Sommerregen/grav-plugin-jscomments>\n+.. _Bussator: https://gitlab.com/mardy/bussator\n \n .. note::\n    Feel free to **add your own project** that builds on top of or integrates"
+    }
+  ]
+}
