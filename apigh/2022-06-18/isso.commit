@@ -1,0 +1,210 @@
+{
+  "sha": "c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+  "node_id": "C_kwDOAF-mA9oAKGM1NThlZWZhNjZiZDllZDY4NWZkYTYxZmQ2ZWYzODljMWI5OGQxN2E",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-06-13T09:13:51Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-06-13T09:13:51Z"
+    },
+    "message": "Merge pull request #907 from ix5/css-templates-nits\n\n[misc] Minor CSS nits, grey code bg, simplify JS i18n loading, Docker cache",
+    "tree": {
+      "sha": "d72c05aa6b4a663818e1c272b5fd6843769cacc1",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/d72c05aa6b4a663818e1c272b5fd6843769cacc1"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJipv/PCRBK7hj4Ov3rIwAAsDoIAA3isP73uy/Lvb4Zl1uppsYO\nJJCQR/trf+gFMC/esdXwzlVspPq71UpyCjBwqSMOjIlbiw+cWjmqpxaZ14w0f57b\nHJTNJK3yW62Z+U4n5dcjEC0W12xZ2AFPaAcYiCDdBfRbnqZ793p68DpavUaa4Qnt\ncLKeGcJzDPcOWVRnI0QaVOGZyGBs+mVK+aZ6aZfdgvXG8L7Fxchv4mu5Xv3aPLiA\n10iW6uEAOgHFBTj09YeIMLBa7qjAUOkXvEFjiHblBLt4JFuMIYtSuFRmWvJ1IZDj\nF/Z1av0IengakacEgfycm2J8zVQPiX/aqdHVQs2OlNYTBaEBhGKQc3cgjoyKPJw=\n=dMP+\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree d72c05aa6b4a663818e1c272b5fd6843769cacc1\nparent c0b351afab338699c5657f28c32a08bf130a7496\nparent f827f28bf11911aae3e58963a7525846d830da59\nauthor ix5 <ix5@users.noreply.github.com> 1655111631 +0200\ncommitter GitHub <noreply@github.com> 1655111631 +0200\n\nMerge pull request #907 from ix5/css-templates-nits\n\n[misc] Minor CSS nits, grey code bg, simplify JS i18n loading, Docker cache"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+  "html_url": "https://github.com/posativ/isso/commit/c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c0b351afab338699c5657f28c32a08bf130a7496",
+      "url": "https://api.github.com/repos/posativ/isso/commits/c0b351afab338699c5657f28c32a08bf130a7496",
+      "html_url": "https://github.com/posativ/isso/commit/c0b351afab338699c5657f28c32a08bf130a7496"
+    },
+    {
+      "sha": "f827f28bf11911aae3e58963a7525846d830da59",
+      "url": "https://api.github.com/repos/posativ/isso/commits/f827f28bf11911aae3e58963a7525846d830da59",
+      "html_url": "https://github.com/posativ/isso/commit/f827f28bf11911aae3e58963a7525846d830da59"
+    }
+  ],
+  "stats": {
+    "total": 133,
+    "additions": 63,
+    "deletions": 70
+  },
+  "files": [
+    {
+      "sha": "f5b95efcc88a55416645fe1f3bccc87b559e4368",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/CHANGES.rst",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/CHANGES.rst?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -7,9 +7,11 @@ Changelog for Isso\n New Features\n ^^^^^^^^^^^^\n \n--  notifications: Implement 'List-Unsubscribe' header (`#906`_, ix5)\n+- notifications: Implement 'List-Unsubscribe' header (`#906`_, ix5)\n+- css: Grey styling for comment code, code blocks (`#907`_, ix5)\n \n .. _#906: https://github.com/posativ/isso/pull/906\n+.. _#907: https://github.com/posativ/isso/pull/907\n \n Breaking Changes\n ^^^^^^^^^^^^^^^^"
+    },
+    {
+      "sha": "62bbb838db1074c4b10539ca63c7acf7de7a61f2",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/Dockerfile",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/Dockerfile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Dockerfile?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -48,7 +48,8 @@ RUN . /isso/bin/activate \\\n # over client files, so that changing Isso js/python source code will not\n # trigger a re-installation of all pip packages from scratch\n COPY [\"setup.py\", \"setup.cfg\", \"README.md\", \"LICENSE\", \"./\"]\n-RUN . /isso/bin/activate \\\n+RUN --mount=type=cache,target=/root/.cache \\\n+  . /isso/bin/activate \\\n  && python3 setup.py develop\n \n # Then copy over files\n@@ -60,7 +61,8 @@ COPY [\"./contrib/\", \"./contrib/\"]\n COPY --from=isso-js /src/isso/js/ ./isso/js\n \n # Build and install Isso package (pip dependencies cached from previous step)\n-RUN . /isso/bin/activate \\\n+RUN --mount=type=cache,target=/root/.cache \\\n+ . /isso/bin/activate \\\n  && python3 setup.py develop --no-deps\n \n "
+    },
+    {
+      "sha": "cb66ce610a3166a3be433e97c08f1dc662f0cd5f",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/Makefile",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/Makefile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Makefile?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -93,7 +93,7 @@ test: $($ISSO_PY_SRC)\n \tPYTHONPATH=. pytest --doctest-modules isso/\n \n docker:\n-\tdocker build -t isso:latest .\n+\tDOCKER_BUILDKIT=1 docker build -t isso:latest .\n \n docker-push:\n \tdocker tag isso:latest ghcr.io/isso-comments/isso:dev"
+    },
+    {
+      "sha": "4ddc9ca2dba4efa9bb9088c64861b52874a8e1db",
+      "filename": "isso/css/isso.css",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 1,
+      "changes": 18,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fcss%2Fisso.css",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fcss%2Fisso.css",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fcss%2Fisso.css?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -127,6 +127,21 @@ h4.isso-thread-heading {\n     font-size: 130%;\n     font-weight: bold;\n }\n+.isso-text pre {\n+    background: #eee;\n+    border: 1px solid #ddd;\n+    padding: 10px 15px;\n+    color: #4d4d4c;\n+    overflow: auto;\n+    line-height: 1.5em;\n+}\n+.isso-text :not(pre) > code {\n+    padding: .2em .4em;\n+    margin: 0;\n+    font-size: 85%;\n+    background-color: #eeeeee;\n+    border-radius: 6px;\n+}\n .isso-comment-footer {\n     font-size: 0.80em;\n     color: gray;\n@@ -207,8 +222,9 @@ h4.isso-thread-heading {\n     display: block;\n }\n .isso-textarea:focus,\n+.isso-input-wrapper input:focus,\n .isso-auth-section input:focus {\n-    border-color: rgba(0, 0, 0, 0.8);\n+    outline: 2px solid #3584e4;\n }\n .isso-input-wrapper {\n     display: inline-block;"
+    },
+    {
+      "sha": "446f45b7c4a29e8209680745f079f6f037f54e21",
+      "filename": "isso/js/app/i18n.js",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 64,
+      "changes": 98,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fjs%2Fapp%2Fi18n.js",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fjs%2Fapp%2Fi18n.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fjs%2Fapp%2Fi18n.js?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -1,36 +1,39 @@\n-var config = require(\"app/config\");\n+\"use strict\";\n \n-var bg = require(\"app/i18n/bg\");\n-var cs = require(\"app/i18n/cs\");\n-var da = require(\"app/i18n/da\");\n-var de = require(\"app/i18n/de\");\n-var el = require(\"app/i18n/el_GR\");\n-var en = require(\"app/i18n/en\");\n-var eo = require(\"app/i18n/eo\");\n-var es = require(\"app/i18n/es\");\n-var fa = require(\"app/i18n/fa\");\n-var fi = require(\"app/i18n/fi\");\n-var fr = require(\"app/i18n/fr\");\n-var hr = require(\"app/i18n/hr\");\n-var hu = require(\"app/i18n/hu\");\n-var it = require(\"app/i18n/it\");\n-var ko = require(\"app/i18n/ko\");\n-var nl = require(\"app/i18n/nl\");\n-var oc = require(\"app/i18n/oc\");\n-var pl = require(\"app/i18n/pl\");\n-var pt_BR = require(\"app/i18n/pt_BR\");\n-var pt_PT = require(\"app/i18n/pt_PT\");\n-var ru = require(\"app/i18n/ru\");\n-var sk = require(\"app/i18n/sk\");\n-var sv = require(\"app/i18n/sv\");\n-var tr = require(\"app/i18n/tr\");\n-var uk = require(\"app/i18n/uk\");\n-var vi = require(\"app/i18n/vi\");\n-var zh = require(\"app/i18n/zh_CN\");\n-var zh_CN = require(\"app/i18n/zh_CN\");\n-var zh_TW = require(\"app/i18n/zh_TW\");\n+var config = require(\"app/config\");\n \n-\"use strict\";\n+var catalogue = {\n+    bg:      require(\"app/i18n/bg\"),\n+    cs:      require(\"app/i18n/cs\"),\n+    da:      require(\"app/i18n/da\"),\n+    de:      require(\"app/i18n/de\"),\n+    en:      require(\"app/i18n/en\"),\n+    el:      require(\"app/i18n/el_GR\"),\n+    eo:      require(\"app/i18n/eo\"),\n+    es:      require(\"app/i18n/es\"),\n+    fa:      require(\"app/i18n/fa\"),\n+    fi:      require(\"app/i18n/fi\"),\n+    fr:      require(\"app/i18n/fr\"),\n+    hr:      require(\"app/i18n/hr\"),\n+    hu:      require(\"app/i18n/hu\"),\n+    it:      require(\"app/i18n/it\"),\n+    ko:      require(\"app/i18n/ko\"),\n+    nl:      require(\"app/i18n/nl\"),\n+    oc:      require(\"app/i18n/oc\"),\n+    pl:      require(\"app/i18n/pl\"),\n+    pt:      require(\"app/i18n/pt_BR\"),\n+    \"pt-BR\": require(\"app/i18n/pt_BR\"),\n+    \"pt-PT\": require(\"app/i18n/pt_PT\"),\n+    ru:      require(\"app/i18n/ru\"),\n+    sk:      require(\"app/i18n/sk\"),\n+    sv:      require(\"app/i18n/sv\"),\n+    tr:      require(\"app/i18n/tr\"),\n+    uk:      require(\"app/i18n/uk\"),\n+    vi:      require(\"app/i18n/vi\"),\n+    zh:      require(\"app/i18n/zh_CN\"),\n+    \"zh-CN\": require(\"app/i18n/zh_CN\"),\n+    \"zh-TW\": require(\"app/i18n/zh_TW\"),\n+};\n \n var pluralforms = function(lang) {\n     // we currently only need to look at the primary language\n@@ -100,39 +103,6 @@ var pluralforms = function(lang) {\n     }\n };\n \n-var catalogue = {\n-    bg: bg,\n-    cs: cs,\n-    da: da,\n-    de: de,\n-    el: el,\n-    en: en,\n-    eo: eo,\n-    es: es,\n-    fa: fa,\n-    fi: fi,\n-    fr: fr,\n-    hr: hr,\n-    hu: hu,\n-    it: it,\n-    ko: ko,\n-    nl: nl,\n-    oc: oc,\n-    pl: pl,\n-    pt: pt_BR,\n-    \"pt-BR\": pt_BR,\n-    \"pt-PT\": pt_PT,\n-    ru: ru,\n-    sk: sk,\n-    sv: sv,\n-    tr: tr,\n-    uk: uk,\n-    vi: vi,\n-    zh: zh_CN,\n-    \"zh-CN\": zh_CN,\n-    \"zh-TW\": zh_TW,\n-};\n-\n // for each entry in config.langs, see whether we have a catalogue\n // entry and a pluralforms entry for it.  if we don't, try chopping\n // off everything but the primary language subtag, before moving"
+    },
+    {
+      "sha": "e85deb0d03910eb96c6ace442468345c1182bd9f",
+      "filename": "isso/js/tests/screenshots/reference/thread.png",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a"
+    },
+    {
+      "sha": "d31aab3716a912991fc29d3037172cddb84f198b",
+      "filename": "isso/js/tests/screenshots/reference/thread.png.hash",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png.hash",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png.hash",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png.hash?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -1 +1 @@\n-272de9f6be48348ddc5b4aa5cb826afa0defae7a54fe89a735140a819642bb9a\n+31827b8c0e368028a80256247d64ca7db0b6aeba0c24454b10f8eb8711bb5e56"
+    },
+    {
+      "sha": "a8d6e3ca80a1b49a298c155d83fe64b23e63a6cc",
+      "filename": "isso/templates/admin.html",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Ftemplates%2Fadmin.html",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Ftemplates%2Fadmin.html",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Ftemplates%2Fadmin.html?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -1,3 +1,4 @@\n+<!DOCTYPE html>\n <html>\n <head>\n   <title>Isso admin</title>"
+    },
+    {
+      "sha": "890d972d3ff0a7bdb2f933ad4420ce579eedf1d1",
+      "filename": "isso/templates/disabled.html",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Ftemplates%2Fdisabled.html",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Ftemplates%2Fdisabled.html",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Ftemplates%2Fdisabled.html?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -1,3 +1,4 @@\n+<!DOCTYPE html>\n <html>\n <head>\n   <title>Isso admin</title>"
+    },
+    {
+      "sha": "cdb6084e337c750904e7381621435fdceb0c2a26",
+      "filename": "isso/templates/login.html",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/posativ/isso/blob/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Ftemplates%2Flogin.html",
+      "raw_url": "https://github.com/posativ/isso/raw/c558eefa66bd9ed685fda61fd6ef389c1b98d17a/isso%2Ftemplates%2Flogin.html",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Ftemplates%2Flogin.html?ref=c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "patch": "@@ -1,3 +1,4 @@\n+<!DOCTYPE html>\n <html>\n <head>\n   <title>Isso admin</title>"
+    }
+  ]
+}
