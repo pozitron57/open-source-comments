@@ -1,0 +1,110 @@
+{
+  "sha": "cf7ceda6033319673e57c6ec4ca83f3db3717c17",
+  "node_id": "C_kwDOAF-mA9oAKGNmN2NlZGE2MDMzMzE5NjczZTU3YzZlYzRjYTgzZjNkYjM3MTdjMTc",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-06-21T13:17:45Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-06-21T13:20:47Z"
+    },
+    "message": "js: jest: Add GitHub Actions reporter to config",
+    "tree": {
+      "sha": "a4f2fc59e130d92d7ccc2bcb497ac1129683f0dc",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/a4f2fc59e130d92d7ccc2bcb497ac1129683f0dc"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/cf7ceda6033319673e57c6ec4ca83f3db3717c17",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/cf7ceda6033319673e57c6ec4ca83f3db3717c17",
+  "html_url": "https://github.com/posativ/isso/commit/cf7ceda6033319673e57c6ec4ca83f3db3717c17",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/cf7ceda6033319673e57c6ec4ca83f3db3717c17/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "url": "https://api.github.com/repos/posativ/isso/commits/c558eefa66bd9ed685fda61fd6ef389c1b98d17a",
+      "html_url": "https://github.com/posativ/isso/commit/c558eefa66bd9ed685fda61fd6ef389c1b98d17a"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 8,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c5ff698ba79fc2aaa5fb8f27e9a3ea8538262d7b",
+      "filename": "isso/js/jest-integration.config.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/cf7ceda6033319673e57c6ec4ca83f3db3717c17/isso%2Fjs%2Fjest-integration.config.js",
+      "raw_url": "https://github.com/posativ/isso/raw/cf7ceda6033319673e57c6ec4ca83f3db3717c17/isso%2Fjs%2Fjest-integration.config.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fjs%2Fjest-integration.config.js?ref=cf7ceda6033319673e57c6ec4ca83f3db3717c17",
+      "patch": "@@ -16,6 +16,10 @@ const config = {\n   /* puppeteer end-to-end integration testing\n    * https://jestjs.io/docs/configuration#preset-string */\n   preset: \"jest-puppeteer\",\n+\n+  // Highlight failing lines in GH Actions reports\n+  // https://jestjs.io/docs/configuration#reporters-arraymodulename--modulename-options\n+  \"reporters\": [\"default\", \"github-actions\"],\n };\n \n module.exports = config;"
+    },
+    {
+      "sha": "197982ec386f093b6a1f2aad3a173124521787b9",
+      "filename": "isso/js/jest-unit.config.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/posativ/isso/blob/cf7ceda6033319673e57c6ec4ca83f3db3717c17/isso%2Fjs%2Fjest-unit.config.js",
+      "raw_url": "https://github.com/posativ/isso/raw/cf7ceda6033319673e57c6ec4ca83f3db3717c17/isso%2Fjs%2Fjest-unit.config.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fjs%2Fjest-unit.config.js?ref=cf7ceda6033319673e57c6ec4ca83f3db3717c17",
+      "patch": "@@ -40,6 +40,10 @@ const config = {\n   //testEnvironment: \"jsdom\",\n \n   \"globalSetup\": \"<rootDir>/tests/setup/global-setup.js\",\n+\n+  // Highlight failing lines in GH Actions reports\n+  // https://jestjs.io/docs/configuration#reporters-arraymodulename--modulename-options\n+  \"reporters\": [\"default\", \"github-actions\"],\n };\n \n module.exports = config;"
+    }
+  ]
+}
