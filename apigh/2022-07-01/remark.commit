@@ -1,0 +1,110 @@
+{
+  "sha": "a73072c8fb3f5bf643307fd9843110815cd004ba",
+  "node_id": "C_kwDOBtgov9oAKGE3MzA3MmM4ZmIzZjViZjY0MzMwN2ZkOTg0MzExMDgxNWNkMDA0YmE",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-06-30T23:27:10Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-07-01T00:12:00Z"
+    },
+    "message": "add documentation on running remark42 on a separate domain",
+    "tree": {
+      "sha": "2317740bc4aec1cc8d49be4c06cbf2dfdc124f0c",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/2317740bc4aec1cc8d49be4c06cbf2dfdc124f0c"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/a73072c8fb3f5bf643307fd9843110815cd004ba",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/a73072c8fb3f5bf643307fd9843110815cd004ba",
+  "html_url": "https://github.com/umputun/remark42/commit/a73072c8fb3f5bf643307fd9843110815cd004ba",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/a73072c8fb3f5bf643307fd9843110815cd004ba/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6a5c5a4c085f53835ea25cfa2cfef4be078d1499",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/6a5c5a4c085f53835ea25cfa2cfef4be078d1499",
+      "html_url": "https://github.com/umputun/remark42/commit/6a5c5a4c085f53835ea25cfa2cfef4be078d1499"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 30,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "2bd3faf2b854d4acf9a10cde1bf76c466bff7f7e",
+      "filename": "site/src/docs/manuals/separate-domain/index.md",
+      "status": "added",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "blob_url": "https://github.com/umputun/remark42/blob/a73072c8fb3f5bf643307fd9843110815cd004ba/site%2Fsrc%2Fdocs%2Fmanuals%2Fseparate-domain%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/a73072c8fb3f5bf643307fd9843110815cd004ba/site%2Fsrc%2Fdocs%2Fmanuals%2Fseparate-domain%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fmanuals%2Fseparate-domain%2Findex.md?ref=a73072c8fb3f5bf643307fd9843110815cd004ba",
+      "patch": "@@ -0,0 +1,26 @@\n+---\n+title: Configure Instance on a different domain\n+---\n+\n+## How to configure a single Remark42 instance for multiple domains\n+\n+### What doesn't work so far?\n+\n+Unless discussion [#1139](https://github.com/umputun/remark42/discussions/1139) has a marked answer, authorisation using oAuth like GitHub or Google is impossible on domains other than the original one. Telegram, Email and anonymous auth would work everywhere.\n+\n+### Setup\n+\n+Set `ALLOWED_HOSTS='self',example1.org,example2.org` with your domain names and `AUTH_SAME_SITE=none`. `'self'` means \"domain which Remark42 is installed on\" so you don't need to write it twice.\n+\n+### Technical details\n+\n+`ALLOWED_HOSTS` sets CSP [frame-ancestors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors), which, once enabled, limits the domains where Remark42 would work. The default value is not set so that it would work on any domain.\n+\n+`AUTH_SAME_SITE` sets the [SAME_SITE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) attribute for authorisation cookies, allowing Remark42 either on the original domain and subdomains there  (default value, not set which equals to `Lax`) or allows setting authorisation cookies on any domain where remark42 is shown (`None` setting).\n+\n+Here are all possible combinations of these two:\n+\n+- Default setup with unaltered variables: comments are shown on any domain, but the authorisation wouldn't work anywhere, but on the same domain Remark42 is installed on and subdomains of it.\n+- `ALLOWED_HOSTS` set to a set of domains: comments are shown only on listed domains, authorisation wouldn't work anywhere, but on the same domain Remark42 is installed on and subdomains of it.\n+- `AUTH_SAME_SITE` set to `None`: comments are shown on any domain. The authorisation would work anywhere.\n+- `ALLOWED_HOSTS` set to a set of domains and `AUTH_SAME_SITE` set to `None`: comments are shown on listed domains. The authorisation would work on all of them."
+    },
+    {
+      "sha": "0d824ffe23dad83728889a5849d570a5a95a0981",
+      "filename": "site/src/docs/nav.json",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/a73072c8fb3f5bf643307fd9843110815cd004ba/site%2Fsrc%2Fdocs%2Fnav.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/a73072c8fb3f5bf643307fd9843110815cd004ba/site%2Fsrc%2Fdocs%2Fnav.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fnav.json?ref=a73072c8fb3f5bf643307fd9843110815cd004ba",
+      "patch": "@@ -48,6 +48,10 @@\n         \"title\": \"Without subdomain\",\n         \"href\": \"/manuals/subdomain/\"\n       },\n+      {\n+        \"title\": \"On a separate domain\",\n+        \"href\": \"/manuals/separate-domain/\"\n+      },\n       {\n         \"title\": \"Reproxy\",\n         \"href\": \"/manuals/reproxy/\""
+    }
+  ]
+}
