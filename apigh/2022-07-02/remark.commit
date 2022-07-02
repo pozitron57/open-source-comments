@@ -1,0 +1,139 @@
+{
+  "sha": "24e9404a6f7c421172fed9b89878ce54923de58a",
+  "node_id": "C_kwDOBtgov9oAKDI0ZTk0MDRhNmY3YzQyMTE3MmZlZDliODk4NzhjZTU0OTIzZGU1OGE",
+  "commit": {
+    "author": {
+      "name": "Paul Mineev",
+      "email": "paul@mineev.me",
+      "date": "2022-06-30T02:26:03Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-07-01T17:33:15Z"
+    },
+    "message": "Fix email autofill in subscription popup",
+    "tree": {
+      "sha": "628ca075d34b41f7953c0476ff85aad4d7239b99",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/628ca075d34b41f7953c0476ff85aad4d7239b99"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/24e9404a6f7c421172fed9b89878ce54923de58a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/24e9404a6f7c421172fed9b89878ce54923de58a",
+  "html_url": "https://github.com/umputun/remark42/commit/24e9404a6f7c421172fed9b89878ce54923de58a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/24e9404a6f7c421172fed9b89878ce54923de58a/comments",
+  "author": null,
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1f1adba5fdbfd0099ec28e9a802f1bd8889dcf3b",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/1f1adba5fdbfd0099ec28e9a802f1bd8889dcf3b",
+      "html_url": "https://github.com/umputun/remark42/commit/1f1adba5fdbfd0099ec28e9a802f1bd8889dcf3b"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 35,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "130068ae0d92c3b578598412fbd2ad32a5a8bde2",
+      "filename": "frontend/app/components/auth/auth.spec.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.spec.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.spec.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.spec.tsx?ref=24e9404a6f7c421172fed9b89878ce54923de58a",
+      "patch": "@@ -141,6 +141,7 @@ describe('<Auth/>', () => {\n     jest.spyOn(api, 'emailSignin').mockImplementationOnce(async () => null);\n     jest.spyOn(api, 'verifyEmailSignin').mockImplementationOnce(async () => ({} as User));\n     jest.spyOn(utils, 'getTokenInvalidReason').mockImplementationOnce(() => null);\n+    jest.spyOn(utils, 'persistEmail').mockImplementationOnce(jest.fn());\n \n     render(<Auth />);\n \n@@ -167,6 +168,7 @@ describe('<Auth/>', () => {\n \n     await waitFor(() => expect(api.verifyEmailSignin).toBeCalled());\n     expect(api.verifyEmailSignin).toBeCalledWith('token');\n+    expect(utils.persistEmail).toBeCalledWith('email@email.com');\n   });\n \n   it('should show validation error for token', async () => {"
+    },
+    {
+      "sha": "591ec553f073a3640b4d8fda36d3c2e2fa242679",
+      "filename": "frontend/app/components/auth/auth.tsx",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 4,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark42/blob/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.tsx?ref=24e9404a6f7c421172fed9b89878ce54923de58a",
+      "patch": "@@ -16,7 +16,7 @@ import { Button } from './components/button';\n import { OAuth } from './components/oauth';\n import { messages } from './auth.messsages';\n import { useDropdown, useErrorMessage } from './auth.hooks';\n-import { getProviders, getTokenInvalidReason } from './auth.utils';\n+import { getProviders, getTokenInvalidReason, persistEmail } from './auth.utils';\n import {\n   oauthSignin,\n   emailSignin,\n@@ -31,6 +31,7 @@ import styles from './auth.module.css';\n export function Auth() {\n   const intl = useIntl();\n   const telegramParamsRef = useRef<null | { bot: string; token: string }>(null);\n+  const emailRef = useRef('');\n   const dispatch = useDispatch();\n   const [oauthProviders, formProviders] = getProviders();\n \n@@ -121,6 +122,8 @@ export function Auth() {\n           const email = data.get('email') as string;\n           const username = data.get('username') as string;\n \n+          emailRef.current = email;\n+\n           await emailSignin(email, username);\n           setView('token');\n           break;\n@@ -131,11 +134,13 @@ export function Auth() {\n \n           if (invalidReason) {\n             setError(invalidReason);\n-          } else {\n-            const user = await verifyEmailSignin(token);\n-            dispatch(setUser(user));\n+            break;\n           }\n \n+          const user = await verifyEmailSignin(token);\n+          dispatch(setUser(user));\n+          persistEmail(emailRef.current);\n+\n           break;\n         }\n       }"
+    },
+    {
+      "sha": "b92e1cb9b6532923adf0d47aa6a580d18ae779c8",
+      "filename": "frontend/app/components/auth/auth.utils.ts",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark42/blob/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.utils.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.utils.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fauth%2Fauth.utils.ts?ref=24e9404a6f7c421172fed9b89878ce54923de58a",
+      "patch": "@@ -4,6 +4,8 @@ import type { FormProvider, OAuthProvider } from 'common/types';\n \n import { OAUTH_PROVIDERS } from './components/oauth.consts';\n import { messages } from './auth.messsages';\n+import { setItem, getItem } from 'common/local-storage';\n+import { LS_EMAIL_KEY } from 'common/constants';\n \n export function getProviders(): [OAuthProvider[], FormProvider[]] {\n   const oauthProviders: OAuthProvider[] = [];\n@@ -27,3 +29,15 @@ export function getTokenInvalidReason(token: string): null | keyof typeof messag\n \n   return null;\n }\n+\n+export function persistEmail(email: string) {\n+  setItem(LS_EMAIL_KEY, email);\n+}\n+\n+export function getPersistedEmail() {\n+  return getItem(LS_EMAIL_KEY) || '';\n+}\n+\n+export function resetPersistedEmail() {\n+  setItem(LS_EMAIL_KEY, '');\n+}"
+    },
+    {
+      "sha": "d5bc5cc9fb8ced9ededabc4e46d65657e8968edd",
+      "filename": "frontend/app/components/comment-form/__subscribe-by-email/comment-form__subscribe-by-email.test.tsx",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fcomment-form%2F__subscribe-by-email%2Fcomment-form__subscribe-by-email.test.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fcomment-form%2F__subscribe-by-email%2Fcomment-form__subscribe-by-email.test.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fcomment-form%2F__subscribe-by-email%2Fcomment-form__subscribe-by-email.test.tsx?ref=24e9404a6f7c421172fed9b89878ce54923de58a",
+      "patch": "@@ -14,8 +14,8 @@ import { sleep } from 'utils/sleep';\n import { Input } from 'components/input';\n import { Button } from 'components/button';\n import { Dropdown } from 'components/dropdown';\n+import { persistEmail } from 'components/auth/auth.utils';\n import enMessages from 'locales/en.json';\n-import { LS_EMAIL_KEY } from 'common/constants';\n \n import { SubscribeByEmail, SubscribeByEmailForm } from '.';\n \n@@ -139,10 +139,12 @@ describe('<SubscribeByEmailForm/>', () => {\n   });\n \n   it('should fill in email from local storage', async () => {\n-    localStorage.setItem(LS_EMAIL_KEY, 'someone@email.com');\n+    const expected = 'someone@email.com';\n+    persistEmail(expected);\n     const wrapper = createWrapper();\n     const form = wrapper.find('form');\n-    expect(form.find('input').props().value).toEqual('someone@email.com');\n+\n+    expect(form.find('input').props().value).toBe(expected);\n   });\n \n   it('should send form by paste valid token', async () => {"
+    },
+    {
+      "sha": "005d26661bef2bbfe8144dd1c092aa080162afae",
+      "filename": "frontend/app/components/comment-form/__subscribe-by-email/comment-form__subscribe-by-email.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fcomment-form%2F__subscribe-by-email%2Fcomment-form__subscribe-by-email.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fcomponents%2Fcomment-form%2F__subscribe-by-email%2Fcomment-form__subscribe-by-email.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fcomponents%2Fcomment-form%2F__subscribe-by-email%2Fcomment-form__subscribe-by-email.tsx?ref=24e9404a6f7c421172fed9b89878ce54923de58a",
+      "patch": "@@ -5,7 +5,6 @@ import b from 'bem-react-helper';\n import { useIntl, defineMessages, IntlShape, FormattedMessage } from 'react-intl';\n \n import { User } from 'common/types';\n-import { LS_EMAIL_KEY } from 'common/constants';\n import { StoreState } from 'store';\n import { setUserSubscribed } from 'store/user/actions';\n import { sleep } from 'utils/sleep';\n@@ -18,6 +17,7 @@ import { Button } from 'components/button';\n import { Dropdown } from 'components/dropdown';\n import { Preloader } from 'components/preloader';\n import { TextareaAutosize } from 'components/textarea-autosize';\n+import { getPersistedEmail } from 'components/auth/auth.utils';\n import { isUserAnonymous } from 'utils/isUserAnonymous';\n import { isJwtExpired } from 'utils/jwt';\n \n@@ -126,7 +126,7 @@ export const SubscribeByEmailForm: FunctionComponent = () => {\n   const [step, setStep] = useState(subscribed ? Step.Subscribed : Step.Email);\n \n   const [token, setToken] = useState('');\n-  const [emailAddress, setEmailAddress] = useState(localStorage.getItem(LS_EMAIL_KEY) || '');\n+  const [emailAddress, setEmailAddress] = useState(getPersistedEmail);\n \n   const [loading, setLoading] = useState(false);\n   const [error, setError] = useState<string | null>(null);"
+    },
+    {
+      "sha": "4598f379e8d4e56752c002cd112fc89e8d256f7b",
+      "filename": "frontend/app/store/user/actions.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fstore%2Fuser%2Factions.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/24e9404a6f7c421172fed9b89878ce54923de58a/frontend%2Fapp%2Fstore%2Fuser%2Factions.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapp%2Fstore%2Fuser%2Factions.ts?ref=24e9404a6f7c421172fed9b89878ce54923de58a",
+      "patch": "@@ -3,7 +3,7 @@ import { logout } from 'components/auth/auth.api';\n import { User, BlockedUser, BlockTTL } from 'common/types';\n import { ttlToTime } from 'utils/ttl-to-time';\n import { getHiddenUsers } from 'utils/get-hidden-users';\n-import { LS_EMAIL_KEY, LS_HIDDEN_USERS_KEY } from 'common/constants';\n+import { LS_HIDDEN_USERS_KEY } from 'common/constants';\n import { setItem } from 'common/local-storage';\n \n import { StoreAction } from '../index';\n@@ -20,6 +20,7 @@ import {\n } from './types';\n import { fetchComments, unsetCommentMode } from '../comments/actions';\n import { COMMENTS_PATCH } from '../comments/types';\n+import { resetPersistedEmail } from 'components/auth/auth.utils';\n \n export function setUser(user: User | null = null): USER_SET_ACTION {\n   return {\n@@ -33,7 +34,7 @@ export function signout(cleanSession = true): StoreAction<Promise<void>> {\n     if (cleanSession) {\n       await logout();\n     }\n-    localStorage.removeItem(LS_EMAIL_KEY);\n+    resetPersistedEmail();\n     dispatch(setUser());\n     dispatch(unsetCommentMode());\n     dispatch(fetchComments());"
+    }
+  ]
+}
