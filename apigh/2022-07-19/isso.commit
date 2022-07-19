@@ -1,0 +1,103 @@
+{
+  "sha": "8d0f08a36f632fea74737f66734a51a6ac940094",
+  "node_id": "C_kwDOAF-mA9oAKDhkMGYwOGEzNmY2MzJmZWE3NDczN2Y2NjczNGE1MWE2YWM5NDAwOTQ",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2022-07-11T19:55:36Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2022-07-11T19:55:36Z"
+    },
+    "message": "Merge pull request #909 from mbrase/docker_volume_perm\n\nDockerfile: Explictly create volume paths and set permissions",
+    "tree": {
+      "sha": "96870ae09f8457d42731fd375c0bf8a1272e0e50",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/96870ae09f8457d42731fd375c0bf8a1272e0e50"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/8d0f08a36f632fea74737f66734a51a6ac940094",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJizIA4CRBK7hj4Ov3rIwAAh7cIAH/Dk2dTi5vPTO5EP+2Jv3PR\n9NfSIAPZOMHjBL6l36tGTFJaDn81DB71d6+bZWjJpPmH4sOmUWOFCByWI0hdWtBE\ni6++PpH8SiybFYVM996F8ZHj7CqTlKDi23nhKfgiewL9B/Dtyt2s4yRO21GIr/nu\nZgS/Fh1EazjvIVyDEcE2GU3gISRkmSpo0oFIKWdgkO1tHEmbrtaD/6tdQCMHU7pv\nHWDWcD3ueA6m2SR+ZtLNYGwHKRTM2KXPzmO7p93jxiyTdUPQ6O91JYihQZr9b5fJ\nNreNzkBBF/dfhw32BfjQ0ujxy2+4fABSUnc/Tv1s1vePrkHM3jVBCUGZmAB1PKM=\n=OGRe\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 96870ae09f8457d42731fd375c0bf8a1272e0e50\nparent 593a2031072594ac2c4dec820307958a51a3e1a7\nparent 3597f5b62447b3fcec80521a3e1d0cb3706e142b\nauthor ix5 <ix5@users.noreply.github.com> 1657569336 +0200\ncommitter GitHub <noreply@github.com> 1657569336 +0200\n\nMerge pull request #909 from mbrase/docker_volume_perm\n\nDockerfile: Explictly create volume paths and set permissions"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/8d0f08a36f632fea74737f66734a51a6ac940094",
+  "html_url": "https://github.com/posativ/isso/commit/8d0f08a36f632fea74737f66734a51a6ac940094",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/8d0f08a36f632fea74737f66734a51a6ac940094/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "593a2031072594ac2c4dec820307958a51a3e1a7",
+      "url": "https://api.github.com/repos/posativ/isso/commits/593a2031072594ac2c4dec820307958a51a3e1a7",
+      "html_url": "https://github.com/posativ/isso/commit/593a2031072594ac2c4dec820307958a51a3e1a7"
+    },
+    {
+      "sha": "3597f5b62447b3fcec80521a3e1d0cb3706e142b",
+      "url": "https://api.github.com/repos/posativ/isso/commits/3597f5b62447b3fcec80521a3e1d0cb3706e142b",
+      "html_url": "https://github.com/posativ/isso/commit/3597f5b62447b3fcec80521a3e1d0cb3706e142b"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "903f695063655fb54583a4068cbbe0d8cf38e2f4",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/posativ/isso/blob/8d0f08a36f632fea74737f66734a51a6ac940094/Dockerfile",
+      "raw_url": "https://github.com/posativ/isso/raw/8d0f08a36f632fea74737f66734a51a6ac940094/Dockerfile",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/Dockerfile?ref=8d0f08a36f632fea74737f66734a51a6ac940094",
+      "patch": "@@ -74,6 +74,9 @@ COPY --from=isso-builder /isso/ .\n # Clean up\n RUN rm -rf /var/apk/cache/* /tmp/* /var/tmp/*\n \n+# Setup permissions for volume mounts\n+RUN mkdir /db /config && chmod 1777 /db /config\n+\n # Configuration\n VOLUME /db /config\n EXPOSE 8080"
+    }
+  ]
+}
