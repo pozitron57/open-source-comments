@@ -1,0 +1,110 @@
+{
+  "sha": "cb98885e1f9c38609d527ca777c404ef2dbec81f",
+  "node_id": "C_kwDOBtgov9oAKGNiOTg4ODVlMWY5YzM4NjA5ZDUyN2NhNzc3YzQwNGVmMmRiZWM4MWY",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-08-16T21:10:09Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-08-16T21:10:09Z"
+    },
+    "message": "add warn log on rejected email auth validation https://github.com/umputun/remark42/discussions/1139#discussioncomment-3409701",
+    "tree": {
+      "sha": "3920b0463ddae9b35768e8f2cb5359ca8071e413",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/3920b0463ddae9b35768e8f2cb5359ca8071e413"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/cb98885e1f9c38609d527ca777c404ef2dbec81f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/cb98885e1f9c38609d527ca777c404ef2dbec81f",
+  "html_url": "https://github.com/umputun/remark42/commit/cb98885e1f9c38609d527ca777c404ef2dbec81f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/cb98885e1f9c38609d527ca777c404ef2dbec81f/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7e0445cc94181e26e836b77e3ecbb11c7af701dd",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/7e0445cc94181e26e836b77e3ecbb11c7af701dd",
+      "html_url": "https://github.com/umputun/remark42/commit/7e0445cc94181e26e836b77e3ecbb11c7af701dd"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 7,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "805345b6cfdef79630127e27299db0dd98e0c07e",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark42/blob/cb98885e1f9c38609d527ca777c404ef2dbec81f/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/cb98885e1f9c38609d527ca777c404ef2dbec81f/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest.go?ref=cb98885e1f9c38609d527ca777c404ef2dbec81f",
+      "patch": "@@ -228,7 +228,7 @@ func (s *Rest) routes() chi.Router {\n \trouter.Group(func(r chi.Router) {\n \t\tr.Use(middleware.Timeout(5 * time.Second))\n \t\tr.Use(logInfoWithBody, tollbooth_chi.LimitHandler(tollbooth.NewLimiter(2, nil)), middleware.NoCache)\n-\t\tr.Use(validEmaiAuth()) // reject suspicious email logins\n+\t\tr.Use(validEmailAuth()) // reject suspicious email logins\n \t\tr.Mount(\"/auth\", authHandler)\n \t})\n \n@@ -646,9 +646,9 @@ func subscribersOnly(enable bool) func(http.Handler) http.Handler {\n \t}\n }\n \n-// validEmaiAuth is a middleware for auth endpoints for email method.\n+// validEmailAuth is a middleware for auth endpoints for email method.\n // it rejects login request if user, site or email are suspicious\n-func validEmaiAuth() func(http.Handler) http.Handler {\n+func validEmailAuth() func(http.Handler) http.Handler {\n \n \treUser := regexp.MustCompile(`^[\\p{L}\\d\\s_]{4,64}$`) // matches ui side validation, adding min/max limitation\n \treSite := regexp.MustCompile(`^[a-zA-Z\\d\\s_]{1,64}$`)\n@@ -664,20 +664,23 @@ func validEmaiAuth() func(http.Handler) http.Handler {\n \n \t\t\tif u := r.URL.Query().Get(\"user\"); u != \"\" {\n \t\t\t\tif !reUser.MatchString(u) {\n+\t\t\t\t\tlog.Printf(\"[WARN] suspicious user rejected: %s\", u)\n \t\t\t\t\thttp.Error(w, \"Access denied\", http.StatusForbidden)\n \t\t\t\t\treturn\n \t\t\t\t}\n \t\t\t}\n \n \t\t\tif a := r.URL.Query().Get(\"address\"); a != \"\" {\n \t\t\t\tif _, err := mail.ParseAddress(a); err != nil {\n+\t\t\t\t\tlog.Printf(\"[WARN] suspicious address rejected: %s\", a)\n \t\t\t\t\thttp.Error(w, \"Access denied\", http.StatusForbidden)\n \t\t\t\t\treturn\n \t\t\t\t}\n \t\t\t}\n \n \t\t\tif s := r.URL.Query().Get(\"site\"); s != \"\" {\n \t\t\t\tif !reSite.MatchString(s) {\n+\t\t\t\t\tlog.Printf(\"[WARN] suspicious site rejected: %s\", s)\n \t\t\t\t\thttp.Error(w, \"Access denied\", http.StatusForbidden)\n \t\t\t\t\treturn\n \t\t\t\t}"
+    },
+    {
+      "sha": "56a31e2183a0ca895231c46e64319ae0465bae64",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/cb98885e1f9c38609d527ca777c404ef2dbec81f/backend%2Fapp%2Frest%2Fapi%2Frest_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/cb98885e1f9c38609d527ca777c404ef2dbec81f/backend%2Fapp%2Frest%2Fapi%2Frest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_test.go?ref=cb98885e1f9c38609d527ca777c404ef2dbec81f",
+      "patch": "@@ -394,7 +394,7 @@ func Test_validEmaiAuth(t *testing.T) {\n \t\tt.Run(strconv.Itoa(i), func(t *testing.T) {\n \t\t\treq := httptest.NewRequest(\"GET\", \"http://example.com\"+tt.req, http.NoBody)\n \t\t\tw := httptest.NewRecorder()\n-\t\t\th := validEmaiAuth()(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {}))\n+\t\t\th := validEmailAuth()(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {}))\n \t\t\th.ServeHTTP(w, req)\n \t\t\tresp := w.Result()\n \t\t\tassert.Equal(t, tt.status, resp.StatusCode)"
+    }
+  ]
+}
