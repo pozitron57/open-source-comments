@@ -1,0 +1,122 @@
+{
+  "sha": "d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+  "node_id": "C_kwDOBtgov9oAKGQ2YjI5NjBhNGFlMWI4N2E4MGNlOGJjMjhhNWE4MzZhNjI4MDNmOWY",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2022-08-22T03:35:56Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-08-22T03:36:59Z"
+    },
+    "message": "fix: save choosen color scheme",
+    "tree": {
+      "sha": "a2df83e2c991f221e1668876aa5b6a68ea8f1f63",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/a2df83e2c991f221e1668876aa5b6a68ea8f1f63"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+  "html_url": "https://github.com/umputun/remark42/commit/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/comments",
+  "author": {
+    "login": "akellbl4",
+    "id": 2330682,
+    "node_id": "MDQ6VXNlcjIzMzA2ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2330682?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/akellbl4",
+    "html_url": "https://github.com/akellbl4",
+    "followers_url": "https://api.github.com/users/akellbl4/followers",
+    "following_url": "https://api.github.com/users/akellbl4/following{/other_user}",
+    "gists_url": "https://api.github.com/users/akellbl4/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/akellbl4/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/akellbl4/subscriptions",
+    "organizations_url": "https://api.github.com/users/akellbl4/orgs",
+    "repos_url": "https://api.github.com/users/akellbl4/repos",
+    "events_url": "https://api.github.com/users/akellbl4/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/akellbl4/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b47b6c4f5615f18cef0eb4c9e5bfbf40f35dd8cf",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/b47b6c4f5615f18cef0eb4c9e5bfbf40f35dd8cf",
+      "html_url": "https://github.com/umputun/remark42/commit/b47b6c4f5615f18cef0eb4c9e5bfbf40f35dd8cf"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 6,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "45ab1bd532e0c061f3fe777abba4b64c29ef95f7",
+      "filename": "site/src/includes/inline.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/site%2Fsrc%2Fincludes%2Finline.js",
+      "raw_url": "https://github.com/umputun/remark42/raw/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/site%2Fsrc%2Fincludes%2Finline.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fincludes%2Finline.js?ref=d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+      "patch": "@@ -1,5 +1,6 @@\n const mq = window.matchMedia('(prefers-color-scheme: dark)')\n+const theme = localStorage.getItem('theme')\n \n-if (mq.matches) {\n+if ((theme && theme === 'dark') || (!theme && mq.matches)) {\n \tdocument.documentElement.classList.add('dark')\n }"
+    },
+    {
+      "sha": "cef2c14ae0e191e06599a1254b0db81a7ebe8f4e",
+      "filename": "site/src/includes/script.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/site%2Fsrc%2Fincludes%2Fscript.js",
+      "raw_url": "https://github.com/umputun/remark42/raw/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/site%2Fsrc%2Fincludes%2Fscript.js",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fincludes%2Fscript.js?ref=d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+      "patch": "@@ -1,11 +1,11 @@\n function toggleTheme() {\n \tconst root = document.documentElement\n+\tconst theme = root.classList.contains('dark') ? 'light' : 'dark'\n \n \troot.classList.toggle('dark')\n+\tlocalStorage.setItem('theme', theme)\n \n \tif (window.REMARK42) {\n-\t\tconst isDark = root.classList.contains('dark')\n-\n-\t\twindow.REMARK42.changeTheme(isDark ? 'dark' : 'light')\n+\t\twindow.REMARK42.changeTheme(theme)\n \t}\n }"
+    },
+    {
+      "sha": "569914e1328d3485afd8d1dde2018cf61cf01674",
+      "filename": "site/src/styles.css",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/site%2Fsrc%2Fstyles.css",
+      "raw_url": "https://github.com/umputun/remark42/raw/d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f/site%2Fsrc%2Fstyles.css",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fstyles.css?ref=d6b2960a4ae1b87a80ce8bc28a5a836a62803f9f",
+      "patch": "@@ -6,7 +6,7 @@\n \t@apply before:hidden after:hidden text-brand-800 dark:text-brand-300 font-light;\n }\n .prose strong code {\n-\t@apply font-bold text-yellow-600 dark:text-yellow-400;;\n+\t@apply font-bold text-yellow-600 dark:text-yellow-400;\n }\n \n .burger-icon {"
+    }
+  ]
+}
