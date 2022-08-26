@@ -1,0 +1,98 @@
+{
+  "sha": "a5f6369ee0d8f4f6e847f7e8fd7149487409152b",
+  "node_id": "C_kwDOAF-mA9oAKGE1ZjYzNjllZTBkOGY0ZjZlODQ3ZjdlOGZkNzE0OTQ4NzQwOTE1MmI",
+  "commit": {
+    "author": {
+      "name": "Lasse Borly",
+      "email": "lasseborly@gmail.com",
+      "date": "2022-07-23T09:22:52Z"
+    },
+    "committer": {
+      "name": "Lasse Borly",
+      "email": "lasseborly@gmail.com",
+      "date": "2022-07-23T09:22:52Z"
+    },
+    "message": "js: i18n: Add missing lines for da.js (#918)",
+    "tree": {
+      "sha": "715b2a3fa04c673d63caaf6f1959d2fdf637b361",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/715b2a3fa04c673d63caaf6f1959d2fdf637b361"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/a5f6369ee0d8f4f6e847f7e8fd7149487409152b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/a5f6369ee0d8f4f6e847f7e8fd7149487409152b",
+  "html_url": "https://github.com/posativ/isso/commit/a5f6369ee0d8f4f6e847f7e8fd7149487409152b",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/a5f6369ee0d8f4f6e847f7e8fd7149487409152b/comments",
+  "author": {
+    "login": "lasseborly",
+    "id": 2671660,
+    "node_id": "MDQ6VXNlcjI2NzE2NjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2671660?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lasseborly",
+    "html_url": "https://github.com/lasseborly",
+    "followers_url": "https://api.github.com/users/lasseborly/followers",
+    "following_url": "https://api.github.com/users/lasseborly/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lasseborly/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lasseborly/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lasseborly/subscriptions",
+    "organizations_url": "https://api.github.com/users/lasseborly/orgs",
+    "repos_url": "https://api.github.com/users/lasseborly/repos",
+    "events_url": "https://api.github.com/users/lasseborly/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lasseborly/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "lasseborly",
+    "id": 2671660,
+    "node_id": "MDQ6VXNlcjI2NzE2NjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2671660?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lasseborly",
+    "html_url": "https://github.com/lasseborly",
+    "followers_url": "https://api.github.com/users/lasseborly/followers",
+    "following_url": "https://api.github.com/users/lasseborly/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lasseborly/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lasseborly/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lasseborly/subscriptions",
+    "organizations_url": "https://api.github.com/users/lasseborly/orgs",
+    "repos_url": "https://api.github.com/users/lasseborly/repos",
+    "events_url": "https://api.github.com/users/lasseborly/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lasseborly/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8d0f08a36f632fea74737f66734a51a6ac940094",
+      "url": "https://api.github.com/repos/posativ/isso/commits/8d0f08a36f632fea74737f66734a51a6ac940094",
+      "html_url": "https://github.com/posativ/isso/commit/8d0f08a36f632fea74737f66734a51a6ac940094"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 7,
+    "deletions": 7
+  },
+  "files": [
+    {
+      "sha": "2b878ebdf6059544ae34a33d07f002852871346a",
+      "filename": "isso/js/app/i18n/da.js",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/posativ/isso/blob/a5f6369ee0d8f4f6e847f7e8fd7149487409152b/isso%2Fjs%2Fapp%2Fi18n%2Fda.js",
+      "raw_url": "https://github.com/posativ/isso/raw/a5f6369ee0d8f4f6e847f7e8fd7149487409152b/isso%2Fjs%2Fapp%2Fi18n%2Fda.js",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2Fjs%2Fapp%2Fi18n%2Fda.js?ref=a5f6369ee0d8f4f6e847f7e8fd7149487409152b",
+      "patch": "@@ -1,13 +1,13 @@\n module.exports= {\n-    \"postbox-text\": \"Type Comment Here (at least 3 chars)\",\n-    \"postbox-author\": \"Name (optional)\",\n-    \"postbox-email\": \"E-mail (optional)\",\n-    \"postbox-website\": \"Website (optional)\",\n-    \"postbox-preview\": \"Eksempel\",\n+    \"postbox-text\": \"Skriv din kommentar her (mindst 3 tegn)\",\n+    \"postbox-author\": \"Navn (valgfrit)\",\n+    \"postbox-email\": \"E-mail (valgfrit)\",\n+    \"postbox-website\": \"Hjemmeside (valgfrit)\",\n+    \"postbox-preview\": \"Forhåndsvisning\",\n     \"postbox-edit\": \"Rediger\",\n-    \"postbox-submit\": \"Submit\",\n+    \"postbox-submit\": \"Send\",\n \n-    \"num-comments\": \"One Comment\\n{{ n }} Comments\",\n+    \"num-comments\": \"En Kommentar\\n{{ n }} Kommentarer\",\n     \"no-comments\": \"Ingen kommentarer endnu\",\n \n     \"comment-reply\": \"Svar\","
+    }
+  ]
+}
