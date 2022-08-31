@@ -1,0 +1,98 @@
+{
+  "sha": "62d04456207529cf6e1b478680f88986d2832bc2",
+  "node_id": "C_kwDOAKEu-toAKDYyZDA0NDU2MjA3NTI5Y2Y2ZTFiNDc4NjgwZjg4OTg2ZDI4MzJiYzI",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2022-08-09T16:50:09Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2022-08-09T16:50:09Z"
+    },
+    "message": "Add 'sudo'.",
+    "tree": {
+      "sha": "cbbf8a123c0ddb203c4fa3558ded3990847a2474",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/cbbf8a123c0ddb203c4fa3558ded3990847a2474"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/62d04456207529cf6e1b478680f88986d2832bc2",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/62d04456207529cf6e1b478680f88986d2832bc2",
+  "html_url": "https://github.com/debiki/talkyard/commit/62d04456207529cf6e1b478680f88986d2832bc2",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/62d04456207529cf6e1b478680f88986d2832bc2/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d51092468443cea8bfa0d243d8bbdd9b1ffef7f9",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/d51092468443cea8bfa0d243d8bbdd9b1ffef7f9",
+      "html_url": "https://github.com/debiki/talkyard/commit/d51092468443cea8bfa0d243d8bbdd9b1ffef7f9"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f35c17806cc4f2bdce6517c85cd6eee653f04a87",
+      "filename": "s/impl/build-prod-app-image.sh",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/debiki/talkyard/blob/62d04456207529cf6e1b478680f88986d2832bc2/s%2Fimpl%2Fbuild-prod-app-image.sh",
+      "raw_url": "https://github.com/debiki/talkyard/raw/62d04456207529cf6e1b478680f88986d2832bc2/s%2Fimpl%2Fbuild-prod-app-image.sh",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/s%2Fimpl%2Fbuild-prod-app-image.sh?ref=62d04456207529cf6e1b478680f88986d2832bc2",
+      "patch": "@@ -8,7 +8,7 @@ set -x\n version=\"`cat version.txt | sed s/WIP/SNAPSHOT/`\"\n repo=`sed -nr 's/DOCKER_REPOSITORY=([a-zA-Z0-9\\._-]*).*/\\1/p' .env`\n \n-rm -fr target/docker-app-prod\n+sudo rm -fr target/docker-app-prod\n mkdir -p target/docker-app-prod\n cp -a images/app/{Dockerfile.prod,assets} target/docker-app-prod/\n cp version.txt target/docker-app-prod/"
+    }
+  ]
+}
