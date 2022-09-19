@@ -1,0 +1,134 @@
+{
+  "sha": "c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+  "node_id": "C_kwDOBtgov9oAKGMwZTg1MjBkMzFhM2ViODBlOTgxYzU3OTY2YTBjMmI5YWYxYjY3ZmQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-09-15T07:26:46Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-09-17T18:05:56Z"
+    },
+    "message": "fix makefile and dockerfile\n\nHere are multiple changes to commands run by Makefile based on my\nattempts to run it on an Oracle Linux machine with the latest Docker.",
+    "tree": {
+      "sha": "1d94aea7aed2e05c1b69de6b5936d6152673d0c3",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/1d94aea7aed2e05c1b69de6b5936d6152673d0c3"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+  "html_url": "https://github.com/umputun/remark42/commit/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "345f80d90d7230b2e87fd987dfd3fadb8d877f39",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/345f80d90d7230b2e87fd987dfd3fadb8d877f39",
+      "html_url": "https://github.com/umputun/remark42/commit/345f80d90d7230b2e87fd987dfd3fadb8d877f39"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "a58530e96bfa486e9d5dcd71ff2d369253db454b",
+      "filename": ".github/workflows/e2e-tests.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/.github%2Fworkflows%2Fe2e-tests.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/.github%2Fworkflows%2Fe2e-tests.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fe2e-tests.yml?ref=c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+      "patch": "@@ -24,7 +24,7 @@ jobs:\n \n       - name: Build & run containers\n         id: tests\n-        run: COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f compose-e2e-test.yml up --build --quiet-pull --exit-code-from tests\n+        run: COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker compose -f compose-e2e-test.yml up --build --quiet-pull --exit-code-from tests\n \n       - uses: actions/upload-artifact@v2\n         if: always()"
+    },
+    {
+      "sha": "141c31b1e15a3eddd3c8733b7c11d37b3dbffb90",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark42/raw/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile.artifacts?ref=c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+      "patch": "@@ -4,7 +4,7 @@ ENV CI=true\n \n WORKDIR /srv/frontend\n \n-COPY ./frontend/package.json ./frontend/pnpm-lock.yaml ./frontend/pnpm-workspace.yaml /srv/frontend\n+COPY ./frontend/package.json ./frontend/pnpm-lock.yaml ./frontend/pnpm-workspace.yaml /srv/frontend/\n COPY ./frontend/apps/remark42/package.json /srv/frontend/apps/remark42/package.json\n \n RUN apk add --no-cache --update git && npm i -g pnpm"
+    },
+    {
+      "sha": "516f7ebf70140e7fcbeb708fc9a8acf3b964e45a",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/Makefile",
+      "raw_url": "https://github.com/umputun/remark42/raw/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/Makefile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Makefile?ref=c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+      "patch": "@@ -11,7 +11,7 @@ bin:\n \tdocker rm -f remark42.bin\n \n docker:\n-\tdocker build -t umputun/remark42 --build-arg GITHUB_REF=$(GITHUB_REF) --build-arg GITHUB_SHA=$(GITHUB_SHA) \\\n+\tDOCKER_BUILDKIT=1 docker build -t umputun/remark42 --build-arg GITHUB_REF=$(GITHUB_REF) --build-arg GITHUB_SHA=$(GITHUB_SHA) \\\n \t\t--build-arg CI=true --build-arg SKIP_FRONTEND_TEST=true --build-arg SKIP_BACKEND_TEST=true .\n \n dockerx:"
+    },
+    {
+      "sha": "d51bb165d2c42b1ed7b8f9f62c499c218da466db",
+      "filename": "site/src/docs/manuals/subdomain/index.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/site%2Fsrc%2Fdocs%2Fmanuals%2Fsubdomain%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/c0e8520d31a3eb80e981c57966a0c2b9af1b67fd/site%2Fsrc%2Fdocs%2Fmanuals%2Fsubdomain%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fmanuals%2Fsubdomain%2Findex.md?ref=c0e8520d31a3eb80e981c57966a0c2b9af1b67fd",
+      "patch": "@@ -19,7 +19,7 @@ All README examples show configurations with remark42 on its own subdomain, i.e.\n \n Both Nginx and Caddy configuration below rely on remark42 available on hostname `remark42`, which is achieved by having `container_name: remark42` in docker-compose.\n \n-Example `docker-compose.yaml`:\n+Example `docker-compose.yml`:\n \n ```yaml\n version: \"2\""
+    }
+  ]
+}
