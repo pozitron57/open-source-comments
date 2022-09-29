@@ -1,0 +1,170 @@
+{
+  "sha": "0728b2885665f5771295b5b376fc82f9a7e8b15a",
+  "node_id": "C_kwDOBtgov9oAKDA3MjhiMjg4NTY2NWY1NzcxMjk1YjViMzc2ZmM4MmY5YTdlOGIxNWE",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-09-28T22:05:06Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-09-28T23:11:09Z"
+    },
+    "message": "bump golangci-lint, fix discovered problems\n\nAlso, improve the goveralls installation method.",
+    "tree": {
+      "sha": "7e4154c62d51c1e5ebd3481644ce36fc1c4470fa",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/7e4154c62d51c1e5ebd3481644ce36fc1c4470fa"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/0728b2885665f5771295b5b376fc82f9a7e8b15a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/0728b2885665f5771295b5b376fc82f9a7e8b15a",
+  "html_url": "https://github.com/umputun/remark42/commit/0728b2885665f5771295b5b376fc82f9a7e8b15a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/0728b2885665f5771295b5b376fc82f9a7e8b15a/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a6a9270f630338745d83589011f0d405eb2e7cd6",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/a6a9270f630338745d83589011f0d405eb2e7cd6",
+      "html_url": "https://github.com/umputun/remark42/commit/a6a9270f630338745d83589011f0d405eb2e7cd6"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 14,
+    "deletions": 24
+  },
+  "files": [
+    {
+      "sha": "fbeace65fd3b2181a739b2043370f72c9f3ac34a",
+      "filename": ".github/workflows/ci-backend.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/.github%2Fworkflows%2Fci-backend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/.github%2Fworkflows%2Fci-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-backend.yml?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -36,8 +36,8 @@ jobs:\n \n       - name: install golangci-lint and goveralls\n         run: |\n-          curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s -- -b $GITHUB_WORKSPACE v1.46.1\n-          go get -u github.com/mattn/goveralls\n+          curl -sfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $GITHUB_WORKSPACE v1.49.0\n+          go install github.com/mattn/goveralls@latest\n \n       - name: test and lint backend\n         run: |\n@@ -59,7 +59,7 @@ jobs:\n           TZ: \"America/Chicago\"\n \n       - name: submit coverage\n-        run: $(go env GOPATH)/bin/goveralls -service=\"github\" -coverprofile=$GITHUB_WORKSPACE/profile.cov\n+        run: goveralls -service=\"github\" -coverprofile=$GITHUB_WORKSPACE/profile.cov\n         working-directory: backend\n         env:\n           COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+    },
+    {
+      "sha": "f611a5500da6998e2e46019e414a34f218e75fa3",
+      "filename": "backend/.golangci.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 8,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2F.golangci.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2F.golangci.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F.golangci.yml?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -8,8 +8,6 @@ run:\n linters-settings:\n   govet:\n     check-shadowing: true\n-  golint:\n-    min-confidence: 0.1\n   maligned:\n     suggest-new: true\n   goconst:\n@@ -38,17 +36,14 @@ linters:\n     - govet\n     - unconvert\n     - megacheck\n-    - structcheck\n     - gas\n     - gocyclo\n     - dupl\n     - misspell\n     - unparam\n-    - varcheck\n-    - deadcode\n+    - unused\n     - typecheck\n     - ineffassign\n-    - varcheck\n     - stylecheck\n     - gochecknoinits\n     - exportloopref\n@@ -64,9 +59,9 @@ issues:\n     - text: \"at least one file in a package should have a package comment\"\n       linters:\n         - stylecheck\n-    - text: \"should have a package comment, unless it's in another file for this package\"\n+    - text: \"package-comments: should have a package comment\"\n       linters:\n-        - golint\n+        - revive\n     - path: _test\\.go\n       linters:\n         - gosec"
+    },
+    {
+      "sha": "4eeb78bb51b4a10e2c52b925627aad5a37c2306c",
+      "filename": "backend/app/main_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fmain_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fmain_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fmain_test.go?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -3,7 +3,6 @@ package main\n import (\n \t\"fmt\"\n \t\"io\"\n-\t\"io/ioutil\"\n \t\"math/rand\"\n \t\"net\"\n \t\"net/http\"\n@@ -22,7 +21,7 @@ import (\n )\n \n func Test_Main(t *testing.T) {\n-\tdir, err := ioutil.TempDir(os.TempDir(), \"remark42\")\n+\tdir, err := os.MkdirTemp(os.TempDir(), \"remark42\")\n \trequire.NoError(t, err)\n \tdefer os.RemoveAll(dir)\n \n@@ -60,7 +59,7 @@ func Test_Main(t *testing.T) {\n }\n \n func TestMain_WithWebhook(t *testing.T) {\n-\tdir, err := ioutil.TempDir(os.TempDir(), \"remark42\")\n+\tdir, err := os.MkdirTemp(os.TempDir(), \"remark42\")\n \trequire.NoError(t, err)\n \tdefer os.RemoveAll(dir)\n "
+    },
+    {
+      "sha": "3bc540194d188a69effb0b8d0c32f930490ebb1e",
+      "filename": "backend/app/rest/api/migrator.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Frest%2Fapi%2Fmigrator.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Frest%2Fapi%2Fmigrator.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Fmigrator.go?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -5,7 +5,6 @@ import (\n \t\"context\"\n \t\"fmt\"\n \t\"io\"\n-\t\"io/ioutil\"\n \t\"net/http\"\n \t\"os\"\n \t\"sync\"\n@@ -172,7 +171,7 @@ func (m *Migrator) remapCtrl(w http.ResponseWriter, r *http.Request) {\n \t\tdefer m.setBusy(siteID, false)\n \n \t\t// do export\n-\t\tfh, e := ioutil.TempFile(\"\", \"remark42_convert\")\n+\t\tfh, e := os.CreateTemp(\"\", \"remark42_convert\")\n \t\tif e != nil {\n \t\t\tlog.Printf(\"[WARN] failed to make temp file %+v\", e)\n \t\t\treturn\n@@ -250,7 +249,7 @@ func (m *Migrator) runImport(siteID, provider, tmpfile string) {\n \n // saveTemp reads from reader and saves to temp file\n func (m *Migrator) saveTemp(r io.Reader) (string, error) {\n-\ttmpfile, err := ioutil.TempFile(\"\", \"remark42_import\")\n+\ttmpfile, err := os.CreateTemp(\"\", \"remark42_import\")\n \tif err != nil {\n \t\treturn \"\", fmt.Errorf(\"can't make temp file: %w\", err)\n \t}"
+    },
+    {
+      "sha": "d9977b191d975777fd820fa839fbb6e66f7b9db0",
+      "filename": "backend/app/store/image/bolt_store_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fstore%2Fimage%2Fbolt_store_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fstore%2Fimage%2Fbolt_store_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fimage%2Fbolt_store_test.go?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -2,7 +2,6 @@ package image\n \n import (\n \t\"context\"\n-\t\"io/ioutil\"\n \t\"os\"\n \t\"path\"\n \t\"testing\"\n@@ -150,7 +149,7 @@ func checkBoltImgData(t *testing.T, db *bolt.DB, bucket, id string, callback fun\n }\n \n func prepareBoltImageStorageTest(t *testing.T) (svc *Bolt, teardown func()) {\n-\tloc, err := ioutil.TempDir(\"\", \"test_image_r42\")\n+\tloc, err := os.MkdirTemp(\"\", \"test_image_r42\")\n \trequire.NoError(t, err, \"failed to make temp dir\")\n \n \tsvc, err = NewBoltStorage(path.Join(loc, \"picture.db\"), bolt.Options{})"
+    },
+    {
+      "sha": "3266e2c7298b2a4fd0b3ed0e568bb291be50be9a",
+      "filename": "backend/app/store/image/fs_store_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fstore%2Fimage%2Ffs_store_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fstore%2Fimage%2Ffs_store_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fimage%2Ffs_store_test.go?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -4,7 +4,6 @@ import (\n \t\"context\"\n \t\"encoding/base64\"\n \t\"io\"\n-\t\"io/ioutil\"\n \t\"math/rand\"\n \t\"os\"\n \t\"path\"\n@@ -254,10 +253,10 @@ func TestFsStore_Info(t *testing.T) {\n }\n \n func prepareImageTest(t *testing.T) (svc *FileSystem, teardown func()) {\n-\tloc, err := ioutil.TempDir(\"\", \"test_image_r42\")\n+\tloc, err := os.MkdirTemp(\"\", \"test_image_r42\")\n \trequire.NoError(t, err, \"failed to make temp dir\")\n \n-\tstaging, err := ioutil.TempDir(\"\", \"test_image_r42.staging\")\n+\tstaging, err := os.MkdirTemp(\"\", \"test_image_r42.staging\")\n \trequire.NoError(t, err, \"failed to make temp staging dir\")\n \n \tsvc = &FileSystem{"
+    },
+    {
+      "sha": "9bddc4fa06be5d75573c5c098f2ea3615495af15",
+      "filename": "backend/app/store/service/service_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fstore%2Fservice%2Fservice_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0728b2885665f5771295b5b376fc82f9a7e8b15a/backend%2Fapp%2Fstore%2Fservice%2Fservice_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Fservice_test.go?ref=0728b2885665f5771295b5b376fc82f9a7e8b15a",
+      "patch": "@@ -3,7 +3,6 @@ package service\n import (\n \t\"context\"\n \t\"fmt\"\n-\t\"io/ioutil\"\n \t\"math/rand\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n@@ -1558,7 +1557,7 @@ func Benchmark_ServiceCreate(b *testing.B) {\n \n // makes new boltdb, put two records\n func prepStoreEngine(t *testing.T) (e engine.Interface, teardown func()) {\n-\ttestDBLoc, err := ioutil.TempDir(\"\", \"test_image_r42\")\n+\ttestDBLoc, err := os.MkdirTemp(\"\", \"test_image_r42\")\n \trequire.NoError(t, err)\n \ttestDB := path.Join(testDBLoc, \"test.db\")\n \t_ = os.Remove(testDB)"
+    }
+  ]
+}
