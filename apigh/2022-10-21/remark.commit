@@ -1,0 +1,134 @@
+{
+  "sha": "d2ea572abf53bfdece502e0da896b39b28d9588d",
+  "node_id": "C_kwDOBtgov9oAKGQyZWE1NzJhYmY1M2JmZGVjZTUwMmUwZGE4OTZiMzliMjhkOTU4OGQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-10-20T19:10:08Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-10-20T19:18:21Z"
+    },
+    "message": "fix \"it's\" used in place of \"its\"",
+    "tree": {
+      "sha": "4a463fc482631503f19b6030ed7cf499512830bb",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/4a463fc482631503f19b6030ed7cf499512830bb"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d2ea572abf53bfdece502e0da896b39b28d9588d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d2ea572abf53bfdece502e0da896b39b28d9588d",
+  "html_url": "https://github.com/umputun/remark42/commit/d2ea572abf53bfdece502e0da896b39b28d9588d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d2ea572abf53bfdece502e0da896b39b28d9588d/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8d5c4cd578d4b1bea6693b6f96882246d46e3925",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/8d5c4cd578d4b1bea6693b6f96882246d46e3925",
+      "html_url": "https://github.com/umputun/remark42/commit/8d5c4cd578d4b1bea6693b6f96882246d46e3925"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 15,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "7aca3a05639ce6c213deef2f5e70904c25443dd9",
+      "filename": "backend/app/store/engine/bolt.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 10,
+      "changes": 20,
+      "blob_url": "https://github.com/umputun/remark42/blob/d2ea572abf53bfdece502e0da896b39b28d9588d/backend%2Fapp%2Fstore%2Fengine%2Fbolt.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/d2ea572abf53bfdece502e0da896b39b28d9588d/backend%2Fapp%2Fstore%2Fengine%2Fbolt.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fengine%2Fbolt.go?ref=d2ea572abf53bfdece502e0da896b39b28d9588d",
+      "patch": "@@ -16,15 +16,15 @@ import (\n \n // BoltDB implements store.Interface, represents multiple sites with multiplexing to different bolt dbs. Thread safe.\n // there are 6 types of top-level buckets:\n-//  - comments for post in \"posts\" top-level bucket. Each url (post) makes its own bucket and each k:v pair is commentID:comment\n-//  - history of all comments. They all in a single \"last\" bucket (per site) and key is defined by ref struct as ts+commentID\n-//    value is not full comment but a reference combined from post-url+commentID\n-//  - user to comment references in \"users\" bucket. It used to get comments for user. Key is userID and value\n-//    is a nested bucket named userID with kv as ts:reference\n-//  - users details in \"user_details\" bucket. Key is userID, value - UserDetailEntry\n-//  - blocking info sits in \"block\" bucket. Key is userID, value - ts\n-//  - counts per post to keep number of comments. Key is post url, value - count\n-//  - readonly per post to keep status of manually set RO posts. Key is post url, value - ts\n+//   - comments for post in \"posts\" top-level bucket. Each url (post) makes its own bucket and each k:v pair is commentID:comment\n+//   - history of all comments. They all in a single \"last\" bucket (per site) and key is defined by ref struct as ts+commentID\n+//     value is not full comment but a reference combined from post-url+commentID\n+//   - user to comment references in \"users\" bucket. It used to get comments for user. Key is userID and value\n+//     is a nested bucket named userID with kv as ts:reference\n+//   - users details in \"user_details\" bucket. Key is userID, value - UserDetailEntry\n+//   - blocking info sits in \"block\" bucket. Key is userID, value - ts\n+//   - counts per post to keep number of comments. Key is post url, value - count\n+//   - readonly per post to keep status of manually set RO posts. Key is post url, value - ts\n type BoltDB struct {\n \tdbs map[string]*bolt.DB\n }\n@@ -780,7 +780,7 @@ func (b *BoltDB) deleteUserDetail(bdb *bolt.DB, userID string, userDetail UserDe\n \t}\n \n \treturn bdb.Update(func(tx *bolt.Tx) error {\n-\t\t// updated entry is not empty and we need to store it's updated copy\n+\t\t// updated entry is not empty and we need to store its updated copy\n \t\terr := b.save(tx.Bucket([]byte(userDetailsBucketName)), userID, entry)\n \t\tif err != nil {\n \t\t\treturn fmt.Errorf(\"failed to update detail %s for %s: %w\", userDetail, userID, err)"
+    },
+    {
+      "sha": "fc3d2c4164819fe6f856a11cf96340c3313688c6",
+      "filename": "backend/app/store/image/fs_store_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/d2ea572abf53bfdece502e0da896b39b28d9588d/backend%2Fapp%2Fstore%2Fimage%2Ffs_store_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/d2ea572abf53bfdece502e0da896b39b28d9588d/backend%2Fapp%2Fstore%2Fimage%2Ffs_store_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fimage%2Ffs_store_test.go?ref=d2ea572abf53bfdece502e0da896b39b28d9588d",
+      "patch": "@@ -227,7 +227,7 @@ func TestFsStore_Cleanup(t *testing.T) {\n \t_, err = os.Stat(img2)\n \tassert.Error(t, err, \"no file on staging anymore\")\n \t_, err = os.Stat(img3)\n-\tassert.NoError(t, err, \"third image is still on staging because it's cleanup timer was reset\")\n+\tassert.NoError(t, err, \"third image is still on staging because its cleanup timer was reset\")\n \n \terr = svc.ResetCleanupTimer(\"unknown_image.png\")\n \tassert.Error(t, err)"
+    },
+    {
+      "sha": "102cdca9a55f3120aeafc7c53fb0c9c686319e3d",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/d2ea572abf53bfdece502e0da896b39b28d9588d/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/d2ea572abf53bfdece502e0da896b39b28d9588d/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Fservice.go?ref=d2ea572abf53bfdece502e0da896b39b28d9588d",
+      "patch": "@@ -496,7 +496,7 @@ func (s *DataStore) EditComment(locator store.Locator, commentID string, req Edi\n \t\tif e := s.AdminStore.OnEvent(comment.Locator.SiteID, admin.EvDelete); e != nil {\n \t\t\tlog.Printf(\"[WARN] failed to send delete event, %s\", e)\n \t\t}\n-\t\t// clean up the comment and it's parent from cache, so that\n+\t\t// clean up the comment and its parent from cache, so that\n \t\t// after cleaning up the child, parent won't be stuck non-deletable till cache expires\n \t\tif s.repliesCache.LoadingCache != nil {\n \t\t\ts.repliesCache.Delete(commentID)\n@@ -745,12 +745,12 @@ func (s *DataStore) Delete(locator store.Locator, commentID string, mode store.D\n \tif e := s.AdminStore.OnEvent(locator.SiteID, admin.EvDelete); e != nil {\n \t\tlog.Printf(\"[WARN] failed to send delete event, %s\", e)\n \t}\n-\t// get comment to learn it's parent ID\n+\t// get comment to learn its parent ID\n \tcomment, err := s.Engine.Get(engine.GetRequest{Locator: locator, CommentID: commentID})\n \tif err != nil {\n \t\treturn err\n \t}\n-\t// clean up the comment and it's parent from cache, so that\n+\t// clean up the comment and its parent from cache, so that\n \t// after cleaning up the child, parent won't be stuck non-deletable till cache expires\n \tif s.repliesCache.LoadingCache != nil {\n \t\ts.repliesCache.Delete(commentID)"
+    },
+    {
+      "sha": "6f84674ee9b6a440a5b281753e1e6f5c670f54a7",
+      "filename": "site/src/docs/contributing/frontend/index.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/d2ea572abf53bfdece502e0da896b39b28d9588d/site%2Fsrc%2Fdocs%2Fcontributing%2Ffrontend%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/d2ea572abf53bfdece502e0da896b39b28d9588d/site%2Fsrc%2Fdocs%2Fcontributing%2Ffrontend%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fcontributing%2Ffrontend%2Findex.md?ref=d2ea572abf53bfdece502e0da896b39b28d9588d",
+      "patch": "@@ -12,7 +12,7 @@ TLDR: Preact replicates React API and compatible with its libraries.\n :::\n \n In order to inject Remark42 widgets into websites we use `iframe` and `postMessage` for communication between a site and the widget.\n-Simple widgets like [counter widget](https://remark42.com/docs/configuration/frontend/#counter-widget) can be injected as a script because it doesn't have it's own interface.\n+Simple widgets like [counter widget](https://remark42.com/docs/configuration/frontend/#counter-widget) can be injected as a script because it doesn't have its own interface.\n \n While development we setup environment which imitates real world example. We serve the page which uses Remark42 config and inject all of the widgets on it. You can check it on our [demo site](https://demo.remark42.com/web/). After successful installation you should have the same page running locally.\n "
+    }
+  ]
+}
