@@ -1,0 +1,98 @@
+{
+  "sha": "2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a",
+  "node_id": "C_kwDOBtgov9oAKDJiZGMwNWRkNDdkNWFiZGRiYzcxMDVmNDBiZTMzNGM1YmNkN2FlMmE",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-10-23T17:30:59Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-10-23T17:55:34Z"
+    },
+    "message": "remove unused entrypoint.sh\n\nIt should be removed after changes in 141c75401.",
+    "tree": {
+      "sha": "37d3b23d35e3a38a48d74fbee7c08e6c5a02c257",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/37d3b23d35e3a38a48d74fbee7c08e6c5a02c257"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a",
+  "html_url": "https://github.com/umputun/remark42/commit/2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d2ea572abf53bfdece502e0da896b39b28d9588d",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/d2ea572abf53bfdece502e0da896b39b28d9588d",
+      "html_url": "https://github.com/umputun/remark42/commit/d2ea572abf53bfdece502e0da896b39b28d9588d"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 2,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "6d445fc0c7130febb4ad22e597052ff846210764",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 4,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=2bdc05dd47d5abddbc7105f40be334c5bcd7ae2a",
+      "patch": "@@ -96,20 +96,18 @@ LABEL org.opencontainers.image.authors=\"Umputun <umputun@gmail.com>\" \\\n \n WORKDIR /srv\n \n-ADD docker-init.sh /entrypoint.sh\n+COPY docker-init.sh /srv/init.sh\n ADD backend/scripts/backup.sh /usr/local/bin/backup\n ADD backend/scripts/restore.sh /usr/local/bin/restore\n ADD backend/scripts/import.sh /usr/local/bin/import\n-RUN chmod +x /entrypoint.sh /usr/local/bin/backup /usr/local/bin/restore /usr/local/bin/import\n+RUN chmod +x /srv/init.sh /usr/local/bin/backup /usr/local/bin/restore /usr/local/bin/import\n \n COPY --from=build-backend /build/backend/remark42 /srv/remark42\n COPY --from=build-frontend /srv/frontend/apps/remark42/public/ /srv/web/\n-COPY docker-init.sh /srv/init.sh\n RUN chown -R app:app /srv\n RUN ln -s /srv/remark42 /usr/bin/remark42\n \n EXPOSE 8080\n HEALTHCHECK --interval=30s --timeout=3s CMD curl --fail http://localhost:8080/ping || exit 1\n \n-RUN chmod +x /srv/init.sh\n CMD [\"/srv/remark42\", \"server\"]"
+    }
+  ]
+}
