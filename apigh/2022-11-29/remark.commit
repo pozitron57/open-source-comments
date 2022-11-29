@@ -1,0 +1,98 @@
+{
+  "sha": "f1b65db2c76dd8f4dc47e90897ea8dd843288b77",
+  "node_id": "C_kwDOBtgov9oAKGYxYjY1ZGIyYzc2ZGQ4ZjRkYzQ3ZTkwODk3ZWE4ZGQ4NDMyODhiNzc",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2022-11-12T21:34:32Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-11-13T18:02:40Z"
+    },
+    "message": "prefer unused PreferServerCipherSuites param\n\nThis is not used since 1.17,\nhttps://github.com/golang/go/commit/9d0819b27ca248f9949e7cf6bf7cb9fe7cf574e8",
+    "tree": {
+      "sha": "cdab560e8f51db2ecc480fd7715de9bd637c84b5",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/cdab560e8f51db2ecc480fd7715de9bd637c84b5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/f1b65db2c76dd8f4dc47e90897ea8dd843288b77",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/f1b65db2c76dd8f4dc47e90897ea8dd843288b77",
+  "html_url": "https://github.com/umputun/remark42/commit/f1b65db2c76dd8f4dc47e90897ea8dd843288b77",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/f1b65db2c76dd8f4dc47e90897ea8dd843288b77/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f5f287ef06d5094b0a556bf8665c24d30069fd26",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/f5f287ef06d5094b0a556bf8665c24d30069fd26",
+      "html_url": "https://github.com/umputun/remark42/commit/f5f287ef06d5094b0a556bf8665c24d30069fd26"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 0,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "36acffa5f9b1e690c21fa7d9f806813bca91ecf1",
+      "filename": "backend/app/rest/api/ssl.go",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 4,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/f1b65db2c76dd8f4dc47e90897ea8dd843288b77/backend%2Fapp%2Frest%2Fapi%2Fssl.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/f1b65db2c76dd8f4dc47e90897ea8dd843288b77/backend%2Fapp%2Frest%2Fapi%2Fssl.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Fssl.go?ref=f1b65db2c76dd8f4dc47e90897ea8dd843288b77",
+      "patch": "@@ -111,15 +111,11 @@ func (s *Rest) getRemarkHost() string {\n \n func (s *Rest) makeTLSConfig() *tls.Config {\n \treturn &tls.Config{\n-\t\tPreferServerCipherSuites: true,\n \t\tCipherSuites: []uint16{\n \t\t\ttls.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,\n \t\t\ttls.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,\n-\t\t\t// tls.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,\n-\t\t\t// tls.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,\n \t\t\ttls.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,\n \t\t\ttls.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,\n-\t\t\t// tls.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA,\n \t\t},\n \t\tMinVersion: tls.VersionTLS12,\n \t\tCurvePreferences: []tls.CurveID{"
+    }
+  ]
+}
