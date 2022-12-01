@@ -1,0 +1,103 @@
+{
+  "sha": "6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+  "node_id": "C_kwDOBtgov9oAKDZmZTM3M2Q1NDBkYTJiMWZlZGU5ZjQwOTRlMWJiYWI0YjI3M2Q1ZTg",
+  "commit": {
+    "author": {
+      "name": "Pavel Mineev",
+      "email": "pavel@mineev.me",
+      "date": "2022-11-30T00:30:42Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2022-11-30T07:19:51Z"
+    },
+    "message": "fix: update fe contributing documentation and get dev commands in order",
+    "tree": {
+      "sha": "b4dde8c671a9bf90569d105aa8f86933c0d16409",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/b4dde8c671a9bf90569d105aa8f86933c0d16409"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+  "html_url": "https://github.com/umputun/remark42/commit/6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/comments",
+  "author": null,
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ba19bcc729850c5591d989714ffa3af6d4685d4a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/ba19bcc729850c5591d989714ffa3af6d4685d4a",
+      "html_url": "https://github.com/umputun/remark42/commit/ba19bcc729850c5591d989714ffa3af6d4685d4a"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 7,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "859ccafb066caa14a75bd6805ed54fbaac0c7ff6",
+      "filename": "frontend/apps/remark42/package.json",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/frontend%2Fapps%2Fremark42%2Fpackage.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/frontend%2Fapps%2Fremark42%2Fpackage.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fpackage.json?ref=6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+      "patch": "@@ -3,8 +3,9 @@\n   \"version\": \"0.16.0\",\n   \"license\": \"MIT\",\n   \"scripts\": {\n-    \"dev\": \"cross-env REMARK_URL=http://127.0.0.1:8080 webpack serve --mode development\",\n-    \"start\": \"cross-env REMARK_API_BASE_URL=https://demo.remark42.com webpack serve --mode development\",\n+    \"dev\": \"cross-env REMARK_URL=http://127.0.0.1:8080 pnpm dev:custom\",\n+    \"dev:demo\": \"cross-env REMARK_API_BASE_URL=https://demo.remark42.com pnpm dev:custom\",\n+    \"dev:custom\": \"webpack serve --mode development\",\n     \"build\": \"webpack --mode production\",\n     \"build:analyze\": \"webpack --mode production --analyze\",\n     \"lint\": \"run-p lint:*\","
+    },
+    {
+      "sha": "7f11748a53c22adaeb22db9a72399b418020f340",
+      "filename": "frontend/package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/frontend%2Fpackage.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/frontend%2Fpackage.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fpackage.json?ref=6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+      "patch": "@@ -11,7 +11,7 @@\n   \"scripts\": {\n     \"prepare\": \"if [ -z \\\"$CI\\\" ]; then cd .. && husky install frontend/.husky; else echo \\\"Skip Husky Hooks\\\"; fi\",\n     \"lint-staged\": \"lint-staged\",\n-    \"dev:remark42\": \"turbo run dev --filter=@remark42/app\",\n+    \"dev:app\": \"turbo run dev --filter=@remark42/app\",\n     \"test:api\": \"turbo run test --filter=@remark42/api\",\n     \"coverage:api\": \"turbo run coverage --filter=@remark42/api\",\n     \"type-check:api\": \"turbo run type-check --filter=@remark42/api\","
+    },
+    {
+      "sha": "249ad429c10b5bf56a9f29cf0e5ab6e689974d45",
+      "filename": "site/src/docs/contributing/frontend/index.md",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/site%2Fsrc%2Fdocs%2Fcontributing%2Ffrontend%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/6fe373d540da2b1fede9f4094e1bbab4b273d5e8/site%2Fsrc%2Fdocs%2Fcontributing%2Ffrontend%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fcontributing%2Ffrontend%2Findex.md?ref=6fe373d540da2b1fede9f4094e1bbab4b273d5e8",
+      "patch": "@@ -36,12 +36,12 @@ Please use `127.0.0.1` and not `localhost` to access the server; otherwise, CORS\n \n You can run frontend against demo instance of Remark42. This method of running Remark42 frontend code is preferred when you make a translation or visual adjustments that are easy to see without extensive testing. For this method we use our demo instance of Remark42 served on https://demo.remark42.com\n \n-For local development mode with Hot Reloading, use `pnpm start:app`. In this case, `webpack` will serve files using `webpack-dev-server` on `127.0.0.1:9000`. By visiting <http://127.0.0.1:9000/web/>, you will get a page with the main comments' widget communicating with a demo server backend running on `https://demo.remark42.com`. But you will not be able to log in with any OAuth providers due to security reasons.\n+For local development mode with Hot Reloading, use `pnpm dev:app`. In this case, `webpack` will serve files using `webpack-dev-server` on `127.0.0.1:9000`. By visiting <http://127.0.0.1:9000/web/>, you will get a page with the main comments' widget communicating with a demo server backend running on `https://demo.remark42.com`. But you will not be able to log in with any OAuth providers due to security reasons.\n \n-You can attach the frontend to the locally running backend by providing the `REMARK_URL` environment variable.\n+You can attach the frontend to the locally running backend from `frontend/apps/remark42` folder and providing the `REMARK_URL` environment variable.\n \n ```shell\n-npx cross-env REMARK_URL=http://127.0.0.1:8080 pnpm dev:app\n+npx cross-env REMARK_URL=http://127.0.0.1:8080 pnpm dev:custom\n ```\n \n ::: note ℹ️"
+    }
+  ]
+}
