@@ -1,0 +1,110 @@
+{
+  "sha": "6616541f65dded52b800ea68350d267b043d469e",
+  "node_id": "C_kwDOBtgov9oAKDY2MTY1NDFmNjVkZGVkNTJiODAwZWE2ODM1MGQyNjdiMDQzZDQ2OWU",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-01-08T20:12:40Z"
+    },
+    "committer": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-01-10T22:53:26Z"
+    },
+    "message": "improve frontend documentation\n\nVariables were documented in the documentation but not in the code,\nand max_last_comments needed to be documented.",
+    "tree": {
+      "sha": "8f0526d7646d649f16b70c9c1ec5e98ef79ece49",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/8f0526d7646d649f16b70c9c1ec5e98ef79ece49"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/6616541f65dded52b800ea68350d267b043d469e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/6616541f65dded52b800ea68350d267b043d469e",
+  "html_url": "https://github.com/umputun/remark42/commit/6616541f65dded52b800ea68350d267b043d469e",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/6616541f65dded52b800ea68350d267b043d469e/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "01695822bbf2fc27216b78d8e786b4da3932f72f",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/01695822bbf2fc27216b78d8e786b4da3932f72f",
+      "html_url": "https://github.com/umputun/remark42/commit/01695822bbf2fc27216b78d8e786b4da3932f72f"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 26,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "4094a7f7332ecf055fcd99939432005042a035f0",
+      "filename": "frontend/apps/remark42/app/typings/global.d.ts",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 25,
+      "blob_url": "https://github.com/umputun/remark42/blob/6616541f65dded52b800ea68350d267b043d469e/frontend%2Fapps%2Fremark42%2Fapp%2Ftypings%2Fglobal.d.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/6616541f65dded52b800ea68350d267b043d469e/frontend%2Fapps%2Fremark42%2Fapp%2Ftypings%2Fglobal.d.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Ftypings%2Fglobal.d.ts?ref=6616541f65dded52b800ea68350d267b043d469e",
+      "patch": "@@ -2,18 +2,39 @@ import 'jest-fetch-mock';\n import type { Theme } from 'common/types';\n \n type RemarkConfig = {\n+  // Hostname of Remark42 server, same as REMARK_URL in backend config, e.g. \"https://demo.remark42.com\".\n   host?: string;\n+  // The SITE that you passed to Remark42 instance on start of backend.\n   site_id: string;\n+  // Optional, 'window.location.origin + window.location.pathname' by default.\n+  // URL to the page with comments, it is used as unique identificator for comments thread\n+  //\n+  // Note that if you use query parameters as significant part of URL(the one that actually changes content on page)\n+  // you will have to configure URL manually to keep query params, as 'window.location.origin + window.location.pathname'\n+  // doesn't contain query params and hash. For example, default URL for 'https://example/com/example-post?id=1#hash'\n+  // would be 'https://example/com/example-post'\n   url?: string;\n+  // Optional, '15' by default. Maximum number of comments that is rendered on mobile version.\n   max_shown_comments?: number;\n+  // Optional, '15' by default. Maximum number of comments in the last comments widget.\n+  max_last_comments?: number;\n+  // Optional, 'dark' or 'light', 'light' by default. Changes UI theme.\n   theme?: Theme;\n+  // Optional, 'document.title' by default. Title for current comments page.\n   page_title?: string;\n+  // Optional, 'en' by default. Interface localization.\n   locale?: string;\n+  // Optional, 'true' by default. Enables email subscription feature in interface when enable it from backend side,\n+  // if you set this param in 'false' you will get notifications email notifications as admin but your users\n+  // won't have interface for subscription\n   show_email_subscription?: boolean;\n-  max_last_comments?: number;\n-  __colors__?: Record<string, string>;\n+  // Optional, 'true' by default. Enables RSS subscription feature in interface.\n+  show_rss_subscription?: boolean;\n+  // Optional, 'false' by default. Overrides the parameter from the backend minimized UI with basic info only.\n   simple_view?: boolean;\n+  // Optional, 'false' by default. Hides footer with signature and links to Remark42.\n   no_footer?: boolean;\n+  __colors__?: Record<string, string>;\n };\n \n declare global {"
+    },
+    {
+      "sha": "68a5bc9707c1d3dbcb20afdb7b3d0e55f168b188",
+      "filename": "site/src/docs/configuration/frontend/index.md",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/6616541f65dded52b800ea68350d267b043d469e/site%2Fsrc%2Fdocs%2Fconfiguration%2Ffrontend%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/6616541f65dded52b800ea68350d267b043d469e/site%2Fsrc%2Fdocs%2Fconfiguration%2Ffrontend%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Ffrontend%2Findex.md?ref=6616541f65dded52b800ea68350d267b043d469e",
+      "patch": "@@ -13,14 +13,15 @@ title: Frontend Configuration\n   - `'embed'` – basic comments widget\n   - `'last-comments'` – last comments widget, see [Last Comments](#last-comments-widget) section below\n   - `'counter'` – counter widget, see [Counter](#counter-widget) section below\n-- **`max_shown_comments`**`: number` (optional, `15` by default) – maximum number of comments that is renered on mobile version\n+- **`max_shown_comments`**`: number` (optional, `15` by default) – maximum number of comments that is rendered on mobile version\n+- **`max_last_comments`**`: number` (optional, `15` by default) – maximum number of comments in the last comments widget\n - **`theme`**`: 'light' | 'dark'` (optional, `'light'` by default) – changes UI theme\n - **`page_title`**`: string` (optional, `document.title` by default) – title for current comments page\n - **`locale`**`: enum` (optional, `'en'` by default) – interface localization, [check possible localizations](#locales)\n - **`show_email_subscription`**`: boolean` (optional, `true` by default) – enables email subscription feature in interface when enable it from backend side, if you set this param in `false` you will get notifications email notifications as admin but your users won't have interface for subscription\n - **`show_rss_subscription`**`: boolean` (optional, `true` by default) – enables RSS subscription feature in interface\n - **`simple_view`**`: boolean` (optional, `false` by default) – overrides the parameter from the backend minimized UI with basic info only\n-- **`no_footer`**`: boolean` (optional, `false` by default) – hides footer with signatue and links to remark42\n+- **`no_footer`**`: boolean` (optional, `false` by default) – hides footer with signature and links to Remark42\n \n Example with all of the params:\n "
+    }
+  ]
+}
