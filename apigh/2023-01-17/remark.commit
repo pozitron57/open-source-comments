@@ -1,0 +1,98 @@
+{
+  "sha": "8357846818f0c58dcdd57ea9e09f4470d5a1e72a",
+  "node_id": "C_kwDOBtgov9oAKDgzNTc4NDY4MThmMGM1OGRjZGQ1N2VhOWUwOWY0NDcwZDVhMWU3MmE",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-01-15T18:53:24Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2023-01-15T18:54:44Z"
+    },
+    "message": "add test JWT token generation instructions",
+    "tree": {
+      "sha": "db7c2f986126c932b0061e7336fe4eb6ddf8d915",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/db7c2f986126c932b0061e7336fe4eb6ddf8d915"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/8357846818f0c58dcdd57ea9e09f4470d5a1e72a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/8357846818f0c58dcdd57ea9e09f4470d5a1e72a",
+  "html_url": "https://github.com/umputun/remark42/commit/8357846818f0c58dcdd57ea9e09f4470d5a1e72a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/8357846818f0c58dcdd57ea9e09f4470d5a1e72a/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "31ea91afb8ae28bf4fc8b2860fb91ab20e9258e1",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/31ea91afb8ae28bf4fc8b2860fb91ab20e9258e1",
+      "html_url": "https://github.com/umputun/remark42/commit/31ea91afb8ae28bf4fc8b2860fb91ab20e9258e1"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "590fbe7529a561c207f4afc8d2bc720441caf318",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/8357846818f0c58dcdd57ea9e09f4470d5a1e72a/backend%2Fapp%2Frest%2Fapi%2Frest_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/8357846818f0c58dcdd57ea9e09f4470d5a1e72a/backend%2Fapp%2Frest%2Fapi%2Frest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_test.go?ref=8357846818f0c58dcdd57ea9e09f4470d5a1e72a",
+      "patch": "@@ -37,6 +37,9 @@ import (\n \t\"github.com/umputun/remark42/backend/app/store/service\"\n )\n \n+// To generate a token, enter one of the tokens here into https://jwt.io, change the secret to one you're using in your test\n+// (\"secret\" in case of startupT), and alter the fields you want to be changed.\n+\n var devToken = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZW1hcms0MiIsImV4cCI6Mzc4OTE5MTgyMiwianRpIjoicmFuZG9tIGlkIiwiaXNzIjoicmVtYXJrNDIiLCJuYmYiOjE1MjE4ODQyMjIsInVzZXIiOnsibmFtZSI6ImRldmVsb3BlciBvbmUiLCJpZCI6ImRldiIsInBpY3R1cmUiOiJodHRwOi8vZXhhbXBsZS5jb20vcGljLnBuZyIsImlwIjoiMTI3LjAuMC4xIiwiZW1haWwiOiJtZUBleGFtcGxlLmNvbSJ9fQ.aKUAXiZxXypgV7m1wEOgUcyPOvUDXHDi3A06YWKbcLg`\n \n var anonToken = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZW1hcms0MiIsImV4cCI6Mzc4OTE5MTgyMiwianRpIjoicmFuZG9tIGlkIiwiaXNzIjoicmVtYXJrNDIiLCJuYmYiOjE1MjE4ODQyMjIsInVzZXIiOnsibmFtZSI6ImFub255bW91cyB0ZXN0IHVzZXIiLCJpZCI6ImFub255bW91c190ZXN0X3VzZXIiLCJwaWN0dXJlIjoiaHR0cDovL2V4YW1wbGUuY29tL3BpYy5wbmciLCJpcCI6IjEyNy4wLjAuMSIsImVtYWlsIjoiYW5vbkBleGFtcGxlLmNvbSJ9fQ.gAae2WMxZNZE5ebVboptPEyQ7Nk6EQxciNnGJ_mPOuU`"
+    }
+  ]
+}
