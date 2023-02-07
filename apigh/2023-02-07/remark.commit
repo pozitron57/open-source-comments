@@ -1,0 +1,98 @@
+{
+  "sha": "a55fadd53a4918cd067349b270c2542019ceae36",
+  "node_id": "C_kwDOBtgov9oAKGE1NWZhZGQ1M2E0OTE4Y2QwNjczNDliMjcwYzI1NDIwMTljZWFlMzY",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-02-05T20:06:06Z"
+    },
+    "committer": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-02-05T20:11:12Z"
+    },
+    "message": "make docker build fail on backend test failure\n\nPreviously, the commands were combined incorrectly, and the failure\nof backend tests was ignored.",
+    "tree": {
+      "sha": "02af931a4fadb09fecded6723995d81b00f35e00",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/02af931a4fadb09fecded6723995d81b00f35e00"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/a55fadd53a4918cd067349b270c2542019ceae36",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/a55fadd53a4918cd067349b270c2542019ceae36",
+  "html_url": "https://github.com/umputun/remark42/commit/a55fadd53a4918cd067349b270c2542019ceae36",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/a55fadd53a4918cd067349b270c2542019ceae36/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c70a66a1c5bf0579253fe17e970d873a9d6bc753",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/c70a66a1c5bf0579253fe17e970d873a9d6bc753",
+      "html_url": "https://github.com/umputun/remark42/commit/c70a66a1c5bf0579253fe17e970d873a9d6bc753"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "79a52ded25bfc6d26e3f77248e7df6933f2a287e",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/a55fadd53a4918cd067349b270c2542019ceae36/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/a55fadd53a4918cd067349b270c2542019ceae36/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=a55fadd53a4918cd067349b270c2542019ceae36",
+      "patch": "@@ -70,7 +70,7 @@ RUN \\\n     cd app && \\\n     if [ -z \"$SKIP_BACKEND_TEST\" ] ; then \\\n         CGO_ENABLED=1 go test -race -p 1 -timeout=\"${BACKEND_TEST_TIMEOUT:-300s}\" -covermode=atomic -coverprofile=/profile.cov_tmp ./... && \\\n-        cat /profile.cov_tmp | grep -v \"_mock.go\" > /profile.cov ; \\\n+        cat /profile.cov_tmp | grep -v \"_mock.go\" > /profile.cov && \\\n         golangci-lint run --config ../.golangci.yml ./... ; \\\n     else \\\n       echo \"skip backend tests and linter\" \\"
+    }
+  ]
+}

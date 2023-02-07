@@ -1,0 +1,110 @@
+{
+  "sha": "287ee725c5b6949bb460350a2faaa584e20043f3",
+  "node_id": "C_kwDOAKEu-toAKDI4N2VlNzI1YzViNjk0OWJiNDYwMzUwYTJmYWFhNTg0ZTIwMDQzZjM",
+  "commit": {
+    "author": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2023-01-05T08:39:05Z"
+    },
+    "committer": {
+      "name": "Kaj Magnus Lindberg",
+      "email": "kajmagnus3@gmail.com",
+      "date": "2023-01-05T08:39:05Z"
+    },
+    "message": "Fix Makefile wrong-relchans/tyse-v0-dev and bump-version bug\n\nNow when the version nr is v0.YYYY.00N, need to take two '0', not\njust one, into account.",
+    "tree": {
+      "sha": "e27f20183b8c056bcde481f3fcb5682b63494381",
+      "url": "https://api.github.com/repos/debiki/talkyard/git/trees/e27f20183b8c056bcde481f3fcb5682b63494381"
+    },
+    "url": "https://api.github.com/repos/debiki/talkyard/git/commits/287ee725c5b6949bb460350a2faaa584e20043f3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/debiki/talkyard/commits/287ee725c5b6949bb460350a2faaa584e20043f3",
+  "html_url": "https://github.com/debiki/talkyard/commit/287ee725c5b6949bb460350a2faaa584e20043f3",
+  "comments_url": "https://api.github.com/repos/debiki/talkyard/commits/287ee725c5b6949bb460350a2faaa584e20043f3/comments",
+  "author": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "kajmagnus",
+    "id": 7477359,
+    "node_id": "MDQ6VXNlcjc0NzczNTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7477359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kajmagnus",
+    "html_url": "https://github.com/kajmagnus",
+    "followers_url": "https://api.github.com/users/kajmagnus/followers",
+    "following_url": "https://api.github.com/users/kajmagnus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kajmagnus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kajmagnus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kajmagnus/subscriptions",
+    "organizations_url": "https://api.github.com/users/kajmagnus/orgs",
+    "repos_url": "https://api.github.com/users/kajmagnus/repos",
+    "events_url": "https://api.github.com/users/kajmagnus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kajmagnus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d835960c1f0b6942afaa8256b0d6bf862b241a87",
+      "url": "https://api.github.com/repos/debiki/talkyard/commits/d835960c1f0b6942afaa8256b0d6bf862b241a87",
+      "html_url": "https://github.com/debiki/talkyard/commit/d835960c1f0b6942afaa8256b0d6bf862b241a87"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 8,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "cfa62d2da116cab0dca191e1757851e91d87d06b",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/debiki/talkyard/blob/287ee725c5b6949bb460350a2faaa584e20043f3/Makefile",
+      "raw_url": "https://github.com/debiki/talkyard/raw/287ee725c5b6949bb460350a2faaa584e20043f3/Makefile",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/Makefile?ref=287ee725c5b6949bb460350a2faaa584e20043f3",
+      "patch": "@@ -681,11 +681,10 @@ push-tag-to-git:\n \t@# Do Not push to master — doing that would include this version in tyse-v0-regular.\n \t@# Exit on any error, so won't push something broken to the versions repo.\n \t@#\n-\t@# Old: git checkout -B $(DEV_RELEASE_CHANNEL) --track origin/$(DEV_RELEASE_CHANNEL)\n-\t@#\n \t@set -e  ;\\\n \tcd relchans/$(DEV_RELEASE_CHANNEL)/  ;\\\n \t  git fetch origin $(DEV_RELEASE_CHANNEL)  ;\\\n+\t  git checkout -B $(DEV_RELEASE_CHANNEL) --track origin/$(DEV_RELEASE_CHANNEL)  ;\\\n \t  git merge --ff-only origin/$(DEV_RELEASE_CHANNEL)  ;\\\n \t  echo $(tag) >> version-tags.log  ;\\\n \t  git add version-tags.log  ;\\"
+    },
+    {
+      "sha": "b1ab213235e31c2e9638c1f970502d8482504302",
+      "filename": "s/bump-versions.sh",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 4,
+      "changes": 11,
+      "blob_url": "https://github.com/debiki/talkyard/blob/287ee725c5b6949bb460350a2faaa584e20043f3/s%2Fbump-versions.sh",
+      "raw_url": "https://github.com/debiki/talkyard/raw/287ee725c5b6949bb460350a2faaa584e20043f3/s%2Fbump-versions.sh",
+      "contents_url": "https://api.github.com/repos/debiki/talkyard/contents/s%2Fbump-versions.sh?ref=287ee725c5b6949bb460350a2faaa584e20043f3",
+      "patch": "@@ -13,15 +13,18 @@ old_nr=$(  \\\n \n # Remove any leading 0 or Bash thinks 08 is base 8  (not base 10).\n # No quotes needed in [[ =~ ]].\n-if [[ $old_nr =~ ^0[0-9]$ ]]; then\n-  old_nr=\"$(echo \"$old_nr\" | sed 's/^0//')\"\n+if [[ $old_nr =~ ^0+[1-9][0-9]*$ ]]; then\n+  old_nr=\"$(echo \"$old_nr\" | sed -r 's/^0+//')\"\n fi\n \n next_nr=`printf '%d' $(($old_nr + 1))`\n \n-# Pad N to 0N, since the in-year release nr should always be 2 digits, e.g. 07 not 7.\n-# No quotes needed in [[ =~ ]].\n+# Pad N and 0N to 00N, since the in-year release nr should always be three digits,\n+# e.g. 007 not 7. No quotes needed in [[ =~ ]].\n if [[ $next_nr =~ ^.$ ]]; then\n+  next_nr=\"00$next_nr\"\n+fi\n+if [[ $next_nr =~ ^..$ ]]; then\n   next_nr=\"0$next_nr\"\n fi\n "
+    }
+  ]
+}
