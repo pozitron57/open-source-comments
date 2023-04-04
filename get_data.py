@@ -17,11 +17,10 @@ import json
 import ruamel.yaml
 import fileinput
 import dateutil.parser
-from datetime import date, timedelta
+from datetime import datetime, date, timedelta
 from json.decoder import JSONDecodeError
 
-gh_credentials_path = '/home/slisakov/gh_credentials'
-#gh_credentials_path = '/Users/slisakov/Yandex.Disk.localized/gh_credentials'
+github_token = os.environ['GITHUB_TOKEN']
 
 # Setup yaml parser
 yaml = ruamel.yaml.YAML()
@@ -58,7 +57,7 @@ for i in data:
 
 # Define today's path
 #mydate = date(2020,5,20)
-mydate = date.today()
+mydate = datetime.strptime(os.environ['INPUT_DATE'], '%Y-%m-%d').date() if os.environ['INPUT_DATE'] else date.today()
 p     = 'apigh/'      + str(mydate)+'/'
 fdate = 'apigh/file_' + str(mydate)
 open(fdate, 'w').close() # clear fdate content if existed
@@ -82,18 +81,6 @@ dtr = {}
 if not os.path.isdir(p):
     print(p, 'will be written')
     os.system('mkdir -p {}'.format(p))
-
-    # Save github repo info to apigh/YYYY-MM-DD/<comment_system>
-    # Attention, there is a limit of requests per IP per hour
-    # (created, license, open_issues)
-
-    ## Read your credentials from the file outside of the repo.
-    #It's a bad idea to store your token in a text file, 
-    # use only for testing
-    with open(gh_credentials_path, 'r') as f:
-        for line in f:
-            github_username = line.split()[0]
-            github_token    = line.split()[1]
 
     for url, cs in zip(github_urls, comment_systems):
         print(cs,)
