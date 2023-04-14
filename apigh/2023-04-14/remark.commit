@@ -1,0 +1,146 @@
+{
+  "sha": "26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+  "node_id": "C_kwDOBtgov9oAKDI2ZjgyYWQ5NWMwOWZlNzNjOTU5MzVkNGM1MDE0ZTk2MDZiYzdmZmI",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-01-09T20:19:34Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2023-04-10T04:30:21Z"
+    },
+    "message": "don't allow relative links in comments\n\n(url) is a text inserted by default and never an intended URL.\n\nThat additional validation will ensure that users won't post relative\nlinks because they are rarely intended.",
+    "tree": {
+      "sha": "84c61c3a2b07b48559af573c7a58fdb3b4e412d0",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/84c61c3a2b07b48559af573c7a58fdb3b4e412d0"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+  "html_url": "https://github.com/umputun/remark42/commit/26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1b90604b2d019002e66c5f9f74c1e09ce45db2cd",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/1b90604b2d019002e66c5f9f74c1e09ce45db2cd",
+      "html_url": "https://github.com/umputun/remark42/commit/1b90604b2d019002e66c5f9f74c1e09ce45db2cd"
+    }
+  ],
+  "stats": {
+    "total": 89,
+    "additions": 67,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "6537519b9f36661417fec9a1c547acdbd2256b67",
+      "filename": "backend/app/rest/api/rest_private_test.go",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/umputun/remark42/blob/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go?ref=26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+      "patch": "@@ -166,6 +166,25 @@ func TestRest_CreateWithRestrictedWord(t *testing.T) {\n \tassert.Equal(t, \"invalid comment\", c[\"details\"])\n }\n \n+func TestRest_CreateRelativeURL(t *testing.T) {\n+\tts, _, teardown := startupT(t)\n+\tdefer teardown()\n+\n+\t// check that it's not possible to click insert URL button and not alter the URL in it (which is `url` by default)\n+\trelativeURLText := `{\"text\": \"here is a link with relative URL: [google.com](url)\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"remark42\"}}`\n+\tresp, err := post(t, ts.URL+\"/api/v1/comment\", relativeURLText)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, http.StatusBadRequest, resp.StatusCode)\n+\tb, err := io.ReadAll(resp.Body)\n+\tassert.NoError(t, err)\n+\tassert.NoError(t, resp.Body.Close())\n+\tc := R.JSON{}\n+\terr = json.Unmarshal(b, &c)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, \"links should start with mailto:, http:// or https://\", c[\"error\"])\n+\tassert.Equal(t, \"invalid comment\", c[\"details\"])\n+}\n+\n func TestRest_CreateRejected(t *testing.T) {\n \tts, _, teardown := startupT(t)\n \tdefer teardown()"
+    },
+    {
+      "sha": "bd7c09f6d92b1c8c8d0c985c04e4c413fb3f2276",
+      "filename": "backend/app/store/comment.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fcomment.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fcomment.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fcomment.go?ref=26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+      "patch": "@@ -121,8 +121,8 @@ func (c *Comment) Sanitize() {\n \t// special case for embedding the quotes from Twitter\n \tp.AllowAttrs(\"class\").Matching(regexp.MustCompile(\"^twitter-tweet$\")).OnElements(\"blockquote\")\n \t// this is list of <span> tag classes which could be produced by chroma code renderer\n-\t// source: https://github.com/alecthomas/chroma/blob/cc2dd5b/types.go#L211-L307\n-\tconst codeSpanClassRegex = \"^(bg|chroma|line|ln|lnt|hl|lntable|lntd|cl|w|err|x|k|kc\" +\n+\t// source: https://github.com/alecthomas/chroma/blob/c263f6f/types.go#L209-L306\n+\tconst codeSpanClassRegex = \"^(bg|chroma|line|ln|lnt|hl|lntable|lntd|lnlinks|cl|w|err|x|k|kc\" +\n \t\t\"|kd|kn|kp|kr|kt|n|na|nb|bp|nc|no|nd|ni|ne|nf|fm|py|nl|nn|nx|nt|nv|vc|vg\" +\n \t\t\"|vi|vm|l|ld|s|sa|sb|sc|dl|sd|s2|se|sh|si|sx|sr|s1|ss|m|mb|mf|mh|mi|il\" +\n \t\t\"|mo|o|ow|p|c|ch|cm|cp|cpf|c1|cs|g|gd|ge|gr|gh|gi|go|gp|gs|gu|gt|gl)$\""
+    },
+    {
+      "sha": "864a9b9fe5eaf142121cfcf3620a9e70c9284903",
+      "filename": "backend/app/store/formatter.go",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 11,
+      "changes": 28,
+      "blob_url": "https://github.com/umputun/remark42/blob/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fformatter.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fformatter.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fformatter.go?ref=26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+      "patch": "@@ -42,17 +42,8 @@ func (f *CommentFormatter) Format(c Comment) Comment {\n \n // FormatText converts text with markdown processor, applies external converters and shortens links\n func (f *CommentFormatter) FormatText(txt string) (res string) {\n-\tmdExt := bf.NoIntraEmphasis | bf.Tables | bf.FencedCode |\n-\t\tbf.Strikethrough | bf.SpaceHeadings | bf.HardLineBreak |\n-\t\tbf.BackslashLineBreak | bf.Autolink\n-\n-\trend := bf.NewHTMLRenderer(bf.HTMLRendererParameters{\n-\t\tFlags: bf.Smartypants | bf.SmartypantsFractions | bf.SmartypantsDashes | bf.SmartypantsAngledQuotes,\n-\t})\n-\n-\textRend := bfchroma.NewRenderer(bfchroma.Extend(rend), bfchroma.ChromaOptions(html.WithClasses(true)))\n-\n-\tres = string(bf.Run([]byte(txt), bf.WithExtensions(mdExt), bf.WithRenderer(extRend)))\n+\tmdExt, rend := GetMdExtensionsAndRenderer()\n+\tres = string(bf.Run([]byte(txt), bf.WithExtensions(mdExt), bf.WithRenderer(rend)))\n \tres = f.unEscape(res)\n \n \tfor _, conv := range f.converters {\n@@ -126,3 +117,18 @@ func (f *CommentFormatter) lazyImage(commentHTML string) (resHTML string) {\n \t}\n \treturn resHTML\n }\n+\n+// GetMdExtensionsAndRenderer returns blackfriday extensions and renderer used for rendering markdown\n+// within store module.\n+func GetMdExtensionsAndRenderer() (bf.Extensions, *bfchroma.Renderer) {\n+\tmdExt := bf.NoIntraEmphasis | bf.Tables | bf.FencedCode |\n+\t\tbf.Strikethrough | bf.SpaceHeadings | bf.HardLineBreak |\n+\t\tbf.BackslashLineBreak | bf.Autolink\n+\n+\trend := bf.NewHTMLRenderer(bf.HTMLRendererParameters{\n+\t\tFlags: bf.Smartypants | bf.SmartypantsFractions | bf.SmartypantsDashes | bf.SmartypantsAngledQuotes,\n+\t})\n+\n+\textRend := bfchroma.NewRenderer(bfchroma.Extend(rend), bfchroma.ChromaOptions(html.WithClasses(true)))\n+\treturn mdExt, extRend\n+}"
+    },
+    {
+      "sha": "e03ccc2ad75001f48e49f4b0db81fbd8185e22db",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 2,
+      "changes": 21,
+      "blob_url": "https://github.com/umputun/remark42/blob/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Fservice.go?ref=26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+      "patch": "@@ -14,6 +14,7 @@ import (\n \tlog \"github.com/go-pkgz/lgr\"\n \t\"github.com/google/uuid\"\n \t\"github.com/hashicorp/go-multierror\"\n+\tbf \"github.com/russross/blackfriday/v2\"\n \n \t\"github.com/umputun/remark42/backend/app/store\"\n \t\"github.com/umputun/remark42/backend/app/store/admin\"\n@@ -627,7 +628,9 @@ func (s *DataStore) Counts(siteID string, postIDs []string) ([]store.PostInfo, e\n \treturn res, nil\n }\n \n-// ValidateComment checks if comment size below max and user fields set\n+// ValidateComment checks if comment size below max and user fields set.\n+// It also validates the absence of relative links as they are almost never the intention of the commenter,\n+// usually added by mistakes and only create confusion.\n func (s *DataStore) ValidateComment(c *store.Comment) error {\n \tmaxSize := s.MaxCommentSize\n \tif s.MaxCommentSize <= 0 {\n@@ -642,7 +645,21 @@ func (s *DataStore) ValidateComment(c *store.Comment) error {\n \tif c.User.ID == \"\" || c.User.Name == \"\" {\n \t\treturn fmt.Errorf(\"empty user info\")\n \t}\n-\treturn nil\n+\n+\tmdExt, rend := store.GetMdExtensionsAndRenderer()\n+\tparser := bf.New(bf.WithRenderer(rend), bf.WithExtensions(bf.CommonExtensions), bf.WithExtensions(mdExt))\n+\tvar wrongLinkError error\n+\tparser.Parse([]byte(c.Orig)).Walk(func(node *bf.Node, entering bool) bf.WalkStatus {\n+\t\tif len(node.LinkData.Destination) != 0 &&\n+\t\t\t!(strings.HasPrefix(string(node.LinkData.Destination), \"http://\") ||\n+\t\t\t\tstrings.HasPrefix(string(node.LinkData.Destination), \"https://\") ||\n+\t\t\t\tstrings.HasPrefix(string(node.LinkData.Destination), \"mailto:\")) {\n+\t\t\twrongLinkError = fmt.Errorf(\"links should start with mailto:, http:// or https://\")\n+\t\t\treturn bf.Terminate\n+\t\t}\n+\t\treturn bf.GoToNext\n+\t})\n+\treturn wrongLinkError\n }\n \n // IsAdmin checks if usesID in the list of admins"
+    },
+    {
+      "sha": "13638fc522fe9c074879783092b81695ece48a2a",
+      "filename": "backend/app/store/service/service_test.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 7,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fservice%2Fservice_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/26f82ad95c09fe73c95935d4c5014e9606bc7ffb/backend%2Fapp%2Fstore%2Fservice%2Fservice_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Fservice_test.go?ref=26f82ad95c09fe73c95935d4c5014e9606bc7ffb",
+      "patch": "@@ -780,22 +780,25 @@ func TestService_ValidateComment(t *testing.T) {\n \n \ttbl := []struct {\n \t\tinp store.Comment\n-\t\terr error\n+\t\terr string\n \t}{\n-\t\t{inp: store.Comment{}, err: fmt.Errorf(\"empty comment text\")},\n-\t\t{inp: store.Comment{Orig: \"something blah\", User: store.User{ID: \"myid\", Name: \"name\"}}, err: nil},\n-\t\t{inp: store.Comment{Orig: \"something blah\", User: store.User{ID: \"myid\"}}, err: fmt.Errorf(\"empty user info\")},\n-\t\t{inp: store.Comment{Orig: longText, User: store.User{ID: \"myid\", Name: \"name\"}}, err: fmt.Errorf(\"comment text exceeded max allowed size 2000 (4000)\")},\n+\t\t{inp: store.Comment{}, err: \"empty comment text\"},\n+\t\t{inp: store.Comment{Orig: \"something blah\", User: store.User{ID: \"myid\", Name: \"name\"}}, err: \"\"},\n+\t\t{inp: store.Comment{Orig: \"something blah\", User: store.User{ID: \"myid\"}}, err: \"empty user info\"},\n+\t\t{inp: store.Comment{Orig: longText, User: store.User{ID: \"myid\", Name: \"name\"}}, err: \"comment text exceeded max allowed size 2000 (4000)\"},\n+\t\t{inp: store.Comment{Orig: \"here is a link with relative URL: [google.com](url)\", User: store.User{ID: \"myid\", Name: \"name\"}}, err: \"links should start with mailto:, http:// or https://\"},\n+\t\t{inp: store.Comment{Orig: \"here is a link with relative URL: [google.com](url)\", User: store.User{ID: \"myid\", Name: \"name\"}}, err: \"links should start with mailto:, http:// or https://\"},\n+\t\t{inp: store.Comment{Orig: \"multiple links, one is bad: [test](http://test) [test2](bad_url) [test3](https://test3)\", User: store.User{ID: \"myid\", Name: \"name\"}}, err: \"links should start with mailto:, http:// or https://\"},\n \t}\n \n \tfor n, tt := range tbl {\n \t\terr := b.ValidateComment(&tt.inp)\n-\t\tif tt.err == nil {\n+\t\tif tt.err == \"\" {\n \t\t\tassert.NoError(t, err, \"check #%d\", n)\n \t\t\tcontinue\n \t\t}\n \t\trequire.Error(t, err)\n-\t\tassert.EqualError(t, tt.err, err.Error(), \"check #%d\", n)\n+\t\tassert.EqualError(t, err, tt.err, \"check #%d\", n)\n \t}\n }\n "
+    }
+  ]
+}
