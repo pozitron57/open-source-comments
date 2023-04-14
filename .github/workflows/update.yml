@@ -1,0 +1,38 @@
+name: 'automatic update'
+
+on: 
+  workflow_dispatch:
+    inputs:
+      date:
+        type: string
+        description: Date(default today)
+  schedule:
+  - cron: '13/47 * * * *'
+
+jobs:
+  update:
+    name: Automatic Update
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.4.0
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cache: 'pip' # caching pip dependencies
+    - run: pip install -r requirements.txt
+
+    - name: Update
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_DATE: ${{ github.event.inputs.date }} 
+      run: |
+        python get_data.py \
+        python md_to_html.py \
+        python yaml_2_js.py \
+        python plot-stars.py \
+      
+    - name: Commit
+      uses: EndBug/add-and-commit@v8
+      with:
+        message: 'automatic update'
+        add: './'
