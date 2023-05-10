@@ -1,5 +1,5 @@
 isso:
-    stars: 4742
+    stars: 4795
     source: "https://github.com/posativ/isso"
     homepage: "https://posativ.org/isso/"
     name: "Isso"
@@ -12,18 +12,18 @@ isso:
     css_kB: 7
     language: "python"
     db: "SQLite"
-    moderation: "approve, reject or delete comments via email sent link or a simple\
-        \ admin panel"
-    mail_notification: "Admin is notified. It’s possible to subscribe to replies to\
-        \ your comment but not to thread"
+    moderation: "approve, reject or delete comments via email sent link or a simple
+        admin panel"
+    mail_notification: "Admin is notified. It’s possible to subscribe to replies to
+        your comment but not to thread"
     dependency: ""
     webmention: "no"
     antispam: "no"
     rate_limit: "yes"
     bad_words_list: "no"
     use_cookies: "yes"
-    avatar: "id-icon, [Gravatar](https://github.com/posativ/isso/blob/master/docs/docs/configuration/server.rst#general)\
-        \ (optional)"
+    avatar: "id-icon, [Gravatar](https://github.com/posativ/isso/blob/master/docs/docs/configuration/server.rst#general)
+        (optional)"
     markdown_support: "yes"
     nested_comments: "One level by default, see [PR](https://github.com/posativ/isso/pull/211)"
     provided_hosting: "https://comment.sh"
@@ -31,8 +31,8 @@ isso:
     sort: "no, see [issue](https://github.com/posativ/isso/issues/440) for discussion"
     hide_long_threads: "yes"
     anonymous_comments: "yes"
-    social_network_login: "No, but see a [fork](https://github.com/posativ/isso/issues/240)\
-        \ and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
+    social_network_login: "No, but see a [fork](https://github.com/posativ/isso/issues/240)
+        and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
@@ -46,15 +46,15 @@ isso:
     static: "no"
     description: "Lightweight, allows anonymous comments, maintains identity"
     license: "MIT"
-    open_issues: 66
-    last_committed: 2023‑02‑05
+    open_issues: 70
+    last_committed: 2023‑03‑10
     docker: "https://hub.docker.com/r/sheogorath/isso-docker/"
-    stars_dif: 14
+    stars_dif: '?'
     paging: "no"
 
 
 commento:
-    stars: 3665
+    stars: 3675
     name: "Commento"
     demo: "https://demo.commento.io"
     source:
@@ -90,10 +90,10 @@ commento:
     license: "MIT"
     open_issues: 1
     last_committed: 2021‑02‑28
-    stars_dif: 2
+    stars_dif: '?'
 
 schnak:
-    stars: 1789
+    stars: 1795
     source: "https://github.com/schn4ck/schnack"
     homepage: "?"
     name: "Schnak"
@@ -138,12 +138,12 @@ schnak:
     static: "no"
     description: "Simple Disqus-like drop-in commenting system written in JavaScript"
     license: "NOASSERTION"
-    open_issues: 44
+    open_issues: 46
     last_committed: 2022‑06‑28
-    stars_dif: 4
+    stars_dif: '?'
 
 juvia:
-    stars: 1034
+    stars: 1036
     name: "Juvia"
     demo:
       - "https://www.alfajango.com/blog/announcing-dynatable-js/"
@@ -158,8 +158,8 @@ juvia:
     moderation: "Full-featured admin panel for multiple users"
     static: "no"
     nested_comments: "no"
-    description: "Unmaintained since 2015. Not so lightweight Ruby on Rails app. Live\
-        \ preview & elaborated admin panel."
+    description: "Unmaintained since 2015. Not so lightweight Ruby on Rails app. Live
+        preview & elaborated admin panel."
     js_kB: ""
     css_kB: ""
     license: "AGPL-3.0"
@@ -172,7 +172,7 @@ juvia:
     mail_notification: "yes"
     dependency: ""
     webmention: "no"
-    stars_dif: 0
+    stars_dif: '?'
 
 site_point_nested_comments:
     stars: 15
@@ -192,11 +192,11 @@ site_point_nested_comments:
     created: '2014‑04‑08'
     open_issues: 0
     last_committed: 2016‑11‑29
-    stars_dif: 0
+    stars_dif: '?'
 
     license: undefined
 remark:
-    stars: 4177
+    stars: 4303
     source: "https://github.com/umputun/remark42"
     homepage: "https://remark42.com"
     name: "Remark42"
@@ -238,13 +238,13 @@ remark:
     static: "no"
     description: "Lightweight and privacy-focused"
     license: "MIT"
-    open_issues: 94
-    last_committed: 2023‑02‑05
-    stars_dif: 25
+    open_issues: 92
+    last_committed: 2023‑05‑08
+    stars_dif: '?'
 
 valine:
     name: "Valine"
-    stars: 2061
+    stars: 2087
     source: "https://github.com/xCss/Valine"
     homepage: "https://valine.js.org/en/index.html"
     demo: "https://valine.js.org/en/index.html"
@@ -283,10 +283,10 @@ valine:
     license: "GPL-2.0"
     open_issues: 43
     last_committed: 2022‑07‑21
-    stars_dif: 1
+    stars_dif: '?'
 
 mouthful:
-    stars: 745
+    stars: 748
     source: "https://github.com/vkuznecovas/mouthful"
     homepage: "https://mouthful.dizzy.zone/"
     name: "Mouthful"
@@ -326,15 +326,15 @@ mouthful:
     rate_limit: "yes"
     paging: "yes"
     static: "no"
-    description: "[Really lightweight](https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/),\
-        \ written in GO and Preact."
+    description: "[Really lightweight](https://dizzy.zone/2018/04/19/I-made-my-own-commenting-server-Here-s-why/),
+        written in GO and Preact."
     license: "MIT"
-    open_issues: 26
+    open_issues: 32
     last_committed: 2021‑02‑28
-    stars_dif: 2
+    stars_dif: '?'
 
 diskuto:
-    stars: 35
+    stars: 36
     source: "https://github.com/rejectedsoftware/diskuto"
     homepage: "?"
     name: "Diskuto"
@@ -375,11 +375,11 @@ diskuto:
     description: ""
     license: "MIT"
     open_issues: 8
-    last_committed: 2021‑07‑07
-    stars_dif: 0
+    last_committed: 2023‑03‑10
+    stars_dif: '?'
 
 coralproject_talk:
-    stars: 1812
+    stars: 1834
     source: "https://github.com/coralproject/talk"
     homepage: "https://coralproject.net/talk/"
     name: "coralproject_talk"
@@ -417,12 +417,12 @@ coralproject_talk:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "A better commenting experience from Mozilla, The Washington Post,\
-        \ and The New York Times"
+    description: "A better commenting experience from Mozilla, The Washington Post,
+        and The New York Times"
     license: "NOASSERTION"
-    open_issues: 39
+    open_issues: 40
     last_committed: 2020‑09‑29
-    stars_dif: 6
+    stars_dif: '?'
 
 hashover2:
     stars: 411
@@ -465,9 +465,9 @@ hashover2:
     static: "no"
     description: "Under development (summer 2018). Embed .js or .php"
     license: "AGPL-3.0"
-    open_issues: 102
+    open_issues: 103
     last_committed: 2022‑11‑19
-    stars_dif: 1
+    stars_dif: '?'
 
 hashover:
     stars: 244
@@ -511,9 +511,9 @@ hashover:
     description: "Current stable version of Hashover. Embed .js or .php"
     block_ip: "yes"
     license: "AGPL-3.0"
-    open_issues: 5
+    open_issues: 6
     last_committed: 2022‑03‑02
-    stars_dif: 0
+    stars_dif: '?'
 
 talkatv:
     stars: 207
@@ -554,15 +554,15 @@ talkatv:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "One of the first popular self-hosted commenting engines. No updates\
-        \ since 2012"
+    description: "One of the first popular self-hosted commenting engines. No updates
+        since 2012"
     license: "AGPL-3.0"
     open_issues: 26
     last_committed: 2012‑12‑03
-    stars_dif: -1
+    stars_dif: '?'
 
 wildfire:
-    stars: 177
+    stars: 179
     source: "https://github.com/cheng-kang/wildfire"
     homepage: "https://wildfire.js.org/"
     name: "Wildfire"
@@ -602,12 +602,12 @@ wildfire:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Uses real-time databases (Firebase & Wilddog) to store the comments,\
-        \ provides real-time communicating experience"
+    description: "Uses real-time databases (Firebase & Wilddog) to store the comments,
+        provides real-time communicating experience"
     license: "GPL-3.0"
     open_issues: 18
     last_committed: 2019‑01‑25
-    stars_dif: 0
+    stars_dif: '?'
 
 e_comments:
     stars: 101
@@ -654,7 +654,7 @@ e_comments:
     license: "MIT"
     open_issues: 0
     last_committed: 2018‑01‑23
-    stars_dif: 0
+    stars_dif: '?'
 
 realtime_commenting:
     stars: 64
@@ -698,7 +698,7 @@ realtime_commenting:
     description: ""
     open_issues: 1
     last_committed: 2016‑04‑22
-    stars_dif: 0
+    stars_dif: '?'
 
     license: undefined
 comments_app:
@@ -748,7 +748,7 @@ comments_app:
     license: "Apache-2.0"
     open_issues: 3
     last_committed: 2019‑01‑20
-    stars_dif: 0
+    stars_dif: '?'
 
 master:
     stars: 52
@@ -839,8 +839,8 @@ jskomment:
     static: "no"
     description: ""
     open_issues: 1
-    last_committed: 2018‑08‑31
-    stars_dif: 0
+    last_committed: 2023‑03‑12
+    stars_dif: '?'
 
     license: undefined
 squabble:
@@ -886,11 +886,11 @@ squabble:
     static: "no"
     open_issues: 1
     last_committed: 2018‑02‑02
-    stars_dif: 0
+    stars_dif: '?'
 
     license: undefined
 sidecar:
-    stars: 36
+    stars: 37
     source: "https://github.com/phauer/comment-sidecar"
     homepage: "?"
     name: "comment-sidecar"
@@ -931,9 +931,9 @@ sidecar:
     static: "no"
     description: "β"
     license: "MIT"
-    open_issues: 3
+    open_issues: 4
     last_committed: 2021‑02‑24
-    stars_dif: 0
+    stars_dif: '?'
 
 jp_comment:
     stars: 0
@@ -982,7 +982,7 @@ jp_comment:
     stars_dif: '?'
 
 staticman:
-    stars: 2296
+    stars: 2301
     source: "https://github.com/eduardoboucas/staticman"
     homepage: "https://staticman.net/"
     name: "Staticman"
@@ -1023,15 +1023,15 @@ staticman:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "Staticman uploads comments as data files to a GH repository and\
-        \ triggers the site rebuild"
+    description: "Staticman uploads comments as data files to a GH repository and
+        triggers the site rebuild"
     license: "MIT"
-    open_issues: 123
+    open_issues: 125
     last_committed: 2020‑07‑06
-    stars_dif: 4
+    stars_dif: '?'
 
 comment_with_reply_view:
-    stars: 403
+    stars: 405
     #source: "https://github.com/Moosphan/CommentWithReplyView-master"
     source: "https://github.com/Moosphan/CommentReplyComponent"
     homepage: "?"
@@ -1075,10 +1075,10 @@ comment_with_reply_view:
     license: "MIT"
     open_issues: 0
     last_committed: 2018‑05‑29
-    stars_dif: 1
+    stars_dif: '?'
 
 talkyard:
-    stars: 1562
+    stars: 1587
     source: "https://github.com/debiki/talkyard"
     homepage: "https://www.talkyard.io/blog-comments"
     name: "talkyard"
@@ -1117,15 +1117,15 @@ talkyard:
     rate_limit: "?"
     paging: "?"
     static: "no"
-    description: "Previously named Debiki, then Effective discussions. Can be used\
-        \ as a forum. React.js client side. High hardware requirements"
+    description: "Previously named Debiki, then Effective discussions. Can be used
+        as a forum. React.js client side. High hardware requirements"
     license: "AGPL-3.0"
     open_issues: 48
-    last_committed: 2023‑01‑05
-    stars_dif: 9
+    last_committed: 2023‑04‑22
+    stars_dif: '?'
 
 discourse:
-    stars: 37411
+    stars: 37840
     source: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
@@ -1146,9 +1146,9 @@ discourse:
     avatar: "yes"
     markdown_support: "yes"
     nested_comments: "yes"
-    provided_hosting: "[yes](https://payments.discourse.org/pricing), DigitalOcean\
-        \ [provides](https://www.digitalocean.com/community/tutorials/how-to-use-the-discourse-one-click-application-on-digitalocean)\
-        \ as a one-click app"
+    provided_hosting: "[yes](https://payments.discourse.org/pricing), DigitalOcean
+        [provides](https://www.digitalocean.com/community/tutorials/how-to-use-the-discourse-one-click-application-on-digitalocean)
+        as a one-click app"
     collapse_comments: "?"
     display_images: "yes"
     sort: "yes"
@@ -1166,12 +1166,12 @@ discourse:
     rate_limit: "yes"
     paging: "?"
     static: "no"
-    description: "Isn’t designed as a comments engine, but can be used so. High hardware\
-        \ requirements"
+    description: "Isn’t designed as a comments engine, but can be used so. High hardware
+        requirements"
     license: "GPL-2.0"
-    open_issues: 54
+    open_issues: 76
     last_committed: 2021‑07‑19
-    stars_dif: 88
+    stars_dif: '?'
 
 webpage_webmentions:
     stars: 70
@@ -1217,7 +1217,7 @@ webpage_webmentions:
     license: "MIT"
     open_issues: 86
     last_committed: 2021‑01‑18
-    stars_dif: 0
+    stars_dif: '?'
 
 chatter:
     stars: 8
@@ -1263,7 +1263,7 @@ chatter:
     license: "MIT"
     open_issues: 0
     last_committed: 2018‑05‑09
-    stars_dif: 0
+    stars_dif: '?'
 
 node_comments:
     stars: 16
@@ -1309,7 +1309,7 @@ node_comments:
     license: "MIT"
     open_issues: 0
     last_committed: 2012‑08‑08
-    stars_dif: 0
+    stars_dif: '?'
 
 platon:
     stars: 2
@@ -1355,7 +1355,7 @@ platon:
     license: "Apache-2.0"
     open_issues: 3
     last_committed: 2016‑02‑16
-    stars_dif: 0
+    stars_dif: '?'
 
 ajax_comments:
     stars: 1
@@ -1400,11 +1400,11 @@ ajax_comments:
     description: ""
     open_issues: 0
     last_committed: 2017‑09‑10
-    stars_dif: 0
+    stars_dif: '?'
 
     license: undefined
 jekyll_static_comments:
-    stars: 191
+    stars: 192
     source: "https://github.com/mpalmer/jekyll-static-comments"
     homepage: "http://theshed.hezmatt.org/jekyll-static-comments/"
     name: "Jekyll::StaticComments"
@@ -1443,13 +1443,13 @@ jekyll_static_comments:
     rate_limit: "?"
     paging: "?"
     static: "yes"
-    description: "For Jekyll. PHP script sends the comment to the server and creates\
-        \ yaml files in a special folder. On site rebuild, these comments are added\
-        \ into the html code of the page"
+    description: "For Jekyll. PHP script sends the comment to the server and creates
+        yaml files in a special folder. On site rebuild, these comments are added
+        into the html code of the page"
     license: "GPL-3.0"
     open_issues: 8
     last_committed: 2014‑02‑11
-    stars_dif: 0
+    stars_dif: '?'
 
 rocket_firm:
     stars: 1
@@ -1495,7 +1495,7 @@ rocket_firm:
     license: "MIT"
     open_issues: 0
     last_committed: 2017‑03‑03
-    stars_dif: 0
+    stars_dif: '?'
 
 react_comment_system:
     stars: 0
@@ -1586,7 +1586,7 @@ easy_page_comments:
     description: ""
     open_issues: 4
     last_committed: 2019‑01‑21
-    stars_dif: 0
+    stars_dif: '?'
 
     license: undefined
 lambda_comments:
@@ -1628,16 +1628,16 @@ lambda_comments:
     created: "2016‑04‑08"
     rate_limit: "?"
     paging: "?"
-    description: "“Serverless”, uses: [API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html),\
-        \ [Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html), [S3](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html),\
-        \ [DynamoDB streams](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html),\
-        \ [IAM](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html),\
-        \ [CloudWatch Logs](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)"
+    description: "“Serverless”, uses: [API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html),
+        [Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html), [S3](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html),
+        [DynamoDB streams](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html),
+        [IAM](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html),
+        [CloudWatch Logs](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)"
     static: "no"
     license: "ISC"
     open_issues: 8
     last_committed: 2016‑07‑27
-    stars_dif: 0
+    stars_dif: '?'
 
 jekyll_aws_comments:
     stars: 17
@@ -1683,10 +1683,10 @@ jekyll_aws_comments:
     license: "ISC"
     open_issues: 0
     last_committed: 2017‑04‑25
-    stars_dif: 0
+    stars_dif: '?'
 
 commentics:
-    stars: 47
+    stars: 48
     source: "https://github.com/commentics/commentics"
     homepage: "https://www.commentics.org/"
     name: "Commentics"
@@ -1729,7 +1729,7 @@ commentics:
     license: "GPL-3.0"
     open_issues: 4
     last_committed: 2023‑01‑21
-    stars_dif: -1
+    stars_dif: '?'
 
 commentar:
     stars: 47
@@ -1775,7 +1775,7 @@ commentar:
     license: "undefined"
     open_issues: 3
     last_committed: 2014‑07‑26
-    stars_dif: 0
+    stars_dif: '?'
 
 komentify:
     stars: 76
@@ -1823,7 +1823,7 @@ komentify:
     license: "MIT"
     open_issues: 11
     last_committed: 2017‑06‑09
-    stars_dif: 0
+    stars_dif: '?'
 
 commentary:
     stars: 55
@@ -1869,10 +1869,10 @@ commentary:
     license: "undefined"
     open_issues: 0
     last_committed: 2013‑09‑09
-    stars_dif: 0
+    stars_dif: '?'
 
 gotell:
-    stars: 278
+    stars: 277
     source: "https://github.com/netlify/gotell"
     homepage: "?"
     name: "GoTell"
@@ -1910,16 +1910,16 @@ gotell:
     created: "2016‑09‑22"
     rate_limit: "?"
     paging: "?"
-    description: "Netlify Comments is an API and build tool for handling large amounts\
-        \ of comments for JAMstack products"
+    description: "Netlify Comments is an API and build tool for handling large amounts
+        of comments for JAMstack products"
     static: "yes"
     license: "MIT"
     open_issues: 8
     last_committed: 2019‑09‑11
-    stars_dif: 0
+    stars_dif: '?'
 
 jamstack_comments_engine:
-    stars: 147
+    stars: 152
     source: "https://github.com/philhawksworth/jamstack-comments-engine"
     homepage: "https://jamstack-comments.netlify.com/"
     name: "Jamstack Comments Engine"
@@ -1962,7 +1962,7 @@ jamstack_comments_engine:
     license: "undefined"
     open_issues: 21
     last_committed: 2020‑07‑09
-    stars_dif: 0
+    stars_dif: '?'
 
 stapsher:
     stars: 9
@@ -2003,8 +2003,8 @@ stapsher:
     created: "2018‑04‑13"
     rate_limit: "?"
     paging: "?"
-    description: "Stapsher is an API service for handling user-generated contents\
-        \ on static sites"
+    description: "Stapsher is an API service for handling user-generated contents
+        on static sites"
     static: "yes"
     license: "undefined"
     open_issues: 0
@@ -2052,8 +2052,8 @@ pelican_static:
     created: 2014&#8209;03&#8209;04
     rate_limit: "?"
     paging: "?"
-    description: "[Pelican](https://github.com/getpelican/pelican) plugin. No stars\
-        \ because there is no separate repo."
+    description: "[Pelican](https://github.com/getpelican/pelican) plugin. No stars
+        because there is no separate repo."
     static: "yes"
     license: ""
     open_issues:
@@ -2099,16 +2099,16 @@ comment_it:
     created: "2015‑10‑04"
     rate_limit: "?"
     paging: "?"
-    description: "Comm(ent|it) uses the Github API and Jekyll to help storing visitors\
-        \ comments directly in Github Pages repository"
+    description: "Comm(ent|it) uses the Github API and Jekyll to help storing visitors
+        comments directly in Github Pages repository"
     static: "no"
     license: "AGPL-3.0"
     open_issues: 5
     last_committed: 2019‑06‑10
-    stars_dif: 0
+    stars_dif: '?'
 
 yoyo:
-    stars: 210
+    stars: 211
     source: "https://github.com/metrue/YoYo"
     homepage: "https://minghe.me/"
     name: "YoYo"
@@ -2151,7 +2151,7 @@ yoyo:
     license: "undefined"
     open_issues: 31
     last_committed: 2020‑04‑10
-    stars_dif: 0
+    stars_dif: '?'
 
 react_quietwater:
     stars: 6
@@ -2192,14 +2192,14 @@ react_quietwater:
     created: "2017‑03‑27"
     rate_limit: "?"
     paging: "?"
-    description: "React-QuietWater is a comment system based on [react](https://github.com/facebook/react),\
-        \ [react-css-modules](https://github.com/gajus/babel-plugin-react-css-modules)\
-        \ and [redux-orm](https://github.com/tommikaikkonen/redux-orm)"
+    description: "React-QuietWater is a comment system based on [react](https://github.com/facebook/react),
+        [react-css-modules](https://github.com/gajus/babel-plugin-react-css-modules)
+        and [redux-orm](https://github.com/tommikaikkonen/redux-orm)"
     static: "no"
     license: "MIT"
     open_issues: 1
     last_committed: 2017‑09‑12
-    stars_dif: 0
+    stars_dif: '?'
 
 some_comments:
     stars: 42
@@ -2245,10 +2245,10 @@ some_comments:
     license: "AGPL-3.0"
     open_issues: 35
     last_committed: 2018‑06‑15
-    stars_dif: 0
+    stars_dif: '?'
 
 jekyll_blog_comments:
-    stars: 21
+    stars: 20
     source: "https://github.com/Azure-Functions/jekyll-blog-comments"
     homepage: "https://github.com/Azure-Functions/jekyll-blog-comments"
     name: "Jekyll Blog Comments"
@@ -2286,17 +2286,17 @@ jekyll_blog_comments:
     created: "2018‑04‑08"
     rate_limit: "?"
     paging: "no"
-    description: "An Azure Function App that receives comment form posts and creates\
-        \ a pull request against your GitHub repository as part of the [jekyll-blog-comments](https://github.com/damieng/jekyll-blog-comments)\
-        \ system"
+    description: "An Azure Function App that receives comment form posts and creates
+        a pull request against your GitHub repository as part of the [jekyll-blog-comments](https://github.com/damieng/jekyll-blog-comments)
+        system"
     static: "yes"
     license: "MIT"
     open_issues: 0
     last_committed: 2021‑07‑01
-    stars_dif: 0
+    stars_dif: '?'
 
 jekyll_webmention_io:
-    stars: 133
+    stars: 136
     source: "https://github.com/aarongustafson/jekyll-webmention_io"
     homepage: "https://aarongustafson.github.io/jekyll-webmention_io/"
     name: "jekyll-webmention_io"
@@ -2308,9 +2308,9 @@ jekyll_webmention_io:
     nested_comments: "no"
     import_from_disqus: "no"
     license: "MIT"
-    open_issues: 10
+    open_issues: 5
     created: 2014‑11‑17
-    stars_dif: 0
+    stars_dif: '?'
     last_committed: 2019‑03‑11
 
 just_comments:
@@ -2352,13 +2352,13 @@ just_comments:
     created: "2019‑07‑22"
     rate_limit: "?"
     paging: "?"
-    description: "Open-source self-hosted implementation offers basic commenting.\
-        \ Paid hosting service includes more features"
+    description: "Open-source self-hosted implementation offers basic commenting.
+        Paid hosting service includes more features"
     static: "no"
     license: "MIT"
     open_issues: 5
     last_committed: 2019‑07‑26
-    stars_dif: 0
+    stars_dif: '?'
 
 comments_vivalaakam:
     stars: 0
@@ -2407,7 +2407,7 @@ comments_vivalaakam:
     license: undefined
 
 glosa:
-    stars: 76
+    stars: 77
     source: "https://github.com/glosa/glosa-server"
     homepage: "?"
     name: "Glosa"
@@ -2450,7 +2450,7 @@ glosa:
     license: "Apache-2.0"
     open_issues: 0
     last_committed: 2021‑02‑22
-    stars_dif: 0
+    stars_dif: '?'
 
 kucos:
     stars: 40
@@ -2496,7 +2496,7 @@ kucos:
     license: "MIT"
     open_issues: 0
     last_committed: 2021‑06‑06
-    stars_dif: 0
+    stars_dif: '?'
 
 Aloud:
     stars: 6
@@ -2542,10 +2542,10 @@ Aloud:
     license: "MIT"
     open_issues: 53
     last_committed: 2020‑06‑24
-    stars_dif: 0
+    stars_dif: '?'
 
 Waline:
-    stars: 1291
+    stars: 1458
     source: "https://github.com/walinejs/waline"
     homepage: "https://waline.js.org/en"
     name: "Waline"
@@ -2554,8 +2554,8 @@ Waline:
     js_kB: "54"
     css_kB: ""
     language: "Node.js & Vue"
-    db: "LeanCloud / MongoDB / MySQL / SQLite / PostgreSQL / CloudBase / GitHub /\
-        \ Deta Base / InspireCloud"
+    db: "LeanCloud / MongoDB / MySQL / SQLite / PostgreSQL / CloudBase / GitHub /
+        Deta Base / InspireCloud"
     moderation: "yes"
     mail_notification: "yes"
     dependency: ""
@@ -2585,13 +2585,13 @@ Waline:
     rate_limit: "yes"
     paging: "yes"
     static: "no"
-    description: "A Simple Comment System with full markdown support, with emoji,\
-        \ mathematical formulas and HTML embedding support, with login support and\
-        \ lightweight, free and easy to deploy.  "
+    description: "A Simple Comment System with full markdown support, with emoji,
+        mathematical formulas and HTML embedding support, with login support and lightweight,
+        free and easy to deploy.  "
     license: "GPL-2.0"
-    open_issues: 24
+    open_issues: 33
     last_committed: 2022-01-15
-    stars_dif: 27
+    stars_dif: '?'
 
 Commentator:
     stars: 29
@@ -2633,15 +2633,15 @@ Commentator:
     rate_limit: "yes"
     paging: "yes"
     static: "no"
-    description: "A commenting system for your blog or website. Comments are stored\
-        \ on any S3-compatible store."
+    description: "A commenting system for your blog or website. Comments are stored
+        on any S3-compatible store."
     license: "EPL-2.0"
     open_issues: 0
     last_committed: 2022‑05‑20
-    stars_dif: 0
+    stars_dif: '?'
 
 SupaComments:
-    stars: 113
+    stars: 117
     source: "https://github.com/mcnaveen/SupaComments"
     homepage: "https://supacomments.vercel.app/"
     name: "SupaComments"
@@ -2684,10 +2684,10 @@ SupaComments:
     license: "Apache-2.0"
     open_issues: 13
     last_committed: 2022‑05‑20
-    stars_dif: 1
+    stars_dif: '?'
 
 Cusdis:
-    stars: 2199
+    stars: 2269
     source: "https://github.com/djyde/cusdis"
     homepage: "https://cusdis.com/"
     name: "Cusdis"
@@ -2728,12 +2728,12 @@ Cusdis:
     static: ""
     description: ""
     license: "GPL-3.0"
-    open_issues: 83
-    last_committed: 2022‑12‑21
-    stars_dif: 17
+    open_issues: 86
+    last_committed: 2023‑05‑02
+    stars_dif: '?'
 
 Twikoo:
-    stars: 781
+    stars: 891
     source: "https://github.com/imaegoo/twikoo"
     homepage: "https://twikoo.js.org/en/"
     name: "Twikoo"
@@ -2774,12 +2774,12 @@ Twikoo:
     static: ""
     description: ""
     license: "MIT"
-    open_issues: 99
+    open_issues: 111
     last_committed: 2022‑11‑12
-    stars_dif: 11
+    stars_dif: '?'
 
 Artalk:
-    stars: 691
+    stars: 778
     source: "https://github.com/ArtalkJS/Artalk"
     homepage: "https://artalk.js.org/"
     name: "Artalk"
@@ -2820,9 +2820,9 @@ Artalk:
     static: ""
     description: ""
     license: "LGPL-3.0"
-    open_issues: 25
-    last_committed: 2023‑02‑24
-    stars_dif: 22
+    open_issues: 16
+    last_committed: 2023‑05‑10
+    stars_dif: '?'
 
 ###############
 ### REMOVED ###

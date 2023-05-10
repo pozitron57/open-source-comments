@@ -20,6 +20,10 @@ import dateutil.parser
 from datetime import date, timedelta
 from json.decoder import JSONDecodeError
 
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+
+
 gh_credentials_path = '/home/slisakov/gh_credentials'
 #gh_credentials_path = '/Users/slisakov/Yandex.Disk.localized/gh_credentials'
 
@@ -30,7 +34,7 @@ yaml.preserve_quotes = True
 
 # Get project names and github urls  Entry name is used instead of 
 #'name' field since doesn't contain spaces etc.
-with open('data.yaml', 'r') as f:
+with open('data.yaml', 'r', encoding='utf-8') as f:
     data = yaml.load(f)
 
 comment_systems = []
@@ -119,8 +123,12 @@ stars_N_days_ago = {}
 file_N_days_ago = 'apigh/file_' + str(date_N_days_ago)
 if os.path.isfile(file_N_days_ago):
     print ('File to read N days ago', file_N_days_ago)
-    with open(file_N_days_ago, 'r') as f:
-        data_N_days_ago = json.load(f)
+    try:
+        with open(file_N_days_ago, 'r') as f:
+            data_N_days_ago = json.load(f)
+    except json.JSONDecodeError:
+        print("Couldn't read data from file_N_days_ago")
+        data_N_days_ago = {}
 else:
     print ('File N days ago DOES NOT EXIST')
 

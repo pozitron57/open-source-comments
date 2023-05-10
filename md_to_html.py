@@ -8,9 +8,13 @@ Injects html generated from index.md to index.html
 import re
 from datetime import date
 import mistune
+from mistune import create_markdown
 
-renderer = mistune.Renderer(hard_wrap=False)
-markdown = mistune.Markdown(renderer=renderer)
+#renderer = mistune.Renderer(hard_wrap=False)
+#markdown = mistune.Markdown(renderer=renderer)
+
+markdown = create_markdown(renderer=mistune.HTMLRenderer(escape=False))
+
 
 # Read index.md and convert to html
 with open('index.md', 'r') as f:

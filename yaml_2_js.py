@@ -152,7 +152,8 @@ def urlify(x):
 
 # Read YAML file
 with open("data.yaml", 'r') as f:
-    data = yaml.load(f)
+    data = yaml.load(f, Loader=yaml.SafeLoader)
+
 
 # Write to data.js
 with open("data.js", 'w') as out:
