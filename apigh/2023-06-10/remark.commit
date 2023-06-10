@@ -1,0 +1,98 @@
+{
+  "sha": "68504a70a08cc9e7405302a9b4446ee153e70570",
+  "node_id": "C_kwDOBtgov9oAKDY4NTA0YTcwYTA4Y2M5ZTc0MDUzMDJhOWI0NDQ2ZWUxNTNlNzA1NzA",
+  "commit": {
+    "author": {
+      "name": "Eugene Orlov",
+      "email": "jaskon97@gmail.com",
+      "date": "2023-06-06T18:25:44Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2023-06-06T20:22:02Z"
+    },
+    "message": "[site] fix: anchor offset\n\nuse different header size on mobiles and desktops",
+    "tree": {
+      "sha": "c2e615c08a33f33e5ac2fd25625b012019b158f8",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/c2e615c08a33f33e5ac2fd25625b012019b158f8"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/68504a70a08cc9e7405302a9b4446ee153e70570",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/68504a70a08cc9e7405302a9b4446ee153e70570",
+  "html_url": "https://github.com/umputun/remark42/commit/68504a70a08cc9e7405302a9b4446ee153e70570",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/68504a70a08cc9e7405302a9b4446ee153e70570/comments",
+  "author": {
+    "login": "Jaskon",
+    "id": 18248628,
+    "node_id": "MDQ6VXNlcjE4MjQ4NjI4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18248628?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Jaskon",
+    "html_url": "https://github.com/Jaskon",
+    "followers_url": "https://api.github.com/users/Jaskon/followers",
+    "following_url": "https://api.github.com/users/Jaskon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Jaskon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Jaskon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Jaskon/subscriptions",
+    "organizations_url": "https://api.github.com/users/Jaskon/orgs",
+    "repos_url": "https://api.github.com/users/Jaskon/repos",
+    "events_url": "https://api.github.com/users/Jaskon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Jaskon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "32073b3d660c094024932d38ca700973bcf522a8",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/32073b3d660c094024932d38ca700973bcf522a8",
+      "html_url": "https://github.com/umputun/remark42/commit/32073b3d660c094024932d38ca700973bcf522a8"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 1,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "4a7d09f8afcdc25e2707406157aac937538c3bc3",
+      "filename": "site/src/styles.css",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 5,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/68504a70a08cc9e7405302a9b4446ee153e70570/site%2Fsrc%2Fstyles.css",
+      "raw_url": "https://github.com/umputun/remark42/raw/68504a70a08cc9e7405302a9b4446ee153e70570/site%2Fsrc%2Fstyles.css",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fstyles.css?ref=68504a70a08cc9e7405302a9b4446ee153e70570",
+      "patch": "@@ -198,9 +198,5 @@\n \t@apply pointer-events-none;\n }\n .header-anchor::before {\n-\t@apply content-[''];\n-\t@apply block;\n-\t@apply h-16;\n-\t@apply -mt-16;\n-\t@apply invisible;\n+\t@apply content-[''] block h-24 -mt-24 invisible md:h-16 md:-mt-16;\n }"
+    }
+  ]
+}
