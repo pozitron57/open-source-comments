@@ -1,0 +1,110 @@
+{
+  "sha": "add01455fba91e6b96b6fe13c3be306773afc6bc",
+  "node_id": "C_kwDOBtgov9oAKGFkZDAxNDU1ZmJhOTFlNmI5NmI2ZmUxM2MzYmUzMDY3NzNhZmM2YmM",
+  "commit": {
+    "author": {
+      "name": "Yury Kotov",
+      "email": "koteyur@gmail.com",
+      "date": "2023-06-12T22:42:15Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2023-07-04T18:32:37Z"
+    },
+    "message": "Fix snippet generation\n\n1) Current implementation simply removes the last word, without truncating up to limit length.\n2) In case if even the first word (magnet link or some base64?) is too long don't add extra space.",
+    "tree": {
+      "sha": "b3ff7145ca9b365f4bc036b9bbca0e6e563ae3e8",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/b3ff7145ca9b365f4bc036b9bbca0e6e563ae3e8"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/add01455fba91e6b96b6fe13c3be306773afc6bc",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/add01455fba91e6b96b6fe13c3be306773afc6bc",
+  "html_url": "https://github.com/umputun/remark42/commit/add01455fba91e6b96b6fe13c3be306773afc6bc",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/add01455fba91e6b96b6fe13c3be306773afc6bc/comments",
+  "author": {
+    "login": "koteyur",
+    "id": 4014972,
+    "node_id": "MDQ6VXNlcjQwMTQ5NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4014972?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/koteyur",
+    "html_url": "https://github.com/koteyur",
+    "followers_url": "https://api.github.com/users/koteyur/followers",
+    "following_url": "https://api.github.com/users/koteyur/following{/other_user}",
+    "gists_url": "https://api.github.com/users/koteyur/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/koteyur/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/koteyur/subscriptions",
+    "organizations_url": "https://api.github.com/users/koteyur/orgs",
+    "repos_url": "https://api.github.com/users/koteyur/repos",
+    "events_url": "https://api.github.com/users/koteyur/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/koteyur/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "497f3ce47f86dc782a7e721a20d67ac0bc3adc1e",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/497f3ce47f86dc782a7e721a20d67ac0bc3adc1e",
+      "html_url": "https://github.com/umputun/remark42/commit/497f3ce47f86dc782a7e721a20d67ac0bc3adc1e"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 7,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "ad5051634db3ffa6130f17cd01e11ac903987f4f",
+      "filename": "backend/app/store/comment.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/add01455fba91e6b96b6fe13c3be306773afc6bc/backend%2Fapp%2Fstore%2Fcomment.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/add01455fba91e6b96b6fe13c3be306773afc6bc/backend%2Fapp%2Fstore%2Fcomment.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fcomment.go?ref=add01455fba91e6b96b6fe13c3be306773afc6bc",
+      "patch": "@@ -146,14 +146,18 @@ func (c *Comment) Snippet(limit int) string {\n \tif size < limit {\n \t\treturn cleanText\n \t}\n-\tsnippet := []rune(cleanText)[:size]\n+\tsnippet := []rune(cleanText)[:limit]\n \t// go back in snippet and found the first space\n \tfor i := len(snippet) - 1; i >= 0; i-- {\n \t\tif snippet[i] == ' ' {\n \t\t\tsnippet = snippet[:i]\n \t\t\tbreak\n \t\t}\n \t}\n+\t// Don't add a space if comment is just a one single word which has been truncated.\n+\tif len(snippet) == limit {\n+\t\treturn string(snippet) + \"...\"\n+\t}\n \treturn string(snippet) + \" ...\"\n }\n "
+    },
+    {
+      "sha": "2716d056a55e85885d1559f90e5b1739d99fcfc0",
+      "filename": "backend/app/store/comment_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/add01455fba91e6b96b6fe13c3be306773afc6bc/backend%2Fapp%2Fstore%2Fcomment_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/add01455fba91e6b96b6fe13c3be306773afc6bc/backend%2Fapp%2Fstore%2Fcomment_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fcomment_test.go?ref=add01455fba91e6b96b6fe13c3be306773afc6bc",
+      "patch": "@@ -196,8 +196,8 @@ func TestComment_Snippet(t *testing.T) {\n \t\t{0, \"\", \"\"},\n \t\t{-1, \"test\\nblah\", \"test blah\"},\n \t\t{5, \"test\\nblah\", \"test ...\"},\n-\t\t{5, \"xyz12345 xxx\", \"xyz12345 ...\"},\n-\t\t{10, \"xyz12345 xxx\\ntest 123456\", \"xyz12345 xxx test ...\"},\n+\t\t{5, \"xyz12345 xxx\", \"xyz12...\"},\n+\t\t{10, \"xyz12345 xxx\\ntest 123456\", \"xyz12345 ...\"},\n \t}\n \n \tfor i, tt := range tbl {"
+    }
+  ]
+}
