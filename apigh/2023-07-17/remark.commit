@@ -1,0 +1,98 @@
+{
+  "sha": "9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3",
+  "node_id": "C_kwDOBtgov9oAKDljNzE4Y2JjNWYxYzM2NWYzY2EzNmU5YzEwNmQzYmM5ZjE4N2UzZjM",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-07-06T09:14:30Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2023-07-17T01:50:03Z"
+    },
+    "message": "clarify SharedSecret usage by comment\n\nIt's not used aside from `server` but it was decided to keep it in place\nfor backwards compatibility in PR #1544.",
+    "tree": {
+      "sha": "727fd11cb902e1e4387f97ec3e5305b2e4aea72a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/727fd11cb902e1e4387f97ec3e5305b2e4aea72a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3",
+  "html_url": "https://github.com/umputun/remark42/commit/9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "02de92afc718d3df402bf50a5bf6d1d472c7132c",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/02de92afc718d3df402bf50a5bf6d1d472c7132c",
+      "html_url": "https://github.com/umputun/remark42/commit/02de92afc718d3df402bf50a5bf6d1d472c7132c"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "ecdb3dbee73398e638b5ce4b8253cc9a10d3fdc5",
+      "filename": "backend/app/main.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3/backend%2Fapp%2Fmain.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3/backend%2Fapp%2Fmain.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fmain.go?ref=9c718cbc5f1c365f3ca36e9c106d3bc9f187e3f3",
+      "patch": "@@ -23,7 +23,8 @@ type Opts struct {\n \tCleanupCmd cmd.CleanupCommand `command:\"cleanup\"`\n \tRemapCmd   cmd.RemapCommand   `command:\"remap\"`\n \n-\tRemarkURL    string `long:\"url\" env:\"REMARK_URL\" required:\"true\" description:\"url to remark\"`\n+\tRemarkURL string `long:\"url\" env:\"REMARK_URL\" required:\"true\" description:\"url to remark\"`\n+\t// SharedSecret is only used in server command, but defined for all commands for historical reasons\n \tSharedSecret string `long:\"secret\" env:\"SECRET\" required:\"true\" description:\"the shared secret key used to sign JWT, should be a random, long, hard-to-guess string\"`\n \n \tDbg bool `long:\"dbg\" env:\"DEBUG\" description:\"debug mode\"`"
+    }
+  ]
+}
