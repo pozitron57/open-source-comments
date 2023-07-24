@@ -1,0 +1,158 @@
+{
+  "sha": "c72f30eabb14894732bced1a6b12711dce92018a",
+  "node_id": "C_kwDOBtgov9oAKGM3MmYzMGVhYmIxNDg5NDczMmJjZWQxYTZiMTI3MTFkY2U5MjAxOGE",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-07-17T20:50:36Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2023-07-23T17:10:52Z"
+    },
+    "message": "remove proxied images from sanity check\n\nPreviously, proxied and local images were checked for presence in the\nstorage before previewing or posting the comment. That logic resulted in\n an inability to post with an image when a proxy for images is enabled,\n as proxied images are not downloaded to disk before the first time\n someone loads them, which could only happen after the user either\n previews or posts the message.\n\nAfter this change, preview and post only checks the local images'\npresence and ignore the proxied ones.",
+    "tree": {
+      "sha": "eb35656a3df93c3cf7d440aa93f4b8cc19c3607a",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/eb35656a3df93c3cf7d440aa93f4b8cc19c3607a"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/c72f30eabb14894732bced1a6b12711dce92018a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/c72f30eabb14894732bced1a6b12711dce92018a",
+  "html_url": "https://github.com/umputun/remark42/commit/c72f30eabb14894732bced1a6b12711dce92018a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/c72f30eabb14894732bced1a6b12711dce92018a/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "235f0dade066bdf4a8253d56a9563a8561e8f6d6",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/235f0dade066bdf4a8253d56a9563a8561e8f6d6",
+      "html_url": "https://github.com/umputun/remark42/commit/235f0dade066bdf4a8253d56a9563a8561e8f6d6"
+    }
+  ],
+  "stats": {
+    "total": 189,
+    "additions": 142,
+    "deletions": 47
+  },
+  "files": [
+    {
+      "sha": "f7e9f6f5cd635070e87c385d8603e72da9a90574",
+      "filename": "backend/app/rest/api/rest_private.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Frest%2Fapi%2Frest_private.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Frest%2Fapi%2Frest_private.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_private.go?ref=c72f30eabb14894732bced1a6b12711dce92018a",
+      "patch": "@@ -90,11 +90,11 @@ func (s *private) previewCommentCtrl(w http.ResponseWriter, r *http.Request) {\n \tcomment = s.commentFormatter.Format(comment)\n \tcomment.Sanitize()\n \n-\t// check if images are valid\n-\tfor _, id := range s.imageService.ExtractPictures(comment.Text) {\n+\t// check if images are valid, omit proxied images as they are lazy-loaded\n+\tfor _, id := range s.imageService.ExtractNonProxiedPictures(comment.Text) {\n \t\terr := s.imageService.ResetCleanupTimer(id)\n \t\tif err != nil {\n-\t\t\trest.SendErrorJSON(w, r, http.StatusBadRequest, err, \"can't renew staged picture cleanup timer\", rest.ErrImgNotFound)\n+\t\t\trest.SendErrorJSON(w, r, http.StatusBadRequest, err, \"can't load picture from the comment\", rest.ErrImgNotFound)\n \t\t\treturn\n \t\t}\n \t}\n@@ -129,8 +129,8 @@ func (s *private) createCommentCtrl(w http.ResponseWriter, r *http.Request) {\n \t}\n \tcomment = s.commentFormatter.Format(comment)\n \n-\t// check if images are valid\n-\tfor _, id := range s.imageService.ExtractPictures(comment.Text) {\n+\t// check if images are valid, omit proxied images as they are lazy-loaded\n+\tfor _, id := range s.imageService.ExtractNonProxiedPictures(comment.Text) {\n \t\t_, err := s.imageService.Load(id)\n \t\tif err != nil {\n \t\t\trest.SendErrorJSON(w, r, http.StatusBadRequest, err, \"can't load picture from the comment\", rest.ErrImgNotFound)"
+    },
+    {
+      "sha": "df50100332f54a2ee01898c9823808e97e246618",
+      "filename": "backend/app/rest/api/rest_private_test.go",
+      "status": "modified",
+      "additions": 83,
+      "deletions": 1,
+      "changes": 84,
+      "blob_url": "https://github.com/umputun/remark42/blob/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go?ref=c72f30eabb14894732bced1a6b12711dce92018a",
+      "patch": "@@ -10,6 +10,7 @@ import (\n \t\"io\"\n \t\"mime/multipart\"\n \t\"net/http\"\n+\t\"net/http/httptest\"\n \t\"os\"\n \t\"strings\"\n \t\"testing\"\n@@ -24,6 +25,7 @@ import (\n \t\"github.com/stretchr/testify/require\"\n \n \t\"github.com/umputun/remark42/backend/app/notify\"\n+\t\"github.com/umputun/remark42/backend/app/rest/proxy\"\n \t\"github.com/umputun/remark42/backend/app/store\"\n \t\"github.com/umputun/remark42/backend/app/store/image\"\n )\n@@ -69,7 +71,7 @@ func TestRest_CreateFilteredCode(t *testing.T) {\n \n \tc := R.JSON{}\n \terr = json.Unmarshal(b, &c)\n-\tassert.NoError(t, err)\n+\trequire.NoError(t, err, string(b))\n \tloc := c[\"locator\"].(map[string]interface{})\n \tassert.Equal(t, \"remark42\", loc[\"site\"])\n \tassert.Equal(t, \"https://radio-t.com/blah1\", loc[\"url\"])\n@@ -79,6 +81,86 @@ func TestRest_CreateFilteredCode(t *testing.T) {\n \tassert.True(t, len(c[\"id\"].(string)) > 8)\n }\n \n+// based on issue https://github.com/umputun/remark42/issues/1631\n+func TestRest_CreateAndPreviewWithImage(t *testing.T) {\n+\tts, srv, teardown := startupT(t)\n+\tts.Close()\n+\tdefer teardown()\n+\n+\tsrv.ImageService.ProxyAPI = srv.RemarkURL + \"/api/v1/img\"\n+\tsrv.ImageProxy = &proxy.Image{\n+\t\tHTTP2HTTPS:    true,\n+\t\tCacheExternal: true,\n+\t\tRoutePath:     \"/api/v1/img\",\n+\t\tRemarkURL:     srv.RemarkURL,\n+\t\tImageService:  srv.ImageService,\n+\t}\n+\tsrv.CommentFormatter = store.NewCommentFormatter(srv.ImageProxy)\n+\t// need to recreate the server with new ImageProxy, otherwise old one will be used\n+\tts = httptest.NewServer(srv.routes())\n+\tdefer ts.Close()\n+\n+\tvar pngRead bool\n+\t// server with the test PNG image\n+\tpngServer := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n+\t\t_, e := io.Copy(w, gopherPNG())\n+\t\tassert.NoError(t, e)\n+\t\tpngRead = true\n+\t}))\n+\tdefer pngServer.Close()\n+\n+\tt.Run(\"create\", func(t *testing.T) {\n+\t\tresp, err := post(t, ts.URL+\"/api/v1/comment\",\n+\t\t\t`{\"text\": \"![](`+pngServer.URL+`/gopher.png)\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"remark42\"}}`)\n+\t\tassert.NoError(t, err)\n+\t\tb, err := io.ReadAll(resp.Body)\n+\t\tassert.NoError(t, err)\n+\t\trequire.Equal(t, http.StatusCreated, resp.StatusCode, string(b))\n+\t\tassert.NoError(t, resp.Body.Close())\n+\n+\t\tc := R.JSON{}\n+\t\terr = json.Unmarshal(b, &c)\n+\t\trequire.NoError(t, err, string(b))\n+\t\tassert.NotContains(t, c[\"text\"], pngServer.URL)\n+\t\tassert.Contains(t, c[\"text\"], srv.RemarkURL)\n+\t\tloc := c[\"locator\"].(map[string]interface{})\n+\t\tassert.Equal(t, \"remark42\", loc[\"site\"])\n+\t\tassert.Equal(t, \"https://radio-t.com/blah1\", loc[\"url\"])\n+\t\tassert.True(t, len(c[\"id\"].(string)) > 8)\n+\t\tassert.Equal(t, false, pngRead, \"original image is not yet accessed by server\")\n+\t})\n+\n+\tt.Run(\"preview\", func(t *testing.T) {\n+\t\tresp, err := post(t, ts.URL+\"/api/v1/preview\",\n+\t\t\t`{\"text\": \"![](`+pngServer.URL+`/gopher.png)\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"remark42\"}}`)\n+\t\tassert.NoError(t, err)\n+\t\tb, err := io.ReadAll(resp.Body)\n+\t\tassert.NoError(t, err)\n+\t\trequire.Equal(t, http.StatusOK, resp.StatusCode, string(b))\n+\t\tassert.NoError(t, resp.Body.Close())\n+\n+\t\tassert.NotContains(t, string(b), pngServer.URL)\n+\t\tassert.Contains(t, string(b), srv.RemarkURL)\n+\n+\t\tassert.Equal(t, false, pngRead, \"original image is not yet accessed by server\")\n+\t\t// retrieve the image from the cache\n+\t\timgURL := strings.Split(strings.Split(string(b), \"src=\\\"\")[1], \"\\\"\")[0]\n+\t\t// replace srv.RemarkURL with ts.URL\n+\t\timgURL = strings.ReplaceAll(imgURL, srv.RemarkURL, ts.URL)\n+\t\tresp, err = http.Get(imgURL)\n+\t\tassert.NoError(t, err)\n+\t\tb, err = io.ReadAll(resp.Body)\n+\t\tassert.NoError(t, err)\n+\t\trequire.Equal(t, http.StatusOK, resp.StatusCode, string(b))\n+\t\tassert.NoError(t, resp.Body.Close())\n+\t\t// compare image to original gopher png after decoding from base64\n+\t\tassert.Equal(t, gopher, base64.StdEncoding.EncodeToString(b))\n+\n+\t\tassert.Equal(t, true, pngRead, \"original image accessed to be shown to user\")\n+\t})\n+\n+}\n+\n func TestRest_CreateOldPost(t *testing.T) {\n \tts, srv, teardown := startupT(t)\n \tdefer teardown()"
+    },
+    {
+      "sha": "4f307fd0fcff7cc709799b06d46cec9707dd86bc",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go?ref=c72f30eabb14894732bced1a6b12711dce92018a",
+      "patch": "@@ -76,8 +76,8 @@ func TestRest_Preview(t *testing.T) {\n \tassert.NoError(t, resp.Body.Close())\n \tassert.Contains(t,\n \t\tstring(b),\n-\t\t\"{\\\"code\\\":20,\\\"details\\\":\\\"can't renew staged picture cleanup timer\\\",\"+\n-\t\t\t\"\\\"error\\\":\\\"can't get image stats for dev_user/bad_picture: stat\",\n+\t\t`{\"code\":20,\"details\":\"can't load picture from the comment\",`+\n+\t\t\t`\"error\":\"can't get image stats for dev_user/bad_picture: stat`,\n \t)\n \tassert.Contains(t,\n \t\tstring(b),\n@@ -97,8 +97,8 @@ func TestRest_PreviewWithWrongImage(t *testing.T) {\n \tassert.NoError(t, resp.Body.Close())\n \tassert.Contains(t,\n \t\tstring(b),\n-\t\t\"{\\\"code\\\":20,\\\"details\\\":\\\"can't renew staged picture cleanup timer\\\",\"+\n-\t\t\t\"\\\"error\\\":\\\"can't get image stats for dev_user/bad_picture: stat \",\n+\t\t`{\"code\":20,\"details\":\"can't load picture from the comment\",`+\n+\t\t\t`\"error\":\"can't get image stats for dev_user/bad_picture: stat `,\n \t)\n \tassert.Contains(t,\n \t\tstring(b),"
+    },
+    {
+      "sha": "294206292acec7d487bc6b819750565cedd212dd",
+      "filename": "backend/app/store/image/image.go",
+      "status": "modified",
+      "additions": 47,
+      "deletions": 35,
+      "changes": 82,
+      "blob_url": "https://github.com/umputun/remark42/blob/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Fstore%2Fimage%2Fimage.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Fstore%2Fimage%2Fimage.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fimage%2Fimage.go?ref=c72f30eabb14894732bced1a6b12711dce92018a",
+      "patch": "@@ -88,8 +88,8 @@ func NewService(s Store, p ServiceParams) *Service {\n \treturn &Service{ServiceParams: p, store: s}\n }\n \n-// SubmitAndCommit multiple ids immediately\n-func (s *Service) SubmitAndCommit(idsFn func() []string) error {\n+// Commit multiple ids immediately\n+func (s *Service) Commit(idsFn func() []string) error {\n \terrs := new(multierror.Error)\n \tfor _, id := range idsFn() {\n \t\terr := s.store.Commit(id)\n@@ -117,7 +117,7 @@ func (s *Service) Submit(idsFn func() []string) {\n \t\t\t\tfor atomic.LoadInt32(&s.term) == 0 && time.Since(req.TS) <= s.EditDuration {\n \t\t\t\t\ttime.Sleep(time.Millisecond * 10) // small sleep to relive busy wait but keep reactive for term (close)\n \t\t\t\t}\n-\t\t\t\terr := s.SubmitAndCommit(req.idsFn)\n+\t\t\t\terr := s.Commit(req.idsFn)\n \t\t\t\tif err != nil {\n \t\t\t\t\tlog.Printf(\"[WARN] image commit error %v\", err)\n \t\t\t\t}\n@@ -141,39 +141,14 @@ func (s *Service) Submit(idsFn func() []string) {\n \n // ExtractPictures gets list of images from the doc html and convert from urls to ids, i.e. user/pic.png\n func (s *Service) ExtractPictures(commentHTML string) (ids []string) {\n-\tdoc, err := goquery.NewDocumentFromReader(strings.NewReader(commentHTML))\n-\tif err != nil {\n-\t\tlog.Printf(\"[ERROR] can't parse commentHTML to parse images: %q, error: %v\", commentHTML, err)\n-\t\treturn nil\n-\t}\n-\tdoc.Find(\"img\").Each(func(i int, sl *goquery.Selection) {\n-\t\tif im, ok := sl.Attr(\"src\"); ok {\n-\t\t\tif strings.Contains(im, s.ImageAPI) {\n-\t\t\t\telems := strings.Split(im, \"/\")\n-\t\t\t\tif len(elems) >= 2 {\n-\t\t\t\t\tid := elems[len(elems)-2] + \"/\" + elems[len(elems)-1]\n-\t\t\t\t\tids = append(ids, id)\n-\t\t\t\t}\n-\t\t\t}\n-\t\t\tif strings.Contains(im, s.ProxyAPI) {\n-\t\t\t\tproxiedURL, err := url.Parse(im)\n-\t\t\t\tif err != nil {\n-\t\t\t\t\treturn\n-\t\t\t\t}\n-\t\t\t\timgURL, err := base64.URLEncoding.DecodeString(proxiedURL.Query().Get(\"src\"))\n-\t\t\t\tif err != nil {\n-\t\t\t\t\treturn\n-\t\t\t\t}\n-\t\t\t\timgID, err := CachedImgID(string(imgURL))\n-\t\t\t\tif err != nil {\n-\t\t\t\t\treturn\n-\t\t\t\t}\n-\t\t\t\tids = append(ids, imgID)\n-\t\t\t}\n-\t\t}\n-\t})\n+\treturn s.extractImageIDs(commentHTML, true)\n+}\n \n-\treturn ids\n+// ExtractNonProxiedPictures gets list of non-proxied images from the doc html and convert from urls to ids, i.e. user/pic.png\n+// This method is used in image check on post preview and load, as proxied images have lazy loading\n+// and wouldn't be present on disk but still valid as they will be loaded the first time someone requests them.\n+func (s *Service) ExtractNonProxiedPictures(commentHTML string) (ids []string) {\n+\treturn s.extractImageIDs(commentHTML, false)\n }\n \n // Cleanup runs periodic cleanup with 1.5*ServiceParams.EditDuration. Blocking loop, should be called inside of goroutine by consumer\n@@ -262,6 +237,43 @@ func (s *Service) ImgContentType(img []byte) string {\n \treturn contentType\n }\n \n+// returns list of image IDs from the comment html, including proxied images if includeProxied is true\n+func (s *Service) extractImageIDs(commentHTML string, includeProxied bool) (ids []string) {\n+\tdoc, err := goquery.NewDocumentFromReader(strings.NewReader(commentHTML))\n+\tif err != nil {\n+\t\tlog.Printf(\"[ERROR] can't parse commentHTML to parse images: %q, error: %v\", commentHTML, err)\n+\t\treturn nil\n+\t}\n+\tdoc.Find(\"img\").Each(func(i int, sl *goquery.Selection) {\n+\t\tif im, ok := sl.Attr(\"src\"); ok {\n+\t\t\tif strings.Contains(im, s.ImageAPI) {\n+\t\t\t\telems := strings.Split(im, \"/\")\n+\t\t\t\tif len(elems) >= 2 {\n+\t\t\t\t\tid := elems[len(elems)-2] + \"/\" + elems[len(elems)-1]\n+\t\t\t\t\tids = append(ids, id)\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\tif includeProxied && strings.Contains(im, s.ProxyAPI) {\n+\t\t\t\tproxiedURL, err := url.Parse(im)\n+\t\t\t\tif err != nil {\n+\t\t\t\t\treturn\n+\t\t\t\t}\n+\t\t\t\timgURL, err := base64.URLEncoding.DecodeString(proxiedURL.Query().Get(\"src\"))\n+\t\t\t\tif err != nil {\n+\t\t\t\t\treturn\n+\t\t\t\t}\n+\t\t\t\timgID, err := CachedImgID(string(imgURL))\n+\t\t\t\tif err != nil {\n+\t\t\t\t\treturn\n+\t\t\t\t}\n+\t\t\t\tids = append(ids, imgID)\n+\t\t\t}\n+\t\t}\n+\t})\n+\n+\treturn ids\n+}\n+\n // prepareImage calls readAndValidateImage and resize on provided image.\n func (s *Service) prepareImage(r io.Reader) ([]byte, error) {\n \tdata, err := readAndValidateImage(r, s.MaxSize)"
+    },
+    {
+      "sha": "7ca85b1402ceeba77fe4357bffa13c8036f1ca60",
+      "filename": "backend/app/store/image/image_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Fstore%2Fimage%2Fimage_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Fstore%2Fimage%2Fimage_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fimage%2Fimage_test.go?ref=c72f30eabb14894732bced1a6b12711dce92018a",
+      "patch": "@@ -105,6 +105,7 @@ func TestService_ExtractPictures(t *testing.T) {\n \tids = svc.ExtractPictures(html)\n \trequire.Equal(t, 1, len(ids), \"one image in\")\n \tassert.Equal(t, \"cached_images/12318fbd4c55e9d177b8b5ae197bc89c5afd8e07-a41fcb00643f28d700504256ec81cbf2e1aac53e\", ids[0])\n+\trequire.Empty(t, svc.ExtractNonProxiedPictures(html), \"no non-proxied images expected to be found\")\n \n \t// bad url\n \thtml = `<img src=\" https://remark42.radio-t.com/api/v1/img\">`\n@@ -150,7 +151,7 @@ func TestService_Submit(t *testing.T) {\n \tsvc := NewService(&store, ServiceParams{ImageAPI: \"/blah/\", EditDuration: time.Millisecond * 100})\n \tsvc.Submit(func() []string { return []string{\"id1\", \"id2\", \"id3\"} })\n \tassert.Equal(t, 3, len(store.ResetCleanupTimerCalls()))\n-\terr := svc.SubmitAndCommit(func() []string { return []string{\"id4\", \"id5\"} })\n+\terr := svc.Commit(func() []string { return []string{\"id4\", \"id5\"} })\n \tassert.NoError(t, err)\n \tsvc.Submit(func() []string { return []string{\"id6\", \"id7\"} })\n \tassert.Equal(t, 5, len(store.ResetCleanupTimerCalls()))"
+    },
+    {
+      "sha": "5503712b5264ac4d9451edb947e7ca689d20fbd2",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/c72f30eabb14894732bced1a6b12711dce92018a/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Fservice.go?ref=c72f30eabb14894732bced1a6b12711dce92018a",
+      "patch": "@@ -279,7 +279,7 @@ func (s *DataStore) submitImages(comment store.Comment) {\n \n \tvar err error\n \tif comment.Imported {\n-\t\terr = s.ImageService.SubmitAndCommit(idsFn)\n+\t\terr = s.ImageService.Commit(idsFn)\n \t} else {\n \t\ts.ImageService.Submit(idsFn)\n \t}"
+    }
+  ]
+}
