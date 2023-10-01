@@ -1,0 +1,98 @@
+{
+  "sha": "d2f395f4e808a55b34cb81ba132f4100b8cd8c14",
+  "node_id": "MDY6Q29tbWl0MTk4Mjc4MzQxOmQyZjM5NWY0ZTgwOGE1NWIzNGNiODFiYTEzMmY0MTAwYjhjZDhjMTQ=",
+  "commit": {
+    "author": {
+      "name": "Alex R",
+      "email": "alexei.rudenko@gmail.com",
+      "date": "2019-07-26T13:18:59Z"
+    },
+    "committer": {
+      "name": "Alex R",
+      "email": "alexei.rudenko@gmail.com",
+      "date": "2019-07-26T13:18:59Z"
+    },
+    "message": "Update readme",
+    "tree": {
+      "sha": "b6b87d857a1566d8c39f0fe515cb6e79606921d3",
+      "url": "https://api.github.com/repos/JustComments/jc-server/git/trees/b6b87d857a1566d8c39f0fe515cb6e79606921d3"
+    },
+    "url": "https://api.github.com/repos/JustComments/jc-server/git/commits/d2f395f4e808a55b34cb81ba132f4100b8cd8c14",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/JustComments/jc-server/commits/d2f395f4e808a55b34cb81ba132f4100b8cd8c14",
+  "html_url": "https://github.com/JustComments/jc-server/commit/d2f395f4e808a55b34cb81ba132f4100b8cd8c14",
+  "comments_url": "https://api.github.com/repos/JustComments/jc-server/commits/d2f395f4e808a55b34cb81ba132f4100b8cd8c14/comments",
+  "author": {
+    "login": "OrKoN",
+    "id": 399150,
+    "node_id": "MDQ6VXNlcjM5OTE1MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/399150?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OrKoN",
+    "html_url": "https://github.com/OrKoN",
+    "followers_url": "https://api.github.com/users/OrKoN/followers",
+    "following_url": "https://api.github.com/users/OrKoN/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OrKoN/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OrKoN/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OrKoN/subscriptions",
+    "organizations_url": "https://api.github.com/users/OrKoN/orgs",
+    "repos_url": "https://api.github.com/users/OrKoN/repos",
+    "events_url": "https://api.github.com/users/OrKoN/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OrKoN/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "OrKoN",
+    "id": 399150,
+    "node_id": "MDQ6VXNlcjM5OTE1MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/399150?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OrKoN",
+    "html_url": "https://github.com/OrKoN",
+    "followers_url": "https://api.github.com/users/OrKoN/followers",
+    "following_url": "https://api.github.com/users/OrKoN/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OrKoN/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OrKoN/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OrKoN/subscriptions",
+    "organizations_url": "https://api.github.com/users/OrKoN/orgs",
+    "repos_url": "https://api.github.com/users/OrKoN/repos",
+    "events_url": "https://api.github.com/users/OrKoN/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OrKoN/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "699fafa93e8c3b955918ec027e4b7f036cd72664",
+      "url": "https://api.github.com/repos/JustComments/jc-server/commits/699fafa93e8c3b955918ec027e4b7f036cd72664",
+      "html_url": "https://github.com/JustComments/jc-server/commit/699fafa93e8c3b955918ec027e4b7f036cd72664"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f50467cce5c8589dfbd3c7f9da18b221b9731020",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/JustComments/jc-server/blob/d2f395f4e808a55b34cb81ba132f4100b8cd8c14/README.md",
+      "raw_url": "https://github.com/JustComments/jc-server/raw/d2f395f4e808a55b34cb81ba132f4100b8cd8c14/README.md",
+      "contents_url": "https://api.github.com/repos/JustComments/jc-server/contents/README.md?ref=d2f395f4e808a55b34cb81ba132f4100b8cd8c14",
+      "patch": "@@ -41,7 +41,7 @@ the port in `config.js`.\n ## Frontend Setup\n \n - Clone https://github.com/JustComments/jc-widget and run `npm install`.\n-- Adjust `API_ENDPOINT` variable in Webpack via CLI and or in the source to\n+- Adjust `API_ENDPOINT` variable in Webpack via CLI or in the source to\n   point to 3434.\n - Run `npm start` and open `http://localhost:3333/`.\n "
+    }
+  ]
+}
