@@ -1,0 +1,98 @@
+{
+  "sha": "4d7cff253f2082ff81391d1a7ea72b824439c2bd",
+  "node_id": "C_kwDOBQ8bstoAKDRkN2NmZjI1M2YyMDgyZmY4MTM5MWQxYTdlYTcyYjgyNDQzOWMyYmQ",
+  "commit": {
+    "author": {
+      "name": "Sönke Ludwig",
+      "email": "sludwig@outerproduct.org",
+      "date": "2023-09-25T15:06:42Z"
+    },
+    "committer": {
+      "name": "Sönke Ludwig",
+      "email": "sludwig@outerproduct.org",
+      "date": "2023-09-25T15:06:42Z"
+    },
+    "message": "Revert the use of countDocuments, as the current implementation is buggy.",
+    "tree": {
+      "sha": "6402125e406cdcf3c8ab39047e95c9e033c7b49c",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/git/trees/6402125e406cdcf3c8ab39047e95c9e033c7b49c"
+    },
+    "url": "https://api.github.com/repos/rejectedsoftware/diskuto/git/commits/4d7cff253f2082ff81391d1a7ea72b824439c2bd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/4d7cff253f2082ff81391d1a7ea72b824439c2bd",
+  "html_url": "https://github.com/rejectedsoftware/diskuto/commit/4d7cff253f2082ff81391d1a7ea72b824439c2bd",
+  "comments_url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/4d7cff253f2082ff81391d1a7ea72b824439c2bd/comments",
+  "author": {
+    "login": "s-ludwig",
+    "id": 1645969,
+    "node_id": "MDQ6VXNlcjE2NDU5Njk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1645969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s-ludwig",
+    "html_url": "https://github.com/s-ludwig",
+    "followers_url": "https://api.github.com/users/s-ludwig/followers",
+    "following_url": "https://api.github.com/users/s-ludwig/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s-ludwig/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s-ludwig/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s-ludwig/subscriptions",
+    "organizations_url": "https://api.github.com/users/s-ludwig/orgs",
+    "repos_url": "https://api.github.com/users/s-ludwig/repos",
+    "events_url": "https://api.github.com/users/s-ludwig/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s-ludwig/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "s-ludwig",
+    "id": 1645969,
+    "node_id": "MDQ6VXNlcjE2NDU5Njk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1645969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s-ludwig",
+    "html_url": "https://github.com/s-ludwig",
+    "followers_url": "https://api.github.com/users/s-ludwig/followers",
+    "following_url": "https://api.github.com/users/s-ludwig/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s-ludwig/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s-ludwig/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s-ludwig/subscriptions",
+    "organizations_url": "https://api.github.com/users/s-ludwig/orgs",
+    "repos_url": "https://api.github.com/users/s-ludwig/repos",
+    "events_url": "https://api.github.com/users/s-ludwig/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s-ludwig/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3a94f71680dc9df6ca0ed475f998457e3da589e2",
+      "url": "https://api.github.com/repos/rejectedsoftware/diskuto/commits/3a94f71680dc9df6ca0ed475f998457e3da589e2",
+      "html_url": "https://github.com/rejectedsoftware/diskuto/commit/3a94f71680dc9df6ca0ed475f998457e3da589e2"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "579855c0a21d2162220fe865f1275bcca937831f",
+      "filename": "source/diskuto/commentstores/mongodb.d",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/rejectedsoftware/diskuto/blob/4d7cff253f2082ff81391d1a7ea72b824439c2bd/source%2Fdiskuto%2Fcommentstores%2Fmongodb.d",
+      "raw_url": "https://github.com/rejectedsoftware/diskuto/raw/4d7cff253f2082ff81391d1a7ea72b824439c2bd/source%2Fdiskuto%2Fcommentstores%2Fmongodb.d",
+      "contents_url": "https://api.github.com/repos/rejectedsoftware/diskuto/contents/source%2Fdiskuto%2Fcommentstores%2Fmongodb.d?ref=4d7cff253f2082ff81391d1a7ea72b824439c2bd",
+      "patch": "@@ -100,7 +100,7 @@ class MongoDBCommentStore : DiskutoCommentStore {\n \tuint getActiveCommentCount(string topic)\n \t{\n \t\timport std.conv : to;\n-\t\treturn m_comments.countDocuments([\"topic\": topic, \"status\": \"active\"]).to!uint;\n+\t\treturn m_comments.count([\"topic\": topic, \"status\": \"active\"]).to!uint;\n \t}\n \n \tvoid iterateAllComments(scope void delegate(ref StoredComment) del)"
+    }
+  ]
+}
