@@ -1,0 +1,218 @@
+{
+  "sha": "dcc761340920715b5d38be2a108c355fc9ae9e40",
+  "node_id": "C_kwDOBtgov9oAKGRjYzc2MTM0MDkyMDcxNWI1ZDM4YmUyYTEwOGMzNTVmYzlhZTllNDA",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-10-14T07:03:31Z"
+    },
+    "committer": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-11-26T08:13:53Z"
+    },
+    "message": "allow disabling fancy HTML formatting\n\nIt might be necessary if the comments should preserve\noriginal quotes instead of replacing them with angled ones.",
+    "tree": {
+      "sha": "f1b41300a163db04df2fa840c38ffa3cad9bc8f1",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/f1b41300a163db04df2fa840c38ffa3cad9bc8f1"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/dcc761340920715b5d38be2a108c355fc9ae9e40",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/dcc761340920715b5d38be2a108c355fc9ae9e40",
+  "html_url": "https://github.com/umputun/remark42/commit/dcc761340920715b5d38be2a108c355fc9ae9e40",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/dcc761340920715b5d38be2a108c355fc9ae9e40/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d04d2097f83308db56726fddf52812839aeb1624",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/d04d2097f83308db56726fddf52812839aeb1624",
+      "html_url": "https://github.com/umputun/remark42/commit/d04d2097f83308db56726fddf52812839aeb1624"
+    }
+  ],
+  "stats": {
+    "total": 319,
+    "additions": 212,
+    "deletions": 107
+  },
+  "files": [
+    {
+      "sha": "442c420e5c7dddf051d84a526102f57cf2b6d61b",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 58,
+      "deletions": 56,
+      "changes": 114,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fcmd%2Fserver.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fcmd%2Fserver.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fserver.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -59,34 +59,35 @@ type ServerCommand struct {\n \tSSL        SSLGroup        `group:\"ssl\" namespace:\"ssl\" env-namespace:\"SSL\"`\n \tImageProxy ImageProxyGroup `group:\"image-proxy\" namespace:\"image-proxy\" env-namespace:\"IMAGE_PROXY\"`\n \n-\tSites            []string      `long:\"site\" env:\"SITE\" default:\"remark\" description:\"site names\" env-delim:\",\"`\n-\tAnonymousVote    bool          `long:\"anon-vote\" env:\"ANON_VOTE\" description:\"enable anonymous votes (works only with VOTES_IP enabled)\"`\n-\tAdminPasswd      string        `long:\"admin-passwd\" env:\"ADMIN_PASSWD\" default:\"\" description:\"admin basic auth password\"`\n-\tBackupLocation   string        `long:\"backup\" env:\"BACKUP_PATH\" default:\"./var/backup\" description:\"backups location\"`\n-\tMaxBackupFiles   int           `long:\"max-back\" env:\"MAX_BACKUP_FILES\" default:\"10\" description:\"max backups to keep\"`\n-\tLegacyImageProxy bool          `long:\"img-proxy\" env:\"IMG_PROXY\" description:\"[deprecated, use image-proxy.http2https] enable image proxy\"`\n-\tMaxCommentSize   int           `long:\"max-comment\" env:\"MAX_COMMENT_SIZE\" default:\"2048\" description:\"max comment size\"`\n-\tMaxVotes         int           `long:\"max-votes\" env:\"MAX_VOTES\" default:\"-1\" description:\"maximum number of votes per comment\"`\n-\tRestrictVoteIP   bool          `long:\"votes-ip\" env:\"VOTES_IP\" description:\"restrict votes from the same ip\"`\n-\tDurationVoteIP   time.Duration `long:\"votes-ip-time\" env:\"VOTES_IP_TIME\" default:\"5m\" description:\"same ip vote duration\"`\n-\tLowScore         int           `long:\"low-score\" env:\"LOW_SCORE\" default:\"-5\" description:\"low score threshold\"`\n-\tCriticalScore    int           `long:\"critical-score\" env:\"CRITICAL_SCORE\" default:\"-10\" description:\"critical score threshold\"`\n-\tPositiveScore    bool          `long:\"positive-score\" env:\"POSITIVE_SCORE\" description:\"enable positive score only\"`\n-\tReadOnlyAge      int           `long:\"read-age\" env:\"READONLY_AGE\" default:\"0\" description:\"read-only age of comments, days\"`\n-\tEditDuration     time.Duration `long:\"edit-time\" env:\"EDIT_TIME\" default:\"5m\" description:\"edit window\"`\n-\tAdminEdit        bool          `long:\"admin-edit\" env:\"ADMIN_EDIT\" description:\"unlimited edit for admins\"`\n-\tPort             int           `long:\"port\" env:\"REMARK_PORT\" default:\"8080\" description:\"port\"`\n-\tAddress          string        `long:\"address\" env:\"REMARK_ADDRESS\" default:\"\" description:\"listening address\"`\n-\tWebRoot          string        `long:\"web-root\" env:\"REMARK_WEB_ROOT\" default:\"./web\" description:\"web root directory\"`\n-\tUpdateLimit      float64       `long:\"update-limit\" env:\"UPDATE_LIMIT\" default:\"0.5\" description:\"updates/sec limit\"`\n-\tRestrictedWords  []string      `long:\"restricted-words\" env:\"RESTRICTED_WORDS\" description:\"words prohibited to use in comments\" env-delim:\",\"`\n-\tRestrictedNames  []string      `long:\"restricted-names\" env:\"RESTRICTED_NAMES\" description:\"names prohibited to use by user\" env-delim:\",\"`\n-\tEnableEmoji      bool          `long:\"emoji\" env:\"EMOJI\" description:\"enable emoji\"`\n-\tSimpleView       bool          `long:\"simple-view\" env:\"SIMPLE_VIEW\" description:\"minimal comment editor mode\"`\n-\tProxyCORS        bool          `long:\"proxy-cors\" env:\"PROXY_CORS\" description:\"disable internal CORS and delegate it to proxy\"`\n-\tAllowedHosts     []string      `long:\"allowed-hosts\" env:\"ALLOWED_HOSTS\" description:\"limit hosts/sources allowed to embed comments\" env-delim:\",\"`\n-\tSubscribersOnly  bool          `long:\"subscribers-only\" env:\"SUBSCRIBERS_ONLY\" description:\"enable commenting only for Patreon subscribers\"`\n-\tDisableSignature bool          `long:\"disable-signature\" env:\"DISABLE_SIGNATURE\" description:\"disable server signature in headers\"`\n+\tSites                      []string      `long:\"site\" env:\"SITE\" default:\"remark\" description:\"site names\" env-delim:\",\"`\n+\tAnonymousVote              bool          `long:\"anon-vote\" env:\"ANON_VOTE\" description:\"enable anonymous votes (works only with VOTES_IP enabled)\"`\n+\tAdminPasswd                string        `long:\"admin-passwd\" env:\"ADMIN_PASSWD\" default:\"\" description:\"admin basic auth password\"`\n+\tBackupLocation             string        `long:\"backup\" env:\"BACKUP_PATH\" default:\"./var/backup\" description:\"backups location\"`\n+\tMaxBackupFiles             int           `long:\"max-back\" env:\"MAX_BACKUP_FILES\" default:\"10\" description:\"max backups to keep\"`\n+\tLegacyImageProxy           bool          `long:\"img-proxy\" env:\"IMG_PROXY\" description:\"[deprecated, use image-proxy.http2https] enable image proxy\"`\n+\tMaxCommentSize             int           `long:\"max-comment\" env:\"MAX_COMMENT_SIZE\" default:\"2048\" description:\"max comment size\"`\n+\tMaxVotes                   int           `long:\"max-votes\" env:\"MAX_VOTES\" default:\"-1\" description:\"maximum number of votes per comment\"`\n+\tRestrictVoteIP             bool          `long:\"votes-ip\" env:\"VOTES_IP\" description:\"restrict votes from the same ip\"`\n+\tDurationVoteIP             time.Duration `long:\"votes-ip-time\" env:\"VOTES_IP_TIME\" default:\"5m\" description:\"same ip vote duration\"`\n+\tLowScore                   int           `long:\"low-score\" env:\"LOW_SCORE\" default:\"-5\" description:\"low score threshold\"`\n+\tCriticalScore              int           `long:\"critical-score\" env:\"CRITICAL_SCORE\" default:\"-10\" description:\"critical score threshold\"`\n+\tPositiveScore              bool          `long:\"positive-score\" env:\"POSITIVE_SCORE\" description:\"enable positive score only\"`\n+\tReadOnlyAge                int           `long:\"read-age\" env:\"READONLY_AGE\" default:\"0\" description:\"read-only age of comments, days\"`\n+\tEditDuration               time.Duration `long:\"edit-time\" env:\"EDIT_TIME\" default:\"5m\" description:\"edit window\"`\n+\tAdminEdit                  bool          `long:\"admin-edit\" env:\"ADMIN_EDIT\" description:\"unlimited edit for admins\"`\n+\tPort                       int           `long:\"port\" env:\"REMARK_PORT\" default:\"8080\" description:\"port\"`\n+\tAddress                    string        `long:\"address\" env:\"REMARK_ADDRESS\" default:\"\" description:\"listening address\"`\n+\tWebRoot                    string        `long:\"web-root\" env:\"REMARK_WEB_ROOT\" default:\"./web\" description:\"web root directory\"`\n+\tUpdateLimit                float64       `long:\"update-limit\" env:\"UPDATE_LIMIT\" default:\"0.5\" description:\"updates/sec limit\"`\n+\tRestrictedWords            []string      `long:\"restricted-words\" env:\"RESTRICTED_WORDS\" description:\"words prohibited to use in comments\" env-delim:\",\"`\n+\tRestrictedNames            []string      `long:\"restricted-names\" env:\"RESTRICTED_NAMES\" description:\"names prohibited to use by user\" env-delim:\",\"`\n+\tEnableEmoji                bool          `long:\"emoji\" env:\"EMOJI\" description:\"enable emoji\"`\n+\tSimpleView                 bool          `long:\"simple-view\" env:\"SIMPLE_VIEW\" description:\"minimal comment editor mode\"`\n+\tProxyCORS                  bool          `long:\"proxy-cors\" env:\"PROXY_CORS\" description:\"disable internal CORS and delegate it to proxy\"`\n+\tAllowedHosts               []string      `long:\"allowed-hosts\" env:\"ALLOWED_HOSTS\" description:\"limit hosts/sources allowed to embed comments\" env-delim:\",\"`\n+\tSubscribersOnly            bool          `long:\"subscribers-only\" env:\"SUBSCRIBERS_ONLY\" description:\"enable commenting only for Patreon subscribers\"`\n+\tDisableSignature           bool          `long:\"disable-signature\" env:\"DISABLE_SIGNATURE\" description:\"disable server signature in headers\"`\n+\tDisableFancyTextFormatting bool          `long:\"disable-fancy-text-formatting\" env:\"DISABLE_FANCY_TEXT_FORMATTING\" description:\"disable fancy comments text formatting (replacement of quotes, dashes, fractions, etc)\"`\n \n \tAuth struct {\n \t\tTTL struct {\n@@ -541,7 +542,7 @@ func (s *ServerCommand) newServerApp(ctx context.Context) (*serverApp, error) {\n \t\tCache:             loadingCache,\n \t\tNativeImporter:    &migrator.Native{DataStore: dataService},\n \t\tDisqusImporter:    &migrator.Disqus{DataStore: dataService},\n-\t\tWordPressImporter: &migrator.WordPress{DataStore: dataService},\n+\t\tWordPressImporter: &migrator.WordPress{DataStore: dataService, DisableFancyTextFormatting: s.DisableFancyTextFormatting},\n \t\tCommentoImporter:  &migrator.Commento{DataStore: dataService},\n \t\tNativeExporter:    &migrator.Native{DataStore: dataService},\n \t\tURLMapperMaker:    migrator.NewURLMapper,\n@@ -576,33 +577,34 @@ func (s *ServerCommand) newServerApp(ctx context.Context) (*serverApp, error) {\n \t}\n \n \tsrv := &api.Rest{\n-\t\tVersion:               s.Revision,\n-\t\tDataService:           dataService,\n-\t\tWebRoot:               s.WebRoot,\n-\t\tWebFS:                 webFS,\n-\t\tRemarkURL:             s.RemarkURL,\n-\t\tImageProxy:            imgProxy,\n-\t\tCommentFormatter:      commentFormatter,\n-\t\tMigrator:              migr,\n-\t\tReadOnlyAge:           s.ReadOnlyAge,\n-\t\tSharedSecret:          s.SharedSecret,\n-\t\tAuthenticator:         authenticator,\n-\t\tCache:                 loadingCache,\n-\t\tNotifyService:         notifyService,\n-\t\tTelegramService:       telegramService,\n-\t\tSSLConfig:             sslConfig,\n-\t\tUpdateLimiter:         s.UpdateLimit,\n-\t\tImageService:          imageService,\n-\t\tEmailNotifications:    contains(\"email\", s.Notify.Users),\n-\t\tTelegramNotifications: contains(\"telegram\", s.Notify.Users) && telegramService != nil,\n-\t\tEmojiEnabled:          s.EnableEmoji,\n-\t\tAnonVote:              s.AnonymousVote && s.RestrictVoteIP,\n-\t\tSimpleView:            s.SimpleView,\n-\t\tProxyCORS:             s.ProxyCORS,\n-\t\tAllowedAncestors:      s.AllowedHosts,\n-\t\tSendJWTHeader:         s.Auth.SendJWTHeader,\n-\t\tSubscribersOnly:       s.SubscribersOnly,\n-\t\tDisableSignature:      s.DisableSignature,\n+\t\tVersion:                    s.Revision,\n+\t\tDataService:                dataService,\n+\t\tWebRoot:                    s.WebRoot,\n+\t\tWebFS:                      webFS,\n+\t\tRemarkURL:                  s.RemarkURL,\n+\t\tImageProxy:                 imgProxy,\n+\t\tCommentFormatter:           commentFormatter,\n+\t\tMigrator:                   migr,\n+\t\tReadOnlyAge:                s.ReadOnlyAge,\n+\t\tSharedSecret:               s.SharedSecret,\n+\t\tAuthenticator:              authenticator,\n+\t\tCache:                      loadingCache,\n+\t\tNotifyService:              notifyService,\n+\t\tTelegramService:            telegramService,\n+\t\tSSLConfig:                  sslConfig,\n+\t\tUpdateLimiter:              s.UpdateLimit,\n+\t\tImageService:               imageService,\n+\t\tEmailNotifications:         contains(\"email\", s.Notify.Users),\n+\t\tTelegramNotifications:      contains(\"telegram\", s.Notify.Users) && telegramService != nil,\n+\t\tEmojiEnabled:               s.EnableEmoji,\n+\t\tAnonVote:                   s.AnonymousVote && s.RestrictVoteIP,\n+\t\tSimpleView:                 s.SimpleView,\n+\t\tProxyCORS:                  s.ProxyCORS,\n+\t\tAllowedAncestors:           s.AllowedHosts,\n+\t\tSendJWTHeader:              s.Auth.SendJWTHeader,\n+\t\tSubscribersOnly:            s.SubscribersOnly,\n+\t\tDisableSignature:           s.DisableSignature,\n+\t\tDisableFancyTextFormatting: s.DisableFancyTextFormatting,\n \t}\n \n \tsrv.ScoreThresholds.Low, srv.ScoreThresholds.Critical = s.LowScore, s.CriticalScore"
+    },
+    {
+      "sha": "8607de824b370fd73c237d54e88f1a3026fd8c7a",
+      "filename": "backend/app/migrator/wordpress.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fmigrator%2Fwordpress.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fmigrator%2Fwordpress.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fmigrator%2Fwordpress.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -16,7 +16,8 @@ const wpTimeLayout = \"2006-01-02 15:04:05\"\n \n // WordPress implements Importer from WP xml\n type WordPress struct {\n-\tDataStore Store\n+\tDataStore                  Store\n+\tDisableFancyTextFormatting bool\n }\n \n type wpItem struct {\n@@ -138,7 +139,7 @@ func (w *WordPress) convert(r io.Reader, siteID string) chan store.Comment {\n \t\t\t\t\t\t\t\tParentID:  comment.PID,\n \t\t\t\t\t\t\t\tImported:  true,\n \t\t\t\t\t\t\t}\n-\t\t\t\t\t\t\tcommentsCh <- commentFormatter.Format(c)\n+\t\t\t\t\t\t\tcommentsCh <- commentFormatter.Format(c, w.DisableFancyTextFormatting)\n \t\t\t\t\t\t\tstats.inpComments++\n \t\t\t\t\t\t\tif stats.inpComments%1000 == 0 {\n \t\t\t\t\t\t\t\tlog.Printf(\"[DEBUG] processed %d comments\", stats.inpComments)"
+    },
+    {
+      "sha": "2fd8e4006b57b10addbb1566a5f3155f85558fea",
+      "filename": "backend/app/migrator/wordpress_test.go",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 3,
+      "changes": 18,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fmigrator%2Fwordpress_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fmigrator%2Fwordpress_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fmigrator%2Fwordpress_test.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -24,7 +24,7 @@ func TestWordPress_Import(t *testing.T) {\n \n \tdataStore := service.DataStore{Engine: b, AdminStore: admin.NewStaticStore(\"12345\", nil, []string{}, \"\")}\n \tdefer dataStore.Close()\n-\twp := WordPress{DataStore: &dataStore}\n+\twp := WordPress{DataStore: &dataStore, DisableFancyTextFormatting: false}\n \tsize, err := wp.Import(strings.NewReader(xmlTestWP), siteID)\n \tassert.NoError(t, err)\n \tassert.Equal(t, 3, size)\n@@ -41,7 +41,7 @@ func TestWordPress_Import(t *testing.T) {\n \tassert.Equal(t, \"e8b1e92bbcf5b9bb88472f9bdb82d1b8c7ed39d6\", c.User.IP)\n \tts, _ := time.Parse(wpTimeLayout, \"2010-08-18 15:19:14\")\n \tassert.Equal(t, ts, c.Timestamp)\n-\tassert.Equal(t, c.Text, \"<p>Mekkatorque was over in that tent up to the right</p>\\n\")\n+\tassert.Equal(t, \"<p>«Mekkatorque» was over in that tent up to the right</p>\\n\", c.Text)\n \tassert.True(t, c.Imported)\n \n \tposts, err := dataStore.List(siteID, 0, 0)\n@@ -54,6 +54,18 @@ func TestWordPress_Import(t *testing.T) {\n \tcount, err := dataStore.Count(store.Locator{URL: \"https://realmenweardress.es/2010/07/do-you-rp/\", SiteID: siteID})\n \tassert.NoError(t, err)\n \tassert.Equal(t, 3, count)\n+\n+\t// test with DisableFancyTextFormatting\n+\twp = WordPress{DataStore: &dataStore, DisableFancyTextFormatting: true}\n+\tsize, err = wp.Import(strings.NewReader(xmlTestWP), siteID)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, 3, size)\n+\n+\tlast, err = dataStore.Last(siteID, 10, time.Time{}, adminUser)\n+\tassert.NoError(t, err)\n+\trequire.Equal(t, 3, len(last), \"3 comments imported\")\n+\n+\tassert.Equal(t, \"<p>&#34;Mekkatorque&#34; was over in that tent up to the right</p>\\n\", last[0].Text)\n }\n \n func TestWordPress_Convert(t *testing.T) {\n@@ -247,7 +259,7 @@ var xmlTestWP = `\n \t\t\t<wp:comment_author_IP><![CDATA[128.243.253.117]]></wp:comment_author_IP>\n \t\t\t<wp:comment_date><![CDATA[2010-08-18 15:19:14]]></wp:comment_date>\n \t\t\t<wp:comment_date_gmt><![CDATA[2010-08-18 15:19:14]]></wp:comment_date_gmt>\n-\t\t\t<wp:comment_content><![CDATA[Mekkatorque was over in that tent up to the right]]></wp:comment_content>\n+\t\t\t<wp:comment_content><![CDATA[\"Mekkatorque\" was over in that tent up to the right]]></wp:comment_content>\n \t\t\t<wp:comment_approved><![CDATA[1]]></wp:comment_approved>\n \t\t\t<wp:comment_type><![CDATA[]]></wp:comment_type>\n \t\t\t<wp:comment_parent>13</wp:comment_parent>"
+    },
+    {
+      "sha": "40ef95cdc1ebfa294ea294bac140781b32348c0e",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 20,
+      "changes": 42,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -59,16 +59,17 @@ type Rest struct {\n \t\tLow      int\n \t\tCritical int\n \t}\n-\tUpdateLimiter         float64\n-\tEmailNotifications    bool\n-\tTelegramNotifications bool\n-\tEmojiEnabled          bool\n-\tSimpleView            bool\n-\tProxyCORS             bool\n-\tSendJWTHeader         bool\n-\tAllowedAncestors      []string // sets Content-Security-Policy \"frame-ancestors ...\"\n-\tSubscribersOnly       bool\n-\tDisableSignature      bool // prevent signature from being added to headers\n+\tUpdateLimiter              float64\n+\tEmailNotifications         bool\n+\tTelegramNotifications      bool\n+\tEmojiEnabled               bool\n+\tSimpleView                 bool\n+\tProxyCORS                  bool\n+\tSendJWTHeader              bool\n+\tAllowedAncestors           []string // sets Content-Security-Policy \"frame-ancestors ...\"\n+\tSubscribersOnly            bool\n+\tDisableSignature           bool // prevent signature from being added to headers\n+\tDisableFancyTextFormatting bool // disables SmartyPants in the comment text rendering of the posted comments\n \n \tSSLConfig   SSLConfig\n \thttpsServer *http.Server\n@@ -369,16 +370,17 @@ func (s *Rest) controllerGroups() (public, private, admin, rss) {\n \t}\n \n \tprivGrp := private{\n-\t\tdataService:      s.DataService,\n-\t\tcache:            s.Cache,\n-\t\timageService:     s.ImageService,\n-\t\tcommentFormatter: s.CommentFormatter,\n-\t\treadOnlyAge:      s.ReadOnlyAge,\n-\t\tauthenticator:    s.Authenticator,\n-\t\tnotifyService:    s.NotifyService,\n-\t\ttelegramService:  s.TelegramService,\n-\t\tremarkURL:        s.RemarkURL,\n-\t\tanonVote:         s.AnonVote,\n+\t\tdataService:                s.DataService,\n+\t\tcache:                      s.Cache,\n+\t\timageService:               s.ImageService,\n+\t\tcommentFormatter:           s.CommentFormatter,\n+\t\treadOnlyAge:                s.ReadOnlyAge,\n+\t\tauthenticator:              s.Authenticator,\n+\t\tnotifyService:              s.NotifyService,\n+\t\ttelegramService:            s.TelegramService,\n+\t\tremarkURL:                  s.RemarkURL,\n+\t\tanonVote:                   s.AnonVote,\n+\t\tdisableFancyTextFormatting: s.DisableFancyTextFormatting,\n \t}\n \n \tadmGrp := admin{"
+    },
+    {
+      "sha": "4ef450f0e3e4d1b16f30310cade5c2f474a58c00",
+      "filename": "backend/app/rest/api/rest_private.go",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 13,
+      "changes": 27,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest_private.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest_private.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_private.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -34,16 +34,17 @@ import (\n )\n \n type private struct {\n-\tdataService      privStore\n-\tcache            LoadingCache\n-\treadOnlyAge      int\n-\tcommentFormatter *store.CommentFormatter\n-\timageService     *image.Service\n-\tnotifyService    *notify.Service\n-\tauthenticator    *auth.Service\n-\ttelegramService  telegramService\n-\tremarkURL        string\n-\tanonVote         bool\n+\tdataService                privStore\n+\tcache                      LoadingCache\n+\treadOnlyAge                int\n+\tcommentFormatter           *store.CommentFormatter\n+\timageService               *image.Service\n+\tnotifyService              *notify.Service\n+\tauthenticator              *auth.Service\n+\ttelegramService            telegramService\n+\tremarkURL                  string\n+\tanonVote                   bool\n+\tdisableFancyTextFormatting bool // disables SmartyPants in the comment text rendering of the posted comments\n }\n \n // telegramService is a subset of Telegram service used for setting up user telegram notifications\n@@ -88,7 +89,7 @@ func (s *private) previewCommentCtrl(w http.ResponseWriter, r *http.Request) {\n \t\treturn\n \t}\n \n-\tcomment = s.commentFormatter.Format(comment)\n+\tcomment = s.commentFormatter.Format(comment, s.disableFancyTextFormatting)\n \tcomment.Sanitize()\n \n \t// check if images are valid, omit proxied images as they are lazy-loaded\n@@ -128,7 +129,7 @@ func (s *private) createCommentCtrl(w http.ResponseWriter, r *http.Request) {\n \t\trest.SendErrorJSON(w, r, http.StatusBadRequest, err, \"invalid comment\", rest.ErrCommentValidation)\n \t\treturn\n \t}\n-\tcomment = s.commentFormatter.Format(comment)\n+\tcomment = s.commentFormatter.Format(comment, s.disableFancyTextFormatting)\n \n \t// check if images are valid, omit proxied images as they are lazy-loaded\n \tfor _, id := range s.imageService.ExtractNonProxiedPictures(comment.Text) {\n@@ -212,7 +213,7 @@ func (s *private) updateCommentCtrl(w http.ResponseWriter, r *http.Request) {\n \t}\n \n \teditReq := service.EditRequest{\n-\t\tText:    s.commentFormatter.FormatText(edit.Text),\n+\t\tText:    s.commentFormatter.FormatText(edit.Text, s.disableFancyTextFormatting),\n \t\tOrig:    edit.Text,\n \t\tSummary: edit.Summary,\n \t\tDelete:  edit.Delete,"
+    },
+    {
+      "sha": "0be42560e4c371b9114eabb0a8e8a27d334799fe",
+      "filename": "backend/app/rest/api/rest_private_test.go",
+      "status": "modified",
+      "additions": 50,
+      "deletions": 0,
+      "changes": 50,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_private_test.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -368,6 +368,56 @@ func TestRest_CreateAndGet(t *testing.T) {\n \tassert.Equal(t, store.User{Name: \"admin\", ID: \"admin\", Admin: true, Blocked: false, IP: \"\"}, comment.User, \"no ip\")\n }\n \n+func TestRest_CreateWithQuotes(t *testing.T) {\n+\tts, srv, teardown := startupT(t)\n+\tdefer teardown()\n+\n+\t// create comment with quotes with smartypants\n+\tresp, err := post(t, ts.URL+\"/api/v1/comment\",\n+\t\t`{\"text\": \"smartpants \\\"quoted\\\" text\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"remark42\"}}`)\n+\trequire.NoError(t, err)\n+\trequire.Equal(t, http.StatusCreated, resp.StatusCode)\n+\tb, err := io.ReadAll(resp.Body)\n+\tassert.NoError(t, err)\n+\tassert.NoError(t, resp.Body.Close())\n+\tc := R.JSON{}\n+\terr = json.Unmarshal(b, &c)\n+\tassert.NoError(t, err)\n+\tid := c[\"id\"].(string)\n+\n+\t// get created comment by id as non-admin\n+\tres, code := getWithDevAuth(t, fmt.Sprintf(\"%s/api/v1/id/%s?site=remark42&url=https://radio-t.com/blah1\", ts.URL, id))\n+\tassert.Equal(t, http.StatusOK, code)\n+\tcomment := store.Comment{}\n+\terr = json.Unmarshal([]byte(res), &comment)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, \"<p>smartpants «quoted» text</p>\\n\", comment.Text)\n+\tassert.Equal(t, \"smartpants \\\"quoted\\\" text\", comment.Orig)\n+\n+\t// create comment with quotes without smartypants\n+\tsrv.privRest.disableFancyTextFormatting = true\n+\tresp, err = post(t, ts.URL+\"/api/v1/comment\",\n+\t\t`{\"text\": \"no_smartpants \\\"quoted\\\" text\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"remark42\"}}`)\n+\trequire.NoError(t, err)\n+\trequire.Equal(t, http.StatusCreated, resp.StatusCode)\n+\tb, err = io.ReadAll(resp.Body)\n+\tassert.NoError(t, err)\n+\tassert.NoError(t, resp.Body.Close())\n+\tc = R.JSON{}\n+\terr = json.Unmarshal(b, &c)\n+\tassert.NoError(t, err)\n+\tid = c[\"id\"].(string)\n+\n+\t// get created comment by id as non-admin\n+\tres, code = getWithDevAuth(t, fmt.Sprintf(\"%s/api/v1/id/%s?site=remark42&url=https://radio-t.com/blah1\", ts.URL, id))\n+\tassert.Equal(t, http.StatusOK, code)\n+\tcomment = store.Comment{}\n+\terr = json.Unmarshal([]byte(res), &comment)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, \"<p>no_smartpants &#34;quoted&#34; text</p>\\n\", comment.Text)\n+\tassert.Equal(t, \"no_smartpants \\\"quoted\\\" text\", comment.Orig)\n+}\n+\n func TestRest_Update(t *testing.T) {\n \tts, _, teardown := startupT(t)\n \tdefer teardown()"
+    },
+    {
+      "sha": "8eef46ab9deb53affbc2a6136fe1f57fd63a7b91",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 0,
+      "changes": 18,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -84,6 +84,24 @@ func TestRest_Preview(t *testing.T) {\n \t\tstring(b),\n \t\t\"/pics-remark42/staging/dev_user/62/bad_picture: no such file or directory\\\"}\\n\",\n \t)\n+\n+\t// test quotes with and without smartypants\n+\tresp, err = post(t, ts.URL+\"/api/v1/preview\", `{\"text\": \"\\\"quoted\\\" text\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"radio-t\"}}`)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, http.StatusOK, resp.StatusCode)\n+\tb, err = io.ReadAll(resp.Body)\n+\tassert.NoError(t, err)\n+\tassert.NoError(t, resp.Body.Close())\n+\tassert.Equal(t, \"<p>«quoted» text</p>\\n\", string(b))\n+\n+\tsrv.privRest.disableFancyTextFormatting = true\n+\tresp, err = post(t, ts.URL+\"/api/v1/preview\", `{\"text\": \"\\\"quoted\\\" text\", \"locator\":{\"url\": \"https://radio-t.com/blah1\", \"site\": \"radio-t\"}}`)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, http.StatusOK, resp.StatusCode)\n+\tb, err = io.ReadAll(resp.Body)\n+\tassert.NoError(t, err)\n+\tassert.NoError(t, resp.Body.Close())\n+\tassert.Equal(t, \"<p>&#34;quoted&#34; text</p>\\n\", string(b))\n }\n \n func TestRest_PreviewWithWrongImage(t *testing.T) {"
+    },
+    {
+      "sha": "6855ae4068ce8b615ad7fffb213ef647468047d5",
+      "filename": "backend/app/store/formatter.go",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 8,
+      "changes": 23,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fstore%2Fformatter.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fstore%2Fformatter.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fformatter.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -35,14 +35,16 @@ func NewCommentFormatter(converters ...CommentConverter) *CommentFormatter {\n }\n \n // Format comment fields\n-func (f *CommentFormatter) Format(c Comment) Comment {\n-\tc.Text = f.FormatText(c.Text)\n+func (f *CommentFormatter) Format(c Comment, raw bool) Comment {\n+\tc.Text = f.FormatText(c.Text, raw)\n \treturn c\n }\n \n // FormatText converts text with markdown processor, applies external converters and shortens links\n-func (f *CommentFormatter) FormatText(txt string) (res string) {\n-\tmdExt, rend := GetMdExtensionsAndRenderer()\n+//\n+// raw=true disables SmartyPants for HTML rendering (replacement of quotes, dashes, fractions, etc).\n+func (f *CommentFormatter) FormatText(txt string, raw bool) (res string) {\n+\tmdExt, rend := GetMdExtensionsAndRenderer(raw)\n \tres = string(bf.Run([]byte(txt), bf.WithExtensions(mdExt), bf.WithRenderer(rend)))\n \tres = f.unEscape(res)\n \n@@ -120,14 +122,19 @@ func (f *CommentFormatter) lazyImage(commentHTML string) (resHTML string) {\n \n // GetMdExtensionsAndRenderer returns blackfriday extensions and renderer used for rendering markdown\n // within store module.\n-func GetMdExtensionsAndRenderer() (bf.Extensions, *bfchroma.Renderer) {\n+//\n+// raw=true disables SmartyPants for HTML rendering (replacement of quotes, dashes, fractions, etc).\n+func GetMdExtensionsAndRenderer(raw bool) (bf.Extensions, *bfchroma.Renderer) {\n \tmdExt := bf.NoIntraEmphasis | bf.Tables | bf.FencedCode |\n \t\tbf.Strikethrough | bf.SpaceHeadings | bf.HardLineBreak |\n \t\tbf.BackslashLineBreak | bf.Autolink\n \n-\trend := bf.NewHTMLRenderer(bf.HTMLRendererParameters{\n-\t\tFlags: bf.Smartypants | bf.SmartypantsFractions | bf.SmartypantsDashes | bf.SmartypantsAngledQuotes,\n-\t})\n+\tflags := bf.HTMLFlags(0)\n+\tif !raw {\n+\t\tflags = bf.Smartypants | bf.SmartypantsFractions | bf.SmartypantsDashes | bf.SmartypantsAngledQuotes\n+\t}\n+\n+\trend := bf.NewHTMLRenderer(bf.HTMLRendererParameters{Flags: flags})\n \n \textRend := bfchroma.NewRenderer(bfchroma.Extend(rend), bfchroma.ChromaOptions(html.WithClasses(true)))\n \treturn mdExt, extRend"
+    },
+    {
+      "sha": "0b954798c573a5f9c6fb10f65153da4554454b24",
+      "filename": "backend/app/store/formatter_test.go",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 4,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fstore%2Fformatter_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fstore%2Fformatter_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fformatter_test.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -2,6 +2,7 @@ package store\n \n import (\n \t\"strconv\"\n+\t\"strings\"\n \t\"testing\"\n \t\"time\"\n \n@@ -35,6 +36,12 @@ func TestFormatter_FormatText(t *testing.T) {\n \t\t\t\"lazy image\",\n \t\t},\n \t\t{\"&mdash; not translated #354\", \"<p>— not translated #354</p>\\n!converted\", \"mdash\"},\n+\t\t{`no_smartpants \"quoted\" text`, \"<p>no_smartpants &#34;quoted&#34; text</p>\\n!converted\", \"normal quotes without smartpants\"},\n+\t\t{`\"quoted\" text`, \"<p>«quoted» text</p>\\n!converted\", \"normal quotes with smartpants\"},\n+\t\t{`no_smartpants “quoted” text`, \"<p>no_smartpants “quoted” text</p>\\n!converted\", \"curly quotes without smartpants\"},\n+\t\t{`“quoted” text`, \"<p>“quoted” text</p>\\n!converted\", \"curly quotes with smartpants\"},\n+\t\t{`no_smartpants «quoted» text`, \"<p>no_smartpants «quoted» text</p>\\n!converted\", \"French guillemets without smartpants\"},\n+\t\t{`«quoted» text`, \"<p>«quoted» text</p>\\n!converted\", \"French guillemets with smartpants\"},\n \t\t{\"smth\\n```go\\nfunc main(aa string) int {return 0}\\n```\", `<p>smth</p>\n <pre class=\"chroma\"><code><span class=\"line\"><span class=\"cl\"><span class=\"kd\">func</span> <span class=\"nf\">main</span><span class=\"p\">(</span><span class=\"nx\">aa</span> <span class=\"kt\">string</span><span class=\"p\">)</span> <span class=\"kt\">int</span> <span class=\"p\">{</span><span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">}</span>\n </span></span></code></pre>!converted`, \"code with language\"},\n@@ -45,20 +52,22 @@ func TestFormatter_FormatText(t *testing.T) {\n \tfor _, tt := range tbl {\n \t\ttt := tt\n \t\tt.Run(tt.name, func(t *testing.T) {\n-\t\t\tassert.Equal(t, tt.out, f.FormatText(tt.in))\n+\t\t\traw := strings.HasPrefix(tt.in, `no_smartpants`)\n+\t\t\tt.Logf(\"raw: %v\", raw)\n+\t\t\tassert.Equal(t, tt.out, f.FormatText(tt.in, raw))\n \t\t})\n \t}\n }\n \n func TestFormatter_FormatTextNoConverter(t *testing.T) {\n \tf := NewCommentFormatter()\n-\tassert.Equal(t, \"<p>12345</p>\\n\", f.FormatText(\"12345\"))\n+\tassert.Equal(t, \"<p>12345</p>\\n\", f.FormatText(\"12345\", false))\n }\n \n func TestFormatter_FormatTextConverterFunc(t *testing.T) {\n \tfn := CommentConverterFunc(func(text string) string { return \"zz!\" + text })\n \tf := NewCommentFormatter(fn)\n-\tassert.Equal(t, \"zz!<p>12345</p>\\n\", f.FormatText(\"12345\"))\n+\tassert.Equal(t, \"zz!<p>12345</p>\\n\", f.FormatText(\"12345\", false))\n }\n \n func TestFormatter_FormatComment(t *testing.T) {\n@@ -78,7 +87,7 @@ func TestFormatter_FormatComment(t *testing.T) {\n \tf := NewCommentFormatter(mockConverter{})\n \texp := comment\n \texp.Text = \"<p>blah</p>\\n\\n<p>xyz</p>\\n!converted\"\n-\tassert.Equal(t, exp, f.Format(comment))\n+\tassert.Equal(t, exp, f.Format(comment, false))\n }\n \n func TestFormatter_ShortenAutoLinks(t *testing.T) {"
+    },
+    {
+      "sha": "d811602b351500137933d50103123940e642f0b9",
+      "filename": "backend/app/store/service/service.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/backend%2Fapp%2Fstore%2Fservice%2Fservice.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Fservice.go?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -646,7 +646,9 @@ func (s *DataStore) ValidateComment(c *store.Comment) error {\n \t\treturn fmt.Errorf(\"empty user info\")\n \t}\n \n-\tmdExt, rend := store.GetMdExtensionsAndRenderer()\n+\t// for validation purposes it's not important if SmartyPants formatting is disabled or enabled,\n+\t// while for storing the comment that flag is set based on user preference\n+\tmdExt, rend := store.GetMdExtensionsAndRenderer(false)\n \tparser := bf.New(bf.WithRenderer(rend), bf.WithExtensions(bf.CommonExtensions), bf.WithExtensions(mdExt))\n \tvar wrongLinkError error\n \tparser.Parse([]byte(c.Orig)).Walk(func(node *bf.Node, entering bool) bf.WalkStatus {"
+    },
+    {
+      "sha": "12c8262ae44500353959fa440a6da90cee4be0c6",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/dcc761340920715b5d38be2a108c355fc9ae9e40/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/dcc761340920715b5d38be2a108c355fc9ae9e40/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md?ref=dcc761340920715b5d38be2a108c355fc9ae9e40",
+      "patch": "@@ -159,6 +159,7 @@ services:\n | update-limit                   | UPDATE_LIMIT                   | `0.5`                    | updates/sec limit                                         |\n | subscribers-only               | SUBSCRIBERS_ONLY               | `false`                  | enable commenting only for Patreon subscribers            |\n | disable-signature              | DISABLE_SIGNATURE              | `false`                  | disable server signature in headers                       |\n+| disable-fancy-text-formatting  | DISABLE_FANCY_HTML_FORMATTING  | `false`                  | disable fancy comments text formatting (replacement of quotes, dashes, fractions, etc) |\n | admin-passwd                   | ADMIN_PASSWD                   | none (disabled)          | password for `admin` basic auth                           |\n | dbg                            | DEBUG                          | `false`                  | debug mode                                                |\n "
+    }
+  ]
+}
