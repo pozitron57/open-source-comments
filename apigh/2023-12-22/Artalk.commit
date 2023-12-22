@@ -1,0 +1,182 @@
+{
+  "sha": "67280f2ca2292be1ab4938e84d29be33e3364c92",
+  "node_id": "C_kwDOCQOkhNoAKDY3MjgwZjJjYTIyOTJiZTFhYjQ5MzhlODRkMjliZTMzZTMzNjRjOTI",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2023-12-21T18:00:48Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2023-12-21T18:30:54Z"
+    },
+    "message": "feat(ci): add dry-run mode for build workflow",
+    "tree": {
+      "sha": "79abf290a48aaec91fd776dd936af088095bed38",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/79abf290a48aaec91fd776dd936af088095bed38"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/67280f2ca2292be1ab4938e84d29be33e3364c92",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZYSEXgAKCRDUbg8O6nwT\nahIxAP41YivjMNyMyUK15AoywcGvNMwAIHTO5C/cT3O9l0d3GgEAstdKUtCL8Kf6\nmmYDtIVMim1C/xgT0VftPKgWIH3fUwk=\n=tJYu\n-----END PGP SIGNATURE-----",
+      "payload": "tree 79abf290a48aaec91fd776dd936af088095bed38\nparent a8bcd41f36e8118d165ebb34c9e8c6a5c7573745\nauthor qwqcode <qwqcode@gmail.com> 1703181648 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1703183454 +0800\n\nfeat(ci): add dry-run mode for build workflow\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/67280f2ca2292be1ab4938e84d29be33e3364c92",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/67280f2ca2292be1ab4938e84d29be33e3364c92",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/67280f2ca2292be1ab4938e84d29be33e3364c92/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a8bcd41f36e8118d165ebb34c9e8c6a5c7573745",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/a8bcd41f36e8118d165ebb34c9e8c6a5c7573745",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/a8bcd41f36e8118d165ebb34c9e8c6a5c7573745"
+    }
+  ],
+  "stats": {
+    "total": 138,
+    "additions": 74,
+    "deletions": 64
+  },
+  "files": [
+    {
+      "sha": "c24e1323edb931c318bd1ddc2472b0aff9aee628",
+      "filename": ".github/workflows/build-app.yml",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 14,
+      "changes": 25,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fbuild-app.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fbuild-app.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fbuild-app.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -1,5 +1,5 @@\n name: Build App\n-run-name: Build Go App and Publish\n+run-name: Build Go App and Publish (${{ github.event.client_payload.version }}) ${{ github.event.client_payload.dry_run == 'false' && '' || '(🧪 dry-run)' }}\n \n on:\n   repository_dispatch:\n@@ -10,25 +10,19 @@ env:\n   PKG_NAME: 'github.com/ArtalkJS/Artalk'\n   DOCKER_IMG: ghcr.io/goreleaser/goreleaser-cross\n   CACHE_DIR: /tmp/cache/docker-image\n+  VERSION: ${{ github.event.client_payload.version }}\n+  DRY_RUN: ${{ github.event.client_payload.dry_run }}\n \n jobs:\n   build_publish:\n     runs-on: ubuntu-latest\n \n     steps:\n       - name: Checkout Code\n-        uses: actions/checkout@v3\n-\n-      - name: Checkout latest tag\n-        run: |\n-          # fetch tags\n-          git fetch --prune --unshallow --tags -f\n-\n-          # checkout latest version\n-          VERSION=$(git describe --tags --abbrev=0)\n-          git checkout ${VERSION}\n-\n-          echo \"VERSION=${VERSION}\" >> $GITHUB_ENV\n+        uses: actions/checkout@v4\n+        with:\n+          ref: ${{ env.VERSION }}\n+          fetch-depth: 0\n \n       # disable cache because the err `no space left on device`\n       # - name: Docker Image Cache\n@@ -69,6 +63,9 @@ jobs:\n           # copy config file\n           cp conf/artalk.example.yml artalk.yml\n \n+      - name: Print Relase Notes\n+        run: cat local/release-notes.md\n+\n       - name: Build and Release\n         run: |\n           docker run \\\n@@ -81,4 +78,4 @@ jobs:\n             -e CGO_ENABLED=1 \\\n             --env-file local/.release-env \\\n             ghcr.io/goreleaser/goreleaser-cross:v${GO_VERSION} \\\n-            release --release-notes local/release-notes.md\n+            release --release-notes local/release-notes.md ${{ env.DRY_RUN == 'false' && '' || '--skip=publish' }}"
+    },
+    {
+      "sha": "c03c793a77505b10640a44bd03b8334bf433d053",
+      "filename": ".github/workflows/build-docker.yml",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 25,
+      "changes": 47,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fbuild-docker.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fbuild-docker.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fbuild-docker.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -1,56 +1,50 @@\n name: Build Docker\n-run-name: Build Docker Image and Publish\n+run-name: Build Docker Image and Publish (${{ github.event.client_payload.version }}) ${{ github.event.client_payload.dry_run == 'false' && '' || '(🧪 dry-run)' }}\n \n on:\n   repository_dispatch:\n     types: [artalk-release]\n \n env:\n   DOCKER_IMG: artalk/artalk-go\n+  VERSION: ${{ github.event.client_payload.version }}\n+  DRY_RUN: ${{ github.event.client_payload.dry_run }}\n \n jobs:\n   build_publish:\n     runs-on: ubuntu-latest\n \n     steps:\n       - name: Checkout Code\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n+        with:\n+          ref: ${{ env.VERSION }}\n+          fetch-depth: 0\n \n-      - name: Checkout latest tag\n+      - name: Get commit hash\n         run: |\n-          # fetch tags\n-          git fetch --prune --unshallow --tags -f\n-\n-          # checkout latest version\n-          VERSION=$(git describe --tags --abbrev=0)\n-          git checkout ${VERSION}\n-\n-          COMMIT_HASH=\"$(git rev-parse --short HEAD)\"\n-          COMMIT_HASH_FULL=\"$(git rev-parse HEAD)\"\n-\n-          echo \"VERSION=${VERSION}\" >> $GITHUB_ENV\n-          echo \"COMMIT_HASH=${COMMIT_HASH}\" >> $GITHUB_ENV\n-          echo \"COMMIT_HASH_FULL=${COMMIT_HASH_FULL}\" >> $GITHUB_ENV\n+          echo \"COMMIT_HASH=$(git rev-parse --short HEAD)\" >> $GITHUB_ENV\n+          echo \"COMMIT_HASH_FULL=$(git rev-parse HEAD)\" >> $GITHUB_ENV\n \n       # https://github.com/docker/login-action\n       - name: Login to DockerHub\n         if: github.event_name != 'pull_request'\n-        uses: docker/login-action@v2\n+        uses: docker/login-action@v3\n         with:\n           username: ${{ secrets.DOCKERHUB_USERNAME }}\n           password: ${{ secrets.DOCKERHUB_TOKEN }}\n \n       # https://github.com/docker/setup-qemu-action\n       - name: Setup QEMU\n         id: qemu\n-        uses: docker/setup-qemu-action@v2\n+        uses: docker/setup-qemu-action@v3\n         with:\n           platforms: 'amd64,arm64'\n \n       # https://github.com/docker/setup-buildx-action\n       - name: Setup Docker Buildx\n         id: buildx\n-        uses: docker/setup-buildx-action@v2\n+        uses: docker/setup-buildx-action@v3\n \n       - name: Cache Docker layers\n         uses: actions/cache@v3\n@@ -63,7 +57,7 @@ jobs:\n       # https://github.com/docker/metadata-action\n       - name: Gen docker meta\n         id: meta\n-        uses: docker/metadata-action@v4\n+        uses: docker/metadata-action@v5\n         with:\n           context: git\n           images: |\n@@ -78,31 +72,34 @@ jobs:\n       # https://github.com/docker/build-push-action\n       - name: Build and Push\n         id: docker_build\n-        uses: docker/build-push-action@v4\n+        uses: docker/build-push-action@v5\n         with:\n           builder: ${{ steps.buildx.outputs.name }}\n           context: ./\n           file: ./Dockerfile\n           platforms: 'linux/amd64,linux/arm64'\n-          push: true\n+          push: ${{ env.DRY_RUN == 'false' }}\n           tags: ${{ steps.meta.outputs.tags }}\n           labels: ${{ steps.meta.outputs.labels }}\n           cache-from: type=local,src=/tmp/.buildx-cache\n           cache-to: type=local,dest=/tmp/.buildx-cache\n \n       - name: Comment build info in commit\n-        uses: actions/github-script@v6\n+        uses: actions/github-script@v7\n         env:\n           STDOUT: \"🐳 Published new docker image: [${{ env.DOCKER_IMG }}](https://hub.docker.com/r/${{ env.DOCKER_IMG }}) (${{ env.VERSION }} / sha-${{ env.COMMIT_HASH }})\"\n         with:\n           github-token: ${{ secrets.GITHUB_TOKEN }}\n           script: |\n-            github.rest.repos.createCommitComment({\n+            const comment = {\n               owner: context.repo.owner,\n               repo: context.repo.repo,\n               commit_sha: process.env.COMMIT_HASH_FULL, // context.sha\n               body: process.env.STDOUT\n-            })\n+            }\n+            if (process.env.DRY_RUN == 'false')\n+              github.rest.repos.createCommitComment(comment)\n+            else console.log(comment)\n \n       - name: Print image digest\n         run: echo ${{ steps.docker_build.outputs.digest }}"
+    },
+    {
+      "sha": "abb1979f53e64f728acfcdeaa8c61f350f22e1e1",
+      "filename": ".github/workflows/build-frontend.yml",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 11,
+      "changes": 24,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fbuild-frontend.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fbuild-frontend.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fbuild-frontend.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -1,50 +1,52 @@\n name: Build Frontend\n-run-name: Build Frontend and Publish\n+run-name: Build Frontend and Publish (${{ github.event.client_payload.version }}) ${{ github.event.client_payload.dry_run == 'false' && '' || '(🧪 dry-run)' }}\n \n on:\n   repository_dispatch:\n     types: [artalk-release]\n \n+env:\n+  VERSION: ${{ github.event.client_payload.version }}\n+  DRY_RUN: ${{ github.event.client_payload.dry_run }}\n+\n jobs:\n   build_publish:\n     runs-on: ubuntu-latest\n \n     steps:\n     - name: Checkout Code\n-      uses: actions/checkout@v3\n-\n-    - name: Checkout latest tag\n-      run: |\n-        git fetch --prune --unshallow --tags -f\n-        git checkout $(git describe --tags --abbrev=0)\n+      uses: actions/checkout@v4\n+      with:\n+        ref: ${{ env.VERSION }}\n+        fetch-depth: 0\n \n     - name: Use pnpm\n       uses: pnpm/action-setup@v2\n       with:\n         version: 8\n \n     - name: Setup node\n-      uses: actions/setup-node@v3\n+      uses: actions/setup-node@v4\n       with:\n         node-version: 18.x\n         registry-url: https://registry.npmjs.org/\n         cache: 'pnpm'\n \n     - name: Install dependencies\n-      run: pnpm install\n+      run: pnpm install --frozen-lockfile\n \n     - name: Build\n       run: pnpm build\n \n     - name: Publish\n-      run: pnpm publish -F artalk --no-git-checks\n+      run: pnpm publish -F artalk ${{ env.DRY_RUN == 'false' && '' || '--dry-run' }}\n       env:\n         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}\n \n     # GitHub Packages\n     #\n     # Setup .npmrc file to publish to GitHub Packages\n-    # - uses: actions/setup-node@v2\n+    # - uses: actions/setup-node@v4\n     #   with:\n     #     registry-url: 'https://npm.pkg.github.com'\n     # # Publish to GitHub Packages"
+    },
+    {
+      "sha": "35ac0564db0e08aacfe72218580fe0faf0675914",
+      "filename": ".github/workflows/codeql.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fcodeql.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fcodeql.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fcodeql.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -38,7 +38,7 @@ jobs:\n \n     steps:\n     - name: Checkout repository\n-      uses: actions/checkout@v3\n+      uses: actions/checkout@v4\n \n     # Initializes the CodeQL tools for scanning.\n     - name: Initialize CodeQL"
+    },
+    {
+      "sha": "e60ef498d9fe97b6a5f2cde6c6e1699aa69b4d1b",
+      "filename": ".github/workflows/docs-cn.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fdocs-cn.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Fdocs-cn.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fdocs-cn.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -15,13 +15,13 @@ jobs:\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Use pnpm\n         uses: pnpm/action-setup@v2\n \n       - name: Setup node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: 18\n           cache: \"pnpm\""
+    },
+    {
+      "sha": "7cb35a3d9b1a195cab042ecc4604a6c9d7c8e129",
+      "filename": ".github/workflows/release.yml",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 9,
+      "changes": 32,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Frelease.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Frelease.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Frelease.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -1,5 +1,5 @@\n name: 📦 Release New Version\n-run-name: 📦 Release ${{ inputs.custom || inputs.semver }} by @${{ github.actor }}\n+run-name: 📦 Release ${{ inputs.custom || inputs.semver }} by @${{ github.actor }} ${{ inputs.dry-run && '(🧪 dry-run)' || '' }}\n \n on:\n   workflow_dispatch:\n@@ -16,6 +16,11 @@ on:\n       #   description: 'Custom tag name (i.e v1.0.0-rc.1)'\n       #   required: false\n       #   default: ''\n+      dry-run:\n+        description: 'Dry run?'\n+        type: boolean\n+        required: false\n+        default: false\n \n env:\n   REPO_DISPATCH_EVENT_TYPE: 'artalk-release'\n@@ -26,13 +31,12 @@ jobs:\n     runs-on: ubuntu-latest\n     steps:\n       - name: Checkout Code\n-        uses: actions/checkout@v3\n-\n-      - name: Git Fetch\n-        run: git fetch --prune --unshallow --tags -f\n+        uses: actions/checkout@v4\n+        with:\n+          fetch-depth: 0\n \n       - name: Setup Node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: 18.x\n           registry-url: https://registry.npmjs.org/\n@@ -45,6 +49,7 @@ jobs:\n             npm install -g semver\n             prev_version=\"$(git describe --tags --abbrev=0)\"\n             echo \"prev_version: ${prev_version}\"\n+            echo \"PREV_VERSION=${prev_version}\" >> $GITHUB_ENV\n             next_version=\"v$(semver --increment ${{ inputs.semver }} ${prev_version})\"\n           fi\n \n@@ -56,6 +61,9 @@ jobs:\n           echo \"next_version: ${next_version}\"\n           echo \"VERSION=${next_version}\" >> $GITHUB_ENV\n \n+      - name: Print Next Version\n+        run: echo \"${VERSION}\"\n+\n       - name: Setup git-chglog\n         run: |\n             curl -sL $(curl -s https://api.github.com/repos/git-chglog/git-chglog/releases/latest \\\n@@ -73,16 +81,21 @@ jobs:\n             perl -i -pe 's/\"version\": \".*?\"/\"version\": \"'${VERSION#v}'\"/g' \"${UI_NPM_PKG_FILE}\"\n \n             # modify the version in docs\n-            perl -pi -e 's#\"latest\"(\\W+)?:(\\W+)?\".*?\"#\"latest\": \"'${VERSION#v}'\"#g' docs/code/ArtalkVersion.json\n+            perl -pi -e 's#\"latest\"(\\W+)?:(\\W+)?\".*?\"#\"latest\": \"'${VERSION#v}'\"#g' docs/docs/code/ArtalkVersion.json\n \n-            # git commit and push\n+            # git commit\n             git config user.name github-actions[bot]\n             git config user.email 41898282+github-actions[bot]@users.noreply.github.com\n             git add .\n             git commit -m \"chore: release ${VERSION}\"\n             git tag \"${VERSION}\"\n \n-            git push origin master \"${VERSION}\"\n+            # git push\n+            if [ \"${{ inputs.dry-run }}\" = \"false\" ]; then\n+              git push origin master \"${VERSION}\"\n+            else\n+              git diff HEAD^ HEAD\n+            fi\n           else\n             echo \"skipped because git tag already exists.\"\n           fi\n@@ -91,3 +104,4 @@ jobs:\n         uses: peter-evans/repository-dispatch@v2\n         with:\n           event-type: ${{ env.REPO_DISPATCH_EVENT_TYPE }}\n+          client-payload: '{\"version\": ${{ toJSON(inputs.dry-run && env.PREV_VERSION || env.VERSION) }}, \"dry_run\": ${{ toJSON(inputs.dry-run) }}}'"
+    },
+    {
+      "sha": "e0e534361b541c09d66c7277b22ddf4df1a4f430",
+      "filename": ".github/workflows/test-docs.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Ftest-docs.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Ftest-docs.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Ftest-docs.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -14,7 +14,7 @@ jobs:\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Use pnpm\n         uses: pnpm/action-setup@v2"
+    },
+    {
+      "sha": "bf47834b1f8739f51328fa1b17a7e58260734fd4",
+      "filename": ".github/workflows/test-frontend.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Ftest-frontend.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/67280f2ca2292be1ab4938e84d29be33e3364c92/.github%2Fworkflows%2Ftest-frontend.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Ftest-frontend.yml?ref=67280f2ca2292be1ab4938e84d29be33e3364c92",
+      "patch": "@@ -19,7 +19,7 @@ jobs:\n \n     steps:\n       - name: Checkout Code\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - uses: pnpm/action-setup@v2\n         with:"
+    }
+  ]
+}
