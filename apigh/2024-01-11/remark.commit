@@ -1,0 +1,242 @@
+{
+  "sha": "884b5685eba3a7e88c9b60378316fd346a4c3a42",
+  "node_id": "C_kwDOBtgov9oAKDg4NGI1Njg1ZWJhM2E3ZTg4YzliNjAzNzgzMTZmZDM0NmE0YzNhNDI",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-01-11T07:10:12Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-01-11T07:26:30Z"
+    },
+    "message": "update docker images and github CI actions",
+    "tree": {
+      "sha": "9974585d75916cf4c25d4c3e823e6ccce006fa7c",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/9974585d75916cf4c25d4c3e823e6ccce006fa7c"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/884b5685eba3a7e88c9b60378316fd346a4c3a42",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/884b5685eba3a7e88c9b60378316fd346a4c3a42",
+  "html_url": "https://github.com/umputun/remark42/commit/884b5685eba3a7e88c9b60378316fd346a4c3a42",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/884b5685eba3a7e88c9b60378316fd346a4c3a42/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3f14651653c848d52a0dfda05ecbc4946e90d1cc",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/3f14651653c848d52a0dfda05ecbc4946e90d1cc",
+      "html_url": "https://github.com/umputun/remark42/commit/3f14651653c848d52a0dfda05ecbc4946e90d1cc"
+    }
+  ],
+  "stats": {
+    "total": 107,
+    "additions": 56,
+    "deletions": 51
+  },
+  "files": [
+    {
+      "sha": "ab4101b5ffe99eede4a1829ecbc802954fc6cffe",
+      "filename": ".github/workflows/ci-backend.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-backend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-backend.yml?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -22,17 +22,17 @@ jobs:\n     runs-on: ubuntu-latest\n \n     steps:\n-      - uses: actions/checkout@v3\n+      - uses: actions/checkout@v4\n \n       - name: debug if needed\n         run: if [[ \"$DEBUG\" == \"true\" ]]; then env; fi\n         env:\n           DEBUG: ${{secrets.DEBUG}}\n \n       - name: install go\n-        uses: actions/setup-go@v3\n+        uses: actions/setup-go@v5\n         with:\n-          go-version: \"1.20\"\n+          go-version: \"1.21\"\n \n       - name: test and build backend\n         run: |"
+    },
+    {
+      "sha": "ad62601c096a39fc3ae986215bd733c4c3519439",
+      "filename": ".github/workflows/ci-build.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-build.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-build.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-build.yml?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -29,14 +29,14 @@ jobs:\n     runs-on: ubuntu-latest\n \n     steps:\n-      - uses: actions/checkout@v3\n+      - uses: actions/checkout@v4\n \n       - name: set up QEMU\n-        uses: docker/setup-qemu-action@v2\n+        uses: docker/setup-qemu-action@v3\n \n       - name: set up Docker Buildx\n         id: buildx\n-        uses: docker/setup-buildx-action@v2\n+        uses: docker/setup-buildx-action@v3\n \n       - name: available platforms\n         run: echo ${{ steps.buildx.outputs.platforms }}"
+    },
+    {
+      "sha": "2aaf0676b35dd723bea5e8572047a409b16f3917",
+      "filename": ".github/workflows/ci-frontend-api.yml",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 12,
+      "changes": 24,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-frontend-api.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-frontend-api.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-frontend-api.yml?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -20,19 +20,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7\n@@ -64,19 +64,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7\n@@ -108,19 +108,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7"
+    },
+    {
+      "sha": "e7b2a9d37e9a1536ba29241bd637ddb733d3bf7f",
+      "filename": ".github/workflows/ci-frontend.yml",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 19,
+      "changes": 38,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-frontend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-frontend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-frontend.yml?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -20,19 +20,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7\n@@ -64,19 +64,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7\n@@ -108,19 +108,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7\n@@ -155,17 +155,17 @@ jobs:\n       CI_JOB_NUMBER: 1\n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7\n           run_install: false\n \n       - name: Check bundle size\n-        uses: andresz1/size-limit-action@dd31dce7dcc72a041fd3e49abf0502b13fc4ce05\n+        uses: andresz1/size-limit-action@7313b26c76b3666c1dc41e2ca05370e201a9b7de\n         with:\n           github_token: ${{ secrets.GITHUB_TOKEN }}\n           directory: ./frontend/apps/remark42\n@@ -176,19 +176,19 @@ jobs:\n     runs-on: ubuntu-latest\n     strategy:\n       matrix:\n-        node: [16.15.1]\n+        node: [16.20.2]\n \n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Install node\n-        uses: actions/setup-node@v3\n+        uses: actions/setup-node@v4\n         with:\n           node-version: ${{ matrix.node }}\n \n       - name: Install pnpm\n-        uses: pnpm/action-setup@v2.0.1\n+        uses: pnpm/action-setup@v2.4.0\n         id: pnpm-install\n         with:\n           version: 7"
+    },
+    {
+      "sha": "70aa04088a3c837fa41a8da3a49c1424eecec603",
+      "filename": ".github/workflows/ci-site.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-site.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fci-site.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-site.yml?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -20,14 +20,14 @@ jobs:\n \n     steps:\n       - name: checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: set up QEMU\n-        uses: docker/setup-qemu-action@v2\n+        uses: docker/setup-qemu-action@v3\n \n       - name: set up Docker Buildx\n         id: buildx\n-        uses: docker/setup-buildx-action@v2\n+        uses: docker/setup-buildx-action@v3\n \n       - name: available platforms\n         run: echo ${{ steps.buildx.outputs.platforms }}"
+    },
+    {
+      "sha": "c282550c6af684f77d2485fcc71e6420ca1ab6c7",
+      "filename": ".github/workflows/e2e-tests.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fe2e-tests.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/.github%2Fworkflows%2Fe2e-tests.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fe2e-tests.yml?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -20,7 +20,7 @@ jobs:\n     runs-on: ubuntu-latest\n     steps:\n       - name: Checkout\n-        uses: actions/checkout@v3\n+        uses: actions/checkout@v4\n \n       - name: Build & run containers\n         id: tests"
+    },
+    {
+      "sha": "feded499f129a1dff4b542acdd7687596febccc2",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM --platform=$BUILDPLATFORM node:16.15.1-alpine AS frontend-deps\n+FROM --platform=$BUILDPLATFORM node:16.20.2-alpine AS frontend-deps\n \n ARG SKIP_FRONTEND_TEST\n ARG SKIP_FRONTEND_BUILD\n@@ -45,7 +45,7 @@ RUN \\\n     echo 'Skip frontend build'; \\\n   fi\n \n-FROM umputun/baseimage:buildgo-v1.11.0 as build-backend\n+FROM umputun/baseimage:buildgo-v1.12.0 as build-backend\n \n ARG CI\n ARG GITHUB_REF\n@@ -81,7 +81,7 @@ RUN \\\n     echo \"version=$version\" && \\\n     go build -o remark42 -ldflags \"-X main.revision=${version} -s -w\" ./app\n \n-FROM umputun/baseimage:app-v1.11.0\n+FROM umputun/baseimage:app-v1.12.0\n \n ARG GITHUB_SHA\n "
+    },
+    {
+      "sha": "2697764cff6d7b3e49255e3722dcd8b36df9b564",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile.artifacts?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM node:16.15.1-alpine AS frontend-deps\n+FROM node:16.20.2-alpine AS frontend-deps\n \n ENV CI=true\n \n@@ -19,7 +19,7 @@ WORKDIR /srv/frontend/apps/remark42/\n COPY ./frontend/apps/remark42/ /srv/frontend/apps/remark42/\n RUN pnpm build\n \n-FROM umputun/baseimage:buildgo-v1.9.2 as build-backend\n+FROM umputun/baseimage:buildgo-v1.12.0 as build-backend\n \n ARG GITHUB_TOKEN\n ARG GITHUB_REF"
+    },
+    {
+      "sha": "08e63ca79332d13b11e3225fb18229e9d630b10f",
+      "filename": "backend/_example/memory_store/Dockerfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/backend%2F_example%2Fmemory_store%2FDockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/backend%2F_example%2Fmemory_store%2FDockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2FDockerfile?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -1,11 +1,11 @@\n-FROM umputun/baseimage:buildgo-v1.9.2 as build-backend\n+FROM umputun/baseimage:buildgo-v1.12.0 as build-backend\n \n ADD backend /build/backend\n WORKDIR /build/backend/_example/memory_store\n \n RUN go build -o /build/bin/memory_store -ldflags \"-X main.revision=0.0.0 -s -w\"\n \n-FROM umputun/baseimage:app-v1.9.2\n+FROM umputun/baseimage:app-v1.12.0\n \n ARG GITHUB_SHA\n "
+    },
+    {
+      "sha": "40ecd2dde03fcef3e3468174f2d65e4c332622f7",
+      "filename": "backend/_example/memory_store/go.mod",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.mod?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -1,6 +1,8 @@\n module github.com/umputun/remark42/memory_store\n \n-go 1.20\n+go 1.21\n+\n+toolchain go1.21.6\n \n require (\n \tgithub.com/go-pkgz/jrpc v0.3.0"
+    },
+    {
+      "sha": "709c99a9ab00bd12a45512e300b8bd4a93394e9b",
+      "filename": "backend/_example/memory_store/go.sum",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/backend%2F_example%2Fmemory_store%2Fgo.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/backend%2F_example%2Fmemory_store%2Fgo.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.sum?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -5,9 +5,11 @@ github.com/PuerkitoBio/goquery v1.8.1/go.mod h1:Q8ICL1kNUJ2sXGoAhPGUdYDJvgQgHzJs\n github.com/ajg/form v1.5.1 h1:t9c7v8JUKu/XxOGBU0yjNpaMloxGEJhUkqFRq0ibGeU=\n github.com/ajg/form v1.5.1/go.mod h1:uL1WgH+h2mgNtvBq0339dVnzXdBETtL2LeUXaIv25UY=\n github.com/alecthomas/assert/v2 v2.2.1 h1:XivOgYcduV98QCahG8T5XTezV5bylXe+lBxLG2K2ink=\n+github.com/alecthomas/assert/v2 v2.2.1/go.mod h1:pXcQ2Asjp247dahGEmsZ6ru0UVwnkhktn7S0bBDLxvQ=\n github.com/alecthomas/chroma/v2 v2.8.0 h1:w9WJUjFFmHHB2e8mRpL9jjy3alYDlU0QLDezj1xE264=\n github.com/alecthomas/chroma/v2 v2.8.0/go.mod h1:yrkMI9807G1ROx13fhe1v6PN2DDeaR73L3d+1nmYQtw=\n github.com/alecthomas/repr v0.2.0 h1:HAzS41CIzNW5syS8Mf9UwXhNH1J9aix/BvDRf1Ml2Yk=\n+github.com/alecthomas/repr v0.2.0/go.mod h1:Fr0507jx4eOXV7AlPV6AVZLYrLIuIeSOWtW57eE/O/4=\n github.com/andybalholm/cascadia v1.3.1/go.mod h1:R4bJ1UQfqADjvDa4P6HZHLh/3OxWWEqc0Sk8XGwHqvA=\n github.com/andybalholm/cascadia v1.3.2 h1:3Xi6Dw5lHF15JtdcmAHD3i1+T8plmv7BQ/nsViSLyss=\n github.com/andybalholm/cascadia v1.3.2/go.mod h1:7gtRlve5FxPPgIgX36uWBX58OdBsSS6lUvCFb+h7KvU=\n@@ -47,6 +49,7 @@ github.com/hashicorp/errwrap v1.1.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brv\n github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+lD48awMYo=\n github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=\n github.com/hexops/gotextdiff v1.0.3 h1:gitA9+qJrrTCsiCl7+kh75nPqQt1cx4ZkudSTLoUqJM=\n+github.com/hexops/gotextdiff v1.0.3/go.mod h1:pSWU5MAI3yDq+fZBTazCSJysOMbxWL1BSow5/V2vxeg=\n github.com/jessevdk/go-flags v1.5.0 h1:1jKYvbxEjfUl0fmqTCOfonvskHHXMjBySTLW4y9LFvc=\n github.com/jessevdk/go-flags v1.5.0/go.mod h1:Fw0T6WPc1dYxT4mKEZRfG5kJhaTDP9pj1c2EWnYs/m4=\n github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI="
+    },
+    {
+      "sha": "cb406c60ce55c7af3252e7094292bc0cca73e854",
+      "filename": "frontend/.nvmrc",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/frontend%2F.nvmrc",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/frontend%2F.nvmrc",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2F.nvmrc?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -1 +1 @@\n-16.15.1\n+16.20.2"
+    },
+    {
+      "sha": "6c6348453160b09bfcf3999944d80502fabe9230",
+      "filename": "frontend/Dockerfile.e2e",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/884b5685eba3a7e88c9b60378316fd346a4c3a42/frontend%2FDockerfile.e2e",
+      "raw_url": "https://github.com/umputun/remark42/raw/884b5685eba3a7e88c9b60378316fd346a4c3a42/frontend%2FDockerfile.e2e",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2FDockerfile.e2e?ref=884b5685eba3a7e88c9b60378316fd346a4c3a42",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM mcr.microsoft.com/playwright:v1.25.0-focal\n+FROM mcr.microsoft.com/playwright:v1.40.1-jammy\n \n ENV CI true\n WORKDIR /frontend"
+    }
+  ]
+}
