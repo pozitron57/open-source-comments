@@ -1,0 +1,103 @@
+{
+  "sha": "1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a",
+  "node_id": "C_kwDOAF-mA9oAKDE0MjllZDE0NWM2YjhmZmI5YmRkODA2MWJkMWY4YWI5NTRhODVjMGE",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2024-01-22T20:36:25Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-01-22T20:36:25Z"
+    },
+    "message": "Merge pull request #981 from sjrct/listen-proto-error-msg\n\nAdd error message for improperly configured server.listen",
+    "tree": {
+      "sha": "4da18a9dae3a643d6859e38ad9bd5e5af5d67fde",
+      "url": "https://api.github.com/repos/posativ/isso/git/trees/4da18a9dae3a643d6859e38ad9bd5e5af5d67fde"
+    },
+    "url": "https://api.github.com/repos/posativ/isso/git/commits/1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJlrtHJCRC1aQ7uu5UhlAAABpUQAC/pDE6mewKMFzYEJG0aN/ri\nW5rwi8/vQsZnGT8JeA0R7VMt5QK0lbXvOI3vjNw7tv0xn9fJNNFTl9zY8I07KK18\nFnlOLYF0DYVvLOFu5gLt1YTRmT/Jr3bF80Tju7U0HmtpWmp9hiyaryFU9KQN/kk0\nE+kBvkJz414l7EbjrXAUB4gDwnNt8F8zPyFNI9s3mnwbVrYELMKZeVgYNH10Qdhv\neOT0i5j59y1r3jkZuwcpRT6s1T6KGIkXzhsSGGaTsDKK0FZ5RRR+poBm8kQ5u0L0\nvgqV30mFigSVaATGv0YBpal5QGgBqfnIE+if7ymB6DmGfJ6vDgpv41vLG4HDTfta\nPdbeiCibRO0FRe4oeDr5mzZIDze3h/VS8s8tx6f3kG1E+H4+/flhirIKWrOKboXw\n8WHyG7b1/lDpUs2vxFiMmbZwRNKlDCf/A7kLw/0IjXRhTvnCghAppjauZPc+Xu5s\nEkYc5swieGAIKPK9ldjIEfNGLXVIN2Dku4eAQ49gFTy1Xw36WF0zaWiyzpblRRN3\n39FJdnPLaFlIBqwL65UhJJurIZCuYoPXYecECD2arxiAywQ0fPl3dRsmOXKLEUHH\n1WvN6l4af9wXMv4xWnXN1ApHxZQu5xHkelqNGOG855bMRDcETvvfWgMMevFI4BB7\nh/ulnQdEE4FX6v2V7joF\n=qNfB\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 4da18a9dae3a643d6859e38ad9bd5e5af5d67fde\nparent c9b1a1c5cb78242e47cd32da909a2c46271a1fd9\nparent 9bd86ae8a8b5a7078eed7a07c6d31abf41b57b37\nauthor ix5 <ix5@users.noreply.github.com> 1705955785 +0100\ncommitter GitHub <noreply@github.com> 1705955785 +0100\n\nMerge pull request #981 from sjrct/listen-proto-error-msg\n\nAdd error message for improperly configured server.listen"
+    }
+  },
+  "url": "https://api.github.com/repos/posativ/isso/commits/1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a",
+  "html_url": "https://github.com/posativ/isso/commit/1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a",
+  "comments_url": "https://api.github.com/repos/posativ/isso/commits/1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c9b1a1c5cb78242e47cd32da909a2c46271a1fd9",
+      "url": "https://api.github.com/repos/posativ/isso/commits/c9b1a1c5cb78242e47cd32da909a2c46271a1fd9",
+      "html_url": "https://github.com/posativ/isso/commit/c9b1a1c5cb78242e47cd32da909a2c46271a1fd9"
+    },
+    {
+      "sha": "9bd86ae8a8b5a7078eed7a07c6d31abf41b57b37",
+      "url": "https://api.github.com/repos/posativ/isso/commits/9bd86ae8a8b5a7078eed7a07c6d31abf41b57b37",
+      "html_url": "https://github.com/posativ/isso/commit/9bd86ae8a8b5a7078eed7a07c6d31abf41b57b37"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 4,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "68468de73f6f199000d7b2591261f9893b3ce346",
+      "filename": "isso/__init__.py",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/posativ/isso/blob/1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a/isso%2F__init__.py",
+      "raw_url": "https://github.com/posativ/isso/raw/1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a/isso%2F__init__.py",
+      "contents_url": "https://api.github.com/repos/posativ/isso/contents/isso%2F__init__.py?ref=1429ed145c6b8ffb9bdd8061bd1f8ab954a85c0a",
+      "patch": "@@ -295,11 +295,14 @@ def main():\n         except ImportError:\n             run_simple(host, port, make_app(conf), threaded=True,\n                        use_reloader=conf.getboolean('server', 'reload'))\n-    else:\n+    elif conf.get(\"server\", \"listen\").startswith(\"unix://\"):\n         sock = conf.get(\"server\", \"listen\").partition(\"unix://\")[2]\n         try:\n             os.unlink(sock)\n         except OSError as ex:\n             if ex.errno != errno.ENOENT:\n                 raise\n         wsgi.SocketHTTPServer(sock, make_app(conf)).serve_forever()\n+    else:\n+        logger.error(\"server.listen must specify a protocol of http:// or unix://\")\n+        sys.exit(1)"
+    }
+  ]
+}
