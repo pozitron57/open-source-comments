@@ -1,0 +1,146 @@
+{
+  "sha": "0050c655964e12e8ed021a0e43c108e7938aabd8",
+  "node_id": "C_kwDOBtgov9oAKDAwNTBjNjU1OTY0ZTEyZThlZDAyMWEwZTQzYzEwOGU3OTM4YWFiZDg",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-01-28T13:56:49Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-01-28T18:16:24Z"
+    },
+    "message": "add meaningful error for lack of auth on import, remap and backup\n\nPreviously, the error printed was just the following:\n\nerror response \"401 Unauthorized\", Unauthorized\"\n\nNew error:\n\nerror response \"401 Unauthorized\", ensure you have set ADMIN_PASSWD\nand provided it to the command you're running: Unauthorized",
+    "tree": {
+      "sha": "86d4943e5472fe84df31d7181d3bb5dde6190100",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/86d4943e5472fe84df31d7181d3bb5dde6190100"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/0050c655964e12e8ed021a0e43c108e7938aabd8",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/0050c655964e12e8ed021a0e43c108e7938aabd8",
+  "html_url": "https://github.com/umputun/remark42/commit/0050c655964e12e8ed021a0e43c108e7938aabd8",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/0050c655964e12e8ed021a0e43c108e7938aabd8/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "02db7a917d80dc5ec654d7bb38d86b7284d13368",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/02db7a917d80dc5ec654d7bb38d86b7284d13368",
+      "html_url": "https://github.com/umputun/remark42/commit/02db7a917d80dc5ec654d7bb38d86b7284d13368"
+    }
+  ],
+  "stats": {
+    "total": 109,
+    "additions": 109,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "471104e443d49876dee73cf8daad54f9b898dec8",
+      "filename": "backend/app/cmd/backup_test.go",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 0,
+      "changes": 28,
+      "blob_url": "https://github.com/umputun/remark42/blob/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fbackup_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fbackup_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fbackup_test.go?ref=0050c655964e12e8ed021a0e43c108e7938aabd8",
+      "patch": "@@ -1,10 +1,12 @@\n package cmd\n \n import (\n+\t\"encoding/base64\"\n \t\"fmt\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n \t\"os\"\n+\t\"strings\"\n \t\"testing\"\n \n \t\"github.com/jessevdk/go-flags\"\n@@ -16,6 +18,10 @@ func TestBackup_Execute(t *testing.T) {\n \tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/export\")\n \t\tassert.Equal(t, \"GET\", r.Method)\n+\t\tt.Logf(\"Authorization header: %+v\", r.Header.Get(\"Authorization\"))\n+\t\tauth, err := base64.StdEncoding.DecodeString(strings.Split(r.Header.Get(\"Authorization\"), \" \")[1])\n+\t\trequire.NoError(t, err)\n+\t\tassert.Equal(t, \"admin:secret\", string(auth))\n \t\tfmt.Fprint(w, \"blah\\nblah2\\n12345678\\n\")\n \t}))\n \tdefer ts.Close()\n@@ -34,6 +40,28 @@ func TestBackup_Execute(t *testing.T) {\n \tassert.Equal(t, \"blah\\nblah2\\n12345678\\n\", string(data))\n }\n \n+func TestBackup_ExecuteNoPassword(t *testing.T) {\n+\tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n+\t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/export\")\n+\t\tassert.Equal(t, \"GET\", r.Method)\n+\t\tt.Logf(\"Authorization: %+v\", r.Header.Get(\"Authorization\"))\n+\t\tauth, err := base64.StdEncoding.DecodeString(strings.Split(r.Header.Get(\"Authorization\"), \" \")[1])\n+\t\trequire.NoError(t, err)\n+\t\trequire.Equal(t, \"admin:\", string(auth))\n+\t\tw.WriteHeader(http.StatusUnauthorized)\n+\t\tfmt.Fprint(w, \"Unauthorized\")\n+\t}))\n+\tdefer ts.Close()\n+\n+\tcmd := BackupCommand{}\n+\tcmd.SetCommon(CommonOpts{RemarkURL: ts.URL})\n+\tp := flags.NewParser(&cmd, flags.Default)\n+\t_, err := p.ParseArgs([]string{\"--site=remark\", \"--path=/tmp\", \"--file={{.SITE}}-test.export\"})\n+\trequire.NoError(t, err)\n+\terr = cmd.Execute(nil)\n+\tassert.EqualError(t, err, \"error response \\\"401 Unauthorized\\\", ensure you have set ADMIN_PASSWD and provided it to the command you're running: Unauthorized\")\n+}\n+\n func TestBackup_ExecuteFailedStatus(t *testing.T) {\n \tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/export\")"
+    },
+    {
+      "sha": "8c2fbbcd33af0e090096b224f47b1fec6a5e0981",
+      "filename": "backend/app/cmd/cmd.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fcmd.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fcmd.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fcmd.go?ref=0050c655964e12e8ed021a0e43c108e7938aabd8",
+      "patch": "@@ -115,6 +115,9 @@ func responseError(resp *http.Response) error {\n \tif e != nil {\n \t\tbody = []byte(\"\")\n \t}\n+\tif resp.StatusCode == http.StatusUnauthorized {\n+\t\treturn fmt.Errorf(\"error response %q, ensure you have set ADMIN_PASSWD and provided it to the command you're running: %s\", resp.Status, body)\n+\t}\n \treturn fmt.Errorf(\"error response %q, %s\", resp.Status, body)\n }\n "
+    },
+    {
+      "sha": "c608459ff0ef53ac9211b0f00b6bcfa03c8ff228",
+      "filename": "backend/app/cmd/import_test.go",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 0,
+      "changes": 42,
+      "blob_url": "https://github.com/umputun/remark42/blob/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fimport_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fimport_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fimport_test.go?ref=0050c655964e12e8ed021a0e43c108e7938aabd8",
+      "patch": "@@ -1,10 +1,12 @@\n package cmd\n \n import (\n+\t\"encoding/base64\"\n \t\"fmt\"\n \t\"io\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n+\t\"strings\"\n \t\"testing\"\n \t\"time\"\n \n@@ -18,6 +20,10 @@ func TestImport_Execute(t *testing.T) {\n \tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/import\")\n \t\tassert.Equal(t, \"POST\", r.Method)\n+\t\tt.Logf(\"Authorization header: %+v\", r.Header.Get(\"Authorization\"))\n+\t\tauth, err := base64.StdEncoding.DecodeString(strings.Split(r.Header.Get(\"Authorization\"), \" \")[1])\n+\t\trequire.NoError(t, err)\n+\t\tassert.Equal(t, \"admin:secret\", string(auth))\n \t\tbody, err := io.ReadAll(r.Body)\n \t\tassert.NoError(t, err)\n \t\tassert.Equal(t, \"blah\\nblah2\\n12345678\\n\", string(body))\n@@ -46,6 +52,42 @@ func TestImport_Execute(t *testing.T) {\n \tassert.NoError(t, err)\n }\n \n+func TestImport_ExecuteNoPassword(t *testing.T) {\n+\tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n+\t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/import\")\n+\t\tassert.Equal(t, \"POST\", r.Method)\n+\t\tt.Logf(\"Authorization header: %+v\", r.Header.Get(\"Authorization\"))\n+\t\tauth, err := base64.StdEncoding.DecodeString(strings.Split(r.Header.Get(\"Authorization\"), \" \")[1])\n+\t\trequire.NoError(t, err)\n+\t\tassert.Equal(t, \"admin:\", string(auth))\n+\t\tbody, err := io.ReadAll(r.Body)\n+\t\tassert.NoError(t, err)\n+\t\tassert.Equal(t, \"blah\\nblah2\\n12345678\\n\", string(body))\n+\n+\t\tw.WriteHeader(401)\n+\t\tfmt.Fprint(w, \"Unauthorized\")\n+\t}))\n+\tdefer ts.Close()\n+\n+\tcmd := ImportCommand{}\n+\tcmd.SetCommon(CommonOpts{RemarkURL: ts.URL})\n+\n+\tp := flags.NewParser(&cmd, flags.Default)\n+\t_, err := p.ParseArgs([]string{\"--site=remark\", \"--file=testdata/import.txt\"})\n+\trequire.NoError(t, err)\n+\terr = cmd.Execute(nil)\n+\tassert.EqualError(t, err, \"error response \\\"401 Unauthorized\\\", ensure you have set ADMIN_PASSWD and provided it to the command you're running: Unauthorized\")\n+\n+\tcmd = ImportCommand{}\n+\tcmd.SetCommon(CommonOpts{RemarkURL: ts.URL})\n+\n+\tp = flags.NewParser(&cmd, flags.Default)\n+\t_, err = p.ParseArgs([]string{\"--site=remark\", \"--file=testdata/import.txt.gz\"})\n+\trequire.NoError(t, err)\n+\terr = cmd.Execute(nil)\n+\tassert.EqualError(t, err, \"error response \\\"401 Unauthorized\\\", ensure you have set ADMIN_PASSWD and provided it to the command you're running: Unauthorized\")\n+}\n+\n func TestImport_ExecuteFailed(t *testing.T) {\n \tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n \t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/import\")"
+    },
+    {
+      "sha": "db5c7b48fcdff3d7647d58e8f45a641f70929adb",
+      "filename": "backend/app/cmd/remap_test.go",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 0,
+      "changes": 35,
+      "blob_url": "https://github.com/umputun/remark42/blob/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fremap_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Fcmd%2Fremap_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fremap_test.go?ref=0050c655964e12e8ed021a0e43c108e7938aabd8",
+      "patch": "@@ -1,9 +1,12 @@\n package cmd\n \n import (\n+\t\"encoding/base64\"\n+\t\"fmt\"\n \t\"io\"\n \t\"net/http\"\n \t\"net/http/httptest\"\n+\t\"strings\"\n \t\"testing\"\n \n \t\"github.com/jessevdk/go-flags\"\n@@ -16,6 +19,10 @@ func TestRemap_Execute(t *testing.T) {\n \t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/remap\")\n \t\tassert.Equal(t, \"POST\", r.Method)\n \t\tassert.Equal(t, \"remark\", r.URL.Query().Get(\"site\"))\n+\t\tt.Logf(\"Authorization header: %+v\", r.Header.Get(\"Authorization\"))\n+\t\tauth, err := base64.StdEncoding.DecodeString(strings.Split(r.Header.Get(\"Authorization\"), \" \")[1])\n+\t\trequire.NoError(t, err)\n+\t\tassert.Equal(t, \"admin:secret\", string(auth))\n \t\tbody, err := io.ReadAll(r.Body)\n \t\tassert.NoError(t, err)\n \t\tassert.Equal(t, \"http://oldsite.com* https://newsite.com*\\nhttp://oldsite.com/from-old-page/1 https://newsite.com/to-new-page/1\", string(body))\n@@ -33,3 +40,31 @@ func TestRemap_Execute(t *testing.T) {\n \terr = cmd.Execute(nil)\n \tassert.NoError(t, err)\n }\n+\n+func TestRemap_ExecuteNoPassword(t *testing.T) {\n+\tts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n+\t\tassert.Equal(t, r.URL.Path, \"/api/v1/admin/remap\")\n+\t\tassert.Equal(t, \"POST\", r.Method)\n+\t\tassert.Equal(t, \"remark\", r.URL.Query().Get(\"site\"))\n+\t\tt.Logf(\"Authorization header: %+v\", r.Header.Get(\"Authorization\"))\n+\t\tauth, err := base64.StdEncoding.DecodeString(strings.Split(r.Header.Get(\"Authorization\"), \" \")[1])\n+\t\trequire.NoError(t, err)\n+\t\tassert.Equal(t, \"admin:\", string(auth))\n+\t\tbody, err := io.ReadAll(r.Body)\n+\t\tassert.NoError(t, err)\n+\t\tassert.Equal(t, \"http://oldsite.com* https://newsite.com*\\nhttp://oldsite.com/from-old-page/1 https://newsite.com/to-new-page/1\", string(body))\n+\n+\t\tw.WriteHeader(401)\n+\t\tfmt.Fprint(w, \"Unauthorized\")\n+\t}))\n+\tdefer ts.Close()\n+\n+\tcmd := RemapCommand{}\n+\tcmd.SetCommon(CommonOpts{RemarkURL: ts.URL})\n+\n+\tp := flags.NewParser(&cmd, flags.Default)\n+\t_, err := p.ParseArgs([]string{\"--site=remark\", \"--file=testdata/remap_urls.txt\"})\n+\trequire.NoError(t, err)\n+\terr = cmd.Execute(nil)\n+\tassert.EqualError(t, err, \"error response \\\"401 Unauthorized\\\", ensure you have set ADMIN_PASSWD and provided it to the command you're running: Unauthorized\")\n+}"
+    },
+    {
+      "sha": "12ba6e91cb7c281a703032adadb0ec25e6e2e0c5",
+      "filename": "backend/app/rest/api/migrator_test.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Frest%2Fapi%2Fmigrator_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/0050c655964e12e8ed021a0e43c108e7938aabd8/backend%2Fapp%2Frest%2Fapi%2Fmigrator_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Fmigrator_test.go?ref=0050c655964e12e8ed021a0e43c108e7938aabd8",
+      "patch": "@@ -397,6 +397,7 @@ func TestMigrator_Export(t *testing.T) {\n \treq.SetBasicAuth(\"admin\", \"password\")\n \tresp, err = client.Do(req)\n \trequire.NoError(t, err)\n+\tresp.Body.Close()\n \trequire.Equal(t, http.StatusInternalServerError, resp.StatusCode)\n \trequire.Equal(t, \"application/json\", resp.Header.Get(\"Content-Type\"))\n "
+    }
+  ]
+}
