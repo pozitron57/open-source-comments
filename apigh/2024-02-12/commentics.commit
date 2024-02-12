@@ -1,0 +1,98 @@
+{
+  "sha": "77fa84b7749c5445214d6a74b2ffde287b9930e3",
+  "node_id": "C_kwDOBFjBJdoAKDc3ZmE4NGI3NzQ5YzU0NDUyMTRkNmE3NGIyZmZkZTI4N2I5OTMwZTM",
+  "commit": {
+    "author": {
+      "name": "Steven",
+      "email": "support@commentics.com",
+      "date": "2024-02-12T11:06:14Z"
+    },
+    "committer": {
+      "name": "Steven",
+      "email": "support@commentics.com",
+      "date": "2024-02-12T11:06:14Z"
+    },
+    "message": "Update .gitattributes",
+    "tree": {
+      "sha": "79379f3a3292dd0555464fb97ada4ee503c37ece",
+      "url": "https://api.github.com/repos/commentics/commentics/git/trees/79379f3a3292dd0555464fb97ada4ee503c37ece"
+    },
+    "url": "https://api.github.com/repos/commentics/commentics/git/commits/77fa84b7749c5445214d6a74b2ffde287b9930e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/commentics/commentics/commits/77fa84b7749c5445214d6a74b2ffde287b9930e3",
+  "html_url": "https://github.com/commentics/commentics/commit/77fa84b7749c5445214d6a74b2ffde287b9930e3",
+  "comments_url": "https://api.github.com/repos/commentics/commentics/commits/77fa84b7749c5445214d6a74b2ffde287b9930e3/comments",
+  "author": {
+    "login": "commentics",
+    "id": 3671618,
+    "node_id": "MDQ6VXNlcjM2NzE2MTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3671618?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/commentics",
+    "html_url": "https://github.com/commentics",
+    "followers_url": "https://api.github.com/users/commentics/followers",
+    "following_url": "https://api.github.com/users/commentics/following{/other_user}",
+    "gists_url": "https://api.github.com/users/commentics/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/commentics/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/commentics/subscriptions",
+    "organizations_url": "https://api.github.com/users/commentics/orgs",
+    "repos_url": "https://api.github.com/users/commentics/repos",
+    "events_url": "https://api.github.com/users/commentics/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/commentics/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "commentics",
+    "id": 3671618,
+    "node_id": "MDQ6VXNlcjM2NzE2MTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3671618?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/commentics",
+    "html_url": "https://github.com/commentics",
+    "followers_url": "https://api.github.com/users/commentics/followers",
+    "following_url": "https://api.github.com/users/commentics/following{/other_user}",
+    "gists_url": "https://api.github.com/users/commentics/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/commentics/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/commentics/subscriptions",
+    "organizations_url": "https://api.github.com/users/commentics/orgs",
+    "repos_url": "https://api.github.com/users/commentics/repos",
+    "events_url": "https://api.github.com/users/commentics/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/commentics/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fcbba682c0831a3e2d8281c5e9fc14e883748486",
+      "url": "https://api.github.com/repos/commentics/commentics/commits/fcbba682c0831a3e2d8281c5e9fc14e883748486",
+      "html_url": "https://github.com/commentics/commentics/commit/fcbba682c0831a3e2d8281c5e9fc14e883748486"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 4,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "40d36441755ed18150d5d8127c99ee2a93c37b0d",
+      "filename": ".gitattributes",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/commentics/commentics/blob/77fa84b7749c5445214d6a74b2ffde287b9930e3/.gitattributes",
+      "raw_url": "https://github.com/commentics/commentics/raw/77fa84b7749c5445214d6a74b2ffde287b9930e3/.gitattributes",
+      "contents_url": "https://api.github.com/repos/commentics/commentics/contents/.gitattributes?ref=77fa84b7749c5445214d6a74b2ffde287b9930e3",
+      "patch": "@@ -2,7 +2,9 @@\n \n .gitattributes export-ignore\n .gitignore export-ignore\n+.sasslint.yml export-ignore\n+cmtx export-ignore\n+composer.json export-ignore\n gulpfile.js export-ignore\n package.json export-ignore\n-.sasslint.yml export-ignore\n-cmtx export-ignore\n\\ No newline at end of file\n+phpunit.xml export-ignore\n\\ No newline at end of file"
+    }
+  ]
+}
