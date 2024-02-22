@@ -1,0 +1,122 @@
+{
+  "sha": "6269c19881c8b496d7828841ab6b448c9a911309",
+  "node_id": "C_kwDOBtgov9oAKDYyNjljMTk4ODFjOGI0OTZkNzgyODg0MWFiNmI0NDhjOWE5MTEzMDk",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-02-21T09:17:15Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-02-21T16:43:28Z"
+    },
+    "message": "add more tests for GET /find endpoint",
+    "tree": {
+      "sha": "bea584f066bf5bf1cf576293ca8c36f7987a0bdd",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/bea584f066bf5bf1cf576293ca8c36f7987a0bdd"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/6269c19881c8b496d7828841ab6b448c9a911309",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/6269c19881c8b496d7828841ab6b448c9a911309",
+  "html_url": "https://github.com/umputun/remark42/commit/6269c19881c8b496d7828841ab6b448c9a911309",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/6269c19881c8b496d7828841ab6b448c9a911309/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1313dee829ff781f20c6c5614473e2534a88bd30",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/1313dee829ff781f20c6c5614473e2534a88bd30",
+      "html_url": "https://github.com/umputun/remark42/commit/1313dee829ff781f20c6c5614473e2534a88bd30"
+    }
+  ],
+  "stats": {
+    "total": 176,
+    "additions": 174,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "527314f142955e5fecfe91431b9e51b3d286affa",
+      "filename": "backend/app/rest/api/admin_test.go",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/6269c19881c8b496d7828841ab6b448c9a911309/backend%2Fapp%2Frest%2Fapi%2Fadmin_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/6269c19881c8b496d7828841ab6b448c9a911309/backend%2Fapp%2Frest%2Fapi%2Fadmin_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Fadmin_test.go?ref=6269c19881c8b496d7828841ab6b448c9a911309",
+      "patch": "@@ -513,6 +513,7 @@ func TestAdmin_ReadOnlyNoComments(t *testing.T) {\n \t_, err = srv.DataService.Info(store.Locator{SiteID: \"remark42\", URL: \"https://radio-t.com/blah\"}, 0)\n \tassert.Error(t, err)\n \n+\t// test format \"tree\"\n \tres, code := get(t, ts.URL+\"/api/v1/find?site=remark42&url=https://radio-t.com/blah&format=tree\")\n \tassert.Equal(t, http.StatusOK, code)\n \tcomments := commentsWithInfo{}\n@@ -521,6 +522,16 @@ func TestAdmin_ReadOnlyNoComments(t *testing.T) {\n \tassert.Equal(t, 0, len(comments.Comments), \"should have 0 comments\")\n \tassert.True(t, comments.Info.ReadOnly)\n \tt.Logf(\"%+v\", comments)\n+\n+\t// test format \"plain\"\n+\tres, code = get(t, ts.URL+\"/api/v1/find?site=remark42&url=https://radio-t.com/blah\")\n+\tassert.Equal(t, http.StatusOK, code)\n+\tcomments = commentsWithInfo{}\n+\terr = json.Unmarshal([]byte(res), &comments)\n+\tassert.NoError(t, err)\n+\tassert.Equal(t, 0, len(comments.Comments), \"should have 0 comments\")\n+\tassert.False(t, comments.Info.ReadOnly, \"different from the plain format, should be fixed\")\n+\tt.Logf(\"%+v\", comments)\n }\n \n func TestAdmin_ReadOnlyWithAge(t *testing.T) {"
+    },
+    {
+      "sha": "b7faddbf64f24e49cbab8e050b6fbef1af2a4dfc",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 154,
+      "deletions": 0,
+      "changes": 154,
+      "blob_url": "https://github.com/umputun/remark42/blob/6269c19881c8b496d7828841ab6b448c9a911309/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/6269c19881c8b496d7828841ab6b448c9a911309/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go?ref=6269c19881c8b496d7828841ab6b448c9a911309",
+      "patch": "@@ -7,6 +7,7 @@ import (\n \t\"net/http\"\n \t\"net/http/httptest\"\n \t\"os\"\n+\t\"strconv\"\n \t\"strings\"\n \t\"testing\"\n \t\"time\"\n@@ -533,6 +534,159 @@ func TestRest_FindUserComments_CWE_918(t *testing.T) {\n \tassert.Equal(t, arbitraryServer.URL, resp.Comments[0].Locator.URL, \"arbitrary URL provided by the request\")\n }\n \n+func TestPublic_FindCommentsCtrl_ConsistentCount(t *testing.T) {\n+\t// test that comment counting is consistent between tree and plain formats\n+\tts, srv, teardown := startupT(t)\n+\tdefer teardown()\n+\n+\tcommentLocator := store.Locator{URL: \"test-url\", SiteID: \"remark42\"}\n+\n+\t// vote for comment multiple times\n+\tsetScore := func(locator store.Locator, id string, val int) {\n+\t\tabs := func(x int) int {\n+\t\t\tif x < 0 {\n+\t\t\t\treturn -x\n+\t\t\t}\n+\t\t\treturn x\n+\t\t}\n+\t\tfor i := 0; i < abs(val); i++ {\n+\t\t\t_, err := srv.DataService.Vote(service.VoteReq{\n+\t\t\t\tLocator:   locator,\n+\t\t\t\tCommentID: id,\n+\t\t\t\t// unique user ID is needed for correct counting of controversial votes\n+\t\t\t\tUserID: \"user\" + strconv.Itoa(val) + strconv.Itoa(i),\n+\t\t\t\tVal:    val > 0,\n+\t\t\t})\n+\t\t\trequire.NoError(t, err)\n+\t\t}\n+\t}\n+\n+\t// Adding initial comments (8 to test-url and 1 to another-url) and voting, and delete two of comments to the first post.\n+\t// With sleep so that at least few millisecond pass between each comment\n+\t// and later we would be able to use that in \"since\" filter with millisecond precision\n+\tids := make([]string, 9)\n+\ttimestamps := make([]time.Time, 9)\n+\tc1 := store.Comment{Text: \"top-level comment 1\", Locator: commentLocator}\n+\tids[0], timestamps[0] = addCommentGetCreatedTime(t, c1, ts)\n+\t// #3 by score\n+\tsetScore(commentLocator, ids[0], 1)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc2 := store.Comment{Text: \"top-level comment 2\", Locator: commentLocator}\n+\tids[1], timestamps[1] = addCommentGetCreatedTime(t, c2, ts)\n+\t// #2 by score\n+\tsetScore(commentLocator, ids[1], 2)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc3 := store.Comment{Text: \"second-level comment 1\", ParentID: ids[0], Locator: commentLocator}\n+\tids[2], timestamps[2] = addCommentGetCreatedTime(t, c3, ts)\n+\t// #1 by score\n+\tsetScore(commentLocator, ids[2], 10)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc4 := store.Comment{Text: \"third-level comment 1\", ParentID: ids[2], Locator: commentLocator}\n+\tids[3], timestamps[3] = addCommentGetCreatedTime(t, c4, ts)\n+\t// #5 by score, #1 by controversy\n+\tsetScore(commentLocator, ids[3], 4)\n+\tsetScore(commentLocator, ids[3], -4)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc5 := store.Comment{Text: \"second-level comment 2\", ParentID: ids[1], Locator: commentLocator}\n+\tids[4], timestamps[4] = addCommentGetCreatedTime(t, c5, ts)\n+\t// #5 by score, #2 by controversy\n+\tsetScore(commentLocator, ids[4], 2)\n+\tsetScore(commentLocator, ids[4], -3)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc6 := store.Comment{Text: \"third-level comment 2\", ParentID: ids[4], Locator: commentLocator}\n+\tids[5], timestamps[5] = addCommentGetCreatedTime(t, c6, ts)\n+\t// deleted later so not visible in site-wide requests\n+\tsetScore(commentLocator, ids[5], 10)\n+\tsetScore(commentLocator, ids[5], -10)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc7 := store.Comment{Text: \"top-level comment 3\", Locator: commentLocator}\n+\tids[6], timestamps[6] = addCommentGetCreatedTime(t, c7, ts)\n+\t// #6 by score, #4 by controversy\n+\tsetScore(commentLocator, ids[6], -3)\n+\tsetScore(commentLocator, ids[6], 1)\n+\ttime.Sleep(time.Millisecond * 5)\n+\n+\tc8 := store.Comment{Text: \"second-level comment 3\", ParentID: ids[6], Locator: commentLocator}\n+\tids[7], timestamps[7] = addCommentGetCreatedTime(t, c8, ts)\n+\t// deleted later so not visible in site-wide requests\n+\tsetScore(commentLocator, ids[7], -20)\n+\n+\tc9 := store.Comment{Text: \"comment to post 2\", Locator: store.Locator{URL: \"another-url\", SiteID: \"remark42\"}}\n+\tids[8], timestamps[8] = addCommentGetCreatedTime(t, c9, ts)\n+\t// #7 by score\n+\tsetScore(store.Locator{URL: \"another-url\", SiteID: \"remark42\"}, ids[8], -25)\n+\n+\t// delete two comments bringing the total from 9 to 6\n+\terr := srv.DataService.Delete(commentLocator, ids[7], store.SoftDelete)\n+\tassert.NoError(t, err)\n+\terr = srv.DataService.Delete(commentLocator, ids[5], store.HardDelete)\n+\tassert.NoError(t, err)\n+\tsrv.Cache.Flush(cache.FlusherRequest{})\n+\n+\tsinceTenSecondsAgo := strconv.FormatInt(time.Now().Add(-time.Second*10).UnixNano()/1000000, 10)\n+\tsinceTS := make([]string, 9)\n+\tformattedTS := make([]string, 9)\n+\tfor i, created := range timestamps {\n+\t\tsinceTS[i] = strconv.FormatInt(created.UnixNano()/1000000, 10)\n+\t\tformattedTS[i] = created.Format(time.RFC3339Nano)\n+\t}\n+\tt.Logf(\"last timestamp: %v\", timestamps[7])\n+\n+\ttestCases := []struct {\n+\t\tparams       string\n+\t\texpectedBody string\n+\t}{\n+\t\t{\"\", fmt.Sprintf(`\"info\":{\"count\":7,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n+\t\t{\"url=test-url\", fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":6,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n+\t\t{\"format=plain\", fmt.Sprintf(`\"info\":{\"count\":7,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n+\t\t{\"format=plain&url=test-url\", fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":6,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n+\t\t{\"since=\" + sinceTenSecondsAgo, fmt.Sprintf(`\"info\":{\"count\":7,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n+\t\t{\"url=test-url&since=\" + sinceTenSecondsAgo, fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":6,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n+\t\t{\"since=\" + sinceTS[0], fmt.Sprintf(`\"info\":{\"count\":7,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n+\t\t{\"url=test-url&since=\" + sinceTS[0], fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":6,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n+\t\t{\"since=\" + sinceTS[1], fmt.Sprintf(`\"info\":{\"count\":7,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n+\t\t{\"url=test-url&since=\" + sinceTS[1], fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":6,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n+\t\t{\"since=\" + sinceTS[4], fmt.Sprintf(`\"info\":{\"count\":7,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n+\t\t{\"url=test-url&since=\" + sinceTS[4], fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":6,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n+\t\t{\"format=tree\", `\"info\":{\"url\":\"test-url\",\"count\":7`},\n+\t\t{\"format=tree&url=test-url\", `\"info\":{\"url\":\"test-url\",\"count\":6`},\n+\t\t{\"format=tree&sort=+time\", `\"info\":{\"url\":\"test-url\",\"count\":7`},\n+\t\t{\"format=tree&url=test-url&sort=+time\", `\"info\":{\"url\":\"test-url\",\"count\":6`},\n+\t\t{\"format=tree&sort=-score\", `\"info\":{\"url\":\"test-url\",\"count\":7`},\n+\t\t{\"format=tree&url=test-url&sort=-score\", `\"info\":{\"url\":\"test-url\",\"count\":6`},\n+\t\t{\"sort=+time\", fmt.Sprintf(`\"score\":-25,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[8])},\n+\t\t{\"sort=-time\", fmt.Sprintf(`\"score\":1,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[0])},\n+\t\t{\"sort=+score\", fmt.Sprintf(`\"score\":10,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[2])},\n+\t\t{\"sort=+score&url=test-url\", fmt.Sprintf(`\"score\":10,\"vote\":0,\"time\":%q}],\"info\":{\"url\":\"test-url\",\"count\":6`, formattedTS[2])},\n+\t\t{\"sort=-score\", fmt.Sprintf(`\"score\":-25,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[8])},\n+\t\t{\"sort=-score&url=test-url\", fmt.Sprintf(`\"score\":-2,\"vote\":0,\"controversy\":1.5874010519681994,\"time\":%q}],\"info\":{\"url\":\"test-url\",\"count\":6`, formattedTS[6])},\n+\t\t{\"sort=-time&since=\" + sinceTS[4], fmt.Sprintf(`\"score\":-1,\"vote\":0,\"controversy\":2.924017738212866,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[4])},\n+\t\t{\"sort=-score&since=\" + sinceTS[3], fmt.Sprintf(`\"score\":-25,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[8])},\n+\t\t{\"sort=-score&url=test-url&since=\" + sinceTS[3], fmt.Sprintf(`\"score\":-2,\"vote\":0,\"controversy\":1.5874010519681994,\"time\":%q}],\"info\":{\"url\":\"test-url\",\"count\":6`, formattedTS[6])},\n+\t\t{\"sort=+controversy&url=test-url&since=\" + sinceTS[5], fmt.Sprintf(`\"score\":-2,\"vote\":0,\"controversy\":1.5874010519681994,\"time\":%q}],\"info\":{\"url\":\"test-url\",\"count\":6`, formattedTS[6])},\n+\t\t// three comments of which last one deleted and doesn't have controversy so returned last\n+\t\t{\"sort=-controversy&url=test-url&since=\" + sinceTS[5], fmt.Sprintf(`\"score\":0,\"vote\":0,\"time\":%q,\"delete\":true}],\"info\":{\"url\":\"test-url\",\"count\":6`, formattedTS[7])},\n+\t}\n+\n+\tfor _, tc := range testCases {\n+\t\tt.Run(tc.params, func(t *testing.T) {\n+\t\t\turl := fmt.Sprintf(ts.URL+\"/api/v1/find?site=remark42&%s\", tc.params)\n+\t\t\tbody, code := get(t, url)\n+\t\t\tassert.Equal(t, http.StatusOK, code)\n+\t\t\tassert.Contains(t, body, tc.expectedBody)\n+\t\t\tt.Log(body)\n+\t\t\t// prevent hit limiter from engaging\n+\t\t\ttime.Sleep(50 * time.Millisecond)\n+\t\t})\n+\t}\n+}\n+\n func TestRest_UserInfo(t *testing.T) {\n \tts, _, teardown := startupT(t)\n \tdefer teardown()"
+    },
+    {
+      "sha": "badae23ed17e6f5bb953590b3fb4405986b5f6ff",
+      "filename": "backend/app/rest/api/rest_test.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/umputun/remark42/blob/6269c19881c8b496d7828841ab6b448c9a911309/backend%2Fapp%2Frest%2Fapi%2Frest_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/6269c19881c8b496d7828841ab6b448c9a911309/backend%2Fapp%2Frest%2Fapi%2Frest_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_test.go?ref=6269c19881c8b496d7828841ab6b448c9a911309",
+      "patch": "@@ -599,7 +599,7 @@ func post(t *testing.T, url, body string) (*http.Response, error) {\n \treturn client.Do(req)\n }\n \n-func addComment(t *testing.T, c store.Comment, ts *httptest.Server) string {\n+func addCommentGetCreatedTime(t *testing.T, c store.Comment, ts *httptest.Server) (id string, created time.Time) {\n \tb, err := json.Marshal(c)\n \trequire.NoError(t, err, \"can't marshal comment %+v\", c)\n \n@@ -619,7 +619,14 @@ func addComment(t *testing.T, c store.Comment, ts *httptest.Server) string {\n \terr = json.Unmarshal(b, &crResp)\n \trequire.NoError(t, err)\n \ttime.Sleep(time.Nanosecond * 10)\n-\treturn crResp[\"id\"].(string)\n+\tcreated, err = time.Parse(time.RFC3339, crResp[\"time\"].(string))\n+\trequire.NoError(t, err)\n+\treturn crResp[\"id\"].(string), created\n+}\n+\n+func addComment(t *testing.T, c store.Comment, ts *httptest.Server) string {\n+\tid, _ := addCommentGetCreatedTime(t, c, ts)\n+\treturn id\n }\n \n func requireAdminOnly(t *testing.T, req *http.Request) {"
+    }
+  ]
+}
