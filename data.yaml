@@ -1,10 +1,10 @@
 isso:
     stars: 4945
-    source: "https://github.com/posativ/isso"
-    homepage: "https://posativ.org/isso/"
+    source: "https://github.com/isso-comments/isso"
+    homepage: "https://isso-comments.de/"
     name: "Isso"
     demo:
-      - "https://posativ.org/isso/"
+      - "https://isso-comments.de/"
       - "https://lisakov.com/en/blog/acestream-ubuntu-16.04/"
       - "https://pantarei.xyz/posts/isso-with-social-network-integration/"
       - "https://vincent.bernat.im/en/blog/2018-more-privacy-blog"
@@ -22,21 +22,20 @@ isso:
     rate_limit: "yes"
     bad_words_list: "no"
     use_cookies: "yes"
-    avatar: "id-icon, [Gravatar](https://github.com/posativ/isso/blob/master/docs/docs/configuration/server.rst#general)
-        (optional)"
+    avatar: "id-icon"
     markdown_support: "yes"
-    nested_comments: "One level by default, see [PR](https://github.com/posativ/isso/pull/211)"
-    provided_hosting: "https://comment.sh"
+    nested_comments: "One level by default, see [PR](https://github.com/isso-comments/isso/pull/211)"
+    provided_hosting: "no"
     collapse_comments: "no"
-    sort: "no, see [issue](https://github.com/posativ/isso/issues/440) for discussion"
+    sort: "no, see [issue](https://github.com/isso-comments/isso/issues/440) for discussion"
     hide_long_threads: "yes"
     anonymous_comments: "yes"
-    social_network_login: "No, but see a [fork](https://github.com/posativ/isso/issues/240)
+    social_network_login: "No, but see a [fork](https://github.com/isso-comments/isso/issues/240)
         and its [demo](https://pantarei.xyz/posts/isso-with-social-network-integration/)"
     import_from_wordpress: "yes"
     import_from_disqus: "yes"
     english_documentation: "yes"
-    display_images: "[configurable](https://github.com/posativ/isso/blob/master/docs/docs/configuration/server.rst#markup)"
+    display_images: "configurable"
     edit: "within configurable time"
     vote: "yes, once"
     preview: "yes"
@@ -48,7 +47,7 @@ isso:
     license: "undefined"
     open_issues: 73
     last_committed: 2024‑01‑27
-    docker: "https://hub.docker.com/r/sheogorath/isso-docker/"
+    docker: "?"
     stars_dif: 8
     paging: "no"
 
