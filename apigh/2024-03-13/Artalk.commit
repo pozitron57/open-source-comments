@@ -1,0 +1,98 @@
+{
+  "sha": "e6381990be86a6d87a1755ef92987d7c5d09d5e3",
+  "node_id": "C_kwDOCQOkhNoAKGU2MzgxOTkwYmU4NmE2ZDg3YTE3NTVlZjkyOTg3ZDdjNWQwOWQ1ZTM",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-03-13T07:33:45Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-03-13T11:03:47Z"
+    },
+    "message": "feat(ci/build): add nightly build workflow",
+    "tree": {
+      "sha": "f2248510ff2db24bdefb8a48ad7ced441ac8c80a",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/f2248510ff2db24bdefb8a48ad7ced441ac8c80a"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/e6381990be86a6d87a1755ef92987d7c5d09d5e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZfGIEwAKCRDUbg8O6nwT\naqOvAQDvHrOEXqkYw6GQDQO8o/hf7c/e6YPRo7oRH+232Z9u6wD+MDeO1F5y1O3M\nEbFtyKT3JnH7RN2pM+4RYA7jApJ0PAM=\n=YVOi\n-----END PGP SIGNATURE-----",
+      "payload": "tree f2248510ff2db24bdefb8a48ad7ced441ac8c80a\nparent 8af713636cddf69d447d60a386099a078e107ef2\nauthor qwqcode <qwqcode@gmail.com> 1710315225 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1710327827 +0800\n\nfeat(ci/build): add nightly build workflow\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/e6381990be86a6d87a1755ef92987d7c5d09d5e3",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/e6381990be86a6d87a1755ef92987d7c5d09d5e3",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/e6381990be86a6d87a1755ef92987d7c5d09d5e3/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8af713636cddf69d447d60a386099a078e107ef2",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/8af713636cddf69d447d60a386099a078e107ef2",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/8af713636cddf69d447d60a386099a078e107ef2"
+    }
+  ],
+  "stats": {
+    "total": 195,
+    "additions": 195,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c544a400886115945aa03eb61051c45073532f64",
+      "filename": ".github/workflows/build-nightly.yml",
+      "status": "added",
+      "additions": 195,
+      "deletions": 0,
+      "changes": 195,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/e6381990be86a6d87a1755ef92987d7c5d09d5e3/.github%2Fworkflows%2Fbuild-nightly.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/e6381990be86a6d87a1755ef92987d7c5d09d5e3/.github%2Fworkflows%2Fbuild-nightly.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fbuild-nightly.yml?ref=e6381990be86a6d87a1755ef92987d7c5d09d5e3",
+      "patch": "@@ -0,0 +1,195 @@\n+name: Build Nightly\n+run-name: Build Nightly ${{ inputs.dry_run && '(🧪 Dry-Run)' || '' }}\n+\n+on:\n+  schedule:\n+    - cron: '0 3 * * *'\n+  workflow_dispatch:\n+    inputs:\n+      dry_run:\n+        description: 'Dry run'\n+        type: boolean\n+        default: true\n+      # platforms:\n+      #   description: 'Platforms'\n+      #   type: string\n+\n+env:\n+  DOCKER_IMG: artalk/artalk-go\n+  PLATFORMS: linux/amd64\n+  # comment the following line because it's not supported by `docker buildx --load` with multiple platforms\n+  #   https://github.com/concourse/oci-build-task/issues/85\n+  #   https://www.docker.com/blog/multi-platform-docker-builds/\n+  #   https://stackoverflow.com/questions/73515781/docker-exporting-image-for-multiple-architectures\n+  # PLATFORMS: ${{ github.event.inputs.platforms || 'linux/amd64,linux/arm64,linux/arm/v7' }}\n+\n+jobs:\n+  build:\n+    runs-on: ubuntu-latest\n+\n+    steps:\n+      - name: Checkout Code\n+        uses: actions/checkout@v4\n+        with:\n+          fetch-depth: 0\n+\n+      - name: Check should run\n+        if: github.event_name == 'schedule'\n+        run: |\n+          if [[ \"$(git log --since='24 hours ago' | wc -l)\" -eq 0 ]]; then\n+            echo \"Skipping automatic run\"\n+            exit 78\n+          fi\n+\n+      # https://github.com/docker/metadata-action\n+      - name: Gen docker meta\n+        id: meta\n+        uses: docker/metadata-action@v5\n+        with:\n+          images: |\n+            ${{ env.DOCKER_IMG }}\n+          tags: |\n+            type=raw,value=nightly\n+\n+      # https://github.com/docker/login-action\n+      - name: Login to DockerHub\n+        uses: docker/login-action@v3\n+        with:\n+          username: ${{ secrets.DOCKERHUB_USERNAME }}\n+          password: ${{ secrets.DOCKERHUB_TOKEN }}\n+\n+      # https://github.com/docker/setup-qemu-action\n+      - name: Setup QEMU\n+        uses: docker/setup-qemu-action@v3\n+        with:\n+          platforms: ${{ env.PLATFORMS }}\n+\n+      # https://github.com/docker/setup-buildx-action\n+      - name: Setup Docker Buildx\n+        uses: docker/setup-buildx-action@v3\n+\n+      - name: Setup pnpm\n+        uses: pnpm/action-setup@v3\n+        with:\n+          version: 8\n+\n+      - name: Setup node\n+        uses: actions/setup-node@v4\n+        with:\n+          node-version: 18.x\n+          registry-url: https://registry.npmjs.org/\n+          cache: 'pnpm'\n+\n+      # Build UI outside of Docker to speed up cross-platform builds\n+      - name: Build UI\n+        run: |\n+          make build-frontend\n+\n+      # https://github.com/docker/build-push-action\n+      - name: Build and Push\n+        id: build\n+        uses: docker/build-push-action@v5\n+        with:\n+          push: ${{ !inputs.dry_run }}\n+          context: .\n+          file: ./Dockerfile\n+          build-args: |\n+            SKIP_UI_BUILD=true\n+          platforms: ${{ env.PLATFORMS }}\n+          tags: ${{ steps.meta.outputs.tags }}\n+          labels: ${{ steps.meta.outputs.labels }}\n+          load: true # automatically load the single-platform build result to `docker images`\n+\n+      - name: Print image digest\n+        run: echo ${{ steps.build.outputs.digest }}\n+\n+      # Export docker image\n+      - name: Export Docker Image\n+        id: docker_image\n+        run: |\n+          FILENAME=\"docker_image_nigthly_$(date +'%Y%m%d')_linux_amd64.tar\"\n+          docker save -o $FILENAME ${{ env.DOCKER_IMG }}\n+          echo \"filename=$FILENAME\" >> $GITHUB_OUTPUT\n+\n+      - name: Upload Docker Image\n+        uses: actions/upload-artifact@v4\n+        with:\n+          name: \"${{ steps.docker_image.outputs.filename }}\"\n+          path: \"${{ steps.docker_image.outputs.filename }}\"\n+\n+      # Generate CHANGELOG\n+      - name: Generate Changelog\n+        run: |\n+          # install git-chglog\n+          curl -sL $(curl -s https://api.github.com/repos/git-chglog/git-chglog/releases/latest \\\n+              | grep -oP '\"https://.+linux_amd64.tar.gz\"' | tr -d \\\") | tar -C /usr/local/bin -xz git-chglog\n+\n+          changelog=$(git-chglog --config .github/chglog/config.yml --next-tag nightly nightly)\n+          echo -e \"${changelog}\\n\" | cat - CHANGELOG.md > temp && mv temp CHANGELOG.md\n+\n+      - name: Upload Changelog\n+        uses: actions/upload-artifact@v4\n+        with:\n+          name: CHANGELOG.md\n+          path: CHANGELOG.md\n+          compression-level: 0\n+\n+      # Frontend\n+      - name: Pack frontend\n+        id: pack_frontend\n+        run: |\n+          FILENAME=\"frontend_nigthly_$(date +'%Y%m%d').tar.gz\"\n+          PKG_FILE=$(pnpm pack -C ui/artalk --pack-destination ../.. | tail -n 1)\n+          mv $PKG_FILE $FILENAME\n+          echo \"filename=$FILENAME\" >> $GITHUB_OUTPUT\n+\n+      - name: Upload frontend\n+        uses: actions/upload-artifact@v4\n+        with:\n+          name: \"${{ steps.pack_frontend.outputs.filename }}\"\n+          path: \"${{ steps.pack_frontend.outputs.filename }}\"\n+          compression-level: 0\n+\n+      # App\n+      - name: Pack app\n+        id: pack_app\n+        run: |\n+          DEST=\"artalk_nigthly_$(date +'%Y%m%d')_linux_amd64\"\n+          FILENAME=\"$DEST.tar.gz\"\n+          mkdir -p $DEST\n+\n+          # bin file\n+          docker run --rm --entrypoint cat ${{ env.DOCKER_IMG }} /artalk > \"$DEST/artalk\"\n+          chmod +x \"$DEST/artalk\"\n+\n+          # doc file\n+          cp conf/artalk.example.yml \"$DEST/artalk.yml\"\n+          cp README.md LICENSE CHANGELOG.md \"$DEST\"\n+\n+          tar -czf $FILENAME $DEST\n+          echo \"filename=$FILENAME\" >> $GITHUB_OUTPUT\n+\n+      - name: Upload App\n+        uses: actions/upload-artifact@v4\n+        with:\n+          name: \"${{ steps.pack_app.outputs.filename }}\"\n+          path: \"${{ steps.pack_app.outputs.filename }}\"\n+          compression-level: 0\n+\n+      # checksums.txt\n+      - name: Calculate checksums.txt\n+        env:\n+          DIST_FILES: |\n+            ${{ steps.docker_image.outputs.filename }}\n+            ${{ steps.pack_app.outputs.filename }}\n+            ${{ steps.pack_frontend.outputs.filename }}\n+            CHANGELOG.md\n+        run: |\n+          sha256sum $DIST_FILES > checksums.txt\n+\n+      - name: Upload checksums.txt\n+        uses: actions/upload-artifact@v4\n+        with:\n+          name: checksums.txt\n+          path: checksums.txt\n+          compression-level: 0"
+    }
+  ]
+}
