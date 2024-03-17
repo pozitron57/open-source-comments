@@ -1,0 +1,170 @@
+{
+  "sha": "e5743185b0bd863edb2972d112513de7c4d8ff33",
+  "node_id": "C_kwDOBtgov9oAKGU1NzQzMTg1YjBiZDg2M2VkYjI5NzJkMTEyNTEzZGU3YzRkOGZmMzM",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2023-10-18T00:50:01Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-03-16T17:49:45Z"
+    },
+    "message": "collect /find Info for tree and plain types consistently\n\nMakeTree calculated Info locally for historical reasons,\nand the results were consistent with the dataService.Info call\nbut calculated differently.\n\nThat change fixes that, ensuring that Info is requested\nin the same manner.",
+    "tree": {
+      "sha": "ef00c4a9767cae9ce33a0309d1246f7fd7415142",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/ef00c4a9767cae9ce33a0309d1246f7fd7415142"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/e5743185b0bd863edb2972d112513de7c4d8ff33",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/e5743185b0bd863edb2972d112513de7c4d8ff33",
+  "html_url": "https://github.com/umputun/remark42/commit/e5743185b0bd863edb2972d112513de7c4d8ff33",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/e5743185b0bd863edb2972d112513de7c4d8ff33/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1510aec17c5f8874999b44273ceef0a5f5f5d149",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/1510aec17c5f8874999b44273ceef0a5f5f5d149",
+      "html_url": "https://github.com/umputun/remark42/commit/1510aec17c5f8874999b44273ceef0a5f5f5d149"
+    }
+  ],
+  "stats": {
+    "total": 156,
+    "additions": 63,
+    "deletions": 93
+  },
+  "files": [
+    {
+      "sha": "dab091e3cfbdea7661b5c52b433f1f0908585802",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest.go?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -98,6 +98,11 @@ type commentsWithInfo struct {\n \tInfo     store.PostInfo  `json:\"info,omitempty\"`\n }\n \n+type treeWithInfo struct {\n+\t*service.Tree\n+\tInfo store.PostInfo `json:\"info,omitempty\"`\n+}\n+\n // Run the lister and request's router, activate rest server\n func (s *Rest) Run(address string, port int) {\n \tif address == \"*\" {"
+    },
+    {
+      "sha": "bb7023a97ce09cd2fe4299938fb3b9417a21d510",
+      "filename": "backend/app/rest/api/rest_public.go",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 23,
+      "changes": 48,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Frest%2Fapi%2Frest_public.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Frest%2Fapi%2Frest_public.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_public.go?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -79,34 +79,36 @@ func (s *public) findCommentsCtrl(w http.ResponseWriter, r *http.Request) {\n \t\t\tcomments = []store.Comment{} // error should clear comments and continue for post info\n \t\t}\n \t\tcomments = s.applyView(comments, view)\n+\n+\t\tvar commentsInfo store.PostInfo\n+\t\tif info, ee := s.dataService.Info(locator, s.readOnlyAge); ee == nil {\n+\t\t\tcommentsInfo = info\n+\t\t}\n+\n+\t\tif !since.IsZero() { // if since is set, number of comments can be different from total in the DB\n+\t\t\tcommentsInfo.Count = 0\n+\t\t\tfor _, c := range comments {\n+\t\t\t\tif !c.Deleted {\n+\t\t\t\t\tcommentsInfo.Count++\n+\t\t\t\t}\n+\t\t\t}\n+\t\t}\n+\n+\t\t// post might be readonly without any comments, Info call will fail then and ReadOnly flag should be checked separately\n+\t\tif !commentsInfo.ReadOnly && locator.URL != \"\" && s.dataService.IsReadOnly(locator) {\n+\t\t\tcommentsInfo.ReadOnly = true\n+\t\t}\n+\n \t\tvar b []byte\n \t\tswitch format {\n \t\tcase \"tree\":\n-\t\t\ttree := service.MakeTree(comments, sort, s.readOnlyAge)\n-\t\t\tif tree.Nodes == nil { // eliminate json nil serialization\n-\t\t\t\ttree.Nodes = []*service.Node{}\n-\t\t\t}\n-\t\t\tif s.dataService.IsReadOnly(locator) {\n-\t\t\t\ttree.Info.ReadOnly = true\n+\t\t\twithInfo := treeWithInfo{Tree: service.MakeTree(comments, sort), Info: commentsInfo}\n+\t\t\tif withInfo.Nodes == nil { // eliminate json nil serialization\n+\t\t\t\twithInfo.Nodes = []*service.Node{}\n \t\t\t}\n-\t\t\tb, e = encodeJSONWithHTML(tree)\n+\t\t\tb, e = encodeJSONWithHTML(withInfo)\n \t\tdefault:\n-\t\t\twithInfo := commentsWithInfo{Comments: comments}\n-\t\t\tif info, ee := s.dataService.Info(locator, s.readOnlyAge); ee == nil {\n-\t\t\t\twithInfo.Info = info\n-\t\t\t}\n-\t\t\tif !since.IsZero() { // if since is set, number of comments can be different from total in the DB\n-\t\t\t\twithInfo.Info.Count = 0\n-\t\t\t\tfor _, c := range comments {\n-\t\t\t\t\tif !c.Deleted {\n-\t\t\t\t\t\twithInfo.Info.Count++\n-\t\t\t\t\t}\n-\t\t\t\t}\n-\t\t\t}\n-\t\t\t// post might be readonly without any comments, Info call will fail then and ReadOnly flag should be checked separately\n-\t\t\tif !withInfo.Info.ReadOnly && locator.URL != \"\" && s.dataService.IsReadOnly(locator) {\n-\t\t\t\twithInfo.Info.ReadOnly = true\n-\t\t\t}\n+\t\t\twithInfo := commentsWithInfo{Comments: comments, Info: commentsInfo}\n \t\t\tb, e = encodeJSONWithHTML(withInfo)\n \t\t}\n \t\treturn b, e"
+    },
+    {
+      "sha": "8e05e43ec7e5e9bb5edc5d19feb4b37974a2a44c",
+      "filename": "backend/app/rest/api/rest_public_test.go",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_public_test.go?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -229,7 +229,7 @@ func TestRest_Find(t *testing.T) {\n \tassert.Equal(t, id2, comments.Comments[0].ID)\n \n \t// get in tree mode\n-\ttree := service.Tree{}\n+\ttree := treeWithInfo{}\n \tres, code = get(t, ts.URL+\"/api/v1/find?site=remark42&url=https://radio-t.com/blah1&format=tree\")\n \tassert.Equal(t, http.StatusOK, code)\n \terr = json.Unmarshal([]byte(res), &tree)\n@@ -255,7 +255,7 @@ func TestRest_FindAge(t *testing.T) {\n \t_, err = srv.DataService.Create(c2)\n \trequire.NoError(t, err)\n \n-\ttree := service.Tree{}\n+\ttree := treeWithInfo{}\n \n \tres, code := get(t, ts.URL+\"/api/v1/find?site=remark42&url=https://radio-t.com/blah1&format=tree\")\n \tassert.Equal(t, http.StatusOK, code)\n@@ -298,15 +298,15 @@ func TestRest_FindReadOnly(t *testing.T) {\n \trequire.NoError(t, err)\n \trequire.NoError(t, resp.Body.Close())\n \n-\ttree := service.Tree{}\n+\ttree := treeWithInfo{}\n \tres, code := get(t, ts.URL+\"/api/v1/find?site=remark42&url=https://radio-t.com/blah1&format=tree\")\n \tassert.Equal(t, http.StatusOK, code)\n \terr = json.Unmarshal([]byte(res), &tree)\n \trequire.NoError(t, err)\n \tassert.Equal(t, \"https://radio-t.com/blah1\", tree.Info.URL)\n \tassert.True(t, tree.Info.ReadOnly, \"post is ro\")\n \n-\ttree = service.Tree{}\n+\ttree = treeWithInfo{}\n \tres, code = get(t, ts.URL+\"/api/v1/find?site=remark42&url=https://radio-t.com/blah2&format=tree\")\n \tassert.Equal(t, http.StatusOK, code)\n \terr = json.Unmarshal([]byte(res), &tree)\n@@ -658,11 +658,11 @@ func TestPublic_FindCommentsCtrl_ConsistentCount(t *testing.T) {\n \t\t{\"url=test-url&since=\" + sinceTS[1], fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":5,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n \t\t{\"since=\" + sinceTS[4], fmt.Sprintf(`\"info\":{\"count\":3,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[8])},\n \t\t{\"url=test-url&since=\" + sinceTS[4], fmt.Sprintf(`\"info\":{\"url\":\"test-url\",\"count\":2,\"first_time\":%q,\"last_time\":%q}`, formattedTS[0], formattedTS[7])},\n-\t\t{\"format=tree\", `\"info\":{\"url\":\"test-url\",\"count\":7`},\n+\t\t{\"format=tree\", `\"info\":{\"count\":7`},\n \t\t{\"format=tree&url=test-url\", `\"info\":{\"url\":\"test-url\",\"count\":6`},\n-\t\t{\"format=tree&sort=+time\", `\"info\":{\"url\":\"test-url\",\"count\":7`},\n+\t\t{\"format=tree&sort=+time\", `\"info\":{\"count\":7`},\n \t\t{\"format=tree&url=test-url&sort=+time\", `\"info\":{\"url\":\"test-url\",\"count\":6`},\n-\t\t{\"format=tree&sort=-score\", `\"info\":{\"url\":\"test-url\",\"count\":7`},\n+\t\t{\"format=tree&sort=-score\", `\"info\":{\"count\":7`},\n \t\t{\"format=tree&url=test-url&sort=-score\", `\"info\":{\"url\":\"test-url\",\"count\":6`},\n \t\t{\"sort=+time\", fmt.Sprintf(`\"score\":-25,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[8])},\n \t\t{\"sort=-time\", fmt.Sprintf(`\"score\":1,\"vote\":0,\"time\":%q}],\"info\":{\"count\":7`, formattedTS[0])},"
+    },
+    {
+      "sha": "911cf1a52d291da32ec2b68c45ab550a60d3c991",
+      "filename": "backend/app/store/service/testdata/tree.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 8,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftestdata%2Ftree.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftestdata%2Ftree.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Ftestdata%2Ftree.json?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -242,11 +242,5 @@\n                   \"time\": \"2017-12-25T19:47:22Z\"\n               }\n           }\n-      ],\n-      \"info\": {\n-          \"url\": \"url\",\n-          \"count\": 12,\n-          \"first_time\": \"2017-12-25T19:46:01Z\",\n-          \"last_time\": \"2017-12-25T19:47:22Z\"\n-      }\n-  }\n\\ No newline at end of file\n+      ]\n+  }"
+    },
+    {
+      "sha": "b464286f7751e0bf3f2f4d466f3229cece8cd1fa",
+      "filename": "backend/app/store/service/testdata/tree_del.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 8,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftestdata%2Ftree_del.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftestdata%2Ftree_del.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Ftestdata%2Ftree_del.json?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -176,11 +176,5 @@\n                  }\n              }]\n          }]\n-     }],\n-     \"info\": {\n-         \"url\": \"url\",\n-         \"count\": 8,\n-         \"first_time\": \"2017-12-25T19:46:01Z\",\n-         \"last_time\": \"2017-12-25T19:47:05Z\"\n-     }\n- }\n\\ No newline at end of file\n+     }]\n+ }"
+    },
+    {
+      "sha": "d6ffdc7649dc3ec8445bfd8cd5452be98d0d0a2c",
+      "filename": "backend/app/store/service/tree.go",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 29,
+      "changes": 37,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftree.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftree.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Ftree.go?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -10,8 +10,7 @@ import (\n \n // Tree is formatter making tree from the list of comments\n type Tree struct {\n-\tNodes []*Node        `json:\"comments\"`\n-\tInfo  store.PostInfo `json:\"info,omitempty\"`\n+\tNodes []*Node `json:\"comments\"`\n }\n \n // Node is a comment with optional replies\n@@ -30,22 +29,12 @@ type recurData struct {\n }\n \n // MakeTree gets unsorted list of comments and produces Tree\n-// It will make store.PostInfo by itself and will mark Info.ReadOnly based on passed readOnlyAge\n-// Tree maker is local and has no access to the data store. By this reason it has to make Info and won't be able\n-// to handle store's read-only status. This status should be set by caller.\n-func MakeTree(comments []store.Comment, sortType string, readOnlyAge int) *Tree {\n+func MakeTree(comments []store.Comment, sortType string) *Tree {\n \tif len(comments) == 0 {\n \t\treturn &Tree{}\n \t}\n \n-\tres := Tree{\n-\t\tInfo: store.PostInfo{\n-\t\t\tURL:     comments[0].Locator.URL,\n-\t\t\tFirstTS: comments[0].Timestamp,\n-\t\t\tLastTS:  comments[0].Timestamp,\n-\t\t},\n-\t}\n-\tres.Info.Count = len(res.filter(comments, func(c store.Comment) bool { return !c.Deleted }))\n+\tres := Tree{}\n \n \ttopComments := res.filter(comments, func(c store.Comment) bool { return c.ParentID == \"\" })\n \n@@ -54,23 +43,12 @@ func MakeTree(comments []store.Comment, sortType string, readOnlyAge int) *Tree\n \t\tnode := Node{Comment: rootComment}\n \n \t\trd := recurData{}\n-\t\tcommentsTree, tsModified, tsCreated := res.proc(comments, &node, &rd, rootComment.ID)\n-\t\t// skip deleted with no sub-comments ar all sub-comments deleted\n+\t\tcommentsTree := res.proc(comments, &node, &rd, rootComment.ID)\n+\t\t// skip deleted with no sub-comments and all sub-comments deleted\n \t\tif rootComment.Deleted && (len(commentsTree.Replies) == 0 || !rd.visible) {\n \t\t\tcontinue\n \t\t}\n \n-\t\tcommentsTree.tsModified, commentsTree.tsCreated = tsModified, tsCreated\n-\t\tif commentsTree.tsCreated.Before(res.Info.FirstTS) {\n-\t\t\tres.Info.FirstTS = commentsTree.tsCreated\n-\t\t}\n-\t\tif commentsTree.tsModified.After(res.Info.LastTS) {\n-\t\t\tres.Info.LastTS = commentsTree.tsModified\n-\t\t}\n-\n-\t\tres.Info.ReadOnly = readOnlyAge > 0 && !res.Info.FirstTS.IsZero() &&\n-\t\t\tres.Info.FirstTS.AddDate(0, 0, readOnlyAge).Before(time.Now())\n-\n \t\tres.Nodes = append(res.Nodes, commentsTree)\n \t}\n \n@@ -79,7 +57,7 @@ func MakeTree(comments []store.Comment, sortType string, readOnlyAge int) *Tree\n }\n \n // proc makes tree for one top-level comment recursively\n-func (t *Tree) proc(comments []store.Comment, node *Node, rd *recurData, parentID string) (result *Node, modified, created time.Time) {\n+func (t *Tree) proc(comments []store.Comment, node *Node, rd *recurData, parentID string) (result *Node) {\n \tif rd.tsModified.IsZero() || rd.tsCreated.IsZero() {\n \t\trd.tsModified, rd.tsCreated = node.Comment.Timestamp, node.Comment.Timestamp\n \t}\n@@ -106,7 +84,8 @@ func (t *Tree) proc(comments []store.Comment, node *Node, rd *recurData, parentI\n \tsort.Slice(node.Replies, func(i, j int) bool {\n \t\treturn node.Replies[i].Comment.Timestamp.Before(node.Replies[j].Comment.Timestamp)\n \t})\n-\treturn node, rd.tsModified, rd.tsCreated\n+\tnode.tsModified, node.tsCreated = rd.tsModified, rd.tsCreated\n+\treturn node\n }\n \n // filter returns comments for parentID"
+    },
+    {
+      "sha": "c7e90fc751c7926831f136150b766fd262a15200",
+      "filename": "backend/app/store/service/tree_test.go",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 18,
+      "changes": 32,
+      "blob_url": "https://github.com/umputun/remark42/blob/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftree_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e5743185b0bd863edb2972d112513de7c4d8ff33/backend%2Fapp%2Fstore%2Fservice%2Ftree_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fservice%2Ftree_test.go?ref=e5743185b0bd863edb2972d112513de7c4d8ff33",
+      "patch": "@@ -37,19 +37,15 @@ func TestMakeTree(t *testing.T) {\n \t\t{Locator: loc, ID: \"611\", ParentID: \"61\", Deleted: true},\n \t}\n \n-\tres := MakeTree(comments, \"time\", 0)\n+\tres := MakeTree(comments, \"time\")\n \tresJSON, err := json.Marshal(&res)\n \trequire.NoError(t, err)\n \n \texpJSON := mustLoadJSONFile(t, \"testdata/tree.json\")\n \tassert.Equal(t, expJSON, resJSON)\n-\tassert.Equal(t, store.PostInfo{URL: \"url\", Count: 12, FirstTS: ts(46, 1), LastTS: ts(47, 22)}, res.Info)\n \n-\tres = MakeTree([]store.Comment{}, \"time\", 0)\n+\tres = MakeTree([]store.Comment{}, \"time\")\n \tassert.Equal(t, &Tree{}, res)\n-\n-\tres = MakeTree(comments, \"time\", 10)\n-\tassert.Equal(t, store.PostInfo{URL: \"url\", Count: 12, FirstTS: ts(46, 1), LastTS: ts(47, 22), ReadOnly: true}, res.Info)\n }\n \n func TestMakeEmptySubtree(t *testing.T) {\n@@ -79,7 +75,7 @@ func TestMakeEmptySubtree(t *testing.T) {\n \t\t{Locator: loc, ID: \"3\", Timestamp: ts(48, 1), Deleted: true}, // deleted top level\n \t}\n \n-\tres := MakeTree(comments, \"time\", 0)\n+\tres := MakeTree(comments, \"time\")\n \tresJSON, err := json.Marshal(&res)\n \trequire.NoError(t, err)\n \tt.Log(string(resJSON))\n@@ -108,50 +104,50 @@ func TestTreeSortNodes(t *testing.T) {\n \t\t{ID: \"5\", Deleted: true, Timestamp: time.Date(2017, 12, 25, 19, 47, 22, 150, time.UTC)},\n \t}\n \n-\tres := MakeTree(comments, \"+active\", 0)\n+\tres := MakeTree(comments, \"+active\")\n \tassert.Equal(t, \"2\", res.Nodes[0].Comment.ID)\n \tt.Log(res.Nodes[0].Comment.ID, res.Nodes[0].tsModified)\n \n-\tres = MakeTree(comments, \"-active\", 0)\n+\tres = MakeTree(comments, \"-active\")\n \tt.Log(res.Nodes[0].Comment.ID, res.Nodes[0].tsModified)\n \tassert.Equal(t, \"1\", res.Nodes[0].Comment.ID)\n \n-\tres = MakeTree(comments, \"+time\", 0)\n+\tres = MakeTree(comments, \"+time\")\n \tt.Log(res.Nodes[0].Comment.ID, res.Nodes[0].tsModified)\n \tassert.Equal(t, \"1\", res.Nodes[0].Comment.ID)\n \n-\tres = MakeTree(comments, \"-time\", 0)\n+\tres = MakeTree(comments, \"-time\")\n \tassert.Equal(t, \"6\", res.Nodes[0].Comment.ID)\n \n-\tres = MakeTree(comments, \"score\", 0)\n+\tres = MakeTree(comments, \"score\")\n \tassert.Equal(t, \"4\", res.Nodes[0].Comment.ID)\n \tassert.Equal(t, \"3\", res.Nodes[1].Comment.ID)\n \tassert.Equal(t, \"6\", res.Nodes[2].Comment.ID)\n \tassert.Equal(t, \"1\", res.Nodes[3].Comment.ID)\n \n-\tres = MakeTree(comments, \"+score\", 0)\n+\tres = MakeTree(comments, \"+score\")\n \tassert.Equal(t, \"4\", res.Nodes[0].Comment.ID)\n \n-\tres = MakeTree(comments, \"-score\", 0)\n+\tres = MakeTree(comments, \"-score\")\n \tassert.Equal(t, \"2\", res.Nodes[0].Comment.ID)\n \tassert.Equal(t, \"1\", res.Nodes[1].Comment.ID)\n \tassert.Equal(t, \"3\", res.Nodes[2].Comment.ID)\n \tassert.Equal(t, \"6\", res.Nodes[3].Comment.ID)\n \n-\tres = MakeTree(comments, \"+controversy\", 0)\n+\tres = MakeTree(comments, \"+controversy\")\n \tassert.Equal(t, \"3\", res.Nodes[0].Comment.ID)\n \tassert.Equal(t, \"6\", res.Nodes[1].Comment.ID)\n \tassert.Equal(t, \"2\", res.Nodes[2].Comment.ID)\n \tassert.Equal(t, \"4\", res.Nodes[3].Comment.ID)\n \tassert.Equal(t, \"1\", res.Nodes[4].Comment.ID)\n \n-\tres = MakeTree(comments, \"-controversy\", 0)\n+\tres = MakeTree(comments, \"-controversy\")\n \tassert.Equal(t, \"1\", res.Nodes[0].Comment.ID)\n \tassert.Equal(t, \"4\", res.Nodes[1].Comment.ID)\n \tassert.Equal(t, \"2\", res.Nodes[2].Comment.ID)\n \tassert.Equal(t, \"3\", res.Nodes[3].Comment.ID)\n \n-\tres = MakeTree(comments, \"undefined\", 0)\n+\tres = MakeTree(comments, \"undefined\")\n \tt.Log(res.Nodes[0].Comment.ID, res.Nodes[0].tsModified)\n \tassert.Equal(t, \"1\", res.Nodes[0].Comment.ID)\n }\n@@ -164,7 +160,7 @@ func BenchmarkTree(b *testing.B) {\n \tassert.NoError(b, err)\n \n \tfor i := 0; i < b.N; i++ {\n-\t\tres := MakeTree(comments, \"time\", 0)\n+\t\tres := MakeTree(comments, \"time\")\n \t\tassert.NotNil(b, res)\n \t}\n }"
+    }
+  ]
+}
