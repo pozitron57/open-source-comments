@@ -1,0 +1,98 @@
+{
+  "sha": "e0423b8683d7d5a1f6817af22193fb3f9ba9348d",
+  "node_id": "C_kwDOBtgov9oAKGUwNDIzYjg2ODNkN2Q1YTFmNjgxN2FmMjIxOTNmYjNmOWJhOTM0OGQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-03-22T09:12:25Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-03-22T09:16:29Z"
+    },
+    "message": "fix type for value for refresh token cache\n\nIt was set to string by mistake, proper type is token.Claims.",
+    "tree": {
+      "sha": "f15837826258c6a02b7e0b7e7a007ba66fd01798",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/f15837826258c6a02b7e0b7e7a007ba66fd01798"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/e0423b8683d7d5a1f6817af22193fb3f9ba9348d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/e0423b8683d7d5a1f6817af22193fb3f9ba9348d",
+  "html_url": "https://github.com/umputun/remark42/commit/e0423b8683d7d5a1f6817af22193fb3f9ba9348d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/e0423b8683d7d5a1f6817af22193fb3f9ba9348d/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "5a781693aa02c4ead6f7102059f3e40cc7ecbbdf",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/5a781693aa02c4ead6f7102059f3e40cc7ecbbdf",
+      "html_url": "https://github.com/umputun/remark42/commit/5a781693aa02c4ead6f7102059f3e40cc7ecbbdf"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "d166774245fa91daa06dae0463f1cdd58f6ce77f",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/e0423b8683d7d5a1f6817af22193fb3f9ba9348d/backend%2Fapp%2Fcmd%2Fserver.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/e0423b8683d7d5a1f6817af22193fb3f9ba9348d/backend%2Fapp%2Fcmd%2Fserver.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fserver.go?ref=e0423b8683d7d5a1f6817af22193fb3f9ba9348d",
+      "patch": "@@ -1327,11 +1327,11 @@ func splitAtCommas(s string) []string {\n \n // authRefreshCache used by authenticator to minimize repeatable token refreshes\n type authRefreshCache struct {\n-\tcache.LoadingCache[string]\n+\tcache.LoadingCache[token.Claims]\n }\n \n func newAuthRefreshCache() *authRefreshCache {\n-\to := cache.NewOpts[string]()\n+\to := cache.NewOpts[token.Claims]()\n \texpirableCache, _ := cache.NewExpirableCache(o.TTL(5 * time.Minute))\n \treturn &authRefreshCache{LoadingCache: expirableCache}\n }\n@@ -1343,5 +1343,5 @@ func (c *authRefreshCache) Get(key interface{}) (interface{}, bool) {\n \n // Set implements cache setter with key converted to string\n func (c *authRefreshCache) Set(key, value interface{}) {\n-\t_, _ = c.LoadingCache.Get(key.(string), func() (string, error) { return value.(string), nil })\n+\t_, _ = c.LoadingCache.Get(key.(string), func() (token.Claims, error) { return value.(token.Claims), nil })\n }"
+    }
+  ]
+}
