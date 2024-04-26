@@ -1,0 +1,110 @@
+{
+  "sha": "ee131fe6efbff38eb054beba7b9feabc751d7960",
+  "node_id": "C_kwDOCQOkhNoAKGVlMTMxZmU2ZWZiZmYzOGViMDU0YmViYTdiOWZlYWJjNzUxZDc5NjA",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-04-26T08:42:35Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-04-26T08:42:35Z"
+    },
+    "message": "fix(comments_get): include `site_name` for isolation in associated query for comment's page",
+    "tree": {
+      "sha": "d7850223c8dc33652dd3f40bf99f524d12cbf4d7",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/d7850223c8dc33652dd3f40bf99f524d12cbf4d7"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/ee131fe6efbff38eb054beba7b9feabc751d7960",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZito+wAKCRDUbg8O6nwT\nasASAQCa7yI6bJVc3AxuxEl0ehxhatiRzx84YlAR/bBrz+sfWwEAoSAjyCcHobvF\nnOkXQBUeMvKZyoEBw8nrIDxsSyHuDQs=\n=bUHo\n-----END PGP SIGNATURE-----",
+      "payload": "tree d7850223c8dc33652dd3f40bf99f524d12cbf4d7\nparent 43e4c901b81473518145530cf682871fb8abf74b\nauthor qwqcode <qwqcode@gmail.com> 1714120955 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1714120955 +0800\n\nfix(comments_get): include `site_name` for isolation in associated query for comment's page\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/ee131fe6efbff38eb054beba7b9feabc751d7960",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/ee131fe6efbff38eb054beba7b9feabc751d7960",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/ee131fe6efbff38eb054beba7b9feabc751d7960/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "43e4c901b81473518145530cf682871fb8abf74b",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/43e4c901b81473518145530cf682871fb8abf74b",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/43e4c901b81473518145530cf682871fb8abf74b"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 9,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "41a53b27f594e8ea5cfceed7922653cc6fc1d03d",
+      "filename": "internal/entity/comment.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/ee131fe6efbff38eb054beba7b9feabc751d7960/internal%2Fentity%2Fcomment.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/ee131fe6efbff38eb054beba7b9feabc751d7960/internal%2Fentity%2Fcomment.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fentity%2Fcomment.go?ref=ee131fe6efbff38eb054beba7b9feabc751d7960",
+      "patch": "@@ -26,9 +26,15 @@ type Comment struct {\n \tVoteUp   int\n \tVoteDown int\n \n-\tRootID uint  `gorm:\"index\"` // Root Node ID (can be derived from `Rid`)\n-\tPage   *Page `gorm:\"foreignKey:page_key;references:key\"`\n-\tUser   *User `gorm:\"foreignKey:user_id;references:id\"`\n+\tRootID uint `gorm:\"index\"` // Root Node ID (can be derived from `Rid`)\n+\n+\t// Associated Page\n+\t//\n+\t// Use Composite Foreign Keys for multiple-site support.\n+\tPage *Page `gorm:\"foreignKey:page_key,site_name;references:key,site_name\"`\n+\n+\t// Associated User\n+\tUser *User `gorm:\"foreignKey:user_id;references:id\"`\n }\n \n func (c Comment) IsEmpty() bool {"
+    },
+    {
+      "sha": "073b982e21fc7d22a7120c9c3ebe70e7203aed9e",
+      "filename": "internal/entity/page.go",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/ee131fe6efbff38eb054beba7b9feabc751d7960/internal%2Fentity%2Fpage.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/ee131fe6efbff38eb054beba7b9feabc751d7960/internal%2Fentity%2Fpage.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fentity%2Fpage.go?ref=ee131fe6efbff38eb054beba7b9feabc751d7960",
+      "patch": "@@ -10,9 +10,6 @@ type Page struct {\n \t// TODO\n \t// For historical reasons, the naming of this field does not follow best practices.\n \t// Keywords should be avoided in naming, and \"key\" should be changed to a different name.\n-\t// Additionally, because the unique constraint was not initially set for this field,\n-\t// some older user databases may have duplicate \"pageKey\" entries due to various reasons.\n-\t// Therefore, adding a UNIQUE constraint DIRECTLY could cause issues.\n \tKey string `gorm:\"index;size:255\"` // Page key\n \n \tTitle     string"
+    }
+  ]
+}
