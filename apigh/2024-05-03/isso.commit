@@ -1,0 +1,127 @@
+{
+  "sha": "98333e78f31ac7f1a78602382e55e9741bbc5056",
+  "node_id": "C_kwDOAF-mA9oAKDk4MzMzZTc4ZjMxYWM3ZjFhNzg2MDIzODJlNTVlOTc0MWJiYzUwNTY",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2024-05-03T11:40:48Z"
+    },
+    "committer": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2024-05-03T11:40:48Z"
+    },
+    "message": "Merge pull request #1024 from ix5/flaky-tests\n\ndocker, ci: Make e2e tests less flaky",
+    "tree": {
+      "sha": "5ac816da0d933f05e55073c100fca7c27aa8d6a7",
+      "url": "https://api.github.com/repos/isso-comments/isso/git/trees/5ac816da0d933f05e55073c100fca7c27aa8d6a7"
+    },
+    "url": "https://api.github.com/repos/isso-comments/isso/git/commits/98333e78f31ac7f1a78602382e55e9741bbc5056",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/isso-comments/isso/commits/98333e78f31ac7f1a78602382e55e9741bbc5056",
+  "html_url": "https://github.com/isso-comments/isso/commit/98333e78f31ac7f1a78602382e55e9741bbc5056",
+  "comments_url": "https://api.github.com/repos/isso-comments/isso/commits/98333e78f31ac7f1a78602382e55e9741bbc5056/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "16dce5121025f76c48731c986dd53eb4c30df8f9",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/16dce5121025f76c48731c986dd53eb4c30df8f9",
+      "html_url": "https://github.com/isso-comments/isso/commit/16dce5121025f76c48731c986dd53eb4c30df8f9"
+    },
+    {
+      "sha": "5084314437c004ef6ab5500b145f00b6b9928b2c",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/5084314437c004ef6ab5500b145f00b6b9928b2c",
+      "html_url": "https://github.com/isso-comments/isso/commit/5084314437c004ef6ab5500b145f00b6b9928b2c"
+    }
+  ],
+  "stats": {
+    "total": 26,
+    "additions": 18,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "6f653735949d6e22d133169131a9ac9ba405eddb",
+      "filename": ".dockerignore",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/98333e78f31ac7f1a78602382e55e9741bbc5056/.dockerignore",
+      "raw_url": "https://github.com/isso-comments/isso/raw/98333e78f31ac7f1a78602382e55e9741bbc5056/.dockerignore",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/.dockerignore?ref=98333e78f31ac7f1a78602382e55e9741bbc5056",
+      "patch": "@@ -2,3 +2,5 @@\n # Docker will have its own cache of node packages and its own python venv\n node_modules/\n .venv/\n+# Prevent accidental inclusion:\n+comments.db"
+    },
+    {
+      "sha": "8576987f1851da39013edd04db0041894b91be15",
+      "filename": "docker-compose.yml",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 12,
+      "blob_url": "https://github.com/isso-comments/isso/blob/98333e78f31ac7f1a78602382e55e9741bbc5056/docker-compose.yml",
+      "raw_url": "https://github.com/isso-comments/isso/raw/98333e78f31ac7f1a78602382e55e9741bbc5056/docker-compose.yml",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/docker-compose.yml?ref=98333e78f31ac7f1a78602382e55e9741bbc5056",
+      "patch": "@@ -5,13 +5,17 @@ services:\n \n   # Isso server should always reflect production image\n   isso-server:\n-    image: isso\n+    image: isso:latest\n     container_name: isso-server\n     build:\n       context: .\n       dockerfile: Dockerfile\n-    # No need to set entrypoint, image already provides CMD\n-    #command: /isso/bin/isso -c /config/isso.cfg run\n+    # No need to set command/entrypoint, image already provides both\n+    # For reference:\n+    #command: /isso/bin/isso run  # standalone\n+    # Using both ENTRYPOINT and CMD:\n+    #entrypoint: /isso/bin/gunicorn -b 0.0.0.0:8080 -w 4 --preload --worker-tmp-dir /dev/shm\n+    #command: isso.run\n     environment:\n       ISSO_SETTINGS: \"/config/isso-dev.cfg\"\n       ISSO_ENDPOINT: \"http://isso-dev.local:8080\"\n@@ -37,7 +41,7 @@ services:\n         - isso-dev.local\n         - localhost\n     volumes:\n-      - ./db:/db/\n+      - ./db:/db/  # unused by default isso-dev.cfg\n       - type: bind\n         source: ./contrib/isso-dev.cfg\n         target: /config/isso-dev.cfg"
+    },
+    {
+      "sha": "5b55caa17ca6ff2e911144e9230aac95089692ee",
+      "filename": "isso/js/tests/integration/puppet.test.js",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 12,
+      "blob_url": "https://github.com/isso-comments/isso/blob/98333e78f31ac7f1a78602382e55e9741bbc5056/isso%2Fjs%2Ftests%2Fintegration%2Fpuppet.test.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/98333e78f31ac7f1a78602382e55e9741bbc5056/isso%2Fjs%2Ftests%2Fintegration%2Fpuppet.test.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fintegration%2Fpuppet.test.js?ref=98333e78f31ac7f1a78602382e55e9741bbc5056",
+      "patch": "@@ -118,7 +118,7 @@ test(\"should fill Postbox with valid data and receive 201 reply\", async () => {\n   ]);\n \n   const expected = {\n-    \"id\": expect.any(Number),\n+    \"id\": 1,\n     \"parent\": null,\n     \"created\": expect.any(Number),\n     \"modified\": null,\n@@ -204,8 +204,13 @@ test(\"should execute GET/PUT/POST/DELETE requests correctly\", async () => {\n     { waitUntil: 'load' }\n   );\n \n+  await expect(page).toMatchElement(\n+    '#isso-1 .isso-text',\n+    { text: 'A comment' },\n+  );\n+\n   // Relies on cookies from page.cookies, sent automatically\n-  let postData = {\n+  let putData = {\n     //id: 1,\n     text: 'New comment body',\n     author: 'Commenter #2',\n@@ -217,7 +222,7 @@ test(\"should execute GET/PUT/POST/DELETE requests correctly\", async () => {\n   let editHandler = request => {\n     let data = {\n       'method': 'PUT',\n-      'postData': JSON.stringify(postData),\n+      'postData': JSON.stringify(putData),\n       'headers': {\n         ...request.headers(),\n         'Content-Type': 'application/json',\n@@ -246,7 +251,6 @@ test(\"should execute GET/PUT/POST/DELETE requests correctly\", async () => {\n   let deleteHandler = request => {\n     let data = {\n       'method': 'DELETE',\n-      //'postData': JSON.stringify({id: 1}),\n       'headers': {\n         ...request.headers(),\n         'Content-Type': 'application/json',"
+    }
+  ]
+}
