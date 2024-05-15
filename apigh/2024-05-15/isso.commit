@@ -1,0 +1,211 @@
+{
+  "sha": "ca91601e95942629fa996e1ca64e01536b43631f",
+  "node_id": "C_kwDOAF-mA9oAKGNhOTE2MDFlOTU5NDI2MjlmYTk5NmUxY2E2NGUwMTUzNmI0MzYzMWY",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2024-05-06T20:30:07Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-05-06T20:30:07Z"
+    },
+    "message": "Merge pull request #1005 from pkvach/feat/add-sorting-for-comments\n\nAdd sorting option for comments",
+    "tree": {
+      "sha": "9e1c1975970a7553a9665773dfd87e3588b62f44",
+      "url": "https://api.github.com/repos/isso-comments/isso/git/trees/9e1c1975970a7553a9665773dfd87e3588b62f44"
+    },
+    "url": "https://api.github.com/repos/isso-comments/isso/git/commits/ca91601e95942629fa996e1ca64e01536b43631f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmOT3PCRC1aQ7uu5UhlAAAKM8QAGE8yzkUp9jQCSuU21XKzm8A\nXZxh9mANBaP6lNUGPS1viNy9wsnt4gUD19ToFu9Dupu/ZjMajtnS5XgVgh6UEybl\nfE0OfsLMdfVzcbE97IiaW/EwYcs9WrDTp3uPV3+GIAzPnu3WF44ogX55JgUsmH5/\ndsV4QlcJic/oZ7inZ7dJzXF0aAC2bp+jjbcfHLpbIbODu+dPi0EUhvPOmjgjiuuB\n/EfYbg6rtF83IfGEBvUvEGsHOH1dUT2n4oO7Y8/qHTqtnd8tNrL4GrcZJzxWYLr1\nbZDgd56PC64nl5vzNMXFduzX8ngdGcaG91zwDUCZ1WOnjgrQjxRDSW6DwCJxgx+Q\nclI9sooTrZ0NfzYSA01z/kxxmaLIcZGHKvC9shFTBagMGkxWhpTv0CuqOGZWgOHk\nbTDZyVoqEJn3XUlPHNeRkFKUbPdhfTP6feaVOqzqxx1AqD+LY3PjAoBWNvSjkwhi\nFdQN6xdWylsL6TgnK0vf7+o5DQkIGq3ARJM1MkEaIf8Ym12sdx1xLfkcpoT6k6YQ\nG+EvGKeCwVkhLpYlsioZvx8I854D/e2BYymopptj6Lrh88LOs/DRoLPwP8XvwWwY\nbhbsDznoENmxb+Q4F3OWsbk2iR4dC9CtlfFGiKoKGvYvD69oPJwzOmLzJxRif/kD\n3taQqz9oDAQRtzl4ef6R\n=22/i\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 9e1c1975970a7553a9665773dfd87e3588b62f44\nparent 4694f2152631092400b431916365f32726436268\nparent 00fc383ae80099baf2e4ef32f80df6f0a4499323\nauthor ix5 <ix5@users.noreply.github.com> 1715027407 +0200\ncommitter GitHub <noreply@github.com> 1715027407 +0200\n\nMerge pull request #1005 from pkvach/feat/add-sorting-for-comments\n\nAdd sorting option for comments"
+    }
+  },
+  "url": "https://api.github.com/repos/isso-comments/isso/commits/ca91601e95942629fa996e1ca64e01536b43631f",
+  "html_url": "https://github.com/isso-comments/isso/commit/ca91601e95942629fa996e1ca64e01536b43631f",
+  "comments_url": "https://api.github.com/repos/isso-comments/isso/commits/ca91601e95942629fa996e1ca64e01536b43631f/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4694f2152631092400b431916365f32726436268",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/4694f2152631092400b431916365f32726436268",
+      "html_url": "https://github.com/isso-comments/isso/commit/4694f2152631092400b431916365f32726436268"
+    },
+    {
+      "sha": "00fc383ae80099baf2e4ef32f80df6f0a4499323",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/00fc383ae80099baf2e4ef32f80df6f0a4499323",
+      "html_url": "https://github.com/isso-comments/isso/commit/00fc383ae80099baf2e4ef32f80df6f0a4499323"
+    }
+  ],
+  "stats": {
+    "total": 283,
+    "additions": 229,
+    "deletions": 54
+  },
+  "files": [
+    {
+      "sha": "f85a6470accf7ac3e8ca2fa091c3b30f1d03946e",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/CHANGES.rst",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/CHANGES.rst?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -12,12 +12,14 @@ New Features\n - Add search for comments by URL in the admin interface (`#1000`_, pkvach)\n - Add CSS variables for better organization and flexibility (`#1001`_, pkvach)\n - Add support for comment search by Thread URL in admin interface (`#1020`_, pkvach)\n+- Add sorting option for comments (`#1005`_, pkvach)\n \n .. _#966: https://github.com/posativ/isso/pull/966\n .. _#998: https://github.com/isso-comments/isso/pull/998\n .. _#1000: https://github.com/isso-comments/isso/pull/1000\n .. _#1001: https://github.com/isso-comments/isso/pull/1001\n .. _#1020: https://github.com/isso-comments/isso/pull/1020\n+.. _#1005: https://github.com/isso-comments/isso/pull/1005\n \n Breaking Changes\n ^^^^^^^^^^^^^^^^"
+    },
+    {
+      "sha": "b940adf7ac80bbf34ebd21c25c0410fffa9cf6be",
+      "filename": "docs/docs/reference/client-config.rst",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/docs%2Fdocs%2Freference%2Fclient-config.rst",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/docs%2Fdocs%2Freference%2Fclient-config.rst",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/docs%2Fdocs%2Freference%2Fclient-config.rst?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -13,6 +13,7 @@ preferably in the script tag which embeds the JS:\n             data-isso-max-comments-top=\"10\"\n             data-isso-max-comments-nested=\"5\"\n             data-isso-reveal-on-click=\"5\"\n+            data-isso-sorting=\"newest\"\n             data-isso-avatar=\"true\"\n             data-isso-avatar-bg=\"#f0f0f0\"\n             data-isso-avatar-fg=\"#9abf88 #5698c4 #e279a3 #9163b6 ...\"\n@@ -255,6 +256,21 @@ data-isso-reply-notifications-default-enabled\n     .. versionadded:: 0.13\n \n \n+.. _data-isso-sorting:\n+\n+data-isso-sorting\n+    Sort thread comments by specified sorting method.\n+\n+    Possible sorting methods:\n+\n+    - ``newest``: Bring newest comments to the top\n+    - ``oldest``: Bring oldest comments to the top\n+    - ``upvotes``: Bring most liked comments to the top\n+\n+    Default sorting is ``oldest``.\n+\n+    .. versionadded:: 0.13.1\n+\n Deprecated Client Settings\n --------------------------\n "
+    },
+    {
+      "sha": "48cbbfe69b7cea28d4ba51f2bec150734ff34c9a",
+      "filename": "isso/db/comments.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 8,
+      "changes": 19,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fdb%2Fcomments.py",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fdb%2Fcomments.py",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fdb%2Fcomments.py?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -238,11 +238,11 @@ def fetchall(self, mode=5, after=0, parent='any', order_by='id',\n             yield dict(zip(fields_comments + fields_threads, item))\n \n     def fetch(self, uri, mode=5, after=0, parent='any',\n-              order_by='id', asc=1, limit=None):\n+              order_by='id', asc=1, limit=None, offset=0):\n         \"\"\"\n         Return comments for :param:`uri` with :param:`mode`.\n         \"\"\"\n-        sql = ['SELECT comments.* FROM comments INNER JOIN threads ON',\n+        sql = ['SELECT comments.*, likes - dislikes AS karma FROM comments INNER JOIN threads ON',\n                '    threads.uri=? AND comments.tid=threads.id AND (? | comments.mode) = ?',\n                '    AND comments.created>?']\n \n@@ -256,14 +256,18 @@ def fetch(self, uri, mode=5, after=0, parent='any',\n                 sql_args.append(parent)\n \n         # custom sanitization\n-        if order_by not in ['id', 'created', 'modified', 'likes', 'dislikes']:\n+        if order_by not in ['id', 'created', 'modified', 'likes', 'dislikes', 'karma']:\n             order_by = 'id'\n         sql.append('ORDER BY ')\n         sql.append(order_by)\n         if not asc:\n             sql.append(' DESC')\n \n-        if limit:\n+        if offset and limit:\n+            sql.append('LIMIT ?,?')\n+            sql_args.append(offset)\n+            sql_args.append(limit)\n+        elif limit:\n             sql.append('LIMIT ?')\n             sql_args.append(limit)\n \n@@ -350,19 +354,18 @@ def vote(self, upvote, id, remote_addr):\n             return {'likes': likes + 1, 'dislikes': dislikes}\n         return {'likes': likes, 'dislikes': dislikes + 1}\n \n-    def reply_count(self, url, mode=5, after=0):\n+    def reply_count(self, url, mode=5):\n         \"\"\"\n         Return comment count for main thread and all reply threads for one url.\n         \"\"\"\n \n         sql = ['SELECT comments.parent,count(*)',\n                'FROM comments INNER JOIN threads ON',\n                '   threads.uri=? AND comments.tid=threads.id AND',\n-               '   (? | comments.mode = ?) AND',\n-               '   comments.created > ?',\n+               '   (? | comments.mode = ?)',\n                'GROUP BY comments.parent']\n \n-        return dict(self.db.execute(sql, [url, mode, mode, after]).fetchall())\n+        return dict(self.db.execute(sql, [url, mode, mode]).fetchall())\n \n     def count(self, *urls):\n         \"\"\""
+    },
+    {
+      "sha": "540b67125b79ea00ce459329543542620ba87b02",
+      "filename": "isso/js/app/api.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 8,
+      "changes": 12,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fapp%2Fapi.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fapp%2Fapi.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Fapp%2Fapi.js?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -138,17 +138,13 @@ var view = function(id, plain) {\n     return deferred.promise;\n };\n \n-var fetch = function(tid, limit, nested_limit, parent, lastcreated) {\n-    if (typeof(limit) === 'undefined') { limit = \"inf\"; }\n-    if (typeof(nested_limit) === 'undefined') { nested_limit = \"inf\"; }\n-    if (typeof(parent) === 'undefined') { parent = null; }\n+var fetch = function({ tid, limit = \"inf\", nested_limit = \"inf\", parent = null, sort = \"\", offset = 0 }) {\n+    var query_dict = { uri: tid || location(), sort, parent, offset };\n \n-    var query_dict = {uri: tid || location(), after: lastcreated, parent: parent};\n-\n-    if(limit !== \"inf\") {\n+    if (limit !== \"inf\") {\n         query_dict['limit'] = limit;\n     }\n-    if(nested_limit !== \"inf\"){\n+    if (nested_limit !== \"inf\") {\n         query_dict['nested_limit'] = nested_limit;\n     }\n "
+    },
+    {
+      "sha": "6a872aedf348d5305d06e4b706497a16bd3b9ea0",
+      "filename": "isso/js/app/default_config.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fapp%2Fdefault_config.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fapp%2Fdefault_config.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Fapp%2Fdefault_config.js?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -13,6 +13,7 @@ var default_config = {\n     \"max-comments-top\": \"inf\",\n     \"max-comments-nested\": 5,\n     \"reveal-on-click\": 5,\n+    \"sorting\": \"oldest\",\n     \"gravatar\": false,\n     \"avatar\": true,\n     \"avatar-bg\": \"#f0f0f0\","
+    },
+    {
+      "sha": "83ac00f9ad024c885661991ef3da63c8e8023303",
+      "filename": "isso/js/app/isso.js",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 25,
+      "changes": 47,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fapp%2Fisso.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fapp%2Fisso.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Fapp%2Fisso.js?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -114,7 +114,7 @@ var Postbox = function(parent) {\n             notification: $(\"[name=notification]\", el).checked() ? 1 : 0,\n         }).then(function(comment) {\n             $(\".isso-textarea\", el).value = \"\";\n-            insert(comment, true);\n+            insert({ comment, scrollIntoView: true, offset: 0 });\n \n             if (parent !== null) {\n                 el.onsuccess();\n@@ -125,7 +125,7 @@ var Postbox = function(parent) {\n     return el;\n };\n \n-var insert_loader = function(comment, lastcreated) {\n+var insert_loader = function(comment, offset) {\n     var entrypoint;\n     if (comment.id === null) {\n         entrypoint = $(\"#isso-root\");\n@@ -140,34 +140,37 @@ var insert_loader = function(comment, lastcreated) {\n \n     $(\"a.isso-load-hidden\", el).on(\"click\", function() {\n         el.remove();\n-        api.fetch($(\"#isso-thread\").getAttribute(\"data-isso-id\"),\n-            config[\"reveal-on-click\"], config[\"max-comments-nested\"],\n-            comment.id,\n-            lastcreated).then(\n+\n+        api.fetch({\n+            tid: $(\"#isso-thread\").getAttribute(\"data-isso-id\"),\n+            limit: config[\"reveal-on-click\"],\n+            nested_limit: config[\"max-comments-nested\"],\n+            parent: comment.id,\n+            sort: config[\"sorting\"],\n+            offset: offset\n+        }).then(\n             function(rv) {\n                 if (rv.total_replies === 0) {\n                     return;\n                 }\n \n-                var lastcreated = 0;\n                 rv.replies.forEach(function(commentObject) {\n-                    insert(commentObject, false);\n-                    if(commentObject.created > lastcreated) {\n-                        lastcreated = commentObject.created;\n-                    }\n+                    insert({ comment: commentObject, scrollIntoView: false, offset: 0 });\n+\n                 });\n \n                 if(rv.hidden_replies > 0) {\n-                    insert_loader(rv, lastcreated);\n+                    insert_loader(rv, offset + rv.replies.length);\n                 }\n             },\n             function(err) {\n                 console.log(err);\n-            });\n+            }\n+        );\n     });\n };\n \n-var insert = function(comment, scrollIntoView) {\n+var insert = function({ comment, scrollIntoView, offset }) {\n     var el = $.htmlify(template.render(\"comment\", {\"comment\": comment}));\n \n     // update datetime every 60 seconds\n@@ -381,19 +384,13 @@ var insert = function(comment, scrollIntoView) {\n         show($(\"a.isso-reply\", footer).detach());\n     }\n \n-    if(comment.hasOwnProperty('replies')) {\n-        var lastcreated = 0;\n-        comment.replies.forEach(function(replyObject) {\n-            insert(replyObject, false);\n-            if(replyObject.created > lastcreated) {\n-                lastcreated = replyObject.created;\n-            }\n-\n+    if (comment.hasOwnProperty('replies')) {\n+        comment.replies.forEach(function (replyObject) {\n+            insert({ comment: replyObject, scrollIntoView: false, offset: offset + 1 });\n         });\n-        if(comment.hidden_replies > 0) {\n-            insert_loader(comment, lastcreated);\n+        if (comment.hidden_replies > 0) {\n+            insert_loader(comment, offset + comment.replies.length);\n         }\n-\n     }\n \n };"
+    },
+    {
+      "sha": "dd7b06afb72f4b2bd0c03d1e4a2a109277b058d8",
+      "filename": "isso/js/embed.js",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 20,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fembed.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Fembed.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Fembed.js?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -122,28 +122,30 @@ function fetchComments() {\n     }\n     isso_root.textContent = '';\n \n-    api.fetch(isso_thread.getAttribute(\"data-isso-id\") || location.pathname,\n-        config[\"max-comments-top\"],\n-        config[\"max-comments-nested\"]).then(\n+\n+    api.fetch({\n+        tid: isso_thread.getAttribute(\"data-isso-id\") || location.pathname,\n+        limit: config[\"max-comments-top\"],\n+        nested_limit: config[\"max-comments-nested\"],\n+        parent: null,\n+        sort: config[\"sorting\"],\n+        offset: 0\n+    }).then(\n         function (rv) {\n \n             if (rv.total_replies === 0) {\n                 heading.textContent = i18n.translate(\"no-comments\");\n                 return;\n             }\n \n-            var lastcreated = 0;\n             var count = rv.total_replies;\n             rv.replies.forEach(function(comment) {\n-                isso.insert(comment, false);\n-                if (comment.created > lastcreated) {\n-                    lastcreated = comment.created;\n-                }\n+                isso.insert({ comment: comment, scrollIntoView: false, offset: 0 });\n             });\n             heading.textContent = i18n.pluralize(\"num-comments\", count);\n \n             if (rv.hidden_replies > 0) {\n-                isso.insert_loader(rv, lastcreated);\n+                isso.insert_loader(rv, rv.replies.length);\n             }\n \n             if (window.location.hash.length > 0 &&"
+    },
+    {
+      "sha": "4c90629e19a04894b7c0441b1e9d8dac735c529e",
+      "filename": "isso/js/tests/unit/comment.test.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Ftests%2Funit%2Fcomment.test.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fjs%2Ftests%2Funit%2Fcomment.test.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Funit%2Fcomment.test.js?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -58,7 +58,7 @@ test('Rendered comment should match snapshot', () => {\n   var isso_thread = $('#isso-thread');\n   isso_thread.append('<div id=\"isso-root\"></div>');\n \n-  isso.insert(comment, false);\n+  isso.insert({ comment, scrollIntoView: false, offset: 0 });\n \n   // Will create a `.snap` file in `./__snapshots__/`.\n   // Don't forget to check in those files when changing anything!"
+    },
+    {
+      "sha": "a3989c98f4d6780f1f3b1e79105262ccf13a76f8",
+      "filename": "isso/tests/test_comments.py",
+      "status": "modified",
+      "additions": 128,
+      "deletions": 0,
+      "changes": 128,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Ftests%2Ftest_comments.py",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Ftests%2Ftest_comments.py",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Ftests%2Ftest_comments.py?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -247,6 +247,134 @@ def testGetLimitedNested(self):\n         self.assertEqual(len(rv['replies']), 10)\n         self.assertEqual(rv['total_replies'], 20)\n \n+    def testGetWithOffset(self):\n+        for i in range(5):\n+            self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+\n+        r = self.get('/?uri=test&limit=3&offset=2')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies']],\n+            [3, 4, 5]\n+        )\n+\n+    def testGetWithOffsetIgnoredWithoutLimit(self):\n+        for i in range(5):\n+            self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+\n+        r = self.get('/?uri=test&offset=2')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies']],\n+            [1, 2, 3, 4, 5]\n+        )\n+\n+    def testGetNestedWithOffset(self):\n+\n+        self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+        for i in range(5):\n+            self.post('/new?uri=test',\n+                      data=json.dumps({'text': '...', 'parent': 1}))\n+\n+        r = self.get('/?uri=test&parent=1&limit=3&offset=2')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies']],\n+            [4, 5, 6]\n+        )\n+\n+    def testGetSortedByOldest(self):\n+        for i in range(5):\n+            self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+\n+        r = self.get('/?uri=test&sort=oldest')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        # assert order of comments is oldest first\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies']],\n+            [1, 2, 3, 4, 5]\n+        )\n+\n+    def testGetSortedByNewest(self):\n+        for i in range(5):\n+            self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+\n+        r = self.get('/?uri=test&sort=newest')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        # assert order of comments is newest first\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies']],\n+            [5, 4, 3, 2, 1]\n+        )\n+\n+    def testGetSortedByUpvotes(self):\n+        for i in range(5):\n+            self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+\n+        # update the likes for some comments\n+        self.app.db.execute(\n+            'UPDATE comments SET likes = id WHERE id IN (2, 4)'\n+        )\n+\n+        r = self.get('/?uri=test&sort=upvotes')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        # assert order of comments is by upvotes\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies']],\n+            [4, 2, 1, 3, 5]\n+        )\n+\n+    def testGetSortedByNewestWithNested(self):\n+        self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+        for i in range(5):\n+            self.post('/new?uri=test',\n+                      data=json.dumps({'text': '...', 'parent': 1}))\n+\n+        r = self.get('/?uri=test&sort=newest')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        self.assertEqual(len(rv['replies']), 1)\n+        # assert order of nested comments is newest first\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies'][0]['replies']],\n+            [6, 5, 4, 3, 2]\n+        )\n+\n+    def testGetSortedByUpvotesWithNested(self):\n+        self.post('/new?uri=test', data=json.dumps({'text': '...'}))\n+        for i in range(5):\n+            self.post('/new?uri=test',\n+                      data=json.dumps({'text': '...', 'parent': 1}))\n+\n+        # update the likes for some comments\n+        self.app.db.execute(\n+            'UPDATE comments SET likes = id WHERE id IN (3, 6)'\n+        )\n+\n+        r = self.get('/?uri=test&sort=upvotes')\n+        self.assertEqual(r.status_code, 200)\n+\n+        rv = loads(r.data)\n+        self.assertEqual(len(rv['replies']), 1)\n+        # assert order of nested comments is newest first\n+        self.assertEqual(\n+            [comment['id'] for comment in rv['replies'][0]['replies']],\n+            [6, 3, 2, 4, 5]\n+        )\n+\n     def testUpdate(self):\n \n         self.post('/new?uri=%2Fpath%2F',"
+    },
+    {
+      "sha": "9352dd007dffdf5060ce4fe7cbf4453ed7323807",
+      "filename": "isso/views/comments.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 3,
+      "changes": 36,
+      "blob_url": "https://github.com/isso-comments/isso/blob/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fviews%2Fcomments.py",
+      "raw_url": "https://github.com/isso-comments/isso/raw/ca91601e95942629fa996e1ca64e01536b43631f/isso%2Fviews%2Fcomments.py",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fviews%2Fcomments.py?ref=ca91601e95942629fa996e1ca64e01536b43631f",
+      "patch": "@@ -809,7 +809,7 @@ def moderate(self, environ, request, id, action, key):\n     @api {get} / Get comments\n     @apiGroup Thread\n     @apiName fetch\n-    @apiVersion 0.12.6\n+    @apiVersion 0.13.1\n     @apiDescription Queries the publicly visible comments of a thread.\n \n     @apiQuery {String} uri\n@@ -823,6 +823,10 @@ def moderate(self, environ, request, id, action, key):\n         The maximum number of returned nested comments per comment. Omit for unlimited results.\n     @apiQuery {Number} [after]\n         Includes only comments were added after the provided UNIX timestamp.\n+    @apiQuery {String} [sort]\n+        The sorting order of the comments. Possible values are `newest`, `oldest`, `upvotes`. If omitted, default sort order will be `oldest`.\n+    @apiQuery {Number} [offset]\n+        Offset the returned comments by this number. Used for pagination. Works only in combination with `limit`.\n \n     @apiSuccess {Number} id\n         Id of the comment `replies` is the list of replies of. `null` for the list of top-level comments.\n@@ -899,13 +903,37 @@ def fetch(self, environ, request, uri):\n             'after': request.args.get('after', 0)\n         }\n \n+        # map sort query parameter\n+        valid_sort_options = ['newest', 'oldest', 'upvotes']\n+        sort = request.args.get('sort', 'oldest')\n+\n+        if sort not in valid_sort_options:\n+            return BadRequest(\"Invalid sort option. Must be one of: 'newest', 'oldest', 'upvotes'\")\n+\n+        if sort == 'newest':\n+            args['order_by'] = 'created'\n+            args['asc'] = 0\n+        elif sort == 'oldest':\n+            args['order_by'] = 'created'\n+            args['asc'] = 1\n+        elif sort == 'upvotes':\n+            args['order_by'] = 'karma'\n+            args['asc'] = 0\n+\n         try:\n             args['limit'] = int(request.args.get('limit'))\n         except TypeError:\n             args['limit'] = None\n         except ValueError:\n             return BadRequest(\"limit should be integer\")\n \n+        try:\n+            args['offset'] = int(request.args.get('offset', 0))\n+            if args['offset'] < 0:\n+                return BadRequest(\"offset should not be negative\")\n+        except (ValueError, TypeError):\n+            return BadRequest(\"offset should be integer\")\n+\n         if request.args.get('parent') is not None:\n             try:\n                 args['parent'] = int(request.args.get('parent'))\n@@ -918,7 +946,7 @@ def fetch(self, environ, request, uri):\n \n         plain = request.args.get('plain', '0') == '0'\n \n-        reply_counts = self.comments.reply_count(uri, after=args['after'])\n+        reply_counts = self.comments.reply_count(uri)\n \n         if args['limit'] == 0:\n             root_list = []\n@@ -941,7 +969,7 @@ def fetch(self, environ, request, uri):\n         rv = {\n             'id': root_id,\n             'total_replies': total_replies,\n-            'hidden_replies': reply_counts[root_id] - len(root_list),\n+            'hidden_replies': reply_counts[root_id] - len(root_list) - args['offset'],\n             'replies': self._process_fetched_list(root_list, plain),\n             'config': self.public_conf\n         }\n@@ -954,6 +982,8 @@ def fetch(self, environ, request, uri):\n                         if nested_limit > 0:\n                             args['parent'] = comment['id']\n                             args['limit'] = nested_limit\n+                            # Reset offset to 0 for nested comments to ensure correct pagination\n+                            args['offset'] = 0\n                             replies = list(self.comments.fetch(**args))\n                         else:\n                             replies = []"
+    }
+  ]
+}
