@@ -1,0 +1,146 @@
+{
+  "sha": "661f042cb404264b0c4bcddf8b76232f3466bace",
+  "node_id": "C_kwDOBtgov9oAKDY2MWYwNDJjYjQwNDI2NGIwYzRiY2RkZjhiNzYyMzJmMzQ2NmJhY2U",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-05-09T21:49:32Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-05-10T03:32:00Z"
+    },
+    "message": "pin golangci-lint version to latest available, fix reported errors",
+    "tree": {
+      "sha": "da4b3e2422bc6304a8173e4be530125c4b8f76bd",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/da4b3e2422bc6304a8173e4be530125c4b8f76bd"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/661f042cb404264b0c4bcddf8b76232f3466bace",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/661f042cb404264b0c4bcddf8b76232f3466bace",
+  "html_url": "https://github.com/umputun/remark42/commit/661f042cb404264b0c4bcddf8b76232f3466bace",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/661f042cb404264b0c4bcddf8b76232f3466bace/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "877765cda2185cde3600cbd1d8f56e21e2e307f5",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/877765cda2185cde3600cbd1d8f56e21e2e307f5",
+      "html_url": "https://github.com/umputun/remark42/commit/877765cda2185cde3600cbd1d8f56e21e2e307f5"
+    }
+  ],
+  "stats": {
+    "total": 37,
+    "additions": 18,
+    "deletions": 19
+  },
+  "files": [
+    {
+      "sha": "90784bcc0cdac9b40dea36a6f7da4a52320178c9",
+      "filename": ".github/workflows/ci-backend.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/661f042cb404264b0c4bcddf8b76232f3466bace/.github%2Fworkflows%2Fci-backend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/661f042cb404264b0c4bcddf8b76232f3466bace/.github%2Fworkflows%2Fci-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-backend.yml?ref=661f042cb404264b0c4bcddf8b76232f3466bace",
+      "patch": "@@ -54,13 +54,13 @@ jobs:\n       - name: golangci-lint\n         uses: golangci/golangci-lint-action@v3\n         with:\n-          version: latest\n+          version: v1.58\n           working-directory: backend/app\n \n       - name: golangci-lint on example directory\n         uses: golangci/golangci-lint-action@v3\n         with:\n-          version: latest\n+          version: v1.58\n           args: --config ../../.golangci.yml\n           working-directory: backend/_example/memory_store\n "
+    },
+    {
+      "sha": "7c3c7425defb3c23066f5526de5d2ad04452c4c9",
+      "filename": "backend/.golangci.yml",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 9,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2F.golangci.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2F.golangci.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F.golangci.yml?ref=661f042cb404264b0c4bcddf8b76232f3466bace",
+      "patch": "@@ -1,15 +1,10 @@\n run:\n   timeout: 5m\n-  output:\n-    format: tab\n-  skip-dirs:\n-    - vendor\n \n linters-settings:\n   govet:\n-    check-shadowing: true\n-  maligned:\n-    suggest-new: true\n+    enable:\n+      - shadow\n   goconst:\n     min-len: 2\n     min-occurrences: 2\n@@ -31,11 +26,13 @@ linters-settings:\n linters:\n   enable:\n     - bodyclose\n-    - megacheck\n+    - gosimple\n+    - staticcheck\n+    - unused\n     - revive\n     - govet\n     - unconvert\n-    - gas\n+    - gosec\n     - gocyclo\n     - dupl\n     - misspell\n@@ -54,6 +51,8 @@ linters:\n   disable-all: true\n \n issues:\n+  exclude-dirs:\n+    - vendor\n   exclude-rules:\n     - text: \"at least one file in a package should have a package comment\"\n       linters:"
+    },
+    {
+      "sha": "c163ad1f4576cb4e0b8b9aad288e3b8ed1b8ed73",
+      "filename": "backend/app/main.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2Fapp%2Fmain.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2Fapp%2Fmain.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fmain.go?ref=661f042cb404264b0c4bcddf8b76232f3466bace",
+      "patch": "@@ -99,7 +99,7 @@ func getDump() string {\n \treturn string(stacktrace[:length])\n }\n \n-// nolint:gochecknoinits // can't avoid it in this place\n+//nolint:gochecknoinits // can't avoid it in this place\n func init() {\n \t// catch SIGQUIT and print stack traces\n \tsigChan := make(chan os.Signal, 1)"
+    },
+    {
+      "sha": "6e2abc7ff7f46d30e17587d18a75226f6cb15904",
+      "filename": "backend/app/store/engine/bolt.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2Fapp%2Fstore%2Fengine%2Fbolt.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2Fapp%2Fstore%2Fengine%2Fbolt.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fengine%2Fbolt.go?ref=661f042cb404264b0c4bcddf8b76232f3466bace",
+      "patch": "@@ -424,11 +424,11 @@ func (b *BoltDB) Close() error {\n }\n \n // Last returns up to max last comments for given siteID\n-func (b *BoltDB) lastComments(siteID string, max int, since time.Time) (comments []store.Comment, err error) {\n+func (b *BoltDB) lastComments(siteID string, maximum int, since time.Time) (comments []store.Comment, err error) {\n \tcomments = []store.Comment{}\n \n-\tif max > lastLimit || max == 0 {\n-\t\tmax = lastLimit\n+\tif maximum > lastLimit || maximum == 0 {\n+\t\tmaximum = lastLimit\n \t}\n \n \tbdb, err := b.db(siteID)\n@@ -466,7 +466,7 @@ func (b *BoltDB) lastComments(siteID string, max int, since time.Time) (comments\n \t\t\t\tcontinue\n \t\t\t}\n \t\t\tcomments = append(comments, comment)\n-\t\t\tif len(comments) >= max {\n+\t\t\tif len(comments) >= maximum {\n \t\t\t\tbreak\n \t\t\t}\n \t\t}"
+    },
+    {
+      "sha": "550e6c73c7bb63e5af0b21a00d5b8c699465d9c6",
+      "filename": "backend/app/store/formatter.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2Fapp%2Fstore%2Fformatter.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/661f042cb404264b0c4bcddf8b76232f3466bace/backend%2Fapp%2Fstore%2Fformatter.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fstore%2Fformatter.go?ref=661f042cb404264b0c4bcddf8b76232f3466bace",
+      "patch": "@@ -57,14 +57,14 @@ func (f *CommentFormatter) FormatText(txt string, raw bool) (res string) {\n }\n \n // Shortens all the automatic links in HTML: auto link has equal \"href\" and \"text\" attributes.\n-func (f *CommentFormatter) shortenAutoLinks(commentHTML string, max int) (resHTML string) {\n+func (f *CommentFormatter) shortenAutoLinks(commentHTML string, maximum int) (resHTML string) {\n \tdoc, err := goquery.NewDocumentFromReader(strings.NewReader(commentHTML))\n \tif err != nil {\n \t\treturn commentHTML\n \t}\n \tdoc.Find(\"a\").Each(func(_ int, s *goquery.Selection) {\n \t\tif href, ok := s.Attr(\"href\"); ok {\n-\t\t\tif href != s.Text() || len(href) < max+3 || max < 3 {\n+\t\t\tif href != s.Text() || len(href) < maximum+3 || maximum < 3 {\n \t\t\t\treturn\n \t\t\t}\n \t\t\tcommentURL, e := url.Parse(href)\n@@ -77,7 +77,7 @@ func (f *CommentFormatter) shortenAutoLinks(commentHTML string, max int) (resHTM\n \t\t\t\treturn\n \t\t\t}\n \n-\t\t\tshort := string([]rune(href)[:max-3])\n+\t\t\tshort := string([]rune(href)[:maximum-3])\n \t\t\tif len(short) < len(host) {\n \t\t\t\tshort = host\n \t\t\t}"
+    }
+  ]
+}
