@@ -1,0 +1,230 @@
+{
+  "sha": "824f122dcbd57700b3d4cf57308713cb4260f4ad",
+  "node_id": "C_kwDOCQOkhNoAKDgyNGYxMjJkY2JkNTc3MDBiM2Q0Y2Y1NzMwODcxM2NiNDI2MGY0YWQ",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "22412567+qwqcode@users.noreply.github.com",
+      "date": "2024-05-23T05:47:07Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-05-23T05:47:07Z"
+    },
+    "message": "refactor(ui/stat): use class selector for pageview elements by default (#880)\n\nThe statistics UI component has been updated. The default selectors for `pvEl` and `countEl` have changed from `#ArtalkPV` and `#ArtalkCount` to `.artalk-pv-count` and `.artalk-comment-count` (see #826 for more details). However, it remains backward compatible with the `#ArtalkPV` and `#ArtalkCount` elements for older versions, no HTML client updates are necessary.\r\n\r\nIn this PR, we also introduced a configuration option called `statPageKeyAttr` (value `\"data-page-key\"` by default) for customizing the attribute name that the statistics component uses to fetch the page key.",
+    "tree": {
+      "sha": "e8996b942bded9a553ff45ed38ed32929508183b",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/e8996b942bded9a553ff45ed38ed32929508183b"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/824f122dcbd57700b3d4cf57308713cb4260f4ad",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmTthbCRC1aQ7uu5UhlAAAC9oQAHito0sTidxR0QJP0F3oHSWZ\nKgh1C6H/MWO5S8zLCHZG8hfmPbAKtGkL34bxX/TUVHQnhaAxUadVEEoUUyhpSssp\nh+iSmGl2CfKYxFDBY4FSCK4TXcCp8T22csO4MTKw+j8oNlsxuhB83jr7micoFJUK\nWtq969xObgO9AzIoqyFeg5DYlDizf0UcXRiOUZZvnecbJBtzknh8Mq5WuUsoQQtK\nfTBXzCqWXzRrtJHUKV5+eiVhOS7ZqgWrrijm3HiHdC6MX3J4FkgabCcUJ1zxHjUq\nSlYIJiFczNmsdXbgMuvlvn1b1/k6JoN4mYtO46RZKbsBCSwKbgJFYbq8+nZzP8tO\na1jkxWRbkOJEawaEVtXF6TAOb9AClep4k5mVsaqTnMKa87XOoKd09rYU0GR+PaEP\nWQ/B4pGJQ7CRwAlgEeqRqbmMr1NkHKRsJmmRjDGLbFytnfKpX2aNNA74p852+RRZ\n+sJIcjvJbIEC4gGw4A8+SB/NIAVzqagHuS3SDIk+TlI7iPSxCCItyDwqjSkarT1/\nTJnfIG9w24alkPh9cknyWQ/K1pspJ6B0v2Guw42wkBrUAaYZUjnOKLp9svqxuEdx\nTpKOIDRMmfTkt9pTN9mGhhFmfG/LzT8pqhkZKmcdgSKh7UXnqa9BZt109xGEWBZ9\n/MLgKY48leYe16iHrLL5\n=yfnQ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree e8996b942bded9a553ff45ed38ed32929508183b\nparent 53d46d82b6dc6b3927f75ec988f4a0cc331035a8\nauthor qwqcode <22412567+qwqcode@users.noreply.github.com> 1716443227 +0800\ncommitter GitHub <noreply@github.com> 1716443227 +0800\n\nrefactor(ui/stat): use class selector for pageview elements by default (#880)\n\nThe statistics UI component has been updated. The default selectors for `pvEl` and `countEl` have changed from `#ArtalkPV` and `#ArtalkCount` to `.artalk-pv-count` and `.artalk-comment-count` (see #826 for more details). However, it remains backward compatible with the `#ArtalkPV` and `#ArtalkCount` elements for older versions, no HTML client updates are necessary.\r\n\r\nIn this PR, we also introduced a configuration option called `statPageKeyAttr` (value `\"data-page-key\"` by default) for customizing the attribute name that the statistics component uses to fetch the page key."
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/824f122dcbd57700b3d4cf57308713cb4260f4ad",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/824f122dcbd57700b3d4cf57308713cb4260f4ad",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/824f122dcbd57700b3d4cf57308713cb4260f4ad/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "53d46d82b6dc6b3927f75ec988f4a0cc331035a8",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/53d46d82b6dc6b3927f75ec988f4a0cc331035a8",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/53d46d82b6dc6b3927f75ec988f4a0cc331035a8"
+    }
+  ],
+  "stats": {
+    "total": 373,
+    "additions": 280,
+    "deletions": 93
+  },
+  "files": [
+    {
+      "sha": "c6e98847b7e6d7efbfdddc9cd7e37a2f84aa2195",
+      "filename": "conf/artalk.example.simple.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/conf%2Fartalk.example.simple.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/conf%2Fartalk.example.simple.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/conf%2Fartalk.example.simple.yml?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -229,8 +229,9 @@ frontend:\n   voteDown: false\n   uaBadge: false\n   listSort: true\n-  pvEl: \"#ArtalkPV\"\n-  countEl: \"#ArtalkCount\"\n+  pvEl: \".artalk-pv-count\"\n+  countEl: \".artalk-comment-count\"\n+  statPageKeyAttr: \"data-page-key\"\n   preview: true\n   flatMode: auto\n   darkMode: inherit"
+    },
+    {
+      "sha": "2d848062ff43f82d9a638e4cd7bc40c5513ce183",
+      "filename": "conf/artalk.example.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/conf%2Fartalk.example.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/conf%2Fartalk.example.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/conf%2Fartalk.example.yml?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -405,9 +405,11 @@ frontend:\n   # Comment sorting\n   listSort: true\n   # Page PV binding element\n-  pvEl: \"#ArtalkPV\"\n+  pvEl: \".artalk-pv-count\"\n   # Comment count binding element\n-  countEl: \"#ArtalkCount\"\n+  countEl: \".artalk-comment-count\"\n+  # Statistic PageKey attribute\n+  statPageKeyAttr: \"data-page-key\"\n   # Editor real-time preview\n   preview: true\n   # Flatten mode [\"auto\", true, false]"
+    },
+    {
+      "sha": "15f730c8a4aa6b86bec6d9a832afa55f3ca13a73",
+      "filename": "conf/artalk.example.zh-CN.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/conf%2Fartalk.example.zh-CN.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/conf%2Fartalk.example.zh-CN.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/conf%2Fartalk.example.zh-CN.yml?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -410,9 +410,11 @@ frontend:\n   # 评论排序功能\n   listSort: true\n   # 页面 PV 绑定元素\n-  pvEl: \"#ArtalkPV\"\n+  pvEl: \".artalk-pv-count\"\n   # 评论数绑定元素\n-  countEl: \"#ArtalkCount\"\n+  countEl: \".artalk-comment-count\"\n+  # 统计组件 PageKey 属性名\n+  statPageKeyAttr: \"data-page-key\"\n   # 编辑器实时预览功能\n   preview: true\n   # 平铺模式 [\"auto\", true, false]"
+    },
+    {
+      "sha": "178e741f330e827b60552cb2c6301e1aa697ba9d",
+      "filename": "docs/docs/guide/frontend/config.md",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 7,
+      "changes": 25,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/docs%2Fdocs%2Fguide%2Ffrontend%2Fconfig.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/docs%2Fdocs%2Fguide%2Ffrontend%2Fconfig.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fguide%2Ffrontend%2Fconfig.md?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -221,31 +221,42 @@ artalk.setDarkMode(true)\n **页面浏览量 (PV) 绑定元素**\n \n - 类型：`String`\n-- 默认值：`\"#ArtalkPV\"`\n+- 默认值：`\".artalk-pv-count\"`\n \n-你可以在页面任意位置，放置 HTML 标签：`<span id=\"ArtalkPV\"></span>`\n+你可以在页面任意位置，放置 HTML 标签：`<span class=\"artalk-pv-count\"></span>`\n \n 当 Artalk 完成加载时展示页面的浏览量。\n \n-该项填入绑定元素的 Selector，默认为 `#ArtalkPV`。\n+该项填入绑定元素的 Selector，默认为 `.artalk-pv-count`。\n \n ### countEl\n \n **评论数绑定元素**\n \n - 类型：`String`\n-- 默认值：`\"#ArtalkCount\"`\n+- 默认值：`\".artalk-comment-count\"`\n \n-你可以在页面任意位置，放置 HTML 标签：`<span id=\"ArtalkCount\"></span>` 显示当前页面的评论数。\n+你可以在页面任意位置，放置 HTML 标签：`<span class=\"artalk-comment-count\"></span>` 显示当前页面的评论数。\n \n ::: tip\n \n-pvEl 和 countEl 元素标签都可以设置 `data-page-key` 属性值，来指定显示某个页面的统计数目，例如：`<span id=\"ArtalkCount\" data-page-key=\"/t/1.html\"></span>`\n+pvEl 和 countEl 元素标签都可以设置 `data-page-key` 属性值，来指定显示某个页面的统计数目，例如：`<span class=\"artalk-comment-count\" data-page-key=\"/t/1.html\"></span>`\n \n-详情参考：[浏览量统计](./pv.md#显示多个页面的浏览量)\n+详情参考：[浏览量统计](./pv.md#同时加载多个页面的统计数)\n \n :::\n \n+### statPageKeyAttr\n+\n+**统计组件 PageKey 属性名**\n+\n+- 类型：`String`\n+- 默认值：`\"data-page-key\"`\n+\n+Artalk 统计组件查询评论数和浏览量时，会通过该属性名来查询指定页面，例如：`<span data-page-key=\"/t/1.html\"></span>`。\n+\n+为了便于主题适配，可根据需要自定义属性名，例如将其替换为 `data-path`，则 HTML 标签为 `<span data-path=\"/t/1.html\"></span>`。\n+\n ### vote\n \n **投票按钮**"
+    },
+    {
+      "sha": "bcddf2d1fb818cd174bff04f362bd93bb53a4677",
+      "filename": "docs/docs/guide/frontend/pv.md",
+      "status": "modified",
+      "additions": 52,
+      "deletions": 24,
+      "changes": 76,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/docs%2Fdocs%2Fguide%2Ffrontend%2Fpv.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/docs%2Fdocs%2Fguide%2Ffrontend%2Fpv.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fguide%2Ffrontend%2Fpv.md?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -1,53 +1,81 @@\n # 浏览量统计\n \n-Artalk 内置页面浏览量统计功能，你可以在你的页面任意位置，放置 HTML 标签：\n+Artalk 内置页面浏览量统计和评论数统计功能，你可以在页面中显示页面的浏览量和评论数。\n \n ```html\n-<span id=\"ArtalkPV\"></span>\n+浏览量：<span class=\"artalk-pv-count\"></span>\n+评论数：<span class=\"artalk-comment-count\"></span>\n ```\n \n-当 Artalk 评论列表加载完毕时，该标签内容将修改为页面的浏览量计数。\n+## 加载占位符\n \n-Artalk 加载需要时间，所以你可以给它一个占位字符：\n+Artalk 加载需要时间，你可以在展示统计数的元素中加入占位符：\n \n ```html\n-<span id=\"ArtalkPV\">加载中...</span>\n+<span class=\"artalk-pv-count\">加载中...</span>\n ```\n \n-配置项 `pvEl` 的默认值是 `\"#ArtalkPV\"`，可修改将评论量加载到指定元素，例如：\n+## 同时加载多个页面的统计数\n+\n+例如在文章列表页，你可以显示每篇文章的浏览量和评论数。\n+\n+当处于文章列表页时，仅需调用 `Artalk.loadCountWidget` 函数，而无需 `Artalk.init` (加载评论列表会使页面浏览量 PV 数 +1)。\n+\n+<!-- prettier-ignore-start -->\n \n ```js\n-Artalk.init({\n-  pvEl: '.your_element',\n+Artalk.loadCountWidget({\n+  server: '服务器地址',\n+  site: '站点名',\n+  pvEl: '.artalk-pv-count',\n+  countEl: '.artalk-comment-count',\n+  statPageKeyAttr: 'data-page-key',\n })\n ```\n \n-### 加载多个页面的浏览量\n+<!-- prettier-ignore-end -->\n \n-你能在除评论页面之外的任何页面，例如「文章列表」页，显示页面浏览量或评论数。\n+然后放置多个 class 为 `artalk-pv-count` 的元素，通过属性 `data-page-key` 来指定需要查询的页面：\n \n-在非评论页，无需调用 `Artalk.init` 加载评论框 (会使页面浏览量 PV 数增加)，仅调用 `loadCountWidget` 静态方法即可：\n+```html\n+<span class=\"artalk-pv-count\" data-page-key=\"/test/1.html\"></span>\n+<span class=\"artalk-pv-count\" data-page-key=\"/test/2.html\"></span>\n+<span class=\"artalk-pv-count\" data-page-key=\"/test/3.html\"></span>\n+```\n \n-<!-- prettier-ignore-start -->\n+评论数查询同理：\n+\n+```html\n+<span class=\"artalk-comment-count\" data-page-key=\"/test/1.html\"></span>\n+<span class=\"artalk-comment-count\" data-page-key=\"/test/2.html\"></span>\n+<span class=\"artalk-comment-count\" data-page-key=\"/test/3.html\"></span>\n+```\n+\n+## 自定义元素选择器\n \n+可通过配置项 `pvEl` 和 `countEl` 来指定元素选择器，以展示页面浏览量和评论数：\n \n ```js\n-Artalk.loadCountWidget({\n-  server: '服务器地址',\n-  site: '站点名',\n-  pvEl: '#ArtalkPV',\n-  countEl: '#ArtalkCount',\n+Artalk.init({\n+  pvEl: '.your_pv_count_element',  // 页面浏览量元素选择器\n+  countEl: '.your_comment_count_element',  // 评论数元素选择器\n })\n ```\n \n-<!-- prettier-ignore-end -->\n+## 自定义 `data-page-key` 属性名\n \n-然后你可以放置多个 `#ArtalkPV` 元素，通过属性 `data-page-key` 来指定需要查询的页面：\n+配置项 `statPageKeyAttr` 的默认值为 `data-page-key`，Artalk 会通过该属性名来查询指定页面。为了方便博客主题的适配，可通过它自定义属性名，例如将其替换为 `data-path`：\n+\n+```js\n+Artalk.loadCountWidget({\n+  statPageKeyAttr: 'data-path',\n+})\n+```\n+\n+此时，对应的 HTML 代码应如下所示：\n \n ```html\n-<span id=\"ArtalkPV\" data-page-key=\"/test/1.html\"></span>\n-<span id=\"ArtalkPV\" data-page-key=\"/test/2.html\"></span>\n-<span id=\"ArtalkPV\" data-page-key=\"/test/3.html\"></span>\n-<span id=\"ArtalkCount\" data-page-key=\"/test/1.html\"></span>\n-<!-- ... -->\n+<span class=\"artalk-pv-count\" data-path=\"/test/1.html\"></span>\n ```\n+\n+这样，`data-path` 属性值将被用于查询指定的页面。"
+    },
+    {
+      "sha": "31539d95a678ac979f3d394f2b4bbc871fc024e8",
+      "filename": "test/testdata/example_site_conf.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/test%2Ftestdata%2Fexample_site_conf.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/test%2Ftestdata%2Fexample_site_conf.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/test%2Ftestdata%2Fexample_site_conf.yml?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -141,8 +141,8 @@ frontend:\n   voteDown: false\n   uaBadge: true\n   listSort: true\n-  pvEl: \"#ArtalkPV\"\n-  countEl: \"#ArtalkCount\"\n+  pvEl: \".artalk-pv-count\"\n+  countEl: \".artalk-comment-count\"\n   preview: true\n   flatMode: auto\n   nestMax: 2"
+    },
+    {
+      "sha": "878fb4590d0457493ce03379b0893f66d6df7501",
+      "filename": "ui/artalk/src/artalk.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fartalk.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fartalk.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fartalk.ts?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -111,6 +111,7 @@ export default class Artalk {\n       siteName: conf.site,\n       countEl: conf.countEl,\n       pvEl: conf.pvEl,\n+      pageKeyAttr: conf.statPageKeyAttr,\n       pvAdd: false,\n     })\n   }"
+    },
+    {
+      "sha": "e8de452420e2779a2328bf5f4f7a46a466142bf4",
+      "filename": "ui/artalk/src/comment/height-limit.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fcomment%2Fheight-limit.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fcomment%2Fheight-limit.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fcomment%2Fheight-limit.ts?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -27,7 +27,7 @@ export function check(conf: IHeightLimitConf, rules: THeightLimitRuleSet) {\n     if (!el) return\n \n     // set max height for avoiding img exceed the limit while loading\n-    if (imgCheck) el.style.maxHeight = `${max + 1}px`  // allow 1px more for next detecting\n+    if (imgCheck) el.style.maxHeight = `${max + 1}px` // allow 1px more for next detecting\n \n     let lock = false\n     const _check = () => {"
+    },
+    {
+      "sha": "da4c81456d4fab040b568e5cd9e3794c82a7ad07",
+      "filename": "ui/artalk/src/defaults.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fdefaults.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fdefaults.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fdefaults.ts?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -24,8 +24,9 @@ const defaults: ArtalkConfig = {\n   uaBadge: true,\n   listSort: true,\n   preview: true,\n-  countEl: '#ArtalkCount',\n-  pvEl: '#ArtalkPV',\n+  countEl: '.artalk-comment-count',\n+  pvEl: '.artalk-pv-count',\n+  statPageKeyAttr: 'data-page-key',\n \n   gravatar: {\n     mirror: 'https://cravatar.cn/avatar/',"
+    },
+    {
+      "sha": "62e075d8727c113bda6fb29c4ef5657feacaffb8",
+      "filename": "ui/artalk/src/plugins/stat.ts",
+      "status": "modified",
+      "additions": 92,
+      "deletions": 51,
+      "changes": 143,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fplugins%2Fstat.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Fplugins%2Fstat.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fplugins%2Fstat.ts?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -1,6 +1,8 @@\n import type { ContextApi, ArtalkPlugin, ArtalkConfig } from '@/types'\n import { Api } from '@/api'\n \n+type CountCache = { [pageKey: string]: number }\n+\n export interface CountOptions {\n   getApi(): Api\n \n@@ -9,93 +11,132 @@ export interface CountOptions {\n   pageTitle?: string\n   countEl: string\n   pvEl: string\n+  pageKeyAttr: string\n \n-  /** 是否增加当前页面 PV 数 */\n+  /** Whether to add PV count when initializing */\n   pvAdd?: boolean\n }\n \n export const PvCountWidget: ArtalkPlugin = (ctx: ContextApi) => {\n-  ctx.watchConf(['site', 'pageKey', 'pageTitle', 'countEl', 'pvEl'], (conf) => {\n+  ctx.watchConf(['site', 'pageKey', 'pageTitle', 'countEl', 'pvEl', 'statPageKeyAttr'], (conf) => {\n     initCountWidget({\n       getApi: () => ctx.getApi(),\n       siteName: conf.site,\n       pageKey: conf.pageKey,\n       pageTitle: conf.pageTitle,\n       countEl: conf.countEl,\n       pvEl: conf.pvEl,\n+      pageKeyAttr: conf.statPageKeyAttr,\n       pvAdd: typeof ctx.conf.pvAdd === 'boolean' ? ctx.conf.pvAdd : true,\n     })\n   })\n }\n \n-/** 初始化评论数和 PV 数量展示元素 */\n+/** Initialize count widgets */\n export async function initCountWidget(opt: CountOptions) {\n-  // 评论数\n-  if (opt.countEl && document.querySelector(opt.countEl)) {\n-    refreshStatCount(opt, { query: 'page_comment', numEl: opt.countEl })\n-  }\n+  // Load comment count\n+  await loadCommentCount(opt)\n+\n+  // Increment PV count\n+  const cacheData = await incrementPvCount(opt)\n+\n+  // Load PV count\n+  await loadPvCount(opt, cacheData)\n+}\n \n-  // PV\n-  const initialData =\n-    opt.pvAdd && opt.pageKey\n-      ? {\n-          [opt.pageKey]: (\n-            await opt.getApi().pages.logPv({\n-              page_key: opt.pageKey,\n-              page_title: opt.pageTitle,\n-              site_name: opt.siteName,\n-            })\n-          ).data.pv, // pv+1 and get pv count\n-        }\n-      : undefined\n-\n-  if (opt.pvEl && document.querySelector(opt.pvEl)) {\n-    refreshStatCount(opt, {\n-      query: 'page_pv',\n-      numEl: opt.pvEl,\n-      data: initialData,\n+/** Increment PV count and get cache data that contains PV count */\n+async function incrementPvCount(opt: CountOptions) {\n+  if (!opt.pvAdd || !opt.pageKey) return undefined\n+\n+  const pvCount = (\n+    await opt.getApi().pages.logPv({\n+      page_key: opt.pageKey,\n+      page_title: opt.pageTitle,\n+      site_name: opt.siteName,\n     })\n+  ).data.pv // pv+1 and get pv count\n+\n+  return {\n+    [opt.pageKey]: pvCount,\n   }\n }\n \n-type CountData = { [pageKey: string]: number }\n+/** Load comment count */\n+async function loadCommentCount(opt: CountOptions) {\n+  await loadStatCount({ opt, query: 'page_comment', containers: [opt.countEl, '#ArtalkCount'] })\n+}\n \n-async function refreshStatCount(\n-  opt: CountOptions,\n-  args: {\n-    query: 'page_pv' | 'page_comment'\n-    numEl: string\n-    data?: CountData\n-  },\n-) {\n-  let data: CountData = args.data || {}\n+/** Load PV count */\n+async function loadPvCount(opt: CountOptions, cache?: CountCache) {\n+  await loadStatCount({ opt, query: 'page_pv', containers: [opt.pvEl, '#ArtalkPv'], cache })\n+}\n \n-  // Get page keys which will be queried\n-  let queryPageKeys = Array.from(document.querySelectorAll(args.numEl))\n-    .map((e) => e.getAttribute('data-page-key') || opt.pageKey)\n-    .filter((k) => k && typeof data[k] !== 'number') // filter out keys that already have data\n+async function loadStatCount(args: {\n+  opt: CountOptions\n+  query: 'page_pv' | 'page_comment'\n+  containers: string[]\n+  cache?: CountCache\n+}) {\n+  const { opt } = args\n+  let cache: CountCache = args.cache || {}\n \n-  queryPageKeys = [...new Set(queryPageKeys)] // deduplicate\n+  // Retrieve elements\n+  const els = retrieveElements(args.containers)\n+\n+  // Get page keys which will be queried\n+  const pageKeys = getPageKeys(els, opt.pageKeyAttr, opt.pageKey, cache)\n \n   // Fetch count data from server\n-  if (queryPageKeys.length > 0) {\n+  if (pageKeys.length > 0) {\n     const res = (\n       await opt.getApi().stats.getStats(args.query, {\n-        page_keys: queryPageKeys.join(','),\n+        page_keys: pageKeys.join(','),\n         site_name: opt.siteName,\n       })\n-    ).data.data as CountData\n-    data = { ...data, ...res }\n+    ).data.data as CountCache\n+    cache = { ...cache, ...res }\n   }\n \n-  const defaultCount = opt.pageKey ? data[opt.pageKey] : 0\n-  applyCountData(args.numEl, data, defaultCount)\n+  updateElementsText(els, cache, opt.pageKey)\n+}\n+\n+/** Retrieve elements based on selectors */\n+function retrieveElements(containers: string[]): Set<HTMLElement> {\n+  const els = new Set<HTMLElement>()\n+  new Set(containers).forEach((selector) => {\n+    document.querySelectorAll<HTMLElement>(selector).forEach((el) => els.add(el))\n+  })\n+  return els\n+}\n+\n+/** Get page keys to be queried */\n+function getPageKeys(\n+  els: Set<HTMLElement>,\n+  pageKeyAttr: string,\n+  pageKey: string | undefined,\n+  cache: CountCache,\n+): string[] {\n+  const pageKeys = Array.from(els)\n+    .map((el) => el.getAttribute(pageKeyAttr) || pageKey)\n+    .filter((key) => key && typeof cache[key] !== 'number') // filter out keys that already have data\n+\n+  return [...new Set(pageKeys as string[])] // deduplicate\n }\n \n-function applyCountData(selector: string, data: CountData, defaultCount: number) {\n-  document.querySelectorAll(selector).forEach((el) => {\n+/** Update elements text content with the count data */\n+function updateElementsText(els: Set<HTMLElement>, data: CountCache, defaultPageKey?: string) {\n+  els.forEach((el) => {\n     const pageKey = el.getAttribute('data-page-key')\n-    const count = Number(pageKey ? data[pageKey] : defaultCount)\n-    el.innerHTML = `${count}`\n+    const count = (pageKey && data[pageKey]) || (defaultPageKey && data[defaultPageKey]) || 0 // if pageKey is not set, use defaultCount\n+    el.innerText = `${Number(count)}`\n   })\n }\n+\n+export const exportedForTesting = {\n+  incrementPvCount,\n+  loadCommentCount,\n+  loadPvCount,\n+  retrieveElements,\n+  getPageKeys,\n+  updateElementsText,\n+}"
+    },
+    {
+      "sha": "4aa26f8483f964fa52fc400bd8b788ecbf94ed8b",
+      "filename": "ui/artalk/src/types/config.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Ftypes%2Fconfig.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Fsrc%2Ftypes%2Fconfig.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Ftypes%2Fconfig.ts?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -81,6 +81,9 @@ export interface ArtalkConfig {\n   /** PV 数绑定元素 Selector */\n   pvEl: string\n \n+  /** 统计组件 PageKey 属性名 */\n+  statPageKeyAttr: string\n+\n   /** 夜间模式 */\n   darkMode: boolean | 'auto'\n "
+    },
+    {
+      "sha": "e9b635bc48748b1bdc1f3a5aef0f1b114c4ca80f",
+      "filename": "ui/artalk/tests/stat-plugin.test.ts",
+      "status": "added",
+      "additions": 97,
+      "deletions": 0,
+      "changes": 97,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Ftests%2Fstat-plugin.test.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/824f122dcbd57700b3d4cf57308713cb4260f4ad/ui%2Fartalk%2Ftests%2Fstat-plugin.test.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Ftests%2Fstat-plugin.test.ts?ref=824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "patch": "@@ -0,0 +1,97 @@\n+import { describe, it, expect, vi } from 'vitest'\n+\n+import { exportedForTesting } from '@/plugins/stat'\n+import type { CountOptions } from '@/plugins/stat'\n+\n+const {\n+  incrementPvCount,\n+  loadCommentCount,\n+  loadPvCount,\n+  retrieveElements,\n+  getPageKeys,\n+  updateElementsText,\n+} = exportedForTesting\n+\n+// Mocking API\n+const mockApi = {\n+  pages: {\n+    logPv: vi.fn().mockResolvedValue({ data: { pv: 100 } }),\n+  },\n+  stats: {\n+    getStats: vi.fn().mockResolvedValue({\n+      data: { data: { 'test-page-key': 5 } },\n+    }),\n+  },\n+}\n+\n+// Mocking CountOptions\n+const mockOptions: CountOptions = {\n+  getApi: () => mockApi as any,\n+  siteName: 'test-site',\n+  pageKey: 'test-page-key',\n+  pageTitle: 'Test Page',\n+  countEl: '.count-element',\n+  pvEl: '.pv-element',\n+  pageKeyAttr: 'data-page-key',\n+  pvAdd: true,\n+}\n+\n+describe('PvCountWidget', () => {\n+  it('should increment PV count and get cache data', async () => {\n+    const cacheData = await incrementPvCount(mockOptions)\n+    expect(mockApi.pages.logPv).toHaveBeenCalledWith({\n+      page_key: 'test-page-key',\n+      page_title: 'Test Page',\n+      site_name: 'test-site',\n+    })\n+    expect(cacheData).toEqual({ 'test-page-key': 100 })\n+  })\n+\n+  it('should load comment count', async () => {\n+    document.body.innerHTML = '<div class=\"count-element\" data-page-key=\"test-page-key\"></div>'\n+    await loadCommentCount(mockOptions)\n+    const el = document.querySelector<HTMLElement>('.count-element')\n+    expect(el?.innerText).toBe('5')\n+  })\n+\n+  it('should load PV count', async () => {\n+    document.body.innerHTML = '<div class=\"pv-element\" data-page-key=\"test-page-key\"></div>'\n+    await loadPvCount(mockOptions, { 'test-page-key': 100 })\n+    const el = document.querySelector<HTMLElement>('.pv-element')\n+    expect(el?.innerText).toBe('100')\n+  })\n+\n+  it('should retrieve elements based on selectors', () => {\n+    document.body.innerHTML = `\n+      <div class=\"test-element\"></div>\n+      <div class=\"test-element\"></div>\n+    `\n+    const elements = retrieveElements(['.test-element'])\n+    expect(elements.size).toBe(2)\n+  })\n+\n+  it('should get page keys to be queried', () => {\n+    document.body.innerHTML = `\n+      <div class=\"test-element\" data-page-key=\"key1\"></div>\n+      <div class=\"test-element\" data-page-key=\"key2\"></div>\n+    `\n+    const elements = retrieveElements(['.test-element'])\n+    const pageKeys = getPageKeys(elements, 'data-page-key', undefined, {})\n+    expect(pageKeys).toEqual(['key1', 'key2'])\n+  })\n+\n+  it('should update elements text content with the count data', () => {\n+    document.body.innerHTML = `\n+      <div class=\"test-element\" data-page-key=\"key1\"></div>\n+      <div class=\"test-element\" data-page-key=\"key2\"></div>\n+      <div class=\"test-element\"></div>\n+    `\n+    const elements = retrieveElements(['.test-element'])\n+    const data = { key1: 10, key2: 20 }\n+    updateElementsText(elements, data, 'defaultKey')\n+    const els = document.querySelectorAll<HTMLElement>('.test-element')\n+    expect(els[0].innerText).toBe('10')\n+    expect(els[1].innerText).toBe('20')\n+    expect(els[2].innerText).toBe('0')\n+  })\n+})"
+    }
+  ]
+}
