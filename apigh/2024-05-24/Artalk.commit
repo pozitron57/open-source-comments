@@ -1,0 +1,134 @@
+{
+  "sha": "fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+  "node_id": "C_kwDOCQOkhNoAKGZkZmVlZjgwNDI4M2EwZmI3ZjZhNzk2NDQzZGRkODllZDMzZWU0YjE",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-05-24T08:39:22Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-05-24T08:39:22Z"
+    },
+    "message": "fix(ui/sidebar): unable to logout if user is not admin in control center",
+    "tree": {
+      "sha": "26c4d11e8b15a0b9765155c0a4c2996b19744e23",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/26c4d11e8b15a0b9765155c0a4c2996b19744e23"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZlBSOgAKCRDUbg8O6nwT\nak98AQCs/AZQLlbYS0/CqeHDdIdWrs/PPEXKU8wejrFvpjTCHAD/aSaHZHlsjWGQ\n/0aN48HFmFvwVFDXg3x8tsUwUroWmwo=\n=oR/e\n-----END PGP SIGNATURE-----",
+      "payload": "tree 26c4d11e8b15a0b9765155c0a4c2996b19744e23\nparent 824f122dcbd57700b3d4cf57308713cb4260f4ad\nauthor qwqcode <qwqcode@gmail.com> 1716539962 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1716539962 +0800\n\nfix(ui/sidebar): unable to logout if user is not admin in control center\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/824f122dcbd57700b3d4cf57308713cb4260f4ad",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/824f122dcbd57700b3d4cf57308713cb4260f4ad"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 27,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "493fb949e44e74b26769c67beef53d3dbb93e71e",
+      "filename": "ui/artalk-sidebar/src/components/Header.vue",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 2,
+      "changes": 18,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FHeader.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FHeader.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FHeader.vue?ref=fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+      "patch": "@@ -4,9 +4,10 @@ import MD5 from '../lib/md5'\n import { storeToRefs } from 'pinia'\n import { useUserStore } from '../stores/user'\n import { useNavStore } from '../stores/nav'\n-import { artalk } from '../global'\n+import { artalk, isOpenFromSidebar } from '../global'\n \n const nav = useNavStore()\n+const router = useRouter()\n const user = useUserStore()\n const { t } = useI18n()\n const { site: curtSite, isAdmin, email } = storeToRefs(user)\n@@ -16,6 +17,19 @@ const userAvatarImgURL = computed(() => {\n   if (!conf) return ``\n   return `${conf.mirror.replace(/\\/$/, '')}/${MD5(email.value)}?${conf.params.replace(/^\\?/, '')}`\n })\n+\n+const avatarClickHandler = () => {\n+  if (!isOpenFromSidebar()) logout()\n+}\n+\n+const logout = () => {\n+  if (!window.confirm(t('logoutConfirm'))) return\n+\n+  useUserStore().logout()\n+  nextTick(() => {\n+    router.replace('/login')\n+  })\n+}\n </script>\n \n <template>\n@@ -30,7 +44,7 @@ const userAvatarImgURL = computed(() => {\n       </div>\n     </template>\n     <template v-else>\n-      <div class=\"avatar\">\n+      <div class=\"avatar\" @click=\"avatarClickHandler\">\n         <img :src=\"userAvatarImgURL\" />\n       </div>\n     </template>"
+    },
+    {
+      "sha": "a2f9b936c14b970fb9f324343e873a22f16aed9d",
+      "filename": "ui/artalk-sidebar/src/components/SiteSwitcher.vue",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FSiteSwitcher.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FSiteSwitcher.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FSiteSwitcher.vue?ref=fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+      "patch": "@@ -2,7 +2,7 @@\n import { storeToRefs } from 'pinia'\n import { useNavStore } from '../stores/nav'\n import { useUserStore } from '../stores/user'\n-import { bootParams } from '@/global'\n+import { isOpenFromSidebar } from '@/global'\n \n const el = ref<HTMLElement | null>(null)\n \n@@ -69,6 +69,8 @@ watch(curtShow, (value) => {\n })\n \n function logout() {\n+  if (!window.confirm(t('logoutConfirm'))) return\n+\n   useUserStore().logout()\n   nextTick(() => {\n     router.replace('/login')\n@@ -92,7 +94,7 @@ function logout() {\n         </div>\n \n         <!-- Logout Button -->\n-        <div v-if=\"!bootParams.user?.email\" class=\"atk-site-item\" @click=\"logout()\">\n+        <div v-if=\"!isOpenFromSidebar()\" class=\"atk-site-item\" @click=\"logout()\">\n           <svg\n             class=\"atk-site-logo\"\n             stroke=\"currentColor\""
+    },
+    {
+      "sha": "f12c66671861275104ca03df7587ec660bee1f71",
+      "filename": "ui/artalk-sidebar/src/global.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fglobal.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fglobal.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fglobal.ts?ref=fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+      "patch": "@@ -59,3 +59,7 @@ export function initArtalk() {\n     },\n   })\n }\n+\n+export function isOpenFromSidebar() {\n+  return !!bootParams.user?.email\n+}"
+    },
+    {
+      "sha": "355484c90739a04759519b3f654a998460ce055e",
+      "filename": "ui/artalk-sidebar/src/i18n/messages.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fi18n%2Fmessages.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/fdfeef804283a0fb7f6a796443ddd89ed33ee4b1/ui%2Fartalk-sidebar%2Fsrc%2Fi18n%2Fmessages.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fi18n%2Fmessages.ts?ref=fdfeef804283a0fb7f6a796443ddd89ed33ee4b1",
+      "patch": "@@ -77,6 +77,7 @@ const en = {\n   loginFailure: 'Login failure',\n   login: 'Login',\n   logout: 'Logout',\n+  logoutConfirm: 'Are you sure you want to log out?',\n   loginSelectHint: 'Please select the account you wish to log into:',\n }\n \n@@ -159,6 +160,7 @@ const zhCN: typeof en = {\n   loginFailure: '登录发生异常',\n   login: '登录',\n   logout: '退出登录',\n+  logoutConfirm: '确定要退出登录吗？',\n   loginSelectHint: '请选择您要登录的账户：',\n }\n \n@@ -241,6 +243,7 @@ const zhTW: typeof en = {\n   loginFailure: '登入失敗',\n   login: '登入',\n   logout: '登出',\n+  logoutConfirm: '確定要登出嗎？',\n   loginSelectHint: '請選擇您要登入的帳號：',\n }\n "
+    }
+  ]
+}
