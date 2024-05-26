@@ -1,0 +1,110 @@
+{
+  "sha": "1e36d45ec356188fe8f3e321520d6d820b3a6738",
+  "node_id": "C_kwDOCQOkhNoAKDFlMzZkNDVlYzM1NjE4OGZlOGYzZTMyMTUyMGQ2ZDgyMGIzYTY3Mzg",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-05-26T09:36:00Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-05-26T09:36:00Z"
+    },
+    "message": "chore(ci): remove arm/v7 docker build",
+    "tree": {
+      "sha": "99151eb5049017a1e8abcb7980c3e608a1882ae0",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/99151eb5049017a1e8abcb7980c3e608a1882ae0"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/1e36d45ec356188fe8f3e321520d6d820b3a6738",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZlMCgAAKCRDUbg8O6nwT\nalp4AP9M6LtinWZIOeGMlf3UUNafzkRcYOm76jKmjPJW9DiN/QEAsxZWiAmlynnI\notcq+KvWVqniGKxb0uSJCYR7GqErrQ8=\n=DiHk\n-----END PGP SIGNATURE-----",
+      "payload": "tree 99151eb5049017a1e8abcb7980c3e608a1882ae0\nparent d2161cc0fb9771d900f6f1cbac7ae36d7734137d\nauthor qwqcode <qwqcode@gmail.com> 1716716160 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1716716160 +0800\n\nchore(ci): remove arm/v7 docker build\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/1e36d45ec356188fe8f3e321520d6d820b3a6738",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/1e36d45ec356188fe8f3e321520d6d820b3a6738",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/1e36d45ec356188fe8f3e321520d6d820b3a6738/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d2161cc0fb9771d900f6f1cbac7ae36d7734137d",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/d2161cc0fb9771d900f6f1cbac7ae36d7734137d",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/d2161cc0fb9771d900f6f1cbac7ae36d7734137d"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 1,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "d407525727b8b1d7d0670463637b48a7eaa7d01d",
+      "filename": ".github/workflows/build-nightly.yml",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/1e36d45ec356188fe8f3e321520d6d820b3a6738/.github%2Fworkflows%2Fbuild-nightly.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/1e36d45ec356188fe8f3e321520d6d820b3a6738/.github%2Fworkflows%2Fbuild-nightly.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fbuild-nightly.yml?ref=1e36d45ec356188fe8f3e321520d6d820b3a6738",
+      "patch": "@@ -130,7 +130,6 @@ jobs:\n         platform:\n           - linux/amd64\n           - linux/arm64\n-          - linux/arm/v7\n         # exclude:\n         #   # exclude build x86 on arm, and vice versa.\n         #   - { os: macos-14, platform: linux/amd64 }"
+    },
+    {
+      "sha": "75f6ca622f12315e90304e23e6501104f54878de",
+      "filename": ".github/workflows/build.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/1e36d45ec356188fe8f3e321520d6d820b3a6738/.github%2Fworkflows%2Fbuild.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/1e36d45ec356188fe8f3e321520d6d820b3a6738/.github%2Fworkflows%2Fbuild.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/.github%2Fworkflows%2Fbuild.yml?ref=1e36d45ec356188fe8f3e321520d6d820b3a6738",
+      "patch": "@@ -54,7 +54,7 @@ jobs:\n         # since docker push actions will override the previous images,\n         # so need to build `linux/amd64` and push first,\n         # then build `linux/amd64` twice with other archs (build very slow so keep it last).\n-        target: [\"linux/amd64\", \"linux/amd64,linux/arm64,linux/arm/v7\"]\n+        target: [\"linux/amd64\", \"linux/amd64,linux/arm64\"]\n     with:\n       version: ${{ needs.tagging.outputs.version }}\n       dry_run: ${{ inputs.dry_run || false }}"
+    }
+  ]
+}
