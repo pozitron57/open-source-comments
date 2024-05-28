@@ -1,0 +1,79 @@
+{
+  "sha": "f7ba43e5f159d7431c2f3a7000f21d374be541b3",
+  "node_id": "C_kwDOBtgov9oAKGY3YmE0M2U1ZjE1OWQ3NDMxYzJmM2E3MDAwZjIxZDM3NGJlNTQxYjM",
+  "commit": {
+    "author": {
+      "name": "Edward Navarro",
+      "email": "enavarro@canal1.com.co",
+      "date": "2024-05-27T18:51:51Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-05-27T20:22:09Z"
+    },
+    "message": "Complete and update Spanish translations",
+    "tree": {
+      "sha": "116d39126c6189f2ae944bbb0d00d70207b6c017",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/116d39126c6189f2ae944bbb0d00d70207b6c017"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/f7ba43e5f159d7431c2f3a7000f21d374be541b3",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/f7ba43e5f159d7431c2f3a7000f21d374be541b3",
+  "html_url": "https://github.com/umputun/remark42/commit/f7ba43e5f159d7431c2f3a7000f21d374be541b3",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/f7ba43e5f159d7431c2f3a7000f21d374be541b3/comments",
+  "author": null,
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "661f042cb404264b0c4bcddf8b76232f3466bace",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/661f042cb404264b0c4bcddf8b76232f3466bace",
+      "html_url": "https://github.com/umputun/remark42/commit/661f042cb404264b0c4bcddf8b76232f3466bace"
+    }
+  ],
+  "stats": {
+    "total": 96,
+    "additions": 48,
+    "deletions": 48
+  },
+  "files": [
+    {
+      "sha": "4e56e16921edb65894c291e4f05fbb5c5d012f85",
+      "filename": "frontend/apps/remark42/app/locales/es.json",
+      "status": "modified",
+      "additions": 48,
+      "deletions": 48,
+      "changes": 96,
+      "blob_url": "https://github.com/umputun/remark42/blob/f7ba43e5f159d7431c2f3a7000f21d374be541b3/frontend%2Fapps%2Fremark42%2Fapp%2Flocales%2Fes.json",
+      "raw_url": "https://github.com/umputun/remark42/raw/f7ba43e5f159d7431c2f3a7000f21d374be541b3/frontend%2Fapps%2Fremark42%2Fapp%2Flocales%2Fes.json",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Flocales%2Fes.json?ref=f7ba43e5f159d7431c2f3a7000f21d374be541b3",
+      "patch": "@@ -1,32 +1,32 @@\n {\n-  \"auth.back\": \"Volver\",\n-  \"auth.email-address\": \"Dirección de correo electrónico\",\n+  \"auth.back\": \"Regresar\",\n+  \"auth.email-address\": \"Correo electrónico\",\n   \"auth.loading\": \"Cargando...\",\n-  \"auth.oauth-button\": \"Inicie sesión con {provider}\",\n-  \"auth.oauth-source\": \"Acceda a través de sus redes sociales\",\n+  \"auth.oauth-button\": \"Iniciar sesión con {provider}\",\n+  \"auth.oauth-source\": \"Inicia sesión con tus redes sociales\",\n   \"auth.open-profile\": \"Abrir mi perfil\",\n-  \"auth.or\": \"o\",\n-  \"auth.signin\": \"Acceder\",\n-  \"auth.signout\": \"¿Salir?\",\n-  \"auth.submit\": \"Enviar\",\n+  \"auth.or\": \"ó\",\n+  \"auth.signin\": \"Iniciar sesión\",\n+  \"auth.signout\": \"¿Cerrar sesión?\",\n+  \"auth.submit\": \"Ingresar\",\n   \"auth.symbols-restriction\": \"El nombre de usuario debe comenzar con una letra y contener solamente letras latinas, números, guión bajo o espacio\",\n-  \"auth.telegram-check\": \"Marcar\",\n-  \"auth.telegram-link\": \"Telegram bot\",\n-  \"auth.telegram-message-1\": \"You need to authorize your account in the\",\n-  \"auth.telegram-message-2\": \"by clicking “Start” there.\",\n-  \"auth.telegram-message-3\": \"Click “Check” below after authorization in the Telegram bot.\",\n-  \"auth.telegram-optional-qr\": \"o escaneando el código QR\",\n+  \"auth.telegram-check\": \"Verificar\",\n+  \"auth.telegram-link\": \"haciendo clic aquí\",\n+  \"auth.telegram-message-1\": \"Abre Telegram\",\n+  \"auth.telegram-message-2\": \"y luego selecciona la opción “Start” para iniciar la conversación con el bot.\",\n+  \"auth.telegram-message-3\": \"Una vez autorizado por el bot, regresa aquí y haz clic en “Verificar”.\",\n+  \"auth.telegram-optional-qr\": \"ó escaneando el código QR\",\n   \"auth.telegram-qr\": \"Código QR de Telegram\",\n   \"auth.user-not-found\": \"No se encontró el usuario\",\n   \"auth.username\": \"Nombre de usuario\",\n   \"authPanel.disable-comments\": \"Deshabilitar comentarios\",\n-  \"authPanel.disabled-cookies\": \"Deshabilita las cookies de terceros que bloquean el acceso o abre los comentarios en una\",\n+  \"authPanel.disabled-cookies\": \"Deshabilita el bloqueo de cookies de terceros para acceder y comentar\",\n   \"authPanel.enable-comments\": \"Habilitar comentarios\",\n   \"authPanel.enable-cookies\": \"Habilitar cookies para acceder y comentar\",\n-  \"authPanel.hide-settings\": \"Ocultar opciones\",\n+  \"authPanel.hide-settings\": \"Ocultar configuración\",\n   \"authPanel.new-page\": \"nueva página\",\n   \"authPanel.read-only\": \"Solo lectura\",\n-  \"authPanel.show-settings\": \"Mostrar opciones\",\n+  \"authPanel.show-settings\": \"Mostrar configuración\",\n   \"blockingDuration.day\": \"Por un día\",\n   \"blockingDuration.month\": \"Por un mes\",\n   \"blockingDuration.permanently\": \"Permanentemente\",\n@@ -48,39 +48,39 @@\n   \"comment.go-to-parent\": \"Ir al comentario padre\",\n   \"comment.hide\": \"Ocultar\",\n   \"comment.hide-user-comment\": \"¿Quieres ocultar los comentarios de {userName}?\",\n-  \"comment.paid-patreon\": \"Suscriptor de pago a Patreon\",\n-  \"comment.pin\": \"Anclar\",\n-  \"comment.pin-comment\": \"¿Quieres anclar este comentario?\",\n+  \"comment.paid-patreon\": \"Suscriptor de pago en Patreon\",\n+  \"comment.pin\": \"Fijar\",\n+  \"comment.pin-comment\": \"¿Quieres fijar este comentario?\",\n   \"comment.reply\": \"Responder\",\n   \"comment.time\": \"{day} a las {time}\",\n-  \"comment.toggle-verification\": \"Alternar verificación\",\n+  \"comment.toggle-verification\": \"Cambiar verificación\",\n   \"comment.unblock\": \"Desbloquear\",\n   \"comment.unblock-user\": \"¿Quieres desbloquear a este usuario?\",\n-  \"comment.unpin\": \"Desanclar\",\n-  \"comment.unpin-comment\": \"¿Quieres desanclar este comentario?\",\n+  \"comment.unpin\": \"Dejar de fijar\",\n+  \"comment.unpin-comment\": \"¿Quieres dejar de fijar este comentario?\",\n   \"comment.unverified-user\": \"Usuario no verificado\",\n   \"comment.unverify-user\": \"¿Quieres quitar la verificación a {userName}?\",\n   \"comment.verified-user\": \"Usuario verificado\",\n   \"comment.verify-user\": \"¿Quieres verificar a {userName}?\",\n-  \"commentForm.anonymous-uploading-disabled\": \"La carga de imágenes está deshabilitada para usuarios anónimos. Inicie sesión como usuario no anónimo para poder adjuntar imágenes.\",\n+  \"commentForm.anonymous-uploading-disabled\": \"La subida de imágenes está deshabilitada para usuarios anónimos. Inicia sesión como usuario no anónimo para poder adjuntar imágenes.\",\n   \"commentForm.exceeded-size\": \"{fileName} excede el tamaño máximo de {maxImageSize}\",\n-  \"commentForm.input-placeholder\": \"Tu comentario aquí\",\n+  \"commentForm.input-placeholder\": \"Escribe tu comentario\",\n   \"commentForm.new-comment\": \"Nuevo comentario\",\n-  \"commentForm.notice-about-styling\": \"El formato con <a>Markdown</a> está soportado\",\n+  \"commentForm.notice-about-styling\": \"Puedes aplicar estilos usando <a>Markdown</a>\",\n   \"commentForm.preview\": \"Pre-visualizar\",\n   \"commentForm.reply\": \"Responder\",\n   \"commentForm.save\": \"Guardar\",\n   \"commentForm.send\": \"Enviar\",\n   \"commentForm.subscribe-by\": \"Suscribirse por\",\n-  \"commentForm.subscribe-or\": \"o\",\n-  \"commentForm.unauthorized-uploading-disabled\": \"La subida de imágenes está deshabilitada para usuarios no autenticados. Deberías acceder antes de subir imágenes.\",\n+  \"commentForm.subscribe-or\": \"ó\",\n+  \"commentForm.unauthorized-uploading-disabled\": \"La subida de imágenes está deshabilitada para usuarios no autenticados. Inicia sesión para subir imágenes.\",\n   \"commentForm.unexpected-error\": \"Algo salió mal. Por favor vuelve a intentar más tarde.\",\n   \"commentForm.upload-file-fail\": \"La subida de {fileName} falló con \\\"{errorMessage}\\\"\",\n   \"commentForm.uploading\": \"Subiendo...\",\n   \"commentForm.uploading-file\": \"subiendo {fileName}...\",\n   \"commentsSort.best\": \"Mejor\",\n   \"commentsSort.least-controversial\": \"Menos controversial\",\n-  \"commentsSort.least-recently-updated\": \"Actualizado menos recientemente\",\n+  \"commentsSort.least-recently-updated\": \"Actualizado hace tiempo\",\n   \"commentsSort.most-controversial\": \"Más controversial\",\n   \"commentsSort.newest\": \"Más nuevo\",\n   \"commentsSort.oldest\": \"Más antiguo\",\n@@ -92,7 +92,7 @@\n   \"errors.10\": \"Es muy tarde para editar el comentario.\",\n   \"errors.11\": \"El comentario ya tiene una respuesta. No es posible editarlo.\",\n   \"errors.12\": \"No se ha podido guardar el resultado del voto. Por favor vuelve a intentar más tarde.\",\n-  \"errors.13\": \"No puedes votar tu propio comentario.\",\n+  \"errors.13\": \"No puedes votar por tu propio comentario.\",\n   \"errors.14\": \"Ya has votado el comentario.\",\n   \"errors.15\": \"Demasiados votos para el comentario.\",\n   \"errors.16\": \"Ya se ha alcanzado el puntaje mínimo para el comentario.\",\n@@ -106,15 +106,15 @@\n   \"errors.5\": \"El comentario no se ha encontrado. Por favor refresca la página y vuelve a intentar.\",\n   \"errors.6\": \"El sitio no se ha encontrado. Por favor refresca la página y vuelve a intentar.\",\n   \"errors.7\": \"El usuario ha sido bloqueado.\",\n-  \"errors.8\": \"El usuario ha sido bloqueado.\",\n+  \"errors.8\": \"No se pueden publicar comentarios en esta página. Los comentarios son de solo lectura.\",\n   \"errors.9\": \"No se ha podido cambiar el comentario. Por favor vuelve a intentar más tarde.\",\n-  \"errors.conflict\": \"Conflict.\",\n+  \"errors.conflict\": \"Conflicto.\",\n   \"errors.failed-fetch\": \"No se ha podido obtener. Por favor revisa tu conexión a internet o vuelve a intentar más tarde\",\n   \"errors.forbidden\": \"Prohibido.\",\n   \"errors.not-authorized\": \"No autorizado.\",\n   \"errors.to-many-request\": \"Has llegado al límite de peticiones.\",\n   \"errors.unexpected-error\": \"Algo salió mal.\",\n-  \"profile.close\": \"Cerrar perfil\",\n+  \"profile.close\": \"Eliminar perfil\",\n   \"profile.request-to-delete-data\": \"Solicitar la eliminación de mis datos\",\n   \"retry\": \"Intentar de nuevo\",\n   \"root.pinned-comments\": \"Comentarios anclados\",\n@@ -136,39 +136,39 @@\n   \"settings.unblock-user\": \"¿Quieres desbloquear a {userName}?\",\n   \"settings.unknown\": \"desconocido\",\n   \"sort-by\": \"Ordernar por\",\n-  \"subscribeByEmail.back\": \"Volver\",\n+  \"subscribeByEmail.back\": \"Regresar\",\n   \"subscribeByEmail.close\": \"Cerrar\",\n   \"subscribeByEmail.email\": \"Correo electrónico\",\n-  \"subscribeByEmail.have-been-subscribed\": \"Has sido suscripto a actualizaciones por correo electrónico\",\n-  \"subscribeByEmail.have-been-unsubscribed\": \"Has sido de-suscripto a actualizaciones por correo electrónico\",\n+  \"subscribeByEmail.have-been-subscribed\": \"Te has suscrito para recibir actualizaciones por correo electrónico\",\n+  \"subscribeByEmail.have-been-unsubscribed\": \"Te has desuscrito de las actualizaciones por correo electrónico\",\n   \"subscribeByEmail.only-registered-users\": \"Disponible solo para usuarios registrados\",\n   \"subscribeByEmail.submit\": \"Enviar\",\n   \"subscribeByEmail.subscribe\": \"Suscribir\",\n   \"subscribeByEmail.subscribe-by-email\": \"Suscribir por correo electrónico\",\n   \"subscribeByEmail.subscribe-to-replies\": \"Suscribir a respuestas\",\n-  \"subscribeByEmail.subscribed\": \"Estás suscripto a actualizaciones por correo electrónico\",\n-  \"subscribeByEmail.unsubscribe\": \"De-suscribir\",\n+  \"subscribeByEmail.subscribed\": \"Estás suscrito a actualizaciones por correo electrónico\",\n+  \"subscribeByEmail.unsubscribe\": \"Desuscribir\",\n   \"subscribeByRSS.button-title\": \"Suscribir por RSS\",\n   \"subscribeByRSS.replies\": \"Respuestas\",\n   \"subscribeByRSS.site\": \"Sitio\",\n   \"subscribeByRSS.thread\": \"Hilo\",\n   \"subscribeByRSS.title\": \"RSS\",\n-  \"subscribeByTelegram.have-been-subscribed\": \"You have been subscribed on updates by telegram\",\n-  \"subscribeByTelegram.have-been-unsubscribed\": \"You have been unsubscribed by telegram to updates\",\n-  \"subscribeByTelegram.only-registered-users\": \"Available only for registered users\",\n-  \"subscribeByTelegram.resubscribe\": \"Resubscribe\",\n-  \"subscribeByTelegram.subscribe-by-telegram\": \"Subscribe by Telegram\",\n+  \"subscribeByTelegram.have-been-subscribed\": \"Te has suscrito para recibir actualizaciones por telegram\",\n+  \"subscribeByTelegram.have-been-unsubscribed\": \"Te has desuscrito de las actualizaciones por Telegram\",\n+  \"subscribeByTelegram.only-registered-users\": \"Disponible solo para usuarios registrados\",\n+  \"subscribeByTelegram.resubscribe\": \"Suscribir\",\n+  \"subscribeByTelegram.subscribe-by-telegram\": \"Suscribir por Telegram\",\n   \"subscribeByTelegram.telegram\": \"Telegram\",\n-  \"subscribeByTelegram.unsubscribe\": \"Unsubscribe\",\n-  \"token\": \"Copie y pegue el token del mensaje del correo electrónico\",\n+  \"subscribeByTelegram.unsubscribe\": \"Desuscribir\",\n+  \"token\": \"Copia y pega el token de verificación que te enviamos a tu correo electrónico\",\n   \"token.expired\": \"Token expirado\",\n   \"token.invalid\": \"El token no es válido\",\n   \"toolbar.attach-image\": \"Adjunta la imágen, arrastra y suelta, o pega desde el portapapeles\",\n   \"toolbar.bold\": \"Agrega texto en negrita {shortcut}\",\n-  \"toolbar.code\": \"Inserta un código\",\n+  \"toolbar.code\": \"Inserta un bloque de código\",\n   \"toolbar.header\": \"Agrega un título\",\n   \"toolbar.italic\": \"Agrega texto en cursiva {shortcut}\",\n-  \"toolbar.link\": \"Agrega un link {shortcut}\",\n+  \"toolbar.link\": \"Agrega un enlace {shortcut}\",\n   \"toolbar.ordered-list\": \"Agrega una lista numerada\",\n   \"toolbar.quote\": \"Inserta una cita\",\n   \"toolbar.unordered-list\": \"Agrega una lista sin numerar\",\n@@ -177,6 +177,6 @@\n   \"user.my-comments\": \"Mis comentarios\",\n   \"vote.controversy\": \"Controversia: {value}\",\n   \"vote.downvote\": \"Votar en contra\",\n-  \"vote.score\": \"Resultado de los votos\",\n+  \"vote.score\": \"Total de votos\",\n   \"vote.upvote\": \"Votar a favor\"\n }"
+    }
+  ]
+}
