@@ -1,0 +1,158 @@
+{
+  "sha": "2dfee533da05a2793161b9481603ff98eb82310a",
+  "node_id": "C_kwDOCQOkhNoAKDJkZmVlNTMzZGEwNWEyNzkzMTYxYjk0ODE2MDNmZjk4ZWI4MjMxMGE",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-05-29T02:55:39Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-05-29T02:57:14Z"
+    },
+    "message": "fix(api/stats): fix `site_pv` response body and add unit tests (#896)",
+    "tree": {
+      "sha": "418c4c67748f6c731d36a53e651731f776cef254",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/418c4c67748f6c731d36a53e651731f776cef254"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/2dfee533da05a2793161b9481603ff98eb82310a",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZlaZwgAKCRDUbg8O6nwT\nav8aAPoDz4yE07/BrYa1gefFmGHMqpHG6dO5yFnypzJfBVHLZgEA2aSHlrTRwSJK\nGGmoUswfQ00vssPClIYtPQ1P0oarAAY=\n=WpPb\n-----END PGP SIGNATURE-----",
+      "payload": "tree 418c4c67748f6c731d36a53e651731f776cef254\nparent dcaaefc71b6e56f65dca73d024d6c2a4cc5ca69e\nauthor qwqcode <qwqcode@gmail.com> 1716951339 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1716951434 +0800\n\nfix(api/stats): fix `site_pv` response body and add unit tests (#896)\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/2dfee533da05a2793161b9481603ff98eb82310a",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/2dfee533da05a2793161b9481603ff98eb82310a",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/2dfee533da05a2793161b9481603ff98eb82310a/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dcaaefc71b6e56f65dca73d024d6c2a4cc5ca69e",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/dcaaefc71b6e56f65dca73d024d6c2a4cc5ca69e",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/dcaaefc71b6e56f65dca73d024d6c2a4cc5ca69e"
+    }
+  ],
+  "stats": {
+    "total": 358,
+    "additions": 318,
+    "deletions": 40
+  },
+  "files": [
+    {
+      "sha": "18732987cdd98f1e8f454918119e63730f3b0428",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/2dfee533da05a2793161b9481603ff98eb82310a/Makefile",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/2dfee533da05a2793161b9481603ff98eb82310a/Makefile",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/Makefile?ref=2dfee533da05a2793161b9481603ff98eb82310a",
+      "patch": "@@ -38,13 +38,13 @@ dev: build-debug\n \t$(BIN_NAME) $(ARGS)\n \n test:\n-\t$(GOTEST) -timeout 20m ./internal/...\n+\t$(GOTEST) -timeout 20m $(or $(TEST_PATHS), ./...)\n \n test-coverage:\n-\t$(GOTEST) -cover ./...\n+\t$(GOTEST) -cover $(or $(TEST_PATHS), ./...)\n \n test-coverage-html:\n-\t$(GOTEST) -v -coverprofile=coverage.out ./...\n+\t$(GOTEST) -v -coverprofile=coverage.out $(or $(TEST_PATHS), ./...)\n \tgo tool cover -html=coverage.out\n \n update-i18n:"
+    },
+    {
+      "sha": "c342df4a3bfc13b5df59d08132c6358e22a3ab88",
+      "filename": "server/handler/base_test.go",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/2dfee533da05a2793161b9481603ff98eb82310a/server%2Fhandler%2Fbase_test.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/2dfee533da05a2793161b9481603ff98eb82310a/server%2Fhandler%2Fbase_test.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fbase_test.go?ref=2dfee533da05a2793161b9481603ff98eb82310a",
+      "patch": "@@ -0,0 +1,12 @@\n+package handler_test\n+\n+import (\n+\t\"github.com/ArtalkJS/Artalk/test\"\n+\t\"github.com/gofiber/fiber/v2\"\n+)\n+\n+func NewApiTestApp() (*test.TestApp, *fiber.App) {\n+\tapp, _ := test.NewTestApp()\n+\tfiberApp := fiber.New()\n+\treturn app, fiberApp\n+}"
+    },
+    {
+      "sha": "e904fa7e66d59bceff6ac803c8e723b24ad0b6a8",
+      "filename": "server/handler/stat.go",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 16,
+      "changes": 58,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/2dfee533da05a2793161b9481603ff98eb82310a/server%2Fhandler%2Fstat.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/2dfee533da05a2793161b9481603ff98eb82310a/server%2Fhandler%2Fstat.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fstat.go?ref=2dfee533da05a2793161b9481603ff98eb82310a",
+      "patch": "@@ -44,32 +44,38 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\treturn resp\n \t\t}\n \n-\t\t// Limit 限定\n+\t\t// Limit parameter\n \t\tif p.Limit <= 0 {\n \t\t\tp.Limit = 5\n \t\t}\n \t\tif p.Limit > 100 {\n+\t\t\t// The maximum limit is 100 for data security reasons\n \t\t\tp.Limit = 100\n \t\t}\n \n-\t\t// 公共查询规则\n+\t\t// Reusable query scopes\n+\t\t// Query Pages by `site_name`\n \t\tQueryPages := func(d *gorm.DB) *gorm.DB {\n-\t\t\treturn d.Model(&entity.Page{}).Where(\"site_name = ?\", p.SiteName)\n+\t\t\treturn d.Model(&entity.Page{}).Where(&entity.Page{SiteName: p.SiteName})\n \t\t}\n+\t\t// Query Comments by `site_name` and `is_pending=false`\n \t\tQueryComments := func(d *gorm.DB) *gorm.DB {\n-\t\t\treturn d.Model(&entity.Comment{}).Where(\"site_name = ? AND is_pending = ?\", p.SiteName, false)\n+\t\t\treturn d.Model(&entity.Comment{}).Where(&entity.Comment{SiteName: p.SiteName, IsPending: false})\n \t\t}\n+\t\t// Query Order by RAND()\n \t\tQueryOrderRand := func(d *gorm.DB) *gorm.DB {\n \t\t\tif app.Conf().DB.Type == config.TypeSQLite {\n-\t\t\t\treturn d.Order(\"RANDOM()\") // SQLite case\n+\t\t\t\treturn d.Order(\"RANDOM()\") // SQLite\n \t\t\t} else {\n \t\t\t\treturn d.Order(\"RAND()\")\n \t\t\t}\n \t\t}\n \n \t\tswitch queryType {\n \t\tcase \"latest_comments\":\n-\t\t\t// 最新评论\n+\t\t\t// ------------------------------------\n+\t\t\t//  Latest comments\n+\t\t\t// ------------------------------------\n \t\t\tvar comments []*entity.Comment\n \t\t\tapp.Dao().DB().Scopes(QueryComments).\n \t\t\t\tOrder(\"created_at DESC\").\n@@ -81,7 +87,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"latest_pages\":\n-\t\t\t// 最新页面\n+\t\t\t// ------------------------------------\n+\t\t\t//  Latest pages\n+\t\t\t// ------------------------------------\n \t\t\tvar pages []entity.Page\n \t\t\tapp.Dao().DB().Scopes(QueryPages).\n \t\t\t\tOrder(\"created_at DESC\").\n@@ -93,7 +101,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"pv_most_pages\":\n-\t\t\t// PV 数最多的页面\n+\t\t\t// ------------------------------------\n+\t\t\t//  PV most pages\n+\t\t\t// ------------------------------------\n \t\t\tvar pages []entity.Page\n \t\t\tapp.Dao().DB().Scopes(QueryPages).\n \t\t\t\tOrder(\"pv DESC\").\n@@ -105,7 +115,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"comment_most_pages\":\n-\t\t\t// 评论数最多的页面\n+\t\t\t// ------------------------------------\n+\t\t\t//  Comment most pages\n+\t\t\t// ------------------------------------\n \t\t\tvar pages []entity.Page\n \t\t\tapp.Dao().DB().Raw(\n \t\t\t\t\"SELECT * FROM pages p WHERE p.site_name = ? ORDER BY (SELECT COUNT(*) FROM comments c WHERE c.page_key = p.key AND c.is_pending = ?) DESC LIMIT ?\",\n@@ -117,7 +129,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"page_pv\":\n-\t\t\t// 查询页面的 PV 数\n+\t\t\t// ------------------------------------\n+\t\t\t//  Query Multiple page PV\n+\t\t\t// ------------------------------------\n \t\t\tkeys := utils.SplitAndTrimSpace(p.PageKeys, \",\")\n \t\t\tpvs := map[string]int{}\n \t\t\tfor _, k := range keys {\n@@ -134,14 +148,20 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"site_pv\":\n-\t\t\t// 全站 PV 数\n+\t\t\t// ------------------------------------\n+\t\t\t//  Query Site total PV\n+\t\t\t// ------------------------------------\n \t\t\tvar pv int64\n \t\t\tapp.Dao().DB().Raw(\"SELECT SUM(pv) FROM pages WHERE site_name = ?\", p.SiteName).Row().Scan(&pv)\n \n-\t\t\treturn common.RespData(c, pv)\n+\t\t\treturn common.RespData(c, ResponseStat{\n+\t\t\t\tData: pv,\n+\t\t\t})\n \n \t\tcase \"page_comment\":\n-\t\t\t// 查询页面的评论数\n+\t\t\t// ------------------------------------\n+\t\t\t//  Query Multiple page comments\n+\t\t\t// ------------------------------------\n \t\t\tkeys := utils.SplitAndTrimSpace(p.PageKeys, \",\")\n \t\t\tcounts := map[string]int64{}\n \t\t\tfor _, k := range keys {\n@@ -156,7 +176,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"site_comment\":\n-\t\t\t// 全站评论数\n+\t\t\t// ------------------------------------\n+\t\t\t//  Query Site total comments\n+\t\t\t// ------------------------------------\n \t\t\tvar count int64\n \t\t\tapp.Dao().DB().Scopes(QueryComments).Count(&count)\n \n@@ -165,7 +187,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"rand_comments\":\n-\t\t\t// 随机评论\n+\t\t\t// ------------------------------------\n+\t\t\t//  Random comments\n+\t\t\t// ------------------------------------\n \t\t\tvar comments []*entity.Comment\n \t\t\tapp.Dao().DB().Scopes(QueryComments, QueryOrderRand).\n \t\t\t\tLimit(p.Limit).\n@@ -176,7 +200,9 @@ func Stat(app *core.App, router fiber.Router) {\n \t\t\t})\n \n \t\tcase \"rand_pages\":\n-\t\t\t// 随机页面\n+\t\t\t// ------------------------------------\n+\t\t\t//  Random pages\n+\t\t\t// ------------------------------------\n \t\t\tvar pages []entity.Page\n \t\t\tapp.Dao().DB().Scopes(QueryPages, QueryOrderRand).\n \t\t\t\tLimit(p.Limit)."
+    },
+    {
+      "sha": "09fc8e7bba8e307a16dc9306062351462643b2ad",
+      "filename": "server/handler/stat_test.go",
+      "status": "added",
+      "additions": 225,
+      "deletions": 0,
+      "changes": 225,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/2dfee533da05a2793161b9481603ff98eb82310a/server%2Fhandler%2Fstat_test.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/2dfee533da05a2793161b9481603ff98eb82310a/server%2Fhandler%2Fstat_test.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fstat_test.go?ref=2dfee533da05a2793161b9481603ff98eb82310a",
+      "patch": "@@ -0,0 +1,225 @@\n+package handler_test\n+\n+import (\n+\t\"encoding/json\"\n+\t\"fmt\"\n+\t\"io\"\n+\t\"net/http\"\n+\t\"net/http/httptest\"\n+\t\"testing\"\n+\t\"time\"\n+\n+\t\"github.com/ArtalkJS/Artalk/internal/entity\"\n+\t\"github.com/ArtalkJS/Artalk/server/handler\"\n+\t\"github.com/araddon/dateparse\"\n+\t\"github.com/stretchr/testify/assert\"\n+)\n+\n+func TestStat(t *testing.T) {\n+\tapp, fiber := NewApiTestApp()\n+\tdefer app.Cleanup()\n+\n+\thandler.Stat(app.App, fiber)\n+\n+\ttype dataComments struct {\n+\t\tData []entity.CookedComment `json:\"data\"`\n+\t}\n+\ttype dataPages struct {\n+\t\tData []entity.CookedPage `json:\"data\"`\n+\t}\n+\ttype dataCounts struct {\n+\t\tData map[string]int `json:\"data\"`\n+\t}\n+\ttype dataInt struct {\n+\t\tData int `json:\"data\"`\n+\t}\n+\n+\ttests := []struct {\n+\t\tdescription  string\n+\t\turl          string\n+\t\texpectedCode int\n+\t\texpectedBody func(t *testing.T, body string)\n+\t}{\n+\t\t{\n+\t\t\tdescription:  \"Latest comments\",\n+\t\t\turl:          \"/stats/latest_comments?site_name=Site%20A&limit=3\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataComments\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\t\t\t\tassert.Equal(t, 3, len(resp.Data))\n+\n+\t\t\t\t// check if the comments are sorted by created_at\n+\t\t\t\tfor i := 0; i < len(resp.Data)-1; i++ {\n+\t\t\t\t\ttimeA, _ := dateparse.ParseIn(resp.Data[i].Date, time.Local)\n+\t\t\t\t\ttimeB, _ := dateparse.ParseIn(resp.Data[i+1].Date, time.Local)\n+\t\t\t\t\tassert.True(t, timeA.After(timeB), \"Comments should be sorted by created_at\")\n+\t\t\t\t}\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Latest pages\",\n+\t\t\turl:          \"/stats/latest_pages?site_name=Site%20A&limit=2\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataPages\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\t\t\t\tassert.Equal(t, 2, len(resp.Data))\n+\n+\t\t\t\t// check if the pages are sorted by created_at\n+\t\t\t\tfor i := 0; i < len(resp.Data)-1; i++ {\n+\t\t\t\t\ttimeA, _ := dateparse.ParseIn(resp.Data[i].Date, time.Local)\n+\t\t\t\t\ttimeB, _ := dateparse.ParseIn(resp.Data[i+1].Date, time.Local)\n+\t\t\t\t\tassert.True(t, timeA.After(timeB), \"Pages should be sorted by created_at\")\n+\t\t\t\t}\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"PV most pages\",\n+\t\t\turl:          \"/stats/pv_most_pages?site_name=Site%20A&limit=2\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataPages\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\n+\t\t\t\t// check if the pages are sorted by pv\n+\t\t\t\tfor i := 0; i < len(resp.Data)-1; i++ {\n+\t\t\t\t\tassert.True(t, resp.Data[i].PV >= resp.Data[i+1].PV, \"Pages should be sorted by PV\")\n+\t\t\t\t}\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Comment most pages\",\n+\t\t\turl:          \"/stats/comment_most_pages?site_name=Site%20A&limit=2\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataPages\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Page PV\",\n+\t\t\turl:          \"/stats/page_pv?site_name=Site%20A&page_keys=/test/pv_is_10000.html,/test/pv_is_100.html,/test/pv_is_1000.html\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataCounts\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\n+\t\t\t\tassert.Equal(t, 3, len(resp.Data))\n+\t\t\t\tassert.Equal(t, 10000, resp.Data[\"/test/pv_is_10000.html\"])\n+\t\t\t\tassert.Equal(t, 100, resp.Data[\"/test/pv_is_100.html\"])\n+\t\t\t\tassert.Equal(t, 1000, resp.Data[\"/test/pv_is_1000.html\"])\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Site PV\",\n+\t\t\turl:          \"/stats/site_pv?site_name=Site%20A\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataInt\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.Equal(t, 10000+1000+100, resp.Data, \"Site PV should be the sum of all pages' PV\")\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Page comments\",\n+\t\t\turl:          \"/stats/page_comment?site_name=Site%20A&page_keys=/test/1000.html,/test_pagination.html\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataCounts\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\t\t\t\tassert.Equal(t, 2, len(resp.Data))\n+\n+\t\t\t\tassert.Greater(t, resp.Data[\"/test/1000.html\"], 0)\n+\t\t\t\tassert.Greater(t, resp.Data[\"/test_pagination.html\"], 0)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Site comments\",\n+\t\t\turl:          \"/stats/site_comment?site_name=Site%20A\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataInt\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.Greater(t, resp.Data, 0)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Random comments\",\n+\t\t\turl:          \"/stats/rand_comments?site_name=Site%20A&limit=3\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\n+\t\t\t\tfmt.Println(body)\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataComments\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\t\t\t\tassert.Equal(t, 3, len(resp.Data))\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Random pages\",\n+\t\t\turl:          \"/stats/rand_pages?site_name=Site%20A&limit=3\",\n+\t\t\texpectedCode: http.StatusOK,\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\n+\t\t\t\tvar resp dataPages\n+\t\t\t\tjson.Unmarshal([]byte(body), &resp)\n+\n+\t\t\t\tassert.NotEmpty(t, resp.Data)\n+\t\t\t\tassert.Equal(t, 3, len(resp.Data))\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Invalid type\",\n+\t\t\turl:          \"/stats/invalid_type\",\n+\t\t\texpectedCode: http.StatusNotFound,\n+\t\t},\n+\t}\n+\n+\tfor _, test := range tests {\n+\t\tt.Run(test.description, func(t *testing.T) {\n+\t\t\treq := httptest.NewRequest(\"GET\", test.url, nil)\n+\t\t\tresp, _ := fiber.Test(req)\n+\t\t\tassert.Equal(t, test.expectedCode, resp.StatusCode)\n+\t\t\tif test.expectedBody != nil {\n+\t\t\t\tbody, _ := io.ReadAll(resp.Body)\n+\t\t\t\ttest.expectedBody(t, string(body))\n+\t\t\t}\n+\t\t})\n+\t}\n+}"
+    },
+    {
+      "sha": "eb0d11af1d2c2a876b416353a271d1730cb7365e",
+      "filename": "test/fixtures/pages.yml",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/2dfee533da05a2793161b9481603ff98eb82310a/test%2Ffixtures%2Fpages.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/2dfee533da05a2793161b9481603ff98eb82310a/test%2Ffixtures%2Fpages.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/test%2Ffixtures%2Fpages.yml?ref=2dfee533da05a2793161b9481603ff98eb82310a",
+      "patch": "@@ -21,3 +21,30 @@\n   site_name: Site A\n   created_at: 2022-04-29 14:47:59\n   updated_at: 2022-04-29 14:47:59\n+\n+## ----------------------------\n+## Pages with PV\n+## ----------------------------\n+- id: 1003\n+  key: /test/pv_is_100.html\n+  title: PV 为 100 的页面\n+  site_name: Site A\n+  pv: 100\n+  created_at: 2024-05-29 14:49:59\n+  updated_at: 2024-05-29 14:49:59\n+\n+- id: 1004\n+  key: /test/pv_is_1000.html\n+  title: PV 为 1000 的页面\n+  site_name: Site A\n+  pv: 1000\n+  created_at: 2024-05-29 14:51:59\n+  updated_at: 2024-05-29 14:51:59\n+\n+- id: 1005\n+  key: /test/pv_is_10000.html\n+  title: PV 为 10000 的页面\n+  site_name: Site A\n+  pv: 10000\n+  created_at: 2024-05-29 14:53:59\n+  updated_at: 2024-05-29 14:53:59"
+    },
+    {
+      "sha": "d808d7a260c958c1478733083a0c3f7cdc44f2fc",
+      "filename": "test/testdata/model_test_conf.yml",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 21,
+      "changes": 30,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/2dfee533da05a2793161b9481603ff98eb82310a/test%2Ftestdata%2Fmodel_test_conf.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/2dfee533da05a2793161b9481603ff98eb82310a/test%2Ftestdata%2Fmodel_test_conf.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/test%2Ftestdata%2Fmodel_test_conf.yml?ref=2dfee533da05a2793161b9481603ff98eb82310a",
+      "patch": "@@ -1,39 +1,27 @@\n-# 加密密钥\n app_key: test\n-\n-# 调试模式\n debug: false\n-\n-# 时区\n timezone: Asia/Shanghai\n-\n locale: en\n-\n-# 日志\n log:\n   enabled: false\n-\n-# 缓存\n+db:\n+  # without other db conf,\n+  # it will init by `go-testfixtures` in `/test/app.go` manually\n+  type: sqlite\n cache:\n   enabled: false\n-  type: disabled # 支持 redis, memcache, builtin (自带缓存)\n-  expires: 30 # 缓存过期时间 (单位：分钟)\n-  warm_up: false # 程序启动时预热缓存\n-  server: \"\" # 连接缓存服务器 (例如：\"localhost:6379\")\n-\n-# 默认站点名\n+  type: disabled\n+  expires: 30\n+  warm_up: false\n+  server: \"\"\n site_default: 默认站点\n-\n-# 管理员账户\n admin_users:\n   - name: admin_in_conf\n     email: admin_in_conf@example.org\n-    password: \"123456\" # 密码支持 bcrypt 或 md5 加密，例如填写：\"(md5)50c21190c6e4e5418c6a90d2b5031119\"\n+    password: \"123456\"\n     badge_name: 管理员\n     badge_color: \"#FF6C00\"\n-\n http:\n   proxy_header: \"\"\n-\n img_upload:\n   path: ./data/artalk-img"
+    }
+  ]
+}
