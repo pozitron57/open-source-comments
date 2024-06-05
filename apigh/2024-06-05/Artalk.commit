@@ -1,0 +1,182 @@
+{
+  "sha": "f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+  "node_id": "C_kwDOCQOkhNoAKGY4ZjUwOWMwZGVmOWYwMjVmNGM0NjEzMTZmZGZkNWEzYzE0NDRkMDI",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-06-04T10:39:51Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-06-04T10:39:51Z"
+    },
+    "message": "perf(gravatar): convert email to lowercase before hashing for gravatar",
+    "tree": {
+      "sha": "e6035a3f26e0bd2f10cc8661a2bb07ffbff22719",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/e6035a3f26e0bd2f10cc8661a2bb07ffbff22719"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZl7u9wAKCRDUbg8O6nwT\narVvAQDHITQ5AVrw/jHWOnqQTWfhmPLVWsx3DiVdIoQRKQssIgEAzMNvOYzcSWTS\ndjOAUNbHA1wIItgB1xbrhhl+rETTgA8=\n=QmX5\n-----END PGP SIGNATURE-----",
+      "payload": "tree e6035a3f26e0bd2f10cc8661a2bb07ffbff22719\nparent 437d943691dc84ab90280be29ae346da6d450a9a\nauthor qwqcode <qwqcode@gmail.com> 1717497591 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1717497591 +0800\n\nperf(gravatar): convert email to lowercase before hashing for gravatar\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/f8f509c0def9f025f4c461316fdfd5a3c1444d02/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "437d943691dc84ab90280be29ae346da6d450a9a",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/437d943691dc84ab90280be29ae346da6d450a9a",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/437d943691dc84ab90280be29ae346da6d450a9a"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 28,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "8533f3e59b4cef287f3878900b506953f7c25a59",
+      "filename": "docs/docs/develop/api-old.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/docs%2Fdocs%2Fdevelop%2Fapi-old.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/docs%2Fdocs%2Fdevelop%2Fapi-old.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fdevelop%2Fapi-old.md?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -43,7 +43,7 @@\n | `data.comment.id`              | Number   |   -    | 评论 ID                                |\n | `data.comment.content`         | String   |   -    | 评论正文                               |\n | `data.comment.nick`            | String   |   -    | 评论者昵称                             |\n-| `data.comment.email_encrypted` | String   |   -    | 评论者邮箱 MD5 加密值                  |\n+| `data.comment.email_encrypted` | String   |   -    | 评论者邮箱 SHA256 加密值                |\n | `data.comment.link`            | String   |   -    | 评论者链接                             |\n | `data.comment.ua`              | String   |   -    | 评论者 User-Agent                      |\n | `data.comment.date`            | String   |   -    | 评论时间，格式为 `1970-01-01 00:00:00` |"
+    },
+    {
+      "sha": "06336d9f8ac1395cfc33e81463bc877a0062241e",
+      "filename": "internal/dao/cook.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 2,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/internal%2Fdao%2Fcook.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/internal%2Fdao%2Fcook.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fdao%2Fcook.go?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -1,6 +1,8 @@\n package dao\n \n import (\n+\t\"strings\"\n+\n \t\"github.com/ArtalkJS/Artalk/internal/entity\"\n \t\"github.com/ArtalkJS/Artalk/internal/utils\"\n \t\"github.com/samber/lo\"\n@@ -38,7 +40,7 @@ func (dao *Dao) CookComment(c *entity.Comment) entity.CookedComment {\n \t\tContentMarked:  markedContent,\n \t\tUserID:         c.UserID,\n \t\tNick:           user.Name,\n-\t\tEmailEncrypted: utils.GetSha256Hash(user.Email),\n+\t\tEmailEncrypted: utils.GetSha256Hash(strings.ToLower(user.Email)),\n \t\tLink:           user.Link,\n \t\tUA:             c.UA,\n \t\tDate:           c.CreatedAt.Local().Format(CommonDateTimeFormat),\n@@ -90,7 +92,7 @@ func (dao *Dao) CookCommentForEmail(c *entity.Comment) entity.CookedCommentForEm\n \t\tSite:       dao.CookSite(&site),\n \t\tCookedComment: entity.CookedComment{\n \t\t\tID:             c.ID,\n-\t\t\tEmailEncrypted: utils.GetSha256Hash(user.Email),\n+\t\t\tEmailEncrypted: utils.GetSha256Hash(strings.ToLower(user.Email)),\n \t\t\tLink:           user.Link,\n \t\t\tUA:             c.UA,\n \t\t\tIsCollapsed:    c.IsCollapsed,"
+    },
+    {
+      "sha": "414a156593a2e70cc0edede41acb37dfb79b1713",
+      "filename": "pnpm-lock.yaml",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/pnpm-lock.yaml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/pnpm-lock.yaml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/pnpm-lock.yaml?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -243,6 +243,9 @@ importers:\n       artalk:\n         specifier: workspace:^\n         version: link:../artalk\n+      crypto-js:\n+        specifier: ^4.2.0\n+        version: 4.2.0\n       pinia:\n         specifier: ^2.1.7\n         version: 2.1.7(typescript@5.4.5)(vue@3.4.26(typescript@5.4.5))\n@@ -265,6 +268,9 @@ importers:\n       '@tsconfig/node18':\n         specifier: ^18.2.4\n         version: 18.2.4\n+      '@types/crypto-js':\n+        specifier: ^4.2.2\n+        version: 4.2.2\n       '@types/jsdom':\n         specifier: ^21.1.6\n         version: 21.1.6\n@@ -1333,6 +1339,9 @@ packages:\n   '@types/babel__traverse@7.20.5':\n     resolution: {integrity: sha512-WXCyOcRtH37HAUkpXhUduaxdm82b4GSlyTqajXviN4EfiuPgNYR109xMCKvpl6zPIpua0DGlMEDCq+g8EdoheQ==}\n \n+  '@types/crypto-js@4.2.2':\n+    resolution: {integrity: sha512-sDOLlVbHhXpAUAL0YHDUUwDZf3iN4Bwi4W6a0W0b+QcAezUbRtH4FVb+9J4h+XFPW7l/gQ9F8qC7P+Ec4k8QVQ==}\n+\n   '@types/estree@1.0.5':\n     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}\n \n@@ -2077,6 +2086,9 @@ packages:\n     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}\n     engines: {node: '>= 8'}\n \n+  crypto-js@4.2.0:\n+    resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}\n+\n   css-color-keywords@1.0.0:\n     resolution: {integrity: sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg==}\n     engines: {node: '>=4'}\n@@ -5663,6 +5675,8 @@ snapshots:\n     dependencies:\n       '@babel/types': 7.24.5\n \n+  '@types/crypto-js@4.2.2': {}\n+\n   '@types/estree@1.0.5': {}\n \n   '@types/istanbul-lib-coverage@2.0.6': {}\n@@ -6615,6 +6629,8 @@ snapshots:\n       shebang-command: 2.0.0\n       which: 2.0.2\n \n+  crypto-js@4.2.0: {}\n+\n   css-color-keywords@1.0.0: {}\n \n   css-functions-list@3.2.2: {}"
+    },
+    {
+      "sha": "784a20ab144df7d9cd5b6d7d55fe873de0d92d1f",
+      "filename": "ui/artalk-sidebar/package.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk-sidebar%2Fpackage.json",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk-sidebar%2Fpackage.json",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fpackage.json?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -15,6 +15,7 @@\n   },\n   \"dependencies\": {\n     \"artalk\": \"workspace:^\",\n+    \"crypto-js\": \"^4.2.0\",\n     \"pinia\": \"^2.1.7\",\n     \"vue\": \"^3.4.26\",\n     \"vue-i18n\": \"^9.13.1\",\n@@ -24,6 +25,7 @@\n   \"devDependencies\": {\n     \"@rushstack/eslint-patch\": \"^1.10.2\",\n     \"@tsconfig/node18\": \"^18.2.4\",\n+    \"@types/crypto-js\": \"^4.2.2\",\n     \"@types/jsdom\": \"^21.1.6\",\n     \"@vitejs/plugin-vue\": \"^5.0.4\",\n     \"@vue/eslint-config-prettier\": \"^9.0.0\","
+    },
+    {
+      "sha": "4c05cfea738de71a147c8e3a3cc5b59299c02e98",
+      "filename": "ui/artalk-sidebar/src/components/Header.vue",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FHeader.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FHeader.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FHeader.vue?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -1,6 +1,5 @@\n <script setup lang=\"ts\">\n-// @ts-ignore\n-import MD5 from '../lib/md5'\n+import sha256 from 'crypto-js/sha256'\n import { storeToRefs } from 'pinia'\n import { useUserStore } from '../stores/user'\n import { useNavStore } from '../stores/nav'\n@@ -15,7 +14,7 @@ const { site: curtSite, isAdmin, email } = storeToRefs(user)\n const userAvatarImgURL = computed(() => {\n   const conf = artalk?.ctx.conf?.gravatar\n   if (!conf) return ``\n-  return `${conf.mirror.replace(/\\/$/, '')}/${MD5(email.value)}?${conf.params.replace(/^\\?/, '')}`\n+  return `${conf.mirror.replace(/\\/$/, '')}/${sha256(email.value.toLowerCase())}?${conf.params.replace(/^\\?/, '')}`\n })\n \n const avatarClickHandler = () => {"
+    },
+    {
+      "sha": "7d486170e93da06a801e84687644bef8c7dea581",
+      "filename": "ui/artalk-sidebar/src/lib/md5.js",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 6,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/437d943691dc84ab90280be29ae346da6d450a9a/ui%2Fartalk-sidebar%2Fsrc%2Flib%2Fmd5.js",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/437d943691dc84ab90280be29ae346da6d450a9a/ui%2Fartalk-sidebar%2Fsrc%2Flib%2Fmd5.js",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Flib%2Fmd5.js?ref=437d943691dc84ab90280be29ae346da6d450a9a",
+      "patch": "@@ -1,6 +0,0 @@\n-/* eslint-disable */\n-\n-// https://stackoverflow.com/questions/14733374/how-to-generate-an-md5-file-hash-in-javascript-node-js#answer-33486055\n-var MD5 = function(d){var r = M(V(Y(X(d),8*d.length)));return r.toLowerCase()};function M(d){for(var _,m=\"0123456789ABCDEF\",f=\"\",r=0;r<d.length;r++)_=d.charCodeAt(r),f+=m.charAt(_>>>4&15)+m.charAt(15&_);return f}function X(d){for(var _=Array(d.length>>2),m=0;m<_.length;m++)_[m]=0;for(m=0;m<8*d.length;m+=8)_[m>>5]|=(255&d.charCodeAt(m/8))<<m%32;return _}function V(d){for(var _=\"\",m=0;m<32*d.length;m+=8)_+=String.fromCharCode(d[m>>5]>>>m%32&255);return _}function Y(d,_){d[_>>5]|=128<<_%32,d[14+(_+64>>>9<<4)]=_;for(var m=1732584193,f=-271733879,r=-1732584194,i=271733878,n=0;n<d.length;n+=16){var h=m,t=f,g=r,e=i;f=md5_ii(f=md5_ii(f=md5_ii(f=md5_ii(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_ff(f=md5_ff(f=md5_ff(f=md5_ff(f,r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+0],7,-680876936),f,r,d[n+1],12,-389564586),m,f,d[n+2],17,606105819),i,m,d[n+3],22,-1044525330),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+4],7,-176418897),f,r,d[n+5],12,1200080426),m,f,d[n+6],17,-1473231341),i,m,d[n+7],22,-45705983),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+8],7,1770035416),f,r,d[n+9],12,-1958414417),m,f,d[n+10],17,-42063),i,m,d[n+11],22,-1990404162),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+12],7,1804603682),f,r,d[n+13],12,-40341101),m,f,d[n+14],17,-1502002290),i,m,d[n+15],22,1236535329),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+1],5,-165796510),f,r,d[n+6],9,-1069501632),m,f,d[n+11],14,643717713),i,m,d[n+0],20,-373897302),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+5],5,-701558691),f,r,d[n+10],9,38016083),m,f,d[n+15],14,-660478335),i,m,d[n+4],20,-405537848),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+9],5,568446438),f,r,d[n+14],9,-1019803690),m,f,d[n+3],14,-187363961),i,m,d[n+8],20,1163531501),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+13],5,-1444681467),f,r,d[n+2],9,-51403784),m,f,d[n+7],14,1735328473),i,m,d[n+12],20,-1926607734),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+5],4,-378558),f,r,d[n+8],11,-2022574463),m,f,d[n+11],16,1839030562),i,m,d[n+14],23,-35309556),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+1],4,-1530992060),f,r,d[n+4],11,1272893353),m,f,d[n+7],16,-155497632),i,m,d[n+10],23,-1094730640),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+13],4,681279174),f,r,d[n+0],11,-358537222),m,f,d[n+3],16,-722521979),i,m,d[n+6],23,76029189),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+9],4,-640364487),f,r,d[n+12],11,-421815835),m,f,d[n+15],16,530742520),i,m,d[n+2],23,-995338651),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+0],6,-198630844),f,r,d[n+7],10,1126891415),m,f,d[n+14],15,-1416354905),i,m,d[n+5],21,-57434055),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+12],6,1700485571),f,r,d[n+3],10,-1894986606),m,f,d[n+10],15,-1051523),i,m,d[n+1],21,-2054922799),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+8],6,1873313359),f,r,d[n+15],10,-30611744),m,f,d[n+6],15,-1560198380),i,m,d[n+13],21,1309151649),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+4],6,-145523070),f,r,d[n+11],10,-1120210379),m,f,d[n+2],15,718787259),i,m,d[n+9],21,-343485551),m=safe_add(m,h),f=safe_add(f,t),r=safe_add(r,g),i=safe_add(i,e)}return Array(m,f,r,i)}function md5_cmn(d,_,m,f,r,i){return safe_add(bit_rol(safe_add(safe_add(_,d),safe_add(f,i)),r),m)}function md5_ff(d,_,m,f,r,i,n){return md5_cmn(_&m|~_&f,d,_,r,i,n)}function md5_gg(d,_,m,f,r,i,n){return md5_cmn(_&f|m&~f,d,_,r,i,n)}function md5_hh(d,_,m,f,r,i,n){return md5_cmn(_^m^f,d,_,r,i,n)}function md5_ii(d,_,m,f,r,i,n){return md5_cmn(m^(_|~f),d,_,r,i,n)}function safe_add(d,_){var m=(65535&d)+(65535&_);return(d>>16)+(_>>16)+(m>>16)<<16|65535&m}function bit_rol(d,_){return d<<_|d>>>32-_}\n-\n-export default MD5"
+    },
+    {
+      "sha": "eeada0100e76b243ce4d936d07490248cad6eac2",
+      "filename": "ui/artalk/src/comment/comment-node.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk%2Fsrc%2Fcomment%2Fcomment-node.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk%2Fsrc%2Fcomment%2Fcomment-node.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fcomment%2Fcomment-node.ts?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -204,7 +204,7 @@ export default class CommentNode {\n     return Utils.getGravatarURL({\n       mirror: this.opts.gravatar.mirror,\n       params: this.opts.gravatar.params,\n-      emailMD5: this.data.email_encrypted,\n+      emailHash: this.data.email_encrypted,\n     })\n   }\n "
+    },
+    {
+      "sha": "e9510675a02a1be055389f88bd5d45e16d55dac3",
+      "filename": "ui/artalk/src/lib/utils.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk%2Fsrc%2Flib%2Futils.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/f8f509c0def9f025f4c461316fdfd5a3c1444d02/ui%2Fartalk%2Fsrc%2Flib%2Futils.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Flib%2Futils.ts?ref=f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "patch": "@@ -107,8 +107,8 @@ export function timeAgo(date: Date, $t: Function = (n: string) => n) {\n   }\n }\n \n-export function getGravatarURL(opts: { params: string; mirror: string; emailMD5: string }) {\n-  return `${opts.mirror.replace(/\\/$/, '')}/${opts.emailMD5}?${opts.params.replace(/^\\?/, '')}`\n+export function getGravatarURL(opts: { params: string; mirror: string; emailHash: string }) {\n+  return `${opts.mirror.replace(/\\/$/, '')}/${opts.emailHash}?${opts.params.replace(/^\\?/, '')}`\n }\n \n export function sleep(ms: number) {"
+    }
+  ]
+}
