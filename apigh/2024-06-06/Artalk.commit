@@ -1,0 +1,122 @@
+{
+  "sha": "5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+  "node_id": "C_kwDOCQOkhNoAKDVmZGYzYTI3Y2U5YTBmNWYzNmExZmM3M2FhYmJmODExOTZjYTNiMDc",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-06-06T04:15:11Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-06-06T06:57:35Z"
+    },
+    "message": "fix(auth): failed to register by social account on mysql database (#902)",
+    "tree": {
+      "sha": "3b45e588781b53480d643b018c4efdd419ebbe8c",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/3b45e588781b53480d643b018c4efdd419ebbe8c"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZmFeFwAKCRDUbg8O6nwT\naugdAP9ggnOhDkzrATgLO+7ReBC/ChwdjzksYqyNa9WB9EZE4gEA0k3EI/7EcYn8\nQCNPp1qwFHOzBGADB9S+A0xNc9wf3gs=\n=y6nD\n-----END PGP SIGNATURE-----",
+      "payload": "tree 3b45e588781b53480d643b018c4efdd419ebbe8c\nparent f8f509c0def9f025f4c461316fdfd5a3c1444d02\nauthor qwqcode <qwqcode@gmail.com> 1717647311 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1717657055 +0800\n\nfix(auth): failed to register by social account on mysql database (#902)\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/f8f509c0def9f025f4c461316fdfd5a3c1444d02",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/f8f509c0def9f025f4c461316fdfd5a3c1444d02"
+    }
+  ],
+  "stats": {
+    "total": 35,
+    "additions": 26,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "a6a511deb18a8a07c6629a3035b5590a68a80365",
+      "filename": "internal/auth/providers.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 10,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/internal%2Fauth%2Fproviders.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/internal%2Fauth%2Fproviders.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fauth%2Fproviders.go?ref=5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+      "patch": "@@ -45,11 +45,13 @@ func GetProviders(conf *config.Config) []goth.Provider {\n \t}\n \t// @see https://docs.gitlab.com/ee/integration/oauth_provider.html\n \tif gitlabConf := conf.Auth.Gitlab; gitlabConf.Enabled {\n-\t\tproviders = append(providers, gitlab.New(gitlabConf.ClientID, gitlabConf.ClientSecret, callbackURL(\"gitlab\")))\n+\t\tproviders = append(providers, gitlab.New(gitlabConf.ClientID, gitlabConf.ClientSecret, callbackURL(\"gitlab\"),\n+\t\t\t\"read_user\", \"email\"))\n \t}\n \t// @see https://docs.gitea.io/en-us/oauth2-provider/\n \tif giteaConf := conf.Auth.Gitea; giteaConf.Enabled {\n-\t\tproviders = append(providers, gitea.New(giteaConf.ClientID, giteaConf.ClientSecret, callbackURL(\"gitea\")))\n+\t\tproviders = append(providers, gitea.New(giteaConf.ClientID, giteaConf.ClientSecret, callbackURL(\"gitea\"),\n+\t\t\t\"read:user\"))\n \t}\n \t// @see https://developers.google.com/identity/protocols/oauth2\n \tif googleConf := conf.Auth.Google; googleConf.Enabled {\n@@ -102,12 +104,12 @@ func GetProviders(conf *config.Config) []goth.Provider {\n \t// @see https://www.patreon.com/portal/registration\n \tif patreonConf := conf.Auth.Patreon; patreonConf.Enabled {\n \t\tproviders = append(providers, patreon.New(patreonConf.ClientID, patreonConf.ClientSecret, callbackURL(\"patreon\"),\n-\t\t\tpatreon.ScopeIdentityEmail))\n+\t\t\tpatreon.ScopeIdentity, patreon.ScopeIdentityEmail))\n \t}\n \t// @see https://auth0.com/docs/api/authentication\n \tif auth0Conf := conf.Auth.Auth0; auth0Conf.Enabled {\n \t\tproviders = append(providers, auth0.New(auth0Conf.ClientID, auth0Conf.ClientSecret, callbackURL(\"auth0\"),\n-\t\t\tauth0Conf.Domain))\n+\t\t\tauth0Conf.Domain, \"openid\", \"profile\", \"email\"))\n \t}\n \n \treturn providers"
+    },
+    {
+      "sha": "c908cd2a1ac1d3cd039dd02f31cc1cfbdf274a02",
+      "filename": "internal/auth/social_register.go",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 4,
+      "changes": 13,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/internal%2Fauth%2Fsocial_register.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/internal%2Fauth%2Fsocial_register.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fauth%2Fsocial_register.go?ref=5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+      "patch": "@@ -11,13 +11,13 @@ import (\n \n func RegisterSocialUser(dao *dao.Dao, u SocialUser) (entity.AuthIdentity, error) {\n \tif u.Name == \"\" {\n-\t\treturn entity.AuthIdentity{}, fmt.Errorf(\"name is required\")\n+\t\treturn entity.AuthIdentity{}, fmt.Errorf(\"cannot fetch user name from social identity provider\")\n \t}\n \tif u.Email == \"\" {\n-\t\treturn entity.AuthIdentity{}, fmt.Errorf(\"email is required\")\n+\t\treturn entity.AuthIdentity{}, fmt.Errorf(\"cannot fetch user email from social identity provider\")\n \t}\n \tif !utils.ValidateEmail(u.Email) {\n-\t\treturn entity.AuthIdentity{}, fmt.Errorf(\"email is invalid\")\n+\t\treturn entity.AuthIdentity{}, fmt.Errorf(\"email is invalid which fetched from social identity provider\")\n \t}\n \n \t// Create user if not exists\n@@ -26,6 +26,11 @@ func RegisterSocialUser(dao *dao.Dao, u SocialUser) (entity.AuthIdentity, error)\n \t\treturn entity.AuthIdentity{}, err\n \t}\n \n+\tvar expiresAt *time.Time\n+\tif !u.ExpiresAt.IsZero() {\n+\t\texpiresAt = &u.ExpiresAt\n+\t}\n+\n \t// Store user auth identity in db\n \tnow := time.Now()\n \tauthIdentity := entity.AuthIdentity{\n@@ -34,7 +39,7 @@ func RegisterSocialUser(dao *dao.Dao, u SocialUser) (entity.AuthIdentity, error)\n \t\tUserID:      user.ID,\n \t\tToken:       u.AccessToken,\n \t\tConfirmedAt: &now,\n-\t\tExpiresAt:   &u.ExpiresAt,\n+\t\tExpiresAt:   expiresAt,\n \t}\n \tif err := dao.CreateAuthIdentity(&authIdentity); err != nil {\n \t\treturn entity.AuthIdentity{}, err"
+    },
+    {
+      "sha": "6166526e6d641bba52e29fd73644354fcf132ffd",
+      "filename": "internal/auth/social_user.go",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 1,
+      "changes": 12,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/internal%2Fauth%2Fsocial_user.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07/internal%2Fauth%2Fsocial_user.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fauth%2Fsocial_user.go?ref=5fdf3a27ce9a0f5f36a1fc73aabbf81196ca3b07",
+      "patch": "@@ -1,6 +1,10 @@\n package auth\n \n-import \"github.com/markbates/goth\"\n+import (\n+\t\"strings\"\n+\n+\t\"github.com/markbates/goth\"\n+)\n \n type SocialUser struct {\n \tgoth.User\n@@ -27,6 +31,12 @@ func GetSocialUser(u goth.User) SocialUser {\n \t\tu.Email = u.UserID + \"@\" + u.Provider + \".com\"\n \t}\n \n+\t// Name patch\n+\tif u.Name == \"\" && u.Email != \"\" {\n+\t\t// try extract name from email\n+\t\tu.Name = strings.Split(u.Email, \"@\")[0]\n+\t}\n+\n \treturn SocialUser{\n \t\tUser:      u,\n \t\tRemoteUID: u.UserID,"
+    }
+  ]
+}
