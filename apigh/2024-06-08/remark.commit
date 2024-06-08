@@ -1,0 +1,146 @@
+{
+  "sha": "eadd65e247f27419980df82160a88225c0ea87ef",
+  "node_id": "C_kwDOBtgov9oAKGVhZGQ2NWUyNDdmMjc0MTk5ODBkZjgyMTYwYTg4MjI1YzBlYTg3ZWY",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-06-04T21:43:14Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-06-05T18:05:42Z"
+    },
+    "message": "update docker images, clarify comments",
+    "tree": {
+      "sha": "6c4efbe6b61cb6e68d40fc77fdfaab57c56fd1cd",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/6c4efbe6b61cb6e68d40fc77fdfaab57c56fd1cd"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/eadd65e247f27419980df82160a88225c0ea87ef",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/eadd65e247f27419980df82160a88225c0ea87ef",
+  "html_url": "https://github.com/umputun/remark42/commit/eadd65e247f27419980df82160a88225c0ea87ef",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/eadd65e247f27419980df82160a88225c0ea87ef/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4428f790467a93ec719de509272e437287bf2664",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/4428f790467a93ec719de509272e437287bf2664",
+      "html_url": "https://github.com/umputun/remark42/commit/4428f790467a93ec719de509272e437287bf2664"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 10,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "941e7c01bf38fd57af8a3acc04ca3ec6f15eb816",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/eadd65e247f27419980df82160a88225c0ea87ef/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/eadd65e247f27419980df82160a88225c0ea87ef/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=eadd65e247f27419980df82160a88225c0ea87ef",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM --platform=$BUILDPLATFORM node:16.20.2-alpine AS frontend-deps\n+FROM --platform=$BUILDPLATFORM node:16.20-alpine AS frontend-deps\n \n ARG SKIP_FRONTEND_TEST\n ARG SKIP_FRONTEND_BUILD\n@@ -45,7 +45,7 @@ RUN \\\n     echo 'Skip frontend build'; \\\n   fi\n \n-FROM umputun/baseimage:buildgo-v1.12.0 as build-backend\n+FROM umputun/baseimage:buildgo-v1.13.0 as build-backend\n \n ARG CI\n ARG GITHUB_REF\n@@ -81,15 +81,15 @@ RUN \\\n     echo \"version=$version\" && \\\n     go build -o remark42 -ldflags \"-X main.revision=${version} -s -w\" ./app\n \n-FROM umputun/baseimage:app-v1.12.0\n+FROM umputun/baseimage:app-v1.13.0\n \n ARG GITHUB_SHA\n \n LABEL org.opencontainers.image.authors=\"Umputun <umputun@gmail.com>\" \\\n       org.opencontainers.image.description=\"Remark42 comment engine\" \\\n       org.opencontainers.image.documentation=\"https://remark42.com/docs/getting-started/\" \\\n       org.opencontainers.image.licenses=\"MIT\" \\\n-      org.opencontainers.image.source=\"https://github.com/umputun/remark42.git\" \\\n+      org.opencontainers.image.source=\"https://github.com/umputun/remark42\" \\\n       org.opencontainers.image.title=\"Remark42\" \\\n       org.opencontainers.image.url=\"https://remark42.com/\" \\\n       org.opencontainers.image.revision=\"${GITHUB_SHA}\""
+    },
+    {
+      "sha": "35737da99f84f7f8cf857c9f2ecbaad432b1ddfe",
+      "filename": "Dockerfile.artifacts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/eadd65e247f27419980df82160a88225c0ea87ef/Dockerfile.artifacts",
+      "raw_url": "https://github.com/umputun/remark42/raw/eadd65e247f27419980df82160a88225c0ea87ef/Dockerfile.artifacts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile.artifacts?ref=eadd65e247f27419980df82160a88225c0ea87ef",
+      "patch": "@@ -19,7 +19,7 @@ WORKDIR /srv/frontend/apps/remark42/\n COPY ./frontend/apps/remark42/ /srv/frontend/apps/remark42/\n RUN pnpm build\n \n-FROM umputun/baseimage:buildgo-v1.12.0 as build-backend\n+FROM umputun/baseimage:buildgo-v1.13.0 as build-backend\n \n ARG GITHUB_TOKEN\n ARG GITHUB_REF"
+    },
+    {
+      "sha": "d9abf6fa09f38d912d144e9182569d07358d073d",
+      "filename": "backend/_example/memory_store/Dockerfile",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/eadd65e247f27419980df82160a88225c0ea87ef/backend%2F_example%2Fmemory_store%2FDockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/eadd65e247f27419980df82160a88225c0ea87ef/backend%2F_example%2Fmemory_store%2FDockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2FDockerfile?ref=eadd65e247f27419980df82160a88225c0ea87ef",
+      "patch": "@@ -1,19 +1,19 @@\n-FROM umputun/baseimage:buildgo-v1.12.0 as build-backend\n+FROM umputun/baseimage:buildgo-v1.13.0 as build-backend\n \n ADD backend /build/backend\n WORKDIR /build/backend/_example/memory_store\n \n RUN go build -o /build/bin/memory_store -ldflags \"-X main.revision=0.0.0 -s -w\"\n \n-FROM umputun/baseimage:app-v1.12.0\n+FROM umputun/baseimage:app-v1.13.0\n \n ARG GITHUB_SHA\n \n LABEL org.opencontainers.image.authors=\"Umputun <umputun@gmail.com>\" \\\n       org.opencontainers.image.description=\"Remark42 comment engine example JRPC memory store\" \\\n       org.opencontainers.image.documentation=\"https://github.com/umputun/remark42/tree/master/backend/_example/memory_store\" \\\n       org.opencontainers.image.licenses=\"MIT\" \\\n-      org.opencontainers.image.source=\"https://github.com/umputun/remark42.git\" \\\n+      org.opencontainers.image.source=\"https://github.com/umputun/remark42\" \\\n       org.opencontainers.image.title=\"Remark42 JRPC example memory store\" \\\n       org.opencontainers.image.url=\"https://remark42.com/\" \\\n       org.opencontainers.image.revision=\"${GITHUB_SHA}\""
+    },
+    {
+      "sha": "7a0f075a3b51cca72e1c110d72f8377991f6413a",
+      "filename": "frontend/Dockerfile.e2e",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/eadd65e247f27419980df82160a88225c0ea87ef/frontend%2FDockerfile.e2e",
+      "raw_url": "https://github.com/umputun/remark42/raw/eadd65e247f27419980df82160a88225c0ea87ef/frontend%2FDockerfile.e2e",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2FDockerfile.e2e?ref=eadd65e247f27419980df82160a88225c0ea87ef",
+      "patch": "@@ -1,4 +1,4 @@\n-FROM mcr.microsoft.com/playwright:v1.40.1-jammy\n+FROM mcr.microsoft.com/playwright:v1.44-jammy\n \n ENV CI true\n WORKDIR /frontend"
+    },
+    {
+      "sha": "9dd161ea4e678b7ea588b0de52eb804e952f706f",
+      "filename": "site/Dockerfile",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/eadd65e247f27419980df82160a88225c0ea87ef/site%2FDockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/eadd65e247f27419980df82160a88225c0ea87ef/site%2FDockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2FDockerfile?ref=eadd65e247f27419980df82160a88225c0ea87ef",
+      "patch": "@@ -11,7 +11,7 @@ LABEL org.opencontainers.image.authors=\"Umputun <umputun@gmail.com>\" \\\n       org.opencontainers.image.description=\"Remark42 site\" \\\n       org.opencontainers.image.documentation=\"https://github.com/umputun/remark42/tree/master/site\" \\\n       org.opencontainers.image.licenses=\"MIT\" \\\n-      org.opencontainers.image.source=\"https://github.com/umputun/remark42.git\" \\\n+      org.opencontainers.image.source=\"https://github.com/umputun/remark42\" \\\n       org.opencontainers.image.title=\"Remark42 site\" \\\n       org.opencontainers.image.url=\"https://remark42.com/\"\n "
+    }
+  ]
+}
