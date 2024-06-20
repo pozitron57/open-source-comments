@@ -1,0 +1,122 @@
+{
+  "sha": "acf7480b91448bb0764a9d16e0746090674670f4",
+  "node_id": "C_kwDOCQOkhNoAKGFjZjc0ODBiOTE0NDhiYjA3NjRhOWQxNmUwNzQ2MDkwNjc0NjcwZjQ",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-06-19T14:06:19Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-06-19T14:10:11Z"
+    },
+    "message": "fix(api/auth): fix missing Microsoft oauth provider configuration (#929)",
+    "tree": {
+      "sha": "05fe3c7ade11d025193ed8c2dd78fe6bf87796d0",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/05fe3c7ade11d025193ed8c2dd78fe6bf87796d0"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/acf7480b91448bb0764a9d16e0746090674670f4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZnLmwwAKCRDUbg8O6nwT\naseRAP9dxAocJO9Kn3KQLZD3rRITEEPTvOUMwbpzWzBwp1ct8QD/Qz+jB2qmLU+Y\nN9+FLV2lMd7YiHC5Mj9H72NGfbTU2wk=\n=5r9t\n-----END PGP SIGNATURE-----",
+      "payload": "tree 05fe3c7ade11d025193ed8c2dd78fe6bf87796d0\nparent be0dcd6b598d9e406529ff0e5284253090bf6195\nauthor qwqcode <qwqcode@gmail.com> 1718805979 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1718806211 +0800\n\nfix(api/auth): fix missing Microsoft oauth provider configuration (#929)\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/acf7480b91448bb0764a9d16e0746090674670f4",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/acf7480b91448bb0764a9d16e0746090674670f4",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/acf7480b91448bb0764a9d16e0746090674670f4/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "be0dcd6b598d9e406529ff0e5284253090bf6195",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/be0dcd6b598d9e406529ff0e5284253090bf6195",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/be0dcd6b598d9e406529ff0e5284253090bf6195"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 9,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "6c24ee64bb15ad208d638a79f049044c9f24975c",
+      "filename": "go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/acf7480b91448bb0764a9d16e0746090674670f4/go.mod",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/acf7480b91448bb0764a9d16e0746090674670f4/go.mod",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/go.mod?ref=acf7480b91448bb0764a9d16e0746090674670f4",
+      "patch": "@@ -109,6 +109,7 @@ require (\n \tgithub.com/lestrrat-go/option v1.0.1 // indirect\n \tgithub.com/line/line-bot-sdk-go v7.8.0+incompatible // indirect\n \tgithub.com/mailru/easyjson v0.7.7 // indirect\n+\tgithub.com/markbates/going v1.0.0 // indirect\n \tgithub.com/mattn/go-isatty v0.0.20 // indirect\n \tgithub.com/mattn/go-runewidth v0.0.15 // indirect\n \tgithub.com/mattn/go-sqlite3 v1.14.22 // indirect"
+    },
+    {
+      "sha": "d4f2d0bf4dee34baae094c9b30db7ad35481d24d",
+      "filename": "go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/acf7480b91448bb0764a9d16e0746090674670f4/go.sum",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/acf7480b91448bb0764a9d16e0746090674670f4/go.sum",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/go.sum?ref=acf7480b91448bb0764a9d16e0746090674670f4",
+      "patch": "@@ -392,6 +392,8 @@ github.com/lionsoul2014/ip2region/binding/golang v0.0.0-20240510055607-89e20ab7b\n github.com/lionsoul2014/ip2region/binding/golang v0.0.0-20240510055607-89e20ab7b6c6/go.mod h1:C5LA5UO2ZXJrLaPLYtE1wUJMiyd/nwWaCO5cw/2pSHs=\n github.com/mailru/easyjson v0.7.7 h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0=\n github.com/mailru/easyjson v0.7.7/go.mod h1:xzfreul335JAWq5oZzymOObrkdz5UnU4kGfJJLY9Nlc=\n+github.com/markbates/going v1.0.0 h1:DQw0ZP7NbNlFGcKbcE/IVSOAFzScxRtLpd0rLMzLhq0=\n+github.com/markbates/going v1.0.0/go.mod h1:I6mnB4BPnEeqo85ynXIx1ZFLLbtiLHNXVgWeFO9OGOA=\n github.com/markbates/goth v1.80.0 h1:NnvatczZDzOs1hn9Ug+dVYf2Viwwkp/ZDX5K+GLjan8=\n github.com/markbates/goth v1.80.0/go.mod h1:4/GYHo+W6NWisrMPZnq0Yr2Q70UntNLn7KXEFhrIdAY=\n github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU="
+    },
+    {
+      "sha": "716702a81b2a6e7b1a11c738ff83ba9060781184",
+      "filename": "internal/auth/providers.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/acf7480b91448bb0764a9d16e0746090674670f4/internal%2Fauth%2Fproviders.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/acf7480b91448bb0764a9d16e0746090674670f4/internal%2Fauth%2Fproviders.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fauth%2Fproviders.go?ref=acf7480b91448bb0764a9d16e0746090674670f4",
+      "patch": "@@ -18,6 +18,7 @@ import (\n \t\"github.com/markbates/goth/providers/google\"\n \t\"github.com/markbates/goth/providers/line\"\n \t\"github.com/markbates/goth/providers/mastodon\"\n+\t\"github.com/markbates/goth/providers/microsoftonline\"\n \t\"github.com/markbates/goth/providers/patreon\"\n \t\"github.com/markbates/goth/providers/slack\"\n \t\"github.com/markbates/goth/providers/steam\"\n@@ -83,6 +84,11 @@ func GetProviders(conf *config.Config) []goth.Provider {\n \t\tproviders = append(providers, apple.New(appleConf.ClientID, appleConf.ClientSecret, callbackURL(\"apple\"), nil,\n \t\t\tapple.ScopeEmail, apple.ScopeName))\n \t}\n+\t// @see https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow\n+\tif microsoftConf := conf.Auth.Microsoft; microsoftConf.Enabled {\n+\t\tproviders = append(providers, microsoftonline.New(microsoftConf.ClientID, microsoftConf.ClientSecret, callbackURL(\"microsoft\"),\n+\t\t\t\"openid\", \"offline_access\", \"profile\", \"user.read\", \"email\"))\n+\t}\n \t// @see https://developers.weixin.qq.com/doc/oplatform/Website_App/WeChat_Login/Wechat_Login.html\n \tif wechatConf := conf.Auth.Wechat; wechatConf.Enabled {\n \t\tproviders = append(providers, wechat.New(wechatConf.ClientID, wechatConf.ClientSecret, callbackURL(\"wechat\"),"
+    }
+  ]
+}
