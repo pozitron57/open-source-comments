@@ -1,0 +1,174 @@
+{
+  "sha": "6f3874c68f1303e172d203552740353ff32445c3",
+  "node_id": "C_kwDOAF-mA9oAKDZmMzg3NGM2OGYxMzAzZTE3MmQyMDM1NTI3NDAzNTNmZjMyNDQ1YzM",
+  "commit": {
+    "author": {
+      "name": "ix5",
+      "email": "ix5@users.noreply.github.com",
+      "date": "2024-05-17T18:31:03Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-05-17T18:31:03Z"
+    },
+    "message": "Merge pull request #993 from pkvach/fix/js-prevent-multiple-submit\n\njs: isso.js: Disable Postbox submit button on click, enable after response",
+    "tree": {
+      "sha": "43e15209f2d9c7bebf773f7a152cfb952f6d4d02",
+      "url": "https://api.github.com/repos/isso-comments/isso/git/trees/43e15209f2d9c7bebf773f7a152cfb952f6d4d02"
+    },
+    "url": "https://api.github.com/repos/isso-comments/isso/git/commits/6f3874c68f1303e172d203552740353ff32445c3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmR6JnCRC1aQ7uu5UhlAAAfPcQADLN710AFfkBAK6+aoc3Tykh\nyRi7ibVzx/dgvlxM5wSG9MSbsvt2nO8lqIMhgFV52zVflpu7RtpMyr3YQ8nbDiS3\nRpNVz3xOMx277hWD1s6+O33DNfVj36kws29cMGDrWVw4lVR8zTzwGJf5vuldjdez\nxSF3jicXT0dmOK/M/DN4KM3KwP4yVjoo0gUuzIXlVjbiLlX78GbAMlGhQjDvPack\nbbSV3JpOxy0qlR+S/+MKw1oPwKW8qDrJYuSTqU3qgP9vp9oxsinuS0c6xYlq4ao9\nCAO6I6+N0wFKaErkEVeGvpvyz7+OIYyJjBTF14pch4pFc4ymad2JadZHldx93YKw\n8gyR0Ym4y+r+mgPXPFPUj0dje+OD4b3gEpeokSrmsrxQFH/WxdMJIf4nNr9PeqA8\n860P1QuEmLm0wnjJOO3YgeUp0mCUvM28NTc5AH1f3CvzLe3u9PMFQckiQ3C8Y4iy\n5KhQQbks7DQ80z4Xp8iRZ5SbIrxN4lqCNJZL4xOfQ6PFI4MKRfITdJcNbFvhXrNg\nRY0l1C4K0GFEiajyZ7HiaP5cbfIJxZpbMqUix+fUUPj45AU2t5GMM1d/d2CHr9di\nm+5I8gE5+yVdjUQOizEH1N/7XgR9J/rjgGas3v/npDsmw8U7Vu9jhTSw/9wHLusm\nKAi7o3BHOTP4d+JWLS65\n=p++k\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 43e15209f2d9c7bebf773f7a152cfb952f6d4d02\nparent ca91601e95942629fa996e1ca64e01536b43631f\nparent 27f55e1711c5051bf23da1bb6e221d87cfc59acc\nauthor ix5 <ix5@users.noreply.github.com> 1715970663 +0200\ncommitter GitHub <noreply@github.com> 1715970663 +0200\n\nMerge pull request #993 from pkvach/fix/js-prevent-multiple-submit\n\njs: isso.js: Disable Postbox submit button on click, enable after response"
+    }
+  },
+  "url": "https://api.github.com/repos/isso-comments/isso/commits/6f3874c68f1303e172d203552740353ff32445c3",
+  "html_url": "https://github.com/isso-comments/isso/commit/6f3874c68f1303e172d203552740353ff32445c3",
+  "comments_url": "https://api.github.com/repos/isso-comments/isso/commits/6f3874c68f1303e172d203552740353ff32445c3/comments",
+  "author": {
+    "login": "ix5",
+    "id": 10212877,
+    "node_id": "MDQ6VXNlcjEwMjEyODc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10212877?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ix5",
+    "html_url": "https://github.com/ix5",
+    "followers_url": "https://api.github.com/users/ix5/followers",
+    "following_url": "https://api.github.com/users/ix5/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ix5/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ix5/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ix5/subscriptions",
+    "organizations_url": "https://api.github.com/users/ix5/orgs",
+    "repos_url": "https://api.github.com/users/ix5/repos",
+    "events_url": "https://api.github.com/users/ix5/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ix5/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ca91601e95942629fa996e1ca64e01536b43631f",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/ca91601e95942629fa996e1ca64e01536b43631f",
+      "html_url": "https://github.com/isso-comments/isso/commit/ca91601e95942629fa996e1ca64e01536b43631f"
+    },
+    {
+      "sha": "27f55e1711c5051bf23da1bb6e221d87cfc59acc",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/27f55e1711c5051bf23da1bb6e221d87cfc59acc",
+      "html_url": "https://github.com/isso-comments/isso/commit/27f55e1711c5051bf23da1bb6e221d87cfc59acc"
+    }
+  ],
+  "stats": {
+    "total": 109,
+    "additions": 87,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "e8e4ee2cf9b49eafb08506b67787c83a2a6ca0da",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/CHANGES.rst",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/CHANGES.rst?ref=6f3874c68f1303e172d203552740353ff32445c3",
+      "patch": "@@ -49,6 +49,7 @@ Bugfixes & Improvements\n - Change logging to include datetime and loglevel (`#1023`_, ix5)\n - Make 'text' field in 'comments' table NOT NULL and handling data migration (`#1019`_, pkvach)\n - Python 3.12 support (`#1015`_, ix5)\n+- Disable Postbox submit button on click, enable after response (`#993`_, pkvach)\n \n .. _#951: https://github.com/posativ/isso/pull/951\n .. _#967: https://github.com/posativ/isso/pull/967\n@@ -62,6 +63,7 @@ Bugfixes & Improvements\n .. _#1023: https://github.com/isso-comments/isso/pull/1023\n .. _#1019: https://github.com/isso-comments/isso/pull/1019\n .. _#1015: https://github.com/isso-comments/isso/pull/1015\n+.. _#993: https://github.com/isso-comments/isso/pull/993\n \n 0.13.1.dev0 (2023-02-05)\n ------------------------"
+    },
+    {
+      "sha": "c4b6a33fb16ce59ce8f47b95ded66c933cb7206d",
+      "filename": "isso/js/app/isso.js",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 19,
+      "changes": 54,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Fapp%2Fisso.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Fapp%2Fisso.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Fapp%2Fisso.js?ref=6f3874c68f1303e172d203552740353ff32445c3",
+      "patch": "@@ -92,34 +92,50 @@ var Postbox = function(parent) {\n \n     // submit form, initialize optional fields with `null` and reset form.\n     // If replied to a comment, remove form completely.\n-    $(\"[type=submit]\", el).on(\"click\", function() {\n+    $(\"[type=submit]\", el).on(\"click\", function(event) {\n         edit();\n         if (! el.validate()) {\n             return;\n         }\n \n+        const submitButton = event.target;\n+        submitButton.disabled = true; // Disable the submit button to prevent double posting\n+\n         var author = $(\"[name=author]\", el).value || null,\n             email = $(\"[name=email]\", el).value || null,\n             website = $(\"[name=website]\", el).value || null;\n \n-        localStorage.setItem(\"isso-author\", JSON.stringify(author));\n-        localStorage.setItem(\"isso-email\", JSON.stringify(email));\n-        localStorage.setItem(\"isso-website\", JSON.stringify(website));\n-\n-        api.create($(\"#isso-thread\").getAttribute(\"data-isso-id\"), {\n-            author: author, email: email, website: website,\n-            text: $(\".isso-textarea\", el).value,\n-            parent: parent || null,\n-            title: $(\"#isso-thread\").getAttribute(\"data-title\") || null,\n-            notification: $(\"[name=notification]\", el).checked() ? 1 : 0,\n-        }).then(function(comment) {\n-            $(\".isso-textarea\", el).value = \"\";\n-            insert({ comment, scrollIntoView: true, offset: 0 });\n-\n-            if (parent !== null) {\n-                el.onsuccess();\n-            }\n-        });\n+        try {\n+            localStorage.setItem(\"isso-author\", JSON.stringify(author));\n+            localStorage.setItem(\"isso-email\", JSON.stringify(email));\n+            localStorage.setItem(\"isso-website\", JSON.stringify(website));\n+\n+            api.create($(\"#isso-thread\").getAttribute(\"data-isso-id\"), {\n+                author: author, email: email, website: website,\n+                text: $(\".isso-textarea\", el).value,\n+                parent: parent || null,\n+                title: $(\"#isso-thread\").getAttribute(\"data-title\") || null,\n+                notification: $(\"[name=notification]\", el).checked() ? 1 : 0,\n+            }).then(\n+                function(comment) {\n+                    $(\".isso-textarea\", el).value = \"\";\n+                    insert({ comment, scrollIntoView: true, offset: 0 });\n+\n+                    if (parent !== null) {\n+                        el.onsuccess();\n+                    }\n+\n+                    submitButton.disabled = false;\n+                },\n+                function(err) {\n+                    console.error(err);\n+                    submitButton.disabled = false;\n+                }\n+            );\n+        } catch (err) {\n+            console.error(err);\n+            submitButton.disabled = false;\n+        }\n     });\n \n     return el;"
+    },
+    {
+      "sha": "4f21cbe9215cdd476815a821816ea712c834736e",
+      "filename": "isso/js/tests/integration/highlight-comments.test.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fintegration%2Fhighlight-comments.test.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fintegration%2Fhighlight-comments.test.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fintegration%2Fhighlight-comments.test.js?ref=6f3874c68f1303e172d203552740353ff32445c3",
+      "patch": "@@ -40,6 +40,7 @@ test('Linked should be highlighted', async () => {\n \n   // Cleanup\n   // Need to click once to surface \"confirm\" and then again to confirm\n+  await page.waitForSelector('#isso-1 > .isso-text-wrapper > .isso-comment-footer > .isso-delete');\n   await expect(page).toClick('#isso-1 > .isso-text-wrapper > .isso-comment-footer > .isso-delete');\n   await expect(page).toClick('#isso-1 > .isso-text-wrapper > .isso-comment-footer > .isso-delete');\n });"
+    },
+    {
+      "sha": "86ae6dc75e3208bcb75aa7648af749623e83ea2b",
+      "filename": "isso/js/tests/integration/puppet.test.js",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 1,
+      "changes": 46,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fintegration%2Fpuppet.test.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fintegration%2Fpuppet.test.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fintegration%2Fpuppet.test.js?ref=6f3874c68f1303e172d203552740353ff32445c3",
+      "patch": "@@ -148,6 +148,8 @@ test(\"should fill Postbox with valid data and receive 201 reply\", async () => {\n   await expect(elm.replace(/<time.*?>/, '<time>'))\n     .toMatchSnapshot();\n \n+  await expect(page).not.toMatchElement('.isso-post-action > [type=submit]:disabled');\n+\n   await page.waitForSelector('#isso-1 > .isso-text-wrapper > .isso-comment-footer > .isso-edit');\n \n   // Edit comment\n@@ -243,7 +245,10 @@ test(\"should execute GET/PUT/POST/DELETE requests correctly\", async () => {\n \n   await expect(page).toMatchElement(\n     '#isso-1 .isso-text',\n-    { text: 'New comment body' },\n+    {\n+      text: 'New comment body',\n+      timeout: 1000,\n+    },\n   );\n \n   // Delete comment via DELETE\n@@ -268,3 +273,42 @@ test(\"should execute GET/PUT/POST/DELETE requests correctly\", async () => {\n     { text: 'New comment body' },\n   );\n });\n+\n+test(\"Postbox submit button should be disabled on submit click and enabled after response\", async () => {\n+  const delay = (duration) => new Promise(resolve => setTimeout(resolve, duration));\n+\n+  await page.setRequestInterception(true);\n+  let createHandler = async (request) => {\n+    if (request.url().startsWith(ISSO_ENDPOINT + '/new')) {\n+      delay(800).then(() => request.abort());\n+    } else {\n+      request.continue();\n+    }\n+  };\n+  await page.on('request', createHandler);\n+\n+  await page.goto(\n+    ISSO_ENDPOINT + '/demo',\n+    {waitUntil: 'load'}\n+  );\n+\n+  // Fill the textarea with the comment\n+  await expect(page).toFill(\n+    '.isso-textarea',\n+    'A comment with *italics* and [a link](http://link.com)'\n+  );\n+\n+  // Click the submit button\n+  const submitButtonSelector = '.isso-post-action > [type=submit]';\n+  await expect(page).toClick(submitButtonSelector);\n+\n+  await page.waitForSelector(submitButtonSelector + \":disabled\", {timeout: 1000});\n+  await expect(page).toMatchElement(submitButtonSelector + \":disabled\", {timeout: 1000});\n+\n+  await page.waitForSelector(submitButtonSelector + \":enabled\", {timeout: 1000});\n+  await expect(page).toMatchElement(submitButtonSelector + \":enabled\", {timeout: 1000});\n+\n+  // Disable request interception and remove the request handler\n+  await page.setRequestInterception(false);\n+  await page.off('request', createHandler);\n+});\n\\ No newline at end of file"
+    },
+    {
+      "sha": "3549eaf8b54121bb1bdc68fa4f64d050afa99d2b",
+      "filename": "isso/js/tests/screenshots/reference/thread.png",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png?ref=6f3874c68f1303e172d203552740353ff32445c3"
+    },
+    {
+      "sha": "b364e02e64a2857da1a4ef45fb3cd2eef1ea43af",
+      "filename": "isso/js/tests/screenshots/reference/thread.png.hash",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png.hash",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png.hash",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fscreenshots%2Freference%2Fthread.png.hash?ref=6f3874c68f1303e172d203552740353ff32445c3",
+      "patch": "@@ -1 +1 @@\n-78ea677962d3f80607995d9b88d81df2b7787832023cb7f1d64811829d0fc10a\n+a10040e07c4285acea4a36d41ee2ff9877b70fd399d908e6eaf7a4dfad100333"
+    },
+    {
+      "sha": "838c510e25e4ff03abdaff7d7855e9b75984dfa9",
+      "filename": "isso/js/tests/screenshots/screenshots.test.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/isso-comments/isso/blob/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fscreenshots%2Fscreenshots.test.js",
+      "raw_url": "https://github.com/isso-comments/isso/raw/6f3874c68f1303e172d203552740353ff32445c3/isso%2Fjs%2Ftests%2Fscreenshots%2Fscreenshots.test.js",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fscreenshots%2Fscreenshots.test.js?ref=6f3874c68f1303e172d203552740353ff32445c3",
+      "patch": "@@ -66,12 +66,14 @@ test('Screenshot with inserted comment', async () => {\n     page.waitForResponse(async (response) =>\n       // response.ok means code of 200-300\n       response.url().includes('/new') && response.ok(),\n-      { timout: 500 }\n+      { timeout: 500 }\n     ),\n     // Then, click submit button\n     expect(page).toClick('.isso-post-action > input[type=submit]'),\n   ]);\n \n+  await page.waitForSelector('.isso-post-action > [type=submit]:enabled');\n+  await page.waitForSelector('#isso-1');\n   const rendered_comment = await page.$('#isso-1');\n   await rendered_comment.screenshot({\n     path: SCREENSHOTS_PATH + '/comment.png'"
+    }
+  ]
+}
