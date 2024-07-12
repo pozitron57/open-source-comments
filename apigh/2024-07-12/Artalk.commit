@@ -1,0 +1,110 @@
+{
+  "sha": "df62de09f37a87a465bb240ac581f0c84e4ac871",
+  "node_id": "C_kwDOCQOkhNoAKGRmNjJkZTA5ZjM3YTg3YTQ2NWJiMjQwYWM1ODFmMGM4NGU0YWM4NzE",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-07-12T06:12:15Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-07-12T06:12:15Z"
+    },
+    "message": "fix(api/auth): register issue due to unremoved auth records after user deletion (#919)",
+    "tree": {
+      "sha": "ebd1f69c5d2c08c947b0d3be37bc3d3ea04cdd4c",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/ebd1f69c5d2c08c947b0d3be37bc3d3ea04cdd4c"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/df62de09f37a87a465bb240ac581f0c84e4ac871",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZpDJPwAKCRDUbg8O6nwT\nat1oAQCyGhJQf32z4E4/9hcwB5eICKmxx6hgFIshr2Ts2fNfrgEAz0XkCbe2VAhu\n/IlrzjGM/Tj6SF3hqlVj5fetd7+ItQw=\n=LBE8\n-----END PGP SIGNATURE-----",
+      "payload": "tree ebd1f69c5d2c08c947b0d3be37bc3d3ea04cdd4c\nparent 68bcdbe3e83b4c3fa7f4921550642c0e60cf7c17\nauthor qwqcode <qwqcode@gmail.com> 1720764735 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1720764735 +0800\n\nfix(api/auth): register issue due to unremoved auth records after user deletion (#919)\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/df62de09f37a87a465bb240ac581f0c84e4ac871",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/df62de09f37a87a465bb240ac581f0c84e4ac871",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/df62de09f37a87a465bb240ac581f0c84e4ac871/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "68bcdbe3e83b4c3fa7f4921550642c0e60cf7c17",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/68bcdbe3e83b4c3fa7f4921550642c0e60cf7c17",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/68bcdbe3e83b4c3fa7f4921550642c0e60cf7c17"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 23,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "5f03f9b523de0a6550b23cf9258f04c60d3dc1f6",
+      "filename": "internal/dao/query_del.go",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 4,
+      "changes": 17,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/df62de09f37a87a465bb240ac581f0c84e4ac871/internal%2Fdao%2Fquery_del.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/df62de09f37a87a465bb240ac581f0c84e4ac871/internal%2Fdao%2Fquery_del.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fdao%2Fquery_del.go?ref=df62de09f37a87a465bb240ac581f0c84e4ac871",
+      "patch": "@@ -4,6 +4,8 @@ import (\n \t\"github.com/ArtalkJS/Artalk/internal/entity\"\n )\n \n+// TODO: consider refactor make all delete operations in a transaction\n+\n func (dao *Dao) DelComment(comment *entity.Comment) error {\n \t// 清除 notify\n \tif err := dao.DB().Unscoped().Where(\"comment_id = ?\", comment.ID).Delete(&entity.Notify{}).Error; err != nil {\n@@ -104,15 +106,22 @@ func (dao *Dao) DelUser(user *entity.User) error {\n \t\treturn err\n \t}\n \n-\t// 删除所有相关内容\n+\t// Delete user comments\n \tvar comments []entity.Comment\n \tdao.DB().Where(\"user_id = ?\", user.ID).Find(&comments)\n \tfor _, c := range comments {\n-\t\tdao.DelComment(&c)           // 删除主评论\n-\t\tdao.DelCommentChildren(c.ID) // 删除子评论\n+\t\tdao.DelComment(&c)           // Delete parent comment\n+\t\tdao.DelCommentChildren(c.ID) // Delete all child comments\n \t}\n \n-\t// 删除缓存\n+\t// Delete user auth identities\n+\tvar authIdentity []entity.AuthIdentity\n+\tdao.DB().Where(\"user_id = ?\", user.ID).Find(&authIdentity)\n+\tfor _, a := range authIdentity {\n+\t\tdao.DelAuthIdentity(&a)\n+\t}\n+\n+\t// Clear cache\n \tdao.CacheAction(func(cache *DaoCache) {\n \t\tcache.UserCacheDel(user)\n \t})"
+    },
+    {
+      "sha": "a6c5dfda8a6fa9b8c3a91e6280f9b8082b9be899",
+      "filename": "internal/dao/query_del_test.go",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/df62de09f37a87a465bb240ac581f0c84e4ac871/internal%2Fdao%2Fquery_del_test.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/df62de09f37a87a465bb240ac581f0c84e4ac871/internal%2Fdao%2Fquery_del_test.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/internal%2Fdao%2Fquery_del_test.go?ref=df62de09f37a87a465bb240ac581f0c84e4ac871",
+      "patch": "@@ -3,6 +3,7 @@ package dao_test\n import (\n \t\"testing\"\n \n+\t\"github.com/ArtalkJS/Artalk/internal/entity\"\n \t\"github.com/ArtalkJS/Artalk/test\"\n \t\"github.com/stretchr/testify/assert\"\n )\n@@ -71,4 +72,13 @@ func TestDelUser(t *testing.T) {\n \tassert.NoError(t, err, \"用户删除发生错误\")\n \n \tassert.True(t, app.Dao().FindUserByID(1000).IsEmpty(), \"用户没有删成功\")\n+\n+\t// Check related records cleaned\n+\tvar commentsCount int64\n+\tapp.Dao().DB().Where(\"user_id = ?\", 1000).Model(&entity.Comment{}).Count(&commentsCount)\n+\tassert.Equal(t, int64(0), commentsCount, \"User comments not cleaned\")\n+\n+\tvar authIdentityCount int64\n+\tapp.Dao().DB().Where(\"user_id = ?\", 1000).Model(&entity.AuthIdentity{}).Count(&authIdentityCount)\n+\tassert.Equal(t, int64(0), authIdentityCount, \"User auth identities not cleaned\")\n }"
+    }
+  ]
+}
