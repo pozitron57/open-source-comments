@@ -1,0 +1,84 @@
+{
+  "sha": "f9259efece5ec29ce237eab422842057af3f05f7",
+  "node_id": "MDY6Q29tbWl0MTg1NjI1MTA6ZjkyNTllZmVjZTVlYzI5Y2UyMzdlYWI0MjI4NDIwNTdhZjNmMDVmNw==",
+  "commit": {
+    "author": {
+      "name": "bodrovis",
+      "email": "ibodrov@campaigner.ru",
+      "date": "2016-11-29T17:50:18Z"
+    },
+    "committer": {
+      "name": "bodrovis",
+      "email": "ibodrov@campaigner.ru",
+      "date": "2016-11-29T17:50:18Z"
+    },
+    "message": "update readme",
+    "tree": {
+      "sha": "c01bfcd62582b15198d27650708bd4d7e7b971a0",
+      "url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/git/trees/c01bfcd62582b15198d27650708bd4d7e7b971a0"
+    },
+    "url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/git/commits/f9259efece5ec29ce237eab422842057af3f05f7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/commits/f9259efece5ec29ce237eab422842057af3f05f7",
+  "html_url": "https://github.com/bodrovis/SitePointNestedComments/commit/f9259efece5ec29ce237eab422842057af3f05f7",
+  "comments_url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/commits/f9259efece5ec29ce237eab422842057af3f05f7/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "0c84fbf0f0798806ea53611de60055553f9704b6",
+      "url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/commits/0c84fbf0f0798806ea53611de60055553f9704b6",
+      "html_url": "https://github.com/bodrovis/SitePointNestedComments/commit/0c84fbf0f0798806ea53611de60055553f9704b6"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 6,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "b8c27ebe6b647dbe45ac2a7a99f8dbfaa67919ee",
+      "filename": "Gemfile.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/bodrovis/SitePointNestedComments/blob/f9259efece5ec29ce237eab422842057af3f05f7/Gemfile.lock",
+      "raw_url": "https://github.com/bodrovis/SitePointNestedComments/raw/f9259efece5ec29ce237eab422842057af3f05f7/Gemfile.lock",
+      "contents_url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/contents/Gemfile.lock?ref=f9259efece5ec29ce237eab422842057af3f05f7",
+      "patch": "@@ -160,3 +160,6 @@ DEPENDENCIES\n   turbolinks\n   tzinfo-data\n   uglifier (>= 1.3.0)\n+\n+BUNDLED WITH\n+   1.10.6"
+    },
+    {
+      "sha": "38e292202efa4638e71ac28e5c12e2c317cfb792",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/bodrovis/SitePointNestedComments/blob/f9259efece5ec29ce237eab422842057af3f05f7/README.md",
+      "raw_url": "https://github.com/bodrovis/SitePointNestedComments/raw/f9259efece5ec29ce237eab422842057af3f05f7/README.md",
+      "contents_url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/contents/README.md?ref=f9259efece5ec29ce237eab422842057af3f05f7",
+      "patch": "@@ -1,4 +1,4 @@\n Source code for the [Nested Comments with Rails](http://www.sitepoint.com/nested-comments-rails/) article on SitePoint,\n-created by Ilya Bodrov ([radiant-wind.com](http://radiant-wind.com)).\n+created by Ilya Bodrov ([bodrovis.tech](http://bodrovis.tech)).\n \n-[Working demo](http://nested-comments.radiant-wind.com).\n\\ No newline at end of file\n+[Working demo](http://nested-comments.bodrovis.tech).\n\\ No newline at end of file"
+    },
+    {
+      "sha": "5195bcaf7354741574d9b3b143bd696380787fcf",
+      "filename": "app/views/layouts/application.html.erb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/bodrovis/SitePointNestedComments/blob/f9259efece5ec29ce237eab422842057af3f05f7/app%2Fviews%2Flayouts%2Fapplication.html.erb",
+      "raw_url": "https://github.com/bodrovis/SitePointNestedComments/raw/f9259efece5ec29ce237eab422842057af3f05f7/app%2Fviews%2Flayouts%2Fapplication.html.erb",
+      "contents_url": "https://api.github.com/repos/bodrovis/SitePointNestedComments/contents/app%2Fviews%2Flayouts%2Fapplication.html.erb?ref=f9259efece5ec29ce237eab422842057af3f05f7",
+      "patch": "@@ -29,7 +29,7 @@\n \n <div id=\"footer\">\n   <div class=\"container\">\n-    <p class=\"text-muted\">Created by <a href=\"http://radiant-wind.com\" target=\"_blank\">Radiant Wind</a></p>\n+    <p class=\"text-muted\">Created by <a href=\"http://bodrovis.tech\" target=\"_blank\">Radiant Wind</a></p>\n   </div>\n </div>\n "
+    }
+  ]
+}
