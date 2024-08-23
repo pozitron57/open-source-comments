@@ -1,6 +1,3 @@
-#! /usr/bin/env python 
-#coding=utf8
-
 '''
 Plot stars vs time for top competitors except Discourse.
 '''
@@ -75,8 +72,11 @@ for mydate in mydates:
                     pass
 
             if data.get('isso') and str(data['isso']['stars']).isdigit(): # remove undefined
-                isso_stars  = np.append(isso_stars, data['isso']['stars'])
-                isso_dates  = np.append(isso_dates, re.sub('file_', '', mydate))
+                date_str = re.sub('file_', '', mydate)
+                date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+                if not (date_obj >= datetime.date(2024, 3, 6) and date_obj <= datetime.date(2024, 3, 12)):
+                    isso_stars  = np.append(isso_stars, data['isso']['stars'])
+                    isso_dates  = np.append(isso_dates, re.sub('file_', '', mydate))
 
             if data.get('commento') and str(data['commento']['stars']).isdigit(): # remove undefined
                 commento_stars  = np.append(commento_stars, data['commento']['stars'])
