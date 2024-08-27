@@ -1,0 +1,134 @@
+{
+  "sha": "0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+  "node_id": "C_kwDOBtgov9oAKDBiYzg1YTZmZjZhYWJjMzRkNzQ0M2NlYWEzOTA0Y2ZjNzgzMjlhNmE",
+  "commit": {
+    "author": {
+      "name": "adueck",
+      "email": "adueck@users.noreply.github.com",
+      "date": "2024-07-26T01:55:22Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-08-24T23:08:09Z"
+    },
+    "message": "added RTL support",
+    "tree": {
+      "sha": "493c5b1c200334c78c1e5710ba50a65689ec8a3f",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/493c5b1c200334c78c1e5710ba50a65689ec8a3f"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+  "html_url": "https://github.com/umputun/remark42/commit/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/comments",
+  "author": {
+    "login": "adueck",
+    "id": 12955501,
+    "node_id": "MDQ6VXNlcjEyOTU1NTAx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12955501?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adueck",
+    "html_url": "https://github.com/adueck",
+    "followers_url": "https://api.github.com/users/adueck/followers",
+    "following_url": "https://api.github.com/users/adueck/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adueck/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adueck/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adueck/subscriptions",
+    "organizations_url": "https://api.github.com/users/adueck/orgs",
+    "repos_url": "https://api.github.com/users/adueck/repos",
+    "events_url": "https://api.github.com/users/adueck/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adueck/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "88bf4b7d7048fff9b0080c9f753b6cc902b21067",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/88bf4b7d7048fff9b0080c9f753b6cc902b21067",
+      "html_url": "https://github.com/umputun/remark42/commit/88bf4b7d7048fff9b0080c9f753b6cc902b21067"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "additions": 7,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "8843e2f388d5409cb3a306e688dc10b51e2b1cc3",
+      "filename": "frontend/apps/remark42/app/components/auth/auth.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fauth%2Fauth.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fauth%2Fauth.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fauth%2Fauth.tsx?ref=0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+      "patch": "@@ -334,6 +334,7 @@ export function Auth() {\n                           const element = evt.target as HTMLInputElement;\n                           element.value = element.value.trim();\n                         }}\n+                        dir=\"auto\"\n                       />\n                     </div>\n                     {view === 'email' && (\n@@ -345,6 +346,7 @@ export function Auth() {\n                           type=\"email\"\n                           placeholder={intl.formatMessage(messages.emailAddress)}\n                           disabled={isLoading}\n+                          dir=\"auto\"\n                         />\n                       </div>\n                     )}"
+    },
+    {
+      "sha": "494e0ebc49ecffb695fb0c9b482c5b8d8fcab307",
+      "filename": "frontend/apps/remark42/app/components/comment-form/comment-form.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment-form%2Fcomment-form.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment-form%2Fcomment-form.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment-form%2Fcomment-form.tsx?ref=0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+      "patch": "@@ -461,6 +461,7 @@ export class CommentForm extends Component<Props, State> {\n               disabled={isDisabled}\n               autofocus={!!autofocus}\n               spellcheck={true}\n+              dir=\"auto\"\n             />\n           </TextExpander>\n           {charactersLeft < 100 && <span className=\"comment-form__counter\">{charactersLeft}</span>}\n@@ -518,6 +519,7 @@ export class CommentForm extends Component<Props, State> {\n                 className=\"comment-form__preview raw-content\"\n                 // eslint-disable-next-line react/no-danger\n                 dangerouslySetInnerHTML={{ __html: preview }}\n+                dir=\"auto\"\n               />\n             </div>\n           )"
+    },
+    {
+      "sha": "8e8d552a6ebcf6d6e9279f1d1800cccde85b5086",
+      "filename": "frontend/apps/remark42/app/components/comment/comment.tsx",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.tsx?ref=0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+      "patch": "@@ -336,7 +336,7 @@ export class Comment extends Component<CommentProps, State> {\n     if (props.view === 'preview') {\n       return (\n         <article className={b('comment', { mix: props.mix }, defaultMods)}>\n-          <div className=\"comment__body\">\n+          <div className=\"comment__body\" dir=\"auto\">\n             {!!o.title && (\n               <div className=\"comment__title\">\n                 <a className=\"comment__title-link\" href={`${o.locator.url}#${COMMENT_NODE_CLASSNAME_PREFIX}${o.id}`}>\n@@ -477,6 +477,7 @@ export class Comment extends Component<CommentProps, State> {\n               ref={this.textNode}\n               // eslint-disable-next-line react/no-danger\n               dangerouslySetInnerHTML={{ __html: o.text }}\n+              dir=\"auto\"\n             />\n           )}\n "
+    },
+    {
+      "sha": "e8c8243702876a191e6e05215c0c37957159acd8",
+      "filename": "frontend/apps/remark42/app/components/textarea-autosize.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Ftextarea-autosize.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Ftextarea-autosize.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Ftextarea-autosize.tsx?ref=0bc85a6ff6aabc34d7443ceaa3904cfc78329a6a",
+      "patch": "@@ -33,5 +33,5 @@ export const TextareaAutosize = forwardRef<HTMLTextAreaElement, Props>(({ onInpu\n     }\n   }, [value, ref]);\n \n-  return <textarea {...props} data-testid={props.id} onInput={handleInput} value={value} ref={ref} />;\n+  return <textarea {...props} data-testid={props.id} onInput={handleInput} value={value} ref={ref} dir=\"auto\" />;\n });"
+    }
+  ]
+}
