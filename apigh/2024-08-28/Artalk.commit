@@ -1,0 +1,146 @@
+{
+  "sha": "80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+  "node_id": "C_kwDOCQOkhNoAKDgwZTVjYTVkYzdiOTdkY2IwY2I0ZWFlMjY0MjBiMjg0MmM5ZjYzZmY",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-08-28T11:04:15Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-08-28T11:04:15Z"
+    },
+    "message": "perf(ui/sidebar): mask sensitive input values in sidebar settings (#494)",
+    "tree": {
+      "sha": "aec885d654f0c611d09bf67d1fbd097222cb93c0",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/aec885d654f0c611d09bf67d1fbd097222cb93c0"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZs8ELwAKCRDUbg8O6nwT\nak1mAP9rbEQxAYThid+EBtp8NKNHBq7/A5CiZMK+m3/RqyVNYwEAsrU3yByafRLM\nVMUIA712H1sDT5/ffC+26GwtvS6njAo=\n=fF8I\n-----END PGP SIGNATURE-----",
+      "payload": "tree aec885d654f0c611d09bf67d1fbd097222cb93c0\nparent 50e967f71cfd6a6cfe15cdd55c292f802f058632\nauthor qwqcode <qwqcode@gmail.com> 1724843055 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1724843055 +0800\n\nperf(ui/sidebar): mask sensitive input values in sidebar settings (#494)\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "50e967f71cfd6a6cfe15cdd55c292f802f058632",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/50e967f71cfd6a6cfe15cdd55c292f802f058632",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/50e967f71cfd6a6cfe15cdd55c292f802f058632"
+    }
+  ],
+  "stats": {
+    "total": 99,
+    "additions": 94,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "a0434f8a17994c829abd5c9d7366f49af6d0fff9",
+      "filename": "ui/artalk-sidebar/src/assets/icon-eye-off.svg",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fassets%2Ficon-eye-off.svg",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fassets%2Ficon-eye-off.svg",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fassets%2Ficon-eye-off.svg?ref=80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+      "patch": "@@ -0,0 +1 @@\n+<svg fill=\"none\" height=\"13\" viewBox=\"0 0 13 13\" width=\"13\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><clipPath id=\"a\"><path d=\"m0 0h13v13h-13z\"/></clipPath><g clip-path=\"url(#a)\"><path d=\"m9.68646 10.4524c-.92153.5843-2.0144.9227-3.1863.9227-2.92076 0-5.35066-2.10155-5.860105-4.87499.236535-1.28775.887075-2.43062 1.808535-3.28555l-1.693691-1.69368.766041-.766039 10.72446 10.724459-.766.7661zm-6.47134-6.47131c-.71981.65566-1.24464 1.52614-1.46945 2.51902.49695 2.19478 2.46016 3.79169 4.75449 3.79169.86635 0 1.68551-.2277 2.39634-.62933l-1.09867-1.09866c-.37575.23676-.82073.3738-1.29767.3738-1.34621 0-2.43752-1.09135-2.43752-2.4375 0-.47699.13699-.92197.37378-1.29771zm3.77991 3.77991-1.75578-1.75576c-.06021.1533-.09328.32018-.09328.49487 0 .74788.60631 1.35417 1.35419 1.35417.17464 0 .34158-.0331.49487-.09328zm4.27537 1.22661-.7751-.77502c.3553-.5064.6172-1.08501.7593-1.71248-.4969-2.19484-2.46015-3.79169-4.75444-3.79169-.45819 0-.90317.06369-1.32589.1831l-.85477-.85477c.67535-.26572 1.41095-.41166 2.18066-.41166 2.92072 0 5.35064 2.10154 5.86004 4.87502-.1691.92062-.5498 1.76724-1.0898 2.4875zm-4.9205-4.92047c.04968-.00302.09978-.00455.15026-.00455 1.34615 0 2.4375 1.0913 2.4375 2.43752 0 .05043-.00157.10053-.00455.1502z\" fill=\"#636c76\"/></g></svg>\n\\ No newline at end of file"
+    },
+    {
+      "sha": "d06260900a5d7cbaede7d1473526e5842b5dc71c",
+      "filename": "ui/artalk-sidebar/src/assets/icon-eye-on.svg",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fassets%2Ficon-eye-on.svg",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fassets%2Ficon-eye-on.svg",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fassets%2Ficon-eye-on.svg?ref=80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+      "patch": "@@ -0,0 +1 @@\n+<svg fill=\"none\" height=\"13\" viewBox=\"0 0 13 13\" width=\"13\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m6.50016 1.625c2.92072 0 5.35064 2.10154 5.86004 4.875-.5094 2.77344-2.93932 4.875-5.86004 4.875-2.92076 0-5.35066-2.10156-5.860105-4.875.509445-2.77346 2.939345-4.875 5.860105-4.875zm0 8.6667c2.29429 0 4.25754-1.59687 4.75444-3.7917-.4969-2.19482-2.46015-3.79167-4.75444-3.79167-2.29433 0-4.25754 1.59685-4.75449 3.79167.49695 2.19483 2.46016 3.7917 4.75449 3.7917zm0-1.3542c-1.34621 0-2.43752-1.0913-2.43752-2.4375 0-1.34619 1.09131-2.4375 2.43752-2.4375 1.34615 0 2.4375 1.09131 2.4375 2.4375 0 1.3462-1.09135 2.4375-2.4375 2.4375zm0-1.08333c.74788 0 1.35417-.60629 1.35417-1.35417s-.60629-1.35417-1.35417-1.35417-1.35419.60629-1.35419 1.35417.60631 1.35417 1.35419 1.35417z\" fill=\"#636c76\"/></svg>\n\\ No newline at end of file"
+    },
+    {
+      "sha": "16ef9d3ea8337103ce8a8bf9d2aedeb77e04fe36",
+      "filename": "ui/artalk-sidebar/src/components/PreferenceItem.vue",
+      "status": "modified",
+      "additions": 47,
+      "deletions": 5,
+      "changes": 52,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FPreferenceItem.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FPreferenceItem.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fcomponents%2FPreferenceItem.vue?ref=80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+      "patch": "@@ -1,12 +1,14 @@\n <script setup lang=\"ts\">\n import settings, { patchOptionValue, type OptionNode } from '../lib/settings'\n+import { isSensitiveConfigPath } from '@/lib/settings-sensitive'\n \n const props = defineProps<{\n   node: OptionNode\n }>()\n \n const value = ref('')\n const disabled = ref(false)\n+const sensitiveHidden = ref(true)\n \n const { t } = useI18n()\n \n@@ -21,12 +23,19 @@ function onChange() {\n   settings.get().setCustom(props.node.path, v)\n   // console.log('[SET]', props.node.path, v)\n }\n+\n+const envVariableName = computed(() => `ATK_${props.node.path.replace(/\\./g, '_').toUpperCase()}`)\n+const isSensitive = computed(() => isSensitiveConfigPath(props.node.path))\n+\n+function toggleSensitiveHidden() {\n+  sensitiveHidden.value = !sensitiveHidden.value\n+}\n </script>\n \n <template>\n   <div class=\"pf-item\">\n     <div class=\"info\">\n-      <div class=\"title\">{{ node.title }}</div>\n+      <div class=\"title\" :title=\"envVariableName\">{{ node.title }}</div>\n       <div v-if=\"node.subTitle\" class=\"sub-title\">{{ node.subTitle }}</div>\n     </div>\n \n@@ -40,7 +49,7 @@ function onChange() {\n         <PreferenceArr :node=\"node\" />\n       </template>\n \n-      <!-- 候选框 -->\n+      <!-- Dropdown -->\n       <template v-else-if=\"node.selector\">\n         <select v-model=\"value\" :disabled=\"disabled\" @change=\"onChange\">\n           <option v-for=\"(item, i) in node.selector\" :key=\"i\" :value=\"item\">\n@@ -49,14 +58,24 @@ function onChange() {\n         </select>\n       </template>\n \n-      <!-- 开关 -->\n+      <!-- Toggle -->\n       <template v-else-if=\"node.type === 'boolean'\">\n         <input v-model=\"value\" type=\"checkbox\" :disabled=\"disabled\" @change=\"onChange\" />\n       </template>\n \n-      <!-- 文本框 -->\n+      <!-- Text -->\n       <template v-else>\n-        <input v-model=\"value\" type=\"text\" :disabled=\"disabled\" @change=\"onChange\" />\n+        <input\n+          v-model=\"value\"\n+          :type=\"!isSensitive || !sensitiveHidden ? 'text' : 'password'\"\n+          :disabled=\"disabled\"\n+          @change=\"onChange\"\n+        />\n+        <div v-if=\"isSensitive\" class=\"input-suffix\">\n+          <div class=\"hidden-switch\" @click=\"toggleSensitiveHidden()\">\n+            <i :class=\"['atk-icon', `atk-icon-eye-${sensitiveHidden ? 'on' : 'off'}`]\" />\n+          </div>\n+        </div>\n       </template>\n     </div>\n   </div>\n@@ -112,6 +131,29 @@ function onChange() {\n       opacity: 0;\n       transition: opacity 0.2s;\n     }\n+\n+    .input-suffix {\n+      margin-left: 5px;\n+    }\n+\n+    .hidden-switch {\n+      cursor: pointer;\n+      padding-left: 10px;\n+\n+      .atk-icon {\n+        &::after {\n+          background-color: #697182;\n+        }\n+\n+        &.atk-icon-eye-on::after {\n+          mask-image: url('@/assets/icon-eye-on.svg');\n+        }\n+\n+        &.atk-icon-eye-off::after {\n+          mask-image: url('@/assets/icon-eye-off.svg');\n+        }\n+      }\n+    }\n   }\n }\n </style>"
+    },
+    {
+      "sha": "7375caf2daeaa8ca4a27f010a9cfd1e5de4e7e34",
+      "filename": "ui/artalk-sidebar/src/lib/settings-sensitive.ts",
+      "status": "added",
+      "additions": 44,
+      "deletions": 0,
+      "changes": 44,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Flib%2Fsettings-sensitive.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Flib%2Fsettings-sensitive.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Flib%2Fsettings-sensitive.ts?ref=80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+      "patch": "@@ -0,0 +1,44 @@\n+/**\n+ * List of sensitive config paths.\n+ *\n+ * (which should be hidden in the UI)\n+ */\n+export const SensitiveConfigPaths = [\n+  'app_key',\n+  'admin_notify.ding_talk.secret',\n+  'admin_notify.line.channel_access_token',\n+  'admin_notify.line.channel_secret',\n+  'admin_notify.lark.webhook_url',\n+  'admin_notify.slack.oauth_token',\n+  'admin_notify.telegram.api_token',\n+  'admin_notify.webhook.url',\n+  'admin.notify.bark.server',\n+  'auth.apple.client_secret',\n+  'auth.auth0.client_secret',\n+  'auth.discord.client_secret',\n+  'auth.facebook.client_secret',\n+  'auth.gitea.client_secret',\n+  'auth.github.client_secret',\n+  'auth.gitlab.client_secret',\n+  'auth.google.client_secret',\n+  'auth.line.client_secret',\n+  'auth.mastodon.client_secret',\n+  'auth.microsoft.client_secret',\n+  'auth.patreon.client_secret',\n+  'auth.slack.client_secret',\n+  'auth.tiktok.client_secret',\n+  'auth.twitter.client_secret',\n+  'auth.wechat.client_secret',\n+  'auth.steam.api_key',\n+  'captcha.geetest.captcha_key',\n+  'captcha.hcaptcha.secret_key',\n+  'captcha.recaptcha.secret_key',\n+  'captcha.turnstile.secret_key',\n+  'db.password',\n+  'email.ali_dm.access_key_secret',\n+  'email.smtp.password',\n+]\n+\n+export function isSensitiveConfigPath(path: string) {\n+  return SensitiveConfigPaths.includes(path)\n+}"
+    },
+    {
+      "sha": "0183120fa0654d71acf6d93125e8f3a4cefce96c",
+      "filename": "ui/artalk-sidebar/src/pages/settings.vue",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fsettings.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fsettings.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fsettings.vue?ref=80e5ca5dc7b97dcb0cb4eae26420b2842c9f63ff",
+      "patch": "@@ -160,6 +160,7 @@ function save() {\n   }\n \n   :deep(input[type='text']),\n+  :deep(input[type='password']),\n   :deep(select) {\n     font-size: 17px;\n     width: 100%;"
+    }
+  ]
+}
