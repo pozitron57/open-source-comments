@@ -1,0 +1,134 @@
+{
+  "sha": "04ef002da14561dfe19083e40339fd76eb213697",
+  "node_id": "C_kwDOCQOkhNoAKDA0ZWYwMDJkYTE0NTYxZGZlMTkwODNlNDAzMzlmZDc2ZWIyMTM2OTc",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-08-29T10:43:49Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-08-29T10:43:49Z"
+    },
+    "message": "fix(sidebar): correct total item count for pagination in sidebar",
+    "tree": {
+      "sha": "247eb67f987d3b5e7730e256327b0a27deb35451",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/247eb67f987d3b5e7730e256327b0a27deb35451"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/04ef002da14561dfe19083e40339fd76eb213697",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZtBQ5QAKCRDUbg8O6nwT\naiigAP44QlV1IYeQJFCQzqRdeZQQBq7jnO38LE+N8OX6EZ2sLQD/e7FUML/TxUv/\nh+PSmZK5M+X5ynqBgP//LleNZhN1gQA=\n=K2Q0\n-----END PGP SIGNATURE-----",
+      "payload": "tree 247eb67f987d3b5e7730e256327b0a27deb35451\nparent a6b559d6824796596d753db0333445283a1ac45d\nauthor qwqcode <qwqcode@gmail.com> 1724928229 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1724928229 +0800\n\nfix(sidebar): correct total item count for pagination in sidebar\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/04ef002da14561dfe19083e40339fd76eb213697",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/04ef002da14561dfe19083e40339fd76eb213697",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/04ef002da14561dfe19083e40339fd76eb213697/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a6b559d6824796596d753db0333445283a1ac45d",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/a6b559d6824796596d753db0333445283a1ac45d",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/a6b559d6824796596d753db0333445283a1ac45d"
+    }
+  ],
+  "stats": {
+    "total": 141,
+    "additions": 70,
+    "deletions": 71
+  },
+  "files": [
+    {
+      "sha": "a89b28f4c509444e3c2cd01ca862f1ea8922dad7",
+      "filename": "server/handler/page_list.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/04ef002da14561dfe19083e40339fd76eb213697/server%2Fhandler%2Fpage_list.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/04ef002da14561dfe19083e40339fd76eb213697/server%2Fhandler%2Fpage_list.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fpage_list.go?ref=04ef002da14561dfe19083e40339fd76eb213697",
+      "patch": "@@ -48,16 +48,16 @@ func PageList(app *core.App, router fiber.Router) {\n \t\t\tq = q.Where(\"site_name = ?\", p.SiteName)\n \t\t}\n \n-\t\t// Total count\n-\t\tvar total int64\n-\t\tq.Count(&total)\n-\n \t\t// Search\n \t\tq = q.Scopes(func(d *gorm.DB) *gorm.DB {\n \t\t\treturn d.Where(\"LOWER(pages.key) LIKE LOWER(?) OR LOWER(title) LIKE LOWER(?)\",\n \t\t\t\t\"%\"+p.Search+\"%\", \"%\"+p.Search+\"%\")\n \t\t})\n \n+\t\t// Total count\n+\t\tvar total int64\n+\t\tq.Count(&total)\n+\n \t\t// Pagination\n \t\tq = q.Scopes(Paginate(p.Offset, p.Limit))\n "
+    },
+    {
+      "sha": "9c86b469e1d57994b474d760ba01beb3ec67cf15",
+      "filename": "server/handler/user_list.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/04ef002da14561dfe19083e40339fd76eb213697/server%2Fhandler%2Fuser_list.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/04ef002da14561dfe19083e40339fd76eb213697/server%2Fhandler%2Fuser_list.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fuser_list.go?ref=04ef002da14561dfe19083e40339fd76eb213697",
+      "patch": "@@ -43,10 +43,6 @@ func UserList(app *core.App, router fiber.Router) {\n \t\t// Prepare query\n \t\tq := app.Dao().DB().Model(&entity.User{}).Order(\"created_at DESC\")\n \n-\t\t// Total count\n-\t\tvar total int64\n-\t\tq.Count(&total)\n-\n \t\t// User type\n \t\tif listType == \"admin\" {\n \t\t\tq = q.Where(\"is_admin = ?\", true)\n@@ -60,6 +56,10 @@ func UserList(app *core.App, router fiber.Router) {\n \t\t\t\t\"%\"+p.Search+\"%\", \"%\"+p.Search+\"%\", p.Search, p.Search)\n \t\t})\n \n+\t\t// Total count\n+\t\tvar total int64\n+\t\tq.Count(&total)\n+\n \t\t// Pagination\n \t\tq = q.Scopes(Paginate(p.Offset, p.Limit))\n "
+    },
+    {
+      "sha": "123e737da0ff36d838a9a605c9657073283c196a",
+      "filename": "ui/artalk-sidebar/src/pages/pages.vue",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 23,
+      "changes": 44,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/04ef002da14561dfe19083e40339fd76eb213697/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fpages.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/04ef002da14561dfe19083e40339fd76eb213697/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fpages.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fpages.vue?ref=04ef002da14561dfe19083e40339fd76eb213697",
+      "patch": "@@ -30,42 +30,39 @@ onMounted(() => {\n     'all',\n   )\n \n-  reqPages(0)\n-\n-  watch(curtSite, (value) => {\n-    pagination.value?.reset()\n-    reqPages(0)\n-  })\n-\n-  // Refresh task status recovery\n-  getRefreshTaskStatus().then((d) => {\n-    if (d.is_progress === true) {\n-      refreshBtn.value.isRun = true\n-      refreshBtn.value.statusText = d.msg\n-      startRefreshTaskWatchdog()\n-    }\n-  })\n-\n   // Users search\n   nav.enableSearch(\n     (value: string) => {\n       search.value = value\n-      reqPages(0)\n+      fetchPages(0)\n     },\n     () => {\n       if (search.value === '') return\n       search.value = ''\n-      reqPages(0)\n+      fetchPages(0)\n     },\n   )\n \n-  nav.scrollableArea?.addEventListener('scroll', scrollHandler)\n+  fetchPages(0)\n+\n+  // Refresh task status recovery\n+  getRefreshTaskStatus().then((d) => {\n+    if (d.is_progress === true) {\n+      refreshBtn.value.isRun = true\n+      refreshBtn.value.statusText = d.msg\n+      startRefreshTaskWatchdog()\n+    }\n+  })\n })\n \n-onUnmounted(() => {\n-  nav.scrollableArea?.removeEventListener('scroll', scrollHandler)\n+watch(curtSite, () => {\n+  pagination.value?.reset()\n+  fetchPages(0)\n })\n \n+onMounted(() => nav.scrollableArea?.addEventListener('scroll', scrollHandler))\n+onUnmounted(() => nav.scrollableArea?.removeEventListener('scroll', scrollHandler))\n+\n function scrollHandler() {\n   showActBarBorder.value = nav.scrollableArea!.scrollTop > 10\n }\n@@ -74,7 +71,8 @@ function editPage(page: ArtalkType.PageData) {\n   curtEditPageID.value = page.id\n }\n \n-function reqPages(offset: number) {\n+function fetchPages(offset: number) {\n+  if (offset === 0) pagination.value?.reset()\n   nav.setPageLoading(true)\n   artalk?.ctx\n     .getApi()\n@@ -95,7 +93,7 @@ function reqPages(offset: number) {\n }\n \n function onChangePage(offset: number) {\n-  reqPages(offset)\n+  fetchPages(offset)\n }\n \n function onPageItemUpdate(page: ArtalkType.PageData) {"
+    },
+    {
+      "sha": "eac7be9f815be3a78bb584576600bb6950a9c696",
+      "filename": "ui/artalk-sidebar/src/pages/users.vue",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 40,
+      "changes": 81,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/04ef002da14561dfe19083e40339fd76eb213697/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fusers.vue",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/04ef002da14561dfe19083e40339fd76eb213697/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fusers.vue",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk-sidebar%2Fsrc%2Fpages%2Fusers.vue?ref=04ef002da14561dfe19083e40339fd76eb213697",
+      "patch": "@@ -15,12 +15,25 @@ const pageTotal = ref(0)\n const pagination = ref<InstanceType<typeof Pagination>>()\n const curtType = ref<'all' | 'admin' | 'in_conf' | undefined>('all')\n \n-const addingUser = ref(false)\n-const editingUser = ref<ArtalkType.UserDataForAdmin | undefined>()\n-\n+const userEditorState = reactive({\n+  show: false,\n+  user: undefined as ArtalkType.UserDataForAdmin | undefined,\n+})\n const search = ref('')\n \n+watch(curtTab, (tab) => {\n+  if (tab === 'create') {\n+    createUser()\n+  } else {\n+    curtType.value = tab as any\n+    fetchUsers(0)\n+    closeUserEditor()\n+  }\n+})\n+\n onMounted(() => {\n+  fetchUsers(0)\n+\n   nav.updateTabs(\n     {\n       all: 'all',\n@@ -30,43 +43,27 @@ onMounted(() => {\n     'all',\n   )\n \n-  watch(curtTab, (tab) => {\n-    if (tab === 'create') {\n-      if (editingUser.value !== undefined) {\n-        editingUser.value = undefined\n-        nextTick(() => {\n-          addingUser.value = true\n-        })\n-      } else {\n-        addingUser.value = true\n-      }\n-    } else {\n-      addingUser.value = false\n-      editingUser.value = undefined\n-\n-      curtType.value = tab as any\n-      pagination.value?.reset()\n-      reqUsers(0)\n-    }\n-  })\n-\n-  reqUsers(0)\n-\n   // Users search\n   nav.enableSearch(\n     (value: string) => {\n       search.value = value\n-      reqUsers(0)\n+      fetchUsers(0)\n     },\n     () => {\n       if (search.value === '') return\n       search.value = ''\n-      reqUsers(0)\n+      fetchUsers(0)\n     },\n   )\n })\n \n-function reqUsers(offset: number) {\n+watch(\n+  () => userEditorState.show,\n+  () => nav.scrollPageToTop(),\n+)\n+\n+function fetchUsers(offset: number) {\n+  if (offset === 0) pagination.value?.reset()\n   nav.setPageLoading(true)\n   artalk?.ctx\n     .getApi()\n@@ -86,7 +83,7 @@ function reqUsers(offset: number) {\n }\n \n function onChangePage(offset: number) {\n-  reqUsers(offset)\n+  fetchUsers(offset)\n }\n \n function editUser(user: ArtalkType.UserDataForAdmin) {\n@@ -95,8 +92,13 @@ function editUser(user: ArtalkType.UserDataForAdmin) {\n     return\n   }\n \n-  addingUser.value = false\n-  editingUser.value = user\n+  userEditorState.show = true\n+  userEditorState.user = user\n+}\n+\n+function createUser() {\n+  userEditorState.show = true\n+  userEditorState.user = undefined\n }\n \n function updateUser(user: ArtalkType.UserDataForAdmin) {\n@@ -109,16 +111,15 @@ function updateUser(user: ArtalkType.UserDataForAdmin) {\n     })\n   } else {\n     // Create user\n-    pagination.value!.reset()\n-    reqUsers(0)\n+    fetchUsers(0)\n   }\n \n-  closeEditUser()\n+  closeUserEditor()\n }\n \n-function closeEditUser() {\n-  addingUser.value = false\n-  editingUser.value = undefined\n+function closeUserEditor() {\n+  userEditorState.show = false\n+  userEditorState.user = undefined\n }\n \n function delUser(user: ArtalkType.UserDataForAdmin) {\n@@ -189,10 +190,10 @@ function delUser(user: ArtalkType.UserDataForAdmin) {\n     />\n \n     <UserEditor\n-      v-if=\"addingUser || editingUser !== undefined\"\n-      :user=\"editingUser\"\n+      v-if=\"userEditorState.show\"\n+      :user=\"userEditorState.user\"\n       @update=\"updateUser\"\n-      @close=\"closeEditUser\"\n+      @close=\"closeUserEditor\"\n     />\n   </div>\n </template>"
+    }
+  ]
+}
