@@ -1,0 +1,134 @@
+{
+  "sha": "9fb191976c45113afea5633de0c0c29c9912a7d0",
+  "node_id": "C_kwDOCQOkhNoAKDlmYjE5MTk3NmM0NTExM2FmZWE1NjMzZGUwYzBjMjljOTkxMmE3ZDA",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-08-31T08:54:34Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-08-31T09:05:30Z"
+    },
+    "message": "refactor(ui/types): add `Layer` interface",
+    "tree": {
+      "sha": "55526695ad03db393965444d72b0233f5d5a3060",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/55526695ad03db393965444d72b0233f5d5a3060"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/9fb191976c45113afea5633de0c0c29c9912a7d0",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZtLc3AAKCRDUbg8O6nwT\naq/4AQDKQh+IFJ8Oa08sJbePTQ0XZR5hV/f+NAYSswcqDJVVfwD+LHItgdXujNAo\nVG0NUUAvQ6zaZK3H6OCJQi3a1tmG1wo=\n=VWPi\n-----END PGP SIGNATURE-----",
+      "payload": "tree 55526695ad03db393965444d72b0233f5d5a3060\nparent f20454bd002a01447f1ecf1dface87a59d6c9891\nauthor qwqcode <qwqcode@gmail.com> 1725094474 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1725095130 +0800\n\nrefactor(ui/types): add `Layer` interface\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/9fb191976c45113afea5633de0c0c29c9912a7d0",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/9fb191976c45113afea5633de0c0c29c9912a7d0",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/9fb191976c45113afea5633de0c0c29c9912a7d0/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f20454bd002a01447f1ecf1dface87a59d6c9891",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/f20454bd002a01447f1ecf1dface87a59d6c9891",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/f20454bd002a01447f1ecf1dface87a59d6c9891"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 16,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "f60319c599f336812d958cc7527b835326fbbc9d",
+      "filename": "ui/artalk/src/layer/layer.ts",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fartalk%2Fsrc%2Flayer%2Flayer.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fartalk%2Fsrc%2Flayer%2Flayer.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Flayer%2Flayer.ts?ref=9fb191976c45113afea5633de0c0c29c9912a7d0",
+      "patch": "@@ -1,9 +1,11 @@\n+import type { Layer as LayerApi } from '@/types/layer'\n+\n export interface LayerOptions {\n   onShow: () => void\n   onHide: () => void\n }\n \n-export class Layer {\n+export class Layer implements LayerApi {\n   private allowMaskClose = true\n   private onAfterHide?: () => void\n \n@@ -33,13 +35,13 @@ export class Layer {\n     this.$el.style.display = ''\n   }\n \n-  async hide() {\n+  hide() {\n     this.opts.onHide()\n     this.$el.style.display = 'none'\n     this.onAfterHide && this.onAfterHide()\n   }\n \n-  async destroy() {\n+  destroy() {\n     this.opts.onHide()\n     this.$el.remove()\n     this.onAfterHide && this.onAfterHide()"
+    },
+    {
+      "sha": "e38be02bda1353eb2f9235f32914f55211da27fe",
+      "filename": "ui/artalk/src/types/index.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fartalk%2Fsrc%2Ftypes%2Findex.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fartalk%2Fsrc%2Ftypes%2Findex.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Ftypes%2Findex.ts?ref=9fb191976c45113afea5633de0c0c29c9912a7d0",
+      "patch": "@@ -5,4 +5,5 @@ export type * from './editor'\n export type * from './event'\n export type * from './plugin'\n export type * from './sidebar'\n+export type * from './layer'\n export type { I18n, I18nKeys } from '../i18n'"
+    },
+    {
+      "sha": "4310819c208741aed00b12fc9c8b80dac583bd46",
+      "filename": "ui/artalk/src/types/layer.ts",
+      "status": "added",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fartalk%2Fsrc%2Ftypes%2Flayer.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fartalk%2Fsrc%2Ftypes%2Flayer.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Ftypes%2Flayer.ts?ref=9fb191976c45113afea5633de0c0c29c9912a7d0",
+      "patch": "@@ -0,0 +1,9 @@\n+export interface Layer {\n+  show: () => void\n+  hide: () => void\n+  destroy: () => void\n+  setOnAfterHide(func: () => void): void\n+  setAllowMaskClose(allow: boolean): void\n+  getAllowMaskClose(): boolean\n+  getEl: () => HTMLElement\n+}"
+    },
+    {
+      "sha": "e2f17ba128fccb296befeb030c494ea67eefc127",
+      "filename": "ui/plugin-kit/src/plugin/dts.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fplugin-kit%2Fsrc%2Fplugin%2Fdts.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/9fb191976c45113afea5633de0c0c29c9912a7d0/ui%2Fplugin-kit%2Fsrc%2Fplugin%2Fdts.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fplugin-kit%2Fsrc%2Fplugin%2Fdts.ts?ref=9fb191976c45113afea5633de0c0c29c9912a7d0",
+      "patch": "@@ -19,7 +19,7 @@ export function generateDts(\n   const diagnostics = [\n     ...program.getDeclarationDiagnostics(),\n     ...program.getSemanticDiagnostics(),\n-    ...program.getSyntacticDiagnostics()\n+    ...program.getSyntacticDiagnostics(),\n   ]\n \n   if (diagnostics?.length) {"
+    }
+  ]
+}
