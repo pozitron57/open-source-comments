@@ -1,0 +1,98 @@
+{
+  "sha": "d2225d565b22d1c97d45bcce49a59fb06759ba2f",
+  "node_id": "C_kwDOCQOkhNoAKGQyMjI1ZDU2NWIyMmQxYzk3ZDQ1YmNjZTQ5YTU5ZmIwNjc1OWJhMmY",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-09-03T11:37:01Z"
+    },
+    "committer": {
+      "name": "qwqcode",
+      "email": "qwqcode@gmail.com",
+      "date": "2024-09-03T11:37:39Z"
+    },
+    "message": "fix(anti_spam): handle empty `referer` variable in anti-spam check (#853)",
+    "tree": {
+      "sha": "d377c09ccd2444e459a6649ae83d4d1b173bb19b",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/d377c09ccd2444e459a6649ae83d4d1b173bb19b"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/d2225d565b22d1c97d45bcce49a59fb06759ba2f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYKAB0WIQS0Ev3sdPZbHkWwzmLUbg8O6nwTagUCZtb1CQAKCRDUbg8O6nwT\najVTAP9yZsABGe3C3R2lMIdwckfxrxaHDeHUQoqKQ9ZrVaT9HQEA4ofkkksyAEYg\nMnBv3eI8z1NVUqV14WIy5gtbKN107QQ=\n=sgs4\n-----END PGP SIGNATURE-----",
+      "payload": "tree d377c09ccd2444e459a6649ae83d4d1b173bb19b\nparent e61911027c296270a7cb773fb72234fca09225d7\nauthor qwqcode <qwqcode@gmail.com> 1725363421 +0800\ncommitter qwqcode <qwqcode@gmail.com> 1725363459 +0800\n\nfix(anti_spam): handle empty `referer` variable in anti-spam check (#853)\n"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/d2225d565b22d1c97d45bcce49a59fb06759ba2f",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/d2225d565b22d1c97d45bcce49a59fb06759ba2f",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/d2225d565b22d1c97d45bcce49a59fb06759ba2f/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e61911027c296270a7cb773fb72234fca09225d7",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/e61911027c296270a7cb773fb72234fca09225d7",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/e61911027c296270a7cb773fb72234fca09225d7"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "16a9b81cbf10a6dd469a66be1c1eb18c6d5487e0",
+      "filename": "server/handler/comment_create.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/d2225d565b22d1c97d45bcce49a59fb06759ba2f/server%2Fhandler%2Fcomment_create.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/d2225d565b22d1c97d45bcce49a59fb06759ba2f/server%2Fhandler%2Fcomment_create.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fcomment_create.go?ref=d2225d565b22d1c97d45bcce49a59fb06759ba2f",
+      "patch": "@@ -66,7 +66,7 @@ func CommentCreate(app *core.App, router fiber.Router) {\n \t\tvar (\n \t\t\tip         = c.IP()\n \t\t\tua         = cmp.Or(p.UA, string(c.Request().Header.UserAgent())) // allows the patched UA from the post data\n-\t\t\treferer    = string(c.Request().Header.Referer())\n+\t\t\treferer    = cmp.Or(c.Get(\"Referer\"), c.Get(\"Origin\"))\n \t\t\tisAdmin    = common.CheckIsAdminReq(app, c)\n \t\t\tisVerified = true // for display the verified badge\n \t\t)"
+    }
+  ]
+}
