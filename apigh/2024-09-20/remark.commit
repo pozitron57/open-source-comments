@@ -1,0 +1,98 @@
+{
+  "sha": "872b818323dbc724affd14f8f8414d289ed17636",
+  "node_id": "C_kwDOBtgov9oAKDg3MmI4MTgzMjNkYmM3MjRhZmZkMTRmOGY4NDE0ZDI4OWVkMTc2MzY",
+  "commit": {
+    "author": {
+      "name": "Ivan B",
+      "email": "4rusxg@gmail.com",
+      "date": "2024-09-02T18:17:18Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-09-20T00:06:06Z"
+    },
+    "message": "docs: fix frontend paths in translation guide (`frontend/{path}` -> `frontend/apps/remark42/{path}`)",
+    "tree": {
+      "sha": "865a291d783dd83586060c0e74badba2bcc64c2f",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/865a291d783dd83586060c0e74badba2bcc64c2f"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/872b818323dbc724affd14f8f8414d289ed17636",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/872b818323dbc724affd14f8f8414d289ed17636",
+  "html_url": "https://github.com/umputun/remark42/commit/872b818323dbc724affd14f8f8414d289ed17636",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/872b818323dbc724affd14f8f8414d289ed17636/comments",
+  "author": {
+    "login": "rusxg",
+    "id": 1673261,
+    "node_id": "MDQ6VXNlcjE2NzMyNjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1673261?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rusxg",
+    "html_url": "https://github.com/rusxg",
+    "followers_url": "https://api.github.com/users/rusxg/followers",
+    "following_url": "https://api.github.com/users/rusxg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rusxg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rusxg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rusxg/subscriptions",
+    "organizations_url": "https://api.github.com/users/rusxg/orgs",
+    "repos_url": "https://api.github.com/users/rusxg/repos",
+    "events_url": "https://api.github.com/users/rusxg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rusxg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4a7bee1d98126234b3ba5e9ac477e091d522c4f5",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/4a7bee1d98126234b3ba5e9ac477e091d522c4f5",
+      "html_url": "https://github.com/umputun/remark42/commit/4a7bee1d98126234b3ba5e9ac477e091d522c4f5"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 4,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "9827e26a763154183d543a618ee20547ab50695e",
+      "filename": "site/src/docs/contributing/translations/index.md",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/872b818323dbc724affd14f8f8414d289ed17636/site%2Fsrc%2Fdocs%2Fcontributing%2Ftranslations%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/872b818323dbc724affd14f8f8414d289ed17636/site%2Fsrc%2Fdocs%2Fcontributing%2Ftranslations%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fcontributing%2Ftranslations%2Findex.md?ref=872b818323dbc724affd14f8f8414d289ed17636",
+      "patch": "@@ -4,7 +4,7 @@ title: Interface Translations\n \n ## Add a New Language to Remark42\n \n-Translation files are stored in [/frontend/app/locales](https://github.com/umputun/remark42/tree/master/frontend/app/locales)\n+Translation files are stored in [/frontend/apps/remark42/app/locales](https://github.com/umputun/remark42/tree/master/frontend/apps/remark42/app/locales)\n directory with `.json` extension and content like following:\n \n ```json\n@@ -30,16 +30,16 @@ below to have your translation available to all remark42 users and included in t\n     git push\n     ```\n \n-1.  Add a new locale with a [two-letter code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of the language you want to do the translation into to list in [frontend/tasks/supportedLocales.json](https://github.com/umputun/remark42/blob/master/frontend/tasks/supportedLocales.json)\n+1.  Add a new locale with a [two-letter code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of the language you want to do the translation into to list in [frontend/apps/remark42/tasks/supportedLocales.json](https://github.com/umputun/remark42/blob/master/frontend/apps/remark42/tasks/supportedLocales.json)\n 1.  Run `npm install` in the `frontend` folder\n 1.  Run `npm run translation:extract` in the `frontend` folder\n 1.  Run `npm run translation:generate` in the `frontend` folder\n 1.  Translate all values in the newly created JSON file in\n-    [frontend/app/locales/](https://github.com/umputun/remark42/tree/master/frontend/app/locales)\n+    [frontend/apps/remark42/app/locales/](https://github.com/umputun/remark42/tree/master/frontend/apps/remark42/app/locales)\n 1.  Commit all changes above in your fork\n 1.  Test your changes in the interface:\n \n-    1.  Uncomment `locale: \"ru\"` line in [frontend/templates/demo.ejs](https://github.com/umputun/remark42/blob/master/frontend/templates/demo.ejs) and replace `ru` with your translation language code\n+    1.  Uncomment `locale: \"ru\"` line in [frontend/apps/remark42/templates/demo.ejs](https://github.com/umputun/remark42/blob/master/frontend/apps/remark42/templates/demo.ejs) and replace `ru` with your translation language code\n     2.  [Run remark42 in Docker](https://github.com/umputun/remark42#development) by issuing the following commands from the root directory of your remark42 fork:\n         `shell docker-compose -f compose-dev-frontend.yml build docker-compose -f compose-dev-frontend.yml up `\n "
+    }
+  ]
+}
