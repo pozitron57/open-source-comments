@@ -1,0 +1,134 @@
+{
+  "sha": "9fb301422921d09e245b18e62576e40aea98947d",
+  "node_id": "C_kwDOBtgov9oAKDlmYjMwMTQyMjkyMWQwOWUyNDViMThlNjI1NzZlNDBhZWE5ODk0N2Q",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-09-21T02:35:39Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-09-22T19:37:29Z"
+    },
+    "message": "Detect proper avatar type to return instead of returning image/*",
+    "tree": {
+      "sha": "8291e3223dc5023b751f683e90d5943dc211118d",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/8291e3223dc5023b751f683e90d5943dc211118d"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/9fb301422921d09e245b18e62576e40aea98947d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/9fb301422921d09e245b18e62576e40aea98947d",
+  "html_url": "https://github.com/umputun/remark42/commit/9fb301422921d09e245b18e62576e40aea98947d",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/9fb301422921d09e245b18e62576e40aea98947d/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2a9b29dd532a91ae219a4e6f2d842674118023bc",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/2a9b29dd532a91ae219a4e6f2d842674118023bc",
+      "html_url": "https://github.com/umputun/remark42/commit/2a9b29dd532a91ae219a4e6f2d842674118023bc"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 26,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "e80fd2225709ce8f2daf97781bedf89b30b5e75f",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.mod?ref=9fb301422921d09e245b18e62576e40aea98947d",
+      "patch": "@@ -11,7 +11,7 @@ require (\n \tgithub.com/go-chi/chi/v5 v5.1.0\n \tgithub.com/go-chi/cors v1.2.1\n \tgithub.com/go-chi/render v1.0.3\n-\tgithub.com/go-pkgz/auth v1.24.1\n+\tgithub.com/go-pkgz/auth v1.24.2\n \tgithub.com/go-pkgz/jrpc v0.3.0\n \tgithub.com/go-pkgz/lcw/v2 v2.0.0\n \tgithub.com/go-pkgz/lgr v0.11.1"
+    },
+    {
+      "sha": "3e304e8e7ace7e8fc112f9602b0199a25c5caf2e",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fgo.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fgo.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.sum?ref=9fb301422921d09e245b18e62576e40aea98947d",
+      "patch": "@@ -66,6 +66,10 @@ github.com/go-pkgz/auth v1.24.1-0.20240919232608-9e446b888187 h1:1oHLySWdk0HfDIF\n github.com/go-pkgz/auth v1.24.1-0.20240919232608-9e446b888187/go.mod h1:xmnzq6g8mhemW1nHnkuByXkBXsHrNf9/qkiVwJugWIs=\n github.com/go-pkgz/auth v1.24.1 h1:izSFGxwNEZ2MujKJWXddKc+lUW+kVP02JBXouQIW8b4=\n github.com/go-pkgz/auth v1.24.1/go.mod h1:xmnzq6g8mhemW1nHnkuByXkBXsHrNf9/qkiVwJugWIs=\n+github.com/go-pkgz/auth v1.24.2-0.20240921022538-30916c085e04 h1:DZzcdFb/EzXjQex8lDq/NqubVqwCXeyGxU5swYEVAYk=\n+github.com/go-pkgz/auth v1.24.2-0.20240921022538-30916c085e04/go.mod h1:xmnzq6g8mhemW1nHnkuByXkBXsHrNf9/qkiVwJugWIs=\n+github.com/go-pkgz/auth v1.24.2 h1:imMjUvTM0c8iOvP/GNGcuNcB/7gF3jFTF9dIPzlAOqI=\n+github.com/go-pkgz/auth v1.24.2/go.mod h1:xmnzq6g8mhemW1nHnkuByXkBXsHrNf9/qkiVwJugWIs=\n github.com/go-pkgz/email v0.5.0 h1:fdtMDGJ8NwyBACLR0LYHaCIK/OeUwZHMhH7Q0+oty9U=\n github.com/go-pkgz/email v0.5.0/go.mod h1:BdxglsQnymzhfdbnncEE72a6DrucZHy6I+42LK2jLEc=\n github.com/go-pkgz/expirable-cache v0.1.0/go.mod h1:GTrEl0X+q0mPNqN6dtcQXksACnzCBQ5k/k1SwXJsZKs="
+    },
+    {
+      "sha": "cab724ba5f7680fcc3297dc2346ceb6d8547750e",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/avatar/avatar.go",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 2,
+      "changes": 22,
+      "blob_url": "https://github.com/umputun/remark42/blob/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Favatar%2Favatar.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Favatar%2Favatar.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Favatar%2Favatar.go?ref=9fb301422921d09e245b18e62576e40aea98947d",
+      "patch": "@@ -23,6 +23,9 @@ import (\n \t\"github.com/go-pkgz/auth/token\"\n )\n \n+// http.sniffLen is 512 bytes which is how much we need to read to detect content type\n+const sniffLen = 512\n+\n // Proxy provides http handler for avatars from avatar.Store\n // On user login token will call Put and it will retrieve and save picture locally.\n type Proxy struct {\n@@ -100,7 +103,6 @@ func (p *Proxy) load(url string, client *http.Client) (rc io.ReadCloser, err err\n \n // Handler returns token routes for given provider\n func (p *Proxy) Handler(w http.ResponseWriter, r *http.Request) {\n-\n \tif r.Method != \"GET\" {\n \t\tw.WriteHeader(http.StatusMethodNotAllowed)\n \t}\n@@ -136,9 +138,25 @@ func (p *Proxy) Handler(w http.ResponseWriter, r *http.Request) {\n \t\t}\n \t}()\n \n-\tw.Header().Set(\"Content-Type\", \"image/*\")\n+\tbuf := make([]byte, sniffLen)\n+\tn, err := avReader.Read(buf)\n+\tif err != nil && err != io.EOF {\n+\t\tp.Logf(\"[WARN] can't read from avatar reader for %s, %s\", avatarID, err)\n+\t\trest.SendErrorJSON(w, r, p.L, http.StatusInternalServerError, err, \"can't read avatar\")\n+\t\treturn\n+\t}\n \tw.Header().Set(\"Content-Length\", strconv.Itoa(size))\n+\tcontentType := http.DetectContentType(buf)\n+\tif contentType == \"application/octet-stream\" {\n+\t\tcontentType = \"image/*\"\n+\t}\n+\tw.Header().Set(\"Content-Type\", contentType)\n \tw.WriteHeader(http.StatusOK)\n+\tif _, err = w.Write(buf[:n]); err != nil {\n+\t\tp.Logf(\"[WARN] can't write response to %s, %s\", r.RemoteAddr, err)\n+\t\treturn\n+\t}\n+\t// write the rest of response size if it's bigger than 512 bytes, or nothing as EOF would be sent right away then\n \tif _, err = io.Copy(w, avReader); err != nil {\n \t\tp.Logf(\"[WARN] can't send response to %s, %s\", r.RemoteAddr, err)\n \t}"
+    },
+    {
+      "sha": "a04068ec79dbc9fd5eeae47271a9bea3442ed295",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fvendor%2Fmodules.txt",
+      "raw_url": "https://github.com/umputun/remark42/raw/9fb301422921d09e245b18e62576e40aea98947d/backend%2Fvendor%2Fmodules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fmodules.txt?ref=9fb301422921d09e245b18e62576e40aea98947d",
+      "patch": "@@ -65,7 +65,7 @@ github.com/go-chi/render\n github.com/go-oauth2/oauth2/v4\n github.com/go-oauth2/oauth2/v4/errors\n github.com/go-oauth2/oauth2/v4/server\n-# github.com/go-pkgz/auth v1.24.1\n+# github.com/go-pkgz/auth v1.24.2\n ## explicit; go 1.21\n github.com/go-pkgz/auth\n github.com/go-pkgz/auth/avatar"
+    }
+  ]
+}
