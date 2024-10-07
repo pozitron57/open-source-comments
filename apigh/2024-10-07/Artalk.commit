@@ -1,0 +1,194 @@
+{
+  "sha": "7c251fd067c6fb7b2bc539fd729201b0a337a116",
+  "node_id": "C_kwDOCQOkhNoAKDdjMjUxZmQwNjdjNmZiN2IyYmM1MzlmZDcyOTIwMWIwYTMzN2ExMTY",
+  "commit": {
+    "author": {
+      "name": "qwqcode",
+      "email": "22412567+qwqcode@users.noreply.github.com",
+      "date": "2024-10-06T14:31:59Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-10-06T14:31:59Z"
+    },
+    "message": "feat(api/vote): add get vote status endpoint (#998)\n\nA new HTTP API endpoint `GET /votes/:target_name/:target_id` is now available. (See https://artalk.js.org/http-api.html#tag/Vote/operation/GetVote)\r\n\r\n- Implement GET endpoint for retrieving vote status\r\n- Add tests for vote functionality\r\n\r\nRelated to: #997\r\n\r\nThis is a prerequisite PR for #983.",
+    "tree": {
+      "sha": "ddcf6460b7e7772b3bd775ae477e1783e571cd61",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/ddcf6460b7e7772b3bd775ae477e1783e571cd61"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/7c251fd067c6fb7b2bc539fd729201b0a337a116",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnAp9fCRC1aQ7uu5UhlAAAvCwQAAkOkjugV4v8RpoRUfHILNsu\nmyHvHlPoJCxVyQ1DjOnmYQrRg1SQJTfo3GQrJ6QFoYFWhBgedZmeixPC9YfAIIF6\ng47Zd1gwkie2KRQR3VJ3ZzZ3p3vBtE3a73Lj7RtWBYvzJnsEIVorvAhH7JkBWopB\nMtjmoINpup5kW9br/GugEoQJCvCzW3Ys+ON/bhXDArWseH76c4uPcPkk2ir1oOkK\naR1KKO6jYgdtnTTs9cvSXU5Zbx4/NCKYm1p90k+KvCscKHPDrgVGkNS1NS8oj8Ut\nqUsAAwKW3ubbmKu1Sas/YQ6s7QCVkqIkhZ0d5brEebrdXpSYzyTwUaqNrYr9VgOE\nHR4boxQMcjFhDEG78M7DDcRmou/CT41ZRekRZZGWEspMysuYq8Gtq+pJ3vbRwvyS\nSW6ZAHhDcmVlFhT8chA57EzcM/MEWtCpe5Ke+LwCaHIVon914GAZXINlWv82jj2F\nTAmR3kK6lcRkQQRwzsOBhpoZmQd/vBADoumesD7xKs4vcxy23IFF3SronWHjH2IN\n9glH+B8LRgG/UniUUCRUM/PvWPAMKnUiU3InZ1KpOTXYVsv8NaSPLNngDGJ40nYb\n6zq/M+Di53k4FFFFRVX/dwDGuJxSUQ/QOBepNKU8t2agMYMDganI7xSGZb6v/rFA\nbdVnJSEufVSvdJFZlnX7\n=Jmhy\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ddcf6460b7e7772b3bd775ae477e1783e571cd61\nparent 02a369fe5c7814d7d0b48019a4bb6a318ced56f4\nauthor qwqcode <22412567+qwqcode@users.noreply.github.com> 1728225119 +0800\ncommitter GitHub <noreply@github.com> 1728225119 +0800\n\nfeat(api/vote): add get vote status endpoint (#998)\n\nA new HTTP API endpoint `GET /votes/:target_name/:target_id` is now available. (See https://artalk.js.org/http-api.html#tag/Vote/operation/GetVote)\r\n\r\n- Implement GET endpoint for retrieving vote status\r\n- Add tests for vote functionality\r\n\r\nRelated to: #997\r\n\r\nThis is a prerequisite PR for #983."
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/7c251fd067c6fb7b2bc539fd729201b0a337a116",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/7c251fd067c6fb7b2bc539fd729201b0a337a116",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/7c251fd067c6fb7b2bc539fd729201b0a337a116/comments",
+  "author": {
+    "login": "qwqcode",
+    "id": 22412567,
+    "node_id": "MDQ6VXNlcjIyNDEyNTY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412567?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwqcode",
+    "html_url": "https://github.com/qwqcode",
+    "followers_url": "https://api.github.com/users/qwqcode/followers",
+    "following_url": "https://api.github.com/users/qwqcode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwqcode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwqcode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwqcode/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwqcode/orgs",
+    "repos_url": "https://api.github.com/users/qwqcode/repos",
+    "events_url": "https://api.github.com/users/qwqcode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwqcode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "02a369fe5c7814d7d0b48019a4bb6a318ced56f4",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/02a369fe5c7814d7d0b48019a4bb6a318ced56f4",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/02a369fe5c7814d7d0b48019a4bb6a318ced56f4"
+    }
+  ],
+  "stats": {
+    "total": 560,
+    "additions": 559,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "c0634c58cebd09b64bd577ef83d1e4630ac58a31",
+      "filename": "docs/swagger/docs.go",
+      "status": "modified",
+      "additions": 98,
+      "deletions": 0,
+      "changes": 98,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/docs%2Fswagger%2Fdocs.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/docs%2Fswagger%2Fdocs.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fswagger%2Fdocs.go?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -3525,6 +3525,104 @@ const docTemplate = `{\n                 }\n             }\n         },\n+        \"/votes/{target_name}/{target_id}\": {\n+            \"get\": {\n+                \"description\": \"Get vote status for a specific comment or page\",\n+                \"consumes\": [\n+                    \"application/json\"\n+                ],\n+                \"produces\": [\n+                    \"application/json\"\n+                ],\n+                \"tags\": [\n+                    \"Vote\"\n+                ],\n+                \"summary\": \"Get Vote Status\",\n+                \"operationId\": \"GetVote\",\n+                \"parameters\": [\n+                    {\n+                        \"enum\": [\n+                            \"comment\",\n+                            \"page\"\n+                        ],\n+                        \"type\": \"string\",\n+                        \"description\": \"The name of vote target\",\n+                        \"name\": \"target_name\",\n+                        \"in\": \"path\",\n+                        \"required\": true\n+                    },\n+                    {\n+                        \"type\": \"integer\",\n+                        \"description\": \"The target comment or page ID\",\n+                        \"name\": \"target_id\",\n+                        \"in\": \"path\",\n+                        \"required\": true\n+                    }\n+                ],\n+                \"responses\": {\n+                    \"200\": {\n+                        \"description\": \"OK\",\n+                        \"schema\": {\n+                            \"$ref\": \"#/definitions/handler.ResponseVote\"\n+                        }\n+                    },\n+                    \"403\": {\n+                        \"description\": \"Forbidden\",\n+                        \"schema\": {\n+                            \"allOf\": [\n+                                {\n+                                    \"$ref\": \"#/definitions/handler.Map\"\n+                                },\n+                                {\n+                                    \"type\": \"object\",\n+                                    \"properties\": {\n+                                        \"msg\": {\n+                                            \"type\": \"string\"\n+                                        }\n+                                    }\n+                                }\n+                            ]\n+                        }\n+                    },\n+                    \"404\": {\n+                        \"description\": \"Not Found\",\n+                        \"schema\": {\n+                            \"allOf\": [\n+                                {\n+                                    \"$ref\": \"#/definitions/handler.Map\"\n+                                },\n+                                {\n+                                    \"type\": \"object\",\n+                                    \"properties\": {\n+                                        \"msg\": {\n+                                            \"type\": \"string\"\n+                                        }\n+                                    }\n+                                }\n+                            ]\n+                        }\n+                    },\n+                    \"500\": {\n+                        \"description\": \"Internal Server Error\",\n+                        \"schema\": {\n+                            \"allOf\": [\n+                                {\n+                                    \"$ref\": \"#/definitions/handler.Map\"\n+                                },\n+                                {\n+                                    \"type\": \"object\",\n+                                    \"properties\": {\n+                                        \"msg\": {\n+                                            \"type\": \"string\"\n+                                        }\n+                                    }\n+                                }\n+                            ]\n+                        }\n+                    }\n+                }\n+            }\n+        },\n         \"/votes/{target_name}/{target_id}/{choice}\": {\n             \"post\": {\n                 \"description\": \"Create a new vote for a specific comment or page\","
+    },
+    {
+      "sha": "aabb12a72bc61a666431e6304ee6ba6f26b79fc9",
+      "filename": "docs/swagger/swagger.json",
+      "status": "modified",
+      "additions": 98,
+      "deletions": 0,
+      "changes": 98,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/docs%2Fswagger%2Fswagger.json",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/docs%2Fswagger%2Fswagger.json",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fswagger%2Fswagger.json?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -3518,6 +3518,104 @@\n                 }\n             }\n         },\n+        \"/votes/{target_name}/{target_id}\": {\n+            \"get\": {\n+                \"description\": \"Get vote status for a specific comment or page\",\n+                \"consumes\": [\n+                    \"application/json\"\n+                ],\n+                \"produces\": [\n+                    \"application/json\"\n+                ],\n+                \"tags\": [\n+                    \"Vote\"\n+                ],\n+                \"summary\": \"Get Vote Status\",\n+                \"operationId\": \"GetVote\",\n+                \"parameters\": [\n+                    {\n+                        \"enum\": [\n+                            \"comment\",\n+                            \"page\"\n+                        ],\n+                        \"type\": \"string\",\n+                        \"description\": \"The name of vote target\",\n+                        \"name\": \"target_name\",\n+                        \"in\": \"path\",\n+                        \"required\": true\n+                    },\n+                    {\n+                        \"type\": \"integer\",\n+                        \"description\": \"The target comment or page ID\",\n+                        \"name\": \"target_id\",\n+                        \"in\": \"path\",\n+                        \"required\": true\n+                    }\n+                ],\n+                \"responses\": {\n+                    \"200\": {\n+                        \"description\": \"OK\",\n+                        \"schema\": {\n+                            \"$ref\": \"#/definitions/handler.ResponseVote\"\n+                        }\n+                    },\n+                    \"403\": {\n+                        \"description\": \"Forbidden\",\n+                        \"schema\": {\n+                            \"allOf\": [\n+                                {\n+                                    \"$ref\": \"#/definitions/handler.Map\"\n+                                },\n+                                {\n+                                    \"type\": \"object\",\n+                                    \"properties\": {\n+                                        \"msg\": {\n+                                            \"type\": \"string\"\n+                                        }\n+                                    }\n+                                }\n+                            ]\n+                        }\n+                    },\n+                    \"404\": {\n+                        \"description\": \"Not Found\",\n+                        \"schema\": {\n+                            \"allOf\": [\n+                                {\n+                                    \"$ref\": \"#/definitions/handler.Map\"\n+                                },\n+                                {\n+                                    \"type\": \"object\",\n+                                    \"properties\": {\n+                                        \"msg\": {\n+                                            \"type\": \"string\"\n+                                        }\n+                                    }\n+                                }\n+                            ]\n+                        }\n+                    },\n+                    \"500\": {\n+                        \"description\": \"Internal Server Error\",\n+                        \"schema\": {\n+                            \"allOf\": [\n+                                {\n+                                    \"$ref\": \"#/definitions/handler.Map\"\n+                                },\n+                                {\n+                                    \"type\": \"object\",\n+                                    \"properties\": {\n+                                        \"msg\": {\n+                                            \"type\": \"string\"\n+                                        }\n+                                    }\n+                                }\n+                            ]\n+                        }\n+                    }\n+                }\n+            }\n+        },\n         \"/votes/{target_name}/{target_id}/{choice}\": {\n             \"post\": {\n                 \"description\": \"Create a new vote for a specific comment or page\","
+    },
+    {
+      "sha": "a2e89d478976dd0432a3d14d8411eeebbaf26c23",
+      "filename": "docs/swagger/swagger.yaml",
+      "status": "modified",
+      "additions": 57,
+      "deletions": 0,
+      "changes": 57,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/docs%2Fswagger%2Fswagger.yaml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/docs%2Fswagger%2Fswagger.yaml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fswagger%2Fswagger.yaml?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -3284,6 +3284,63 @@ paths:\n       summary: Get Version Info\n       tags:\n       - System\n+  /votes/{target_name}/{target_id}:\n+    get:\n+      consumes:\n+      - application/json\n+      description: Get vote status for a specific comment or page\n+      operationId: GetVote\n+      parameters:\n+      - description: The name of vote target\n+        enum:\n+        - comment\n+        - page\n+        in: path\n+        name: target_name\n+        required: true\n+        type: string\n+      - description: The target comment or page ID\n+        in: path\n+        name: target_id\n+        required: true\n+        type: integer\n+      produces:\n+      - application/json\n+      responses:\n+        \"200\":\n+          description: OK\n+          schema:\n+            $ref: '#/definitions/handler.ResponseVote'\n+        \"403\":\n+          description: Forbidden\n+          schema:\n+            allOf:\n+            - $ref: '#/definitions/handler.Map'\n+            - properties:\n+                msg:\n+                  type: string\n+              type: object\n+        \"404\":\n+          description: Not Found\n+          schema:\n+            allOf:\n+            - $ref: '#/definitions/handler.Map'\n+            - properties:\n+                msg:\n+                  type: string\n+              type: object\n+        \"500\":\n+          description: Internal Server Error\n+          schema:\n+            allOf:\n+            - $ref: '#/definitions/handler.Map'\n+            - properties:\n+                msg:\n+                  type: string\n+              type: object\n+      summary: Get Vote Status\n+      tags:\n+      - Vote\n   /votes/{target_name}/{target_id}/{choice}:\n     post:\n       consumes:"
+    },
+    {
+      "sha": "a780736350ca8ca76e58ce19a129b7a0b9c5433d",
+      "filename": "server/handler/base_test.go",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fhandler%2Fbase_test.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fhandler%2Fbase_test.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fbase_test.go?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -7,6 +7,8 @@ import (\n \n func NewApiTestApp() (*test.TestApp, *fiber.App) {\n \tapp, _ := test.NewTestApp()\n-\tfiberApp := fiber.New()\n+\tfiberApp := fiber.New(fiber.Config{\n+\t\tProxyHeader: \"X-Forwarded-For\",\n+\t})\n \treturn app, fiberApp\n }"
+    },
+    {
+      "sha": "e783f957d08d2b5b4e80f8c44e0b75e76fac9b08",
+      "filename": "server/handler/vote.go",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 0,
+      "changes": 31,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fhandler%2Fvote.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fhandler%2Fvote.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fvote.go?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -18,6 +18,37 @@ type ResponseVote struct {\n \tIsDown bool `json:\"is_down\"`\n }\n \n+// @Id           GetVote\n+// @Summary      Get Vote Status\n+// @Description  Get vote status for a specific comment or page\n+// @Tags         Vote\n+// @Param        target_name  path  string  true  \"The name of vote target\"  Enums(comment, page)\n+// @Param        target_id    path  int     true  \"The target comment or page ID\"\n+// @Accept       json\n+// @Produce      json\n+// @Success      200  {object}  ResponseVote\n+// @Failure      403  {object}  Map{msg=string}\n+// @Failure      404  {object}  Map{msg=string}\n+// @Failure      500  {object}  Map{msg=string}\n+// @Router       /votes/{target_name}/{target_id}  [get]\n+func VoteGet(app *core.App, router fiber.Router) {\n+\trouter.Get(\"/votes/:target_name/:target_id\", func(c *fiber.Ctx) error {\n+\t\ttargetName := c.Params(\"target_name\")\n+\t\ttargetID, _ := c.ParamsInt(\"target_id\")\n+\n+\t\tvar result ResponseVote\n+\t\tresult.Up, result.Down = app.Dao().GetVoteNumUpDown(targetName, uint(targetID))\n+\t\texitsVotes := getExistsVotesByIP(app.Dao(), c.IP(), targetName, uint(targetID))\n+\t\tif len(exitsVotes) > 0 {\n+\t\t\tchoice := getVoteChoice(string(exitsVotes[0].Type))\n+\t\t\tresult.IsUp = choice == \"up\"\n+\t\t\tresult.IsDown = choice == \"down\"\n+\t\t}\n+\n+\t\treturn common.RespData(c, result)\n+\t})\n+}\n+\n type ParamsVoteCreate struct {\n \tName  string `json:\"name\" validate:\"optional\"`  // The username\n \tEmail string `json:\"email\" validate:\"optional\"` // The user email"
+    },
+    {
+      "sha": "bfbb13fc8791d3f13632d48ae4640e82ef740b1d",
+      "filename": "server/handler/vote_test.go",
+      "status": "added",
+      "additions": 185,
+      "deletions": 0,
+      "changes": 185,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fhandler%2Fvote_test.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fhandler%2Fvote_test.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fhandler%2Fvote_test.go?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -0,0 +1,185 @@\n+package handler_test\n+\n+import (\n+\t\"bytes\"\n+\t\"io\"\n+\t\"net/http/httptest\"\n+\t\"testing\"\n+\n+\t\"github.com/artalkjs/artalk/v2/server/handler\"\n+\t\"github.com/stretchr/testify/assert\"\n+)\n+\n+func TestVote(t *testing.T) {\n+\ttests := []struct {\n+\t\tdescription  string\n+\t\tmethod       string\n+\t\turl          string\n+\t\tbody         string\n+\t\tip           string\n+\t\texpectedCode int\n+\t\texpectedBody func(t *testing.T, body string)\n+\t}{\n+\t\t{\n+\t\t\tdescription:  \"Get comment vote status (original up)\",\n+\t\t\tmethod:       \"GET\",\n+\t\t\turl:          \"/votes/comment/1000\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":4,\"down\":2,\"is_up\":true,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Get page vote status (original down)\",\n+\t\t\tmethod:       \"GET\",\n+\t\t\turl:          \"/votes/page/1001\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":1,\"down\":2,\"is_up\":false,\"is_down\":true}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Get comment vote status (original null)\",\n+\t\t\tmethod:       \"GET\",\n+\t\t\turl:          \"/votes/comment/1001\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":0,\"down\":0,\"is_up\":false,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Get page vote status (original null)\",\n+\t\t\tmethod:       \"GET\",\n+\t\t\turl:          \"/votes/page/1002\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":0,\"down\":0,\"is_up\":false,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Create comment up vote (original null, set to up)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/comment/1000/up\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"192.168.1.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":5,\"down\":2,\"is_up\":true,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Create comment down vote (original null, set to down)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/comment/1000/down\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"192.168.1.2\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":4,\"down\":3,\"is_up\":false,\"is_down\":true}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Create page up vote (original null, set to up)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/page/1001/up\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"192.168.1.3\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":2,\"down\":2,\"is_up\":true,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Create page down vote (original null, set to down)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/page/1001/down\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"192.168.1.4\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":1,\"down\":3,\"is_up\":false,\"is_down\":true}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Un-vote comment comment (original up, revoke up)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/comment/1000/up\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":3,\"down\":2,\"is_up\":false,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Un-vote page comment (original down, revoke down)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/page/1001/down\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":1,\"down\":1,\"is_up\":false,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Opposite-vote comment comment (original up, set to down)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/comment/1000/down\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":3,\"down\":3,\"is_up\":false,\"is_down\":true}`, body)\n+\t\t\t},\n+\t\t},\n+\t\t{\n+\t\t\tdescription:  \"Opposite-vote page comment (original down, set to up)\",\n+\t\t\tmethod:       \"POST\",\n+\t\t\turl:          \"/votes/page/1001/up\",\n+\t\t\tbody:         \"{}\",\n+\t\t\texpectedCode: 200,\n+\t\t\tip:           \"127.0.0.1\",\n+\t\t\texpectedBody: func(t *testing.T, body string) {\n+\t\t\t\tassert.NotEmpty(t, body)\n+\t\t\t\tassert.Equal(t, `{\"up\":2,\"down\":1,\"is_up\":true,\"is_down\":false}`, body)\n+\t\t\t},\n+\t\t},\n+\t}\n+\n+\tfor _, tt := range tests {\n+\t\tt.Run(tt.description, func(t *testing.T) {\n+\t\t\tapp, fiber := NewApiTestApp()\n+\t\t\tdefer app.Cleanup()\n+\n+\t\t\thandler.VoteGet(app.App, fiber)\n+\t\t\thandler.VoteCreate(app.App, fiber)\n+\n+\t\t\treq := httptest.NewRequest(tt.method, tt.url, bytes.NewReader([]byte(tt.body)))\n+\t\t\treq.Header.Set(\"Content-Type\", \"application/json\")\n+\t\t\treq.Header.Set(\"X-Forwarded-For\", tt.ip) // mock IP\n+\t\t\tresp, err := fiber.Test(req)\n+\t\t\tassert.NoError(t, err)\n+\t\t\tassert.Equal(t, tt.expectedCode, resp.StatusCode)\n+\n+\t\t\tbody, err := io.ReadAll(resp.Body)\n+\t\t\tassert.NoError(t, err)\n+\t\t\ttt.expectedBody(t, string(body))\n+\t\t})\n+\t}\n+}"
+    },
+    {
+      "sha": "a4af41915fafc37872c53392c27bdda05191430c",
+      "filename": "server/server.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fserver.go",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/server%2Fserver.go",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/server%2Fserver.go?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -71,6 +71,7 @@ func Serve(app *core.App) (*fiber.App, error) {\n \t\th.CommentCreate(app, api)\n \t\th.CommentList(app, api)\n \t\th.CommentGet(app, api)\n+\t\th.VoteGet(app, api)\n \t\th.VoteCreate(app, api)\n \t\th.PagePV(app, api)\n \t\th.Stat(app, api)"
+    },
+    {
+      "sha": "312fd1aac7dc44db172161bf2e52639c6ca7d6a8",
+      "filename": "test/fixtures/atk_votes.yml",
+      "status": "added",
+      "additions": 51,
+      "deletions": 0,
+      "changes": 51,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/test%2Ffixtures%2Fatk_votes.yml",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/test%2Ffixtures%2Fatk_votes.yml",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/test%2Ffixtures%2Fatk_votes.yml?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -0,0 +1,51 @@\n+# Comment 1000: 4 up, 2 down\n+# Page    1001: 1 up, 2 down\n+# The IP 127.0.0.1 had up-voted Comment 1000 and down-voted Page 1001.\n+\n+- id: 1000\n+  target_id: 1000\n+  type: comment_up\n+  user_id: 1000\n+  ip: 127.0.0.1\n+\n+- id: 1001\n+  target_id: 1000\n+  type: comment_up\n+  user_id: 1001\n+  ip: 192.168.1.11\n+\n+- id: 1002\n+  target_id: 1000\n+  type: comment_up\n+  ip: 192.168.1.12\n+\n+- id: 1003\n+  target_id: 1000\n+  type: comment_up\n+  ip: 192.168.1.13\n+\n+- id: 1004\n+  target_id: 1000\n+  type: comment_down\n+  ip: 192.168.1.14\n+\n+- id: 1005\n+  target_id: 1000\n+  type: comment_down\n+  ip: 192.168.1.15\n+\n+- id: 1006\n+  target_id: 1001\n+  type: page_down\n+  user_id: 1000\n+  ip: 127.0.0.1\n+\n+- id: 1007\n+  target_id: 1001\n+  type: page_up\n+  ip: 192.168.1.17\n+\n+- id: 1008\n+  target_id: 1001\n+  type: page_down\n+  ip: 192.168.1.18"
+    },
+    {
+      "sha": "b41505ddd509bc9bffb2dd93cc98cfbb94fa5919",
+      "filename": "ui/artalk/src/api/v2.ts",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 0,
+      "changes": 35,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/7c251fd067c6fb7b2bc539fd729201b0a337a116/ui%2Fartalk%2Fsrc%2Fapi%2Fv2.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/7c251fd067c6fb7b2bc539fd729201b0a337a116/ui%2Fartalk%2Fsrc%2Fapi%2Fv2.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fapi%2Fv2.ts?ref=7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "patch": "@@ -2534,6 +2534,41 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa\n         ...params,\n       }),\n \n+    /**\n+ * @description Get vote status for a specific comment or page\n+ *\n+ * @tags Vote\n+ * @name GetVote\n+ * @summary Get Vote Status\n+ * @request GET:/votes/{target_name}/{target_id}\n+ * @response `200` `HandlerResponseVote` OK\n+ * @response `403` `(HandlerMap & {\n+    msg?: string,\n+\n+})` Forbidden\n+ * @response `404` `(HandlerMap & {\n+    msg?: string,\n+\n+})` Not Found\n+ * @response `500` `(HandlerMap & {\n+    msg?: string,\n+\n+})` Internal Server Error\n+ */\n+    getVote: (targetName: 'comment' | 'page', targetId: number, params: RequestParams = {}) =>\n+      this.request<\n+        HandlerResponseVote,\n+        HandlerMap & {\n+          msg?: string\n+        }\n+      >({\n+        path: `/votes/${targetName}/${targetId}`,\n+        method: 'GET',\n+        type: ContentType.Json,\n+        format: 'json',\n+        ...params,\n+      }),\n+\n     /**\n  * @description Create a new vote for a specific comment or page\n  *"
+    }
+  ]
+}
