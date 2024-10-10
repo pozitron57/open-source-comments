@@ -1,0 +1,230 @@
+{
+  "sha": "baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+  "node_id": "C_kwDOCQOkhNoAKGJhYTYzODY2ZjQxOTVlN2JiOWY1ZTAzZDUyNTFhNTcxYmIxNzA2ZWM",
+  "commit": {
+    "author": {
+      "name": "Lime",
+      "email": "liumingxun@yeah.net",
+      "date": "2024-10-08T04:38:39Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-10-08T04:38:39Z"
+    },
+    "message": "feat(ui/page_vote): add page voting feature (#983)\n\n* feat(plugin/page_vote): add `page_vote` plugin\r\n\r\n* feat(plugin/page_vote): update vote count text\r\n\r\nadjust code structure\r\ndisable `page vote` plugin by default\r\n\r\n* feat(plugin/page_vote): reuse actions btn style\r\n\r\n* perf(plugin/page-vote): make type strong\r\n\r\n* feat: watch `darkMode` conf\r\n\r\n* doc(plugin/page_vote): add config doc\r\n\r\n* feat(ui/page_vote): add page voting feature\r\n\r\n- Introduce page voting functionality\r\n- Update configuration to enable/disable page voting\r\n- Retrieve html elements for voting buttons and counts\r\n- Enhance customization options for voting elements\r\n- Reference: #983, #998, #997\r\n\r\n---------\r\n\r\nCo-authored-by: qwqcode <qwqcode@gmail.com>",
+    "tree": {
+      "sha": "6eea4a4d6ae038752e6b00f9c4ab0140e190b9b0",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/trees/6eea4a4d6ae038752e6b00f9c4ab0140e190b9b0"
+    },
+    "url": "https://api.github.com/repos/ArtalkJS/Artalk/git/commits/baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnBLdPCRC1aQ7uu5UhlAAARqQQAA6Fj54oEjcL55VzmDI9fgB0\njgxFkOfu8snx/Fa2+Iecr56UWMWZuMhq8uOe5BM675gww2ZiEUEEGxSkCiO7ogWP\nQCoAHBzr5DiSeQH3aoAebPFd+PSNBTysaa1nNpy70KM1QpHE8C1DJ+4tHZf8IVNo\nJZAJl0Tz3b01NFk43PzUQMuPpWtOgjRE1cIytJs6Lc+0+prHAH6OsIEsbXU+Yeqq\nJRk7Ede9A3Y+kGXUJ30/7oz9TRW9C1NkzQpEahjPi25tAEbD6aZmbc89XqLETEv8\n1zXy8CpLgg+t5AD6cqC5k5kQbqSoQWbaS9SrY+4vE1JH48YZZNkCTxI8vFxjJCaj\nexDtCY1whUas/X9O33PBAP4gobZieRl5uH712Tj9w9PTvj55+ZE7Tjg/qz/38Yz/\nNIXd/HW2Rwgd1FfcgEMFOknX+wc5iKJmXYZRS0LUKdAFlC22UHKR4nGg+IvCYfId\nWYPW9Psj1y9rlfqx/8KrnAcfxYawRayTslHB1gV1eW+/73QAY6T3hua1MB6ndl5W\n2I9lkaekubSmE64XfSf8vz6K4bx5OuIoDRcxCEhujefVwBeShEgGYjt2yCsbZmAx\nwzvwAsdaPjZkOB5OsOUlKNvBN86/44VGSm9potijodi6GNJGUAtU2a62+DvjNl6Z\nPCW0VP7jbayBkr3cUyje\n=D+or\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 6eea4a4d6ae038752e6b00f9c4ab0140e190b9b0\nparent 7c251fd067c6fb7b2bc539fd729201b0a337a116\nauthor Lime <liumingxun@yeah.net> 1728362319 +0800\ncommitter GitHub <noreply@github.com> 1728362319 +0800\n\nfeat(ui/page_vote): add page voting feature (#983)\n\n* feat(plugin/page_vote): add `page_vote` plugin\r\n\r\n* feat(plugin/page_vote): update vote count text\r\n\r\nadjust code structure\r\ndisable `page vote` plugin by default\r\n\r\n* feat(plugin/page_vote): reuse actions btn style\r\n\r\n* perf(plugin/page-vote): make type strong\r\n\r\n* feat: watch `darkMode` conf\r\n\r\n* doc(plugin/page_vote): add config doc\r\n\r\n* feat(ui/page_vote): add page voting feature\r\n\r\n- Introduce page voting functionality\r\n- Update configuration to enable/disable page voting\r\n- Retrieve html elements for voting buttons and counts\r\n- Enhance customization options for voting elements\r\n- Reference: #983, #998, #997\r\n\r\n---------\r\n\r\nCo-authored-by: qwqcode <qwqcode@gmail.com>"
+    }
+  },
+  "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+  "html_url": "https://github.com/ArtalkJS/Artalk/commit/baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+  "comments_url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/baa63866f4195e7bb9f5e03d5251a571bb1706ec/comments",
+  "author": {
+    "login": "Liumingxun",
+    "id": 36471625,
+    "node_id": "MDQ6VXNlcjM2NDcxNjI1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/36471625?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Liumingxun",
+    "html_url": "https://github.com/Liumingxun",
+    "followers_url": "https://api.github.com/users/Liumingxun/followers",
+    "following_url": "https://api.github.com/users/Liumingxun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Liumingxun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Liumingxun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Liumingxun/subscriptions",
+    "organizations_url": "https://api.github.com/users/Liumingxun/orgs",
+    "repos_url": "https://api.github.com/users/Liumingxun/repos",
+    "events_url": "https://api.github.com/users/Liumingxun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Liumingxun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "url": "https://api.github.com/repos/ArtalkJS/Artalk/commits/7c251fd067c6fb7b2bc539fd729201b0a337a116",
+      "html_url": "https://github.com/ArtalkJS/Artalk/commit/7c251fd067c6fb7b2bc539fd729201b0a337a116"
+    }
+  ],
+  "stats": {
+    "total": 485,
+    "additions": 485,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "81a5493857d3888c2cf49e41c1bfbb65380a6776",
+      "filename": "docs/docs/.vitepress/config/en.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2F.vitepress%2Fconfig%2Fen.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2F.vitepress%2Fconfig%2Fen.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2F.vitepress%2Fconfig%2Fen.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -40,6 +40,7 @@ export const en = defineConfig({\n             { text: 'LaTeX', link: '/en/guide/frontend/latex.md' },\n             { text: 'Image Lightbox', link: '/en/guide/frontend/lightbox.md' },\n             { text: 'Image Lazy Load', link: '/en/guide/frontend/img-lazy-load.md' },\n+            { text: 'Voting', link: '/zh/guide/frontend/voting.md' },\n             { text: 'IP Region', link: '/en/guide/frontend/ip-region.md' },\n             { text: 'Localization', link: '/en/guide/frontend/i18n.md' },\n             { text: 'Development Documentation', link: '/en/develop/index.md' },"
+    },
+    {
+      "sha": "7dc1dafba23ff22ccdbe69a229294245841b46e9",
+      "filename": "docs/docs/.vitepress/config/zh.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2F.vitepress%2Fconfig%2Fzh.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2F.vitepress%2Fconfig%2Fzh.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2F.vitepress%2Fconfig%2Fzh.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -40,6 +40,7 @@ export const zh = defineConfig({\n             { text: 'LaTeX', link: '/zh/guide/frontend/latex.md' },\n             { text: '图片灯箱', link: '/zh/guide/frontend/lightbox.md' },\n             { text: '图片懒加载', link: '/zh/guide/frontend/img-lazy-load.md' },\n+            { text: '投票功能', link: '/zh/guide/frontend/voting.md' },\n             { text: 'IP 属地', link: '/zh/guide/frontend/ip-region.md' },\n             { text: '多语言', link: '/zh/guide/frontend/i18n.md' },\n             { text: '开发文档', link: '/zh/develop/index.md' },"
+    },
+    {
+      "sha": "6261480d81fb4ca093c1d3b1f2e6555a26ad60e4",
+      "filename": "docs/docs/en/guide/frontend/config.md",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fen%2Fguide%2Ffrontend%2Fconfig.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fen%2Fguide%2Ffrontend%2Fconfig.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fen%2Fguide%2Ffrontend%2Fconfig.md?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -280,6 +280,17 @@ When querying comment counts and page views, Artalk's statistical component uses\n \n To facilitate theme adaptation, you can customize the attribute name as needed, for example, replacing it with `data-path`, the HTML tag would be `<span data-path=\"/t/1.html\"></span>`.\n \n+### pageVote\n+\n+**Page Voting Buttons**\n+\n+- Type: `Boolean | { upBtnEl: string; downBtnEl: string; upCountEl: string; downCountEl: string; activeClass: string }`\n+- Default: `true`\n+\n+Enable the page voting feature (upvote / downvote).\n+\n+For details, see: [Page Voting](./voting.md#page-voting)\n+\n ### vote\n \n **Voting Buttons**"
+    },
+    {
+      "sha": "b73c2ff45413aa6ae51ec613f1324c28655fb6e7",
+      "filename": "docs/docs/en/guide/frontend/voting.md",
+      "status": "added",
+      "additions": 123,
+      "deletions": 0,
+      "changes": 123,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fen%2Fguide%2Ffrontend%2Fvoting.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fen%2Fguide%2Ffrontend%2Fvoting.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fen%2Fguide%2Ffrontend%2Fvoting.md?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -0,0 +1,123 @@\n+# Voting Feature\n+\n+Artalk supports voting on comments and pages, allowing users to click the \"Up\" or \"Down\" buttons to cast their votes. The comment list can be sorted based on the number of votes, which helps users better assess the quality of the comments.\n+\n+## Comment Voting\n+\n+The comment voting feature is enabled by default, allowing users to vote on comments.\n+\n+You can find the \"UI Settings\" in the Dashboard to modify the \"Vote Button\" option to enable or disable comment voting.\n+\n+Environment variable for the vote button:\n+\n+```\n+ATK_FRONTEND_VOTE=1\n+```\n+\n+Configuration file for the vote button:\n+\n+```yaml\n+frontend:\n+  vote: true\n+```\n+\n+### Down Button\n+\n+By default, Artalk does not display the Down button. You can find the \"UI Settings\" in the Dashboard to modify the \"Vote Down Button\" option to enable it.\n+\n+Environment variable for the Down button:\n+\n+```\n+ATK_FRONTEND_VOTE_DOWN=1\n+```\n+\n+Configuration file for the Down button:\n+\n+```yaml\n+frontend:\n+  voteDown: true\n+```\n+\n+## Page Voting\n+\n+Artalk supports voting on pages. To enable page voting, you need to add elements in the page to display the voting buttons, which Artalk will automatically initialize on load:\n+\n+```html\n+<div>\n+  <span class=\"artalk-page-vote-up\"></span>\n+  <span class=\"artalk-page-vote-down\"></span>\n+</div>\n+```\n+\n+### Voted Status Styling\n+\n+When users click the page voting button, the element will be given an `active` class to indicate that the user has voted. For example:\n+\n+```html\n+<span class=\"artalk-page-vote-up active\"></span>\n+```\n+\n+You can customize the voted button style using CSS:\n+\n+```css\n+.artalk-page-vote-up.active {\n+  color: #0083ff;\n+}\n+```\n+\n+The default added class name is `active`, but it can be changed using `pageVote.activeClass` in the client configuration:\n+\n+```js\n+Artalk.init({\n+  pageVote: {\n+    activeClass: 'active',\n+  },\n+})\n+```\n+\n+### Custom Element Selectors\n+\n+By default, Artalk searches for `.artalk-page-vote-up` and `.artalk-page-vote-down` as the voting button elements.\n+\n+You can customize the voting button selectors by modifying the `pageVote.upBtnEl` and `pageVote.downBtnEl` configuration in the client:\n+\n+```js\n+Artalk.init({\n+  pageVote: {\n+    upBtnEl: '.artalk-page-vote-up',\n+    downBtnEl: '.artalk-page-vote-down',\n+  },\n+})\n+```\n+\n+### Further Customizing Page Voting Buttons\n+\n+If the voting buttons do not contain any child elements, Artalk will output the text \"Up (n)\" into the element.\n+\n+If you want to output the vote count into a separate element, you can add a tag inside the button, for example:\n+\n+```html\n+<div class=\"artalk-page-vote\">\n+  <span class=\"artalk-page-vote-up\">\n+    👍 (<span class=\"artalk-page-vote-up-count\"></span>)\n+  </span>\n+  <span class=\"artalk-page-vote-down\">\n+    👎 (<span class=\"artalk-page-vote-down-count\"></span>)\n+  </span>\n+</div>\n+```\n+\n+To further customize, you can replace the text with icons or add other styles.\n+\n+The default selectors for vote counts are `.artalk-page-vote-up-count` and `.artalk-page-vote-down-count`.\n+\n+You can modify `pageVote.upCountEl` and `pageVote.downCountEl` to customize the vote count output elements:\n+\n+```js\n+Artalk.init({\n+  pageVote: {\n+    upCountEl: '.artalk-page-vote-up-count',\n+    downCountEl: '.artalk-page-vote-down-count',\n+  },\n+})\n+```"
+    },
+    {
+      "sha": "bb2d822a4062c3b31c8e3cd0438af767c5380c98",
+      "filename": "docs/docs/zh/guide/frontend/config.md",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fzh%2Fguide%2Ffrontend%2Fconfig.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fzh%2Fguide%2Ffrontend%2Fconfig.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fzh%2Fguide%2Ffrontend%2Fconfig.md?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -278,6 +278,17 @@ Artalk 统计组件查询评论数和浏览量时，会通过该属性名来查\n \n 为了便于主题适配，可根据需要自定义属性名，例如将其替换为 `data-path`，则 HTML 标签为 `<span data-path=\"/t/1.html\"></span>`。\n \n+### pageVote\n+\n+**页面投票**\n+\n+- 类型：`Boolean | { upBtnEl: string; downBtnEl: string; upCountEl: string; downCountEl: string; activeClass: string }`\n+- 默认值： `true`\n+\n+启用页面投票功能，用户可以为页面投票。\n+\n+详情参考：[页面投票](./voting.md#页面投票)\n+\n ### vote\n \n **投票按钮**"
+    },
+    {
+      "sha": "5fb22215f377f60073c6adfcb797fe7776ec5315",
+      "filename": "docs/docs/zh/guide/frontend/voting.md",
+      "status": "added",
+      "additions": 123,
+      "deletions": 0,
+      "changes": 123,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fzh%2Fguide%2Ffrontend%2Fvoting.md",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/docs%2Fdocs%2Fzh%2Fguide%2Ffrontend%2Fvoting.md",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/docs%2Fdocs%2Fzh%2Fguide%2Ffrontend%2Fvoting.md?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -0,0 +1,123 @@\n+# 投票功能\n+\n+Artalk 支持对评论和页面进行投票，用户可以点击“赞同”或“反对”按钮进行投票。评论列表支持通过投票数进行排序。评论投票功能可以帮助用户更好地了解评论的质量。\n+\n+## 评论投票\n+\n+评论投票功能默认启用，用户可以对评论进行投票。\n+\n+你可以在控制台设置界面找到「界面配置」，修改「投票按钮」选项来启用或禁用评论投票功能。\n+\n+投票按钮的环境变量：\n+\n+```\n+ATK_FRONTEND_VOTE=1\n+```\n+\n+投票按钮的配置文件：\n+\n+```yaml\n+frontend:\n+  vote: true\n+```\n+\n+### 反对按钮\n+\n+默认情况下，Artalk 不会显示反对按钮。你可以在控制台设置界面找到「界面配置」，修改「反对按钮」选项来启用反对按钮。\n+\n+反对按钮的环境变量：\n+\n+```\n+ATK_FRONTEND_VOTE_DOWN=1\n+```\n+\n+反对按钮的配置文件：\n+\n+```yaml\n+frontend:\n+  voteDown: true\n+```\n+\n+## 页面投票\n+\n+Artalk 支持对页面进行投票，你需要在页面中添加元素来显示页面投票按钮，Artalk 在加载时会自动初始化页面投票按钮：\n+\n+```html\n+<div>\n+  <span class=\"artalk-page-vote-up\"></span>\n+  <span class=\"artalk-page-vote-down\"></span>\n+</div>\n+```\n+\n+### 已投票状态样式\n+\n+当用户点击了页面投票按钮后，元素会被添加 `active` 类名，表示用户已经投票，例如：\n+\n+```html\n+<span class=\"artalk-page-vote-up active\"></span>\n+```\n+\n+你可以通过 CSS 样式来自定义按钮的已投票样式：\n+\n+```css\n+.artalk-page-vote-up.active {\n+  color: #0083ff;\n+}\n+```\n+\n+默认添加的类名为 `active`，可以在客户端通过 `pageVote.activeClass` 来修改：\n+\n+```js\n+Artalk.init({\n+  pageVote: {\n+    activeClass: 'active',\n+  },\n+})\n+```\n+\n+### 自定义元素选择器\n+\n+Artalk 默认查找 `.artalk-page-vote-up` 和 `.artalk-page-vote-down` 作为投票按钮元素。\n+\n+修改客户端的 `pageVote.upBtnEl` 和 `pageVote.downBtnEl` 配置可以自定义投票按钮选择器：\n+\n+```js\n+Artalk.init({\n+  pageVote: {\n+    upBtnEl: '.artalk-page-vote-up',\n+    downBtnEl: '.artalk-page-vote-down',\n+  },\n+})\n+```\n+\n+### 进一步自定义页面投票按钮\n+\n+如果投票按钮内没有子元素，Artalk 会输出文字 \"赞同 (n)\" 到元素中。\n+\n+如果你想输出投票数量到单独的元素，可以在按钮中添加一个标签，例如：\n+\n+```html\n+<div class=\"artalk-page-vote\">\n+  <span class=\"artalk-page-vote-up\">\n+    👍 (<span class=\"artalk-page-vote-up-count\"></span>)\n+  </span>\n+  <span class=\"artalk-page-vote-down\">\n+    👎 (<span class=\"artalk-page-vote-down-count\"></span>)\n+  </span>\n+</div>\n+```\n+\n+更进一步，你可以将文字修改为图标，或者添加其他样式。\n+\n+投票数选择器默认为 `.artalk-page-vote-up-count` 和 `.artalk-page-vote-down-count`，\n+\n+可以修改 `pageVote.upCountEl` 和 `pageVote.downCountEl` 自定义投票数输出元素：\n+\n+```js\n+Artalk.init({\n+  pageVote: {\n+    upCountEl: '.artalk-page-vote-up-count',\n+    downCountEl: '.artalk-page-vote-down-count',\n+  },\n+})\n+```"
+    },
+    {
+      "sha": "258aeec78fe7a1352467ee600b335084e7436859",
+      "filename": "ui/artalk/index.html",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Findex.html",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Findex.html",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Findex.html?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -139,6 +139,14 @@\n         <span id=\"ArtalkPV\"></span>\n         |\n         <span id=\"ArtalkCount\"></span>\n+        <div class=\"artalk-page-vote\">\n+          <span class=\"artalk-page-vote-up\"\n+            >赞同 (<span class=\"artalk-page-vote-up-count\"></span>)</span\n+          >\n+          <span class=\"artalk-page-vote-down\"\n+            >反对 (<span class=\"artalk-page-vote-down-count\"></span>)</span\n+          >\n+        </div>\n       </div>\n       <div class=\"social\">\n         <a"
+    },
+    {
+      "sha": "385f9017c65ef9b51afd4a40ca93f457381e2a39",
+      "filename": "ui/artalk/src/config.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fconfig.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fconfig.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fconfig.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -66,6 +66,7 @@ export function handleConfFormServer(conf: ArtalkConfigPartial): ArtalkConfigPar\n     'pvEl',\n     'countEl',\n     'statPageKeyAttr',\n+    'pageVote',\n   ]\n   Object.keys(conf).forEach((k) => {\n     if (ExcludedKeys.includes(k as any)) delete conf[k]"
+    },
+    {
+      "sha": "ff3096c503368ad79f295f184f3b71ecf8429c09",
+      "filename": "ui/artalk/src/defaults.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fdefaults.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fdefaults.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fdefaults.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -26,6 +26,8 @@ const defaults: RequiredExcept<ArtalkConfig, ExcludedKeys> = {\n \n   emoticons: 'https://cdn.jsdelivr.net/gh/ArtalkJS/Emoticons/grps/default.json',\n \n+  pageVote: true,\n+\n   vote: true,\n   voteDown: false,\n   uaBadge: true,"
+    },
+    {
+      "sha": "b930c67c9f49f061a6a1f54873dee49cdae07c53",
+      "filename": "ui/artalk/src/plugins/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fplugins%2Findex.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fplugins%2Findex.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fplugins%2Findex.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -6,6 +6,7 @@ import { PvCountWidget } from './stat'\n import { VersionCheck } from './version-check'\n import { AdminOnlyElem } from './admin-only-elem'\n import { DarkMode } from './dark-mode'\n+import { PageVoteWidget } from './page-vote'\n import type { ArtalkPlugin } from '@/types'\n \n export const DefaultPlugins: ArtalkPlugin[] = [\n@@ -17,4 +18,5 @@ export const DefaultPlugins: ArtalkPlugin[] = [\n   PvCountWidget,\n   VersionCheck,\n   DarkMode,\n+  PageVoteWidget,\n ]"
+    },
+    {
+      "sha": "564df93d318a05ec3391e5b49268306ba1423dc2",
+      "filename": "ui/artalk/src/plugins/page-vote.ts",
+      "status": "added",
+      "additions": 182,
+      "deletions": 0,
+      "changes": 182,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fplugins%2Fpage-vote.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Fplugins%2Fpage-vote.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Fplugins%2Fpage-vote.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -0,0 +1,182 @@\n+import type { ArtalkPlugin, ListFetchedArgs } from '@/types'\n+import type { Api } from '@/api'\n+import $t from '@/i18n'\n+\n+interface PageVoteOptions {\n+  /** Up Vote Button Selector */\n+  upBtnEl: string\n+\n+  /** Down Vote Button Selector */\n+  downBtnEl: string\n+\n+  /** Up Vote Count Selector */\n+  upCountEl: string\n+\n+  /** Down Vote Count Selector */\n+  downCountEl: string\n+\n+  /** Active class name if the vote is already cast */\n+  activeClass?: string\n+}\n+\n+const defaults: PageVoteOptions = {\n+  upBtnEl: '.artalk-page-vote-up',\n+  downBtnEl: '.artalk-page-vote-down',\n+  upCountEl: '.artalk-page-vote-up-count',\n+  downCountEl: '.artalk-page-vote-down-count',\n+  activeClass: 'active',\n+}\n+\n+type VoteBtnHandler = (evt: MouseEvent) => void\n+\n+interface PageVoteState {\n+  upBtnEl?: HTMLElement | null\n+  downBtnEl?: HTMLElement | null\n+  upCountEl?: HTMLElement | null\n+  downCountEl?: HTMLElement | null\n+  voteUpHandler?: VoteBtnHandler\n+  voteDownHandler?: VoteBtnHandler\n+  activeClass?: string\n+}\n+\n+export const PageVoteWidget: ArtalkPlugin = (ctx) => {\n+  let state: PageVoteState = initState()\n+  let cleanup: (() => void) | undefined\n+\n+  ctx.watchConf(['pageVote'], (conf) => {\n+    const options = { ...defaults, ...(typeof conf.pageVote === 'object' ? conf.pageVote : {}) }\n+\n+    cleanup?.()\n+    if (conf.pageVote) {\n+      state = loadOptions(state, options, voteUpHandler, voteDownHandler)\n+      cleanup = () => (state = resetState(state))\n+    }\n+  })\n+\n+  ctx.on('unmounted', () => {\n+    cleanup?.()\n+    ctx.off('list-fetched', listFetchedHandler)\n+  })\n+\n+  ctx.on('list-fetched', listFetchedHandler)\n+\n+  // List fetched handler\n+  let currPageId = 0\n+  function listFetchedHandler({ data }: ListFetchedArgs) {\n+    if (!ctx.getConf().pageVote || !checkEls(state) || !data) return\n+\n+    if (currPageId !== data.page.id) {\n+      // Initialize vote status in a new page\n+      currPageId = data.page.id\n+      updateVoteStatus(state, data.page.vote_up, data.page.vote_down, false, false) // reset initial status\n+      fetchVoteStatus(state, currPageId, ctx.getApi())\n+    } else {\n+      // Update vote status in the same page\n+      updateVoteStatus(state, data.page.vote_up, data.page.vote_down)\n+    }\n+  }\n+\n+  // Vote button click handlers\n+  const handlerOptions = () => ({\n+    state,\n+    pageId: ctx.getData().getPage()?.id || 0,\n+    httpApi: ctx.getApi(),\n+  })\n+  const voteUpHandler = voteBtnHandler('up', handlerOptions)\n+  const voteDownHandler = voteBtnHandler('down', handlerOptions)\n+}\n+\n+function loadOptions(\n+  _state: PageVoteState,\n+  opts: PageVoteOptions,\n+  voteUpHandler: VoteBtnHandler,\n+  voteDownHandler: VoteBtnHandler,\n+): PageVoteState {\n+  const state: PageVoteState = { ..._state } // clone to keep immutable\n+  state.upBtnEl = document.querySelector<HTMLElement>(opts.upBtnEl)\n+  state.downBtnEl = document.querySelector<HTMLElement>(opts.downBtnEl)\n+  state.upCountEl = document.querySelector<HTMLElement>(opts.upCountEl)\n+  state.downCountEl = document.querySelector<HTMLElement>(opts.downCountEl)\n+  state.activeClass = opts.activeClass\n+  state.voteUpHandler = voteUpHandler\n+  state.voteDownHandler = voteDownHandler\n+  state.upBtnEl?.addEventListener('click', voteUpHandler)\n+  state.downBtnEl?.addEventListener('click', voteDownHandler)\n+  return state\n+}\n+\n+function checkEls(state: PageVoteState) {\n+  return state.upBtnEl || state.downBtnEl || state.upCountEl || state.downCountEl\n+}\n+\n+function initState(): PageVoteState {\n+  return {}\n+}\n+\n+function resetState(state: PageVoteState): PageVoteState {\n+  state.voteUpHandler && state.upBtnEl?.removeEventListener('click', state.voteUpHandler)\n+  state.voteDownHandler && state.downBtnEl?.removeEventListener('click', state.voteDownHandler)\n+  return initState()\n+}\n+\n+function updateVoteStatus(\n+  state: PageVoteState,\n+  up: number | string,\n+  down: number | string,\n+  isUp?: boolean,\n+  isDown?: boolean,\n+) {\n+  // Up vote count\n+  if (state.upCountEl) {\n+    state.upCountEl.innerText = String(up)\n+  } else if (state.upBtnEl) {\n+    state.upBtnEl.innerText = `${$t('voteUp')} (${up})`\n+  }\n+\n+  // Down vote count\n+  if (state.downCountEl) {\n+    state.downCountEl.innerText = String(down)\n+  } else if (state.downBtnEl) {\n+    state.downBtnEl.innerText = `${$t('voteDown')} (${down})`\n+  }\n+\n+  if (typeof isUp === 'boolean')\n+    state.upBtnEl?.classList.toggle(state.activeClass || 'active', isUp)\n+  if (typeof isDown === 'boolean')\n+    state.downBtnEl?.classList.toggle(state.activeClass || 'active', isDown)\n+}\n+\n+interface VoteBtnHandlerOptions {\n+  state: PageVoteState\n+  pageId: number\n+  httpApi: Api\n+}\n+\n+const voteBtnHandler =\n+  (choice: 'up' | 'down', options: () => VoteBtnHandlerOptions) => (evt: MouseEvent) => {\n+    evt.preventDefault()\n+    const { state, pageId, httpApi } = options()\n+    if (!pageId) return\n+    httpApi.votes\n+      .createVote('page', pageId, choice, {\n+        ...httpApi.getUserFields(),\n+      })\n+      .then(({ data }) => {\n+        updateVoteStatus(state, data.up, data.down, data.is_up, data.is_down)\n+      })\n+      .catch((err) => {\n+        window.alert($t('voteFail'))\n+        console.error('[ArtalkPageVote]', err)\n+      })\n+  }\n+\n+function fetchVoteStatus(state: PageVoteState, pageId: number, httpApi: Api) {\n+  httpApi.votes\n+    .getVote('page', pageId)\n+    .then(({ data }) => {\n+      updateVoteStatus(state, data.up, data.down, data.is_up, data.is_down)\n+    })\n+    .catch((err) => {\n+      console.error('[ArtalkPageVote]', err)\n+    })\n+}"
+    },
+    {
+      "sha": "5ef158fe8ce3a415ea3319dcd1a65f0b923d2525",
+      "filename": "ui/artalk/src/types/config.ts",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 0,
+      "changes": 20,
+      "blob_url": "https://github.com/ArtalkJS/Artalk/blob/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Ftypes%2Fconfig.ts",
+      "raw_url": "https://github.com/ArtalkJS/Artalk/raw/baa63866f4195e7bb9f5e03d5251a571bb1706ec/ui%2Fartalk%2Fsrc%2Ftypes%2Fconfig.ts",
+      "contents_url": "https://api.github.com/repos/ArtalkJS/Artalk/contents/ui%2Fartalk%2Fsrc%2Ftypes%2Fconfig.ts?ref=baa63866f4195e7bb9f5e03d5251a571bb1706ec",
+      "patch": "@@ -73,6 +73,26 @@ export interface ArtalkConfig {\n   /** Downvote button for comments */\n   voteDown: boolean\n \n+  /** Page Vote Widget */\n+  pageVote:\n+    | {\n+        /** Up Vote Button Selector */\n+        upBtnEl: string\n+\n+        /** Down Vote Button Selector */\n+        downBtnEl: string\n+\n+        /** Up Vote Count Selector */\n+        upCountEl: string\n+\n+        /** Down Vote Count Selector */\n+        downCountEl: string\n+\n+        /** Active class name if the vote is already cast */\n+        activeClass: string\n+      }\n+    | boolean\n+\n   /** Preview feature for comments */\n   preview: boolean\n "
+    }
+  ]
+}
