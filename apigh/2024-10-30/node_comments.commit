@@ -1,0 +1,100 @@
+{
+  "sha": "341976b10140ea558a8666fd1e28e68f4fb11916",
+  "node_id": "MDY6Q29tbWl0MjQxMDU0NjozNDE5NzZiMTAxNDBlYTU1OGE4NjY2ZmQxZTI4ZTY4ZjRmYjExOTE2",
+  "commit": {
+    "author": {
+      "name": "Paul Vorbach",
+      "email": "paul@vorb.de",
+      "date": "2012-08-08T01:03:43Z"
+    },
+    "committer": {
+      "name": "Paul Vorbach",
+      "email": "paul@vorb.de",
+      "date": "2012-08-08T01:03:43Z"
+    },
+    "message": "Add link to MongoDB",
+    "tree": {
+      "sha": "aa2c9fbe5e8200d54d49b5c28981c93f4b426b3b",
+      "url": "https://api.github.com/repos/pvorb/node-comments/git/trees/aa2c9fbe5e8200d54d49b5c28981c93f4b426b3b"
+    },
+    "url": "https://api.github.com/repos/pvorb/node-comments/git/commits/341976b10140ea558a8666fd1e28e68f4fb11916",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/pvorb/node-comments/commits/341976b10140ea558a8666fd1e28e68f4fb11916",
+  "html_url": "https://github.com/pvorb/node-comments/commit/341976b10140ea558a8666fd1e28e68f4fb11916",
+  "comments_url": "https://api.github.com/repos/pvorb/node-comments/commits/341976b10140ea558a8666fd1e28e68f4fb11916/comments",
+  "author": {
+    "login": "pvorb",
+    "id": 183534,
+    "node_id": "MDQ6VXNlcjE4MzUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/183534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pvorb",
+    "html_url": "https://github.com/pvorb",
+    "followers_url": "https://api.github.com/users/pvorb/followers",
+    "following_url": "https://api.github.com/users/pvorb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pvorb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pvorb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pvorb/subscriptions",
+    "organizations_url": "https://api.github.com/users/pvorb/orgs",
+    "repos_url": "https://api.github.com/users/pvorb/repos",
+    "events_url": "https://api.github.com/users/pvorb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pvorb/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "pvorb",
+    "id": 183534,
+    "node_id": "MDQ6VXNlcjE4MzUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/183534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pvorb",
+    "html_url": "https://github.com/pvorb",
+    "followers_url": "https://api.github.com/users/pvorb/followers",
+    "following_url": "https://api.github.com/users/pvorb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pvorb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pvorb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pvorb/subscriptions",
+    "organizations_url": "https://api.github.com/users/pvorb/orgs",
+    "repos_url": "https://api.github.com/users/pvorb/repos",
+    "events_url": "https://api.github.com/users/pvorb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pvorb/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bfd5d89d7ea3b4d3c8de187f4a3b13a37832eb76",
+      "url": "https://api.github.com/repos/pvorb/node-comments/commits/bfd5d89d7ea3b4d3c8de187f4a3b13a37832eb76",
+      "html_url": "https://github.com/pvorb/node-comments/commit/bfd5d89d7ea3b4d3c8de187f4a3b13a37832eb76"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "additions": 4,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "b57de3a752fa0553e41cdc9955b8a382f3e85fb9",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/pvorb/node-comments/blob/341976b10140ea558a8666fd1e28e68f4fb11916/README.md",
+      "raw_url": "https://github.com/pvorb/node-comments/raw/341976b10140ea558a8666fd1e28e68f4fb11916/README.md",
+      "contents_url": "https://api.github.com/repos/pvorb/node-comments/contents/README.md?ref=341976b10140ea558a8666fd1e28e68f4fb11916",
+      "patch": "@@ -165,15 +165,16 @@ HTTP status code to the given `ServerResponse` object.\n \n ## Installation\n \n-You need a running MongoDB before you can use **Comments**. On Debian\n+You need a running [MongoDB](http://www.mongodb.org/downloads) before you can\n+use **Comments**. On Debian\n \n-```bash\n+``` bash\n apt-get install mongodb\n ```\n \n Then install **Comments** with npm.\n \n-```bash\n+``` bash\n npm install -g Comments\n ```\n "
+    }
+  ]
+}
