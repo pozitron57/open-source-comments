@@ -1,0 +1,100 @@
+{
+  "sha": "cfd5c258277453e55043d0710122afbeb50eade6",
+  "node_id": "MDY6Q29tbWl0OTAzMzY0MDM6Y2ZkNWMyNTgyNzc0NTNlNTUwNDNkMDcxMDEyMmFmYmViNTBlYWRlNg==",
+  "commit": {
+    "author": {
+      "name": "dyu",
+      "email": "david.yu.ftw@gmail.com",
+      "date": "2019-01-20T18:57:15Z"
+    },
+    "committer": {
+      "name": "dyu",
+      "email": "david.yu.ftw@gmail.com",
+      "date": "2019-01-20T18:57:15Z"
+    },
+    "message": "fix dl link",
+    "tree": {
+      "sha": "17b3e3c49ac4dd208a5b18c7c6cf1f4f310ec423",
+      "url": "https://api.github.com/repos/dyu/comments/git/trees/17b3e3c49ac4dd208a5b18c7c6cf1f4f310ec423"
+    },
+    "url": "https://api.github.com/repos/dyu/comments/git/commits/cfd5c258277453e55043d0710122afbeb50eade6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/dyu/comments/commits/cfd5c258277453e55043d0710122afbeb50eade6",
+  "html_url": "https://github.com/dyu/comments/commit/cfd5c258277453e55043d0710122afbeb50eade6",
+  "comments_url": "https://api.github.com/repos/dyu/comments/commits/cfd5c258277453e55043d0710122afbeb50eade6/comments",
+  "author": {
+    "login": "dyu",
+    "id": 79355,
+    "node_id": "MDQ6VXNlcjc5MzU1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/79355?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dyu",
+    "html_url": "https://github.com/dyu",
+    "followers_url": "https://api.github.com/users/dyu/followers",
+    "following_url": "https://api.github.com/users/dyu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dyu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dyu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dyu/subscriptions",
+    "organizations_url": "https://api.github.com/users/dyu/orgs",
+    "repos_url": "https://api.github.com/users/dyu/repos",
+    "events_url": "https://api.github.com/users/dyu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dyu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "dyu",
+    "id": 79355,
+    "node_id": "MDQ6VXNlcjc5MzU1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/79355?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dyu",
+    "html_url": "https://github.com/dyu",
+    "followers_url": "https://api.github.com/users/dyu/followers",
+    "following_url": "https://api.github.com/users/dyu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dyu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dyu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dyu/subscriptions",
+    "organizations_url": "https://api.github.com/users/dyu/orgs",
+    "repos_url": "https://api.github.com/users/dyu/repos",
+    "events_url": "https://api.github.com/users/dyu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dyu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+      "url": "https://api.github.com/repos/dyu/comments/commits/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203",
+      "html_url": "https://github.com/dyu/comments/commit/eeba43aa4f411805dbdc0c9431fa7e08f2f2f203"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "e2c09c15d82b4c19ba84da68532824f778bc92f0",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/dyu/comments/blob/cfd5c258277453e55043d0710122afbeb50eade6/README.md",
+      "raw_url": "https://github.com/dyu/comments/raw/cfd5c258277453e55043d0710122afbeb50eade6/README.md",
+      "contents_url": "https://api.github.com/repos/dyu/comments/contents/README.md?ref=cfd5c258277453e55043d0710122afbeb50eade6",
+      "patch": "@@ -4,7 +4,7 @@ A real-time comment engine with support for anonymous or authenticated posts\n ### Quickstart\n ```sh\n mkdir -p target/standalone && cd target/standalone\n-wget https://unpkg.com/dyu-comments@0.6.0/bin/comments-linux-standalone-x64.tar.gz\n+wget https://cdn.jsdelivr.net/npm/dyu-comments@0.6.0/bin/comments-linux-standalone-x64.tar.gz\n tar -xzf comments-linux-standalone-x64.tar.gz\n ./start.sh\n ```"
+    }
+  ]
+}
