@@ -1,0 +1,101 @@
+{
+  "sha": "d7494d53924c8d063286407ec4ecebf7ddfc44a4",
+  "node_id": "C_kwDOBtgov9oAKGQ3NDk0ZDUzOTI0YzhkMDYzMjg2NDA3ZWM0ZWNlYmY3ZGRmYzQ0YTQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2024-05-08T22:18:27Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-11-08T01:13:55Z"
+    },
+    "message": "add dependabot updates for Go, TypeScript, GitHub Actions",
+    "tree": {
+      "sha": "e1bd0f7386608a77ed914093eff5e124206c5dba",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/e1bd0f7386608a77ed914093eff5e124206c5dba"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d7494d53924c8d063286407ec4ecebf7ddfc44a4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d7494d53924c8d063286407ec4ecebf7ddfc44a4",
+  "html_url": "https://github.com/umputun/remark42/commit/d7494d53924c8d063286407ec4ecebf7ddfc44a4",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d7494d53924c8d063286407ec4ecebf7ddfc44a4/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c1048e95b3581a0a10974fb0ea4a9b2caf427432",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/c1048e95b3581a0a10974fb0ea4a9b2caf427432",
+      "html_url": "https://github.com/umputun/remark42/commit/c1048e95b3581a0a10974fb0ea4a9b2caf427432"
+    }
+  ],
+  "stats": {
+    "total": 74,
+    "additions": 74,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "783c54e5ecd50fba4f97d11fa4f3e439a92736ea",
+      "filename": ".github/dependabot.yml",
+      "status": "added",
+      "additions": 74,
+      "deletions": 0,
+      "changes": 74,
+      "blob_url": "https://github.com/umputun/remark42/blob/d7494d53924c8d063286407ec4ecebf7ddfc44a4/.github%2Fdependabot.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/d7494d53924c8d063286407ec4ecebf7ddfc44a4/.github%2Fdependabot.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fdependabot.yml?ref=d7494d53924c8d063286407ec4ecebf7ddfc44a4",
+      "patch": "@@ -0,0 +1,74 @@\n+# To get started with Dependabot version updates, you'll need to specify which\n+# package ecosystems to update and where the package manifests are located.\n+# Please see the documentation for all configuration options:\n+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file\n+\n+version: 2\n+updates:\n+  - package-ecosystem: \"github-actions\"\n+    directory: \"/\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"GitHub Actions updates\":\n+        patterns:\n+          - \"*\"\n+  - package-ecosystem: \"gomod\"\n+    directory: \"/backend\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"Go modules updates\":\n+        dependency-type: \"production\"\n+  - package-ecosystem: \"gomod\"\n+    directory: \"/backend/_example/memory_store\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"Go modules updates\":\n+        dependency-type: \"production\"\n+  - package-ecosystem: \"npm\"\n+    directory: \"/frontend\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"NPM modules updates\":\n+        dependency-type: \"production\"\n+      \"NPM modules updates for tests\":\n+        dependency-type: \"development\"\n+  - package-ecosystem: \"npm\"\n+    directory: \"/frontend/packages/api\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"NPM modules updates\":\n+        dependency-type: \"production\"\n+      \"NPM modules updates for tests\":\n+        dependency-type: \"development\"\n+  - package-ecosystem: \"npm\"\n+    directory: \"/frontend/e2e\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"NPM modules updates\":\n+        dependency-type: \"production\"\n+      \"NPM modules updates for tests\":\n+        dependency-type: \"development\"\n+  - package-ecosystem: \"npm\"\n+    directory: \"/frontend/apps/remark42\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"NPM modules updates\":\n+        dependency-type: \"production\"\n+      \"NPM modules updates for tests\":\n+        dependency-type: \"development\"\n+  - package-ecosystem: \"npm\"\n+    directory: \"/site\"\n+    schedule:\n+      interval: \"monthly\"\n+    groups:\n+      \"NPM modules updates\":\n+        dependency-type: \"production\"\n+      \"NPM modules updates for tests\":\n+        dependency-type: \"development\""
+    }
+  ]
+}
