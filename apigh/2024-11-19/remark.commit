@@ -1,0 +1,286 @@
+{
+  "sha": "16ff2690f0ddf1607ec24e4f160161b09733e491",
+  "node_id": "C_kwDOBtgov9oAKDE2ZmYyNjkwZjBkZGYxNjA3ZWMyNGU0ZjE2MDE2MWIwOTczM2U0OTE",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-11-18T20:57:31Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2024-11-18T20:57:31Z"
+    },
+    "message": "Merge pull request #1824 from mgkbadola/discord-oauth\n\nfeat: Discord OAuth support",
+    "tree": {
+      "sha": "19f75134532a68a2b12a14b388c28fdb78b94107",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/19f75134532a68a2b12a14b388c28fdb78b94107"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/16ff2690f0ddf1607ec24e4f160161b09733e491",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnO6o7CRC1aQ7uu5UhlAAATTwQABvZy6xbh32iUz6pcAJtKPBQ\n5LpQqQ9ra2Ce/RxYgeCD7t1v3AVJGpJ8ru3lpGGg+9OHH0QWyvoRxnu7ESGsHhIy\nVbObEWKMIivgO4bna3yoj8O4R2F+54ljXsUxY100ISE3MBEkZgvhGfG1greM1DPB\n44jg03qSi2hUTtzhbUw1MzynzIt8PnalPyvmNxGBEERpRXEYUnlQFkGP4xcDTfhM\ncHoRMjM/haGIifS5zgOW0dZBNCrKXBUOgu+62ArncX/vXzscX8BmKr2/HyNu+K27\nCYvWUGD2lWLGITWL4nSrj4OvyJJ073BrhVR2SFbXF3EgT9HCO31PX30lInacCMVI\nRv1ZJnQjViUQQIDzTu0AbRbeY7JKlb+geC4PQHgO+BaRqCqbzCazg9X4Dp2qHHOX\n3K4bp+R27W6XqcSlQwgoKnrhGn/eenRn5YG7hJFmHQztcaXQQRkP4eP1PYXVlqzK\neoxbrOG25Ih0VGDKMekUAAxk5ctYL7Kh4/I0iW1aBnyAbu7qG1kE2sVCIl2XVhsK\neqXB0iTzo72Qkcm2iLACGhkLr00b7f4BqTpiHXndKi6Y27iD47Rht4SznWHyj46x\nALzMlUb5XpEtRoG3z3Pa4VGnzyy3CrVPAYzGglBqn1DfmmYlaHKi6o0cu/93LYe9\nOqzD0sB3wc8x5IRZ2jdn\n=+ckG\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 19f75134532a68a2b12a14b388c28fdb78b94107\nparent d5e3602e543ec9994bd713b2faa15e48831f928b\nparent d0dc1131eae170bec8ca234abb809649eea52f2b\nauthor Umputun <umputun@gmail.com> 1731963451 -0600\ncommitter GitHub <noreply@github.com> 1731963451 -0600\n\nMerge pull request #1824 from mgkbadola/discord-oauth\n\nfeat: Discord OAuth support",
+      "verified_at": "2024-11-18T20:57:35Z"
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/16ff2690f0ddf1607ec24e4f160161b09733e491",
+  "html_url": "https://github.com/umputun/remark42/commit/16ff2690f0ddf1607ec24e4f160161b09733e491",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/16ff2690f0ddf1607ec24e4f160161b09733e491/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d5e3602e543ec9994bd713b2faa15e48831f928b",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/d5e3602e543ec9994bd713b2faa15e48831f928b",
+      "html_url": "https://github.com/umputun/remark42/commit/d5e3602e543ec9994bd713b2faa15e48831f928b"
+    },
+    {
+      "sha": "d0dc1131eae170bec8ca234abb809649eea52f2b",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/d0dc1131eae170bec8ca234abb809649eea52f2b",
+      "html_url": "https://github.com/umputun/remark42/commit/d0dc1131eae170bec8ca234abb809649eea52f2b"
+    }
+  ],
+  "stats": {
+    "total": 75,
+    "additions": 66,
+    "deletions": 9
+  },
+  "files": [
+    {
+      "sha": "79aa3045c08c07fe9aa9f93270ccb2cf89388ef0",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/README.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/README.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/README.md?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -2,7 +2,7 @@\n \n Remark42 is a self-hosted, lightweight and simple (yet functional) comment engine, which doesn't spy on users. It can be embedded into blogs, articles, or any other place where readers add comments.\n \n-* Social login via Google, Facebook, Microsoft, GitHub, Apple, Yandex, Patreon and Telegram\n+* Social login via Google, Facebook, Microsoft, GitHub, Apple, Yandex, Patreon, Discord and Telegram\n * Login via email\n * Optional anonymous access\n * Multi-level nested comments with both tree and plain presentations"
+    },
+    {
+      "sha": "3810c5ca0c1867508f0a65f5b1249bbafae699e3",
+      "filename": "backend/app/cmd/server.go",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fapp%2Fcmd%2Fserver.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fapp%2Fcmd%2Fserver.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fserver.go?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -107,6 +107,7 @@ type ServerCommand struct {\n \t\tYandex    AuthGroup  `group:\"yandex\" namespace:\"yandex\" env-namespace:\"YANDEX\" description:\"Yandex OAuth\"`\n \t\tTwitter   AuthGroup  `group:\"twitter\" namespace:\"twitter\" env-namespace:\"TWITTER\" description:\"[deprecated, doesn't work] Twitter OAuth\"`\n \t\tPatreon   AuthGroup  `group:\"patreon\" namespace:\"patreon\" env-namespace:\"PATREON\" description:\"Patreon OAuth\"`\n+\t\tDiscord   AuthGroup  `group:\"discord\" namespace:\"discord\" env-namespace:\"DISCORD\" description:\"Discord OAuth\"`\n \t\tTelegram  bool       `long:\"telegram\" env:\"TELEGRAM\" description:\"Enable Telegram auth (using token from telegram.token)\"`\n \t\tDev       bool       `long:\"dev\" env:\"DEV\" description:\"enable dev (local) oauth2\"`\n \t\tAnonymous bool       `long:\"anon\" env:\"ANON\" description:\"enable anonymous login\"`\n@@ -321,6 +322,7 @@ func (s *ServerCommand) Execute(_ []string) error {\n \t\t\"AUTH_TWITTER_CSEC\",\n \t\t\"AUTH_YANDEX_CSEC\",\n \t\t\"AUTH_PATREON_CSEC\",\n+\t\t\"AUTH_DISCORD_CSEC\",\n \t\t\"TELEGRAM_TOKEN\",\n \t\t\"SMTP_PASSWORD\",\n \t\t\"ADMIN_PASSWD\",\n@@ -952,6 +954,10 @@ func (s *ServerCommand) addAuthProviders(authenticator *auth.Service) error {\n \t\tauthenticator.AddProvider(\"patreon\", s.Auth.Patreon.CID, s.Auth.Patreon.CSEC)\n \t\tprovidersCount++\n \t}\n+\tif s.Auth.Discord.CID != \"\" && s.Auth.Discord.CSEC != \"\" {\n+\t\tauthenticator.AddProvider(\"discord\", s.Auth.Discord.CID, s.Auth.Discord.CSEC)\n+\t\tprovidersCount++\n+\t}\n \n \tif s.Auth.Dev {\n \t\tlog.Print(\"[INFO] dev access enabled\")"
+    },
+    {
+      "sha": "7ff6ac037721c04b94e88fc261a5bed2f525404d",
+      "filename": "backend/app/cmd/server_test.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fapp%2Fcmd%2Fserver_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fapp%2Fcmd%2Fserver_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fcmd%2Fserver_test.go?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -79,7 +79,7 @@ func TestServerApp_DevMode(t *testing.T) {\n \twaitForHTTPServerStart(port)\n \n \tproviders := app.restSrv.Authenticator.Providers()\n-\trequire.Equal(t, 10+1, len(providers), \"extra auth provider\")\n+\trequire.Equal(t, 11+1, len(providers), \"extra auth provider\")\n \tassert.Equal(t, \"dev\", providers[len(providers)-2].Name(), \"dev auth provider\")\n \t// send ping\n \tresp, err := http.Get(fmt.Sprintf(\"http://localhost:%d/api/v1/ping\", port))\n@@ -807,6 +807,7 @@ func prepServerApp(t *testing.T, fn func(o ServerCommand) ServerCommand) (*serve\n \tcmd.Auth.Microsoft.CSEC, cmd.Auth.Microsoft.CID = \"csec\", \"cid\"\n \tcmd.Auth.Twitter.CSEC, cmd.Auth.Twitter.CID = \"csec\", \"cid\"\n \tcmd.Auth.Patreon.CSEC, cmd.Auth.Patreon.CID = \"csec\", \"cid\"\n+\tcmd.Auth.Discord.CSEC, cmd.Auth.Discord.CID = \"csec\", \"cid\"\n \tcmd.Auth.Telegram = true\n \tcmd.Telegram.Token = \"token\"\n \tcmd.Auth.Email.Enable = true"
+    },
+    {
+      "sha": "2e97a4e5fec76400470d354f786bf5074af94419",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.mod?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -13,7 +13,7 @@ require (\n \tgithub.com/go-chi/chi/v5 v5.1.0\n \tgithub.com/go-chi/cors v1.2.1\n \tgithub.com/go-chi/render v1.0.3\n-\tgithub.com/go-pkgz/auth v1.24.2\n+\tgithub.com/go-pkgz/auth v1.24.3-0.20241007090635-78537e6f812d\n \tgithub.com/go-pkgz/jrpc v0.3.0\n \tgithub.com/go-pkgz/lcw/v2 v2.0.0\n \tgithub.com/go-pkgz/lgr v0.11.1"
+    },
+    {
+      "sha": "9f2d6d6bfb1052d5942638755e6e248f6ce6aeab",
+      "filename": "backend/go.sum",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fgo.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fgo.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.sum?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -60,8 +60,8 @@ github.com/go-chi/render v1.0.3 h1:AsXqd2a1/INaIfUSKq3G5uA8weYx20FOsM7uSoCyyt4=\n github.com/go-chi/render v1.0.3/go.mod h1:/gr3hVkmYR0YlEy3LxCuVRFzEu9Ruok+gFqbIofjao0=\n github.com/go-oauth2/oauth2/v4 v4.5.2 h1:CuZhD3lhGuI6aNLyUbRHXsgG2RwGRBOuCBfd4WQKqBQ=\n github.com/go-oauth2/oauth2/v4 v4.5.2/go.mod h1:wk/2uLImWIa9VVQDgxz99H2GDbhmfi/9/Xr+GvkSUSQ=\n-github.com/go-pkgz/auth v1.24.2 h1:imMjUvTM0c8iOvP/GNGcuNcB/7gF3jFTF9dIPzlAOqI=\n-github.com/go-pkgz/auth v1.24.2/go.mod h1:xmnzq6g8mhemW1nHnkuByXkBXsHrNf9/qkiVwJugWIs=\n+github.com/go-pkgz/auth v1.24.3-0.20241007090635-78537e6f812d h1:6iwosbIwyRm7k0lprEv5mFWpGg1qQKLWJNHL088+Bcs=\n+github.com/go-pkgz/auth v1.24.3-0.20241007090635-78537e6f812d/go.mod h1:xmnzq6g8mhemW1nHnkuByXkBXsHrNf9/qkiVwJugWIs=\n github.com/go-pkgz/email v0.5.0 h1:fdtMDGJ8NwyBACLR0LYHaCIK/OeUwZHMhH7Q0+oty9U=\n github.com/go-pkgz/email v0.5.0/go.mod h1:BdxglsQnymzhfdbnncEE72a6DrucZHy6I+42LK2jLEc=\n github.com/go-pkgz/expirable-cache v0.1.0/go.mod h1:GTrEl0X+q0mPNqN6dtcQXksACnzCBQ5k/k1SwXJsZKs="
+    },
+    {
+      "sha": "9e48ae4ca86a00cef4c53dc00283271097bb6392",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/README.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 3,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2FREADME.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2FREADME.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2FREADME.md?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -1,7 +1,7 @@\n # auth - authentication via oauth2, direct and email\n [![Build Status](https://github.com/go-pkgz/auth/workflows/build/badge.svg)](https://github.com/go-pkgz/auth/actions) [![Coverage Status](https://coveralls.io/repos/github/go-pkgz/auth/badge.svg?branch=master)](https://coveralls.io/github/go-pkgz/auth?branch=master) [![godoc](https://godoc.org/github.com/go-pkgz/auth?status.svg)](https://pkg.go.dev/github.com/go-pkgz/auth?tab=doc)\n \n-This library provides \"social login\" with Github, Google, Facebook, Microsoft, Twitter, Yandex, Battle.net, Apple, Patreon and Telegram as well as custom auth providers and email verification.\n+This library provides \"social login\" with Github, Google, Facebook, Microsoft, Twitter, Yandex, Battle.net, Apple, Patreon, Discord and Telegram as well as custom auth providers and email verification.\n \n - Multiple oauth2 providers can be used at the same time\n - Special `dev` provider allows local testing and development\n@@ -144,7 +144,7 @@ In addition to oauth2 providers `auth.Service` allows to use direct user-defined\n \n ```go\n \tservice.AddDirectProvider(\"local\", provider.CredCheckerFunc(func(user, password string) (ok bool, err error) {\n-\t\tok, err := checkUserSomehow(user, password)\n+\t\tok, err = checkUserSomehow(user, password)\n \t\treturn ok, err\n \t}))\n ```\n@@ -205,7 +205,7 @@ used as `Sender`.\n \n The API for this provider:\n \n- - `GET /auth/<name>/login?user=<user>&address=<adsress>&aud=<site_id>&from=<url>` - send confirmation request to user\n+ - `GET /auth/<name>/login?user=<user>&address=<address>&aud=<site_id>&from=<url>` - send confirmation request to user\n  - `GET /auth/<name>/login?token=<conf.token>&sess=[1|0]` - authorize with confirmation token\n \n The provider acts like any other, i.e. will be registered as `/auth/email/login`.\n@@ -604,6 +604,13 @@ For more details refer to [Complete Guide of Battle.net OAuth API and Login Butt\n 1.  Under **\"Redirect URIs\"** enter the correct url constructed as domain + `/auth/patreon/callback`. ie `https://example.mysite.com/auth/patreon/callback`\n 1.  Take note of the **Client ID** and **Client Secret**\n \n+#### Discord Auth Provider ####\n+1.  Log into Discord Developer Portal https://discord.com/developers/applications\n+2.  Click on **New Application** to create the application required for Oauth\n+3.  After filling **\"NAME\"**, navigate to **\"OAuth2\"** option on the left sidebar\n+4.  Under **\"Redirects\"** enter the correct url constructed as domain + `/auth/discord/callback`. ie `https://remark42.mysite.com/auth/discord/callback`\n+5.  Take note of the **CLIENT ID** and **CLIENT SECRET**\n+\n #### Twitter Auth Provider\n 1.\tCreate a new twitter application https://developer.twitter.com/en/apps\n 1.\tFill **App name**  and **Description** and **URL** of your site"
+    },
+    {
+      "sha": "33366b2034a099e5d398e4a057d226ce2b473e1d",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/auth.go",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Fauth.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Fauth.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Fauth.go?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -257,6 +257,8 @@ func (s *Service) addProviderByName(name string, p provider.Params) {\n \t\tprov = provider.NewTwitter(p)\n \tcase \"patreon\":\n \t\tprov = provider.NewPatreon(p)\n+\tcase \"discord\":\n+\t\tprov = provider.NewDiscord(p)\n \tcase \"dev\":\n \t\tprov = provider.NewDev(p)\n \tdefault:"
+    },
+    {
+      "sha": "9711781f1e5b18b395e46ea474aece3a219b2133",
+      "filename": "backend/vendor/github.com/go-pkgz/auth/provider/providers.go",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Fprovider%2Fproviders.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Fprovider%2Fproviders.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fgithub.com%2Fgo-pkgz%2Fauth%2Fprovider%2Fproviders.go?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -265,3 +265,29 @@ func NewPatreon(p Params) Oauth2Handler {\n \t\t},\n \t})\n }\n+\n+// NewDiscord makes discord oauth2 provider\n+func NewDiscord(p Params) Oauth2Handler {\n+\treturn initOauth2Handler(p, Oauth2Handler{\n+\t\tname: \"discord\",\n+\t\t// see https://discord.com/developers/docs/topics/oauth2\n+\t\tendpoint: oauth2.Endpoint{\n+\t\t\tAuthURL:  \"https://discord.com/oauth2/authorize\",\n+\t\t\tTokenURL: \"https://discord.com/api/oauth2/token\",\n+\t\t},\n+\t\tinfoURL: \"https://discord.com/api/v10/users/@me\",\n+\t\tscopes:  []string{\"identify\"},\n+\t\tmapUser: func(data UserData, _ []byte) token.User {\n+\t\t\tuserInfo := token.User{\n+\t\t\t\tID:      \"discord_\" + token.HashID(sha1.New(), data.Value(\"id\")),\n+\t\t\t\tName:    data.Value(\"username\"),\n+\t\t\t\tPicture: fmt.Sprintf(\"https://cdn.discordapp.com/avatars/%s/%s.webp\", data.Value(\"id\"), data.Value(\"avatar\")),\n+\t\t\t}\n+\n+\t\t\tfor k, v := range p.UserAttributes {\n+\t\t\t\tuserInfo.SetStrAttr(v, data.Value(k))\n+\t\t\t}\n+\t\t\treturn userInfo\n+\t\t},\n+\t})\n+}"
+    },
+    {
+      "sha": "48c71aee911d47151d23baee85c302f2d127e80b",
+      "filename": "backend/vendor/modules.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fmodules.txt",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/backend%2Fvendor%2Fmodules.txt",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fvendor%2Fmodules.txt?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -65,7 +65,7 @@ github.com/go-chi/render\n github.com/go-oauth2/oauth2/v4\n github.com/go-oauth2/oauth2/v4/errors\n github.com/go-oauth2/oauth2/v4/server\n-# github.com/go-pkgz/auth v1.24.2\n+# github.com/go-pkgz/auth v1.24.3-0.20241007090635-78537e6f812d\n ## explicit; go 1.21\n github.com/go-pkgz/auth\n github.com/go-pkgz/auth/avatar"
+    },
+    {
+      "sha": "eaa2a1cc96756dc0ccb55d34d8a41637dec79c62",
+      "filename": "compose-dev-backend.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/compose-dev-backend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/compose-dev-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/compose-dev-backend.yml?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -68,5 +68,7 @@ services:\n       - AUTH_FACEBOOK_CSEC=1111\n       - AUTH_PATREON_CID=1111\n       - AUTH_PATREON_CSEC=1111\n+      - AUTH_DISCORD_CID=1111\n+      - AUTH_DISCORD_CSEC=1111\n     volumes:\n       - ./var:/srv/var"
+    },
+    {
+      "sha": "bb6324e481d0774f0684818db1a33089438c4e17",
+      "filename": "frontend/apps/remark42/app/assets/social/discord.svg",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fapps%2Fremark42%2Fapp%2Fassets%2Fsocial%2Fdiscord.svg",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fapps%2Fremark42%2Fapp%2Fassets%2Fsocial%2Fdiscord.svg",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fassets%2Fsocial%2Fdiscord.svg?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -0,0 +1 @@\n+<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 127.14 96.36\"><path fill=\"#5865f2\" d=\"M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z\"/></svg>\n\\ No newline at end of file"
+    },
+    {
+      "sha": "fd18f8ebc3f9744e4d5c4ad2161fe1df52928c30",
+      "filename": "frontend/apps/remark42/app/common/types.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Ftypes.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Ftypes.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Ftypes.ts?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -99,6 +99,7 @@ export type OAuthProvider =\n   | 'github'\n   | 'microsoft'\n   | 'patreon'\n+  | 'discord'\n   | 'telegram'\n   | 'dev';\n export type FormProvider = 'email' | 'anonymous';"
+    },
+    {
+      "sha": "d7d86d7f0ac58ae3a1902365bfd0dbbb2dfe72b8",
+      "filename": "frontend/apps/remark42/app/components/auth/components/oauth.consts.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fauth%2Fcomponents%2Foauth.consts.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fauth%2Fcomponents%2Foauth.consts.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fauth%2Fcomponents%2Foauth.consts.ts?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -9,6 +9,7 @@ export const OAUTH_DATA = {\n   facebook: require('assets/social/facebook.svg').default as string,\n   twitter: require('assets/social/twitter.svg').default as string,\n   patreon: require('assets/social/patreon.svg').default as string,\n+  discord: require('assets/social/discord.svg').default as string,\n   google: require('assets/social/google.svg').default as string,\n   microsoft: require('assets/social/microsoft.svg').default as string,\n   yandex: require('assets/social/yandex.svg').default as string,"
+    },
+    {
+      "sha": "a262d9ecdd1599c5c3ebf7a96194a2b88fa2369e",
+      "filename": "frontend/packages/api/clients/index.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fpackages%2Fapi%2Fclients%2Findex.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/frontend%2Fpackages%2Fapi%2Fclients%2Findex.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fpackages%2Fapi%2Fclients%2Findex.ts?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -25,6 +25,7 @@ export type OAuthProvider =\n \t| 'github'\n \t| 'microsoft'\n \t| 'patreon'\n+\t| 'discord'\n \t| 'telegram'\n \t| 'dev'\n export type FormProvider = 'email' | 'anonymous'"
+    },
+    {
+      "sha": "244019b6db9cd5834ab71cdf33695ec87669e591",
+      "filename": "site/src/docs/configuration/authorization/index.md",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/site%2Fsrc%2Fdocs%2Fconfiguration%2Fauthorization%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/site%2Fsrc%2Fdocs%2Fconfiguration%2Fauthorization%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Fauthorization%2Findex.md?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -105,6 +105,13 @@ For more details refer to [Yandex OAuth](https://yandex.com/dev/oauth/doc/dg/con\n 3. In the field **Redirect URIs** enter the correct URI constructed as domain + `/auth/patreon/callback`, i.e., `https://example.mysite.com/auth/patreon/callback`\n 4. Expand client details and note the **Client ID** and **Client Secret**. Those will be used as `AUTH_PATREON_CID` and `AUTH_PATREON_CSEC`\n \n+### Discord Auth Provider\n+\n+1. Click on **New Application** to create Oauth client https://discord.com/developers/applications\n+2. After filling **\"NAME\"**, navigate to **\"OAuth2\"** option on the left sidebar\n+3. Under **\"Redirects\"** enter the correct url constructed as domain + `/auth/discord/callback`. ie `https://remark42.mysite.com/auth/discord/callback`\n+4. Take note of the **CLIENT ID** and **CLIENT SECRET**, as they are values for `AUTH_DISCORD_CID` and `AUTH_DISCORD_CSEC` respectively\n+\n ### Telegram\n \n 1. Contact [@BotFather](https://t.me/botfather) and follow his instructions to create your bot (call it, for example, \"My site auth bot\")"
+    },
+    {
+      "sha": "af4e34a364a351f3d472470e61f8c374d22c984d",
+      "filename": "site/src/docs/configuration/parameters/index.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/16ff2690f0ddf1607ec24e4f160161b09733e491/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/16ff2690f0ddf1607ec24e4f160161b09733e491/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/site%2Fsrc%2Fdocs%2Fconfiguration%2Fparameters%2Findex.md?ref=16ff2690f0ddf1607ec24e4f160161b09733e491",
+      "patch": "@@ -95,6 +95,8 @@ services:\n | auth.github.csec               | AUTH_GITHUB_CSEC               |                         | GitHub OAuth client secret                               |\n | auth.patreon.cid               | AUTH_PATREON_CID               |                         | Patreon OAuth Client ID                                  |\n | auth.patreon.csec              | AUTH_PATREON_CSEC              |                         | Patreon OAuth Client Secret                              |\n+| auth.discord.cid               | AUTH_DISCORD_CID               |                         | Discord OAuth Client ID                                  |\n+| auth.discord.csec              | AUTH_DISCORD_CSEC              |                         | Discord OAuth Client Secret                              |\n | auth.telegram                  | AUTH_TELEGRAM                  | `false`                 | Enable Telegram auth (telegram.token must be present)    |\n | auth.yandex.cid                | AUTH_YANDEX_CID                |                         | Yandex OAuth client ID                                   |\n | auth.yandex.csec               | AUTH_YANDEX_CSEC               |                         | Yandex OAuth client secret                               |"
+    }
+  ]
+}
