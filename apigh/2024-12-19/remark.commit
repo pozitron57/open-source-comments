@@ -1,0 +1,113 @@
+{
+  "sha": "3f0789fd90c90841574a6b99bb78f272a03a4a26",
+  "node_id": "C_kwDOBtgov9oAKDNmMDc4OWZkOTBjOTA4NDE1NzRhNmI5OWJiNzhmMjcyYTAzYTRhMjY",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-12-18T05:39:29Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2024-12-18T05:39:29Z"
+    },
+    "message": "mod tidy for memory store example",
+    "tree": {
+      "sha": "150a9bf7eca6949ad493c1bfd610793fdd591de5",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/150a9bf7eca6949ad493c1bfd610793fdd591de5"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/3f0789fd90c90841574a6b99bb78f272a03a4a26",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/3f0789fd90c90841574a6b99bb78f272a03a4a26",
+  "html_url": "https://github.com/umputun/remark42/commit/3f0789fd90c90841574a6b99bb78f272a03a4a26",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/3f0789fd90c90841574a6b99bb78f272a03a4a26/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "518ae79556bff77c87c4aee3b0b79ad059b09143",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/518ae79556bff77c87c4aee3b0b79ad059b09143",
+      "html_url": "https://github.com/umputun/remark42/commit/518ae79556bff77c87c4aee3b0b79ad059b09143"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "bddaf9c6f185592c97ce6d168bd076bc8a8624de",
+      "filename": "backend/_example/memory_store/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/umputun/remark42/blob/3f0789fd90c90841574a6b99bb78f272a03a4a26/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/3f0789fd90c90841574a6b99bb78f272a03a4a26/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.mod?ref=3f0789fd90c90841574a6b99bb78f272a03a4a26",
+      "patch": "@@ -35,7 +35,7 @@ require (\n \tgo.etcd.io/bbolt v1.3.11 // indirect\n \tgolang.org/x/image v0.22.0 // indirect\n \tgolang.org/x/net v0.31.0 // indirect\n-\tgolang.org/x/sys v0.27.0 // indirect\n+\tgolang.org/x/sys v0.28.0 // indirect\n \tgopkg.in/yaml.v3 v3.0.1 // indirect\n )\n "
+    },
+    {
+      "sha": "b41460e82b1f689e78e2c336c484748c34ef8009",
+      "filename": "backend/_example/memory_store/go.sum",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/3f0789fd90c90841574a6b99bb78f272a03a4a26/backend%2F_example%2Fmemory_store%2Fgo.sum",
+      "raw_url": "https://github.com/umputun/remark42/raw/3f0789fd90c90841574a6b99bb78f272a03a4a26/backend%2F_example%2Fmemory_store%2Fgo.sum",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.sum?ref=3f0789fd90c90841574a6b99bb78f272a03a4a26",
+      "patch": "@@ -93,17 +93,17 @@ golang.org/x/net v0.31.0/go.mod h1:P4fl1q7dY2hnZFxEk4pPSkDHF+QqjitcnDjUQyMM+pM=\n golang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=\n golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=\n golang.org/x/sync v0.1.0/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=\n-golang.org/x/sync v0.9.0 h1:fEo0HyrW1GIgZdpbhCRO0PkJajUS5H9IFUztCgEo2jQ=\n-golang.org/x/sync v0.9.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=\n+golang.org/x/sync v0.10.0 h1:3NQrjDixjgGwUOCaF8w2+VYHv0Ve/vGYSbdkTa98gmQ=\n+golang.org/x/sync v0.10.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=\n golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=\n golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=\n golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=\n golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=\n golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=\n golang.org/x/sys v0.5.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=\n golang.org/x/sys v0.7.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=\n-golang.org/x/sys v0.27.0 h1:wBqf8DvsY9Y/2P8gAfPDEYNuS30J4lPHJxXSb/nJZ+s=\n-golang.org/x/sys v0.27.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=\n+golang.org/x/sys v0.28.0 h1:Fksou7UEQUWlKvIdsqzJmUmCX3cZuD2+P3XyyzwMhlA=\n+golang.org/x/sys v0.28.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=\n golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=\n golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod h1:jbD1KX2456YbFQfuXm/mYQcufACuNUgVhRMnK/tPxf8=\n golang.org/x/term v0.5.0/go.mod h1:jMB1sMXY+tzblOD4FWmEbocvup2/aLOaQEp7JmGp78k="
+    }
+  ]
+}
