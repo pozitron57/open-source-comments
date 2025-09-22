@@ -1,0 +1,137 @@
+{
+  "sha": "b015f3044e4e8f0add4b14437994b72754730b88",
+  "node_id": "MDY6Q29tbWl0NzcyNTUwNTc6YjAxNWYzMDQ0ZTRlOGYwYWRkNGIxNDQzNzk5NGI3Mjc1NDczMGI4OA==",
+  "commit": {
+    "author": {
+      "name": "Max",
+      "email": "bitveen@gmail.com",
+      "date": "2016-12-23T23:45:13Z"
+    },
+    "committer": {
+      "name": "Max",
+      "email": "bitveen@gmail.com",
+      "date": "2016-12-23T23:45:13Z"
+    },
+    "message": "make some tests",
+    "tree": {
+      "sha": "548a6c712a48ce18c1175f7035119b52207a8c26",
+      "url": "https://api.github.com/repos/Bitveen/react-comment-system/git/trees/548a6c712a48ce18c1175f7035119b52207a8c26"
+    },
+    "url": "https://api.github.com/repos/Bitveen/react-comment-system/git/commits/b015f3044e4e8f0add4b14437994b72754730b88",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Bitveen/react-comment-system/commits/b015f3044e4e8f0add4b14437994b72754730b88",
+  "html_url": "https://github.com/Bitveen/react-comment-system/commit/b015f3044e4e8f0add4b14437994b72754730b88",
+  "comments_url": "https://api.github.com/repos/Bitveen/react-comment-system/commits/b015f3044e4e8f0add4b14437994b72754730b88/comments",
+  "author": {
+    "login": "Bitveen",
+    "id": 7973668,
+    "node_id": "MDQ6VXNlcjc5NzM2Njg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7973668?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Bitveen",
+    "html_url": "https://github.com/Bitveen",
+    "followers_url": "https://api.github.com/users/Bitveen/followers",
+    "following_url": "https://api.github.com/users/Bitveen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Bitveen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Bitveen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Bitveen/subscriptions",
+    "organizations_url": "https://api.github.com/users/Bitveen/orgs",
+    "repos_url": "https://api.github.com/users/Bitveen/repos",
+    "events_url": "https://api.github.com/users/Bitveen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Bitveen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Bitveen",
+    "id": 7973668,
+    "node_id": "MDQ6VXNlcjc5NzM2Njg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7973668?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Bitveen",
+    "html_url": "https://github.com/Bitveen",
+    "followers_url": "https://api.github.com/users/Bitveen/followers",
+    "following_url": "https://api.github.com/users/Bitveen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Bitveen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Bitveen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Bitveen/subscriptions",
+    "organizations_url": "https://api.github.com/users/Bitveen/orgs",
+    "repos_url": "https://api.github.com/users/Bitveen/repos",
+    "events_url": "https://api.github.com/users/Bitveen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Bitveen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "39f01538b2ca7f59643e325b73622036617c3eed",
+      "url": "https://api.github.com/repos/Bitveen/react-comment-system/commits/39f01538b2ca7f59643e325b73622036617c3eed",
+      "html_url": "https://github.com/Bitveen/react-comment-system/commit/39f01538b2ca7f59643e325b73622036617c3eed"
+    }
+  ],
+  "stats": {
+    "total": 30,
+    "additions": 27,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "c2042a53e3ea20fe309309297611dd170b79d650",
+      "filename": "public/bundle.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/Bitveen/react-comment-system/blob/b015f3044e4e8f0add4b14437994b72754730b88/public%2Fbundle.js",
+      "raw_url": "https://github.com/Bitveen/react-comment-system/raw/b015f3044e4e8f0add4b14437994b72754730b88/public%2Fbundle.js",
+      "contents_url": "https://api.github.com/repos/Bitveen/react-comment-system/contents/public%2Fbundle.js?ref=b015f3044e4e8f0add4b14437994b72754730b88",
+      "patch": "@@ -23794,6 +23794,7 @@\n \tObject.defineProperty(exports, \"__esModule\", {\n \t    value: true\n \t});\n+\texports.CommentForm = undefined;\n \n \tvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n \n@@ -23813,7 +23814,7 @@\n \n \tfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n \n-\tvar CommentForm = function (_Component) {\n+\tvar CommentForm = exports.CommentForm = function (_Component) {\n \t    _inherits(CommentForm, _Component);\n \n \t    function CommentForm(props) {"
+    },
+    {
+      "sha": "07aec6a8b9f10af72c59e6ef314053a2dce0e4c6",
+      "filename": "src/components/CommentForm.jsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/Bitveen/react-comment-system/blob/b015f3044e4e8f0add4b14437994b72754730b88/src%2Fcomponents%2FCommentForm.jsx",
+      "raw_url": "https://github.com/Bitveen/react-comment-system/raw/b015f3044e4e8f0add4b14437994b72754730b88/src%2Fcomponents%2FCommentForm.jsx",
+      "contents_url": "https://api.github.com/repos/Bitveen/react-comment-system/contents/src%2Fcomponents%2FCommentForm.jsx?ref=b015f3044e4e8f0add4b14437994b72754730b88",
+      "patch": "@@ -2,7 +2,7 @@ import React, { Component } from \"react\";\n import { connect } from \"react-redux\";\n import { addComment } from \"actions\";\n \n-class CommentForm extends Component {\n+export class CommentForm extends Component {\n     constructor(props) {\n         super(props);\n         this.handleSubmitForm = this.handleSubmitForm.bind(this);"
+    },
+    {
+      "sha": "ea7112972a17ec64f18fe363e0b94f906fcaa712",
+      "filename": "src/tests/components/Comment.test.jsx",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/Bitveen/react-comment-system/blob/b015f3044e4e8f0add4b14437994b72754730b88/src%2Ftests%2Fcomponents%2FComment.test.jsx",
+      "raw_url": "https://github.com/Bitveen/react-comment-system/raw/b015f3044e4e8f0add4b14437994b72754730b88/src%2Ftests%2Fcomponents%2FComment.test.jsx",
+      "contents_url": "https://api.github.com/repos/Bitveen/react-comment-system/contents/src%2Ftests%2Fcomponents%2FComment.test.jsx?ref=b015f3044e4e8f0add4b14437994b72754730b88",
+      "patch": "@@ -10,7 +10,6 @@ describe(\"Comment\", () => {\n         expect(Comment).toExist();\n     });\n \n-    \n \n \n "
+    },
+    {
+      "sha": "7e6ea4a9b82eeb531e2df1b607f34d8cd1ded129",
+      "filename": "src/tests/components/CommentForm.test.jsx",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 0,
+      "changes": 24,
+      "blob_url": "https://github.com/Bitveen/react-comment-system/blob/b015f3044e4e8f0add4b14437994b72754730b88/src%2Ftests%2Fcomponents%2FCommentForm.test.jsx",
+      "raw_url": "https://github.com/Bitveen/react-comment-system/raw/b015f3044e4e8f0add4b14437994b72754730b88/src%2Ftests%2Fcomponents%2FCommentForm.test.jsx",
+      "contents_url": "https://api.github.com/repos/Bitveen/react-comment-system/contents/src%2Ftests%2Fcomponents%2FCommentForm.test.jsx?ref=b015f3044e4e8f0add4b14437994b72754730b88",
+      "patch": "@@ -10,6 +10,30 @@ describe(\"CommentForm\", () => {\n         expect(CommentForm).toExist();\n     });\n \n+    // it(\"should dispatch ADD_COMMENT when valid comment text and author\", () => {\n+    //     let author = \"Max\";\n+    //     let text = \"Hello world\";\n+    //\n+    //     let action = {\n+    //         type: \"ADD_COMMENT\",\n+    //         author,\n+    //         text\n+    //     };\n+    //\n+    //     let spy = expect.createSpy();\n+    //\n+    //     let commentForm = TestUtils.renderIntoDocument(<CommentForm dispatch={spy}/>);\n+    //\n+    //     let elem = ReactDOM.findDOMNode(commentForm);\n+    //\n+    //     commentForm.refs.text.value = text;\n+    //     commentForm.refs.author.value = author;\n+    //\n+    //     TestUtils.Simulate.submit(elem.querySelector(\"form\"));\n+    //     expect(spy).toHaveBeenCalledWith(action);\n+    //\n+    //\n+    // });\n \n \n "
+    }
+  ]
+}
