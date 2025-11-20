@@ -1,0 +1,221 @@
+{
+  "sha": "34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+  "node_id": "C_kwDOBtgov9oAKDM0ZWE0YzNlODNlYzEyYmFiOTU1NTgyM2I4OWY3YTkwMDBlYTMwZGE",
+  "commit": {
+    "author": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2025-11-02T20:17:39Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2025-11-02T20:17:39Z"
+    },
+    "message": "Migrate golangci-lint to v2 and update Go version (#1965)\n\n* migrate golangci-lint to v2 and update go version\n\n- migrated .golangci.yml to version 2 format\n- updated go.mod from 1.23.0 to 1.24\n- removed deprecated run.timeout configuration\n\n* update to go 1.25 and baseimage v1.17.0\n\n- updated go.mod to go 1.25\n- updated Dockerfile to use buildgo-v1.17.0 (go 1.25.0)\n- updated Dockerfile to use app-v1.17.0\n\n* fix flaky tests with proper synchronization\n\n- use assert.Eventually instead of fixed sleep in TestService_Many\n- wait for webhook before shutdown in TestMain_WithWebhook\n- fixes race conditions exposed by Go 1.25 scheduler changes\n\n* fix data race in MockDest.closed field\n\n- add IsClosed() method with proper locking\n- add locking to String() method\n- use IsClosed() in tests instead of direct field access\n- fixes race condition detected by go test -race\n\n* update example go.mod to go 1.25\n\n* update golangci-lint to v2.6.0 for go 1.25 support\n\n* fix linter issue and update CLAUDE.md\n\n- merge conditional assignment in example accessor/data.go\n- add reminder in CLAUDE.md to always test and lint examples before committing\n\n* update example Dockerfile to baseimage v1.17.0 for go 1.25",
+    "tree": {
+      "sha": "103e3b662c04f6d19c86a177c748d94ec83cfe33",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/103e3b662c04f6d19c86a177c748d94ec83cfe33"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpB7xjCRC1aQ7uu5UhlAAAbeYQABtM6Fe9tXnQKp1C6UzK08qw\nT98ZM6/m3POZ8o9WZcACRqe+n0hCHB42vR+UHJ1murBcHtLBBBt6gZNXtG+DyJ8B\ntAgqyl6mM+Oxu29nznU5qMZ2ogzrZJUwr10tTYLInD5m0EJ6AdvXZgLuQvfocHYT\nKsfn80ZTRZ71GIvdA1TNN9XChhEgMbPKE+SFol+QbUQSaRU9c+/VgI9filC7hIXp\nhFBokyzDBHkUaLP+W/h6vfTQAM2Dg6Cx/FFwmiuxXQHeDLyCNvuml3Yu7YcOsN9k\njpTeozOJaPdeHHOa+bXGmqOpYGlIfwSI12WYGHs319mrvEDjdZ8JYKTYPYxpgjZi\n26Y0Sk0Z4l/rK8zxtV9Z+O+L5uybUyStsSevPMufTMRdYXpr5QkL0rgbW8/CxS1M\n1409C4oka28vXvw0adpLWVbtynKPKZxOPmNAWbQ8euqsYyQzJhLGQUpNw904TzkY\nbRHC4kiqlDq3EoZ9du0v18pc9ULxH14Nkr63GtuV2cr2wi/Kmyt9GkeS12RcoqMr\nPVu+fP+bLPgkD7nX+7RqyS4XqrNTSoDnYzz7bdwU21Gd8kY8HaQmN+n1doBS63+/\n4Arc8+xU0LnhNSvGtrz6KKneWFoCEjGiyp/KNzBZzCiiRG1Nej2iZNLwg1PrnOPc\nvfTqFfGhNNGYaJB4KmCy\n=TaKv\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 103e3b662c04f6d19c86a177c748d94ec83cfe33\nparent 8112f445f4f31d09e1357b797b265c229f684fa1\nauthor Umputun <umputun@gmail.com> 1762114659 -0600\ncommitter GitHub <noreply@github.com> 1762114659 -0600\n\nMigrate golangci-lint to v2 and update Go version (#1965)\n\n* migrate golangci-lint to v2 and update go version\n\n- migrated .golangci.yml to version 2 format\n- updated go.mod from 1.23.0 to 1.24\n- removed deprecated run.timeout configuration\n\n* update to go 1.25 and baseimage v1.17.0\n\n- updated go.mod to go 1.25\n- updated Dockerfile to use buildgo-v1.17.0 (go 1.25.0)\n- updated Dockerfile to use app-v1.17.0\n\n* fix flaky tests with proper synchronization\n\n- use assert.Eventually instead of fixed sleep in TestService_Many\n- wait for webhook before shutdown in TestMain_WithWebhook\n- fixes race conditions exposed by Go 1.25 scheduler changes\n\n* fix data race in MockDest.closed field\n\n- add IsClosed() method with proper locking\n- add locking to String() method\n- use IsClosed() in tests instead of direct field access\n- fixes race condition detected by go test -race\n\n* update example go.mod to go 1.25\n\n* update golangci-lint to v2.6.0 for go 1.25 support\n\n* fix linter issue and update CLAUDE.md\n\n- merge conditional assignment in example accessor/data.go\n- add reminder in CLAUDE.md to always test and lint examples before committing\n\n* update example Dockerfile to baseimage v1.17.0 for go 1.25",
+      "verified_at": "2025-11-02T20:17:40Z"
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+  "html_url": "https://github.com/umputun/remark42/commit/34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/34ea4c3e83ec12bab9555823b89f7a9000ea30da/comments",
+  "author": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8112f445f4f31d09e1357b797b265c229f684fa1",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/8112f445f4f31d09e1357b797b265c229f684fa1",
+      "html_url": "https://github.com/umputun/remark42/commit/8112f445f4f31d09e1357b797b265c229f684fa1"
+    }
+  ],
+  "stats": {
+    "total": 158,
+    "additions": 85,
+    "deletions": 73
+  },
+  "files": [
+    {
+      "sha": "da19c1cd2a5ae4b5f65452786c289cc35f6172b0",
+      "filename": ".github/workflows/ci-backend.yml",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/.github%2Fworkflows%2Fci-backend.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/.github%2Fworkflows%2Fci-backend.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-backend.yml?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -32,7 +32,7 @@ jobs:\n       - name: install go\n         uses: actions/setup-go@v5\n         with:\n-          go-version: \"1.23\"\n+          go-version: \"1.25\"\n           cache-dependency-path: backend\n \n       - name: test and build backend\n@@ -53,15 +53,15 @@ jobs:\n           TZ: \"America/Chicago\"\n \n       - name: golangci-lint\n-        uses: golangci/golangci-lint-action@v6\n+        uses: golangci/golangci-lint-action@v7\n         with:\n-          version: \"v1.64.7\"\n+          version: \"v2.6.0\"\n           working-directory: backend/app\n \n       - name: golangci-lint on example directory\n-        uses: golangci/golangci-lint-action@v6\n+        uses: golangci/golangci-lint-action@v7\n         with:\n-          version: \"v1.64.7\"\n+          version: \"v2.6.0\"\n           args: --config ../../.golangci.yml\n           working-directory: backend/_example/memory_store\n "
+    },
+    {
+      "sha": "431272d76314c2ef0d26e0303bb325d69d38e334",
+      "filename": "CLAUDE.md",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/CLAUDE.md",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/CLAUDE.md",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/CLAUDE.md?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -8,12 +8,15 @@\n - **Backend Testing**:\n   - Run all tests: `cd backend/app && go test -timeout=60s -count 1 ./...`\n   - Run single test: `cd backend/app && go test -run TestName ./path/to/package`\n+  - **IMPORTANT**: Run example tests: `cd backend/_example/memory_store && go test -race ./... && go build -race ./...`\n - **Frontend**:\n   - Development: `cd frontend && pnpm dev:app`\n   - Tests: `cd frontend && pnpm test`\n - **Lint**:\n-  - Backend: `golangci-lint run`\n+  - Backend: `cd backend && golangci-lint run`\n+  - **IMPORTANT**: Example lint: `cd backend/_example/memory_store && golangci-lint run --config ../../.golangci.yml`\n   - Frontend: `cd frontend && pnpm lint`\n+  - **Before committing**: Always run tests and linter on both main backend AND examples\n \n ## Code Style\n - **Backend**: Formatting with golangci-lint, strict error handling"
+    },
+    {
+      "sha": "9ced59e996a13581ff7a021e26add009fc47fb2e",
+      "filename": "Dockerfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/Dockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/Dockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/Dockerfile?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -45,7 +45,7 @@ RUN \\\n     echo 'Skip frontend build'; \\\n   fi\n \n-FROM umputun/baseimage:buildgo-v1.14.0 AS build-backend\n+FROM umputun/baseimage:buildgo-v1.17.0 AS build-backend\n \n ARG CI\n ARG GITHUB_REF\n@@ -81,7 +81,7 @@ RUN \\\n     echo \"version=$version\" && \\\n     go build -o remark42 -ldflags \"-X main.revision=${version} -s -w\" ./app\n \n-FROM umputun/baseimage:app-v1.14.0\n+FROM umputun/baseimage:app-v1.17.0\n \n ARG GITHUB_SHA\n "
+    },
+    {
+      "sha": "024c0e92ca975ebe5ce1b1ae1c2b74e829d55f46",
+      "filename": "backend/.golangci.yml",
+      "status": "modified",
+      "additions": 47,
+      "deletions": 46,
+      "changes": 93,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F.golangci.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F.golangci.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F.golangci.yml?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -1,29 +1,6 @@\n-run:\n-  timeout: 5m\n-\n-linters-settings:\n-  govet:\n-    enable:\n-      - shadow\n-  goconst:\n-    min-len: 2\n-    min-occurrences: 2\n-  misspell:\n-    locale: US\n-  lll:\n-    line-length: 140\n-  gocritic:\n-    enabled-tags:\n-      - performance\n-      - style\n-      - experimental\n-    disabled-checks:\n-      - wrapperFunc\n-# TODO: feel free to remove these excludes and fix the code\n-      - hugeParam\n-      - rangeValCopy\n-\n+version: \"2\"\n linters:\n+  default: none\n   enable:\n     - bodyclose\n     - copyloopvar\n@@ -32,34 +9,58 @@ linters:\n     - gocritic\n     - gocyclo\n     - gosec\n-    - gosimple\n     - govet\n     - ineffassign\n     - misspell\n     - nakedret\n     - prealloc\n     - revive\n     - staticcheck\n-    - stylecheck\n-    - typecheck\n     - unconvert\n     - unparam\n     - unused\n-  fast: false\n-  disable-all: true\n-\n-issues:\n-  exclude-dirs:\n-    - vendor\n-  exclude-rules:\n-    - text: \"at least one file in a package should have a package comment\"\n-      linters:\n-        - stylecheck\n-    - text: \"package-comments: should have a package comment\"\n-      linters:\n-        - revive\n-    - path: _test\\.go\n-      linters:\n-        - gosec\n-        - dupl\n-  exclude-use-default: false\n+  settings:\n+    goconst:\n+      min-len: 2\n+      min-occurrences: 2\n+    gocritic:\n+      disabled-checks:\n+        - wrapperFunc\n+        - hugeParam\n+        - rangeValCopy\n+      enabled-tags:\n+        - performance\n+        - style\n+        - experimental\n+    govet:\n+      enable:\n+        - shadow\n+    lll:\n+      line-length: 140\n+    misspell:\n+      locale: US\n+  exclusions:\n+    generated: lax\n+    rules:\n+      - linters:\n+          - staticcheck\n+        text: at least one file in a package should have a package comment\n+      - linters:\n+          - revive\n+        text: 'package-comments: should have a package comment'\n+      - linters:\n+          - dupl\n+          - gosec\n+        path: _test\\.go\n+    paths:\n+      - vendor\n+      - third_party$\n+      - builtin$\n+      - examples$\n+formatters:\n+  exclusions:\n+    generated: lax\n+    paths:\n+      - third_party$\n+      - builtin$\n+      - examples$"
+    },
+    {
+      "sha": "777aa432d1b409b83f3b2e18a4a41d24988c5b3e",
+      "filename": "backend/_example/memory_store/Dockerfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F_example%2Fmemory_store%2FDockerfile",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F_example%2Fmemory_store%2FDockerfile",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2FDockerfile?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -1,11 +1,11 @@\n-FROM umputun/baseimage:buildgo-v1.14.0 AS build-backend\n+FROM umputun/baseimage:buildgo-v1.17.0 AS build-backend\n \n ADD backend /build/backend\n WORKDIR /build/backend/_example/memory_store\n \n RUN go build -o /build/bin/memory_store -ldflags \"-X main.revision=0.0.0 -s -w\"\n \n-FROM umputun/baseimage:app-v1.14.0\n+FROM umputun/baseimage:app-v1.17.0\n \n ARG GITHUB_SHA\n "
+    },
+    {
+      "sha": "6ac744659d0457befcd89af2bdbcdb9f00d2b69f",
+      "filename": "backend/_example/memory_store/accessor/data.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 4,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F_example%2Fmemory_store%2Faccessor%2Fdata.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F_example%2Fmemory_store%2Faccessor%2Fdata.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Faccessor%2Fdata.go?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -391,10 +391,7 @@ func (m *MemData) checkFlag(req engine.FlagRequest) (val bool) {\n \n func (m *MemData) setFlag(req engine.FlagRequest) (res bool, err error) {\n \n-\tstatus := false\n-\tif req.Update == engine.FlagTrue {\n-\t\tstatus = true\n-\t}\n+\tstatus := req.Update == engine.FlagTrue\n \n \tswitch req.Flag {\n "
+    },
+    {
+      "sha": "df7c7fa331e05a1246440819baaee57a9b4448d4",
+      "filename": "backend/_example/memory_store/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2F_example%2Fmemory_store%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2F_example%2Fmemory_store%2Fgo.mod?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -1,8 +1,6 @@\n module github.com/umputun/remark42/memory_store\n \n-go 1.23.0\n-\n-toolchain go1.24.1\n+go 1.25\n \n require (\n \tgithub.com/go-pkgz/jrpc v0.3.1"
+    },
+    {
+      "sha": "bb67eeac8eeaf94f80d560ae4473cdcde1c3b1ac",
+      "filename": "backend/app/main_test.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fapp%2Fmain_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fapp%2Fmain_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fmain_test.go?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -98,9 +98,6 @@ func TestMain_WithWebhook(t *testing.T) {\n \tfinished := make(chan struct{})\n \tgo func() {\n \t\tmain()\n-\t\tassert.Eventually(t, func() bool {\n-\t\t\treturn atomic.LoadInt32(&webhookSent) == int32(1)\n-\t\t}, time.Second, 100*time.Millisecond, \"webhook was not sent\")\n \t\tclose(finished)\n \t}()\n \n@@ -117,6 +114,11 @@ func TestMain_WithWebhook(t *testing.T) {\n \trequire.NoError(t, err)\n \tdefer resp.Body.Close()\n \tassert.Equal(t, http.StatusCreated, resp.StatusCode)\n+\n+\t// wait for webhook to be sent before shutting down\n+\tassert.Eventually(t, func() bool {\n+\t\treturn atomic.LoadInt32(&webhookSent) == int32(1)\n+\t}, time.Second, 100*time.Millisecond, \"webhook was not sent\")\n }\n \n func TestGetDump(t *testing.T) {"
+    },
+    {
+      "sha": "9244f6c1ad5c8913df0bd0543bc9a9c54de39a3a",
+      "filename": "backend/app/notify/notify_mock.go",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 1,
+      "changes": 13,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fapp%2Fnotify%2Fnotify_mock.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fapp%2Fnotify%2Fnotify_mock.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fnotify%2Fnotify_mock.go?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -66,4 +66,15 @@ func (m *MockDest) GetVerify() []VerificationRequest {\n \treturn res\n }\n \n-func (m *MockDest) String() string { return fmt.Sprintf(\"mock id=%d, closed=%v\", m.id, m.closed) }\n+// IsClosed returns closed status safely\n+func (m *MockDest) IsClosed() bool {\n+\tm.lock.Lock()\n+\tdefer m.lock.Unlock()\n+\treturn m.closed\n+}\n+\n+func (m *MockDest) String() string {\n+\tm.lock.Lock()\n+\tdefer m.lock.Unlock()\n+\treturn fmt.Sprintf(\"mock id=%d, closed=%v\", m.id, m.closed)\n+}"
+    },
+    {
+      "sha": "260a27c552f5f182714e2ed604a5c0e5b970f08b",
+      "filename": "backend/app/notify/notify_test.go",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fapp%2Fnotify%2Fnotify_test.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fapp%2Fnotify%2Fnotify_test.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Fnotify%2Fnotify_test.go?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -102,15 +102,17 @@ func TestService_Many(t *testing.T) {\n \t\ttime.Sleep(time.Millisecond * time.Duration(rand.Int31n(20)))\n \t}\n \ts.Close()\n-\ttime.Sleep(time.Millisecond * 10)\n+\n+\t// wait for destinations to close\n+\tassert.Eventually(t, func() bool { return d1.IsClosed() && d2.IsClosed() }, 100*time.Millisecond, 10*time.Millisecond)\n \n \tassert.NotEqual(t, 10, len(d1.Get()), \"some comments dropped from d1\")\n \tassert.NotEqual(t, 10, len(d1.GetVerify()), \"some verifications dropped from d1\")\n \tassert.NotEqual(t, 10, len(d2.Get()), \"some comments dropped from d2\")\n \tassert.NotEqual(t, 10, len(d2.GetVerify()), \"some verifications dropped from d2\")\n \n-\tassert.True(t, d1.closed)\n-\tassert.True(t, d2.closed)\n+\tassert.True(t, d1.IsClosed())\n+\tassert.True(t, d2.IsClosed())\n \tassert.Equal(t, \"mock id=1, closed=true\", d1.String())\n }\n "
+    },
+    {
+      "sha": "1f9303a1e07d8ae9fe66b653754bd985010fd114",
+      "filename": "backend/go.mod",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/umputun/remark42/blob/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fgo.mod",
+      "raw_url": "https://github.com/umputun/remark42/raw/34ea4c3e83ec12bab9555823b89f7a9000ea30da/backend%2Fgo.mod",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fgo.mod?ref=34ea4c3e83ec12bab9555823b89f7a9000ea30da",
+      "patch": "@@ -1,8 +1,6 @@\n module github.com/umputun/remark42/backend\n \n-go 1.23.0\n-\n-toolchain go1.24.2\n+go 1.25\n \n require (\n \tgithub.com/Depado/bfchroma/v2 v2.0.0"
+    }
+  ]
+}
