@@ -1,0 +1,101 @@
+{
+  "sha": "bc612ddf8192057e587f3880a64a70bf513ac628",
+  "node_id": "C_kwDOBtgov9oAKGJjNjEyZGRmODE5MjA1N2U1ODdmMzg4MGE2NGE3MGJmNTEzYWM2Mjg",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2025-12-04T12:39:18Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2025-12-04T17:15:06Z"
+    },
+    "message": "Remove redundant frame ancestors log from middleware\n\nThe log message was printed on every request when allowed ancestors\nwere configured, creating unnecessary noise in the logs.",
+    "tree": {
+      "sha": "5e080189a56f08e6dac3349b5091843420bc24ec",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/5e080189a56f08e6dac3349b5091843420bc24ec"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/bc612ddf8192057e587f3880a64a70bf513ac628",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/bc612ddf8192057e587f3880a64a70bf513ac628",
+  "html_url": "https://github.com/umputun/remark42/commit/bc612ddf8192057e587f3880a64a70bf513ac628",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/bc612ddf8192057e587f3880a64a70bf513ac628/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "9132a6158b5d0c68702a433ba31fbba0018a8377",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/9132a6158b5d0c68702a433ba31fbba0018a8377",
+      "html_url": "https://github.com/umputun/remark42/commit/9132a6158b5d0c68702a433ba31fbba0018a8377"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 0,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "f351dffb34986fa1530215e8f2ab9b9681f02d0d",
+      "filename": "backend/app/rest/api/rest.go",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 1,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/bc612ddf8192057e587f3880a64a70bf513ac628/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/bc612ddf8192057e587f3880a64a70bf513ac628/backend%2Fapp%2Frest%2Fapi%2Frest.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest.go?ref=bc612ddf8192057e587f3880a64a70bf513ac628",
+      "patch": "@@ -628,7 +628,6 @@ func securityHeadersMiddleware(imageProxyEnabled bool, allowedAncestors []string\n \t\t\t}\n \t\t\tframeAncestors := \"*\"\n \t\t\tif len(allowedAncestors) > 0 {\n-\t\t\t\tlog.Printf(\"[INFO] frame embedding allowed from %+v only\", allowedAncestors)\n \t\t\t\tframeAncestors = strings.Join(allowedAncestors, \" \")\n \t\t\t}\n \t\t\tw.Header().Set(\"Content-Security-Policy\", fmt.Sprintf(\"default-src 'none'; base-uri 'none'; form-action 'none'; connect-src 'self'; frame-src 'self' mailto:; img-src %s; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src data:; object-src 'none'; frame-ancestors %s;\", imgSrc, frameAncestors))"
+    }
+  ]
+}
