@@ -1,0 +1,113 @@
+{
+  "sha": "d5b07d76701e5d665e067e81387b053f312729b4",
+  "node_id": "C_kwDOBtgov9oAKGQ1YjA3ZDc2NzAxZTVkNjY1ZTA2N2U4MTM4N2IwNTNmMzEyNzI5YjQ",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2025-12-16T17:11:47Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2025-12-16T19:01:19Z"
+    },
+    "message": "Fix WriteHeader + RenderJSON causing wrong Content-Type header\n\nReplace WriteHeader() + RenderJSON() pattern with EncodeJSON() which\nproperly sets Content-Type header before writing status code. The\nprevious pattern caused Content-Type to default to text/plain instead\nof application/json, breaking frontend JSON parsing.\n\nFixes #1979",
+    "tree": {
+      "sha": "f52d0e9da1858a2c1462109afe5c86e38caecfe2",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/f52d0e9da1858a2c1462109afe5c86e38caecfe2"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/d5b07d76701e5d665e067e81387b053f312729b4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/d5b07d76701e5d665e067e81387b053f312729b4",
+  "html_url": "https://github.com/umputun/remark42/commit/d5b07d76701e5d665e067e81387b053f312729b4",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/d5b07d76701e5d665e067e81387b053f312729b4/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "41b75eba087b778fa466b0cb865b34b8efe7ce3a",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/41b75eba087b778fa466b0cb865b34b8efe7ce3a",
+      "html_url": "https://github.com/umputun/remark42/commit/41b75eba087b778fa466b0cb865b34b8efe7ce3a"
+    }
+  ],
+  "stats": {
+    "total": 15,
+    "additions": 5,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "32afb3b1b6ea29ca6d93ec459ce84502a7187848",
+      "filename": "backend/app/rest/api/migrator.go",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 8,
+      "changes": 12,
+      "blob_url": "https://github.com/umputun/remark42/blob/d5b07d76701e5d665e067e81387b053f312729b4/backend%2Fapp%2Frest%2Fapi%2Fmigrator.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/d5b07d76701e5d665e067e81387b053f312729b4/backend%2Fapp%2Frest%2Fapi%2Fmigrator.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Fmigrator.go?ref=d5b07d76701e5d665e067e81387b053f312729b4",
+      "patch": "@@ -59,8 +59,7 @@ func (m *Migrator) importCtrl(w http.ResponseWriter, r *http.Request) {\n \n \tgo m.runImport(siteID, r.URL.Query().Get(\"provider\"), tmpfile) // import runs in background and sets busy flag for site\n \n-\tw.WriteHeader(http.StatusAccepted)\n-\tR.RenderJSON(w, R.JSON{\"status\": \"import request accepted\"})\n+\t_ = R.EncodeJSON(w, http.StatusAccepted, R.JSON{\"status\": \"import request accepted\"})\n }\n \n // POST /import/form?secret=key&site=site-id&provider=disqus|remark|wordpress\n@@ -94,8 +93,7 @@ func (m *Migrator) importFormCtrl(w http.ResponseWriter, r *http.Request) {\n \n \tgo m.runImport(siteID, r.URL.Query().Get(\"provider\"), tmpfile) // import runs in background and sets busy flag for site\n \n-\tw.WriteHeader(http.StatusAccepted)\n-\tR.RenderJSON(w, R.JSON{\"status\": \"import request accepted\"})\n+\t_ = R.EncodeJSON(w, http.StatusAccepted, R.JSON{\"status\": \"import request accepted\"})\n }\n \n // GET /wait?site=site-id\n@@ -115,8 +113,7 @@ func (m *Migrator) waitCtrl(w http.ResponseWriter, r *http.Request) {\n \n \t\tselect {\n \t\tcase <-ctx.Done():\n-\t\t\tw.WriteHeader(http.StatusGatewayTimeout)\n-\t\t\tR.RenderJSON(w, R.JSON{\"status\": \"timeout expired\", \"site_id\": siteID})\n+\t\t\t_ = R.EncodeJSON(w, http.StatusGatewayTimeout, R.JSON{\"status\": \"timeout expired\", \"site_id\": siteID})\n \t\t\treturn\n \t\tcase <-time.After(100 * time.Millisecond):\n \t\t}\n@@ -210,8 +207,7 @@ func (m *Migrator) remapCtrl(w http.ResponseWriter, r *http.Request) {\n \t\tlog.Printf(\"[DEBUG] convert request completed. site=%s, comments=%d\", siteID, size)\n \t}()\n \n-\tw.WriteHeader(http.StatusAccepted)\n-\tR.RenderJSON(w, R.JSON{\"status\": \"convert request accepted\"})\n+\t_ = R.EncodeJSON(w, http.StatusAccepted, R.JSON{\"status\": \"convert request accepted\"})\n }\n \n // runImport reads from tmpfile and import for given siteID and provider"
+    },
+    {
+      "sha": "b709d3cec230d9dffd6baf79e745939507e09219",
+      "filename": "backend/app/rest/api/rest_private.go",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 2,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/d5b07d76701e5d665e067e81387b053f312729b4/backend%2Fapp%2Frest%2Fapi%2Frest_private.go",
+      "raw_url": "https://github.com/umputun/remark42/raw/d5b07d76701e5d665e067e81387b053f312729b4/backend%2Fapp%2Frest%2Fapi%2Frest_private.go",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/backend%2Fapp%2Frest%2Fapi%2Frest_private.go?ref=d5b07d76701e5d665e067e81387b053f312729b4",
+      "patch": "@@ -174,8 +174,7 @@ func (s *private) createCommentCtrl(w http.ResponseWriter, r *http.Request) {\n \n \tlog.Printf(\"[DEBUG] created comment %+v\", finalComment)\n \n-\tw.WriteHeader(http.StatusCreated)\n-\tR.RenderJSON(w, &finalComment)\n+\t_ = R.EncodeJSON(w, http.StatusCreated, &finalComment)\n }\n \n // PUT /comment/{id}?site=siteID&url=post-url - update comment"
+    }
+  ]
+}
