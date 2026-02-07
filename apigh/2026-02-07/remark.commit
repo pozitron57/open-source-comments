@@ -1,0 +1,101 @@
+{
+  "sha": "b7a13a66369563335c432cad2769a84b9ea6144b",
+  "node_id": "C_kwDOBtgov9oAKGI3YTEzYTY2MzY5NTYzMzM1YzQzMmNhZDI3NjlhODRiOWVhNjE0NGI",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2026-01-17T09:50:47Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2026-02-05T17:06:58Z"
+    },
+    "message": "Fix site rebuild on release\n\nThe paths filter was applied to tag events, preventing site rebuilds\nwhen releases don't include site changes. Switch to release event\ntrigger which always fires on new releases, ensuring the site fetches\nthe latest version from GitHub API.\n\nCloses #1992",
+    "tree": {
+      "sha": "ef67d3006ebb0a30f0f22801a03d005ad9b34173",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/ef67d3006ebb0a30f0f22801a03d005ad9b34173"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/b7a13a66369563335c432cad2769a84b9ea6144b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/b7a13a66369563335c432cad2769a84b9ea6144b",
+  "html_url": "https://github.com/umputun/remark42/commit/b7a13a66369563335c432cad2769a84b9ea6144b",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/b7a13a66369563335c432cad2769a84b9ea6144b/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "cdad560df3b9c4b9b7f2263f1fa41fd1f59d72b6",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/cdad560df3b9c4b9b7f2263f1fa41fd1f59d72b6",
+      "html_url": "https://github.com/umputun/remark42/commit/cdad560df3b9c4b9b7f2263f1fa41fd1f59d72b6"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "e6b2d6bfe35f5659ebda7c5ef9f329a81f419f91",
+      "filename": ".github/workflows/ci-site.yml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/umputun/remark42/blob/b7a13a66369563335c432cad2769a84b9ea6144b/.github%2Fworkflows%2Fci-site.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/b7a13a66369563335c432cad2769a84b9ea6144b/.github%2Fworkflows%2Fci-site.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-site.yml?ref=b7a13a66369563335c432cad2769a84b9ea6144b",
+      "patch": "@@ -1,10 +1,11 @@\n name: site\n \n on:\n+  release:\n+    types: [published]\n   push:\n     branches:\n       - master\n-    tags:\n     paths:\n       - \".github/workflows/ci-site.yml\"\n       - \"site/**\"\n@@ -133,7 +134,7 @@ jobs:\n     name: Deploy site\n     runs-on: ubuntu-latest\n     needs: merge\n-    if: github.ref == 'refs/heads/master'\n+    if: github.ref == 'refs/heads/master' || github.event_name == 'release'\n \n     steps:\n       - name: trigger deployment"
+    }
+  ]
+}
