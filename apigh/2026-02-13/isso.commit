@@ -1,0 +1,154 @@
+{
+  "sha": "09cddc1940c837cbd46559db49459d20f670cd16",
+  "node_id": "C_kwDOAF-mA9oAKDA5Y2RkYzE5NDBjODM3Y2JkNDY1NTlkYjQ5NDU5ZDIwZjY3MGNkMTY",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2025-10-30T16:32:57Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2025-10-30T16:32:57Z"
+    },
+    "message": "Merge pull request #1075 from isso-comments/fix-e2e\n\nFix e2e tests",
+    "tree": {
+      "sha": "ca3b128920d2efc823efdd088c63319e3acc4a14",
+      "url": "https://api.github.com/repos/isso-comments/isso/git/trees/ca3b128920d2efc823efdd088c63319e3acc4a14"
+    },
+    "url": "https://api.github.com/repos/isso-comments/isso/git/commits/09cddc1940c837cbd46559db49459d20f670cd16",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpA5M5CRC1aQ7uu5UhlAAAKiQQAHhqz3HTJB1dceWnAv9NSbs2\n5b4z2bA9whcsAaQtAS55/A3Kdzt42R9ew16FGzEBsqvRO9ych78d4irMcNB3W4iN\n8ni8sa+eW1APQcxGFkRJDas5bX7A8Ghj820JXkU12yOyBh+/WHVLStCaAfrjUUSt\nX/ZNC/NcCVGIKcC8YhNF96ZitGEBPMU3HyxXYrg++0+u9qbefB5DsBGC+TTh9/Of\nFPIYCpY3OJyhzE/YzZolv9IGuSFke5Kra9c58gRqjdKGcTSXrKslm7b7jXSd75ao\noowv7ZlOCsJZJb0RAZTER84frw98KHfMbfAXcQVNY/Xy8C5rMyHxrGoVLxIXND96\nn6Ow6GfwjBDk3CEJNhvNZ6H/giA8JcTbPSxZIJJKvEVyGK/B/CyhAaYGIgF+72n1\nmFiB4hDBz/4NLVFKGS+8kFHvrhTP7SQJLTyYnnrmSPtoudIPk6AQ8KzDMlaEg02K\nKCktnjLc5zmWEqphhbTaDxVB7FlJKGj5XbBaMBqalnZZc5yPacA3wlMwshz8il/Y\nbuijuDOZ7VZHN2iqmbdNCPvdRy6zRUHpGuy5g0SpPe/Ff8y9JmxxK7J4nsE6u4zE\njcr5OGzogVcD4mIrgHzazaC32bNTO7+Typ1MdLEkU80xZxbAKelm5LWzlPk+NaUY\nMMFzlj2x3bW/yM3cG/iP\n=5UUF\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ca3b128920d2efc823efdd088c63319e3acc4a14\nparent f28206bddca67963fa5913f7aedf3f56e5d71bb2\nparent 2777468b95b4982061464195dddc3829d212006d\nauthor Jelmer Vernooĳ <jelmer@jelmer.uk> 1761841977 +0000\ncommitter GitHub <noreply@github.com> 1761841977 +0000\n\nMerge pull request #1075 from isso-comments/fix-e2e\n\nFix e2e tests",
+      "verified_at": "2025-10-30T16:32:58Z"
+    }
+  },
+  "url": "https://api.github.com/repos/isso-comments/isso/commits/09cddc1940c837cbd46559db49459d20f670cd16",
+  "html_url": "https://github.com/isso-comments/isso/commit/09cddc1940c837cbd46559db49459d20f670cd16",
+  "comments_url": "https://api.github.com/repos/isso-comments/isso/commits/09cddc1940c837cbd46559db49459d20f670cd16/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f28206bddca67963fa5913f7aedf3f56e5d71bb2",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/f28206bddca67963fa5913f7aedf3f56e5d71bb2",
+      "html_url": "https://github.com/isso-comments/isso/commit/f28206bddca67963fa5913f7aedf3f56e5d71bb2"
+    },
+    {
+      "sha": "2777468b95b4982061464195dddc3829d212006d",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/2777468b95b4982061464195dddc3829d212006d",
+      "html_url": "https://github.com/isso-comments/isso/commit/2777468b95b4982061464195dddc3829d212006d"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "1ac64690060b2fea743340080afe84976078f19d",
+      "filename": "isso/js/tests/integration/__snapshots__/puppet.test.js.snap",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Fintegration%2F__snapshots__%2Fpuppet.test.js.snap",
+      "raw_url": "https://github.com/isso-comments/isso/raw/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Fintegration%2F__snapshots__%2Fpuppet.test.js.snap",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Fintegration%2F__snapshots__%2Fpuppet.test.js.snap?ref=09cddc1940c837cbd46559db49459d20f670cd16",
+      "patch": "@@ -1,4 +1,4 @@\n-// Jest Snapshot v1, https://goo.gl/fbAQLP\n+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing\n \n exports[`should fill Postbox with valid data and receive 201 reply 1`] = `\n \"<noscript>Javascript needs to be activated to view comments.</noscript><span class=\"isso-feedlink\"><a href=\"../feed?uri=%2Fdemo%2F\">Atom feed</a></span><h4 class=\"isso-thread-heading\">No Comments Yet</h4><div class=\"isso-postbox\"><div class=\"isso-form-wrapper\"><div class=\"isso-textarea-wrapper\"><textarea class=\"isso-textarea\" rows=\"5\" minlength=\"3\" maxlength=\"65535\" placeholder=\"Type Comment Here (at least 3 chars)\"></textarea><div class=\"isso-preview\"><div class=\"isso-comment\"><div class=\"isso-text-wrapper\"><div class=\"isso-text\"></div></div></div></div></div><div class=\"isso-auth-section\"><p class=\"isso-input-wrapper\"><label for=\"isso-postbox-author\">Name (optional)</label><input id=\"isso-postbox-author\" type=\"text\" name=\"author\" placeholder=\"John Doe\" value=\"\"></p><p class=\"isso-input-wrapper\"><label for=\"isso-postbox-email\">E-mail (optional)</label><input id=\"isso-postbox-email\" type=\"email\" name=\"email\" placeholder=\"johndoe@example.com\" value=\"\"></p><p class=\"isso-input-wrapper\"><label for=\"isso-postbox-website\">Website (optional)</label><input id=\"isso-postbox-website\" type=\"text\" name=\"website\" placeholder=\"https://example.com\" value=\"\"></p><p class=\"isso-post-action\"><input type=\"submit\" value=\"Submit\"></p><p class=\"isso-post-action\"><input type=\"button\" name=\"preview\" value=\"Preview\"></p><p class=\"isso-post-action\"><input type=\"button\" name=\"edit\" value=\"Edit\"></p></div><div class=\"isso-notification-section\" style=\"display: none;\"><label><input type=\"checkbox\" name=\"notification\">Subscribe to email notification of replies</label></div></div></div><div id=\"isso-root\"><div class=\"isso-comment isso-no-votes\" id=\"isso-1\" data-hash=\"34f4b563ece1\"><div class=\"isso-avatar\"><svg version=\"1.1\" viewBox=\"0 0 48 48\" preserveAspectRatio=\"xMinYMin meet\" shape-rendering=\"crispEdges\" data-hash=\"34f4b563ece1\"><rect x=\"0\" y=\"0\" width=\"56\" height=\"56\" style=\"fill: #f0f0f0\"></rect><rect x=\"4\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"36\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"4\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"36\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"4\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"36\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"4\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"36\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"4\" y=\"36\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"36\" y=\"36\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"12\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"28\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"12\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"28\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"20\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"20\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect><rect x=\"20\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #5698c4\"></rect></svg></div><div class=\"isso-text-wrapper\"><div class=\"isso-comment-header\"><span class=\"isso-author\">Commenter #1</span><span class=\"isso-spacer\">•</span><a class=\"isso-permalink\" href=\"#isso-1\"><time>right now</time></a><span class=\"isso-note\"></span></div><div class=\"isso-text\"><p>A comment with <em>italics</em> and <a href=\"http://link.com\" rel=\"nofollow noopener\">a link</a></p></div><div class=\"isso-comment-footer\"><span class=\"isso-votes\">0</span><a class=\"isso-upvote\" href=\"#\"><!-- Generator: IcoMoon.io --><svg width=\"16\" height=\"16\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" fill=\"gray\">"
+    },
+    {
+      "sha": "f67bcf92ac4f47d42419fabaf13f1d6c4e126b44",
+      "filename": "isso/js/tests/unit/__snapshots__/comment-loader.test.js.snap",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fcomment-loader.test.js.snap",
+      "raw_url": "https://github.com/isso-comments/isso/raw/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fcomment-loader.test.js.snap",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fcomment-loader.test.js.snap?ref=09cddc1940c837cbd46559db49459d20f670cd16",
+      "patch": "@@ -1,3 +1,3 @@\n-// Jest Snapshot v1, https://goo.gl/fbAQLP\n+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing\n \n exports[`Create comment loader 1`] = `\"<div id=\"isso-root\"><div class=\"isso-comment-loader\" id=\"isso-loader-null\"><a class=\"isso-load-hidden\" href=\"#\">5 Hidden</a></div></div>\"`;"
+    },
+    {
+      "sha": "d7025c87d6ba9deec11a75fee6e43ba89232a8cf",
+      "filename": "isso/js/tests/unit/__snapshots__/comment.test.js.snap",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fcomment.test.js.snap",
+      "raw_url": "https://github.com/isso-comments/isso/raw/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fcomment.test.js.snap",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fcomment.test.js.snap?ref=09cddc1940c837cbd46559db49459d20f670cd16",
+      "patch": "@@ -1,4 +1,4 @@\n-// Jest Snapshot v1, https://goo.gl/fbAQLP\n+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing\n \n exports[`Rendered comment should match snapshot 1`] = `\n \"<div id=\"isso-root\"><div class=\"isso-comment isso-no-votes\" id=\"isso-2\" data-hash=\"4505c1eeda98\"><div class=\"isso-avatar\"><svg version=\"1.1\" viewBox=\"0 0 48 48\" preserveAspectRatio=\"xMinYMin meet\" shape-rendering=\"crispEdges\" data-hash=\"4505c1eeda98\"><rect x=\"0\" y=\"0\" width=\"56\" height=\"56\" style=\"fill: #f0f0f0\"></rect><rect x=\"4\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"36\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"4\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"36\" y=\"20\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"4\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"36\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"12\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"28\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"12\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"28\" y=\"12\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"12\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"28\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"20\" y=\"4\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"20\" y=\"28\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect><rect x=\"20\" y=\"36\" width=\"8\" height=\"8\" style=\"fill: #9abf88\"></rect></svg></div><div class=\"isso-text-wrapper\"><div class=\"isso-comment-header\"><a class=\"isso-author\" href=\"http://website.org\" rel=\"nofollow\">John</a><span class=\"isso-spacer\">•</span><a class=\"isso-permalink\" href=\"#isso-2\"><time title=\"Thu May 05 2022 22:03:12 GMT+0000 (Coordinated Universal Time)\" datetime=\"2022-05-05T22:03:12Z\">right now</time></a><span class=\"isso-note\"></span></div><div class=\"isso-text\"><p>A comment with</p>"
+    },
+    {
+      "sha": "69338b973b1d3396a540936dccf2f13fcf08b4ee",
+      "filename": "isso/js/tests/unit/__snapshots__/postbox.test.js.snap",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fpostbox.test.js.snap",
+      "raw_url": "https://github.com/isso-comments/isso/raw/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fpostbox.test.js.snap",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Fpostbox.test.js.snap?ref=09cddc1940c837cbd46559db49459d20f670cd16",
+      "patch": "@@ -1,3 +1,3 @@\n-// Jest Snapshot v1, https://goo.gl/fbAQLP\n+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing\n \n exports[`Create Postbox 1`] = `\"<div id=\"isso-root\"></div><div class=\"isso-postbox\"><div class=\"isso-form-wrapper\"><div class=\"isso-textarea-wrapper\"><textarea class=\"isso-textarea\" rows=\"5\" minlength=\"3\" maxlength=\"65535\" placeholder=\"Type Comment Here (at least 3 chars)\"></textarea><div class=\"isso-preview\"><div class=\"isso-comment\"><div class=\"isso-text-wrapper\"><div class=\"isso-text\"></div></div></div></div></div><div class=\"isso-auth-section\"><p class=\"isso-input-wrapper\"><label for=\"isso-postbox-author\">Name (optional)</label><input id=\"isso-postbox-author\" type=\"text\" name=\"author\" placeholder=\"John Doe\" value=\"\"></p><p class=\"isso-input-wrapper\"><label for=\"isso-postbox-email\">E-mail (optional)</label><input id=\"isso-postbox-email\" type=\"email\" name=\"email\" placeholder=\"johndoe@example.com\" value=\"\"></p><p class=\"isso-input-wrapper\"><label for=\"isso-postbox-website\">Website (optional)</label><input id=\"isso-postbox-website\" type=\"text\" name=\"website\" placeholder=\"https://example.com\" value=\"\"></p><p class=\"isso-post-action\"><input type=\"submit\" value=\"Submit\"></p><p class=\"isso-post-action\"><input type=\"button\" name=\"preview\" value=\"Preview\"></p><p class=\"isso-post-action\"><input type=\"button\" name=\"edit\" value=\"Edit\"></p></div><div class=\"isso-notification-section\" style=\"display: none;\"><label><input type=\"checkbox\" name=\"notification\">Subscribe to email notification of replies</label></div></div></div>\"`;"
+    },
+    {
+      "sha": "23ac3ea1ff193e1a28525e26b8bcdbc5e79741c8",
+      "filename": "isso/js/tests/unit/__snapshots__/template-comment-newlines.test.js.snap",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/isso-comments/isso/blob/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Ftemplate-comment-newlines.test.js.snap",
+      "raw_url": "https://github.com/isso-comments/isso/raw/09cddc1940c837cbd46559db49459d20f670cd16/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Ftemplate-comment-newlines.test.js.snap",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/isso%2Fjs%2Ftests%2Funit%2F__snapshots__%2Ftemplate-comment-newlines.test.js.snap?ref=09cddc1940c837cbd46559db49459d20f670cd16",
+      "patch": "@@ -1,4 +1,4 @@\n-// Jest Snapshot v1, https://goo.gl/fbAQLP\n+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing\n \n exports[`Code blocks in rendered comment should not be clipped 1`] = `\n \"<p>A comment with</p>"
+    }
+  ]
+}
