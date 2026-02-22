@@ -1,0 +1,113 @@
+{
+  "sha": "0105bc2314368326159c39a367a7559f00314eb6",
+  "node_id": "C_kwDOBtgov9oAKDAxMDViYzIzMTQzNjgzMjYxNTljMzlhMzY3YTc1NTlmMDAzMTRlYjY",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2026-02-21T23:37:14Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2026-02-22T02:16:00Z"
+    },
+    "message": "Drop GitHub token permissions on deploy jobs\n\nDeploy jobs only curl an external updater URL and need no GitHub API\naccess. Without an explicit permissions block they inherit the workflow\ndefault, which may include contents:write, packages:write, etc.\nSetting permissions to {} limits the blast radius if a job is\ncompromised.",
+    "tree": {
+      "sha": "6144f5364c3caca2d5cf98c72447de105abb96ca",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/6144f5364c3caca2d5cf98c72447de105abb96ca"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/0105bc2314368326159c39a367a7559f00314eb6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/0105bc2314368326159c39a367a7559f00314eb6",
+  "html_url": "https://github.com/umputun/remark42/commit/0105bc2314368326159c39a367a7559f00314eb6",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/0105bc2314368326159c39a367a7559f00314eb6/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "78d6de6bce1e961f023969da3ec8a00dd80c9ae8",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/78d6de6bce1e961f023969da3ec8a00dd80c9ae8",
+      "html_url": "https://github.com/umputun/remark42/commit/78d6de6bce1e961f023969da3ec8a00dd80c9ae8"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9b9388e0a6dfc9a49c38aae88e5eed23dea234b3",
+      "filename": ".github/workflows/ci-site.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/0105bc2314368326159c39a367a7559f00314eb6/.github%2Fworkflows%2Fci-site.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/0105bc2314368326159c39a367a7559f00314eb6/.github%2Fworkflows%2Fci-site.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fci-site.yml?ref=0105bc2314368326159c39a367a7559f00314eb6",
+      "patch": "@@ -135,6 +135,7 @@ jobs:\n     runs-on: ubuntu-latest\n     needs: merge\n     if: github.ref == 'refs/heads/master' || github.event_name == 'release'\n+    permissions: {} # only calls an external URL via curl, no GitHub API access needed\n \n     steps:\n       - name: trigger deployment"
+    },
+    {
+      "sha": "1f239c6ad2e064134dc863d9f5caf5000221ba0d",
+      "filename": ".github/workflows/docker.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/umputun/remark42/blob/0105bc2314368326159c39a367a7559f00314eb6/.github%2Fworkflows%2Fdocker.yml",
+      "raw_url": "https://github.com/umputun/remark42/raw/0105bc2314368326159c39a367a7559f00314eb6/.github%2Fworkflows%2Fdocker.yml",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/.github%2Fworkflows%2Fdocker.yml?ref=0105bc2314368326159c39a367a7559f00314eb6",
+      "patch": "@@ -206,6 +206,7 @@ jobs:\n     runs-on: ubuntu-latest\n     needs: merge\n     if: github.event.workflow_run.head_branch == 'master'\n+    permissions: {} # only calls an external URL via curl, no GitHub API access needed\n \n     steps:\n       - name: trigger deployment"
+    }
+  ]
+}
