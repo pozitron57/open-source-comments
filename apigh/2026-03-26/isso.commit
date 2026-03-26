@@ -1,0 +1,101 @@
+{
+  "sha": "3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae",
+  "node_id": "C_kwDOAF-mA9oAKDNhNWE0YWE3YTJlYWRkZmE4NzYzZDNhMmIxZmE3NTczMWI1YzIwYWU",
+  "commit": {
+    "author": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2026-03-26T01:01:39Z"
+    },
+    "committer": {
+      "name": "Jelmer Vernooĳ",
+      "email": "jelmer@jelmer.uk",
+      "date": "2026-03-26T01:01:39Z"
+    },
+    "message": "Update changelog for 0.14.0\n\nAdd missing entries: Arabic and Galician localisations, XSS fix,\nPython version changes, pkg_resources migration, and comment\nvalidation fix.",
+    "tree": {
+      "sha": "e0df82ded8a610ba9a543d8b4b98988d8e4a087e",
+      "url": "https://api.github.com/repos/isso-comments/isso/git/trees/e0df82ded8a610ba9a543d8b4b98988d8e4a087e"
+    },
+    "url": "https://api.github.com/repos/isso-comments/isso/git/commits/3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/isso-comments/isso/commits/3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae",
+  "html_url": "https://github.com/isso-comments/isso/commit/3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae",
+  "comments_url": "https://api.github.com/repos/isso-comments/isso/commits/3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae/comments",
+  "author": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "jelmer",
+    "id": 49032,
+    "node_id": "MDQ6VXNlcjQ5MDMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jelmer",
+    "html_url": "https://github.com/jelmer",
+    "followers_url": "https://api.github.com/users/jelmer/followers",
+    "following_url": "https://api.github.com/users/jelmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jelmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jelmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jelmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/jelmer/orgs",
+    "repos_url": "https://api.github.com/users/jelmer/repos",
+    "events_url": "https://api.github.com/users/jelmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jelmer/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "83a23017db6cf61aed9d9f535205de3420b7fa88",
+      "url": "https://api.github.com/repos/isso-comments/isso/commits/83a23017db6cf61aed9d9f535205de3420b7fa88",
+      "html_url": "https://github.com/isso-comments/isso/commit/83a23017db6cf61aed9d9f535205de3420b7fa88"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 17,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "a85dc2e7e78e1721567991437d7cb30ac59b36bd",
+      "filename": "CHANGES.rst",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 1,
+      "changes": 18,
+      "blob_url": "https://github.com/isso-comments/isso/blob/3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae/CHANGES.rst",
+      "raw_url": "https://github.com/isso-comments/isso/raw/3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae/CHANGES.rst",
+      "contents_url": "https://api.github.com/repos/isso-comments/isso/contents/CHANGES.rst?ref=3a5a4aa7a2eaddfa8763d3a2b1fa75731b5c20ae",
+      "patch": "@@ -8,6 +8,8 @@ New Features\n ^^^^^^^^^^^^\n \n - Add Catalan localisation (`#966`_, welpo)\n+- Add Arabic localisation (`#972`_)\n+- Add Galician localisation (ghose)\n - Make <code class=\"language-$lang\"> for syntax highlighting (`#998`_, pkvach)\n - Add search for comments by URL in the admin interface (`#1000`_, pkvach)\n - Add CSS variables for better organization and flexibility (`#1001`_, pkvach)\n@@ -21,6 +23,7 @@ New Features\n \n .. _#870: https://github.com/posativ/isso/pull/870\n .. _#966: https://github.com/posativ/isso/pull/966\n+.. _#972: https://github.com/isso-comments/isso/pull/972\n .. _#998: https://github.com/isso-comments/isso/pull/998\n .. _#1000: https://github.com/isso-comments/isso/pull/1000\n .. _#1001: https://github.com/isso-comments/isso/pull/1001\n@@ -34,19 +37,29 @@ New Features\n Breaking Changes\n ^^^^^^^^^^^^^^^^\n \n+- Drop support for Python 3.7 (`#974`_) and 3.8; add support for Python 3.13\n+  and 3.14 (jelmer)\n - Rework the Docker image tagging scheme: ``isso:latest`` is now rebuilt on\n   every push to ``master``, while ``isso:release`` points to the latest stable\n   release (`#970`_, janw). Previously, ``:latest`` pointed to the latest stable\n   (tagged) version\n - Disavow IE10 compatibility: (Not-so) recent changes mean that Isso is no\n-  longer compatible (`#1022`, ix5)\n+  longer compatible (`#1022`_, ix5)\n - The Markdown rendering engine Misaka has been deprecated. Please start using\n   Mistune, see :doc:`Migration from Misaka to Mistune <guides/mistune>` for\n   differences to Misaka.\n+- Migrate from ``pkg_resources`` to ``importlib.metadata`` and\n+  ``importlib.resources`` (jelmer)\n \n .. _#970: https://github.com/isso-comments/isso/pull/970\n+.. _#974: https://github.com/isso-comments/isso/pull/974\n .. _#1022: https://github.com/isso-comments/isso/pull/1022\n \n+Security Fixes\n+^^^^^^^^^^^^^^\n+\n+- Fix stored XSS in website and author fields (jelmer)\n+\n Bugfixes & Improvements\n ^^^^^^^^^^^^^^^^^^^^^^^\n \n@@ -65,6 +78,8 @@ Bugfixes & Improvements\n - Disable Postbox submit button on click, enable after response (`#993`_, pkvach)\n - Document title parameter and improve error handling for /new API (`#1058`_, pkvach)\n - Set reply sorting to always be oldest (`#1035`_, ggtylerr)\n+- Apply the same validations when editing comments as when creating them\n+  (`#1038`_, Lucas Cimon)\n - Fix ``Offset.localTime()`` failing if ``Offset.update()`` hasn't been called yet.\n - Fix 'Log Out' button behavior in admin interface.\n \n@@ -82,6 +97,7 @@ Bugfixes & Improvements\n .. _#1015: https://github.com/isso-comments/isso/pull/1015\n .. _#993: https://github.com/isso-comments/isso/pull/993\n .. _#1035: https://github.com/isso-comments/isso/pull/1035\n+.. _#1038: https://github.com/isso-comments/isso/pull/1038\n .. _#1058: https://github.com/isso-comments/isso/pull/1058\n \n 0.13.1.dev0 (2023-02-05)"
+    }
+  ]
+}
