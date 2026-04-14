@@ -1,0 +1,113 @@
+{
+  "sha": "fc6f15534ed0a09ccddd7dac42f558dd6578ec59",
+  "node_id": "C_kwDOBtgov9oAKGZjNmYxNTUzNGVkMGEwOWNjZGRkN2RhYzQyZjU1OGRkNjU3OGVjNTk",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2026-04-12T08:40:20Z"
+    },
+    "committer": {
+      "name": "Umputun",
+      "email": "umputun@gmail.com",
+      "date": "2026-04-12T16:55:24Z"
+    },
+    "message": "fix(frontend): preserve orig verbatim in edit textarea (#2040)\n\nThe edit textarea was running `data.orig` through the browser's HTML\nparser via a detached `<span>.innerHTML` to \"decode entities\", which\nturned user-typed `&lt;`/`&gt;` into real `<`/`>`. On save, blackfriday\nthen saw a real `<script>` tag, bluemonday stripped it, and the comment\nbody collapsed to an empty string.\n\nThe decode block predates commit 243c835 (2022) which stopped the\nbackend from sanitising `orig` with bluemonday. Before 243c835, orig\ncame back HTML-escaped from the API and the frontend compensated.\nAfter 243c835 the backend stores and returns orig byte-for-byte, but\nthe frontend decode was never removed — so it has been silently\ncorrupting user input containing entities for ~3.5 years.\n\nThe backend contract is clear: `orig` is the raw user input, never\nrendered as HTML. The frontend should echo it back into the textarea\nunchanged. This change removes the decode and adds 45 table-driven\nregression tests covering entity round-trips, unicode edge cases,\nand markdown constructs.",
+    "tree": {
+      "sha": "bbdf5585c95e2463aad5ad920cac12e4d4c6d9b2",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/bbdf5585c95e2463aad5ad920cac12e4d4c6d9b2"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/fc6f15534ed0a09ccddd7dac42f558dd6578ec59",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/fc6f15534ed0a09ccddd7dac42f558dd6578ec59",
+  "html_url": "https://github.com/umputun/remark42/commit/fc6f15534ed0a09ccddd7dac42f558dd6578ec59",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/fc6f15534ed0a09ccddd7dac42f558dd6578ec59/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "umputun",
+    "id": 535880,
+    "node_id": "MDQ6VXNlcjUzNTg4MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/535880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/umputun",
+    "html_url": "https://github.com/umputun",
+    "followers_url": "https://api.github.com/users/umputun/followers",
+    "following_url": "https://api.github.com/users/umputun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/umputun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/umputun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/umputun/subscriptions",
+    "organizations_url": "https://api.github.com/users/umputun/orgs",
+    "repos_url": "https://api.github.com/users/umputun/repos",
+    "events_url": "https://api.github.com/users/umputun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/umputun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "80c12a3f10ceeb9afa9fccfd0e66a4bb0c711d65",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/80c12a3f10ceeb9afa9fccfd0e66a4bb0c711d65",
+      "html_url": "https://github.com/umputun/remark42/commit/80c12a3f10ceeb9afa9fccfd0e66a4bb0c711d65"
+    }
+  ],
+  "stats": {
+    "total": 105,
+    "additions": 97,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "a1dae1d2b3f910e5d7cdce867b4b604958c1fd45",
+      "filename": "frontend/apps/remark42/app/components/comment/comment.test.tsx",
+      "status": "modified",
+      "additions": 96,
+      "deletions": 0,
+      "changes": 96,
+      "blob_url": "https://github.com/umputun/remark42/blob/fc6f15534ed0a09ccddd7dac42f558dd6578ec59/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.test.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/fc6f15534ed0a09ccddd7dac42f558dd6578ec59/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.test.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.test.tsx?ref=fc6f15534ed0a09ccddd7dac42f558dd6578ec59",
+      "patch": "@@ -7,6 +7,7 @@ import { render } from 'tests/utils';\n import { StaticStore } from 'common/static-store';\n \n import { Comment, CommentProps } from './comment';\n+import { CommentForm } from 'components/comment-form';\n import { CommentMode } from 'common/types';\n \n function CommentWithIntl(props: CommentProps) {\n@@ -255,4 +256,99 @@ describe('<Comment />', () => {\n       expect(screen.getByText('Edit')).toBeVisible();\n     });\n   });\n+\n+  // Regression tests for issue #2040.\n+  // The edit textarea must reflect `data.orig` byte-for-byte; any transformation\n+  // (HTML-entity decoding in particular) corrupts user input on save because\n+  // bluemonday then strips now-real tags that the user typed as entities.\n+  describe('edit textarea preserves data.orig verbatim', () => {\n+    afterEach(() => {\n+      CommentForm.textareaCounter = 0;\n+      localStorage.clear();\n+    });\n+\n+    const cases: Array<[string, string]> = [\n+      ['issue 2040 canonical', '&lt;script&gt;Hacked you!&lt;/script&gt;'],\n+      ['doubly-escaped entity', '&amp;lt;script&amp;gt;'],\n+      ['mixed named entities', 'I love &copy; 2026 &amp; &quot;quotes&quot; &apos;too&apos;'],\n+      ['nbsp entity whitespace', '&nbsp;&nbsp;&nbsp;indented'],\n+      ['decimal numeric entities', '&#60;div&#62;hello&#60;/div&#62;'],\n+      ['hex numeric entities with xss-like content', '&#x3C;img src=x onerror=alert(1)&#x3E;'],\n+      ['hex numeric emoji entities', '&#x1F600; &#x1F4A9; emoji via numeric'],\n+      ['obscure named entities', '&AElig;sop &eacute;tait &zwj;ici'],\n+      ['malformed entity without semicolon', '&lt without semicolon and &amp; with'],\n+      ['entity-shaped junk', '&;&lt;;&#;&#x;&#xZZZ;'],\n+      ['recursive-looking numeric entity', '&#38;#60;'],\n+      ['programmer content with real < and entities', '5 &lt; 10 &amp;&amp; 10 &gt; 5'],\n+      ['real < mixed with &lt;', 'a < b and &lt;tag&gt; literal'],\n+      ['sixteen back-to-back &lt;', '&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;'],\n+      ['fenced code block with entities', '```\\n&lt;pre&gt;code&lt;/pre&gt;\\n```'],\n+      ['link with entity-encoded query ampersands', '[link](https://example.com/?a=1&amp;b=2&amp;c=3)'],\n+      ['null/replacement/surrogate hex entities', '&#x0;&#xFFFD;&#xD800;'],\n+\n+      ['zero-width characters interleaved', 'Hello\\u200Bworld\\u200Cfoo\\u200Dbar'],\n+      ['bidi Hebrew + Arabic + ASCII', '\\u05E9\\u05DC\\u05D5\\u05DD hello \\u0645\\u0631\\u062D\\u0628\\u0627'],\n+      ['RLO override embedded', 'safe\\u202Eevil\\u202Cend'],\n+      ['decomposed vs precomposed é', 'cafe\\u0301 vs caf\\u00E9'],\n+      ['ZWJ family emoji', 'family: \\uD83D\\uDC68\\u200D\\uD83D\\uDC69\\u200D\\uD83D\\uDC66'],\n+      ['supplementary plane surrogate pairs', 'poop: \\uD83D\\uDCA9 and math: \\uD835\\uDC00'],\n+      ['line and paragraph separators', 'line1\\u2028line2\\u2029para2'],\n+      ['BOM at start middle end', '\\uFEFFstart mid\\uFEFFdle end\\uFEFF'],\n+      ['varied unicode whitespace', 'a\\u00A0b\\u3000c\\u2003d\\u202Fe'],\n+      ['tab LF CR CRLF LFCR', 'tab\\there\\nnl\\rcr\\r\\ncrlf\\n\\rlfcr'],\n+      ['cyrillic homoglyph a', 'Cyrillic \\u0430pple vs Latin apple'],\n+      ['full-width angle brackets', 'fullwidth \\uFF1Cscript\\uFF1E not a tag'],\n+      ['bidi mark soup', 'mix: \\u202Dltr\\u202C \\u202Ertl\\u202C \\u200E\\u200F'],\n+\n+      ['inline code with real script tag', '`<script>alert(1)</script>`'],\n+      ['inline code with entity script tag', '`&lt;script&gt;`'],\n+      [\n+        'fenced html with iframe and double-escaped',\n+        '```html\\n<iframe src=\"javascript:alert(1)\"></iframe>\\n&amp;lt;b&amp;gt;\\n```',\n+      ],\n+      ['javascript link', '[click](javascript:alert(1))'],\n+      ['image with entity alt and title', '![&lt;alt&gt;](x.png \"&amp;title&amp;\")'],\n+      ['markdown backslash escapes', '\\\\*not em\\\\* \\\\_not em\\\\_ \\\\\\\\ \\\\< \\\\& \\\\`not code\\\\`'],\n+      ['entities inside emphasis markers', '*&lt;em&gt;* _&gt;underscore&lt;_ **&amp;bold&amp;**'],\n+      ['headers with entities', '# &lt;h1&gt;\\n## &amp;header&amp;'],\n+      ['blockquote with entities multiline', '> &lt;foo&gt;\\n> &amp;quoted&amp;\\n>\\n> nested &lt;bar/&gt;'],\n+      ['raw autolinks', '<https://example.com/?a=1&b=2> see also <user@example.com>'],\n+      ['raw script tag no markdown', '<script>alert(1)</script>'],\n+      ['iframe object embed chain', '<iframe src=x></iframe><object data=x></object><embed src=x>'],\n+      ['kitchen sink', 'mix: `a` \\\\* *b* &lt;c&gt; &amp;d&amp; \\\\\\\\ \\\\`e\\\\` [f](javascript:0) ![g](h \"&quot;\")'],\n+\n+      ['empty string', ''],\n+      ['only whitespace', '   \\t\\n   '],\n+    ];\n+\n+    // HTML5 textarea.value always normalises \\r\\n and lone \\r to \\n.\n+    // This happens inside the browser regardless of any remark42 code,\n+    // so the edit round-trip guarantee is \"byte-equal after newline normalisation\".\n+    const expectedTextareaValue = (raw: string) => raw.replace(/\\r\\n|\\r/g, '\\n');\n+\n+    it.each(cases)('renders unchanged: %s', (_label, payload) => {\n+      CommentForm.textareaCounter = 0;\n+      StaticStore.config.edit_duration = 300;\n+\n+      const p = getProps();\n+      p.repliesCount = 0;\n+      p.user!.id = '100';\n+      p.data.user.id = '100';\n+      p.editMode = CommentMode.Edit;\n+      // @ts-ignore - CommentForm prop is optional on CommentProps\n+      p.CommentForm = CommentForm;\n+      Object.assign(p.data, {\n+        id: '101',\n+        vote: 1,\n+        time: Date.now(),\n+        delete: false,\n+        orig: payload,\n+      });\n+\n+      render(<CommentWithIntl {...p} />);\n+\n+      const textarea = screen.getByTestId('textarea_1') as HTMLTextAreaElement;\n+      expect(textarea.value).toBe(expectedTextareaValue(payload));\n+    });\n+  });\n });"
+    },
+    {
+      "sha": "2b49340d0c4361ec9aca902b7ed5a877f02ae673",
+      "filename": "frontend/apps/remark42/app/components/comment/comment.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 8,
+      "changes": 9,
+      "blob_url": "https://github.com/umputun/remark42/blob/fc6f15534ed0a09ccddd7dac42f558dd6578ec59/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.tsx",
+      "raw_url": "https://github.com/umputun/remark42/raw/fc6f15534ed0a09ccddd7dac42f558dd6578ec59/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.tsx",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcomponents%2Fcomment%2Fcomment.tsx?ref=fc6f15534ed0a09ccddd7dac42f558dd6578ec59",
+      "patch": "@@ -303,14 +303,7 @@ export class Comment extends Component<CommentProps, State> {\n           ? intl.formatMessage(messages.deletedComment)\n           : props.data.text,\n       time: new Date(props.data.time),\n-      orig: isEditing\n-        ? props.data.orig &&\n-          props.data.orig.replace(/&[#A-Za-z0-9]+;/gi, (entity) => {\n-            const span = document.createElement('span');\n-            span.innerHTML = entity;\n-            return span.innerText;\n-          })\n-        : props.data.orig,\n+      orig: props.data.orig,\n       user: props.data.user,\n     };\n "
+    }
+  ]
+}
