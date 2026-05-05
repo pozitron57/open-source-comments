@@ -1,0 +1,149 @@
+{
+  "sha": "a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+  "node_id": "C_kwDOBtgov9oAKGE0YzVlMTdiYmIwMTg4ZDQ1OTExZDhlY2U3NDY4YTczMGY3Yzg0OTk",
+  "commit": {
+    "author": {
+      "name": "Dmitry Verkhoturov",
+      "email": "paskal.07@gmail.com",
+      "date": "2026-05-01T00:32:49Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-05-01T00:32:49Z"
+    },
+    "message": "Probe /auth/status from frontend to avoid 401 on /user (closes #1188) (#1763)\n\n* Probe /auth/status from frontend to avoid 401 console noise on /user\n\nGET /api/v1/user requires auth and returns 401 for anonymous visitors,\nwhich the browser logs to console even when JS catches it. Probe\n/auth/status first (always 200), then fetch /user only when logged in.\nStale auth cookies are cleared when status reports \"not logged in\" to\npreserve the cleanup-on-probe behaviour previously triggered by /user 401.\n\nCloses #1188.\n\n* Don't clear auth cookies when /auth/status probe itself fails\n\nA transient network/5xx on the /auth/status probe used to fall through\ninto the cookie-clear branch and silently log the user out on the next\npage load. Distinguish \"probe failed\" (null) from explicit \"not logged\nin\"; only the latter clears JWT/XSRF cookies. Lock the distinction with\na negative assertion in the probe-failure test.\n\nAlso align packages/api prettier config with apps/remark42 (trailingComma: 'es5')\nso future edits don't sweep unrelated trailing commas into the diff.",
+    "tree": {
+      "sha": "922fe78f2beef3d25bdd4cbc1686aed6184dd393",
+      "url": "https://api.github.com/repos/umputun/remark42/git/trees/922fe78f2beef3d25bdd4cbc1686aed6184dd393"
+    },
+    "url": "https://api.github.com/repos/umputun/remark42/git/commits/a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp8/SxCRC1aQ7uu5UhlAAAWr8QACJ2zt5fNoEOmeVQ2xKJh8T5\nfkkBQQTy6DJrz1pTJRUkIqy2D6vhn/Y38UrH9evz16+96gWLPlYkqqR/r7R8Crfn\nh/S0iqAuv4io0vvNpLCB3TmNiwuD5HPc8o+G/xfL6ydqb5AJdyru4/oY0bqispl8\nZUFPhcmd4GhudsW4wHi7NEVTaQuYn8+eb3pFc39aNnM6lmSE7PMSRhd6VHqhmkX6\nmVC+1ZcSO3B1edttqAeowy1ljHRO/0SBPe7djHCYY0nrO872IVNRxgpNZLKae5di\nZGDlj5DZ8byzCi2xXA+3jt0F8u24DQ0Huvv0gyqC7KdtYsnLkFn0zd19mN5dxRo5\nMtMDiYhTfm9CPvs2BIv/5NFazKmYk+OesD93I6zU9phZq/PE/IzFCBj+IiAGa0SV\nR9jd4IIpYk/zd8ggtmQi6PZXX6XT2dpdz05Z+S7Z18Tuufelgc0WdnNkVLuQPTdu\npGPeCrB77Jogz5+V09Zh+5Aa1BVPV3GQlInds8lCU969/akI3J8hJMXzGzspYcsx\nKZwxM8zeNlwzQtXtRFkerP/n3Ekwhogtv1bJjVkEccDax+jLEEp0wbf3bicWoLBW\ns4mCnYgZYoKmFXV7Z3dBHgRzCCxbSyrtDJzrJ0hIIv1MGD13TgpVUoTAuwhjN937\nH+k0yMpZgo0OiPbwt9ua\n=NcK7\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 922fe78f2beef3d25bdd4cbc1686aed6184dd393\nparent 8d9290ea1f9dceae4127ee6eddcae9c782ca5c53\nauthor Dmitry Verkhoturov <paskal.07@gmail.com> 1777595569 +0100\ncommitter GitHub <noreply@github.com> 1777595569 -0500\n\nProbe /auth/status from frontend to avoid 401 on /user (closes #1188) (#1763)\n\n* Probe /auth/status from frontend to avoid 401 console noise on /user\n\nGET /api/v1/user requires auth and returns 401 for anonymous visitors,\nwhich the browser logs to console even when JS catches it. Probe\n/auth/status first (always 200), then fetch /user only when logged in.\nStale auth cookies are cleared when status reports \"not logged in\" to\npreserve the cleanup-on-probe behaviour previously triggered by /user 401.\n\nCloses #1188.\n\n* Don't clear auth cookies when /auth/status probe itself fails\n\nA transient network/5xx on the /auth/status probe used to fall through\ninto the cookie-clear branch and silently log the user out on the next\npage load. Distinguish \"probe failed\" (null) from explicit \"not logged\nin\"; only the latter clears JWT/XSRF cookies. Lock the distinction with\na negative assertion in the probe-failure test.\n\nAlso align packages/api prettier config with apps/remark42 (trailingComma: 'es5')\nso future edits don't sweep unrelated trailing commas into the diff.",
+      "verified_at": "2026-05-01T00:32:50Z"
+    }
+  },
+  "url": "https://api.github.com/repos/umputun/remark42/commits/a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+  "html_url": "https://github.com/umputun/remark42/commit/a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+  "comments_url": "https://api.github.com/repos/umputun/remark42/commits/a4c5e17bbb0188d45911d8ece7468a730f7c8499/comments",
+  "author": {
+    "login": "paskal",
+    "id": 712534,
+    "node_id": "MDQ6VXNlcjcxMjUzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/712534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paskal",
+    "html_url": "https://github.com/paskal",
+    "followers_url": "https://api.github.com/users/paskal/followers",
+    "following_url": "https://api.github.com/users/paskal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paskal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paskal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paskal/subscriptions",
+    "organizations_url": "https://api.github.com/users/paskal/orgs",
+    "repos_url": "https://api.github.com/users/paskal/repos",
+    "events_url": "https://api.github.com/users/paskal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paskal/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8d9290ea1f9dceae4127ee6eddcae9c782ca5c53",
+      "url": "https://api.github.com/repos/umputun/remark42/commits/8d9290ea1f9dceae4127ee6eddcae9c782ca5c53",
+      "html_url": "https://github.com/umputun/remark42/commit/8d9290ea1f9dceae4127ee6eddcae9c782ca5c53"
+    }
+  ],
+  "stats": {
+    "total": 92,
+    "additions": 79,
+    "deletions": 13
+  },
+  "files": [
+    {
+      "sha": "ca0eb42fafc6cc429fda8c7f8734eb9ca6c4dd71",
+      "filename": "frontend/apps/remark42/app/common/api.test.ts",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 2,
+      "changes": 41,
+      "blob_url": "https://github.com/umputun/remark42/blob/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Fapi.test.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Fapi.test.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Fapi.test.ts?ref=a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+      "patch": "@@ -1,5 +1,42 @@\n-import { getUserComments } from './api';\n-import { apiFetcher } from './fetcher';\n+import { getUser, getUserComments } from './api';\n+import { apiFetcher, authFetcher, JWT_COOKIE_NAME, XSRF_COOKIE } from './fetcher';\n+import * as cookies from './cookies';\n+\n+describe('getUser', () => {\n+  beforeEach(() => {\n+    jest.restoreAllMocks();\n+  });\n+\n+  it('should fetch /user when /auth/status reports logged in', async () => {\n+    const user = { id: '1', name: 'user' };\n+    jest.spyOn(authFetcher, 'get').mockResolvedValue({ status: 'logged in', user: 'user' });\n+    const apiSpy = jest.spyOn(apiFetcher, 'get').mockResolvedValue(user);\n+\n+    await expect(getUser()).resolves.toEqual(user);\n+    expect(apiSpy).toHaveBeenCalledWith('/user');\n+  });\n+\n+  it('should return null and clear auth cookies when /auth/status reports not logged in', async () => {\n+    jest.spyOn(authFetcher, 'get').mockResolvedValue({ status: 'not logged in' });\n+    const apiSpy = jest.spyOn(apiFetcher, 'get');\n+    const clearSpy = jest.spyOn(cookies, 'clearAuthCookie').mockImplementation(() => {});\n+\n+    await expect(getUser()).resolves.toBeNull();\n+    expect(apiSpy).not.toHaveBeenCalled();\n+    expect(clearSpy).toHaveBeenCalledWith(JWT_COOKIE_NAME);\n+    expect(clearSpy).toHaveBeenCalledWith(XSRF_COOKIE);\n+  });\n+\n+  it('should return null without clearing cookies when /auth/status request fails', async () => {\n+    jest.spyOn(authFetcher, 'get').mockRejectedValue(new Error('boom'));\n+    const apiSpy = jest.spyOn(apiFetcher, 'get');\n+    const clearSpy = jest.spyOn(cookies, 'clearAuthCookie').mockImplementation(() => {});\n+\n+    await expect(getUser()).resolves.toBeNull();\n+    expect(apiSpy).not.toHaveBeenCalled();\n+    expect(clearSpy).not.toHaveBeenCalled();\n+  });\n+});\n \n describe('getUserComments', () => {\n   it('should call apiFetcher.get with /comments endpoint and default skip and limit query params', () => {"
+    },
+    {
+      "sha": "d9037c17284c241378fc8dea5bcccf8e521d9f65",
+      "filename": "frontend/apps/remark42/app/common/api.ts",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 2,
+      "changes": 17,
+      "blob_url": "https://github.com/umputun/remark42/blob/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Fapi.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Fapi.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fapps%2Fremark42%2Fapp%2Fcommon%2Fapi.ts?ref=a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+      "patch": "@@ -11,7 +11,8 @@ import {\n   Image,\n   EmailSubVerificationStatus,\n } from './types';\n-import { apiFetcher, adminFetcher } from './fetcher';\n+import { apiFetcher, adminFetcher, authFetcher, JWT_COOKIE_NAME, XSRF_COOKIE } from './fetcher';\n+import { clearAuthCookie } from './cookies';\n \n /* API methods */\n \n@@ -60,7 +61,19 @@ export const removeMyComment = (id: Comment['id']): Promise<void> =>\n \n export const getPreview = (text: string): Promise<string> => apiFetcher.post('/preview', {}, { text });\n \n-export function getUser(): Promise<User | null> {\n+export async function getUser(): Promise<User | null> {\n+  // probe auth state via /auth/status (always 200, no console 401)\n+  const status = await authFetcher.get<{ status: string }>('/status').catch(() => null);\n+  if (status === null) {\n+    // probe failed (network blip, transient 5xx) - leave cookies alone, treat as unknown\n+    return null;\n+  }\n+  if (status.status !== 'logged in') {\n+    // explicit \"not logged in\" - clear stale cookies, preserving cleanup-on-probe behaviour previously triggered by /user 401\n+    clearAuthCookie(JWT_COOKIE_NAME);\n+    clearAuthCookie(XSRF_COOKIE);\n+    return null;\n+  }\n   return apiFetcher.get<User | null>('/user').catch(() => null);\n }\n "
+    },
+    {
+      "sha": "a525ee8ebfb6f8c7beb01ebd8516d92bcba3cc7b",
+      "filename": "frontend/packages/api/.prettierrc",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/umputun/remark42/blob/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fpackages%2Fapi%2F.prettierrc",
+      "raw_url": "https://github.com/umputun/remark42/raw/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fpackages%2Fapi%2F.prettierrc",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fpackages%2Fapi%2F.prettierrc?ref=a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+      "patch": "@@ -2,5 +2,6 @@\n \t\"semi\": false,\n \t\"printWidth\": 100,\n \t\"quoteProps\": \"consistent\",\n-\t\"singleQuote\": true\n+\t\"singleQuote\": true,\n+\t\"trailingComma\": \"es5\"\n }"
+    },
+    {
+      "sha": "661282549604fb5b6974e7fe1444a302a495cf2a",
+      "filename": "frontend/packages/api/clients/public.ts",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 2,
+      "changes": 10,
+      "blob_url": "https://github.com/umputun/remark42/blob/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fpackages%2Fapi%2Fclients%2Fpublic.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fpackages%2Fapi%2Fclients%2Fpublic.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fpackages%2Fapi%2Fclients%2Fpublic.ts?ref=a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+      "patch": "@@ -83,6 +83,7 @@ export type Vote = -1 | 1\n \n export function createPublicClient({ siteId: site, baseUrl }: ClientParams) {\n \tconst fetcher = createFetcher(site, `${baseUrl}${API_BASE}`)\n+\tconst authFetcher = createFetcher(site, `${baseUrl}/auth`)\n \n \t/**\n \t * Get server config\n@@ -92,9 +93,14 @@ export function createPublicClient({ siteId: site, baseUrl }: ClientParams) {\n \t}\n \n \t/**\n-\t * Get current authorized user\n+\t * Get current authorized user.\n+\t * Probes /auth/status first (always 200, no console 401), then fetches /user only if logged in.\n \t */\n \tasync function getUser(): Promise<User | null> {\n+\t\tconst status = await authFetcher.get<{ status: string }>('/status').catch(() => null)\n+\t\tif (status?.status !== 'logged in') {\n+\t\t\treturn null\n+\t\t}\n \t\treturn fetcher.get<User | null>('/user').catch(() => null)\n \t}\n \n@@ -104,7 +110,7 @@ export function createPublicClient({ siteId: site, baseUrl }: ClientParams) {\n \tasync function getComments(url: string): Promise<CommentsTree>\n \tasync function getComments(params: GetUserCommentsParams): Promise<Comment[]>\n \tasync function getComments(\n-\t\tparams: string | GetUserCommentsParams,\n+\t\tparams: string | GetUserCommentsParams\n \t): Promise<Comment[] | CommentsTree> {\n \t\tif (typeof params === 'string') {\n \t\t\treturn fetcher.get('/comments', { url: params })"
+    },
+    {
+      "sha": "89f2de10ad87d633e5afd52562533223d2f80114",
+      "filename": "frontend/packages/api/tests/clients/public.test.ts",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 6,
+      "changes": 21,
+      "blob_url": "https://github.com/umputun/remark42/blob/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fpackages%2Fapi%2Ftests%2Fclients%2Fpublic.test.ts",
+      "raw_url": "https://github.com/umputun/remark42/raw/a4c5e17bbb0188d45911d8ece7468a730f7c8499/frontend%2Fpackages%2Fapi%2Ftests%2Fclients%2Fpublic.test.ts",
+      "contents_url": "https://api.github.com/repos/umputun/remark42/contents/frontend%2Fpackages%2Fapi%2Ftests%2Fclients%2Fpublic.test.ts?ref=a4c5e17bbb0188d45911d8ece7468a730f7c8499",
+      "patch": "@@ -97,11 +97,20 @@ describe<Context>('Public Client', (publicClient) => {\n \t\t})\n \t})\n \n-\tconst userCases = [null, { id: '1', username: 'user' }]\n-\tuserCases.forEach((user) => {\n-\t\tpublicClient('should return user', async ({ client }) => {\n-\t\t\tmockEndpoint('/remark42/api/v1/user', { body: user })\n-\t\t\tawait expect(client.getUser()).resolves.toEqual(user)\n-\t\t})\n+\tpublicClient('getUser: should return user when logged in', async ({ client }) => {\n+\t\tconst user = { id: '1', username: 'user' }\n+\t\tmockEndpoint('/remark42/auth/status', { body: { status: 'logged in', user: 'user' } })\n+\t\tmockEndpoint('/remark42/api/v1/user', { body: user })\n+\t\tawait expect(client.getUser()).resolves.toEqual(user)\n+\t})\n+\n+\tpublicClient('getUser: should return null when not logged in', async ({ client }) => {\n+\t\tmockEndpoint('/remark42/auth/status', { body: { status: 'not logged in' } })\n+\t\tawait expect(client.getUser()).resolves.toBeNull()\n+\t})\n+\n+\tpublicClient('getUser: should return null when status probe fails', async ({ client }) => {\n+\t\tmockEndpoint('/remark42/auth/status', { status: 500, body: 'boom' })\n+\t\tawait expect(client.getUser()).resolves.toBeNull()\n \t})\n })"
+    }
+  ]
+}
