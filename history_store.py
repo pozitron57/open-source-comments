@@ -34,7 +34,7 @@ def save_history(history, path=HISTORY_PATH):
     mode = stat.S_IMODE(os.stat(path).st_mode) if os.path.exists(path) else 0o644
     with tempfile.NamedTemporaryFile('w', dir=directory or '.', encoding='utf-8', delete=False) as tmp:
         tmp_name = tmp.name
-        json.dump(history, tmp, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+        json.dump(history, tmp, ensure_ascii=False, sort_keys=True, indent=2)
         tmp.write('\n')
 
     os.chmod(tmp_name, mode)
