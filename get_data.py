@@ -1,233 +1,192 @@
-#! /usr/bin/env python 
+#! /usr/bin/env python
 #coding=utf8
 
-'''
-1. Download comment_system and comment_system.commit to YYYY-MM-DD/
-2. Read these files and write file_YYYY-MM-DD only with needed information
-3. Remove YYYY-MM-DD/
-
-TODO: check that everything is really downloaded
-Get rid of yaml
-'''
-
-import os
-#import os.path
-import re
 import json
-import ruamel.yaml
-import fileinput
-import dateutil.parser
-from datetime import date, timedelta
-from json.decoder import JSONDecodeError
-
+import os
+import re
 import sys
+from datetime import date, timedelta
+from urllib.error import HTTPError, URLError
+from urllib.parse import quote, urlparse
+from urllib.request import Request, urlopen
+
+import ruamel.yaml
+
+from history_store import append_snapshot, field_on_or_before, load_history, save_history
+
 sys.stdout.reconfigure(encoding='utf-8')
 
 
-gh_credentials_path = '/home/slisakov/gh_credentials'
-#gh_credentials_path = '/Users/slisakov/Yandex.Disk.localized/gh_credentials'
+GH_CREDENTIALS_PATH = '/home/slisakov/gh_credentials'
+STARS_DIFF_DAYS = 14
 
-# Setup yaml parser
+
 yaml = ruamel.yaml.YAML()
 yaml.indent(mapping=4, sequence=4, offset=2)
 yaml.preserve_quotes = True
 
-# Get project names and github urls  Entry name is used instead of 
-#'name' field since doesn't contain spaces etc.
-with open('data.yaml', 'r', encoding='utf-8') as f:
-    data = yaml.load(f)
 
-comment_systems = []
-github_urls = []        # url for project
-github_commit_urls = [] # url for the last master/ commit
+def github_repo_api_url(source):
+    parsed = urlparse(str(source))
+    if parsed.netloc not in ('github.com', 'www.github.com'):
+        return None
 
-for i in data:
+    parts = [part for part in parsed.path.split('/') if part]
+    if len(parts) < 2:
+        return None
 
-    #e.g., https://api.github.com/repos/posativ/isso
-    # If more than 1 link to source code
-    if type(data[i]['source']) is ruamel.yaml.comments.CommentedSeq:
-        for x in range(len(data[i]['source'])):
-            if re.search('github.com', data[i]['source'][x]):
-                api_url = re.sub('github.com', 'api.github.com/repos', data[i]['source'][x])
-    else:
-        api_url = re.sub('github.com', 'api.github.com/repos', data[i]['source'])
-
-    #e.g., https://api.github.com/repos/posativ/isso/commits/master
-    api_commit_url = api_url + '/commits/master'
-
-    if not 'pelican_static' in i:
-        github_urls.append(api_url)
-        github_commit_urls.append(api_commit_url)
-        comment_systems.append(i)
-
-# Define today's path
-#mydate = date(2020,5,20)
-mydate = date.today()
-p     = 'apigh/'      + str(mydate)+'/'
-fdate = 'apigh/file_' + str(mydate)
-open(fdate, 'w').close() # clear fdate content if existed
-dtr = {}
-
-#### IF NEED TO WORK WITH MANY DIRs YYYY-MM-DD/
-###mydates = sorted(os.listdir('apigh'))
-###for mydate in mydates:
-    ###p     = 'apigh/' + mydate + '/'
-    ###if re.match('20\d\d-\d\d-\d\d$', mydate):
-        ###fdate = 'apigh/file_' + mydate
-        ###print (fdate)
-        ###if os.path.exists(fdate):
-            ###open(fdate, 'w').close()
-            ####with open(fdate, 'w') as f:
-                ####print ( '{:<27}{:<6}{:<5}{}'.format('#name', 'stars', 'i_pr', 'created'), file=f  )
-### SHIFT >> ONE TABSTOP EVERYTHING BELOW
+    owner = parts[0]
+    repo = re.sub(r'\.git$', '', parts[1])
+    return 'https://api.github.com/repos/{}/{}'.format(owner, repo)
 
 
-# Download files only if haven't done today
-if not os.path.isdir(p):
-    print(p, 'will be written')
-    os.system('mkdir -p {}'.format(p))
+def github_source(data_item):
+    sources = data_item.get('source')
+    if not isinstance(sources, list):
+        sources = [sources]
 
-    # Save github repo info to apigh/YYYY-MM-DD/<comment_system>
-    # Attention, there is a limit of requests per IP per hour
-    # (created, license, open_issues)
+    for source in sources:
+        api_url = github_repo_api_url(source)
+        if api_url:
+            return api_url
+    return None
 
-    ## Read your credentials from the file outside of the repo.
-    #It's a bad idea to store your token in a text file, 
-    # use only for testing
-    with open(gh_credentials_path, 'r') as f:
+
+def github_token():
+    if not os.path.exists(GH_CREDENTIALS_PATH):
+        return None
+
+    with open(GH_CREDENTIALS_PATH, 'r', encoding='utf-8') as f:
         for line in f:
-            github_username = line.split()[0]
-            github_token    = line.split()[1]
+            parts = line.split()
+            if len(parts) >= 2:
+                return parts[1]
+            if len(parts) == 1:
+                return parts[0]
+    return None
 
-    for url, cs in zip(github_urls, comment_systems):
-        print(cs,)
-        os.system("curl -H 'Authorization: token {}' {} > {}".format(github_token,url,p+cs))
 
-    # Save info on the last commit to apigh/YYYY-MM-DD/<comment_system.commit>
-    # (created, license, open_issues)
-    for url, cs in zip(github_commit_urls, comment_systems):
-        print(cs,)
-        os.system("curl -H 'Authorization: token {}' {} > {}".format(github_token,url,p+cs+'.commit'))
-else:
-    print(p, 'already exists. Stopping.')
+def fetch_json(url, token):
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': 'open-source-comments-updater',
+    }
+    if token:
+        headers['Authorization'] = 'token {}'.format(token)
 
-# Calculate Github stars change in the last N days
-N=14
-#date_N_days_ago = date.today() - timedelta(days=N)
-date_N_days_ago = mydate - timedelta(days=N)
-all_dates=[]
-for d in sorted(os.listdir('apigh')):
-    all_dates.append(d)
-
-stars_N_days_ago = {}
-file_N_days_ago = 'apigh/file_' + str(date_N_days_ago)
-if os.path.isfile(file_N_days_ago):
-    print ('File to read N days ago', file_N_days_ago)
+    request = Request(url, headers=headers)
     try:
-        with open(file_N_days_ago, 'r') as f:
-            data_N_days_ago = json.load(f)
-    except json.JSONDecodeError:
-        print("Couldn't read data from file_N_days_ago")
-        data_N_days_ago = {}
-else:
-    print ('File N days ago DOES NOT EXIST')
+        with urlopen(request, timeout=60) as response:
+            return json.loads(response.read().decode('utf-8'))
+    except HTTPError as error:
+        body = error.read().decode('utf-8', errors='replace')
+        raise RuntimeError('GitHub API returned {} for {}: {}'.format(error.code, url, body))
+    except URLError as error:
+        raise RuntimeError('Could not fetch {}: {}'.format(url, error.reason))
 
 
-# Read info from ./apigh/YYYY-MM-DD/<comment_system>
-# and ./apigh/YYYY-MM-DD/<comment_system.commit>
-print ( '{:<27}{:<6}{:<5}{:<5}{}'.format('Name', '★', 'Δ★', 'I+PR', 'Created')    )
+def github_date(value):
+    if not value:
+        return 'undefined'
+    return value[:10].replace('-', '‑')
 
-for filename in os.listdir(p):
-    cs = re.sub('.commit', '', filename)
-    if not '.swp' in filename and not 'pelican_static' in filename: # if opened in vim
-        if not '.commit' in filename:
 
-            with open(p+cs, 'r') as f:
-                try:
-                    api_data = json.load(f)
+def repo_license(api_data):
+    license_data = api_data.get('license')
+    if not license_data:
+        return 'undefined'
 
-                    if api_data.get('stargazers_count'):
-                        stars = api_data['stargazers_count']
-                    else:
-                        #stars = 'undefined'
-                        stars = 0
+    return license_data.get('spdx_id') or license_data.get('name') or 'undefined'
 
-                    if api_data.get('created_at'):
-                        created = dateutil.parser.parse(api_data['created_at']).strftime('%Y‑%m‑%d')
-                    else:
-                        created = 'undefined'
 
-                    if api_data.get('open_issues'):
-                        open_issues = api_data['open_issues']
-                    else:
-                        open_issues = 0
+def commit_date(api_url, default_branch, token):
+    branch = quote(default_branch or 'master', safe='')
+    commit_url = '{}/commits/{}'.format(api_url, branch)
+    commit_data = fetch_json(commit_url, token)
+    return github_date(commit_data.get('commit', {}).get('committer', {}).get('date'))
 
-                    if api_data.get('license'):
-                        if 'spdx_id' in api_data['license']:
-                            if data.get(cs):
-                                data[cs]['license'] = api_data['license']['spdx_id']  # MIT
-                        elif 'name' in api_data['license']:
-                            if data.get(cs):
-                                data[cs]['license'] = api_data['license']['name'] # MIT License
-                    else:
-                        data[cs]['license'] = 'undefined'
 
-                    dtr[cs] = {"stars" : stars, "created" : created, "open_issues" : open_issues, 
-                             "license" : data[cs]['license']}
-                except JSONDecodeError:
-                    pass
+def update_index_date(snapshot_date):
+    with open('index.html', 'r', encoding='utf-8') as f:
+        text = f.read()
 
-                # Update the values
-                if created != 'undefined' and data.get(cs):
-                    if len(str(stars)) > 0:
-                        data[cs]['stars']   = stars
-                    else:
-                        #data[cs]['stars']   = 'undefined'
-                        data[cs]['stars']   = 0
-                    data[cs]['open_issues'] = open_issues
-                    data[cs]['created']     = created
-                    if os.path.isfile(file_N_days_ago):
-                        if cs in data_N_days_ago:
-                            stars_N_days_ago = data_N_days_ago[cs]['stars']
-                        else:
-                            stars_N_days_ago = 'undefined'
-                    else:
-                        stars_N_days_ago = 'undefined'
-                    #if in stars_N_days_ago and cs in data and isinstance(data[cs]['stars'],int) and isinstance(stars_N_days_ago[cs],int):
-                    if stars_N_days_ago != 'undefined' and len(str(stars)) > 0 and stars != 'undefined' and stars != 0:
-                        ds = int(data[cs]['stars']) - stars_N_days_ago
-                        data[cs]['stars_dif'] = ds
-                        print ('{:<27}{:<16}{:<5}{:<5}{}'.format(cs, stars, ds,  open_issues, created))
+    text = re.sub('Last updated:.*', 'Last updated: {} <br>'.format(snapshot_date), text)
 
-                    else:
-                        data[cs]['stars_dif'] = '?'
-                        print ('{:<27}{:<16}{:<5}{:<5}{}'.format(cs, stars, '—', open_issues, created))
+    with open('index.html', 'w', encoding='utf-8') as f:
+        f.write(text)
 
-# Loop through *.commit files
-for filename in os.listdir(p):
-    cs = re.sub('.commit', '', filename)
-    if not '.swp' in filename and not 'pelican_static' in filename: # if opened in vim
-        if '.commit' in filename:
 
-            with open(p+filename, 'r') as f:
-                api_commit_data = json.load(f)
-                #if api_commit_data.get('commit') and data.get(cs):
-                if api_commit_data.get('commit') and dtr.get(cs):
-                    last_commit = dateutil.parser.parse(api_commit_data['commit']['committer']['date']).strftime('%Y‑%m‑%d')
-                    data[cs]['last_committed'] = last_commit
-                    dtr [cs]['last_commit'] = last_commit
+def main():
+    snapshot_date = str(date.today())
+    comparison_date = str(date.today() - timedelta(days=STARS_DIFF_DAYS))
+    token = github_token()
 
-with open(fdate, 'a', encoding='utf-8') as f:
-    json.dump(dtr, f, ensure_ascii=False, indent=4, sort_keys = True)
+    with open('data.yaml', 'r', encoding='utf-8') as f:
+        data = yaml.load(f)
 
-# Update data.yaml file with fresh values.
-# data.yaml is rewritten, NO BACKUP
-with open('data.yaml', 'w') as f:
-    yaml.dump(data, stream=f)
+    history = load_history()
+    snapshot = {}
 
-# Update index.html date
-for line in fileinput.input('index.html', inplace=True):
-    if 'Last updated:' in line:
-        #line = re.sub('Last updated:.*','Last updated: {} <br>'.format(date.today()), line)
-        line = re.sub('Last updated:.*','Last updated: {} <br>'.format(mydate), line)
-    print ( line, end='' )
+    print('{:<27}{:<8}{:<6}{:<7}{}'.format('Name', 'Stars', 'Δ★', 'I+PR', 'Created'))
+    for name, item in data.items():
+        if 'pelican_static' in name:
+            continue
+
+        api_url = github_source(item)
+        if not api_url:
+            continue
+
+        try:
+            api_data = fetch_json(api_url, token)
+        except RuntimeError as error:
+            print('{}: {}'.format(name, error), file=sys.stderr)
+            continue
+
+        stars = int(api_data.get('stargazers_count') or 0)
+        created = github_date(api_data.get('created_at'))
+        open_issues = int(api_data.get('open_issues') or 0)
+        license_name = repo_license(api_data)
+        default_branch = api_data.get('default_branch') or 'master'
+
+        last_commit = item.get('last_committed')
+        try:
+            last_commit = commit_date(api_url, default_branch, token)
+        except RuntimeError as error:
+            print('{}: {}'.format(name, error), file=sys.stderr)
+
+        old_stars = field_on_or_before(history, name, 'stars', comparison_date)
+        if old_stars is not None and int(old_stars) > 0 and stars:
+            stars_diff = stars - int(old_stars)
+        else:
+            stars_diff = '?'
+
+        item['stars'] = stars
+        item['stars_dif'] = stars_diff
+        item['open_issues'] = open_issues
+        item['created'] = created
+        item['license'] = license_name
+        if last_commit:
+            item['last_committed'] = last_commit
+
+        snapshot[name] = {
+            'stars': stars,
+            'created': created,
+            'open_issues': open_issues,
+            'license': license_name,
+        }
+        if last_commit:
+            snapshot[name]['last_commit'] = last_commit
+
+        print('{:<27}{:<8}{:<6}{:<7}{}'.format(name, stars, stars_diff, open_issues, created))
+
+    append_snapshot(history, snapshot_date, snapshot)
+    save_history(history)
+
+    with open('data.yaml', 'w', encoding='utf-8') as f:
+        yaml.dump(data, stream=f)
+
+    update_index_date(snapshot_date)
+
+
+if __name__ == '__main__':
+    main()

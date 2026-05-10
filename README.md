@@ -8,18 +8,19 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 - The data are stored in `data.yaml`. This file is edited manually.
 
-- `get_gh_data.py`:
-  - creates `apigh/<YYYY-MM-DD>/` directory if does not exist;
-  - downloads (using system `curl`)
-    `https://api.github.com/repos/:user/:repo` and 
-    `https://api.github.com/repos/:user/:repo/commits/master` to the created
-    directory;
-  - reads these files and updates `data.yaml` for the following:
+- `get_data.py` reads the GitHub repositories from `data.yaml`, fetches the
+  current repository metadata and latest commit through the GitHub API, then
+  updates `data.yaml` for the following:
     - Github stars,
     - Github stars in the latest N days,
     - latest commit date,
     - creation date,
     - license.
+
+- Historical GitHub-derived data are stored in `apigh/history.json`. It keeps
+  only value changes for the fields used by the page (`stars`, `open_issues`,
+  `created`, `license`, `last_commit`) instead of storing raw GitHub API
+  responses for every repository every day.
 
 - `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
   — `osc_data` and `cols`).
@@ -27,9 +28,20 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 - `index.html` reads `data.js` and parses it to the html table using
   [datatables.js](https://github.com/DataTables/DataTables).
 
-- The webpage is updated daily at 17:00 UTC via `cron`. `updater.sh`
-  runs `get_gh_data.py`, then `yaml_2_js.py`, then deploys the updated files,
-  then updates the repo.
+- `plot-stars.py` reads `apigh/history.json`, plots stars vs. time for selected
+  projects, and writes `stars-v-date.svg`.
+
+- The webpage is updated daily via `cron`. `updater.sh` runs `get_data.py`,
+  `md_to_html.py`, `yaml_2_js.py`, and `plot-stars.py`, then deploys the
+  updated files and pushes the repository.
+
+## Dependencies
+
+Install Python dependencies with:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
 
 ## How to view the page locally
 
@@ -47,8 +59,7 @@ It will update the `data.js` file.
 
 - Improve the python code.
 
-- `get_gh_data.py`: retry to get the api data if response contains
-  `"message": "Server Error"`.
+- `get_data.py`: retry transient GitHub API errors.
 
 - Show column descriptions on mouse over.
 

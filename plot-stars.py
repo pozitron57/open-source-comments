@@ -1,8 +1,5 @@
 import os
-import re
-import json
 import tempfile
-from json.decoder import JSONDecodeError
 
 os.environ.setdefault('MPLBACKEND', 'Agg')
 os.environ.setdefault('MPLCONFIGDIR', tempfile.gettempdir())
@@ -12,6 +9,8 @@ from matplotlib import rc, rcParams
 import matplotlib.pyplot as plt
 
 import datetime
+
+from history_store import field_on_or_before, load_history
 
 '''
 Plot stars vs time for top competitors except Discourse.
@@ -45,22 +44,12 @@ series = {
 
 stars_by_project = {project: [] for project in series}
 dates_by_project = {project: [] for project in series}
+history = load_history()
 
-for filename in sorted(os.listdir('apigh')):
-    if not re.fullmatch(r'file_\d{4}-\d{2}-\d{2}', filename):
-        continue
-
-    date_str = filename.replace('file_', '')
+for date_str in history['dates']:
     date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-
-    with open(os.path.join('apigh', filename), 'r') as f:
-        try:
-            data = json.load(f)
-        except JSONDecodeError:
-            continue
-
     for project in series:
-        stars = data.get(project, {}).get('stars')
+        stars = field_on_or_before(history, project, 'stars', date_str)
         if not str(stars).isdigit(): # remove undefined
             continue
         if project == 'isso' and datetime.date(2024, 3, 6) <= date_obj <= datetime.date(2024, 3, 12):
