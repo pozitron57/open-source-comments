@@ -1,21 +1,21 @@
-'''
-Plot stars vs time for top competitors except Discourse.
-'''
-
 import os
 import re
 import json
+import tempfile
 from json.decoder import JSONDecodeError
-import numpy as np
+
+os.environ.setdefault('MPLBACKEND', 'Agg')
+os.environ.setdefault('MPLCONFIGDIR', tempfile.gettempdir())
 
 import matplotlib.dates as mdates
 from matplotlib import rc, rcParams
 import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-from matplotlib.ticker import AutoMinorLocator, MultipleLocator, FuncFormatter, FixedLocator
 
 import datetime
-from datetime import date
+
+'''
+Plot stars vs time for top competitors except Discourse.
+'''
 
 fs=15
 rc('axes', linewidth=2)
@@ -27,103 +27,59 @@ rc('ytick.major', size=10, width=2)
 rc('xtick.minor', size=5, width=1.3)
 rc('ytick.minor', size=5, width=1.3)
 rcParams['font.family'] = 'sans-serif'
-rcParams['font.sans-serif'] = ['Lucida Grande']
+rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Lucida Grande']
 
 fig = plt.figure('figure', figsize=(10,8))
 fig.subplots_adjust(top=.80)
 ax = plt.subplot(111)
 
-mydates = sorted(os.listdir('apigh'))
-os.chdir('apigh')
+series = {
+    'isso': {'label': 'Isso', 'color': 'tab:blue', 'ls': '-'},
+    'commento': {'label': 'Commento', 'color': 'tab:orange', 'ls': '-'},
+    'juvia': {'label': 'Juvia', 'color': 'tab:green', 'ls': ':'},
+    'staticman': {'label': 'Staticman', 'color': 'tab:red', 'ls': '--'},
+    'schnak': {'label': 'Schnak', 'color': 'tab:gray', 'ls': '-'},
+    'remark': {'label': 'Remark42', 'color': 'tab:pink', 'ls': '-'},
+    'valine': {'label': 'Valine', 'color': 'tab:purple', 'ls': '-.'},
+}
 
-isso_stars = np.array([])
-isso_dates = np.array([])
+stars_by_project = {project: [] for project in series}
+dates_by_project = {project: [] for project in series}
 
-remark_stars = np.array([])
-remark_dates = np.array([])
+for filename in sorted(os.listdir('apigh')):
+    if not re.fullmatch(r'file_\d{4}-\d{2}-\d{2}', filename):
+        continue
 
-commento_stars = np.array([])
-commento_dates = np.array([])
+    date_str = filename.replace('file_', '')
+    date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
 
-schnak_stars = np.array([])
-schnak_dates = np.array([])
+    with open(os.path.join('apigh', filename), 'r') as f:
+        try:
+            data = json.load(f)
+        except JSONDecodeError:
+            continue
 
-staticman_stars = np.array([])
-staticman_dates = np.array([])
+    for project in series:
+        stars = data.get(project, {}).get('stars')
+        if not str(stars).isdigit(): # remove undefined
+            continue
+        if project == 'isso' and datetime.date(2024, 3, 6) <= date_obj <= datetime.date(2024, 3, 12):
+            continue
 
-juvia_stars = np.array([])
-juvia_dates = np.array([])
-
-valine_stars = np.array([])
-valine_dates = np.array([])
-
-discourse_stars = np.array([])
-discourse_dates = np.array([])
-
-for mydate in mydates:
-    if os.path.isfile(mydate):
-        if re.match('file_\d\d\d\d-\d\d-\d\d', mydate):
-
-            print (mydate)
-            with open(mydate, 'r') as f:
-                try:
-                    data = json.load(f)
-                except JSONDecodeError:
-                    pass
-
-            if data.get('isso') and str(data['isso']['stars']).isdigit(): # remove undefined
-                date_str = re.sub('file_', '', mydate)
-                date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                if not (date_obj >= datetime.date(2024, 3, 6) and date_obj <= datetime.date(2024, 3, 12)):
-                    isso_stars  = np.append(isso_stars, data['isso']['stars'])
-                    isso_dates  = np.append(isso_dates, re.sub('file_', '', mydate))
-
-            if data.get('commento') and str(data['commento']['stars']).isdigit(): # remove undefined
-                commento_stars  = np.append(commento_stars, data['commento']['stars'])
-                commento_dates  = np.append(commento_dates, re.sub('file_', '', mydate))
-
-            if data.get('juvia') and str(data['juvia']['stars']).isdigit(): # remove undefined
-                juvia_stars  = np.append(juvia_stars, data['juvia']['stars'])
-                juvia_dates  = np.append(juvia_dates, re.sub('file_', '', mydate))
-
-            if data.get('staticman') and str(data['staticman']['stars']).isdigit(): # remove undefined
-                staticman_stars  = np.append(staticman_stars, data['staticman']['stars'])
-                staticman_dates  = np.append(staticman_dates, re.sub('file_', '', mydate))
-
-            if data.get('schnak') and str(data['schnak']['stars']).isdigit(): # remove undefined
-                schnak_stars  = np.append(schnak_stars, data['schnak']['stars'])
-                schnak_dates  = np.append(schnak_dates, re.sub('file_', '', mydate))
-
-            if data.get('remark') and str(data['remark']['stars']).isdigit(): # remove undefined
-                remark_stars  = np.append(remark_stars, data['remark']['stars'])
-                remark_dates  = np.append(remark_dates, re.sub('file_', '', mydate))
-
-            if data.get('valine') and str(data['valine']['stars']).isdigit(): # remove undefined
-                valine_stars  = np.append(valine_stars, data['valine']['stars'])
-                valine_dates  = np.append(valine_dates, re.sub('file_', '', mydate))
+        stars_by_project[project].append(int(stars))
+        dates_by_project[project].append(date_obj)
 
 lw=2.85
 
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in isso_dates]
-ax.plot_date(x, isso_stars, label='Isso', lw=lw, ls='-', marker=None, color='tab:blue')
+all_dates = []
+for project, style in series.items():
+    dates = dates_by_project[project]
+    stars = stars_by_project[project]
+    if not dates:
+        raise RuntimeError('No data points for {}'.format(project))
 
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in commento_dates]
-ax.plot_date(x, commento_stars, label='Commento', lw=lw, ls='-', marker=None, color='tab:orange')
-
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in juvia_dates]
-ax.plot_date(x, juvia_stars, label='Juvia', lw=lw, ls=':', marker=None, color='tab:green')
-
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in staticman_dates]
-ax.plot_date(x, staticman_stars, label='Staticman', lw=lw, ls='--', marker=None, color='tab:red')
-
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in schnak_dates]
-ax.plot_date(x, schnak_stars, label='Schnak', lw=lw, ls='-', marker=None, color='tab:gray')
-
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in remark_dates]
-ax.plot_date(x, remark_stars, label='Remark42', lw=lw, ls='-', marker=None, color='tab:pink')
-
-x = [datetime.datetime.strptime(d,'%Y-%m-%d').date() for d in valine_dates]
-ax.plot_date(x, valine_stars, label='Valine', lw=lw, ls='-.', marker=None, color='tab:purple')
+    all_dates.extend(dates)
+    ax.plot(dates, stars, label=style['label'], lw=lw, ls=style['ls'], color=style['color'])
 
 ax2 = ax.twiny()
 years = mdates.YearLocator()    # every year
@@ -144,13 +100,19 @@ ax.set_ylabel('Github stars')
 ax.legend(ncol=3, loc='center', bbox_to_anchor=(0.4, 1.15))
 ax.grid(ls=':', lw=1)
 
-#today = date.today()
-last  = np.amax(x)
+last  = max(all_dates)
 ax.axvline(x=last,  ls=':', color='tab:gray', lw=1)
 ax2.set_xlim(ax.get_xlim())
 ax2.set_xticks([last])
 
-plt.savefig('../stars-v-date.png', dpi=300, bbox_inches='tight')
-print('stars-v-date.png is updated')
+output = 'stars-v-date.svg'
+mode = os.stat(output).st_mode if os.path.exists(output) else 0o644
+with tempfile.NamedTemporaryFile(dir='.', suffix='.svg', delete=False) as tmp:
+    tmp_name = tmp.name
+
+plt.savefig(tmp_name, dpi=300, bbox_inches='tight')
+os.chmod(tmp_name, mode)
+os.replace(tmp_name, output)
+print('stars-v-date.svg is updated through {}'.format(last))
 
 #plt.show()

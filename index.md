@@ -50,9 +50,7 @@ The figure below shows some of the top competitors except for Discourse (as
 it's not just a light commenting server like others). The figure is useful to
 indirectly estimate how active the project is.
 
-<a href="stars-v-date.png">
-<img src="stars-v-date.png" alt="Plot stars vs. time" width="800px" />
-</a>
+<img src="stars-v-date.svg" alt="Plot stars vs. time" style="width: 100%; height: auto;" />
 
 ## Choose columns to show
 
