@@ -5,7 +5,16 @@ import tempfile
 
 
 HISTORY_PATH = 'apigh/history.json'
-FIELDS = ['stars', 'open_issues', 'created', 'license', 'last_commit']
+FIELDS = [
+    'stars',
+    'stars_total',
+    'stars_github',
+    'stars_gitlab',
+    'open_issues',
+    'created',
+    'license',
+    'last_commit',
+]
 
 
 def empty_history():
@@ -20,7 +29,7 @@ def load_history(path=HISTORY_PATH):
         history = json.load(f)
 
     history.setdefault('version', 1)
-    history.setdefault('fields', FIELDS)
+    history['fields'] = FIELDS
     history.setdefault('dates', [])
     history.setdefault('projects', {})
     return history

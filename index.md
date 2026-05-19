@@ -3,7 +3,7 @@
 This comparison table is inspired by
 [staticsitegenerators.net](http://staticsitegenerators.net/). Contribute at
 [github](https://github.com/pozitron57/open-source-comments) —
-add the missing data. Github-related data (stars, open issues + PR, etc.)
+add the missing data. Repository-related data (stars, open issues + PR, etc.)
 are updated daily automatically. Want different columns? Noted a bug? Submit
 an [issue](https://github.com/pozitron57/open-source-comments/issues/new).
 

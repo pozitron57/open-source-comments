@@ -8,18 +8,19 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 - The data are stored in `data.yaml`. This file is edited manually.
 
-- `get_data.py` reads the GitHub repositories from `data.yaml`, fetches the
-  current repository metadata and latest commit through the GitHub API, then
+- `get_data.py` reads the GitHub and GitLab repositories from `data.yaml`,
+  fetches the current repository metadata and latest commit through their APIs, then
   updates `data.yaml` for the following:
-    - Github stars,
-    - Github stars in the latest N days,
+    - displayed stars from the repository with the higher star count,
+    - combined star growth in the latest N days,
     - latest commit date,
     - creation date,
     - license.
 
-- Historical GitHub-derived data are stored in `apigh/history.json`. It keeps
-  only value changes for the fields used by the page (`stars`, `open_issues`,
-  `created`, `license`, `last_commit`) instead of storing raw GitHub API
+- Historical repository-derived data are stored in `apigh/history.json`. It keeps
+  only value changes for the fields used by the page (`stars`, `stars_total`,
+  `stars_github`, `stars_gitlab`, `open_issues`, `created`, `license`,
+  `last_commit`) instead of storing raw API
   responses for every repository every day.
 
 - `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
@@ -59,7 +60,7 @@ It will update the `data.js` file.
 
 - Improve the python code.
 
-- `get_data.py`: retry transient GitHub API errors.
+- `get_data.py`: retry transient repository API errors.
 
 - Show column descriptions on mouse over.
 

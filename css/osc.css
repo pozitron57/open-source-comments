@@ -20,6 +20,10 @@ h4 { font-size:1.3em; }
 
 table { color:#2a2b2c; }
 
+.stars-extra::after {
+  content: "*";
+}
+
 
 div.dataTables_wrapper { margin:40px; }
 @media screen and (max-width:880px){

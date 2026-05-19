@@ -7,6 +7,7 @@ Convert data.yaml to data.js
 
 import re
 import yaml
+from html import escape
 from markdown import markdown
 
 fields = [
@@ -56,7 +57,7 @@ fields = [
 ]
 
 fields_dic={
-    'stars':                 'Github stars',
+    'stars':                 'Stars',
     'stars_dif':             'Stars&nbsp;in 2&nbsp;weeks',
     'name':                  'Name',
     'source':                'Source code',
@@ -125,6 +126,30 @@ def source_urlify(x):
         else:
             return '<a href="{}">{}</a>'.format(x,'link')
 
+def provider_title(provider):
+    labels = {
+        'github': 'GitHub',
+        'gitlab': 'GitLab',
+    }
+    providers = [labels.get(part, part) for part in str(provider).split(',') if part]
+    if len(providers) == 1:
+        return providers[0]
+    if providers:
+        return 'other repositories'
+    return 'other repository'
+
+def stars_urlify(item):
+    stars = item.get('stars', '?')
+    extra = item.get('stars_extra')
+    if extra in (None, '', 0, '0'):
+        return urlify(stars)
+
+    title = '+{} stars on {}'.format(extra, provider_title(item.get('stars_extra_provider')))
+    return '{} <span class="stars-extra" title="{}"></span>'.format(
+        escape(str(stars)),
+        escape(title, quote=True),
+    )
+
 def urlify(x):
     ar=[]
     if type(x) is list:
@@ -162,7 +187,9 @@ with open("data.js", 'w') as out:
         print('[', end=' ', file=out)
         for fi in fields:
             # Check if the field exists (e.g. "Demo" for "Isso")
-            if fi=='source':
+            if fi=='stars':
+                print ("'" + stars_urlify(data[el]) +"',", end=' ', file=out)
+            elif fi=='source':
                 if type(data[el][fi]) is list:
                     print (source_urlify(data[el][fi]), end=", ", file=out)
                 else:
