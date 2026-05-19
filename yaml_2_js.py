@@ -145,9 +145,9 @@ def stars_urlify(item):
         return urlify(stars)
 
     title = '+{} stars on {}'.format(extra, provider_title(item.get('stars_extra_provider')))
-    return '{} <span class="stars-extra" title="{}"></span>'.format(
-        escape(str(stars)),
+    return '<span class="stars-with-extra" title="{}">{}<span class="stars-extra"></span></span>'.format(
         escape(title, quote=True),
+        escape(str(stars)),
     )
 
 def urlify(x):
