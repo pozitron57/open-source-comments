@@ -12,7 +12,7 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   fetches the current repository metadata and latest commit through their APIs, then
   updates `data.yaml` for the following:
     - displayed stars from the repository with the higher star count,
-    - combined star growth in the latest N days,
+    - combined star growth over the last 30 days,
     - latest commit date,
     - creation date,
     - license.
@@ -34,7 +34,16 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 - The webpage is updated daily via `cron`. `updater.sh` runs `get_data.py`,
   `md_to_html.py`, `yaml_2_js.py`, and `plot-stars.py`, then deploys the
-  updated files and pushes the repository.
+  updated files and pushes the repository. Repository redirects are followed
+  automatically, their canonical URLs are saved back to `data.yaml`, and a
+  warning email is sent even when the redirected request succeeds.
+  If an API response is incomplete or still fails after retries, the update is
+  aborted before any data is saved or deployed.
+
+- `updater.sh` exits on a failed step and writes the failure to stderr and the
+  system log. It also sends a direct email to `lisakov57@gmail.com`; set
+  `OSC_ALERT_EMAIL` in the cron environment to override that address.
+  Cron's standard `MAILTO` remains supported as an alternative.
 
 ## Dependencies
 
