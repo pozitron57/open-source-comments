@@ -73,6 +73,20 @@ indirectly estimate how active the project is.</p>
 <script src="data.js"></script>
 <script>
 $(document).ready(function() {
+  var defaultHiddenColumns = [
+    4,6,7,9,10,11,12,13,14,15,16,17,18,19,20,21,22,
+    23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38
+  ];
+
+  if (window.matchMedia('(max-width: 880px)').matches) {
+    for (var columnIndex = 0; columnIndex < cols.length; columnIndex++) {
+      if (cols[columnIndex].title === 'Description') {
+        defaultHiddenColumns.push(columnIndex);
+        break;
+      }
+    }
+  }
+
   $('#results').DataTable({
     pageLength: -1,
     lengthMenu: [ [5, 10, 20, -1], [5, 10, 20, "All"] ],
@@ -93,10 +107,7 @@ $(document).ready(function() {
         { "type": "num",  "targets": 1 },
         {targets: "_all", className: "dt-center"},
         { "visible": false,
-          "targets": [
-            4,6,7,9,10,11,12,13,14,15,16,17,18,19,20,21,22,
-            23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38
-            ]
+          "targets": defaultHiddenColumns
         },
       ],
   });
