@@ -40,7 +40,6 @@ series = {
     'Waline': {'label': 'Waline', 'color': 'tab:green', 'ls': ':'},
     'staticman': {'label': 'Staticman', 'color': 'tab:red', 'ls': '--'},
     'Artalk': {'label': 'Artalk', 'color': 'tab:gray', 'ls': '-'},
-    'Twikoo': {'label': 'Twikoo', 'color': 'tab:cyan', 'ls': '-.'},
     'remark': {'label': 'Remark42', 'color': 'tab:pink', 'ls': '-'},
     'valine': {'label': 'Valine', 'color': 'tab:purple', 'ls': '-.'},
 }
