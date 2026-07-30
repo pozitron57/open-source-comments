@@ -58,7 +58,7 @@ fields = [
 
 fields_dic={
     'stars':                 'Stars',
-    'stars_dif':             'Stars&nbsp;in 2&nbsp;weeks',
+    'stars_dif':             'Stars&nbsp;in last&nbsp;month',
     'name':                  'Name',
     'source':                'Source code',
     'demo':                  'Demo & examples',
@@ -208,7 +208,7 @@ with open("data.js", 'w') as out:
     # It contains all column names
     print('var cols=[', file=out)
     for fi in fields:
-        print ('{title: "' + fields_dic[fi] + '"}, ', file=out)
+        print('{title: "' + fields_dic[fi] + '"},', file=out)
     print(']', file=out)
 
 print('data.js has been updated')

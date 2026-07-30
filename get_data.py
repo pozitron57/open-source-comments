@@ -5,6 +5,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import date, timedelta
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlparse
@@ -19,7 +20,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 GH_CREDENTIALS_PATH = '/home/slisakov/gh_credentials'
 GITLAB_CREDENTIALS_PATH = '/home/slisakov/gitlab_credentials'
-STARS_DIFF_DAYS = 14
+STARS_DIFF_DAYS = 30
+FETCH_ATTEMPTS = 3
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+MOVE_NOTICE_FILE_ENV = 'OSC_MOVE_NOTICE_FILE'
 
 
 yaml = ruamel.yaml.YAML()
@@ -105,15 +109,81 @@ def token_from_file(path):
 
 
 def fetch_json(url, headers):
-    request = Request(url, headers=headers)
-    try:
-        with urlopen(request, timeout=60) as response:
-            return json.loads(response.read().decode('utf-8')), response.headers
-    except HTTPError as error:
-        body = error.read().decode('utf-8', errors='replace')
-        raise RuntimeError('API returned {} for {}: {}'.format(error.code, url, body))
-    except URLError as error:
-        raise RuntimeError('Could not fetch {}: {}'.format(url, error.reason))
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        request = Request(url, headers=headers)
+        try:
+            with urlopen(request, timeout=60) as response:
+                body = response.read().decode('utf-8')
+                final_url = response.geturl()
+                try:
+                    return json.loads(body), response.headers, final_url
+                except json.JSONDecodeError as error:
+                    raise RuntimeError('API returned invalid JSON for {}: {}'.format(url, error))
+        except HTTPError as error:
+            body = error.read().decode('utf-8', errors='replace')
+            message = 'API returned {} for {}: {}'.format(
+                error.code,
+                url,
+                body.replace('\n', ' ')[:500],
+            )
+            if error.code not in RETRYABLE_HTTP_CODES or attempt == FETCH_ATTEMPTS:
+                raise RuntimeError(message)
+        except URLError as error:
+            message = 'Could not fetch {}: {}'.format(url, error.reason)
+            if attempt == FETCH_ATTEMPTS:
+                raise RuntimeError(message)
+
+        print(
+            'Temporary API error; retrying {}/{}: {}'.format(
+                attempt + 1,
+                FETCH_ATTEMPTS,
+                message,
+            ),
+            file=sys.stderr,
+        )
+        time.sleep(2 ** (attempt - 1))
+
+
+def require_api_fields(api_data, fields, url):
+    if not isinstance(api_data, dict):
+        raise RuntimeError('API returned an unexpected response for {}'.format(url))
+
+    missing = [field for field in fields if field not in api_data]
+    if missing:
+        raise RuntimeError(
+            'API response for {} is missing required fields: {}'.format(
+                url,
+                ', '.join(missing),
+            )
+        )
+
+
+def replace_source_url(item, old_url, new_url):
+    sources = item.get('source')
+    if isinstance(sources, list):
+        for index, source in enumerate(sources):
+            if str(source) == old_url:
+                sources[index] = new_url
+                return True
+        return False
+
+    if str(sources) == old_url:
+        item['source'] = new_url
+        return True
+    return False
+
+
+def write_move_notices(notices):
+    notice_file = os.environ.get(MOVE_NOTICE_FILE_ENV)
+    if not notice_file:
+        return
+
+    if notices:
+        with open(notice_file, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(notices))
+            f.write('\n')
+    elif os.path.exists(notice_file):
+        os.remove(notice_file)
 
 
 def github_headers(token):
@@ -160,14 +230,17 @@ def gitlab_license(api_data, item):
 def github_commit_date(api_url, default_branch, token):
     branch = quote(default_branch or 'master', safe='')
     commit_url = '{}/commits/{}'.format(api_url, branch)
-    commit_data, _headers = fetch_json(commit_url, github_headers(token))
-    return api_date(commit_data.get('commit', {}).get('committer', {}).get('date'))
+    commit_data, _headers, _final_url = fetch_json(commit_url, github_headers(token))
+    commit_date = commit_data.get('commit', {}).get('committer', {}).get('date')
+    if not commit_date:
+        raise RuntimeError('API response for {} has no commit date'.format(commit_url))
+    return api_date(commit_date)
 
 
 def gitlab_commit_date(api_url, default_branch, token):
     params = urlencode({'per_page': 1, 'ref_name': default_branch or 'master'})
     commit_url = '{}/repository/commits?{}'.format(api_url, params)
-    commit_data, _headers = fetch_json(commit_url, gitlab_headers(token))
+    commit_data, _headers, _final_url = fetch_json(commit_url, gitlab_headers(token))
     if not commit_data:
         return None
     return api_date(commit_data[0].get('committed_date') or commit_data[0].get('created_at'))
@@ -175,60 +248,75 @@ def gitlab_commit_date(api_url, default_branch, token):
 
 def gitlab_open_issue_count(api_url, token):
     url = '{}/issues_statistics?scope=all'.format(api_url)
-    data, _headers = fetch_json(url, gitlab_headers(token))
+    data, _headers, _final_url = fetch_json(url, gitlab_headers(token))
     return int(data.get('statistics', {}).get('counts', {}).get('opened') or 0)
 
 
 def gitlab_open_merge_request_count(api_url, token):
     params = urlencode({'state': 'opened', 'per_page': 1})
     url = '{}/merge_requests?{}'.format(api_url, params)
-    _data, headers = fetch_json(url, gitlab_headers(token))
+    _data, headers, _final_url = fetch_json(url, gitlab_headers(token))
     total = headers.get('X-Total')
     return int(total) if total else 0
 
 
 def fetch_github_repo(source, token, item):
-    api_data, _headers = fetch_json(source['api_url'], github_headers(token))
+    api_data, _headers, final_url = fetch_json(source['api_url'], github_headers(token))
+    require_api_fields(
+        api_data,
+        ('stargazers_count', 'created_at', 'open_issues_count', 'html_url'),
+        source['api_url'],
+    )
+
+    api_url = source['api_url']
+    move_notice = None
+    if final_url.rstrip('/') != source['api_url'].rstrip('/'):
+        canonical_url = str(api_data['html_url'])
+        canonical_api_url = github_repo_api_url(canonical_url)
+        if not canonical_api_url:
+            raise RuntimeError(
+                'GitHub redirected {} to {}, but returned no valid canonical repository URL'.format(
+                    source['api_url'],
+                    final_url,
+                )
+            )
+        api_url = canonical_api_url
+        if replace_source_url(item, source['url'], canonical_url):
+            move_notice = 'Repository moved: {} -> {}'.format(source['url'], canonical_url)
+            print(move_notice)
+
     default_branch = api_data.get('default_branch') or 'master'
+    last_commit = github_commit_date(api_url, default_branch, token)
 
-    last_commit = item.get('last_committed')
-    try:
-        last_commit = github_commit_date(source['api_url'], default_branch, token)
-    except RuntimeError as error:
-        print('{}: {}'.format(source['url'], error), file=sys.stderr)
-
-    return {
+    stats = {
         'provider': 'github',
-        'stars': int(api_data.get('stargazers_count') or 0),
+        'stars': int(api_data['stargazers_count']),
         'created': api_date(api_data.get('created_at')),
-        'open_issues': int(api_data.get('open_issues_count') or 0),
+        'open_issues': int(api_data['open_issues_count']),
         'license': github_license(api_data, item),
         'last_commit': last_commit,
     }
+    if move_notice:
+        stats['move_notice'] = move_notice
+    return stats
 
 
 def fetch_gitlab_repo(source, token, item):
-    api_data, _headers = fetch_json(source['api_url'], gitlab_headers(token))
+    api_data, _headers, _final_url = fetch_json(source['api_url'], gitlab_headers(token))
+    require_api_fields(
+        api_data,
+        ('star_count', 'created_at', 'open_issues_count'),
+        source['api_url'],
+    )
     default_branch = api_data.get('default_branch') or 'master'
 
-    open_issues = None
-    try:
-        open_issues = gitlab_open_issue_count(source['api_url'], token)
-        open_issues += gitlab_open_merge_request_count(source['api_url'], token)
-    except RuntimeError as error:
-        print('{}: {}'.format(source['url'], error), file=sys.stderr)
-    if open_issues is None:
-        open_issues = int(api_data.get('open_issues_count') or item.get('open_issues') or 0)
-
-    last_commit = item.get('last_committed')
-    try:
-        last_commit = gitlab_commit_date(source['api_url'], default_branch, token)
-    except RuntimeError as error:
-        print('{}: {}'.format(source['url'], error), file=sys.stderr)
+    open_issues = gitlab_open_issue_count(source['api_url'], token)
+    open_issues += gitlab_open_merge_request_count(source['api_url'], token)
+    last_commit = gitlab_commit_date(source['api_url'], default_branch, token)
 
     return {
         'provider': 'gitlab',
-        'stars': int(api_data.get('star_count') or 0),
+        'stars': int(api_data['star_count']),
         'created': api_date(api_data.get('created_at')),
         'open_issues': open_issues,
         'license': gitlab_license(api_data, item),
@@ -326,6 +414,8 @@ def main():
 
     history = load_history()
     snapshot = {}
+    errors = []
+    move_notices = []
 
     print('{:<27}{:<8}{:<6}{:<7}{}'.format('Name', 'Stars', 'Δ★', 'I+PR', 'Created'))
     for name, item in data.items():
@@ -339,11 +429,17 @@ def main():
         stats = []
         for source in sources:
             try:
-                stats.append(fetch_repo_stats(source, tokens, item))
+                repo_stats = fetch_repo_stats(source, tokens, item)
+                move_notice = repo_stats.pop('move_notice', None)
+                if move_notice:
+                    move_notices.append(move_notice)
+                stats.append(repo_stats)
             except RuntimeError as error:
-                print('{}: {}'.format(name, error), file=sys.stderr)
+                message = '{} ({}): {}'.format(name, source['url'], error)
+                errors.append(message)
+                print('ERROR: {}'.format(message), file=sys.stderr)
 
-        if not stats:
+        if len(stats) != len(sources):
             continue
 
         primary_stats = primary_repo_stats(stats)
@@ -379,6 +475,15 @@ def main():
 
         print('{:<27}{:<8}{:<6}{:<7}{}'.format(name, stars, stars_dif, primary_stats['open_issues'], primary_stats['created']))
 
+    if errors:
+        write_move_notices([])
+        print(
+            '\nUpdate aborted: {} repository API request(s) failed. '
+            'No data or history files were changed.'.format(len(errors)),
+            file=sys.stderr,
+        )
+        return 1
+
     append_snapshot(history, snapshot_date, snapshot)
     save_history(history)
 
@@ -386,7 +491,9 @@ def main():
         yaml.dump(data, stream=f)
 
     update_index_date(snapshot_date)
+    write_move_notices(move_notices)
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())
