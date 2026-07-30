@@ -35,15 +35,32 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 - The webpage is updated daily via `cron`. `updater.sh` runs `get_data.py`,
   `md_to_html.py`, `yaml_2_js.py`, and `plot-stars.py`, then deploys the
   updated files and pushes the repository. Repository redirects are followed
-  automatically, their canonical URLs are saved back to `data.yaml`, and a
-  warning email is sent even when the redirected request succeeds.
-  If an API response is incomplete or still fails after retries, the update is
-  aborted before any data is saved or deployed.
+  automatically and their canonical URLs are saved back to `data.yaml`.
+
+- Any non-routine event for an individual repository — including an API retry,
+  redirect, invalid response, suspicious identity change, or persistent request
+  failure — sends an email immediately. Affected repositories retain their last
+  trusted values and get an asterisk next to the star count; its tooltip contains
+  the warning date and details. Other repositories continue to update and the
+  page is still published. The marker is removed after the next completely clean
+  update for that repository.
 
 - `updater.sh` exits on a failed step and writes the failure to stderr and the
   system log. It also sends a direct email to `lisakov57@gmail.com`; set
   `OSC_ALERT_EMAIL` in the cron environment to override that address.
-  Cron's standard `MAILTO` remains supported as an alternative.
+  Cron's standard `MAILTO` remains supported as an alternative. Concurrent runs
+  are rejected, generated files are backed up during the transaction, all
+  outputs are validated before commit/push, and deployment starts only after a
+  successful push. A global failure rolls generated files back and prevents
+  deployment.
+
+- Generated YAML history, JavaScript, HTML, and SVG files use atomic replacement
+  so an interrupted write does not leave a truncated production artifact.
+
+- If the server's system DNS is unavailable, the updater starts a loopback-only
+  CONNECT proxy that resolves hosts through a fallback DNS server. Git and API
+  HTTPS traffic keep normal TLS hostname verification. Activation of this
+  fallback also sends an email.
 
 ## Dependencies
 
@@ -62,14 +79,16 @@ It will overwrite existing `index.html`.
 After modifying `data.yaml`, run `python3 yaml_2_js.py`.
 It will update the `data.js` file.
 
+Run reliability tests with:
+
+```bash
+python3 -m unittest -v test_get_data.py test_reliability.py
+```
+
 ## TODO
 
 - Check and add the information to make the table useful.
   I would appreciate adding a missing demo.
-
-- Improve the python code.
-
-- `get_data.py`: retry transient repository API errors.
 
 - Show column descriptions on mouse over.
 
