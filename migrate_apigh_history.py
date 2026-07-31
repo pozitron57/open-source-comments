@@ -7,6 +7,7 @@ import re
 import sys
 from json.decoder import JSONDecodeError
 
+from alerts import AlertDeliveryError, send_alert
 from history_store import append_snapshot, empty_history, save_history, snapshot_for_date
 
 
@@ -25,7 +26,13 @@ def load_snapshots():
                 skipped.append(path)
 
     if skipped:
-        print('Skipped {} invalid daily snapshots'.format(len(skipped)), file=sys.stderr)
+        raise RuntimeError(
+            'Refusing to migrate with invalid daily snapshots: {}'.format(
+                ', '.join(skipped[:20])
+            )
+        )
+    if not snapshots:
+        raise RuntimeError('No valid daily snapshots were found')
     return snapshots
 
 
@@ -55,4 +62,15 @@ def migrate():
 
 
 if __name__ == '__main__':
-    raise SystemExit(migrate())
+    try:
+        raise SystemExit(migrate())
+    except Exception as error:
+        print('History migration failed: {}'.format(error), file=sys.stderr)
+        try:
+            send_alert(
+                'open-source-comments history migration failed',
+                str(error),
+            )
+        except AlertDeliveryError as alert_error:
+            print('Alert delivery also failed: {}'.format(alert_error), file=sys.stderr)
+        raise

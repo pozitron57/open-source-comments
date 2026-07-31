@@ -5,10 +5,14 @@
 Convert data.yaml to data.js
 '''
 
+import json
 import re
-import yaml
 from html import escape
+
+import yaml
 from markdown import markdown
+
+from atomic_io import atomic_write_text
 
 fields = [
     'stars',
@@ -58,7 +62,7 @@ fields = [
 
 fields_dic={
     'stars':                 'Stars',
-    'stars_dif':             'Stars&nbsp;in 2&nbsp;weeks',
+    'stars_dif':             'Stars&nbsp;in last&nbsp;month',
     'name':                  'Name',
     'source':                'Source code',
     'demo':                  'Demo & examples',
@@ -103,28 +107,28 @@ fields_dic={
 }
 
 def source_urlify(x):
-    ar=[]
-    if type(x) is list:
-        for i in range(len(x)):
-            if re.search('github.com', x[i]):
-                ar.append('<a href="{}">{}</a>'.format(x[i],'github') )
-            elif re.search('gitlab.com', x[i]):
-                ar.append('<a href="{}">{}</a>'.format(x[i],'gitlab') )
-            elif re.match('^http', x[i]):
-                ar.append('<a href="{}">[{}]</a>'.format(x[i],i+1) )
-            else:
-                m = markdown(str(x[i]))
-                m = re.sub('<p>','', m)
-                m = re.sub('</p>','', m)
-                ar.append(m)
-        return "'"+ ', '.join(ar) + "'"
-    else:
-        if re.search('github.com', x):
-            return '<a href="{}">{}</a>'.format(x,'github')
-        elif re.search('gitlab.com', x):
-            return '<a href="{}">{}</a>'.format(x,'gitlab')
+    values = x if isinstance(x, list) else [x]
+    links = []
+    for index, value in enumerate(values):
+        value = str(value)
+        safe_value = escape(value, quote=True)
+        if 'github.com' in value:
+            links.append('<a href="{}">github</a>'.format(safe_value))
+        elif 'gitlab.com' in value:
+            links.append('<a href="{}">gitlab</a>'.format(safe_value))
+        elif re.match(r'^https?://', value):
+            label = '[{}]'.format(index + 1) if isinstance(x, list) else 'link'
+            links.append('<a href="{}">{}</a>'.format(safe_value, label))
         else:
-            return '<a href="{}">{}</a>'.format(x,'link')
+            links.append(markdown_inline(value))
+    return ', '.join(links)
+
+
+def markdown_inline(value):
+    rendered = markdown(str(value))
+    rendered = re.sub(r'^<p>', '', rendered)
+    rendered = re.sub(r'</p>\s*$', '', rendered)
+    return rendered
 
 def provider_title(provider):
     labels = {
@@ -141,74 +145,88 @@ def provider_title(provider):
 def stars_urlify(item):
     stars = item.get('stars', '?')
     extra = item.get('stars_extra')
-    if extra in (None, '', 0, '0'):
+    warning = item.get('update_warning')
+    titles = []
+    if extra not in (None, '', 0, '0'):
+        titles.append(
+            '+{} stars on {}'.format(
+                extra,
+                provider_title(item.get('stars_extra_provider')),
+            )
+        )
+    if warning:
+        warning_date = item.get('update_warning_at', 'unknown date')
+        titles.append('Update warning on {}: {}'.format(warning_date, warning))
+
+    if not titles:
         return urlify(stars)
 
-    title = '+{} stars on {}'.format(extra, provider_title(item.get('stars_extra_provider')))
     return '<span class="stars-with-extra" title="{}">{}<span class="stars-extra"></span></span>'.format(
-        escape(title, quote=True),
+        escape(' | '.join(titles), quote=True),
         escape(str(stars)),
     )
 
+
 def urlify(x):
-    ar=[]
-    if type(x) is list:
-        for i in range(len(x)):
-            if re.search('github.com', x[i]):
-                ar.append('<a href="{}">{}</a>'.format(x[i],'github') )
-            elif re.search('gitlab.com', x[i]):
-                ar.append('<a href="{}">{}</a>'.format(x[i],'gitlab') )
-            elif re.match('^http', x[i]):
-                ar.append('<a href="{}">[{}]</a>'.format(x[i],i+1) )
-            else:
-                m = markdown(str(x[i]))
-                m = re.sub('<p>','', m)
-                m = re.sub('</p>','', m)
-                ar.append(m)
-        return "'"+ ', '.join(ar) + "'"
-    else:
-        if re.match('http', str(x)):
-            return '<a href="{}">{}</a>'.format(x,'demo')
+    values = x if isinstance(x, list) else [x]
+    rendered = []
+    for index, value in enumerate(values):
+        value = str(value)
+        if re.match(r'^https?://', value):
+            label = '[{}]'.format(index + 1) if isinstance(x, list) else 'demo'
+            rendered.append(
+                '<a href="{}">{}</a>'.format(escape(value, quote=True), label)
+            )
         else:
-            m = markdown(str(x))
-            m = re.sub('<p>','', m)
-            m = re.sub('</p>','', m)
-            return m
-
-# Read YAML file
-with open("data.yaml", 'r') as f:
-    data = yaml.load(f, Loader=yaml.SafeLoader)
+            rendered.append(markdown_inline(value))
+    return ', '.join(rendered)
 
 
-# Write to data.js
-with open("data.js", 'w') as out:
-    print ('var osc_data = [', file=out)
-    for el in data:
-        print('[', end=' ', file=out)
-        for fi in fields:
-            # Check if the field exists (e.g. "Demo" for "Isso")
-            if fi=='stars':
-                print ("'" + stars_urlify(data[el]) +"',", end=' ', file=out)
-            elif fi=='source':
-                if type(data[el][fi]) is list:
-                    print (source_urlify(data[el][fi]), end=", ", file=out)
-                else:
-                    print ("'" + source_urlify(data[el][fi]) +"',", end=' ', file=out)
-            elif fi in data[el]:
-                if type(data[el][fi]) is list:
-                    print (urlify(data[el][fi]), end=", ", file=out)
-                else:
-                    print ("'" + urlify(data[el][fi]) +"',", end=' ', file=out)
+def generate_data_js(data):
+    if not isinstance(data, dict):
+        raise RuntimeError('data.yaml root must be a mapping')
+
+    rows = []
+    for name, item in data.items():
+        if not isinstance(item, dict):
+            raise RuntimeError('data.yaml entry {!r} must be a mapping'.format(name))
+        row = []
+        for field in fields:
+            if field == 'stars':
+                row.append(stars_urlify(item))
+            elif field == 'source':
+                row.append(source_urlify(item[field]) if field in item else '?')
+            elif field in item:
+                row.append(urlify(item[field]))
             else:
-                    print ("'?',", end=' ', file=out)
-        print('],', file=out)
-    print(']', file=out)
+                row.append('?')
+        rows.append(row)
 
-    # Add 'cols' variable to data.js
-    # It contains all column names
-    print('var cols=[', file=out)
-    for fi in fields:
-        print ('{title: "' + fields_dic[fi] + '"}, ', file=out)
-    print(']', file=out)
+    output = ['var osc_data = [']
+    output.extend(
+        '{}{}'.format(
+            json.dumps(row, ensure_ascii=False),
+            ',' if index < len(rows) - 1 else '',
+        )
+        for index, row in enumerate(rows)
+    )
+    output.append('];')
+    output.append('var cols = {};'.format(
+        json.dumps(
+            [{'title': fields_dic[field]} for field in fields],
+            ensure_ascii=False,
+        )
+    ))
+    return '\n'.join(output) + '\n'
 
-print('data.js has been updated')
+
+def main():
+    with open('data.yaml', 'r', encoding='utf-8') as source:
+        data = yaml.load(source, Loader=yaml.SafeLoader)
+    atomic_write_text('data.js', generate_data_js(data))
+    print('data.js has been updated')
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())
