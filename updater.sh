@@ -29,6 +29,7 @@ fallback_lock_dir=""
 run_log=""
 dns_proxy_pid=""
 dns_proxy_port_file=""
+dns_fallback_notice_file=""
 
 
 log_message() {
@@ -165,6 +166,7 @@ trap 'handle_signal TERM' TERM
 trap 'handle_signal HUP' HUP
 
 mkdir -p "$OSC_STATE_DIR"
+dns_fallback_notice_file="$OSC_STATE_DIR/dns-fallback-notified"
 if command -v flock >/dev/null 2>&1; then
     exec 9>"$OSC_STATE_DIR/updater.lock"
     if ! flock -n 9; then
@@ -220,7 +222,13 @@ if ! getent ahostsv4 github.com >/dev/null 2>&1; then
 
     body="System DNS is unavailable on $(hostname). The updater activated its local DNS fallback proxy for this run. TLS hostname verification remains enabled."
     log_message "$body"
-    send_mail "open-source-comments DNS fallback activated" "$body" || true
+    if [ ! -e "$dns_fallback_notice_file" ]; then
+        if send_mail "open-source-comments DNS fallback activated" "$body"; then
+            touch "$dns_fallback_notice_file"
+        fi
+    fi
+else
+    rm -f -- "$dns_fallback_notice_file"
 fi
 
 cd "$OSC_PROJECT_DIR"

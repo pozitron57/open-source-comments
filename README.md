@@ -59,8 +59,9 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
 
 - If the server's system DNS is unavailable, the updater starts a loopback-only
   CONNECT proxy that resolves hosts through a fallback DNS server. Git and API
-  HTTPS traffic keep normal TLS hostname verification. Activation of this
-  fallback also sends an email.
+  HTTPS traffic keep normal TLS hostname verification. The first activation
+  during a continuous DNS outage sends an email; later runs only log it. The
+  notification is armed again after system DNS recovers.
 
 ## Dependencies
 
