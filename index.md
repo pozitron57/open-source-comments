@@ -10,7 +10,7 @@ an [issue](https://github.com/pozitron57/open-source-comments/issues/new).
 ## What’s wrong with Disqus
 
 Disqus loads absurd amount of tracking services, which exposes your visitors’
-personal data and significantly increases loading time. See, e.g., 
+personal data and significantly increases loading time. See, e.g.,
 [this post](http://donw.io/post/github-comments/#what-s-wrong-with-disqus).
 
 ## What’s not covered here
@@ -20,7 +20,7 @@ as little dependencies as possible. Few commenting engines listed on the page
 are provided by heavy applications (e.g.,
 [discourse](https://github.com/discourse/discourse),
 [talkyard](https://github.com/debiki/talkyard)), but the majority are
-relatively lightweight applications designed specifically to provide 
+relatively lightweight applications designed specifically to provide
 comments for the static pages.
 
 This page prioritizes information on self-hosted comments. However, there
