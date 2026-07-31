@@ -235,6 +235,61 @@ class GetDataTests(unittest.TestCase):
         self.assertFalse(safe)
         self.assertEqual(notify.call_args.args[0], 'Repository identity changed')
 
+    def test_star_drop_below_warning_threshold_is_accepted_without_warning(self):
+        history = empty_history()
+        history['dates'] = ['2026-07-30']
+        history['projects'] = {
+            'example': {
+                'stars_github': [['2026-07-30', 100]],
+            },
+        }
+        notify = Mock()
+
+        safe = get_data.check_repository_changes(
+            history,
+            'example',
+            '2026-07-31',
+            {
+                'created': '2020‑01‑01',
+                'license': 'MIT',
+                'last_commit': '2026‑07‑30',
+            },
+            {'github': 81},
+            notify,
+        )
+
+        self.assertTrue(safe)
+        notify.assert_not_called()
+
+    def test_star_drop_at_warning_threshold_is_flagged(self):
+        history = empty_history()
+        history['dates'] = ['2026-07-30']
+        history['projects'] = {
+            'example': {
+                'stars_github': [['2026-07-30', 100]],
+            },
+        }
+        notify = Mock()
+
+        safe = get_data.check_repository_changes(
+            history,
+            'example',
+            '2026-07-31',
+            {
+                'created': '2020‑01‑01',
+                'license': 'MIT',
+                'last_commit': '2026‑07‑30',
+            },
+            {'github': 80},
+            notify,
+        )
+
+        self.assertTrue(safe)
+        notify.assert_called_once_with(
+            'github star count decreased',
+            'github stars decreased from 100 to 80',
+        )
+
     def test_malformed_known_repository_url_is_not_silently_ignored(self):
         with self.assertRaisesRegex(RuntimeError, 'malformed repository'):
             get_data.repo_sources({'source': 'https://github.com/only-owner'})

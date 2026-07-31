@@ -29,6 +29,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 GH_CREDENTIALS_PATH = '/home/slisakov/gh_credentials'
 GITLAB_CREDENTIALS_PATH = '/home/slisakov/gitlab_credentials'
 STARS_DIFF_DAYS = 30
+STAR_DROP_WARNING_THRESHOLD = 20
 FETCH_ATTEMPTS = 3
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 MAX_API_RESPONSE_BYTES = 5 * 1024 * 1024
@@ -608,7 +609,7 @@ def check_repository_changes(history, name, snapshot_date, primary_stats, provid
             continue
 
         old_stars = int(old_stars)
-        if current_stars < old_stars:
+        if old_stars - current_stars >= STAR_DROP_WARNING_THRESHOLD:
             notify(
                 '{} star count decreased'.format(provider),
                 '{} stars decreased from {} to {}'.format(

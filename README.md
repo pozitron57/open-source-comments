@@ -42,8 +42,9 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   failure — sends an email immediately. Affected repositories retain their last
   trusted values and get an asterisk next to the star count; its tooltip contains
   the warning date and details. Other repositories continue to update and the
-  page is still published. The marker is removed after the next completely clean
-  update for that repository.
+  page is still published. A daily star decrease is treated as non-routine only
+  when it reaches 20 stars; smaller decreases do not produce an asterisk. The
+  marker is removed after the next completely clean update for that repository.
 
 - `updater.sh` exits on a failed step and writes the failure to stderr and the
   system log. It also sends a direct email to `lisakov57@gmail.com`; set
