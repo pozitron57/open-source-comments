@@ -1,5 +1,5 @@
 isso:
-    stars: 5300
+    stars: 5302
     source: "https://github.com/isso-comments/isso"
     homepage: "https://isso-comments.de/"
     name: "Isso"
@@ -45,10 +45,10 @@ isso:
     static: "no"
     description: "Lightweight, allows anonymous comments, maintains identity"
     license: "MIT"
-    open_issues: 62
+    open_issues: 63
     last_committed: 2026‑08‑15
     docker: "?"
-    stars_dif: 14
+    stars_dif: 16
     paging: "no"
 
 
@@ -244,8 +244,8 @@ remark:
     static: "no"
     description: "Lightweight and privacy-focused"
     license: "MIT"
-    open_issues: 90
-    last_committed: 2026‑08‑19
+    open_issues: 92
+    last_committed: 2026‑08‑20
     stars_dif: 32
 
     stars_provider: github
@@ -430,7 +430,7 @@ coralproject_talk:
     description: "A better commenting experience from Mozilla, The Washington Post,
         and The New York Times"
     license: "NOASSERTION"
-    open_issues: 59
+    open_issues: 58
     last_committed: 2026‑07‑07
     stars_dif: 5
 
@@ -1150,7 +1150,7 @@ talkyard:
 
     stars_provider: github
 discourse:
-    stars: 47674
+    stars: 47680
     source: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
@@ -1194,9 +1194,9 @@ discourse:
     description: "Isn’t designed as a comments engine, but can be used so. High hardware
         requirements"
     license: "GPL-2.0"
-    open_issues: 251
-    last_committed: 2026‑08‑19
-    stars_dif: 241
+    open_issues: 256
+    last_committed: 2026‑08‑20
+    stars_dif: 247
 
     stars_provider: github
 webpage_webmentions:
@@ -2980,6 +2980,7 @@ Comentario:
     last_committed: "2026‑08‑14"
     stars_dif: 0
 
+    stars_provider: gitlab
 Garrul:
     stars: 23
     source: "https://github.com/KingPin/Garrul"
@@ -2991,15 +2992,15 @@ Garrul:
     css_kB: ""
     language: "TypeScript"
     db: "Cloudflare D1 (SQLite)"
-    moderation: "Queue in the admin UI: approve, mark as spam or delete; user
-        management and bans"
-    mail_notification: "Reply notifications with double opt-in and digests,
-        moderator digest; requires a Resend key"
+    moderation: "Queue in the admin UI: approve, mark as spam or delete; user management
+        and bans"
+    mail_notification: "Reply notifications with double opt-in and digests, moderator
+        digest; requires a Resend key"
     dependency: "Cloudflare account (Workers, D1, KV, Turnstile); runs nowhere else"
     webmention: "no"
     rss: "yes"
-    antispam: "Turnstile, rate limit, honeypot, muted words, tunable heuristics,
-        optional Akismet or Workers AI"
+    antispam: "Turnstile, rate limit, honeypot, muted words, tunable heuristics, optional
+        Akismet or Workers AI"
     bad_words_list: "yes"
     use_cookies: "yes"
     avatar: "from the OAuth provider"
@@ -3023,9 +3024,9 @@ Garrul:
     rate_limit: "yes"
     paging: "yes"
     static: "no"
-    description: "Comments for static sites running on Cloudflare Workers: no
-        container, no VPS, no database server, but Cloudflare only. Read more
-        in a [post](https://sumguy.com/why-i-built-garrul/) by author."
+    description: "Comments for static sites running on Cloudflare Workers: no container,
+        no VPS, no database server, but Cloudflare only. Read more in a [post](https://sumguy.com/why-i-built-garrul/)
+        by author."
     license: "Apache-2.0"
     open_issues: 7
     last_committed: "2026‑08‑18"
@@ -3126,4 +3127,4 @@ Garrul:
     #last_committed: 2016‑12‑03
     #stars_dif: 0
     #license: undefined
-    stars_provider: gitlab
+    stars_provider: github
