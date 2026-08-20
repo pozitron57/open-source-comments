@@ -2980,6 +2980,57 @@ Comentario:
     last_committed: "2026‑08‑14"
     stars_dif: 0
 
+Garrul:
+    stars: 23
+    source: "https://github.com/KingPin/Garrul"
+    homepage: "https://garrul.com"
+    name: "Garrul"
+    demo: "https://comments.garrul.com"
+    docker: "no"
+    js_kB: 61
+    css_kB: ""
+    language: "TypeScript"
+    db: "Cloudflare D1 (SQLite)"
+    moderation: "Queue in the admin UI: approve, mark as spam or delete; user
+        management and bans"
+    mail_notification: "Reply notifications with double opt-in and digests,
+        moderator digest; requires a Resend key"
+    dependency: "Cloudflare account (Workers, D1, KV, Turnstile); runs nowhere else"
+    webmention: "no"
+    rss: "yes"
+    antispam: "Turnstile, rate limit, honeypot, muted words, tunable heuristics,
+        optional Akismet or Workers AI"
+    bad_words_list: "yes"
+    use_cookies: "yes"
+    avatar: "from the OAuth provider"
+    markdown_support: "yes"
+    nested_comments: "yes"
+    provided_hosting: "no"
+    collapse_comments: "yes"
+    display_images: "no"
+    sort: "newest, oldest, top"
+    hide_long_threads: "yes"
+    anonymous_comments: "yes"
+    social_network_login: "GitHub, Google, Facebook, X, Discord"
+    import_from_wordpress: "no"
+    import_from_disqus: "yes"
+    english_documentation: "yes"
+    edit: "within configurable time"
+    vote: "up/down and emoji reactions"
+    preview: "yes"
+    updated: "2026-08-20"
+    created: "2026‑05‑17"
+    rate_limit: "yes"
+    paging: "yes"
+    static: "no"
+    description: "Comments for static sites running on Cloudflare Workers: no
+        container, no VPS, no database server, but Cloudflare only. Young
+        single-author project (since 2026‑05), written largely by AI agents."
+    license: "Apache-2.0"
+    open_issues: 7
+    last_committed: "2026‑08‑18"
+    stars_dif: 0
+
 ###############
 ### REMOVED ###
 ###############
