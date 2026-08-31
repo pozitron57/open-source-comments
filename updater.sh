@@ -273,9 +273,13 @@ run_step 'push generated data' nice -n5 git push origin HEAD:master
 deploy_root=/var/www/lisakov.com/projects/open-source-comments
 run_step 'deploy generated files' nice -n5 rsync -a --delay-updates \
     data.js star-history.js index.html stars-v-date.svg "$deploy_root/"
-run_step 'deploy CSS' nice -n5 rsync -a --delete-delay --delay-updates \
+# No --delete on these two: /day/, /week/, /month/ and /yesterday/ load jQuery
+# and DataTables out of this project's css/ and js/ directories. Dropping those
+# libraries from the repository does not make them unused, and deleting them
+# from the deploy root takes four other pages down with them.
+run_step 'deploy CSS' nice -n5 rsync -a --delay-updates \
     css/ "$deploy_root/css/"
-run_step 'deploy JavaScript' nice -n5 rsync -a --delete-delay --delay-updates \
+run_step 'deploy JavaScript' nice -n5 rsync -a --delay-updates \
     js/ "$deploy_root/js/"
 run_step 'verify deployed data.js' cmp -s data.js "$deploy_root/data.js"
 run_step 'verify deployed star history' cmp -s star-history.js "$deploy_root/star-history.js"
