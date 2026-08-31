@@ -1119,13 +1119,88 @@ input, textarea, select, button {
 @media (max-width: 880px) {
   :root { --page-pad: var(--space-4); }
   .hero,
-  .prose-section,
-  .record__head,
-  .record__body { grid-template-columns: minmax(0, 1fr); }
+  .prose-section { grid-template-columns: minmax(0, 1fr); }
   .hero { padding-top: 36px; }
   .prose-section h2 { position: static; }
-  .record__stats { padding-left: 0; border-left: 0; }
   .page-header { flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
   .page-header__brand { margin-right: var(--space-4); }
   .page-footer__updated { margin-left: 0; }
+  .section { padding: 28px var(--page-pad); }
+
+  /* A pinned first column costs a third of the screen and hides the columns
+     scrolling under it. Narrow readers scroll the whole row instead. */
+  .table th:first-child,
+  .table td:first-child {
+    position: static;
+    box-shadow: none;
+  }
+
+  .table { font-size: 13px; }
+  .table th { padding: 8px; font-size: 10px; letter-spacing: 0.05em; }
+  .table td { padding: 5px 8px; }
+  .table th .sort { margin-left: 3px; }
+  /* Narrower caps: the wide ones clipped values to two or three letters. */
+  .col-name { min-width: 116px; max-width: 150px; }
+  .col-stars { min-width: 60px; max-width: 72px; }
+  .col-stars_dif { min-width: 52px; max-width: 60px; }
+  .col-source { min-width: 68px; max-width: 84px; }
+  .col-demo { min-width: 72px; max-width: 96px; }
+  .col-language { min-width: 88px; max-width: 116px; }
+  .col-db { min-width: 104px; max-width: 140px; }
+  .table th:not([class*='col-']),
+  .table td:not([class*='col-']) { min-width: 84px; max-width: 130px; }
+
+  /* ── the project record, squeezed toward one phone screen ──
+     Every measure here is height: the record is a reference view, so nothing
+     is hidden or truncated — a project documented in full still runs past the
+     fold, and that is a scroll, not a defect. */
+  .record__bar { padding: 8px var(--page-pad); gap: var(--space-2); }
+  .record__nav { padding: 4px 8px; font-size: 11px; }
+  .record__close { width: 26px; height: 26px; }
+  .record__position { font-size: 10px; }
+
+  .record__head {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+    padding: 16px var(--page-pad);
+  }
+  .record__name { font-size: 26px; line-height: 1.02; margin-bottom: var(--space-2); }
+  .record__desc { font-size: 13px; line-height: 1.4; }
+  .record__links { gap: 6px; margin-top: var(--space-3); }
+  .record__link { padding: 4px 8px; font-size: 11px; gap: 4px; }
+  .record__link svg { width: 10px; height: 10px; }
+
+  /* Four figures in one row read faster here than a 2x2 block, and save 40px. */
+  .record__stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-2);
+    padding: var(--space-3) 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--color-divider);
+  }
+  .record__stat-value { font-size: 17px; }
+  .record__stat-value--sm { font-size: 12px; }
+  .record__stat-label { font-size: 9px; letter-spacing: 0.06em; }
+
+  .record__body {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-4);
+    padding: 16px var(--page-pad);
+  }
+  .record__group-name {
+    font-size: 9px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border-bottom-width: 1px;
+  }
+  /* Two body columns leave ~170px a field, so the label rail has to be thin
+     or every value wraps. Measured shortest of the four arrangements tried. */
+  .record__field {
+    grid-template-columns: minmax(0, 62px) minmax(0, 1fr);
+    gap: 6px;
+    padding: 2px 0;
+  }
+  .record__field-label { font-size: 9px; letter-spacing: 0.02em; line-height: 1.4; }
+  .record__field-value { font-size: 12px; line-height: 1.35; }
+  .record__missing { margin-bottom: 20px; padding-top: var(--space-2); font-size: 11px; }
 }

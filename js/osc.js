@@ -518,9 +518,17 @@ var rangeBox = document.getElementById('range');
 var seriesList = document.getElementById('series-list');
 var seriesAdd = document.getElementById('series-add');
 
-var PAD = { l: 4, r: 96, t: 18, b: 30 };
+// Right padding is the gutter the end labels sit in. Below the width where
+// they stop tracking their own lines they are dropped and the plot takes the
+// space back — by then the series rail is stacked directly underneath and
+// names the lines anyway.
+var PAD_WIDE = { l: 4, r: 96, t: 18, b: 30 };
+var PAD_NARROW = { l: 4, r: 12, t: 18, b: 30 };
+var END_LABEL_MIN_WIDTH = 620;
 var PLOT_H = 320;
 var geo = null;
+
+function showEndLabels() { return state.plotW >= END_LABEL_MIN_WIDTH; }
 
 function colorFor(i) { return lib.SERIES_COLORS[i % lib.SERIES_COLORS.length]; }
 
@@ -575,7 +583,12 @@ function renderChart() {
   var win = chartWindow();
   var w = state.plotW;
   geo = lib.chartGeometry({
-    series: buildSeries(), w: w, h: PLOT_H, pad: PAD, from: win.from, to: win.to,
+    series: buildSeries(),
+    w: w,
+    h: PLOT_H,
+    pad: showEndLabels() ? PAD_WIDE : PAD_NARROW,
+    from: win.from,
+    to: win.to,
   });
 
   plotSvg.setAttribute('viewBox', '0 0 ' + w + ' ' + PLOT_H);
@@ -647,7 +660,7 @@ function renderChart() {
       text: tick.label,
     }));
   });
-  var endLabels = geo.lines.map(function (line, i) {
+  var endLabels = !showEndLabels() ? [] : geo.lines.map(function (line, i) {
     var node = el('div', {
       class: 'chart__endlabel',
       style: 'left:' + pct(geo.x1 + 8, w) + ';top:' + pct(line.labelY, PLOT_H) + ';color:' + colorFor(i),
@@ -672,6 +685,7 @@ function applyEmphasis() {
     geo.nodes.lines[i].setAttribute('stroke-opacity', em.opacity);
     geo.nodes.lines[i].setAttribute('stroke-width', em.width);
     var label = geo.nodes.endLabels[i];
+    if (!label) return;
     label.style.opacity = em.opacity;
     label.style.fontWeight = em.weight;
     label.setAttribute('data-focus', em.weight === 800 ? 'on' : 'off');

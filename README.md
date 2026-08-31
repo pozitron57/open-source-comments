@@ -105,9 +105,15 @@ the subset, request a new file from Google Fonts with the extra characters in
 the `text=` parameter and update the `.txt` alongside it.
 
 To preview it at the URL it has in production, run the lisakov.com Hexo site
-with `hexo s`: `scripts/osc-preview.js` there mounts this working copy at
-`/projects/open-source-comments/`. Point it at a different checkout with
-`OSC_DIR=/path/to/open-source-comments hexo s`.
+with `hexo s`. The middleware that does it is `tools/hexo-osc-preview.js` in
+this repository; the Hexo site keeps a short `scripts/osc-preview.js` that
+requires it and passes in `serve-static`, so the behaviour is versioned here
+rather than in that site, which is not a git repo. Point it at a different
+checkout with `OSC_DIR=/path/to/open-source-comments hexo s`.
+
+A Hexo `scripts/` file is dev-server tooling: it never becomes part of the
+generated site, so `hexo generate` / `hexo deploy` has nothing to publish for
+it. Pulling this repository is what updates the preview.
 
 That script also proxies the Isso API, so the real comment thread loads in the
 local preview — Isso answers CORS only for the lisakov.com origin, and the
