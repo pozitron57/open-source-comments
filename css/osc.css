@@ -256,6 +256,33 @@ input, textarea, select, button {
   gap: var(--space-6);
   align-items: start;
 }
+.chart__main { min-width: 0; }
+
+/* Sits at the right edge of the plot, where the newest point is, and the rule
+   under it doubles as the plot's top edge. Small caps for the word, heading
+   weight for the date. */
+.chart__asof {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 6px;
+  margin: 0 0 var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-divider);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.chart__asof-date {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+}
+
 .chart__plot { position: relative; }
 .chart__plot svg {
   display: block;

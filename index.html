@@ -83,15 +83,18 @@ click to lock; drag across the plot to zoom, double-click to reset.</p><!--/osc:
   </div>
 
   <div class="chart">
-    <div class="chart__plot" id="plot">
-      <svg id="plot-svg" viewBox="0 0 900 320" width="100%" height="320" role="img"
-           aria-label="Stars over time for the plotted projects"></svg>
-      <div class="chart__overlay" id="plot-overlay"></div>
-      <div class="chart__tooltip" id="plot-tip" hidden></div>
-      <noscript>
-        <img src="stars-v-date.svg" alt="Stars vs. time for the top commenting servers"
-             style="width: 100%; height: auto;">
-      </noscript>
+    <div class="chart__main">
+      <p class="chart__asof">Updated <span class="chart__asof-date"><!--osc:updated-->2026-08-31<!--/osc:updated--></span></p>
+      <div class="chart__plot" id="plot">
+        <svg id="plot-svg" viewBox="0 0 900 320" width="100%" height="320" role="img"
+             aria-label="Stars over time for the plotted projects"></svg>
+        <div class="chart__overlay" id="plot-overlay"></div>
+        <div class="chart__tooltip" id="plot-tip" hidden></div>
+        <noscript>
+          <img src="stars-v-date.svg" alt="Stars vs. time for the top commenting servers"
+               style="width: 100%; height: auto;">
+        </noscript>
+      </div>
     </div>
 
     <div>

@@ -43,13 +43,16 @@ def replace_once(text, pattern, replacement, description, flags=0):
 
 
 def fill_slot(html_text, name, content):
-    return replace_once(
-        html_text,
+    '''Fill every slot with this name; a name may legitimately appear twice.'''
+    updated, count = re.subn(
         r'<!--osc:{0}-->.*?<!--/osc:{0}-->'.format(re.escape(name)),
-        '<!--osc:{0}-->{1}<!--/osc:{0}-->'.format(name, content),
-        'slot {!r}'.format(name),
+        lambda _match: '<!--osc:{0}-->{1}<!--/osc:{0}-->'.format(name, content),
+        html_text,
         flags=re.S,
     )
+    if count < 1:
+        raise RuntimeError('could not locate slot {!r}'.format(name))
+    return updated
 
 
 def split_sections(markdown_text):
