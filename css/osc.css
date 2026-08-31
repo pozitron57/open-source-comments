@@ -793,8 +793,24 @@ input, textarea, select, button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--color-text) 55%, transparent);
+  overflow-wrap: anywhere;
 }
 .record__field-value { font-size: 14px; overflow-wrap: anywhere; }
+
+/* Nothing in the record may set its own width floor: a licence like
+   NOASSERTION or a long field label would otherwise widen the card past the
+   screen and leave the reader panning sideways. */
+.record__head,
+.record__body,
+.record__stats,
+.record__field,
+.record__head > *,
+.record__body > *,
+.record__stats > * { min-width: 0; }
+.record__stat-value,
+.record__stat-label,
+.record__group-name,
+.record__name { overflow-wrap: anywhere; }
 .record__missing {
   max-width: var(--page-max);
   margin: 0 var(--page-pad) 48px;
@@ -1182,8 +1198,12 @@ input, textarea, select, button {
   .record__stat-value--sm { font-size: 12px; }
   .record__stat-label { font-size: 9px; letter-spacing: 0.06em; }
 
+  /* A 150px floor let three columns form at ~519px, needing 482 of the 487
+     available — close enough that a scrollbar tipped it over and clipped the
+     third column. A 160px floor keeps two columns across the whole phone and
+     small-tablet range, which needs 336px and leaves real margin. */
   .record__body {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: var(--space-4);
     padding: 16px var(--page-pad);
   }
