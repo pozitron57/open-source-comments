@@ -95,17 +95,22 @@ class ReliabilityTests(unittest.TestCase):
                 },
             }
         )
-        rows, columns = validate_outputs.parse_data_js(output)
+        rows, columns, keys = validate_outputs.parse_data_js(output)
 
         self.assertEqual(len(rows), 1)
         self.assertEqual(len(columns), len(yaml_2_js.fields))
+        self.assertEqual(keys, yaml_2_js.fields)
         self.assertIn('stars-with-extra', rows[0][0])
         self.assertIn('Update warning on 2026-07-30', rows[0][0])
         self.assertIn('owner&#x27;s rename', rows[0][0])
 
     def test_markdown_renderer_refuses_missing_sections(self):
-        with self.assertRaisesRegex(RuntimeError, 'exactly one'):
+        with self.assertRaisesRegex(RuntimeError, 'must start with a section marker'):
             md_to_html.render_index('# Title\n', '<html></html>')
+
+        markdown_text = '<!--osc:title-->\n# Title\n'
+        with self.assertRaisesRegex(RuntimeError, 'missing sections'):
+            md_to_html.render_index(markdown_text, '<html></html>')
 
     def test_alert_delivery_retries(self):
         failed = SimpleNamespace(returncode=1, stderr='temporary', stdout='')

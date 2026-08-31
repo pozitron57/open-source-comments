@@ -18,6 +18,7 @@ generated_files=(
     data.js
     data.yaml
     index.html
+    star-history.js
     stars-v-date.svg
 )
 
@@ -255,6 +256,7 @@ run_step 'collect repository data' nice -n5 python3 "$OSC_SCRIPT_DIR/get_data.py
 run_step 'render index.html' nice -n5 python3 "$OSC_SCRIPT_DIR/md_to_html.py"
 run_step 'generate data.js' nice -n5 python3 "$OSC_SCRIPT_DIR/yaml_2_js.py"
 run_step 'generate stars chart' nice -n5 python3 "$OSC_SCRIPT_DIR/plot-stars.py"
+run_step 'generate star history' nice -n5 python3 "$OSC_SCRIPT_DIR/history_2_js.py"
 run_step 'validate all generated outputs' nice -n5 python3 "$OSC_SCRIPT_DIR/validate_outputs.py"
 run_step 'check generated diff for whitespace errors' git diff --check -- "${generated_files[@]}"
 run_step 'stage generated data' nice -n5 git add -- "${generated_files[@]}"
@@ -270,14 +272,13 @@ run_step 'push generated data' nice -n5 git push origin HEAD:master
 
 deploy_root=/var/www/lisakov.com/projects/open-source-comments
 run_step 'deploy generated files' nice -n5 rsync -a --delay-updates \
-    data.js index.html stars-v-date.svg "$deploy_root/"
-run_step 'deploy images' nice -n5 rsync -a --delete-delay --delay-updates \
-    images/ "$deploy_root/images/"
+    data.js star-history.js index.html stars-v-date.svg "$deploy_root/"
 run_step 'deploy CSS' nice -n5 rsync -a --delete-delay --delay-updates \
     css/ "$deploy_root/css/"
 run_step 'deploy JavaScript' nice -n5 rsync -a --delete-delay --delay-updates \
     js/ "$deploy_root/js/"
 run_step 'verify deployed data.js' cmp -s data.js "$deploy_root/data.js"
+run_step 'verify deployed star history' cmp -s star-history.js "$deploy_root/star-history.js"
 run_step 'verify deployed index.html' cmp -s index.html "$deploy_root/index.html"
 run_step 'verify deployed chart' cmp -s stars-v-date.svg "$deploy_root/stars-v-date.svg"
 run_step 'verify clean repository after update' test -z "$(git status --porcelain --untracked-files=no)"

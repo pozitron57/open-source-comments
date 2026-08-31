@@ -1,159 +1,1131 @@
+/* Open-source comments — Modernist.
+   Flat, architectural, Archivo throughout, zero border-radius, 2px rules,
+   near-mono ink on light with a single red accent. */
+
+/* ── Archivo, self-hosted ────────────────────────────────────────────────
+   The page argues against third-party requests; loading its own type from a
+   CDN would contradict that.
+
+   One variable file, subset to the characters this page and its data actually
+   render and clamped to the 400-800 weights the design uses — 18 kB against
+   the 35 kB of the stock latin subset. `css/fonts/archivo-subset.txt` lists
+   exactly what it covers; validate_outputs.py reports anything in data.js that
+   falls outside it. No unicode-range: the file is always needed, and the
+   browser falls back per character for anything it lacks (Cyrillic in
+   comments, as before). */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fonts/archivo.woff2) format('woff2');
+}
+
+/* ── tokens ─────────────────────────────────────────────────────────────
+   From ds/modernist.css. There is no --space-5 or --space-7. */
+:root {
+  --color-bg: #f3f2f2;
+  --color-surface: #eae9e9;
+  --color-text: #201e1d;
+  --color-accent: #ec3013;
+  --color-divider: color-mix(in srgb, #201e1d 40%, transparent);
+  --color-accent-600: #dd2b0f;
+  --color-accent-700: #ae1800;
+
+  --font-heading: 'Archivo', system-ui, sans-serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2d2b2b 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2d2b2b 22%, transparent);
+
+  /* Outside the mono system, deliberately: a positive star delta must not read
+     as an error, which the accent red did. */
+  --color-positive: #2c7a52;
+
+  --page-max: 1400px;
+  --page-pad: var(--space-8);
+}
+
+/* ── base ───────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-  font-family: Arial,sans-serif;
-  font-size: 0.9em;
-  color: #424242;
-  background: #fcfcfc;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
-a { text-decoration:none; color:#0066ff }
-a:hover { color:#36b5ff; }
-
-h1,h2,h3,h4 { 
-  font-weight:400; 
-  font-family:'Tahoma', sans-serif;
-  line-height:1.1em; 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 0 0 var(--space-2);
 }
-h1 { font-size:2.5em; }
-h2 { font-size:2em; }
-h3 { font-size:1.7em; }
-h4 { font-size:1.3em; }
 
-table { color:#2a2b2c; }
+p { margin: 0 0 var(--space-3); }
+p:last-child { margin-bottom: 0; }
 
-.stars-with-extra {
+a { color: var(--color-accent); text-underline-offset: 3px; }
+
+/* No rounded corners anywhere — form controls need this said explicitly. */
+input, textarea, select, button {
+  font: inherit;
+  border-radius: 0;
+}
+
+/* Any author `display` beats the UA rule for [hidden], which silently unhides
+   elements the scripts toggle. Settle it once for the whole sheet. */
+[hidden] { display: none !important; }
+
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+
+.tabular { font-variant-numeric: tabular-nums; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ── page header ────────────────────────────────────────────────────── */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 14px var(--page-pad);
+  border-bottom: 2px solid var(--color-divider);
+}
+.page-header__brand {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.page-header__updated {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+  white-space: nowrap;
+}
+.page-header__link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.page-header__link:hover { color: var(--color-accent-700); }
+
+/* ── hero ───────────────────────────────────────────────────────────── */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  padding: 56px var(--page-pad) 40px;
+  max-width: var(--page-max);
+  border-bottom: 2px solid var(--color-divider);
+}
+.hero h1 {
+  font-size: clamp(38px, 4.6vw, 62px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
+  margin: 0;
+}
+.hero__lead { font-size: 16px; max-width: 52ch; }
+.hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-divider);
+}
+.hero__stat-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.hero__stat-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
+/* ── prose sections ─────────────────────────────────────────────────── */
+.prose-section {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: var(--space-8);
+  padding: 36px var(--page-pad);
+  max-width: var(--page-max);
+  border-bottom: 1px solid var(--color-divider);
+}
+.prose-section:last-of-type { border-bottom-width: 2px; }
+.prose-section h2 {
+  font-size: 22px;
+  line-height: 1.1;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  margin: 0;
+}
+.prose-section__body { max-width: 70ch; }
+.prose-section__body blockquote {
+  margin: var(--space-4) 0 0;
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-accent);
+  font-size: 15px;
+  color: color-mix(in srgb, var(--color-text) 72%, transparent);
+}
+
+/* ── shared section head ────────────────────────────────────────────── */
+.section {
+  padding: 40px var(--page-pad);
+  max-width: var(--page-max);
+}
+.section__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+/* The chart reads better narrower than the table: over 1100px the lines
+   stretch into near-horizontal runs. */
+.section--chart { max-width: 1100px; }
+.section__head h2 { font-size: 22px; margin: 0; }
+.section__caption {
+  font-size: 13px;
+  max-width: 48ch;
+  color: color-mix(in srgb, var(--color-text) 62%, transparent);
+  margin: 0;
+}
+
+/* ── chart ──────────────────────────────────────────────────────────── */
+.range {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+}
+.range button {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 6px 12px;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-divider);
+  cursor: pointer;
+}
+/* Borders collapse instead of doubling; no wrapping container. */
+.range button + button { margin-left: -1px; }
+.range button:hover { color: var(--color-accent); }
+.range button[aria-pressed='true'] {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+  position: relative;
+}
+
+.chart {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 232px;
+  gap: var(--space-6);
+  align-items: start;
+}
+.chart__plot { position: relative; }
+.chart__plot svg {
+  display: block;
+  width: 100%;
+  height: 320px;
+  overflow: visible;
+  touch-action: none;
+}
+.chart__grid-y, .chart__grid-x { stroke: currentColor; fill: none; }
+.chart__grid-y { stroke-opacity: 0.14; }
+.chart__grid-x { stroke-opacity: 0.1; }
+.chart__baseline { stroke: currentColor; stroke-opacity: 0.85; stroke-width: 2; }
+.chart__brush { fill: var(--color-accent); fill-opacity: 0.12; stroke: var(--color-accent); }
+.chart__cursor { stroke: var(--color-accent); stroke-width: 1; }
+.chart__line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart__hit { fill: none; stroke: transparent; stroke-width: 16; cursor: pointer; }
+.chart__dot { stroke-width: 2; }
+
+.chart__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-size: 11px;
+}
+.chart__ylabel {
+  position: absolute;
+  transform: translateY(-100%);
+  font-variant-numeric: tabular-nums;
+  opacity: 0.5;
+}
+.chart__xlabel {
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0.55;
+  white-space: nowrap;
+}
+.chart__endlabel {
+  position: absolute;
+  transform: translateY(-50%);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.chart__endlabel[data-focus='on'] { font-weight: 800; }
+
+.chart__tooltip {
+  position: absolute;
+  top: 10px;
+  min-width: 150px;
+  padding: 8px 10px;
+  background: var(--color-text);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+  z-index: 3;
+}
+.chart__tooltip-date {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: var(--space-1);
+}
+.chart__tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+/* No data on this date — present, but not competing with the real numbers. */
+.chart__tooltip-row--empty { opacity: 0.5; font-weight: 400; }
+
+/* — series rail — */
+.series__head {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+  margin-bottom: var(--space-2);
+}
+.series__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 6px 6px 4px;
+  border-bottom: 1px solid var(--color-divider);
+  border-left: 2px solid transparent;
+  cursor: pointer;
+}
+.series__row[data-locked='true'] { border-left-color: var(--color-accent); }
+.series__swatch { flex: none; display: block; }
+/* The name is the only flexible child — everything else must keep its size. */
+.series__name {
+  flex: 1 1 auto;
+  min-width: 60px;
+  font-size: 13px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.series__row[data-locked='true'] .series__name { font-weight: 800; }
+.series__lock { flex: none; display: block; }
+.series__stars {
+  flex: none;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+.series__remove {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
+.series__remove:hover { color: var(--color-accent); }
+.series__add {
+  width: 100%;
+  min-height: 34px;
+  margin-top: var(--space-3);
+  padding: 0 var(--space-2);
+  font-size: 13px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
   cursor: pointer;
 }
 
-.stars-extra::after {
-  content: "*";
-  font-size: 1.25em;
-  font-weight: bold;
-  line-height: 0;
-  vertical-align: -0.05em;
+/* ── table toolbar ──────────────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+.toolbar h2 { font-size: 22px; margin: 0; }
+.toolbar__count {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.toolbar__spacer { margin-left: auto; }
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 34px;
+  padding: 0 var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+}
+.search svg { flex: none; opacity: 0.5; }
+.search input {
+  width: 190px;
+  max-width: 40vw;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  color: inherit;
+  padding: 0;
+}
+.search input::placeholder { color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+
+.columns { position: relative; }
+.columns__button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 13px;
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-divider);
+  cursor: pointer;
+}
+.columns__button svg { flex: none; }
+.columns__button-count { opacity: 0.6; }
+.columns__button[aria-expanded='true'] {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
 }
 
+.columns__popover {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  right: 0;
+  width: min(820px, 86vw);
+  padding: var(--space-4);
+  background: var(--color-bg);
+  border: 2px solid var(--color-text);
+  box-shadow: var(--shadow-lg);
+  z-index: 20;
+}
+.columns__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-divider);
+}
+.columns__title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.columns__action {
+  font-size: 12px;
+  padding: 3px 8px;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-divider);
+  cursor: pointer;
+}
+.columns__action:hover { color: var(--color-accent); border-color: var(--color-accent); }
+.columns__close {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--color-text);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.columns__close:hover { color: var(--color-accent); }
+.columns__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-4);
+}
+.columns__group-name {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+  padding-bottom: var(--space-1);
+  margin-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-divider);
+}
+.columns__option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  padding: 2px 0;
+  cursor: pointer;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+.columns__option input {
+  width: 13px;
+  height: 13px;
+  flex: none;
+  margin: 0;
+  accent-color: var(--color-accent);
+}
+.columns__option:has(input:checked) { color: var(--color-text); }
+.columns__option:has(input:disabled) { cursor: default; }
 
-div.dataTables_wrapper { margin:40px; }
-@media screen and (max-width:880px){
-  div.dataTables_wrapper { margin:0!important; }
+/* ── table ──────────────────────────────────────────────────────────── */
+.table-wrap {
+  overflow-x: auto;
+  border-top: 2px solid var(--color-divider);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.table th {
+  position: sticky;
+  top: 0;
+  left: auto;
+  z-index: 3;
+  text-align: left;
+  background: var(--color-bg);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 62%, transparent);
+  padding: 10px;
+  border-bottom: 2px solid var(--color-divider);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+/* Stars, 30 d, Issues+PR, js kB and css kB read as columns of figures. */
+.table th.num, .table td.num { text-align: right; }
+.table th:hover { color: var(--color-accent); }
+.table th[aria-sort] { color: var(--color-accent); }
+.table th .sort {
+  display: inline-flex;
+  vertical-align: -1px;
+  opacity: 0.35;
+  margin-left: 5px;
+}
+.table th[aria-sort] .sort { opacity: 1; }
+
+.table tbody tr {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-divider);
+  cursor: pointer;
+}
+.table tbody tr:hover {
+  background: color-mix(in srgb, var(--color-accent) 7%, var(--color-bg));
+}
+.table td {
+  padding: 7px 10px;
+  vertical-align: middle;
+  font-variant-numeric: tabular-nums;
+  background: transparent;
+  /* Every row is the same height: one line, clipped, full text in `title`. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.table td a { color: var(--color-accent); }
+.table td s { text-decoration: line-through; }
+
+/* First column pinned while the table scrolls sideways. The cell inherits the
+   row's opaque background so the hover tint follows it. */
+.table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  box-shadow: 1px 0 0 var(--color-divider);
+}
+.table th:first-child { z-index: 4; }
+.table td:first-child { z-index: 1; background: inherit; }
+
+.table .cell-name, .table .cell-stars { font-weight: 700; }
+.table .cell-description { color: color-mix(in srgb, var(--color-text) 68%, transparent); }
+.stars-extra {
+  font-weight: 800;
+  color: var(--color-accent);
+}
+.stars-extra::after { content: '*'; }
+.delta-up { color: var(--color-positive); font-weight: 600; }
+.delta-down { color: color-mix(in srgb, var(--color-text) 45%, transparent); font-weight: 600; }
+.delta-flat { color: color-mix(in srgb, var(--color-text) 35%, transparent); font-weight: 600; }
+
+.table-note {
+  font-size: 12px;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+  margin-top: var(--space-3);
+}
+.table-empty {
+  padding: var(--space-8) 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
 }
 
-
-table th { border-top: 1px solid; }
-.dataTables_filter { margin-bottom:7px; }
-.dataTables_length { margin:10px 0; }
-
-input {
-  padding:8px 3px;
-  border-radius:2px;
+/* column widths — keeps the grid stable as columns come and go */
+.col-name    { min-width: 150px; max-width: 210px; }
+.col-stars   { min-width: 76px;  max-width: 96px; }
+.col-stars_dif { min-width: 64px; max-width: 74px; }
+.col-source  { min-width: 96px;  max-width: 116px; }
+.col-demo    { min-width: 104px; max-width: 128px; }
+.col-open_issues { max-width: 92px; }
+.col-language { min-width: 120px; max-width: 160px; }
+.col-db      { min-width: 150px; max-width: 210px; }
+.col-license { max-width: 140px; }
+.col-last_committed, .col-created { max-width: 116px; }
+.col-description { min-width: 260px; max-width: 480px; }
+.table th:not([class*='col-']), .table td:not([class*='col-']) {
+  min-width: 110px;
+  max-width: 170px;
 }
 
-div.dt-buttons .buttons-colvisRestore,
-div.dt-buttons .buttons-colvisGroup {
-  font-weight:bold;
-  color:steelblue;
+/* ── project record ─────────────────────────────────────────────────── */
+.record {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: var(--color-bg);
+  overflow: auto;
+}
+.record__bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 14px var(--page-pad);
+  background: var(--color-bg);
+  border-bottom: 2px solid var(--color-divider);
+}
+.record__position {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+  margin-right: auto;
+  font-variant-numeric: tabular-nums;
+}
+.record__nav {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 5px 10px;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-divider);
+  cursor: pointer;
+}
+.record__nav:hover { color: var(--color-accent); border-color: var(--color-accent); }
+.record__close {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: 0;
+  cursor: pointer;
+}
+.record__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
+  gap: var(--space-8);
+  padding: 40px var(--page-pad);
+  max-width: var(--page-max);
+  border-bottom: 2px solid var(--color-divider);
+}
+.record__name {
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin: 0 0 var(--space-3);
+}
+.record__desc {
+  font-size: 16px;
+  max-width: 60ch;
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+}
+.record__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+.record__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 13px;
+  padding: 7px 12px;
+  color: var(--color-text);
+  text-decoration: none;
+  border: 1px solid var(--color-divider);
+}
+.record__link:hover { color: var(--color-accent); border-color: var(--color-accent); }
+.record__stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4) var(--space-6);
+  padding-left: var(--space-6);
+  border-left: 2px solid var(--color-divider);
+  align-content: start;
+}
+.record__stat-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.record__stat-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.record__stat-value--sm { font-size: 18px; }
+.record__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
+  padding: 40px var(--page-pad);
+  max-width: var(--page-max);
+}
+.record__group-name {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-divider);
+}
+.record__field {
+  display: grid;
+  grid-template-columns: minmax(0, 110px) minmax(0, 1fr);
+  gap: var(--space-3);
+  padding: 7px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.record__field-label {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.record__field-value { font-size: 14px; overflow-wrap: anywhere; }
+.record__missing {
+  max-width: var(--page-max);
+  margin: 0 var(--page-pad) 48px;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-divider);
+  font-size: 12px;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
 }
 
-#isso-thread div.textarea { white-space: pre-wrap; }
-#isso-thread div.text,
-#isso-thread div.isso-comment-footer {
-  margin-left:calc(7% + 15px);
+/* ── comments (Isso) ────────────────────────────────────────────────
+   Isso injects its own stylesheet at runtime, after this file, so it wins
+   every specificity tie. Every override below is scoped to #isso-thread: one
+   id outranks any number of classes.
+
+   Two Isso rules must not be touched: `.isso-preview` and
+   `.isso-notification-section` are `display: none` until Isso reveals them.
+   Setting `display` on either would pin it open. */
+.comments {
+  max-width: 900px;
+  padding: 40px var(--page-pad) 0;
+  border-top: 2px solid var(--color-divider);
 }
-#isso-thread .preview-mode div.text {
-  margin-left:0;
-}
-#isso-root .isso-comment > div.text-wrapper > .isso-comment-header {
-  margin-bottom:15px;
-  font-size:1em;
-}
-blockquote {
-  font-size:0.95em;
-  border:1px solid #ddd;
-  border-left:5px solid #bbb;
-  border-radius:2px 4px 4px 2px;
-  padding:2px 10px 10px;
-  margin-top:10px;
-  /*max-width:93%;*/
-  font-family:Arial, sans-serif;
-  color:#666;
+.comments h2 { font-size: 22px; }
+.comments__lead {
+  max-width: 66ch;
+  margin-bottom: var(--space-6);
+  color: color-mix(in srgb, var(--color-text) 75%, transparent);
 }
 
-#isso-thread blockquote {
-  padding:4px 8px ;
-}
-.isso-comment-loader {
-  text-align:center;
-  margin:50px 0;
-  white-space:nowrap;
-}
-section.use-markdown,
-section.notification-section {
-  margin-top:8px;
-}
-div#isso-root .isso-comment, .isso-follow-up .isso-comment { border-top:0!important; }
-.isso-comment-header {
-   background:#ececec;
-   border-radius:3px;
-   padding:4px 7px;
-   margin-top:2px;
-   margin-left:calc(7% + 11px);
- }
+#isso-thread { margin-top: var(--space-6); line-height: inherit; }
+#isso-thread * { border-radius: 0; }
 
-#isso-thread .avatar > svg[data-hash="af352bad7d6b"] {
-  box-shadow: 0 0 2px 1px #9163b6;
+/* count strip */
+#isso-thread h4.isso-thread-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-text);
+  padding-bottom: var(--space-2);
+  margin: 0 0 var(--space-4);
+  border-bottom: 2px solid var(--color-divider);
+}
+#isso-thread .isso-feedlink { float: right; padding-left: var(--space-3); }
+#isso-thread .isso-feedlink a {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
+/* Avatars are switched off deliberately — the thread is typographic. */
+#isso-thread .isso-avatar { display: none; }
 
-
-
-
-div.isso-comments {
-  max-width:757px; 
-  margin:72px auto 0;
-  line-height:1.5em;
+/* — postbox — */
+#isso-thread .isso-postbox {
+  max-width: none;
+  margin: 0 0 var(--space-8);
 }
-div.isso-comments #isso-thread {
-  line-height:1.2em;
+#isso-thread .isso-textarea,
+#isso-thread .isso-preview {
+  width: 100%;
+  min-height: 96px;
+  margin: 0;
+  padding: 10px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  box-shadow: none;
+  resize: vertical;
 }
-.isso-comment > div.text-wrapper > .isso-comment-footer .downvote svg {
-    margin-left: 2px;
+#isso-thread .isso-textarea:focus { border-color: var(--color-accent); }
+#isso-thread .isso-auth-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
 }
-#isso-thread .textarea,
-div.preview {
-  min-height:100px!important;
+#isso-thread .isso-input-wrapper {
+  display: flex;
+  flex: 1 1 150px;
+  flex-direction: column;
+  gap: var(--space-1);
+  max-width: none;
+  margin: 0;
+}
+#isso-thread .isso-input-wrapper label {
+  display: block;
+  height: auto;
+  line-height: 1.4;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+#isso-thread .isso-input-wrapper input {
+  width: 100%;
+  max-width: none;
+  min-height: 34px;
+  padding: 0 var(--space-2);
+  font-size: 14px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  box-shadow: none;
+}
+/* Isso wraps each button in its own <p> and emits Submit first; the design
+   puts the ghost button first. It also hides the inactive button but not its
+   wrapper, which would leave a stray flex gap — hide the wrapper instead.
+   The submit input carries no name attribute, only type="submit". */
+#isso-thread .isso-post-action { float: none; margin: 0; order: 1; }
+#isso-thread .isso-post-action:has(input[type='submit']) { order: 2; }
+#isso-thread .isso-post-action:has(input[name='edit']) { display: none; }
+#isso-thread .isso-postbox.isso-preview-mode .isso-post-action:has(input[name='edit']) {
+  display: block;
+}
+#isso-thread .isso-postbox.isso-preview-mode .isso-post-action:has(input[name='preview']) {
+  display: none;
+}
+#isso-thread .isso-post-action > input {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 14px;
+  min-height: 34px;
+  padding: 0 var(--space-4);
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-divider);
+  box-shadow: none;
+  cursor: pointer;
+}
+#isso-thread .isso-post-action > input:hover {
+  background: color-mix(in srgb, var(--color-text) 7%, transparent);
+}
+#isso-thread .isso-post-action > input[type='submit'] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+#isso-thread .isso-post-action > input[type='submit']:hover { background: var(--color-accent-600); }
+#isso-thread .isso-notification-section { padding: var(--space-3) 0 0; font-size: 13px; }
+#isso-thread .isso-notification-section label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+#isso-thread .isso-form-wrapper input[type='checkbox'] {
+  position: static;
+  margin: 0;
+  accent-color: var(--color-accent);
 }
 
-div.dt-buttons, div.preamble, footer {
-  max-width:800px; 
-  margin:0 auto;
-  line-height:1.5em;
+/* — a comment — */
+#isso-thread .isso-comment {
+  max-width: none;
+  margin: 0;
+  padding: var(--space-6) 0;
+  border-top: 0;
+  border-bottom: 1px solid var(--color-divider);
 }
-
-footer {
-  padding:20px;
-  margin:50px auto;
-  text-align:center;
-  border-radius:5px;
-  color:#ababab;
-  text-shadow:1px 0 #ffffff;
+#isso-thread .isso-text-wrapper { padding: 0; }
+#isso-thread .isso-comment-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  padding: 0;
+  background: none;
+  font-size: 14px;
 }
-
-
-span.highlight {
-	background:#ffdb6f;
-	z-index:-999;
-	color:#2a4c1d;
-	padding:4px 3px;
-	border-radius:3px;
-	border:none;
-	font-size:100%;
+#isso-thread .isso-comment-header .isso-author,
+#isso-thread .isso-comment-header .isso-page-author-suffix {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--color-text);
+  text-decoration: none;
 }
+#isso-thread .isso-permalink,
+#isso-thread .isso-note,
+#isso-thread .isso-parent {
+  float: none;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+  text-shadow: none;
+}
+/* Gaps do the spacing; the spacer elements are redundant. */
+#isso-thread .isso-spacer { display: none; }
 
-/*
-* A draft for custom tooltips for column headers
-*th[aria-label]:hover:after {
-*  content: attr(aria-label);
-*  position: absolute;
-*  top:40px;
-*}
-*/
+#isso-thread .isso-text { font-size: 15px; }
+#isso-thread .isso-text p { max-width: 72ch; margin: 0 0 var(--space-3); }
+#isso-thread .isso-text p:last-child { margin-bottom: 0; }
+#isso-thread .isso-text code,
+#isso-thread .isso-text pre {
+  font-family: ui-monospace, monospace;
+  font-size: 0.92em;
+  background: var(--color-surface);
+  padding: 1px 4px;
+}
+#isso-thread .isso-text pre { padding: var(--space-3); overflow-x: auto; }
+#isso-thread .isso-text blockquote {
+  margin: var(--space-3) 0;
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-accent);
+  color: color-mix(in srgb, var(--color-text) 72%, transparent);
+}
+#isso-thread .isso-text h1,
+#isso-thread .isso-text h2,
+#isso-thread .isso-text h3,
+#isso-thread .isso-text h4,
+#isso-thread .isso-text h5,
+#isso-thread .isso-text h6 { font-size: 16px; }
+
+#isso-thread .isso-comment-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  clear: none;
+  margin-top: var(--space-3);
+  font-size: 14px;
+  color: var(--color-text);
+}
+#isso-thread .isso-comment-footer > a,
+#isso-thread .isso-comment-footer > a + a { position: static; top: auto; padding-left: 0; }
+#isso-thread .isso-comment-footer .isso-votes {
+  min-width: 18px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+}
+/* Isso's own up/down arrows — they must survive the restyle. */
+#isso-thread .isso-upvote,
+#isso-thread .isso-downvote {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-divider);
+  text-decoration: none;
+  text-shadow: none;
+}
+#isso-thread .isso-upvote:hover,
+#isso-thread .isso-downvote:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  text-shadow: none;
+}
+/* Isso's arrows are IcoMoon SVGs with fill="gray" baked into the markup;
+   CSS beats the presentation attribute, so they can follow the link colour. */
+#isso-thread .isso-upvote svg,
+#isso-thread .isso-downvote svg {
+  position: static;
+  top: auto;
+  margin: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+#isso-thread .isso-reply {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+  text-decoration: none;
+}
+#isso-thread .isso-reply:hover { color: var(--color-accent); text-shadow: none; }
+
+/* — a reply — one accent rule is the whole indent treatment. */
+#isso-thread .isso-follow-up {
+  padding-left: var(--space-4);
+  margin: var(--space-6) 0 var(--space-6) var(--space-6);
+  border-left: 2px solid var(--color-accent);
+}
+#isso-thread .isso-follow-up:empty { display: none; }
+#isso-thread .isso-follow-up .isso-comment {
+  margin-bottom: 0;
+  padding-top: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+#isso-thread .isso-follow-up > .isso-comment > .isso-text-wrapper > .isso-comment-header::before {
+  content: 'Reply';
+  width: 100%;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+}
+#isso-thread .isso-comment .isso-postbox { margin-top: var(--space-4); }
+
+/* ── footer ─────────────────────────────────────────────────────────── */
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-top: 56px;
+  padding: 20px var(--page-pad) 48px;
+  border-top: 2px solid var(--color-divider);
+  font-size: 12px;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.page-footer a { color: inherit; }
+.page-footer__updated { margin-left: auto; }
+
+/* ── responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 1080px) {
+  .chart { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 880px) {
+  :root { --page-pad: var(--space-4); }
+  .hero,
+  .prose-section,
+  .record__head,
+  .record__body { grid-template-columns: minmax(0, 1fr); }
+  .hero { padding-top: 36px; }
+  .prose-section h2 { position: static; }
+  .record__stats { padding-left: 0; border-left: 0; }
+  .page-header { flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
+  .page-header__brand { margin-right: var(--space-4); }
+  .page-footer__updated { margin-left: 0; }
+}

@@ -217,6 +217,7 @@ def generate_data_js(data):
             ensure_ascii=False,
         )
     ))
+    output.append('var col_keys = {};'.format(json.dumps(fields, ensure_ascii=False)))
     return '\n'.join(output) + '\n'
 
 

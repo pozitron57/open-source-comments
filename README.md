@@ -23,19 +23,30 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   `last_commit`) instead of storing raw API
   responses for every repository every day.
 
-- `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines two variables
-  — `osc_data` and `cols`).
+- `yaml_2_js.py` converts `data.yaml` to `data.js` (it defines three variables
+  — `osc_data`, `cols` and `col_keys`).
 
-- `index.html` reads `data.js` and parses it to the html table using
-  [datatables.js](https://github.com/DataTables/DataTables).
+- `history_2_js.py` reduces `apigh/history.json` to `star-history.js`, the star
+  series the interactive chart reads: only the `stars` field, without the
+  samples `plot-stars.py` also rejects, downsampled to the points that are
+  visible at chart resolution.
+
+- `index.html` is the page structure; `index.md` holds all of its prose.
+  `md_to_html.py` renders each `<!--osc:NAME-->` section of `index.md` into the
+  matching slot in `index.html`, and computes the system and attribute counts
+  from the data. The table, the column popover, the project record and the
+  chart are drawn by `js/osc.js` (with `js/osc-lib.js`) from `data.js` and
+  `star-history.js` — plain scripts, no framework and no build step.
 
 - `plot-stars.py` reads `apigh/history.json`, plots stars vs. time for selected
-  projects, and writes `stars-v-date.svg`.
+  projects, and writes `stars-v-date.svg`. The page shows the interactive chart
+  instead and falls back to this SVG inside `<noscript>`.
 
 - The webpage is updated daily via `cron`. `updater.sh` runs `get_data.py`,
-  `md_to_html.py`, `yaml_2_js.py`, and `plot-stars.py`, then deploys the
-  updated files and pushes the repository. Repository redirects are followed
-  automatically and their canonical URLs are saved back to `data.yaml`.
+  `md_to_html.py`, `yaml_2_js.py`, `plot-stars.py`, and `history_2_js.py`, then
+  deploys the updated files and pushes the repository. Repository redirects are
+  followed automatically and their canonical URLs are saved back to
+  `data.yaml`.
 
 - Any non-routine event for an individual repository — including an API retry,
   redirect, invalid response, suspicious identity change, or persistent request
@@ -74,12 +85,43 @@ python3 -m pip install -r requirements.txt
 
 ## How to view the page locally
 
-Clone the repo and open `index.html` in your browser. 
-To change it, edit `index.md` and run `python3 md_to_html.py`. 
-It will overwrite existing `index.html`.
+Clone the repo and open `index.html` in your browser — the page has no build
+step and no module imports, so it works straight from the filesystem. Some
+browsers refuse to load fonts over `file://`; the page then falls back to a
+system sans and is otherwise unchanged.
 
-After modifying `data.yaml`, run `python3 yaml_2_js.py`.
-It will update the `data.js` file.
+The page loads nothing from a third party. Everything but the comment thread is
+served from this directory; the thread comes from `comments.lisakov.com`, the
+site's own Isso instance.
+
+`css/fonts/archivo.woff2` is Archivo subset to the characters the page and
+`data.yaml` actually render, with the variable weight axis clamped to the
+400-800 the design uses — 18 kB rather than the 35 kB of the stock Latin subset.
+`css/fonts/archivo-subset.txt` lists exactly what it covers, and
+`validate_outputs.py` reports any character in `data.js` that falls outside it
+(a fallback glyph, not a failure). Text outside that set — Cyrillic in comments,
+for instance — renders in the reader's system sans, as it did before. To widen
+the subset, request a new file from Google Fonts with the extra characters in
+the `text=` parameter and update the `.txt` alongside it.
+
+To preview it at the URL it has in production, run the lisakov.com Hexo site
+with `hexo s`: `scripts/osc-preview.js` there mounts this working copy at
+`/projects/open-source-comments/`. Point it at a different checkout with
+`OSC_DIR=/path/to/open-source-comments hexo s`.
+
+That script also proxies the Isso API, so the real comment thread loads in the
+local preview — Isso answers CORS only for the lisakov.com origin, and the
+proxy makes the call same-origin instead. It is read-only: posting, editing and
+voting are refused locally so a preview cannot write to the live comment
+database. Turn the proxy off with `OSC_ISSO_PROXY=off`.
+
+To change the prose, edit `index.md` and run `python3 md_to_html.py`. Sections
+in `index.md` are delimited by `<!--osc:NAME-->` markers and land in the
+matching `<!--osc:NAME-->…<!--/osc:NAME-->` slot in `index.html`, which the
+script overwrites.
+
+After modifying `data.yaml`, run `python3 yaml_2_js.py` to update `data.js`,
+and `python3 history_2_js.py` to update `star-history.js`.
 
 Run reliability tests with:
 
@@ -91,8 +133,6 @@ python3 -m unittest -v test_get_data.py test_reliability.py
 
 - Check and add the information to make the table useful.
   I would appreciate adding a missing demo.
-
-- Show column descriptions on mouse over.
 
 - Where do I find a number of opened and closed issues? For example,
   https://api.github.com/users/posativ/isso has `open_issues_count` and

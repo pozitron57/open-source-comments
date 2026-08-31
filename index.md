@@ -1,5 +1,7 @@
+<!--osc:title-->
 # Open-source self-hosted comments for a static website
 
+<!--osc:lead-->
 This comparison table is inspired by
 [staticsitegenerators.net](http://staticsitegenerators.net/). Contribute at
 [github](https://github.com/pozitron57/open-source-comments) —
@@ -7,6 +9,7 @@ add the missing data. Repository-related data (stars, open issues + PR, etc.)
 are updated daily automatically. Want different columns? Noted a bug? Submit
 an [issue](https://github.com/pozitron57/open-source-comments/issues/new).
 
+<!--osc:prose-->
 ## What’s wrong with Disqus
 
 Disqus loads absurd amount of tracking services, which exposes your visitors’
@@ -45,15 +48,16 @@ Also, there is an
 >is only local, you and your database need not be burdened with other
 >people's opinions.
 
+<!--osc:chart-head-->
 ## Stars vs. time
-The figure below shows some of the top competitors except for Discourse (as
-it's not just a light commenting server like others). The figure is useful to
-indirectly estimate how active the project is.
 
-<img src="stars-v-date.svg" alt="Plot stars vs. time" style="width: 100%; height: auto;" />
+Indirect estimate of how active a project is. Hover a line to isolate it,
+click to lock; drag across the plot to zoom, double-click to reset.
 
-## Choose columns to show
+<!--osc:table-head-->
+## The table
 
+<!--osc:comments-->
 ## Share your experience
 
 Please share your experience if you are using one of the commenting systems

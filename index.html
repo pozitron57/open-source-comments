@@ -1,40 +1,53 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Open-source comments</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="https://lisakov.com/favicon.ico" rel="icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="icon">
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery.dataTables.min.js"></script>
-  <script src="js/dataTables.buttons.min.js"></script>
-  <script src="js/buttons.colVis.min.js"></script>
-  <!-- <script src="js/dataTables.fixedColumns.min.js"></script> -->
-  <script src="js/dataTables.searchHighlight.min.js"></script>
-  <script src="js/jquery.highlight.js"></script>
-
-  <link rel="stylesheet" href="css/buttons.dataTables.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="css/jquery.dataTables.min.css" media="screen" type="text/css">
-  <!-- <link rel="stylesheet" href="css/fixedColumns.dataTables.min.css" media="screen" type="text/css"> -->
+  <link rel="preload" href="css/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/osc.css" media="screen" type="text/css">
 </head>
-  
+
 <body>
 
-<div class="preamble"><h1>Open-source self-hosted comments for a static website</h1>
-<p>This comparison table is inspired by
+<header class="page-header">
+  <span class="page-header__brand">Open-source comments</span>
+  <span class="page-header__updated">Updated <!--osc:updated-->2026-08-30<!--/osc:updated--></span>
+  <a class="page-header__link" href="https://github.com/pozitron57/open-source-comments">GitHub</a>
+  <a class="page-header__link" href="https://github.com/pozitron57/open-source-comments/issues/new">Submit an issue</a>
+</header>
+
+<section class="hero">
+  <!--osc:title--><h1>Open-source self-hosted comments for a static website</h1><!--/osc:title-->
+  <div>
+    <div class="hero__lead"><!--osc:lead--><p>This comparison table is inspired by
 <a href="http://staticsitegenerators.net/">staticsitegenerators.net</a>. Contribute at
 <a href="https://github.com/pozitron57/open-source-comments">github</a> —
 add the missing data. Repository-related data (stars, open issues + PR, etc.)
 are updated daily automatically. Want different columns? Noted a bug? Submit
-an <a href="https://github.com/pozitron57/open-source-comments/issues/new">issue</a>.</p>
-<h2>What’s wrong with Disqus</h2>
-<p>Disqus loads absurd amount of tracking services, which exposes your visitors’
+an <a href="https://github.com/pozitron57/open-source-comments/issues/new">issue</a>.</p><!--/osc:lead--></div>
+    <div class="hero__stats">
+      <div>
+        <span class="hero__stat-value"><!--osc:systems-->64<!--/osc:systems--></span>
+        <span class="hero__stat-label">Systems</span>
+      </div>
+      <div>
+        <span class="hero__stat-value"><!--osc:attributes-->41<!--/osc:attributes--></span>
+        <span class="hero__stat-label">Attributes</span>
+      </div>
+      <div>
+        <span class="hero__stat-value">Daily</span>
+        <span class="hero__stat-label">Refresh</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--osc:prose--><section class="prose-section"><h2>What’s wrong with Disqus</h2><div class="prose-section__body"><p>Disqus loads absurd amount of tracking services, which exposes your visitors’
 personal data and significantly increases loading time. See, e.g.,
-<a href="http://donw.io/post/github-comments/#what-s-wrong-with-disqus">this post</a>.</p>
-<h2>What’s not covered here</h2>
-<p>For a static website, one usually wants a lightweight commenting server with
+<a href="http://donw.io/post/github-comments/#what-s-wrong-with-disqus">this post</a>.</p></div></section><section class="prose-section"><h2>What’s not covered here</h2><div class="prose-section__body"><p>For a static website, one usually wants a lightweight commenting server with
 as little dependencies as possible. Few commenting engines listed on the page
 are provided by heavy applications (e.g.,
 <a href="https://github.com/discourse/discourse">discourse</a>,
@@ -60,80 +73,123 @@ confident that their voice is being heard, and feel engaged with your very
 engaging content. It does not make any HTTP requests. Since LocalStorage
 is only local, you and your database need not be burdened with other
 people's opinions.</p>
-</blockquote>
-<h2>Stars vs. time</h2>
-<p>The figure below shows some of the top competitors except for Discourse (as
-it's not just a light commenting server like others). The figure is useful to
-indirectly estimate how active the project is.</p>
-<img src="stars-v-date.svg" alt="Plot stars vs. time" style="width: 100%; height: auto;" />
-<h2>Choose columns to show</h2>
+</blockquote></div></section><!--/osc:prose-->
+
+<section class="section section--chart">
+  <div class="section__head">
+    <!--osc:chart-head--><h2>Stars vs. time</h2><p class="section__caption">Indirect estimate of how active a project is. Hover a line to isolate it,
+click to lock; drag across the plot to zoom, double-click to reset.</p><!--/osc:chart-head-->
+    <div class="range" id="range" role="group" aria-label="Time range"></div>
+  </div>
+
+  <div class="chart">
+    <div class="chart__plot" id="plot">
+      <svg id="plot-svg" viewBox="0 0 900 320" width="100%" height="320" role="img"
+           aria-label="Stars over time for the plotted projects"></svg>
+      <div class="chart__overlay" id="plot-overlay"></div>
+      <div class="chart__tooltip" id="plot-tip" hidden></div>
+      <noscript>
+        <img src="stars-v-date.svg" alt="Stars vs. time for the top commenting servers"
+             style="width: 100%; height: auto;">
+      </noscript>
+    </div>
+
+    <div>
+      <div class="series__head"><span>Series</span></div>
+      <div class="series__list" id="series-list"></div>
+      <select class="series__add" id="series-add" aria-label="Add a project to the chart"></select>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="toolbar">
+    <!--osc:table-head--><h2>The table</h2><!--/osc:table-head-->
+    <span class="toolbar__count tabular" id="table-count"></span>
+    <span class="toolbar__spacer"></span>
+    <label class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path>
+      </svg>
+      <span class="visually-hidden">Search the table</span>
+      <input type="search" id="search" placeholder="Search 64 systems"
+             autocomplete="off">
+    </label>
+    <div class="columns">
+      <button type="button" class="columns__button" id="columns-button" aria-expanded="false"
+              aria-controls="columns-popover">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <circle cx="12" cy="12" r="1.6"></circle>
+          <circle cx="19" cy="12" r="1.6"></circle>
+          <circle cx="5" cy="12" r="1.6"></circle>
+        </svg>
+        Columns <span class="columns__button-count tabular" id="columns-count">8</span>
+      </button>
+      <div class="columns__popover" id="columns-popover" hidden>
+        <div class="columns__head">
+          <span class="columns__title">Choose columns to show</span>
+          <button type="button" class="columns__action" id="columns-all">All <!--osc:all-count-->41<!--/osc:all-count--></button>
+          <button type="button" class="columns__action" id="columns-reset">Reset</button>
+          <button type="button" class="columns__close" id="columns-close" title="Close">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.5" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="columns__body" id="columns-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table id="results" class="table">
+      <thead id="table-head"></thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+  <div class="table-empty" id="table-empty" hidden></div>
+  <p class="table-note">Click any row for the full record. An asterisk on the star count marks a
+    repository whose last update was not clean — hover it for the reason.</p>
+</section>
+
+<div class="record" id="record" role="dialog" aria-modal="true" aria-label="Project record" hidden>
+  <div class="record__bar">
+    <span class="record__position" id="record-position"></span>
+    <button type="button" class="record__nav" id="record-prev">‹ Prev</button>
+    <button type="button" class="record__nav" id="record-next">Next ›</button>
+    <button type="button" class="record__close" id="record-close" title="Close">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.5" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+    </button>
+  </div>
+  <div class="record__head" id="record-head"></div>
+  <div class="record__body" id="record-body"></div>
+  <p class="record__missing" id="record-missing" hidden></p>
 </div>
 
-<table id="results" class="display" style="width:100%"></table>
+<div class="comments"><!--osc:comments--><h2>Share your experience</h2><div class="comments__lead"><p>Please share your experience if you are using one of the commenting systems
+listed in the table. Write a short summary and provide your &quot;Likes&quot; and
+&quot;Dislikes&quot; to help others to decide which commenting system suits them
+best.</p></div><!--/osc:comments--><section id="isso-thread"></section>
+</div>
+
+<footer class="page-footer">
+  <span>Powered by <a href="https://posativ.org/isso">Isso</a>, designed by Claude</span>
+  <span class="page-footer__updated">Last updated: 2026-08-30</span>
+  <span>&copy; S.&nbsp;Lisakov</span>
+</footer>
+
 <script src="data.js"></script>
-<script>
-$(document).ready(function() {
-  var defaultHiddenColumns = [
-    4,6,7,9,10,11,12,13,14,15,16,17,18,19,20,21,22,
-    23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38
-  ];
+<script src="star-history.js"></script>
+<script src="js/osc-lib.js"></script>
+<script src="js/osc.js"></script>
 
-  if (window.matchMedia('(max-width: 880px)').matches) {
-    for (var columnIndex = 0; columnIndex < cols.length; columnIndex++) {
-      if (cols[columnIndex].title === 'Description') {
-        defaultHiddenColumns.push(columnIndex);
-        break;
-      }
-    }
-  }
-
-  $('#results').DataTable({
-    pageLength: -1,
-    lengthMenu: [ [5, 10, 20, -1], [5, 10, 20, "All"] ],
-    dom: 'Blftipr',
-    paging:true,
-    data:osc_data,
-    columns:cols,
-    order:[[0,"desc"]],
-    searchHighlight: true,
-    info:true,
-    scrollX:true,
-    searching:true,
-    buttons: [ 
-        {extend: 'columnsToggle'},
-        {extend: 'colvisGroup', text: 'Show all columns', show: ':hidden'},
-        'colvisRestore'],
-    columnDefs: [
-        { "type": "num",  "targets": 1 },
-        {targets: "_all", className: "dt-center"},
-        { "visible": false,
-          "targets": defaultHiddenColumns
-        },
-      ],
-  });
-});
-</script>
-
-<script data-isso="https://comments.lisakov.com/" 
+<script data-isso="https://comments.lisakov.com/"
   data-isso-lang="en"
   data-isso-reply-notifications="true"
+  data-isso-avatar="false"
   src="https://comments.lisakov.com/js/embed.min.js">
 </script>
 
-<div class="isso-comments"><h2>Share your experience</h2>
-<p>Please share your experience if you are using one of the commenting systems
-listed in the table. Write a short summary and provide your &quot;Likes&quot; and
-&quot;Dislikes&quot; to help others to decide which commenting system suits them
-best.</p>
-<section id="isso-thread"></section>
-</div>
-
-<footer> 
-  <p>Powered by 
-    <a href="https://www.datatables.net">DataTables</a> and
-    <a href="https://posativ.org/isso">Isso</a><br>
-     Last updated: 2026-08-30 <br>
-     &copy; S.&nbsp;Lisakov</p>
-</footer>
 </body>
 </html>
