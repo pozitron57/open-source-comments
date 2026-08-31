@@ -793,7 +793,6 @@ input, textarea, select, button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--color-text) 55%, transparent);
-  overflow-wrap: anywhere;
 }
 .record__field-value { font-size: 14px; overflow-wrap: anywhere; }
 
@@ -806,7 +805,8 @@ input, textarea, select, button {
 .record__field,
 .record__head > *,
 .record__body > *,
-.record__stats > * { min-width: 0; }
+.record__stats > *,
+.record__field > * { min-width: 0; }
 .record__stat-value,
 .record__stat-label,
 .record__group-name,
@@ -1216,11 +1216,11 @@ input, textarea, select, button {
   /* Two body columns leave ~170px a field, so the label rail has to be thin
      or every value wraps. Measured shortest of the four arrangements tried. */
   .record__field {
-    grid-template-columns: minmax(0, 62px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 70px) minmax(0, 1fr);
     gap: 6px;
     padding: 2px 0;
   }
-  .record__field-label { font-size: 9px; letter-spacing: 0.02em; line-height: 1.4; }
+  .record__field-label { font-size: 9px; letter-spacing: 0; line-height: 1.4; }
   .record__field-value { font-size: 12px; line-height: 1.35; }
   .record__missing { margin-bottom: 20px; padding-top: var(--space-2); font-size: 11px; }
 }

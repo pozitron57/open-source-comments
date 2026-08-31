@@ -416,13 +416,24 @@ function linkButtons(row) {
   return links;
 }
 
+// A fixed box is sized by the initial containing block, and that is not always
+// the width the document lays out in: Chrome's device toolbar in responsive
+// mode reports it wider, and the card then runs off the side of the screen with
+// no way to read it but panning. Pin the card to the layout viewport, which is
+// the width everything else on the page already obeys.
+function sizeRecord() {
+  record.style.width = document.documentElement.clientWidth + 'px';
+}
+
 function renderRecord() {
   var row = state.detailIndex == null ? null : sorted[state.detailIndex];
   if (!row) {
     record.hidden = true;
+    record.style.width = '';
     return;
   }
   record.hidden = false;
+  sizeRecord();
   recordPosition.textContent = 'Record ' + (state.detailIndex + 1) + ' / ' + sorted.length;
 
   var delta = lib.fmtDelta(row.fields.stars_dif);
@@ -955,6 +966,7 @@ function measure() {
   var changedPlot = Math.abs(width - state.plotW) > 0.5;
   state.narrow = narrow;
   state.plotW = width;
+  if (state.detailIndex != null) sizeRecord();
   if (changedTable) {
     closeRecord();
     renderTable();
