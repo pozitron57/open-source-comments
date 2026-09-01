@@ -118,6 +118,25 @@ ${recent_output}"
 }
 
 
+install_project_scripts() {
+    for file in $(git ls-files '*.py'); do
+        install -m 700 "$file" "$OSC_SCRIPT_DIR/$file"
+    done
+    # Bytecode of a module that has since been renamed or deleted would keep
+    # importing after its source is gone.
+    rm -rf "$OSC_SCRIPT_DIR/__pycache__"
+}
+
+
+check_installed_updater() {
+    if cmp -s "$OSC_PROJECT_DIR/updater.sh" "$OSC_SCRIPT_DIR/updater.sh"; then
+        return 0
+    fi
+    log_message "updater.sh in $OSC_SCRIPT_DIR differs from the checkout. Bash is already reading the installed copy, so it cannot be swapped mid-run. Run $OSC_PROJECT_DIR/install_scripts.sh, then this job will pick the new one up."
+    return 1
+}
+
+
 run_step() {
     current_step=$1
     shift
@@ -237,6 +256,15 @@ cd "$OSC_PROJECT_DIR"
 run_step 'verify clean repository before update' test -z "$(git status --porcelain --untracked-files=no)"
 run_step 'pull repository with fast-forward only' nice -n5 git pull --ff-only
 run_step 'verify clean repository after pull' test -z "$(git status --porcelain --untracked-files=no)"
+
+# The Python below runs from OSC_SCRIPT_DIR rather than from the checkout, so
+# that the pull above cannot replace code while it executes. The cost is that
+# the two drift: a build step added to the repository is not one this job knows
+# about until it is installed. Close that gap here, on every run.
+if [ "$OSC_SCRIPT_DIR" != "$OSC_PROJECT_DIR" ]; then
+    run_step 'verify the installed updater matches the checkout' check_installed_updater
+    run_step 'install scripts for this run' install_project_scripts
+fi
 
 backup_dir=$(mktemp -d "${TMPDIR:-/tmp}/open-source-comments-updater.XXXXXX")
 mkdir -p "$backup_dir/files" "$backup_dir/missing"
