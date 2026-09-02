@@ -48,14 +48,24 @@ Inspired by [staticsitegenerators.net](http://staticsitegenerators.net).
   followed automatically and their canonical URLs are saved back to
   `data.yaml`.
 
-- On the server the scripts are executed from `OSC_SCRIPT_DIR`
-  (`~/.local/share/open-source-comments`), not from the checkout, so that the
-  `git pull` at the start of a run cannot replace code while it is executing.
-  `updater.sh` reinstalls the pulled Python there on every run, so a new build
-  step takes effect immediately. It cannot do that for itself — bash is already
-  reading the installed copy — so if `updater.sh` changed it stops and asks for
-  `./install_scripts.sh` to be run once. That script installs every tracked
-  script into `OSC_SCRIPT_DIR` and is safe to re-run.
+- The chain from `cron` to the webroot is: the crontab entry names
+  `~/.local/bin/open-source-comments-update`, which is `cron_wrapper.sh`
+  installed under that name; it sets `OSC_SCRIPT_DIR`
+  (`~/.local/share/open-source-comments`) and hands over to the `updater.sh`
+  installed there; that operates on the checkout in `~/open-source-comments`
+  and deploys to `/var/www/lisakov.com/projects/open-source-comments`.
+
+- The scripts are executed from `OSC_SCRIPT_DIR` rather than from the checkout
+  so that the `git pull` at the start of a run cannot replace code while it is
+  executing. `updater.sh` reinstalls the pulled Python there on every run, so a
+  new build step takes effect immediately. It cannot do that for itself — bash
+  is already reading the installed copy — so if `updater.sh` changed it stops
+  and asks for `./install_scripts.sh` to be run once.
+
+- `install_scripts.sh` installs every tracked script into `OSC_SCRIPT_DIR` and
+  the wrapper into `OSC_BIN_DIR` (`~/.local/bin`). It is idempotent and reports
+  what it changed. Run it after changing `updater.sh`, `cron_wrapper.sh` or
+  itself; the Python looks after itself.
 
 - Any non-routine event for an individual repository — including an API retry,
   redirect, invalid response, suspicious identity change, or persistent request
