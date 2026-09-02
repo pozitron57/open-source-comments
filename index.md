@@ -2,12 +2,11 @@
 # Open-source self-hosted comments for a static website
 
 <!--osc:lead-->
-This comparison table is inspired by
-[staticsitegenerators.net](http://staticsitegenerators.net/). Contribute at
-[github](https://github.com/pozitron57/open-source-comments) —
-add the missing data. Repository-related data (stars, open issues + PR, etc.)
-are updated daily automatically. Want different columns? Noted a bug? Submit
-an [issue](https://github.com/pozitron57/open-source-comments/issues/new).
+A side-by-side comparison of open-source, self-hosted commenting systems for
+static sites — so choosing one doesn’t mean opening every repository
+yourself. Stars, open issues and last-commit dates are refreshed daily.
+Missing a system, or a column you need? Leave a comment below or open an
+issue.
 
 <!--osc:prose-->
 ## What’s wrong with Disqus
