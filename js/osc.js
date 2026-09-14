@@ -538,10 +538,22 @@ var PAD_NARROW = { l: 4, r: 12, t: 18, b: 30 };
 var END_LABEL_MIN_WIDTH = 620;
 var PLOT_H = 320;
 var geo = null;
+var seriesStyles = Object.create(null);
+var nextSeriesColor = 0;
+var nextSeriesDash = 0;
 
 function showEndLabels() { return state.plotW >= END_LABEL_MIN_WIDTH; }
 
-function colorFor(i) { return lib.SERIES_COLORS[i % lib.SERIES_COLORS.length]; }
+function styleFor(row) {
+  // Assign once per project, retaining its style even while it is removed.
+  if (!seriesStyles[row]) {
+    seriesStyles[row] = {
+      color: lib.SERIES_COLORS[nextSeriesColor++ % lib.SERIES_COLORS.length],
+      dash: HISTORY[row].d || lib.DASH_CYCLE[nextSeriesDash++ % lib.DASH_CYCLE.length],
+    };
+  }
+  return seriesStyles[row];
+}
 
 function chartWindow() {
   if (state.window) return state.window;
@@ -566,20 +578,16 @@ function emphasis(row) {
 }
 
 function buildSeries() {
-  // Counted over styleless series only, so the first project added always gets
-  // the first pattern in the cycle however many defaults are on the chart.
-  var styled = 0;
   return state.seriesRows
     .filter(function (row) { return HISTORY[row]; })
-    .map(function (row, i) {
-      var dash = HISTORY[row].d;
-      if (!dash) dash = lib.DASH_CYCLE[styled++ % lib.DASH_CYCLE.length];
+    .map(function (row) {
+      var style = styleFor(row);
       return {
         row: row,
         label: rows[row] ? rows[row].name : String(row),
         points: HISTORY[row].p,
-        dash: dash,
-        color: colorFor(i),
+        dash: style.dash,
+        color: style.color,
       };
     });
 }
@@ -627,9 +635,9 @@ function renderChart() {
   cursor.style.display = 'none';
   plotSvg.appendChild(cursor);
 
-  var lineNodes = geo.lines.map(function (line, i) {
+  var lineNodes = geo.lines.map(function (line) {
     var node = svg('path', {
-      class: 'chart__line', d: line.d, stroke: colorFor(i), 'stroke-dasharray': line.dash,
+      class: 'chart__line', d: line.d, stroke: line.color, 'stroke-dasharray': line.dash,
     });
     plotSvg.appendChild(node);
     return node;
@@ -671,10 +679,10 @@ function renderChart() {
       text: tick.label,
     }));
   });
-  var endLabels = !showEndLabels() ? [] : geo.lines.map(function (line, i) {
+  var endLabels = !showEndLabels() ? [] : geo.lines.map(function (line) {
     var node = el('div', {
       class: 'chart__endlabel',
-      style: 'left:' + pct(geo.x1 + 8, w) + ';top:' + pct(line.labelY, PLOT_H) + ';color:' + colorFor(i),
+      style: 'left:' + pct(geo.x1 + 8, w) + ';top:' + pct(line.labelY, PLOT_H) + ';color:' + line.color,
       text: line.label,
     });
     plotOverlay.appendChild(node);
@@ -728,7 +736,7 @@ function renderHover() {
 
   var cursorTime = geo.xToTime(state.hoverX);
   var items = [];
-  geo.lines.forEach(function (line, i) {
+  geo.lines.forEach(function (line) {
     var read = lib.readAt(line, cursorTime, geo.sy);
     if (!read) {
       // The series has no data on this date; say so instead of borrowing the
@@ -743,7 +751,7 @@ function renderHover() {
       cy: read.y,
       r: 3,
       fill: 'var(--color-bg)',
-      stroke: colorFor(i),
+      stroke: line.color,
     }));
   });
 
@@ -858,11 +866,11 @@ var seriesNodes = [];
 
 function buildSeriesRows() {
   clear(seriesList);
-  seriesNodes = geo.lines.map(function (line, i) {
+  seriesNodes = geo.lines.map(function (line) {
     var swatch = lib.SWATCH[dashName(line.dash)];
     var stroke = svg('line', {
       x1: 0, x2: swatch.length, y1: 4, y2: 4,
-      stroke: colorFor(i),
+      stroke: line.color,
       'stroke-width': 2,
       'stroke-dasharray': swatch.dash,
     });
