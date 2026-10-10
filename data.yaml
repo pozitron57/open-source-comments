@@ -48,7 +48,7 @@ isso:
     open_issues: 62
     last_committed: 2026‑09‑15
     docker: "?"
-    stars_dif: 2
+    stars_dif: 1
     paging: "no"
 
 
@@ -95,6 +95,15 @@ commento:
     stars_provider: github
     stars_extra: 779
     stars_extra_provider: gitlab
+    update_warning: 'Repository update failed: commento (https://gitlab.com/commento/commento):
+        API returned 403 for https://gitlab.com/api/v4/projects/commento%2Fcommento/repository/commits?per_page=1&ref_name=master:
+        <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta
+        http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible"
+        content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport"
+        content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy"
+        content="default-src &#39;none&#39;; script-src &#39;nonce-Gi0zDCY7aDKbIkzdBWBAuq&#39;
+        &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s'
+    update_warning_at: '2026-10-10'
 schnak:
     stars: 1811
     source: "https://github.com/schn4ck/schnack"
@@ -202,7 +211,7 @@ site_point_nested_comments:
     license: undefined
     stars_provider: github
 remark:
-    stars: 5622
+    stars: 5624
     source: "https://github.com/umputun/remark42"
     homepage: "https://remark42.com"
     name: "Remark42"
@@ -246,12 +255,12 @@ remark:
     license: "MIT"
     open_issues: 95
     last_committed: 2026‑09‑14
-    stars_dif: 15
+    stars_dif: 18
 
     stars_provider: github
 valine:
     name: "Valine"
-    stars: 2229
+    stars: 2228
     source: "https://github.com/xCss/Valine"
     homepage: "https://valine.js.org/en/index.html"
     demo: "https://valine.js.org/en/index.html"
@@ -1150,7 +1159,7 @@ talkyard:
 
     stars_provider: github
 discourse:
-    stars: 47947
+    stars: 47956
     source: "https://github.com/discourse/discourse"
     homepage: "https://www.discourse.org"
     name: "Discourse"
@@ -1194,9 +1203,9 @@ discourse:
     description: "Isn’t designed as a comments engine, but can be used so. High hardware
         requirements"
     license: "GPL-2.0"
-    open_issues: 274
+    open_issues: 282
     last_committed: 2026‑10‑09
-    stars_dif: 140
+    stars_dif: 138
 
     stars_provider: github
 webpage_webmentions:
@@ -2644,8 +2653,8 @@ Waline:
         mathematical formulas and HTML embedding support, with login support and lightweight,
         free and easy to deploy.  "
     license: "GPL-2.0"
-    open_issues: 55
-    last_committed: 2026‑10‑08
+    open_issues: 65
+    last_committed: 2026‑10‑09
     stars_dif: 12
 
     stars_provider: github
@@ -2792,7 +2801,7 @@ Cusdis:
 
     stars_provider: github
 Twikoo:
-    stars: 2297
+    stars: 2296
     source: "https://github.com/twikoojs/twikoo"
     homepage: "https://twikoo.js.org/en/"
     name: "Twikoo"
@@ -2835,11 +2844,11 @@ Twikoo:
     license: "MIT"
     open_issues: 27
     last_committed: 2026‑10‑08
-    stars_dif: 24
+    stars_dif: 22
 
     stars_provider: github
 Artalk:
-    stars: 2347
+    stars: 2346
     source: "https://github.com/ArtalkJS/Artalk"
     homepage: "https://artalk.js.org/"
     name: "Artalk"
@@ -2882,7 +2891,7 @@ Artalk:
     license: "MIT"
     open_issues: 112
     last_committed: 2026‑07‑24
-    stars_dif: 15
+    stars_dif: 14
 
     stars_provider: github
 Meh:
@@ -2981,8 +2990,17 @@ Comentario:
     stars_dif: 1
 
     stars_provider: gitlab
+    update_warning: 'Repository update failed: Comentario (https://gitlab.com/comentario/comentario):
+        API returned 403 for https://gitlab.com/api/v4/projects/comentario%2Fcomentario/repository/commits?per_page=1&ref_name=dev:
+        <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta
+        http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible"
+        content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport"
+        content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy"
+        content="default-src &#39;none&#39;; script-src &#39;nonce-5ImxgUF18VxXPdSwoy10rF&#39;
+        &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s'
+    update_warning_at: '2026-10-10'
 Garrul:
-    stars: 43
+    stars: 44
     source: "https://github.com/KingPin/Garrul"
     homepage: "https://garrul.com"
     name: "Garrul"
@@ -3030,7 +3048,7 @@ Garrul:
     license: "Apache-2.0"
     open_issues: 6
     last_committed: "2026‑10‑06"
-    stars_dif: 14
+    stars_dif: 15
 
 ###############
 ### REMOVED ###
