@@ -156,11 +156,22 @@ def fetch_json(url, headers, on_anomaly=None):
                 except json.JSONDecodeError as error:
                     raise RuntimeError('API returned invalid JSON for {}: {}'.format(url, error))
         except HTTPError as error:
-            body = error.read().decode('utf-8', errors='replace')
+            body = error.read(2048).decode('utf-8', errors='replace')
+            lower_body = body.lower()
+            if (
+                (error.headers or {}).get('cf-mitigated', '').lower() == 'challenge'
+                or 'challenge.cloudflare.com' in lower_body
+                or '<title>just a moment' in lower_body
+            ):
+                detail = 'Cloudflare challenge page'
+            elif '<html' in lower_body:
+                detail = 'HTML error page'
+            else:
+                detail = body.replace('\n', ' ')[:500]
             message = 'API returned {} for {}: {}'.format(
                 error.code,
                 url,
-                body.replace('\n', ' ')[:500],
+                detail,
             )
             if error.code not in RETRYABLE_HTTP_CODES or attempt == FETCH_ATTEMPTS:
                 raise RuntimeError(message)
@@ -301,16 +312,22 @@ def github_commit_date(api_url, default_branch, token, on_anomaly=None):
 
 
 def gitlab_commit_date(api_url, default_branch, token, on_anomaly=None):
-    params = urlencode({'per_page': 1, 'ref_name': default_branch or 'master'})
-    commit_url = '{}/repository/commits?{}'.format(api_url, params)
-    commit_data, _headers, _final_url = fetch_json(
-        commit_url,
+    branch = default_branch or 'master'
+    branch_url = '{}/repository/branches/{}'.format(api_url, quote(branch, safe=''))
+    branch_data, _headers, _final_url = fetch_json(
+        branch_url,
         gitlab_headers(token),
         on_anomaly=on_anomaly,
     )
-    if not commit_data:
-        raise RuntimeError('API response for {} contains no commits'.format(commit_url))
-    return api_date(commit_data[0].get('committed_date') or commit_data[0].get('created_at'))
+    if not isinstance(branch_data, dict) or branch_data.get('name') != branch:
+        raise RuntimeError('API returned an unexpected branch for {}'.format(branch_url))
+    commit_data = branch_data.get('commit')
+    if not isinstance(commit_data, dict):
+        raise RuntimeError('API response for {} has no branch commit'.format(branch_url))
+    commit_date = commit_data.get('committed_date') or commit_data.get('created_at')
+    if not commit_date:
+        raise RuntimeError('API response for {} has no commit date'.format(branch_url))
+    return api_date(commit_date)
 
 
 def gitlab_open_issue_count(api_url, token, on_anomaly=None):

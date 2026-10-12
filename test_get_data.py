@@ -3,8 +3,9 @@ import json
 import sys
 import types
 import unittest
+from io import BytesIO
 from unittest.mock import Mock, mock_open, patch
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 
 
 try:
@@ -55,6 +56,47 @@ class FakeResponse:
 
 
 class GetDataTests(unittest.TestCase):
+    def test_gitlab_commit_date_uses_branch_endpoint(self):
+        api_url = 'https://gitlab.com/api/v4/projects/example%2Frepository'
+        branch_url = api_url + '/repository/branches/feature%2Flatest'
+        response = {
+            'name': 'feature/latest',
+            'commit': {'committed_date': '2026-10-10T12:00:00Z'},
+        }
+
+        with patch('get_data.fetch_json', return_value=(response, {}, branch_url)) as fetch:
+            commit_date = get_data.gitlab_commit_date(
+                api_url, 'feature/latest', 'secret-token'
+            )
+
+        self.assertEqual(commit_date, '2026‑10‑10')
+        self.assertEqual(fetch.call_args.args[0], branch_url)
+        self.assertEqual(fetch.call_args.args[1]['PRIVATE-TOKEN'], 'secret-token')
+
+    def test_gitlab_branch_without_commit_date_is_rejected(self):
+        response = {'name': 'dev', 'commit': {}}
+        with patch('get_data.fetch_json', return_value=(response, {}, 'branch-url')):
+            with self.assertRaisesRegex(RuntimeError, 'has no commit date'):
+                get_data.gitlab_commit_date(
+                    'https://gitlab.com/api/v4/projects/example', 'dev', None
+                )
+
+    def test_cloudflare_html_error_is_summarized(self):
+        url = 'https://gitlab.com/api/v4/projects/example/repository/branches/dev'
+        challenge = (
+            b'<html><head><title>Just a moment...</title></head>'
+            b'<body>nonce-secret</body></html>'
+        )
+        error = HTTPError(
+            url, 403, 'Forbidden', {'Content-Type': 'text/html'}, BytesIO(challenge)
+        )
+
+        with patch('get_data.urlopen', side_effect=error):
+            with self.assertRaisesRegex(RuntimeError, 'Cloudflare challenge page') as raised:
+                get_data.fetch_json(url, {})
+
+        self.assertNotIn('nonce-secret', str(raised.exception))
+
     def test_github_redirect_updates_source_and_notifies_immediately(self):
         old_url = 'https://github.com/imaegoo/twikoo'
         old_api_url = 'https://api.github.com/repos/imaegoo/twikoo'
